@@ -85,6 +85,17 @@ All applied to `qiwiosity/mobile/prototype.html`:
 - **Progress dots** — Active dot stretches to pill shape
 - **Persistent** — Shown once on first visit; stored in `localStorage` as `qiwiosity_onboarded`; "Skip" dismisses immediately
 
+### Community Voices (EchoVerse)
+- **Full-screen overlay** — Teal header showing POI name + two tabs: "👂 Hear Stories" and "🎙 Leave a Memory"
+- **MediaRecorder API** — Records audio in `audio/webm;codecs=opus`; pulsing red button with live timer; 60s max; auto-stops at limit
+- **Preview & discard** — After stopping, user can preview their recording with progress bar or redo
+- **Name/anonymous toggle** — Enter name or click "Anonymous"; disables name input when anonymous
+- **9-tag picker** — Love Story, Advice, Funny, Heartbreaking, Inspiring, Local History, First Experience, Hidden Gem, Confession
+- **Playback** — Memory cards show name, tag, date, duration; ▶ button plays with orange progress bar
+- **Storage** — Base64-encoded audio saved to `localStorage` as `qw_echo_<poiId>` per location
+- **POI popup strip** — Every POI popup shows a "🎙 Community Voices · real stories from visitors" strip above action buttons; shows count if memories exist, "Be first →" if none; taps open the overlay
+- **New functions** — `openEchoVerse()`, `closeEchoOverlay()`, `switchEchoTab()`, `renderEchoListenPanel()`, `toggleEchoPlayback()`, `startEchoRecording()`, `stopEchoRecording()`, `playEchoPreview()`, `discardEchoRecording()`, `saveEchoMemory()`, `echoMemoryCount()`
+
 ---
 
 ## Phase 2 UI / Feature Overhaul (Completed)

@@ -640,6 +640,123 @@
   .compare-sheet-opt .opt-title { font-size: 13px; font-weight: 700; color: var(--text); }
   .compare-sheet-opt .opt-desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
 
+  /* ============ COMMUNITY VOICES / ECHOVERSE ============ */
+  .echo-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--bg); z-index: 18000; display: none; flex-direction: column;
+  }
+  .echo-overlay.active { display: flex; }
+  .echo-header {
+    background: var(--primary-deep); padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+  }
+  .echo-header-info { flex: 1; min-width: 0; }
+  .echo-poi-label { font-size: 11px; color: rgba(255,255,255,0.6); margin-bottom: 2px; font-weight: 600; letter-spacing: 0.4px; text-transform: uppercase; }
+  .echo-header h2 { color: white; font-size: 17px; font-weight: 800; margin: 0; }
+  .echo-close { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 22px; cursor: pointer; flex-shrink: 0; }
+  .echo-tabs {
+    display: flex; background: var(--surface); border-bottom: 2px solid var(--border); flex-shrink: 0;
+  }
+  .echo-tab {
+    flex: 1; padding: 12px; font-size: 13px; font-weight: 700; border: none;
+    background: none; color: var(--muted); cursor: pointer; transition: all 0.15s;
+    border-bottom: 2px solid transparent; margin-bottom: -2px;
+  }
+  .echo-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+  .echo-panel { flex: 1; overflow-y: auto; padding: 16px; }
+  .echo-empty-state {
+    text-align: center; padding: 40px 20px; color: var(--muted);
+  }
+  .echo-empty-state .echo-empty-icon { font-size: 36px; margin-bottom: 12px; }
+  .echo-empty-state p { font-size: 13px; line-height: 1.6; }
+  .echo-memory-card {
+    display: flex; align-items: flex-start; gap: 11px;
+    padding: 13px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 10px;
+  }
+  .echo-memory-play {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--accent);
+    border: none; color: white; font-size: 15px; cursor: pointer; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center; transition: opacity 0.15s;
+  }
+  .echo-memory-play:hover { opacity: 0.85; }
+  .echo-memory-play.playing { background: #c62828; }
+  .echo-memory-info { flex: 1; min-width: 0; }
+  .echo-memory-name { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+  .echo-memory-tag {
+    display: inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+    background: rgba(224,123,60,0.1); border-radius: 99px; padding: 2px 8px; margin-bottom: 4px;
+  }
+  .echo-memory-meta { font-size: 11px; color: var(--muted); }
+  .echo-memory-waveform {
+    height: 3px; background: var(--border); border-radius: 2px;
+    margin-top: 6px; overflow: hidden;
+  }
+  .echo-memory-waveform-fill {
+    height: 100%; background: var(--accent); border-radius: 2px;
+    width: 0%; transition: width 0.3s linear;
+  }
+  /* Recording UI */
+  .echo-record-zone {
+    display: flex; flex-direction: column; align-items: center; margin: 20px 0 16px;
+  }
+  .echo-record-btn {
+    width: 88px; height: 88px; border-radius: 50%; background: var(--accent);
+    border: none; cursor: pointer; font-size: 32px; display: flex;
+    align-items: center; justify-content: center; transition: all 0.2s;
+    box-shadow: 0 6px 24px rgba(224,123,60,0.4);
+  }
+  .echo-record-btn.recording {
+    background: #c62828; box-shadow: 0 0 0 0 rgba(198,40,40,0.6);
+    animation: echoPulse 1.4s ease-in-out infinite;
+  }
+  @keyframes echoPulse {
+    0% { box-shadow: 0 0 0 0 rgba(198,40,40,0.6); }
+    70% { box-shadow: 0 0 0 22px rgba(198,40,40,0); }
+    100% { box-shadow: 0 0 0 0 rgba(198,40,40,0); }
+  }
+  .echo-timer { font-size: 28px; font-weight: 800; color: var(--text); margin: 12px 0 4px; letter-spacing: 2px; }
+  .echo-rec-hint { font-size: 12px; color: var(--muted); text-align: center; }
+  .echo-playback-preview {
+    background: var(--surface2); border-radius: 10px; padding: 10px 14px;
+    margin-bottom: 14px; display: none; align-items: center; gap: 10px;
+  }
+  .echo-playback-preview.visible { display: flex; }
+  .echo-field-label { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: 0.5px; margin-bottom: 7px; }
+  .echo-name-row { display: flex; gap: 8px; margin-bottom: 14px; }
+  .echo-name-input {
+    flex: 1; border: 1.5px solid var(--border); border-radius: 9px;
+    padding: 10px 12px; font-size: 13px; background: var(--surface); color: var(--text);
+  }
+  .echo-name-input:focus { outline: none; border-color: var(--primary); }
+  .echo-anon-btn {
+    padding: 10px 12px; border: 1.5px solid var(--border); border-radius: 9px;
+    background: var(--surface); font-size: 11px; font-weight: 700; cursor: pointer;
+    color: var(--muted); white-space: nowrap; transition: all 0.15s;
+  }
+  .echo-anon-btn.on { border-color: var(--primary); color: var(--primary); background: rgba(21,136,138,0.08); }
+  .echo-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 16px; }
+  .echo-tag-chip {
+    padding: 6px 12px; border-radius: 99px; font-size: 11px; font-weight: 700;
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--text2);
+    cursor: pointer; transition: all 0.15s;
+  }
+  .echo-tag-chip.selected { border-color: var(--accent); background: rgba(224,123,60,0.1); color: var(--accent); }
+  /* Popup badge */
+  .echo-popup-strip {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 9px 13px; background: rgba(224,123,60,0.07);
+    border-top: 1px solid rgba(224,123,60,0.2);
+  }
+  .echo-popup-badge { font-size: 12px; font-weight: 700; color: var(--accent); }
+  .echo-popup-badge span { font-weight: 400; color: var(--muted); }
+  .echo-popup-open-btn {
+    font-size: 11px; font-weight: 700; color: var(--accent);
+    background: rgba(224,123,60,0.1); border: 1px solid rgba(224,123,60,0.25);
+    border-radius: 99px; padding: 5px 12px; cursor: pointer;
+  }
+  .echo-popup-open-btn:hover { background: rgba(224,123,60,0.18); }
+
   /* ============ DECISION OVERLAY ============ */
   .decision-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -1151,6 +1268,57 @@
       <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="confirmFindSimilar()">Find & Add to Compare</button>
     </div>
     <button class="btn" style="width:100%" onclick="closeCompareSheet()">Cancel</button>
+  </div>
+</div>
+
+<!-- ============ COMMUNITY VOICES / ECHOVERSE ============ -->
+<div class="echo-overlay" id="echoOverlay">
+  <div class="echo-header">
+    <div class="echo-header-info">
+      <div class="echo-poi-label" id="echoPoiLabel">Loading…</div>
+      <h2>🎙 Community Voices</h2>
+    </div>
+    <button class="echo-close" onclick="closeEchoOverlay()">✕</button>
+  </div>
+  <div class="echo-tabs">
+    <button class="echo-tab active" id="echoTabListen" onclick="switchEchoTab('listen')">👂 Hear Stories</button>
+    <button class="echo-tab" id="echoTabRecord" onclick="switchEchoTab('record')">🎙 Leave a Memory</button>
+  </div>
+
+  <!-- LISTEN PANEL -->
+  <div class="echo-panel" id="echoPanelListen">
+    <div id="echoMemoryList"></div>
+    <div class="echo-empty-state" id="echoEmptyState">
+      <div class="echo-empty-icon">🎙</div>
+      <p>No memories here yet.<br>Be the first to leave your voice at this place.</p>
+      <button class="btn primary" style="margin-top:14px" onclick="switchEchoTab('record')">Leave Your Memory →</button>
+    </div>
+  </div>
+
+  <!-- RECORD PANEL -->
+  <div class="echo-panel" id="echoPanelRecord" style="display:none">
+    <div class="echo-record-zone">
+      <button class="echo-record-btn" id="echoRecordBtn" onclick="toggleEchoRecord()">🎙</button>
+      <div class="echo-timer" id="echoTimer">0:00</div>
+      <div class="echo-rec-hint" id="echoRecHint">Tap to start · up to 60 seconds</div>
+    </div>
+    <div class="echo-playback-preview" id="echoPlaybackPreview">
+      <button class="echo-memory-play" id="echoPreviewPlayBtn" onclick="playEchoPreview()">▶</button>
+      <div style="flex:1">
+        <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:4px;">Your recording</div>
+        <div class="echo-memory-waveform"><div class="echo-memory-waveform-fill" id="echoPreviewBar"></div></div>
+      </div>
+      <button style="font-size:12px;color:#c62828;background:none;border:none;cursor:pointer;font-weight:700;" onclick="discardEchoRecording()">✕ Redo</button>
+    </div>
+    <div class="echo-field-label">YOUR NAME (OPTIONAL)</div>
+    <div class="echo-name-row">
+      <input class="echo-name-input" id="echoNameInput" placeholder="e.g. Sarah from Auckland" />
+      <button class="echo-anon-btn" id="echoAnonBtn" onclick="toggleEchoAnon()">👤 Anonymous</button>
+    </div>
+    <div class="echo-field-label">TAG YOUR MEMORY</div>
+    <div class="echo-tags" id="echoTagsRow"></div>
+    <button class="btn primary" style="width:100%;margin-bottom:10px" id="echoSaveBtn" onclick="saveEchoMemory()">Save My Memory</button>
+    <button class="btn" style="width:100%" onclick="closeEchoOverlay()">Cancel</button>
   </div>
 </div>
 
@@ -2392,6 +2560,10 @@ function openPoiInfoWindow(a, marker) {
         <span>Book tours · earn us a small commission</span>
         <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 Find nearby stays</a>
       </div>
+      <div class="echo-popup-strip" onclick="openEchoVerse('${a.id}')">
+        <div class="echo-popup-badge">🎙 ${echoMemoryCount(a.id) > 0 ? `${echoMemoryCount(a.id)} visitor voice${echoMemoryCount(a.id) !== 1 ? 's' : ''}` : 'Community Voices'} <span>· real stories from visitors</span></div>
+        <button class="echo-popup-open-btn" onclick="event.stopPropagation();openEchoVerse('${a.id}')">${echoMemoryCount(a.id) > 0 ? 'Hear & Share →' : 'Be first →'}</button>
+      </div>
       <div class="pop-actions-bottom">
         <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
           class="btn primary" style="width:100%;margin-bottom:7px;">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
@@ -3230,6 +3402,265 @@ document.getElementById('search').addEventListener('input', (e) => {
 function dismissSplash() {
   document.getElementById('splash').classList.add('hidden');
   setTimeout(showOnboarding, 600);
+}
+
+// ============ COMMUNITY VOICES (EchoVerse) ============
+const ECHO_TAGS = ['Love Story', 'Advice', 'Funny', 'Heartbreaking', 'Inspiring', 'Local History', 'First Experience', 'Hidden Gem', 'Confession'];
+let _echoPoi = null;
+let _echoTab = 'listen';
+let _echoMediaRecorder = null;
+let _echoAudioChunks = [];
+let _echoRecording = false;
+let _echoTimerInt = null;
+let _echoSeconds = 0;
+let _echoRecordedB64 = null;
+let _echoSelectedTag = null;
+let _echoAnon = false;
+let _echoPlayingIdx = null;
+let _echoPlayingAudio = null;
+let _echoPreviewAudio = null;
+
+function getEchoMemories(poiId) {
+  try { return JSON.parse(localStorage.getItem('qw_echo_' + poiId) || '[]'); } catch { return []; }
+}
+
+function saveEchoMemories(poiId, memories) {
+  try { localStorage.setItem('qw_echo_' + poiId, JSON.stringify(memories)); } catch (e) {
+    showToast('Storage full — try a shorter recording');
+  }
+}
+
+function echoMemoryCount(poiId) {
+  return getEchoMemories(poiId).length;
+}
+
+function openEchoVerse(poiId) {
+  const a = ATTRACTIONS.find(x => x.id === poiId);
+  if (!a) return;
+  _echoPoi = a;
+  _echoTab = 'listen';
+  _echoRecordedB64 = null;
+  _echoSelectedTag = null;
+  _echoAnon = false;
+  _echoSeconds = 0;
+  if (infoWindow) infoWindow.close();
+  document.getElementById('echoPoiLabel').textContent = a.name;
+  document.getElementById('echoNameInput').value = '';
+  document.getElementById('echoAnonBtn').classList.remove('on');
+  document.getElementById('echoPlaybackPreview').classList.remove('visible');
+  document.getElementById('echoRecordBtn').classList.remove('recording');
+  document.getElementById('echoRecordBtn').textContent = '🎙';
+  document.getElementById('echoTimer').textContent = '0:00';
+  document.getElementById('echoRecHint').textContent = 'Tap to start · up to 60 seconds';
+  renderEchoTags();
+  switchEchoTab('listen');
+  document.getElementById('echoOverlay').classList.add('active');
+}
+
+function closeEchoOverlay() {
+  document.getElementById('echoOverlay').classList.remove('active');
+  stopEchoRecording();
+  if (_echoPlayingAudio) { _echoPlayingAudio.pause(); _echoPlayingAudio = null; }
+  if (_echoPreviewAudio) { _echoPreviewAudio.pause(); _echoPreviewAudio = null; }
+}
+
+function switchEchoTab(tab) {
+  _echoTab = tab;
+  document.getElementById('echoTabListen').classList.toggle('active', tab === 'listen');
+  document.getElementById('echoTabRecord').classList.toggle('active', tab === 'record');
+  document.getElementById('echoPanelListen').style.display = tab === 'listen' ? 'block' : 'none';
+  document.getElementById('echoPanelRecord').style.display = tab === 'record' ? 'block' : 'none';
+  if (tab === 'listen') renderEchoListenPanel();
+}
+
+function renderEchoListenPanel() {
+  if (!_echoPoi) return;
+  const memories = getEchoMemories(_echoPoi.id);
+  const listEl = document.getElementById('echoMemoryList');
+  const emptyEl = document.getElementById('echoEmptyState');
+  if (memories.length === 0) {
+    listEl.innerHTML = '';
+    emptyEl.style.display = 'block';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  listEl.innerHTML = memories.map((m, i) => `
+    <div class="echo-memory-card">
+      <button class="echo-memory-play" id="echoPlayBtn_${i}" onclick="toggleEchoPlayback(${i})">${_echoPlayingIdx === i ? '⏹' : '▶'}</button>
+      <div class="echo-memory-info">
+        <div class="echo-memory-name">${m.name || 'Anonymous Traveller'}</div>
+        ${m.tag ? `<span class="echo-memory-tag">${m.tag}</span>` : ''}
+        <div class="echo-memory-meta">${m.date} · ${fmtEchoSecs(m.duration)}</div>
+        <div class="echo-memory-waveform"><div class="echo-memory-waveform-fill" id="echoBar_${i}"></div></div>
+      </div>
+    </div>
+  `).join('') + `
+    <div style="text-align:center;padding:14px 0;">
+      <button class="btn" style="font-size:12px;" onclick="switchEchoTab('record')">＋ Leave your own memory</button>
+    </div>`;
+}
+
+function fmtEchoSecs(s) {
+  return `${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
+}
+
+function toggleEchoPlayback(idx) {
+  const memories = getEchoMemories(_echoPoi.id);
+  const m = memories[idx];
+  if (!m) return;
+  if (_echoPlayingAudio) { _echoPlayingAudio.pause(); _echoPlayingAudio = null; }
+  if (_echoPlayingIdx === idx) {
+    _echoPlayingIdx = null;
+    renderEchoListenPanel();
+    return;
+  }
+  _echoPlayingIdx = idx;
+  renderEchoListenPanel();
+  const audio = new Audio(m.audio);
+  _echoPlayingAudio = audio;
+  const bar = document.getElementById('echoBar_' + idx);
+  const startTime = Date.now();
+  const dur = m.duration * 1000;
+  const barInt = setInterval(() => {
+    if (!bar) { clearInterval(barInt); return; }
+    bar.style.width = Math.min(100, ((Date.now() - startTime) / dur) * 100) + '%';
+  }, 200);
+  audio.play().catch(() => showToast('Could not play audio'));
+  audio.onended = () => {
+    clearInterval(barInt);
+    _echoPlayingIdx = null;
+    _echoPlayingAudio = null;
+    renderEchoListenPanel();
+  };
+}
+
+function renderEchoTags() {
+  document.getElementById('echoTagsRow').innerHTML = ECHO_TAGS.map(t =>
+    `<span class="echo-tag-chip${_echoSelectedTag === t ? ' selected' : ''}" onclick="selectEchoTag('${t}')">${t}</span>`
+  ).join('');
+}
+
+function selectEchoTag(tag) {
+  _echoSelectedTag = _echoSelectedTag === tag ? null : tag;
+  renderEchoTags();
+}
+
+function toggleEchoAnon() {
+  _echoAnon = !_echoAnon;
+  const btn = document.getElementById('echoAnonBtn');
+  const input = document.getElementById('echoNameInput');
+  btn.classList.toggle('on', _echoAnon);
+  btn.textContent = _echoAnon ? '✓ Anonymous' : '👤 Anonymous';
+  input.disabled = _echoAnon;
+  input.style.opacity = _echoAnon ? '0.4' : '1';
+  if (_echoAnon) input.value = '';
+}
+
+async function toggleEchoRecord() {
+  if (_echoRecording) {
+    stopEchoRecording();
+  } else {
+    await startEchoRecording();
+  }
+}
+
+async function startEchoRecording() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    _echoAudioChunks = [];
+    _echoMediaRecorder = new MediaRecorder(stream, { mimeType: MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus' : 'audio/webm' });
+    _echoMediaRecorder.ondataavailable = (e) => { if (e.data.size > 0) _echoAudioChunks.push(e.data); };
+    _echoMediaRecorder.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      const blob = new Blob(_echoAudioChunks, { type: _echoMediaRecorder.mimeType });
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        _echoRecordedB64 = e.target.result;
+        document.getElementById('echoPlaybackPreview').classList.add('visible');
+        document.getElementById('echoSaveBtn').disabled = false;
+        document.getElementById('echoRecHint').textContent = 'Recording saved — preview or save below';
+      };
+      reader.readAsDataURL(blob);
+    };
+    _echoMediaRecorder.start(250);
+    _echoRecording = true;
+    _echoSeconds = 0;
+    document.getElementById('echoRecordBtn').classList.add('recording');
+    document.getElementById('echoRecordBtn').textContent = '⏹';
+    document.getElementById('echoRecHint').textContent = 'Recording… tap to stop';
+    _echoTimerInt = setInterval(() => {
+      _echoSeconds++;
+      document.getElementById('echoTimer').textContent = fmtEchoSecs(_echoSeconds);
+      if (_echoSeconds >= 60) stopEchoRecording();
+    }, 1000);
+  } catch (err) {
+    showToast('Microphone access needed to record — please allow in browser');
+  }
+}
+
+function stopEchoRecording() {
+  if (!_echoRecording) return;
+  _echoRecording = false;
+  clearInterval(_echoTimerInt);
+  document.getElementById('echoRecordBtn').classList.remove('recording');
+  document.getElementById('echoRecordBtn').textContent = '🎙';
+  if (_echoMediaRecorder && _echoMediaRecorder.state !== 'inactive') {
+    _echoMediaRecorder.stop();
+  }
+}
+
+function playEchoPreview() {
+  if (!_echoRecordedB64) return;
+  if (_echoPreviewAudio) { _echoPreviewAudio.pause(); _echoPreviewAudio = null; }
+  const audio = new Audio(_echoRecordedB64);
+  _echoPreviewAudio = audio;
+  const bar = document.getElementById('echoPreviewBar');
+  const btn = document.getElementById('echoPreviewPlayBtn');
+  const dur = _echoSeconds * 1000;
+  const startTime = Date.now();
+  btn.textContent = '⏹';
+  const barInt = setInterval(() => {
+    if (!bar) { clearInterval(barInt); return; }
+    bar.style.width = Math.min(100, ((Date.now() - startTime) / dur) * 100) + '%';
+  }, 200);
+  audio.play().catch(() => {});
+  audio.onended = () => {
+    clearInterval(barInt);
+    bar.style.width = '0%';
+    btn.textContent = '▶';
+    _echoPreviewAudio = null;
+  };
+}
+
+function discardEchoRecording() {
+  _echoRecordedB64 = null;
+  _echoSeconds = 0;
+  document.getElementById('echoPlaybackPreview').classList.remove('visible');
+  document.getElementById('echoTimer').textContent = '0:00';
+  document.getElementById('echoRecHint').textContent = 'Tap to start · up to 60 seconds';
+  document.getElementById('echoSaveBtn').disabled = true;
+  document.getElementById('echoPreviewBar').style.width = '0%';
+  document.getElementById('echoPreviewPlayBtn').textContent = '▶';
+}
+
+function saveEchoMemory() {
+  if (!_echoRecordedB64 || !_echoPoi) return;
+  const name = _echoAnon ? '' : (document.getElementById('echoNameInput').value.trim() || '');
+  const memories = getEchoMemories(_echoPoi.id);
+  memories.unshift({
+    name: name || 'Anonymous Traveller',
+    tag: _echoSelectedTag || '',
+    date: new Date().toLocaleDateString('en-NZ', { year: 'numeric', month: 'short', day: 'numeric' }),
+    duration: _echoSeconds,
+    audio: _echoRecordedB64,
+  });
+  saveEchoMemories(_echoPoi.id, memories);
+  showToast(`Your memory is saved at ${_echoPoi.name}!`);
+  discardEchoRecording();
+  document.getElementById('echoNameInput').value = '';
+  _echoSelectedTag = null;
+  renderEchoTags();
+  switchEchoTab('listen');
 }
 
 // ============ ONBOARDING ============

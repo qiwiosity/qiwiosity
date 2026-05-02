@@ -28,6 +28,7 @@
 - **[NEW] Decision Mode enhancements** — VS cards now show hero images, price, rating, and inline 🔊 Audio button per option
 - **[NEW] Compare Sheet + Find Similar Nearby** — Compare button opens a sheet offering "Add this place only" OR "Find similar nearby" with 25/50/100/All NZ radius picker
 - **[NEW] First-Time Onboarding** — 4-slide animated bottom-sheet shown on first visit, localStorage "don't show again", Skip + Next/Finish buttons
+- **[NEW] Community Voices (EchoVerse)** — Location-based audio memory layer: visitors record short audio stories at any POI using MediaRecorder API; base64 stored in localStorage keyed by POI id; "Hear Stories" tab shows all memory cards with ▶ play + progress bar; "Leave a Memory" tab has animated record button, timer, preview, name/anonymous toggle, 9-tag picker; POI popup shows "🎙 Community Voices" strip with voice count badge
 
 ---
 
