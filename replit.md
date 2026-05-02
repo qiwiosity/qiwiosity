@@ -48,6 +48,45 @@ server.js                   ← Simple Node.js HTTP server (port 5000)
 - **Backend**: Supabase (PostgreSQL) — `https://hauksnqehzaxuoeaezji.supabase.co`
 - **Server**: Node.js built-in `http` module
 
+## Phase 3 Feature Sprint (Completed — May 2026)
+
+All applied to `qiwiosity/mobile/prototype.html`:
+
+### Itinerary Redesign
+- **Multi-day support** — Day tabs (Day 1, Day 2…), "＋ Day" button, Move to Day buttons per stop
+- **Collapsible stop cards** — Click header to expand/collapse; shows Audio / Details / Drive actions when open
+- **Drive time rows** — Estimated drive time + distance between every consecutive stop pair
+- **Up/down reorder** — ▲▼ buttons on each card; drag-and-drop HTML5 reorder also enabled
+- **Collapsible stats footer** — Total stops, activity hours, today's distance, estimated drive time, "Show route on map" button
+- **New state fields** — `itineraryDays`, `planActiveDay`, `expandedStops`, `itiStatsOpen`, `templatesOpen`
+- **New helpers** — `addDay()`, `setActiveDay()`, `moveStop()`, `moveStopToDay()`, `toggleStopExpand()`, `clearItinerary()`, `toggleItiStats()`, `togglePlanTemplates()`, `showCommentaryForStop()`
+
+### In-App Trip Routing
+- **`openInAppTripRoute()`** — Uses Google Maps DirectionsService with all day stops as waypoints; draws teal polyline on the map, shows distance + time toast; stays fully in-app (no external Maps)
+
+### POI Popup Redesign
+- **Wider + taller** — 360px wide, 260px hero image height (was 320px / 220px)
+- **Audio strip** — Teal "🔊 Play Audio Guide" button + "with [Voice Name]" label, right below the hero
+- **Clean bottom action row** — Full-width "＋ Add to Itinerary" primary button, then a flex row: Save / Drive / Similar / Compare
+
+### Decision Mode Enhancements
+- **VS card hero images** — Each comparison card now shows the POI photo at top
+- **Price + rating in VS meta** — Shows NZ$ price and ★ rating inline
+- **Inline audio** — "🔊 Audio" button per VS card (stops propagation so clicking audio doesn't pick a winner)
+
+### Compare Sheet + Find Similar Nearby
+- **`openCompareSheet(id)`** — Opens a bottom sheet with two options: "Add this place only" or "Find similar nearby"
+- **Radius picker** — 25 km / 50 km / 100 km / All NZ options
+- **`confirmFindSimilar()`** — Adds the POI + all same-category POIs within the chosen radius to the Compare list; `haversineKm()` calculates great-circle distance
+
+### First-Time Onboarding
+- **4-slide bottom-sheet overlay** — Welcome → Explore → Plan → Compare/Decide
+- **Animated entrance** — `slideUpIn` keyframe animation
+- **Progress dots** — Active dot stretches to pill shape
+- **Persistent** — Shown once on first visit; stored in `localStorage` as `qiwiosity_onboarded`; "Skip" dismisses immediately
+
+---
+
 ## Phase 2 UI / Feature Overhaul (Completed)
 
 All applied to `qiwiosity/mobile/prototype.html`:

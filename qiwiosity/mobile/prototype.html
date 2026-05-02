@@ -156,37 +156,100 @@
   /* ============ ITINERARY PANEL ============ */
   .itinerary-panel {
     background: var(--surface); border-left: 1px solid var(--border);
-    overflow-y: auto; display: flex; flex-direction: column;
-    transition: background 0.3s;
+    display: flex; flex-direction: column; overflow: hidden; transition: background 0.3s;
   }
-  .itinerary-header { padding: 14px 16px; border-bottom: 1px solid var(--border); }
-  .itinerary-header h2 { margin: 0 0 3px; font-size: 15px; font-weight: 700; }
-  .itinerary-header p { margin: 0; font-size: 11px; color: var(--muted); }
-  .itinerary-list { padding: 10px; flex: 1; }
-  .itinerary-list .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 20px; line-height: 1.5; }
+  .iti-header-row {
+    display: flex; align-items: center; padding: 8px 10px 8px 14px;
+    border-bottom: 1px solid var(--border); gap: 5px; flex-shrink: 0;
+  }
+  .iti-header-row h2 { margin: 0; font-size: 14px; font-weight: 700; flex: 1; }
+  .iti-clear-btn {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 13px; padding: 3px 6px; border-radius: 5px; transition: color 0.15s;
+  }
+  .iti-clear-btn:hover { color: #c62828; }
+  .iti-day-tabs {
+    display: flex; align-items: center; gap: 4px; padding: 5px 8px;
+    border-bottom: 1px solid var(--border); overflow-x: auto; flex-shrink: 0; scrollbar-width: none;
+  }
+  .iti-day-tabs::-webkit-scrollbar { display: none; }
+  .iti-day-tab {
+    padding: 3px 10px; border-radius: 99px; font-size: 11px; font-weight: 600;
+    border: 1.5px solid var(--border); background: none; cursor: pointer;
+    color: var(--text2); white-space: nowrap; transition: all 0.15s;
+  }
+  .iti-day-tab.active { background: var(--primary); border-color: var(--primary); color: white; }
+  .iti-day-tab-add {
+    padding: 3px 8px; border-radius: 99px; font-size: 11px; font-weight: 700;
+    border: 1.5px dashed var(--border); background: none; cursor: pointer;
+    color: var(--muted); white-space: nowrap; transition: all 0.15s;
+  }
+  .iti-day-tab-add:hover { border-color: var(--primary); color: var(--primary); }
+  .itinerary-list { flex: 1; overflow-y: auto; padding: 6px; min-height: 0; }
+  .itinerary-list .empty { text-align: center; color: var(--muted); font-size: 12px; padding: 30px 14px; line-height: 1.6; }
   .iti-card {
     background: var(--surface); border: 1.5px solid var(--border);
-    border-radius: 10px; padding: 11px 12px; margin-bottom: 7px;
-    position: relative; cursor: grab; transition: border-color 0.15s;
+    border-radius: 10px; margin-bottom: 3px; transition: border-color 0.15s; overflow: hidden;
   }
   .iti-card:hover { border-color: var(--primary); }
-  .iti-card h4 { margin: 0 0 4px; font-size: 13px; font-weight: 700; color: var(--text); }
-  .iti-card .meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; }
-  .iti-card .remove {
-    position: absolute; top: 8px; right: 8px;
-    background: none; border: none; color: var(--muted);
-    font-size: 17px; cursor: pointer; line-height: 1; padding: 0 4px;
+  .iti-card.expanded { border-color: var(--primary); }
+  .iti-card-header {
+    display: flex; align-items: center; padding: 8px 8px 8px 10px;
+    gap: 7px; cursor: pointer; user-select: none;
   }
-  .iti-card .remove:hover { color: #c62828; }
-  .iti-footer {
-    padding: 14px 16px; border-top: 1px solid var(--border);
-    background: var(--surface2); font-size: 13px;
+  .iti-card-header:hover { background: var(--surface2); }
+  .iti-card-num {
+    width: 22px; height: 22px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; font-weight: 800; color: white; flex-shrink: 0;
   }
-  .iti-footer div { display: flex; justify-content: space-between; margin-bottom: 4px; color: var(--text2); }
-  .iti-footer div.total {
-    font-weight: 700; color: var(--primary-dark); font-size: 14px;
-    border-top: 1px solid var(--border); padding-top: 8px; margin-top: 6px;
+  .iti-card-info { flex: 1; min-width: 0; }
+  .iti-card-name { font-size: 12px; font-weight: 700; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .iti-card-sub { font-size: 10px; color: var(--muted); }
+  .iti-card-reorder { display: flex; flex-direction: column; flex-shrink: 0; }
+  .iti-card-reorder button {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 9px; padding: 1px 5px; line-height: 1.4; transition: color 0.12s;
   }
+  .iti-card-reorder button:hover { color: var(--primary); }
+  .iti-card-remove {
+    background: none; border: none; color: var(--muted); cursor: pointer;
+    font-size: 15px; padding: 0 4px; line-height: 1; flex-shrink: 0;
+  }
+  .iti-card-remove:hover { color: #c62828; }
+  .iti-card-body { padding: 0 10px 10px; display: none; }
+  .iti-card.expanded .iti-card-body { display: block; }
+  .iti-card-actions { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4px; margin-top: 6px; }
+  .iti-card-actions .btn { font-size: 10px; padding: 6px 2px; text-align: center; }
+  .iti-drive-row {
+    display: flex; align-items: center; gap: 5px;
+    padding: 2px 10px; font-size: 10px; color: var(--muted);
+  }
+  .iti-drive-line { flex: 1; border-top: 1px dashed var(--border); }
+  .iti-stats-row { border-top: 1px solid var(--border); flex-shrink: 0; }
+  .iti-stats-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 7px 12px; cursor: pointer; font-size: 11px; font-weight: 600;
+    color: var(--text2); user-select: none;
+  }
+  .iti-stats-toggle:hover { background: var(--surface2); }
+  .iti-stats-body { padding: 0 12px 10px; font-size: 11px; display: none; }
+  .iti-stats-body.open { display: block; }
+  .iti-stat-line { display: flex; justify-content: space-between; padding: 2px 0; color: var(--text2); }
+  .iti-stat-line.total { font-weight: 700; color: var(--primary-dark); border-top: 1px solid var(--border); padding-top: 5px; margin-top: 3px; }
+  .iti-nav-btn {
+    width: 100%; margin-top: 7px; padding: 7px; border-radius: 7px;
+    background: var(--primary); color: white; border: none; cursor: pointer; font-size: 11px; font-weight: 700;
+  }
+  .iti-nav-btn:hover { background: var(--primary-dark); }
+  /* Plan sidebar collapsible sections */
+  .plan-section-toggle {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 0 6px; cursor: pointer; font-size: 14px; font-weight: 700;
+    color: var(--text); user-select: none; border-top: 1px solid var(--border); margin-top: 10px;
+  }
+  .plan-section-toggle:hover { color: var(--primary); }
+  .plan-section-toggle .plan-toggle-arrow { font-size: 10px; color: var(--muted); }
 
   /* ============ GOOGLE MAPS INFOWINDOW ============ */
   .gm-style .gm-style-iw-c { border-radius: 14px !important; padding: 0 !important; overflow: hidden !important; box-shadow: var(--shadow-lg) !important; }
@@ -194,7 +257,7 @@
   .gm-style .gm-style-iw-tc { display: none; }
 
   .popup-hero {
-    width: 100%; height: 220px;
+    width: 100%; height: 260px;
     object-fit: cover; display: block; background: #c8d8d8;
   }
   .popup-hero-wrap { position: relative; overflow: hidden; }
@@ -223,7 +286,7 @@
     position: absolute; top: 6px; right: 8px;
     font-size: 9px; color: rgba(255,255,255,0.5); font-style: italic; z-index: 3;
   }
-  .popup-inner { font-family: inherit; width: 320px; background: var(--surface); }
+  .popup-inner { font-family: inherit; width: 360px; background: var(--surface); }
   .popup-gallery {
     display: flex; gap: 4px; margin: 6px 0 8px;
     overflow-x: auto; scrollbar-width: none; padding: 0 13px;
@@ -247,18 +310,31 @@
     background: var(--surface2); border-radius: 99px;
     padding: 2px 8px; font-size: 10px; color: var(--muted);
   }
-  .popup-inner .pop-actions {
-    display: grid; grid-template-columns: 1fr 1fr;
-    gap: 5px; padding: 9px 11px 12px;
-    border-top: 1px solid var(--border);
+  .popup-audio-strip {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 13px 8px; background: rgba(21,136,138,0.07);
+    border-bottom: 1px solid rgba(21,136,138,0.15);
   }
-  .popup-inner .pop-actions .btn {
-    font-size: 11px; padding: 8px 4px; text-align: center; border-radius: 8px;
+  .popup-audio-btn {
+    display: flex; align-items: center; gap: 5px;
+    background: var(--primary); color: white; border: none;
+    padding: 7px 14px; border-radius: 20px; font-size: 12px; font-weight: 700;
+    cursor: pointer; white-space: nowrap; flex-shrink: 0;
+  }
+  .popup-audio-btn:hover { opacity: 0.88; }
+  .popup-audio-persona { font-size: 11px; color: var(--muted); }
+  .pop-actions-bottom { padding: 10px 12px 13px; border-top: 1px solid var(--border); }
+  .pop-btn-row { display: flex; gap: 5px; margin-top: 0; }
+  .pop-btn-row .btn, .pop-btn-row .btn-save {
+    flex: 1; font-size: 11px; padding: 7px 3px;
+    text-align: center; border-radius: 8px;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .popup-inner .pop-actions .btn.primary { grid-column: 1 / -1; }
-  .popup-inner .pop-actions .btn-save {
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  .vs-card-img {
+    width: calc(100% + 0px); height: 130px;
+    background-size: cover; background-position: center;
+    border-radius: 8px 8px 0 0; margin: -14px -14px 10px -14px;
+    flex-shrink: 0;
   }
 
   /* ============ BUTTONS ============ */
@@ -392,12 +468,11 @@
   /* ============ ITINERARY ENHANCEMENTS ============ */
   .iti-actions { display: flex; gap: 5px; margin-top: 8px; }
   .iti-actions .btn { flex: 1; font-size: 11px; padding: 6px 6px; }
-  .trip-directions { padding: 10px 14px 0; background: var(--surface2); }
-  .trip-directions button {
-    width: 100%; background: var(--primary); color: white; border: none;
-    padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
+  .iti-day-badge {
+    display: inline-block; font-size: 9px; font-weight: 700; padding: 1px 5px;
+    border-radius: 4px; margin-left: 4px; opacity: 0.7;
+    background: var(--surface2); color: var(--muted); border: 1px solid var(--border);
   }
-  .trip-directions button:hover { background: var(--primary-dark); }
 
   /* ============ PLAN VIEW ============ */
   .plan-show-all-toggle {
@@ -508,6 +583,63 @@
   }
   .compare-clear-btn:hover { border-color: #c62828; color: #c62828; }
 
+  /* ============ ONBOARDING OVERLAY ============ */
+  .onboarding-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); z-index: 19000;
+    display: none; align-items: flex-end; justify-content: center;
+  }
+  .onboarding-overlay.active { display: flex; }
+  .onboarding-card {
+    background: var(--surface); border-radius: 22px 22px 0 0;
+    padding: 30px 24px 36px; width: 100%; max-width: 480px;
+    animation: slideUpIn 0.35s cubic-bezier(0.2,0.9,0.4,1);
+  }
+  @keyframes slideUpIn {
+    from { transform: translateY(80px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  .onboarding-icon { font-size: 44px; text-align: center; margin-bottom: 14px; }
+  .onboarding-title { font-size: 22px; font-weight: 800; text-align: center; margin-bottom: 8px; color: var(--text); }
+  .onboarding-desc { font-size: 14px; color: var(--text2); text-align: center; line-height: 1.65; margin-bottom: 24px; }
+  .onboarding-dots { display: flex; justify-content: center; gap: 7px; margin-bottom: 24px; }
+  .onboarding-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); transition: all 0.25s; }
+  .onboarding-dot.active { background: var(--primary); width: 24px; border-radius: 4px; }
+  .onboarding-btns { display: flex; gap: 10px; }
+
+  /* ============ SIMILAR NEARBY SHEET ============ */
+  .similar-sheet-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); z-index: 8500;
+    display: none; align-items: flex-end; justify-content: center;
+  }
+  .similar-sheet-overlay.active { display: flex; }
+  .similar-sheet {
+    background: var(--surface); border-radius: 22px 22px 0 0;
+    padding: 22px 18px 30px; width: 100%; max-width: 480px;
+  }
+  .similar-sheet h3 { font-size: 16px; font-weight: 800; margin: 0 0 4px; color: var(--text); }
+  .similar-sheet > p { font-size: 12px; color: var(--muted); margin: 0 0 16px; }
+  .similar-radius-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .similar-radius-btn {
+    flex: 1; min-width: 60px; padding: 10px 6px; border-radius: 10px;
+    border: 1.5px solid var(--border); background: var(--surface);
+    font-size: 13px; font-weight: 700; color: var(--text2); cursor: pointer;
+    text-align: center; transition: all 0.15s;
+  }
+  .similar-radius-btn.selected { border-color: var(--primary); background: rgba(21,136,138,0.1); color: var(--primary); }
+  .compare-sheet-options { display: flex; flex-direction: column; gap: 9px; margin-bottom: 12px; }
+  .compare-sheet-opt {
+    display: flex; align-items: center; gap: 12px;
+    padding: 13px 14px; border-radius: 12px;
+    border: 1.5px solid var(--border); background: var(--surface);
+    cursor: pointer; transition: all 0.15s; text-align: left;
+  }
+  .compare-sheet-opt:hover { border-color: var(--primary); background: rgba(21,136,138,0.06); }
+  .compare-sheet-opt .opt-icon { font-size: 22px; flex-shrink: 0; }
+  .compare-sheet-opt .opt-title { font-size: 13px; font-weight: 700; color: var(--text); }
+  .compare-sheet-opt .opt-desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
   /* ============ DECISION OVERLAY ============ */
   .decision-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -532,8 +664,15 @@
   .vs-card {
     background: var(--surface); border: 2px solid var(--border);
     border-radius: 12px; padding: 14px; cursor: pointer; transition: all 0.2s;
+    overflow: hidden;
   }
   .vs-card:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(21,136,138,0.15); }
+  .vs-audio-btn {
+    margin-left: auto; background: rgba(21,136,138,0.1); border: 1px solid rgba(21,136,138,0.3);
+    color: var(--primary); border-radius: 99px; padding: 4px 10px;
+    font-size: 11px; font-weight: 700; cursor: pointer; white-space: nowrap;
+  }
+  .vs-audio-btn:hover { background: rgba(21,136,138,0.2); }
   .vs-card .vs-name { font-size: 16px; font-weight: 700; margin-bottom: 3px; color: var(--text); }
   .vs-card .vs-meta { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
   .vs-card .vs-desc { font-size: 13px; line-height: 1.5; color: var(--text2); }
@@ -897,10 +1036,15 @@
       <div id="planCategoryChips" class="plan-category-chips" style="display:none;"></div>
       <div id="planStopList"></div>
       <div id="planStats"></div>
-      <h2 style="margin-top:20px;">Quick templates</h2>
-      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')">10-day North Island Classic</button>
-      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')">14-day South Island Epic</button>
-      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')">7-day Adventure Capital</button>
+      <div class="plan-section-toggle" onclick="togglePlanTemplates()">
+        <span>Quick templates</span>
+        <span class="plan-toggle-arrow" id="planTemplatesArrow">▶</span>
+      </div>
+      <div id="planTemplatesBody" style="display:none;">
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')">10-day North Island Classic</button>
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')">14-day South Island Epic</button>
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')">7-day Adventure Capital</button>
+      </div>
     </div>
 
     <div class="view" id="view-compare">
@@ -940,17 +1084,21 @@
   </main>
 
   <aside class="itinerary-panel">
-    <div class="itinerary-header">
-      <h2>Your Itinerary</h2>
-      <p>Drag items to reorder</p>
+    <div class="iti-header-row">
+      <h2>Your Trip</h2>
+      <button class="iti-day-tab-add" id="itiAddDayBtn" onclick="addDay()" style="display:none;">＋ Day</button>
+      <button class="iti-clear-btn" onclick="clearItinerary()" title="Clear all stops">🗑</button>
     </div>
+    <div id="itiDayTabs" class="iti-day-tabs" style="display:none;"></div>
     <div class="itinerary-list" id="itineraryList">
-      <div class="empty">Nothing planned yet. Click a pin on the map to add it.</div>
+      <div class="empty">Nothing planned yet.<br>Tap ＋ on any map pin to add stops.</div>
     </div>
-    <div class="iti-footer" id="itineraryFooter" style="display:none;">
-      <div><span>Stops</span><span id="sumStops">0</span></div>
-      <div><span>Total time</span><span id="sumHours">0 hrs</span></div>
-      <div class="total"><span>Driving distance</span><span id="sumDistance">— km</span></div>
+    <div class="iti-stats-row" id="itiStatsRow" style="display:none;">
+      <div class="iti-stats-toggle" onclick="toggleItiStats()">
+        <span id="itiStatsLabel">Trip summary</span>
+        <span id="itiStatsArrow">▶</span>
+      </div>
+      <div class="iti-stats-body" id="itiStatsBody"></div>
     </div>
   </aside>
 </div>
@@ -966,6 +1114,44 @@
     <div class="bar-label" id="decisionBarLabel"></div>
   </div>
   <div class="decision-body" id="decisionBody"></div>
+</div>
+
+<!-- ============ ONBOARDING OVERLAY ============ -->
+<div class="onboarding-overlay" id="onboardingOverlay">
+  <div class="onboarding-card">
+    <div class="onboarding-icon" id="onboardingIcon">🗺️</div>
+    <div class="onboarding-title" id="onboardingTitle">Welcome to Qiwiosity</div>
+    <div class="onboarding-desc" id="onboardingDesc">Your pocket guide to 2,400+ handpicked places across Aotearoa New Zealand.</div>
+    <div class="onboarding-dots" id="onboardingDots"></div>
+    <div class="onboarding-btns">
+      <button class="btn" style="flex:1" onclick="skipOnboarding()">Skip</button>
+      <button class="btn primary" style="flex:2" id="onboardingNextBtn" onclick="nextOnboardingSlide()">Next →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ COMPARE / SIMILAR SHEET ============ -->
+<div class="similar-sheet-overlay" id="compareSheetOverlay" onclick="if(event.target===this)closeCompareSheet()">
+  <div class="similar-sheet">
+    <h3 id="compareSheetTitle">Add to Compare</h3>
+    <p id="compareSheetDesc">Choose how to add this place to your Compare list</p>
+    <div class="compare-sheet-options">
+      <div class="compare-sheet-opt" id="compareSheetSingleOpt" onclick="confirmCompareSheetSingle()">
+        <span class="opt-icon">＋</span>
+        <div><div class="opt-title">Add this place only</div><div class="opt-desc">Adds just this one stop to Compare</div></div>
+      </div>
+      <div class="compare-sheet-opt" onclick="showSimilarRadiusPicker()">
+        <span class="opt-icon">🔍</span>
+        <div><div class="opt-title">Find similar nearby</div><div class="opt-desc" id="compareSheetSimilarDesc">Add all nearby places in the same category</div></div>
+      </div>
+    </div>
+    <div id="similarRadiusSection" style="display:none">
+      <div style="font-size:12px;font-weight:700;color:var(--muted);margin-bottom:8px;letter-spacing:0.5px;">SEARCH RADIUS</div>
+      <div class="similar-radius-row" id="similarRadiusBtns"></div>
+      <button class="btn primary" style="width:100%;margin-bottom:8px" onclick="confirmFindSimilar()">Find & Add to Compare</button>
+    </div>
+    <button class="btn" style="width:100%" onclick="closeCompareSheet()">Cancel</button>
+  </div>
 </div>
 
 <!-- ============ SETTINGS MODAL ============ -->
@@ -1374,6 +1560,11 @@ const state = {
   activeAccomTypes: new Set(ACCOMMODATION_TYPES.map(t => t.id)),
   showAccom: false,
   itinerary: [],
+  itineraryDays: 1,
+  planActiveDay: 1,
+  expandedStops: new Set(),
+  itiStatsOpen: false,
+  templatesOpen: false,
 };
 
 // ============ GOOGLE MAPS GLOBALS ============
@@ -1498,13 +1689,46 @@ function showToast(message) {
 }
 
 function openTripDirections() {
-  if (!state.itinerary.length) return;
-  const last = state.itinerary[state.itinerary.length - 1];
-  const waypoints = state.itinerary.slice(0, -1).map(a => `${a.lat},${a.lng}`).join('|');
-  let url = `https://www.google.com/maps/dir/?api=1&destination=${last.lat},${last.lng}&travelmode=driving`;
-  if (waypoints) url += `&waypoints=${encodeURIComponent(waypoints)}`;
-  window.open(url, '_blank');
-  showToast(`Opening driving directions for your ${state.itinerary.length}-stop trip`);
+  openInAppTripRoute();
+}
+
+function openInAppTripRoute() {
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
+  if (!dayStops.length) { showToast('No stops to route'); return; }
+  if (dayStops.length === 1) { showInAppRoute(dayStops[0]); return; }
+  if (_directionsRenderer) { _directionsRenderer.setMap(null); _directionsRenderer = null; }
+  const origin = { lat: dayStops[0].lat, lng: dayStops[0].lng };
+  const destination = { lat: dayStops[dayStops.length - 1].lat, lng: dayStops[dayStops.length - 1].lng };
+  const waypoints = dayStops.slice(1, -1).map(a => ({ location: { lat: a.lat, lng: a.lng }, stopover: true }));
+  const directionsService = new google.maps.DirectionsService();
+  _directionsRenderer = new google.maps.DirectionsRenderer({
+    map,
+    suppressMarkers: true,
+    polylineOptions: { strokeColor: '#15888A', strokeWeight: 5, strokeOpacity: 0.85 },
+  });
+  directionsService.route({ origin, destination, waypoints, travelMode: google.maps.TravelMode.DRIVING, optimizeWaypoints: false },
+    (result, status) => {
+      if (status === 'OK') {
+        _directionsRenderer.setDirections(result);
+        const totalDist = result.routes[0].legs.reduce((s, l) => s + l.distance.value, 0);
+        const totalTime = result.routes[0].legs.reduce((s, l) => s + l.duration.value, 0);
+        const mins = Math.round(totalTime / 60);
+        const distKm = Math.round(totalDist / 1000);
+        showToast(`📍 ${dayStops.length}-stop route · ${distKm} km · ${mins < 60 ? mins + ' min' : Math.floor(mins/60) + 'h ' + (mins%60) + 'm'}`);
+        if (state.view !== 'plan') {
+          document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+          document.querySelector('.tab[data-view="plan"]').classList.add('active');
+          document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+          document.getElementById('view-plan').classList.add('active');
+          state.view = 'plan';
+          renderPlanSidebar();
+        }
+      } else {
+        showToast('Could not calculate route — check your stops');
+        _directionsRenderer = null;
+      }
+    }
+  );
 }
 
 function showMoreLikeThis(a) {
@@ -1773,53 +1997,111 @@ function haversine(a, b) {
 
 function renderItinerary() {
   const list = document.getElementById('itineraryList');
-  const footer = document.getElementById('itineraryFooter');
+  const statsRow = document.getElementById('itiStatsRow');
+  const dayTabsEl = document.getElementById('itiDayTabs');
+  const addDayBtn = document.getElementById('itiAddDayBtn');
+
+  // Ensure all items have a day number
+  state.itinerary.forEach(a => { if (!a.day) a.day = 1; });
+  if (state.itinerary.length > 0) {
+    const maxDay = Math.max(...state.itinerary.map(a => a.day));
+    state.itineraryDays = Math.max(state.itineraryDays, maxDay);
+  }
+
   if (state.itinerary.length === 0) {
-    list.innerHTML = '<div class="empty">Nothing planned yet. Click a pin on the map to add it.</div>';
-    footer.style.display = 'none';
-    const existingTripDir = document.getElementById('tripDirections');
-    if (existingTripDir) existingTripDir.style.display = 'none';
+    list.innerHTML = '<div class="empty">Nothing planned yet.<br>Tap ＋ on any map pin to add stops.</div>';
+    statsRow.style.display = 'none';
+    dayTabsEl.style.display = 'none';
+    addDayBtn.style.display = 'none';
     return;
   }
-  list.innerHTML = state.itinerary.map((a, i) => `
-    <div class="iti-card" draggable="true" data-id="${a.id}">
-      <h4>${i + 1}. ${a.name}</h4>
-      <div class="meta">
-        <span style="color:${catColor(a.category)};font-weight:600;">● ${catLabel(a.category)}</span>
-        <span>${a.duration_hours}h</span>
-      </div>
-      <div class="iti-actions">
-        <button class="btn" data-action="view" data-id="${a.id}" title="View details on map">👁 Details</button>
-        <button class="btn" data-action="directions" data-id="${a.id}" title="Driving directions">🧭 Drive to</button>
-      </div>
-      <button class="remove" data-action="remove" data-id="${a.id}" title="Remove">×</button>
-    </div>
-  `).join('');
 
+  // Show/hide add-day button
+  addDayBtn.style.display = 'inline-block';
+
+  // Render day tabs when multi-day
+  if (state.itineraryDays > 1) {
+    dayTabsEl.style.display = 'flex';
+    dayTabsEl.innerHTML = Array.from({length: state.itineraryDays}, (_, i) => i + 1).map(d =>
+      `<button class="iti-day-tab ${state.planActiveDay === d ? 'active' : ''}" onclick="setActiveDay(${d})">Day ${d}</button>`
+    ).join('');
+  } else {
+    dayTabsEl.style.display = 'none';
+  }
+
+  // Stops for the active day
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
+  const allDayStops = (d) => state.itinerary.filter(a => (a.day || 1) === d);
+
+  if (dayStops.length === 0) {
+    list.innerHTML = `<div class="empty">No stops for Day ${state.planActiveDay} yet.<br>Add stops or move them from another day.</div>`;
+  } else {
+    let html = '';
+    dayStops.forEach((a, idx) => {
+      const cat = CATEGORIES.find(c => c.id === a.category) || { color: '#999' };
+      const isExpanded = state.expandedStops.has(a.id);
+      const isFirst = idx === 0;
+      const isLast = idx === dayStops.length - 1;
+      if (!isFirst) {
+        const prev = dayStops[idx - 1];
+        const distKm = Math.round(haversine(prev, a));
+        const driveMin = Math.round((distKm / 75) * 60);
+        const driveStr = driveMin < 60 ? `${driveMin} min` : `${Math.floor(driveMin/60)}h ${driveMin%60 ? driveMin%60+'m' : ''}`;
+        html += `<div class="iti-drive-row"><div class="iti-drive-line"></div><span>🚗 ~${driveStr} · ${distKm} km</span><div class="iti-drive-line"></div></div>`;
+      }
+      const dayMoveOptions = state.itineraryDays > 1
+        ? `<div style="margin-top:6px;font-size:10px;color:var(--muted);">Move to day:
+            ${Array.from({length:state.itineraryDays},(_,i)=>i+1).map(d=>
+              `<button class="btn" style="font-size:10px;padding:2px 8px;margin:2px;" onclick="event.stopPropagation();moveStopToDay('${a.id}',${d})" ${(a.day||1)===d?'disabled style="opacity:0.4"':''}>Day ${d}</button>`
+            ).join('')}
+          </div>` : '';
+      html += `<div class="iti-card ${isExpanded ? 'expanded' : ''}" data-id="${a.id}" draggable="true">
+        <div class="iti-card-header" onclick="toggleStopExpand('${a.id}')">
+          <div class="iti-card-num" style="background:${cat.color}">${idx + 1}</div>
+          <div class="iti-card-info">
+            <div class="iti-card-name">${a.name}</div>
+            <div class="iti-card-sub">${catLabel(a.category)} · ${a.duration_hours}h</div>
+          </div>
+          <div class="iti-card-reorder">
+            <button onclick="event.stopPropagation();moveStop('${a.id}','up')" title="Move up" ${isFirst?'disabled style="opacity:0.2"':''}>▲</button>
+            <button onclick="event.stopPropagation();moveStop('${a.id}','down')" title="Move down" ${isLast?'disabled style="opacity:0.2"':''}>▼</button>
+          </div>
+          <button class="iti-card-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
+        </div>
+        <div class="iti-card-body">
+          <div class="iti-card-actions">
+            <button class="btn" onclick="showCommentaryForStop('${a.id}')">🔊 Audio</button>
+            <button class="btn" onclick="openAttractionDetails('${a.id}')">👁 Details</button>
+            <button class="btn" onclick="showInAppRoute(state.itinerary.find(x=>x.id==='${a.id}'))">🧭 Drive</button>
+          </div>
+          ${dayMoveOptions}
+        </div>
+      </div>`;
+    });
+    list.innerHTML = html;
+  }
+
+  // Stats footer (collapsible)
+  statsRow.style.display = 'block';
+  const totalStops = state.itinerary.length;
   const hours = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
-  let dist = 0;
-  for (let i = 1; i < state.itinerary.length; i++) {
-    dist += haversine(state.itinerary[i - 1], state.itinerary[i]);
-  }
-  document.getElementById('sumStops').textContent = state.itinerary.length;
-  document.getElementById('sumHours').textContent = hours + ' hrs';
-  document.getElementById('sumDistance').textContent = Math.round(dist) + ' km (as the crow flies)';
-  footer.style.display = 'block';
+  const dayDist = (() => { let d = 0; for (let i = 1; i < dayStops.length; i++) d += haversine(dayStops[i-1], dayStops[i]); return d; })();
+  const driveHrs = Math.round((dayDist / 75) * 10) / 10;
+  document.getElementById('itiStatsLabel').textContent =
+    `${totalStops} stop${totalStops !== 1 ? 's' : ''} · Day: ${Math.round(dayDist)}km`;
+  document.getElementById('itiStatsBody').innerHTML = `
+    <div class="iti-stat-line"><span>Total stops</span><span>${totalStops}</span></div>
+    <div class="iti-stat-line"><span>Activity time</span><span>${hours} hrs</span></div>
+    <div class="iti-stat-line"><span>Today's distance</span><span>~${Math.round(dayDist)} km</span></div>
+    <div class="iti-stat-line total"><span>Est. drive time</span><span>~${driveHrs} hrs</span></div>
+    <button class="iti-nav-btn" onclick="openInAppTripRoute()">🧭 Show route on map</button>
+  `;
 
-  let tripDir = document.getElementById('tripDirections');
-  if (!tripDir) {
-    tripDir = document.createElement('div');
-    tripDir.id = 'tripDirections';
-    tripDir.className = 'trip-directions';
-    tripDir.innerHTML = '<button onclick="openTripDirections()">🧭 Get driving directions for whole trip</button>';
-    footer.parentNode.insertBefore(tripDir, footer);
-  }
-  tripDir.style.display = 'block';
-
+  // Drag-and-drop reorder
   let dragId = null;
   list.querySelectorAll('.iti-card').forEach(el => {
     el.addEventListener('dragstart', (e) => {
-      if (e.target.closest('[data-action]')) { e.preventDefault(); return; }
+      if (e.target.closest('button')) { e.preventDefault(); return; }
       dragId = el.dataset.id; el.style.opacity = '0.4';
     });
     el.addEventListener('dragend', () => { el.style.opacity = '1'; });
@@ -1833,27 +2115,7 @@ function renderItinerary() {
       const [item] = state.itinerary.splice(from, 1);
       state.itinerary.splice(to, 0, item);
       renderItinerary();
-      if (state.view === 'plan') {
-        renderPlanSidebar();
-        renderPlanMap();
-      }
-    });
-    el.addEventListener('click', (e) => {
-      if (e.target.closest('[data-action]')) return;
-      openAttractionDetails(el.dataset.id);
-    });
-  });
-
-  list.querySelectorAll('[data-action]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const id = btn.dataset.id;
-      const action = btn.dataset.action;
-      const a = state.itinerary.find(x => x.id === id);
-      if (!a) return;
-      if (action === 'view') openAttractionDetails(id);
-      if (action === 'directions') openDirections(a);
-      if (action === 'remove') removeFromItinerary(id);
+      if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
     });
   });
 }
@@ -2094,6 +2356,7 @@ function openPoiInfoWindow(a, marker) {
     : '';
 
   const inIti = state.itinerary.some(x => x.id === a.id);
+  const voiceName = (VOICE_PERSONAS.find(p => p.id === selectedPersonaId) || VOICE_PERSONAS[0] || {}).name || 'Audio Guide';
   const content = `
     <div class="popup-inner">
       <div class="popup-hero-wrap">
@@ -2110,7 +2373,11 @@ function openPoiInfoWindow(a, marker) {
         </div>
       </div>
       ${galleryThumbs}
-      <p style="margin:0;padding:10px 14px 6px;font-size:13px;line-height:1.5;color:var(--text);">${a.short || ''}</p>
+      <div class="popup-audio-strip">
+        <button class="popup-audio-btn" onclick="showCommentaryPopup('${a.id}')">🔊 Play Audio Guide</button>
+        <span class="popup-audio-persona">with ${voiceName}</span>
+      </div>
+      <p style="margin:0;padding:9px 14px 6px;font-size:13px;line-height:1.5;color:var(--text);">${a.short || ''}</p>
       ${a.reviews?.summary ? `
       <div style="background:#F0F8F8;border:1px solid rgba(21,136,138,0.2);border-radius:8px;padding:8px 12px;margin:0 12px 6px;">
         <div style="font-size:9px;font-weight:800;color:var(--primary);letter-spacing:1.2px;margin-bottom:3px;">✦ VISITOR OVERVIEW</div>
@@ -2125,16 +2392,16 @@ function openPoiInfoWindow(a, marker) {
         <span>Book tours · earn us a small commission</span>
         <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 Find nearby stays</a>
       </div>
-      <div class="pop-actions" style="border-top:none;padding-top:6px;">
+      <div class="pop-actions-bottom">
         <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
-          class="btn primary">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
-        <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
-          onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤ Saved' : '♡ Save'}</button>
-        <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Directions</button>
-        <button onclick="showCommentaryPopup('${a.id}')" class="btn">🎧 Audio</button>
-        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar</button>
-        <button onclick="toggleCompare('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}"
-          style="grid-column:1/-1;">${isInCompare(a.id) ? '✓ In Compare' : '⚖ Compare'}</button>
+          class="btn primary" style="width:100%;margin-bottom:7px;">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
+        <div class="pop-btn-row">
+          <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
+            onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤' : '♡'} Save</button>
+          <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Drive</button>
+          <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar</button>
+          <button onclick="openCompareSheet('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}">${isInCompare(a.id) ? '✓' : '⚖'} Compare</button>
+        </div>
       </div>
     </div>
   `;
@@ -2255,9 +2522,88 @@ const TEMPLATES = {
   'south-epic': ['marlborough-sounds','abel-tasman','pancake-rocks','franz-josef-glacier','aoraki-mt-cook','lake-tekapo','wanaka-roys-peak','queenstown-skyline','milford-sound','doubtful-sound'],
   'adventure': ['queenstown-skyline','wanaka-roys-peak','milford-sound','tongariro-crossing','cathedral-cove','waitomo-caves','routeburn-track']
 };
+// ============ ITINERARY HELPERS ============
+function addDay() {
+  state.itineraryDays++;
+  state.planActiveDay = state.itineraryDays;
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+  showToast(`Day ${state.itineraryDays} added`);
+}
+
+function setActiveDay(day) {
+  state.planActiveDay = day;
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+}
+
+function moveStop(id, dir) {
+  const day = (state.itinerary.find(x => x.id === id) || {}).day || 1;
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === day);
+  const globalIdx = state.itinerary.findIndex(x => x.id === id);
+  const dayIdx = dayStops.findIndex(x => x.id === id);
+  if (dir === 'up' && dayIdx > 0) {
+    const prevId = dayStops[dayIdx - 1].id;
+    const prevGlobalIdx = state.itinerary.findIndex(x => x.id === prevId);
+    [state.itinerary[globalIdx], state.itinerary[prevGlobalIdx]] = [state.itinerary[prevGlobalIdx], state.itinerary[globalIdx]];
+  } else if (dir === 'down' && dayIdx < dayStops.length - 1) {
+    const nextId = dayStops[dayIdx + 1].id;
+    const nextGlobalIdx = state.itinerary.findIndex(x => x.id === nextId);
+    [state.itinerary[globalIdx], state.itinerary[nextGlobalIdx]] = [state.itinerary[nextGlobalIdx], state.itinerary[globalIdx]];
+  }
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+}
+
+function moveStopToDay(id, newDay) {
+  const stop = state.itinerary.find(x => x.id === id);
+  if (stop) stop.day = parseInt(newDay);
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+  showToast(`Moved to Day ${newDay}`);
+}
+
+function toggleStopExpand(id) {
+  if (state.expandedStops.has(id)) state.expandedStops.delete(id);
+  else state.expandedStops.add(id);
+  renderItinerary();
+  if (state.view === 'plan') renderPlanSidebar();
+}
+
+function clearItinerary() {
+  if (!state.itinerary.length) return;
+  if (!confirm('Remove all stops from your trip?')) return;
+  state.itinerary = [];
+  state.itineraryDays = 1;
+  state.planActiveDay = 1;
+  state.expandedStops = new Set();
+  renderItinerary();
+  renderAttractions();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+}
+
+function toggleItiStats() {
+  state.itiStatsOpen = !state.itiStatsOpen;
+  document.getElementById('itiStatsBody').classList.toggle('open', state.itiStatsOpen);
+  document.getElementById('itiStatsArrow').textContent = state.itiStatsOpen ? '▼' : '▶';
+}
+
+function togglePlanTemplates() {
+  state.templatesOpen = !state.templatesOpen;
+  document.getElementById('planTemplatesBody').style.display = state.templatesOpen ? 'block' : 'none';
+  document.getElementById('planTemplatesArrow').textContent = state.templatesOpen ? '▼' : '▶';
+}
+
+function showCommentaryForStop(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (a) showCommentary(a, false);
+}
+
 function loadTemplate(id) {
   const ids = TEMPLATES[id] || [];
   state.itinerary = ids.map(x => ATTRACTIONS.find(a => a.id === x)).filter(Boolean);
+  state.itinerary.forEach(a => { a.day = 1; });
+  state.itineraryDays = 1; state.planActiveDay = 1;
   renderItinerary();
   if (state.view === 'plan') {
     renderPlanSidebar();
@@ -2309,6 +2655,9 @@ function renderPlanSidebar() {
   const listEl = document.getElementById('planStopList');
   const statsEl = document.getElementById('planStats');
 
+  // Ensure day assigned
+  state.itinerary.forEach(a => { if (!a.day) a.day = 1; });
+
   if (state.itinerary.length === 0) {
     listEl.innerHTML = `<div class="plan-empty">
       <div class="plan-empty-icon">🗺</div>
@@ -2318,31 +2667,65 @@ function renderPlanSidebar() {
     return;
   }
 
-  listEl.innerHTML = '<div class="plan-stop-list">' + state.itinerary.map((a, i) => {
-    const color = catColor(a.category);
-    return `<div class="plan-stop-card" onclick="panToStop('${a.id}')">
-      <div class="plan-stop-num" style="background:${color}">${i + 1}</div>
-      <div class="plan-stop-info">
-        <p class="plan-stop-name">${a.name}</p>
-        <p class="plan-stop-meta">${catLabel(a.category)} · ${a.duration_hours}h</p>
-      </div>
-      <button class="plan-stop-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
-    </div>`;
-  }).join('') + '</div>';
+  // Day filter tabs in plan sidebar
+  const dayTabsHtml = state.itineraryDays > 1 ? `
+    <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;">
+      ${Array.from({length:state.itineraryDays},(_,i)=>i+1).map(d =>
+        `<button class="iti-day-tab ${state.planActiveDay===d?'active':''}" onclick="setActiveDay(${d})" style="font-size:11px;">Day ${d}</button>`
+      ).join('')}
+    </div>` : '';
 
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
+
+  let stopsHtml = '';
+  dayStops.forEach((a, idx) => {
+    const color = catColor(a.category);
+    const isExpanded = state.expandedStops.has(a.id);
+    const isFirst = idx === 0;
+    const isLast = idx === dayStops.length - 1;
+    // Drive time row
+    if (!isFirst) {
+      const prev = dayStops[idx - 1];
+      const distKm = Math.round(haversine(prev, a));
+      const driveMin = Math.round((distKm / 75) * 60);
+      const driveStr = driveMin < 60 ? `${driveMin}min` : `${Math.floor(driveMin/60)}h${driveMin%60 ? driveMin%60+'m' : ''}`;
+      stopsHtml += `<div class="iti-drive-row" style="margin:0 4px;"><div class="iti-drive-line"></div><span>🚗 ~${driveStr} · ${distKm}km</span><div class="iti-drive-line"></div></div>`;
+    }
+    stopsHtml += `<div class="plan-stop-card ${isExpanded?'expanded':''}" onclick="toggleStopExpand('${a.id}')" data-id="${a.id}">
+      <div style="display:flex;align-items:center;gap:7px;">
+        <div class="plan-stop-num" style="background:${color}">${idx + 1}</div>
+        <div class="plan-stop-info" style="flex:1;min-width:0;">
+          <p class="plan-stop-name">${a.name}</p>
+          <p class="plan-stop-meta">${catLabel(a.category)} · ${a.duration_hours}h</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1px;flex-shrink:0;">
+          <button style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:9px;padding:1px 4px;line-height:1.4;" onclick="event.stopPropagation();moveStop('${a.id}','up')" ${isFirst?'disabled style="opacity:0.2"':''}>▲</button>
+          <button style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:9px;padding:1px 4px;line-height:1.4;" onclick="event.stopPropagation();moveStop('${a.id}','down')" ${isLast?'disabled style="opacity:0.2"':''}>▼</button>
+        </div>
+        <button class="plan-stop-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
+      </div>
+      ${isExpanded ? `<div class="iti-card-actions" style="margin-top:6px;">
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();showCommentaryForStop('${a.id}')">🔊 Audio</button>
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();openAttractionDetails('${a.id}')">👁 Details</button>
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();panToStop('${a.id}')">📍 Map</button>
+      </div>` : ''}
+    </div>`;
+  });
+
+  listEl.innerHTML = dayTabsHtml + '<div class="plan-stop-list">' + stopsHtml + '</div>';
+
+  // Stats
   const hours = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
   let dist = 0;
-  for (let i = 1; i < state.itinerary.length; i++) {
-    dist += haversine(state.itinerary[i - 1], state.itinerary[i]);
-  }
+  for (let i = 1; i < dayStops.length; i++) dist += haversine(dayStops[i-1], dayStops[i]);
   const driveHrs = Math.round((Math.round(dist) / 75) * 10) / 10;
 
   statsEl.innerHTML = `<div class="plan-stats">
-    <div class="stat-row"><span>Stops</span><span>${state.itinerary.length}</span></div>
+    <div class="stat-row"><span>Total stops</span><span>${state.itinerary.length}</span></div>
     <div class="stat-row"><span>Activity time</span><span>${hours} hrs</span></div>
-    <div class="stat-row"><span>Driving distance</span><span>${Math.round(dist)} km</span></div>
-    <div class="stat-row total"><span>Est. drive time</span><span>${driveHrs} hrs</span></div>
-    <button class="plan-nav-btn" onclick="openTripDirections()">🧭 Navigate whole trip</button>
+    <div class="stat-row"><span>Today's distance</span><span>~${Math.round(dist)} km</span></div>
+    <div class="stat-row total"><span>Est. drive time</span><span>~${driveHrs} hrs</span></div>
+    <button class="plan-nav-btn" onclick="openInAppTripRoute()">🧭 Show route on map</button>
   </div>`;
 }
 
@@ -2641,32 +3024,40 @@ function renderDecisionPair() {
   const catB = CATEGORIES.find(c => c.id === pair.b.category) || { color: '#999', label: pair.b.category };
   const rA = pair.a.reviews?.rating ? `★ ${pair.a.reviews.rating.toFixed(1)}` : '';
   const rB = pair.b.reviews?.rating ? `★ ${pair.b.reviews.rating.toFixed(1)}` : '';
+  const imgA = getPoiImageUrls(pair.a)[0] || '';
+  const imgB = getPoiImageUrls(pair.b)[0] || '';
+  const priceA = pair.a.price_nzd ? `NZ$${pair.a.price_nzd}` : (pair.a.entry_fee ? `NZ$${pair.a.entry_fee}` : '');
+  const priceB = pair.b.price_nzd ? `NZ$${pair.b.price_nzd}` : (pair.b.entry_fee ? `NZ$${pair.b.entry_fee}` : '');
   document.getElementById('decisionBody').innerHTML = `
     <div class="decision-prompt"><h3>Which do you prefer?</h3><p>Keeping the best ${decisionKeepCount} of ${decisionItems.length}</p></div>
     <div class="vs-container">
       <div class="vs-card" onclick="pickDecisionWinner('${pair.a.id}')">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-          <div style="width:4px;height:22px;border-radius:2px;background:${catA.color}"></div>
+        ${imgA ? `<div class="vs-card-img" style="background-image:url('${imgA}')"></div>` : ''}
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+          <div style="width:4px;height:22px;border-radius:2px;background:${catA.color};flex-shrink:0"></div>
           <div class="vs-name">${pair.a.name}</div>
         </div>
-        <div class="vs-meta">${catA.label} · ${pair.a.duration_hours}h ${rA}</div>
+        <div class="vs-meta">${catA.label} · ${pair.a.duration_hours}h ${rA}${priceA ? ' · <strong style="color:var(--accent)">' + priceA + '</strong>' : ''}</div>
         <div class="vs-desc">${pair.a.short || ''}</div>
         <div class="vs-stats">
           ${rA ? `<div class="vs-stat"><strong>${rA}</strong> rating</div>` : ''}
-          <div class="vs-stat"><strong>${pair.a.duration_hours}h</strong> duration</div>
+          <div class="vs-stat"><strong>${pair.a.duration_hours}h</strong> visit</div>
+          <button class="vs-audio-btn" onclick="event.stopPropagation();showCommentaryPopup('${pair.a.id}')">🔊 Audio</button>
         </div>
       </div>
       <div class="vs-divider"><div class="vs-badge">VS</div></div>
       <div class="vs-card" onclick="pickDecisionWinner('${pair.b.id}')">
-        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-          <div style="width:4px;height:22px;border-radius:2px;background:${catB.color}"></div>
+        ${imgB ? `<div class="vs-card-img" style="background-image:url('${imgB}')"></div>` : ''}
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:5px">
+          <div style="width:4px;height:22px;border-radius:2px;background:${catB.color};flex-shrink:0"></div>
           <div class="vs-name">${pair.b.name}</div>
         </div>
-        <div class="vs-meta">${catB.label} · ${pair.b.duration_hours}h ${rB}</div>
+        <div class="vs-meta">${catB.label} · ${pair.b.duration_hours}h ${rB}${priceB ? ' · <strong style="color:var(--accent)">' + priceB + '</strong>' : ''}</div>
         <div class="vs-desc">${pair.b.short || ''}</div>
         <div class="vs-stats">
           ${rB ? `<div class="vs-stat"><strong>${rB}</strong> rating</div>` : ''}
-          <div class="vs-stat"><strong>${pair.b.duration_hours}h</strong> duration</div>
+          <div class="vs-stat"><strong>${pair.b.duration_hours}h</strong> visit</div>
+          <button class="vs-audio-btn" onclick="event.stopPropagation();showCommentaryPopup('${pair.b.id}')">🔊 Audio</button>
         </div>
       </div>
     </div>`;
@@ -2838,6 +3229,129 @@ document.getElementById('search').addEventListener('input', (e) => {
 
 function dismissSplash() {
   document.getElementById('splash').classList.add('hidden');
+  setTimeout(showOnboarding, 600);
+}
+
+// ============ ONBOARDING ============
+const ONBOARDING_SLIDES = [
+  { icon: '🗺️', title: 'Welcome to Qiwiosity', desc: 'Your pocket guide to 2,400+ handpicked places across Aotearoa New Zealand.' },
+  { icon: '🔍', title: 'Explore the Map', desc: 'Browse the interactive map or list. Filter by category — Nature, Culture, Adventure and more.' },
+  { icon: '📋', title: 'Plan Your Trip', desc: 'Add stops to a multi-day itinerary. Get drive times between stops, reorder, and route the full day in-app.' },
+  { icon: '⚖️', title: 'Compare & Decide', desc: "Can't choose? Add places to Compare, then run Decision Mode — it finds your winner in under a minute." },
+];
+let onboardingSlide = 0;
+
+function showOnboarding() {
+  if (localStorage.getItem('qiwiosity_onboarded')) return;
+  onboardingSlide = 0;
+  renderOnboardingSlide();
+  document.getElementById('onboardingOverlay').classList.add('active');
+}
+
+function renderOnboardingSlide() {
+  const s = ONBOARDING_SLIDES[onboardingSlide];
+  document.getElementById('onboardingIcon').textContent = s.icon;
+  document.getElementById('onboardingTitle').textContent = s.title;
+  document.getElementById('onboardingDesc').textContent = s.desc;
+  const isLast = onboardingSlide === ONBOARDING_SLIDES.length - 1;
+  document.getElementById('onboardingNextBtn').textContent = isLast ? "Let's Explore! 🎉" : 'Next →';
+  const dotsEl = document.getElementById('onboardingDots');
+  dotsEl.innerHTML = ONBOARDING_SLIDES.map((_, i) =>
+    `<div class="onboarding-dot${i === onboardingSlide ? ' active' : ''}"></div>`
+  ).join('');
+}
+
+function nextOnboardingSlide() {
+  if (onboardingSlide < ONBOARDING_SLIDES.length - 1) {
+    onboardingSlide++;
+    renderOnboardingSlide();
+  } else {
+    skipOnboarding();
+  }
+}
+
+function skipOnboarding() {
+  localStorage.setItem('qiwiosity_onboarded', '1');
+  document.getElementById('onboardingOverlay').classList.remove('active');
+}
+
+// ============ COMPARE SHEET / FIND SIMILAR ============
+let _compareSheetPoi = null;
+let _similarNearbyRadius = 50;
+
+function openCompareSheet(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  _compareSheetPoi = a;
+  _similarNearbyRadius = 50;
+  if (infoWindow) infoWindow.close();
+  const cat = CATEGORIES.find(c => c.id === a.category) || { label: a.category };
+  document.getElementById('compareSheetTitle').textContent = isInCompare(id) ? '✓ In Compare' : 'Add to Compare';
+  document.getElementById('compareSheetDesc').textContent = isInCompare(id)
+    ? `"${a.name}" is already in your Compare list`
+    : `Add "${a.name}" or find similar ${cat.label} places`;
+  const singleOpt = document.getElementById('compareSheetSingleOpt');
+  singleOpt.querySelector('.opt-title').textContent = isInCompare(id) ? 'Remove from Compare' : 'Add this place only';
+  singleOpt.querySelector('.opt-desc').textContent = isInCompare(id) ? 'Remove just this stop' : 'Adds just this one stop';
+  document.getElementById('compareSheetSimilarDesc').textContent = `Add nearby ${cat.label} places within a radius`;
+  document.getElementById('similarRadiusSection').style.display = 'none';
+  document.getElementById('compareSheetOverlay').classList.add('active');
+}
+
+function confirmCompareSheetSingle() {
+  if (!_compareSheetPoi) return;
+  toggleCompare(_compareSheetPoi.id);
+  closeCompareSheet();
+}
+
+function showSimilarRadiusPicker() {
+  document.getElementById('similarRadiusSection').style.display = 'block';
+  renderSimilarRadiusBtns();
+}
+
+function renderSimilarRadiusBtns() {
+  const radii = [25, 50, 100, 0];
+  const labels = ['25 km', '50 km', '100 km', 'All NZ'];
+  document.getElementById('similarRadiusBtns').innerHTML = radii.map((r, i) =>
+    `<button class="similar-radius-btn${_similarNearbyRadius === r ? ' selected' : ''}"
+      onclick="_similarNearbyRadius=${r};renderSimilarRadiusBtns()">${labels[i]}</button>`
+  ).join('');
+}
+
+function closeCompareSheet() {
+  document.getElementById('compareSheetOverlay').classList.remove('active');
+}
+
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+}
+
+function confirmFindSimilar() {
+  if (!_compareSheetPoi) return;
+  const a = _compareSheetPoi;
+  const cat = CATEGORIES.find(c => c.id === a.category) || { label: a.category };
+  const candidates = ATTRACTIONS.filter(x => {
+    if (x.id === a.id) return false;
+    if (x.category !== a.category) return false;
+    if (_similarNearbyRadius === 0) return true;
+    return haversineKm(a.lat, a.lng, x.lat, x.lng) <= _similarNearbyRadius;
+  });
+  let added = 0;
+  if (!isInCompare(a.id)) { compareList.push(a); added++; }
+  candidates.forEach(x => { if (!isInCompare(x.id)) { compareList.push(x); added++; } });
+  updateCompareBadge();
+  closeCompareSheet();
+  if (added === 0) {
+    showToast(`All ${cat.label} places already in Compare`);
+  } else {
+    const radiusLabel = _similarNearbyRadius === 0 ? 'across NZ' : `within ${_similarNearbyRadius} km`;
+    showToast(`Added ${added} ${cat.label} places ${radiusLabel} to Compare`);
+  }
+  if (state.view === 'compare') renderCompareView();
 }
 
 // ============ SETTINGS MODAL ============
