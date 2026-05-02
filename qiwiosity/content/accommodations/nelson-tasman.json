@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "nelson-tasman",
+    "name": "Nelson / Tasman",
+    "island": "South",
+    "centre": {
+      "lat": -41.2706,
+      "lng": 173.284
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "nelson-tasman-rutherford-hotel",
+      "name": "Rutherford Hotel Nelson",
+      "region": "nelson-tasman",
+      "lat": -41.2736,
+      "lng": 173.283,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.3,
+      "short": "Central Nelson hotel on Trafalgar Square with Maitai River outlook."
+    },
+    {
+      "id": "nelson-tasman-trailways-hotel",
+      "name": "Trailways Hotel Nelson",
+      "region": "nelson-tasman",
+      "lat": -41.272,
+      "lng": 173.2845,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.2,
+      "short": "Riverside Nelson hotel near Christ Church Cathedral."
+    },
+    {
+      "id": "nelson-tasman-grand-mercure-nelson",
+      "name": "Grand Mercure Nelson Monaco",
+      "region": "nelson-tasman",
+      "lat": -41.33,
+      "lng": 173.217,
+      "type": "hotel",
+      "price_nzd_per_night": 295,
+      "rating": 4.4,
+      "short": "Storybook village resort on Monaco peninsula south of Nelson."
+    },
+    {
+      "id": "nelson-tasman-rutherford-apartments",
+      "name": "Wakefield Quay House Nelson",
+      "region": "nelson-tasman",
+      "lat": -41.257,
+      "lng": 173.274,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.6,
+      "short": "Heritage waterfront villa-hotel on Rocks Road with harbour views."
+    },
+    {
+      "id": "nelson-tasman-motueka-top-boutique",
+      "name": "Equestrian Lodge Motel Motueka",
+      "region": "nelson-tasman",
+      "lat": -41.1105,
+      "lng": 173.014,
+      "type": "hotel",
+      "price_nzd_per_night": 205,
+      "rating": 4.4,
+      "short": "Boutique motel-hotel on Tudor Street near Motueka's saltwater baths."
+    },
+    {
+      "id": "nelson-tasman-awaroa-lodge-hotel",
+      "name": "Awaroa Lodge",
+      "region": "nelson-tasman",
+      "lat": -40.965,
+      "lng": 173.034,
+      "type": "hotel",
+      "price_nzd_per_night": 380,
+      "rating": 4.5,
+      "short": "Remote eco-lodge inside Abel Tasman National Park."
+    },
+    {
+      "id": "nelson-tasman-beachcomber-motel",
+      "name": "Beachcomber Motel Nelson",
+      "region": "nelson-tasman",
+      "lat": -41.2608,
+      "lng": 173.271,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Tahunanui motel a short walk from Nelson's main swimming beach."
+    },
+    {
+      "id": "nelson-tasman-tasman-bay-motel",
+      "name": "Tasman Bay Backpackers & Motel",
+      "region": "nelson-tasman",
+      "lat": -41.276,
+      "lng": 173.288,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Central Nelson motel on Weka Street with shared hostel wing."
+    },
+    {
+      "id": "nelson-tasman-bella-vista-motueka",
+      "name": "Bella Vista Motel Motueka",
+      "region": "nelson-tasman",
+      "lat": -41.111,
+      "lng": 173.0155,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Motueka chain motel handy to Abel Tasman water taxi pick-ups."
+    },
+    {
+      "id": "nelson-tasman-mapua-motel",
+      "name": "Mapua Leisure Park Motel Units",
+      "region": "nelson-tasman",
+      "lat": -41.253,
+      "lng": 173.11,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Mapua wharf motel units near the artisan food and ferry."
+    },
+    {
+      "id": "nelson-tasman-kaiteriteri-motel",
+      "name": "Torlesse Motels Kaiteriteri",
+      "region": "nelson-tasman",
+      "lat": -41.031,
+      "lng": 173.007,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.4,
+      "short": "Kaiteriteri beachside motel at the Abel Tasman boat launch."
+    },
+    {
+      "id": "nelson-tasman-richmond-motel",
+      "name": "Tasman Gateway Motor Lodge Richmond",
+      "region": "nelson-tasman",
+      "lat": -41.34,
+      "lng": 173.181,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Quiet Richmond motel with easy access to wineries and the bay."
+    },
+    {
+      "id": "nelson-tasman-takaka-golden-bay-motel",
+      "name": "Golden Bay Motel Takaka",
+      "region": "nelson-tasman",
+      "lat": -40.851,
+      "lng": 172.809,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Central Takaka motel at the gateway to Farewell Spit."
+    },
+    {
+      "id": "nelson-tasman-nelson-top10",
+      "name": "Tahuna Beach Holiday Park",
+      "region": "nelson-tasman",
+      "lat": -41.266,
+      "lng": 173.255,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.3,
+      "short": "Largest Nelson beachside park steps from Tahunanui Beach."
+    },
+    {
+      "id": "nelson-tasman-kaiteriteri-top10",
+      "name": "Kaiteriteri Recreation Reserve Park",
+      "region": "nelson-tasman",
+      "lat": -41.033,
+      "lng": 173.008,
+      "type": "holiday-park",
+      "price_nzd_per_night": 135,
+      "rating": 4.5,
+      "short": "Absolute beachfront park at Abel Tasman's gateway."
+    },
+    {
+      "id": "nelson-tasman-motueka-top10",
+      "name": "Motueka TOP 10 Holiday Park",
+      "region": "nelson-tasman",
+      "lat": -41.112,
+      "lng": 173.013,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.3,
+      "short": "Central Motueka park with heated pool and playground."
+    },
+    {
+      "id": "nelson-tasman-pohara-beach-top10",
+      "name": "Pohara Beach TOP 10 Holiday Park",
+      "region": "nelson-tasman",
+      "lat": -40.826,
+      "lng": 172.887,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.4,
+      "short": "Golden Bay beachside park with Abel Tasman National Park on the doorstep."
+    },
+    {
+      "id": "nelson-tasman-split-apple-retreat",
+      "name": "Split Apple Retreat Kaiteriteri",
+      "region": "nelson-tasman",
+      "lat": -41.017,
+      "lng": 173.02,
+      "type": "lodge",
+      "price_nzd_per_night": 1850,
+      "rating": 4.9,
+      "short": "Adults-only clifftop luxury retreat over Split Apple Rock."
+    },
+    {
+      "id": "nelson-tasman-edenhouse-lodge",
+      "name": "Edenhouse Lodge Richmond",
+      "region": "nelson-tasman",
+      "lat": -41.37,
+      "lng": 173.095,
+      "type": "lodge",
+      "price_nzd_per_night": 1250,
+      "rating": 4.8,
+      "short": "Small Heritage boutique lodge on a 26-acre estate at Richmond."
+    },
+    {
+      "id": "nelson-tasman-awaroa-abel-tasman-lodge",
+      "name": "Abel Tasman Awaroa Lodge Suite",
+      "region": "nelson-tasman",
+      "lat": -40.966,
+      "lng": 173.033,
+      "type": "lodge",
+      "price_nzd_per_night": 780,
+      "rating": 4.6,
+      "short": "Eco-suite hideaway only reached by boat, plane or foot."
+    }
+  ]
+}

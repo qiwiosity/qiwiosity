@@ -1,0 +1,325 @@
+/* ── Qiwiosity Floating Button ───────────────────────── */
+
+#qiwiosity-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  z-index: 2147483647;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0D9488, #14B8A6);
+  box-shadow: 0 4px 16px rgba(13, 148, 136, 0.4), 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  animation: qiwiosity-pulse 2s ease-in-out 3;
+}
+
+#qiwiosity-fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(13, 148, 136, 0.5), 0 4px 8px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #0F766E, #0D9488);
+}
+
+#qiwiosity-fab:active {
+  transform: scale(0.95);
+}
+
+#qiwiosity-fab svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+#qiwiosity-fab .qiwiosity-badge {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F59E0B;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+}
+
+@keyframes qiwiosity-pulse {
+  0%, 100% { box-shadow: 0 4px 16px rgba(13, 148, 136, 0.4); }
+  50% { box-shadow: 0 4px 24px rgba(13, 148, 136, 0.7), 0 0 0 8px rgba(13, 148, 136, 0.1); }
+}
+
+/* ── Save Panel ─────────────────────────────────────────── */
+
+#qiwiosity-panel {
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+  z-index: 2147483647;
+  width: 380px;
+  max-height: 520px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15), 0 4px 16px rgba(0,0,0,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+#qiwiosity-panel.qiwiosity-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: all;
+}
+
+/* Header */
+.qiwiosity-header {
+  background: linear-gradient(135deg, #0D9488, #14B8A6);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qiwiosity-header h3 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.qiwiosity-header .qiwiosity-close {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.qiwiosity-header .qiwiosity-close:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Body */
+.qiwiosity-body {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 360px;
+}
+
+/* Thumbnail preview */
+.qiwiosity-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.qiwiosity-thumb-placeholder {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #F0FDFA, #CCFBF1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0D9488;
+  font-size: 13px;
+}
+
+/* Source badge */
+.qiwiosity-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #F0FDFA;
+  color: #0D9488;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Form fields */
+.qiwiosity-field {
+  margin-bottom: 14px;
+}
+
+.qiwiosity-field label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6B7280;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.qiwiosity-field input,
+.qiwiosity-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1F2937;
+  background: #FAFAFA;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.qiwiosity-field input:focus,
+.qiwiosity-field textarea:focus {
+  outline: none;
+  border-color: #14B8A6;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.1);
+  background: white;
+}
+
+.qiwiosity-field textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+/* Tags */
+.qiwiosity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.qiwiosity-tag {
+  background: #F0FDFA;
+  color: #0D9488;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  border: 1px solid #99F6E4;
+}
+
+/* NZ match indicator */
+.qiwiosity-nz-match {
+  background: #ECFDF5;
+  border: 1px solid #6EE7B7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #065F46;
+}
+
+/* Save button */
+.qiwiosity-save-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0D9488, #14B8A6);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.qiwiosity-save-btn:hover {
+  background: linear-gradient(135deg, #0F766E, #0D9488);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.3);
+}
+
+.qiwiosity-save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.qiwiosity-save-btn.qiwiosity-saved {
+  background: #10B981;
+}
+
+/* Status messages */
+.qiwiosity-status {
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.qiwiosity-status.success {
+  background: #ECFDF5;
+  color: #065F46;
+}
+
+.qiwiosity-status.error {
+  background: #FEF2F2;
+  color: #991B1B;
+}
+
+/* Login prompt */
+.qiwiosity-login {
+  text-align: center;
+  padding: 24px 20px;
+}
+
+.qiwiosity-login p {
+  color: #6B7280;
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+
+.qiwiosity-login-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0D9488, #14B8A6);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  #qiwiosity-panel {
+    right: 8px;
+    left: 8px;
+    width: auto;
+    bottom: 80px;
+  }
+  #qiwiosity-fab {
+    right: 12px;
+    bottom: 16px;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "qiwiosity-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Qiwiosity API — serves POI data, script manifests, and audio URLs to the mobile app.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,1735 @@
+{
+  "region": {
+    "id": "whanganui-manawatu",
+    "name": "Whanganui / Manawatū",
+    "island": "North",
+    "centre": {
+      "lat": -40.05,
+      "lng": 175.3
+    },
+    "bounds": {
+      "north": -39.4,
+      "south": -40.8,
+      "east": 176.3,
+      "west": 174.8
+    },
+    "description": "The great river country and the fertile Manawatū plains — home of the Whanganui River, the first river in the world to be granted legal personhood."
+  },
+  "pois": [
+    {
+      "id": "whanganui-river",
+      "name": "Whanganui River / Te Awa Tupua",
+      "region": "whanganui-manawatu",
+      "lat": -39.8,
+      "lng": 175.1,
+      "category": "māori",
+      "tags": [
+        "river",
+        "legal-personhood",
+        "canoe",
+        "great-walk",
+        "iwi"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "The first river in the world to be legally recognised as a person — 290 km of awa, sacred to Whanganui iwi.",
+      "commentary": "Te Awa Tupua — the Whanganui River — runs 290 km from the slopes of Tongariro to the Tasman Sea. On 20 March 2017, after 140 years of campaigning by Whanganui iwi, the river was granted legal personhood under the Te Awa Tupua Act — the first river in the world with its own legal rights. Two guardians represent its interests, one iwi-appointed and one Crown-appointed. The Whanganui Journey, a 145 km canoe trip from Taumarunui to Pipiriki over 5 days, is one of NZ's 10 Great Walks — remarkably, the only one you paddle. The Bridge to Nowhere sits halfway down.",
+      "scripts": {
+        "headline": "scripts/whanganui-river.headline.md",
+        "standard": "scripts/whanganui-river.standard.md"
+      },
+      "sources_to_check": [
+        "Ngā Tāngata Tiaki o Whanganui — whanganuiriver.iwi.nz",
+        "DOC — Whanganui Journey",
+        "NZHistory"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Whanganui River / Te Awa Tupua as a place where the history and cultural significance of Aotearoa become tangible and real. The first river in the world to be legally recognised as a person — 290 km of awa, sacred to Whanganui iwi. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bridge-to-nowhere",
+      "name": "Bridge to Nowhere",
+      "region": "whanganui-manawatu",
+      "lat": -39.4778,
+      "lng": 174.9778,
+      "category": "heritage",
+      "tags": [
+        "failed-settlement",
+        "1936-bridge",
+        "soldier-settlement",
+        "whanganui-national-park"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 4,
+      "short": "A concrete 1936 road bridge in the middle of deep bush — serves no road, no houses. The settlement it was built for didn't survive.",
+      "commentary": "After WW1, the government allocated bush blocks along the Mangapurua Valley (near the Whanganui River) to returned soldiers. By 1927 about 30 families were farming there. The country was too steep, the soil too poor, the isolation too great. The Great Depression tipped the settlement into collapse. The Bridge was completed in 1936, two years before the last family walked out; it has now stood unused in the bush for over 85 years. Access is via the Whanganui Journey (canoe) or a 40-minute walk from the jetboat landing at Mangapurua. There is no road.",
+      "scripts": {
+        "headline": "scripts/bridge-to-nowhere.headline.md",
+        "standard": "scripts/bridge-to-nowhere.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Whanganui National Park",
+        "NZHistory — Bridge to Nowhere"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Bridge to Nowhere — the site rewards those who take time to read the signage and absorb the context. A concrete 1936 road bridge in the middle of deep bush — serves no road, no houses. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "durie-hill-elevator",
+      "name": "Durie Hill Elevator & Memorial Tower",
+      "region": "whanganui-manawatu",
+      "lat": -39.9367,
+      "lng": 175.0583,
+      "category": "nature",
+      "tags": [
+        "elevator",
+        "1919",
+        "tunnel",
+        "viewpoint",
+        "war-memorial"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Walk through a 205-metre pedestrian tunnel, take a 1919 lift 66 metres up through the hill, climb the tower — Taranaki to Ruapehu on a clear day.",
+      "commentary": "In 1919 the Durie Hill Elevator opened to connect Whanganui's town centre with the new suburban development on top of Durie Hill, 66 metres above the river. Walk through a 205-metre horizontal pedestrian tunnel from Anzac Parade, then ride the original 1919 lift (the only public underground lift in New Zealand) up to the hilltop. At the top, climb the 176-step Memorial Tower (1925) for one of the great North Island panoramas: Mount Taranaki west, Ruapehu inland, South Island (on the clearest days) south.",
+      "scripts": {
+        "headline": "scripts/durie-hill-elevator.headline.md",
+        "standard": "scripts/durie-hill-elevator.standard.md"
+      },
+      "sources_to_check": [
+        "Whanganui District Council",
+        "Heritage NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Durie Hill Elevator & Memorial Tower draws visitors back time and again for its natural beauty and peaceful atmosphere. Walk through a 205-metre pedestrian tunnel, take a 1919 lift 66 metres up through the hill, climb the tower — Taranaki to Ruapehu on a clear day. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "palmerston-north-te-manawa",
+      "name": "Palmerston North / Te Manawa & The Square",
+      "region": "whanganui-manawatu",
+      "lat": -40.3564,
+      "lng": 175.6111,
+      "category": "culture",
+      "tags": [
+        "city",
+        "museum",
+        "university",
+        "rugby-museum",
+        "the-square"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "The 7-hectare Square at the city's heart, Te Manawa museum complex, and the NZ Rugby Museum.",
+      "commentary": "Palmerston North is the Manawatū's main city — university town (Massey), army town (Linton, Ohakea), farming services town. The Square, at the city centre, is a 7-hectare oblong laid out in 1871: the largest CBD public square in the country. Te Manawa is a three-part cultural complex — art gallery, science centre, museum — all free. Next door is the NZ Rugby Museum, the only museum dedicated to rugby in the country. Unmissable for fans. Very missable for almost anyone else, except the All Blacks history room.",
+      "scripts": {
+        "headline": "scripts/palmerston-north-te-manawa.headline.md",
+        "standard": "scripts/palmerston-north-te-manawa.standard.md"
+      },
+      "sources_to_check": [
+        "Te Manawa — temanawa.co.nz",
+        "NZ Rugby Museum"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Palmerston North / Te Manawa & The Square is praised for being both accessible and genuinely informative. The 7-hectare Square at the city's heart, Te Manawa museum complex, and the NZ Rugby Museum. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "bulls-and-area",
+      "name": "Bulls",
+      "region": "whanganui-manawatu",
+      "lat": -40.1722,
+      "lng": 175.3836,
+      "category": "culture",
+      "tags": [
+        "quirky",
+        "pun-town",
+        "signs",
+        "rural"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.3,
+      "short": "The small town where every shop-front sign ends in '-a-bull'. Read-a-bull. Deli-bull. Afford-a-bull.",
+      "commentary": "Bulls is a small town of ~1,800 people on SH1 at the Rangitikei River crossing. It's named not after livestock but after James Bull, an early settler. In the 1990s the local Community Board started a campaign of relentless self-pun — the public toilets are 'Relieve-a-Bull', the police station is 'Const-a-Bull', the information centre is 'Inform-a-Bull', and so on. It has become the defining civic joke. Stop, take the photos, buy a pie, drive on. Don't over-think it.",
+      "scripts": {
+        "headline": "scripts/bulls-and-area.headline.md",
+        "standard": "scripts/bulls-and-area.standard.md"
+      },
+      "sources_to_check": [
+        "Rangitikei District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Bulls is praised for being both accessible and genuinely informative. The small town where every shop-front sign ends in '-a-bull'. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "mangaweka",
+      "name": "Mangaweka",
+      "region": "whanganui-manawatu",
+      "lat": -39.81,
+      "lng": 175.7919,
+      "category": "culture",
+      "tags": [
+        "rangitikei-river",
+        "dc-3",
+        "white-cliffs",
+        "quirky",
+        "small-town"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "A tiny Rangitikei town with dramatic white river cliffs, and a DC-3 aeroplane on the roadside that used to be a café.",
+      "commentary": "Mangaweka sits above the Rangitikei River where it has carved deep, almost vertical white papa-mudstone cliffs — the most dramatic river scenery on SH1. For decades a 1940s DC-3 passenger aircraft was parked on the roadside as a café (the Mangaweka Café), long since closed, but the plane is still there. The old highway cuts through the town with 1890s storefronts; the new highway bypasses it. Mangaweka is also the base for adventure rafting (Rangitikei Grade 5 for experts, Grade 2 floats for families) and the start of the Rangitikei River Trails.",
+      "scripts": {
+        "headline": "scripts/mangaweka.headline.md",
+        "standard": "scripts/mangaweka.standard.md"
+      },
+      "sources_to_check": [
+        "Rangitikei District Council",
+        "Mangaweka Adventure Co"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Mangaweka is praised for being both accessible and genuinely informative. A tiny Rangitikei town with dramatic white river cliffs, and a DC-3 aeroplane on the roadside that used to be a café. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "manawatu-tararuas-holdsworth",
+      "name": "Pūkaha National Wildlife Centre",
+      "region": "whanganui-manawatu",
+      "lat": -40.7833,
+      "lng": 175.65,
+      "category": "wildlife",
+      "tags": [
+        "white-kiwi",
+        "wildlife-centre",
+        "manawatu",
+        "kākā"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "Home of Manukura, the famous white kiwi — a wildlife sanctuary in the Wairarapa hills with a strong breeding programme.",
+      "commentary": "Pūkaha (formerly Mt Bruce) is a 942-hectare sanctuary on SH2. Famous for North Island brown kiwi breeding and previously the rare leucistic 'white' kiwi Manukura.",
+      "audio_story": "You have arrived at Pūkaha, a nine hundred and forty hectare bush sanctuary on the eastern side of the Tararua Ranges, between Masterton and the Manawatū. For decades this was one of the most important captive breeding centres in the country for endangered native birds, and it has played a quiet but enormous role in the recovery of species like takahē, kōkako and saddleback. Pūkaha became briefly world famous in twenty eleven when Manukura, a rare leucistic white North Island brown kiwi, was hatched here. She lived at the centre and was viewed by hundreds of thousands of visitors before her death in twenty twenty. Today Pūkaha remains one of the more reliable places in the country to actually see a kiwi up close in the dedicated nocturnal house, alongside kōkako, kākā, kākāriki, and tuatara. The walking tracks loop through the centre's outer reserve, where you can see how a fenced and predator-controlled forest looks and sounds different from one where rats and possums still hold sway. Time your visit to coincide with the daily eel feed in the river running through the sanctuary. The eels here are huge, well over a hundred years old, and watching them is unexpectedly moving.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Pūkaha National Wildlife Centre"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The wildlife encounters at Pūkaha National Wildlife Centre earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. Home of Manukura, the famous white kiwi — a wildlife sanctuary in the Wairarapa hills with a strong breeding programme. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "manawatu-feilding",
+      "name": "Feilding Saleyards",
+      "region": "whanganui-manawatu",
+      "lat": -40.2228,
+      "lng": 175.5658,
+      "category": "culture",
+      "tags": [
+        "livestock",
+        "rural",
+        "friday",
+        "saleyards"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "Watch the largest livestock saleyards in the southern hemisphere in action every Friday.",
+      "commentary": "Feilding Saleyards have run weekly since 1884 and are reputed to be the largest stock saleyards in the southern hemisphere.",
+      "audio_story": "You have arrived in Feilding on a Friday morning, and you have arrived on the right day. The Feilding Saleyards have been operating in this town since eighteen eighty four, and they are widely reckoned to be the largest livestock saleyards in the southern hemisphere. Every Friday between four and seven thousand cattle and many thousands more sheep pass through the timber pens, are walked across the auction floor, and are sold by an auctioneer whose voice has been raised in a fast unbroken patter since dawn. The auctioneers are descendants, in many cases, of the men who bought and sold here a century ago. There is a small free public viewing tour offered most Friday mornings, and the local information centre can book it for you. Wear shoes you do not mind getting dirty. You will learn the meaning of a finger held up, the difference between a fat lamb and a store lamb, and why the price of a cow at the rail can travel the country to your butcher within a week. Afterwards, walk through the main street of Feilding, which has been voted the most beautiful small town in New Zealand more often than any other. Have a coffee. Catch your breath.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Manawatū District Council",
+        "PGG Wrightson saleyards"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Feilding Saleyards is praised for being both accessible and genuinely informative. Watch the largest livestock saleyards in the southern hemisphere in action every Friday. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "manawatu-manawatu-gorge",
+      "name": "Te Apiti / Manawatū Gorge & Wind Farm",
+      "region": "whanganui-manawatu",
+      "lat": -40.3333,
+      "lng": 175.7833,
+      "category": "nature",
+      "tags": [
+        "gorge",
+        "windfarm",
+        "tramping",
+        "te-ara-o-mahurangi"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 3,
+      "short": "The dramatic Manawatū Gorge — closed to traffic, now a walker's paradise overlooked by the country's largest wind farm.",
+      "commentary": "The gorge road closed permanently in 2017 after repeated landslides. The Manawatū Gorge Track (10 km) crosses the ridge through bush past wind turbines and the Te Ahu a Tūranga sculpture.",
+      "audio_story": "You are looking at the Manawatū Gorge, a deep narrow cut through the Ruahine and Tararua Ranges where the Manawatū River, in one of the more curious feats of New Zealand geology, has somehow carved its way clean across the dividing range from east to west. For many years the main road through the gorge was the principal link between the Manawatū and Hawke's Bay. Repeated and progressively larger landslides forced its permanent closure in twenty seventeen. The road is gone, but in some ways the gorge has been freed. The main hiking track from Ashhurst climbs through dense bush over the ridge to Woodville, ten kilometres one way, and the drive over the new Te Ahu a Tūranga highway opened in twenty twenty four to replace the lost road. Above the gorge spin the turbines of the Te Apiti and Tararua Wind Farms, among the largest in the country. From a viewing platform on the ridge you can stand among the turbines, hear the great slow whoosh of the blades, look down on the river two hundred metres below, and feel the wind on your face that, in this place, never seems to stop.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZ Transport Agency",
+        "Mercury Energy Te Apiti"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Te Apiti / Manawatū Gorge & Wind Farm draws visitors back time and again for its natural beauty and peaceful atmosphere. The dramatic Manawatū Gorge — closed to traffic, now a walker's paradise overlooked by the country's largest wind farm. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taihape-gumboot",
+      "name": "Taihape — Gumboot Capital",
+      "region": "whanganui-manawatu",
+      "lat": -39.6783,
+      "lng": 175.7992,
+      "category": "culture",
+      "tags": [
+        "quirky",
+        "gumboot",
+        "sh1",
+        "rural-town",
+        "rangitikei"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A small Rangitikei town on SH1 famous for one thing: the gumboot. Home of Gumboot Day and the world gumboot-throwing record.",
+      "commentary": "Taihape anchored itself to the gumboot in 1985 as a cheeky rural identity. The oversized corrugated-iron gumboot in the main street is the country's most-photographed piece of roadside kitsch.",
+      "audio_story": "You have arrived in Taihape, a hill-country town of about fifteen hundred people straddling State Highway One almost exactly halfway between Auckland and Wellington. For generations it was a railway town and a servicing hub for sheep and beef farms in the steep Rangitikei hill country to the east. Then in nineteen eighty five, looking for a way to put itself on the map, Taihape declared itself the Gumboot Capital of New Zealand and launched Gumboot Day — an annual festival of gumboot-throwing, gumboot races, and quite serious gumboot-hurling competitions that still draws several thousand visitors on the Tuesday after Easter each year. The giant corrugated-iron gumboot sculpture on the main street, built by a local farmer, has become one of the most photographed pieces of roadside kitsch in the country. Take your obligatory photo, walk the main street, notice the well-preserved early twentieth century shopfronts, and then if you have time, drive east onto the Gentle Annie Road to Hawke's Bay — one of the great, quiet, and unexpectedly beautiful drives in the North Island. Taihape repays about twenty minutes of your time and then gets out of your way.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Rangitikei District Council",
+        "NZ History — Taihape Gumboot Day"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The cultural experience at Taihape — Gumboot Capital is praised for being both accessible and genuinely informative. A small Rangitikei town on SH1 famous for one thing: the gumboot. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "ohakune-carrot",
+      "name": "Ohakune — Carrot Capital & Old Coach Road",
+      "region": "whanganui-manawatu",
+      "lat": -39.4189,
+      "lng": 175.3953,
+      "category": "culture",
+      "tags": [
+        "ski-town",
+        "carrot",
+        "ruapehu",
+        "old-coach-road",
+        "quirky"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "A winter ski town and summer cycle hub on Ruapehu's southern flank, marked by a giant concrete carrot at the northern entrance.",
+      "commentary": "Ohakune sits at the southern base of Mt Ruapehu and services the Tūroa skifield. The carrot monument celebrates the town's market-garden heritage. The Old Coach Road, a 15 km cycle and walking trail, links Ohakune to Horopito past restored 1904 viaducts.",
+      "audio_story": "You have arrived in Ohakune, a small town of about a thousand full-time residents that sits at the southern foot of Mount Ruapehu. In winter it swells to several thousand as skiers and snowboarders pour up the road to Tūroa, the longest vertical descent of any commercial skifield in the country. In summer it is quiet and green, wrapped in the steaming smell of pine forestry and the cold clean air that rolls off the mountain. The giant concrete carrot at the northern entrance commemorates the thousands of tonnes of carrots and parsnips grown each year in the rich volcanic soil that surrounds the town. Ohakune's best-kept secret is the Old Coach Road, a fifteen kilometre cycling and walking trail between Ohakune and Horopito that follows the original horse-drawn coach route abandoned when the Main Trunk Railway finally joined its last sleeper in nineteen oh eight. The trail passes two beautifully restored curved steel viaducts, the Hapuawhenua and the Taonui, and climbs gently through native bush. You can hire a bike in town, ride to Horopito, and catch a shuttle back. In summer it is one of the most underrated half-days of riding in the North Island.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Ruapehu District Council",
+        "DOC — Old Coach Road",
+        "Mountains to Sea cycle trail"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Ohakune — Carrot Capital & Old Coach Road is praised for being both accessible and genuinely informative. A winter ski town and summer cycle hub on Ruapehu's southern flank, marked by a giant concrete carrot at the northern entrance. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "waiouru-army-museum",
+      "name": "National Army Museum Te Mata Toa",
+      "region": "whanganui-manawatu",
+      "lat": -39.4819,
+      "lng": 175.6697,
+      "category": "culture",
+      "tags": [
+        "military",
+        "museum",
+        "desert-road",
+        "war-memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "The main military museum in New Zealand, on the Desert Road at Waiouru — comprehensive, sobering, and essential for anyone interested in NZ's military history.",
+      "commentary": "Opened 1978, the National Army Museum at Waiouru is the principal repository of New Zealand Army history from the New Zealand Wars to modern deployments. Set against the Kaimanawa hills on the exposed volcanic plateau.",
+      "audio_story": "You have arrived at Waiouru, a garrison town on the exposed volcanic plateau at the southern end of the Desert Road. Waiouru is above all else an army town. The New Zealand Defence Force training area that surrounds it covers some sixty three thousand hectares and has done since the Second World War. At the heart of the town is the National Army Museum, Te Mata Toa, which is the principal repository of New Zealand Army history in the country. The galleries take you from the New Zealand Wars of the eighteen sixties, through the landings at Gallipoli and the trenches of the Western Front, through the desperate campaigns of North Africa and Crete, through Korea and Vietnam and finally to modern deployments in East Timor and Afghanistan. The Roll of Honour room is deliberately simple and deliberately quiet. It lists every New Zealander killed on active service since eighteen forty, and it is the only place I know where the cost of soldiering is laid out so plainly. Allow at least ninety minutes. The cafe is surprisingly good, and if the weather is wild outside, which it often is on the Desert Road, you will be glad of the shelter.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "National Army Museum — armymuseum.co.nz",
+        "NZ Defence Force"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The cultural experience at National Army Museum Te Mata Toa is praised for being both accessible and genuinely informative. The main military museum in New Zealand, on the Desert Road at Waiouru — comprehensive, sobering, and essential for anyone interested in NZ's military history. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "ratana-pa",
+      "name": "Rātana Pā",
+      "region": "whanganui-manawatu",
+      "lat": -40.0667,
+      "lng": 175.2167,
+      "category": "māori",
+      "tags": [
+        "ratana",
+        "maori-prophet",
+        "religion",
+        "pa",
+        "tuwharetoa"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1,
+      "short": "The spiritual home of the Rātana Church — founded by the prophet Tahupōtiki Wiremu Rātana in 1918. Every 25 January political NZ gathers here.",
+      "commentary": "Rātana Pā, near Whanganui, is the headquarters of Te Haahi Rātana, the Rātana Church, an indigenous Māori Christian movement founded after the 1918 influenza epidemic by farmer and prophet T. W. Rātana. The Temepara (temple), twin towers Arepa and Omeka, and annual 25 January celebrations are focal.",
+      "audio_story": "You have arrived at Rātana Pā, a small settlement twenty kilometres southeast of Whanganui that carries a significance in Māori spiritual and political life out of all proportion to its size. In nineteen eighteen, as the influenza pandemic swept through Aotearoa and killed Māori at eight times the rate of settlers, a Taranaki farmer named Tahupōtiki Wiremu Rātana experienced a vision in which he was called to heal his people and unite the tribes under one god. From that vision grew Te Haahi Rātana, the Rātana Church, which within a decade counted around one in five Māori as adherents and which remains one of the most important indigenous Christian movements in the Pacific. The distinctive white temepara, the temple, with its twin towers named Arepa and Omeka for Alpha and Omega, stands at the centre of the settlement. Every year on the twenty fifth of January, which is the birthday of the prophet, thousands gather here for religious observance. The political wing of the country comes too, because since the nineteen thirties a formal alliance has bound the Rātana movement to the Labour Party. A visit here is quiet and respectful. Please do not photograph people or buildings without asking. This is a living, working spiritual community.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Ara — Rātana Church",
+        "Rangitikei District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Rātana Pā as a place where the history and cultural significance of Aotearoa become tangible and real. The spiritual home of the Rātana Church — founded by the prophet Tahupōtiki Wiremu Rātana in 1918. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "patea-aotea",
+      "name": "Pātea & Aotea Waka Memorial",
+      "region": "whanganui-manawatu",
+      "lat": -39.7619,
+      "lng": 174.4872,
+      "category": "māori",
+      "tags": [
+        "waka",
+        "patea-maori-club",
+        "poi-e",
+        "aotea",
+        "dalvanius-prime"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 0.5,
+      "short": "The river-mouth town that gave the country Poi E, and the white concrete Aotea canoe memorial marking the landfall of one of the great migration waka.",
+      "commentary": "Pātea sits at the mouth of the Pātea River. The Aotea waka, captained by Turi, made landfall near here around 1350. The modern concrete waka sculpture commemorates the voyage. The Pātea Māori Club, led by Dalvanius Prime, released Poi E in 1984 — NZ's best-selling single of that year.",
+      "audio_story": "You have arrived in Pātea, a small town of about twelve hundred people at the mouth of the Pātea River on the south Taranaki coast. Pātea was once a prosperous freezing-works town. The works closed in nineteen eighty two and the town has spent the decades since finding a quieter, harder, prouder identity. The concrete waka sculpture on the main street commemorates the arrival of the Aotea, one of the great migration canoes, which under its captain Turi made landfall near here around thirteen fifty and gave its name to the country itself, Aotea becoming the prefix for Aotearoa. Pātea is also the birthplace of the song Poi E. In nineteen eighty four a local musician and producer named Dalvanius Prime recorded, with the Pātea Māori Club, an all te reo Māori disco track that went straight to number one on the New Zealand charts and outsold every other single that year including Michael Jackson's Thriller. The song has become a national anthem for te reo revitalisation. If you grew up in Aotearoa after nineteen eighty four, you know every word. Stand beside the waka, look out over the river bar, and listen for a moment. You may hear the beat.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "South Taranaki District Council",
+        "NZ On Screen — Poi E",
+        "Te Ara — Aotea"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Pātea & Aotea Waka Memorial as a place where the history and cultural significance of Aotearoa become tangible and real. The river-mouth town that gave the country Poi E, and the white concrete Aotea canoe memorial marking the landfall of one of the great migration waka. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "whanganui-regional-museum",
+      "name": "Whanganui Regional Museum",
+      "region": "whanganui-manawatu",
+      "lat": -39.9331,
+      "lng": 175.0489,
+      "category": "māori",
+      "tags": [
+        "museum",
+        "moa",
+        "waka",
+        "taonga",
+        "whanganui-iwi"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1.5,
+      "short": "One of the finest regional museums in the country — home to Te Mata o Hoturoa, a magnificent 1810 war canoe, and a world-class moa collection.",
+      "commentary": "Founded 1895. Holds Te Mata o Hoturoa (pre-European waka taua), one of NZ's most complete moa bone collections, and a deep Whanganui iwi taonga holding.",
+      "audio_story": "You have arrived at the Whanganui Regional Museum, housed in a fine two storey Edwardian building on Watt Street next to the Sarjeant Gallery. This is one of the best regional museums in the country and it punches well above the town's weight. At its heart is Te Mata o Hoturoa, a magnificent seventeen metre war canoe carved before European contact and preserved here for more than a century. The waka alone is worth the visit. Beyond the canoe is one of the most complete moa collections anywhere, assembled from bones pulled out of limestone caves and the Makirikiri swamp east of town by nineteenth century fossil hunters. The great bird, nine different species of it, walked these river flats until about six hundred years ago when humans arrived and, within a handful of generations, hunted them to extinction. The lesson sits quietly in the bones. Upstairs the Whanganui iwi taonga rooms hold a deeply significant collection of carved boxes, feather cloaks, and personal adornments loaned by the river tribes. Many of these are on display by permission only. Please follow the signage about photography. Allow ninety minutes, maybe two hours. There is an excellent cafe across the square.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Whanganui Regional Museum — whanganuimuseum.org.nz"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Whanganui Regional Museum as a place where the history and cultural significance of Aotearoa become tangible and real. One of the finest regional museums in the country — home to Te Mata o Hoturoa, a magnificent 1810 war canoe, and a world-class moa collection. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "whanganui-virginia-lake",
+      "name": "Virginia Lake / Rotokawau",
+      "region": "whanganui-manawatu",
+      "lat": -39.9183,
+      "lng": 175.0478,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "urban-park",
+        "birdlife",
+        "walking"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.7,
+      "short": "A small urban lake ringed by gardens, birdlife, and a 1.5 km flat walking loop — Whanganui's quiet green retreat on the hill.",
+      "commentary": "Rotokawau is a volcanic crater lake on the Whanganui ridge line, developed as a Victorian ornamental reserve. The Higginbottom Fountain lights up at night in changing colours.",
+      "audio_story": "You have arrived at Virginia Lake, known in te reo Māori as Rotokawau, which translates roughly as the lake of the shag or the black cormorant. Despite its ornamental English name, this is an ancient crater lake, formed many thousands of years ago when a small volcanic vent erupted on the ridge line above the Whanganui River and then collapsed in on itself. Over the centuries the crater filled with water. In Victorian times the lake was landscaped as a public ornamental reserve, and today it remains one of the best-loved quiet spots in Whanganui. A flat, sealed one and a half kilometre walking track runs right around the lake, well within the ability of wheelchairs and pushchairs. You will pass banks of azaleas that flower spectacularly in October, a small aviary of native birds, a Japanese-style pavilion, and the Higginbottom Fountain which after dark lights up in slowly rotating coloured light. Black swans, paradise shelducks, coots, and the occasional New Zealand shoveler glide across the water. Bring bread only if you are willing to feed it to the ducks; the eels in the lake are enormous. Allow forty minutes and you will leave in a better mood than you arrived in.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whanganui District Council — Virginia Lake"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Virginia Lake / Rotokawau draws visitors back time and again for its natural beauty and peaceful atmosphere. A small urban lake ringed by gardens, birdlife, and a 1. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "cooks-gardens-whanganui",
+      "name": "Cooks Gardens & Peter Snell's Mile",
+      "region": "whanganui-manawatu",
+      "lat": -39.9353,
+      "lng": 175.0472,
+      "category": "heritage",
+      "tags": [
+        "athletics",
+        "peter-snell",
+        "world-record",
+        "stadium"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.3,
+      "short": "The grass athletics track where Peter Snell broke the world mile record on a grass track in 1962 — still a functioning local stadium.",
+      "commentary": "On 27 January 1962, New Zealander Peter Snell ran 3 minutes 54.4 seconds at Cooks Gardens, breaking the world mile record on a grass track — still the last world mile record run on grass.",
+      "audio_story": "You have arrived at Cooks Gardens, a modest municipal sports ground in the middle of Whanganui that happens to be one of the most significant pieces of athletics real estate in the world. On the twenty seventh of January nineteen sixty two, a twenty three year old New Zealand runner named Peter Snell lined up in front of a crowd of a few thousand spectators and in the course of four laps broke the world mile record, running three minutes fifty four point four seconds. Snell's time was astonishing in itself. What makes it legendary is that he did it on a grass track. Every world record run for the mile before and since Snell's run has been run on a cinder or synthetic surface. Snell's grass-track record stands today as the last world mile record run on turf, and probably always will. A simple plaque on the inside of the grandstand marks the spot. The track still hosts school sports and provincial meets. Stand on the finish line for a moment and imagine the scene. Snell ran the last quarter in fifty six seconds. If you know anything about middle-distance running, you will understand what that means.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Athletics NZ",
+        "NZ Sports Hall of Fame",
+        "Whanganui District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cooks Gardens & Peter Snell's Mile — the site rewards those who take time to read the signage and absorb the context. The grass athletics track where Peter Snell broke the world mile record on a grass track in 1962 — still a functioning local stadium. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "pipiriki",
+      "name": "Pipiriki — Whanganui River Road End",
+      "region": "whanganui-manawatu",
+      "lat": -39.4819,
+      "lng": 175.0542,
+      "category": "māori",
+      "tags": [
+        "whanganui-river",
+        "river-road",
+        "iwi",
+        "jet-boat"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "The roadhead village at the upper end of the Whanganui River Road — jet boat launching point for the Bridge to Nowhere trip.",
+      "commentary": "Pipiriki, 79 km up the Whanganui River Road from Whanganui, is a small kāinga with deep significance to Whanganui iwi. In the tourism boom of 1890-1920, it was a major steamship stop. Today it's the start of most jet-boat trips upriver to the Bridge to Nowhere.",
+      "audio_story": "You have arrived at Pipiriki, a small kāinga at the northern end of the Whanganui River Road, seventy nine kilometres north of Whanganui city. Pipiriki is a place of real significance to the Whanganui iwi, which have lived along this awa for at least six hundred years. In the late nineteenth and early twentieth centuries Pipiriki was also one of the most glamorous tourist destinations in the country. Paddle steamers carried visitors upriver from Whanganui to the two hundred and fifty room Pipiriki House Hotel, built in nineteen oh four, which burned down in nineteen fifty nine and was never rebuilt. You can still see the cleared ground where it stood. Today Pipiriki is quiet. It is the ending point for most canoeists coming down from Taumarunui on the Whanganui Journey, which means in summer the river bank fills with tired paddlers and overturned canoes drying in the sun. It is also the launching point for jet boats going upriver to the Bridge to Nowhere, a thirty kilometre run through the steep bush gorges of the upper river. If you have time, take the jet boat trip. It is one of the finest river journeys in the country.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Whanganui River iwi",
+        "DOC — Whanganui Journey"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Pipiriki — Whanganui River Road End as a place where the history and cultural significance of Aotearoa become tangible and real. The roadhead village at the upper end of the Whanganui River Road — jet boat launching point for the Bridge to Nowhere trip. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "jerusalem-hiruharama",
+      "name": "Jerusalem / Hiruhārama",
+      "region": "whanganui-manawatu",
+      "lat": -39.5425,
+      "lng": 175.0972,
+      "category": "heritage",
+      "tags": [
+        "baxter",
+        "suzanne-aubert",
+        "catholic-mission",
+        "commune",
+        "whanganui-river"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.7,
+      "short": "A tiny Whanganui River village with a beautiful white Catholic church, linked to Mother Mary Aubert and the poet James K Baxter.",
+      "commentary": "Hiruhārama, also called Jerusalem, is home to the Sisters of Compassion convent founded by Mother Suzanne Aubert in 1892. The poet James K Baxter established a commune here in 1969 and died here in 1972.",
+      "audio_story": "You have arrived at Hiruhārama, known in English as Jerusalem, a tiny kāinga on the Whanganui River Road about sixty six kilometres north of Whanganui city. Two quite different threads of New Zealand history tie themselves together in this small place. The first is the Catholic mission. In eighteen ninety two a French nun named Suzanne Aubert, who had worked with Whanganui iwi for twenty years, founded the Sisters of Compassion convent here. Aubert fed the poor, ran a pharmacy, translated prayers into te reo Māori, and in twenty sixteen was declared Venerable by the Catholic Church, the first step toward sainthood. She will almost certainly be New Zealand's first Catholic saint. The white timber church of Saint Joseph remains the defining landmark of the settlement. The second thread is the poet James K Baxter, one of the defining voices of twentieth century New Zealand literature. In nineteen sixty nine Baxter walked barefoot up the river road to Jerusalem and established a commune dedicated to living by Māori kawa and caring for society's casualties. He died here in nineteen seventy two and is buried in the pā urupā. Visit respectfully. This is a living settlement.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Sisters of Compassion — compassion.org.nz",
+        "Te Ara — James K Baxter",
+        "NZ History"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Jerusalem / Hiruhārama — the site rewards those who take time to read the signage and absorb the context. A tiny Whanganui River village with a beautiful white Catholic church, linked to Mother Mary Aubert and the poet James K Baxter. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "foxton-windmill",
+      "name": "Foxton — De Molen Dutch Windmill",
+      "region": "whanganui-manawatu",
+      "lat": -40.4689,
+      "lng": 175.2883,
+      "category": "heritage",
+      "tags": [
+        "dutch",
+        "windmill",
+        "foxton",
+        "quirky",
+        "sh1"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.5,
+      "short": "A full-size working Dutch windmill in the middle of Foxton, commemorating the post-war Dutch migration to New Zealand.",
+      "commentary": "De Molen was built 2003 as a full-scale working replica of a 17th-century Dutch flour mill, honouring the post-WW2 Dutch migration. Grinds flour sold on site.",
+      "audio_story": "You have arrived in Foxton, a small town on State Highway One on the Manawatū coast, and you have found what appears to be a Dutch windmill. This is not a trick of the eye. De Molen, which is Dutch for the mill, was built in two thousand and three as a full-size working replica of a seventeenth century Dutch flour mill. It stands seventeen metres tall with sails that measure twenty four metres across and on a windy day, which in the Manawatū is most days, the sails turn, the millstones grind, and the mill produces actual flour that is sold in the small shop below. De Molen exists because Foxton became, after the Second World War, one of the largest Dutch settlements in New Zealand. Thousands of Dutch migrants arrived in the late nineteen forties and fifties fleeing the devastation of war, and many were allocated land around Foxton and Shannon. By the nineteen sixties Foxton had the highest concentration of Dutch New Zealanders anywhere in the country. The windmill is their tribute to the old country. Climb the four flights to the viewing platform, watch the millstones work, buy a small bag of flour, and don't forget the excellent Dutch bakery a block further down the main street.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Foxton Dutch Society",
+        "Horowhenua District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Foxton — De Molen Dutch Windmill — the site rewards those who take time to read the signage and absorb the context. A full-size working Dutch windmill in the middle of Foxton, commemorating the post-war Dutch migration to New Zealand. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "whanganui-opera-house",
+      "name": "Royal Whanganui Opera House",
+      "region": "whanganui-manawatu",
+      "lat": -39.9317,
+      "lng": 175.0483,
+      "category": "heritage",
+      "tags": [
+        "theatre",
+        "opera-house",
+        "1899",
+        "heritage-building"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The only working Victorian opera house still operating in New Zealand — opened 1899, still hosting live performances.",
+      "commentary": "Opened 1899. Classified as a Category 1 historic building. Underwent a major seismic and heritage restoration completed in 2020.",
+      "audio_story": "You have arrived at the Royal Whanganui Opera House, a pale yellow Victorian building on Saint Hill Street that is the only working opera house in the original Victorian sense still operating in New Zealand. It opened on the twelfth of February eighteen ninety nine, four days before Whanganui's annual regatta, with a performance of a forgotten comic opera called The Belle of Cairo. In the nineteen sixties, like almost every small-town theatre in the country, it nearly closed. A small group of locals raised the money to save it, and it has now been beautifully and seismically restored and is once again booked for more than two hundred events a year, from opera and ballet to comedy nights and school prizegivings. The intimate horseshoe auditorium seats eight hundred and thirty, and there is not a bad view in the house. The decorative plaster work, the original gilded prosceniums, and the suspended sky dome above the stalls have all been restored. Even if you cannot get to a performance, daytime self-guided tours are usually available. The Royal title was granted by Queen Elizabeth the Second in nineteen fifty nine, making this the only theatre outside London with that honour.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Royal Whanganui Opera House — royaloperahouse.co.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Royal Whanganui Opera House — the site rewards those who take time to read the signage and absorb the context. The only working Victorian opera house still operating in New Zealand — opened 1899, still hosting live performances. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "castlecliff-beach",
+      "name": "Castlecliff Beach & Whanganui Heads",
+      "region": "whanganui-manawatu",
+      "lat": -39.9511,
+      "lng": 174.9989,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "whanganui",
+        "black-sand",
+        "surf"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1,
+      "short": "Whanganui's black-sand surf beach at the mouth of the river — wild Tasman surf, driftwood, and a good summer surf break.",
+      "commentary": "Castlecliff is the river-mouth suburb of Whanganui. The iron-sand beach runs for some 10 km and is patrolled in summer. The river bar is hazardous for boaties.",
+      "audio_story": "You have arrived at Castlecliff, the seaside suburb of Whanganui five kilometres from the city centre at the mouth of the Whanganui River. The beach here is black iron sand, hot to walk on in January and stretching northwest for many kilometres in a broad, almost perfectly straight arc. On calm days it is a family beach with gentle waves and patrolled flags during summer school holidays. On a south westerly the Tasman Sea tears in unchecked and the surf can be startling. Surfers have ridden the left-hand break off the mole for decades. At the southern end of the beach the Whanganui River pushes out across its bar and meets the sea in a confused sprawl of brown river water and white salt foam. The bar is genuinely dangerous to small boats and every few years takes a life. Sit on the dunes, watch the river meet the ocean, and feel the steady easterly that almost always blows. If the tide is right, walk north along the beach toward Kai Iwi where in the right conditions you can find the fossilised bones of long extinct whales tumbling out of the cliff. A thermos of something hot is recommended.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whanganui District Council",
+        "Surf Life Saving NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Castlecliff Beach & Whanganui Heads draws visitors back time and again for its natural beauty and peaceful atmosphere. Whanganui's black-sand surf beach at the mouth of the river — wild Tasman surf, driftwood, and a good summer surf break. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tararua-holdsworth",
+      "name": "Mt Holdsworth / Tararua Forest Park",
+      "region": "whanganui-manawatu",
+      "lat": -40.8881,
+      "lng": 175.4678,
+      "category": "nature",
+      "tags": [
+        "tramping",
+        "tararua",
+        "alpine",
+        "doc",
+        "holdsworth"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 4,
+      "short": "The classic tramping gateway to the Tararua Range — Holdsworth Road End on the eastern edge, a 90-minute walk from Wellington traffic.",
+      "commentary": "Holdsworth Road End sits at the base of the southern Tararua Range. Mount Holdsworth (1470 m) is a popular day-climb or weekend tramp via Atiwhakatu and Powell Hut. The Tararuas are a famously steep, wet, and challenging range that has claimed many lives.",
+      "audio_story": "You have arrived at the Holdsworth Road End, the classic eastern gateway into the Tararua Forest Park. The Tararua Range runs for a hundred and fifty kilometres down the spine of the lower North Island, separating the wet western Manawatū and Horowhenua coast from the drier eastern Wairarapa. The range is only about fifteen hundred metres at its highest point, but the combination of steep ridges, thick cloud cover, unpredictable weather, and tops that are fully exposed to the roaring forties wind makes the Tararuas one of the most unforgiving ranges in the country. They have killed dozens of trampers, many of them experienced. The road end here is quiet and unassuming. A short flat walk from the car park takes you to the Atiwhakatu Stream and one of the most beautiful swimming holes in the lower North Island. Beyond that the trail climbs steeply to Mount Holdsworth at fourteen hundred and seventy metres, five hours up and three down if you are fit. Start early, carry a hot drink, and do not commit to the tops if the cloud is low. Wellington city feels impossibly close and impossibly far away from a Tararua ridge in a southerly.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Tararua Forest Park",
+        "Federated Mountain Clubs"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Mt Holdsworth / Tararua Forest Park draws visitors back time and again for its natural beauty and peaceful atmosphere. The classic tramping gateway to the Tararua Range — Holdsworth Road End on the eastern edge, a 90-minute walk from Wellington traffic. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "fielding-most-beautiful",
+      "name": "Feilding — Most Beautiful Small Town",
+      "region": "whanganui-manawatu",
+      "lat": -40.2275,
+      "lng": 175.5683,
+      "category": "culture",
+      "tags": [
+        "small-town",
+        "heritage-streetscape",
+        "beautiful-town-award",
+        "manawatu"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 0.7,
+      "short": "Voted New Zealand's most beautiful small town a record 16 times — a showpiece of Edwardian main-street heritage in the Manawatū.",
+      "commentary": "Feilding has won the Most Beautiful Town Award a record 16 times. The main street retains an outstanding collection of Edwardian two-storey brick commercial buildings.",
+      "audio_story": "You have arrived in Feilding, a town of about fifteen thousand people ten minutes drive north of Palmerston North. Feilding has one particular claim to fame. It has been voted New Zealand's Most Beautiful Small Town a record sixteen times, which is more than any other town in the country and, as far as any of the locals know, more than any other small town anywhere in the world. Walk the main street and you will understand why. The streetscape is a remarkably intact collection of two storey Edwardian commercial buildings, mostly red brick with cream plaster detail, carefully maintained by a community that clearly takes the competition seriously. The gardens are immaculate. The roundabouts are themed. On Friday mornings, the town comes alive with the world famous Feilding Saleyards, but the rest of the week it settles into the contented rhythm of a prosperous farming service town. Stop for coffee on the central Square, walk to the Carnegie Free Library of nineteen oh eight, notice the stained glass, and then drive out to Mount Lees Reserve for a gentle afternoon walk in one of the oldest planted arboretums in the country. Feilding will not surprise you. It will, however, quietly impress you.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Manawatū District Council",
+        "Keep NZ Beautiful — Most Beautiful Town"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Feilding — Most Beautiful Small Town is praised for being both accessible and genuinely informative. Voted New Zealand's most beautiful small town a record 16 times — a showpiece of Edwardian main-street heritage in the Manawatū. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wma_hist_moutoa_island",
+      "name": "Moutoa Island Battle Site",
+      "region": "whanganui-manawatu",
+      "lat": -39.7247,
+      "lng": 175.0544,
+      "category": "māori",
+      "tags": [
+        "nz-wars",
+        "moutoa",
+        "pai-marire",
+        "heritage",
+        "maori"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are looking at Moutoa Island, a flat sandy island in the Whanganui River, site of a battle on the fourteenth of May eighteen sixty four that shaped this region. A taua of Pai Mārire followers, believing their faith would turn aside bullets, moved down the river intending to attack Whanganui town. The lower river iwi met them on this island to stop them. After brutal hand-to-hand fighting, the lower river forces prevailed, at the cost of many of their own warriors. The people of Whanganui erected a monument on Moutoa Gardens in the town centre, thanking those who had fought to protect the settlers. For Māori the meaning was more complicated, a war between whanaunga that many wished had never happened. The monument still stands. Moutoa Gardens itself was reclaimed as Pakaitore by Whanganui iwi in a long occupation in nineteen ninety five. Stand on the bank of the river, look at the quiet green island, and remember how quickly a gentle bend in a river can become a turning point in a nation's story.",
+      "sources_to_check": [
+        "NZHistory Moutoa",
+        "Whanganui iwi",
+        "Heritage NZ"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Moutoa Island Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_pakaitore",
+      "name": "Pakaitore (Moutoa Gardens) Occupation",
+      "region": "whanganui-manawatu",
+      "lat": -39.9336,
+      "lng": 175.0489,
+      "category": "māori",
+      "tags": [
+        "pakaitore",
+        "whanganui",
+        "occupation",
+        "heritage",
+        "maori"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Pakaitore, the riverbank park in central Whanganui known by many as Moutoa Gardens. Traditionally, Pakaitore was the market place where river people and coastal people traded for centuries, a neutral ground of exchange. In nineteen ninety five, Whanganui iwi reoccupied the site for seventy nine days to press their long-standing claim that Pakaitore had never been sold. The occupation drew national attention, and though it ended peacefully by negotiation, it reset the conversation about urban Māori land in New Zealand. Today Pakaitore is formally recognised as a site of historic significance, held in trust for the people of Whanganui and the district council. A pou and interpretive signs tell the story of both the ancient market place and the recent reclaiming. Twenty years later in twenty seventeen, the Whanganui River itself was granted legal personhood, the first river in the world to receive such status. Stand in the park, feel the river close by, and recognise that a quiet patch of grass can still hold a very large argument.",
+      "sources_to_check": [
+        "Whanganui iwi",
+        "NZHistory Pakaitore",
+        "Te Awa Tupua"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Pakaitore (Moutoa Gardens) Occupation as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_te_awa_tupua",
+      "name": "Whanganui River Legal Personhood",
+      "region": "whanganui-manawatu",
+      "lat": -39.9342,
+      "lng": 175.0483,
+      "category": "māori",
+      "tags": [
+        "te-awa-tupua",
+        "whanganui",
+        "river",
+        "personhood"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are on the banks of the Whanganui River, known to its iwi as Te Awa Tupua. After one of the longest running legal cases in the country's history, the Crown and Whanganui iwi reached a settlement in twenty seventeen that was unprecedented in the world. The Te Awa Tupua Act recognised the Whanganui River as a legal person with all the corresponding rights, duties, and liabilities. Two guardians, one appointed by the iwi and one by the Crown, speak and act on behalf of the river. The whakataukī at the heart of the settlement is Ko au te awa, ko te awa ko au, I am the river and the river is me. The river rises on the slopes of Tongariro and flows two hundred and ninety kilometres to the Tasman Sea, twisting through deep papa cliffs and forested gorges. Every bend has a name. Every tributary has stories. As you stand on the bank, consider that the water you are watching has legal standing in the courts of New Zealand. An ancient relationship has become a legal reality.",
+      "sources_to_check": [
+        "Te Awa Tupua Act 2017",
+        "Whanganui iwi",
+        "NZHistory"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Whanganui River Legal Personhood as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_bridge_to_nowhere",
+      "name": "Bridge to Nowhere Mangapurua",
+      "region": "whanganui-manawatu",
+      "lat": -39.4897,
+      "lng": 174.9444,
+      "category": "heritage",
+      "tags": [
+        "settlement",
+        "whanganui",
+        "bridge",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are deep in the Whanganui forest at the Bridge to Nowhere, a concrete arch bridge built in nineteen thirty six and reached today only by jet boat or a long walk. The bridge served the Mangapurua settlement, a scheme set up after the First World War to give returning soldiers their own farms. Thirty five families carved farms from the bush, but the soil was poor, the country steep, and access impossible. Families crossed the river by canoe and trekked for hours to reach even a basic store. A severe flood in nineteen forty cut the main track, and by nineteen forty two the government declared the settlement unviable and abandoned it. The settlers walked out, leaving fences, orchards, and the newly built bridge to the bush. Today the bush has taken much of the farmland back, and the bridge stands alone, connecting nothing to nothing. Walk across it and you are crossing a monument to hard labour and failed dreams. Listen to the river far below and think of the soldier-settlers who tried, and had to admit defeat to a country that refused to be tamed.",
+      "sources_to_check": [
+        "DOC Bridge to Nowhere",
+        "NZHistory Mangapurua",
+        "Whanganui heritage"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Bridge to Nowhere Mangapurua — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma_hist_jerusalem_hato_hohepa",
+      "name": "Hiruharama (Jerusalem) Mission and Suzanne Aubert",
+      "region": "whanganui-manawatu",
+      "lat": -39.7528,
+      "lng": 175.1439,
+      "category": "heritage",
+      "tags": [
+        "mission",
+        "jerusalem",
+        "suzanne-aubert",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Hiruharama, known in English as Jerusalem, a small settlement on the middle Whanganui River. A Catholic mission has stood here since eighteen fifty four, and the present wooden church was built in the eighteen nineties. The place is inseparable from Sister Mary Joseph Aubert, the French-born Suzanne Aubert, who arrived in eighteen eighty three and founded the Sisters of Compassion. She worked for decades with Māori families along the river, learning te reo deeply, collecting traditional medicinal knowledge, and caring for orphans and the ill. Her congregation still serves Māori communities today. Aubert is the only woman so far formally proposed for canonisation by the Catholic Church in New Zealand. The poet James K Baxter also lived here in the nineteen seventies, forming a commune that wrestled with Māori and Pākehā relationships. Walk quietly. The churchyard holds graves of nuns and river people. This is a small place that has carried very large stories of service, faith, and the meeting of two worlds.",
+      "sources_to_check": [
+        "Sisters of Compassion",
+        "NZHistory Aubert",
+        "Whanganui iwi"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Hiruharama (Jerusalem) Mission and Suzanne Aubert — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma_hist_whanganui_mounted",
+      "name": "Whanganui and the Taranaki Wars",
+      "region": "whanganui-manawatu",
+      "lat": -39.9297,
+      "lng": 175.0489,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "whanganui",
+        "taranaki",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are in Whanganui town, an important colonial base during the New Zealand Wars. From here, troops and Whanganui kūpapa, those Māori who allied with the Crown, launched raids into Taranaki and up the Whanganui River against Kīngitanga and Hauhau forces. The Whanganui Mounted Rifles took part in the invasion of Parihaka in eighteen eighty one, a violent and shameful act for which the Crown later apologised. The town's colonial heritage is visible in its grand buildings, the Durie Hill Tower and Memorial, the Sarjeant Gallery, and the riverfront streetscape. Yet many of these were built on the back of confiscated land and a war economy. Whanganui is now a town reckoning with its past, renaming streets, restoring Māori place names, and listening to its river iwi. Look around as you walk. Read the new bilingual signs. This is a town that has not hidden from difficult history but has begun, slowly, to live alongside it with more honesty than before.",
+      "sources_to_check": [
+        "NZHistory Whanganui Wars",
+        "Parihaka Crown apology",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Whanganui and the Taranaki Wars — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma_hist_ratana_church_origin",
+      "name": "Rātana Pā Origin",
+      "region": "whanganui-manawatu",
+      "lat": -40.1069,
+      "lng": 175.1828,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "ratana",
+        "church",
+        "tahupotiki",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Rātana Pā, the headquarters of the Rātana movement, founded in nineteen eighteen after a vision experienced by Tahupōtiki Wiremu Rātana on the sand dunes outside his home. Rātana preached faith healing and spiritual renewal at a time when the nineteen eighteen influenza pandemic and decades of land loss had left Māori communities reeling. His movement grew swiftly. A magnificent temple with two bell towers, Arepa and Omeka, still stands at the heart of the pā. In the nineteen thirties Rātana entered politics, forming an alliance with the Labour Party that secured the four Māori electorate seats for Labour for generations. Every January the Rātana celebrations draw the Prime Minister and senior ministers to pay respects, one of the most important political events in the country's calendar. The pā is open to visitors on specific occasions but is otherwise a private community. Drive through with respect, look at the temple's white towers, and recognise a living movement that has shaped Māori Christianity and national politics for over a century.",
+      "sources_to_check": [
+        "Rātana Church",
+        "NZHistory Rātana movement",
+        "Te Ara Tahupōtiki Rātana"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Rātana Pā Origin as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_patea_aotea_waka",
+      "name": "Pātea and the Aotea Waka",
+      "region": "whanganui-manawatu",
+      "lat": -39.76,
+      "lng": 174.4878,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "aotea",
+        "waka",
+        "patea",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Pātea, on the south Taranaki coast, the landing place of the Aotea waka. The captain Turi and his people settled here some eight hundred years ago, and their descendants became Ngāti Ruanui, Ngā Rauru, and related iwi. A large carved waka replica stands in the town as a memorial to this arrival. Pātea was also the site of the Te Ngutu o te Manu campaign in the eighteen sixties, when the Pai Mārire prophet Tītokowaru led a fierce resistance against colonial troops in the nearby bush. Colonel Gustavus von Tempsky was killed in the raid on Titokowaru's camp, a major reverse for the colonial forces. In more recent memory, Pātea was the home of the Patea Maori Club, whose nineteen eighty four hit Poi E, written by Dalvanius Prime and Ngoi Pēwhairangi, became the country's biggest-selling single and an anthem of cultural pride. Stand by the waka carving, look out to the Tasman, and feel the centuries layered here from Aotea's arrival to a pop song that made a river town famous.",
+      "sources_to_check": [
+        "Ngāti Ruanui",
+        "NZHistory Tītokowaru",
+        "Poi E history"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Pātea and the Aotea Waka as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_kimbolton_memorial",
+      "name": "Kimbolton Soldier Settlement",
+      "region": "whanganui-manawatu",
+      "lat": -40.1042,
+      "lng": 175.8106,
+      "category": "heritage",
+      "tags": [
+        "soldier-settlement",
+        "kimbolton",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are in the small settlement of Kimbolton, north of Feilding in the Manawatū hill country. Like many Manawatū districts, Kimbolton was settled partly by returned soldiers after the First World War under the government's soldier settlement scheme. The scheme aimed to give veterans their own farms, but too often they were placed on inadequate land with large debts, and many walked off their sections during the depression of the nineteen thirties. Kimbolton's small memorial in the tidy green-and-gold landscape records the names of local men lost in both wars, a common sight in New Zealand rural towns where a heavy share of the casualties fell on small communities. The district was bush until the eighteen seventies, when Scandinavian and British settlers cleared it with axe, saw, and fire. Today it is some of the most productive hill-country sheep farming in the country. Walk the small main street and imagine the new farms, the returned men, and the hard years that turned bush into pasture.",
+      "sources_to_check": [
+        "NZHistory soldier settlement",
+        "Manawatū heritage",
+        "Kimbolton records"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kimbolton Soldier Settlement — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma_hist_palmy_awapuni",
+      "name": "Awapuni Racecourse and Massey University",
+      "region": "whanganui-manawatu",
+      "lat": -40.3836,
+      "lng": 175.59,
+      "category": "heritage",
+      "tags": [
+        "palmerston-north",
+        "massey",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are near Awapuni, on the edge of Palmerston North. The flat land here has held a racecourse since the eighteen nineties. During the First World War the racecourse was transformed into Awapuni Military Camp, a gathering point where thousands of Kiwi soldiers trained before embarking for Europe and the Middle East. Many would not return. A short distance north is Massey University, founded as Massey Agricultural College in nineteen twenty seven to serve the dairy and sheep farming regions of the lower North Island. It became a full university in nineteen sixty three and is now the country's largest by campus area and distance learning numbers. Palmerston North itself, named after the British prime minister, grew from a clearing in the dense Manawatū bush in the eighteen seventies, pushed forward by the railway through the Manawatū Gorge. Stand near the racecourse or the university and think about how one flat plain has served as a military training ground, a horse-racing community, and a hub for rural education that reaches much of rural New Zealand.",
+      "sources_to_check": [
+        "NZHistory Awapuni",
+        "Massey University history",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Awapuni Racecourse and Massey University — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma_hist_rangitikei_nga_rauru",
+      "name": "Rangitikei and the Nga Rauru Rohe",
+      "region": "whanganui-manawatu",
+      "lat": -40.0033,
+      "lng": 175.4325,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "rangitikei",
+        "ngati-apa",
+        "heritage"
+      ],
+      "trigger_radius_m": 400,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are crossing the Rangitikei River, ancestral boundary and lifeline of Ngāti Apa, Rangitāne, and Muaūpoko iwi. Before European settlement the district supported thriving Māori communities in the clay hill country, the fertile terraces of the river, and along the coast. The name Rangitikei comes from a journey by the ancestor Tamatea Pōkai Whenua, and means a day of walking in one stretch. The river cuts dramatic gorges inland and spreads wide across the plains near the coast. Nineteenth-century pastoral leases and land purchases drastically reduced iwi holdings here, and the Treaty settlements of the late twentieth and early twenty-first centuries are restoring parts of what was lost. The small towns of Marton, Taihape, and Bulls sit on this landscape today. As you stand on a bridge over the river and watch the water flow to the sea, remember that before the farms and sheep trucks this valley was Ngāti Apa country, crossed by war parties and trading paths, full of stories that the iwi are still reclaiming.",
+      "sources_to_check": [
+        "Ngāti Apa",
+        "Te Ara Rangitikei",
+        "Treaty settlements"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Rangitikei and the Nga Rauru Rohe as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma_hist_taihape_te_tihi_o_ruahine",
+      "name": "Taihape and the Ruahine Ranges",
+      "region": "whanganui-manawatu",
+      "lat": -39.6833,
+      "lng": 175.8019,
+      "category": "heritage",
+      "tags": [
+        "taihape",
+        "ruahine",
+        "heritage",
+        "railway"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are in Taihape, a small town on the main trunk rail line between Wellington and Auckland. The town's fortunes have always been tied to the railway. Navvies blasted the line over the central plateau in the eighteen nineties and early nineteen hundreds, including the famous Makohine Viaduct just to the south, an engineering marvel for its day. Taihape served as a refreshment stop for Southbound steam trains descending through the gorges, and a locomotive depot maintained engines for the steep run. Today Taihape is known as the gumboot capital of New Zealand, with an annual gumboot-throwing contest and a large painted boot at the centre of town. Beyond the humour, it is also the gateway to the Ruahine Ranges and the Rangitikei River canyons. The Ngāti Whitikaupeka and Ngāti Tamakopiri people are the mana whenua of the surrounding land. Stop at the railway museum or the gumboot, then look up to the Ruahine peaks and consider how a tiny town kept trains running for generations in country that did everything it could to throw them off.",
+      "sources_to_check": [
+        "NZHistory main trunk line",
+        "Taihape Museum",
+        "Ngāti Whitikaupeka"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Taihape and the Ruahine Ranges — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wma-awa-tupua",
+      "name": "Te Awa Tupua — Whanganui River",
+      "region": "whanganui-manawatu",
+      "lat": -39.24,
+      "lng": 174.95,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "river",
+        "legal-personhood",
+        "awa-tupua",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "The world's first river granted legal personhood — an ancestral being under NZ law since 2017.",
+      "commentary": "'Ko au te awa, ko te awa ko au' — 'I am the river, the river is me.' The Te Awa Tupua Act recognises the river as an indivisible, living whole from mountains to sea.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Awa Tupua — Whanganui River as a place where the history and cultural significance of Aotearoa become tangible and real. The world's first river granted legal personhood — an ancestral being under NZ law since 2017. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-moutoa-island",
+      "name": "Moutoa Island / Pakaitore",
+      "region": "whanganui-manawatu",
+      "lat": -39.94,
+      "lng": 175.05,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "battle",
+        "nz-wars",
+        "whanganui"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Site of the 1864 Battle of Moutoa — and the 1995 occupation that reasserted Māori river claims.",
+      "commentary": "The 1995 occupation was a catalyst for the eventual legal recognition of the Whanganui River's personhood.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Moutoa Island / Pakaitore as a place where the history and cultural significance of Aotearoa become tangible and real. Site of the 1864 Battle of Moutoa — and the 1995 occupation that reasserted Māori river claims. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-ratana-pa",
+      "name": "Rātana Pā — Temple & Community",
+      "region": "whanganui-manawatu",
+      "lat": -40.118,
+      "lng": 175.265,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rātana",
+        "religious",
+        "political",
+        "church"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Headquarters of the Rātana movement — a Māori faith and political force that reshaped NZ politics.",
+      "commentary": "Founded in the 1920s, the Rātana movement allied with Labour to win all four Māori parliamentary seats — an alliance that endured for decades.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Rātana Pā — Temple & Community as a place where the history and cultural significance of Aotearoa become tangible and real. Headquarters of the Rātana movement — a Māori faith and political force that reshaped NZ politics. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-pipiriki",
+      "name": "Pipiriki — The River Gateway",
+      "region": "whanganui-manawatu",
+      "lat": -39.511,
+      "lng": 175.047,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "whanganui-river",
+        "bridge-to-nowhere"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The historic river settlement — starting point for the Bridge to Nowhere walk.",
+      "commentary": "Once a thriving settlement during the houseboat era. Today it's the main access point for the Whanganui Journey.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Pipiriki — The River Gateway as a place where the history and cultural significance of Aotearoa become tangible and real. The historic river settlement — starting point for the Bridge to Nowhere walk. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-jerusalem",
+      "name": "Hiruhārama / Jerusalem",
+      "region": "whanganui-manawatu",
+      "lat": -39.468,
+      "lng": 175.016,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "whanganui-river",
+        "catholic",
+        "mission"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A Māori Catholic mission on the Whanganui River — later home to poet James K. Baxter's commune.",
+      "commentary": "A Catholic mission since the 1850s. In the 1970s, poet Baxter established a commune here, writing some of his greatest work.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Hiruhārama / Jerusalem as a place where the history and cultural significance of Aotearoa become tangible and real. A Māori Catholic mission on the Whanganui River — later home to poet James K. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-rangitikei-river",
+      "name": "Rangitīkei River — Ancient Crossing",
+      "region": "whanganui-manawatu",
+      "lat": -39.86,
+      "lng": 175.67,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "river",
+        "crossing",
+        "trade-route"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A significant river crossing on the ancient north-south trade route — a boundary between iwi territories.",
+      "commentary": "The river marked territorial boundaries between iwi. The deep gorges and braided channels made crossing hazardous, and the fording points were strategically significant.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Rangitīkei River — Ancient Crossing as a place where the history and cultural significance of Aotearoa become tangible and real. A significant river crossing on the ancient north-south trade route — a boundary between iwi territories. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-palmerston-north-te-manawa",
+      "name": "Te Manawa Museum, Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.355,
+      "lng": 175.611,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "museum",
+        "rangitāne",
+        "manawatū"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A combined museum, art gallery, and science centre — with significant Rangitāne taonga and Māori cultural collections.",
+      "commentary": "Te Manawa holds important Rangitāne taonga and tells the story of Māori in the Manawatū region. The museum sits in The Square, Palmerston North's central gathering place.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Manawa Museum, Palmerston North as a place where the history and cultural significance of Aotearoa become tangible and real. A combined museum, art gallery, and science centre — with significant Rangitāne taonga and Māori cultural collections. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wma-fielding-oroua-river",
+      "name": "Ōroua River — Rangitāne Heartland",
+      "region": "whanganui-manawatu",
+      "lat": -40.223,
+      "lng": 175.567,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rangitāne",
+        "river",
+        "manawatū"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The Ōroua River flows through ancestral Rangitāne territory — a significant cultural landscape in the Manawatū.",
+      "commentary": "The Ōroua River is significant for Rangitāne o Manawatū. The river and its tributaries supported settlements and provided mahinga kai (food resources). The surrounding plains were cultivated for kūmara and other crops.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Ōroua River — Rangitāne Heartland as a place where the history and cultural significance of Aotearoa become tangible and real. The Ōroua River flows through ancestral Rangitāne territory — a significant cultural landscape in the Manawatū. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-whanganui-river-road",
+      "name": "Whanganui River Road",
+      "region": "whanganui-manawatu",
+      "lat": -39.568,
+      "lng": 174.996,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "river",
+        "heritage",
+        "remote",
+        "maori-history"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 3,
+      "short": "Drive the remote Whanganui River Road through deep gorge country past abandoned settlements and historic marae.",
+      "commentary": "The Whanganui River Road runs 79 km from Whanganui to Pipiriki along the lower Whanganui River. The narrow, winding road passes through some of New Zealand's most isolated countryside, including the hamlet of Jerusalem (Hiruharama) where poet James K. Baxter established his commune in the 1960s. The road is partly unsealed.",
+      "audio_story": "You are driving the Whanganui River Road, and with every kilometre, the modern world recedes. This 79-kilometre road follows the lower Whanganui River from the city upstream to Pipiriki, winding through deep gorge country on a road that is partly unsealed and single-lane in places. The river — Te Awa Tupua — was granted legal personhood in 2017, the first river in the world to be recognised as a living entity with rights. Along the way, you pass small marae, abandoned settlements that once thrived on river trade, and the hamlet of Jerusalem, or Hiruharama, where New Zealand's most celebrated poet James K. Baxter established a commune in the late 1960s. The tiny Catholic church he frequented still stands above the river. At Pipiriki, the road ends and the river continues into Whanganui National Park — accessible only by waka, jet boat, or on foot. Drive slowly, use the passing bays, and give way to locals who know every curve. This is one of the most atmospheric drives in the North Island.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Whanganui District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Whanganui River Road route delivers a memorable journey through exceptional New Zealand scenery. Drive the remote Whanganui River Road through deep gorge country past abandoned settlements and historic marae. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-mountains-to-sea-trail",
+      "name": "Mountains to Sea Cycle Trail",
+      "region": "whanganui-manawatu",
+      "lat": -39.283,
+      "lng": 175.567,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "volcanic",
+        "river",
+        "multi-day"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 24,
+      "short": "Cycle from the volcanic peaks of Tongariro to the Tasman Sea at Whanganui, following rivers and history.",
+      "commentary": "The Mountains to Sea Cycle Trail runs 219 km from Ohakune near Mount Ruapehu to the coast at Whanganui. The trail descends from the volcanic plateau along the Mangawhero and Whanganui Rivers. It is one of the NZ Cycle Trail Great Rides and includes the remote Bridge to Nowhere section.",
+      "audio_story": "You are starting the Mountains to Sea Cycle Trail at Ohakune, in the shadow of Mount Ruapehu, and over the next 219 kilometres you will descend from the volcanic plateau all the way to the Tasman Sea at Whanganui. This is one of New Zealand's great multi-day rides, taking three to four days through some of the most remote and historically layered countryside in the North Island. The trail follows river valleys — first the Mangawhero, then the Whanganui — dropping steadily through farmland, native bush, and abandoned settlements. The highlight is the Bridge to Nowhere, a massive concrete bridge deep in the bush that once served a farming settlement established by returned World War I soldiers in the 1920s. The land defeated them within a decade, and the settlers left, leaving only the bridge standing in the encroaching forest. It is one of the most evocative sights in the New Zealand backcountry. The final section follows the Whanganui River — Te Awa Tupua, the river with legal personhood — to the coast.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Mountains to Sea Cycle Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle from the volcanic peaks of Tongariro to the Tasman Sea at Whanganui, following rivers and history. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-manawatu-gorge-track",
+      "name": "Manawatu Gorge Tararua Track",
+      "region": "whanganui-manawatu",
+      "lat": -40.101,
+      "lng": 175.865,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "gorge",
+        "geological",
+        "river"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Walk through the dramatic Manawatu Gorge where the river cuts straight through the Tararua Ranges.",
+      "commentary": "The Manawatu Gorge is a rare example of a water gap where the Manawatu River cuts through the Tararua Range. The gorge walking track follows the northern bank through native bush. The old SH3 road through the gorge was permanently closed in 2017 due to landslides, replaced by the Te Ahu a Turanga highway.",
+      "audio_story": "You are walking into the Manawatu Gorge, one of New Zealand's most remarkable geological features. The Manawatu River does something extraordinary here — instead of flowing around the Tararua Range, it cuts straight through it. This is a water gap, formed because the river existed before the mountains rose, and it eroded its path downward as fast as the land lifted upward, maintaining its course through millions of years of tectonic uplift. The walking track follows the northern bank through lush native bush, with the river churning below and the gorge walls rising steeply on both sides. The old State Highway 3 road through the gorge was permanently closed in 2017 after repeated devastating landslips — the unstable geology that carved this gorge continues to reshape it. The replacement highway, Te Ahu a Turanga, crosses over the top of the range instead. On your walk, listen for kereru in the canopy and watch for eels in the river pools. This is a place where you can feel geological time in motion.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Horizons Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Manawatu Gorge Tararua Track route delivers a memorable journey through exceptional New Zealand scenery. Walk through the dramatic Manawatu Gorge where the river cuts straight through the Tararua Ranges. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-palmerston-north-heritage",
+      "name": "Palmerston North Heritage Trail",
+      "region": "whanganui-manawatu",
+      "lat": -40.3523,
+      "lng": 175.6114,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "heritage",
+        "university",
+        "gardens"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Walk Palmerston North's heritage circuit from The Square through gardens and the Massey University campus.",
+      "commentary": "Palmerston North is centred on The Square, a seven-hectare public park that is one of the largest town squares in New Zealand. The heritage trail links the Victorian Esplanade gardens, the Regent Theatre, and Massey University's historic campus. The city was established in 1866 in the dense bush of the Manawatu.",
+      "audio_story": "You are walking across The Square in the heart of Palmerston North, a seven-hectare public park that forms one of the largest town squares in the country. The city was carved from dense bush in 1866, and early settlers had to burn and fell their way to create this space. Today it is a pleasant expanse of gardens, mature trees, and public art. The heritage trail takes you past the Regent Theatre — a beautifully restored 1930 picture palace — and through the Victorian Esplanade gardens along the Manawatu River. Continue to Massey University, established in 1927 as an agricultural college and now one of New Zealand's largest universities. The campus retains handsome original buildings set among mature plantings. Palmerston North calls itself the 'Knowledge City' and is also home to a significant military base, a major food research institute, and the national rugby museum. It is an unpretentious city that rewards those who take time to explore beyond the highway.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Palmerston North City Council",
+        "Heritage New Zealand"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Palmerston North Heritage Trail route delivers a memorable journey through exceptional New Zealand scenery. Walk Palmerston North's heritage circuit from The Square through gardens and the Massey University campus. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-whanganui-river-journey",
+      "name": "Whanganui Journey – Great Walk",
+      "region": "whanganui-manawatu",
+      "lat": -39.07,
+      "lng": 175.02,
+      "category": "journey",
+      "tags": [
+        "great-walk",
+        "river-journey",
+        "canoeing",
+        "native-bush",
+        "multi-day"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 40,
+      "short": "Paddle the Whanganui River — New Zealand's only Great Walk that is actually a river journey by canoe or kayak.",
+      "commentary": "The Whanganui Journey is one of New Zealand's Great Walks, but it is done by canoe or kayak over 3-5 days, covering 87 or 145 km of the Whanganui River. The route passes through deep bush-clad gorges, 239 rapids, and past the Bridge to Nowhere. The river was granted legal personhood in 2017.",
+      "audio_story": "You are pushing your canoe into the Whanganui River at Taumarunui or Whakahoro, embarking on the only Great Walk in New Zealand that does not involve walking at all. Over three to five days, you will paddle 87 to 145 kilometres down Te Awa Tupua — the river that became the first in the world to be granted legal personhood in 2017, recognised as an ancestor of the Whanganui iwi. The river carries you through deep gorges cloaked in native bush, past abandoned settlements, and through 239 rapids — mostly gentle grade one and two that add excitement without serious danger. The Bridge to Nowhere appears around a bend, a massive concrete structure standing alone in the bush, a monument to a farming settlement that was swallowed by the forest. At night, you camp or stay in huts on the riverbank, and the only sounds are the river, the bush, and the occasional morepork call. This journey has been a highway for Maori for centuries — you are paddling in the wake of waka that carried people, trade, and stories through this landscape long before Europeans arrived.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Whanganui River Maori Trust Board"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Whanganui Journey – Great Walk route delivers a memorable journey through exceptional New Zealand scenery. Paddle the Whanganui River — New Zealand's only Great Walk that is actually a river journey by canoe or kayak. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-rangitikei-river-road",
+      "name": "Rangitikei River Valley Drive",
+      "region": "whanganui-manawatu",
+      "lat": -39.937,
+      "lng": 175.818,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "river",
+        "farmland",
+        "gorge"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "Drive the Rangitikei River valley through deep gorges and rolling farmland in one of the North Island's quietest corners.",
+      "commentary": "The Rangitikei River valley runs from the volcanic plateau south through deep sandstone gorges to the coast near Bulls. The river is known for trout fishing, whitewater rafting, and the Rangitikei River Road that follows its western bank. The area is quintessential rural New Zealand.",
+      "audio_story": "You are driving through the Rangitikei River valley, and this is the quiet, unsung heart of the lower North Island. The Rangitikei River has carved deep gorges through soft sandstone and papa rock, creating dramatic bluffs and terraces that you glimpse from the road. This is farming country — sheep, beef cattle, and cropping — and the small towns along the way, Hunterville, Mangaweka, and Taihape, are quintessential rural New Zealand. Taihape has styled itself as the 'gumboot capital of the world,' complete with a giant gumboot monument — tongue firmly in cheek. The river itself is excellent for trout fishing and whitewater rafting, with grade three to five rapids in the upper sections. In autumn, the deciduous trees along the river turn gold and the farmland glows in soft light. The Rangitikei does not appear on most tourist itineraries, which is precisely its appeal. If you want to see the New Zealand that most visitors never encounter — the one of country pubs, farm gates, and quiet river pools — this is it.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Rangitikei District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Rangitikei River Valley Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive the Rangitikei River valley through deep gorges and rolling farmland in one of the North Island's quietest corners. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-tararua-range-crossing",
+      "name": "Tararua Range Southern Crossing",
+      "region": "whanganui-manawatu",
+      "lat": -40.895,
+      "lng": 175.335,
+      "category": "journey",
+      "tags": [
+        "tramping",
+        "alpine",
+        "mountain-pass",
+        "backcountry",
+        "challenging"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 20,
+      "short": "Cross the rugged Tararua Ranges on a challenging multi-day tramp through some of the North Island's wildest alpine country.",
+      "commentary": "The Tararua Range rises to 1,571 metres and experiences some of the worst weather in the North Island due to its exposure to Cook Strait winds. The Southern Crossing from Otaki Forks to Kaitoke takes 2-3 days and crosses exposed alpine tops. The ranges have claimed over 60 lives and demand full backcountry experience.",
+      "audio_story": "You are heading into the Tararua Ranges, and this is not a walk to take lightly. The Tararuas have claimed over 60 lives, more than any other range in New Zealand, and the reason is their exposure to the full fury of Cook Strait weather. Winds on the tops regularly exceed 100 kilometres per hour, and visibility can drop to zero within minutes. The Southern Crossing takes two to three days from Otaki Forks to Kaitoke, climbing through dense bush to the exposed alpine tops at around 1,400 metres. Up here, the landscape is tussock, rock, and sky — and on a rare clear day, the views are spectacular, stretching from Kapiti Island to the South Island. The bush below is thick podocarp and beech forest, home to kaka, whio, and the occasional kiwi. DOC huts along the route range from basic to very basic. You need solid backcountry experience, proper equipment, and a willingness to sit out bad weather. But for experienced trampers, the Tararuas offer a wilderness experience that rivals anything in the South Island.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Tararua Tramping Club"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Tararua Range Southern Crossing route delivers a memorable journey through exceptional New Zealand scenery. Cross the rugged Tararua Ranges on a challenging multi-day tramp through some of the North Island's wildest alpine country. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-bridge-to-nowhere",
+      "name": "Bridge to Nowhere (Whanganui River)",
+      "region": "whanganui-manawatu",
+      "lat": -39.11,
+      "lng": 174.94,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "jet-boat",
+        "history",
+        "remote",
+        "commercial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Jet boat and hike to the mysterious Bridge to Nowhere deep in the Whanganui backcountry.",
+      "commentary": "The Bridge to Nowhere is a concrete road bridge standing in pristine bush along the Whanganui River, built in 1936 for settlers who eventually abandoned the remote valley. Access is by jet boat up the river followed by a 40-minute bush walk. The bridge is one of the most evocative historical relics in New Zealand.",
+      "audio_story": "You are boarding a jet boat on the Whanganui River for a journey deep into one of the North Island's last great wilderness areas. The river narrows as you travel upstream, the bush closing in on both sides, until the jet boat deposits you at Mangapurua Landing. From here, a 40-minute walk through dense native forest brings you to one of New Zealand's most haunting sights: the Bridge to Nowhere. This substantial concrete bridge was built in 1936 to serve settlers in the Mangapurua Valley, returned soldiers who had been granted land here after World War I. But the valley defeated them, the terrain too steep, the access too difficult, and by the 1940s, every farm had been abandoned. The bush reclaimed the valley, and the bridge now stands in perfect isolation, a road leading from nowhere to nowhere. It is a powerful reminder of human ambition and nature's ultimate dominance. The jet boat ride itself is an adventure, navigating rapids and sweeping bends on a river of deep cultural significance to Whanganui iwi.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Bridge to Nowhere Lodge",
+        "DOC",
+        "Whanganui River Adventures"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Bridge to Nowhere (Whanganui River) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat and hike to the mysterious Bridge to Nowhere deep in the Whanganui backcountry. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-river-canoe",
+      "name": "Whanganui River Journey (Great Walk Canoe)",
+      "region": "whanganui-manawatu",
+      "lat": -39.07,
+      "lng": 175.04,
+      "category": "adventure",
+      "tags": [
+        "canoeing",
+        "great-walk",
+        "multi-day",
+        "wilderness",
+        "commercial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 72,
+      "short": "Canoe or kayak the Whanganui River on New Zealand's only Great Walk by water.",
+      "commentary": "The Whanganui Journey is New Zealand's only Great Walk by water, a 3-5 day canoe or kayak trip down the Whanganui River through remote bush-clad gorges. The 87 km route from Whakahoro to Pipiriki passes through DOC huts and campsites along a river of deep spiritual significance to Whanganui iwi.",
+      "audio_story": "You are about to embark on the Whanganui Journey, New Zealand's only Great Walk undertaken by water. Over the next three to five days, your canoe or kayak will carry you 87 kilometres down the Whanganui River through some of the most remote and beautiful bush-clad gorges in the North Island. The river is a taonga, a treasure, of the Whanganui iwi, and it was the first river in the world to be granted the legal status of a person. Your journey passes through dozens of rapids, all manageable for beginners with a safety briefing, and between them, the river winds in great sweeping bends beneath towering cliffs draped in native bush. You will stay in DOC huts and campsites along the way, cooking on gas stoves and falling asleep to the sounds of the river and the bush. There are few phones signals, no shops, and no roads for much of the journey. This is genuine disconnection, a chance to travel as people have travelled this river for centuries.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Whanganui River Canoes",
+        "Blazing Paddles"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Whanganui River Journey (Great Walk Canoe) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Canoe or kayak the Whanganui River on New Zealand's only Great Walk by water. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-mt-ruapehu-mtb",
+      "name": "Ohakune Old Coach Road MTB",
+      "region": "whanganui-manawatu",
+      "lat": -39.374,
+      "lng": 175.47,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "rail-trail",
+        "viaduct",
+        "scenic",
+        "free"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Ride the historic Ohakune Old Coach Road past volcanic landscapes and historic viaducts.",
+      "commentary": "The Ohakune Old Coach Road is a 15 km mountain bike/walking track that follows the original coach road and railway between Ohakune and Horopito. Highlights include the Hapuawhenua Viaduct, cobblestone road sections, and views of Mounts Ruapehu and Ngauruhoe.",
+      "audio_story": "You have arrived at the start of the Ohakune Old Coach Road, a 15-kilometre journey through volcanic landscape and railway history on the flanks of Mount Ruapehu. The track follows the original coach road built in the 1800s and the old North Island Main Trunk railway alignment, and the engineering relics you encounter along the way are extraordinary. The highlight is the Hapuawhenua Viaduct, a curved steel structure perched above a deep bush-filled gorge, with the original wooden viaduct visible beside it. You will also ride over sections of the original cobblestone road, remarkably well preserved beneath the bush canopy. The volcanic landscape is dramatic, riding through forests that were buried by lahar debris and past views of Ruapehu's snowcapped peak. The trail is well graded and suitable for most mountain bikes, though a full-suspension bike handles the rougher sections better. A car shuttle between the two ends makes this a one-way downhill ride if you prefer.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Visit Ruapehu",
+        "NZ Cycle Trail"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Ohakune Old Coach Road MTB adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride the historic Ohakune Old Coach Road past volcanic landscapes and historic viaducts. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-tandem-skydive",
+      "name": "Skydive Whanganui",
+      "region": "whanganui-manawatu",
+      "lat": -39.962,
+      "lng": 175.025,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Tandem skydive over the Whanganui coast and river mouth.",
+      "commentary": "Skydive operations in the Whanganui-Manawatu region offer tandem jumps with views of the Whanganui River, the Tasman Sea coastline, and on clear days, the volcanic peaks of the central plateau. The coastal setting provides unique aerial perspectives.",
+      "audio_story": "You have arrived at the airfield for a tandem skydive that offers one of the most diverse panoramas in the lower North Island. As the aircraft climbs, the landscape unfolds beneath you, the great curve of the Whanganui River meeting the Tasman Sea, the farmland of the Manawatu plains stretching inland, and on a clear day, the volcanic peaks of Ruapehu, Ngauruhoe, and Tongariro lined along the horizon. Then the door opens and the world tilts as you freefall through the sky. The rush of wind at 200 kilometres per hour drowns out everything except the pure exhilaration of falling. Under canopy, the silence returns and you float gently towards a landing zone with that extraordinary view still spread out below you. The Whanganui area sees fewer tandem jumpers than Taupo, which means less waiting and a more personal experience with your instructor.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZ Aerosports",
+        "Whanganui & Partners"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Skydive Whanganui adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tandem skydive over the Whanganui coast and river mouth. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-tararua-range",
+      "name": "Tararua Range Tramping",
+      "region": "whanganui-manawatu",
+      "lat": -40.865,
+      "lng": 175.36,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "alpine",
+        "huts",
+        "free",
+        "challenging"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 16,
+      "short": "Tramp the rugged Tararua Ranges, the North Island's most challenging alpine tramping.",
+      "commentary": "The Tararua Range offers the North Island's most serious tramping, with routes to Mitre Peak (1,571m) and along exposed ridgelines. The ranges are notorious for extreme weather changes. Multiple DOC huts service overnight trips. Experience and proper gear are essential.",
+      "audio_story": "You have arrived at one of the entry points to the Tararua Range, the North Island's most respected and feared tramping destination. These mountains have humbled experienced trampers for over a century, with weather that can change from calm to deadly in minutes. The ridgeline between the major peaks is fully exposed to the winds that howl through Cook Strait, and windchill can drop temperatures to well below freezing at any time of year. But for those with the experience and preparation to tackle them safely, the Tararuas offer a genuine alpine wilderness experience just an hour from Wellington. The route to Mitre Peak at 1,571 metres is a classic, climbing through dense bush to the tussock tops before following an exposed ridge to the summit. DOC huts along the main routes provide shelter and are maintained to a good standard. Check the weather forecast obsessively, carry a PLB, leave your intentions, and respect the mountains. These ranges do not forgive complacency.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "DOC",
+        "Tararua Tramping Club",
+        "Mountain Safety Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Tararua Range Tramping adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tramp the rugged Tararua Ranges, the North Island's most challenging alpine tramping. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-rangitikei-bungy",
+      "name": "Mokai Gravity Canyon (Rangitikei)",
+      "region": "whanganui-manawatu",
+      "lat": -39.464,
+      "lng": 175.831,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "bridge-swing",
+        "flying-fox",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Bungy, swing, or fly fox from 80 metres above the spectacular Rangitikei Gorge.",
+      "commentary": "Mokai Gravity Canyon offers a bungy jump, bridge swing, and flying fox from 80 metres above the Rangitikei River gorge. The North Island's highest bungy, the swing reaches speeds of 150 km/h, and the flying fox runs for 1 km across the gorge. The setting in the dramatic Rangitikei canyon is spectacular.",
+      "audio_story": "You have arrived at Mokai Gravity Canyon, perched 80 metres above the dramatic Rangitikei River gorge, and this is where the North Island's biggest thrills await. Three different ways to throw yourself off a perfectly good platform are on offer here. The bungy jump is the North Island's highest, an 80-metre freefall towards the river below with a rebound that sends you soaring back upwards. The bridge swing is even more intense, you freefall for 50 metres before swinging through a massive arc at up to 150 kilometres per hour. And the flying fox, the longest in New Zealand, carries you on a one-kilometre cable across the entire gorge at speeds up to 160 kilometres per hour. The Rangitikei Gorge itself is a geological masterpiece, layers of ancient river sediment cut into a deep, narrow canyon by the river below. This is one of those rare adventure sites where the natural setting is as impressive as the activities themselves.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Gravity Canyon",
+        "Visit Ruapehu"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Mokai Gravity Canyon (Rangitikei) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Bungy, swing, or fly fox from 80 metres above the spectacular Rangitikei Gorge. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-palmerston-north-rock-climbing",
+      "name": "Mangatepopo / Humphries Castle Rock Climbing",
+      "region": "whanganui-manawatu",
+      "lat": -40.414,
+      "lng": 175.61,
+      "category": "adventure",
+      "tags": [
+        "rock-climbing",
+        "bouldering",
+        "free",
+        "outdoor"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Climb volcanic rock at the Manawatu Gorge area crags popular with local climbers.",
+      "commentary": "The Manawatu region has several rock climbing areas, including crags near the Manawatu Gorge and in the Tararua Range foothills. The rock is varied, from greywacke to volcanic, and routes range from beginner to advanced. The climbing community is active and welcoming.",
+      "audio_story": "You have arrived at one of the Manawatu region's outdoor rock climbing areas, where local climbers have developed routes on the varied rock formations of the Tararua foothills and gorge country. The climbing here is not as well known as Wharepapa South or Castle Hill, but that is part of its appeal, you are unlikely to queue for a route, and the local community is welcoming to visitors. The rock types vary from compact greywacke to volcanic formations, offering different styles of climbing from friction slabs to steep crack lines. Routes range from introductory climbs suitable for guided beginners to challenging pitches that will test experienced leaders. The setting is beautiful, surrounded by farmland and native bush, with the Tararua Ranges as a backdrop. Bring your own gear or connect with the local climbing club, who can point you to the best routes for your ability and the current conditions. This is grassroots New Zealand climbing at its most authentic.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZAC Manawatu Section",
+        "ClimbNZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Mangatepopo / Humphries Castle Rock Climbing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Climb volcanic rock at the Manawatu Gorge area crags popular with local climbers. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-himatangi-beach-horse",
+      "name": "Himatangi Beach Horse Trekking",
+      "region": "whanganui-manawatu",
+      "lat": -40.367,
+      "lng": 175.226,
+      "category": "adventure",
+      "tags": [
+        "horse-trekking",
+        "beach",
+        "commercial",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "Ride horses along the wild Manawatu coastline at Himatangi Beach.",
+      "commentary": "Horse trekking at Himatangi Beach takes riders along the long, flat stretch of black sand on the Manawatu coast. The wide, empty beach provides room for cantering, and the dramatic Tasman Sea backdrop makes for a memorable ride. Suitable for all experience levels.",
+      "audio_story": "You have arrived at Himatangi Beach on the Manawatu coast, where the Tasman Sea meets a long stretch of dark sand and a horse is waiting to carry you along it. This is a classic New Zealand beach ride, wide open space, the crash of surf on one side, and the freedom to canter along the waterline with salt spray on your face. The Manawatu coast is wild and largely undeveloped, and you are likely to have the beach mostly to yourselves. Your guide will match you with a suitable horse and give you a thorough briefing before heading down to the sand. Beginners walk and trot along the firmer sand near the waterline, while experienced riders may get the chance to open up to a canter along the straightaways. The beach seems to stretch endlessly in both directions, and the sense of space is liberating. After your ride, the horses deserve the credit, they are calm, experienced beach mounts who know the terrain by heart.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Manawatu Tourism",
+        "Local operators"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Himatangi Beach Horse Trekking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride horses along the wild Manawatu coastline at Himatangi Beach. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

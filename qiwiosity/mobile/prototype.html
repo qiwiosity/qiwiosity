@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aotearoa - NZ Travel Prototype</title>
+<style>
+  :root {
+    /* Qiwiosity brand palette — sampled from the teal speech-bubble logo. */
+    --primary: #15888A;
+    --primary-dark: #0E5F5F;
+    --primary-deep: #083D3D;
+    --accent: #E07B3C;
+    --bg: #F5F3EF;
+    --surface: #ffffff;
+    --text: #1A1A1A;
+    --muted: #6B6B6B;
+    --border: #E5E1D8;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  .app { display: grid; grid-template-columns: 340px 1fr 360px; grid-template-rows: 60px 1fr; height: 100vh; }
+  @media (max-width: 1100px) { .app { grid-template-columns: 280px 1fr; } .itinerary-panel { display:none; } }
+  @media (max-width: 760px) { .app { grid-template-columns: 1fr; grid-template-rows: 60px auto 1fr; } .sidebar { max-height: 220px; overflow-y: auto; } }
+
+  header {
+    grid-column: 1 / -1;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+  }
+  header h1 { font-size: 18px; font-weight: 700; margin: 0; letter-spacing: 0.3px; }
+  header .brand-mark { width: 28px; height: 28px; margin-right: 10px; border-radius: 6px; }
+  header .tabs { margin-left: auto; display: flex; gap: 4px; }
+  header .tab { background: transparent; color: rgba(255,255,255,0.75); border: none; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+  header .tab.active { background: rgba(255,255,255,0.15); color: white; }
+
+  .sidebar { background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; padding: 16px; }
+  .sidebar h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--muted); margin: 20px 0 8px; }
+  .sidebar h2:first-child { margin-top: 0; }
+
+  .search { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; }
+  .category-list { display: flex; flex-direction: column; gap: 4px; }
+  .cat {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 10px; border-radius: 8px; cursor: pointer;
+    font-size: 14px; user-select: none; transition: background 0.15s;
+  }
+  .cat:hover { background: #F5F3EF; }
+  .cat .swatch { width: 10px; height: 10px; border-radius: 50%; }
+  .cat.on { background: #EEF5F2; font-weight: 600; }
+  .cat .count { margin-left: auto; color: var(--muted); font-size: 12px; }
+
+  .region-list { display: flex; flex-direction: column; gap: 2px; }
+  .region { padding: 6px 10px; border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--text); }
+  .region:hover { background: #F5F3EF; }
+  .region .small { font-size: 11px; color: var(--muted); }
+
+  #map { width: 100%; height: 100%; }
+
+  .itinerary-panel { background: var(--surface); border-left: 1px solid var(--border); overflow-y: auto; display: flex; flex-direction: column; }
+  .itinerary-header { padding: 16px; border-bottom: 1px solid var(--border); }
+  .itinerary-header h2 { margin: 0 0 4px; font-size: 16px; }
+  .itinerary-header p { margin: 0; font-size: 12px; color: var(--muted); }
+  .itinerary-list { padding: 12px; flex: 1; }
+  .itinerary-list .empty { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 20px; }
+  .iti-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin-bottom: 8px; position: relative; cursor: grab; }
+  .iti-card h4 { margin: 0 0 4px; font-size: 14px; }
+  .iti-card .meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; }
+  .iti-card .remove { position: absolute; top: 8px; right: 8px; background: none; border: none; color: var(--muted); font-size: 18px; cursor: pointer; line-height: 1; padding: 0 4px; }
+  .iti-card .remove:hover { color: #c62828; }
+  .iti-footer { padding: 16px; border-top: 1px solid var(--border); background: #FAFAFA; font-size: 13px; }
+  .iti-footer div { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .iti-footer div.total { font-weight: 700; color: var(--primary-dark); font-size: 15px; border-top: 1px solid var(--border); padding-top: 8px; margin-top: 6px; }
+
+  /* Google Maps InfoWindow styling */
+  .gm-style .gm-style-iw-c { border-radius: 12px !important; padding: 0 !important; overflow: hidden !important; }
+  .gm-style .gm-style-iw-d { overflow: auto !important; max-height: 420px !important; }
+  .gm-style .gm-style-iw-tc { display: none; }
+
+  .popup-hero {
+    width: 100%; height: 150px;
+    object-fit: cover; display: block;
+    background: #c8d8d8;
+  }
+  .popup-hero-wrap {
+    position: relative; overflow: hidden;
+  }
+  .popup-hero-wrap .cat-chip {
+    position: absolute; top: 8px; left: 8px;
+    background: rgba(0,0,0,0.55);
+    color: white; font-size: 10px; font-weight: 700;
+    padding: 3px 9px; border-radius: 99px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .popup-hero-wrap .credit {
+    position: absolute; bottom: 4px; right: 6px;
+    font-size: 9px; color: rgba(255,255,255,0.65); font-style: italic;
+  }
+  .popup-inner { font-family: inherit; width: 280px; }
+  .popup-gallery {
+    display: flex; gap: 4px; margin: 6px 0 8px;
+    overflow-x: auto; scrollbar-width: none;
+  }
+  .popup-gallery::-webkit-scrollbar { display: none; }
+  .popup-gallery-thumb {
+    flex: 0 0 auto; width: 68px; height: 52px;
+    object-fit: cover; border-radius: 5px; cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .popup-gallery-thumb:hover { border-color: #2563eb; transform: scale(1.05); }
+  .popup-gallery-thumb.active { border-color: #2563eb; }
+  .popup-inner h3 {
+    margin: 0; padding: 10px 14px 2px;
+    font-size: 15px; font-weight: 700; color: var(--text);
+    border-bottom: none;
+  }
+  .popup-inner .pop-meta {
+    display: flex; gap: 10px; align-items: center;
+    padding: 2px 14px 6px; font-size: 12px; color: var(--muted);
+  }
+  .popup-inner .pop-meta .price { color: var(--accent); font-weight: 700; font-size: 13px; }
+  .popup-inner p { margin: 0; padding: 4px 14px 8px; font-size: 13px; line-height: 1.45; color: var(--text); }
+  .popup-inner .tags { padding: 0 14px 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+  .popup-inner .tags .tag {
+    background: #F0F0F0; border-radius: 99px;
+    padding: 2px 8px; font-size: 10px; color: var(--muted);
+  }
+  .popup-inner .pop-actions {
+    display: flex; flex-wrap: wrap; gap: 5px;
+    padding: 8px 14px 12px; border-top: 1px solid var(--border);
+  }
+  .popup-inner .pop-actions .btn { font-size: 11px; padding: 5px 10px; flex: 1; min-width: 0; text-align: center; }
+  .btn { padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); background: white; font-size: 12px; cursor: pointer; font-weight: 500; }
+  .btn.primary { background: var(--primary); border-color: var(--primary); color: white; }
+  .btn.primary:hover { background: var(--primary-dark); }
+  .btn:hover { background: #F5F3EF; }
+  .btn.primary:disabled { background: var(--muted); border-color: var(--muted); cursor: default; }
+
+  .legend {
+    position: absolute; bottom: 20px; left: 20px;
+    background: white; border-radius: 8px; box-shadow: var(--shadow);
+    font-size: 12px; z-index: 999;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .legend.hidden { opacity: 0; pointer-events: none; transform: translateY(8px); }
+  .legend-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 12px 4px; cursor: pointer; user-select: none;
+  }
+  .legend-header strong { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .legend-header .legend-toggle {
+    background: none; border: none; font-size: 14px; color: var(--muted);
+    cursor: pointer; padding: 0 2px; line-height: 1; transition: transform 0.2s;
+  }
+  .legend-header .legend-toggle.collapsed { transform: rotate(180deg); }
+  .legend-body { padding: 0 12px 8px; overflow: hidden; transition: max-height 0.25s ease, opacity 0.2s; }
+  .legend-body.collapsed { max-height: 0 !important; opacity: 0; padding-bottom: 0; }
+  .legend .row { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+  .legend .dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  .view { display: none; }
+  .view.active { display: block; }
+
+  .acc-card { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; cursor: pointer; font-size: 13px; }
+  .acc-card:hover { border-color: var(--primary); }
+  .acc-card h4 { margin: 0; font-size: 14px; }
+  .acc-card .meta { display: flex; justify-content: space-between; margin-top: 6px; color: var(--muted); font-size: 12px; }
+  .acc-card .price { color: var(--accent); font-weight: 600; }
+
+  /* Accommodation filter chips (Stay tab) */
+  #accomTypeChips .cat-chip,
+  #accomRegionChips .cat-chip {
+    display: inline-block; padding: 5px 12px; border-radius: 20px; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); font-size: 12px; font-weight: 600;
+    cursor: pointer; white-space: nowrap; transition: all 0.15s;
+  }
+  #accomTypeChips .cat-chip:hover,
+  #accomRegionChips .cat-chip:hover { border-color: var(--primary); }
+
+  .commentary-overlay {
+    position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+    background: var(--primary-dark); color: white; padding: 14px 20px;
+    border-radius: 30px; box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    max-width: 500px; font-size: 13px; line-height: 1.5;
+    display: none; z-index: 1001;
+  }
+  .commentary-overlay.on { display: block; animation: slideUp 0.3s; }
+  .commentary-overlay button { background: none; border: none; color: white; float: right; margin-left: 12px; cursor: pointer; opacity: 0.7; }
+  @keyframes slideUp { from { opacity: 0; transform: translate(-50%, 20px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+  /* ============ SPLASH / FRONT SCREEN ============ */
+  .splash {
+    position: fixed; inset: 0;
+    background: #F5F3EF;
+    color: white;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    z-index: 10000;
+    text-align: center; padding: 0;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    overflow: hidden;
+  }
+  .splash.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+  .splash .splash-bg {
+    position: absolute; inset: 0;
+    background: url('./assets/splash-bg.png') center center / contain no-repeat;
+    background-color: #F5F3EF;
+  }
+  @media (max-aspect-ratio: 3/4) {
+    .splash .splash-bg { background-size: cover; }
+  }
+  .splash::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg,
+      rgba(245,243,239,0.15) 0%,
+      rgba(245,243,239,0) 30%,
+      rgba(8,61,61,0.25) 70%,
+      rgba(8,61,61,0.7) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .splash-top { flex: 1; }
+  .splash-bottom {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0 40px 40px;
+    animation: splashRise 0.7s ease-out both;
+  }
+  @keyframes splashRise {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .splash .tagline {
+    color: white; font-size: 24px; font-weight: 800; margin: 0 0 8px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5), 0 0 40px rgba(8,61,61,0.3);
+    letter-spacing: -0.3px;
+  }
+  .splash .sub-tagline {
+    color: rgba(255,255,255,0.95); font-size: 13px; margin: 0 0 28px;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  }
+  .splash .begin-btn {
+    background: var(--primary); color: white; border: none;
+    padding: 16px 52px; border-radius: 40px; font-size: 16px; font-weight: 600;
+    cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    letter-spacing: 0.5px;
+  }
+  .splash .begin-btn:hover { transform: translateY(-2px); background: var(--primary-dark); }
+  .splash .splash-footer {
+    margin-top: 24px;
+    font-size: 11px; letter-spacing: 3px;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+  }
+
+  /* ============ TOAST ============ */
+  .toast {
+    position: fixed; top: 80px; left: 50%; transform: translateX(-50%);
+    background: var(--primary-dark); color: white;
+    padding: 12px 22px; border-radius: 24px;
+    z-index: 1002; font-size: 13px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    display: none;
+  }
+  .toast.on { display: block; animation: slideUp 0.3s; }
+
+  /* ============ ITINERARY CARD ENHANCEMENTS ============ */
+  .iti-card:hover { border-color: var(--primary); }
+  .iti-actions { display: flex; gap: 6px; margin-top: 8px; }
+  .iti-actions .btn { flex: 1; font-size: 11px; padding: 6px 8px; }
+  .trip-directions {
+    padding: 10px 16px 0; background: #FAFAFA;
+  }
+  .trip-directions button {
+    width: 100%; background: var(--primary); color: white; border: none;
+    padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .trip-directions button:hover { background: var(--primary-dark); }
+
+  /* ============ PLAN VIEW — FOCUSED MAP ============ */
+  .plan-show-all-toggle {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 14px; margin: 0 0 12px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; cursor: pointer; user-select: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .plan-show-all-toggle:hover { border-color: var(--primary); }
+  .plan-show-all-toggle.on { border-color: var(--primary); background: #E8F5F5; }
+  .plan-show-all-toggle .toggle-eye { font-size: 16px; opacity: 0.4; transition: opacity 0.2s; }
+  .plan-show-all-toggle.on .toggle-eye { opacity: 1; }
+  .plan-show-all-toggle .toggle-label { font-size: 13px; font-weight: 500; color: var(--muted); }
+  .plan-show-all-toggle.on .toggle-label { color: var(--primary); font-weight: 600; }
+
+  .plan-category-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 14px; }
+  .plan-cat-chip {
+    padding: 4px 10px; border-radius: 99px; font-size: 11px; font-weight: 600;
+    border: 1px solid var(--border); background: var(--surface);
+    cursor: pointer; user-select: none; transition: all 0.15s;
+    color: var(--text);
+  }
+  .plan-cat-chip:hover { border-color: #aaa; }
+  .plan-cat-chip.on { color: white; }
+
+  .plan-stop-list { display: flex; flex-direction: column; gap: 6px; }
+  .plan-stop-card {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 12px; border: 1px solid var(--border);
+    border-radius: 10px; cursor: pointer; transition: border-color 0.15s;
+  }
+  .plan-stop-card:hover { border-color: var(--primary); }
+  .plan-stop-num {
+    width: 26px; height: 26px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 12px; font-weight: 800; flex-shrink: 0;
+  }
+  .plan-stop-info { flex: 1; min-width: 0; }
+  .plan-stop-name { font-size: 13px; font-weight: 600; margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .plan-stop-meta { font-size: 11px; color: var(--muted); margin: 2px 0 0; }
+  .plan-stop-remove {
+    background: none; border: none; font-size: 16px; color: var(--muted);
+    cursor: pointer; padding: 2px 6px; line-height: 1;
+  }
+  .plan-stop-remove:hover { color: #c62828; }
+
+  .plan-stats {
+    margin-top: 14px; padding: 12px 14px;
+    background: #FAFAFA; border-radius: 10px; border: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .plan-stats .stat-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+  .plan-stats .stat-row.total { border-top: 1px solid var(--border); padding-top: 8px; margin-top: 6px; font-weight: 700; color: var(--primary-dark); }
+  .plan-stats .plan-nav-btn {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    width: 100%; margin-top: 10px; padding: 10px;
+    background: var(--primary); color: white; border: none;
+    border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .plan-stats .plan-nav-btn:hover { background: var(--primary-dark); }
+
+  .plan-empty {
+    text-align: center; padding: 40px 20px; color: var(--muted);
+  }
+  .plan-empty .plan-empty-icon { font-size: 36px; margin-bottom: 8px; opacity: 0.4; }
+  .plan-empty p { font-size: 13px; line-height: 1.5; margin: 0; }
+</style>
+</head>
+<body>
+
+<!-- ============ FRONT / SPLASH SCREEN ============ -->
+<div class="splash" id="splash">
+  <div class="splash-bg"></div>
+  <div class="splash-top"></div>
+  <div class="splash-bottom">
+    <p class="tagline">Explore New Zealand with Curiosity</p>
+    <p class="sub-tagline">Curated Places · Audio Commentary · Trip Planner · Driving Directions</p>
+    <button class="begin-btn" onclick="dismissSplash()">Begin Exploring</button>
+    <div class="splash-footer">AOTEAROA · AWAITS</div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="app">
+  <header>
+    <img class="brand-mark" src="./assets/logo-mark.png" alt="Qiwiosity" />
+    <h1>Qiwiosity — Explore New Zealand with Curiosity</h1>
+    <div class="tabs">
+      <button class="tab active" data-view="explore">Explore</button>
+      <button class="tab" data-view="stay">Stay</button>
+      <button class="tab" data-view="plan">Plan</button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="view active" id="view-explore">
+      <input class="search" id="search" placeholder="Search attractions..." />
+      <h2>Categories</h2>
+      <div class="category-list" id="categoryList"></div>
+      <h2>Regions</h2>
+      <div class="region-list" id="regionList"></div>
+    </div>
+    <div class="view" id="view-stay">
+      <h2>Where to Stay</h2>
+      <input class="search" id="accomSearch" placeholder="Search accommodations..." />
+      <div id="accomTypeChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;"></div>
+      <div id="accomRegionChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;"></div>
+      <p class="accom-count" id="accomCount" style="font-size:12px;color:var(--muted);margin:8px 0 4px;"></p>
+    </div>
+    <div class="view" id="view-plan">
+      <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
+        <span class="toggle-eye">👁</span>
+        <span class="toggle-label">Show all places</span>
+      </div>
+      <div id="planCategoryChips" class="plan-category-chips" style="display:none;"></div>
+      <div id="planStopList"></div>
+      <div id="planStats"></div>
+      <h2 style="margin-top:20px;">Quick templates</h2>
+      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')">10-day North Island Classic</button>
+      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')">14-day South Island Epic</button>
+      <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')">7-day Adventure Capital</button>
+    </div>
+  </aside>
+
+  <main style="position: relative;">
+    <div id="map"></div>
+    <div class="legend" id="legend">
+      <div class="legend-header" onclick="toggleLegend()">
+        <strong>Legend</strong>
+        <button class="legend-toggle" id="legendToggleBtn" title="Collapse legend">▼</button>
+      </div>
+      <div class="legend-body" id="legendBody">
+        <div id="legendContent"></div>
+      </div>
+    </div>
+    <div class="commentary-overlay" id="commentary">
+      <button onclick="document.getElementById('commentary').classList.remove('on')">×</button>
+      <span id="commentaryText"></span>
+    </div>
+  </main>
+
+  <aside class="itinerary-panel">
+    <div class="itinerary-header">
+      <h2>Your Itinerary</h2>
+      <p>Drag items to reorder</p>
+    </div>
+    <div class="itinerary-list" id="itineraryList">
+      <div class="empty">Nothing planned yet. Click a pin on the map to add it.</div>
+    </div>
+    <div class="iti-footer" id="itineraryFooter" style="display:none;">
+      <div><span>Stops</span><span id="sumStops">0</span></div>
+      <div><span>Total time</span><span id="sumHours">0 hrs</span></div>
+      <div class="total"><span>Driving distance</span><span id="sumDistance">— km</span></div>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ GOOGLE MAPS ============ -->
+<script>
+(function(g){var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+  key: "AIzaSyDKPDEK032DcR-BxHVjGlISHT3Asfvt3z8",
+  v: "weekly"
+});
+</script>
+<script>
+// ============ DATA (loaded from Supabase) ============
+const SUPABASE_URL = 'https://hauksnqehzaxuoeaezji.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhdWtzbnFlaHpheHVvZWFlemppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2Njg2NjEsImV4cCI6MjA5MjI0NDY2MX0.jaxhd4xgDwfO5POCTFI9G0M66Ev9vykcs6gPAZSiZSo';
+
+// Global data variables
+let ATTRACTIONS = [];
+let CATEGORIES = [];
+let REGIONS = [];
+let ACCOMMODATIONS = [];
+let POI_IMG_SPECIFIC = {};
+let POI_IMG_REGION = {};
+let POI_IMG_CATEGORY = {};
+let POI_IMG_ACCOM_TYPE = {};
+
+/**
+ * Paginated Supabase fetch — automatically fetches ALL rows from a table,
+ * working around Supabase's server-side 1,000-row limit per request.
+ * Fetches in batches of 1,000 using Range headers until all rows are retrieved.
+ */
+async function supaFetch(table, opts = {}) {
+  const { select = '*' } = opts;
+  const PAGE_SIZE = 1000;
+  let allRows = [];
+  let offset = 0;
+  let hasMore = true;
+
+  while (hasMore) {
+    const url = SUPABASE_URL + '/rest/v1/' + table
+      + '?select=' + encodeURIComponent(select)
+      + '&order=id'
+      + '&limit=' + PAGE_SIZE
+      + '&offset=' + offset;
+    const res = await fetch(url, {
+      headers: {
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
+        'Prefer': 'count=exact',
+      }
+    });
+    if (!res.ok) throw new Error(table + ': HTTP ' + res.status);
+    const rows = await res.json();
+    allRows = allRows.concat(rows);
+    // If we got fewer than PAGE_SIZE rows, we've reached the end
+    hasMore = rows.length === PAGE_SIZE;
+    offset += PAGE_SIZE;
+  }
+
+  console.log('supaFetch:', table, '→', allRows.length, 'rows');
+  return allRows;
+}
+
+async function loadAllData() {
+  /* ── Animated loading overlay ── */
+  const loading = document.createElement('div');
+  loading.id = 'data-loading';
+  loading.style.cssText = 'position:fixed;inset:0;background:var(--primary-deep);display:flex;align-items:center;justify-content:center;z-index:9999;flex-direction:column;opacity:0;transition:opacity 0.5s ease;';
+  loading.innerHTML = '<style>'
+    + '@keyframes qPulse{0%,100%{transform:scale(0.92)}50%{transform:scale(1.1)}}'
+    + '@keyframes glowPulse{0%,100%{opacity:0.15;transform:scale(0.95)}50%{opacity:0.45;transform:scale(1.15)}}'
+    + '@keyframes dotFloat{0%{opacity:0;transform:translateY(0)}30%{opacity:0.5}100%{opacity:0;transform:translateY(-90px)}}'
+    + '@keyframes msgCycle{0%,8%{opacity:0}12%,88%{opacity:1}92%,100%{opacity:0}}'
+    + '#load-dots span{position:absolute;bottom:120px;width:4px;height:4px;border-radius:50%;background:rgba(255,255,255,0.3);animation:dotFloat 3s ease-out infinite}'
+    + '#load-msgs span{position:absolute;width:100%;left:0;text-align:center;color:rgba(255,255,255,0.85);font-size:14px;font-weight:500;animation:msgCycle 2.4s infinite;opacity:0}'
+    + '</style>'
+    + '<div id="load-dots" style="position:absolute;inset:0;pointer-events:none;overflow:hidden;"></div>'
+    + '<div style="position:relative;width:120px;height:120px;margin-bottom:28px;">'
+    +   '<div style="position:absolute;inset:-15px;border-radius:50%;background:rgba(21,136,138,0.3);animation:glowPulse 2.8s ease-in-out infinite;"></div>'
+    +   '<img src="./assets/logo-mark.png" alt="Q" style="width:120px;height:120px;border-radius:24px;animation:qPulse 2.8s ease-in-out infinite;" />'
+    + '</div>'
+    + '<div style="color:white;font-size:22px;font-weight:800;letter-spacing:5px;margin-bottom:10px;text-shadow:0 2px 6px rgba(0,0,0,0.3);">QIWIOSITY</div>'
+    + '<div id="load-msgs" style="position:relative;height:20px;width:280px;"></div>'
+    + '<div style="width:200px;height:3px;border-radius:2px;background:rgba(255,255,255,0.15);overflow:hidden;margin-top:24px;">'
+    +   '<div id="load-progress" style="height:100%;border-radius:2px;background:var(--accent);width:0%;transition:width 0.6s ease;"></div>'
+    + '</div>'
+    + '<div style="position:absolute;bottom:40px;color:rgba(255,255,255,0.5);font-size:11px;letter-spacing:3px;text-transform:uppercase;">Aotearoa Awaits</div>';
+  document.body.appendChild(loading);
+  requestAnimationFrame(() => { loading.style.opacity = '1'; });
+
+  /* Rotating messages */
+  const loadMsgs = ['Mapping the trails…','Discovering hidden gems…','Loading attractions…','Charting the coastline…','Preparing your adventure…','Gathering local stories…','Tuning the audio guide…'];
+  const msgsEl = document.getElementById('load-msgs');
+  let msgIdx = 0;
+  function showNextMsg() {
+    msgsEl.innerHTML = '';
+    const s = document.createElement('span');
+    s.textContent = loadMsgs[msgIdx % loadMsgs.length];
+    msgsEl.appendChild(s);
+    msgIdx++;
+  }
+  showNextMsg();
+  const msgInterval = setInterval(showNextMsg, 2400);
+
+  /* Floating dots */
+  const dotsEl = document.getElementById('load-dots');
+  const dotInterval = setInterval(() => {
+    const d = document.createElement('span');
+    d.style.left = (Math.random() * 90 + 5) + '%';
+    d.style.animationDuration = (2.5 + Math.random() * 1.5) + 's';
+    dotsEl.appendChild(d);
+    setTimeout(() => d.remove(), 4000);
+  }, 400);
+
+  /* Progress bar helper */
+  const progressBar = document.getElementById('load-progress');
+  const setProgress = (pct) => { progressBar.style.width = pct + '%'; };
+
+  try {
+    setProgress(10);
+    const [pois, cats, regs, accoms, poiImgs, regImgs, catImgs] = await Promise.all([
+      supaFetch('pois'),
+      supaFetch('categories'),
+      supaFetch('regions'),
+      supaFetch('accommodations'),
+      supaFetch('poi_images', { select: 'poi_id,image_url,display_order' }),
+      supaFetch('region_images', { select: 'region_id,image_url' }),
+      supaFetch('category_images', { select: 'category_id,image_url' }),
+    ]);
+
+    setProgress(55);
+
+    ATTRACTIONS = pois.map(p => ({
+      id: p.id,
+      name: p.name,
+      region: p.region_id,
+      lat: p.lat,
+      lng: p.lng,
+      category: p.category_id,
+      tags: p.tags || [],
+      trigger_radius_m: p.trigger_radius_m,
+      duration_hours: p.duration_hours,
+      short: p.short,
+      commentary: p.commentary,
+      audio_story: p.audio_story,
+      suggested_voice_tone: p.suggested_voice_tone,
+      reviews: p.review_rating ? { rating: p.review_rating, summary: p.review_summary } : undefined,
+    }));
+
+    CATEGORIES = cats;
+
+    REGIONS = regs.map(r => ({
+      id: r.id,
+      name: r.name,
+      island: r.island,
+      lat: r.lat,
+      lng: r.lng,
+      description: r.description,
+      bounds: { north: r.bounds_north, south: r.bounds_south, east: r.bounds_east, west: r.bounds_west },
+      poi_count: ATTRACTIONS.filter(a => a.region === r.id).length,
+    }));
+
+    ACCOMMODATIONS = accoms.map(a => ({
+      id: a.id,
+      name: a.name,
+      region: a.region_id,
+      lat: a.lat,
+      lng: a.lng,
+      type: a.type,
+      price_nzd_per_night: a.price_nzd_per_night,
+      rating: a.rating,
+      short: a.short,
+    }));
+
+    POI_IMG_SPECIFIC = {};
+    poiImgs.sort((a, b) => a.display_order - b.display_order).forEach(img => {
+      if (!POI_IMG_SPECIFIC[img.poi_id]) POI_IMG_SPECIFIC[img.poi_id] = [];
+      POI_IMG_SPECIFIC[img.poi_id].push(img.image_url);
+    });
+
+    POI_IMG_REGION = {};
+    regImgs.forEach(img => { POI_IMG_REGION[img.region_id] = img.image_url; });
+
+    POI_IMG_CATEGORY = {};
+    catImgs.forEach(img => { POI_IMG_CATEGORY[img.category_id] = img.image_url; });
+
+    POI_IMG_ACCOM_TYPE = {
+      'hotel': 'https://commons.wikimedia.org/wiki/Special:FilePath/Wellington%20City%20Night.jpg?width=800',
+      'motel': 'https://commons.wikimedia.org/wiki/Special:FilePath/Queenstown.%20Lake%20Wakatipu.%20%2850854629786%29.jpg?width=800',
+      'holiday-park': 'https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Taupo%2C%20New%20Zealand%2C%201990%20-%20Flickr%20-%20PhillipC.jpg?width=800',
+      'lodge': 'https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Aoraki%20%28Mt.%20Cook%29%20%26%20Mount%20Tasman%20-%20Lake%20Matheson%20%28New%20Zealand%29.jpg?width=800',
+      'default': 'https://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Sefton%20massif%2C%20Aoraki%20-%20Mount%20Cook%20National%20Park%2C%20New%20Zealand.jpg?width=800',
+    };
+
+    console.log('Qiwiosity: loaded', ATTRACTIONS.length, 'POIs,', ACCOMMODATIONS.length, 'accommodations from Supabase');
+    setProgress(100);
+
+  } catch (err) {
+    console.error('Failed to load from Supabase:', err);
+    clearInterval(msgInterval);
+    clearInterval(dotInterval);
+    msgsEl.innerHTML = '<span style="color:#ef9595;opacity:1;animation:none;">Failed to load data. Please refresh.</span>';
+    return false;
+  }
+
+  /* Fade out the loading screen */
+  clearInterval(msgInterval);
+  clearInterval(dotInterval);
+  await new Promise(r => setTimeout(r, 600));
+  loading.style.opacity = '0';
+  await new Promise(r => setTimeout(r, 500));
+  loading.remove();
+  return true;
+}
+
+// ============ ACCOMMODATION TYPES ============
+const ACCOMMODATION_TYPES = [
+  { id: 'hotel',        label: 'Hotel',         color: '#2c6fad' },
+  { id: 'motel',        label: 'Motel',         color: '#2980b9' },
+  { id: 'bnb',          label: 'B&B',           color: '#8e44ad' },
+  { id: 'hostel',       label: 'Hostel',        color: '#27ae60' },
+  { id: 'lodge',        label: 'Lodge',         color: '#e67e22' },
+  { id: 'camping',      label: 'Camping',       color: '#16a085' },
+  { id: 'holiday-park', label: 'Holiday Park',  color: '#d35400' }
+];
+
+// ============ APP STATE ============
+const state = {
+  view: 'explore',
+  search: '',
+  accomSearch: '',
+  accomRegionFilter: null,
+  accomLayerOn: false,
+  activeCategories: new Set(),
+  activeAccomTypes: new Set(ACCOMMODATION_TYPES.map(t => t.id)),
+  showAccom: false,
+  itinerary: [],
+};
+
+// ============ GOOGLE MAPS GLOBALS ============
+let map;
+let infoWindow;
+let poiMarkers = [];   // attraction markers
+let accomMarkers = [];  // accommodation markers
+
+function catLabel(id) { return CATEGORIES.find(c => c.id === id)?.label || id; }
+function catColor(id) { return CATEGORIES.find(c => c.id === id)?.color || '#15888A'; }
+function regionName(id) { return REGIONS.find(r => r.id === id)?.name || id; }
+
+function getPoiImageUrls(poi) {
+  if (!poi) return [POI_IMG_CATEGORY.default];
+  const specific = POI_IMG_SPECIFIC[poi.id];
+  if (specific) return Array.isArray(specific) ? specific : [specific];
+  const rKey = (poi.region || '').toLowerCase().replace(/_/g, '-');
+  if (POI_IMG_REGION[rKey]) return [POI_IMG_REGION[rKey]];
+  const cKey = (poi.category || poi.type || '').toLowerCase();
+  return [POI_IMG_CATEGORY[cKey] || POI_IMG_CATEGORY.default];
+}
+
+function getPoiImageUrl(poi) {
+  return getPoiImageUrls(poi)[0] || '';
+}
+
+function accomTypeColor(typeId) {
+  const t = ACCOMMODATION_TYPES.find(x => x.id === typeId);
+  return t ? t.color : '#888';
+}
+
+function accomTypeLabel(typeId) {
+  const t = ACCOMMODATION_TYPES.find(x => x.id === typeId);
+  return t ? t.label : typeId;
+}
+
+function accomFilteredList() {
+  const q = state.accomSearch.toLowerCase().trim();
+  return ACCOMMODATIONS.filter(a => {
+    if (state.accomRegionFilter && a.region !== state.accomRegionFilter) return false;
+    if (!state.activeAccomTypes.has(a.type)) return false;
+    if (q) {
+      const rName = (REGIONS.find(r => r.id === a.region) || {}).name || '';
+      if (!a.name.toLowerCase().includes(q) && !(a.short||'').toLowerCase().includes(q) && !rName.toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+}
+
+function openDirections(attraction) {
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${attraction.lat},${attraction.lng}&travelmode=driving`;
+  window.open(url, '_blank');
+  showToast(`Opening directions to ${attraction.name}`);
+}
+
+function showToast(message) {
+  const el = document.getElementById('toast');
+  el.textContent = message;
+  el.classList.add('on');
+  clearTimeout(showToast._timer);
+  showToast._timer = setTimeout(() => el.classList.remove('on'), 3000);
+}
+
+function openTripDirections() {
+  if (!state.itinerary.length) return;
+  const last = state.itinerary[state.itinerary.length - 1];
+  const waypoints = state.itinerary.slice(0, -1).map(a => `${a.lat},${a.lng}`).join('|');
+  let url = `https://www.google.com/maps/dir/?api=1&destination=${last.lat},${last.lng}&travelmode=driving`;
+  if (waypoints) url += `&waypoints=${encodeURIComponent(waypoints)}`;
+  window.open(url, '_blank');
+  showToast(`Opening driving directions for your ${state.itinerary.length}-stop trip`);
+}
+
+function showMoreLikeThis(a) {
+  state.activeCategories = new Set([a.category]);
+  renderCategoryList();
+  renderAttractions();
+  if (infoWindow) infoWindow.close();
+  const similar = ATTRACTIONS.filter(x => x.category === a.category);
+  if (similar.length > 1) {
+    const bounds = new google.maps.LatLngBounds();
+    similar.forEach(x => bounds.extend({ lat: x.lat, lng: x.lng }));
+    map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
+  }
+  showToast(`Showing ${similar.length} places like "${a.name}" — ${catLabel(a.category)}`);
+}
+
+function openAttractionDetails(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelector('.tab[data-view="explore"]').classList.add('active');
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-explore').classList.add('active');
+  state.view = 'explore';
+  if (!state.activeCategories.has(a.category)) {
+    state.activeCategories.add(a.category);
+    renderCategoryList();
+    renderAttractions();
+  }
+  map.panTo({ lat: a.lat, lng: a.lng });
+  map.setZoom(11);
+  setTimeout(() => {
+    const marker = poiMarkers.find(m => m._poiId === a.id);
+    if (marker) {
+      openPoiInfoWindow(a, marker);
+    }
+  }, 600);
+}
+
+function showCommentary(a) {
+  const el = document.getElementById('commentary');
+  document.getElementById('commentaryText').innerHTML = `<strong>${a.name}</strong> — ${a.commentary}`;
+  el.classList.add('on');
+  if ('speechSynthesis' in window) {
+    try {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(`${a.name}. ${a.commentary}`);
+      u.rate = 0.95;
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
+  }
+}
+
+// ============ ITINERARY ============
+function addToItinerary(a) {
+  if (state.itinerary.find(x => x.id === a.id)) return;
+  state.itinerary.push(a);
+  renderItinerary();
+  renderAttractions();
+}
+
+function removeFromItinerary(id) {
+  state.itinerary = state.itinerary.filter(x => x.id !== id);
+  renderItinerary();
+  renderAttractions();
+}
+
+function haversine(a, b) {
+  const R = 6371;
+  const dLat = (b.lat - a.lat) * Math.PI / 180;
+  const dLng = (b.lng - a.lng) * Math.PI / 180;
+  const la1 = a.lat * Math.PI / 180;
+  const la2 = b.lat * Math.PI / 180;
+  const h = Math.sin(dLat/2)**2 + Math.cos(la1) * Math.cos(la2) * Math.sin(dLng/2)**2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+function renderItinerary() {
+  const list = document.getElementById('itineraryList');
+  const footer = document.getElementById('itineraryFooter');
+  if (state.itinerary.length === 0) {
+    list.innerHTML = '<div class="empty">Nothing planned yet. Click a pin on the map to add it.</div>';
+    footer.style.display = 'none';
+    const existingTripDir = document.getElementById('tripDirections');
+    if (existingTripDir) existingTripDir.style.display = 'none';
+    return;
+  }
+  list.innerHTML = state.itinerary.map((a, i) => `
+    <div class="iti-card" draggable="true" data-id="${a.id}">
+      <h4>${i + 1}. ${a.name}</h4>
+      <div class="meta">
+        <span style="color:${catColor(a.category)};font-weight:600;">● ${catLabel(a.category)}</span>
+        <span>${a.duration_hours}h</span>
+      </div>
+      <div class="iti-actions">
+        <button class="btn" data-action="view" data-id="${a.id}" title="View details on map">👁 Details</button>
+        <button class="btn" data-action="directions" data-id="${a.id}" title="Driving directions">🧭 Drive to</button>
+      </div>
+      <button class="remove" data-action="remove" data-id="${a.id}" title="Remove">×</button>
+    </div>
+  `).join('');
+
+  const hours = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
+  let dist = 0;
+  for (let i = 1; i < state.itinerary.length; i++) {
+    dist += haversine(state.itinerary[i - 1], state.itinerary[i]);
+  }
+  document.getElementById('sumStops').textContent = state.itinerary.length;
+  document.getElementById('sumHours').textContent = hours + ' hrs';
+  document.getElementById('sumDistance').textContent = Math.round(dist) + ' km (as the crow flies)';
+  footer.style.display = 'block';
+
+  let tripDir = document.getElementById('tripDirections');
+  if (!tripDir) {
+    tripDir = document.createElement('div');
+    tripDir.id = 'tripDirections';
+    tripDir.className = 'trip-directions';
+    tripDir.innerHTML = '<button onclick="openTripDirections()">🧭 Get driving directions for whole trip</button>';
+    footer.parentNode.insertBefore(tripDir, footer);
+  }
+  tripDir.style.display = 'block';
+
+  let dragId = null;
+  list.querySelectorAll('.iti-card').forEach(el => {
+    el.addEventListener('dragstart', (e) => {
+      if (e.target.closest('[data-action]')) { e.preventDefault(); return; }
+      dragId = el.dataset.id; el.style.opacity = '0.4';
+    });
+    el.addEventListener('dragend', () => { el.style.opacity = '1'; });
+    el.addEventListener('dragover', (e) => e.preventDefault());
+    el.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const targetId = el.dataset.id;
+      if (!dragId || dragId === targetId) return;
+      const from = state.itinerary.findIndex(x => x.id === dragId);
+      const to = state.itinerary.findIndex(x => x.id === targetId);
+      const [item] = state.itinerary.splice(from, 1);
+      state.itinerary.splice(to, 0, item);
+      renderItinerary();
+      if (state.view === 'plan') {
+        renderPlanSidebar();
+        renderPlanMap();
+      }
+    });
+    el.addEventListener('click', (e) => {
+      if (e.target.closest('[data-action]')) return;
+      openAttractionDetails(el.dataset.id);
+    });
+  });
+
+  list.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const id = btn.dataset.id;
+      const action = btn.dataset.action;
+      const a = state.itinerary.find(x => x.id === id);
+      if (!a) return;
+      if (action === 'view') openAttractionDetails(id);
+      if (action === 'directions') openDirections(a);
+      if (action === 'remove') removeFromItinerary(id);
+    });
+  });
+}
+
+// ============ CATEGORY + REGION FILTERS ============
+function renderCategoryList() {
+  const el = document.getElementById('categoryList');
+  const counts = CATEGORIES.reduce((o, c) => (o[c.id] = 0, o), {});
+  ATTRACTIONS.forEach(a => counts[a.category] = (counts[a.category] || 0) + 1);
+  el.innerHTML = CATEGORIES.map(c => `
+    <div class="cat ${state.activeCategories.has(c.id) ? 'on' : ''}" data-id="${c.id}">
+      <div class="swatch" style="background:${c.color}"></div>
+      <span>${c.label}</span>
+      <span class="count">${counts[c.id] || 0}</span>
+    </div>
+  `).join('');
+  el.querySelectorAll('.cat').forEach(node => {
+    node.addEventListener('click', () => {
+      const id = node.dataset.id;
+      if (state.activeCategories.has(id)) state.activeCategories.delete(id);
+      else state.activeCategories.add(id);
+      renderCategoryList();
+      renderAttractions();
+    });
+  });
+
+  updateLegendContent();
+}
+
+function updateLegendContent() {
+  const el = document.getElementById('legendContent');
+  if (state.view === 'stay') {
+    el.innerHTML = ACCOMMODATION_TYPES.map(t => `
+      <div class="row"><div class="dot" style="background:${t.color};border-radius:3px;"></div>${t.label}</div>
+    `).join('');
+  } else {
+    el.innerHTML = CATEGORIES.map(c => `
+      <div class="row"><div class="dot" style="background:${c.color}"></div>${c.label}</div>
+    `).join('');
+  }
+}
+
+function renderRegionList() {
+  const el = document.getElementById('regionList');
+  el.innerHTML = REGIONS.map(r => `
+    <div class="region" data-id="${r.id}">
+      <div>${r.name} <span class="small">${r.island} Island</span></div>
+    </div>
+  `).join('');
+  el.querySelectorAll('.region').forEach(node => {
+    node.addEventListener('click', () => {
+      const r = REGIONS.find(x => x.id === node.dataset.id);
+      map.panTo({ lat: r.lat, lng: r.lng });
+      map.setZoom(9);
+    });
+  });
+}
+
+function renderAccomTypeChips() {
+  const el = document.getElementById('accomTypeChips');
+  if (!el) return;
+  el.innerHTML = ACCOMMODATION_TYPES.map(t => {
+    const on = state.activeAccomTypes.has(t.id);
+    return `<button class="cat-chip${on ? ' on' : ''}" data-type="${t.id}"
+      style="${on ? `background:${t.color};color:#fff;border-color:${t.color};` : ''}">${t.label}</button>`;
+  }).join('');
+  el.querySelectorAll('.cat-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.type;
+      if (state.activeAccomTypes.has(id)) state.activeAccomTypes.delete(id);
+      else state.activeAccomTypes.add(id);
+      if (state.activeAccomTypes.size === 0) ACCOMMODATION_TYPES.forEach(t => state.activeAccomTypes.add(t.id));
+      renderAccomTypeChips();
+      renderAccommodationList();
+      renderAccommodations();
+    });
+  });
+}
+
+function renderAccomRegionChips() {
+  const el = document.getElementById('accomRegionChips');
+  if (!el) return;
+  const accomRegionIds = [...new Set(ACCOMMODATIONS.map(a => a.region))];
+  const accomRegions = REGIONS.filter(r => accomRegionIds.includes(r.id));
+  const allOn = !state.accomRegionFilter;
+  el.innerHTML = `<button class="cat-chip${allOn ? ' on' : ''}" data-region="all"
+    style="${allOn ? `background:var(--primary);color:#fff;border-color:var(--primary);` : ''}">All regions</button>` +
+    accomRegions.map(r => {
+      const on = state.accomRegionFilter === r.id;
+      return `<button class="cat-chip${on ? ' on' : ''}" data-region="${r.id}"
+        style="${on ? `background:var(--primary);color:#fff;border-color:var(--primary);` : ''}">${r.name.split(' / ')[0]}</button>`;
+    }).join('');
+  el.querySelectorAll('.cat-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.region;
+      state.accomRegionFilter = id === 'all' ? null : id;
+      if (id !== 'all') {
+        const r = REGIONS.find(x => x.id === id);
+        if (r) { map.panTo({ lat: r.lat, lng: r.lng }); map.setZoom(9); }
+      }
+      renderAccomRegionChips();
+      renderAccommodationList();
+      renderAccommodations();
+    });
+  });
+}
+
+function renderAccommodationList() {
+  const filtered = accomFilteredList();
+  // Update count
+  const countEl = document.getElementById('accomCount');
+  if (countEl) countEl.textContent = `${filtered.length} of ${ACCOMMODATIONS.length} places`;
+}
+
+// ============ GOOGLE MAPS: CREATE SVG MARKER ICON ============
+function createCircleIcon(color, radius, isItinerary) {
+  const size = radius * 2;
+  const strokeColor = isItinerary ? '#ffffff' : color;
+  const strokeWidth = isItinerary ? 3 : 1.5;
+  const fillOpacity = isItinerary ? 1.0 : 0.82;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
+    <circle cx="${radius}" cy="${radius}" r="${radius - strokeWidth/2}"
+      fill="${color}" fill-opacity="${fillOpacity}"
+      stroke="${strokeColor}" stroke-width="${strokeWidth}" />
+  </svg>`;
+  return {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+    scaledSize: new google.maps.Size(size, size),
+    anchor: new google.maps.Point(radius, radius),
+  };
+}
+
+function createAccomIcon(color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    <rect x="2" y="2" width="24" height="24" rx="6" ry="6"
+      fill="${color}" fill-opacity="0.92" stroke="#fff" stroke-width="2" />
+    <text x="14" y="19" text-anchor="middle" font-size="14" fill="white">🛏</text>
+  </svg>`;
+  return {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+    scaledSize: new google.maps.Size(28, 28),
+    anchor: new google.maps.Point(14, 14),
+  };
+}
+
+// ============ INFOWINDOW HELPERS ============
+function openPoiInfoWindow(a, marker) {
+  const color = catColor(a.category);
+  const tagsHtml = (a.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+  const allImgs = getPoiImageUrls(a);
+  const imgUrl = allImgs[0] || '';
+  const galleryThumbs = allImgs.length > 1
+    ? `<div class="popup-gallery" id="gallery-${a.id}">` +
+      allImgs.map((u, i) =>
+        `<img class="popup-gallery-thumb${i === 0 ? ' active' : ''}"
+             src="${u}" loading="lazy"
+             onerror="this.style.display='none'"
+             onclick="(function(el,src){
+               var wrap=el.closest('.popup-inner').querySelector('.popup-hero');
+               if(wrap){wrap.src=src;}
+               el.closest('.popup-gallery').querySelectorAll('.popup-gallery-thumb').forEach(t=>t.classList.remove('active'));
+               el.classList.add('active');
+             })(this,'${u}')" />`
+      ).join('') +
+      `</div>`
+    : '';
+
+  const content = `
+    <div class="popup-inner">
+      <div class="popup-hero-wrap">
+        <img class="popup-hero" src="${imgUrl}" alt="${a.name}"
+             onerror="this.style.display='none'" loading="lazy" />
+        <span class="cat-chip" style="background:${color}88;">${catLabel(a.category)}</span>
+        <span class="credit">&copy; Wikimedia Commons</span>
+      </div>
+      ${galleryThumbs}
+      <h3>${a.name}</h3>
+      <div class="pop-meta">
+        <span style="color:${color};font-weight:600;">● ${catLabel(a.category)}</span>
+        <span>⏱ ${a.duration_hours}h</span>
+        ${a.reviews?.rating ? `<span style="color:#F5A623;font-weight:600;">★ ${a.reviews.rating.toFixed(1)}</span>` : ''}
+      </div>
+      <p>${a.short || ''}</p>
+      ${a.reviews?.summary ? `
+      <div style="background:#F0F8F8;border:1px solid rgba(21,136,138,0.25);border-radius:8px;padding:10px 12px;margin:4px 14px 8px;">
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:4px;">
+          <span style="font-size:9px;font-weight:800;color:var(--primary);letter-spacing:1.2px;">✦ AI OVERVIEW</span>
+          <span style="font-size:9px;color:var(--muted);">Synthesised from visitor reviews</span>
+        </div>
+        <p style="margin:0;padding:0;font-size:12px;line-height:1.45;color:var(--text);">${a.reviews.summary}</p>
+      </div>` : ''}
+      ${tagsHtml ? `<div class="tags">${tagsHtml}</div>` : ''}
+      <div class="pop-actions">
+        <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();" class="btn">＋ Add to Itinerary</button>
+        <button onclick="openDirections(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Directions</button>
+        <button onclick="showCommentary(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🎧 Commentary</button>
+        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">More like this</button>
+      </div>
+    </div>
+  `;
+
+  infoWindow.setContent(content);
+  infoWindow.open(map, marker);
+}
+
+function openAccomInfoWindow(a, marker) {
+  const color = accomTypeColor(a.type);
+  const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region;
+  const accomImgUrl = getPoiImageUrl(a);
+  const content = `
+    <div class="popup-inner">
+      <div class="popup-hero-wrap">
+        <img class="popup-hero" src="${accomImgUrl}" alt="${a.name}"
+             onerror="this.style.display='none'" loading="lazy" />
+        <span class="cat-chip" style="background:${color}99;">🛏 ${accomTypeLabel(a.type)}</span>
+        <span class="credit">&copy; Wikimedia Commons</span>
+      </div>
+      <h3>${a.name}</h3>
+      <div class="pop-meta">
+        <span style="color:${color};font-weight:600;">★ ${a.rating}</span>
+        <span class="price">NZ$${a.price_nzd_per_night}/night</span>
+        <span style="color:var(--muted);font-size:11px;">${rName}</span>
+      </div>
+      <p>${a.short || ''}</p>
+    </div>
+  `;
+  infoWindow.setContent(content);
+  infoWindow.open(map, marker);
+}
+
+// ============ RENDER ATTRACTIONS (Google Maps markers) ============
+function renderAttractions() {
+  // Clear existing POI markers
+  poiMarkers.forEach(m => m.setMap(null));
+  poiMarkers = [];
+
+  // On Stay tab, hide POI markers so accommodations stand out
+  if (state.view === 'stay') return;
+
+  const q = state.search.toLowerCase().trim();
+  ATTRACTIONS.forEach(a => {
+    if (!state.activeCategories.has(a.category)) return;
+    if (q) {
+      const haystack = `${a.name} ${a.short} ${a.region} ${(a.tags || []).join(' ')}`.toLowerCase();
+      if (!haystack.includes(q)) return;
+    }
+    const inItinerary = state.itinerary.some(x => x.id === a.id);
+    const color = catColor(a.category);
+    const radius = inItinerary ? 10 : 7;
+
+    const marker = new google.maps.Marker({
+      position: { lat: a.lat, lng: a.lng },
+      map: map,
+      icon: createCircleIcon(color, radius, inItinerary),
+      title: a.name,
+      zIndex: inItinerary ? 100 : 10,
+      opacity: 1.0,
+    });
+    marker._poiId = a.id;
+
+    marker.addListener('click', () => {
+      openPoiInfoWindow(a, marker);
+    });
+
+    poiMarkers.push(marker);
+  });
+}
+
+// ============ RENDER ACCOMMODATIONS (Google Maps markers) ============
+function renderAccommodations() {
+  // Clear existing accommodation markers
+  accomMarkers.forEach(m => m.setMap(null));
+  accomMarkers = [];
+
+  if (!state.accomLayerOn && state.view !== 'stay') return;
+  accomFilteredList().forEach(a => {
+    const color = accomTypeColor(a.type);
+    const marker = new google.maps.Marker({
+      position: { lat: a.lat, lng: a.lng },
+      map: map,
+      icon: createAccomIcon(color),
+      title: a.name,
+      zIndex: 50,
+    });
+
+    marker.addListener('click', () => {
+      openAccomInfoWindow(a, marker);
+    });
+
+    accomMarkers.push(marker);
+  });
+}
+
+// ============ TEMPLATES ============
+const TEMPLATES = {
+  'north-classic': ['auckland-sky-tower','waiheke-island','hobbiton','waitomo-caves','te-puia','wai-o-tapu','huka-falls','tongariro-crossing','art-deco-napier','te-papa'],
+  'south-epic': ['marlborough-sounds','abel-tasman','pancake-rocks','franz-josef-glacier','aoraki-mt-cook','lake-tekapo','wanaka-roys-peak','queenstown-skyline','milford-sound','doubtful-sound'],
+  'adventure': ['queenstown-skyline','wanaka-roys-peak','milford-sound','tongariro-crossing','cathedral-cove','waitomo-caves','routeburn-track']
+};
+function loadTemplate(id) {
+  const ids = TEMPLATES[id] || [];
+  state.itinerary = ids.map(x => ATTRACTIONS.find(a => a.id === x)).filter(Boolean);
+  renderItinerary();
+  if (state.view === 'plan') {
+    renderPlanSidebar();
+    renderPlanMap();
+  } else {
+    renderAttractions();
+    if (state.itinerary.length) {
+      const bounds = new google.maps.LatLngBounds();
+      state.itinerary.forEach(a => bounds.extend({ lat: a.lat, lng: a.lng }));
+      map.fitBounds(bounds, { top: 50, bottom: 50, left: 50, right: 50 });
+    }
+  }
+}
+
+// ============ PLAN VIEW — FOCUSED MAP ============
+state.planShowAll = false;
+state.planActiveCategories = new Set();
+let planRoutePolyline = null;
+let planNumberMarkers = [];
+
+function togglePlanShowAll() {
+  state.planShowAll = !state.planShowAll;
+  const toggle = document.getElementById('planShowAllToggle');
+  const chips = document.getElementById('planCategoryChips');
+  toggle.classList.toggle('on', state.planShowAll);
+  chips.style.display = state.planShowAll ? 'flex' : 'none';
+  renderPlanMap();
+}
+
+function togglePlanCategory(id) {
+  if (state.planActiveCategories.has(id)) state.planActiveCategories.delete(id);
+  else state.planActiveCategories.add(id);
+  if (state.planActiveCategories.size === 0) CATEGORIES.forEach(c => state.planActiveCategories.add(c.id));
+  renderPlanCategoryChips();
+  renderPlanMap();
+}
+
+function renderPlanCategoryChips() {
+  const el = document.getElementById('planCategoryChips');
+  el.innerHTML = CATEGORIES.map(c => {
+    const on = state.planActiveCategories.has(c.id);
+    return `<span class="plan-cat-chip ${on ? 'on' : ''}"
+      style="${on ? 'background:' + c.color + ';border-color:' + c.color : ''}"
+      onclick="togglePlanCategory('${c.id}')">${c.label}</span>`;
+  }).join('');
+}
+
+function renderPlanSidebar() {
+  const listEl = document.getElementById('planStopList');
+  const statsEl = document.getElementById('planStats');
+
+  if (state.itinerary.length === 0) {
+    listEl.innerHTML = `<div class="plan-empty">
+      <div class="plan-empty-icon">🗺</div>
+      <p>No stops planned yet.<br>Switch to Explore to add places, or try a template below.</p>
+    </div>`;
+    statsEl.innerHTML = '';
+    return;
+  }
+
+  listEl.innerHTML = '<div class="plan-stop-list">' + state.itinerary.map((a, i) => {
+    const color = catColor(a.category);
+    return `<div class="plan-stop-card" onclick="panToStop('${a.id}')">
+      <div class="plan-stop-num" style="background:${color}">${i + 1}</div>
+      <div class="plan-stop-info">
+        <p class="plan-stop-name">${a.name}</p>
+        <p class="plan-stop-meta">${catLabel(a.category)} · ${a.duration_hours}h</p>
+      </div>
+      <button class="plan-stop-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
+    </div>`;
+  }).join('') + '</div>';
+
+  const hours = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
+  let dist = 0;
+  for (let i = 1; i < state.itinerary.length; i++) {
+    dist += haversine(state.itinerary[i - 1], state.itinerary[i]);
+  }
+  const driveHrs = Math.round((Math.round(dist) / 75) * 10) / 10;
+
+  statsEl.innerHTML = `<div class="plan-stats">
+    <div class="stat-row"><span>Stops</span><span>${state.itinerary.length}</span></div>
+    <div class="stat-row"><span>Activity time</span><span>${hours} hrs</span></div>
+    <div class="stat-row"><span>Driving distance</span><span>${Math.round(dist)} km</span></div>
+    <div class="stat-row total"><span>Est. drive time</span><span>${driveHrs} hrs</span></div>
+    <button class="plan-nav-btn" onclick="openTripDirections()">🧭 Navigate whole trip</button>
+  </div>`;
+}
+
+function panToStop(id) {
+  const a = state.itinerary.find(x => x.id === id);
+  if (!a) return;
+  map.panTo({ lat: a.lat, lng: a.lng });
+  map.setZoom(11);
+  const marker = poiMarkers.find(m => m._poiId === id);
+  if (marker) openPoiInfoWindow(a, marker);
+}
+
+function createNumberedIcon(number, color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="40">
+    <circle cx="16" cy="16" r="14" fill="${color}" stroke="white" stroke-width="2.5"/>
+    <polygon points="16,38 10,22 22,22" fill="${color}" />
+    <text x="16" y="21" text-anchor="middle" font-size="13" font-weight="800"
+      fill="white" font-family="system-ui, sans-serif">${number}</text>
+  </svg>`;
+  return {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+    scaledSize: new google.maps.Size(32, 40),
+    anchor: new google.maps.Point(16, 40),
+  };
+}
+
+function createDimmedIcon(color) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+    <circle cx="6" cy="6" r="5" fill="${color}" fill-opacity="0.3" stroke="white" stroke-width="1" stroke-opacity="0.6"/>
+  </svg>`;
+  return {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+    scaledSize: new google.maps.Size(12, 12),
+    anchor: new google.maps.Point(6, 6),
+  };
+}
+
+function renderPlanMap() {
+  // Clear existing markers
+  poiMarkers.forEach(m => m.setMap(null));
+  poiMarkers = [];
+  planNumberMarkers.forEach(m => m.setMap(null));
+  planNumberMarkers = [];
+  if (planRoutePolyline) { planRoutePolyline.setMap(null); planRoutePolyline = null; }
+
+  const itineraryIds = new Set(state.itinerary.map(a => a.id));
+
+  // Draw dimmed markers for unplanned attractions if Show All is on
+  if (state.planShowAll) {
+    ATTRACTIONS.forEach(a => {
+      if (itineraryIds.has(a.id)) return;
+      if (!state.planActiveCategories.has(a.category)) return;
+      const color = catColor(a.category);
+      const marker = new google.maps.Marker({
+        position: { lat: a.lat, lng: a.lng },
+        map: map,
+        icon: createDimmedIcon(color),
+        title: a.name,
+        zIndex: 1,
+      });
+      marker._poiId = a.id;
+      marker.addListener('click', () => openPoiInfoWindow(a, marker));
+      poiMarkers.push(marker);
+    });
+  }
+
+  // Draw itinerary stops as numbered pins
+  state.itinerary.forEach((a, i) => {
+    const color = catColor(a.category);
+    const marker = new google.maps.Marker({
+      position: { lat: a.lat, lng: a.lng },
+      map: map,
+      icon: createNumberedIcon(i + 1, color),
+      title: `${i + 1}. ${a.name}`,
+      zIndex: 100 + i,
+    });
+    marker._poiId = a.id;
+    marker.addListener('click', () => openPoiInfoWindow(a, marker));
+    poiMarkers.push(marker);
+    planNumberMarkers.push(marker);
+  });
+
+  // Draw route polyline
+  if (state.itinerary.length >= 2) {
+    const path = state.itinerary.map(a => ({ lat: a.lat, lng: a.lng }));
+    planRoutePolyline = new google.maps.Polyline({
+      path: path,
+      geodesic: true,
+      strokeColor: '#15888A',
+      strokeOpacity: 0,
+      strokeWeight: 0,
+      icons: [{
+        icon: { path: 'M 0,-1 0,1', strokeOpacity: 0.7, strokeColor: '#15888A', scale: 3 },
+        offset: '0',
+        repeat: '14px',
+      }],
+      map: map,
+    });
+  }
+
+  // Fit bounds to itinerary
+  if (state.itinerary.length > 0) {
+    const bounds = new google.maps.LatLngBounds();
+    state.itinerary.forEach(a => bounds.extend({ lat: a.lat, lng: a.lng }));
+    map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
+  }
+}
+
+// Also update renderItinerary to refresh plan sidebar when in plan view
+const _origRemoveFromItinerary = removeFromItinerary;
+removeFromItinerary = function(id) {
+  _origRemoveFromItinerary(id);
+  if (state.view === 'plan') {
+    renderPlanSidebar();
+    renderPlanMap();
+  }
+};
+
+const _origAddToItinerary = addToItinerary;
+addToItinerary = function(a) {
+  _origAddToItinerary(a);
+  if (state.view === 'plan') {
+    renderPlanSidebar();
+    renderPlanMap();
+  }
+};
+
+// ============ LEGEND TOGGLE ============
+function toggleLegend() {
+  const body = document.getElementById('legendBody');
+  const btn = document.getElementById('legendToggleBtn');
+  body.classList.toggle('collapsed');
+  btn.classList.toggle('collapsed');
+}
+
+function setLegendVisible(visible) {
+  const legend = document.getElementById('legend');
+  legend.classList.toggle('hidden', !visible);
+}
+
+// ============ TABS ============
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    const v = t.dataset.view;
+    document.getElementById('view-' + v).classList.add('active');
+    state.view = v;
+
+    // Clean up plan-specific overlays when leaving plan view
+    if (planRoutePolyline) { planRoutePolyline.setMap(null); planRoutePolyline = null; }
+    planNumberMarkers.forEach(m => m.setMap(null));
+    planNumberMarkers = [];
+
+    if (v === 'stay') {
+      state.accomLayerOn = true;
+      renderAttractions();
+      renderAccommodations();
+      renderAccomTypeChips();
+      renderAccomRegionChips();
+      updateLegendContent();
+      setLegendVisible(true);
+    } else if (v === 'plan') {
+      state.accomLayerOn = false;
+      renderAccommodations();
+      if (state.planActiveCategories.size === 0) {
+        CATEGORIES.forEach(c => state.planActiveCategories.add(c.id));
+      }
+      renderPlanCategoryChips();
+      renderPlanSidebar();
+      renderPlanMap();
+      setLegendVisible(false);
+    } else {
+      state.accomLayerOn = false;
+      renderAccommodations();
+      renderAttractions(); // restores full opacity after leaving Stay tab
+      updateLegendContent();
+      setLegendVisible(true);
+    }
+  });
+});
+
+// ============ SEARCH ============
+document.getElementById('search').addEventListener('input', (e) => {
+  state.search = e.target.value;
+  renderAttractions();
+});
+
+function dismissSplash() {
+  document.getElementById('splash').classList.add('hidden');
+}
+
+// ============ INIT: Google Maps + Data ============
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  const { Marker } = await google.maps.importLibrary("marker");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: -41.0, lng: 173.5 },
+    zoom: 6,
+    mapTypeControl: true,
+    streetViewControl: false,
+    fullscreenControl: false,
+    zoomControl: true,
+    mapId: "qiwiosity_nz_map",
+  });
+
+  infoWindow = new google.maps.InfoWindow();
+
+  // Close info window when clicking the map background
+  map.addListener('click', () => {
+    infoWindow.close();
+  });
+
+  // Now load data and render
+  const ok = await loadAllData();
+  if (!ok) return;
+
+  CATEGORIES.forEach(c => state.activeCategories.add(c.id));
+
+  renderCategoryList();
+  renderRegionList();
+  renderAccomTypeChips();
+  renderAccomRegionChips();
+  renderAccommodationList();
+  renderAttractions();
+  renderAccommodations();
+  renderItinerary();
+
+  // Wire up accommodation search
+  const accomSearchEl = document.getElementById('accomSearch');
+  if (accomSearchEl) {
+    accomSearchEl.addEventListener('input', (e) => {
+      state.accomSearch = e.target.value;
+      renderAccommodationList();
+      renderAccommodations();
+    });
+  }
+}
+
+initMap();
+</script>
+</body>
+</html>

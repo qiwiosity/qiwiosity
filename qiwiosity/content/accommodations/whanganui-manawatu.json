@@ -1,0 +1,245 @@
+{
+  "region": {
+    "id": "whanganui-manawatu",
+    "name": "Whanganui / Manawatū",
+    "island": "North",
+    "centre": {
+      "lat": -40.05,
+      "lng": 175.3
+    }
+  },
+  "count": 21,
+  "accommodations": [
+    {
+      "id": "whanganui-manawatu-copthorne-palmerston-north",
+      "name": "Copthorne Hotel Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.353,
+      "lng": 175.61,
+      "type": "hotel",
+      "price_nzd_per_night": 225,
+      "rating": 4.3,
+      "short": "Central Palmerston North hotel on Fitzherbert Ave with pool."
+    },
+    {
+      "id": "whanganui-manawatu-distinction-coachman-pn",
+      "name": "Distinction Coachman Hotel Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.364,
+      "lng": 175.628,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.3,
+      "short": "Palmerston North hotel at Fitzherbert Ave southern end."
+    },
+    {
+      "id": "whanganui-manawatu-hotel-coachman",
+      "name": "Hotel Coachman Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.3635,
+      "lng": 175.627,
+      "type": "hotel",
+      "price_nzd_per_night": 215,
+      "rating": 4.2,
+      "short": "Long-standing hotel near Massey University."
+    },
+    {
+      "id": "whanganui-manawatu-rutherford-hotel-manawatu",
+      "name": "Rutland Arms Hotel Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.355,
+      "lng": 175.611,
+      "type": "hotel",
+      "price_nzd_per_night": 235,
+      "rating": 4.3,
+      "short": "Heritage English-style hotel in central Palmerston North."
+    },
+    {
+      "id": "whanganui-manawatu-kingsgate-whanganui",
+      "name": "Kingsgate Hotel The Avenue Whanganui",
+      "region": "whanganui-manawatu",
+      "lat": -39.932,
+      "lng": 175.047,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.2,
+      "short": "Historic Whanganui hotel on Victoria Avenue with pool."
+    },
+    {
+      "id": "whanganui-manawatu-151-on-london",
+      "name": "151 on London Motel Whanganui",
+      "region": "whanganui-manawatu",
+      "lat": -39.933,
+      "lng": 175.056,
+      "type": "hotel",
+      "price_nzd_per_night": 190,
+      "rating": 4.2,
+      "short": "Motor-inn-style hotel on London Street close to Whanganui River."
+    },
+    {
+      "id": "whanganui-manawatu-alpha-motel-whanganui",
+      "name": "Alpha Motel Whanganui",
+      "region": "whanganui-manawatu",
+      "lat": -39.934,
+      "lng": 175.048,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Whanganui motel on the London Street motel strip."
+    },
+    {
+      "id": "whanganui-manawatu-aotea-motor-lodge",
+      "name": "Aotea Motor Lodge Whanganui",
+      "region": "whanganui-manawatu",
+      "lat": -39.932,
+      "lng": 175.047,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Executive-style Whanganui motel with spa suites."
+    },
+    {
+      "id": "whanganui-manawatu-central-park-motor-lodge",
+      "name": "Central Park Motor Lodge Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.353,
+      "lng": 175.608,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Palmerston North motel on Park Road near The Square."
+    },
+    {
+      "id": "whanganui-manawatu-coachman-motel-pn",
+      "name": "Coachman Motor Lodge Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.362,
+      "lng": 175.626,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Palmerston North motel with pool and spa units."
+    },
+    {
+      "id": "whanganui-manawatu-fitzherbert-castle-motel",
+      "name": "Fitzherbert Castle Motel Palmerston North",
+      "region": "whanganui-manawatu",
+      "lat": -40.361,
+      "lng": 175.626,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Castle-themed Palmerston North motel on Fitzherbert Ave."
+    },
+    {
+      "id": "whanganui-manawatu-levin-motel",
+      "name": "Redwood Motel Levin",
+      "region": "whanganui-manawatu",
+      "lat": -40.625,
+      "lng": 175.286,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Levin town-centre motel on Queen Street."
+    },
+    {
+      "id": "whanganui-manawatu-taihape-motel",
+      "name": "Central Motel Taihape",
+      "region": "whanganui-manawatu",
+      "lat": -39.68,
+      "lng": 175.797,
+      "type": "motel",
+      "price_nzd_per_night": 155,
+      "rating": 4,
+      "short": "Gumboot-town motel in central Taihape."
+    },
+    {
+      "id": "whanganui-manawatu-ohakune-motel",
+      "name": "Station Lodge Motel Ohakune",
+      "region": "whanganui-manawatu",
+      "lat": -39.42,
+      "lng": 175.4,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Ohakune railway-precinct motel at the Ruapehu gateway."
+    },
+    {
+      "id": "whanganui-manawatu-whanganui-top10",
+      "name": "Whanganui River TOP 10 Holiday Park",
+      "region": "whanganui-manawatu",
+      "lat": -39.934,
+      "lng": 175.056,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.3,
+      "short": "Central Whanganui park on Somme Parade by the river."
+    },
+    {
+      "id": "whanganui-manawatu-palmerston-north-top10",
+      "name": "Palmerston North Holiday Park",
+      "region": "whanganui-manawatu",
+      "lat": -40.348,
+      "lng": 175.586,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Family park on the edge of Palmerston North."
+    },
+    {
+      "id": "whanganui-manawatu-ohakune-top10",
+      "name": "Ohakune TOP 10 Holiday Park",
+      "region": "whanganui-manawatu",
+      "lat": -39.421,
+      "lng": 175.402,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.3,
+      "short": "Alpine-village park near Turoa skifield and mountain bike trails."
+    },
+    {
+      "id": "whanganui-manawatu-foxton-beach-top10",
+      "name": "Foxton Beach Motor Camp",
+      "region": "whanganui-manawatu",
+      "lat": -40.474,
+      "lng": 175.229,
+      "type": "holiday-park",
+      "price_nzd_per_night": 80,
+      "rating": 4,
+      "short": "Coastal Manawatu park a short walk to Foxton Beach."
+    },
+    {
+      "id": "whanganui-manawatu-rangitikei-river-lodge",
+      "name": "Mangaweka Adventure Lodge",
+      "region": "whanganui-manawatu",
+      "lat": -39.815,
+      "lng": 175.783,
+      "type": "lodge",
+      "price_nzd_per_night": 420,
+      "rating": 4.5,
+      "short": "Rangitikei River lodge with adventure rafting and cliff jumps."
+    },
+    {
+      "id": "whanganui-manawatu-rahui-lodge-manawatu",
+      "name": "Rahui Country Estate",
+      "region": "whanganui-manawatu",
+      "lat": -40.259,
+      "lng": 175.551,
+      "type": "lodge",
+      "price_nzd_per_night": 520,
+      "rating": 4.6,
+      "short": "Country lodge in the Pohangina Valley east of Palmerston North."
+    },
+    {
+      "id": "whanganui-manawatu-awakeri-lodge-whanganui",
+      "name": "Bridge to Nowhere Lodge",
+      "region": "whanganui-manawatu",
+      "lat": -39.102,
+      "lng": 174.899,
+      "type": "lodge",
+      "price_nzd_per_night": 580,
+      "rating": 4.7,
+      "short": "Remote Whanganui River lodge reached only by jet boat."
+    }
+  ]
+}

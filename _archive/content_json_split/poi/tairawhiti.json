@@ -1,0 +1,1443 @@
+{
+  "region": {
+    "id": "tairawhiti",
+    "name": "Tairāwhiti / Gisborne / East Cape",
+    "island": "North",
+    "centre": {
+      "lat": -38.05,
+      "lng": 178.2
+    },
+    "bounds": {
+      "north": -37.4,
+      "south": -38.9,
+      "east": 178.6,
+      "west": 177.2
+    },
+    "description": "Tairāwhiti — 'the coast where the sun shines across the water.' The first place in the world to see each new day, the first place in Aotearoa that two worlds met, and the homeland of Ngāti Porou, Rongowhakaata, Te Aitanga-a-Māhaki, Ngāi Tāmanuhiri and Ngāti Oneone."
+  },
+  "pois": [
+    {
+      "id": "puhi-kai-iti",
+      "name": "Puhi Kai Iti / Cook Landing Site",
+      "region": "tairawhiti",
+      "lat": -38.6769,
+      "lng": 178.0361,
+      "category": "māori",
+      "tags": [
+        "cook-voyage",
+        "first-contact",
+        "māori",
+        "monument",
+        "difficult-history"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Where Cook landed on 9 October 1769, where Te Maro of Ngāti Oneone was killed, and where Māia had already built a pā generations earlier.",
+      "commentary": "Cook's first New Zealand landfall was on 9 October 1769, at the mouth of the Tūranganui River. Nine Māori were killed across the first two days of contact, the first of them the Ngāti Oneone rangatira Te Maro. Cook, unable to secure supplies, named the place 'Poverty Bay' and sailed south. The older name — Tūranganui-a-Kiwa, 'the great standing place of Kīwa' — records the much earlier arrival of the Horouta waka captained by Kīwa, and of Māia, who built a pā here called Puhi Kai Iti. The 1906 Cook obelisk is still on site; since Tuia 250 (2019) the reserve has been reinterpreted with iwi-carved pou and signage that tells both stories. A short climb up Titirangi / Kaiti Hill brings you to the Ruatanuika lookout and a memorial to Te Maro.",
+      "scripts": {
+        "headline": "scripts/puhi-kai-iti.headline.md",
+        "standard": "scripts/puhi-kai-iti.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Puhi Kai Iti / Cook Landing National Historic Reserve",
+        "NZ History — Cook Landing Site",
+        "Wikipedia — Puhi Kai Iti / Cook Landing Site",
+        "Tairāwhiti Museum",
+        "Ngāti Oneone, Rongowhakaata, Te Aitanga-a-Māhaki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Puhi Kai Iti / Cook Landing Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where Cook landed on 9 October 1769, where Te Maro of Ngāti Oneone was killed, and where Māia had already built a pā generations earlier. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tolaga-bay-wharf",
+      "name": "Tolaga Bay Wharf / Ūawa",
+      "region": "tairawhiti",
+      "lat": -38.3656,
+      "lng": 178.3064,
+      "category": "nature",
+      "tags": [
+        "engineering",
+        "wharf",
+        "cook-voyage",
+        "coastal",
+        "heritage-nz"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "660 metres of concrete reaching into the Pacific — the longest wharf in the southern hemisphere, saved from the sea by the town that built it.",
+      "commentary": "Designed by marine engineer Cyrus Williams to solve Tolaga Bay's open-roadstead problem, construction began in 1926 and finished in 1929. Storms damaged the works during construction and the harbour board had to borrow another £20,000 to finish. At its peak in 1936, 133 ships a year called at the wharf. The last sailing was the coastal steamer Kopara in 1966. From the 1990s the Tolaga Bay Save the Wharf Charitable Trust has been restoring it section by section. It's now Heritage NZ Category 1, and you can walk the full 660 metres. Just up the road is Cooks Cove — where the Endeavour sheltered 23–29 October 1769 and Banks and Solander did much of their first NZ botanical collecting.",
+      "scripts": {
+        "headline": "scripts/tolaga-bay-wharf.headline.md",
+        "standard": "scripts/tolaga-bay-wharf.standard.md"
+      },
+      "sources_to_check": [
+        "Tolaga Bay Save the Wharf Charitable Trust",
+        "NZ History — Tolaga Bay Wharf",
+        "Te Ara — Tolaga Bay wharf photo",
+        "Heritage NZ listing",
+        "DOC — Cooks Cove walkway (status varies)"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Tolaga Bay Wharf / Ūawa draws visitors back time and again for its natural beauty and peaceful atmosphere. 660 metres of concrete reaching into the Pacific — the longest wharf in the southern hemisphere, saved from the sea by the town that built it. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "te-waha-o-rerekohu",
+      "name": "Te Waha-o-Rerekohu",
+      "region": "tairawhiti",
+      "lat": -37.6342,
+      "lng": 178.3628,
+      "category": "māori",
+      "tags": [
+        "tree",
+        "pōhutukawa",
+        "māori",
+        "record",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.25,
+      "short": "The largest and oldest pōhutukawa tree in the world — 600+ years old, 37-metre branch span — in the grounds of Te Araroa Area School.",
+      "commentary": "In the grounds of Te Araroa Area School stands Te Waha-o-Rerekohu, 'the mouth of Rerekohu' — named for a rangatira of this rohe whose kūmara pātaka (food store) tradition places at the base of the tree. Dendrochronology dates its germination to around the year 1421, making it around 600 years old, give or take 200. The branch span was measured at over 37 metres in 1950. It's the largest and oldest known pōhutukawa on earth. Publicly accessible during reasonable hours; treat the tree with the respect of a taonga, which it is.",
+      "scripts": {
+        "headline": "scripts/te-waha-o-rerekohu.headline.md",
+        "standard": "scripts/te-waha-o-rerekohu.standard.md"
+      },
+      "sources_to_check": [
+        "Te Ara — Te Waha o Rerekohu photo",
+        "Te Whānau-a-Rerekohu / Ngāti Porou — cultural content",
+        "iNaturalist NZ",
+        "Te Araroa Area School"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Waha-o-Rerekohu as a place where the history and cultural significance of Aotearoa become tangible and real. The largest and oldest pōhutukawa tree in the world — 600+ years old, 37-metre branch span — in the grounds of Te Araroa Area School. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "east-cape-lighthouse",
+      "name": "East Cape Lighthouse / Whangaokeno",
+      "region": "tairawhiti",
+      "lat": -37.6903,
+      "lng": 178.5481,
+      "category": "heritage",
+      "tags": [
+        "lighthouse",
+        "sunrise",
+        "viewpoint",
+        "easternmost",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "The easternmost lighthouse in the world — ~700 steps up a hill, and most of the year, the first place on Earth the sun touches.",
+      "commentary": "The original light was built in 1900 on East Island (Whangaokeno), a small unstable rocky island offshore — landslides threatened the keepers' cottages and the whole operation was moved to this mainland hilltop in 1922. Three lighthouse keepers lived here until it was automated in 1985. The ~700-step climb is steep but short. On a clear winter dawn this is the first land on the planet to see the sun — although Kiribati's 1995 dateline shift technically gave Caroline Island the first new day. Geography is on our side; calendars aren't. Bring a torch if you're going for dawn, and more layers than you think.",
+      "scripts": {
+        "headline": "scripts/east-cape-lighthouse.headline.md",
+        "standard": "scripts/east-cape-lighthouse.standard.md"
+      },
+      "sources_to_check": [
+        "Maritime New Zealand — lighthouses",
+        "Wikipedia — East Cape Lighthouse",
+        "AA NZ — travel must-dos"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at East Cape Lighthouse / Whangaokeno — the site rewards those who take time to read the signage and absorb the context. The easternmost lighthouse in the world — ~700 steps up a hill, and most of the year, the first place on Earth the sun touches. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "eastwoodhill-arboretum",
+      "name": "Eastwoodhill Arboretum",
+      "region": "tairawhiti",
+      "lat": -38.6589,
+      "lng": 177.8686,
+      "category": "nature",
+      "tags": [
+        "arboretum",
+        "national-collection",
+        "trees",
+        "ngatapa",
+        "douglas-cook"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2.5,
+      "short": "The National Arboretum of New Zealand — one man's 80-year obsession, now 135 hectares of Northern Hemisphere trees.",
+      "commentary": "William Douglas Cook bought this Ngātapa farm in 1910 and spent the rest of his life — until his death in 1967 — planting it. His logic: Europe's forests were being destroyed by war and industrial logging, and someone needed to preserve them. He imported thousands of species of trees, shrubs and climbers, laid out 25 km of paths, and built the extraordinary spring-flowering oak and magnolia collections for which Eastwoodhill is now famous. In 1975 Parliament declared it the National Arboretum of New Zealand — the country's largest collection of Northern Hemisphere woody plants, now ~135 ha with ~4,000 species. Best in spring (cherries, magnolias) and autumn (maples, oaks). 45 minutes west of Gisborne. Entry fee.",
+      "scripts": {
+        "headline": "scripts/eastwoodhill-arboretum.headline.md",
+        "standard": "scripts/eastwoodhill-arboretum.standard.md"
+      },
+      "sources_to_check": [
+        "Eastwoodhill Arboretum — eastwoodhill.org.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Eastwoodhill Arboretum draws visitors back time and again for its natural beauty and peaceful atmosphere. The National Arboretum of New Zealand — one man's 80-year obsession, now 135 hectares of Northern Hemisphere trees. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rere-falls-rockslide",
+      "name": "Rere Falls & Rere Rockslide",
+      "region": "tairawhiti",
+      "lat": -38.5019,
+      "lng": 177.8133,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "natural-waterslide",
+        "wharekopae",
+        "free",
+        "swimming"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2,
+      "short": "A 10-metre wide waterfall, and a 60-metre natural rock waterslide downstream — both free, both on the same river.",
+      "commentary": "The Wharekopae River west of Gisborne gives you two remarkable free swim spots within 5 km of each other. Rere Falls is a 10 m wide, 5 m high curtain waterfall — you can walk behind it. A few minutes further upriver is the Rere Rockslide: a 60 m long smooth rock slab angled gently enough that you can slide down it on a boogie board, an inflatable, or just in shorts, into a deep pool at the bottom. Locals have been using it for generations. No charge, no lifeguard, no facilities — bring a boogie board or thick shorts (nothing white, nothing loose), a towel, and check the flow is safe. 45 minutes west of Gisborne on the way to Eastwoodhill.",
+      "scripts": {
+        "headline": "scripts/rere-falls-rockslide.headline.md",
+        "standard": "scripts/rere-falls-rockslide.standard.md"
+      },
+      "sources_to_check": [
+        "Gisborne District Council",
+        "Trust Tairāwhiti"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Rere Falls & Rere Rockslide draws visitors back time and again for its natural beauty and peaceful atmosphere. A 10-metre wide waterfall, and a 60-metre natural rock waterslide downstream — both free, both on the same river. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "mt-hikurangi",
+      "name": "Mt Hikurangi",
+      "region": "tairawhiti",
+      "lat": -37.9167,
+      "lng": 178.0667,
+      "category": "māori",
+      "tags": [
+        "first-sunrise",
+        "ngati-porou",
+        "maui-carvings",
+        "sacred",
+        "1752m"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 10,
+      "short": "The first point on the North Island to see each sunrise — the sacred mountain of Ngāti Porou, with nine massive carved pou near the summit.",
+      "commentary": "Mt Hikurangi (1,752 m) is the highest non-volcanic mountain on the North Island and the first point on the mainland to receive each new day's light. For Ngāti Porou the mountain is an ancestor: in their tradition it is the prow of Māui's waka, which fished up the North Island. On the ridges below the summit stand nine 2-metre-tall carved wooden pou depicting Māui and his whānau — installed in 1999. Access is across Ngāti Porou farmland; a 4WD guided tour from Pakihiroa Station to the summit (or to the carvings, much lower) is the standard way. Unguided hiking requires a permit through Te Rūnanganui o Ngāti Porou. Weather is brutal — check forecasts, dress for worse than you expect.",
+      "scripts": {
+        "headline": "scripts/mt-hikurangi.headline.md",
+        "standard": "scripts/mt-hikurangi.standard.md"
+      },
+      "sources_to_check": [
+        "Te Rūnanganui o Ngāti Porou — ngatiporou.com",
+        "Te Ara — Ngāti Porou",
+        "DOC"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Mt Hikurangi as a place where the history and cultural significance of Aotearoa become tangible and real. The first point on the North Island to see each sunrise — the sacred mountain of Ngāti Porou, with nine massive carved pou near the summit. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "morere-hot-springs",
+      "name": "Morere Hot Springs",
+      "region": "tairawhiti",
+      "lat": -38.9997,
+      "lng": 177.7736,
+      "category": "nature",
+      "tags": [
+        "hot-pools",
+        "nikau-forest",
+        "rainforest",
+        "sh2",
+        "saline"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Hot saline pools in the middle of a nikau-palm rainforest — steamy water that started the journey as ancient seawater, now warmed underground.",
+      "commentary": "Morere sits in a 364 ha scenic reserve on SH2 between Wairoa and Gisborne, protecting a rare coastal stand of nikau-palm rainforest. The pools are filled from a hot spring whose water originated as 10-million-year-old seawater trapped underground, now heated to 60 °C — it still tastes faintly salty. The reserve has four public pools (two cool, two hot) and private tubs for hire; the hottest pools sit right under the nikau canopy. A short forest walk through the reserve passes giant puriri and towering tawa. Small fee. 1 hour south of Gisborne, a useful stop on the SH2 run to Napier. Cafe at the entrance.",
+      "scripts": {
+        "headline": "scripts/morere-hot-springs.headline.md",
+        "standard": "scripts/morere-hot-springs.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Morere Scenic Reserve",
+        "Morere Hot Springs — morerehotsprings.co.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Morere Hot Springs draws visitors back time and again for its natural beauty and peaceful atmosphere. Hot saline pools in the middle of a nikau-palm rainforest — steamy water that started the journey as ancient seawater, now warmed underground. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-titirangi-domain",
+      "name": "Tītīrangi / Kaiti Hill Lookout, Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.6789,
+      "lng": 178.0233,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "pā",
+        "young-nicks-head",
+        "cook"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The hill above Gisborne where Captain Cook first sighted the New Zealand mainland in 1769 — and where Ngāti Oneone built one of their great pā.",
+      "commentary": "Tītīrangi is sacred to Ngāti Oneone. Beneath the hill lies the Cook landing site at Puhi Kai Iti. Today the summit is a public reserve with sweeping views across Poverty Bay.",
+      "audio_story": "You have climbed up Tītīrangi, the hill the Pākehā maps call Kaiti Hill, and you are standing on the highest ground above Gisborne. From here you can see almost all of Poverty Bay, from the river mouth at your feet out to Young Nicks Head on the southern arm of the bay. It was from this very piece of land, in October seventeen sixty nine, that the Endeavour was first sighted by people on shore, and from the deck of the Endeavour, that the boy Nicholas Young first sighted the New Zealand mainland and earned the headland its English name. The hill itself is sacred to Ngāti Oneone, the local hapū, and was once the site of a great fortified pā. The terraces are still visible on the slopes. The summit lookout has been thoughtfully redeveloped in recent years with carved pou, interpretation panels, and a James Cook memorial that, importantly, is balanced now by signs that tell the harder story of the first contact, in which several local Māori were shot by the Endeavour crew. Stand here for a few minutes. Two stories meet on this hill, and both belong here.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Gisborne District Council",
+        "NZHistory — Cook landings",
+        "Ngāti Oneone"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Tītīrangi / Kaiti Hill Lookout, Gisborne draws visitors back time and again for its natural beauty and peaceful atmosphere. The hill above Gisborne where Captain Cook first sighted the New Zealand mainland in 1769 — and where Ngāti Oneone built one of their great pā. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-tatapouri",
+      "name": "Tatapouri Stingray Encounter",
+      "region": "tairawhiti",
+      "lat": -38.6242,
+      "lng": 178.1428,
+      "category": "māori",
+      "tags": [
+        "stingray",
+        "marine",
+        "guided",
+        "family"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1.5,
+      "short": "Wade out at low tide to feed wild short-tail stingrays — a guided experience run by local Ngāi Tāmanuhiri whānau.",
+      "commentary": "Operated by Dive Tatapouri, a small family business north of Gisborne. The stingrays are wild and free to leave; they have learned to come for fish during the daily encounter.",
+      "audio_story": "You are about to wade into the sea at Tatapouri, a few kilometres north of Gisborne, with a wetsuit on and a hand-held bait bag, and a wild stingray is going to come and eat from your hand. The stingrays here are not captive. They live in the open ocean and choose, every day, whether or not to swim into the shallows for the daily encounter. Most days they choose to come. Local guides take small groups to a shallow reef just offshore at low tide, where short-tail and eagle stingrays glide silently in to investigate. The bigger short-tails can be over two metres across the wing, and yet they move with such gentleness that they barely disturb the water around your knees. Your guide will show you how to hold a piece of bait between your thumb and finger so the ray takes it cleanly with its mouth on the underside of its body. The whole experience is run by local whānau and is grounded in tikanga, with a karakia at the beginning and end of each session. You will leave with cold feet, a wet wetsuit, and a story that will, frankly, last for life.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dive Tatapouri",
+        "Tairawhiti tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tatapouri Stingray Encounter as a place where the history and cultural significance of Aotearoa become tangible and real. Wade out at low tide to feed wild short-tail stingrays — a guided experience run by local Ngāi Tāmanuhiri whānau. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-mahinepua",
+      "name": "Anaura Bay & Cook's Cove Walkway",
+      "region": "tairawhiti",
+      "lat": -38.2667,
+      "lng": 178.35,
+      "category": "nature",
+      "tags": [
+        "cook",
+        "beach",
+        "walk",
+        "1769"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "Where Captain Cook's crew was warmly welcomed in 1769 — a beautiful bay and the short walk to the hidden cove where the Endeavour took on water.",
+      "commentary": "Cook landed at Anaura Bay on 21 October 1769 and was greeted hospitably. He moved on briefly to the more sheltered Cook's Cove (Tolaga Bay area), which is now a 5.8km return walk.",
+      "audio_story": "You have arrived at Anaura Bay, a wide perfect crescent of sand on the East Coast, and one of the more historically significant beaches you will probably have ever to yourself. On the twenty first of October seventeen sixty nine, Captain Cook landed here and was met not with violence but with hospitality. Local Māori brought sweet potato and water aboard the Endeavour, and Cook recorded the cleanliness and order of the cultivated gardens with what reads, between the lines of his journal, as something close to admiration. The wind shifted, his anchor dragged, and he moved south to the more sheltered Cook's Cove the next day. From the southern end of the beach, a beautiful walking track climbs across farmland and through bush to the lookout above Cook's Cove itself. The walk is around two and a half hours return. It ends at a wooden viewing platform looking down on the small green bay where the Endeavour rode at anchor for six days while Joseph Banks and Daniel Solander botanised the surrounding hills. Few historic walks in this country put you so completely in the place where so much else began.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Cook's Cove walk",
+        "NZHistory — Cook East Coast"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Anaura Bay & Cook's Cove Walkway draws visitors back time and again for its natural beauty and peaceful atmosphere. Where Captain Cook's crew was warmly welcomed in 1769 — a beautiful bay and the short walk to the hidden cove where the Endeavour took on water. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-rere-falls",
+      "name": "Rere Rockslide",
+      "region": "tairawhiti",
+      "lat": -38.5083,
+      "lng": 177.8167,
+      "category": "nature",
+      "tags": [
+        "natural-waterslide",
+        "river",
+        "free",
+        "family"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "A 60m natural rockslide on the Wharekopae River where you can ride a bodyboard or inner tube down a smooth waterfall.",
+      "commentary": "The Rere Rockslide on the Wharekopae River near Gisborne is a 60m sloping rock face used as a natural water slide. Bring an inflatable, lilo or bodyboard.",
+      "audio_story": "You have arrived at the Rere Rockslide, and if you brought any kind of inflatable mattress, bodyboard or air filled tube with you, today is your day. The Wharekopae River runs west of Gisborne through gentle farm country, and at one particular point it slides over a sixty metre long sheet of sloping rock that is, by some unlikely accident of geology, exactly the right angle and exactly the right smoothness to be one of the longest natural waterslides in the country. Walk to the top, sit on whatever you brought to ride, and let the water carry you down. The pool at the bottom is shallow but deep enough to take the landing. People have been doing this for generations. It is free. It is open. There are no staff, no lifeguards, no entry charges, and only a discreet sign reminding you to use common sense. On a hot summer day local families turn it into a barbecue afternoon. Just downstream the same river drops over the much taller Rere Falls, a wide twenty metre waterfall you can walk across the front of. Make a day of it. Bring towels.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Gisborne District Council",
+        "Tairawhiti tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Rere Rockslide draws visitors back time and again for its natural beauty and peaceful atmosphere. A 60m natural rockslide on the Wharekopae River where you can ride a bodyboard or inner tube down a smooth waterfall. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-rere-falls-proper",
+      "name": "Te Urewera (Lake Waikaremoana)",
+      "region": "tairawhiti",
+      "lat": -38.75,
+      "lng": 177.15,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "great-walk",
+        "tūhoe",
+        "remote",
+        "legal-personhood"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 8,
+      "short": "Lake Waikaremoana — a great deep-bush lake, a Great Walk, and the heart of Te Urewera, which has its own legal personhood.",
+      "commentary": "Te Urewera was vested as a legal person in 2014 under the Tūhoe settlement, the first land in the world to receive such a status. Lake Waikaremoana sits in its heart.",
+      "audio_story": "You have come to Te Urewera, the great mountain forest in the heart of the North Island. Te Urewera is the homeland of Tūhoe, who are sometimes called the Children of the Mist, and in twenty fourteen this entire forested landscape became the first land in the world to be granted legal personhood. Te Urewera is no longer owned by the Crown. It is no longer a national park in the conventional sense. It is, in law, itself, with rights of its own, jointly cared for by Tūhoe and the Crown. At its heart sits Lake Waikaremoana. The lake was formed when a giant landslide blocked a river around two thousand years ago, and the dark drowned forests are still preserved beneath its surface. The Lake Waikaremoana Track, one of New Zealand's Great Walks, runs forty six kilometres around the western shore over three to four days. There are also short walks from the visitor centre at Aniwaniwa, including the spectacular Waikaremoana Falls track. The road in is long and remote. The forest is deep. The mist sits low. Move quietly through this place, and remember it has its own name and its own story.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Urewera Act 2014",
+        "Tūhoe Te Uru Taumatua",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Te Urewera (Lake Waikaremoana) draws visitors back time and again for its natural beauty and peaceful atmosphere. Lake Waikaremoana — a great deep-bush lake, a Great Walk, and the heart of Te Urewera, which has its own legal personhood. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-mt-hikurangi-extension",
+      "name": "Maraehako Bay & Te Araroa Pōhutukawa",
+      "region": "tairawhiti",
+      "lat": -37.6256,
+      "lng": 178.3711,
+      "category": "māori",
+      "tags": [
+        "pōhutukawa",
+        "oldest-tree",
+        "east-coast",
+        "village"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The largest and oldest pōhutukawa tree in the country — over 600 years old, with a 40m crown.",
+      "commentary": "Te Waha-o-Rerekohu in Te Araroa schoolground is reputed to be the largest pōhutukawa in NZ.",
+      "audio_story": "You have arrived in the small East Cape village of Te Araroa, and behind the local school stands a tree that, by most reasonable measures, is the largest and oldest pōhutukawa in New Zealand. It is called Te Waha-o-Rerekohu, the mouth of Rerekohu, named for an ancestor of Ngāti Porou. The tree is reputed to be more than six hundred years old. Its trunk has divided into many great limbs that lean out and back to the ground over a crown forty metres across. In summer when it flowers, the whole village glows red beneath it. There is no fence, no entry fee, no gift shop. You simply walk across the schoolground, when school is not in session, and stand under the canopy. Te Araroa itself sits in a long curved bay on the wild northeast coast. From here it is another twenty kilometres on a winding sealed road to East Cape Lighthouse, the easternmost point of mainland New Zealand and one of the first places in the world to see the new day's sun. The village is also the start of the Te Araroa Trail, the country's longest hiking route. Spend a few minutes in the shade of the tree before you go.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Te Waha-o-Rerekohu",
+        "Ngāti Porou"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Maraehako Bay & Te Araroa Pōhutukawa as a place where the history and cultural significance of Aotearoa become tangible and real. The largest and oldest pōhutukawa tree in the country — over 600 years old, with a 40m crown. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-te-kooti-birthplace",
+      "name": "Te Kooti Arikirangi Birthplace Area — Te Karaka",
+      "region": "tairawhiti",
+      "lat": -38.4717,
+      "lng": 177.8683,
+      "category": "māori",
+      "tags": [
+        "te-kooti",
+        "ringatu",
+        "1860s",
+        "wahi-tapu"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 0.5,
+      "short": "Near where Te Kooti Arikirangi Te Tūruki was born around 1832 — founder of the Ringatū faith and one of the most controversial figures of New Zealand history.",
+      "commentary": "Te Kooti was born near Te Karaka to a Rongowhakaata father. Wrongly imprisoned on the Chathams in 1866, he led a famous escape in 1868 and founded the Ringatū Church.",
+      "audio_story": "You are travelling through the flat farming country of Te Karaka, a small settlement in the Waipaoa Valley north of Gisborne. Somewhere close to here, around the year eighteen thirty two, a child was born to a Rongowhakaata family who would grow up to become one of the most extraordinary and divisive figures in New Zealand history. His name was Te Kooti Arikirangi Te Tūruki. As a young man Te Kooti was arrested by the colonial government, without trial, on the charge of spying for Māori forces. He protested his innocence but was deported with hundreds of other prisoners to the Chatham Islands in eighteen sixty six. On the islands, during his two years of imprisonment, he experienced a series of visions and began preaching a new faith founded on the Old Testament, which became known as Ringatū, meaning the upraised hand. In eighteen sixty eight Te Kooti and his followers seized a schooner and escaped back to the mainland, landing on the Poverty Bay coast. What followed was four years of war across the central North Island. Te Kooti was never captured. He was pardoned in eighteen eighty three. The Ringatū Church he founded remains a living faith today. Pass this land with quiet attention.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Ara — Te Kooti",
+        "NZHistory — Te Kooti",
+        "Ringatū Church"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Kooti Arikirangi Birthplace Area — Te Karaka as a place where the history and cultural significance of Aotearoa become tangible and real. Near where Te Kooti Arikirangi Te Tūruki was born around 1832 — founder of the Ringatū faith and one of the most controversial figures of New Zealand history. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-matawhero",
+      "name": "Matawhero",
+      "region": "tairawhiti",
+      "lat": -38.6467,
+      "lng": 177.9889,
+      "category": "māori",
+      "tags": [
+        "te-kooti",
+        "1868",
+        "wahi-tapu",
+        "memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Site of the November 1868 attack by Te Kooti and his Ringatū followers — a night that left around 60 dead and still shadows the district.",
+      "commentary": "On 10 November 1868, after escaping the Chathams, Te Kooti led a raid on Matawhero. Around 60 people were killed, including settlers and Māori not aligned with Ringatū. The church at Matawhero (1862) survives.",
+      "audio_story": "You are at Matawhero, a small rural settlement a few kilometres west of Gisborne. On the night of the tenth of November, eighteen sixty eight, Te Kooti and a party of his Ringatū followers, recently escaped from imprisonment on the Chatham Islands, descended on this district. Over the course of that night and the following day, around sixty people were killed. The dead included colonial settler families, Māori who were not aligned with Te Kooti, and at least one magistrate whom Te Kooti held personally responsible for his unjust imprisonment. It is remembered in local settler history as the Matawhero Massacre, though the fuller picture includes the years of wrongful detention that preceded it and the cycles of colonial violence that followed. The small wooden Matawhero Church, built in eighteen sixty two, was the only structure the raiders deliberately spared on that night and still stands on its original site today. It is one of the oldest Anglican churches in the country. Stop at the church, read the memorial to those who died, and sit for a moment in the quiet of the old wooden interior. This is painful ground, carefully tended.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZHistory — Matawhero",
+        "Heritage NZ — Matawhero Church",
+        "Tairāwhiti Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Matawhero as a place where the history and cultural significance of Aotearoa become tangible and real. Site of the November 1868 attack by Te Kooti and his Ringatū followers — a night that left around 60 dead and still shadows the district. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-waerenga-a-hika",
+      "name": "Waerenga-a-Hika Battle Site",
+      "region": "tairawhiti",
+      "lat": -38.615,
+      "lng": 177.9417,
+      "category": "māori",
+      "tags": [
+        "pai-marire",
+        "1865",
+        "battle",
+        "wahi-tapu"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where a Pai Mārire pā was besieged and taken in November 1865 — the battle that led to Te Kootis unjust arrest.",
+      "commentary": "In November 1865 colonial forces and pro-government Māori besieged the Pai Mārire (Hauhau) pā at Waerenga-a-Hika. After a week it fell. Prisoners including Te Kooti were sent to the Chathams.",
+      "audio_story": "You are at Waerenga a Hika, the site of a week long siege in November eighteen sixty five that few people today remember but whose consequences rippled across the next decade of New Zealand history. The followers of the Pai Mārire faith, a syncretic Māori religious movement born in Taranaki, had built a fortified pā on this ground. A force of colonial militia and pro government Māori surrounded the pā on the seventeenth of November. For seven days the defenders held out under fire. By the twenty fourth of November, short of water and with their earthworks crumbling, the defenders surrendered. Around seventy one Māori were killed in the fighting. Several hundred prisoners were taken, and in the chaotic aftermath a number of men who had taken no part in the fighting were also arrested, including a Rongowhakaata rangatira named Te Kooti Arikirangi. All were shipped to the Chatham Islands for indefinite imprisonment without trial. It was on the Chathams that Te Kooti founded the Ringatū faith. Three years later his dramatic escape and the violence that followed changed the East Coast forever. Everything that came later, began here, on this quiet paddock.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZHistory — Waerenga-a-Hika",
+        "Tairāwhiti Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Waerenga-a-Hika Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where a Pai Mārire pā was besieged and taken in November 1865 — the battle that led to Te Kootis unjust arrest. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-apirana-ngata",
+      "name": "Sir Āpirana Ngata Memorial, Waiomatatini",
+      "region": "tairawhiti",
+      "lat": -37.8,
+      "lng": 178.3167,
+      "category": "māori",
+      "tags": [
+        "ngata",
+        "ngati-porou",
+        "statesman",
+        "memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The home marae and memorial of Sir Āpirana Ngata — Ngāti Porou leader, first Māori university graduate, architect of twentieth-century Māori revival.",
+      "commentary": "Sir Āpirana Turupa Ngata (1874–1950), Ngāti Porou, was the first Māori to graduate from a NZ university and served as an MP for 38 years. His home marae is at Waiomatatini.",
+      "audio_story": "You are in the Waiapu Valley, the heartland of Ngāti Porou, and near a marae called Waiomatatini where one of the most influential Māori leaders of the twentieth century is buried. Sir Āpirana Turupa Ngata was born here in eighteen seventy four. He was the first Māori to gain a university degree in New Zealand, earning a bachelor of arts and then a law degree at Canterbury College. He went on to represent the Eastern Māori electorate in Parliament for thirty eight years, longer than almost anyone in New Zealand political history. Ngata is remembered for two great projects. The first was his effort to rebuild the Māori economy through land consolidation and farm development schemes that helped Ngāti Porou and other iwi retain control of what remained of their ancestral lands. The second was the cultural revival. Ngata personally organised the carving and building of dozens of wharenui across the country in the nineteen twenties and thirties, rescuing traditional arts that were on the edge of being lost. He died in nineteen fifty and is buried here in his home valley. Pass Waiomatatini with respect. Without Āpirana Ngata, much less of what is now called Māori culture would have survived the twentieth century intact.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Ara — Apirana Ngata",
+        "Ngāti Porou",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Sir Āpirana Ngata Memorial, Waiomatatini as a place where the history and cultural significance of Aotearoa become tangible and real. The home marae and memorial of Sir Āpirana Ngata — Ngāti Porou leader, first Māori university graduate, architect of twentieth-century Māori revival. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-rongopai",
+      "name": "Rongopai Wharenui, Patutahi",
+      "region": "tairawhiti",
+      "lat": -38.6,
+      "lng": 177.9,
+      "category": "māori",
+      "tags": [
+        "wharenui",
+        "ringatu",
+        "carving",
+        "painting",
+        "1887"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "A remarkable painted wharenui built in 1887 to welcome Te Kooti home after his pardon — unique in NZ Māori architecture.",
+      "commentary": "Rongopai was built 1887 by Te Whānau a Kai to welcome Te Kooti home to Tairāwhiti. When his return was blocked, the elaborate painted interior became a unique art treasure. Access only by arrangement with Te Whānau a Kai.",
+      "audio_story": "You are near Patutahi, a small settlement west of Gisborne, and nearby stands a wharenui called Rongopai that is unlike any other in the country. It was built in eighteen eighty seven by the people of Te Whānau a Kai, specifically to welcome Te Kooti Arikirangi home to the East Coast after his pardon four years earlier. The interior of the whare is painted rather than carved, in bold figurative imagery that includes biblical figures, historical ancestors, flowering plants, and vivid colours. It was an experimental response to the loss of traditional carving materials and carvers during the wars, and it produced one of the most original interiors in Māori art history. Te Kooti, in the end, was not able to return. The colonial government continued to pressure him to stay away from Tairāwhiti, and he died in Ōhiwa in eighteen ninety three without ever seeing Rongopai. The whare stood empty of its intended welcome, but it remains a sacred house for Te Whānau a Kai today. The wharenui is not open to casual visitors. Access is only possible by arrangement with the iwi. Pass the marae with respect. The painted walls inside are one of the great secret treasures of Aotearoa.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Whānau a Kai",
+        "Te Ara — Rongopai",
+        "Tairāwhiti Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Rongopai Wharenui, Patutahi as a place where the history and cultural significance of Aotearoa become tangible and real. A remarkable painted wharenui built in 1887 to welcome Te Kooti home after his pardon — unique in NZ Māori architecture. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-te-poho-o-rawiri",
+      "name": "Te Poho-o-Rawiri Marae, Kaiti",
+      "region": "tairawhiti",
+      "lat": -38.6819,
+      "lng": 178.0394,
+      "category": "māori",
+      "tags": [
+        "marae",
+        "ngati-oneone",
+        "wharenui",
+        "kaiti"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.25,
+      "short": "One of the largest wharenui in New Zealand — home of Ngāti Oneone and Te Aitanga-a-Māhaki. Viewed respectfully from the road.",
+      "commentary": "Te Poho-o-Rawiri is the principal marae of Ngāti Oneone, built in 1929 after the previous wharenui burned. At 28m long it is among the largest wharenui in Aotearoa.",
+      "audio_story": "You are passing Te Poho o Rāwiri, one of the great wharenui of Aotearoa. This is the principal marae of Ngāti Oneone, the iwi of the Kaiti foreshore, and the place where Cook himself first encountered tangata whenua in seventeen sixty nine. The present wharenui was built in nineteen twenty nine to replace an earlier building that had burned. At twenty eight metres long it is among the largest wharenui in the country. The elaborately carved interior includes panels that tell the story of Kiwa, the captain of the Horouta waka who gave the traditional name of this region, Tūranganui a Kiwa. The house is not open to casual tourists. It is a working marae, a living building, used for tangihanga, weddings, hui, and the tangible business of Ngāti Oneone as an iwi. From the road you can see the grand bargeboards and the carved amo of the porch. Pause for a moment to acknowledge the mana of this place, and then continue. If you have genuine business to bring to the marae, it must be arranged formally with the iwi in advance. Behind the marae rises Titirangi, the sacred hill, whose summit you can visit by a short walk and where the wider story of this coastline is told.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Oneone",
+        "Tairāwhiti Museum",
+        "Te Ara — Te Poho-o-Rawiri"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Poho-o-Rawiri Marae, Kaiti as a place where the history and cultural significance of Aotearoa become tangible and real. One of the largest wharenui in New Zealand — home of Ngāti Oneone and Te Aitanga-a-Māhaki. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-rongomaiwahine",
+      "name": "Māhia Peninsula — Rongomaiwahine Rohe",
+      "region": "tairawhiti",
+      "lat": -39.0833,
+      "lng": 177.9333,
+      "category": "māori",
+      "tags": [
+        "rongomaiwahine",
+        "iwi",
+        "ancestral",
+        "peninsula"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "The ancestral rohe of Rongomaiwahine — the tūpuna wahine after whom the iwi of Māhia is named.",
+      "commentary": "Māhia is the home of Rongomaiwahine iwi, named for a famous ancestress who married Kahungunu and then left him. The peninsula has been occupied for over 700 years.",
+      "audio_story": "You are driving onto the Māhia Peninsula, a rugged thumb of land jutting into the Pacific between Poverty Bay and Hawkes Bay. This is the rohe of Rongomaiwahine, an iwi named for one of the most famous ancestresses in Māori tradition. Rongomaiwahine was the senior wife of the great rangatira Kahungunu, but she is said to have left him because of his womanising and returned here, to her own lands, where she raised their children and maintained her mana in her own right. Her descendants have held this peninsula ever since. Māhia has been settled for over seven hundred years. There are pā sites on almost every headland, the remnants of an unbroken occupation by people who lived from the sea and from the kumara gardens of the sheltered eastern shore. In the twentieth century the peninsula became quietly famous for its surf beaches and its near total resistance to the worst kinds of tourism development. More recently, at the very southern tip of the peninsula, the Rocket Lab launch complex has put Māhia on maps of a different kind, firing small rockets to orbit from what is still essentially farmland. Old and new, in a single landscape.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Rongomaiwahine iwi",
+        "Te Ara — Rongomaiwahine",
+        "Māhia history"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Māhia Peninsula — Rongomaiwahine Rohe as a place where the history and cultural significance of Aotearoa become tangible and real. The ancestral rohe of Rongomaiwahine — the tūpuna wahine after whom the iwi of Māhia is named. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-manutuke-churches",
+      "name": "Manutuke Churches — Toko Toru Tapu & Te Mana o Turanga",
+      "region": "tairawhiti",
+      "lat": -38.7028,
+      "lng": 177.9431,
+      "category": "māori",
+      "tags": [
+        "carved-church",
+        "rongowhakaata",
+        "1849",
+        "1913",
+        "mission"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Two elaborately carved Māori churches — among the finest fusions of Māori and Christian architecture in New Zealand.",
+      "commentary": "Toko Toru Tapu (Holy Trinity) was built 1913, carved by masters of Rongowhakaata. The older Te Mana o Turanga whare nearby dates from 1883.",
+      "audio_story": "You have arrived at Manutuke, a small settlement south of Gisborne that contains one of the most remarkable concentrations of Māori carving in the country. The Anglican church of Toko Toru Tapu, the Holy Trinity, was completed in nineteen thirteen. Unlike almost any other church in New Zealand, its interior was entirely carved in the traditional manner by master carvers of Rongowhakaata, with painted tukutuku panels, woven kōwhaiwhai rafters, and poupou of ancestors standing along the walls. It is a Christian church, but one in which the architecture speaks in the visual grammar of the wharenui. Close by stands the wharenui Te Mana o Turanga, built in eighteen eighty three, which is considered one of the finest nineteenth century carved houses to survive in Aotearoa. The house is a living building of Rongowhakaata, not open for casual visits, but can sometimes be arranged through the iwi for interested visitors. Toko Toru Tapu is generally open to respectful visitors. Step quietly inside, take your hat off, and sit for a few minutes in the pews. You are sitting inside a work of art that took generations of skill to bring into being, and that continues to serve the community it was built for.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Toko Toru Tapu",
+        "Rongowhakaata",
+        "Te Ara — carved churches"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Manutuke Churches — Toko Toru Tapu & Te Mana o Turanga as a place where the history and cultural significance of Aotearoa become tangible and real. Two elaborately carved Māori churches — among the finest fusions of Māori and Christian architecture in New Zealand. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-waiapu",
+      "name": "Waiapu Valley & Ngāti Porou Cathedral",
+      "region": "tairawhiti",
+      "lat": -37.7833,
+      "lng": 178.3,
+      "category": "heritage",
+      "tags": [
+        "ngati-porou",
+        "cathedral",
+        "mission",
+        "valley"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "The heartland of Ngāti Porou — and the site of St Marys Tikitiki, the most extraordinary Māori church in Aotearoa.",
+      "commentary": "The Waiapu Valley on the northern East Coast is the ancestral heartland of Ngāti Porou. St Marys Church, Tikitiki (1924–26), with its entirely carved and painted interior, was built as a memorial to Ngāti Porou who died in WWI.",
+      "audio_story": "You are driving through the Waiapu Valley, the ancestral heartland of Ngāti Porou, the iwi of the northern East Coast. Every marae you pass here, every small church and every carved gateway, belongs to hapū of Ngāti Porou who trace their descent from Porourangi, the eponymous ancestor who lived on these rivers perhaps thirty generations ago. At the village of Tikitiki you will find St Marys Anglican Church. From outside it looks modest. Inside, it is extraordinary. Built between nineteen twenty four and nineteen twenty six as a memorial to the Ngāti Porou soldiers who died in the First World War, the interior is entirely carved and painted in the traditional manner. Poupou along the walls represent the ancestors of each hapū. The pulpit is a carved waka. The stained glass windows combine Christian iconography with Māori symbols. Sir Āpirana Ngata, whose home was a few kilometres away, drove the project personally, and the result is widely considered the most beautiful Māori church in New Zealand. The church is usually open during the day. Walk slowly around the interior. Every poupou represents a family, every panel a story, and together they are a single memorial to a generation that did not come home.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Porou",
+        "Heritage NZ — St Marys Tikitiki",
+        "Te Ara"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Waiapu Valley & Ngāti Porou Cathedral — the site rewards those who take time to read the signage and absorb the context. The heartland of Ngāti Porou — and the site of St Marys Tikitiki, the most extraordinary Māori church in Aotearoa. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-te-araroa",
+      "name": "Te Araroa & Hinerupe Marae",
+      "region": "tairawhiti",
+      "lat": -37.6333,
+      "lng": 178.3667,
+      "category": "māori",
+      "tags": [
+        "te-araroa",
+        "ngati-porou",
+        "pōhutukawa",
+        "marae"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The village closest to the East Cape — and home to a 600-year-old pōhutukawa and the historic Hinerupe Marae.",
+      "commentary": "Te Araroa sits on the broad curve of Kawakawa Bay near the East Cape. The giant pōhutukawa called Te Waha-o-Rerekohu in the school grounds is reputed to be over 600 years old.",
+      "audio_story": "You have arrived at Te Araroa, the last real settlement before the East Cape lighthouse and the easternmost inhabited point of the New Zealand mainland. The village wraps around the broad curve of Kawakawa Bay, sheltered by high cliffs on both sides. At the local school grounds stands one of the most venerable trees in the country, a pōhutukawa called Te Waha o Rerekohu, reputed to be over six hundred years old. Beneath its enormous canopy generations of local children have played, waited for buses, and grown up. Nearby stands Hinerupe Marae, the principal marae of Te Whānau a Hinerupe, the hapū of Ngāti Porou who hold this land. The carvings on the wharenui trace the descent of the hapū from Porourangi and onward to the ancestors specific to this valley. This is a tight knit community. It is one of the few parts of the country where the first language you hear at the school gate is still likely to be te reo Māori, spoken naturally between grandparents and children. Buy something at the store. Fill up with fuel before you push on to the cape itself. And if you are lucky enough to pass through when a hui is being held, keep your distance and your voice low.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Te Whānau a Hinerupe",
+        "Ngāti Porou",
+        "Te Ara — Te Araroa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Araroa & Hinerupe Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The village closest to the East Cape — and home to a 600-year-old pōhutukawa and the historic Hinerupe Marae. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-tolaga-bay-cooks-landing",
+      "name": "Cooks Cove, Tolaga Bay",
+      "region": "tairawhiti",
+      "lat": -38.3667,
+      "lng": 178.3167,
+      "category": "nature",
+      "tags": [
+        "cook-voyage",
+        "1769",
+        "first-contact",
+        "walk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Where Cook and Banks came ashore for six days in October 1769 — the first peaceable encounter of the Endeavour voyage.",
+      "commentary": "After the violent encounter at Gisborne, Cook anchored at Tolaga Bay from 23 to 29 October 1769 and traded peacefully with Te Aitanga-a-Hauiti. The Cooks Cove walkway (2 hours return) leads to the landing.",
+      "audio_story": "You are at Cooks Cove, the small sheltered bay at the southern end of Tolaga Bay. After the violent first encounters at Tūranganui a Kiwa further south, Cook sailed the Endeavour north and anchored here on the twenty third of October, seventeen sixty nine. He and his crew stayed for six days. The encounter with the local iwi, Te Aitanga a Hauiti, was peaceful. Water was taken on from the cove stream, the botanists Joseph Banks and Daniel Solander collected plant specimens from the coastal forest, and the astronomer Charles Green made observations from shore. In return Cook gave cloth, nails and iron tools. It was the first peaceful encounter of the Endeavour voyage with Māori, and some of the most detailed journal descriptions of early Māori life in Tairāwhiti come from the week spent here. The walkway to the cove from Tolaga Bay beach takes about two hours return. The path climbs through farm paddocks, drops into the sheltered cove, and finishes at a small beach where a natural rock arch called the Hole in the Wall is visible just offshore. The old watering hole is still there. The landscape is almost unchanged. Stand at the tideline and imagine the Endeavour at anchor in the bay.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Cooks Cove Walkway",
+        "NZHistory — Cook Tolaga Bay",
+        "Te Aitanga-a-Hauiti"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Cooks Cove, Tolaga Bay draws visitors back time and again for its natural beauty and peaceful atmosphere. Where Cook and Banks came ashore for six days in October 1769 — the first peaceable encounter of the Endeavour voyage. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-young-nicks-head",
+      "name": "Young Nicks Head / Te Kurī",
+      "region": "tairawhiti",
+      "lat": -38.7556,
+      "lng": 177.9417,
+      "category": "māori",
+      "tags": [
+        "cook-voyage",
+        "headland",
+        "first-landfall",
+        "te-kuri"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 0.5,
+      "short": "The white cliffs first seen from the Endeavour on 6 October 1769 — named for the surgeons boy who spotted them. Known to Māori as Te Kurī a Pāoa.",
+      "commentary": "The headland was the first land sighted by Cooks Endeavour on 6 October 1769 — spotted by young Nicholas Young. Its Māori name, Te Kurī a Pāoa, commemorates the dog of Pāoa, captain of the Horouta waka.",
+      "audio_story": "You are looking at Young Nicks Head, the distinctive white cliffed headland that closes the southern end of Poverty Bay. On the afternoon of the sixth of October, seventeen sixty nine, the young surgeons boy aboard the Endeavour, Nicholas Young, climbed the rigging and was the first of Cooks crew to sight New Zealand. The promised reward was a gallon of rum and the right to have the headland named after him. It was the first sighting of Aotearoa by a European since Abel Tasman glimpsed the West Coast one hundred and twenty seven years earlier. Māori have a much older name for the place. They call it Te Kurī a Pāoa, the dog of Pāoa, after a famous hunting dog owned by Pāoa, the captain of the Horouta waka, which beached on this coast many generations before Cook. The headland can be seen clearly from the centre of Gisborne and from Kaiti Hill. Both names appear on modern maps. Both names are officially recognised. Hold both in your mind as you look across the bay. Two arrivals, separated by perhaps six hundred years, both announcing themselves at the same white cliff.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZHistory — Young Nicks Head",
+        "Rongowhakaata",
+        "Te Ara"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Young Nicks Head / Te Kurī as a place where the history and cultural significance of Aotearoa become tangible and real. The white cliffs first seen from the Endeavour on 6 October 1769 — named for the surgeons boy who spotted them. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-hist-kaiti-hill",
+      "name": "Titirangi / Kaiti Hill Summit",
+      "region": "tairawhiti",
+      "lat": -38.6692,
+      "lng": 178.0458,
+      "category": "nature",
+      "tags": [
+        "pa-site",
+        "viewpoint",
+        "ngati-oneone",
+        "cook"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Ancestral pā of Ngāti Oneone above Gisborne — the best interpretive view of Cooks landing, Young Nicks Head, and the first encounter.",
+      "commentary": "Titirangi (Kaiti Hill) was a major pā of Ngāti Oneone. The summit lookout at Ruatanuika interprets the Cook arrival and the death of Te Maro. 15-minute walk from the carpark.",
+      "audio_story": "You are climbing Titirangi, also known as Kaiti Hill, the steep headland that guards the northern entrance to Poverty Bay. Before colonisation this was one of the great pā of Ngāti Oneone, a terraced hill fort with a commanding view over the whole of Tūranganui a Kiwa. From the summit lookout at Ruatanuika you can see the entire landscape of first encounter. Below you, at the river mouth, is Puhi Kai Iti, where Cook came ashore in seventeen sixty nine and where Te Maro of Ngāti Oneone was shot dead within hours of arrival. Across the bay, the pale cliff of Young Nicks Head, Te Kurī a Pāoa, is the promontory Cooks surgeons boy first sighted from the rigging of the Endeavour. Out to sea, somewhere in the open water, the Endeavour herself lay at anchor. Closer to you, the streets of modern Gisborne lay out on the flat behind the beach, the apartment blocks and sports fields sitting on the old kumara gardens of the iwi. Since Tuia two hundred and fifty in twenty nineteen, the summit has been reinterpreted with pou carved by iwi artists, telling the story from both sides. A memorial to Te Maro stands at the very top. The walk up takes fifteen minutes. The view is one of the most historically dense in the country.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Oneone",
+        "DOC — Titirangi",
+        "Tairāwhiti Museum",
+        "Tuia 250"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Titirangi / Kaiti Hill Summit draws visitors back time and again for its natural beauty and peaceful atmosphere. Ancestral pā of Ngāti Oneone above Gisborne — the best interpretive view of Cooks landing, Young Nicks Head, and the first encounter. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tairawhiti-hikurangi",
+      "name": "Mount Hikurangi",
+      "region": "tairawhiti",
+      "lat": -37.953,
+      "lng": 178.069,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "maunga",
+        "ngāti-porou",
+        "first-light"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 6,
+      "short": "Sacred mountain of Ngāti Porou — the first place on mainland NZ to see the sunrise.",
+      "commentary": "Mount Hikurangi (1,752m) is where Māui's waka was turned to stone. Whakairo on the summit represent the crew. Access requires permission from Ngāti Porou — the pre-dawn climb to catch first light is unforgettable.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Mount Hikurangi as a place where the history and cultural significance of Aotearoa become tangible and real. Sacred mountain of Ngāti Porou — the first place on mainland NZ to see the sunrise. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-rongopai",
+      "name": "Rongopai Painted Meeting House",
+      "region": "tairawhiti",
+      "lat": -38.412,
+      "lng": 177.698,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "wharenui",
+        "painted",
+        "te-kooti"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A uniquely painted meeting house — floral murals instead of carvings, created by followers of Te Kooti in 1887.",
+      "commentary": "Rongopai's interior is covered in painted figurative murals — portraits, floral designs, and religious imagery. A radical departure from carving tradition and a unique fusion of Māori and European styles. Category I historic place.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Rongopai Painted Meeting House as a place where the history and cultural significance of Aotearoa become tangible and real. A uniquely painted meeting house — floral murals instead of carvings, created by followers of Te Kooti in 1887. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-te-poho-o-rawiri",
+      "name": "Te Poho-o-Rawiri Marae",
+      "region": "tairawhiti",
+      "lat": -38.673,
+      "lng": 178.02,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "wharenui",
+        "carving",
+        "gisborne"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the largest and most elaborately carved meeting houses in NZ — at the foot of Kaiti Hill.",
+      "commentary": "Te Poho-o-Rawiri features magnificent traditional carvings and tukutuku panels. Its scale and artistry make it one of the finest examples of Māori architectural craftsmanship.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Te Poho-o-Rawiri Marae as a place where the history and cultural significance of Aotearoa become tangible and real. One of the largest and most elaborately carved meeting houses in NZ — at the foot of Kaiti Hill. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-kaiti-hill",
+      "name": "Kaiti Hill / Titirangi — First Contact Site",
+      "region": "tairawhiti",
+      "lat": -38.679,
+      "lng": 178.03,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "cook",
+        "first-contact",
+        "pā"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where Māori and Europeans first met — Cook landed at the foot of this pā hill in October 1769.",
+      "commentary": "On 8 October 1769, Cook's Endeavour anchored here and the first meetings between Māori and Europeans took place — tragically, several Māori were shot. The summit pā terraces are still visible.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Kaiti Hill / Titirangi — First Contact Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where Māori and Europeans first met — Cook landed at the foot of this pā hill in October 1769. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-tolaga-bay",
+      "name": "Tolaga Bay / Ūawa — Takitimu Waka Landing",
+      "region": "tairawhiti",
+      "lat": -38.371,
+      "lng": 178.298,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "waka",
+        "takitimu",
+        "landing-site",
+        "wharf"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A beautiful East Coast bay with NZ's longest wharf — and a landing site of the Takitimu waka.",
+      "commentary": "Ūawa is a landing site of the Takitimu waka. The 660m concrete wharf is NZ's longest. Behind the bay, the Cooks Cove Walkway passes through a natural rock arch.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tolaga Bay / Ūawa — Takitimu Waka Landing as a place where the history and cultural significance of Aotearoa become tangible and real. A beautiful East Coast bay with NZ's longest wharf — and a landing site of the Takitimu waka. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-east-cape-lighthouse",
+      "name": "East Cape Lighthouse",
+      "region": "tairawhiti",
+      "lat": -37.689,
+      "lng": 178.548,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "lighthouse",
+        "first-sunrise",
+        "ngāti-porou"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The easternmost point of mainland NZ — 700 steps to the first sunrise, on Ngāti Porou ancestral land.",
+      "commentary": "The lighthouse stands where the first rays of each day's sun touch the land. The 700-step climb rewards with vast ocean views. The East Coast is one of NZ's most culturally rich Māori regions.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe East Cape Lighthouse as a place where the history and cultural significance of Aotearoa become tangible and real. The easternmost point of mainland NZ — 700 steps to the first sunrise, on Ngāti Porou ancestral land. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-waiapu-valley",
+      "name": "Waiapu Valley — Te Reo Stronghold",
+      "region": "tairawhiti",
+      "lat": -37.88,
+      "lng": 178.32,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-porou",
+        "te-reo",
+        "marae"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "One of the last places in NZ where te reo Māori is the everyday language — the heartland of Ngāti Porou.",
+      "commentary": "The valley has more marae per capita than almost anywhere else. The area produced Sir Apirana Ngata, who championed Māori language and culture. Travelling through is like entering a different New Zealand.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Waiapu Valley — Te Reo Stronghold as a place where the history and cultural significance of Aotearoa become tangible and real. One of the last places in NZ where te reo Māori is the everyday language — the heartland of Ngāti Porou. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-ruatoria",
+      "name": "Ruatōria — Ngāti Porou Heartland",
+      "region": "tairawhiti",
+      "lat": -37.893,
+      "lng": 178.321,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-porou",
+        "te-reo",
+        "community"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Deep in Ngāti Porou territory where Māori culture is the dominant way of life.",
+      "commentary": "Here, te reo Māori is the everyday language and marae are the centres of community life. For visitors willing to travel the remote East Cape road, Ruatōria offers an authentic window into Māori New Zealand.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ruatōria — Ngāti Porou Heartland as a place where the history and cultural significance of Aotearoa become tangible and real. Deep in Ngāti Porou territory where Māori culture is the dominant way of life. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-apirana-ngata",
+      "name": "Sir Apirana Ngata Memorial, Waiomatatini",
+      "region": "tairawhiti",
+      "lat": -37.9,
+      "lng": 178.31,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-porou",
+        "leader",
+        "statesman"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Memorial to Sir Apirana Ngata — the statesman who championed Māori language, culture, and land development.",
+      "commentary": "Sir Apirana Ngata (1874–1950) was the greatest Māori political leader of the 20th century. He revived Māori arts, established Māori land development schemes, and championed te reo Māori. His face appears on NZ's $50 note.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Sir Apirana Ngata Memorial, Waiomatatini as a place where the history and cultural significance of Aotearoa become tangible and real. Memorial to Sir Apirana Ngata — the statesman who championed Māori language, culture, and land development. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-manutuke-churches",
+      "name": "Manutūkē — Carved Churches of the East Coast",
+      "region": "tairawhiti",
+      "lat": -38.58,
+      "lng": 177.87,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "church",
+        "carved",
+        "east-coast"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A cluster of elaborately carved Māori churches — blending Christian faith with traditional carving arts.",
+      "commentary": "The East Coast has the finest concentration of carved Māori churches in the country. Manutūkē's churches show the creative fusion of Christianity and Māori art that Apirana Ngata championed.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Manutūkē — Carved Churches of the East Coast as a place where the history and cultural significance of Aotearoa become tangible and real. A cluster of elaborately carved Māori churches — blending Christian faith with traditional carving arts. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-whangara-whale-rider",
+      "name": "Whangara — Home of the Whale Rider",
+      "region": "tairawhiti",
+      "lat": -38.496,
+      "lng": 178.162,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-konohi",
+        "whale-rider",
+        "mythology",
+        "film"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The village that inspired the novel and film Whale Rider — where the ancestor Paikea rode a whale to shore.",
+      "commentary": "Whangara is the ancestral home of Ngāti Konohi and the setting for Witi Ihimaera's novel 'The Whale Rider' and the acclaimed 2002 film. In the founding tradition, the ancestor Paikea rode a whale to the shore here from Hawaiki. The village sits on a beautiful stretch of coast north of Gisborne and retains a strong Māori community.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Whangara — Home of the Whale Rider as a place where the history and cultural significance of Aotearoa become tangible and real. The village that inspired the novel and film Whale Rider — where the ancestor Paikea rode a whale to shore. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tairawhiti-rere-rockslide-road",
+      "name": "Rere Falls and Rockslide Road Trip",
+      "region": "tairawhiti",
+      "lat": -38.464,
+      "lng": 177.551,
+      "category": "journey",
+      "tags": [
+        "back-road",
+        "waterfall",
+        "rockslide",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 2,
+      "short": "Drive inland from Gisborne to Rere Falls and the natural 60-metre rockslide — bring a boogie board.",
+      "commentary": "Rere Falls is a 5-metre-wide waterfall about 50 km northwest of Gisborne. Nearby, the Rere Rockslide is a 60-metre natural rock water slide where locals ride boogie boards down a smooth rock face into a pool. The drive through the Wharekopae Valley follows a scenic back road through farmland.",
+      "audio_story": "You are driving inland from Gisborne through the Wharekopae Valley on a back road that delivers two of the Tairawhiti region's best-kept secrets. First, Rere Falls — a broad, photogenic waterfall where the Wharekopae River drops over a wide rock ledge surrounded by native bush. It is beautiful but what comes next is the main event. A short drive further, the Rere Rockslide is a 60-metre natural rock water slide where a thin sheet of water flows over smooth volcanic rock into a deep pool below. Grab a boogie board — locals leave spares at the site — climb to the top, lie down, and let the water carry you down at surprising speed. It is an absolute blast and completely free. The rock has been worn glass-smooth by millennia of flowing water. The slide works best after rain when the water flow is stronger. This is the kind of place that does not make it into most guidebooks but absolutely should.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Gisborne District Council",
+        "Eastland Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Rere Falls and Rockslide Road Trip route delivers a memorable journey through exceptional New Zealand scenery. Drive inland from Gisborne to Rere Falls and the natural 60-metre rockslide — bring a boogie board. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "tairawhiti-mahia-peninsula-loop",
+      "name": "Mahia Peninsula Coastal Loop",
+      "region": "tairawhiti",
+      "lat": -39.084,
+      "lng": 177.823,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "peninsula",
+        "surf",
+        "rocket-launch"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "Drive the loop around Mahia Peninsula, where surf beaches meet a modern rocket launch site.",
+      "commentary": "Mahia Peninsula is a remote coastal area south of Gisborne known for excellent surf breaks and rugged scenery. Rocket Lab's Launch Complex 1, the world's first private orbital launch site, is located at the tip of the peninsula. The area has significant cultural importance to Rongomaiwahine iwi.",
+      "audio_story": "You are driving the loop road around Mahia Peninsula, where the ancient and the futuristic exist side by side. This rugged headland juts into the Pacific, its eastern cliffs battered by ocean swells that wrap around to create excellent surf breaks at Opoutama and Mahia Beach. The peninsula is the rohe — traditional territory — of Rongomaiwahine iwi, and the cultural connection to this land runs deep. Then, at the peninsula's tip, you encounter something unexpected: Rocket Lab's Launch Complex 1, the world's first private orbital launch site. Since 2017, Electron rockets have been launched from this remote New Zealand headland into orbit, delivering satellites for clients worldwide. If you time your visit during a launch window, you might witness a rocket arcing into space from this pastoral coastline — a surreal juxtaposition. The beaches here are uncrowded, the fishing is excellent, and the drive itself offers sweeping views of Hawke Bay to the south.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wairoa District Council",
+        "Rocket Lab"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Mahia Peninsula Coastal Loop route delivers a memorable journey through exceptional New Zealand scenery. Drive the loop around Mahia Peninsula, where surf beaches meet a modern rocket launch site. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "tairawhiti-gisborne-heritage-walk",
+      "name": "Gisborne Historical Walking Trail",
+      "region": "tairawhiti",
+      "lat": -38.6623,
+      "lng": 178.0176,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "heritage",
+        "captain-cook",
+        "maori-history"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Walk through Gisborne's history from Cook's 1769 landing site to the meeting of three rivers.",
+      "commentary": "Gisborne stands at the site where Captain Cook first set foot on New Zealand on 9 October 1769. The historical trail passes Kaiti Hill with its Cook statue, the Titirangi reserve, and the confluence of the Waimata, Taruheru, and Turanganui rivers. The city is also significant as a centre of Maori culture and identity.",
+      "audio_story": "You are walking through Gisborne, the first place Captain James Cook set foot in New Zealand on 9 October 1769. Climb Kaiti Hill — Titirangi — for the panoramic view Cook himself would have seen from the Endeavour: a wide bay backed by fertile plains, with three rivers converging at their mouth. The landing did not go well — a misunderstanding led to violence, and Cook named the area Poverty Bay because he could not obtain the supplies he needed. The name has been a source of grievance ever since, and there are ongoing discussions about reverting to the Maori name Turanganui-a-Kiwa. At the base of the hill, the Tairawhiti Museum tells the complex story of both Maori and Pakeha history in the region. Gisborne is the first city in the world to see the sunrise each day, and on New Year's Eve, thousands gather here to welcome the new year before anyone else on the planet. Walk along the riverbank to where the three rivers meet — it is a beautiful, contemplative spot in the heart of town.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Tairawhiti Museum",
+        "Gisborne District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Gisborne Historical Walking Trail route delivers a memorable journey through exceptional New Zealand scenery. Walk through Gisborne's history from Cook's 1769 landing site to the meeting of three rivers. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "tairawhiti-motu-trails",
+      "name": "Motu Trails – Great Ride",
+      "region": "tairawhiti",
+      "lat": -38.072,
+      "lng": 177.051,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "coastal",
+        "bush",
+        "remote"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 8,
+      "short": "Cycle the Motu Trails, linking Opotiki to the East Cape through native bush, coastal cliffs, and remote beaches.",
+      "commentary": "The Motu Trails are a NZ Cycle Trail Great Ride featuring three distinct sections: the Dunes Trail along the coast, the Motu Road Trail through remote bush, and the Pakihi Track through native forest. The trails connect Opotiki with the East Cape and range from easy coastal riding to challenging backcountry.",
+      "audio_story": "You are riding the Motu Trails, one of the more remote and rewarding Great Rides in the New Zealand Cycle Trail network. The route links three distinct sections, each with its own character. The Dunes Trail follows the coast from Opotiki along wild, wind-swept beaches and through coastal forest — easy riding with the sound of surf alongside. The Motu Road Trail heads inland along a remote gravel road through the Motu River valley, one of the most pristine river systems in the North Island. The Pakihi Track is the challenging section — native bush singletrack with climbs and descents through dense podocarp forest. The Motu River itself is famous for whitewater rafting, and the surrounding bush is home to whio — blue duck — one of New Zealand's rarest birds. This ride is for those who want to experience a genuinely wild part of New Zealand that few tourists ever reach. Come prepared with food and tools — services are scarce out here.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Opotiki District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Motu Trails – Great Ride route delivers a memorable journey through exceptional New Zealand scenery. Cycle the Motu Trails, linking Opotiki to the East Cape through native bush, coastal cliffs, and remote beaches. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "tairawhiti-waioeka-gorge-sh2",
+      "name": "Waioeka Gorge Scenic Drive SH2",
+      "region": "tairawhiti",
+      "lat": -38.332,
+      "lng": 177.147,
+      "category": "journey",
+      "tags": [
+        "scenic-highway",
+        "gorge",
+        "native-bush",
+        "winding-road"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 2,
+      "short": "Drive through the deep, bush-clad Waioeka Gorge connecting the Bay of Plenty to the Gisborne coast.",
+      "commentary": "State Highway 2 through the Waioeka Gorge links Opotiki with Gisborne via a 100 km winding road through dense native bush. The gorge section passes through the Waioeka Gorge Scenic Reserve with limited cellphone coverage and few passing opportunities. It is one of the most remote highway sections in the North Island.",
+      "audio_story": "You are entering the Waioeka Gorge on State Highway 2, and for the next 100 kilometres the outside world effectively disappears. This winding road links Opotiki in the Bay of Plenty with the Gisborne coast, cutting through one of the most densely forested and remote gorges in the North Island. Native bush presses in from both sides — rimu, tawa, and tree ferns creating a green tunnel overhead. The road follows the Waioeka River, crossing it multiple times on narrow bridges. There is no cellphone coverage for much of the route, few places to stop, and almost no traffic. The Waioeka Gorge Scenic Reserve protects the forest, and the bush here is as pristine as you will find anywhere accessible by road. Drive with your headlights on, take the corners carefully, and enjoy the profound sense of isolation. When you finally emerge onto the open, sunlit farmland of the Gisborne coast, the contrast is startling — like stepping from a forest cave into daylight.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "NZ Transport Agency",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Waioeka Gorge Scenic Drive SH2 route delivers a memorable journey through exceptional New Zealand scenery. Drive through the deep, bush-clad Waioeka Gorge connecting the Bay of Plenty to the Gisborne coast. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "tairawhiti-rere-rockslide",
+      "name": "Rere Rockslide",
+      "region": "tairawhiti",
+      "lat": -38.411,
+      "lng": 177.578,
+      "category": "adventure",
+      "tags": [
+        "rockslide",
+        "free",
+        "family-friendly",
+        "natural",
+        "unique"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Slide 60 metres down a natural rock waterslide in the Gisborne backcountry.",
+      "commentary": "Rere Rockslide is a 60-metre natural rock waterslide formed by smooth, angled rock with a thin sheet of water flowing over it. Located 50 km from Gisborne, it is free to use. Locals ride it on boogie boards, bodyboards, or anything that slides. The nearby Rere Falls is also worth a visit.",
+      "audio_story": "You have arrived at Rere Rockslide, one of New Zealand's most joyful free adventures and a local secret that deserves to be better known. Before you is a 60-metre stretch of smooth rock angled at a perfect gradient, with a thin sheet of water flowing over it to create a completely natural waterslide. Grab a boogie board, a pool noodle, an old surfboard, or honestly, just lie on your back and let the water carry you down. The ride takes about 10 seconds and ends in a deep pool at the bottom. There is no entrance fee, no queue, and no rules beyond common sense. Locals have been sliding down this rock for generations. The surface is remarkably smooth, worn by centuries of flowing water, and the water depth varies with recent rainfall, more rain means a faster ride. Rere Falls, a beautiful 5-metre cascade, is just a few minutes up the road.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Gisborne District Council",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Rere Rockslide adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Slide 60 metres down a natural rock waterslide in the Gisborne backcountry. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "tairawhiti-eastland-surf",
+      "name": "Wainui Beach Surfing",
+      "region": "tairawhiti",
+      "lat": -38.667,
+      "lng": 178.079,
+      "category": "adventure",
+      "tags": [
+        "surfing",
+        "beach-break",
+        "free",
+        "consistent",
+        "lessons"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Surf the consistent beach breaks at Gisborne's premier surfing beach.",
+      "commentary": "Wainui Beach is Gisborne's main surfing beach, a long, exposed stretch that picks up swell from multiple directions. The beach has a surf club and multiple peaks spread along its length. Gisborne's position on the East Cape means it catches swell when other regions are flat.",
+      "audio_story": "You have arrived at Wainui Beach, the surfing heartland of Gisborne and one of the most consistent breaks on the East Coast. This long stretch of beach picks up swell from the north, east, and south, meaning there are waves here more often than not. Multiple peaks along the beach spread the crowd, and on a solid swell, the waves here can rival anything in the country. Gisborne sits further east than any other city in the world, and that exposure means it catches swells that miss the rest of the North Island entirely. The Wainui Surf Club has been nurturing young surfers here for decades, and many of New Zealand's top competitive surfers have trained on these waves. Whether you are a beginner looking for a gentle whitewater ride or an experienced surfer hunting barrels, Wainui has a peak for you. The sunrises from the water here are the first in the world.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Wainui Surf Club",
+        "Surfline",
+        "Tourism Eastland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Wainui Beach Surfing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Surf the consistent beach breaks at Gisborne's premier surfing beach. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "tairawhiti-motu-river-raft",
+      "name": "Motu River White Water Rafting",
+      "region": "tairawhiti",
+      "lat": -38.271,
+      "lng": 177.235,
+      "category": "adventure",
+      "tags": [
+        "white-water-rafting",
+        "wilderness",
+        "multi-day",
+        "commercial",
+        "grade-4"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 24,
+      "short": "Raft the remote Motu River through Grade 4 rapids and untouched wilderness gorges.",
+      "commentary": "The Motu River is one of the last unmodified river systems in the North Island, offering multi-day rafting through remote gorge country with Grade 3-4 rapids. The river flows through native bush with no road access, making it a true wilderness experience. Trips typically run over 2-4 days.",
+      "audio_story": "You are about to embark on one of the North Island's great wilderness rafting journeys, the Motu River. This is one of the last unmodified river systems in the region, flowing through deep gorges of native bush with no roads, no bridges, and no cellphone reception for the entire journey. Over the next few days, you will navigate Grade 3 and 4 rapids with names that hint at what is ahead, and between the white water, you will drift through pools of astonishing clarity where the bush comes right down to the water's edge. The Motu was the subject of one of New Zealand's most famous conservation battles in the 1980s, when it was saved from a proposed hydro dam. Camp each night on riverside terraces, cook over a fire, and fall asleep to the sound of morepork calling from the bush. This is not a theme park adventure, it is the real thing, genuinely remote and utterly unforgettable.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Wet n Wild Rafting",
+        "DOC",
+        "NZ Rafting Association"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Motu River White Water Rafting adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Raft the remote Motu River through Grade 4 rapids and untouched wilderness gorges. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "tairawhiti-mahia-peninsula-kayak",
+      "name": "Mahia Peninsula Sea Kayaking",
+      "region": "tairawhiti",
+      "lat": -39.087,
+      "lng": 177.858,
+      "category": "adventure",
+      "tags": [
+        "sea-kayak",
+        "coastal",
+        "wildlife",
+        "free",
+        "remote"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Kayak the sheltered bays of Mahia Peninsula among seals, penguins, and reef fish.",
+      "commentary": "The Mahia Peninsula offers sheltered sea kayaking in a remote and beautiful setting. Multiple launch points access rocky coastline, sandy beaches, and reef systems. The peninsula is home to fur seal colonies, little blue penguins, and diverse marine life.",
+      "audio_story": "You have arrived at the Mahia Peninsula, a remote and spectacularly beautiful headland that juts into the Pacific between Hawke's Bay and Poverty Bay. Sea kayaking here is an exercise in coastal discovery, paddling between rocky headlands and into sheltered coves that feel like they belong to another era entirely. The peninsula's reefs are rich with marine life, and the clear water lets you watch fish darting below your kayak as you paddle. Fur seals haul out on the rocks at the peninsula's tip, and little blue penguins nest along the coastline. Mahia is also the home of Rocket Lab's launch facility, so you might spot the launch pad on the eastern side. The waters here are sheltered from the prevailing swell on the harbour side, making conditions manageable even for intermediate paddlers. Bring your own kayak or arrange hire through local operators. This is East Coast exploration at its most peaceful.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Tourism Eastland",
+        "Mahia Beach"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Mahia Peninsula Sea Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak the sheltered bays of Mahia Peninsula among seals, penguins, and reef fish. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "tairawhiti-gisborne-fishing-charter",
+      "name": "Gisborne Deep Sea Fishing Charter",
+      "region": "tairawhiti",
+      "lat": -38.673,
+      "lng": 178.025,
+      "category": "adventure",
+      "tags": [
+        "fishing",
+        "deep-sea",
+        "commercial",
+        "charter"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 6,
+      "short": "Fish for marlin, tuna, and mahi mahi on the productive Gisborne coast.",
+      "commentary": "Gisborne's offshore waters offer excellent big game fishing, with blue and striped marlin, yellowfin tuna, and mahi mahi available in the warmer months. The continental shelf sits relatively close to shore, making for shorter runs to productive deep water.",
+      "audio_story": "You have arrived at Gisborne's inner harbour, where a charter boat is rigged and ready for a day on one of the North Island's most productive fishing grounds. The beauty of Gisborne's location is that the continental shelf sits remarkably close to shore, so you do not spend hours getting to the action. Within 30 to 40 minutes of leaving the harbour, you could be over deep water where blue and striped marlin cruise from January through April. Yellowfin tuna, mahi mahi, and albacore are also on the menu, along with bottom species like hapuku and bluenose for those who prefer to fish deep. Your skipper knows these waters intimately, reading the temperature breaks and current lines where the fish congregate. The East Cape coastline is stunning from the water, and there is nothing quite like fighting a big fish with the first sunrise in the world at your back.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Gisborne Fishing Charters",
+        "NZ Sport Fishing Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Gisborne Deep Sea Fishing Charter adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Fish for marlin, tuna, and mahi mahi on the productive Gisborne coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

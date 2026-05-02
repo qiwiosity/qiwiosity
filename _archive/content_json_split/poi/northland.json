@@ -1,0 +1,2156 @@
+{
+  "region": {
+    "id": "northland",
+    "name": "Northland / Te Tai Tokerau",
+    "island": "North",
+    "centre": {
+      "lat": -35.5,
+      "lng": 174
+    },
+    "bounds": {
+      "north": -34.3,
+      "south": -36,
+      "east": 174.7,
+      "west": 172.6
+    },
+    "description": "The long warm peninsula where Aotearoa begins — kauri forest, the Treaty ground, Cape Reinga's leaping place of spirits, and the Bay of Islands."
+  },
+  "pois": [
+    {
+      "id": "cape-reinga",
+      "name": "Cape Reinga / Te Rerenga Wairua",
+      "region": "northland",
+      "lat": -34.4286,
+      "lng": 172.6817,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "lighthouse",
+        "viewpoint",
+        "tasman-pacific"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "The leaping place of spirits — where the Tasman Sea meets the Pacific and Māori tradition says souls begin their journey home.",
+      "commentary": "Te Rerenga Wairua is one of the most sacred sites in Aotearoa. In Māori tradition this is where the spirits of the dead leave the land, climbing down the roots of an 800-year-old pōhutukawa tree to begin their journey back to Hawaiki. The 1941 lighthouse sits 165 m above the sea. Below, you can watch the Tasman and the Pacific visibly collide — two currents, two colours, one churn. Please: no food, no picnics on the headland. It is a tapu place. The walk from the carpark is short and easy.",
+      "scripts": {
+        "headline": "scripts/cape-reinga.headline.md",
+        "standard": "scripts/cape-reinga.standard.md"
+      },
+      "sources_to_check": [
+        "Te Ara — Te Rerenga Wairua",
+        "DOC — Cape Reinga",
+        "Ngāti Kuri / Te Aupōuri iwi"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Cape Reinga / Te Rerenga Wairua as a place where the history and cultural significance of Aotearoa become tangible and real. The leaping place of spirits — where the Tasman Sea meets the Pacific and Māori tradition says souls begin their journey home. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "waitangi-treaty-grounds",
+      "name": "Waitangi Treaty Grounds",
+      "region": "northland",
+      "lat": -35.2653,
+      "lng": 174.082,
+      "category": "māori",
+      "tags": [
+        "treaty-1840",
+        "founding",
+        "whare-runanga",
+        "museum",
+        "waka"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 3,
+      "short": "Where Te Tiriti o Waitangi was signed on 6 February 1840 — New Zealand's founding document.",
+      "commentary": "On 6 February 1840, representatives of the Crown and around 45 Māori rangatira signed Te Tiriti o Waitangi on the lawn in front of James Busby's house. Over the following months a further ~500 chiefs signed copies around the country. The English and Māori texts differ significantly — a discrepancy still being worked through in law and politics today. The site now includes Busby's Residence, the carved Whare Rūnanga opened in 1940 (representing all iwi), the 35-metre ceremonial waka *Ngātokimatawhaorua*, and the Museum of Waitangi. Budget half a day.",
+      "scripts": {
+        "headline": "scripts/waitangi-treaty-grounds.headline.md",
+        "standard": "scripts/waitangi-treaty-grounds.standard.md"
+      },
+      "sources_to_check": [
+        "Waitangi Treaty Grounds — waitangi.org.nz",
+        "Te Ara — Treaty of Waitangi",
+        "NZHistory.govt.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Waitangi Treaty Grounds as a place where the history and cultural significance of Aotearoa become tangible and real. Where Te Tiriti o Waitangi was signed on 6 February 1840 — New Zealand's founding document. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "kerikeri-mission",
+      "name": "Kerikeri Mission Station",
+      "region": "northland",
+      "lat": -35.2253,
+      "lng": 173.9494,
+      "category": "heritage",
+      "tags": [
+        "mission",
+        "stone-store",
+        "kemp-house",
+        "1819",
+        "oldest-buildings"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "Kemp House (1821–22) is NZ's oldest surviving European building. The Stone Store next door is the oldest stone building.",
+      "commentary": "Samuel Marsden established a Church Missionary Society station here in 1819 under the protection of Ngāpuhi chief Hongi Hika. Kemp House, a two-storey Georgian weatherboard built 1821–22, is the oldest European building still standing in New Zealand. The Stone Store beside it (1832–36) is the oldest stone building, and still operates as a shop. Across the river is Kororipo Pā — Hongi Hika's base, and the launching point of the early-1820s Musket Wars that reshaped the North Island. A 20-minute walk links the three sites.",
+      "scripts": {
+        "headline": "scripts/kerikeri-mission.headline.md",
+        "standard": "scripts/kerikeri-mission.standard.md"
+      },
+      "sources_to_check": [
+        "Heritage NZ — Kemp House, Stone Store",
+        "Te Ara — Hongi Hika",
+        "Kerikeri Mission Station"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kerikeri Mission Station — the site rewards those who take time to read the signage and absorb the context. Kemp House (1821–22) is NZ's oldest surviving European building. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "russell-kororareka",
+      "name": "Russell / Kororāreka",
+      "region": "northland",
+      "lat": -35.2614,
+      "lng": 174.1217,
+      "category": "heritage",
+      "tags": [
+        "settler-history",
+        "1845-war",
+        "whaling",
+        "hellhole",
+        "bay-of-islands"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "NZ's first European settlement and briefly its capital — once called 'the Hell-hole of the Pacific.'",
+      "commentary": "In the 1830s Kororāreka was the busiest port in New Zealand: whaling crews, runaway sailors, grog shops, prostitution. Charles Darwin passed through in 1835 and was unimpressed. Briefly the colony's capital (1840–41), it was sacked by Hōne Heke and Kawiti in March 1845 — the opening battle of the Northern War. Heke had felled the flagstaff on Maiki Hill four times. Christ Church (1836) still bears musket holes from that engagement. Today Russell is quiet, small, and historically astonishing. Walk the waterfront; visit Pompallier House (1842, rammed earth).",
+      "scripts": {
+        "headline": "scripts/russell-kororareka.headline.md",
+        "standard": "scripts/russell-kororareka.standard.md"
+      },
+      "sources_to_check": [
+        "NZHistory — Northern War",
+        "Heritage NZ — Pompallier Mission",
+        "Te Ara — Hōne Heke"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Russell / Kororāreka — the site rewards those who take time to read the signage and absorb the context. NZ's first European settlement and briefly its capital — once called 'the Hell-hole of the Pacific. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "waipoua-tane-mahuta",
+      "name": "Waipoua Forest / Tāne Mahuta",
+      "region": "northland",
+      "lat": -35.5983,
+      "lng": 173.5217,
+      "category": "māori",
+      "tags": [
+        "kauri",
+        "ancient-tree",
+        "forest",
+        "sacred",
+        "tree-of-life"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1,
+      "short": "Tāne Mahuta — 'Lord of the Forest' — the largest living kauri, 51 m tall, ~2,000 years old.",
+      "commentary": "Tāne Mahuta stands in Waipoua Forest, the largest remaining tract of native kauri in the country. The tree is around 51 metres tall, nearly 14 metres around at the trunk, and estimated at 1,250–2,500 years old. Iwi Te Roroa are kaitiaki. A five-minute boardwalk from SH12 takes you to the viewing platform. Before you enter: stop at the cleaning station and spray/scrub your shoes. Kauri dieback disease (*Phytophthora agathidicida*) is spread by soil on footwear and is killing the species. Cleaning is not optional.",
+      "scripts": {
+        "headline": "scripts/waipoua-tane-mahuta.headline.md",
+        "standard": "scripts/waipoua-tane-mahuta.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Waipoua Forest",
+        "Te Roroa Iwi",
+        "Kauri Dieback Programme"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Waipoua Forest / Tāne Mahuta as a place where the history and cultural significance of Aotearoa become tangible and real. Tāne Mahuta — 'Lord of the Forest' — the largest living kauri, 51 m tall, ~2,000 years old. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hokianga-harbour",
+      "name": "Hokianga Harbour / Ōpononi",
+      "region": "northland",
+      "lat": -35.5081,
+      "lng": 173.3811,
+      "category": "māori",
+      "tags": [
+        "harbour",
+        "māori",
+        "kupe",
+        "sand-dunes",
+        "ferry"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "The 'place of returning' — where the explorer Kupe is said to have left Aotearoa to sail back to Hawaiki.",
+      "commentary": "The Hokianga is one of the origin places of Aotearoa. Tradition says the Polynesian navigator Kupe landed here, explored the country, and departed from this harbour — hence Te Hokianga-nui-a-Kupe, 'the great returning place of Kupe.' The huge bright sand dunes on the north head face the tiny town of Ōpononi across the water. In 1955–56 a wild dolphin called Opo played with swimmers in the shallows and briefly made Ōpononi the most visited place in New Zealand. There's a statue on the foreshore. The Rawene car ferry crosses the narrow middle of the harbour on SH12.",
+      "scripts": {
+        "headline": "scripts/hokianga-harbour.headline.md",
+        "standard": "scripts/hokianga-harbour.standard.md"
+      },
+      "sources_to_check": [
+        "Te Ara — Hokianga",
+        "Te Roroa / Te Rarawa iwi",
+        "NZHistory — Opo the dolphin"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Hokianga Harbour / Ōpononi as a place where the history and cultural significance of Aotearoa become tangible and real. The 'place of returning' — where the explorer Kupe is said to have left Aotearoa to sail back to Hawaiki. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "kawakawa-hundertwasser",
+      "name": "Kawakawa Hundertwasser Toilets",
+      "region": "northland",
+      "lat": -35.3783,
+      "lng": 174.0708,
+      "category": "culture",
+      "tags": [
+        "art",
+        "hundertwasser",
+        "toilets",
+        "quirky",
+        "public-art"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.3,
+      "short": "The most photographed public toilets in New Zealand — designed by Austrian artist Friedensreich Hundertwasser, 1999.",
+      "commentary": "Friedensreich Hundertwasser moved to Kawakawa in 1975 and lived in the bush nearby for the rest of his life. In 1999 he designed the town's new public toilets as his gift back — mosaic tiles, bottle walls, curved organic lines, a grass roof, and his signature refusal of straight lines. They are still in use, still free, and genuinely remarkable. The Hundertwasser Memorial Park is a short walk away, and the town now has a Hundertwasser-themed cultural centre. If you stop, stop for thirty minutes, not two.",
+      "scripts": {
+        "headline": "scripts/kawakawa-hundertwasser.headline.md",
+        "standard": "scripts/kawakawa-hundertwasser.standard.md"
+      },
+      "sources_to_check": [
+        "Hundertwasser Art Centre Kawakawa",
+        "Te Ara — Hundertwasser"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The cultural experience at Kawakawa Hundertwasser Toilets is praised for being both accessible and genuinely informative. The most photographed public toilets in New Zealand — designed by Austrian artist Friedensreich Hundertwasser, 1999. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "ninety-mile-beach",
+      "name": "Ninety Mile Beach / Te Oneroa-a-Tōhē",
+      "region": "northland",
+      "lat": -34.95,
+      "lng": 173.05,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "dunes",
+        "driving",
+        "māori",
+        "long-beach"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "It's 88 km long, not 90 miles, and it is a legal public highway — though rental cars are almost always banned.",
+      "commentary": "Te Oneroa-a-Tōhē — 'the long beach of Tōhē' — runs 88 km up the west side of the Aupōuri Peninsula. The 'ninety mile' name comes from early missionaries who misjudged the distance their horses could travel in a day. It is gazetted as a public road, and tour buses drive it at low tide, but tides, quicksand and unmarked creek outlets have destroyed a lot of cars; nearly every rental agreement prohibits driving on it. See it from Te Paki Stream (boogie-board the giant sand dunes) or from the Scott Point lookout at the northern end.",
+      "scripts": {
+        "headline": "scripts/ninety-mile-beach.headline.md",
+        "standard": "scripts/ninety-mile-beach.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Te Paki / Ninety Mile Beach",
+        "Te Hiku o Te Ika — Te Oneroa-a-Tōhē board"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Ninety Mile Beach / Te Oneroa-a-Tōhē draws visitors back time and again for its natural beauty and peaceful atmosphere. It's 88 km long, not 90 miles, and it is a legal public highway — though rental cars are almost always banned. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "kai-iwi-lakes",
+      "name": "Kai Iwi Lakes / Taharoa Domain",
+      "region": "northland",
+      "lat": -35.8147,
+      "lng": 173.6617,
+      "category": "nature",
+      "tags": [
+        "freshwater",
+        "dune-lakes",
+        "swimming",
+        "camping",
+        "unusual"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "Three ancient dune lakes with white-sand bottoms and water so clear it looks tropical.",
+      "commentary": "The Kai Iwi Lakes — Taharoa, Waikare and Kai Iwi — are windblown dune lakes, fed only by rainwater sitting on top of an impermeable iron-pan layer deep in the sand. The result is freshwater so clear it looks like it belongs in the Mediterranean, over a pure white quartz-sand lake bottom. They're estimated at 1.8 million years old. The Taharoa Domain has a campground, picnic areas, and sheltered swimming; Lake Taharoa is the biggest and warmest. The lakes are taonga to Te Roroa. Keep motorised craft out of the smaller lakes.",
+      "scripts": {
+        "headline": "scripts/kai-iwi-lakes.headline.md",
+        "standard": "scripts/kai-iwi-lakes.standard.md"
+      },
+      "sources_to_check": [
+        "Kaipara District Council — Taharoa Domain",
+        "Te Roroa Iwi"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Kai Iwi Lakes / Taharoa Domain draws visitors back time and again for its natural beauty and peaceful atmosphere. Three ancient dune lakes with white-sand bottoms and water so clear it looks tropical. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rawene-ferry",
+      "name": "Rawene Car Ferry",
+      "region": "northland",
+      "lat": -35.3928,
+      "lng": 173.5036,
+      "category": "heritage",
+      "tags": [
+        "ferry",
+        "hokianga",
+        "historic",
+        "small-town",
+        "shortcut"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The 15-minute Hokianga Harbour ferry — NZ's oldest continuous car-ferry service, running since the 1920s.",
+      "commentary": "Rawene is the third-oldest European settlement in New Zealand (1830s) and perches on a spit into the Hokianga. The car ferry *Kohu* crosses the harbour between Rawene and Kohukohu every hour or so — a ~15 minute ride that saves drivers on SH12 a two-hour detour around the harbour. While you wait, walk the waterfront: Clendon House (1860s) is open to visitors, and the Boatshed Café floats on pontoons. The ferry has been running in one form or another since the 1920s.",
+      "scripts": {
+        "headline": "scripts/rawene-ferry.headline.md",
+        "standard": "scripts/rawene-ferry.standard.md"
+      },
+      "sources_to_check": [
+        "Far North District Council",
+        "Heritage NZ — Clendon House"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Rawene Car Ferry — the site rewards those who take time to read the signage and absorb the context. The 15-minute Hokianga Harbour ferry — NZ's oldest continuous car-ferry service, running since the 1920s. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "matauri-bay-rainbow-warrior",
+      "name": "Matauri Bay / Rainbow Warrior Memorial",
+      "region": "northland",
+      "lat": -35.0339,
+      "lng": 173.8947,
+      "category": "heritage",
+      "tags": [
+        "rainbow-warrior",
+        "greenpeace",
+        "1985",
+        "memorial",
+        "beach",
+        "hilltop"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The headland memorial to the Greenpeace ship *Rainbow Warrior*, bombed by French agents in 1985 and resting in the sea below.",
+      "commentary": "On 10 July 1985 the Greenpeace flagship *Rainbow Warrior* was bombed in Auckland Harbour by agents of the French DGSE. Photographer Fernando Pereira was killed. After she was raised, iwi Ngāti Kura offered a final resting place: the ship was scuttled off the Cavalli Islands in December 1987 and is now one of New Zealand's best dive sites. A hilltop memorial above Matauri Bay — steel propellers and a carved stone — looks out over the exact water she lies in. The bay itself is one of the most beautiful on the east coast: white sand, clear water, almost no development.",
+      "scripts": {
+        "headline": "scripts/matauri-bay-rainbow-warrior.headline.md",
+        "standard": "scripts/matauri-bay-rainbow-warrior.standard.md"
+      },
+      "sources_to_check": [
+        "NZHistory — Rainbow Warrior",
+        "Greenpeace archives",
+        "Ngāti Kura hapū"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Matauri Bay / Rainbow Warrior Memorial — the site rewards those who take time to read the signage and absorb the context. The headland memorial to the Greenpeace ship *Rainbow Warrior*, bombed by French agents in 1985 and resting in the sea below. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bay-of-islands-overview",
+      "name": "Bay of Islands / Pēwhairangi",
+      "region": "northland",
+      "lat": -35.2,
+      "lng": 174.15,
+      "category": "nature",
+      "tags": [
+        "coastal",
+        "sailing",
+        "144-islands",
+        "dolphins",
+        "history"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 6,
+      "short": "144 islands, early contact between Māori and Europeans, and some of the North Island's best sailing water.",
+      "commentary": "The Bay of Islands has 144 islands within a 16 km radius of Paihia. In 1769 Cook's *Endeavour* anchored here and he gave the bay its English name. From around 1800 it became the main point of contact between Māori and European whalers, traders and missionaries — which is why Waitangi, Kerikeri, Russell and Paihia are all clustered on this one bay. Today it's a sailing, fishing, and tour-boat centre: Cape Brett / Hole in the Rock, Urupukapuka Island, swimming with dolphins (heavily regulated), and the passenger ferry between Paihia and Russell.",
+      "scripts": {
+        "headline": "scripts/bay-of-islands-overview.headline.md",
+        "standard": "scripts/bay-of-islands-overview.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Bay of Islands",
+        "Te Ara — Bay of Islands"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Bay of Islands / Pēwhairangi draws visitors back time and again for its natural beauty and peaceful atmosphere. 144 islands, early contact between Māori and Europeans, and some of the North Island's best sailing water. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-poor-knights",
+      "name": "Poor Knights Islands / Tawhiti Rahi",
+      "region": "northland",
+      "lat": -35.4683,
+      "lng": 174.7333,
+      "category": "nature",
+      "tags": [
+        "marine-reserve",
+        "diving",
+        "subtropical",
+        "jacques-cousteau",
+        "tapu"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 8,
+      "short": "Jacques Cousteau called these 'one of the top ten dive sites in the world'.",
+      "commentary": "Marine reserve since 1981; once home to a Ngātiwai population, abandoned after 1820s raids and now permanently tapu. No landing permitted.",
+      "audio_story": "You are looking out toward the Poor Knights Islands, Tawhiti Rahi and Aorangi, two volcanic remnants rising sheer from the sea about twenty three kilometres off the Tutukaka coast. They are uninhabited and have been for almost two hundred years. In the 1820s, a series of raids ended the Ngātiwai community that lived here. Out of respect for the people who died, the islands were declared tapu, and to this day no one is permitted to land. What you can do is dive. The waters around the Poor Knights are warmed by the East Auckland Current, which carries subtropical species far further south than they would otherwise reach. Underwater you will find the largest sea cave in the world, kelp forests, schools of pink mau mau, and the strange spectacle of a mid latitude reef alive with tropical fish. The marine reserve has been fully protected since 1981, and the difference shows in every dive. Jacques Cousteau, who saw a great deal of ocean in his life, once placed these islands among the top ten dive sites on Earth. From shore the cliffs look almost severe, but beneath the surface, life is everywhere.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Poor Knights Islands Marine Reserve",
+        "Te Ara — Northland marine"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Rated one of the world's top ten dive sites by Jacques Cousteau — Poor Knights delivers extraordinary marine biodiversity in towering sea caves and arches. Reviewers say visibility can exceed 30 metres. Even snorkellers and glass-bottom boat visitors come away blown away by the underwater life."
+      }
+    },
+    {
+      "id": "northland-tutukaka",
+      "name": "Tutukaka Coast",
+      "region": "northland",
+      "lat": -35.6164,
+      "lng": 174.5347,
+      "category": "nature",
+      "tags": [
+        "coast",
+        "diving-base",
+        "marina",
+        "beaches"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "Northland's diving capital — the launch point for the Poor Knights, with a string of golden bays.",
+      "commentary": "The Tutukaka coast strings together a series of east coast bays — Matapouri, Whale Bay, Sandy Bay — each more photogenic than the last. The marina is the launch point for almost every dive trip out to the Poor Knights.",
+      "audio_story": "You are driving the Tutukaka coast, a curving thirty kilometre strip of east Northland that the locals quietly believe is the best stretch of coastline in the country. They might be right. Each headland reveals another bay. Matapouri sits around a perfect crescent of white sand, with safe summer swimming for kids. Just behind it a short bush walk leads to Whale Bay, smaller, often empty, and good for finding your own patch of sand. Further north Sandy Bay is the local surfing favourite. The hub is Tutukaka itself, a marina village wedged between green hills and a deep natural harbour. From this marina almost every dive trip and fishing charter in the area heads out, most of them bound for the Poor Knights Islands twenty three kilometres offshore. If you have a day, take a boat trip. If you have an afternoon, just bay hop. Stop at Schnappa Rock for fish and chips with a glass of something cold. There is no urgent itinerary out here, and that is rather the point.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Northland Inc tourism",
+        "Whangarei District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Tutukaka Coast draws visitors back time and again for its natural beauty and peaceful atmosphere. Northland's diving capital — the launch point for the Poor Knights, with a string of golden bays. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-whangarei-falls",
+      "name": "Whangārei Falls / Otuihau",
+      "region": "northland",
+      "lat": -35.6906,
+      "lng": 174.3361,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "easy-walk",
+        "basalt",
+        "city-break"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "A 26m basalt waterfall right inside Whangārei city — five minute walk from the carpark.",
+      "commentary": "Otuihau is a 26m vertical waterfall over a basalt cliff. It is one of the photographed waterfalls in NZ because it is both impressive and incredibly accessible.",
+      "audio_story": "You have arrived at Whangārei Falls, known to local Māori as Otuihau. The falls drop twenty six metres in a single clean curtain over a basalt cliff and into a wide pool surrounded by ferns. They sit inside the suburb of Tikipunga, only ten minutes drive from central Whangārei, and yet they look like something you should have hiked half a day to find. From the carpark a paved path takes you to the top of the falls in under a minute. Continue down the steps and you will reach two viewing platforms at the base, where you can feel the spray on your face. If you have an hour to spare, the Hātea River walk loops away from the falls through native bush, past old Māori pā sites and along the river that drains the Whangārei plain. The water you are watching tonight will be in the harbour by morning. It is one of the easiest pieces of beauty in the country to reach. Take the short walk and the long photograph.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whangarei District Council parks",
+        "DOC tracks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Whangārei Falls / Otuihau draws visitors back time and again for its natural beauty and peaceful atmosphere. A 26m basalt waterfall right inside Whangārei city — five minute walk from the carpark. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-clendon-house",
+      "name": "Clendon House, Rawene",
+      "region": "northland",
+      "lat": -35.3936,
+      "lng": 173.4886,
+      "category": "heritage",
+      "tags": [
+        "colonial",
+        "heritage-nz",
+        "hokianga",
+        "1860s"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "An 1860s house above the Hokianga, kept by Heritage NZ exactly as the Clendon family left it.",
+      "commentary": "Built in the 1860s for James Reddy Clendon, U.S. Consul and one of the witnesses to the Treaty of Waitangi. His wife Jane Takotowi Cochrane, of Ngāpuhi descent, raised eight children here after his death in 1872 and lived in the house until 1919.",
+      "audio_story": "You are standing in front of Clendon House, a wooden colonial home with a wide veranda and a view straight down the Hokianga Harbour. The house was built in the 1860s for James Reddy Clendon, a remarkable figure who was at one time the United States Consul in the Bay of Islands and who signed the Treaty of Waitangi as a witness on the morning of the sixth of February eighteen forty. He died at this house in 1872, leaving his much younger wife, Jane Takotowi Cochrane of Ngāpuhi descent, with eight children and the family debts. Jane stayed. She raised the children, ran the property, and lived in this house until 1919. Almost everything you will see inside, the books, the china, the dresses, the letters, was hers. Heritage New Zealand has cared for the house since the 1970s and has changed almost nothing. You are walking through a Victorian Māori-Pākehā family home that survived because one widow refused to let it go. Sit on the veranda before you leave. The harbour view has not changed in a century and a half.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage New Zealand — Clendon House",
+        "Te Ara — Jane Cochrane"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Clendon House, Rawene — the site rewards those who take time to read the signage and absorb the context. An 1860s house above the Hokianga, kept by Heritage NZ exactly as the Clendon family left it. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-omapere-koutu-boulders",
+      "name": "Koutu Boulders, Hokianga",
+      "region": "northland",
+      "lat": -35.4661,
+      "lng": 173.4042,
+      "category": "nature",
+      "tags": [
+        "boulders",
+        "geology",
+        "low-tide",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Spherical boulders bigger than the Moeraki ones, but almost no one knows they exist.",
+      "commentary": "Hokianga's answer to Moeraki — large concretions exposed at low tide on the inner harbour shore at Koutu, several over 3m across. Access is across private land with permission expected.",
+      "audio_story": "You are looking for the Koutu Boulders, and unlike their famous cousins on the Otago coast at Moeraki, almost no one has heard of these. The Koutu Boulders sit on the Hokianga Harbour shoreline, rounded grey concretions that grew slowly inside soft mudstone over millions of years. As the cliffs eroded, the boulders were released onto the beach. Some are over three metres across, larger than any of the Moeraki examples. They are best seen at low tide, and you will need to time your visit with the tide chart. Access is along a quiet road north of Opononi, then across a stretch of foreshore that crosses private land, so be respectful, take nothing, and follow any signs. While you are out here, take in the wider Hokianga, one of the most spiritually significant harbours in the country. According to Ngāpuhi tradition, this is where Kupe the navigator first arrived, and from where he eventually left these islands to return to Hawaiki. Stand on the sand, look at the boulders, look at the harbour, and consider the weight of all that history settling around you.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "GNS Science geology",
+        "Far North District tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Koutu Boulders, Hokianga draws visitors back time and again for its natural beauty and peaceful atmosphere. Spherical boulders bigger than the Moeraki ones, but almost no one knows they exist. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-trounson-kauri",
+      "name": "Trounson Kauri Park",
+      "region": "northland",
+      "lat": -35.7378,
+      "lng": 173.6517,
+      "category": "nature",
+      "tags": [
+        "kauri",
+        "night-walk",
+        "kiwi",
+        "easy-loop"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "A 40 minute loop through one of the best surviving stands of mature kauri — and the best place near Waipoua to hear kiwi at night.",
+      "commentary": "586-hectare DOC reserve. Mainland Island predator control has allowed kiwi populations to recover; guided night walks have become a draw.",
+      "audio_story": "You have arrived at Trounson Kauri Park, just south of the Waipoua Forest. If Waipoua holds the giants like Tāne Mahuta, Trounson holds the family — a gentler, more intimate forest of mature kauri, podocarp, and tree fern, looped by a flat forty minute boardwalk. The park is named for James Trounson, a sawmiller who, in a moment of unusual foresight, gifted this remnant to the Crown in 1919 instead of cutting it down. Department of Conservation rangers have run intensive predator control here for decades, and the result has been a dramatic recovery of native birds and, especially, of brown kiwi. After dark the forest changes character entirely. Kiwi call to each other across the gloom, more sheep dog than the songbird people imagine. Local guided night walks operate from the campground, and they are the most reliable way in the North Island to actually see a kiwi in the wild. Before you walk, scrub your boots at the cleaning station. Kauri dieback disease has no cure. The trees you are about to meet are over a thousand years old, and they need every visitor to do this one small thing.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Trounson Kauri Park",
+        "Kauri 2000 Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Trounson Kauri Park draws visitors back time and again for its natural beauty and peaceful atmosphere. A 40 minute loop through one of the best surviving stands of mature kauri — and the best place near Waipoua to hear kiwi at night. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-mangonui-fish",
+      "name": "Mangōnui Fish Shop",
+      "region": "northland",
+      "lat": -35.0042,
+      "lng": 173.5292,
+      "category": "food-wine",
+      "tags": [
+        "fish-and-chips",
+        "wharf",
+        "doubtless-bay",
+        "iconic"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "Fish and chips on a wharf jutting into Doubtless Bay — voted New Zealand's best more times than anyone has bothered to count.",
+      "commentary": "The Mangōnui Fish Shop is a green weatherboard building extending out over the harbour. Open since the 1940s; consistently rated among NZ's top fish and chip shops.",
+      "audio_story": "You are at the Mangōnui Fish Shop, a small green weatherboard building that has been pushing out into the harbour on wooden piles for the better part of a century. The fish on your plate was, in many cases, swimming in this same bay yesterday. Mangōnui sits on Doubtless Bay, named by Captain Cook in seventeen sixty nine. Cook never actually entered the bay. From offshore he wrote in his journal that it was doubtless a bay, and the name stuck, slightly absurd and entirely permanent. The fish shop has been here since the 1940s, and the formula has not really changed. Order the snapper and chips. Take it outside to one of the wooden tables suspended over the water. Watch the gulls calculate their odds. If you are lucky a stingray will glide past below the deck. The chips are golden, the fish is fresh, the harbour is quiet, and the only argument any traveller has after eating here is whether this or some rival down south is the country's best. Sit a little longer than you planned. There is no hurry in Mangōnui.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Mangōnui Fish Shop heritage",
+        "Far North tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Mangōnui Fish Shop delivers an excellent food and wine experience that visitors describe as a highlight of the region. Fish and chips on a wharf jutting into Doubtless Bay — voted New Zealand's best more times than anyone has bothered to count. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "northland-stone-store-kemp-house",
+      "name": "Stone Store & Kemp House, Kerikeri",
+      "region": "northland",
+      "lat": -35.2289,
+      "lng": 173.9606,
+      "category": "heritage",
+      "tags": [
+        "oldest-buildings",
+        "missionary",
+        "heritage-nz",
+        "kerikeri-basin"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1.5,
+      "short": "The two oldest buildings in New Zealand — a wooden mission house from 1822 and a stone store from 1832.",
+      "commentary": "Kemp House (1822) is the oldest surviving timber building in NZ. The neighbouring Stone Store (1832) is the oldest stone building. Both Heritage New Zealand sites in the Kerikeri Mission Station precinct.",
+      "audio_story": "You are standing at the Kerikeri Basin, where two unassuming buildings carry the title of the oldest surviving structures of European New Zealand. The white wooden house is Kemp House. It was built in eighteen twenty two by missionary carpenters as a home for the Reverend John Butler. The Kemp family lived here for the next hundred and fifty years. Almost everything inside, the rocking chair, the kitchen, the children's beds, came from that long occupation. Next door, the squat grey building is the Stone Store, completed in eighteen thirty two. It is the oldest stone building in the country. It was originally built to hold mission supplies and trade goods, and it still operates as a working store on the ground floor today. You can buy a pound of rope and a tin of biscuits and pretend, briefly, that it is eighteen sixty. Across the river, on the slope above the basin, sits Kororipo Pā, the home of the great Ngāpuhi rangatira Hongi Hika, who invited the missionaries here in eighteen nineteen. Walk up. Look back. Two civilisations met on this small piece of ground, and what followed shaped everything.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Kerikeri Mission",
+        "Te Ara — Hongi Hika"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Stone Store & Kemp House, Kerikeri — the site rewards those who take time to read the signage and absorb the context. The two oldest buildings in New Zealand — a wooden mission house from 1822 and a stone store from 1832. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-waitiki-landing",
+      "name": "Te Paki Sand Dunes",
+      "region": "northland",
+      "lat": -34.595,
+      "lng": 172.8056,
+      "category": "nature",
+      "tags": [
+        "dunes",
+        "sandboarding",
+        "ninety-mile",
+        "remote"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A miniature Sahara at the top of New Zealand — sand dunes you can hire a board for and ride down.",
+      "commentary": "Giant dunes at the northern end of Ninety Mile Beach near Te Paki Stream. Common stop on Cape Reinga bus tours; sandboarding is the standard activity.",
+      "audio_story": "You have come to the top of New Zealand and arrived in a desert. The Te Paki sand dunes rise behind Ninety Mile Beach in great pale ridges, some over a hundred metres high, scoured into endless ripples by the wind off the Tasman. Stand at the bottom and look up, and you would not believe you are still in the same country as the rainforests of Northland. Hire a sandboard from one of the operators along the access road, climb until your calves burn, and ride down the slipface on your stomach. Most travellers come out of the dunes laughing and shaking sand out of places sand should not be. The Te Paki Stream below is, technically, a public road. Tour buses drive its sandy bed to reach the southern end of Ninety Mile Beach. The dunes are still moving. They are slowly burying the small ngahere, the bush remnants, behind them. There is something humbling about a landscape that simply will not stay still. Brush the sand off, drink some water, and remember that Cape Reinga is only twenty more minutes north.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "DOC — Te Paki Recreation Reserve",
+        "Far North tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Te Paki Sand Dunes draws visitors back time and again for its natural beauty and peaceful atmosphere. A miniature Sahara at the top of New Zealand — sand dunes you can hire a board for and ride down. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-otuataua-stonefields",
+      "name": "Ngawha Springs",
+      "region": "northland",
+      "lat": -35.4014,
+      "lng": 173.8589,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "hot-pools",
+        "iwi-owned",
+        "rustic"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1.5,
+      "short": "Sixteen iwi-owned mineral pools in a swamp behind Kaikohe — the most untouristed hot pools in New Zealand.",
+      "commentary": "Owned by the local hapū of Ngāpuhi (Te Uri o Hua), the Ngawha Springs complex is one of the few NZ geothermal fields outside the Taupō Volcanic Zone. Rustic, mineral-heavy waters in wooden pools.",
+      "audio_story": "You have arrived at Ngawha, and you should set your expectations for something honest rather than something polished. There are sixteen pools here, each a different temperature, a different mineral profile, a different colour. Some are clear, some are inky black, some are sulphur green. The pools are owned by the local hapū of Ngāpuhi, who have used these waters for healing for centuries, and they have chosen to keep the place rustic. The boardwalks are wooden, the changing sheds are basic, and the experience is the experience. The geology here is unusual. Almost every other natural hot spring in the North Island sits in the Taupō Volcanic Zone, fed by the line of volcanoes from White Island to Ruapehu. Ngawha is hundreds of kilometres outside that zone, fed by an entirely different system of deep faults. The locals will tell you that each pool is good for a different ailment. The water smells of sulphur. Your skin will be soft for two days. Soak slowly, move from pool to pool, and try to think about nothing at all.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Ngawha Springs hapū information",
+        "GNS Science geothermal mapping"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Ngawha Springs draws visitors back time and again for its natural beauty and peaceful atmosphere. Sixteen iwi-owned mineral pools in a swamp behind Kaikohe — the most untouristed hot pools in New Zealand. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "northland-hist-ruapekapeka",
+      "name": "Ruapekapeka Pā",
+      "region": "northland",
+      "lat": -35.6167,
+      "lng": 174.1556,
+      "category": "māori",
+      "tags": [
+        "nz-wars",
+        "pa-site",
+        "kawiti",
+        "hone-heke",
+        "1846",
+        "battle-site"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "The last battle of the Northern War — a remarkably preserved 1846 Ngāpuhi fortress that outsmarted the British Empire's artillery.",
+      "commentary": "Ruapekapeka was built by Kawiti in 1845 as an engineering marvel: deep trench and tunnel system designed to survive artillery bombardment. British forces took the empty pā on 11 January 1846 after Ngāpuhi retreated. One of the best-preserved nineteenth century pā sites in the country.",
+      "audio_story": "You have arrived at Ruapekapeka, the hidden bat's nest, and you are standing at the site of the final battle of the Northern War of eighteen forty five to eighteen forty six. The chief Kawiti, an older ally of Hone Heke, built this pā here in the back country south of the Bay of Islands in eighteen forty five. What he built was an extraordinary piece of military engineering. Deep defensive trenches, a network of underground tunnels where warriors could shelter during artillery bombardment, and palisade walls sloped inward to deflect cannon balls. The British brought the largest artillery force ever assembled in New Zealand to reduce it. For ten days in December eighteen forty five and January eighteen forty six they shelled the pā without breaking its defences. On the eleventh of January, the British troops crept into a pā Kawiti had quietly evacuated the previous evening. They had won the ground and lost the war. Today the site is extraordinarily well preserved. You can walk the trench lines, stand in the reconstructed palisade, and read the story on excellent interpretive panels. A working waharoa, carved entrance, welcomes visitors. Treat the site as the memorial it is.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZ History — Ruapekapeka",
+        "DOC",
+        "Ngāti Hine"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Ruapekapeka Pā as a place where the history and cultural significance of Aotearoa become tangible and real. The last battle of the Northern War — a remarkably preserved 1846 Ngāpuhi fortress that outsmarted the British Empire's artillery. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hist-pompallier",
+      "name": "Pompallier Mission, Russell",
+      "region": "northland",
+      "lat": -35.2664,
+      "lng": 174.1175,
+      "category": "māori",
+      "tags": [
+        "pompallier",
+        "catholic-mission",
+        "printery",
+        "heritage-nz",
+        "1842"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "New Zealand's oldest surviving industrial building — the 1842 rammed-earth printery of French bishop Pompallier's Catholic mission.",
+      "commentary": "Built 1842 from rammed earth using French pisé-de-terre technique, Pompallier House housed a working printery that produced around 30,000 books in te reo Māori before closing in 1850.",
+      "audio_story": "You have arrived at Pompallier Mission in Russell, and you are looking at the oldest industrial building still standing in New Zealand. The building was constructed in eighteen forty two by the French Catholic bishop Jean Baptiste Pompallier, who arrived in the Bay of Islands in eighteen thirty eight with the intention of converting Māori to Catholicism in direct competition with the already established Anglican Church Missionary Society. The building itself is unique in New Zealand. It was built using pisé de terre, a French technique of rammed earth construction, because Pompallier's brothers were French craftsmen who knew how to build with the materials they knew. Inside, a working printery and tannery produced around thirty thousand books, mostly religious texts translated into te reo Māori, that were then bound in leather from local cattle. The mission closed in eighteen fifty when Pompallier moved his headquarters to Auckland. Heritage New Zealand has restored the building and the printery still operates demonstration printings on the original equipment. Allow an hour. Watch a printing demonstration if one is running. The paper, ink, leather, and type were all made or set right here.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Pompallier",
+        "Diocese of Auckland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Pompallier Mission, Russell as a place where the history and cultural significance of Aotearoa become tangible and real. New Zealand's oldest surviving industrial building — the 1842 rammed-earth printery of French bishop Pompallier's Catholic mission. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hist-waimate-mission",
+      "name": "Te Waimate Mission",
+      "region": "northland",
+      "lat": -35.2647,
+      "lng": 173.8336,
+      "category": "heritage",
+      "tags": [
+        "mission",
+        "1832",
+        "cms",
+        "heritage-nz",
+        "george-clarke"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1,
+      "short": "The second-oldest surviving European building in New Zealand — 1832 timber mission house, and the site of the country's first Anglican bishopric.",
+      "commentary": "Built 1832 by the Church Missionary Society as part of an agricultural mission station. New Zealand's first Anglican Bishop George Selwyn lived here from 1842-1844. The first ploughed paddock in New Zealand was prepared here.",
+      "audio_story": "You have arrived at Te Waimate Mission, sixteen kilometres inland from Kerikeri, and you are standing on the site of the first European style farm in New Zealand. The Church Missionary Society established Te Waimate in eighteen thirty as an agricultural mission, a deliberate attempt to teach local Māori European farming techniques alongside Christianity. By eighteen thirty two there were three timber houses on the property and the first ploughed paddock in the country had been prepared here. One of those houses still stands and is now one of the two oldest surviving European buildings in New Zealand, along with the nearby Kemp House in Kerikeri. Te Waimate became the site of New Zealand's first Anglican bishopric when George Selwyn arrived in eighteen forty two to establish a training college for Māori clergy. Selwyn lived here for two years before moving the seat to Auckland. The station fell into decline in the late eighteen forties. Today Heritage New Zealand has restored the mission house, the little wooden church of Saint John the Baptist next door, and the surrounding gardens. A visit here, away from the Bay of Islands crowds, rewards the careful visitor with a quiet sense of the earliest years of the mission period.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Te Waimate",
+        "Anglican Church records"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Te Waimate Mission — the site rewards those who take time to read the signage and absorb the context. The second-oldest surviving European building in New Zealand — 1832 timber mission house, and the site of the country's first Anglican bishopric. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-mangungu",
+      "name": "Mangungu Mission",
+      "region": "northland",
+      "lat": -35.3719,
+      "lng": 173.6183,
+      "category": "māori",
+      "tags": [
+        "hokianga",
+        "wesleyan",
+        "1828",
+        "treaty",
+        "heritage-nz"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1,
+      "short": "The Wesleyan mission house where more chiefs signed Te Tiriti o Waitangi than anywhere else — 70 signatures on 12 February 1840.",
+      "commentary": "Wesleyan mission at Hōreke on the southern Hokianga, established 1828. On 12 February 1840 Mangungu hosted the largest single Treaty of Waitangi signing event, with approximately 70 Hokianga chiefs signing Te Tiriti.",
+      "audio_story": "You have arrived at Mangungu Mission House on the southern shore of the Hokianga Harbour. Mangungu is remarkable for one particular reason. On the twelfth of February eighteen forty, just six days after the Treaty of Waitangi was first signed at Waitangi Bay on the other coast, approximately seventy chiefs from the Hokianga iwi gathered here and added their signatures to Te Tiriti. It was the largest single signing event in the Treaty process. For decades the role of Mangungu in the Treaty's signing was under recognised, overshadowed by the more famous signing at Waitangi. That has changed. The mission house itself, built around eighteen thirty nine by Wesleyan Methodists, has been restored by Heritage New Zealand and is a beautiful example of colonial timber construction. The garden slopes down to the water. A small cemetery holds missionaries and early settlers. Every year on the twelfth of February, a commemoration is held here. It is quieter than the events at Waitangi Bay, but the people who come to this one understand exactly what happened at this place, and why it matters. Allow an hour. The drive down to Hōreke is itself lovely.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Mangungu",
+        "NZ History — Treaty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Mangungu Mission as a place where the history and cultural significance of Aotearoa become tangible and real. The Wesleyan mission house where more chiefs signed Te Tiriti o Waitangi than anywhere else — 70 signatures on 12 February 1840. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hist-flagstaff-hill",
+      "name": "Flagstaff Hill, Russell / Maiki",
+      "region": "northland",
+      "lat": -35.2572,
+      "lng": 174.1142,
+      "category": "heritage",
+      "tags": [
+        "hone-heke",
+        "flagstaff",
+        "1844",
+        "1845",
+        "nz-wars",
+        "russell"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The hill above Russell where Ngāpuhi chief Hone Heke famously cut down the British flagpole four times — sparking the Northern War.",
+      "commentary": "Maiki Hill overlooks Russell. Ngāpuhi chief Hone Heke cut down the British flagpole here in July 1844 and three more times over subsequent months, the fourth cutting on 11 March 1845 triggering open war.",
+      "audio_story": "You have arrived at the top of Flagstaff Hill, known to Māori as Maiki, looking directly down over the little town of Russell and out across the Bay of Islands. This unassuming low hill was the site of one of the most symbolic acts of resistance in early colonial New Zealand. In July eighteen forty four, the Ngāpuhi chief Hone Heke rode up here with an axe and cut down the British flagpole. He did it again. And again. And again. The fourth and final cutting on the eleventh of March eighteen forty five came as part of a coordinated attack on Russell itself that touched off what became known as the Northern War. For Heke, the flagpole was a symbol of the economic marginalisation of Ngāpuhi after the capital had moved south to Auckland, draining customs revenue and trade away from the Bay of Islands. Cutting it down was a calculated political act, not a vandalism. Today a flagpole stands here again, erected by Ngāpuhi themselves as part of the healing of the long relationship. Stand here, look down on the harbour, and imagine the sound of axe on wood in eighteen forty four.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZ History — Hone Heke",
+        "Te Ara",
+        "Ngāpuhi"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Flagstaff Hill, Russell / Maiki — the site rewards those who take time to read the signage and absorb the context. The hill above Russell where Ngāpuhi chief Hone Heke famously cut down the British flagpole four times — sparking the Northern War. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-motuarohia",
+      "name": "Motuarohia / Roberton Island — Cook's First Landing",
+      "region": "northland",
+      "lat": -35.2067,
+      "lng": 174.1283,
+      "category": "heritage",
+      "tags": [
+        "cook",
+        "endeavour",
+        "1769",
+        "bay-of-islands",
+        "first-landing"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The small island where James Cook first came ashore in the Bay of Islands in 1769 — the site now better known for its twin lagoons.",
+      "commentary": "On 29 November 1769 Cook anchored off Motuarohia and came ashore with Banks and Solander. The island was the scene of a complex multi-canoe encounter with local Ngāpuhi. Now part of the Bay of Islands Maritime Park.",
+      "audio_story": "You are looking at Motuarohia, sometimes called Roberton Island, sitting in the middle of the Bay of Islands. On the twenty ninth of November seventeen sixty nine, James Cook anchored the Endeavour in the lee of this island and came ashore with his naturalists Joseph Banks and Daniel Solander. It was the first European landing anywhere in what is now the Northland region, and one of the earliest meetings between Cook and Māori. The encounter was tense and nearly ended badly. A fleet of around three hundred warriors in several large waka surrounded the Endeavour's longboat in the shallows. Banks later wrote that Cook fired warning shots over their heads and the situation was defused by the bravery and skill of the Tahitian translator Tupaia, who was able to speak with the local Ngāpuhi in a mutually understandable dialect. Today Motuarohia is best known to visitors for its twin aquamarine lagoons on the northern side, reachable by boat tours from Paihia. A short walking track climbs to a lookout between the two bays with a spectacular view. Swim, snorkel, walk up to the lookout, and remember that this is where Cook first put a boot down in the north of the country.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZ History — Cook's voyages",
+        "DOC — Bay of Islands Maritime Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Motuarohia / Roberton Island — Cook's First Landing — the site rewards those who take time to read the signage and absorb the context. The small island where James Cook first came ashore in the Bay of Islands in 1769 — the site now better known for its twin lagoons. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-christ-church-russell",
+      "name": "Christ Church, Russell",
+      "region": "northland",
+      "lat": -35.2642,
+      "lng": 174.1194,
+      "category": "heritage",
+      "tags": [
+        "church",
+        "1836",
+        "oldest",
+        "darwin",
+        "russell"
+      ],
+      "trigger_radius_m": 50,
+      "duration_hours": 0.3,
+      "short": "New Zealand's oldest surviving church — built 1836, with musket-ball holes in the timber walls from the 1845 sacking of Russell.",
+      "commentary": "Built 1836 as an Anglican church and community building at Kororāreka. Charles Darwin donated to its construction during the Beagle's visit in December 1835. Holes in the walls are from the 1845 sacking.",
+      "audio_story": "You have arrived at Christ Church in Russell, New Zealand's oldest surviving church. The timber walls you are looking at were raised in eighteen thirty six, when Kororāreka, as the town was then known, was the rough and notorious trading port of the South Pacific, full of whalers, deserters, and grog shops. The church was built as both a religious building and a community hall for the small settler population. Among the early donors to its construction was the young naturalist Charles Darwin, who visited Kororāreka in December eighteen thirty five aboard HMS Beagle and disapproved heartily of the settlement's debauchery. He gave, in his own words, a small sum toward the chapel. Look closely at the weatherboards on the outside of the building. Several of them show holes made by musket balls during the sacking of Kororāreka on the eleventh of March eighteen forty five. Hone Heke and Kawiti's men had orders not to damage the church, and for the most part they did not, but some stray fire hit the walls. The church is still a working parish. Walk quietly around the small cemetery. A surprising number of sailors and whalers rest here, including some killed in eighteen forty five.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ",
+        "Anglican Diocese of Auckland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Christ Church, Russell — the site rewards those who take time to read the signage and absorb the context. New Zealand's oldest surviving church — built 1836, with musket-ball holes in the timber walls from the 1845 sacking of Russell. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-mangonui-history",
+      "name": "Mangōnui Historic Precinct",
+      "region": "northland",
+      "lat": -34.9908,
+      "lng": 173.5244,
+      "category": "heritage",
+      "tags": [
+        "mangonui",
+        "whaling",
+        "doubtless-bay",
+        "heritage-precinct"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "A whaling and trading port of the 1830s preserved almost entirely — Doubtless Bay's timber-fronted main street tells a hundred and ninety years of story.",
+      "commentary": "Mangōnui on Doubtless Bay was a major Pacific whaling port from the 1830s. The timber storefronts of the main street are the most intact surviving whaling-era commercial precinct in the country.",
+      "audio_story": "You have arrived in Mangōnui on the southern shore of Doubtless Bay. In the eighteen thirties and forties this was one of the major whaling ports of the southern Pacific. Hundreds of American, British, French, and Australian whaling ships called here each year to reprovision, to trade with local Ngāti Kahu, and to repair before heading back out onto the Pacific whaling grounds. The main street of Mangōnui preserves more of that period, in continuous occupation, than almost anywhere else in the country. The timber storefronts with their deep verandas and false parapets, the old waterfront trading store, the stone wharf, all survive largely intact. The town's famous fish and chip shop, which claims to be the world's best, operates out of a building that was originally a customs house. Walk the length of the main street slowly. Read the Heritage New Zealand plaques on the buildings. Eat fish and chips on the wharf, watching the small fleet at rest. Mangōnui rewards an unhurried afternoon more than most New Zealand small towns. Then drive five minutes west to Butler Point for the whaling museum, which is the essential companion to the main street.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Mangōnui",
+        "Far North District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Mangōnui Historic Precinct — the site rewards those who take time to read the signage and absorb the context. A whaling and trading port of the 1830s preserved almost entirely — Doubtless Bay's timber-fronted main street tells a hundred and ninety years of story. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-butler-point",
+      "name": "Butler Point Whaling Museum",
+      "region": "northland",
+      "lat": -34.9972,
+      "lng": 173.5408,
+      "category": "culture",
+      "tags": [
+        "whaling",
+        "butler-point",
+        "mangonui",
+        "museum",
+        "1843-house"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1.5,
+      "short": "The 1843 home of Captain William Butler — a Pacific whaling captain who retired at Mangōnui — preserved with its original furniture and whaling artefacts.",
+      "commentary": "William Butler was an English whaling captain who settled at Mangōnui in 1836 and built the Butler Point house in 1843. The house and its whaling museum preserve one of the best collections of Pacific whaling artefacts in the country.",
+      "audio_story": "You have arrived at Butler Point, on the southern side of Mangōnui Harbour. Butler Point is where Captain William Butler, an English whaling captain, built a home and trading station in the eighteen thirties and forties after deciding Doubtless Bay was where he wanted to spend the second half of his life. Butler arrived in the Pacific whaling grounds in the eighteen twenties. By the mid eighteen thirties he had developed good trading relationships with Ngāti Kahu and was serving as a pilot, interpreter, and provisioner to the scores of whaling ships that called at Mangōnui. In eighteen forty three he built the house that now anchors the museum. The property has been kept in the Butler family for more than a century and a half, and is now open to visitors by appointment. The collection of whaling artefacts, the harpoons, the tryworks for boiling oil, the scrimshaw carved on sperm whale teeth, the personal letters of the captain, is one of the best collections of Pacific whaling material in the country. The setting is idyllic. A guided tour by a descendant of the captain is the standard experience. Call ahead to book.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Butler Point Whaling Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The cultural experience at Butler Point Whaling Museum is praised for being both accessible and genuinely informative. The 1843 home of Captain William Butler — a Pacific whaling captain who retired at Mangōnui — preserved with its original furniture and whaling artefacts. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "northland-hist-paihia-1823",
+      "name": "First Anglican Church Site, Paihia",
+      "region": "northland",
+      "lat": -35.2833,
+      "lng": 174.0906,
+      "category": "māori",
+      "tags": [
+        "paihia",
+        "cms",
+        "1823",
+        "henry-williams",
+        "williams-bay"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.4,
+      "short": "The site of Henry Williams' 1823 mission — where Samuel Marsden first preached in Aotearoa was nearby, and te reo Māori was first written down.",
+      "commentary": "The third CMS mission station was established at Paihia by Henry Williams in 1823. The bilingual Williams family translated the Bible and the Treaty of Waitangi into te reo Māori here.",
+      "audio_story": "You have arrived at the site of the first Paihia mission, established in eighteen twenty three by the Church Missionary Society under the redoubtable Henry Williams. The mission is no longer here in its original form, but interpretive boards on the waterfront set out the story. What happened at Paihia shaped the course of early colonial New Zealand in ways that are still being felt. Henry Williams and his brother William were fluent speakers of te reo Māori, and along with their wives they produced the first written Māori language grammars, the first te reo translation of the Bible, and, crucially, the Māori language text of the Treaty of Waitangi, which was largely drafted in a small timber house that once stood roughly where the current Anglican Church of St Paul now stands. The translation of the Treaty at Paihia, the choices Williams made in how to render English concepts such as sovereignty into a te reo framework that Māori could understand, have been debated and litigated for almost two centuries. Stand on the waterfront, look across at Waitangi just a few kilometres away, and let that weight sit on the landscape for a moment.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZ History — Paihia mission",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe First Anglican Church Site, Paihia as a place where the history and cultural significance of Aotearoa become tangible and real. The site of Henry Williams' 1823 mission — where Samuel Marsden first preached in Aotearoa was nearby, and te reo Māori was first written down. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hist-stone-store-mission",
+      "name": "Stone Store, Kerikeri (history focus)",
+      "region": "northland",
+      "lat": -35.2281,
+      "lng": 173.9578,
+      "category": "heritage",
+      "tags": [
+        "kerikeri",
+        "stone-store",
+        "kemp-house",
+        "1822",
+        "1832",
+        "heritage-nz"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "The 1832 Stone Store and 1822 Kemp House — the two oldest surviving European buildings in New Zealand, standing side by side on the Kerikeri River.",
+      "commentary": "Kemp House was built 1821-22 as a missionary home. The Stone Store (1832-36) was built as a mission warehouse from Sydney-cut basalt. Both remain in their original positions on the Kerikeri Basin.",
+      "audio_story": "You have arrived at the Kerikeri Basin, and you are standing in front of the two oldest surviving European buildings in New Zealand. Kemp House, the timber mission house, was built between eighteen twenty one and eighteen twenty two. Beside it stands the Stone Store, built between eighteen thirty two and eighteen thirty six from basalt cut in Sydney and shipped across the Tasman. Together they tell the story of the earliest Church Missionary Society presence in the country. The mission here was established in eighteen nineteen under the protection of the paramount chief Hongi Hika, who saw advantage in hosting Europeans who could trade and teach literacy. The store was intended to be a warehouse for goods traded with Māori and incoming ships, but by the time it was completed the original commercial model had already become obsolete and the building spent most of its long life as a general store and, later, a private home. Heritage New Zealand now operates both buildings as a museum. Inside the Stone Store the original creaking floorboards and the smell of old stone are undiminished. Kemp House is small and perfectly preserved. Allow at least an hour.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Stone Store",
+        "NZ History"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Stone Store, Kerikeri (history focus) — the site rewards those who take time to read the signage and absorb the context. The 1832 Stone Store and 1822 Kemp House — the two oldest surviving European buildings in New Zealand, standing side by side on the Kerikeri River. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-hist-clendon-house",
+      "name": "Clendon House, Rāwene",
+      "region": "northland",
+      "lat": -35.3944,
+      "lng": 173.5047,
+      "category": "māori",
+      "tags": [
+        "rawene",
+        "hokianga",
+        "clendon",
+        "heritage-nz",
+        "1860s"
+      ],
+      "trigger_radius_m": 80,
+      "duration_hours": 0.7,
+      "short": "The home of James Clendon, US Consul and Treaty of Waitangi signatory — a 1860s Hokianga house preserved almost entirely unchanged.",
+      "commentary": "Built 1866-68 for James Reddy Clendon, British ship owner who served as first US Consul to NZ and signed the Treaty of Waitangi. The house passed to his Māori wife Jane Takotowi Cochrane. Run by Heritage NZ.",
+      "audio_story": "You have arrived at Clendon House in Rāwene on the southern shore of the Hokianga Harbour. The house was built between eighteen sixty six and eighteen sixty eight for James Reddy Clendon, one of the more remarkable figures of the early colonial period. Clendon was an English ship owner who had moved to Kororāreka in the eighteen thirties, befriended local Māori and chiefs, served as the first United States Consul in New Zealand, witnessed the signing of the Treaty of Waitangi in eighteen forty, and after losing his fortune moved his family to the quieter Hokianga. The house was built for his second wife, Jane Takotowi Cochrane, a rangatira of the local Te Māhurehure hapū, a generation younger than him. When James died in eighteen seventy two Jane inherited the house and raised their eight children here. She lived in the house for another fifty years. Because the property remained in the family until gifted to Heritage New Zealand in the nineteen seventies, an extraordinary quantity of the original furniture, papers, and personal items survive. Walking through Clendon House is the closest thing to stepping into an intact colonial home you will find in the country.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Clendon House",
+        "Te Ara — Jane Clendon"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Clendon House, Rāwene as a place where the history and cultural significance of Aotearoa become tangible and real. The home of James Clendon, US Consul and Treaty of Waitangi signatory — a 1860s Hokianga house preserved almost entirely unchanged. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hist-kororareka",
+      "name": "Kororāreka Memorial to the Fallen",
+      "region": "northland",
+      "lat": -35.2639,
+      "lng": 174.1208,
+      "category": "heritage",
+      "tags": [
+        "russell",
+        "1845",
+        "nz-wars",
+        "memorial",
+        "sack-of-kororareka"
+      ],
+      "trigger_radius_m": 50,
+      "duration_hours": 0.3,
+      "short": "A simple stone memorial in Russell to the defenders and attackers of the 1845 sacking of Kororāreka — remembering both sides.",
+      "commentary": "On 11 March 1845 Ngāpuhi forces under Kawiti, Hone Heke, and Pumuka attacked Kororāreka. The town was largely destroyed. Casualties on both sides. The memorial in the modern town acknowledges both Pākehā and Māori dead.",
+      "audio_story": "You have arrived at the Kororāreka Memorial in the centre of modern Russell. The stone acknowledges the dead of both sides on the eleventh of March eighteen forty five, the day known to history as the sack of Kororāreka. On that morning, Ngāpuhi forces under three chiefs, Hone Heke, Kawiti, and Pumuka, attacked the settlement in a carefully coordinated three pronged assault. Most of the town was burned. The small British garrison was driven from its blockhouse. HMS Hazard in the harbour was disabled. The civilian population fled aboard American and British ships and were rescued to Auckland. Pumuka, the third chief in the attack, was killed in the fighting, as were several British marines and settlers. For Ngāpuhi, the sack was a calculated demonstration of military power in response to colonial economic policies that had devastated the Bay of Islands economy. For the settlers, it was a catastrophe. The Northern War that followed cost several hundred lives over the next ten months. The memorial was erected in the twentieth century to name the dead on both sides, not only the British casualties. A small but important piece of modern memorial work.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZ History — Sack of Kororāreka",
+        "Russell Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kororāreka Memorial to the Fallen — the site rewards those who take time to read the signage and absorb the context. A simple stone memorial in Russell to the defenders and attackers of the 1845 sacking of Kororāreka — remembering both sides. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-kororareka-russell",
+      "name": "Kororāreka / Russell",
+      "region": "northland",
+      "lat": -35.2625,
+      "lng": 174.1222,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "hōne-heke",
+        "nz-wars",
+        "northern-war"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The first European capital of NZ — sacked by Hōne Heke in 1845 in the opening act of the Northern War.",
+      "commentary": "Kororāreka was a raucous whaling port before Hōne Heke Pōkai chopped down the British flagstaff on Maiki Hill four times between 1844 and 1845, triggering the Northern War. The attack on 11 March 1845 destroyed much of the town. Today Russell is a quiet harbourside village, but the hillside pā terraces, Christ Church (NZ's oldest surviving church, still pocked with musket-ball holes), and the flagstaff replica on the hill all tell the story of the first armed resistance to Crown sovereignty.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Kororāreka / Russell as a place where the history and cultural significance of Aotearoa become tangible and real. The first European capital of NZ — sacked by Hōne Heke in 1845 in the opening act of the Northern War. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-maiki-flagstaff",
+      "name": "Te Maiki / Flagstaff Hill",
+      "region": "northland",
+      "lat": -35.258,
+      "lng": 174.123,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "hōne-heke",
+        "nz-wars",
+        "pā",
+        "northern-war"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The hill where Hōne Heke cut down the British flagstaff four times — the spark that lit the Northern War.",
+      "commentary": "Te Maiki was originally a Ngāpuhi pā site commanding views over Kororāreka and the Bay of Islands. When the British erected a flagstaff to fly the Union Jack, Hōne Heke saw it as a symbol of sovereignty over Māori. He felled it four times between July 1844 and March 1845. The fourth felling was a diversionary tactic for the sacking of Kororāreka below. A replica flagstaff now flies the NZ flag. The walk up takes about 15 minutes and offers sweeping harbour views.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Maiki / Flagstaff Hill as a place where the history and cultural significance of Aotearoa become tangible and real. The hill where Hōne Heke cut down the British flagstaff four times — the spark that lit the Northern War. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-tane-mahuta",
+      "name": "Tāne Mahuta",
+      "region": "northland",
+      "lat": -35.6002,
+      "lng": 173.537,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "kauri",
+        "tāne",
+        "waipoua",
+        "sacred",
+        "mythology"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Lord of the Forest — the largest living kauri tree, named for the god who separated earth and sky.",
+      "commentary": "Tāne Mahuta stands 51 metres tall with a girth of 13.8 metres in the Waipoua Forest, estimated at 1,250–2,500 years old. Named for the atua (god) Tāne, who in Māori creation tradition lay between his parents Ranginui (sky father) and Papatūānuku (earth mother) and pushed them apart to let light into the world. For Te Roroa, the local iwi, the tree is a living ancestor. A short boardwalk from SH12 leads to the viewing platform.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Tāne Mahuta as a place where the history and cultural significance of Aotearoa become tangible and real. Lord of the Forest — the largest living kauri tree, named for the god who separated earth and sky. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-mangungu-mission",
+      "name": "Mangungu Mission House",
+      "region": "northland",
+      "lat": -35.427,
+      "lng": 173.747,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "treaty",
+        "hokianga",
+        "te-tiriti"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where the largest single signing of Te Tiriti o Waitangi took place — 70 Hokianga chiefs signed here on 12 February 1840.",
+      "commentary": "On 12 February 1840, just six days after the first signing at Waitangi, about 70 chiefs gathered on the grounds of the Wesleyan mission house at Mangungu to debate and sign Te Tiriti. It was the largest single signing event. The 1838 kauri mission house still stands on its hill above the Hokianga Harbour, managed by Heritage New Zealand.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Mangungu Mission House as a place where the history and cultural significance of Aotearoa become tangible and real. Where the largest single signing of Te Tiriti o Waitangi took place — 70 Hokianga chiefs signed here on 12 February 1840. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-arai-te-uru",
+      "name": "Arai-te-Uru Recreation Reserve",
+      "region": "northland",
+      "lat": -35.515,
+      "lng": 173.368,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "kupe",
+        "waka-landing",
+        "hokianga",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where the great navigator Kupe first set foot on Aotearoa — the traditional landing place at the Hokianga Heads.",
+      "commentary": "Tradition holds that the explorer Kupe first landed in Aotearoa at the Hokianga Heads. The reserve sits on the wild, windswept northern head of the Hokianga Harbour entrance. A carved pou marks the spot. For Ngāpuhi and Te Roroa, this is among the most significant wāhi tapu in the country — the beginning point of Māori settlement of New Zealand.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Arai-te-Uru Recreation Reserve as a place where the history and cultural significance of Aotearoa become tangible and real. Where the great navigator Kupe first set foot on Aotearoa — the traditional landing place at the Hokianga Heads. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-waikare-pa",
+      "name": "Waikare Historic Reserve",
+      "region": "northland",
+      "lat": -35.306,
+      "lng": 174.117,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "bay-of-islands",
+        "terraces"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A dramatically terraced headland pā on the Waikare Inlet with well-preserved earthworks and commanding harbour views.",
+      "commentary": "This narrow headland on the southern side of the Waikare Inlet at Opua features one of the most visually impressive pā sites in the Bay of Islands. The defensive terracing and ditch-and-bank fortifications are clearly visible. A short walking track leads along the headland.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Waikare Historic Reserve as a place where the history and cultural significance of Aotearoa become tangible and real. A dramatically terraced headland pā on the Waikare Inlet with well-preserved earthworks and commanding harbour views. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-okuratope-pa",
+      "name": "Okuratope Pā",
+      "region": "northland",
+      "lat": -35.07,
+      "lng": 174.28,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "fortified",
+        "archaeological"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the best-preserved fortified Māori settlements in Northland — complete terraces, ditches and palisade lines.",
+      "commentary": "Okuratope is an outstanding example of a complete and well-preserved pā, with clearly visible terracing, defensive ditches, and palisade postholes. Unlike many pā that have been damaged by farming or development, Okuratope retains its full defensive layout, making it invaluable for understanding pre-European Māori military architecture.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Okuratope Pā as a place where the history and cultural significance of Aotearoa become tangible and real. One of the best-preserved fortified Māori settlements in Northland — complete terraces, ditches and palisade lines. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-moremonui",
+      "name": "Moremonui Battlefield",
+      "region": "northland",
+      "lat": -35.92,
+      "lng": 173.69,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "musket-wars",
+        "ngāpuhi",
+        "battle"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Site of the 1807 battle where muskets were first used in Māori warfare — the opening shot of the Musket Wars.",
+      "commentary": "Near present-day Dargaville, the 1807 Battle of Moremonui was the first known use of muskets in intertribal fighting. Ngāpuhi, armed with muskets acquired from European traders, attacked Ngāti Whātua — but were defeated despite their firepower. The battle set off an arms race that would engulf the entire country in the Musket Wars.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Moremonui Battlefield as a place where the history and cultural significance of Aotearoa become tangible and real. Site of the 1807 battle where muskets were first used in Māori warfare — the opening shot of the Musket Wars. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-piakoa-burial",
+      "name": "Piakoa Burial Caves, Tākou Bay",
+      "region": "northland",
+      "lat": -35.17,
+      "lng": 174.05,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "wāhi-tapu",
+        "burial",
+        "ngāpuhi",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A network of sacred cliff burial caves in Tākou Bay — resting place of significant Ngāpuhi rangatira.",
+      "commentary": "Piakoa is a network of traditional burial caves in the sea cliffs of Tākou Bay, containing the remains of significant rangatira including Auwha, who led the Ngāpuhi conquest. As a wāhi tapu of the highest order, the caves are tapu and restricted. Heritage New Zealand has listed the site for its outstanding cultural significance.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Piakoa Burial Caves, Tākou Bay as a place where the history and cultural significance of Aotearoa become tangible and real. A network of sacred cliff burial caves in Tākou Bay — resting place of significant Ngāpuhi rangatira. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-urupukapuka-pa",
+      "name": "Urupukapuka Island Pā Sites",
+      "region": "northland",
+      "lat": -35.213,
+      "lng": 174.226,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "bay-of-islands",
+        "island",
+        "kūmara-pits"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "The largest island in the Bay of Islands, covered with pā sites, kainga and complexes of kūmara storage pits.",
+      "commentary": "Urupukapuka is studded with archaeological sites — multiple pā, kainga (unfortified villages), and extensive kūmara storage pit complexes. Today it's accessible by ferry from Paihia and has excellent walking tracks passing through archaeological sites with interpretation panels.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Urupukapuka Island Pā Sites as a place where the history and cultural significance of Aotearoa become tangible and real. The largest island in the Bay of Islands, covered with pā sites, kainga and complexes of kūmara storage pits. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-te-tii-marae",
+      "name": "Te Tii Waitangi Marae",
+      "region": "northland",
+      "lat": -35.267,
+      "lng": 174.087,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "treaty",
+        "waitangi",
+        "ngāpuhi"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The marae directly below the Treaty Grounds — the annual venue for Waitangi Day speeches and debate.",
+      "commentary": "Te Tii Waitangi Marae sits at the base of the hill below the Treaty Grounds and is the focal point for Waitangi Day commemorations each 6 February. This is where prime ministers and politicians face direct challenge from Māori leaders on the Treaty relationship.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Tii Waitangi Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The marae directly below the Treaty Grounds — the annual venue for Waitangi Day speeches and debate. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-kerikeri-kororipo",
+      "name": "Kororipo Pā & Stone Store, Kerikeri",
+      "region": "northland",
+      "lat": -35.226,
+      "lng": 174.094,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "mission",
+        "hongi-hika",
+        "pā",
+        "stone-store"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "NZ's oldest standing European buildings — built under the protection of the chief Hongi Hika at his pā.",
+      "commentary": "Kororipo Pā, overlooking the Kerikeri Basin, was the stronghold of Hongi Hika, the powerful Ngāpuhi chief who facilitated the missionaries' presence in exchange for access to European goods and firearms. The Stone Store (1836) and Mission House (1822) stand nearby as NZ's oldest surviving European buildings.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Kororipo Pā & Stone Store, Kerikeri as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's oldest standing European buildings — built under the protection of the chief Hongi Hika at his pā. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-te-waimate-mission",
+      "name": "Te Waimate Mission",
+      "region": "northland",
+      "lat": -35.399,
+      "lng": 173.947,
+      "category": "heritage",
+      "tags": [
+        "māori",
+        "mission",
+        "colonial",
+        "darwin"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "NZ's second-oldest surviving building — where Darwin visited in 1835 and early Māori-Pākehā exchange took shape.",
+      "commentary": "Built in 1831–32, Te Waimate Mission House is the second-oldest surviving European building in New Zealand. Charles Darwin visited in December 1835 and was impressed by the Māori agricultural settlement around it.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Te Waimate Mission — the site rewards those who take time to read the signage and absorb the context. NZ's second-oldest surviving building — where Darwin visited in 1835 and early Māori-Pākehā exchange took shape. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-matauri-bay",
+      "name": "Matauri Bay — Rainbow Warrior Memorial",
+      "region": "northland",
+      "lat": -35.047,
+      "lng": 174.09,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rainbow-warrior",
+        "memorial",
+        "ngāti-kura"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The final resting place of the Rainbow Warrior — scuttled off Matauri Bay with Māori blessing after the 1985 French bombing.",
+      "commentary": "After French agents bombed the Greenpeace ship Rainbow Warrior in Auckland Harbour in 1985, killing photographer Fernando Pereira, the refloated ship was scuttled off Matauri Bay in 1987 with the blessing of the local hapū Ngāti Kura. The wreck is now an artificial reef popular with divers.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Matauri Bay — Rainbow Warrior Memorial as a place where the history and cultural significance of Aotearoa become tangible and real. The final resting place of the Rainbow Warrior — scuttled off Matauri Bay with Māori blessing after the 1985 French bombing. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-rawene-hokianga",
+      "name": "Rawene — Hokianga Heritage",
+      "region": "northland",
+      "lat": -35.403,
+      "lng": 173.76,
+      "category": "heritage",
+      "tags": [
+        "māori",
+        "hokianga",
+        "colonial",
+        "timber",
+        "treaty"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A historic Hokianga township with deep Māori roots — timber trade and Treaty-era history on a beautiful harbour.",
+      "commentary": "Rawene on the Hokianga Harbour has a history stretching back to early Māori settlement. The harbour was one of the most important centres of Māori life in pre-European Northland. The Clendon House overlooks the harbour.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Rawene — Hokianga Heritage — the site rewards those who take time to read the signage and absorb the context. A historic Hokianga township with deep Māori roots — timber trade and Treaty-era history on a beautiful harbour. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "northland-panguru",
+      "name": "Panguru — Birthplace of Dame Whina Cooper",
+      "region": "northland",
+      "lat": -35.48,
+      "lng": 173.53,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "te-roroa",
+        "hokianga",
+        "whina-cooper"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A remote Māori community in the hills above the Hokianga — birthplace of Dame Whina Cooper, who led the 1975 Land March.",
+      "commentary": "Panguru is a small, remote Māori community famous as the birthplace of Dame Whina Cooper, who led the 1975 Māori Land March from Te Hāpua to Parliament. The community maintains strong cultural identity despite its isolation.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Panguru — Birthplace of Dame Whina Cooper as a place where the history and cultural significance of Aotearoa become tangible and real. A remote Māori community in the hills above the Hokianga — birthplace of Dame Whina Cooper, who led the 1975 Land March. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-te-kao",
+      "name": "Te Kao — Far North Māori Community",
+      "region": "northland",
+      "lat": -34.633,
+      "lng": 173.02,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "te-aupouri",
+        "far-north",
+        "te-reo"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A Te Aupouri community in the Far North — one of the most remote Māori settlements, where te reo Māori remains strong.",
+      "commentary": "Te Kao is one of the northernmost Māori communities in Aotearoa, home to Te Aupouri. The surrounding landscape is rich in archaeological sites and cultural associations.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Kao — Far North Māori Community as a place where the history and cultural significance of Aotearoa become tangible and real. A Te Aupouri community in the Far North — one of the most remote Māori settlements, where te reo Māori remains strong. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-whangarei-museum",
+      "name": "Whangārei Museum & Heritage Park",
+      "region": "northland",
+      "lat": -35.745,
+      "lng": 174.328,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "museum",
+        "taonga",
+        "whangārei"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A heritage park with Māori taonga, colonial buildings, and a kiwi house — telling Northland's layered cultural story.",
+      "commentary": "Whangārei Museum at Kiwi North combines a museum with significant Māori taonga collections, heritage buildings, and a kiwi house. The museum tells the story of Northland from its earliest Māori settlement through the contact period.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Whangārei Museum & Heritage Park as a place where the history and cultural significance of Aotearoa become tangible and real. A heritage park with Māori taonga, colonial buildings, and a kiwi house — telling Northland's layered cultural story. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-te-matua-ngahere",
+      "name": "Te Matua Ngahere — Father of the Forest",
+      "region": "northland",
+      "lat": -35.615,
+      "lng": 173.53,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "kauri",
+        "ancient",
+        "waipoua",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "The widest kauri tree in NZ — 16m girth, estimated 2,500–3,000 years old, a living ancestor of Te Roroa.",
+      "commentary": "Te Matua Ngahere ('Father of the Forest') in Waipoua Forest has the largest girth of any living kauri, wider even than Tāne Mahuta. For Te Roroa, the tree is a tūpuna (ancestor) of immense cultural and spiritual significance. The short walk to the tree passes through primeval kauri forest.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Matua Ngahere — Father of the Forest as a place where the history and cultural significance of Aotearoa become tangible and real. The widest kauri tree in NZ — 16m girth, estimated 2,500–3,000 years old, a living ancestor of Te Roroa. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-hongi-hika-trail",
+      "name": "Hongi Hika Heritage Trail, Kerikeri",
+      "region": "northland",
+      "lat": -35.224,
+      "lng": 174.091,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "hongi-hika",
+        "ngāpuhi",
+        "musket-wars",
+        "trail"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A heritage trail through the landscape of Hongi Hika — the Ngāpuhi chief who transformed NZ through the Musket Wars.",
+      "commentary": "The trail around the Kerikeri Basin connects sites associated with Hongi Hika, one of the most significant figures in Māori history. Hongi visited England in 1820, met King George IV, and used gifts to acquire muskets that gave Ngāpuhi military dominance.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Hongi Hika Heritage Trail, Kerikeri as a place where the history and cultural significance of Aotearoa become tangible and real. A heritage trail through the landscape of Hongi Hika — the Ngāpuhi chief who transformed NZ through the Musket Wars. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-te-paki-sand-dunes",
+      "name": "Te Paki Sand Dunes — Ancient Landscape",
+      "region": "northland",
+      "lat": -34.49,
+      "lng": 172.74,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sand-dunes",
+        "far-north",
+        "te-aupouri"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Giant sand dunes at the top of NZ — Te Aupouri territory where Māori have lived for centuries alongside shifting sands.",
+      "commentary": "The Te Paki giant sand dunes are in the ancestral territory of Te Aupouri. The shifting sands occasionally reveal buried archaeological sites — middens, artefacts, and evidence of centuries of occupation in this dramatic landscape.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Paki Sand Dunes — Ancient Landscape as a place where the history and cultural significance of Aotearoa become tangible and real. Giant sand dunes at the top of NZ — Te Aupouri territory where Māori have lived for centuries alongside shifting sands. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-ruapekapeka-pa",
+      "name": "Ruapekapeka Pā",
+      "region": "northland",
+      "lat": -35.381,
+      "lng": 174.215,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "northern-war",
+        "pā",
+        "kawiti"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "'The Bat's Nest' — the ingenious pā built by Te Ruki Kawiti that baffled British commanders in 1846.",
+      "commentary": "Ruapekapeka was a masterpiece of Māori military engineering. Te Ruki Kawiti built interlocking underground bunkers, anti-artillery trenches, and double palisades that neutralised British firepower. The pā fell only when British forces attacked on a Sunday while many defenders were at prayers outside the walls. The site is remarkably well preserved.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ruapekapeka Pā as a place where the history and cultural significance of Aotearoa become tangible and real. 'The Bat's Nest' — the ingenious pā built by Te Ruki Kawiti that baffled British commanders in 1846. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "northland-twin-coast-discovery-highway",
+      "name": "Twin Coast Discovery Highway",
+      "region": "northland",
+      "lat": -35.385,
+      "lng": 174.062,
+      "category": "journey",
+      "tags": [
+        "scenic-highway",
+        "loop-drive",
+        "coastal",
+        "heritage",
+        "multi-day"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 16,
+      "short": "Northland's 800 km loop linking the east and west coasts from Whangarei to Cape Reinga.",
+      "commentary": "The Twin Coast Discovery Highway is an 800 km loop that connects Northland's Pacific and Tasman coasts. The route passes through Whangarei, the Bay of Islands, Cape Reinga, the Hokianga Harbour, and the Kauri Coast. It takes a minimum of three days and covers some of New Zealand's most historically significant sites.",
+      "audio_story": "You are embarking on the Twin Coast Discovery Highway, an 800-kilometre loop that traces both coasts of Northland. This is where New Zealand's human story begins — Maori tradition says the first waka landfall was at the Hokianga, and the Treaty of Waitangi was signed at the Bay of Islands in 1840. Heading north on the east coast, you pass subtropical bays and the charming towns of Paihia and Kerikeri. At Cape Reinga, the Tasman Sea and Pacific Ocean collide in visible swirling currents — Maori believe the spirits of the dead depart from here to Hawaiki. Returning down the wild Tasman coast, you drive alongside the massive Hokianga Harbour and through the ancient Waipoua Forest, home to Tane Mahuta, New Zealand's largest living kauri tree. Allow at least three days for this journey — there is too much to rush.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Northland Inc",
+        "NZ Transport Agency",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Twin Coast Discovery Highway route delivers a memorable journey through exceptional New Zealand scenery. Northland's 800 km loop linking the east and west coasts from Whangarei to Cape Reinga. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-bay-of-islands-scenic-cruise",
+      "name": "Bay of Islands Scenic Route",
+      "region": "northland",
+      "lat": -35.2627,
+      "lng": 174.09,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "islands",
+        "heritage",
+        "dolphin-watching"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "Drive the coastal route linking Russell, Paihia, and the Waitangi Treaty Grounds.",
+      "commentary": "The Bay of Islands scenic route connects Paihia, Russell (via car ferry), and the Waitangi Treaty Grounds. The bay contains 144 islands and is rich in both Maori and early colonial history. Russell was New Zealand's first capital and was once known as the 'hell-hole of the Pacific'.",
+      "audio_story": "You are driving into the Bay of Islands, a shimmering expanse of 144 islands scattered across turquoise water. Start at the Waitangi Treaty Grounds, where on 6 February 1840 the founding document of New Zealand was signed between the British Crown and Maori chiefs. The beautifully carved meeting house here is one of the finest in the country. Take the car ferry across to Russell — New Zealand's first European capital, once so lawless it was nicknamed the 'hell-hole of the Pacific.' Today it is a genteel village of heritage buildings and waterfront restaurants. Christ Church, built in 1836, still has musket ball holes in its walls from the fighting of 1845. Back on the water, dolphins regularly swim alongside boats in these warm subtropical waters.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Waitangi Treaty Grounds",
+        "Northland Inc"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Bay of Islands Scenic Route route delivers a memorable journey through exceptional New Zealand scenery. Drive the coastal route linking Russell, Paihia, and the Waitangi Treaty Grounds. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-kauri-coast-waipoua",
+      "name": "Kauri Coast – Waipoua Forest Drive",
+      "region": "northland",
+      "lat": -35.62,
+      "lng": 173.54,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "ancient-forest",
+        "kauri",
+        "tasman-coast"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 2,
+      "short": "Drive through ancient kauri forest on the Tasman coast, home to Tane Mahuta, lord of the forest.",
+      "commentary": "State Highway 12 passes through Waipoua Forest, the largest remaining tract of mature kauri forest in New Zealand. The forest is home to Tane Mahuta, the largest known living kauri tree, estimated at 1,250–2,500 years old. Strict biosecurity measures protect the trees from kauri dieback disease.",
+      "audio_story": "You are entering Waipoua Forest on State Highway 12, and the world transforms. Massive kauri trees tower above the canopy, their silver-grey trunks columnar and immense. These trees were ancient when the Treaty of Waitangi was signed. Pull over at the Tane Mahuta car park and walk five minutes to meet the lord of the forest — 51 metres tall, nearly 14 metres in girth, and somewhere between 1,250 and 2,500 years old. Stand beneath it and feel very, very small. Before you walk, you must use the boot-cleaning stations — kauri dieback disease is devastating these irreplaceable trees, and every visitor must help prevent its spread. A short drive further, Te Matua Ngahere, the father of the forest, has an even larger trunk. The Kauri Coast was once heavily logged, which makes this surviving forest all the more precious.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Kauri Dieback Programme"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Kauri Coast – Waipoua Forest Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive through ancient kauri forest on the Tasman coast, home to Tane Mahuta, lord of the forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-ninety-mile-beach",
+      "name": "Ninety Mile Beach Coastal Drive",
+      "region": "northland",
+      "lat": -34.85,
+      "lng": 173.05,
+      "category": "journey",
+      "tags": [
+        "beach-drive",
+        "coastal",
+        "sand-dunes",
+        "remote"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "Drive the length of Ninety Mile Beach on Northland's far western coast — actually 55 miles, but who is counting.",
+      "commentary": "Ninety Mile Beach (Te Oneroa-a-Tohe) stretches 88 km along the Aupouri Peninsula. Despite its name, it is about 55 miles long. The beach is an official highway, though rental car insurance is typically void here. The Te Paki sand dunes at the northern end reach heights of 150 metres.",
+      "audio_story": "You are on Ninety Mile Beach, and despite its name, it is actually about 55 miles — or 88 kilometres — of unbroken sand along Northland's Tasman coast. This beach is legally a highway, though check your rental car agreement because most insurers draw the line at driving on sand. The hard-packed sand near the waterline makes for surprisingly smooth driving at low tide. To your left, the Tasman Sea rolls in with a constant procession of waves. To your right, the dunes stretch inland. At the northern end, the Te Paki sand dunes rise to 150 metres — locals and visitors alike use boogie boards to slide down them. The Maori name for this beach is Te Oneroa-a-Tohe, and it was a traditional walking route to Cape Reinga. Allow three hours and check the tide tables before setting out.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Northland Inc",
+        "NZ Transport Agency"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Actually 88km of unbroken west-coast beach — visitors are awed by the sheer scale and the sense of wildness. Driving on the beach is a unique experience most can only do on a guided tour due to insurance restrictions. The sand dunes at Te Paki are praised as a must-do add-on."
+      }
+    },
+    {
+      "id": "northland-cape-reinga-lighthouse-walk",
+      "name": "Cape Reinga Lighthouse Walk",
+      "region": "northland",
+      "lat": -34.4264,
+      "lng": 172.68,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "lighthouse",
+        "spiritual",
+        "ocean-meeting-point"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "Walk to New Zealand's northernmost lighthouse where two oceans meet and spirits depart.",
+      "commentary": "Cape Reinga (Te Rerenga Wairua) is at the northern tip of the Aupouri Peninsula. The walk to the lighthouse is a short 1 km return path from the car park. Below the cape, the Tasman Sea and Pacific Ocean meet in visible turbulence. In Maori belief, the spirits of the dead travel here to depart for Hawaiki.",
+      "audio_story": "You are walking towards the Cape Reinga lighthouse at the very tip of the North Island, and the atmosphere here is charged with something beyond the ordinary. In Maori belief, this is Te Rerenga Wairua — the leaping-off place of spirits. When a person dies, their spirit travels the length of New Zealand to this point, descends the roots of an ancient pohutukawa tree clinging to the headland, and departs for the ancestral homeland of Hawaiki. Below you, the Tasman Sea and Pacific Ocean collide in a dramatic churning of currents visible from the clifftop. The lighthouse, built in 1941, stands on a narrow promontory 165 metres above the water. This is a sacred place — please treat it with respect and stay on the path. The sense of standing at the very edge of a land is powerful and unforgettable.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Te Aupouri tribal authority"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Cape Reinga Lighthouse Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to New Zealand's northernmost lighthouse where two oceans meet and spirits depart. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-puketi-kauri-forest-walk",
+      "name": "Puketi Forest Nature Trail",
+      "region": "northland",
+      "lat": -35.218,
+      "lng": 173.762,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "kauri",
+        "native-birds",
+        "kiwi-habitat"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Walk through an ancient kauri and podocarp forest that doubles as a nocturnal kiwi sanctuary.",
+      "commentary": "Puketi Forest is a 21,000-hectare tract of native bush between the Bay of Islands and Hokianga. It contains significant stands of mature kauri and is one of the best places in Northland to encounter wild kiwi at night. The Manginangina Kauri Walk is a boardwalk loop through a cathedral-like stand of kauri.",
+      "audio_story": "You are entering Puketi Forest, 21,000 hectares of ancient bush that sits quietly between the tourist hubs of the Bay of Islands and the Hokianga. The Manginangina Kauri Walk takes you on a boardwalk through a stand of kauri trees so tall they create a natural cathedral. Sunlight filters through the canopy in shafts, and the air smells of damp earth and tree resin. If you return at dusk, this is one of the best places in Northland to hear — and possibly see — wild North Island brown kiwi foraging in the undergrowth. Guided night walks operate here, and the experience of hearing that distinctive high-pitched call in the darkness is genuinely thrilling. Remember to clean your footwear at the hygiene stations to help protect the kauri from dieback disease.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Puketi Forest Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Puketi Forest Nature Trail route delivers a memorable journey through exceptional New Zealand scenery. Walk through an ancient kauri and podocarp forest that doubles as a nocturnal kiwi sanctuary. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-whangarei-falls-walk",
+      "name": "Whangarei Falls and Hatea River Walk",
+      "region": "northland",
+      "lat": -35.682,
+      "lng": 174.329,
+      "category": "journey",
+      "tags": [
+        "waterfall",
+        "urban-walk",
+        "river",
+        "bush"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1.5,
+      "short": "Walk to Whangarei's iconic waterfall and along the Hatea River through native bush and sculpture gardens.",
+      "commentary": "Whangarei Falls drops 26 metres in a single plunge into a bush-fringed pool. The Hatea River walk extends from the falls through A.H. Reed Memorial Park and along the river to the Town Basin marina. The walk passes kauri trees, a canopy walkway, and the Quarry Arts Centre.",
+      "audio_story": "You are approaching Whangarei Falls through native bush, and the sound of falling water builds with every step. The falls drop 26 metres in a single photogenic plunge into a deep pool surrounded by ferns and overhanging trees. This is one of the most visited waterfalls in Northland, and the viewpoints from both the top and bottom of the falls are excellent. From here, the Hatea River walk extends downstream through A.H. Reed Memorial Park, named after the Northland publisher and conservationist. The park features a canopy walkway through native bush and some fine kauri trees. Continue along the river through sculpture gardens and past the Quarry Arts Centre to the Town Basin marina, where cafes and galleries line the waterfront. The entire walk is about 5 kilometres and follows well-maintained paths. It is a surprisingly rewarding urban walk that links Whangarei's best natural and cultural features in a single route.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whangarei District Council",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Whangarei Falls and Hatea River Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to Whangarei's iconic waterfall and along the Hatea River through native bush and sculpture gardens. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "northland-paihia-parasail",
+      "name": "Bay of Islands Parasailing",
+      "region": "northland",
+      "lat": -35.2812,
+      "lng": 174.09,
+      "category": "adventure",
+      "tags": [
+        "parasailing",
+        "bay-of-islands",
+        "commercial",
+        "scenic"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "Parasail 400 feet above the 144 islands of the Bay of Islands.",
+      "commentary": "Parasailing from Paihia lifts riders up to 400 feet above the Bay of Islands, revealing the full panorama of 144 subtropical islands. The calm, sheltered waters of the bay provide reliable conditions. Dolphin sightings from the air are common.",
+      "audio_story": "You have arrived at the Paihia wharf, where a parasailing boat is ready to take you to a vantage point few people ever experience. As the boat accelerates across the Bay of Islands and the canopy fills with air, you will rise smoothly to 400 feet above the water. From this height, the full majesty of the Bay of Islands reveals itself, all 144 islands scattered across turquoise water like green jewels on blue silk. You might spot dolphins playing in the wake of passing boats, or see stingrays cruising the sandy shallows near the shore. The bay is one of the most historically significant places in New Zealand, it was here at Waitangi, visible to your right, that the Treaty was signed in 1840. The flight is surprisingly peaceful at altitude, just you and one of the most beautiful coastal landscapes on Earth.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Flying Kiwi Parasail",
+        "Bay of Islands Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Bay of Islands Parasailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Parasail 400 feet above the 144 islands of the Bay of Islands. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-poor-knights-dive",
+      "name": "Poor Knights Islands Diving",
+      "region": "northland",
+      "lat": -35.472,
+      "lng": 174.74,
+      "category": "adventure",
+      "tags": [
+        "scuba-diving",
+        "snorkelling",
+        "marine-reserve",
+        "commercial",
+        "world-class"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 7,
+      "short": "Dive one of the world's top 10 dive sites at the Poor Knights Islands marine reserve.",
+      "commentary": "The Poor Knights Islands, rated by Jacques Cousteau as one of the world's top 10 dive sites, sit 23 km off the Northland coast. The marine reserve features sea caves, arches, and the world's largest sea cave, Rikoriko. Subtropical currents bring exceptional marine diversity and visibility up to 30 metres.",
+      "audio_story": "You are heading out to the Poor Knights Islands, a place that Jacques Cousteau himself ranked among the top 10 dive sites in the world. These ancient volcanic islands sit 23 kilometres off the coast near Tutukaka, and their underwater landscape is nothing short of extraordinary. The islands drop away into vertical walls that plummet into the depths, covered in sponge gardens, colourful anemones, and forests of black coral. Subtropical currents from the Coral Sea bring warm water and an astonishing diversity of marine life, from nudibranchs smaller than your fingernail to bronze whaler sharks and manta rays. You will dive through arches, swim-throughs, and Rikoriko Cave, the world's largest sea cave, which is so vast that a passenger ship once motored inside. Visibility regularly exceeds 30 metres, making every dive feel like floating in liquid air.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Dive Tutukaka",
+        "DOC",
+        "PADI"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Poor Knights Islands Diving adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Dive one of the world's top 10 dive sites at the Poor Knights Islands marine reserve. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-ninety-mile-sandboard",
+      "name": "Te Paki Sand Dunes Sandboarding",
+      "region": "northland",
+      "lat": -34.49,
+      "lng": 172.78,
+      "category": "adventure",
+      "tags": [
+        "sandboarding",
+        "free",
+        "dunes",
+        "family-friendly",
+        "iconic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Sandboard down massive dunes at the tip of New Zealand near Cape Reinga.",
+      "commentary": "The Te Paki sand dunes near Cape Reinga are some of the largest in the Southern Hemisphere, rising up to 150 metres. Sandboarding or body-boarding down the steep faces is a classic Northland adventure. Boards can be hired from operators at the stream crossing or brought from Kaitaia.",
+      "audio_story": "You have arrived at the Te Paki stream, the gateway to some of the most spectacular sand dunes in the Southern Hemisphere. These massive dunes rise up to 150 metres and stretch for several kilometres near the very tip of New Zealand. Wade across the shallow stream and climb the dunes, and the scale of them becomes almost surreal, pure golden sand sculpted into vast, wind-shaped ridges with barely a footprint in sight. Sandboarding down the steep faces is an absolute rush, you can reach surprising speeds, and the landing is always soft. You do not need any experience, just wax the bottom of your board for speed, point it downhill, and let gravity do the rest. The walk back up is the hard part, but the ride down makes every step worthwhile. These dunes have been here for thousands of years, constantly shifting and reshaping with the wind.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "DOC",
+        "Far North District Council",
+        "Ahipara Adventure Centre"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Te Paki Sand Dunes Sandboarding adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sandboard down massive dunes at the tip of New Zealand near Cape Reinga. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-waitangi-mtb",
+      "name": "Waitangi Mountain Bike Park",
+      "region": "northland",
+      "lat": -35.265,
+      "lng": 174.078,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trail-park",
+        "free",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2.5,
+      "short": "Ride flowy singletrack through native bush in the Waitangi Mountain Bike Park.",
+      "commentary": "The Waitangi Mountain Bike Park offers over 30 kilometres of trails through native bush and pine forest behind the Treaty Grounds. Trails range from beginner flow to expert-grade downhill, with features including berms, jumps, and technical root sections. Free to ride.",
+      "audio_story": "You have arrived at the Waitangi Mountain Bike Park, a trail network that has transformed the hills behind one of New Zealand's most historically significant sites into a riding destination. Over 30 kilometres of trails wind through a mix of native bush and pine forest, with options for every ability. Beginners will love the smooth flow trails with gentle berms and rollers, while advanced riders can tackle steep, rooty descents and technical rock gardens. The park has been built and maintained by a dedicated local club, and the quality of the trail building is superb, with well-shaped berms, tabletop jumps, and creative features throughout. Best of all, it is completely free to ride. The Bay of Islands is visible from several high points on the trail network. After your ride, the Treaty Grounds are just down the hill if you want to combine adventure with a dose of New Zealand history.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Waitangi MTB Park",
+        "Trail Forks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Waitangi Mountain Bike Park adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride flowy singletrack through native bush in the Waitangi Mountain Bike Park. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-bay-of-islands-kayak",
+      "name": "Bay of Islands Sea Kayaking",
+      "region": "northland",
+      "lat": -35.246,
+      "lng": 174.121,
+      "category": "adventure",
+      "tags": [
+        "sea-kayak",
+        "island-hopping",
+        "dolphins",
+        "commercial"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 5,
+      "short": "Kayak between subtropical islands and encounter dolphins in the Bay of Islands.",
+      "commentary": "Sea kayaking in the Bay of Islands offers island hopping across sheltered subtropical waters. Multi-island tours visit Roberton Island (Motuarohia), Waewaetorea, and secluded beaches only accessible from the water. Dolphin encounters are common, with a resident pod of bottlenose dolphins.",
+      "audio_story": "You have arrived at the launching point for a sea kayaking adventure through one of the most beautiful coastal environments in New Zealand. The Bay of Islands contains 144 islands spread across a vast harbour system, and a kayak is the perfect way to explore them at your own pace. Your route will take you across sheltered channels to islands with deserted white sand beaches, through narrow passages between rocky outcrops, and into secluded coves that no tour boat can reach. Keep your eyes on the water, this bay is home to a resident pod of bottlenose dolphins, and they are famously curious about kayakers. You might also spot penguins, stingrays, and eagle rays in the clear shallows. Roberton Island, with its twin lagoons visible from the hilltop, is a highlight that Captain Cook himself admired when he first visited in 1769.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Coastal Kayakers",
+        "Bay of Islands Kayaking",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Bay of Islands Sea Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak between subtropical islands and encounter dolphins in the Bay of Islands. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-tane-mahuta-walk",
+      "name": "Tane Mahuta Giant Kauri Walk",
+      "region": "northland",
+      "lat": -35.5995,
+      "lng": 173.506,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "native-bush",
+        "kauri",
+        "free",
+        "family-friendly",
+        "iconic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Stand before Tane Mahuta, the largest living kauri tree and lord of the forest.",
+      "commentary": "Tane Mahuta in the Waipoua Forest is the largest living kauri tree, standing 51.2 metres tall with a trunk girth of 13.77 metres. The short boardwalk from the road takes only 5 minutes. The tree is estimated to be between 1,250 and 2,500 years old. Shoe-cleaning stations help prevent kauri dieback disease.",
+      "audio_story": "You have arrived at the boardwalk entrance to Tane Mahuta, the Lord of the Forest. In just five minutes of gentle walking, you will stand before the largest living kauri tree on Earth, and nothing can prepare you for the scale of it. Tane Mahuta rises 51.2 metres into the canopy, its trunk measuring 13.77 metres in girth, a column of living wood that began growing somewhere between 1,250 and 2,500 years ago. This tree was already ancient when the first Polynesian voyagers arrived in New Zealand. In Maori mythology, Tane Mahuta is the god of the forest who separated his parents, Ranginui the sky father and Papatuanuku the earth mother, to bring light into the world. Before you step onto the boardwalk, please use the shoe-cleaning station to help prevent kauri dieback disease, a pathogen that threatens these magnificent trees. Treat this visit with the reverence it deserves.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Te Roroa",
+        "Waipoua Forest Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Tane Mahuta Giant Kauri Walk adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Stand before Tane Mahuta, the largest living kauri tree and lord of the forest. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-ahipara-quad-bike",
+      "name": "Ahipara Quad Bike / ATV Tours",
+      "region": "northland",
+      "lat": -35.171,
+      "lng": 173.14,
+      "category": "adventure",
+      "tags": [
+        "quad-biking",
+        "atv",
+        "beach",
+        "dunes",
+        "commercial"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "Blast along Ninety Mile Beach and through the dunes on a powerful ATV.",
+      "commentary": "ATV tours from Ahipara take riders along the southern end of Ninety Mile Beach and into the spectacular Tauroa Point dune system. Tours combine beach riding with dune exploration, offering a high-energy way to experience this remote coastline. No experience necessary.",
+      "audio_story": "You have arrived in Ahipara, the southern gateway to Ninety Mile Beach, and an ATV is about to take you on an unforgettable ride along one of the longest beaches in New Zealand. Despite its name, the beach is actually 88 kilometres long, but that is still an extraordinary stretch of uninterrupted sand. Your quad bike tour begins on the hard-packed sand near the waterline, where you can open the throttle and feel the salt spray on your face. Then you will head into the Tauroa Point dune system, a landscape of towering sand hills, hidden valleys, and views that stretch to the Tasman Sea. The dunes are constantly changing shape, carved by the prevailing westerly winds. No experience is needed, the guides will show you everything, and the bikes are powerful but manageable. Just be prepared for sand in places you did not know sand could reach.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Ahipara Adventure Centre",
+        "NZ Quadbike Adventures"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Ahipara Quad Bike / ATV Tours adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Blast along Ninety Mile Beach and through the dunes on a powerful ATV. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-waipu-cove-rock-climbing",
+      "name": "Whangarei Heads Rock Climbing",
+      "region": "northland",
+      "lat": -35.83,
+      "lng": 174.52,
+      "category": "adventure",
+      "tags": [
+        "rock-climbing",
+        "coastal",
+        "free",
+        "outdoor"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Climb volcanic rock with ocean views at the crags near Whangarei Heads.",
+      "commentary": "The Whangarei Heads area offers sport climbing on volcanic rock with stunning coastal views. Routes range from beginner to advanced across several crags. The Parahaki and Whangarei Falls areas also have climbing options. The region's climbing is documented by the NZAC.",
+      "audio_story": "You have arrived at the Whangarei Heads climbing area, where volcanic rock faces meet the Pacific Ocean in a setting that makes every route feel like an expedition. The crags here offer sport climbing on solid basalt and andesite, with routes ranging from gentle slabs for beginners to overhanging test-pieces for seasoned climbers. What sets this climbing apart is the view, from the higher routes you can see across Whangarei Harbour, out to the Poor Knights Islands, and along a coastline of volcanic headlands and sandy bays. The rock is generally well-featured with positive holds, though some routes require careful footwork on small edges. The climbing community in Northland is small but passionate, and the local NZAC section has documented the routes thoroughly. Bring your own gear, there are no guide services here, but the access is straightforward and the rock speaks for itself. The afternoon sea breeze keeps the temperature comfortable even in summer.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZAC Northland",
+        "ClimbNZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Whangarei Heads Rock Climbing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Climb volcanic rock with ocean views at the crags near Whangarei Heads. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "northland-mangawhai-heads-cliff-walk",
+      "name": "Mangawhai Cliff Walk",
+      "region": "northland",
+      "lat": -36.078,
+      "lng": 174.576,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "coastal",
+        "free",
+        "family-friendly",
+        "scenic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "Walk spectacular coastal cliffs with views to the Hen and Chicken Islands.",
+      "commentary": "The Mangawhai Cliff Walk is a 5 km loop track along dramatic coastal cliffs north of Auckland. The track passes through pohutukawa forest and scrubland with views to the Hen and Chicken Islands. A circuit includes the beach return at low tide.",
+      "audio_story": "You have arrived at the start of the Mangawhai Cliff Walk, one of the finest coastal walks in Northland and a trail that delivers dramatic scenery for relatively little effort. The 5-kilometre track follows the cliff edge above a wild, wind-sculpted coastline, with views stretching out to the Hen and Chicken Islands on the horizon. The path winds through groves of pohutukawa trees, New Zealand's iconic coastal native, which explode into crimson bloom every December. Along the way, you will pass above rocky coves where the ocean surges into sea caves, and across grassy headlands where the wind is fresh and the views are long. At the far end, the track descends to the beach, and at low tide you can walk back along the sand to complete a satisfying loop. Keep an eye on the ocean, this coast catches big swells from the northeast, and the waves breaking against the cliffs are mesmerising. The walk is free and well maintained, suitable for anyone with reasonable fitness.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Mangawhai Tracks Charitable Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Mangawhai Cliff Walk adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Walk spectacular coastal cliffs with views to the Hen and Chicken Islands. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  CarAppTheme — referenced from AndroidManifest as the car-side theme.
+  Android Auto uses this to colour system chrome (headers, loading
+  indicators). Phone theming is untouched.
+
+  Colours mirror the Qiwiosity primary / accent from the mobile app so
+  the head-unit experience is visually continuous with the phone.
+-->
+<resources>
+  <style name="CarAppTheme" parent="android:Theme.Material.NoActionBar">
+    <item name="android:colorPrimary">#0B4F3C</item>
+    <item name="android:colorAccent">#C46B2E</item>
+    <item name="android:windowBackground">#FFF8EF</item>
+  </style>
+</resources>

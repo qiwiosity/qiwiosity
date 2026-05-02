@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "southland",
+    "name": "Southland & Fiordland",
+    "island": "South",
+    "centre": {
+      "lat": -45.8,
+      "lng": 167.8
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "southland-kelvin-hotel",
+      "name": "Kelvin Hotel Invercargill",
+      "region": "southland",
+      "lat": -46.412,
+      "lng": 168.354,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.2,
+      "short": "Central Invercargill hotel on the corner of Kelvin and Esk."
+    },
+    {
+      "id": "southland-distinction-invercargill",
+      "name": "Distinction Hotel Invercargill",
+      "region": "southland",
+      "lat": -46.413,
+      "lng": 168.3568,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.3,
+      "short": "Former Ascot Park hotel with conference facilities in central Invercargill."
+    },
+    {
+      "id": "southland-ascot-park-hotel",
+      "name": "Ascot Park Hotel",
+      "region": "southland",
+      "lat": -46.4243,
+      "lng": 168.372,
+      "type": "hotel",
+      "price_nzd_per_night": 245,
+      "rating": 4.3,
+      "short": "Largest Southland hotel with indoor pool on Tay Street."
+    },
+    {
+      "id": "southland-langlands-hotel",
+      "name": "Langlands Hotel Invercargill",
+      "region": "southland",
+      "lat": -46.414,
+      "lng": 168.3565,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.4,
+      "short": "Boutique Dee Street hotel in restored heritage building."
+    },
+    {
+      "id": "southland-church-hill-stewart",
+      "name": "Church Hill Boutique Lodge Stewart Island",
+      "region": "southland",
+      "lat": -46.896,
+      "lng": 168.121,
+      "type": "hotel",
+      "price_nzd_per_night": 320,
+      "rating": 4.6,
+      "short": "Oban village lodge with Paterson Inlet views."
+    },
+    {
+      "id": "southland-te-anau-kingsgate",
+      "name": "Kingsgate Hotel Te Anau",
+      "region": "southland",
+      "lat": -45.418,
+      "lng": 167.72,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Lakeside Te Anau hotel at the Milford Sound gateway."
+    },
+    {
+      "id": "southland-victoria-railway-hotel",
+      "name": "Victoria Railway Hotel Invercargill",
+      "region": "southland",
+      "lat": -46.412,
+      "lng": 168.356,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Historic 1896 inn-style hotel-motel in central Invercargill."
+    },
+    {
+      "id": "southland-balmoral-lodge-motel",
+      "name": "Balmoral Lodge Motel Invercargill",
+      "region": "southland",
+      "lat": -46.41,
+      "lng": 168.366,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Spacious Invercargill motel with family units."
+    },
+    {
+      "id": "southland-te-anau-motel",
+      "name": "Explorer Motor Inn Te Anau",
+      "region": "southland",
+      "lat": -45.417,
+      "lng": 167.72,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Te Anau motel a walk from lakefront and Milford tour pickups."
+    },
+    {
+      "id": "southland-te-anau-lakeview-motel",
+      "name": "Te Anau Lakeview Kiwi Holiday Park Motel",
+      "region": "southland",
+      "lat": -45.413,
+      "lng": 167.716,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Lakeside Te Anau motel units at Kiwi Holiday Park."
+    },
+    {
+      "id": "southland-gore-charlton-hotel",
+      "name": "Charlton Motel Gore",
+      "region": "southland",
+      "lat": -46.1,
+      "lng": 168.943,
+      "type": "motel",
+      "price_nzd_per_night": 155,
+      "rating": 4,
+      "short": "Classic rural-Southland motel in Gore, country music capital."
+    },
+    {
+      "id": "southland-riverton-beach-motel",
+      "name": "Riverton Rock Waterfront Motel",
+      "region": "southland",
+      "lat": -46.347,
+      "lng": 168.02,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.2,
+      "short": "Historic Jacobs River mouth motel in Riverton."
+    },
+    {
+      "id": "southland-bluff-motel",
+      "name": "Foveaux Hotel Bluff",
+      "region": "southland",
+      "lat": -46.605,
+      "lng": 168.334,
+      "type": "motel",
+      "price_nzd_per_night": 150,
+      "rating": 3.9,
+      "short": "Small-town Bluff motel at the start of SH1."
+    },
+    {
+      "id": "southland-te-anau-top10",
+      "name": "Te Anau TOP 10 Holiday Park",
+      "region": "southland",
+      "lat": -45.414,
+      "lng": 167.717,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.3,
+      "short": "Lake-edge Te Anau park close to Fiordland day-tour boats."
+    },
+    {
+      "id": "southland-invercargill-top10",
+      "name": "Invercargill TOP 10 Holiday Park",
+      "region": "southland",
+      "lat": -46.417,
+      "lng": 168.355,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Central Invercargill park with cabins and powered sites."
+    },
+    {
+      "id": "southland-manapouri-holiday-park",
+      "name": "Manapouri Motels & Holiday Park",
+      "region": "southland",
+      "lat": -45.567,
+      "lng": 167.609,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "Lake Manapouri park at Doubtful Sound's boat launch."
+    },
+    {
+      "id": "southland-riverton-holiday-park",
+      "name": "Riverton Caravan Park",
+      "region": "southland",
+      "lat": -46.351,
+      "lng": 168.025,
+      "type": "holiday-park",
+      "price_nzd_per_night": 80,
+      "rating": 4,
+      "short": "Small coastal park beside Riverton's Taramea Bay."
+    },
+    {
+      "id": "southland-fiordland-lodge",
+      "name": "Fiordland Lodge Te Anau",
+      "region": "southland",
+      "lat": -45.403,
+      "lng": 167.704,
+      "type": "lodge",
+      "price_nzd_per_night": 1250,
+      "rating": 4.8,
+      "short": "Purpose-built log-and-stone lodge overlooking Lake Te Anau."
+    },
+    {
+      "id": "southland-stewart-island-lodge",
+      "name": "Stewart Island Lodge Oban",
+      "region": "southland",
+      "lat": -46.896,
+      "lng": 168.124,
+      "type": "lodge",
+      "price_nzd_per_night": 720,
+      "rating": 4.6,
+      "short": "Paterson Inlet hilltop lodge with seven suites and aurora views."
+    },
+    {
+      "id": "southland-dock-bay-lodge",
+      "name": "Dock Bay Lodge Te Anau",
+      "region": "southland",
+      "lat": -45.417,
+      "lng": 167.694,
+      "type": "lodge",
+      "price_nzd_per_night": 850,
+      "rating": 4.7,
+      "short": "Boutique lakeside lodge on Te Anau's Dock Bay."
+    }
+  ]
+}

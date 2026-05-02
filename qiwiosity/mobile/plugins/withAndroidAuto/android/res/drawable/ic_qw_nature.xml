@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ic_qw_nature — Nature category.
+  Twin peaks with a sun — clean geometric, no ferns (per brand brief).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Sun -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M17,6m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+    <!-- Far peak -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M11,18 L15,10 L19,18 Z" />
+    <!-- Near peak -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M3,19 L9,7 L15,19 Z" />
+    <!-- Ground line -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M3,19h18v1H3z" />
+</vector>

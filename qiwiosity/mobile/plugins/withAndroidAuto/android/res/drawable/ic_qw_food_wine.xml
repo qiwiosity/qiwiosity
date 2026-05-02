@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ic_qw_food_wine — Food & Wine category.
+  A wine glass silhouette with a teardrop highlight, nodding to Hawke's
+  Bay wine country.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Bowl + stem + base -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M7,3h10l-1,5c-0.3,1.8 -1.8,3.2 -3.5,3.5v7h3v1.5h-7V19h3v-7c-1.7,-0.3 -3.2,-1.7 -3.5,-3.5z" />
+    <!-- Wine inside -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M8.3,5h7.4l-0.5,2.5c-0.25,1.3 -1.4,2.2 -2.7,2.4h-1c-1.3,-0.2 -2.45,-1.1 -2.7,-2.4z" />
+</vector>

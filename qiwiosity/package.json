@@ -1,0 +1,29 @@
+{
+  "name": "qiwiosity",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Qiwiosity monorepo — NZ travel app (mobile, backend, content, tools).",
+  "workspaces": [
+    "mobile",
+    "backend",
+    "tools"
+  ],
+  "scripts": {
+    "sync:mobile": "node database/sync-to-mobile.js",
+    "db:merge": "node database/merge-all-sources.js",
+    "db:import": "node database/import-to-supabase.js",
+    "db:import:clear": "node database/import-to-supabase.js --clear",
+    "deploy": "bash deploy-database.sh",
+    "deploy:clear": "bash deploy-database.sh --clear",
+    "deploy:sync": "bash deploy-database.sh --sync-only",
+    "mobile": "npm run sync:mobile && npm --workspace mobile run start",
+    "mobile:ios": "npm run sync:mobile && npm --workspace mobile run ios",
+    "mobile:android": "npm run sync:mobile && npm --workspace mobile run android",
+    "mobile:web": "npm run sync:mobile && npm --workspace mobile run web",
+    "lint:content": "node tools/lint-content.js"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  }
+}

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Qiwiosity — POI Verification Admin</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<style>
+  :root {
+    --primary: #15888A;
+    --primary-dark: #0E5F5F;
+    --accent: #E07B3C;
+    --bg: #F5F3EF;
+    --surface: #ffffff;
+    --text: #1A1A1A;
+    --muted: #6B6B6B;
+    --border: #E5E1D8;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --green: #16a34a;
+    --red: #dc2626;
+    --yellow: #ca8a04;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+
+  /* Layout */
+  .app { display: grid; grid-template-columns: 380px 1fr; grid-template-rows: 60px 1fr; height: 100vh; }
+  @media (max-width: 900px) { .app { grid-template-columns: 1fr; grid-template-rows: 60px auto 1fr; } }
+
+  /* Header */
+  header {
+    grid-column: 1 / -1;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    gap: 16px;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+  }
+  header h1 { font-size: 18px; font-weight: 700; }
+  header h1 span { font-weight: 400; opacity: 0.8; }
+  .stats { margin-left: auto; display: flex; gap: 16px; font-size: 13px; }
+  .stat { display: flex; align-items: center; gap: 5px; }
+  .stat .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-unverified { background: var(--yellow); }
+  .dot-verified { background: var(--green); }
+  .dot-flagged { background: var(--red); }
+
+  /* Sidebar */
+  .sidebar {
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filters {
+    padding: 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .filters input, .filters select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    background: var(--bg);
+  }
+  .filter-row { display: flex; gap: 8px; }
+  .filter-row select { flex: 1; }
+
+  .poi-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+  }
+  .poi-item {
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.15s;
+    border: 2px solid transparent;
+  }
+  .poi-item:hover { background: var(--bg); }
+  .poi-item.active { border-color: var(--primary); background: #e8f5f5; }
+  .poi-item .status-badge {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .poi-item .poi-info { flex: 1; min-width: 0; }
+  .poi-item .poi-name { font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .poi-item .poi-meta { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .poi-item .poi-cat { font-size: 11px; padding: 2px 8px; border-radius: 20px; color: white; flex-shrink: 0; }
+
+  .list-count { padding: 8px 16px; font-size: 12px; color: var(--muted); border-bottom: 1px solid var(--border); }
+
+  /* Detail panel */
+  .detail {
+    overflow-y: auto;
+    padding: 24px;
+  }
+  .detail-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 16px;
+  }
+
+  .detail-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .detail-header h2 { font-size: 22px; font-weight: 700; }
+  .detail-header .region-tag { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  .verification-bar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 16px 20px;
+    background: var(--surface);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+  }
+  .verification-bar .v-btn {
+    padding: 8px 20px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: white;
+    transition: all 0.15s;
+  }
+  .v-btn:hover { transform: translateY(-1px); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
+  .v-btn.verify { border-color: var(--green); color: var(--green); }
+  .v-btn.verify:hover, .v-btn.verify.active { background: var(--green); color: white; }
+  .v-btn.flag { border-color: var(--red); color: var(--red); }
+  .v-btn.flag:hover, .v-btn.flag.active { background: var(--red); color: white; }
+  .v-btn.unverify { border-color: var(--yellow); color: var(--yellow); }
+  .v-btn.unverify:hover, .v-btn.unverify.active { background: var(--yellow); color: white; }
+
+  .notes-area {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: inherit;
+    resize: none;
+    height: 36px;
+  }
+  .save-notes {
+    padding: 8px 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .save-notes:hover { background: var(--primary-dark); }
+
+  /* Content sections */
+  .section { margin-bottom: 24px; }
+  .section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .images-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .images-grid img:hover { transform: scale(1.03); }
+  .no-images { color: var(--muted); font-style: italic; font-size: 14px; }
+
+  .description-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .description-box .short { font-weight: 600; margin-bottom: 8px; }
+  .description-box .commentary { color: #444; }
+
+  #detail-map {
+    height: 280px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .coords { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .meta-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+  }
+  .meta-card .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .meta-card .value { font-size: 15px; font-weight: 600; margin-top: 4px; }
+
+  /* Navigation between POIs */
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .nav-btn {
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .nav-btn:hover { background: var(--bg); }
+  .nav-btn:disabled { opacity: 0.4; cursor: default; }
+
+  /* Keyboard shortcut hints */
+  .shortcuts {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 12px;
+    color: var(--muted);
+    box-shadow: var(--shadow);
+    z-index: 100;
+  }
+  .shortcuts kbd {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-family: monospace;
+    font-size: 12px;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    cursor: pointer;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; }
+
+  /* Loading spinner */
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-right: 10px;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Toast notification */
+  .toast {
+    position: fixed;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--text);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 3000;
+    pointer-events: none;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>Qiwiosity <span>— POI Verification</span></h1>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="sidebar">
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search POIs..." />
+      <div class="filter-row">
+        <select id="filter-status">
+          <option value="">All statuses</option>
+          <option value="unverified" selected>Unverified</option>
+          <option value="verified">Verified</option>
+          <option value="flagged">Flagged</option>
+        </select>
+        <select id="filter-region">
+          <option value="">All regions</option>
+        </select>
+      </div>
+      <div class="filter-row">
+        <select id="filter-category">
+          <option value="">All categories</option>
+        </select>
+        <select id="sort-by">
+          <option value="name">Sort: Name</option>
+          <option value="region">Sort: Region</option>
+          <option value="updated">Sort: Last Updated</option>
+        </select>
+      </div>
+    </div>
+    <div class="list-count" id="list-count"></div>
+    <div class="poi-list" id="poi-list">
+      <div class="loading"><div class="spinner"></div>Loading POIs...</div>
+    </div>
+  </div>
+
+  <div class="detail" id="detail">
+    <div class="detail-empty">Select a POI from the list to begin verification</div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="this.classList.remove('open')">
+  <img id="lightbox-img" />
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="shortcuts">
+  <kbd>V</kbd> Verify &nbsp; <kbd>F</kbd> Flag &nbsp; <kbd>U</kbd> Unverify &nbsp; <kbd>↑</kbd><kbd>↓</kbd> Navigate &nbsp; <kbd>N</kbd> Next unverified
+</div>
+
+<script>
+// ── Helpers ─────────────────────────────────────────────
+function esc(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// ── Config ──────────────────────────────────────────────
+const SUPABASE_URL = 'https://hauksnqehzaxuoeaezji.supabase.co';
+// Using service_role key for write access (admin-only tool, not public-facing)
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhdWtzbnFlaHpheHVvZWFlemppIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NjY2ODY2MSwiZXhwIjoyMDkyMjQ0NjYxfQ.mgGWUo6u2VbYLUGoOO5FRxvvVXaX75q8hW3BOAzdbVU';
+
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// ── State ───────────────────────────────────────────────
+let allPois = [];
+let filteredPois = [];
+let regions = [];
+let categories = [];
+let selectedPoiId = null;
+let poiImages = {};  // poi_id → [urls]
+let detailMap = null;
+let detailMarker = null;
+
+// ── Init ────────────────────────────────────────────────
+async function init() {
+  await Promise.all([loadRegions(), loadCategories()]);
+  await loadPois();
+  populateFilters();
+  applyFilters();
+  updateStats();
+}
+
+async function loadRegions() {
+  const { data } = await sb.from('regions').select('id, name, island').order('island').order('name');
+  regions = data || [];
+}
+
+async function loadCategories() {
+  const { data } = await sb.from('categories').select('id, label, color');
+  categories = data || [];
+}
+
+async function loadPois() {
+  const { data, error } = await sb
+    .from('pois')
+    .select('id, name, region_id, category_id, lat, lng, short, commentary, tags, duration_hours, review_rating, review_summary, content_status, verification_status, verified_at, verification_notes, trigger_radius_m, cultural_review_required, updated_at')
+    .order('name');
+
+  if (error) {
+    console.error('Error loading POIs:', error);
+    document.getElementById('poi-list').innerHTML = '<div class="loading">Error loading data. Check console.</div>';
+    return;
+  }
+  allPois = data || [];
+
+  // Load all images in one go
+  const { data: imgs } = await sb.from('poi_images').select('poi_id, image_url, display_order').order('display_order');
+  poiImages = {};
+  (imgs || []).forEach(img => {
+    if (!poiImages[img.poi_id]) poiImages[img.poi_id] = [];
+    poiImages[img.poi_id].push(img.image_url);
+  });
+}
+
+// ── Filters ─────────────────────────────────────────────
+function populateFilters() {
+  const regionSelect = document.getElementById('filter-region');
+  regions.forEach(r => {
+    const opt = document.createElement('option');
+    opt.value = r.id;
+    opt.textContent = `${r.name} (${r.island})`;
+    regionSelect.appendChild(opt);
+  });
+
+  const catSelect = document.getElementById('filter-category');
+  categories.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c.id;
+    opt.textContent = c.label;
+    catSelect.appendChild(opt);
+  });
+}
+
+function applyFilters() {
+  const search = document.getElementById('search').value.toLowerCase();
+  const status = document.getElementById('filter-status').value;
+  const region = document.getElementById('filter-region').value;
+  const category = document.getElementById('filter-category').value;
+  const sortBy = document.getElementById('sort-by').value;
+
+  filteredPois = allPois.filter(p => {
+    if (search && !p.name.toLowerCase().includes(search)) return false;
+    if (status && p.verification_status !== status) return false;
+    if (region && p.region_id !== region) return false;
+    if (category && p.category_id !== category) return false;
+    return true;
+  });
+
+  // Sort
+  filteredPois.sort((a, b) => {
+    if (sortBy === 'name') return a.name.localeCompare(b.name);
+    if (sortBy === 'region') return (a.region_id + a.name).localeCompare(b.region_id + b.name);
+    if (sortBy === 'updated') return new Date(b.updated_at) - new Date(a.updated_at);
+    return 0;
+  });
+
+  renderList();
+}
+
+// ── Render List ─────────────────────────────────────────
+function renderList() {
+  const container = document.getElementById('poi-list');
+  document.getElementById('list-count').textContent = `${filteredPois.length} POIs`;
+
+  if (filteredPois.length === 0) {
+    container.innerHTML = '<div class="loading">No POIs match your filters</div>';
+    return;
+  }
+
+  container.innerHTML = filteredPois.map(p => {
+    const cat = categories.find(c => c.id === p.category_id);
+    const region = regions.find(r => r.id === p.region_id);
+    const statusColor = p.verification_status === 'verified' ? 'var(--green)' :
+                         p.verification_status === 'flagged' ? 'var(--red)' : 'var(--yellow)';
+    const imgCount = (poiImages[p.id] || []).length;
+    return `
+      <div class="poi-item ${p.id === selectedPoiId ? 'active' : ''}" data-id="${p.id}" onclick="selectPoi('${p.id}')">
+        <div class="status-badge" style="background:${statusColor}"></div>
+        <div class="poi-info">
+          <div class="poi-name">${esc(p.name)}</div>
+          <div class="poi-meta">${region ? region.name : p.region_id} · ${imgCount} img${imgCount !== 1 ? 's' : ''}</div>
+        </div>
+        ${cat ? `<span class="poi-cat" style="background:${cat.color}">${cat.label}</span>` : ''}
+      </div>`;
+  }).join('');
+}
+
+// ── Stats ───────────────────────────────────────────────
+function updateStats() {
+  const counts = { unverified: 0, verified: 0, flagged: 0 };
+  allPois.forEach(p => counts[p.verification_status] = (counts[p.verification_status] || 0) + 1);
+  document.getElementById('stats').innerHTML = `
+    <div class="stat"><div class="dot dot-unverified"></div>${counts.unverified} unverified</div>
+    <div class="stat"><div class="dot dot-verified"></div>${counts.verified} verified</div>
+    <div class="stat"><div class="dot dot-flagged"></div>${counts.flagged} flagged</div>
+  `;
+}
+
+// ── Select & Detail ─────────────────────────────────────
+function selectPoi(id) {
+  selectedPoiId = id;
+  const poi = allPois.find(p => p.id === id);
+  if (!poi) return;
+
+  // Update active state in list
+  document.querySelectorAll('.poi-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === id);
+  });
+  // Scroll active into view
+  const activeEl = document.querySelector('.poi-item.active');
+  if (activeEl) activeEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+
+  renderDetail(poi);
+}
+
+function renderDetail(poi) {
+  const region = regions.find(r => r.id === poi.region_id);
+  const cat = categories.find(c => c.id === poi.category_id);
+  const images = poiImages[poi.id] || [];
+  const idx = filteredPois.findIndex(p => p.id === poi.id);
+
+  const detail = document.getElementById('detail');
+  detail.innerHTML = `
+    <div class="nav-buttons">
+      <button class="nav-btn" onclick="navPoi(-1)" ${idx <= 0 ? 'disabled' : ''}>← Previous</button>
+      <button class="nav-btn" onclick="navPoi(1)" ${idx >= filteredPois.length - 1 ? 'disabled' : ''}>Next →</button>
+      <button class="nav-btn" onclick="navNextUnverified()" title="Jump to next unverified POI">Next Unverified ⏭</button>
+      <span style="margin-left:auto;font-size:13px;color:var(--muted)">${idx + 1} of ${filteredPois.length}</span>
+    </div>
+
+    <div class="detail-header">
+      <div>
+        <h2>${esc(poi.name)}</h2>
+        <div class="region-tag">${region ? esc(region.name) + ' · ' + region.island + ' Island' : esc(poi.region_id)}${cat ? ' · ' + esc(cat.label) : ''}</div>
+      </div>
+    </div>
+
+    <div class="verification-bar">
+      <button class="v-btn verify ${poi.verification_status === 'verified' ? 'active' : ''}" onclick="setStatus('verified')">✓ Verify</button>
+      <button class="v-btn flag ${poi.verification_status === 'flagged' ? 'active' : ''}" onclick="setStatus('flagged')">⚑ Flag Issue</button>
+      <button class="v-btn unverify ${poi.verification_status === 'unverified' ? 'active' : ''}" onclick="setStatus('unverified')">○ Unverify</button>
+      <textarea class="notes-area" id="notes" placeholder="Notes (optional — describe any issues)...">${poi.verification_notes || ''}</textarea>
+      <button class="save-notes" onclick="saveNotes()">Save Notes</button>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Images (${images.length})</div>
+      ${images.length > 0
+        ? `<div class="images-grid">${images.map((url, i) => `<img src="${esc(url)}" loading="lazy" onerror="this.style.display='none'" data-img-idx="${i}" />`).join('')}</div>`
+        : '<div class="no-images">No images found for this POI</div>'}
+    </div>
+
+    <div class="section">
+      <div class="section-title">Description</div>
+      <div class="description-box">
+        ${poi.short ? `<div class="short">${esc(poi.short)}</div>` : ''}
+        ${poi.commentary ? `<div class="commentary">${esc(poi.commentary)}</div>` : '<em style="color:var(--muted)">No description yet</em>'}
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Location</div>
+      <div id="detail-map"></div>
+      <div class="coords">
+        ${poi.lat.toFixed(6)}, ${poi.lng.toFixed(6)}
+        · <a href="https://www.google.com/maps?q=${poi.lat},${poi.lng}" target="_blank" style="color:var(--primary)">Open in Google Maps ↗</a>
+        · <a href="https://www.google.com/maps/@${poi.lat},${poi.lng},3a,75y,0h,90t/data=!3m6!1e1!3m4!1s!2e0!7i16384!8i8192" target="_blank" style="color:var(--primary)">Street View ↗</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Metadata</div>
+      <div class="meta-grid">
+        <div class="meta-card"><div class="label">Category</div><div class="value">${cat ? cat.label : '—'}</div></div>
+        <div class="meta-card"><div class="label">Duration</div><div class="value">${poi.duration_hours}h</div></div>
+        <div class="meta-card"><div class="label">Rating</div><div class="value">${poi.review_rating ? poi.review_rating + ' ★' : '—'}</div></div>
+        <div class="meta-card"><div class="label">Content Status</div><div class="value">${poi.content_status}</div></div>
+        <div class="meta-card"><div class="label">Trigger Radius</div><div class="value">${poi.trigger_radius_m}m</div></div>
+        <div class="meta-card"><div class="label">Cultural Review</div><div class="value">${poi.cultural_review_required ? 'Required' : 'No'}</div></div>
+        <div class="meta-card"><div class="label">Tags</div><div class="value">${(poi.tags || []).join(', ') || '—'}</div></div>
+        <div class="meta-card"><div class="label">Verified At</div><div class="value">${poi.verified_at ? new Date(poi.verified_at).toLocaleDateString() : 'Never'}</div></div>
+      </div>
+    </div>
+
+    ${poi.review_summary ? `
+    <div class="section">
+      <div class="section-title">Review Summary</div>
+      <div class="description-box"><div class="commentary">${poi.review_summary}</div></div>
+    </div>` : ''}
+  `;
+
+  // Init map
+  setTimeout(() => {
+    if (detailMap) { detailMap.remove(); detailMap = null; }
+    detailMap = L.map('detail-map').setView([poi.lat, poi.lng], 15);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap'
+    }).addTo(detailMap);
+    detailMarker = L.marker([poi.lat, poi.lng]).addTo(detailMap);
+    L.circle([poi.lat, poi.lng], { radius: poi.trigger_radius_m, color: '#15888A', fillOpacity: 0.1 }).addTo(detailMap);
+  }, 50);
+}
+
+// ── Verification Actions ────────────────────────────────
+async function setStatus(status) {
+  if (!selectedPoiId) return;
+
+  const updates = {
+    verification_status: status,
+    verified_at: status === 'verified' ? new Date().toISOString() : (status === 'unverified' ? null : new Date().toISOString()),
+  };
+
+  const { error } = await sb.from('pois').update(updates).eq('id', selectedPoiId);
+  if (error) {
+    console.error('Update error:', error);
+    showToast('Error updating status — check console');
+    return;
+  }
+
+  // Update local state
+  const poi = allPois.find(p => p.id === selectedPoiId);
+  if (poi) {
+    poi.verification_status = status;
+    poi.verified_at = updates.verified_at;
+  }
+
+  updateStats();
+  renderList();
+  renderDetail(poi);
+  showToast(`${poi.name} → ${status}`);
+}
+
+async function saveNotes() {
+  if (!selectedPoiId) return;
+  const notes = document.getElementById('notes').value;
+
+  const { error } = await sb.from('pois').update({ verification_notes: notes }).eq('id', selectedPoiId);
+  if (error) {
+    showToast('Error saving notes');
+    return;
+  }
+
+  const poi = allPois.find(p => p.id === selectedPoiId);
+  if (poi) poi.verification_notes = notes;
+  showToast('Notes saved');
+}
+
+// ── Navigation ──────────────────────────────────────────
+function navPoi(direction) {
+  const idx = filteredPois.findIndex(p => p.id === selectedPoiId);
+  const next = idx + direction;
+  if (next >= 0 && next < filteredPois.length) {
+    selectPoi(filteredPois[next].id);
+  }
+}
+
+function navNextUnverified() {
+  const currentIdx = filteredPois.findIndex(p => p.id === selectedPoiId);
+  // Search forward from current position
+  for (let i = currentIdx + 1; i < filteredPois.length; i++) {
+    if (filteredPois[i].verification_status === 'unverified') {
+      selectPoi(filteredPois[i].id);
+      return;
+    }
+  }
+  // Wrap around
+  for (let i = 0; i < currentIdx; i++) {
+    if (filteredPois[i].verification_status === 'unverified') {
+      selectPoi(filteredPois[i].id);
+      return;
+    }
+  }
+  showToast('No more unverified POIs in this view!');
+}
+
+// ── Lightbox (via event delegation) ─────────────────────
+document.addEventListener('click', e => {
+  const img = e.target.closest('.images-grid img');
+  if (img) {
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+});
+
+// ── Toast ───────────────────────────────────────────────
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+// ── Keyboard Shortcuts ──────────────────────────────────
+document.addEventListener('keydown', e => {
+  // Don't trigger shortcuts when typing in inputs
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+
+  switch (e.key.toLowerCase()) {
+    case 'v': setStatus('verified'); break;
+    case 'f': setStatus('flagged'); break;
+    case 'u': setStatus('unverified'); break;
+    case 'n': navNextUnverified(); break;
+    case 'arrowdown':
+      e.preventDefault();
+      navPoi(1);
+      break;
+    case 'arrowup':
+      e.preventDefault();
+      navPoi(-1);
+      break;
+  }
+});
+
+// ── Filter Event Listeners ──────────────────────────────
+document.getElementById('search').addEventListener('input', applyFilters);
+document.getElementById('filter-status').addEventListener('change', applyFilters);
+document.getElementById('filter-region').addEventListener('change', applyFilters);
+document.getElementById('filter-category').addEventListener('change', applyFilters);
+document.getElementById('sort-by').addEventListener('change', applyFilters);
+
+// ── Go ──────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>

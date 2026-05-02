@@ -1,0 +1,287 @@
+[
+  {
+    "id": "auckland",
+    "name": "Auckland / Tāmaki Makaurau",
+    "island": "North",
+    "lat": -36.8485,
+    "lng": 174.7633,
+    "description": "The isthmus city — Tāmaki Makaurau — built on 53 volcanoes between two harbours.",
+    "bounds": {
+      "north": -36.5,
+      "south": -37.2,
+      "east": 175.1,
+      "west": 174.4
+    },
+    "poi_count": 62
+  },
+  {
+    "id": "bay-of-plenty",
+    "name": "Bay of Plenty / Te Moana-a-Toi",
+    "island": "North",
+    "lat": -37.6878,
+    "lng": 176.1651,
+    "description": "Sunniest city, longest beaches, and the only active marine volcano in the country — named 'Plenty' by Cook in 1769 for the abundance of food the local iwi offered his ship.",
+    "bounds": {
+      "north": -37.2,
+      "south": -38.3,
+      "east": 178,
+      "west": 175.8
+    },
+    "poi_count": 60
+  },
+  {
+    "id": "canterbury",
+    "name": "Canterbury / Waitaha",
+    "island": "South",
+    "lat": -43.532,
+    "lng": 172.6362,
+    "description": "The great plains of Waitaha — Kaikōura whales in the north, Christchurch at the centre, the alps and Aoraki to the west, Ōamaru's Victorian precinct to the south.",
+    "bounds": {
+      "north": -42.4,
+      "south": -44.6,
+      "east": 173.5,
+      "west": 169.5
+    },
+    "poi_count": 76
+  },
+  {
+    "id": "coromandel",
+    "name": "Coromandel Peninsula",
+    "island": "North",
+    "lat": -36.75,
+    "lng": 175.7,
+    "description": "A long peninsula of rugged bush ranges, white-sand east-coast beaches, and a 19th-century gold and kauri history — two hours from Auckland but another world.",
+    "bounds": {
+      "north": -36.45,
+      "south": -37.4,
+      "east": 176,
+      "west": 175.3
+    },
+    "poi_count": 48
+  },
+  {
+    "id": "hawkes-bay",
+    "name": "Hawke's Bay / Te Matau-a-Māui",
+    "island": "North",
+    "lat": -39.4928,
+    "lng": 176.912,
+    "description": "Wine country, Art Deco seafront, and the dramatic coastline of Te Matau-a-Māui — the fish hook of Māui.",
+    "bounds": {
+      "north": -39.2,
+      "south": -40.2,
+      "east": 177.3,
+      "west": 176.3
+    },
+    "poi_count": 52
+  },
+  {
+    "id": "marlborough",
+    "name": "Marlborough",
+    "island": "South",
+    "lat": -41.5136,
+    "lng": 173.9614,
+    "description": "The South Island's wine bowl and the Marlborough Sounds — the drowned river valleys that make up a fifth of New Zealand's coastline.",
+    "bounds": {
+      "north": -40.8,
+      "south": -42.2,
+      "east": 174.5,
+      "west": 172.9
+    },
+    "poi_count": 52
+  },
+  {
+    "id": "nelson-tasman",
+    "name": "Nelson / Tasman",
+    "island": "South",
+    "lat": -41.2706,
+    "lng": 173.284,
+    "description": "The sunniest region in the country, stretching from Abel Tasman golden beaches to Farewell Spit and the alpine Nelson Lakes.",
+    "bounds": {
+      "north": -40.4,
+      "south": -41.8,
+      "east": 173.6,
+      "west": 171.9
+    },
+    "poi_count": 47
+  },
+  {
+    "id": "northland",
+    "name": "Northland / Te Tai Tokerau",
+    "island": "North",
+    "lat": -35.5,
+    "lng": 174,
+    "description": "The long warm peninsula where Aotearoa begins — kauri forest, the Treaty ground, Cape Reinga's leaping place of spirits, and the Bay of Islands.",
+    "bounds": {
+      "north": -34.3,
+      "south": -36,
+      "east": 174.7,
+      "west": 172.6
+    },
+    "poi_count": 73
+  },
+  {
+    "id": "otago",
+    "name": "Otago",
+    "island": "South",
+    "lat": -45.4,
+    "lng": 170,
+    "description": "The dry, gold-bearing heart of the south — Central Otago's schist hills, the Clutha/Mata-Au river, the Dunedin coast, and a string of pioneer villages preserved by low rainfall.",
+    "bounds": {
+      "north": -44.3,
+      "south": -46.3,
+      "east": 171.3,
+      "west": 168.5
+    },
+    "poi_count": 70
+  },
+  {
+    "id": "queenstown",
+    "name": "Queenstown / Tāhuna",
+    "island": "South",
+    "lat": -45.0312,
+    "lng": 168.6626,
+    "description": "Tāhuna — the shallow bay — on Lake Whakatipu, ringed by the Remarkables.",
+    "bounds": {
+      "north": -44.7,
+      "south": -45.4,
+      "east": 169,
+      "west": 168.2
+    },
+    "poi_count": 53
+  },
+  {
+    "id": "rotorua",
+    "name": "Rotorua",
+    "island": "North",
+    "lat": -38.1368,
+    "lng": 176.2497,
+    "description": "Rohe of Te Arawa and the heart of North Island geothermal country — sulphur, mud pots, geysers, and the 1886 Tarawera eruption that rewrote the landscape in six hours.",
+    "bounds": {
+      "north": -37.9,
+      "south": -38.4,
+      "east": 176.6,
+      "west": 175.8
+    },
+    "poi_count": 47
+  },
+  {
+    "id": "southland",
+    "name": "Southland & Fiordland",
+    "island": "South",
+    "lat": -45.8,
+    "lng": 167.8,
+    "description": "The deep south — Fiordland's drowned valleys, the Catlins' wild coast, Stewart Island / Rakiura, and the wide sheep-country plains of Southland.",
+    "bounds": {
+      "north": -44.5,
+      "south": -47.3,
+      "east": 169.2,
+      "west": 166.4
+    },
+    "poi_count": 61
+  },
+  {
+    "id": "tairawhiti",
+    "name": "Tairāwhiti / Gisborne / East Cape",
+    "island": "North",
+    "lat": -38.05,
+    "lng": 178.2,
+    "description": "Tairāwhiti — 'the coast where the sun shines across the water.' The first place in the world to see each new day, the first place in Aotearoa that two worlds met, and the homeland of Ngāti Porou, Rongowhakaata, Te Aitanga-a-Māhaki, Ngāi Tāmanuhiri and Ngāti Oneone.",
+    "bounds": {
+      "north": -37.4,
+      "south": -38.9,
+      "east": 178.6,
+      "west": 177.2
+    },
+    "poi_count": 48
+  },
+  {
+    "id": "taranaki",
+    "name": "Taranaki",
+    "island": "North",
+    "lat": -39.2968,
+    "lng": 174.0756,
+    "description": "The perfect cone of Mount Taranaki, the rugged black-sand coast, and the land confiscated in the 1860s — site of Parihaka, where non-violent resistance was born half a century before Gandhi.",
+    "bounds": {
+      "north": -38.8,
+      "south": -39.8,
+      "east": 174.8,
+      "west": 173.6
+    },
+    "poi_count": 56
+  },
+  {
+    "id": "taupo",
+    "name": "Taupō / Taupō-nui-a-Tia",
+    "island": "North",
+    "lat": -38.6857,
+    "lng": 176.0702,
+    "description": "The great inland lake and its ring of volcanic country — rohe of Ngāti Tūwharetoa, site of the largest eruption on Earth in the last 5,000 years, and the journey's-end of the Napier–Taupō Road.",
+    "bounds": {
+      "north": -38.3,
+      "south": -39.2,
+      "east": 176.8,
+      "west": 175.5
+    },
+    "poi_count": 44
+  },
+  {
+    "id": "waikato",
+    "name": "Waikato",
+    "island": "North",
+    "lat": -37.787,
+    "lng": 175.2793,
+    "description": "River country — the Waikato is New Zealand's longest river, and this is the rohe of the Kīngitanga, the Māori King movement based at Tūrangawaewae.",
+    "bounds": {
+      "north": -37.1,
+      "south": -38.7,
+      "east": 176.2,
+      "west": 174.5
+    },
+    "poi_count": 68
+  },
+  {
+    "id": "wellington",
+    "name": "Wellington / Te Whanganui-a-Tara",
+    "island": "North",
+    "lat": -41.2866,
+    "lng": 174.7756,
+    "description": "The harbour-bowl capital — Te Whanganui-a-Tara, named for the great harbour of Tara.",
+    "bounds": {
+      "north": -41.1,
+      "south": -41.45,
+      "east": 174.95,
+      "west": 174.6
+    },
+    "poi_count": 65
+  },
+  {
+    "id": "west-coast",
+    "name": "West Coast / Te Tai Poutini",
+    "island": "South",
+    "lat": -42.75,
+    "lng": 171.1,
+    "description": "A 600 km coastline of rainforest, glaciers, pounamu, gold, coal — and some of the country's wildest weather.",
+    "bounds": {
+      "north": -41.5,
+      "south": -44.5,
+      "east": 172.3,
+      "west": 168.3
+    },
+    "poi_count": 59
+  },
+  {
+    "id": "whanganui-manawatu",
+    "name": "Whanganui / Manawatū",
+    "island": "North",
+    "lat": -40.05,
+    "lng": 175.3,
+    "description": "The great river country and the fertile Manawatū plains — home of the Whanganui River, the first river in the world to be granted legal personhood.",
+    "bounds": {
+      "north": -39.4,
+      "south": -40.8,
+      "east": 176.3,
+      "west": 174.8
+    },
+    "poi_count": 59
+  }
+]

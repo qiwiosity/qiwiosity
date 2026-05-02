@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "otago",
+    "name": "Otago",
+    "island": "South",
+    "centre": {
+      "lat": -45.4,
+      "lng": 170
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "otago-distinction-dunedin",
+      "name": "Distinction Dunedin Hotel",
+      "region": "otago",
+      "lat": -45.877,
+      "lng": 170.5038,
+      "type": "hotel",
+      "price_nzd_per_night": 245,
+      "rating": 4.3,
+      "short": "Restored heritage post-office hotel on Princes Street."
+    },
+    {
+      "id": "otago-scenic-southern-cross",
+      "name": "Scenic Hotel Dunedin City",
+      "region": "otago",
+      "lat": -45.8735,
+      "lng": 170.504,
+      "type": "hotel",
+      "price_nzd_per_night": 235,
+      "rating": 4.2,
+      "short": "Former Southern Cross Hotel in the Octagon's heart."
+    },
+    {
+      "id": "otago-kingsgate-dunedin",
+      "name": "Kingsgate Hotel Dunedin",
+      "region": "otago",
+      "lat": -45.8736,
+      "lng": 170.5048,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.1,
+      "short": "Century-old Princes Street hotel close to the Railway Station."
+    },
+    {
+      "id": "otago-fable-dunedin",
+      "name": "Fable Dunedin",
+      "region": "otago",
+      "lat": -45.8741,
+      "lng": 170.5042,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.4,
+      "short": "Boutique Fable chain hotel in Dunedin's Octagon precinct."
+    },
+    {
+      "id": "otago-larnach-lodge",
+      "name": "Larnach Lodge & Stable Stay",
+      "region": "otago",
+      "lat": -45.845,
+      "lng": 170.621,
+      "type": "hotel",
+      "price_nzd_per_night": 450,
+      "rating": 4.7,
+      "short": "Rooms on NZ's only castle grounds, high on Otago Peninsula."
+    },
+    {
+      "id": "otago-scenic-dunedin-city",
+      "name": "Hotel St Clair Dunedin",
+      "region": "otago",
+      "lat": -45.91,
+      "lng": 170.491,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.4,
+      "short": "Beachfront boutique hotel overlooking St Clair Beach."
+    },
+    {
+      "id": "otago-alexandra-motor-lodge",
+      "name": "Alexandra Motor Lodge",
+      "region": "otago",
+      "lat": -45.256,
+      "lng": 169.39,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Quiet Central Otago motel in orchard country."
+    },
+    {
+      "id": "otago-wanaka-kingsview-motel",
+      "name": "Alpine Motel Apartments Wanaka",
+      "region": "otago",
+      "lat": -44.6984,
+      "lng": 169.146,
+      "type": "motel",
+      "price_nzd_per_night": 200,
+      "rating": 4.3,
+      "short": "Central Wanaka motel within walking distance of the lakefront."
+    },
+    {
+      "id": "otago-wanaka-view-motel",
+      "name": "Wanaka View Motel",
+      "region": "otago",
+      "lat": -44.7,
+      "lng": 169.141,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.4,
+      "short": "Lake-view motel on Brownston Street in Wanaka."
+    },
+    {
+      "id": "otago-arrowtown-motel-apartments",
+      "name": "Arrowtown Motel Apartments",
+      "region": "otago",
+      "lat": -44.938,
+      "lng": 168.83,
+      "type": "motel",
+      "price_nzd_per_night": 215,
+      "rating": 4.4,
+      "short": "Historic goldfields village motel with mountain views."
+    },
+    {
+      "id": "otago-cromwell-motel",
+      "name": "Cromwell Top 10 Motel Units",
+      "region": "otago",
+      "lat": -45.038,
+      "lng": 169.194,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4,
+      "short": "Lakeside Cromwell motel in the heart of fruit country."
+    },
+    {
+      "id": "otago-oamaru-brydone-motel",
+      "name": "Brydone Motor Lodge Oamaru",
+      "region": "otago",
+      "lat": -45.098,
+      "lng": 170.972,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Heritage-town motel minutes from Oamaru's Victorian precinct."
+    },
+    {
+      "id": "otago-dunedin-motel-858",
+      "name": "858 George Street Motel Dunedin",
+      "region": "otago",
+      "lat": -45.867,
+      "lng": 170.508,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Central Dunedin motor lodge a short walk from the university."
+    },
+    {
+      "id": "otago-dunedin-top10",
+      "name": "Dunedin Holiday Park (TOP 10)",
+      "region": "otago",
+      "lat": -45.874,
+      "lng": 170.487,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "Leafy central-city Dunedin park with cabins and camping."
+    },
+    {
+      "id": "otago-wanaka-top10",
+      "name": "Wanaka Lakeview Holiday Park",
+      "region": "otago",
+      "lat": -44.691,
+      "lng": 169.14,
+      "type": "holiday-park",
+      "price_nzd_per_night": 125,
+      "rating": 4.3,
+      "short": "Hilltop Wanaka park with lake views and log cabins."
+    },
+    {
+      "id": "otago-cromwell-top10",
+      "name": "Cromwell TOP 10 Holiday Park",
+      "region": "otago",
+      "lat": -45.04,
+      "lng": 169.1955,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.3,
+      "short": "Lakeside Cromwell park next to fruit orchards and vineyards."
+    },
+    {
+      "id": "otago-oamaru-top10",
+      "name": "Oamaru Harbour TOP 10 Holiday Park",
+      "region": "otago",
+      "lat": -45.1055,
+      "lng": 170.978,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Steampunk-town park near the blue penguin colony."
+    },
+    {
+      "id": "otago-whare-kea-lodge",
+      "name": "Whare Kea Lodge Wanaka",
+      "region": "otago",
+      "lat": -44.687,
+      "lng": 169.084,
+      "type": "lodge",
+      "price_nzd_per_night": 1750,
+      "rating": 4.9,
+      "short": "Lakefront Wanaka lodge with chalet on Mt Aspiring glacier."
+    },
+    {
+      "id": "otago-otahuna-otago-no",
+      "name": "Camp Glenorchy Eco Retreat",
+      "region": "otago",
+      "lat": -44.85,
+      "lng": 168.382,
+      "type": "lodge",
+      "price_nzd_per_night": 420,
+      "rating": 4.6,
+      "short": "Net-zero eco retreat cabins at the head of Lake Wakatipu (Glenorchy)."
+    },
+    {
+      "id": "otago-penny-homestead-otago-pen",
+      "name": "Kinross Cottages Gibbston Valley",
+      "region": "otago",
+      "lat": -45.006,
+      "lng": 168.851,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.7,
+      "short": "Wine-valley cottages at Kinross Cellars in the Gibbston wine region."
+    }
+  ]
+}

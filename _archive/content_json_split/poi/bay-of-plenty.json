@@ -1,0 +1,1781 @@
+{
+  "region": {
+    "id": "bay-of-plenty",
+    "name": "Bay of Plenty / Te Moana-a-Toi",
+    "island": "North",
+    "centre": {
+      "lat": -37.6878,
+      "lng": 176.1651
+    },
+    "bounds": {
+      "north": -37.2,
+      "south": -38.3,
+      "east": 178,
+      "west": 175.8
+    },
+    "description": "Sunniest city, longest beaches, and the only active marine volcano in the country — named 'Plenty' by Cook in 1769 for the abundance of food the local iwi offered his ship."
+  },
+  "pois": [
+    {
+      "id": "mauao-mount-maunganui",
+      "name": "Mauao / Mount Maunganui",
+      "region": "bay-of-plenty",
+      "lat": -37.6322,
+      "lng": 176.1794,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "volcano",
+        "beach",
+        "walk",
+        "sacred"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A 232 m volcanic cone guarding Tauranga Harbour — sacred to iwi, a one-hour summit walk for visitors.",
+      "commentary": "Mauao — 'caught by the dawn' — is sacred to Ngāi Te Rangi, Ngāti Ranginui and Ngāti Pūkenga. Tradition holds that it was once a nameless mountain inland, in love with Pūwhenua. When rejected, he asked the patupaiarehe (forest beings) to drag him to the sea so he could drown — but the sun rose before they finished, freezing him in place at the harbour entrance. The one-hour summit loop is the classic 'Mount' walk. A 3.4 km base track also works well. The town at the base, Mount Maunganui, has one of New Zealand's best beaches.",
+      "scripts": {
+        "headline": "scripts/mauao-mount-maunganui.headline.md",
+        "standard": "scripts/mauao-mount-maunganui.standard.md"
+      },
+      "sources_to_check": [
+        "Tauranga Moana iwi collective",
+        "DOC — Mauao",
+        "Te Ara"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Mauao / Mount Maunganui draws visitors back time and again for its natural beauty and peaceful atmosphere. A 232 m volcanic cone guarding Tauranga Harbour — sacred to iwi, a one-hour summit walk for visitors. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tauranga-harbour",
+      "name": "Tauranga Harbour & Historic Village",
+      "region": "bay-of-plenty",
+      "lat": -37.687,
+      "lng": 176.17,
+      "category": "heritage",
+      "tags": [
+        "harbour",
+        "1864-war",
+        "elms-mission",
+        "historic-village"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The biggest port in New Zealand by export volume, and site of the April 1864 Battle of Gate Pā.",
+      "commentary": "Tauranga Harbour is the largest natural harbour in the North Island and the country's largest export port by volume — timber, kiwifruit, logs. The modern city is built on land that saw one of the most surprising engagements of the NZ Wars: on 29 April 1864 around 230 Māori defenders at Pukehinahina (Gate Pā) defeated a much larger British force, killing 31 imperial troops — a shocking loss. Archdeacon Brown's mission house, The Elms (1847), survives in near-original condition a short walk from the Gate Pā site. Tauranga Historic Village off 17th Ave preserves other 19th-century buildings.",
+      "scripts": {
+        "headline": "scripts/tauranga-harbour.headline.md",
+        "standard": "scripts/tauranga-harbour.standard.md"
+      },
+      "sources_to_check": [
+        "NZHistory — Battle of Gate Pā",
+        "Heritage NZ — The Elms",
+        "Tauranga Moana iwi"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Tauranga Harbour & Historic Village — the site rewards those who take time to read the signage and absorb the context. The biggest port in New Zealand by export volume, and site of the April 1864 Battle of Gate Pā. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "whakatane",
+      "name": "Whakatāne",
+      "region": "bay-of-plenty",
+      "lat": -37.9589,
+      "lng": 176.9797,
+      "category": "culture",
+      "tags": [
+        "mātaatua",
+        "wairere-falls",
+        "sunny-town",
+        "waka-landing",
+        "pōhaturoa"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 3,
+      "short": "Landing place of the Mātaatua waka, and one of the sunniest towns in New Zealand.",
+      "commentary": "Whakatāne is where the Mātaatua waka is said to have landed, carrying the ancestors of Ngāti Awa and other eastern Bay of Plenty iwi. The town's name comes from the captain's daughter Wairaka, who grabbed a paddle to save the drifting waka and declared 'E! Kia whakatāne au i ahau!' — 'Let me act as a man!' The waterfront statue of Wairaka marks the spot. Pōhaturoa Rock, in the middle of town, was the tohi (dedication) stone for Ngāti Awa. Wairere Falls flow through the town centre. Whakatāne is also a base for boats to Whakaari/White Island.",
+      "scripts": {
+        "headline": "scripts/whakatane.headline.md",
+        "standard": "scripts/whakatane.standard.md"
+      },
+      "sources_to_check": [
+        "Te Ara — Ngāti Awa",
+        "Whakatāne Museum",
+        "NZHistory"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Whakatāne is praised for being both accessible and genuinely informative. Landing place of the Mātaatua waka, and one of the sunniest towns in New Zealand. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "whakaari-white-island",
+      "name": "Whakaari / White Island",
+      "region": "bay-of-plenty",
+      "lat": -37.5212,
+      "lng": 177.1817,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "marine",
+        "2019-eruption",
+        "no-access",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 0,
+      "short": "New Zealand's only active marine volcano — 48 km offshore, and closed to visitors since the 9 December 2019 eruption killed 22 people.",
+      "commentary": "Whakaari is the tip of a submarine volcano whose base sits 1,600 metres below sea level. The crater has steamed continuously since European contact. On 9 December 2019 it erupted without warning while 47 tourists and guides were on it; 22 people died and 25 were badly burned. All tour operators lost their licence; the island remains closed. The best current viewing is from Ōhope, Whakatāne, or on scenic flights that stay offshore. The privately owned island is held in a trust by descendants of the Buttle family who bought it in the 1930s.",
+      "scripts": {
+        "headline": "scripts/whakaari-white-island.headline.md",
+        "standard": "scripts/whakaari-white-island.standard.md"
+      },
+      "sources_to_check": [
+        "GeoNet / GNS Science",
+        "NZHistory — Whakaari 2019"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Whakaari / White Island draws visitors back time and again for its natural beauty and peaceful atmosphere. New Zealand's only active marine volcano — 48 km offshore, and closed to visitors since the 9 December 2019 eruption killed 22 people. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "ohope-beach",
+      "name": "Ōhope Beach",
+      "region": "bay-of-plenty",
+      "lat": -37.9872,
+      "lng": 177.0558,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "best-beach",
+        "surf",
+        "ohiwa-harbour"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "Voted 'New Zealand's best-loved beach' repeatedly — eleven kilometres of safe swimming between Whakatāne and Ōhiwa Harbour.",
+      "commentary": "Ōhope Beach is eleven kilometres of east-facing golden sand between Ōtarawairere Bay (west) and the Ōhiwa Harbour entrance (east). The surf is gentler than the Coromandel beaches to the north and Gisborne to the east, and the sand is shallow a long way out — which is why it's consistently voted NZ's 'best-loved' beach in various polls. West End has cafés and a surf club; East End is quieter. The Ōhiwa Harbour at the east end is a wildlife reserve and a sacred kaimoana (seafood) gathering place for Ngāti Awa, Whakatōhea and Upokorehe.",
+      "scripts": {
+        "headline": "scripts/ohope-beach.headline.md",
+        "standard": "scripts/ohope-beach.standard.md"
+      },
+      "sources_to_check": [
+        "Whakatāne District Council",
+        "Tauranga Moana / eastern BoP iwi"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Ōhope Beach draws visitors back time and again for its natural beauty and peaceful atmosphere. Voted 'New Zealand's best-loved beach' repeatedly — eleven kilometres of safe swimming between Whakatāne and Ōhiwa Harbour. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rotoehu-rotoma-lakes",
+      "name": "Rotoehu & Rotomā Lakes",
+      "region": "bay-of-plenty",
+      "lat": -37.9833,
+      "lng": 176.5333,
+      "category": "nature",
+      "tags": [
+        "lakes",
+        "swimming",
+        "hidden-gem",
+        "hongis-track"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Two of the quieter Rotorua lakes, on SH30 between Tauranga and Rotorua — crystal-clear swimming, no crowds.",
+      "commentary": "Lake Rotoehu and Lake Rotomā sit on SH30, between Tauranga and Rotorua, and are among the clearest freshwater lakes in the country — visibility of 15–20 metres in places. Rotomā has white-sand swimming beaches; Rotoehu is best approached via the Soda Springs bush walk. Hongi's Track, between the two lakes, was the path the Ngāpuhi chief Hongi Hika used in 1823 when he dragged his war canoes from Lake Rotoehu to Lake Rotorua, sparking the 'Musket War' attacks on Te Arawa. A carved archway on the path commemorates the crossing.",
+      "scripts": {
+        "headline": "scripts/rotoehu-rotoma-lakes.headline.md",
+        "standard": "scripts/rotoehu-rotoma-lakes.standard.md"
+      },
+      "sources_to_check": [
+        "Bay of Plenty Regional Council",
+        "Te Ara — Hongi Hika"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Rotoehu & Rotomā Lakes draws visitors back time and again for its natural beauty and peaceful atmosphere. Two of the quieter Rotorua lakes, on SH30 between Tauranga and Rotorua — crystal-clear swimming, no crowds. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "kaimai-ranges",
+      "name": "Kaimai Ranges",
+      "region": "bay-of-plenty",
+      "lat": -37.8,
+      "lng": 175.85,
+      "category": "nature",
+      "tags": [
+        "mountains",
+        "bush",
+        "hiking",
+        "1963-air-crash"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 4,
+      "short": "The bush-clad spine dividing Waikato and Bay of Plenty — home to the Wairere Falls and the wreckage of a 1963 plane crash.",
+      "commentary": "The Kaimai Range runs 80 km north–south between the Waikato and the Bay of Plenty. The Wairere Falls, off SH29 above Matamata, are the highest falls on the North Island (153 metres). On 3 July 1963 the NAC Douglas DC-3 *Hastings* crashed into the southern Kaimai in bad weather, killing all 23 aboard; it was the worst aviation disaster in New Zealand at the time, and the wreckage is still strewn across the remote ridge. The Kaimai Mamaku Forest Park offers day walks from both sides (Waikato side via Waitawheta, BoP side via Aongatete).",
+      "scripts": {
+        "headline": "scripts/kaimai-ranges.headline.md",
+        "standard": "scripts/kaimai-ranges.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Kaimai Mamaku Forest Park",
+        "NZHistory — Kaimai air crash"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Kaimai Ranges draws visitors back time and again for its natural beauty and peaceful atmosphere. The bush-clad spine dividing Waikato and Bay of Plenty — home to the Wairere Falls and the wreckage of a 1963 plane crash. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "matakana-island",
+      "name": "Matakana Island",
+      "region": "bay-of-plenty",
+      "lat": -37.5889,
+      "lng": 176.1236,
+      "category": "māori",
+      "tags": [
+        "island",
+        "māori",
+        "working-community",
+        "hidden-gem",
+        "barge"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "A 24 km sand-bar island at the mouth of Tauranga Harbour — predominantly Māori, mostly off-grid, no tourism.",
+      "commentary": "Matakana Island is a 24 km sand-bar island forming the outer edge of Tauranga Harbour. Home to about 250 people — mostly Māori (Ngāi Te Rangi) — it's a working community of farming, forestry and fishing, not a tourist destination. There's no bridge; a small vehicle barge runs from Omokoroa. The ocean-side beach is 20 km of untouched white sand, regularly empty, and very exposed to surf. Visit with care and respect: this is a lived-in place, not an attraction. Many of the beach-side roads are private.",
+      "scripts": {
+        "headline": "scripts/matakana-island.headline.md",
+        "standard": "scripts/matakana-island.standard.md"
+      },
+      "sources_to_check": [
+        "Ngāi Te Rangi — ngaiterangi.com",
+        "Te Ara — Matakana Island"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Matakana Island as a place where the history and cultural significance of Aotearoa become tangible and real. A 24 km sand-bar island at the mouth of Tauranga Harbour — predominantly Māori, mostly off-grid, no tourism. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-katikati-murals",
+      "name": "Katikati — Mural Town",
+      "region": "bay-of-plenty",
+      "lat": -37.55,
+      "lng": 175.9133,
+      "category": "culture",
+      "tags": [
+        "murals",
+        "small-town",
+        "ulster",
+        "haiku-pathway"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "A whole small town turned into an open-air gallery — over 70 murals telling the stories of its Ulster founders.",
+      "commentary": "Katikati was founded as a special Ulster settlement in the 1870s. Since 1991 the town has commissioned more than seventy outdoor murals along its main street.",
+      "audio_story": "You are walking down the main street of Katikati and you are walking through what may be the largest outdoor art gallery in New Zealand. Since nineteen ninety one the town has commissioned over seventy murals on the walls of its shops, halls and walkways, each telling part of its unusual founding story. Katikati was settled in the eighteen seventies by Ulster Protestants brought out by George Vesey Stewart in one of the few formally planned ethnic settlements in the country. The murals along the street record their faces, their farms, their first orchards, and the Ngāi Te Rangi people whose land they joined. Newer panels add stories from the kiwifruit industry, school children, and local events. There is a self-guided walking map at the information centre, and you can see most of the murals in around an hour. While you are in town, follow the Haiku Pathway down beside the Uretara Stream. It is a short, beautifully landscaped walk lined with stones engraved with haiku poems written by New Zealand and international poets, the only one of its kind in the southern hemisphere. Katikati turns out to be a small town with two surprising obsessions, art and poetry, and it does both with quiet conviction.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Katikati Open Air Art",
+        "Western BOP District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Katikati — Mural Town is praised for being both accessible and genuinely informative. A whole small town turned into an open-air gallery — over 70 murals telling the stories of its Ulster founders. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "bop-mclaren-falls",
+      "name": "McLaren Falls Park",
+      "region": "bay-of-plenty",
+      "lat": -37.7311,
+      "lng": 176.0492,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "park",
+        "campground",
+        "glowworms"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A 190ha riverside park west of Tauranga — short walks, a botanical collection, and a free glowworm canyon at night.",
+      "commentary": "Council park beside the Wairoa River. Multiple short walks, a small arboretum, and the popular glowworm canyon at the far end of the park.",
+      "audio_story": "You have arrived at McLaren Falls Park, a one hundred and ninety hectare riverside reserve only twenty minutes drive west of Tauranga and yet quietly unknown even to many locals. The park stretches along the dammed lake of the Wairoa River and has, on a single afternoon, almost everything you might want from a short visit, lakeside picnic spots, a peaceful botanical arboretum, gentle walking tracks, and a campground popular with families. There are two attractions worth planning your day around. The first is the namesake McLaren Falls themselves, fed by water released from the Lloyd Mandeno power scheme upstream and only flowing to full power on certain days, when the local kayak community gathers below for one of the best whitewater runs in the North Island. The second is the glowworm canyon at the far end of the park. Bring a torch, leave it off, walk in quietly after dark, and look up at the rock walls of the canyon. The walls flicker with the soft blue green light of thousands of glowworms, free to anyone willing to make the short walk. Tauranga families often pack a barbecue and stay until the lights come on.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Tauranga City Council parks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "McLaren Falls Park draws visitors back time and again for its natural beauty and peaceful atmosphere. A 190ha riverside park west of Tauranga — short walks, a botanical collection, and a free glowworm canyon at night. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-mount-tarawera-edge",
+      "name": "Te Wairoa to Tarawera Crater Walks",
+      "region": "bay-of-plenty",
+      "lat": -38.2333,
+      "lng": 176.5083,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "crater",
+        "1886-eruption",
+        "guided-only"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 6,
+      "short": "Guided walks across the rim of Mt Tarawera — the volcano that erupted in 1886 and ended a Māori village overnight.",
+      "commentary": "Tarawera erupted on 10 June 1886, killing more than 120 people and burying the village of Te Wairoa under volcanic ash. The summit is now privately accessible only with iwi-licensed guides.",
+      "audio_story": "You are about to walk along the rim of Mount Tarawera, and you should know that you are walking on the line where, on the tenth of June, eighteen eighty six, the mountain split itself open. That night Tarawera erupted along a seventeen kilometre rift. More than one hundred and twenty people died. The famous Pink and White Terraces, considered the eighth wonder of the natural world, were destroyed. The village of Te Wairoa, on the slopes below, was buried under metres of volcanic ash and is now preserved as the Buried Village. The mountain itself is a wāhi tapu, a sacred place, in the care of the Tūhourangi Ngāti Wāhiao people, who lost so many of their ancestors that night. You can only visit the summit with one of the iwi-licensed guiding companies, and the experience is the better for it. Your guide will take you up the volcano in a four wheel drive, walk you along the great gash of the rift, and tell you the story not as geology, but as it is remembered by the people who lived through it. From the rim you look down into the still-fresh crater. It is not a comforting view. It is, however, an unforgettable one.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Mount Tarawera Volcanic Tours",
+        "NZHistory — Tarawera eruption"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Te Wairoa to Tarawera Crater Walks draws visitors back time and again for its natural beauty and peaceful atmosphere. Guided walks across the rim of Mt Tarawera — the volcano that erupted in 1886 and ended a Māori village overnight. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-papamoa-hills",
+      "name": "Pāpāmoa Hills Regional Park",
+      "region": "bay-of-plenty",
+      "lat": -37.7139,
+      "lng": 176.2939,
+      "category": "nature",
+      "tags": [
+        "pa-site",
+        "viewpoint",
+        "walk",
+        "maori-history"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2,
+      "short": "A regional park of ridge-top pā sites above Pāpāmoa, with sweeping views from Mauao along the coast to Whakaari.",
+      "commentary": "The Pāpāmoa Hills hold an extraordinary concentration of pre-European Māori pā, with earthworks, terraces, and kumara storage pits still visible. A two-hour loop walk climbs to the summit of Karangaumu.",
+      "audio_story": "You are standing in Pāpāmoa Hills Regional Park, a ridge of low green hills that rises directly from the Bay of Plenty coast behind the suburbs of Pāpāmoa. These hills are one of the finest concentrations of pre-European Māori pā sites in the North Island. The ridges above you have been shaped by hand. Terraces, ditches, kumara storage pits, and the postholes of long vanished whare are still clearly visible in the contours of the land. At various times over the last six hundred years these hills were home to several thousand people living in fortified villages that commanded the harbour approaches in every direction. The two hour loop walk climbs gently to the summit of Karangaumu. From there, on a clear day, you can see Mauao above Mount Maunganui to the north, the whole long stretch of Pāpāmoa and Pukehina beaches curving away to the east, and Whakaari, White Island, smoking fifty kilometres out to sea. The park is a wāhi tapu, a sacred place. Please walk only on the marked tracks. Do not picnic on the pā sites. And take a moment, from the top, to imagine the conch shell alarm call ringing out from ridge to ridge.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Bay of Plenty Regional Council",
+        "Heritage NZ",
+        "Ngā Pōtiki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Pāpāmoa Hills Regional Park draws visitors back time and again for its natural beauty and peaceful atmosphere. A regional park of ridge-top pā sites above Pāpāmoa, with sweeping views from Mauao along the coast to Whakaari. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-kiwifruit-country",
+      "name": "Te Puke — Kiwifruit Capital",
+      "region": "bay-of-plenty",
+      "lat": -37.7833,
+      "lng": 176.325,
+      "category": "food-wine",
+      "tags": [
+        "kiwifruit",
+        "orchard",
+        "tour",
+        "te-puke"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1.5,
+      "short": "Te Puke is the kiwifruit capital of the world — giant kiwifruit sculpture on SH2 and walk-through orchards that tell the story.",
+      "commentary": "Te Puke grew the world's first commercial kiwifruit crop in the 1930s, and the surrounding Bay of Plenty flats still produce around 80 percent of New Zealand's kiwifruit. Kiwi360 orchard tours run year round.",
+      "audio_story": "You have arrived in Te Puke, a small town on State Highway Two that calls itself, with some justification, the kiwifruit capital of the world. The kiwifruit as a commercial crop began its life right here in the Bay of Plenty in the nineteen thirties, when a local nurseryman named Jim MacLoughlin grafted cuttings from Chinese gooseberry vines that had been brought to Whanganui decades before. The fruit was renamed kiwifruit in the nineteen fifties to make it easier to export. Today the rich alluvial flats surrounding Te Puke grow around eighty percent of all the kiwifruit produced in New Zealand, and New Zealand produces around a third of all the kiwifruit produced in the world. The industry is worth several billion dollars a year to the region. Stop at the giant kiwifruit sculpture on the southern side of town for the obligatory photo. Drive past rows of covered vines stretching to the horizon. Visit Kiwi360, the walk through orchard tour that takes you right down the aisles of vines. If your visit falls between May and October you may get to taste the new crop. If you have never bitten into a really fresh SunGold, this is the place to change that.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Zespri",
+        "NZ Kiwifruit Growers Inc",
+        "Western Bay of Plenty District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Te Puke — Kiwifruit Capital delivers an excellent food and wine experience that visitors describe as a highlight of the region. Te Puke is the kiwifruit capital of the world — giant kiwifruit sculpture on SH2 and walk-through orchards that tell the story. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "bop-maketu",
+      "name": "Maketū — Te Arawa Landing Place",
+      "region": "bay-of-plenty",
+      "lat": -37.7625,
+      "lng": 176.4522,
+      "category": "māori",
+      "tags": [
+        "te-arawa",
+        "waka",
+        "landing-place",
+        "estuary",
+        "iwi"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The landing place of Te Arawa waka around 1350 — a small seaside settlement of profound significance to Te Arawa iwi.",
+      "commentary": "Maketū is the landing place of the Te Arawa waka under its captain Tama-te-kapua. A stone monument on the foreshore marks the spot. The settlement retains deep significance for all Te Arawa descendants.",
+      "audio_story": "You have arrived at Maketū, a small seaside village at the mouth of the Kaituna River that holds a place of profound significance in the history of Aotearoa. Around the middle of the fourteenth century, the Te Arawa waka, one of the great migration canoes, made landfall here under its captain Tama-te-kapua. From Maketū Tama-te-kapua's people spread inland to the thermal country around Rotorua, establishing the great confederation of tribes known collectively as Te Arawa. Every iwi that traces its whakapapa to Te Arawa, and there are many, traces it back to this bay. A stone monument on the foreshore marks the landing place. Maketū itself is a quiet village of a few hundred people, most of them Māori, wrapped around a dramatic estuary of the Kaituna River that is a favourite spot for fishing and whitebaiting in season. The Maketū pies are locally famous and well worth the stop. Walk on the beach, watch for kuaka, the bar-tailed godwit, which has flown eleven thousand kilometres non stop from Alaska to spend the southern summer here, and remember that for Te Arawa this is a beginning place. Treat the foreshore with the respect that place deserves.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Arawa iwi",
+        "NZHistory — Te Arawa",
+        "Western Bay of Plenty District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Maketū — Te Arawa Landing Place as a place where the history and cultural significance of Aotearoa become tangible and real. The landing place of Te Arawa waka around 1350 — a small seaside settlement of profound significance to Te Arawa iwi. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-te-puia-waioeka",
+      "name": "Waiōeka Gorge Drive",
+      "region": "bay-of-plenty",
+      "lat": -38.1333,
+      "lng": 177.5167,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "gorge",
+        "sh2",
+        "native-bush"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1.5,
+      "short": "The dramatic bush-walled gorge drive on State Highway 2 between Ōpōtiki and Gisborne — 60 km of unspoilt podocarp forest.",
+      "commentary": "The Waiōeka Gorge is a 60-kilometre stretch of State Highway 2 between Ōpōtiki and Matawai. The road follows the Waiōeka River through one of the largest intact podocarp forests in the lower North Island.",
+      "audio_story": "You are driving, or about to drive, the Waiōeka Gorge, a sixty kilometre stretch of State Highway Two between Ōpōtiki in the Bay of Plenty and Matawai on the way to Gisborne. For many drivers this is simply a long and winding road between two destinations. Slow down, and you will discover it is one of the most beautiful stretches of road in the North Island. The road follows the Waiōeka River through a deep V shaped gorge cut into sedimentary sandstone and mudstone. The sides of the gorge are cloaked in one of the largest intact stands of podocarp forest anywhere in the lower North Island. Giant rimu, mataī, kahikatea and miro tower over the road in an almost unbroken green canopy. Tree ferns crowd the roadside. There are a handful of pull-off walks along the way. Tauranga Bridge swing bridge is the easiest, a ten minute loop to a beautiful suspension bridge above the river. The Manganuku campground is a fine picnic spot. The Motū River, which meets the Waiōeka about halfway along, has its own side road and, if you are feeling adventurous, world-class whitewater rafting. Allow at least ninety minutes for the drive and resist the urge to overtake.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Waiōeka Conservation Park",
+        "NZTA"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Waiōeka Gorge Drive route delivers a memorable journey through exceptional New Zealand scenery. The dramatic bush-walled gorge drive on State Highway 2 between Ōpōtiki and Gisborne — 60 km of unspoilt podocarp forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bop-opotiki",
+      "name": "Ōpōtiki & Hiona St Stephen the Martyr",
+      "region": "bay-of-plenty",
+      "lat": -38.0086,
+      "lng": 177.2847,
+      "category": "māori",
+      "tags": [
+        "opotiki",
+        "volkner",
+        "whakatohea",
+        "church",
+        "east-cape-gateway"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.7,
+      "short": "The eastern gateway town to the East Cape — a small river-mouth settlement with a heavy nineteenth century history and a beautifully simple timber church.",
+      "commentary": "Ōpōtiki is the service town at the junction of the Waioeka and Ōtara rivers. Hiona St Stephen the Martyr Church (1864) is where missionary Carl Volkner was killed in 1865 during the Pai Marire conflict — a story with long unresolved shadows for Whakatōhea iwi.",
+      "audio_story": "You have arrived in Ōpōtiki, a small town of about four thousand people at the junction of two rivers on the eastern edge of the Bay of Plenty. This is the gateway to the East Cape and, depending on which way you are driving, either the last decent coffee stop for three hours or the first. Ōpōtiki has a quiet, weathered character that rewards slowing down. The white timber church of Hiona St Stephen the Martyr on Church Street is one of the oldest mission churches in the country, dating to eighteen sixty four. It is also the site of a dark and long unresolved story. In March eighteen sixty five, the German born Lutheran missionary Carl Volkner was killed by followers of the Pai Marire movement during the confused violence of the Land Wars. The local iwi, Whakatōhea, were punished collectively by colonial confiscation of a quarter of a million acres of their land. In twenty twenty three a Treaty of Waitangi settlement finally returned some of that land and offered a formal Crown apology. The church itself is a place of quiet reflection. Sit for a moment. The eastern Bay of Plenty carries more history than most New Zealand towns its size.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ",
+        "Whakatōhea iwi",
+        "NZHistory — Volkner"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Ōpōtiki & Hiona St Stephen the Martyr as a place where the history and cultural significance of Aotearoa become tangible and real. The eastern gateway town to the East Cape — a small river-mouth settlement with a heavy nineteenth century history and a beautifully simple timber church. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-tauranga-strand",
+      "name": "Tauranga Strand & The Elms Mission House",
+      "region": "bay-of-plenty",
+      "lat": -37.6803,
+      "lng": 176.1736,
+      "category": "heritage",
+      "tags": [
+        "tauranga",
+        "mission-house",
+        "waterfront",
+        "the-elms"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Tauranga's downtown waterfront and the 1847 mission house that is one of the best-preserved early mission sites in the country.",
+      "commentary": "The Elms (1847) is the oldest intact mission station in New Zealand and contains the original library and family furniture of the Rev. Alfred Brown. The Strand is Tauranga's waterfront dining strip.",
+      "audio_story": "You have arrived at the Tauranga Strand, the waterfront street that is the heart of the city. Tauranga has quietly become New Zealand's fifth largest city, pushed along by a booming port and a steady stream of retirees moving north for the sun. Walk the Strand on a summer evening and you will find it busy with cafes, bars, food trucks, and a long harbourside promenade that is one of the pleasantest urban walks in the country. Five minutes walk inland is The Elms, the oldest intact mission station in New Zealand. It was built in eighteen forty seven by the Reverend Alfred Brown, a Church Missionary Society minister who lived here with his family for nearly forty years. The house is remarkable because almost nothing was ever thrown out. The original library, the family furniture, the china, the children's toys, all remain in place, giving an extraordinary feel of daily colonial life. The gardens are also largely original and contain some of the oldest planted trees in New Zealand. Guided tours run most days. The combination of the modern waterfront and the nineteenth century mission house, five minutes apart, tells the whole compact story of how Tauranga became Tauranga.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "The Elms — theelms.org.nz",
+        "Tauranga City Council",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Tauranga Strand & The Elms Mission House — the site rewards those who take time to read the signage and absorb the context. Tauranga's downtown waterfront and the 1847 mission house that is one of the best-preserved early mission sites in the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bop-rotoiti",
+      "name": "Lake Rotoiti Hot Pools",
+      "region": "bay-of-plenty",
+      "lat": -38.0339,
+      "lng": 176.4394,
+      "category": "nature",
+      "tags": [
+        "hot-pools",
+        "lake",
+        "boat-access",
+        "manupirua"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Natural geothermal hot pools on the edge of Lake Rotoiti, accessible only by boat — one of the great low-key experiences of the Bay of Plenty.",
+      "commentary": "Manupirua Springs Hot Pools on the southern shore of Lake Rotoiti are accessible only by boat — a 15-minute ride from the Okere or Kawaha Point ramps. Five open-air pools at graduated temperatures.",
+      "audio_story": "You have arrived at Lake Rotoiti, one of a string of lakes east of Rotorua that were formed when the Ōkataina caldera collapsed many thousands of years ago. Rotoiti is quieter than Rotorua itself, ringed by bush covered hills with only a handful of small settlements on its shores. Hidden on the southern shore, accessible only by boat, is one of the small great pleasures of the Bay of Plenty. The Manupirua Springs Hot Pools sit in a small bay reachable in about fifteen minutes from the Okere boat ramp or a bit longer from Kawaha Point. If you have your own boat or kayak, you can tie up at the jetty. If you do not, the local water taxi will take you. Five natural geothermal hot pools step down the bank to the lake edge at graduated temperatures from a very warm forty degrees to a pleasantly hot thirty six. You sit in the pool, watch the cool lake water lap only metres below, and hear nothing but cicadas and the distant putt of an outboard motor. There is no electricity, no cafe, no real infrastructure at all. Bring a towel, bring a drink, bring a friend. Allow two hours minimum.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Manupirua Springs",
+        "Bay of Plenty Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Lake Rotoiti Hot Pools draws visitors back time and again for its natural beauty and peaceful atmosphere. Natural geothermal hot pools on the edge of Lake Rotoiti, accessible only by boat — one of the great low-key experiences of the Bay of Plenty. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-motiti-island",
+      "name": "Motiti Island",
+      "region": "bay-of-plenty",
+      "lat": -37.6333,
+      "lng": 176.4167,
+      "category": "māori",
+      "tags": [
+        "motiti",
+        "island",
+        "iwi",
+        "rena-disaster",
+        "tauranga-moana"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "A low-lying island 20 km off Tauranga — deeply significant to local iwi and the site of the 2011 Rena grounding.",
+      "commentary": "Motiti is a 15 sq km island with a population of around 30 permanent residents, mostly descendants of the mana whenua, Ngāi Te Hapū. In October 2011 the container ship Rena ran aground on the Astrolabe Reef just north of Motiti.",
+      "audio_story": "You are looking at Motiti Island, twenty kilometres offshore from Tauranga, a low green island of some fifteen square kilometres rising only a hundred metres above the sea. Motiti is home to a tiny permanent population of around thirty people, mostly descendants of the mana whenua iwi Ngāi Te Hapū, who have held the island for at least six hundred years. There is no wharf, no shop, and no regular ferry. Access is by private boat or light aircraft. In October twenty eleven, Motiti was briefly the most photographed place in New Zealand. The container ship Rena, carrying three hundred and fifty tonnes of heavy fuel oil, ran aground on the Astrolabe Reef just north of the island at full cruising speed. The ship broke up over several months, spilling oil that blackened the beaches of the Bay of Plenty and killing more than two thousand seabirds. It was the worst maritime environmental disaster in New Zealand history. For Motiti iwi the grounding of Rena on their reef was a profound breach of their mana whenua over these waters, and the legal and environmental recovery has taken more than a decade. Look out across the bay and remember that a green island can hold a whole epic.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Te Hapū",
+        "Maritime NZ — Rena response",
+        "Motiti Rohe Moana"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Motiti Island as a place where the history and cultural significance of Aotearoa become tangible and real. A low-lying island 20 km off Tauranga — deeply significant to local iwi and the site of the 2011 Rena grounding. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-kaituna-rafting",
+      "name": "Kaituna River & Tutea Falls",
+      "region": "bay-of-plenty",
+      "lat": -38.0278,
+      "lng": 176.3336,
+      "category": "adventure",
+      "tags": [
+        "rafting",
+        "waterfall",
+        "kaituna",
+        "commercial-raft"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "The Kaituna River drops over the seven-metre Tutea Falls — the highest commercially rafted waterfall in the world.",
+      "commentary": "The Kaituna River, the outlet from Lake Rotoiti, drops over Tutea Falls (7 m) — the highest commercially rafted waterfall in the world. The 50-minute rafting trip includes three waterfalls.",
+      "audio_story": "You have arrived at the Kaituna River, a short stretch of whitewater where the Kaituna, the outlet from Lake Rotoiti, tumbles down to the Bay of Plenty coast. The Kaituna holds a peculiar world record. At the centre of the run lies Tutea Falls, a seven metre sheer waterfall that is the highest commercially rafted waterfall anywhere in the world. Every day, weather permitting, several operators run hundreds of visitors down this river. The trip is brief, about fifty minutes in the water, but intense. You pull on a helmet and a wetsuit, climb into a rubber raft with six or seven strangers and a guide, and paddle through the preliminary warm-up rapids. Then you reach the lip of Tutea Falls. The guide calls get down, the raft tips, the river disappears, and for a long second you are in free fall inside a thunderous white cloud. Almost every raft comes through upright. Some do not. Either way, you come up laughing or coughing or both. The rest of the run is a gentler float through fern clad canyon. You are out of the water before you have fully processed the experience. Dry clothes, hot drink, and a solid story to take home.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Raftabout",
+        "Kaitiaki Adventures",
+        "Rotorua Canyon"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Kaituna River & Tutea Falls adventure draws rave reviews for the combination of adrenaline and spectacular scenery. The Kaituna River drops over the seven-metre Tutea Falls — the highest commercially rafted waterfall in the world. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bop-matata-wetlands",
+      "name": "Matatā Wildlife Refuge",
+      "region": "bay-of-plenty",
+      "lat": -37.8719,
+      "lng": 176.7472,
+      "category": "wildlife",
+      "tags": [
+        "wetland",
+        "bittern",
+        "birdwatching",
+        "matata"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "The largest wetland on the Bay of Plenty coast — one of the best remaining refuges for the critically endangered Australasian bittern.",
+      "commentary": "Matatā Wildlife Refuge is a 143-hectare coastal wetland at the mouth of the Tarawera River. It supports the highest known density of Australasian bittern in New Zealand.",
+      "audio_story": "You have arrived at the Matatā Wildlife Refuge, a hundred and forty three hectare coastal wetland tucked between the village of Matatā and the mouth of the Tarawera River. Most people driving State Highway Two pass this place without ever realising what is in there. The reeds are high. The boardwalk is short. The birds are famously hard to see. Matatā is one of the best remaining refuges in New Zealand for matuku, the Australasian bittern, a large cryptically streaked wading bird that is critically endangered and almost invisible in its preferred habitat. On a still evening between September and December you may hear its distinctive deep booming call, which sounds remarkably like someone blowing gently across the top of an empty bottle and is audible for over a kilometre. Fewer than a thousand of these birds remain in New Zealand. Beyond the bittern, the wetland is also one of the last strongholds of the black mudfish, and the surrounding sand dunes hold breeding colonies of variable oystercatcher and New Zealand dotterel. Take the boardwalk, sit quietly at the viewing platform, and above all, listen. Waterproof shoes recommended. This is not a place for dogs or for a hurry.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Matatā Wildlife Refuge",
+        "NZ Birds Online"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The wildlife encounters at Matatā Wildlife Refuge earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. The largest wetland on the Bay of Plenty coast — one of the best remaining refuges for the critically endangered Australasian bittern. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "bop-pukehina-beach",
+      "name": "Pukehina Beach",
+      "region": "bay-of-plenty",
+      "lat": -37.8333,
+      "lng": 176.5667,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "pukehina",
+        "fishing",
+        "surf",
+        "holiday"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 1,
+      "short": "A long, quiet, white-sand beach between Maketū and Matatā — the locals' beach that Tauranga drivers miss.",
+      "commentary": "Pukehina Beach is a 7-km barrier spit between the Pongakawa and Waitahanui Streams, with a tiny permanent population and a growing collection of holiday homes.",
+      "audio_story": "You have arrived at Pukehina Beach, a seven kilometre barrier spit on the Bay of Plenty coast between Maketū and Matatā. For most of its length Pukehina is exactly what a New Zealand beach is supposed to be. White sand, low dunes, good surf, almost no infrastructure, and at the height of summer still room to find a patch of beach no one else has claimed. The permanent population is small, just a few hundred people. In the school holidays that number multiplies many times over as Waikato and Tauranga families fill a modest but growing collection of holiday homes strung along the sand dunes. Behind the spit lies the Waihī estuary, rich feeding country for wading birds and whitebait in season. The surf can be large in a northeasterly, so swim between the flags during the patrolled season. At the northern end is the Pukehina boat ramp, which in the right weather is one of the most productive fishing launches on the Bay coast for snapper and kahawai. If you are driving State Highway Two between Tauranga and Ōpōtiki, Pukehina is a five minute detour off the highway. The locals would rather you did not mention they sent you.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Bay of Plenty Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Pukehina Beach draws visitors back time and again for its natural beauty and peaceful atmosphere. A long, quiet, white-sand beach between Maketū and Matatā — the locals' beach that Tauranga drivers miss. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-karangahake-edge",
+      "name": "Dickeys Flat & Waihī Gorge",
+      "region": "bay-of-plenty",
+      "lat": -37.4203,
+      "lng": 175.9542,
+      "category": "nature",
+      "tags": [
+        "gold-mining",
+        "tunnel",
+        "walk",
+        "karangahake",
+        "waihi"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2,
+      "short": "The Bay of Plenty approach to the Karangahake Gorge — old gold mines, a one kilometre tunnel, and a dramatic river walk.",
+      "commentary": "The Karangahake Gorge was one of the richest gold fields in New Zealand from the 1870s to 1950s. The main walking loop passes through a restored 1-km railway tunnel and below several processing batteries.",
+      "audio_story": "You have arrived at the Karangahake Gorge, the dramatic cleft between the Coromandel and Kaimai ranges that carries the Ohinemuri River from Waihī down to the Hauraki Plains. For about seventy years, from the eighteen seventies to the nineteen fifties, this gorge was one of the richest gold mining landscapes in the country. Thousands of men worked here. Whole towns sprung up and vanished. The gorge itself is now a conservation area, and DOC has done an outstanding job of turning the old mine workings into a network of walking tracks. The classic loop is the Windows Walk and Tunnel, about an hour of easy walking. You start on the old railway line, cross a swing bridge, walk through the dark of a one kilometre railway tunnel lit only by your torch, look down on the ruined concrete footings of the Crown and Talisman batteries, and come out above the roaring river. On a hot day it is pleasantly cool in the tunnel and down by the water. Bring a torch and sensible shoes. Waihī itself, at the southern end, has an excellent gold mining museum and a working open pit gold mine you can view from the Pit Rim Walkway.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Karangahake Gorge",
+        "Hauraki Rail Trail"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Dickeys Flat & Waihī Gorge draws visitors back time and again for its natural beauty and peaceful atmosphere. The Bay of Plenty approach to the Karangahake Gorge — old gold mines, a one kilometre tunnel, and a dramatic river walk. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "bop-hist-mataatua-waka",
+      "name": "Mataatua Waka — Whakatāne Heads",
+      "region": "bay-of-plenty",
+      "lat": -37.9528,
+      "lng": 177.0089,
+      "category": "māori",
+      "tags": [
+        "mataatua",
+        "waka",
+        "wairaka",
+        "whakatane",
+        "ancestral"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where the Mataatua waka landed around 1350 — and where Wairaka cried the words that named the town.",
+      "commentary": "Mataatua landed at Whakatāne Heads. With the men ashore and the waka drifting, Wairaka took up a paddle. Her cry 'E kia whakatāne ake au i a au' — 'I will act the part of a man' — gave Whakatāne its name.",
+      "audio_story": "You are at Whakatāne Heads, the river mouth at the northern edge of the town, and you are looking at the place where one of the great ancestral waka of the Mātaatua federation landed around the year thirteen fifty. The Mataatua waka, captained by Toroa, brought the ancestors of Ngāti Awa, Tūhoe, Whakatōhea and Te Whānau a Apanui to these shores. The story told of the landing is one of the most famous in Māori tradition. The men went ashore to explore. The tide turned and began to pull the waka, with the women still aboard, back out to sea. As senior woman on the canoe the young rangatira Wairaka grasped a paddle. Women in her time did not traditionally paddle waka, and for her to do so was to risk breaching tapu. She called out e kia whakatāne ake au i a au, I will act the part of a man, and drove the waka back to shore. Her words gave the whole district its name, Whakatāne. A bronze statue of Wairaka stands today on Turuturu Rock at the river mouth. Look out across the bar. This is where Ngāti Awa began.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Awa",
+        "Te Ara — Mataatua",
+        "Whakatāne District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Mataatua Waka — Whakatāne Heads as a place where the history and cultural significance of Aotearoa become tangible and real. Where the Mataatua waka landed around 1350 — and where Wairaka cried the words that named the town. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-te-manuka-tutahi",
+      "name": "Te Mānuka Tūtahi Marae / Mataatua Wharenui",
+      "region": "bay-of-plenty",
+      "lat": -37.9603,
+      "lng": 176.9864,
+      "category": "māori",
+      "tags": [
+        "wharenui",
+        "mataatua",
+        "ngati-awa",
+        "returned",
+        "1875"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The extraordinary travelled wharenui Mataatua — built in 1875, taken to London and Sydney, returned home in 2011.",
+      "commentary": "Mataatua was built 1875 for Ngāti Awa. It was taken by the Crown 1879 and exhibited in Sydney, Melbourne, London. Returned to Whakatāne 2011. Bookable tours with iwi.",
+      "audio_story": "You are at Te Mānuka Tūtahi, the marae of Ngāti Awa in Whakatāne, and you are in front of a wharenui that has travelled further than any other in the world. Mataatua was commissioned by the rangatira of Ngāti Awa and completed in eighteen seventy five. It is the ceremonial house of the iwi, named after the ancestral waka itself, and every poupou along its walls represents an ancestor of the Mataatua confederation. Four years after it was built, in eighteen seventy nine, the Crown took possession of the house, ostensibly for display at the Sydney International Exhibition of eighteen seventy nine. It was dismantled, shipped to Australia, re erected at the Exhibition, then shipped on to Melbourne, then on to London where it was displayed in the basement of the Royal Albert Hall as a Victorian ethnographic curiosity. It was returned to New Zealand in the early twentieth century but held in the Otago Museum for decades. After a prolonged Treaty claim and several years of negotiation, Mataatua was finally returned to Ngāti Awa in twenty eleven, and reopened on its home marae in Whakatāne in twenty eleven. Guided tours into the whare, usually arranged through the iwi trust board, are available most weekdays and are one of the best cultural experiences in the country.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Awa",
+        "Mataatua Wharenui",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Mānuka Tūtahi Marae / Mataatua Wharenui as a place where the history and cultural significance of Aotearoa become tangible and real. The extraordinary travelled wharenui Mataatua — built in 1875, taken to London and Sydney, returned home in 2011. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-te-kooti-te-whaiti",
+      "name": "Te Urewera / Te Kooti Retreat Country",
+      "region": "bay-of-plenty",
+      "lat": -38.55,
+      "lng": 177,
+      "category": "māori",
+      "tags": [
+        "te-kooti",
+        "tuhoe",
+        "urewera",
+        "1868-72",
+        "wilderness"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "The wild country where Te Kooti found shelter with Tūhoe after his 1868 escape — the heart of the Ringatū resistance.",
+      "commentary": "After escaping the Chathams in 1868, Te Kooti found refuge with Tūhoe in Te Urewera. Four years of guerrilla war followed. The Crown eventually pardoned him 1883.",
+      "audio_story": "You are entering Te Urewera, the vast forested interior of the central North Island that is the rohe of Tūhoe, the children of the mist. After his escape from the Chatham Islands in July eighteen sixty eight, Te Kooti Arikirangi crossed the country through Gisborne and into this mountain fastness. Tūhoe sheltered him. For four years from eighteen sixty eight to eighteen seventy two, colonial troops, militia, and pro government Māori kūpapa pursued Te Kooti and his followers through this country in what is now called the Te Kooti War. The pursuit never succeeded. Te Kooti evaded every attempt at capture. In eighteen eighty three, worn down by exile and age, he was quietly pardoned by the Crown, and he spent the last decade of his life preaching peacefully in the Bay of Plenty until his death in eighteen ninety three. The Ringatū faith he founded in a Chatham Island prison cell is still practised today by tens of thousands of people, a living monument to his conviction. Tūhoe paid a high price for sheltering him. In eighteen sixty nine a series of scorched earth raids by government forces destroyed Tūhoe kāinga across the Urewera, a history the iwi carries still. Drive into Te Urewera with respect. The bush remembers.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Tūhoe",
+        "Te Ara — Te Kooti",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Urewera / Te Kooti Retreat Country as a place where the history and cultural significance of Aotearoa become tangible and real. The wild country where Te Kooti found shelter with Tūhoe after his 1868 escape — the heart of the Ringatū resistance. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-ohiwa-harbour",
+      "name": "Ōhiwa Harbour — Te Kooti''s Final Pā",
+      "region": "bay-of-plenty",
+      "lat": -38,
+      "lng": 177.1333,
+      "category": "māori",
+      "tags": [
+        "ohiwa",
+        "te-kooti",
+        "1893",
+        "ringatu",
+        "final-resting"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "The sheltered harbour where Te Kooti lived his final years — and died peacefully in 1893.",
+      "commentary": "After his 1883 pardon Te Kooti made his home at Ōhiwa with permission of Whakatōhea and other local hapū. He died there in April 1893.",
+      "audio_story": "You are at Ōhiwa Harbour, a beautiful sheltered tidal estuary between Whakatāne and Ōpōtiki, ringed with native forest and small settlements. After receiving his Crown pardon in eighteen eighty three Te Kooti Arikirangi, the founder of the Ringatū faith, was allowed by the government to return from exile but not to his home at Tūranga near Gisborne, where the memory of the Matawhero raid was still too raw. Instead he was given refuge by Whakatōhea and by local hapū on the shore of Ōhiwa. He built a small settlement here. He preached. He received visitors from across the country, many travelling for days to seek his counsel or his blessing. He married and fathered children. He composed waiata and moteatea, several of which are still sung in Ringatū services to this day. In April eighteen ninety three Te Kooti died peacefully at Ōhiwa in his early sixties. His burial place on the harbour is not a public site, and its exact location is known only to the Ringatū church. If you drive around the harbour today you are passing through the landscape in which the most controversial and the most creative Māori figure of the nineteenth century ended his days in a measure of peace.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Whakatōhea",
+        "Ringatū Church",
+        "Te Ara — Te Kooti"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Ōhiwa Harbour — Te Kooti''s Final Pā as a place where the history and cultural significance of Aotearoa become tangible and real. The sheltered harbour where Te Kooti lived his final years — and died peacefully in 1893. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-opotiki-volkner",
+      "name": "St Stephen the Martyr, Ōpōtiki",
+      "region": "bay-of-plenty",
+      "lat": -38.0072,
+      "lng": 177.2869,
+      "category": "heritage",
+      "tags": [
+        "volkner",
+        "1865",
+        "opotiki",
+        "pai-marire",
+        "church"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The small white church where the missionary Carl Volkner was killed by Pai Mārire followers in 1865 — a shadow on the region still.",
+      "commentary": "On 2 March 1865 Lutheran missionary Carl Sylvius Volkner was hanged near his church at Ōpōtiki. The government response included confiscation of 448,000 acres from Whakatōhea.",
+      "audio_story": "You are at St Stephen the Martyr, a small white weatherboard Anglican church in the main street of Ōpōtiki. The sign above the door carries the dedication to Carl Sylvius Volkner, the Lutheran missionary who had taken Anglican orders and who served this parish from eighteen sixty one. On the second of March, eighteen sixty five, a party of Pai Mārire followers led by Kereopa Te Rau arrived in Ōpōtiki on an eastward journey from Taranaki. For reasons still debated by historians, they seized Volkner and hanged him from a willow tree near the church. The act set in motion one of the most damaging consequences in Bay of Plenty history. The colonial government responded with a punitive military expedition, treating the entire iwi of Whakatōhea as responsible for the act of a small party. Four hundred and forty eight thousand acres of Whakatōhea land were subsequently confiscated. The iwi has never recovered to its pre eighteen sixty five scale. In twenty twenty three the Crown formally apologised to Whakatōhea and agreed a Treaty settlement that begins to acknowledge the injustice of that response. The church itself still holds regular services. A small memorial plaque notes the deaths. Stand quietly.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Whakatōhea",
+        "Heritage NZ",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at St Stephen the Martyr, Ōpōtiki — the site rewards those who take time to read the signage and absorb the context. The small white church where the missionary Carl Volkner was killed by Pai Mārire followers in 1865 — a shadow on the region still. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bop-hist-gate-pa",
+      "name": "Pukehinahina / Gate Pā",
+      "region": "bay-of-plenty",
+      "lat": -37.7147,
+      "lng": 176.1392,
+      "category": "māori",
+      "tags": [
+        "gate-pa",
+        "1864",
+        "battle",
+        "ngai-te-rangi",
+        "tauranga"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where Ngāi Te Rangi defeated a larger British force in 1864 — the most famous Māori victory of the NZ Wars.",
+      "commentary": "On 29 April 1864, 230 Ngāi Te Rangi warriors under Rāwiri Puhirake defeated 1,700 British troops at Pukehinahina (Gate Pā). 31 British killed; Colonel Booth mortally wounded.",
+      "audio_story": "You are at Pukehinahina, also known as Gate Pā, the battlefield of one of the most famous engagements of the New Zealand Wars. On the twenty ninth of April, eighteen sixty four, the British forces of the invasion of Tauranga, some seventeen hundred men, attacked a small fortified pā held by around two hundred and thirty Ngāi Te Rangi warriors under the rangatira Rāwiri Puhirake. The British opened a day long artillery bombardment that reduced the pā to rubble, then launched a mass assault expecting easy victory. Instead, the assault column walked straight into concealed rifle pits and was slaughtered. Thirty one British soldiers were killed and many more wounded, including the commanding officer Colonel Booth, who died of his wounds in the pā overnight. During that night, Heni Te Kiri Karamū, a kuia, was said to have given water to the wounded and dying colonial soldiers on both sides, an act of mercy long remembered. Ngāi Te Rangi withdrew under cover of darkness. The British occupied the empty pā the next morning and claimed a hollow victory. The modern reserve includes a well interpreted walking loop, replica earthworks, and a chapel commemorating the dead of both sides. A small, essential pause on any journey through Tauranga.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Te Rangi",
+        "NZHistory — Gate Pā",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Pukehinahina / Gate Pā as a place where the history and cultural significance of Aotearoa become tangible and real. Where Ngāi Te Rangi defeated a larger British force in 1864 — the most famous Māori victory of the NZ Wars. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-te-ranga",
+      "name": "Te Ranga Battlefield",
+      "region": "bay-of-plenty",
+      "lat": -37.75,
+      "lng": 176.1583,
+      "category": "heritage",
+      "tags": [
+        "te-ranga",
+        "1864",
+        "battle",
+        "ngai-te-rangi",
+        "memorial"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where the Tauranga campaign was decided seven weeks after Gate Pā — and where many of the victors of that battle fell.",
+      "commentary": "21 June 1864. British cavalry surprised Ngāi Te Rangi digging rifle pits at Te Ranga. Around 108 Māori killed. Their surrender ended the Tauranga campaign.",
+      "audio_story": "You are at Te Ranga, a farm paddock south of Tauranga that is almost ignored by passing traffic but that carries one of the heaviest military losses suffered by Māori in the New Zealand Wars. On the twenty first of June, eighteen sixty four, seven weeks after Ngāi Te Rangi had won their extraordinary victory at Gate Pā, a detachment of British cavalry and infantry under Colonel Greer surprised a larger Ngāi Te Rangi force digging rifle pits here, planning to fortify the ridge in the same style that had been so successful at Gate Pā. The British attacked before the pits could be completed. The resulting engagement was short and devastating. Around one hundred and eight Māori were killed, including the rangatira Rāwiri Puhirake who had led the victory at Gate Pā in April. British losses were around thirteen killed. Ngāi Te Rangi formally surrendered to the Crown on the twenty fifth of July, ending the Tauranga campaign. The battlefield today is a small reserve with a walking path, a central memorial pou, and interpretive signs that tell the story with care. A one hundred and fifty year old wound still quietly tended by the descendants of both sides. If you stop at Gate Pā you should also stop here. The two stories belong together.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Te Rangi",
+        "NZHistory — Te Ranga",
+        "Tauranga City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Te Ranga Battlefield — the site rewards those who take time to read the signage and absorb the context. Where the Tauranga campaign was decided seven weeks after Gate Pā — and where many of the victors of that battle fell. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bop-hist-elms",
+      "name": "The Elms Mission House, Tauranga",
+      "region": "bay-of-plenty",
+      "lat": -37.6806,
+      "lng": 176.1661,
+      "category": "heritage",
+      "tags": [
+        "mission",
+        "1847",
+        "brown",
+        "cms",
+        "oldest"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "The original 1847 Church Missionary Society station — one of the oldest wooden buildings in New Zealand, with its Georgian garden almost intact.",
+      "commentary": "Built 1838–47 by the Brown family as a CMS mission. Rev Alfred Brown is buried in the garden. Now a house museum.",
+      "audio_story": "You are at the Elms, the mission station established in Tauranga by the Reverend Alfred Nesbit Brown and his family from eighteen thirty eight. The main mission house was built progressively between eighteen thirty eight and eighteen forty seven, and it is among the oldest wooden buildings still standing in New Zealand. Brown was a Church Missionary Society clergyman. He was posted here to work among the iwi of Tauranga, and over three decades he built relationships that would prove pivotal during the war of eighteen sixty four. Brown opposed the military campaign and sought to minimise the suffering on both sides. On the evening of the twenty eighth of April, eighteen sixty four, the eve of the attack on Gate Pā, Colonel Booth and his senior officers dined here at the mission. All but one of them would be killed or fatally wounded in the battle the next day. The Browns are buried in a small cemetery at the rear of the property. The mission house is now open as a heritage house museum with remarkably complete original furnishings and one of the oldest continually cultivated European style gardens in the country. Ring the bell at the gate and someone will welcome you in.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "The Elms — theelms.org.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at The Elms Mission House, Tauranga — the site rewards those who take time to read the signage and absorb the context. The original 1847 Church Missionary Society station — one of the oldest wooden buildings in New Zealand, with its Georgian garden almost intact. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bop-hist-mount-maunganui-pa",
+      "name": "Mauao Summit Track (Pā History)",
+      "region": "bay-of-plenty",
+      "lat": -37.6319,
+      "lng": 176.1756,
+      "category": "māori",
+      "tags": [
+        "mauao",
+        "pa-site",
+        "summit",
+        "ngai-te-rangi",
+        "mount-maunganui"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The iconic Mount at the end of the peninsula — a heavily terraced pā and one of the most important maunga of Tauranga Moana.",
+      "commentary": "Mauao rises 232m at the tip of the Mount Maunganui peninsula. An intensively terraced pā of Ngāi Te Rangi. Summit track loops in 1 hour.",
+      "audio_story": "You are climbing Mauao, the dramatic two hundred and thirty two metre cone that rises at the tip of the Mount Maunganui peninsula, and one of the best known landmarks on the whole Bay of Plenty coast. The story told by Ngāi Te Rangi is that Mauao was once a nameless inland hill who fell in love with Pūwhenua, a much more beautiful mountain. When Pūwhenua did not return his love, the patupaiarehe, the forest spirits, took pity on him and agreed to haul him to the coast and drown him in the sea. They dragged the mountain across the land overnight but the work was incomplete when the sun rose. Unable to continue in daylight, they abandoned him at the sea''s edge, where he stands to this day. His full name, Mauao, means caught by the dawn. The summit track is around a kilometre and can be walked in an hour return. Every terrace you cross on the climb was once part of a pā occupied by Ngāi Te Rangi. Defensive ditches, kūmara storage pits, house platforms, all are visible if you know how to look. The summit view over Tauranga, the harbour, Matakana Island, and the long surf beach below, is among the finest on the coast. Do walk it.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Ngāi Te Rangi",
+        "Tauranga City Council",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Mauao Summit Track (Pā History) as a place where the history and cultural significance of Aotearoa become tangible and real. The iconic Mount at the end of the peninsula — a heavily terraced pā and one of the most important maunga of Tauranga Moana. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-hist-whakaari",
+      "name": "Whakaari / White Island",
+      "region": "bay-of-plenty",
+      "lat": -37.5212,
+      "lng": 177.1823,
+      "category": "heritage",
+      "tags": [
+        "whakaari",
+        "volcano",
+        "2019",
+        "memorial",
+        "maori-ownership"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 0.5,
+      "short": "New Zealand''s most active volcano — and the site of the December 2019 eruption that killed 22 people.",
+      "commentary": "Whakaari is privately owned by the Buttle family. A live andesite volcano. On 9 Dec 2019 an eruption killed 22 visitors. Now closed to tourism pending safety review.",
+      "audio_story": "You are looking out across the Bay of Plenty at Whakaari, White Island, a small active volcanic island whose plume of steam can be seen on a clear day from nearly the whole coast between Whakatāne and Ōpōtiki. The island is the emergent summit of a very large submarine stratovolcano, and it has been almost continuously active for at least two hundred thousand years. For Māori, the island is a tupuna, a wāhi tapu, and the name Whakaari means to make visible, describing the ever present plume of steam. For a hundred years it was the centre of a small commercial sulfur mining operation. After the nineteen fourteen eruption killed the entire mining workforce, the industry eventually closed and the island became one of the most popular volcano tourism destinations in the southern hemisphere. On the afternoon of the ninth of December, twenty nineteen, with forty seven people on the crater floor as part of guided tours, the volcano erupted without warning. Twenty two people died. Many others were severely injured. The island has since been closed to commercial tours pending a review of safety. A national memorial walk in Whakatāne carries the names of those who died. From the shore, look at the plume, and remember.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "GeoNet",
+        "Whakatāne District",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Whakaari / White Island — the site rewards those who take time to read the signage and absorb the context. New Zealand''s most active volcano — and the site of the December 2019 eruption that killed 22 people. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "bop-maketu-landing",
+      "name": "Maketū — Te Arawa Waka Landing",
+      "region": "bay-of-plenty",
+      "lat": -37.768,
+      "lng": 176.459,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "waka",
+        "te-arawa",
+        "landing-site",
+        "wāhi-tapu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Where the Te Arawa waka made its final landfall from Hawaiki — the ancestral landing place of the Te Arawa confederation.",
+      "commentary": "Maketū is one of the most significant waka landing sites in Aotearoa. The Te Arawa waka, captained by Tamatekapua, arrived here from Hawaiki. The area is rich in pā sites and wāhi tapu.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Maketū — Te Arawa Waka Landing as a place where the history and cultural significance of Aotearoa become tangible and real. Where the Te Arawa waka made its final landfall from Hawaiki — the ancestral landing place of the Te Arawa confederation. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-whakatane-mataatua-wharenui",
+      "name": "Mataatua Wharenui, Whakatāne",
+      "region": "bay-of-plenty",
+      "lat": -37.956,
+      "lng": 176.993,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "wharenui",
+        "ngāti-awa",
+        "carving",
+        "taonga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A magnificent carved meeting house returned home after 128 years overseas.",
+      "commentary": "Mataatua wharenui was built by Ngāti Awa in the 1870s. The government seized it in 1879 and sent it to exhibitions and museums. It was finally returned in 2011 and now stands in a purpose-built gallery in Whakatāne.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Mataatua Wharenui, Whakatāne as a place where the history and cultural significance of Aotearoa become tangible and real. A magnificent carved meeting house returned home after 128 years overseas. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-gate-pa",
+      "name": "Gate Pā / Pukehinahina Battle Site",
+      "region": "bay-of-plenty",
+      "lat": -37.701,
+      "lng": 176.15,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "battle",
+        "pā",
+        "tauranga-campaign"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where 230 Māori warriors defeated 1,700 British troops in 1864 — the worst British loss of the NZ Wars.",
+      "commentary": "On 29 April 1864, British troops stormed Gate Pā and were repulsed with devastating losses — around 100 killed and wounded. The Māori commander Rawiri Puhirake showed extraordinary chivalry, giving water to wounded British soldiers.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Gate Pā / Pukehinahina Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where 230 Māori warriors defeated 1,700 British troops in 1864 — the worst British loss of the NZ Wars. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-putauaki",
+      "name": "Pūtauaki / Mount Edgecumbe",
+      "region": "bay-of-plenty",
+      "lat": -37.964,
+      "lng": 176.75,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "maunga",
+        "ngāti-awa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A sacred volcanic peak — the ancestral mountain of Ngāti Awa.",
+      "commentary": "Pūtauaki (821m) is the maunga of Ngāti Awa and is visible from much of the eastern Bay of Plenty. The mountain holds deep spiritual significance and features in many tribal traditions.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Pūtauaki / Mount Edgecumbe as a place where the history and cultural significance of Aotearoa become tangible and real. A sacred volcanic peak — the ancestral mountain of Ngāti Awa. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-whakatane-landing",
+      "name": "Whakatāne — Mataatua Waka Landing",
+      "region": "bay-of-plenty",
+      "lat": -37.953,
+      "lng": 177.005,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "waka",
+        "mataatua",
+        "landing-site",
+        "wairaka"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where the Mataatua waka landed — named for the moment Wairaka took the helm and cried 'Kia whakatāne au i ahau!'",
+      "commentary": "The town's name comes from Wairaka, who seized the paddle of the drifting waka and called 'Let me act as a man!' A statue of Wairaka stands on the rock at the river mouth.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Whakatāne — Mataatua Waka Landing as a place where the history and cultural significance of Aotearoa become tangible and real. Where the Mataatua waka landed — named for the moment Wairaka took the helm and cried 'Kia whakatāne au i ahau!'. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-te-urewera",
+      "name": "Te Urewera — Home of the Children of the Mist",
+      "region": "bay-of-plenty",
+      "lat": -38.68,
+      "lng": 177.15,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "tūhoe",
+        "legal-personhood",
+        "forest"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 8,
+      "short": "The ancestral homeland of Tūhoe — granted legal personhood in 2014, the first natural feature in the world.",
+      "commentary": "In 2014, Te Urewera Act removed Te Urewera's national park status and granted it legal personhood — it now owns itself. This recognises the Tūhoe worldview that the land is an ancestor.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Urewera — Home of the Children of the Mist as a place where the history and cultural significance of Aotearoa become tangible and real. The ancestral homeland of Tūhoe — granted legal personhood in 2014, the first natural feature in the world. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-whakaari-sacred",
+      "name": "Whakaari — The Sacred Volcano",
+      "region": "bay-of-plenty",
+      "lat": -37.521,
+      "lng": 177.183,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "volcano",
+        "sacred",
+        "ngāti-awa",
+        "wāhi-tapu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "NZ's most active volcano — Whakaari means 'to make visible', a taonga of Ngāti Awa.",
+      "commentary": "Whakaari is a taonga of Ngāti Awa, the traditional kaitiaki. The 2019 eruption that killed 22 people deepened their sense of responsibility as kaitiaki of this powerful and dangerous taonga.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Whakaari — The Sacred Volcano as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's most active volcano — Whakaari means 'to make visible', a taonga of Ngāti Awa. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-papamoa-hills-park",
+      "name": "Papamoa Hills Cultural Heritage Park",
+      "region": "bay-of-plenty",
+      "lat": -37.725,
+      "lng": 176.282,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "terraces",
+        "regional-park"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A network of terraced pā sites in the hills above Papamoa — a regional park showcasing Māori earthworks.",
+      "commentary": "The park preserves a network of pā sites, terracing, and storage pits with clear defensive features. Walking tracks wind through with interpretation panels.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Papamoa Hills Cultural Heritage Park as a place where the history and cultural significance of Aotearoa become tangible and real. A network of terraced pā sites in the hills above Papamoa — a regional park showcasing Māori earthworks. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-ohiwa-harbour",
+      "name": "Ōhiwa Harbour",
+      "region": "bay-of-plenty",
+      "lat": -37.965,
+      "lng": 177.035,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "harbour",
+        "wāhi-tapu",
+        "shellfish"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A pristine tidal harbour rich in Māori history — wāhi tapu sites and shellfish beds.",
+      "commentary": "Ōhiwa Harbour is one of NZ's most ecologically intact tidal estuaries and of immense cultural significance. It was a critical mahinga kai — the shellfish beds sustained communities for centuries.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Ōhiwa Harbour as a place where the history and cultural significance of Aotearoa become tangible and real. A pristine tidal harbour rich in Māori history — wāhi tapu sites and shellfish beds. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-elms-mission",
+      "name": "The Elms / Te Papa Mission Station",
+      "region": "bay-of-plenty",
+      "lat": -37.684,
+      "lng": 176.177,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "mission",
+        "tauranga",
+        "ngāi-te-rangi"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of NZ's oldest mission stations — established in 1835 with the support of Ngāi Te Rangi.",
+      "commentary": "The Elms was established with the support and cooperation of local Ngāi Te Rangi. The library (1838) is one of the oldest wooden buildings in the country.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe The Elms / Te Papa Mission Station as a place where the history and cultural significance of Aotearoa become tangible and real. One of NZ's oldest mission stations — established in 1835 with the support of Ngāi Te Rangi. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-mauao-heritage",
+      "name": "Mauao / Mount Maunganui — The Mountain Caught by the Dawn",
+      "region": "bay-of-plenty",
+      "lat": -37.632,
+      "lng": 176.178,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "maunga",
+        "pā",
+        "sacred",
+        "mythology"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "In Māori tradition, Mauao was a lonely mountain who tried to drown himself — but was caught by the dawn and turned to stone.",
+      "commentary": "Mauao was once called Otiti. Unloved by the other mountains, he asked the patupaiarehe (fairy folk) to drag him to the sea. But dawn came before he reached the water and he was turned to stone where he stands today. The mountain was a major pā site and is tapu. The summit walk offers extraordinary views.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Mauao / Mount Maunganui — The Mountain Caught by the Dawn as a place where the history and cultural significance of Aotearoa become tangible and real. In Māori tradition, Mauao was a lonely mountain who tried to drown himself — but was caught by the dawn and turned to stone. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-te-ranga-battle",
+      "name": "Te Ranga Battle Site",
+      "region": "bay-of-plenty",
+      "lat": -37.734,
+      "lng": 176.158,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "battle",
+        "tauranga-campaign"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "The 1864 follow-up battle to Gate Pā — where the unfinished pā could not withstand the British assault.",
+      "commentary": "On 21 June 1864, British forces attacked before the new pā could be completed. Around 68 Māori were killed, including Gate Pā commander Rawiri Puhirake.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Ranga Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. The 1864 follow-up battle to Gate Pā — where the unfinished pā could not withstand the British assault. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-te-puke-kiwifruit",
+      "name": "Te Puke — Māori Innovation in Horticulture",
+      "region": "bay-of-plenty",
+      "lat": -37.783,
+      "lng": 176.323,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "innovation",
+        "horticulture",
+        "kiwifruit"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The kiwifruit capital — where Māori landowners have become major players in NZ's horticultural industry.",
+      "commentary": "Te Puke's kiwifruit industry has significant Māori involvement, with many Māori land trusts becoming major growers. This represents a modern chapter in the long tradition of Māori horticulture — from kūmara to kiwifruit.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Puke — Māori Innovation in Horticulture as a place where the history and cultural significance of Aotearoa become tangible and real. The kiwifruit capital — where Māori landowners have become major players in NZ's horticultural industry. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bop-tauranga-nga-potiki",
+      "name": "Ngā Potiki Cultural Walk, Tauranga",
+      "region": "bay-of-plenty",
+      "lat": -37.687,
+      "lng": 176.165,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "walking",
+        "cultural",
+        "tauranga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A guided cultural walk through the Tauranga landscape — seeing the city through Māori eyes.",
+      "commentary": "Ngā Potiki a Tamapahore Trust offers guided walks that reveal the Māori cultural landscape beneath modern Tauranga — pā sites, place names, and stories that connect the present to the past.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ngā Potiki Cultural Walk, Tauranga as a place where the history and cultural significance of Aotearoa become tangible and real. A guided cultural walk through the Tauranga landscape — seeing the city through Māori eyes. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "bay-of-plenty-mount-maunganui-base-track",
+      "name": "Mauao (Mount Maunganui) Base Track",
+      "region": "bay-of-plenty",
+      "lat": -37.632,
+      "lng": 176.183,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "volcanic",
+        "beach",
+        "urban"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1,
+      "short": "Loop the base of Mauao, the iconic volcanic headland at the entrance to Tauranga Harbour.",
+      "commentary": "Mauao (Mount Maunganui) is a 232-metre volcanic cone at the tip of a narrow peninsula between the ocean beach and Tauranga Harbour. The base track is a 3.4 km loop with stunning coastal views. According to Maori legend, Mauao was a nameless hill who asked the patupaiarehe (fairy folk) to drag him to the sea to drown after being rejected in love.",
+      "audio_story": "You are walking the base track around Mauao, the 232-metre volcanic cone that anchors the Mount Maunganui peninsula like a sentinel. On one side, surf rolls onto the main beach; on the other, Tauranga Harbour stretches to the city. The 3.4-kilometre loop is flat and easy, winding between pohutukawa trees and rocky shoreline. In Maori legend, this hill was once an unnamed, lovesick mountain who asked the fairy folk to drag him to the sea — but they ran out of darkness before reaching the water, and he was stranded here, forever gazing at the ocean. If you have the energy, take the summit track instead — the 20-minute climb rewards you with a panorama that stretches from White Island to the Coromandel. At the base, the hot salt water pools at the foot of the mount are the perfect post-walk reward.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Tauranga City Council",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Mauao (Mount Maunganui) Base Track route delivers a memorable journey through exceptional New Zealand scenery. Loop the base of Mauao, the iconic volcanic headland at the entrance to Tauranga Harbour. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-east-cape-road",
+      "name": "East Cape Road – SH35",
+      "region": "bay-of-plenty",
+      "lat": -37.687,
+      "lng": 176.167,
+      "category": "journey",
+      "tags": [
+        "scenic-highway",
+        "coastal-drive",
+        "remote",
+        "maori-culture",
+        "multi-day"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 12,
+      "short": "Drive SH35 around the East Cape, one of NZ's most remote and culturally rich coastal highways.",
+      "commentary": "State Highway 35 runs 334 km from Opotiki to Gisborne around the East Cape. The road passes through remote Maori communities, past ornate carved meeting houses, and along deserted surf beaches. The East Cape Lighthouse is the first place on mainland New Zealand to see the sunrise each day.",
+      "audio_story": "You are turning onto State Highway 35 at Opotiki, beginning a 334-kilometre coastal drive around the East Cape — one of New Zealand's most remote and culturally significant journeys. This is deep Te Whanau-a-Apanui and Ngati Porou country, and beautifully carved marae and meeting houses line the road. The pace slows here; the two-lane road winds past pohutukawa-shaded bays where you might be the only visitor. At Te Araroa, a short detour leads to the East Cape Lighthouse — 700 steps up to the first point on mainland New Zealand to see the sunrise each morning. The road passes through Tikitiki, where St Mary's Church contains some of the finest Maori carving and tukutuku panel work in the country. Take at least two days for this drive. Fill up your fuel tank at every opportunity — petrol stations are scarce. And slow down: the journey itself is the destination.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "NZ Transport Agency",
+        "Gisborne District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The East Cape Road – SH35 route delivers a memorable journey through exceptional New Zealand scenery. Drive SH35 around the East Cape, one of NZ's most remote and culturally rich coastal highways. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-white-island-approach",
+      "name": "Whakaari / White Island Scenic Approach",
+      "region": "bay-of-plenty",
+      "lat": -37.521,
+      "lng": 177.183,
+      "category": "journey",
+      "tags": [
+        "volcanic",
+        "boat-trip",
+        "active-volcano",
+        "marine"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 5,
+      "short": "Boat journey across the Bay of Plenty to New Zealand's most active volcanic island.",
+      "commentary": "Whakaari / White Island lies 48 km offshore from Whakatane. It is New Zealand's most active cone volcano, with continuous fumarolic activity. The 2019 eruption killed 22 people and led to changes in volcanic risk management. The island remains a powerful reminder of New Zealand's position on the Pacific Ring of Fire.",
+      "audio_story": "You are heading out from Whakatane harbour across the Bay of Plenty towards a plume of steam on the horizon. Whakaari, White Island, is 48 kilometres offshore and has been continuously active for at least 150,000 years. As you approach, the scale becomes clear — this is a massive stratovolcano, mostly submerged, with only the summit rising above the sea. Captain Cook named it White Island in 1769 because of the perpetual cloud of steam. Sulphur was mined here in the early 1900s, and a lahar destroyed the miners' camp in 1914, killing all ten workers — their remains were never found. The devastating eruption of 9 December 2019, which killed 22 people, changed how New Zealand manages volcanic risk. Landing on the island is currently restricted. From the boat, the raw volcanic power is still clearly visible — steam vents, acid streams, and the ever-present smell of sulphur.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "GeoNet",
+        "Department of Conservation",
+        "Coroner's report 2019"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Whakaari / White Island Scenic Approach route delivers a memorable journey through exceptional New Zealand scenery. Boat journey across the Bay of Plenty to New Zealand's most active volcanic island. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-ohope-beach-walk",
+      "name": "Ohope Beach to Ohiwa Harbour Walk",
+      "region": "bay-of-plenty",
+      "lat": -37.981,
+      "lng": 177.021,
+      "category": "journey",
+      "tags": [
+        "beach-walk",
+        "harbour",
+        "coastal",
+        "wildlife"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Walk 11 km of golden sand from Ohope Beach to the ecologically rich Ohiwa Harbour.",
+      "commentary": "Ohope Beach is an 11 km stretch of golden sand regularly voted New Zealand's favourite beach. The eastern end meets Ohiwa Harbour, a significant ecological area home to dotterel, oystercatcher, and shorebirds. The harbour is one of the least modified in the North Island.",
+      "audio_story": "You are walking the length of Ohope Beach, 11 kilometres of golden sand that has been voted New Zealand's most loved beach multiple times. The beach stretches in a gentle arc, backed by dunes and pohutukawa, with the distant outline of Whakaari White Island on the horizon. At the eastern end, the beach gives way to the Ohiwa Harbour, one of the least modified harbours in the North Island. At low tide, the harbour reveals vast tidal flats where New Zealand dotterel, variable oystercatcher, and godwits feed. The harbour is a nursery for juvenile fish and home to extensive seagrass beds. Walk out onto the sand spit where harbour meets ocean and watch the currents swirl. If the tide is rising, keep to the marked track — the channels fill quickly. This is the Eastern Bay of Plenty at its tranquil best.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whakatane District Council",
+        "Bay of Plenty Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Ohope Beach to Ohiwa Harbour Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk 11 km of golden sand from Ohope Beach to the ecologically rich Ohiwa Harbour. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-kaimai-mamaku-crossing",
+      "name": "Kaimai Mamaku Forest Walk",
+      "region": "bay-of-plenty",
+      "lat": -37.725,
+      "lng": 175.96,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "waterfall",
+        "native-forest",
+        "tramping"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 5,
+      "short": "Tramp through the Kaimai Mamaku ranges between Waikato and Bay of Plenty on old pack-horse tracks.",
+      "commentary": "The Kaimai Mamaku Forest Park stretches along the range separating the Waikato and Bay of Plenty regions. Multiple tracks cross the range, many following old Maori trails and colonial pack-horse routes. The bush includes magnificent podocarp forest and numerous waterfalls.",
+      "audio_story": "You are heading into the Kaimai Mamaku ranges, a forested spine that divides the Waikato from the Bay of Plenty. These trails follow routes used by Maori for centuries, later widened by colonial-era pack-horse teams carrying supplies between the coast and the Waikato interior. The bush is dense and wet — annual rainfall here tops 2,500 millimetres — and the result is a lush, dripping forest of rimu, rata, and tree ferns. Waterfalls are everywhere: the Elsa's, Wairere, and Kaiate Falls are each worth a visit. The birdlife is rich, with tui, bellbirds, and native pigeons common. If you are crossing the range, the descent on the Bay of Plenty side is steep and rewarding, with views opening out to the coast through gaps in the canopy. Be prepared for mud and changing conditions — this range generates its own weather.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Kaimai Mamaku Forest Walk route delivers a memorable journey through exceptional New Zealand scenery. Tramp through the Kaimai Mamaku ranges between Waikato and Bay of Plenty on old pack-horse tracks. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-mclaren-falls-walk",
+      "name": "McLaren Falls Park Walk",
+      "region": "bay-of-plenty",
+      "lat": -37.786,
+      "lng": 176.057,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "waterfall",
+        "glowworms",
+        "lake"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk through McLaren Falls Park for waterfalls by day and wild glowworms by night — no cave required.",
+      "commentary": "McLaren Falls Park is a 190-hectare park near Tauranga featuring walking trails, a lake, and a waterfall. The park is renowned for its outdoor glowworm displays along the stream banks, visible on dark nights without needing to enter a cave. The collection of trees includes one of New Zealand's finest exotic arboreta.",
+      "audio_story": "You are entering McLaren Falls Park, a 190-hectare gem tucked away near Tauranga that many Bay of Plenty visitors overlook entirely. By day, the walking trails wind past waterfalls, through exotic and native plantings, and around a peaceful lake stocked with trout. The park contains one of the finest arboreta in the country, with mature specimens from around the world. But return after dark and the park reveals its most magical feature — wild glowworms lining the stream banks like tiny constellations. No cave required: on a dark, damp night, thousands of Arachnocampa luminosa larvae glow blue-green from the overhanging banks, reflecting in the water below. Bring a torch to navigate the paths but switch it off at the viewing points to let your eyes adjust. The effect is mesmerising — the living light of these tiny creatures turning a suburban park into something from a fairy tale. This is one of the best outdoor glowworm displays in the North Island.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Tauranga City Council",
+        "Western Bay of Plenty District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The McLaren Falls Park Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk through McLaren Falls Park for waterfalls by day and wild glowworms by night — no cave required. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "bay-of-plenty-mount-maunganui-surf",
+      "name": "Mount Maunganui Surf Beach",
+      "region": "bay-of-plenty",
+      "lat": -37.6362,
+      "lng": 176.18,
+      "category": "adventure",
+      "tags": [
+        "surfing",
+        "beach-break",
+        "lessons",
+        "free",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Catch consistent beach breaks at one of NZ's most popular surf spots.",
+      "commentary": "The Main Beach at Mount Maunganui is a long, consistent beach break that works on all tides. The northern end near Moturiki Island offers more shelter for learners, while the open beach picks up more swell for experienced surfers. Multiple surf schools operate from the beachfront.",
+      "audio_story": "You have arrived at Mount Maunganui Main Beach, consistently rated one of the best surf beaches in New Zealand. The sand-bottom break stretches for over a kilometre, offering waves for every ability level. If you are learning, head to the northern end near Moturiki Island, where the rocky point provides shelter and the waves are smaller and more predictable. Experienced surfers should check the open beach, which picks up swell from the north and east and can produce head-high waves on a solid swell. The water here is noticeably warmer than much of New Zealand thanks to the East Auckland Current. After your session, the base track around Mauao, the extinct volcanic cone at the end of the beach, is a must-do walk with panoramic views of the coastline.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Mount Surf Shop",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Mount Maunganui Surf Beach adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Catch consistent beach breaks at one of NZ's most popular surf spots. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-whakaari-tour",
+      "name": "Whakaari / White Island Volcano Tour",
+      "region": "bay-of-plenty",
+      "lat": -37.521,
+      "lng": 177.183,
+      "category": "adventure",
+      "tags": [
+        "volcano-hiking",
+        "boat-tour",
+        "scenic",
+        "commercial",
+        "geothermal"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "View New Zealand's most active marine volcano by boat from Whakatane.",
+      "commentary": "Whakaari / White Island is New Zealand's most active cone volcano, sitting 48 km offshore from Whakatane. Boat tours offer views of the steaming crater and volcanic landscape from the water. Following the 2019 eruption, access protocols have changed significantly.",
+      "audio_story": "You are departing from Whakatane harbour towards Whakaari, White Island, New Zealand's most active marine volcano sitting 48 kilometres out in the Bay of Plenty. As the boat crosses the open water, you will see the island materialise from the haze, a raw, steaming mass of rock rising from the sea. The volcano has been erupting intermittently for at least 150,000 years, and the crater floor sits below sea level, making it geologically unique. The island's history includes attempts at sulphur mining in the early 1900s, with the ruins of the old factory still visible from the water. The 2019 eruption changed how visitors experience this place, and your guides will share the full story with deep respect for those affected. This is a humbling encounter with the raw power of the earth.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "White Island Tours",
+        "GeoNet",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Whakaari / White Island Volcano Tour adventure draws rave reviews for the combination of adrenaline and spectacular scenery. View New Zealand's most active marine volcano by boat from Whakatane. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-mclaren-falls-kayak",
+      "name": "McLaren Falls Glow Worm Kayak",
+      "region": "bay-of-plenty",
+      "lat": -37.778,
+      "lng": 176.0711,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "glow-worms",
+        "night-tour",
+        "commercial",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Paddle through a galaxy of glow worms on a night kayak at McLaren Falls.",
+      "commentary": "McLaren Falls Park hosts one of the Bay of Plenty's most magical experiences, a nighttime kayak through glow worm-lit waterways. Guided tours paddle along the lake and stream edges after dark, where thousands of Arachnocampa luminosa light up the overhanging banks. The park is 20 minutes from Tauranga.",
+      "audio_story": "You have arrived at McLaren Falls Park as the last light fades from the sky, which is exactly when the magic begins. Your guide will launch your kayak onto the still water and lead you quietly along the bush-fringed edges of the lake. As darkness settles, the overhanging banks come alive with thousands of glow worms, tiny Arachnocampa luminosa larvae casting their bioluminescent fishing lines. The effect is like floating through a galaxy. These are the same species found in Waitomo, but here you experience them from the open air, under a canopy of native bush with the Southern Cross overhead. Your guide will explain their fascinating and rather gruesome life cycle, each glowing dot is a hungry larva luring prey into sticky threads. Silence and slow paddling are rewarded with the brightest displays.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Waimarino Kayak Tours",
+        "Tauranga City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The McLaren Falls Glow Worm Kayak adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Paddle through a galaxy of glow worms on a night kayak at McLaren Falls. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-tauranga-jet",
+      "name": "Tauranga Harbour Jet Boat",
+      "region": "bay-of-plenty",
+      "lat": -37.6551,
+      "lng": 176.1671,
+      "category": "adventure",
+      "tags": [
+        "jet-boating",
+        "harbour",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "Blast through Tauranga Harbour with 360-degree spins and high-speed drifts.",
+      "commentary": "Jet boat tours on Tauranga Harbour combine adrenaline thrills with harbour sightseeing. Boats reach speeds of up to 80 km/h with 360-degree spins, power slides, and high-speed runs through the harbour channels. Tours also pass the Port of Tauranga, one of Australasia's busiest.",
+      "audio_story": "You have arrived at the Tauranga waterfront, where a jet boat is idling with 600 horsepower waiting to be unleashed. Jet boats were invented right here in New Zealand by Sir William Hamilton, and this ride will show you exactly why the Kiwis perfected the concept. Your driver will rocket through the harbour channels at up to 80 kilometres per hour, executing 360-degree spins that drench everyone aboard and power slides that feel like the laws of physics have been temporarily suspended. Between the adrenaline bursts, you will cruise past the Port of Tauranga, one of the busiest ports in Australasia, and across the harbour towards the base of Mauao. The shallow-draught jet drive means the boat can operate in water just centimetres deep, opening up channels that no propeller-driven vessel could reach.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Bay Explorer Jet",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Tauranga Harbour Jet Boat adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Blast through Tauranga Harbour with 360-degree spins and high-speed drifts. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-papamoa-sup",
+      "name": "Papamoa Beach Stand-Up Paddleboarding",
+      "region": "bay-of-plenty",
+      "lat": -37.6907,
+      "lng": 176.2896,
+      "category": "adventure",
+      "tags": [
+        "stand-up-paddleboarding",
+        "beach",
+        "hire",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Glide along the calm waters of Papamoa Beach on a stand-up paddleboard.",
+      "commentary": "Papamoa Beach offers flat, sheltered conditions ideal for stand-up paddleboarding, especially on calm mornings. Board hire is available from beachfront operators. The 16-kilometre stretch of golden sand provides plenty of room to explore.",
+      "audio_story": "You have arrived at Papamoa Beach, where 16 kilometres of golden sand and typically gentle surf create ideal conditions for stand-up paddleboarding. Early mornings here are sublime, the ocean goes glassy, the sun rises behind Mauao to the northwest, and you can paddle in solitude along one of New Zealand's longest uninterrupted beaches. SUP is deceptively great exercise, engaging your core with every stroke while you enjoy the view from an elevated vantage point above the water. You might spot stingrays in the shallows or dolphins cruising the outer break. Board hire is straightforward from operators along the beachfront, and first-timers will find the calm conditions here much more forgiving than ocean swells elsewhere.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "SUP Papamoa",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Papamoa Beach Stand-Up Paddleboarding adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Glide along the calm waters of Papamoa Beach on a stand-up paddleboard. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-te-puke-quad",
+      "name": "Te Puke Quad Bike Adventures",
+      "region": "bay-of-plenty",
+      "lat": -37.758,
+      "lng": 176.33,
+      "category": "adventure",
+      "tags": [
+        "quad-biking",
+        "atv",
+        "farmland",
+        "commercial"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "Ride quad bikes through kiwifruit country and native bush near Te Puke.",
+      "commentary": "Quad bike tours near Te Puke take riders through a mix of working farmland, kiwifruit orchards, and native bush tracks. Routes include river crossings, hill climbs, and bush trails with views of the Kaimai Range. No experience is necessary as guides provide full training.",
+      "audio_story": "You have arrived in Te Puke, the kiwifruit capital of the world, but today you are swapping orchards for off-road adventure. Your quad bike awaits on a working farm at the foot of the Kaimai Range, where the tracks wind through a landscape that shifts from open pasture to dense native bush and back again. Your guide will lead you through river crossings, up muddy hill climbs, and along ridgelines with panoramic views across the Bay of Plenty. No experience is required, the bikes are automatic, and your guide sets the pace. This region produces nearly 80 percent of New Zealand's kiwifruit, and you will ride right through the orchards to see the vines up close. Just be prepared to get muddy, that is half the fun.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Adventure Playground NZ",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Te Puke Quad Bike Adventures adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride quad bikes through kiwifruit country and native bush near Te Puke. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "bay-of-plenty-ohope-coasteering",
+      "name": "Ohope Beach Coasteering",
+      "region": "bay-of-plenty",
+      "lat": -37.969,
+      "lng": 177.034,
+      "category": "adventure",
+      "tags": [
+        "coasteering",
+        "cliff-jumping",
+        "swimming",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Scramble, swim, and leap off cliffs along the volcanic coastline at Ohope.",
+      "commentary": "Coasteering at Ohope involves scrambling along volcanic rocks, swimming through surges, and jumping from cliff platforms into deep water. The volcanic coastline near Whakatane provides natural platforms, channels, and deep pools ideal for this adventure sport.",
+      "audio_story": "You have arrived at Ohope, where the volcanic coastline creates a natural adventure playground for coasteering, the sport of scrambling, swimming, and jumping your way along a rocky shore. Your guide will kit you out with a wetsuit and helmet, then lead you along a route that weaves between rocky channels, surge pools, and cliff faces. The volcanic rock here has been eroded into platforms at various heights, providing natural jumping spots from 2 metres up to 8 metres for the truly committed. Between jumps, you will swim through rock channels where the ocean surges around you, scramble up seaweed-slicked rocks, and explore caves and blow holes carved into the headland. Coasteering is relatively new to New Zealand but has been hugely popular in the UK and Europe for years, and the Bay of Plenty's volcanic coastline is perfectly suited to it. No climbing or swimming expertise is needed, just a willingness to get wet and push your comfort zone.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Whakatane District Council",
+        "Tourism Bay of Plenty"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Ohope Beach Coasteering adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Scramble, swim, and leap off cliffs along the volcanic coastline at Ohope. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

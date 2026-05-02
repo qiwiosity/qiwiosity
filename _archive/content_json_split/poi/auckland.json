@@ -1,0 +1,1718 @@
+{
+  "region": {
+    "id": "auckland",
+    "name": "Auckland / Tāmaki Makaurau",
+    "island": "North",
+    "centre": {
+      "lat": -36.8485,
+      "lng": 174.7633
+    },
+    "bounds": {
+      "north": -36.5,
+      "south": -37.2,
+      "east": 175.1,
+      "west": 174.4
+    },
+    "description": "The isthmus city — Tāmaki Makaurau, 'Tāmaki of a hundred lovers' — built on 53 volcanoes between two harbours."
+  },
+  "pois": [
+    {
+      "id": "auckland-sky-tower",
+      "name": "Sky Tower",
+      "region": "auckland",
+      "lat": -36.8484,
+      "lng": 174.7625,
+      "category": "heritage",
+      "tags": [
+        "viewpoint",
+        "skyline",
+        "engineering"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The 328m spire at the centre of Auckland — Southern Hemisphere's tallest free-standing structure.",
+      "commentary": "Opened in 1997. At 328 metres it's more than twice the height of the next-tallest building in Auckland, designed to survive an 8.0 earthquake and 200 km/h winds. On a clear day the observation deck sees 80km — to the Coromandel in one direction, Muriwai in the other. If you've got the nerve, the SkyJump is an 11-second controlled leap off the tower.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently rate the 360° observation deck views among Auckland's unmissable experiences — on a clear day you can see all the way to the Coromandel. The SkyWalk and SkyJump are crowd favourites for thrill-seekers. Some find admission pricey, but most agree it's worth it at least once."
+      }
+    },
+    {
+      "id": "auckland-mt-eden",
+      "name": "Maungawhau / Mount Eden",
+      "region": "auckland",
+      "lat": -36.8773,
+      "lng": 174.7643,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "viewpoint",
+        "pā",
+        "māori"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "The highest volcano in the Auckland field — 196m with a 50m-deep crater and a 360° of the city.",
+      "commentary": "Maungawhau erupted about 28,000 years ago. The terraced slopes are not natural — they're the remains of one of the largest Māori pā sites in Tāmaki Makaurau. The summit crater, Te Ipu-a-Mataaho, 'the food bowl of Mataaho', is sacred: visitors are asked not to walk into it. The car road to the summit closed in 2019 after decades of erosion; the walk up now takes about 15 minutes.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Free and accessible, Mount Eden delivers sweeping city-to-harbour panoramas that visitors call the best in Auckland. The volcanic crater itself is sacred — reviewers consistently remind others to stay on the path and out of the crater. Early morning visits are praised for avoiding the tour-bus crowds."
+      }
+    },
+    {
+      "id": "auckland-domain",
+      "name": "Auckland Domain & War Memorial Museum",
+      "region": "auckland",
+      "lat": -36.861,
+      "lng": 174.7772,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "park",
+        "volcano",
+        "war-memorial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Auckland's central park, built inside a volcanic crater, with a world-class Māori and Pacific collection at its peak.",
+      "commentary": "The Domain is one of Auckland's oldest parks — 75 hectares inside the Pukekawa volcanic explosion crater. On its summit, Auckland War Memorial Museum (opened 1929) holds Te Hono ki Hawaiki, the only surviving pre-European waka taua 25 metres long, carved around 1836. The Hall of Memories above lists the names of Aucklanders lost in every war since the South African campaign.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The War Memorial Museum draws universal praise for its Māori and Pacific collections — the 25-metre waka taua stops visitors in their tracks. Reviewers love that the surrounding Domain parkland is free, and the glasshouses are a hidden highlight. Allow at least three hours to do it justice."
+      }
+    },
+    {
+      "id": "auckland-waiheke",
+      "name": "Waiheke Island",
+      "region": "auckland",
+      "lat": -36.798,
+      "lng": 175.108,
+      "category": "food-wine",
+      "tags": [
+        "island",
+        "vineyards",
+        "ferry",
+        "beaches"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 8,
+      "short": "40-minute ferry from downtown — 30 vineyards, a dozen beaches, and the best olive oil in the country.",
+      "commentary": "Waiheke's microclimate — drier and warmer than the mainland — makes it one of New Zealand's premier Bordeaux-style wine regions. Mudbrick, Cable Bay and Te Motu are the big three for dining-with-a-view. The 360° car-free walkway circles the whole island (three to four days). Onetangi and Palm Beach are the swimming picks. Ferries run every half-hour from Auckland's Downtown terminal.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Waiheke as Auckland's best day trip — 35 minutes by ferry and you're in a different world. The combination of boutique wineries, olive estates, and pristine beaches earns it near-universal five-star reviews. Book wine tours ahead in summer; the island gets very busy December through February."
+      }
+    },
+    {
+      "id": "auckland-viaduct",
+      "name": "Viaduct Harbour & Wynyard Quarter",
+      "region": "auckland",
+      "lat": -36.8437,
+      "lng": 174.7584,
+      "category": "culture",
+      "tags": [
+        "waterfront",
+        "dining",
+        "sailing",
+        "americas-cup"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "The working harbour that hosted two America's Cup defences — now all superyachts and waterfront restaurants.",
+      "commentary": "Before 1999 the Viaduct was an industrial fishing basin; the America's Cup regeneration transformed it into a waterfront quarter. Wynyard Quarter, across the Wynyard Crossing lifting bridge, took over the tank-farm zone in 2011 — silos and gasworks kept, context changed. Today: restaurants, the Maritime Museum, and North Wharf's fish-and-chip shops.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Viaduct is Auckland's social heart — visitors love the working waterfront atmosphere, the superyachts, and the concentration of good restaurants and bars. Sunset drinks here draw consistent praise. It can feel expensive and touristy, but the harbour views and easy walkability win reviewers over."
+      }
+    },
+    {
+      "id": "auckland-piha",
+      "name": "Piha Beach",
+      "region": "auckland",
+      "lat": -36.9549,
+      "lng": 174.4683,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "black-sand",
+        "surf",
+        "waitakere"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 4,
+      "short": "Wild black-sand surf beach 45 minutes west of the city, dominated by Lion Rock.",
+      "commentary": "Piha's sand is iron-rich and ferociously hot in summer — bring footwear. Lion Rock, Te Piha, is 101 metres high and was a pā site. The rip currents here are among the most dangerous in the country; lifeguard patrols run every summer and this is where the TV show Piha Rescue has filmed since 2002. Swim only between the flags. The Kitekite Falls walk inland is a gentle 40-minute track through kauri forest.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Black-sand drama at its finest — visitors rave about Lion Rock, the crashing surf, and the wild West Coast atmosphere. Strong rip currents are flagged consistently in reviews, so swim between the flags. Weekdays are praised as far less crowded than the weekend rush from the city."
+      }
+    },
+    {
+      "id": "auckland-one-tree-hill",
+      "name": "Maungakiekie / One Tree Hill",
+      "region": "auckland",
+      "lat": -36.8994,
+      "lng": 174.7836,
+      "category": "māori",
+      "tags": [
+        "volcano",
+        "obelisk",
+        "pā",
+        "history"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "A 182m volcano topped with a 33m obelisk — the largest Māori pā site in the country.",
+      "commentary": "Maungakiekie was the seat of Ngāti Awa's paramount chief Kiwi Tāmaki in the 18th century — the most populated pā in Tāmaki Makaurau, home to several thousand. The obelisk at the summit was commissioned in 1940 by Sir John Logan Campbell as a memorial to Māori. The original lone tree, a Monterey pine, was attacked in 1994 and 2000 as protest actions and removed in 2000. In 2016 nine native trees were planted to replace it; one will eventually be chosen to be the successor.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Maungakiekie / One Tree Hill as a place where the history and cultural significance of Aotearoa become tangible and real. A 182m volcano topped with a 33m obelisk — the largest Māori pā site in the country. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-rangitoto",
+      "name": "Rangitoto Island",
+      "region": "auckland",
+      "lat": -36.7867,
+      "lng": 174.86,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "island",
+        "youngest",
+        "ferry",
+        "summit-walk"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "The youngest and largest volcano in the Auckland field — emerged from the sea just 600 years ago, in living Māori memory.",
+      "commentary": "Rangitoto erupted from the Hauraki Gulf around 600 years ago — recent enough that Māori living on nearby Motutapu recorded it in oral tradition and archaeology has found their footprints preserved in its ash. The island is the youngest and by far the largest of Auckland's 53 volcanic cones. The summit walk (1 hour up, basalt rubble, no shade) rewards you with a 360° view of the city and gulf. Take the Fullers ferry from downtown. No camping, no dogs, no fresh water on the island.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The perfect half-day escape from the city, Rangitoto's symmetrical volcanic cone is an Auckland icon best experienced from the inside. Reviewers love the otherworldly lava fields and summit views. The 90-minute hike is described as moderate but rewarding — bring water and a jacket for the summit."
+      }
+    },
+    {
+      "id": "auckland-muriwai",
+      "name": "Muriwai Gannet Colony",
+      "region": "auckland",
+      "lat": -36.8336,
+      "lng": 174.4197,
+      "category": "nature",
+      "tags": [
+        "gannets",
+        "colony",
+        "west-coast",
+        "black-sand",
+        "viewing-platform"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A 1,200-pair Australasian gannet colony on cliff stacks you can walk right above — best viewing August to March.",
+      "commentary": "Muriwai gannet colony began naturally in 1979 when a few pairs moved from Motutara Island to the mainland cliffs — one of only three mainland gannet colonies in New Zealand. Around 1,200 breeding pairs now nest on the stacks and cliff top from August to March, with chicks hatching in November. Two viewing platforms get you within metres of the birds. The beach below is a 50 km stretch of black iron-sand, heavy surf, patrolled only in summer. Swim between the flags.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "From August to March the gannet colony puts on a spectacular show — thousands of birds nesting within metres of the viewing platforms. Reviewers are stunned by how close you can get. The black sand beach itself earns praise for its drama, though the surf is for experienced swimmers only."
+      }
+    },
+    {
+      "id": "auckland-karekare",
+      "name": "Karekare Beach",
+      "region": "auckland",
+      "lat": -36.9861,
+      "lng": 174.4622,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "black-sand",
+        "waterfall",
+        "the-piano",
+        "quieter"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The quieter black-sand beach south of Piha — and the one the opening of Jane Campion's *The Piano* was filmed on.",
+      "commentary": "Karekare is Piha's quieter neighbour: a broad, empty black-sand beach, reached by a longer drive down a steeper road. The dunes at the south end are where the opening of *The Piano* (1993) was shot. A short walk across the stream from the carpark leads to Karekare Falls (20-metre drop), and another track climbs to Mercer Bay lookout. Like Piha, the surf is dangerous. Unlike Piha, there's little infrastructure — bring food, water, and a sense of direction.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Karekare Beach draws visitors back time and again for its natural beauty and peaceful atmosphere. The quieter black-sand beach south of Piha — and the one the opening of Jane Campion's *The Piano* was filmed on. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-devonport",
+      "name": "Devonport / Maungauika / North Head",
+      "region": "auckland",
+      "lat": -36.8278,
+      "lng": 174.8103,
+      "category": "nature",
+      "tags": [
+        "ferry",
+        "viewpoint",
+        "defence-tunnels",
+        "maungauika",
+        "victorian"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "A 12-minute ferry to a Victorian waterfront suburb and one of the city's best short walks — Maungauika/North Head.",
+      "commentary": "Devonport is the old naval town across the harbour — a 12-minute ferry from downtown. Victorian villas, a working naval dockyard (founded 1841), and two volcanic cones: Mount Victoria and Maungauika/North Head. North Head is the better of the two: a 45-minute loop walk around a volcano hollowed out during WW1 and WW2 with tunnels, gun emplacements and magazines, most still open and walkable. Take a torch. Full harbour views back to the CBD.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "A short ferry from the CBD, Devonport charms visitors with its Victorian streetscape, excellent fish and chips, and the twin summits of North Head offering harbour panoramas. Reviewers love the village feel and the volcanic tunnels at North Head — a surprising military history hidden in plain sight."
+      }
+    },
+    {
+      "id": "auckland-cornwall-park",
+      "name": "Cornwall Park",
+      "region": "auckland",
+      "lat": -36.8958,
+      "lng": 174.7825,
+      "category": "culture",
+      "tags": [
+        "park",
+        "john-logan-campbell",
+        "working-farm",
+        "olive-grove"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "Auckland's working-farm city park — 670 acres gifted by John Logan Campbell in 1901, with sheep and cattle on the lawns.",
+      "commentary": "In 1901 Sir John Logan Campbell — the 'father of Auckland' — gifted 670 acres of his Maungakiekie estate to the city as Cornwall Park, to mark the visit of the Duke of Cornwall. It is still, remarkably, a working farm: several hundred sheep and beef cattle graze the paddocks between the walking tracks. Campbell's 1841 cottage *Acacia Cottage* — one of Auckland's oldest buildings — was moved here from the bottom of Shortland Street in 1920. Huge olive trees, a restaurant, and the finest free picnic spot in the city.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "A genuine oasis in the city — visitors love the grazing sheep, the One Tree Hill obelisk, and the ancient volcanic landscape right on Auckland's doorstep. The free entry and dog-friendly paths earn repeated praise. Acacia Cottage and the Stardome make it worth more than a quick walk."
+      }
+    },
+    {
+      "id": "auckland-takapuna",
+      "name": "Takapuna Beach & Fossil Forest",
+      "region": "auckland",
+      "lat": -36.7861,
+      "lng": 174.7736,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "north-shore",
+        "fossil-forest",
+        "safe-swimming"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "North Shore's favourite city beach — with a 180,000-year-old fossil forest exposed at low tide.",
+      "commentary": "Takapuna is the North Shore's main city beach — 1.5 km of sheltered east-facing white sand, safe for swimming, with cafés along the foreshore. At the northern end, at very low tide, you can walk across a fossil forest: petrified tōtara and rātā stumps embedded in volcanic tuff, buried when Lake Pupuke's eruption around 180,000 years ago drowned a kauri forest. The best viewing is on a spring low tide. The walk from Takapuna to Milford at low tide takes about an hour.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Takapuna Beach & Fossil Forest draws visitors back time and again for its natural beauty and peaceful atmosphere. North Shore's favourite city beach — with a 180,000-year-old fossil forest exposed at low tide. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-whatipu",
+      "name": "Whatipu Beach",
+      "region": "auckland",
+      "lat": -37.0447,
+      "lng": 174.5081,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "hidden-gem",
+        "caves",
+        "wetlands",
+        "shipwreck"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2.5,
+      "short": "The wild south end of Auckland's west coast — huge dunes, sea caves, and the mouth of the Manukau Harbour.",
+      "commentary": "Whatipu sits at the southern end of Auckland's west coast, where the Manukau Harbour meets the Tasman. It's a 45-minute drive from Titirangi down one of the steeper gravel roads in the region. The reward: a massive black-sand flat (created by sediment outwash during the 20th century), extensive dune wetlands, and the ballroom-sized Whatipu Caves — used for dances by early 1900s loggers. The Manukau Bar just offshore has one of NZ's worst maritime histories: HMS *Orpheus* sank here in 1863 with 189 dead. No swimming.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Whatipu Beach draws visitors back time and again for its natural beauty and peaceful atmosphere. The wild south end of Auckland's west coast — huge dunes, sea caves, and the mouth of the Manukau Harbour. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-tiritiri-matangi",
+      "name": "Tiritiri Matangi Island",
+      "region": "auckland",
+      "lat": -36.6014,
+      "lng": 174.8894,
+      "category": "wildlife",
+      "tags": [
+        "birds",
+        "sanctuary",
+        "ferry",
+        "conservation",
+        "open-sanctuary"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 6,
+      "short": "A 220-hectare open bird sanctuary — predator-free, replanted by volunteers, home to takahē, kōkako, and hihi.",
+      "commentary": "Tiritiri Matangi was farmland until 1980. Then volunteers began planting native trees — over 280,000 in a decade. By 1993 predators had been eradicated, and the island was restocked with endangered native birds. Today you can walk open bush tracks among takahē (fewer than 500 exist), kōkako, saddleback, hihi/stitchbird, whitehead, bellbird, tūī and tīeke. Ferry from downtown Auckland or Gulf Harbour. Day visit only; guided walks available. One of the most successful ecological restorations on Earth.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Visitors call Tiritiri Matangi one of New Zealand's great conservation success stories. The island is alive with birdsong — kōkako, takahē, little spotted kiwi — and reviewers say it's the best place in the country to encounter native species up close. Book the ferry well ahead; day trips sell out fast."
+      }
+    },
+    {
+      "id": "auckland-mt-victoria",
+      "name": "Takarunga / Mount Victoria, Devonport",
+      "region": "auckland",
+      "lat": -36.8294,
+      "lng": 174.7967,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "viewpoint",
+        "pā",
+        "north-shore"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "An 81m volcano above Devonport with a quick walk to the best harbour view on the North Shore.",
+      "commentary": "Takarunga is the highest volcano on the North Shore. Significant Māori pā site (Te Hau-rāwhiti) and a coastal defence battery from the 1880s.",
+      "audio_story": "You are standing on top of Takarunga, the highest volcano on Auckland's North Shore, and you have an entire harbour at your feet. The hill rises eighty one metres above Devonport, and the walk from the village takes only fifteen minutes. Below you the harbour opens up, the city skyline spreads west, and Rangitoto sits on the water to the east, almost too symmetrical to be real. Like every cone on the Auckland isthmus, Takarunga was a Māori pā. The terraces you can still trace on the slopes were the working levels of a fortified settlement called Te Hau-rāwhiti. In the eighteen eighties the British added a coastal defence battery on top, and you can still walk around the gun emplacements and the old observation post. The two are layered onto each other like a palimpsest. From the summit, look down the harbour and you can pick out the route the first European ships took into Auckland in eighteen forty. The wind up here is honest. Bring a jacket. And take the long way back down through the Devonport streets, past the wooden villas and the bookshop and the chocolate factory, before catching the ferry home.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Auckland Council parks",
+        "Te Ara — Auckland volcanic field"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Takarunga / Mount Victoria, Devonport draws visitors back time and again for its natural beauty and peaceful atmosphere. An 81m volcano above Devonport with a quick walk to the best harbour view on the North Shore. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-britomart",
+      "name": "Britomart Quarter",
+      "region": "auckland",
+      "lat": -36.8444,
+      "lng": 174.7686,
+      "category": "culture",
+      "tags": [
+        "heritage",
+        "shopping",
+        "victorian",
+        "transit-hub"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "Auckland's Victorian warehouse district, restored into the city's most distinctive shopping and dining precinct.",
+      "commentary": "Late 1800s commercial district saved from demolition in the 2000s; now a mixed-use precinct above the underground rail station.",
+      "audio_story": "You are walking through Britomart, and you are walking through one of the more thoughtful pieces of urban repair anywhere in the country. In the eighteen eighties this was Auckland's commercial heart, a tight grid of brick warehouses and merchant offices on what was then the new reclaimed waterfront. By the nineteen nineties it had been hollowed out and was about to be cleared for a giant transport interchange. A combination of heritage advocacy and a clever masterplan saved it. The Victorian buildings were retained, the new station was tucked in underground beneath them, and the precinct above was reopened in the early two thousands. Today the streets between Customs Street and the waterfront are paved in brick, the buildings still wear their original signage, and the tenants are some of the better restaurants, designers and bookshops in the city. Underneath your feet is one of the busiest train stations in New Zealand, hidden inside the old chief post office building. Sit at one of the outdoor tables on Galway Street, order a long black, and watch the city and its harbour breathe in and out.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Britomart precinct",
+        "Auckland Council urban design"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The cultural experience at Britomart Quarter is praised for being both accessible and genuinely informative. Auckland's Victorian warehouse district, restored into the city's most distinctive shopping and dining precinct. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "auckland-arataki",
+      "name": "Arataki Visitor Centre, Waitākere",
+      "region": "auckland",
+      "lat": -36.9667,
+      "lng": 174.5833,
+      "category": "nature",
+      "tags": [
+        "waitakere",
+        "viewpoint",
+        "kauri",
+        "māori-carving"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "Gateway to the Waitākere Ranges — a hilltop visitor centre with a giant pou whenua and views from the Manukau to the Tasman.",
+      "commentary": "Auckland Council–operated visitor centre on Scenic Drive. Features the impressive Te Kawerau ā Maki carvings and short native bush walks.",
+      "audio_story": "You have arrived at Arataki, the gateway to the Waitākere Ranges. The visitor centre sits on a high ridge above the Manukau Harbour, and the view from the deck stretches from the harbour entrance, across the city, to the Tasman Sea on the other coast. On a clear day you can see the entire isthmus that Auckland sits on. Outside the entrance you will meet the great pou whenua, carved by artists of Te Kawerau ā Maki, the iwi of these ranges. The figures honour ancestors and the forest, and they tell you that you are not entering an empty wilderness but a place that has been loved and known for a very long time. Inside the centre, displays explain the geology, the kauri ecosystem, and the urgent fight against kauri dieback disease. Before you walk into the bush, stop at the boot cleaning station. The Waitākere Ranges hold some of Auckland's last great kauri, and a few seconds of scrubbing can save a thousand year old tree. From here you can pick from short loop walks to long traverses across the ranges. Whichever you choose, the deep green bush of West Auckland is about to swallow you up.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Auckland Council — Arataki",
+        "Te Kawerau ā Maki website"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Arataki Visitor Centre, Waitākere draws visitors back time and again for its natural beauty and peaceful atmosphere. Gateway to the Waitākere Ranges — a hilltop visitor centre with a giant pou whenua and views from the Manukau to the Tasman. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-howick-historical-village",
+      "name": "Howick Historical Village",
+      "region": "auckland",
+      "lat": -36.8967,
+      "lng": 174.9314,
+      "category": "heritage",
+      "tags": [
+        "fencible",
+        "1840s",
+        "living-museum",
+        "east-auckland"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "An open-air museum recreating the 1847 fencible settlement that became Howick.",
+      "commentary": "Auckland's only colonial living-history village, with over 30 original 1840s–1880s buildings relocated and restored.",
+      "audio_story": "You have arrived at Howick Historical Village, an open air museum that is also, in places, an open question. In eighteen forty seven the British government settled four villages on the southern flank of Auckland with retired soldiers known as Royal New Zealand Fencibles. They were defensive outposts, intended to guard the young capital against threats from the south. Howick was one of them. The village you are about to walk through gathers more than thirty original buildings from that era, brought here from across east Auckland and restored on this site. There are workers' cottages, a stonemason's house, a forge, a gaol, a school, a chapel, and the original Bell House, the home of one of the founding settlers. On most weekends costumed volunteers move through the village baking bread, working the forge, milking goats, and demonstrating the everyday tools of colonial life. It is easy to feel the romance of all this, and it is also worth remembering that these villages stood on land taken from Ngāi Tai ki Tāmaki, who farmed and fished here for centuries before. Both stories live here. Take your time. Ask the volunteers questions. They love the questions.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Howick Historical Village",
+        "Auckland Council heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors are surprised how immersive this open-air museum is — costumed interpreters, working buildings, and a genuine sense of 1840s colonial life. Families with children get especially strong value. Reviewers suggest visiting on event days for the full experience."
+      }
+    },
+    {
+      "id": "auckland-stardome",
+      "name": "Stardome Observatory, One Tree Hill",
+      "region": "auckland",
+      "lat": -36.9,
+      "lng": 174.7775,
+      "category": "culture",
+      "tags": [
+        "observatory",
+        "planetarium",
+        "family",
+        "night"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "Auckland's planetarium and public observatory on the slopes of One Tree Hill — open most evenings.",
+      "commentary": "Operated by the Auckland Astronomical Society, with planetarium shows, a 14-inch Zeiss refractor telescope, and Matariki programmes.",
+      "audio_story": "You have arrived at Stardome, Auckland's observatory and planetarium, tucked into the slopes of Maungakiekie, One Tree Hill. From the carpark you might catch the soft hum of the dome rotating to track a star across the night sky. Inside, a planetarium projector throws the entire southern sky onto a domed ceiling, and a guide will walk you through the constellations the early Polynesian navigators used to find these islands. If skies are clear, the observatory's Zeiss refractor opens up Saturn's rings, the craters of the Moon, and the four bright moons of Jupiter, the same ones Galileo first described in sixteen ten. In winter, programmes turn to Matariki, the cluster of stars whose appearance in the dawn sky marks the beginning of the Māori new year. There is something quietly moving about standing on a volcano in the middle of a city of one and a half million people and being shown the same stars that, a thousand years ago, helped voyaging waka find this very harbour. Bring a warm jacket. Stay for the late session.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Stardome Observatory",
+        "Auckland Astronomical Society"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Stardome Observatory, One Tree Hill is praised for being both accessible and genuinely informative. Auckland's planetarium and public observatory on the slopes of One Tree Hill — open most evenings. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "auckland-mission-bay",
+      "name": "Mission Bay & Tamaki Drive",
+      "region": "auckland",
+      "lat": -36.85,
+      "lng": 174.8294,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "promenade",
+        "fountain",
+        "cafes",
+        "cycling"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Auckland's classic Sunday beach — gentle harbour swimming, an art deco fountain, and gelato every fifty metres.",
+      "commentary": "Mission Bay sits on Auckland's eastern bays drive, with the 1959 Trevor Moss Davis Memorial Fountain at its centre.",
+      "audio_story": "You have arrived at Mission Bay on a Sunday and you can already tell that the city has the same idea. Tamaki Drive is one of Auckland's signature pieces of geography, an eight kilometre coastal road that hugs the Waitematā Harbour from the city out to St Heliers. Cyclists, joggers, scooter kids and families share its waterfront paths. Mission Bay sits about halfway along, a wide sweep of golden sand on a harbour that, mercifully, is calm enough for confident swimmers and not so deep as to alarm parents. At the centre of the grass reserve, the Trevor Moss Davis Memorial Fountain throws its plumes of water into the air in patterns that have not changed since nineteen fifty nine. The buildings behind the beach are the original Melanesian Mission stone hall from the eighteen fifties, after which the bay is named, alongside a strip of cafes, ice cream shops and bistros. Order a gelato, take it across to the beach, watch a kid in a wetsuit chase a kite, and remember that in many cities a beach this good would be three hours from the centre. Here, it is twenty minutes.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Auckland Council — Tamaki Drive",
+        "Heritage NZ — Melanesian Mission"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Mission Bay & Tamaki Drive draws visitors back time and again for its natural beauty and peaceful atmosphere. Auckland's classic Sunday beach — gentle harbour swimming, an art deco fountain, and gelato every fifty metres. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-otahuhu-portage",
+      "name": "Otahuhu Portage / Te Tō Waka",
+      "region": "auckland",
+      "lat": -36.9356,
+      "lng": 174.8408,
+      "category": "māori",
+      "tags": [
+        "portage",
+        "isthmus",
+        "two-harbours",
+        "māori"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "Auckland is built across the narrowest portage between two oceans — and at Otāhuhu, the gap is barely a kilometre wide.",
+      "commentary": "Te Tō Waka was the canoe-portage route used by Māori for centuries to drag waka between the Tāmaki River (Pacific) and the Manukau Harbour (Tasman). The narrowest part of the Auckland isthmus.",
+      "audio_story": "You are standing on one of the strangest pieces of geography in the world. Auckland sits on an isthmus, and at its narrowest point, here at Otāhuhu, only a little over a kilometre of land separates the Pacific Ocean from the Tasman Sea. For centuries before European arrival, Māori would haul their waka across this gap, called Te Tō Waka, the place of the dragging canoe. They could leave the Tāmaki River on the east coast in the morning and be paddling on the Manukau on the west by lunchtime. To save themselves the long journey around either island, they pulled twelve metre canoes by rope and roller across this very ground. In the eighteen sixties European settlers tried to commercialise the route by digging a canal here, hoping to make Auckland the Panama of the Pacific. Construction began but was abandoned after a few years, and only fragments of the works remain. Walk a few minutes in either direction from the portage marker and you can stand at salt water on one ocean, then on the other, in less time than it takes to drink a coffee. There is no other city quite like this.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Auckland Council heritage",
+        "Te Ara — Tāmaki Makaurau"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Otahuhu Portage / Te Tō Waka as a place where the history and cultural significance of Aotearoa become tangible and real. Auckland is built across the narrowest portage between two oceans — and at Otāhuhu, the gap is barely a kilometre wide. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-motat",
+      "name": "MOTAT — Museum of Transport and Technology",
+      "region": "auckland",
+      "lat": -36.8767,
+      "lng": 174.7239,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "aviation",
+        "trams",
+        "family"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 3,
+      "short": "Trams, biplanes, vintage cars, and the recovered Solent flying boat — Auckland's working museum of how things move.",
+      "commentary": "Two-site museum at Western Springs. Operates working trams between the sites and houses Sir Keith Park's preserved Lancaster bomber.",
+      "audio_story": "You have arrived at MOTAT, the Museum of Transport and Technology, sprawled across two sites at Western Springs in the centre of Auckland. The pleasure of this museum is that almost everything inside it still moves. A working tramline runs between the Great North Road site and the aviation hall a kilometre away, and you can ride a beautifully restored Auckland tram of the kind that disappeared from the city's streets in nineteen fifty six. At the aviation hall you will meet a remarkable collection. There is a recovered Short Solent flying boat, the same model that flew the Coral Route from Auckland to Tahiti in the nineteen fifties. There is a Lancaster bomber once flown by Sir Keith Park, the New Zealander who commanded RAF Eleven Group during the Battle of Britain. There are early bush aircraft, vintage motorcycles, telephone exchanges, printing presses, and a colonial village reconstructed from rescued buildings. MOTAT is run with the help of an army of volunteers, many of them retired engineers and pilots, and if you ask a question by an exhibit, you may end up in the most interesting conversation of your day. Allow at least three hours, and let the kids press the buttons.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "MOTAT museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at MOTAT — Museum of Transport and Technology is praised for being both accessible and genuinely informative. Trams, biplanes, vintage cars, and the recovered Solent flying boat — Auckland's working museum of how things move. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "auckland-hist-bastion-point",
+      "name": "Takaparawhā / Bastion Point",
+      "region": "auckland",
+      "lat": -36.8425,
+      "lng": 174.8183,
+      "category": "māori",
+      "tags": [
+        "bastion-point",
+        "ngati-whatua",
+        "protest",
+        "1977",
+        "land-rights"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "Where Ngāti Whātua Ōrākei occupied their ancestral land for 506 days in 1977–78 — a landmark of the modern Māori rights movement.",
+      "commentary": "In 1977 Joe Hawke led a 506-day occupation of Takaparawhā to resist government sale of the last Ngāti Whātua land. Police ended it May 1978; land returned 1988.",
+      "audio_story": "You are at Takaparawhā, known in English as Bastion Point, a grassy headland with one of the finest views in Auckland. Look in almost any direction from the memorial at the top and you are looking over the ancestral rohe of Ngāti Whātua Ōrākei. In the nineteen seventies this was one of only a few pieces of the original one thousand hectare land grant that Ngāti Whātua still owned. When the government announced plans to subdivide and sell Bastion Point for luxury housing, a group led by Joe Hawke established an occupation on the hill on the fifth of January, nineteen seventy seven. They built huts. They cooked on open fires. They refused to leave. Five hundred and six days later, on the twenty fifth of May, nineteen seventy eight, six hundred police and army personnel arrived at dawn and arrested two hundred and twenty two occupiers in one of the largest police operations in New Zealand history. The occupation had not won, but the cause had. Ten years later, after a Waitangi Tribunal hearing and years of negotiation, Bastion Point was returned to Ngāti Whātua. A memorial near the top carries the names of those who died during the occupation, including Joe Hawke''s five year old niece Joannee. Visit with respect.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Whātua Ōrākei",
+        "NZHistory — Bastion Point",
+        "Waitangi Tribunal"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Takaparawhā / Bastion Point as a place where the history and cultural significance of Aotearoa become tangible and real. Where Ngāti Whātua Ōrākei occupied their ancestral land for 506 days in 1977–78 — a landmark of the modern Māori rights movement. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-hist-maungawhau",
+      "name": "Maungawhau / Mount Eden",
+      "region": "auckland",
+      "lat": -36.8769,
+      "lng": 174.7642,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "pa-site",
+        "tupuna-maunga",
+        "tamaki-makaurau"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The highest natural point of Auckland''s isthmus — and one of the great pā of the Tāmaki Makaurau iwi.",
+      "commentary": "Maungawhau''s 196m summit was intensively terraced as a pā with deep ditches and kūmara pits. Now jointly managed by the Tūpuna Maunga Authority.",
+      "audio_story": "You are on Maungawhau, Mount Eden, at one hundred and ninety six metres the highest natural point on the Auckland isthmus. Almost every cone and crater you can see from here, the fifty three volcanic vents that make up the Auckland field, is an extinct volcano. Many of them were, before colonisation, intensively used and terraced by Māori as pā. Maungawhau is among the largest and most dramatic of those pā sites. Across the full surface of the mountain you can still see the finely cut defensive terraces, the borrow pits dug for shelter and for kūmara storage, and the deep central crater known as Te Ipu Kai o Mataaho, the food bowl of the atua Mataaho. This was among the most populous and important kāinga of Tāmaki Makaurau. Since twenty fourteen the maunga has been co managed by the Tūpuna Maunga Authority, a joint body of the iwi and Auckland Council. Vehicle access to the summit is no longer permitted, but the walk up is easy, around twenty minutes from the lower carpark. The three hundred and sixty degree view is the finest in the city, and the mountain itself is sacred ground. Do not enter the crater. It is tapu.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Tūpuna Maunga Authority",
+        "Ngāti Whātua Ōrākei",
+        "Te Ara — volcanic cones"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Maungawhau / Mount Eden draws visitors back time and again for its natural beauty and peaceful atmosphere. The highest natural point of Auckland''s isthmus — and one of the great pā of the Tāmaki Makaurau iwi. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "auckland-hist-treaty-grounds-kohimarama",
+      "name": "Kohimarama Conference Site",
+      "region": "auckland",
+      "lat": -36.85,
+      "lng": 174.8333,
+      "category": "māori",
+      "tags": [
+        "kohimarama",
+        "1860",
+        "treaty",
+        "governor-browne"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where 200 rangatira met Governor Browne in 1860 to reaffirm the Treaty — the largest Māori gathering of the nineteenth century.",
+      "commentary": "In July 1860 Governor Thomas Gore Browne convened a conference at Kohimarama attended by ~200 rangatira to affirm the Treaty relationship. The Taranaki War was underway.",
+      "audio_story": "You are at the grassy waterfront of Kohimarama, today a quiet Auckland suburb, but in July eighteen sixty the site of one of the most remarkable gatherings in New Zealand history. Governor Thomas Gore Browne, facing the outbreak of the Taranaki War and a growing support for the Kīngitanga in the Waikato, called together around two hundred rangatira from across the country for a conference to reaffirm the Treaty of Waitangi relationship. The hui ran for a full month. Speeches on both sides were translated, recorded, and later published in full. For many rangatira it was the first and only time they would speak directly with the Crown''s senior representative in a formal setting. The conference produced what came to be known as the Covenant of Kohimarama, a statement of mutual obligation between chiefs and the Crown. But for all its rhetoric, the hui did not stop the war. By the year''s end fighting had spread. Two decades later the Kīngitanga had been militarily defeated and most of the Waikato was confiscated. The conference site today has no physical memorial. It is marked by street signs, a suburb name, and the stubborn local memory of what once happened on this shore.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZHistory — Kohimarama Conference",
+        "Te Ara"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Kohimarama Conference Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where 200 rangatira met Governor Browne in 1860 to reaffirm the Treaty — the largest Māori gathering of the nineteenth century. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-hist-britomart-point",
+      "name": "Point Britomart / Commercial Bay",
+      "region": "auckland",
+      "lat": -36.8443,
+      "lng": 174.7675,
+      "category": "heritage",
+      "tags": [
+        "britomart",
+        "1840",
+        "military",
+        "reclaimed"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where colonial Auckland began in 1840 — the first British military post, a barracks now buried beneath the modern Britomart station.",
+      "commentary": "Point Britomart was a prominent headland in 1840 where the first Government House, military barracks and Fort Britomart were built. The hill was levelled in 1874–86 to reclaim the harbour.",
+      "audio_story": "You are in Britomart, the modern transport hub of central Auckland. What today is a flat piazza between office towers was, in eighteen forty, a prominent conical volcanic headland jutting into the Waitematā harbour. Governor Hobson chose it as the site for the new capital, moved from the Bay of Islands in September eighteen forty. On the headland he built the first Government House, a wooden building shipped out in sections from Sydney, the first military barracks, and Fort Britomart, named for the Royal Navy schooner that had brought him across the Pacific. For three decades the point was the military and political heart of the colony. Then, in the eighteen seventies and eighties, the entire headland was levelled. Eight hundred thousand cubic yards of earth and volcanic scoria were quarried away and dumped into the harbour to create the new reclaimed waterfront, a single engineering decision that destroyed both a landmark and a significant early historic site. The modern underground Britomart station, opened two thousand three, sits roughly beneath where the barracks once stood. Nothing visible remains. But the curved streets, the kink in Customs Street, and the slight incline as you walk east, all mark where the old headland once rose.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Auckland Council heritage",
+        "NZHistory — Fort Britomart",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Point Britomart / Commercial Bay — the site rewards those who take time to read the signage and absorb the context. Where colonial Auckland began in 1840 — the first British military post, a barracks now buried beneath the modern Britomart station. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-albert-barracks",
+      "name": "Albert Barracks Wall, University of Auckland",
+      "region": "auckland",
+      "lat": -36.8525,
+      "lng": 174.7692,
+      "category": "heritage",
+      "tags": [
+        "albert-barracks",
+        "1847",
+        "imperial",
+        "wall"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.25,
+      "short": "A surviving section of the 1847 stone wall of the British Imperial Army''s Albert Barracks — hiding in the university grounds.",
+      "commentary": "The Albert Barracks enclosed 15ha of central Auckland 1847–71. A 100m section of the loopholed stone wall survives on the University of Auckland campus.",
+      "audio_story": "You are at a quiet spot in the University of Auckland grounds, looking at a rough rubble stone wall that runs for about one hundred metres between two modern buildings. This is the surviving fragment of the stone wall of Albert Barracks, the huge British imperial military compound that occupied the centre of colonial Auckland from eighteen forty seven until eighteen seventy one. Inside the wall were parade grounds, soldiers'' quarters for up to one thousand men, officers'' messes, an arsenal, and the commander''s house. For a quarter of a century the barracks was the centre of British military power in the North Island, from which imperial regiments were deployed to Taranaki, the Waikato, and the East Coast. The wall itself is loopholed at regular intervals, the narrow vertical slits from which defenders could fire out. In eighteen seventy one the imperial troops withdrew from New Zealand, the barracks was decommissioned, and by eighteen seventy three most of the buildings had been pulled down and the land subdivided. Only this short section of the outer wall survives. Look carefully. A modest wall, but it is the only remaining direct physical trace of the British army garrison that fought the New Zealand Wars.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Albert Barracks",
+        "University of Auckland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Albert Barracks Wall, University of Auckland — the site rewards those who take time to read the signage and absorb the context. A surviving section of the 1847 stone wall of the British Imperial Army''s Albert Barracks — hiding in the university grounds. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-tamaki-paths-portage",
+      "name": "Te Tō Waka / Ōtāhuhu Portage",
+      "region": "auckland",
+      "lat": -36.944,
+      "lng": 174.8386,
+      "category": "māori",
+      "tags": [
+        "portage",
+        "waka",
+        "tamaki",
+        "two-harbours",
+        "ancestral"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The ancient waka portage where Tāmaki iwi hauled their canoes between the Waitematā and Manukau harbours.",
+      "commentary": "At Ōtāhuhu only 1km separates the Waitematā and Manukau harbours. For centuries iwi dragged waka between the two on a portage called Te Tō Waka.",
+      "audio_story": "You are on the narrowest point of the Auckland isthmus, where only one kilometre of land separates the Waitematā Harbour on the east coast from the Manukau Harbour on the west. This strip, called Te Tō Waka, the waka dragging place, was for centuries one of the most important transport links in the whole country. Rather than paddle around the exposed North Cape, travelling waka coming from the Bay of Islands in the north bound for the Waikato in the south would enter the Waitematā, be hauled overland across this flat neck, and relaunched into the Manukau on the other side. The physical work was significant but the saving in distance was enormous. The same portage shaped the settlement pattern of Tāmaki Makaurau itself. Control of the portage was one of the reasons the isthmus was so densely populated before colonisation, and one of the reasons it was contested. Today the portage is an unremarkable flat stretch of Great South Road between Ōtāhuhu and Māngere. An interpretive sign on Portage Road marks the centre line. Stand for a moment with a map in your head. Imagine a fifteen metre waka, its crew straining at the hauling lines, sliding across what is now a traffic island. The city forgets, but the landscape does not.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Whātua Ōrākei",
+        "Auckland Council heritage",
+        "Te Ara"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Te Tō Waka / Ōtāhuhu Portage as a place where the history and cultural significance of Aotearoa become tangible and real. The ancient waka portage where Tāmaki iwi hauled their canoes between the Waitematā and Manukau harbours. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-hist-acacia-cottage",
+      "name": "Acacia Cottage, Cornwall Park",
+      "region": "auckland",
+      "lat": -36.8911,
+      "lng": 174.7847,
+      "category": "heritage",
+      "tags": [
+        "1841",
+        "oldest-building",
+        "sir-john-logan-campbell"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The oldest surviving building in Auckland — the 1841 cottage of Sir John Logan Campbell, the 'father of Auckland.'",
+      "commentary": "Built 1841 at Shortland Crescent by Logan Campbell and William Brown. Moved to Cornwall Park 1920. One of Auckland''s two oldest buildings.",
+      "audio_story": "You are at Acacia Cottage, a small wooden two storey dwelling sitting quietly in the gardens of Cornwall Park, and one of the two oldest surviving buildings in Auckland. It was built in eighteen forty one, only months after the site of Auckland was formally chosen as the colonial capital, by the two young Scottish merchants John Logan Campbell and William Brown. The cottage was originally erected on Shortland Crescent in the heart of what would become the commercial district. By the eighteen nineties it had been moved to a new location to make way for central city development. In nineteen twenty, at the instigation of Campbell himself, it was relocated a second time to the very gentle slopes of One Tree Hill, then known as Campbell''s gift to the city, and it has sat there, in what is now Cornwall Park, for a little over a century. Inside, the cottage is tiny. Four small rooms, a loft, and a fireplace. Period furniture and photographs of the Campbell and Brown families give a sense of how the first prosperous merchants of colonial Auckland lived. Sir John Logan Campbell died in nineteen twelve aged ninety five, having watched the city he helped found grow from a muddy strand to a modern metropolis.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Cornwall Park",
+        "Heritage NZ",
+        "Auckland Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Acacia Cottage, Cornwall Park — the site rewards those who take time to read the signage and absorb the context. The oldest surviving building in Auckland — the 1841 cottage of Sir John Logan Campbell, the 'father of Auckland. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-parnell-kinder-house",
+      "name": "Kinder House, Parnell",
+      "region": "auckland",
+      "lat": -36.8522,
+      "lng": 174.7767,
+      "category": "heritage",
+      "tags": [
+        "parnell",
+        "1856",
+        "anglican",
+        "kinder"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The 1856 home of Rev. John Kinder, headmaster of the Church of England Grammar School — a rare survival of early Anglican Parnell.",
+      "commentary": "Built 1856 as home of Rev. Dr John Kinder. Stone in Palladian style. Opens Wed-Sun; small charge. On Ayr Street, central Parnell.",
+      "audio_story": "You are at Kinder House, a small stone house on Ayr Street in the inner city suburb of Parnell, and one of the more unusual survivals of early colonial Auckland. It was built in eighteen fifty six for the Reverend Doctor John Kinder, who had just arrived from England to take up the headmaster''s position at the Church of England Grammar School. The building itself is a small Palladian style stone villa, constructed of volcanic scoria stone quarried nearby, with neatly dressed sandstone quoins at the corners. Kinder was also a gifted photographer, one of the earliest in the country, and produced an extraordinary archive of daguerreotypes and early glass plates documenting colonial Auckland, the Waikato during the wars, and Māori leaders who came through Parnell in the eighteen sixties. Many of those images are in the Kinder collection at the Auckland War Memorial Museum. The house itself, carefully restored, is now owned by the Anglican Diocese and operates as a small house museum. Inside you will find a detailed reconstruction of a nineteenth century clergyman''s study, original Kinder family furniture, and a selection of his photographs. A quiet half hour that adds real depth to Parnell.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Kinder House",
+        "Auckland Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kinder House, Parnell — the site rewards those who take time to read the signage and absorb the context. The 1856 home of Rev. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-alberton",
+      "name": "Alberton, Mount Albert",
+      "region": "auckland",
+      "lat": -36.885,
+      "lng": 174.7136,
+      "category": "heritage",
+      "tags": [
+        "alberton",
+        "1863",
+        "colonial-mansion",
+        "kerr-taylor"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "An 1863 colonial mansion with turrets, verandahs and an absurdly romantic history — now a Heritage New Zealand house museum.",
+      "commentary": "Built 1863 for Allan Kerr Taylor; extended 1870s and 1890s. Ten Taylor daughters grew up here. Bequeathed to Heritage NZ 1972.",
+      "audio_story": "You are at Alberton, a grand colonial villa in the suburb of Mount Albert, built in eighteen sixty three by Allan Kerr Taylor, a Scottish settler who had come to Auckland via the Victorian goldfields. The building was progressively extended through the eighteen seventies and eighteen nineties into the full towered, verandahed, twenty one roomed fantasy you see today. Much of the later extension was done by Kerr Taylor''s wife Sophia after his death, to make room for their ten daughters and five sons. Alberton became, in the late nineteenth century, one of the great centres of Auckland social life. Garden parties, fox hunts, tennis tournaments and amateur theatricals drew much of the city''s respectable society. Several of the Taylor daughters became notable in their own right, including as early feminists, teachers, and one of the first women to climb Mount Cook. The last daughter, Muriel, lived at Alberton until her death in nineteen seventy two, in the house she had grown up in, and bequeathed it to Heritage New Zealand. The interior today has been restored to roughly its eighteen nineties appearance with much of the original furniture. Open to the public four days a week. Bring children. The turret is worth the climb.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Alberton",
+        "Auckland Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Alberton, Mount Albert — the site rewards those who take time to read the signage and absorb the context. An 1863 colonial mansion with turrets, verandahs and an absurdly romantic history — now a Heritage New Zealand house museum. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-howick-historical-village",
+      "name": "Howick Historical Village",
+      "region": "auckland",
+      "lat": -36.9092,
+      "lng": 174.9375,
+      "category": "heritage",
+      "tags": [
+        "fencibles",
+        "village",
+        "1847",
+        "living-history",
+        "howick"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "A living museum of the 1840s fencible settlement at Howick — 30 relocated heritage buildings staffed in period dress.",
+      "commentary": "Howick was founded 1847 as a fencible defensive settlement on the eastern edge of Auckland. The Village has 30 heritage buildings and weekend live interpretation.",
+      "audio_story": "You are at Howick Historical Village, a twenty hectare open air living museum in the suburb of Pakuranga. Howick itself was founded in eighteen forty seven as one of the four fencible defensive settlements established around colonial Auckland. Fencibles were retired British army soldiers, many of them Irish or Scottish, brought out with their families and given small plots of land in return for a commitment to serve in the local militia if the settlement were attacked. The attack never came. The fencibles and their families settled into farming, trades, and quiet colonial lives, and Howick gradually grew into a small seaside village. The Historical Village gathers thirty heritage buildings relocated from across Auckland and beyond, including the original fencible cottages, a blacksmith, a schoolhouse, a church, and a general store. At weekends and on special event days the village is staffed in period dress with demonstrations of blacksmithing, candle dipping, sheep shearing and early colonial cooking. The village is carefully researched and honestly presented. Allow at least two hours. Families with children will want longer. Visit in winter if you can, when the sheep are close to lambing and the open fires are lit indoors.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Howick Historical Village — fencible.org.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Howick Historical Village — the site rewards those who take time to read the signage and absorb the context. A living museum of the 1840s fencible settlement at Howick — 30 relocated heritage buildings staffed in period dress. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "auckland-hist-auckland-domain",
+      "name": "Auckland Domain / Pukekawa",
+      "region": "auckland",
+      "lat": -36.8617,
+      "lng": 174.7767,
+      "category": "culture",
+      "tags": [
+        "domain",
+        "pukekawa",
+        "volcanic",
+        "museum"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "The oldest park in Auckland — a former volcanic cone once known as Pukekawa, 'the hill of bitter memories.'",
+      "commentary": "Gazetted 1841. 75ha around an extinct volcano known to Māori as Pukekawa. Home of the Auckland War Memorial Museum and the Winter Gardens.",
+      "audio_story": "You are walking in the Auckland Domain, the oldest public park in the city, gazetted as a reserve in eighteen forty one, just months after Auckland itself was established. The park is seventy five hectares and wraps around an extinct volcano known to Māori as Pukekawa, meaning the hill of bitter memories. The name comes from a battle fought on the slopes centuries before European contact. At the crown of the hill, on the summit of the old volcano, stands the Auckland War Memorial Museum, a massive neo classical building opened in nineteen twenty nine as both a civic museum and a memorial to Auckland''s First World War dead. On a sloping flat to the east are the Wintergardens, a pair of elegant Edwardian glasshouses from nineteen thirteen that display tropical and temperate plants year round. The Domain also contains the original duck ponds, the formal band rotunda, a cricket oval, and extensive old stands of pūriri, pōhutukawa and kauri that predate European Auckland by centuries. On a summer evening the Domain is full of walkers, picnickers and joggers, and free outdoor concerts run on summer Sundays. A living civic park that is also a sacred maunga. Walk it slowly.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Auckland Council",
+        "Tūpuna Maunga Authority",
+        "Auckland Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Auckland Domain / Pukekawa is praised for being both accessible and genuinely informative. The oldest park in Auckland — a former volcanic cone once known as Pukekawa, 'the hill of bitter memories. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "auckland-mangere-mountain",
+      "name": "Te Pane o Mataoho / Māngere Mountain",
+      "region": "auckland",
+      "lat": -36.957,
+      "lng": 174.788,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "volcano",
+        "tāmaki-makaurau"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A spectacular terraced pā on one of Auckland's southern volcanoes — over 200 food storage pits still visible.",
+      "commentary": "Te Pane o Mataoho (Māngere Mountain) is one of Auckland's finest volcanic pā sites. The 106m cone was heavily terraced for settlement, with over 200 storage pits and house platforms still visible.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Pane o Mataoho / Māngere Mountain as a place where the history and cultural significance of Aotearoa become tangible and real. A spectacular terraced pā on one of Auckland's southern volcanoes — over 200 food storage pits still visible. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-north-head",
+      "name": "Maungauika / North Head",
+      "region": "auckland",
+      "lat": -36.8316,
+      "lng": 174.8138,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "devonport",
+        "military",
+        "volcano"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A volcanic pā at the mouth of the Waitematā — Māori terraces layered with Victorian tunnels and WWII gun emplacements.",
+      "commentary": "Maungauika was a major Māori pā controlling the entrance to the Waitematā Harbour. The terraced slopes are still clearly visible beneath the later military installations.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The tunnels and gun emplacements at North Head fascinate history buffs and kids alike — reviewers call it one of Auckland's most underrated attractions. The views over the Waitemata Harbour and back to the city skyline are exceptional. Free entry and easy ferry access make it an easy decision."
+      }
+    },
+    {
+      "id": "auckland-mt-wellington",
+      "name": "Maungarei / Mount Wellington",
+      "region": "auckland",
+      "lat": -36.889,
+      "lng": 174.8426,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "volcano",
+        "terraces"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the largest pā in Tāmaki Makaurau — a massive terraced volcano with extensive storage pits.",
+      "commentary": "Maungarei was one of the most densely settled volcanic pā in Auckland, with terracing covering much of the 135m cone. Archaeological surveys have identified hundreds of house platforms and storage pits.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Maungarei / Mount Wellington as a place where the history and cultural significance of Aotearoa become tangible and real. One of the largest pā in Tāmaki Makaurau — a massive terraced volcano with extensive storage pits. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-orakei-marae",
+      "name": "Ōrākei Marae",
+      "region": "auckland",
+      "lat": -36.859,
+      "lng": 174.811,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāti-whātua",
+        "urban",
+        "mana-whenua"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The marae of Ngāti Whātua Ōrākei — Auckland's original mana whenua, on their ancestral land at Ōkahu Bay.",
+      "commentary": "Ōrākei Marae is the tūrangawaewae of Ngāti Whātua Ōrākei, who are recognised as mana whenua of central Auckland. The 1950s eviction of families from nearby Ōkahu Bay is one of Auckland's most shameful episodes. The marae today is a powerful statement of survival.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Ōrākei Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The marae of Ngāti Whātua Ōrākei — Auckland's original mana whenua, on their ancestral land at Ōkahu Bay. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-ihumatao",
+      "name": "Ihumātao",
+      "region": "auckland",
+      "lat": -36.968,
+      "lng": 174.761,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "settlement",
+        "oldest",
+        "archaeological",
+        "protest"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The site of the oldest known Māori settlement in Tāmaki Makaurau — a 700-year-old village beside the Manukau.",
+      "commentary": "Ihumātao is one of the earliest known sites of Māori habitation in Auckland, with occupation dating back roughly 700 years. In 2019, the proposed housing development on confiscated land sparked a major occupation and protest. The Crown ultimately purchased the land to protect it.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Ihumātao as a place where the history and cultural significance of Aotearoa become tangible and real. The site of the oldest known Māori settlement in Tāmaki Makaurau — a 700-year-old village beside the Manukau. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-bastion-point",
+      "name": "Takaparawha / Bastion Point",
+      "region": "auckland",
+      "lat": -36.853,
+      "lng": 174.818,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "protest",
+        "land-rights",
+        "ngāti-whātua",
+        "occupation"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Site of the 506-day occupation in 1977-78 — a landmark protest that changed the course of Māori land rights in NZ.",
+      "commentary": "In 1977-78, Ngāti Whātua Ōrākei occupied Bastion Point for 506 days. The protest succeeded — in 1988, the Waitangi Tribunal recommended the land be returned, and it was. Bastion Point is now a memorial reserve and a symbol of the Māori land rights movement.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "One of Auckland's most significant historic and political sites — the 1977-78 Māori land occupation ended here, and visitors feel the weight of that history. The clifftop views over the Waitemata and Rangitoto are stunning. Reviewers praise the informative signage and the peaceful gardens."
+      }
+    },
+    {
+      "id": "auckland-tiritiri-heritage",
+      "name": "Tiritiri Matangi — Sacred Island Sanctuary",
+      "region": "auckland",
+      "lat": -36.602,
+      "lng": 174.888,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "island",
+        "conservation",
+        "birdlife"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "An open wildlife sanctuary on an island with Māori settlement sites — where endangered birds thrive among archaeological remains.",
+      "commentary": "Tiritiri Matangi is an open wildlife sanctuary in the Hauraki Gulf, home to some of NZ's rarest birds. The island also contains significant Māori archaeological sites — pā terraces, middens, and storage pits speak to centuries of occupation.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tiritiri Matangi — Sacred Island Sanctuary as a place where the history and cultural significance of Aotearoa become tangible and real. An open wildlife sanctuary on an island with Māori settlement sites — where endangered birds thrive among archaeological remains. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-great-barrier",
+      "name": "Aotea / Great Barrier Island",
+      "region": "auckland",
+      "lat": -36.2,
+      "lng": 175.45,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "island",
+        "aotea",
+        "ngāti-rehua",
+        "pā"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 8,
+      "short": "Aotea holds a special place in Māori history — named for the ancestral waka and home to significant pā sites.",
+      "commentary": "Aotea (Great Barrier Island) is the largest island in the Hauraki Gulf and its name connects it to the Aotea waka. Ngāti Rehua-Ngātiwai ki Aotea are the mana whenua. The island contains numerous pā sites and burial caves.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Aotea / Great Barrier Island as a place where the history and cultural significance of Aotearoa become tangible and real. Aotea holds a special place in Māori history — named for the ancestral waka and home to significant pā sites. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-waiheke-heritage",
+      "name": "Waiheke Island — Pā Sites & Heritage",
+      "region": "auckland",
+      "lat": -36.788,
+      "lng": 175.083,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "island",
+        "waiheke",
+        "ngāi-tai"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "Waiheke's Māori heritage extends far beyond the vineyards — pā sites, middens, and gardening terraces across the island.",
+      "commentary": "Waiheke Island has an extensive Māori heritage. Ngāi Tai ki Tāmaki are the mana whenua, and the island contains numerous pā sites, shell middens, and gardening terraces.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Waiheke Island — Pā Sites & Heritage as a place where the history and cultural significance of Aotearoa become tangible and real. Waiheke's Māori heritage extends far beyond the vineyards — pā sites, middens, and gardening terraces across the island. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-ohuirangi",
+      "name": "Ōhuirangi / Pigeon Mountain",
+      "region": "auckland",
+      "lat": -36.894,
+      "lng": 174.915,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "volcano",
+        "terraces"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A volcanic pā in East Auckland — terracing still visible despite suburban encroachment.",
+      "commentary": "Ōhuirangi is one of Auckland's volcanic pā sites, with terracing and storage pits visible on its slopes. The pā was strategically positioned to overlook the Tāmaki River and the portage routes across the isthmus.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Ōhuirangi / Pigeon Mountain as a place where the history and cultural significance of Aotearoa become tangible and real. A volcanic pā in East Auckland — terracing still visible despite suburban encroachment. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-mt-albert-pa",
+      "name": "Te Ahi-kā-a-Rakataura / Mount Albert",
+      "region": "auckland",
+      "lat": -36.8841,
+      "lng": 174.7282,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "volcano",
+        "tainui",
+        "signal-fires"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Named for the fires of the navigator Rakataura who claimed the isthmus with signal fires from the Tainui waka.",
+      "commentary": "The name means 'the fires of Rakataura', for the navigator who arrived on the Tainui waka and lit signal fires across the isthmus to claim the land.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Ahi-kā-a-Rakataura / Mount Albert as a place where the history and cultural significance of Aotearoa become tangible and real. Named for the fires of the navigator Rakataura who claimed the isthmus with signal fires from the Tainui waka. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-pukaki-crater",
+      "name": "Te Pūkaki Tapu o Poutūkeka",
+      "region": "auckland",
+      "lat": -36.952,
+      "lng": 174.783,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "wāhi-tapu",
+        "volcano",
+        "mauri-stone"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A sacred volcanic crater with a mauri stone at its heart — a wāhi tapu of deep spiritual significance.",
+      "commentary": "The crater lake and surrounding area are wāhi tapu. A mauri stone placed in the crater represents the life force of the land and the connection between the physical and spiritual worlds.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Te Pūkaki Tapu o Poutūkeka as a place where the history and cultural significance of Aotearoa become tangible and real. A sacred volcanic crater with a mauri stone at its heart — a wāhi tapu of deep spiritual significance. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-otuataua-stonefields",
+      "name": "Ōtuataua Stonefields Heritage Walk",
+      "region": "auckland",
+      "lat": -36.966,
+      "lng": 174.758,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "stonefields",
+        "volcanic",
+        "gardens",
+        "archaeological"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the finest volcanic stonefields in Auckland — centuries of Māori gardening among lava flows.",
+      "commentary": "The Ōtuataua Stonefields near Ihumātao preserve evidence of centuries of Māori gardening on the lava fields. Stone walls created garden enclosures in the rocky ground. The stonefields are part of the broader Ihumātao cultural landscape.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ōtuataua Stonefields Heritage Walk as a place where the history and cultural significance of Aotearoa become tangible and real. One of the finest volcanic stonefields in Auckland — centuries of Māori gardening among lava flows. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "auckland-tamaki-drive-coastal",
+      "name": "Tamaki Drive Coastal Route",
+      "region": "auckland",
+      "lat": -36.8485,
+      "lng": 174.8168,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "urban",
+        "scenic",
+        "waterfront",
+        "cycling"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 0.5,
+      "short": "Auckland's iconic waterfront drive from the city to Mission Bay and beyond.",
+      "commentary": "Tamaki Drive runs 7.5 km along the Waitemata Harbour from Mechanics Bay to St Heliers. The route passes Okahu Bay, Mission Bay, and Kohimarama, with views of Rangitoto Island dominating the horizon. It is one of Auckland's most popular cycling and walking routes.",
+      "audio_story": "You are cruising along Tamaki Drive with the Waitemata Harbour sparkling on your left. Rangitoto Island, that perfectly symmetrical volcanic cone, sits on the horizon — it erupted just 600 years ago, making it Auckland's youngest volcano. You pass the heritage boatsheds at Okahu Bay, their bright colours reflected in the water. Ahead, Mission Bay's crescent beach comes into view, where Aucklanders have been swimming and picnicking since the 1920s. The pohutukawa trees lining the road will blaze crimson if you are here in December. Keep going past Kohimarama to St Heliers for fish and chips on the green — you have earned it.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Auckland Council",
+        "NZ Transport Agency"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Tamaki Drive Coastal Route route delivers a memorable journey through exceptional New Zealand scenery. Auckland's iconic waterfront drive from the city to Mission Bay and beyond. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-west-coast-piha-road",
+      "name": "Scenic Drive to Piha",
+      "region": "auckland",
+      "lat": -36.95,
+      "lng": 174.47,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "rainforest",
+        "surf-beach",
+        "waitakere-ranges"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Wind through the Waitakere Ranges rainforest to Auckland's wild west coast surf beach.",
+      "commentary": "The drive from Titirangi to Piha takes about 40 minutes along Piha Road, threading through dense native bush of the Waitakere Ranges Regional Park. The road descends dramatically to reveal Piha Beach, split by the iconic Lion Rock. Piha has been Auckland's favourite surf beach for generations.",
+      "audio_story": "You are leaving suburban Auckland behind as the road climbs into the Waitakere Ranges. Massive tree ferns arch overhead, and the bush closes in — rimu, kauri, and nikau palms line the winding road. This is a remnant of the ancient forest that once blanketed the entire Auckland region. As you crest the ranges, the Tasman Sea appears in glimpses between the trees. Then the road drops steeply and suddenly there it is: Piha Beach, wild and black-sanded, with Lion Rock standing 101 metres tall in the middle. Surfers have been riding these waves since the 1930s, and the volunteer surf lifesaving club here is one of the busiest in New Zealand.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Auckland Council",
+        "Waitakere Ranges Heritage Area"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Scenic Drive to Piha route delivers a memorable journey through exceptional New Zealand scenery. Wind through the Waitakere Ranges rainforest to Auckland's wild west coast surf beach. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-coast-to-coast-walkway",
+      "name": "Coast to Coast Walkway",
+      "region": "auckland",
+      "lat": -36.8422,
+      "lng": 174.744,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "heritage",
+        "volcanic",
+        "cross-city"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "Walk 16 km across Auckland from the Waitemata to the Manukau Harbour.",
+      "commentary": "The Coast to Coast Walkway traverses Auckland from Viaduct Harbour on the Waitemata to Onehunga on the Manukau Harbour. The 16 km trail crosses the Auckland Domain, climbs Mount Eden, passes through One Tree Hill Domain, and follows the old Onehunga portage route. It is one of the few urban walks in the world that connects two separate harbours.",
+      "audio_story": "You are setting out from Viaduct Harbour on a walk that crosses an entire city between two oceans. Auckland sits on a narrow isthmus — just 16 kilometres separates the Pacific-facing Waitemata from the Tasman-facing Manukau Harbour. You climb through the Auckland Domain, past the War Memorial Museum with its neoclassical columns, then up Maungawhau Mount Eden. From the summit crater, 196 metres up, you can see both harbours on a clear day. Continuing south through the green expanse of One Tree Hill Domain, you are following a route Maori used for centuries to portage waka between the two coasts. The walk ends at Onehunga Bay, where the Manukau Harbour stretches away to the Tasman Sea.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Auckland Council",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Coast to Coast Walkway route delivers a memorable journey through exceptional New Zealand scenery. Walk 16 km across Auckland from the Waitemata to the Manukau Harbour. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-rangitoto-summit-track",
+      "name": "Rangitoto Island Summit Track",
+      "region": "auckland",
+      "lat": -36.7862,
+      "lng": 174.86,
+      "category": "journey",
+      "tags": [
+        "island-walk",
+        "volcanic",
+        "native-bush",
+        "harbour-views"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Climb Auckland's youngest volcano on a boardwalk through the world's largest pohutukawa forest.",
+      "commentary": "Rangitoto Island erupted from the sea around 1400 CE and is now home to the world's largest pohutukawa forest. The summit track is a 7 km return walk from the Rangitoto Wharf to the 259-metre summit, with a side trip to lava caves. The island is predator-free and a sanctuary for native birds.",
+      "audio_story": "You are stepping off the ferry onto Rangitoto Island, a volcano so young that Maori witnessed its eruption from the mainland around 600 years ago. The boardwalk stretches ahead through a lava field that is slowly being colonised by the world's largest pohutukawa forest. These trees somehow root into bare basalt rock, and in summer they turn the entire island crimson. You pass lava caves formed by flowing molten rock — bring a torch to peer inside. At the summit, 259 metres above the harbour, the panorama is extraordinary: all of Auckland, the Hauraki Gulf islands, and on a clear day, the Coromandel Peninsula. This island is predator-free thanks to intensive conservation work, so listen for the calls of tui, bellbirds, and kereru around you.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Rangitoto Island Conservation Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Rangitoto Island Summit Track route delivers a memorable journey through exceptional New Zealand scenery. Climb Auckland's youngest volcano on a boardwalk through the world's largest pohutukawa forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-hunua-ranges-cossey-dam",
+      "name": "Hunua Ranges – Cossey Dam Loop",
+      "region": "auckland",
+      "lat": -37.076,
+      "lng": 175.188,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "dam",
+        "native-forest",
+        "waterfall"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2.5,
+      "short": "Loop through dense native bush past waterfalls and a heritage dam in Auckland's southeastern ranges.",
+      "commentary": "The Hunua Ranges Regional Park covers 16,000 hectares of dense native forest southeast of Auckland. The Cossey Dam loop track passes Hunua Falls, a 30-metre cascade, and the 1950s-era Cossey Dam. The ranges supply about 80 percent of Auckland's drinking water through five dams.",
+      "audio_story": "You are heading into the Hunua Ranges, a vast swathe of native forest that most Aucklanders drive past without ever exploring. These hills supply around 80 percent of the city's drinking water — five dams hidden in the bush capture rainfall from this lush catchment. Your first stop is Hunua Falls, where the Wairoa River drops 30 metres into a deep pool. The loop track then winds through podocarp forest — totara, rimu, and kahikatea trees that have been growing here for centuries. You reach Cossey Dam, a quiet reservoir built in the 1950s, its still waters reflecting the surrounding bush. Keep your eyes open for North Island kokako — this is one of the last strongholds of this rare, blue-wattled songbird.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Auckland Council",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Hunua Ranges – Cossey Dam Loop route delivers a memorable journey through exceptional New Zealand scenery. Loop through dense native bush past waterfalls and a heritage dam in Auckland's southeastern ranges. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-matakana-wine-trail",
+      "name": "Matakana Wine Trail",
+      "region": "auckland",
+      "lat": -36.53,
+      "lng": 174.72,
+      "category": "journey",
+      "tags": [
+        "wine-trail",
+        "cellar-doors",
+        "artisan",
+        "rural"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 4,
+      "short": "Tour boutique vineyards and artisan producers in Auckland's charming northern wine country.",
+      "commentary": "The Matakana wine region, about an hour north of Auckland, is home to around 30 vineyards producing pinot gris, syrah, chardonnay, and merlot. The area also features the popular Matakana Village Farmers Market held every Saturday. Morris and James Pottery, Sculptureum, and Brick Bay wines are among the key stops.",
+      "audio_story": "You are driving north through rolling green countryside towards Matakana, Auckland's boutique wine region. About an hour from the city, the landscape shifts to neatly trellised vineyards tucked between hills. There are around 30 cellar doors here, many family-run, and the warm clay soils produce excellent pinot gris and syrah. Stop at Brick Bay, where a sculpture trail winds through the vineyard, or Ransom Wines in their charming converted shed. If it is Saturday morning, the Matakana Village Farmers Market is a must — local cheeses, olive oils, and artisan bread alongside buskers and coffee. The region feels a world away from the city, yet you could be back in Auckland for dinner. Take your time and enjoy the slower pace.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Matakana Coast",
+        "Auckland Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Matakana Wine Trail route delivers a memorable journey through exceptional New Zealand scenery. Tour boutique vineyards and artisan producers in Auckland's charming northern wine country. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-great-barrier-island-road",
+      "name": "Great Barrier Island Coastal Road",
+      "region": "auckland",
+      "lat": -36.193,
+      "lng": 175.437,
+      "category": "journey",
+      "tags": [
+        "island-drive",
+        "remote",
+        "off-grid",
+        "coastal",
+        "dark-sky"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "Drive the unpaved roads of Great Barrier Island, Auckland's wild, off-grid outpost in the Hauraki Gulf.",
+      "commentary": "Great Barrier Island (Aotea) lies 100 km northeast of Auckland in the Hauraki Gulf. The island has no mains electricity, no reticulated water, and limited cellphone coverage. Its gravel roads connect remote bays, native bush reserves, and a hot spring. The island is a Dark Sky Sanctuary.",
+      "audio_story": "You are driving the gravel roads of Great Barrier Island, and the contrast with the Auckland you left behind is almost absurd. Just 100 kilometres from New Zealand's largest city, this island has no mains electricity — solar panels and generators power everything — no reticulated water supply, and cellphone coverage that fades in and out. The roads are unpaved, winding through dense native bush and opening suddenly onto deserted white sand beaches. Medlands, Kaitoke, and Whangapoua — each bay feels like a private discovery. The island's hot springs at Kaitoke are free, natural pools in a bush setting. At night, Great Barrier earns its status as a Dark Sky Sanctuary — with no light pollution, the Milky Way arches overhead with a brilliance that city dwellers forget is possible. About a thousand people live here year-round, and the community has a self-sufficient, slightly eccentric character. The island feels like New Zealand might have felt 50 years ago — unhurried, uncommercialized, and genuinely wild.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Auckland Council",
+        "Department of Conservation",
+        "International Dark-Sky Association"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Great Barrier Island Coastal Road route delivers a memorable journey through exceptional New Zealand scenery. Drive the unpaved roads of Great Barrier Island, Auckland's wild, off-grid outpost in the Hauraki Gulf. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "auckland-rangitoto-volcano-hike",
+      "name": "Rangitoto Island Volcano Hike",
+      "region": "auckland",
+      "lat": -36.7853,
+      "lng": 174.862,
+      "category": "adventure",
+      "tags": [
+        "volcano-hiking",
+        "island",
+        "free",
+        "nature",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Hike to the summit of Auckland's youngest and most iconic volcanic island.",
+      "commentary": "Rangitoto Island erupted from the sea just 600 years ago, making it Auckland's youngest volcano. The summit track passes through the world's largest pohutukawa forest before reaching panoramic views of the Hauraki Gulf. A boardwalk loop through lava caves adds underground exploration.",
+      "audio_story": "You have arrived at the Rangitoto Island wharf, standing on a volcano that erupted from the ocean floor just 600 years ago. As you begin the summit track, you will pass through the world's largest pohutukawa forest, a canopy that blazes crimson every December. The path climbs steadily over rugged lava fields to the 259-metre summit, where a full panorama of the Hauraki Gulf and Auckland's skyline awaits. On your way down, detour through the lava caves, natural tunnels formed as molten rock cooled around flowing magma. Bring a torch and watch your head, some passages are barely a metre high. This is one of Auckland's most rewarding half-day adventures, and it is completely free.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Fullers360 Ferries",
+        "Auckland Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Rangitoto Island Volcano Hike adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Hike to the summit of Auckland's youngest and most iconic volcanic island. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-skydive-parakai",
+      "name": "Skydive Auckland (Parakai)",
+      "region": "auckland",
+      "lat": -36.6612,
+      "lng": 174.4358,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Tandem skydive from up to 20,000 feet over Auckland's west coast.",
+      "commentary": "Skydive Auckland operates from Parakai airfield northwest of the city, offering tandem jumps from 9,000 to 20,000 feet. The freefall lasts up to 85 seconds at 200 km/h, with views stretching from the Waitakere Ranges to the Kaipara Harbour. It is one of the highest commercial skydive options in the country.",
+      "audio_story": "You have arrived at Parakai airfield, home to Skydive Auckland and some of the highest tandem jumps in New Zealand. At 20,000 feet, you will freefall for up to 85 seconds, reaching speeds of 200 kilometres per hour before the canopy opens. The views are extraordinary, stretching from the dark bush of the Waitakere Ranges across to the vast Kaipara Harbour, the largest harbour in the Southern Hemisphere. On a clear day, you can see the Coromandel Peninsula and even the volcanic plateau. Your instructor handles everything, so all you need to do is breathe and enjoy the ride. This is not just a skydive, it is a scenic flight that happens to include freefall.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Skydive Auckland",
+        "NZ Parachute Federation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Skydive Auckland (Parakai) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tandem skydive from up to 20,000 feet over Auckland's west coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-goat-island-snorkel",
+      "name": "Goat Island Marine Reserve Snorkelling",
+      "region": "auckland",
+      "lat": -36.2668,
+      "lng": 174.7968,
+      "category": "adventure",
+      "tags": [
+        "snorkelling",
+        "scuba-diving",
+        "marine-reserve",
+        "free",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Snorkel among blue maomao, snapper, and crayfish in NZ's first marine reserve.",
+      "commentary": "Established in 1975, Goat Island (Cape Rodney-Okakari Point) was New Zealand's first marine reserve. Decades of protection have created an underwater sanctuary where large snapper, crayfish, and schools of blue maomao swim within arm's reach. Visibility often exceeds 10 metres in summer.",
+      "audio_story": "You have arrived at Goat Island, where New Zealand's marine conservation story began in 1975. This was the country's first no-take marine reserve, and after five decades of protection, the results are remarkable. Wade in from the beach and within seconds you will be surrounded by fish, large snapper with no fear of humans, shimmering blue maomao, and if you are lucky, crayfish peering out from rocky crevices. The kelp forests here sway like underwater cathedrals, home to over 70 species of fish. Visibility regularly exceeds 10 metres in summer, making it one of the best snorkelling spots in the North Island. You can hire gear from the dive shop across the road, or bring your own and explore for free.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Goat Island Dive & Snorkel"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "New Zealand's first marine reserve is a snorkeller's paradise — massive snapper, crayfish, and sting rays in crystal-clear water just metres from the shore. Reviewers consistently call it world-class marine experience without needing to go offshore. Hire gear from the shop by the beach."
+      }
+    },
+    {
+      "id": "auckland-hunua-ranges-mtb",
+      "name": "Hunua Ranges Mountain Biking",
+      "region": "auckland",
+      "lat": -37.0772,
+      "lng": 175.1908,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trails",
+        "free",
+        "bush"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Ride purpose-built singletrack through native bush in Auckland's southern ranges.",
+      "commentary": "The Hunua Ranges offer over 25 kilometres of purpose-built mountain bike trails through dense native forest south of Auckland. Trails range from beginner-friendly flow tracks to technical grade 4 descents. The Massey Track and Cossey-Mangatangi loop are local favourites.",
+      "audio_story": "You have arrived at the Hunua Ranges, Auckland's best-kept mountain biking secret hiding in the southern hills. Over 25 kilometres of purpose-built singletrack wind through dense native bush, where tree ferns arch over bermed corners and roots add natural technical features. The trails cater to everyone, from smooth flow tracks for beginners to steep grade 4 descents that will test experienced riders. Try the Massey Track for a classic bush singletrack experience, or link up the Cossey-Mangatangi loop for a longer adventure past waterfalls and swimming holes. Entry is free, the trails are well maintained by a passionate local club, and you will rarely see crowds. Just watch for the mud after rain, these hills catch a lot of it.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Auckland Council",
+        "Hunua Trail Builders"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Hunua Ranges Mountain Biking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride purpose-built singletrack through native bush in Auckland's southern ranges. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-americas-cup-sailing",
+      "name": "America's Cup Sailing Experience",
+      "region": "auckland",
+      "lat": -36.8426,
+      "lng": 174.7656,
+      "category": "adventure",
+      "tags": [
+        "sailing",
+        "harbour",
+        "commercial",
+        "team-activity"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 2,
+      "short": "Sail a former America's Cup yacht across the Waitemata Harbour.",
+      "commentary": "Explore Auckland operates former America's Cup racing yachts out of the Viaduct Harbour. Guests can take the helm, grind the winches, or simply ride along as the crew demonstrates competitive sailing. The experience runs across the Waitemata Harbour with views of the Harbour Bridge and Devonport.",
+      "audio_story": "You have arrived at the Viaduct Harbour, the birthplace of New Zealand's America's Cup legacy. Right here at this dock, you are about to board a genuine America's Cup racing yacht, the same class of vessel that defended the Auld Mug in 2000 and 2003. Once aboard, the crew will invite you to take the helm, grind the massive winches, or trim the sails as you race across the Waitemata Harbour at exhilarating speed. These boats heel dramatically, and the rail will kiss the water as the wind fills the sails. Auckland earned the nickname City of Sails for good reason, and there is no better way to understand why than from the deck of one of the fastest monohulls ever built.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Explore NZ",
+        "America's Cup Village"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The America's Cup Sailing Experience adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sail a former America's Cup yacht across the Waitemata Harbour. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-muriwai-paragliding",
+      "name": "Muriwai Beach Paragliding",
+      "region": "auckland",
+      "lat": -36.8326,
+      "lng": 174.4241,
+      "category": "adventure",
+      "tags": [
+        "paragliding",
+        "beach",
+        "cliffs",
+        "commercial"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1.5,
+      "short": "Soar above the black sand cliffs of Muriwai with a tandem paraglide.",
+      "commentary": "Muriwai's coastal cliffs and reliable westerly thermals make it Auckland's premier paragliding site. Tandem flights launch from the clifftop above the gannet colony, soaring over black iron-sand beaches and the Tasman Sea. Flights typically last 15 to 30 minutes depending on conditions.",
+      "audio_story": "You have arrived at the clifftops of Muriwai, where the wind sweeping in from the Tasman Sea creates perfect paragliding conditions almost year-round. Your tandem pilot will launch you from the grassy cliff edge, and within seconds you will be floating above one of Auckland's most dramatic coastlines. Below you, the black iron-sand beach stretches for 60 kilometres, pounded by surf. To your left, the famous Muriwai gannet colony nests on the rocky stacks, thousands of birds wheeling in the same thermals keeping you aloft. On a good day, you will gain enough altitude to see the Kaipara Heads to the north and the Manukau Harbour to the south. The landing is gentle, right back on the beach below.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Paraglide NZ",
+        "Auckland Hang Gliding and Paragliding Club"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Muriwai Beach Paragliding adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Soar above the black sand cliffs of Muriwai with a tandem paraglide. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-waiheke-sea-kayak",
+      "name": "Waiheke Island Sea Kayaking",
+      "region": "auckland",
+      "lat": -36.791,
+      "lng": 175.058,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "sea-kayak",
+        "island",
+        "wine-region",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3.5,
+      "short": "Paddle the sheltered bays of Waiheke Island with vineyard-studded hills as your backdrop.",
+      "commentary": "Sea kayaking around Waiheke Island combines coastal exploration with stunning island scenery. Guided tours depart from Matiatia Bay and explore hidden coves, sandy beaches, and rocky headlands. Some tours include a vineyard visit or beach picnic.",
+      "audio_story": "You have arrived at Matiatia Bay on Waiheke Island, the launching point for one of Auckland's most scenic kayaking experiences. As you glide away from shore, the sheltered waters of the Hauraki Gulf stretch out before you, emerald-green and remarkably calm in the lee of the island. Your route takes you past golden sand beaches tucked between headlands, through clear shallows where you might spot eagle rays gliding below, and along a coastline backed by olive groves and vineyards. Waiheke has over 30 boutique wineries, and several guided kayak tours include a tasting stop. The paddling is gentle enough for beginners, but the scenery is world-class. Keep your eyes open for little blue penguins, they nest along these shores.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Waiheke Sea Kayaks",
+        "Fullers360"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Waiheke Island Sea Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Paddle the sheltered bays of Waiheke Island with vineyard-studded hills as your backdrop. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "auckland-woodhill-forest-mtb",
+      "name": "Woodhill Mountain Bike Park",
+      "region": "auckland",
+      "lat": -36.753,
+      "lng": 174.411,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trail-park",
+        "sand-trails",
+        "commercial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Ride 100+ km of sandy singletrack at Auckland's largest mountain bike park.",
+      "commentary": "Woodhill Mountain Bike Park in the Woodhill Forest northwest of Auckland offers over 100 km of trails through pine forest on sandy soil. The sand base means trails drain instantly after rain. Features include a skills park, pump track, and trails from Grade 1 to Grade 5.",
+      "audio_story": "You have arrived at Woodhill Mountain Bike Park, Auckland's largest riding destination with over 100 kilometres of trails through the pine forest northwest of the city. What makes Woodhill unique is the soil, or rather the sand. Built on old coastal sand dunes, the trails here drain almost instantly after rain, making this one of the few places in Auckland where you can ride in any weather without feeling guilty about trail damage. The sandy surface has a distinctive feel, slightly slower than clay-based trails but incredibly grippy in corners. The trail network caters to everyone, from families on the gentle Grade 1 loops to experts hucking drops on the Grade 5 lines. The skills park and pump track are ideal for improving your technique, and the jumps range from tabletops for learning to massive gap jumps for the bold. There is a small entry fee that goes directly to trail maintenance, and the on-site shop offers bike hire and repairs. Come prepared for sand in your drivetrain.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Bike Parks NZ",
+        "Trail Forks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Woodhill Mountain Bike Park adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride 100+ km of sandy singletrack at Auckland's largest mountain bike park. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

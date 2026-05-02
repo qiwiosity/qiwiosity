@@ -1,0 +1,50 @@
+[
+  {
+    "id": "adventure",
+    "label": "Adventure & Adrenaline",
+    "icon": "zap",
+    "color": "#E65100"
+  },
+  {
+    "id": "culture",
+    "label": "Arts, Museums & Urban",
+    "icon": "users",
+    "color": "#2C6FAD"
+  },
+  {
+    "id": "food-wine",
+    "label": "Food & Wine",
+    "icon": "wine",
+    "color": "#B71C1C"
+  },
+  {
+    "id": "heritage",
+    "label": "Historic Sites",
+    "icon": "book-open",
+    "color": "#4527A0"
+  },
+  {
+    "id": "journey",
+    "label": "Scenic Journeys",
+    "icon": "map",
+    "color": "#37474F"
+  },
+  {
+    "id": "māori",
+    "label": "Māori Heritage & Culture",
+    "icon": "compass",
+    "color": "#C0392B"
+  },
+  {
+    "id": "nature",
+    "label": "Nature & Landscapes",
+    "icon": "leaf",
+    "color": "#2E7D32"
+  },
+  {
+    "id": "wildlife",
+    "label": "Wildlife & Conservation",
+    "icon": "bird",
+    "color": "#00695C"
+  }
+]

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Tells Android Auto (and, separately, Android Automotive OS) what kind
+  of car-app surface this app exposes.
+
+  "template" = projected UI built from the Jetpack Car App Library
+               (androidx.car.app), which is what a POI / travel app
+               gets. Do NOT add "media" here unless you also strip the
+               template CarAppService, because AA refuses mixed apps.
+  "projected" = we are a phone-projected app (AA on head unit), not a
+                native Automotive OS app (AAOS).
+-->
+<automotiveApp>
+  <uses name="template" />
+  <uses name="projected" />
+</automotiveApp>

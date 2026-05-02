@@ -1,0 +1,12 @@
+{
+  "name": "qiwiosity-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Internal tooling — content linters, TTS pipeline, map utilities.",
+  "type": "module",
+  "scripts": {
+    "tts": "node tts-render.js",
+    "tts:dry": "node tts-render.js --dry-run",
+    "tts:force": "node tts-render.js --force"
+  }
+}

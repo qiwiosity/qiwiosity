@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "northland",
+    "name": "Northland / Te Tai Tokerau",
+    "island": "North",
+    "centre": {
+      "lat": -35.5,
+      "lng": 174
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "northland-copthorne-waitangi",
+      "name": "Copthorne Hotel Bay of Islands",
+      "region": "northland",
+      "lat": -35.256,
+      "lng": 174.083,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.3,
+      "short": "Waterfront hotel at Waitangi on the edge of the Treaty Grounds."
+    },
+    {
+      "id": "northland-scenic-bay-of-islands",
+      "name": "Scenic Hotel Bay of Islands",
+      "region": "northland",
+      "lat": -35.254,
+      "lng": 174.122,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.2,
+      "short": "Garden-set Paihia hotel with pool near the ferry wharf."
+    },
+    {
+      "id": "northland-paihia-beach-resort",
+      "name": "Paihia Beach Resort & Spa",
+      "region": "northland",
+      "lat": -35.282,
+      "lng": 174.088,
+      "type": "hotel",
+      "price_nzd_per_night": 360,
+      "rating": 4.6,
+      "short": "Boutique beachfront suites with harbour-view infinity pool."
+    },
+    {
+      "id": "northland-kings-view-peppers",
+      "name": "Peppers Riverside Hotel (proposed)",
+      "region": "northland",
+      "lat": -35.28,
+      "lng": 174.086,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Upscale Paihia hotel on Marsden Road with seafront balconies."
+    },
+    {
+      "id": "northland-kingsgate-russell",
+      "name": "Kingsgate Hotel Russell",
+      "region": "northland",
+      "lat": -35.26,
+      "lng": 174.121,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.2,
+      "short": "Historic Russell hotel a short stroll from the Strand."
+    },
+    {
+      "id": "northland-the-duke-russell",
+      "name": "The Duke of Marlborough",
+      "region": "northland",
+      "lat": -35.261,
+      "lng": 174.1205,
+      "type": "hotel",
+      "price_nzd_per_night": 320,
+      "rating": 4.5,
+      "short": "NZ's oldest licensed hotel on the Russell waterfront."
+    },
+    {
+      "id": "northland-kerikeri-homestead-motel",
+      "name": "Kerikeri Homestead Motel",
+      "region": "northland",
+      "lat": -35.228,
+      "lng": 173.948,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Park-like Kerikeri motel close to the Stone Store Basin."
+    },
+    {
+      "id": "northland-aloha-seaview-motel",
+      "name": "Aloha Seaview Resort Motel Paihia",
+      "region": "northland",
+      "lat": -35.284,
+      "lng": 174.0865,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.3,
+      "short": "Paihia hillside motel with sweeping Bay of Islands views."
+    },
+    {
+      "id": "northland-cook-s-lookout-motel",
+      "name": "Cook's Lookout Motel Paihia",
+      "region": "northland",
+      "lat": -35.279,
+      "lng": 174.095,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Paihia motel on the hill with panoramic sea views."
+    },
+    {
+      "id": "northland-the-orongo-bay-motel",
+      "name": "Orongo Bay Motel Russell",
+      "region": "northland",
+      "lat": -35.282,
+      "lng": 174.119,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Quiet bay motel a few minutes from Russell village."
+    },
+    {
+      "id": "northland-whangarei-fountain-lodge",
+      "name": "Fountain Lodge Motel Whangarei",
+      "region": "northland",
+      "lat": -35.7305,
+      "lng": 174.308,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Quiet Whangarei motel near the town basin and museum."
+    },
+    {
+      "id": "northland-kaitaia-orana-motor-inn",
+      "name": "Orana Motor Inn Kaitaia",
+      "region": "northland",
+      "lat": -35.11,
+      "lng": 173.264,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Gateway-to-90-Mile-Beach motel in central Kaitaia."
+    },
+    {
+      "id": "northland-mangonui-motel",
+      "name": "Mangonui Waterfront Apartments",
+      "region": "northland",
+      "lat": -34.993,
+      "lng": 173.54,
+      "type": "motel",
+      "price_nzd_per_night": 200,
+      "rating": 4.3,
+      "short": "Historic Mangonui harbour-front motel units above the fish shop village."
+    },
+    {
+      "id": "northland-paihia-top10",
+      "name": "Paihia Beach TOP 10 Holiday Park",
+      "region": "northland",
+      "lat": -35.289,
+      "lng": 174.091,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Beachside park a short walk from Paihia wharf."
+    },
+    {
+      "id": "northland-russell-orongo-bay-top10",
+      "name": "Russell-Orongo Bay Holiday Park",
+      "region": "northland",
+      "lat": -35.309,
+      "lng": 174.115,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.3,
+      "short": "Bush-fringed Russell park with native wildlife and cabins."
+    },
+    {
+      "id": "northland-kerikeri-top10",
+      "name": "Kerikeri TOP 10 Holiday Park",
+      "region": "northland",
+      "lat": -35.238,
+      "lng": 173.952,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.3,
+      "short": "Family Kerikeri park with pool and plenty of tree-shaded sites."
+    },
+    {
+      "id": "northland-whangarei-top10",
+      "name": "Whangarei TOP 10 Holiday Park",
+      "region": "northland",
+      "lat": -35.734,
+      "lng": 174.32,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.1,
+      "short": "Whangarei park on the edge of town close to the waterfalls."
+    },
+    {
+      "id": "northland-eagles-nest-russell",
+      "name": "Eagles Nest Russell",
+      "region": "northland",
+      "lat": -35.263,
+      "lng": 174.118,
+      "type": "lodge",
+      "price_nzd_per_night": 2500,
+      "rating": 4.9,
+      "short": "Five luxury villas on a clifftop above Russell with private pools."
+    },
+    {
+      "id": "northland-helena-bay-lodge",
+      "name": "Helena Bay Lodge",
+      "region": "northland",
+      "lat": -35.48,
+      "lng": 174.33,
+      "type": "lodge",
+      "price_nzd_per_night": 2200,
+      "rating": 4.9,
+      "short": "Italian-inspired coastal lodge on 800 acres north of Whangarei."
+    },
+    {
+      "id": "northland-kauri-cliffs-lodge",
+      "name": "The Lodge at Kauri Cliffs",
+      "region": "northland",
+      "lat": -35.059,
+      "lng": 173.783,
+      "type": "lodge",
+      "price_nzd_per_night": 2400,
+      "rating": 4.9,
+      "short": "Robertson Lodges flagship above Matauri Bay with cliff-top golf."
+    }
+  ]
+}

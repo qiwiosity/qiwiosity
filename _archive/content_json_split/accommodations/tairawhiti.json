@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "tairawhiti",
+    "name": "Tairāwhiti / Gisborne / East Cape",
+    "island": "North",
+    "centre": {
+      "lat": -38.05,
+      "lng": 178.2
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "tairawhiti-portside-hotel-gisborne",
+      "name": "Portside Hotel Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.677,
+      "lng": 178.024,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.3,
+      "short": "Modern apartment-hotel near the Gisborne inner harbour."
+    },
+    {
+      "id": "tairawhiti-scenic-te-pania-gis",
+      "name": "Scenic Circle Hotel Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.666,
+      "lng": 178.02,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.2,
+      "short": "Gladstone Road hotel close to the Gisborne CBD."
+    },
+    {
+      "id": "tairawhiti-emerald-hotel",
+      "name": "Emerald Hotel Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.668,
+      "lng": 178.018,
+      "type": "hotel",
+      "price_nzd_per_night": 235,
+      "rating": 4.3,
+      "short": "Boutique hotel with pool on Gladstone Road, Gisborne."
+    },
+    {
+      "id": "tairawhiti-gisborne-cosmopolitan-club",
+      "name": "Gisborne Hotel",
+      "region": "tairawhiti",
+      "lat": -38.668,
+      "lng": 178.015,
+      "type": "hotel",
+      "price_nzd_per_night": 195,
+      "rating": 4.1,
+      "short": "Central Gisborne hotel on Huxley Road."
+    },
+    {
+      "id": "tairawhiti-tatapouri-bay",
+      "name": "Tatapouri Bay",
+      "region": "tairawhiti",
+      "lat": -38.652,
+      "lng": 178.077,
+      "type": "hotel",
+      "price_nzd_per_night": 265,
+      "rating": 4.5,
+      "short": "Glamping eco-pods and rooms on a wild East Coast beach."
+    },
+    {
+      "id": "tairawhiti-palmers-motor-lodge",
+      "name": "Palmers Motor Lodge Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.665,
+      "lng": 178.015,
+      "type": "hotel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Classic motor-lodge-style hotel in central Gisborne."
+    },
+    {
+      "id": "tairawhiti-whispering-sands-motel",
+      "name": "Whispering Sands Beachfront Motel",
+      "region": "tairawhiti",
+      "lat": -38.677,
+      "lng": 178.048,
+      "type": "motel",
+      "price_nzd_per_night": 200,
+      "rating": 4.4,
+      "short": "Absolute beachfront motel on Wainui Beach east of town."
+    },
+    {
+      "id": "tairawhiti-waikanae-beach-motel",
+      "name": "Waikanae Beach Motel",
+      "region": "tairawhiti",
+      "lat": -38.682,
+      "lng": 178.032,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Beach-edge Gisborne motel a short walk to Waikanae Beach."
+    },
+    {
+      "id": "tairawhiti-senator-motor-inn",
+      "name": "Senator Motor Inn Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.668,
+      "lng": 178.019,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Central Gisborne motel close to shops and Olympic Pool."
+    },
+    {
+      "id": "tairawhiti-pacific-harbour-motor-lodge",
+      "name": "Pacific Harbour Motor Inn Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.68,
+      "lng": 178.024,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Marina-side Gisborne motel with spa suites."
+    },
+    {
+      "id": "tairawhiti-blue-pacific-apartments",
+      "name": "Blue Pacific Apartments Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.675,
+      "lng": 178.045,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.3,
+      "short": "Beachfront apartment-motel on Salisbury Road."
+    },
+    {
+      "id": "tairawhiti-wainui-beach-motel",
+      "name": "Wainui Beach Motel",
+      "region": "tairawhiti",
+      "lat": -38.687,
+      "lng": 178.054,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Short walk to Wainui Beach surf breaks."
+    },
+    {
+      "id": "tairawhiti-tolaga-bay-motel",
+      "name": "Tolaga Bay Motel",
+      "region": "tairawhiti",
+      "lat": -38.367,
+      "lng": 178.3,
+      "type": "motel",
+      "price_nzd_per_night": 155,
+      "rating": 4,
+      "short": "East Coast motel near the famous Tolaga Bay wharf."
+    },
+    {
+      "id": "tairawhiti-waikanae-beach-top10",
+      "name": "Waikanae Beach TOP 10 Holiday Park",
+      "region": "tairawhiti",
+      "lat": -38.6833,
+      "lng": 178.0312,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.3,
+      "short": "Only absolute beachfront holiday park in Gisborne city."
+    },
+    {
+      "id": "tairawhiti-gisborne-holiday-park",
+      "name": "Gisborne URU Holiday Park",
+      "region": "tairawhiti",
+      "lat": -38.661,
+      "lng": 178.016,
+      "type": "holiday-park",
+      "price_nzd_per_night": 90,
+      "rating": 4.1,
+      "short": "Riverside Gisborne park a cycle-ride from town."
+    },
+    {
+      "id": "tairawhiti-tolaga-bay-holiday-park",
+      "name": "Tolaga Bay Holiday Park",
+      "region": "tairawhiti",
+      "lat": -38.368,
+      "lng": 178.301,
+      "type": "holiday-park",
+      "price_nzd_per_night": 80,
+      "rating": 4,
+      "short": "Family park near Tolaga Bay's historic long wharf."
+    },
+    {
+      "id": "tairawhiti-eastwoodhill-camping",
+      "name": "Te Araroa Holiday Park",
+      "region": "tairawhiti",
+      "lat": -37.633,
+      "lng": 178.362,
+      "type": "holiday-park",
+      "price_nzd_per_night": 75,
+      "rating": 4,
+      "short": "Remote East Cape park near the East Cape Lighthouse walk."
+    },
+    {
+      "id": "tairawhiti-wharekauhau-gis-no",
+      "name": "Wharerata Lodge Gisborne",
+      "region": "tairawhiti",
+      "lat": -38.7,
+      "lng": 178.014,
+      "type": "lodge",
+      "price_nzd_per_night": 650,
+      "rating": 4.6,
+      "short": "Boutique farmstay lodge in Gisborne wine country."
+    },
+    {
+      "id": "tairawhiti-millton-vineyard-lodge",
+      "name": "Millton Vineyard Cottage",
+      "region": "tairawhiti",
+      "lat": -38.74,
+      "lng": 177.99,
+      "type": "lodge",
+      "price_nzd_per_night": 550,
+      "rating": 4.6,
+      "short": "Biodynamic-vineyard cottage stay in Manutuke."
+    },
+    {
+      "id": "tairawhiti-tatapouri-east-coast-lodge",
+      "name": "Tatapouri Sport Fishing Lodge",
+      "region": "tairawhiti",
+      "lat": -38.654,
+      "lng": 178.077,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.5,
+      "short": "East Coast lodge with reef-walking stingray tours."
+    }
+  ]
+}

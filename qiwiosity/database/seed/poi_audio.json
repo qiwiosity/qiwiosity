@@ -1,0 +1,26 @@
+[
+  {
+    "poi_id": "napier-bluff-hill",
+    "length": "headline",
+    "filename": "napier-bluff-hill.headline.mp3",
+    "file_url": "audio/napier-bluff-hill.headline.mp3"
+  },
+  {
+    "poi_id": "napier-bluff-hill",
+    "length": "standard",
+    "filename": "napier-bluff-hill.standard.mp3",
+    "file_url": "audio/napier-bluff-hill.standard.mp3"
+  },
+  {
+    "poi_id": "napier-marine-parade",
+    "length": "headline",
+    "filename": "napier-marine-parade.headline.mp3",
+    "file_url": "audio/napier-marine-parade.headline.mp3"
+  },
+  {
+    "poi_id": "napier-marine-parade",
+    "length": "standard",
+    "filename": "napier-marine-parade.standard.mp3",
+    "file_url": "audio/napier-marine-parade.standard.mp3"
+  }
+]

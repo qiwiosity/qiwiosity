@@ -1,0 +1,16 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "import-to-supabase.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.104.0",
+    "dotenv": "^17.4.2"
+  }
+}

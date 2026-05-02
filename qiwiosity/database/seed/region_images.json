@@ -1,0 +1,107 @@
+[
+  {
+    "region_id": "auckland",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/AucklandPano%20MC.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "northland",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/00%201563%20Waitangi%20Treaty%20Grounds%2C%20National%20Reserve%20%28NZ%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "coromandel",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral%20Cove%2006.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "bay-of-plenty",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Maunganui%20and%20beach.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "waikato",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Road%20to%20the%20Ruakuri%20Cave%2C%20Waitomo%2C%20New%20Zealand%20%2850801811851%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "rotorua",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Geothermal%20lakes%20in%20Waimangu%20Volcanic%20Valley%2C%20Rotorua%2C%20New%20Zealand%20-%20panoramio.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "taupo",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lake%20Taupo%2C%20New%20Zealand%2C%201990%20-%20Flickr%20-%20PhillipC.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "hawkes-bay",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Napier%20Art%20Deco%2C%20New%20Zealand%20%286567969%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "tairawhiti",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/East%20Cape%20Road%2C%20Gisborne%20District.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "taranaki",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Taranaki%2C%20New%20Plymouth%2C%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "whanganui-manawatu",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Whanganui%20River%2C%20New%20Zealand%2C%20near%20Jerusalem%2C%201968%20-%20Flickr%20-%20PhillipC.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "wellington",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wellington%20City%20Night.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "marlborough",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wairau%20Valley%20vineyards%20in%20the%20Marlborough%20wine%20region%2C%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "nelson-tasman",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock%20stacks%20in%20Anapai%20Bay.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "west-coast",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fox%20Glacier%20and%20rainforest%20in%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "canterbury",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mt%20Sefton%20massif%2C%20Aoraki%20-%20Mount%20Cook%20National%20Park%2C%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "queenstown",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Queenstown.%20Lake%20Wakatipu.%20%2850854629786%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "otago",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/016%20Gibbston%20valley%20vineyard%20landscape%20in%20Central%20Otago%20wine%20region%2C%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "southland",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Milford%20Sound%20in%20Fiordland%20National%20Park%2001.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "region_id": "bay-of-plenty",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Maunganui%20and%20beach.jpg?width=800",
+    "display_order": 2
+  },
+  {
+    "region_id": "waikato",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hobbit%20holes%20reflected%20in%20water.jpg?width=800",
+    "display_order": 2
+  }
+]

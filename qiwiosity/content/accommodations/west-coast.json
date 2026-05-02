@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "west-coast",
+    "name": "West Coast / Te Tai Poutini",
+    "island": "South",
+    "centre": {
+      "lat": -42.75,
+      "lng": 171.1
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "west-coast-scenic-franz-josef",
+      "name": "Scenic Hotel Franz Josef Glacier",
+      "region": "west-coast",
+      "lat": -43.388,
+      "lng": 170.181,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.4,
+      "short": "Alpine village hotel closest to the Franz Josef Glacier walk."
+    },
+    {
+      "id": "west-coast-distinction-fox-glacier",
+      "name": "Distinction Fox Glacier Te Weheka",
+      "region": "west-coast",
+      "lat": -43.463,
+      "lng": 170.018,
+      "type": "hotel",
+      "price_nzd_per_night": 270,
+      "rating": 4.3,
+      "short": "Boutique Fox Glacier hotel with panoramic mountain suites."
+    },
+    {
+      "id": "west-coast-punakaiki-resort",
+      "name": "Punakaiki Resort",
+      "region": "west-coast",
+      "lat": -42.114,
+      "lng": 171.327,
+      "type": "hotel",
+      "price_nzd_per_night": 250,
+      "rating": 4.3,
+      "short": "Beachfront resort next to the Pancake Rocks and Dolomite Point."
+    },
+    {
+      "id": "west-coast-ashley-hotel-greymouth",
+      "name": "Ashley Hotel Greymouth",
+      "region": "west-coast",
+      "lat": -42.451,
+      "lng": 171.2015,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.2,
+      "short": "Greymouth hotel on Tainui Street with pool and restaurant."
+    },
+    {
+      "id": "west-coast-shining-star-hokitika",
+      "name": "Shining Star Beachfront Accommodation",
+      "region": "west-coast",
+      "lat": -42.725,
+      "lng": 170.958,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.4,
+      "short": "Beachfront Hokitika chalets with alpaca and kunekune farm."
+    },
+    {
+      "id": "west-coast-beachfront-hotel-hokitika",
+      "name": "Beachfront Hotel Hokitika",
+      "region": "west-coast",
+      "lat": -42.72,
+      "lng": 170.964,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.3,
+      "short": "Hokitika oceanfront hotel on Revell Street with Tasman Sea sunsets."
+    },
+    {
+      "id": "west-coast-glacier-view-motel",
+      "name": "Glacier View Motel Franz Josef",
+      "region": "west-coast",
+      "lat": -43.382,
+      "lng": 170.183,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.2,
+      "short": "Franz Josef motel with glacier-view spa rooms."
+    },
+    {
+      "id": "west-coast-rainforest-retreat-motel",
+      "name": "Rainforest Retreat Motel Franz Josef",
+      "region": "west-coast",
+      "lat": -43.389,
+      "lng": 170.182,
+      "type": "motel",
+      "price_nzd_per_night": 205,
+      "rating": 4.3,
+      "short": "Bush-setting Franz Josef motel with tree-top chalets."
+    },
+    {
+      "id": "west-coast-fox-glacier-motor-lodge",
+      "name": "10 Cottages Fox Glacier Motel",
+      "region": "west-coast",
+      "lat": -43.463,
+      "lng": 170.019,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Freestanding cottages in Fox Glacier village."
+    },
+    {
+      "id": "west-coast-greymouth-motel",
+      "name": "Ashley Motor Lodge Greymouth",
+      "region": "west-coast",
+      "lat": -42.452,
+      "lng": 171.205,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Greymouth motel close to the railway station."
+    },
+    {
+      "id": "west-coast-westport-chelsea-motel",
+      "name": "Chelsea Gateway Motor Lodge Westport",
+      "region": "west-coast",
+      "lat": -41.754,
+      "lng": 171.598,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Westport motel with spa suites at the gateway to Buller."
+    },
+    {
+      "id": "west-coast-hokitika-motel",
+      "name": "Beachfront Motel Hokitika",
+      "region": "west-coast",
+      "lat": -42.722,
+      "lng": 170.963,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Hokitika motel a stroll along Revell Street to the beach."
+    },
+    {
+      "id": "west-coast-reefton-motel",
+      "name": "Reefton Motel",
+      "region": "west-coast",
+      "lat": -42.118,
+      "lng": 171.864,
+      "type": "motel",
+      "price_nzd_per_night": 155,
+      "rating": 4,
+      "short": "Heritage gold-town Reefton motel on Broadway."
+    },
+    {
+      "id": "west-coast-franz-josef-top10",
+      "name": "Franz Josef TOP 10 Holiday Park",
+      "region": "west-coast",
+      "lat": -43.386,
+      "lng": 170.178,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.3,
+      "short": "Glacier-country park with indoor pool and motel units."
+    },
+    {
+      "id": "west-coast-fox-glacier-top10",
+      "name": "Fox Glacier TOP 10 Holiday Park",
+      "region": "west-coast",
+      "lat": -43.462,
+      "lng": 170.017,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Village park at the start of Fox Glacier valley walks."
+    },
+    {
+      "id": "west-coast-greymouth-top10",
+      "name": "Greymouth Seaside TOP 10 Holiday Park",
+      "region": "west-coast",
+      "lat": -42.443,
+      "lng": 171.191,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "West-coast beachfront park with family cabins."
+    },
+    {
+      "id": "west-coast-punakaiki-beach-camp",
+      "name": "Punakaiki Beach Camp",
+      "region": "west-coast",
+      "lat": -42.114,
+      "lng": 171.328,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Beach-edge park steps from the Pancake Rocks."
+    },
+    {
+      "id": "west-coast-wilderness-lodge-arthurs",
+      "name": "Wilderness Lodge Arthur's Pass",
+      "region": "west-coast",
+      "lat": -42.95,
+      "lng": 171.528,
+      "type": "lodge",
+      "price_nzd_per_night": 780,
+      "rating": 4.7,
+      "short": "Eco-lodge on a high-country sheep station at Cass."
+    },
+    {
+      "id": "west-coast-lake-brunner-lodge",
+      "name": "Lake Brunner Lodge",
+      "region": "west-coast",
+      "lat": -42.636,
+      "lng": 171.418,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.6,
+      "short": "Historic fishing lodge on Lake Brunner (Moana)."
+    },
+    {
+      "id": "west-coast-wilderness-lodge-lake-moeraki",
+      "name": "Wilderness Lodge Lake Moeraki",
+      "region": "west-coast",
+      "lat": -43.726,
+      "lng": 169.28,
+      "type": "lodge",
+      "price_nzd_per_night": 850,
+      "rating": 4.7,
+      "short": "Riverside rainforest lodge between Fox and Haast."
+    }
+  ]
+}

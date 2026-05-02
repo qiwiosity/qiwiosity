@@ -1,0 +1,1523 @@
+{
+  "region": {
+    "id": "queenstown",
+    "name": "Queenstown / Tāhuna",
+    "island": "South",
+    "centre": {
+      "lat": -45.0312,
+      "lng": 168.6626
+    },
+    "bounds": {
+      "north": -44.7,
+      "south": -45.4,
+      "east": 169,
+      "west": 168.2
+    },
+    "description": "Tāhuna — the shallow bay — on Lake Whakatipu, ringed by the Remarkables. Adventure capital by marketing, alpine basin by geography."
+  },
+  "pois": [
+    {
+      "id": "queenstown-remarkables",
+      "name": "The Remarkables",
+      "region": "queenstown",
+      "lat": -45.0553,
+      "lng": 168.8119,
+      "category": "nature",
+      "tags": [
+        "mountains",
+        "skiing",
+        "viewpoint",
+        "geology"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "A 22km ridgeline rising 2,300m above Lake Whakatipu — one of only two mountain ranges in the world that runs true north-south.",
+      "commentary": "The Remarkables were uplifted along an active fault line — Double Cone, the highest peak, is 2,319 metres. In winter the ski field runs on 35% of the range; in summer the Sugar Loaf track takes experienced hikers to alpine tarns most people never see. The peak behind Frankton, locally known as The Chinamans Bluff, is sacred to Kāi Tahu.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Remarkables ski field delivers world-class terrain with the dramatic backdrop of Lake Wakatipu. Visitors praise the reliable snow, the variety of runs from beginner to expert, and the spectacular views. Summer visitors enjoy the alpine walks accessed from the ski field access road."
+      }
+    },
+    {
+      "id": "queenstown-gondola",
+      "name": "Skyline Gondola / Bob's Peak",
+      "region": "queenstown",
+      "lat": -45.0285,
+      "lng": 168.6583,
+      "category": "adventure",
+      "tags": [
+        "gondola",
+        "luge",
+        "viewpoint",
+        "dining"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 2,
+      "short": "450m straight up to the best Queenstown panorama — plus a luge, a café, and the Ledge bungy.",
+      "commentary": "The Skyline Gondola has been running since 1967 — the steepest passenger lift cable car in the Southern Hemisphere, 730m long at a 37° average grade. At the top: the restaurant with the view that sells New Zealand internationally, the Skyline luge (two tracks, 800m combined), and the Ledge Bungy for a 47m jump into Queenstown Bay.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Skyline Gondola delivers some of New Zealand's most dramatic panoramas — Lake Wakatipu, The Remarkables, and the town below laid out in one sweep. The luge is called great fun by families and adults alike. Reviewers recommend combining the gondola with a sunset dinner at the restaurant."
+      }
+    },
+    {
+      "id": "queenstown-arrowtown",
+      "name": "Arrowtown",
+      "region": "queenstown",
+      "lat": -44.9383,
+      "lng": 168.8312,
+      "category": "heritage",
+      "tags": [
+        "gold-rush",
+        "historic-town",
+        "autumn",
+        "chinese-settlement"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "A perfectly preserved 1860s gold-rush town — cinematic in autumn when the imported willows turn yellow.",
+      "commentary": "Gold was found in the Arrow River in 1862; within two years the valley held 7,000 miners. When the rush collapsed in the 1870s many European miners left — but the Chinese miners, brought in by the Otago government to rework tailings, stayed. The Chinese settlement site on Bush Creek, restored in the 1980s, is one of the few authentic surviving 19th-century Chinese goldfields sites in the world. Buckingham Street is a one-block outdoor museum: the Ballarat Trading Company, the Post Office, Pritchard's Store.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "A gold-rush village perfectly preserved in the Arrow River valley — autumn foliage here is among the most photographed in New Zealand. Visitors love the Chinese Settlement history, the independent boutiques, and the relaxed pace compared to Queenstown. The Lakes District Museum is particularly praised."
+      }
+    },
+    {
+      "id": "queenstown-shotover",
+      "name": "Shotover Jet & Canyon",
+      "region": "queenstown",
+      "lat": -44.9961,
+      "lng": 168.7342,
+      "category": "adventure",
+      "tags": [
+        "jet-boat",
+        "canyon",
+        "river",
+        "thrill"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "The original jet boat ride — running the Shotover Canyons since 1970, closer to rock walls than feels legal.",
+      "commentary": "Bill Hamilton invented the modern jet boat in Canterbury in the 1950s, specifically so South Island farmers could navigate the shallow braided rivers on their land. Shotover Jet opened in 1970 as the first commercial operator and still holds the exclusive concession for the Shotover Canyons. The drivers train for 400+ hours before they can carry passengers; the 360° spins in one metre of water are the headline.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Shotover Jet & Canyon adventure draws rave reviews for the combination of adrenaline and spectacular scenery. The original jet boat ride — running the Shotover Canyons since 1970, closer to rock walls than feels legal. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-glenorchy",
+      "name": "Glenorchy",
+      "region": "queenstown",
+      "lat": -44.85,
+      "lng": 168.3833,
+      "category": "culture",
+      "tags": [
+        "scenic-drive",
+        "lord-of-the-rings",
+        "track-start",
+        "paradise"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 4,
+      "short": "45 minutes up Lake Whakatipu from Queenstown — the road is the point. Gateway to the Dart Valley.",
+      "commentary": "The Glenorchy-Queenstown road hugs the west side of Lake Whakatipu for 45 kilometres — consistently ranked one of the world's great scenic drives. Glenorchy itself is the last town; beyond it the road turns to gravel and runs into the Dart Valley, the filming location for Rivendell, Isengard and Lothlórien in Peter Jackson's Lord of the Rings. The Routeburn Track, one of New Zealand's Great Walks, starts 20 minutes past the town at the Routeburn Shelter.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "45 minutes of spectacular Lake Wakatipu scenery culminates in Glenorchy — a tiny town at the head of a breathtaking valley used as Middle-earth by Peter Jackson. Visitors love the horseback rides, jet boating, and the jaw-dropping Paradise location for hiking. The drive itself is rated among NZ's best."
+      }
+    },
+    {
+      "id": "queenstown-kawarau-bungy",
+      "name": "Kawarau Bridge Bungy",
+      "region": "queenstown",
+      "lat": -45.0128,
+      "lng": 168.8006,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "world-first",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The world's first commercial bungy jump — 43 metres off an 1880 suspension bridge, running since 1988.",
+      "commentary": "A. J. Hackett and Henry van Asch opened Kawarau Bridge Bungy on 12 November 1988, turning an adrenaline stunt into an industry. The bridge itself is a Category 1 heritage structure from 1880, built for the gold coaches to Cromwell. The jump is 43 metres; you can touch the water on request. Around half a million people have jumped here.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Kawarau Bridge Bungy adventure draws rave reviews for the combination of adrenaline and spectacular scenery. The world's first commercial bungy jump — 43 metres off an 1880 suspension bridge, running since 1988. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-bay",
+      "name": "Queenstown Bay & Steamer Wharf",
+      "region": "queenstown",
+      "lat": -45.0341,
+      "lng": 168.6575,
+      "category": "nature",
+      "tags": [
+        "waterfront",
+        "tss-earnslaw",
+        "walking",
+        "dining"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 2,
+      "short": "The downtown harbour, home to the TSS Earnslaw — the 1912 coal steamer still crossing the lake daily.",
+      "commentary": "The TSS Earnslaw — 'Lady of the Lake' — has worked Whakatipu since October 1912. Same engines, same coal-fired boilers, same teak wheelhouse. The 90-minute cruise across to Walter Peak Station still runs three or four times a day. Along the waterfront: the Queenstown Gardens peninsula (bowling green, frisbee-golf course, giant sequoias), and at the east end the small rocky point of Horne Creek where the first European explorer, William Rees, camped in 1860.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Queenstown Bay & Steamer Wharf draws visitors back time and again for its natural beauty and peaceful atmosphere. The downtown harbour, home to the TSS Earnslaw — the 1912 coal steamer still crossing the lake daily. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "queenstown-tss-earnslaw",
+      "name": "TSS Earnslaw",
+      "region": "queenstown",
+      "lat": -45.0333,
+      "lng": 168.6544,
+      "category": "nature",
+      "tags": [
+        "steamship",
+        "1912",
+        "lake-wakatipu",
+        "cruise"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "The coal-fired 1912 steamship that still crosses Lake Wakatipu daily — the Lady of the Lake.",
+      "commentary": "Built 1912 in Dunedin. One of the few working coal-fired passenger steamships still in service. Operates daily cruises to Walter Peak Station.",
+      "audio_story": "You have arrived at the Steamer Wharf in Queenstown, and you are about to board the TSS Earnslaw, a twin screw coal-fired passenger steamship that has been crossing Lake Wakatipu since nineteen twelve. She was built in Dunedin, brought to Queenstown in pieces by rail, and reassembled on the shore. When she was launched, she was the pride of the Otago Central Railways fleet, and for decades she worked these waters carrying passengers, livestock, mail, and the wool clip from the high country stations around the lake. She has never stopped working. Today she still fires on coal, she is still stoked by hand by engineers who trained for the job, and you can walk down the companionways and stand a few feet from the great black boiler that drives her. Most passengers take the lunchtime cruise across the lake to Walter Peak High Country Farm, where a sheep dog demonstration and a farmhouse lunch round out the experience. In the evening the Earnslaw runs a shorter harbour cruise. However you sail her, stand on the open bow as she leaves the wharf, watch the black smoke curl from her funnel, and know that in a world of diesel engines and lithium batteries, this ship remains defiantly, beautifully, a Victorian machine.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Real NZ — TSS Earnslaw",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "TSS Earnslaw draws visitors back time and again for its natural beauty and peaceful atmosphere. The coal-fired 1912 steamship that still crosses Lake Wakatipu daily — the Lady of the Lake. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "queenstown-chinese-village",
+      "name": "Arrowtown Chinese Settlement",
+      "region": "queenstown",
+      "lat": -44.9372,
+      "lng": 168.8292,
+      "category": "heritage",
+      "tags": [
+        "chinese-miners",
+        "goldfield",
+        "heritage-nz",
+        "arrowtown"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.75,
+      "short": "The restored remains of a 19th-century Chinese miners' village — tiny stone huts on the banks of the Arrow River.",
+      "commentary": "Chinese gold miners came to Otago from 1866. The Arrowtown settlement of the 1880s–1920s has been carefully preserved by Heritage NZ.",
+      "audio_story": "You have arrived at the Arrowtown Chinese Settlement, tucked along the edge of the Arrow River at the western end of town, and you are about to walk through one of the quietest and most moving heritage sites in the country. Chinese miners began arriving in the Otago goldfields in eighteen sixty six, invited by the provincial government to rework abandoned claims. By the eighteen eighties there were around five hundred Chinese men living in small sod, stone and corrugated iron huts along this river. They were almost entirely men. Immigration policy made it nearly impossible for them to bring wives or families. Racist taxation, including the nineteen oh one poll tax specifically targeting Chinese migrants, made their lives in this country still harder. Many of the miners died far from home and are buried in local cemeteries with headstones in Chinese characters. What you are walking through has been carefully preserved by Heritage New Zealand. Several of the small stone huts have been stabilised, the Ah Lum general store has been partially reconstructed, and interpretation panels tell the story with care. Entry is free. Stand quietly under the willow trees. This is ground worth taking your time over.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Arrowtown Chinese Settlement",
+        "NZHistory — poll tax"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Arrowtown Chinese Settlement — the site rewards those who take time to read the signage and absorb the context. The restored remains of a 19th-century Chinese miners' village — tiny stone huts on the banks of the Arrow River. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "queenstown-routeburn",
+      "name": "Routeburn Track",
+      "region": "queenstown",
+      "lat": -44.7667,
+      "lng": 168.35,
+      "category": "nature",
+      "tags": [
+        "great-walk",
+        "fiordland",
+        "alpine",
+        "multi-day"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 36,
+      "short": "A 33km Great Walk over the Harris Saddle — alpine tarns, red tussock basins, and the border between two national parks.",
+      "commentary": "The Routeburn Track connects Glenorchy (near Queenstown) with the Milford Road (Fiordland National Park). 32.5km, three days, high alpine.",
+      "audio_story": "You are about to walk the Routeburn Track, one of New Zealand's Great Walks and one of the finest short alpine tramps anywhere in the world. The track runs thirty two and a half kilometres between the Routeburn Shelter at the head of Lake Wakatipu near Glenorchy and the Divide on the Milford Road in Fiordland. Most walkers take three days. The route climbs from beech forest up through the Routeburn Flats, past Routeburn Falls, and over the Harris Saddle at around thirteen hundred metres, where on a clear day the view north into the Darran Mountains is almost beyond description. From the saddle the track drops slowly through tussock basins past Lake Mackenzie and finally down through silver beech forest to the Divide. Because the two ends of the track are four hours by road apart, most walkers book a shuttle or take one of the guided options that arrange transport. Huts must be booked well in advance, often months ahead, through Department of Conservation. Weather on the saddle can be extreme at any time of year. Do not attempt this track without proper equipment and a cautious plan. The reward is one of the iconic experiences of New Zealand tramping.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Routeburn Track"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Routeburn Track draws visitors back time and again for its natural beauty and peaceful atmosphere. A 33km Great Walk over the Harris Saddle — alpine tarns, red tussock basins, and the border between two national parks. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "queenstown-ben-lomond",
+      "name": "Ben Lomond Summit",
+      "region": "queenstown",
+      "lat": -44.9833,
+      "lng": 168.6333,
+      "category": "nature",
+      "tags": [
+        "summit",
+        "tramping",
+        "panorama",
+        "day-hike"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "A 1,748m summit directly above Queenstown — a full day tramp for one of the best views in New Zealand.",
+      "commentary": "Ben Lomond is the large peak above Queenstown, accessed via the Skyline Gondola or from base. Summit at 1,748m. 6–8 hour return.",
+      "audio_story": "You are going to climb Ben Lomond, the great grey mountain directly above Queenstown. The full day tramp is for fit walkers with a cool head for the weather. You can start from the town and walk all the way up, or save two hours of the climb by taking the Skyline Gondola to Bob's Peak and beginning the walk from there. From Bob's Peak the track climbs steadily through beech forest, then out onto open tussock slopes, then up through a series of zigzags to the Ben Lomond saddle at sixteen hundred and fifty metres. From the saddle, a final steep and rocky scramble takes you to the summit at seventeen hundred and forty eight metres. The view is stunning and, on a good day, among the best in New Zealand. Below you are Queenstown and Lake Wakatipu, stretching south west between the great ranges of the Remarkables, Cecil Peak and Walter Peak. The Southern Alps rise away to the horizon in every direction. The walk is between six and eight hours return from the gondola, longer from town. Take warm layers, sun protection, plenty of water, and check the weather forecast before you go.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Ben Lomond Track"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Ben Lomond Summit draws visitors back time and again for its natural beauty and peaceful atmosphere. A 1,748m summit directly above Queenstown — a full day tramp for one of the best views in New Zealand. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "qt_hist_arrowtown_chinese_settlement",
+      "name": "Arrowtown Chinese Settlement (Historic)",
+      "region": "queenstown",
+      "lat": -44.9402,
+      "lng": 168.833,
+      "category": "heritage",
+      "tags": [
+        "chinese",
+        "goldrush",
+        "heritage",
+        "arrowtown"
+      ],
+      "trigger_radius_m": 120,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You have arrived in Arrowtown, where willow trees lean over the Bush Creek and a row of small stone and mud-brick huts hugs the banks. This is the Arrowtown Chinese Settlement, where from the eighteen sixties Chinese miners lived after being invited to rework the abandoned tailings of European prospectors. They came mostly from Guangdong province, leaving families behind, and they sent their hard-won gold home to support them. Life here was harsh. The huts are tiny, single-roomed, walls thick against the snow that buries the valley each winter. They were taxed unfairly, denied citizenship, and excluded from many parts of colonial society, yet they built a community here, with a store run by Ah Lum that survived into the nineteen twenties. As you walk along the path, imagine the smoke of cooking fires, the soft sound of Cantonese, and the weight of homesickness in this far valley. In two thousand and two the New Zealand government issued a formal apology for the poll tax once levied on Chinese arrivals. The huts have been preserved so this story is not lost.",
+      "sources_to_check": [
+        "DOC Arrowtown Chinese Settlement",
+        "Lakes District Museum",
+        "NZHistory Chinese in NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Arrowtown Chinese Settlement (Historic) — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "qt_hist_skippers_canyon_road",
+      "name": "Skippers Canyon Road",
+      "region": "queenstown",
+      "lat": -44.8267,
+      "lng": 168.7395,
+      "category": "heritage",
+      "tags": [
+        "goldrush",
+        "road",
+        "skippers",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are looking down into Skippers Canyon, a vertiginous gash carved by the Shotover River, once called the richest river in the world. In the eighteen sixties, after gold was discovered here, miners hacked a road into the cliffs by hand. It took twenty two years to build, narrow, unsealed, with sheer drops on one side and rock overhangs on the other. Coaches, drays, and later cars crept along it to serve the township of Skippers, which once had a school, a store, and a hotel. The settlement is gone now, only stone foundations remain, but the road survives as one of the most spectacular drives in the country. Many rental car companies still refuse to insure vehicles that travel on it. The Shotover gave up vast quantities of gold, but it took lives too. Floods washed miners away, and the cold of these gorges in winter is unforgiving. As you stand on the lookout, listen for the wind in the schist bluffs and the river far below. This narrow track is a monument to gold-rush hunger and the people who answered it.",
+      "sources_to_check": [
+        "DOC Skippers",
+        "Lakes District Museum",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Skippers Canyon Road — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "qt_hist_frankton_wwii_camp",
+      "name": "Frankton Wartime Hospital and Camp",
+      "region": "queenstown",
+      "lat": -45.019,
+      "lng": 168.739,
+      "category": "heritage",
+      "tags": [
+        "wwii",
+        "frankton",
+        "heritage",
+        "military"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Frankton, today a busy junction of motels and the airport, but during the Second World War this flat land beside Lake Whakatipu held a military camp and convalescent hospital. Soldiers wounded in North Africa and the Pacific were sent here to recover, the clean mountain air and lake views thought to aid their healing. Local women volunteered as nurses and cooks. Some soldiers stayed on after the war and married into Wakatipu families. Frankton was also the railhead, the end of the Kingston branch line, where supplies and travellers met the lake steamers. The TSS Earnslaw still chugs across the lake from Queenstown today, a working memory of that era. As you look across the lake to the Remarkables, picture the long convoys of trucks, the rows of huts, and young men in slings sitting in the sun, far from any front line, but carrying the war in their bodies. Frankton's quiet wartime role is easily missed, but it is part of how this district saw the world come to its shore.",
+      "sources_to_check": [
+        "Lakes District Museum",
+        "NZ Wartime Hospital records"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Frankton Wartime Hospital and Camp — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "qt_hist_kawarau_suspension_bridge",
+      "name": "Kawarau Suspension Bridge (Original AJ Hackett Bungy)",
+      "region": "queenstown",
+      "lat": -45.0086,
+      "lng": 168.7418,
+      "category": "adventure",
+      "tags": [
+        "bridge",
+        "goldrush",
+        "bungy",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are standing at the Kawarau Bridge, opened in eighteen eighty as a vital crossing for gold miners and stockmen between Cromwell and Queenstown. Before the bridge, travellers had to swim horses across the swift green river, and many drowned. The suspension bridge was an engineering triumph for its day, a slender ribbon hung above the gorge. It served traffic for a hundred years until a new bridge was built upstream. The old bridge nearly fell into disrepair, but in nineteen eighty eight a young entrepreneur named A.J. Hackett opened the world's first commercial bungy jump from its deck. That single act of leaping into the gorge launched an entire industry and rebranded Queenstown as the adventure capital of the world. The bridge today carries no cars, only the screams of jumpers and the cheers of spectators. Beneath you the Kawarau still runs the same intense jade green it did when miners first crossed. History and adrenaline meet here, on a bridge that refused to be forgotten.",
+      "sources_to_check": [
+        "Heritage NZ Kawarau Bridge",
+        "AJ Hackett Bungy"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Kawarau Suspension Bridge (Original AJ Hackett Bungy) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "qt_hist_glenorchy_scheelite",
+      "name": "Glenorchy Scheelite Mining",
+      "region": "queenstown",
+      "lat": -44.8512,
+      "lng": 168.3855,
+      "category": "heritage",
+      "tags": [
+        "mining",
+        "scheelite",
+        "glenorchy",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You have arrived at Glenorchy, at the head of Lake Whakatipu, where mountains close in around the Dart and Rees rivers. Today it is a small village known for adventure and film locations, but for nearly seventy years its economy was scheelite, an ore that yields tungsten. From eighteen eighty eight men toiled in tunnels high in the Richardson Mountains, packing ore down on horses and later by aerial ropeways. Tungsten was vital in war, used to harden steel for armour and weapons, and demand soared during both world wars. The miners' huts on the mountain were brutally cold, but the work paid. Mining wound down by the nineteen fifties as cheaper sources opened overseas, and the relics, batteries, tramways, and tunnel mouths, are now slowly returning to bush. Glenorchy still feels remote, as if the road from Queenstown only just reached it. Stop at the small museum or walk the lagoon boardwalk and remember that this beautiful valley has known hard industrial labour as well as tourists in waterproof jackets.",
+      "sources_to_check": [
+        "DOC Glenorchy heritage",
+        "Heritage NZ scheelite"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Glenorchy Scheelite Mining — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "qt_hist_lake_wakatipu_taniwha",
+      "name": "Lake Wakatipu and the Taniwha Matau",
+      "region": "queenstown",
+      "lat": -45.0312,
+      "lng": 168.6626,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "wakatipu",
+        "taniwha",
+        "legend"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are looking out over Lake Whakatipu, a long jagged S-shape of deep cold water held between mountain ranges. To Ngāi Tahu, this lake is the resting place of Matau, a great taniwha. The story tells how a chief's daughter was taken by Matau, and her lover, Matakauri, set out to free her. He found the giant asleep in the valley, his huge body curled with knees drawn up. Matakauri set fire to the bracken around him, and the fat of the burning taniwha melted so fiercely that the ground sank, forming the deep trench that became Lake Whakatipu. The lake's strange seiche, the rhythmic rise and fall of the water about every five minutes, is said to be the heartbeat of Matau, still beating beneath you. Western science explains the seiche by air pressure and basin shape, but the older story holds the shape of the lake's geography exactly. As you stand at the shore, both explanations can be true. The lake breathes, and you are listening to it.",
+      "sources_to_check": [
+        "Ngāi Tahu cultural mapping",
+        "Te Ara taniwha",
+        "Tipa Te Maiharoa"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Lake Wakatipu and the Taniwha Matau as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "qt_hist_old_st_peters_arrowtown",
+      "name": "St Patrick's Catholic Church Arrowtown",
+      "region": "queenstown",
+      "lat": -44.9385,
+      "lng": 168.8341,
+      "category": "heritage",
+      "tags": [
+        "church",
+        "irish",
+        "arrowtown",
+        "heritage"
+      ],
+      "trigger_radius_m": 80,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are standing before St Patrick's Catholic Church in Arrowtown, a small white timber building with a steeply pitched roof, built in eighteen seventy three by the Irish miners and their families who came chasing the Wakatipu gold. Many had survived the Famine in Ireland, then the long sea voyage to Otago, and they brought with them their faith and their saints. The church bell that rang here on Sunday mornings called miners up from the diggings along the Bush Creek. Inside, the simple pews and sturdy timber walls have weathered more than a century and a half of Central Otago winters. Around the corner, the old Anglican church and the schoolhouse complete a tiny streetscape that has barely changed. Arrowtown today is full of cafes and jewellers, but slow your pace as you pass St Patrick's, and you can sense the rhythm of a colonial mining town finding comfort in ritual at the edge of a wilderness. Many of the people who built this church are buried in the cemetery on the rise behind it.",
+      "sources_to_check": [
+        "Heritage NZ Arrowtown",
+        "Lakes District Museum"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at St Patrick's Catholic Church Arrowtown — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "qt_hist_kingston_flyer",
+      "name": "Kingston Flyer Railway",
+      "region": "queenstown",
+      "lat": -45.3408,
+      "lng": 168.7261,
+      "category": "heritage",
+      "tags": [
+        "railway",
+        "steam",
+        "kingston",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You have arrived at Kingston, at the southern foot of Lake Whakatipu, where two old steam locomotives sit on a short stretch of preserved track. This was once the end of the line, the Kingston branch railway opened from Invercargill in eighteen seventy eight to feed lake steamers carrying passengers and freight up to Queenstown and Glenorchy. The Kingston Flyer became famous in the early twentieth century, a smart express service hauled by Ab class engines, polished and proud. The line closed in nineteen seventy nine, but enthusiasts saved the locomotives and a few carriages, and on summer days you can still hear the whistle echo against the Eyre Mountains. Kingston itself was a busy port, with hotels and a customs house, until road transport took the trade. Today the village is quiet, almost forgotten, but the lake still laps the same shore where paddle steamers once tied up. Stop here, listen for the hiss of escaping steam, and imagine the hard, soot-streaked work that linked this remote alpine lake to the rest of New Zealand.",
+      "sources_to_check": [
+        "Kingston Flyer Society",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kingston Flyer Railway — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "queenstown-pounamu-trail",
+      "name": "Pounamu Trail — Greenstone/Caples",
+      "region": "queenstown",
+      "lat": -44.89,
+      "lng": 168.22,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pounamu",
+        "trade-route",
+        "greenstone",
+        "trail"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 24,
+      "short": "The ancestral pounamu trail — Māori carried greenstone from the West Coast for centuries along this route.",
+      "commentary": "The modern tramping track follows the same route as ancient pounamu carriers. Ngāi Tahu controlled the resource and the trails.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Pounamu Trail — Greenstone/Caples as a place where the history and cultural significance of Aotearoa become tangible and real. The ancestral pounamu trail — Māori carried greenstone from the West Coast for centuries along this route. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "queenstown-wakatipu-taniwha",
+      "name": "Lake Wakatipu — The Sleeping Giant",
+      "region": "queenstown",
+      "lat": -45.03,
+      "lng": 168.661,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "mythology",
+        "taniwha",
+        "lake"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The lake shaped like a sleeping giant — the burnt outline of the taniwha Matau.",
+      "commentary": "The lake's curious seiche — a regular rise and fall of 12 centimetres — is said to be Matau's heart still beating.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Lake Wakatipu — The Sleeping Giant as a place where the history and cultural significance of Aotearoa become tangible and real. The lake shaped like a sleeping giant — the burnt outline of the taniwha Matau. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "queenstown-dart-river-sacred",
+      "name": "Te Awa Whakatipu / Dart River",
+      "region": "queenstown",
+      "lat": -44.72,
+      "lng": 168.34,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "river",
+        "pounamu",
+        "sacred",
+        "ngāi-tahu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "A glacial river flowing through ancestral Ngāi Tahu territory — part of the ancient pounamu trail network.",
+      "commentary": "The Dart River valley was part of the network of trails connecting pounamu sources. The braided glacial river, flanked by towering mountains, was a highway for trade and travel. Ngāi Tahu maintain their cultural connections to the valley.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Awa Whakatipu / Dart River as a place where the history and cultural significance of Aotearoa become tangible and real. A glacial river flowing through ancestral Ngāi Tahu territory — part of the ancient pounamu trail network. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "queenstown-milford-road-sh94",
+      "name": "Milford Road (SH94)",
+      "region": "queenstown",
+      "lat": -45.05,
+      "lng": 168,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "fiordland",
+        "alpine",
+        "state-highway",
+        "iconic"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 4,
+      "short": "New Zealand's most spectacular highway — 120 km from Te Anau to Milford Sound through Fiordland.",
+      "commentary": "State Highway 94, the Milford Road, runs 120 km from Te Anau to Milford Sound, crossing the Divide and passing through the 1.2 km Homer Tunnel. It is widely regarded as one of the world's most scenic drives, with highlights including Mirror Lakes, the Hollyford Valley, the Avenue of the Disappearing Mountain, and the dramatic Cleddau Valley descent to the fiord.",
+      "audio_story": "You are driving the Milford Road, and this is not just a road — it is a pilgrimage. From Te Anau, SH94 heads northwest through beech forest and tussock flats before entering the mountains proper. The road stops at several unmissable spots: Mirror Lakes, where the Earls Mountains reflect perfectly on still days; the Avenue of the Disappearing Mountain, an optical illusion of perspective; and the vast Hollyford Valley opening to the east. Then comes the Homer Tunnel — 1.2 kilometres blasted through solid granite over 19 years, its mouth framed by cascading waterfalls after rain. The descent through the Cleddau Valley on the other side is almost vertical, the road switchbacking past ancient forest and thundering falls. When Milford Sound finally appears at the road's end, with Mitre Peak rising 1,692 metres straight from the water, you understand why this journey exists.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Fiordland",
+        "NZTA SH94"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Milford Road (SH94) route delivers a memorable journey through exceptional New Zealand scenery. New Zealand's most spectacular highway — 120 km from Te Anau to Milford Sound through Fiordland. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-routeburn-track",
+      "name": "Routeburn Track Great Walk",
+      "region": "queenstown",
+      "lat": -44.7167,
+      "lng": 168.1833,
+      "category": "journey",
+      "tags": [
+        "great-walk",
+        "alpine",
+        "multi-day",
+        "mountain",
+        "fiordland"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 24,
+      "short": "A 32 km alpine crossing between Mt Aspiring and Fiordland through some of NZ's finest mountain scenery.",
+      "commentary": "The Routeburn Track covers 32 km between the Routeburn Shelter (near Glenorchy) and The Divide on the Milford Road. The track crosses Harris Saddle at 1,255 m and passes Lake Harris, the Hollyford Face, and Routeburn Falls. It is often rated as one of the best multi-day hikes in the world for its combination of alpine scenery, forest, and mountain vistas.",
+      "audio_story": "You are setting out on the Routeburn Track, and for the next 32 kilometres this trail will show you why people fly across the world to walk in New Zealand. The track connects the eastern side of the mountains near Glenorchy to the Milford Road at The Divide, crossing between Mt Aspiring and Fiordland National Parks. The first day takes you through beech forest along the Route Burn river to the spectacular Routeburn Falls. Day two is the revelation: you climb above the bushline to Harris Saddle at 1,255 metres and traverse the Hollyford Face, a narrow trail carved across a mountainside with the entire Hollyford Valley laid out below and the peaks of Darran Mountains beyond. On a clear day at the saddle, you can see all the way to Martins Bay and the Tasman Sea. This is walking at its absolute finest.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Routeburn Track",
+        "Fiordland National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Routeburn Track Great Walk route delivers a memorable journey through exceptional New Zealand scenery. A 32 km alpine crossing between Mt Aspiring and Fiordland through some of NZ's finest mountain scenery. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-glenorchy-road",
+      "name": "Queenstown to Glenorchy Road",
+      "region": "queenstown",
+      "lat": -44.85,
+      "lng": 168.38,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "lakeside",
+        "mountain",
+        "lord-of-the-rings",
+        "film-location"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "A 45-minute lakeside drive considered one of the most beautiful short drives in the world.",
+      "commentary": "The 46 km road from Queenstown to Glenorchy follows the western shore of Lake Wakatipu beneath the Richardson Mountains. The drive passes through beech forest, alongside crystal-clear lake waters, and past filming locations used in the Lord of the Rings trilogy. Glenorchy, at the head of the lake, is the gateway to the Routeburn, Rees-Dart, and Greenstone-Caples tracks.",
+      "audio_story": "You are driving from Queenstown to Glenorchy, and this 46 kilometres of road is regularly called one of the most scenic short drives on Earth. Lake Wakatipu sits below you like a sheet of beaten silver, its waters reflecting the mountains on both sides. The lake is the third-largest in New Zealand and has a mysterious seiche — a rhythmic rise and fall of water level every 27 minutes that Maori attributed to the heartbeat of a sleeping giant. The road hugs the western shore, ducking through stands of beech forest and past rocky bluffs. You will recognise some of this landscape from the Lord of the Rings films — Isengard, Lothlorien, and several battle scenes were filmed in the flats around Glenorchy. The tiny town itself sits at the head of the lake, quietly magnificent, a gateway to some of New Zealand's finest backcountry.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Queenstown Lakes tourism",
+        "DOC Glenorchy area"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Queenstown to Glenorchy Road route delivers a memorable journey through exceptional New Zealand scenery. A 45-minute lakeside drive considered one of the most beautiful short drives in the world. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-milford-sound-cruise",
+      "name": "Milford Sound / Piopiotahi Cruise",
+      "region": "queenstown",
+      "lat": -44.6718,
+      "lng": 167.9264,
+      "category": "journey",
+      "tags": [
+        "water-journey",
+        "fiord",
+        "cruise",
+        "wildlife",
+        "iconic"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "Cruise beneath Mitre Peak and towering waterfalls in New Zealand's most famous fiord.",
+      "commentary": "Milford Sound / Piopiotahi was carved by glaciers over 100,000 years ago and stretches 15 km from the head to the Tasman Sea. Mitre Peak rises 1,692 m directly from the water. The fiord receives an average of 6,813 mm of rain annually, feeding temporary waterfalls that cascade down sheer rock faces after storms. Bottlenose dolphins, fur seals, and Fiordland crested penguins are regularly seen.",
+      "audio_story": "You are cruising Milford Sound, and Mitre Peak is doing exactly what it does in every photograph — rising 1,692 metres straight out of the water like a monument to vertical ambition. But photographs cannot prepare you for the scale. The fiord was carved by glaciers over 100,000 years ago, and its walls are sheer, dark, and glistening with waterfalls. Milford receives nearly seven metres of rain each year, making it one of the wettest inhabited places on Earth, and after heavy rain, hundreds of temporary waterfalls appear on every cliff face. The boat takes you past Stirling Falls, where the spray drenches the deck, and out toward the Tasman Sea where fur seals haul out on the rocks. Rudyard Kipling called Milford Sound the eighth wonder of the world, and standing on the deck with the mountains closing in overhead, you understand that he was not exaggerating.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Milford Sound",
+        "Fiordland tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Milford Sound / Piopiotahi Cruise route delivers a memorable journey through exceptional New Zealand scenery. Cruise beneath Mitre Peak and towering waterfalls in New Zealand's most famous fiord. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-milford-track",
+      "name": "Milford Track Great Walk",
+      "region": "queenstown",
+      "lat": -44.9167,
+      "lng": 167.8333,
+      "category": "journey",
+      "tags": [
+        "great-walk",
+        "multi-day",
+        "alpine",
+        "fiordland",
+        "iconic"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 32,
+      "short": "Walk the 'finest walk in the world' — 53 km through Fiordland's heart to Milford Sound.",
+      "commentary": "The Milford Track covers 53.5 km from Glade Wharf on Lake Te Anau to Sandfly Point near Milford Sound, typically walked in 4 days. It crosses Mackinnon Pass at 1,154 m and passes Sutherland Falls, at 580 m one of New Zealand's tallest waterfalls. The track was dubbed 'the finest walk in the world' by a London newspaper in 1908 and has maintained that reputation.",
+      "audio_story": "You are beginning the Milford Track, and since 1908, when a London newspaper christened it the finest walk in the world, no one has seriously argued otherwise. The 53 kilometres start with a boat ride across Lake Te Anau to Glade Wharf, then follow the Clinton River through towering beech forest to the base of Mackinnon Pass. The climb to the pass at 1,154 metres is the great challenge, but from the memorial cairn at the top, the view into the Arthur Valley is a reward beyond measure. On the descent, a side track leads to Sutherland Falls — 580 metres of water falling in three leaps, the spray creating its own weather system. The final day follows the Arthur River down to Sandfly Point, where a boat carries you out to Milford Sound. You arrive tired, damp, and completely certain you have just done something extraordinary.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Milford Track",
+        "Fiordland National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Milford Track Great Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk the 'finest walk in the world' — 53 km through Fiordland's heart to Milford Sound. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-kepler-track",
+      "name": "Kepler Track Great Walk",
+      "region": "queenstown",
+      "lat": -45.42,
+      "lng": 167.63,
+      "category": "journey",
+      "tags": [
+        "great-walk",
+        "alpine",
+        "multi-day",
+        "lake",
+        "fiordland"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 28,
+      "short": "A 60 km loop track with stunning alpine ridgeline walking above the Fiordland lakes.",
+      "commentary": "The Kepler Track is a 60 km loop starting and finishing at the Lake Te Anau control gates. It climbs to 1,400 m on the Kepler Mountains, traversing an exposed alpine ridgeline with panoramic views of Lakes Te Anau and Manapouri. The track was purpose-built as a Great Walk in the late 1980s, making it one of the best-designed multi-day walks in the country.",
+      "audio_story": "You are walking the Kepler Track, and today's ridgeline section is going to test your nerve and reward your eyes in equal measure. The 60-kilometre loop starts gently at the Lake Te Anau control gates and follows the lakeshore through forest before climbing steeply to Luxmore Hut. But the next day is the showpiece: you walk along an exposed alpine ridge at 1,400 metres with Lakes Te Anau and Manapouri spread out on either side like blue mirrors, and the peaks of Fiordland marching to the horizon. The track was purpose-built in the late 1980s to relieve pressure on the Milford and Routeburn, and the designers did a remarkable job — the route finds every possible viewpoint and dramatic moment. In bad weather, the ridgeline can be genuinely dangerous, with wind and visibility dropping fast, so check the forecast and be prepared to use the emergency shelters.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Kepler Track",
+        "Fiordland National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Kepler Track Great Walk route delivers a memorable journey through exceptional New Zealand scenery. A 60 km loop track with stunning alpine ridgeline walking above the Fiordland lakes. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-remarkables-ski-road",
+      "name": "The Remarkables Access Road",
+      "region": "queenstown",
+      "lat": -45.07,
+      "lng": 168.81,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "alpine",
+        "mountain",
+        "ski-field",
+        "switchbacks"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 0.75,
+      "short": "Drive the dramatic switchback road climbing the Remarkables range above Queenstown.",
+      "commentary": "The Remarkables ski field access road climbs from the Kawarau River bridge to 1,600 m in just 13 km via a series of tight switchbacks. The road offers increasingly dramatic views of the Wakatipu Basin, Queenstown, and surrounding mountains. The Remarkables range gets its name from being one of only two mountain ranges in the world that run directly north-south.",
+      "audio_story": "You are driving up the Remarkables, and each switchback lifts you further above the Wakatipu Basin until Queenstown looks like a toy town on the lakeshore far below. This road climbs 1,100 metres in just 13 kilometres, making it one of the steepest public roads in New Zealand. The Remarkables got their name from an early surveyor who noted that the range runs almost perfectly north-south — a rare alignment in mountain geography. At the ski field car park, even if there is no snow, the views are astounding: Lake Wakatipu curving through the basin, the Crown Range to the north, Cecil Peak to the west, and the vastness of Central Otago stretching east. In winter, this road requires chains and a strong stomach for exposed mountain driving.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZSki Remarkables",
+        "Queenstown Lakes tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The The Remarkables Access Road route delivers a memorable journey through exceptional New Zealand scenery. Drive the dramatic switchback road climbing the Remarkables range above Queenstown. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-dart-river-jet",
+      "name": "Dart River Wilderness Jet",
+      "region": "queenstown",
+      "lat": -44.66,
+      "lng": 168.36,
+      "category": "journey",
+      "tags": [
+        "water-journey",
+        "jet-boat",
+        "wilderness",
+        "glacier",
+        "river"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "Jet boat deep into the glacial Dart River valley — a roadless wilderness of braided rivers and beech forest.",
+      "commentary": "The Dart River flows from the Dart Glacier in Mt Aspiring National Park to the head of Lake Wakatipu at Glenorchy. Jet boat tours travel up to 100 km into the roadless wilderness, navigating the braided glacial river through ancient beech forest. The valley was used as a filming location for Isengard in the Lord of the Rings trilogy.",
+      "audio_story": "You are boarding a jet boat at Glenorchy, and minutes from now you will be deep in a roadless wilderness that most people only see in Lord of the Rings. The Dart River flows from a glacier in Mt Aspiring National Park, and its braided channels shift constantly across a wide gravel bed. The jet boat skims across water just inches deep, spinning through channels barely wider than the hull — the Hamilton jet was invented in New Zealand precisely for rivers like this. As you travel deeper into the valley, beech forest closes in on both sides, and the mountains grow taller and wilder. There are no roads here, no buildings, just the river, the forest, and the sound of the engine echoing off rock walls. At the turnaround point, the Dart Glacier hangs in the valley head, blue and ancient, the source of all this water.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dart River Adventures",
+        "DOC Mt Aspiring National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Dart River Wilderness Jet route delivers a memorable journey through exceptional New Zealand scenery. Jet boat deep into the glacial Dart River valley — a roadless wilderness of braided rivers and beech forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-doubtful-sound-cruise",
+      "name": "Doubtful Sound / Patea Overnight Cruise",
+      "region": "queenstown",
+      "lat": -45.3,
+      "lng": 167.03,
+      "category": "journey",
+      "tags": [
+        "water-journey",
+        "fiord",
+        "cruise",
+        "overnight",
+        "wilderness"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 24,
+      "short": "Cruise the vast, remote Doubtful Sound — three times longer and ten times larger than Milford.",
+      "commentary": "Doubtful Sound / Patea is three times longer and ten times the area of Milford Sound. Reaching it requires a boat across Lake Manapouri and a bus over Wilmot Pass. The fiord's remoteness means fewer visitors and a profound sense of wilderness. A permanent pod of about 60 bottlenose dolphins lives in the fiord, and the 'Sound of Silence' experience — where all boat engines are turned off — is iconic.",
+      "audio_story": "You are entering Doubtful Sound, and the first thing you notice is the silence. Getting here takes effort — a boat across Lake Manapouri, a bus over Wilmot Pass — and that remoteness is exactly the point. Doubtful Sound is three times longer than Milford and ten times its area, but receives a fraction of the visitors. Captain Cook named it 'Doubtful Harbour' in 1770 because he was not sure he could sail out again if the wind changed. On the overnight cruise, there is a moment when the skipper cuts the engine and asks everyone to be completely quiet. In that silence, you hear the fiord breathe — waterfalls murmuring on distant walls, birdsong echoing across the water, and sometimes the soft exhalation of bottlenose dolphins surfacing nearby. About 60 dolphins live permanently in the fiord, one of the most stable and studied pods in New Zealand.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Real Journeys / Go Orange",
+        "DOC Doubtful Sound"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Doubtful Sound / Patea Overnight Cruise route delivers a memorable journey through exceptional New Zealand scenery. Cruise the vast, remote Doubtful Sound — three times longer and ten times larger than Milford. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-rees-dart-track",
+      "name": "Rees-Dart Track",
+      "region": "queenstown",
+      "lat": -44.7,
+      "lng": 168.35,
+      "category": "journey",
+      "tags": [
+        "tramping",
+        "multi-day",
+        "alpine",
+        "backcountry",
+        "glacier"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 32,
+      "short": "A challenging 63 km loop through the Mt Aspiring wilderness, with a glacier valley and alpine pass crossing.",
+      "commentary": "The Rees-Dart Track is a 63 km loop from Muddy Creek near Glenorchy, crossing Rees Saddle at 1,471 m between the Rees and Dart valleys. The track passes through remote alpine scenery, beech forest, and past the Dart Glacier. A side trip to Cascade Saddle offers one of the most spectacular views in New Zealand. It is considered a more challenging alternative to the Routeburn.",
+      "audio_story": "You are walking the Rees-Dart Track, and this is where serious tramping begins. The 63-kilometre loop starts from near Glenorchy and takes you into country that feels truly remote — the Rees Valley rising to a 1,471-metre saddle crossing, then descending into the Dart Valley with its glacier and braided river. If you have the fitness and the weather, the side trip to Cascade Saddle is not optional — it is arguably the single most spectacular viewpoint accessible to trampers in New Zealand, looking down over the Dart Glacier and across to Mt Aspiring itself. The Rees-Dart does not have the manicured feel of the Great Walks; river crossings can be challenging after rain, the saddle is exposed to weather, and navigation requires experience. But that is exactly why the people who walk it remember it for the rest of their lives.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Rees-Dart Track",
+        "Mt Aspiring National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Rees-Dart Track route delivers a memorable journey through exceptional New Zealand scenery. A challenging 63 km loop through the Mt Aspiring wilderness, with a glacier valley and alpine pass crossing. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-skipper-canyon-road",
+      "name": "Skippers Canyon Heritage Road",
+      "region": "queenstown",
+      "lat": -44.97,
+      "lng": 168.68,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "scenic-drive",
+        "gold-mining",
+        "gorge",
+        "extreme"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "New Zealand's most dangerous road winds through a gold rush gorge so remote most rental cars are banned.",
+      "commentary": "Skippers Canyon Road is a narrow, unsealed road carved into the cliff face above the Shotover River gorge, originally built by gold miners in the 1860s. It is so narrow and exposed that most rental car companies prohibit its use, and insurance is typically void. The canyon was one of the richest gold-producing areas in New Zealand, yielding an estimated 100+ tonnes of gold.",
+      "audio_story": "You are driving into Skippers Canyon, and your rental car company almost certainly does not want you here. This narrow, unsealed road was carved into the cliff face above the Shotover River in the 1860s, and in places it is barely wide enough for one vehicle, with a sheer drop to the river hundreds of metres below. There are no guardrails. In the gold rush, this canyon produced over 100 tonnes of gold, and thousands of miners — many of them Chinese — lived in the gorge in conditions of extraordinary hardship. The stone remains of their settlements are still visible: retaining walls, sluice channels, and the ruins of a township that once had its own school and post office. At the road's end, the Shotover River runs through a gorge so narrow you could almost throw a stone across it. This is New Zealand's wild past, barely tamed.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Queenstown heritage",
+        "DOC Skippers Canyon"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Skippers Canyon Heritage Road route delivers a memorable journey through exceptional New Zealand scenery. New Zealand's most dangerous road winds through a gold rush gorge so remote most rental cars are banned. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-lake-wakatipu-cruise",
+      "name": "TSS Earnslaw Lake Wakatipu Cruise",
+      "region": "queenstown",
+      "lat": -45.03,
+      "lng": 168.66,
+      "category": "journey",
+      "tags": [
+        "water-journey",
+        "cruise",
+        "heritage",
+        "steamship",
+        "lake"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Cruise Lake Wakatipu on the century-old TSS Earnslaw — the last coal-fired steamship in the Southern Hemisphere.",
+      "commentary": "The TSS Earnslaw is a 1912 vintage twin-screw steamer that cruises Lake Wakatipu from Queenstown to Walter Peak High Country Farm. It is the last remaining coal-fired passenger steamship in the Southern Hemisphere. The ship has been in continuous operation for over 110 years and was originally built to service lakeside farms before road access existed.",
+      "audio_story": "You are boarding the TSS Earnslaw, and the smell of coal smoke and hot oil hits you before you even step onto the deck. This twin-screw steamer has been cruising Lake Wakatipu since 1912 — over 110 years of continuous service — making her the last coal-fired passenger steamship operating in the Southern Hemisphere. Below deck, you can watch the stokers feeding coal into the twin furnaces, the fireboxes glowing orange, the pistons driving with a rhythm that has not changed in a century. The Earnslaw was built to service the sheep farms that lined Lake Wakatipu before roads existed — she carried wool, livestock, and people to and from the remote stations. Today she cruises to Walter Peak, where the old homestead gardens still bloom beneath the mountains. As you stand on deck watching the Remarkables slide past, the steam whistle blows, and for a moment the twenty-first century feels very far away.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Real Journeys TSS Earnslaw",
+        "Queenstown heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The TSS Earnslaw Lake Wakatipu Cruise route delivers a memorable journey through exceptional New Zealand scenery. Cruise Lake Wakatipu on the century-old TSS Earnslaw — the last coal-fired steamship in the Southern Hemisphere. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-greenstone-caples-track",
+      "name": "Greenstone & Caples Track",
+      "region": "queenstown",
+      "lat": -44.92,
+      "lng": 168.15,
+      "category": "journey",
+      "tags": [
+        "tramping",
+        "multi-day",
+        "valley",
+        "backcountry",
+        "pounamu"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 28,
+      "short": "Walk a 60 km loop through two glacier-carved valleys once used as a Maori pounamu trading route.",
+      "commentary": "The Greenstone and Caples tracks form a 61 km loop from the head of Lake Wakatipu, typically walked in 4-5 days. The Greenstone Valley was a major Maori trade route for pounamu (greenstone), with the stone carried from the West Coast over the alpine passes to the eastern settlements. The two valleys run parallel, linked by McKellar Saddle at 945 m.",
+      "audio_story": "You are walking the Greenstone-Caples loop, and your boots are following a path that Maori traders wore into the landscape centuries ago. The Greenstone Valley — its English name is no coincidence — was a major route for carrying pounamu from the West Coast to the settlements of the east. Maori would cross the mountain passes with loads of raw greenstone, one of the most valued materials in pre-European New Zealand, harder than steel and beautiful enough to shape into taonga that were treasured for generations. The two valleys run parallel, connected by McKellar Saddle, and the loop takes you through wide, tussock-floored valleys flanked by beech-covered mountains. This is gentler walking than the Routeburn next door, and the huts are quieter, but the sense of walking a route with deep history gives every step a weight that pure scenery alone cannot match.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Greenstone Caples",
+        "Ngai Tahu pounamu history"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Greenstone & Caples Track route delivers a memorable journey through exceptional New Zealand scenery. Walk a 60 km loop through two glacier-carved valleys once used as a Maori pounamu trading route. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "queenstown-nevis-bungy",
+      "name": "Nevis Bungy Jump",
+      "region": "queenstown",
+      "lat": -45.0317,
+      "lng": 168.9983,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "extreme",
+        "adrenaline",
+        "nevis",
+        "highest-bungy"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3.5,
+      "short": "Freefall 134 metres from New Zealand's highest bungy — the Nevis is pure adrenaline.",
+      "commentary": "The Nevis Bungy is New Zealand's highest bungy jump at 134 metres, suspended above the Nevis River gorge. Operated by AJ Hackett, the jump pod is accessed via a cable car ride across the canyon. The 8.5-second freefall reaches speeds of around 130 km/h.",
+      "audio_story": "You have arrived at the Nevis Bungy, New Zealand's tallest commercial bungy jump at a staggering 134 metres. You're about to step into a small glass-floored pod suspended by cables high above the Nevis River gorge. When you leap, you'll freefall for 8.5 seconds, hitting speeds of around 130 kilometres per hour before the cord catches you. The canyon walls will blur past as you plummet through 134 metres of pure vertical space. This is the jump that even seasoned thrill-seekers call the ultimate test of nerve. Take a deep breath — the Nevis doesn't do half measures.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "AJ Hackett Bungy NZ",
+        "Queenstown NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Nevis Bungy Jump adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Freefall 134 metres from New Zealand's highest bungy — the Nevis is pure adrenaline. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-ledge-bungy",
+      "name": "The Ledge Bungy",
+      "region": "queenstown",
+      "lat": -45.0334,
+      "lng": 168.6575,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "adrenaline",
+        "night-jump",
+        "freestyle",
+        "bobs-peak"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1.5,
+      "short": "Launch freestyle from Bob's Peak — the only bungy where you choose your own style.",
+      "commentary": "The Ledge Bungy at Bob's Peak offers a 47-metre jump with a difference — there's no ankle harness. Instead, a chest and hip harness lets you run, flip, or twist off the platform however you choose. Night jumps are available, adding city lights and starlit skies to the experience.",
+      "audio_story": "You have arrived at The Ledge Bungy, perched on Bob's Peak 400 metres above Queenstown. Unlike traditional bungy jumps, The Ledge uses a body harness instead of ankle ties, meaning you can run, flip, spin, or swan-dive off the platform in any style you choose. At 47 metres, the drop is shorter than the Nevis, but the panoramic views of Lake Wakatipu and the Remarkables range are unmatched. If you're here after dark, you're in for something truly special — night jumps under the stars with Queenstown's lights glittering below. It's the most creative bungy in New Zealand, and the only limit is your imagination.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "AJ Hackett Bungy NZ",
+        "Skyline Queenstown"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The The Ledge Bungy adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Launch freestyle from Bob's Peak — the only bungy where you choose your own style. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-nzone-skydive",
+      "name": "NZONE Skydive Queenstown",
+      "region": "queenstown",
+      "lat": -45.0211,
+      "lng": 168.7392,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "extreme",
+        "freefall",
+        "aerial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Tandem skydive up to 15,000 feet over Queenstown's lakes and mountains.",
+      "commentary": "NZONE Skydive operates tandem jumps from 9,000, 12,000, and 15,000 feet above Queenstown. From the highest altitude, you'll freefall for up to 60 seconds at 200 km/h with views stretching from Milford Sound to Mount Cook. The drop zone is at the Queenstown Airport end of the Frankton flats.",
+      "audio_story": "You have arrived at NZONE Skydive, one of the most scenic skydiving locations on the planet. In a few moments, you could be climbing to 15,000 feet in a plane, gazing down at Lake Wakatipu, the Remarkables, Cecil Peak, and Walter Peak laid out like a living map below. Then the door opens, and you freefall for up to 60 seconds at 200 kilometres per hour, the wind roaring past as Queenstown's mountains rush toward you. The parachute deploys, and suddenly everything is silent — just you, floating above one of the most dramatic alpine landscapes in the world. Over 30 years of operations and tens of thousands of jumps make this one of the most trusted skydiving outfits in New Zealand.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZONE Skydive",
+        "Queenstown Airport"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The NZONE Skydive Queenstown adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tandem skydive up to 15,000 feet over Queenstown's lakes and mountains. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-remarkables-ski",
+      "name": "The Remarkables Ski Area",
+      "region": "queenstown",
+      "lat": -45.05,
+      "lng": 168.8167,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "winter",
+        "ski-field",
+        "alpine"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Ski or board the iconic Remarkables range with stunning Lake Wakatipu views.",
+      "commentary": "The Remarkables ski area sits at 1,943 metres in the shadow-catching mountain range visible from Queenstown. It offers terrain for all levels including learner slopes, groomed runs, and expert chutes. The season typically runs June to October with reliable snow thanks to the south-facing aspect.",
+      "audio_story": "You have arrived at The Remarkables, the dramatic mountain range that forms Queenstown's iconic skyline. Named by early surveyors who were struck by how the peaks align almost perfectly north-south, The Remarkables offers skiing and snowboarding from 1,586 to 1,943 metres elevation. The south-facing slopes hold snow brilliantly, and the views across to Lake Wakatipu and Coronet Peak are extraordinary. Whether you're a beginner on the wide Shadow Basin runs or an expert dropping into the steep chutes of Homeward Bound, there's terrain here to match your ambition. The ski area has been a Queenstown institution since 1985, and the winding access road is an adventure in itself.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZSki",
+        "The Remarkables"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The The Remarkables Ski Area adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ski or board the iconic Remarkables range with stunning Lake Wakatipu views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-coronet-peak-ski",
+      "name": "Coronet Peak Ski Area",
+      "region": "queenstown",
+      "lat": -45.0833,
+      "lng": 168.7333,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "winter",
+        "night-skiing",
+        "ski-field"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Queenstown's closest ski field with night skiing and sweeping basin views.",
+      "commentary": "Coronet Peak is the closest ski area to Queenstown at just 25 minutes' drive. It's known for its reliable grooming, night skiing on Fridays and Saturdays, and panoramic views. The terrain spans 280 hectares from beginner to advanced, with a base elevation of 1,168 metres and summit at 1,649 metres.",
+      "audio_story": "You have arrived at Coronet Peak, Queenstown's original ski area and still one of its most beloved. Just 25 minutes from downtown, Coronet Peak has been drawing skiers and snowboarders since 1947, making it one of New Zealand's oldest commercial ski fields. The 280 hectares of terrain rise from 1,168 metres to a summit at 1,649 metres, with wide groomed runs that are perfect for carving. On Friday and Saturday nights, the lights come on for night skiing — an experience that's pure magic as you carve turns under the stars with the lights of Queenstown twinkling in the valley below. The snowmaking system covers a large portion of the mountain, keeping conditions reliable throughout the season.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZSki",
+        "Coronet Peak"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Coronet Peak Ski Area adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Queenstown's closest ski field with night skiing and sweeping basin views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-zipline-ziptrek",
+      "name": "Ziptrek Ecotours",
+      "region": "queenstown",
+      "lat": -45.033,
+      "lng": 168.658,
+      "category": "adventure",
+      "tags": [
+        "zipline",
+        "eco-tour",
+        "forest",
+        "bobs-peak",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Fly through native forest canopy on ziplines high above Queenstown.",
+      "commentary": "Ziptrek Ecotours operates a series of ziplines through ancient native forest on Bob's Peak. The flagship Kereru tour features six ziplines including a 21-storey-high line. An eco-tourism pioneer, Ziptrek combines adrenaline with education about native bush ecology and conservation.",
+      "audio_story": "You have arrived at Ziptrek Ecotours on Bob's Peak, where ancient beech and pine forest becomes your personal aerial playground. You'll clip into a harness and launch yourself along a series of ziplines that thread through the canopy high above Queenstown. The longest line stretches over 300 metres, and at its highest point you'll be soaring 21 storeys above the forest floor with Lake Wakatipu sparkling below. Between flights, your guides share fascinating insights about the native forest ecosystem, the bird life, and conservation efforts in the region. It's one of those rare adventures that feeds both your adrenaline addiction and your curiosity about the natural world.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Ziptrek Ecotours",
+        "Skyline Queenstown"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Ziptrek Ecotours adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Fly through native forest canopy on ziplines high above Queenstown. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-luge-skyline",
+      "name": "Skyline Luge Queenstown",
+      "region": "queenstown",
+      "lat": -45.0332,
+      "lng": 168.6582,
+      "category": "adventure",
+      "tags": [
+        "luge",
+        "family-friendly",
+        "bobs-peak",
+        "gravity",
+        "fun"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1.5,
+      "short": "Race gravity-powered luge carts down scenic tracks on Bob's Peak.",
+      "commentary": "The Skyline Luge offers gravity-fuelled racing on purpose-built tracks on Bob's Peak. Two tracks of varying difficulty wind downhill with banked corners and tunnels. The scenic track is 800 metres and the advanced track is 1.6 km with sharper turns and steeper gradients.",
+      "audio_story": "You have arrived at the Skyline Luge, one of Queenstown's most fun family-friendly adventures. You'll hop into a gravity-powered luge cart and race down purpose-built tracks that wind through the mountainside on Bob's Peak. The scenic track eases you in at 800 metres, but the advanced track stretches to 1.6 kilometres with sharp banked corners, tunnels, and enough speed to get your heart pumping. The best part? A chairlift whisks you back to the top so you can do it all over again. With Lake Wakatipu and the mountains as your backdrop, even the chairlift ride is worth the trip. Kids and adults alike find this one impossibly addictive.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Skyline Queenstown"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Skyline Luge Queenstown adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Race gravity-powered luge carts down scenic tracks on Bob's Peak. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-paragliding-gforce",
+      "name": "G Force Paragliding Queenstown",
+      "region": "queenstown",
+      "lat": -45.029,
+      "lng": 168.661,
+      "category": "adventure",
+      "tags": [
+        "paragliding",
+        "tandem",
+        "aerial",
+        "scenic",
+        "bobs-peak"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Tandem paraglide from Bob's Peak and soar above Lake Wakatipu.",
+      "commentary": "G Force Paragliding offers tandem flights launching from Bob's Peak, with a flight time of 8 to 25 minutes depending on conditions. Pilots perform optional acrobatic manoeuvres on request. Landing is at the waterfront park in central Queenstown.",
+      "audio_story": "You have arrived at one of the world's most spectacular paragliding launch sites. In moments, you and your tandem pilot will run a few steps off Bob's Peak and lift into the sky above Queenstown. Below you, Lake Wakatipu stretches in its distinctive lightning-bolt shape, flanked by the Remarkables and Cecil Peak. Your flight can last anywhere from 8 to 25 minutes depending on the thermals, and if you're feeling brave, ask your pilot for some acrobatic swoops and spirals. You'll eventually glide down to land gently in the park beside the lake, right in the heart of town. It's the most peaceful way to experience Queenstown's mountain scenery — until you ask for the tricks.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "G Force Paragliding",
+        "Queenstown Paraflights"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The G Force Paragliding Queenstown adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tandem paraglide from Bob's Peak and soar above Lake Wakatipu. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-canyon-swing",
+      "name": "Shotover Canyon Swing",
+      "region": "queenstown",
+      "lat": -45.0072,
+      "lng": 168.7564,
+      "category": "adventure",
+      "tags": [
+        "canyon-swing",
+        "extreme",
+        "freefall",
+        "shotover",
+        "adrenaline"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Freefall 60 metres then swing 200 metres across the Shotover Canyon.",
+      "commentary": "The Shotover Canyon Swing drops you 60 metres in freefall before swinging you in a 200-metre arc across the Shotover River canyon at up to 150 km/h. Choose from multiple jump styles including backwards, upside-down, or in a chair. It's been operating since 2003.",
+      "audio_story": "You have arrived at the Shotover Canyon Swing, where freefall meets pendulum in one of Queenstown's wildest rides. You'll stand on a platform perched 109 metres above the Shotover River and, when you're ready — or maybe before you're ready — you'll drop 60 metres straight down in pure freefall. Then the rope catches, and instead of bouncing, you swing in a massive 200-metre arc across the canyon at up to 150 kilometres per hour. The genius part? You get to choose how you jump. Go forwards, backwards, upside-down, blindfolded, in a chair — the crew have seen it all and love making it as terrifying as you can handle. This is not for the faint-hearted.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Canyon Swing Queenstown",
+        "Shotover Canyon"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Shotover Canyon Swing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Freefall 60 metres then swing 200 metres across the Shotover Canyon. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-heli-tour-glacier",
+      "name": "Glacier Explorer Heli Tour",
+      "region": "queenstown",
+      "lat": -45.0211,
+      "lng": 168.742,
+      "category": "adventure",
+      "tags": [
+        "helicopter",
+        "glacier",
+        "scenic-flight",
+        "aerial",
+        "milford"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Helicopter over glaciers, fiords, and alpine peaks with a snow landing.",
+      "commentary": "Multiple operators offer helicopter tours from Queenstown Airport covering Milford Sound, the glaciers of the Southern Alps, and the remote Fiordland wilderness. Many tours include a glacier or alpine snow landing. Flight times range from 30 minutes to 3+ hours.",
+      "audio_story": "You have arrived at Queenstown's heliport, your launch pad for one of the most breathtaking aerial experiences in the Southern Hemisphere. Your helicopter is about to lift you above the Remarkables and carry you deep into landscapes that are almost impossible to reach any other way. Depending on your chosen route, you could be flying over the sapphire waters of Milford Sound, landing on an ancient glacier high in the Southern Alps, or hovering above the remote fiords of Fiordland. The pilot will set down on a pristine snowfield so you can step out into absolute silence, surrounded by peaks and ice. From up here, you truly grasp the scale of New Zealand's South Island — vast, wild, and staggeringly beautiful.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Glacier Southern Lakes Helicopters",
+        "The Helicopter Line",
+        "Over The Top Helicopters"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Glacier Explorer Heli Tour adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Helicopter over glaciers, fiords, and alpine peaks with a snow landing. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-mountain-bike-trails",
+      "name": "Queenstown Bike Park & Trails",
+      "region": "queenstown",
+      "lat": -45.031,
+      "lng": 168.66,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "downhill",
+        "trails",
+        "gondola-access",
+        "bike-park"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Gondola-accessed downhill mountain biking with world-class trails above Queenstown.",
+      "commentary": "The Queenstown Bike Park on Bob's Peak offers gondola-accessed downhill mountain biking with trails for all abilities. The network includes flowing berms, jumps, and technical singletrack. The Queenstown Trail network also provides over 130 km of off-road cycling around the Wakatipu basin.",
+      "audio_story": "You have arrived at Queenstown's mountain biking hub, where a gondola ride delivers you to the start of some of the Southern Hemisphere's best downhill trails. The Queenstown Bike Park on Bob's Peak offers everything from gentle flowing trails for beginners to gnarly technical descents that have hosted international competitions. Load your bike onto the gondola, ride to the top, and let gravity do the work as you carve through native bush with Lake Wakatipu flashing between the trees below. If cross-country is more your style, the Queenstown Trail network stretches over 130 kilometres around the Wakatipu basin, connecting Queenstown, Arrowtown, and Gibbston Valley. Either way, this is mountain biking paradise.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Skyline Queenstown",
+        "Queenstown Trails Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Queenstown Bike Park & Trails adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Gondola-accessed downhill mountain biking with world-class trails above Queenstown. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-milford-kayak",
+      "name": "Milford Sound Kayaking",
+      "region": "queenstown",
+      "lat": -44.6726,
+      "lng": 167.9264,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "milford-sound",
+        "fiord",
+        "wildlife",
+        "paddling"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Paddle beneath towering Milford Sound cliffs and waterfalls by kayak.",
+      "commentary": "Kayaking Milford Sound puts you at water level beneath 1,200-metre cliff faces and cascading waterfalls like Stirling Falls. Guided tours operate year-round and frequently encounter fur seals, dolphins, and penguins. The fiord's calm waters make it suitable for most fitness levels.",
+      "audio_story": "You have arrived at Milford Sound, known to Maori as Piopiotahi, and you're about to experience this fiord the way it was meant to be seen — from the water, at your own pace. Your kayak will carry you beneath sheer granite walls that rise over 1,200 metres from the dark water, past the thundering curtain of Stirling Falls, and into hidden coves where fur seals laze on sun-warmed rocks. Rudyard Kipling called this the eighth wonder of the world, and from a kayak you understand why. The silence between paddle strokes is profound, broken only by birdsong and the distant rumble of waterfalls. Keep your eyes on the water — bottlenose dolphins and Fiordland crested penguins are regular visitors here.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Rosco's Milford Kayaks",
+        "DOC Fiordland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Milford Sound Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Paddle beneath towering Milford Sound cliffs and waterfalls by kayak. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-shotover-rafting",
+      "name": "Shotover River White Water Rafting",
+      "region": "queenstown",
+      "lat": -45.005,
+      "lng": 168.75,
+      "category": "adventure",
+      "tags": [
+        "rafting",
+        "white-water",
+        "shotover",
+        "grade-3-5",
+        "river"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Tackle grade 3-5 rapids through the dramatic Shotover River canyon.",
+      "commentary": "White water rafting on the Shotover River features grade 3 to 5 rapids through a narrow canyon carved from schist rock. The 14-kilometre run passes through a 170-metre tunnel blasted during the gold rush era. Multiple operators run trips from September to May.",
+      "audio_story": "You have arrived at the put-in point for the Shotover River, one of New Zealand's most famous white water runs. Over the next 14 kilometres, your raft crew will battle through grade 3 to 5 rapids with names like Cascade, Squeeze, and Toilet — and yes, they earned those names. The canyon walls close in tight, carved from ancient schist rock, and at one point you'll shoot through a 170-metre tunnel blasted by gold miners in the 1860s. It's dark, it's loud, and the water boils around you. The Shotover was once called the richest river in the world for its gold deposits. Today its riches are pure adrenaline. Brace yourself, paddle hard, and whatever you do, don't let go.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Queenstown Rafting",
+        "Challenge Rafting"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Shotover River White Water Rafting adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Tackle grade 3-5 rapids through the dramatic Shotover River canyon. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-canyoning-twelve-mile",
+      "name": "Twelve Mile Delta Canyoning",
+      "region": "queenstown",
+      "lat": -45.0672,
+      "lng": 168.5556,
+      "category": "adventure",
+      "tags": [
+        "canyoning",
+        "abseiling",
+        "swimming",
+        "canyon",
+        "waterfall"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Abseil, jump, and slide through hidden canyons near Queenstown.",
+      "commentary": "Canyoning near Queenstown involves abseiling down waterfalls, sliding through natural rock chutes, and jumping into deep pools in hidden gorges. Several operators offer half and full day trips in canyons around the Wakatipu basin, suitable for beginners through to experienced adventurers.",
+      "audio_story": "You have arrived at the start of a canyoning adventure that will take you into the hidden gorges most people never see. Over the next few hours, you'll abseil down waterfalls, leap into crystal-clear plunge pools, slide through natural rock chutes polished smooth by centuries of water, and swim through narrow slot canyons where the light filters down in shafts of emerald green. No two canyons are alike — some are tight and technical, others open and dramatic. Your guides know every handhold and every jump, and they'll have you doing things you never imagined possible. Canyoning is the ultimate combination of climbing, swimming, and controlled falling, all wrapped in some of the most stunning geology on the South Island.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Canyoning Queenstown",
+        "12 Mile Delta"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Twelve Mile Delta Canyoning adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Abseil, jump, and slide through hidden canyons near Queenstown. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-horse-trek-glenorchy",
+      "name": "Glenorchy Horse Trekking",
+      "region": "queenstown",
+      "lat": -44.85,
+      "lng": 168.375,
+      "category": "adventure",
+      "tags": [
+        "horse-trekking",
+        "glenorchy",
+        "scenic",
+        "lord-of-the-rings",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "Ride horses through Lord of the Rings landscapes in the Glenorchy backcountry.",
+      "commentary": "Horse trekking from Glenorchy takes riders through the braided river valleys, native beech forest, and mountain scenery used as filming locations in the Lord of the Rings and Hobbit trilogies. Rides cater to all experience levels, from gentle riverside walks to backcountry adventures.",
+      "audio_story": "You have arrived in Glenorchy, the small settlement at the head of Lake Wakatipu that served as the gateway to Middle-earth during the Lord of the Rings filming. Now you're going to explore this landscape the old-fashioned way — on horseback. Your horse will carry you through braided river flats edged by towering mountains, into pockets of ancient beech forest draped in moss, and across open meadows where the scenery is so cinematic it feels like a film set — because it literally was. These are the lands of Isengard, Lothlórien, and Ithilien. No experience is necessary; the horses know these trails by heart. Just settle into the saddle, breathe in the mountain air, and let the landscape unfold around you.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dart Stables",
+        "High Country Horses Glenorchy"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Glenorchy Horse Trekking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride horses through Lord of the Rings landscapes in the Glenorchy backcountry. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-fishing-charter",
+      "name": "Lake Wakatipu Fishing Charter",
+      "region": "queenstown",
+      "lat": -45.0306,
+      "lng": 168.6593,
+      "category": "adventure",
+      "tags": [
+        "fishing",
+        "trout",
+        "lake",
+        "charter",
+        "relaxation"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Fish for trophy brown and rainbow trout in the crystal waters of Lake Wakatipu.",
+      "commentary": "Lake Wakatipu and its tributaries are renowned for trophy-sized brown and rainbow trout. Guided fishing charters use a mix of fly fishing, trolling, and spin techniques. The lake's remote western arms are only accessible by boat and hold some of the region's largest fish.",
+      "audio_story": "You have arrived at the shores of Lake Wakatipu, one of the South Island's premier trout fisheries. The lake and its feeder streams hold brown and rainbow trout that regularly exceed five pounds, with trophy fish pushing well beyond that. Your guide knows exactly where the big ones lie — in the cold, clear tributary mouths, along the drop-offs, and in the remote western bays that most anglers never reach. Whether you prefer fly fishing in the gin-clear rivers or trolling the deep lake waters, the combination of world-class fish and jaw-dropping mountain scenery makes this one of the finest fishing experiences in the Southern Hemisphere. The water clarity here has to be seen to be believed.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Queenstown Fishing",
+        "Fish & Game Otago"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Lake Wakatipu Fishing Charter adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Fish for trophy brown and rainbow trout in the crystal waters of Lake Wakatipu. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-atv-quad-bike",
+      "name": "Nomad Safaris 4WD & ATV Tours",
+      "region": "queenstown",
+      "lat": -45.0311,
+      "lng": 168.6627,
+      "category": "adventure",
+      "tags": [
+        "quad-biking",
+        "atv",
+        "4wd",
+        "off-road",
+        "backcountry"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Explore Queenstown's rugged backcountry on ATVs and 4WD vehicles.",
+      "commentary": "Nomad Safaris and other operators offer ATV quad bike tours through high-country farm stations and historic gold mining areas around Queenstown. Routes traverse terrain inaccessible by standard vehicles, including river crossings, tussock ridgelines, and old miners' tracks.",
+      "audio_story": "You have arrived at the base for one of Queenstown's most exciting off-road experiences. You're about to climb aboard an ATV quad bike and head into the rugged backcountry that lies beyond the tourist trails. Your route will take you through working high-country stations, across river fords, and along old gold miners' tracks that haven't changed much since the 1860s rush. The terrain ranges from open tussock ridgelines with 360-degree mountain views to tight bush tracks where you'll need to keep your wits about you. No previous experience is needed — you'll get a thorough briefing and the bikes are forgiving. But by the end of the ride, you'll be covered in dust, grinning from ear to ear, and feeling like a proper backcountry explorer.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Nomad Safaris",
+        "Off Road Queenstown"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Nomad Safaris 4WD & ATV Tours adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Explore Queenstown's rugged backcountry on ATVs and 4WD vehicles. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "queenstown-via-ferrata-remarkables",
+      "name": "Remarkables Via Ferrata",
+      "region": "queenstown",
+      "lat": -45.0533,
+      "lng": 168.82,
+      "category": "adventure",
+      "tags": [
+        "via-ferrata",
+        "climbing",
+        "remarkables",
+        "alpine",
+        "guided"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4.5,
+      "short": "Climb iron rungs up the Remarkables range on New Zealand's highest via ferrata.",
+      "commentary": "The Remarkables via ferrata is a guided climbing experience using iron rungs, ladders, and wire bridges bolted into the cliff face of the Remarkables mountain range. The route reaches over 1,800 metres elevation with views across the Wakatipu basin. No climbing experience is required.",
+      "audio_story": "You have arrived at the base of the Remarkables via ferrata, a climbing route bolted directly into the dramatic cliff faces of the mountain range that defines Queenstown's skyline. Via ferrata means 'iron road' in Italian, and the system of metal rungs, ladders, and wire bridges allows you to climb terrain that would otherwise require serious mountaineering skills. You'll ascend the rock face using your hands and feet on the iron holds, always clipped to a safety cable, climbing higher and higher until the Wakatipu basin spreads out below you like an aerial photograph. At over 1,800 metres, this is one of the highest via ferrata routes in New Zealand, and the exposure is exhilarating — sheer drops beneath your feet, rock walls on either side, and the vast Otago landscape unfolding in every direction. No climbing experience is needed, just a reasonable level of fitness and a willingness to trust the system.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Queenstown Via Ferrata",
+        "Wildwire"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Remarkables Via Ferrata adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Climb iron rungs up the Remarkables range on New Zealand's highest via ferrata. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

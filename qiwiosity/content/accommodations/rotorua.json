@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "rotorua",
+    "name": "Rotorua",
+    "island": "North",
+    "centre": {
+      "lat": -38.1368,
+      "lng": 176.2497
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "rotorua-novotel-rotorua-lakeside",
+      "name": "Novotel Rotorua Lakeside",
+      "region": "rotorua",
+      "lat": -38.136,
+      "lng": 176.2445,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.4,
+      "short": "Flagship Novotel on the shores of Lake Rotorua."
+    },
+    {
+      "id": "rotorua-millennium-rotorua",
+      "name": "Millennium Hotel Rotorua",
+      "region": "rotorua",
+      "lat": -38.14,
+      "lng": 176.249,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.3,
+      "short": "Resort-style hotel opposite Government Gardens and Polynesian Spa."
+    },
+    {
+      "id": "rotorua-holiday-inn-rotorua",
+      "name": "Holiday Inn Rotorua",
+      "region": "rotorua",
+      "lat": -38.1425,
+      "lng": 176.249,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Family IHG hotel beside the Polynesian Spa and Museum."
+    },
+    {
+      "id": "rotorua-distinction-rotorua",
+      "name": "Distinction Rotorua Hotel",
+      "region": "rotorua",
+      "lat": -38.144,
+      "lng": 176.2495,
+      "type": "hotel",
+      "price_nzd_per_night": 250,
+      "rating": 4.4,
+      "short": "Historic Grand Tiara hotel in Rotorua's heritage quarter."
+    },
+    {
+      "id": "rotorua-regent-of-rotorua",
+      "name": "Regent of Rotorua Boutique Hotel",
+      "region": "rotorua",
+      "lat": -38.136,
+      "lng": 176.25,
+      "type": "hotel",
+      "price_nzd_per_night": 285,
+      "rating": 4.5,
+      "short": "Retro-chic boutique hotel with geothermal mineral pool."
+    },
+    {
+      "id": "rotorua-sudima-rotorua",
+      "name": "Sudima Hotel Lake Rotorua",
+      "region": "rotorua",
+      "lat": -38.124,
+      "lng": 176.229,
+      "type": "hotel",
+      "price_nzd_per_night": 265,
+      "rating": 4.3,
+      "short": "Waterfront hotel on the northern lake edge near Ohinemutu."
+    },
+    {
+      "id": "rotorua-aura-accommodation",
+      "name": "Aura Accommodation Motel Rotorua",
+      "region": "rotorua",
+      "lat": -38.146,
+      "lng": 176.241,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.3,
+      "short": "Central Rotorua motel with thermal mineral-pool spa suites."
+    },
+    {
+      "id": "rotorua-ascot-on-fenton",
+      "name": "Ascot on Fenton Motel",
+      "region": "rotorua",
+      "lat": -38.148,
+      "lng": 176.244,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.2,
+      "short": "Fenton Street motel in Rotorua's motel row."
+    },
+    {
+      "id": "rotorua-ambassador-thermal-motel",
+      "name": "Ambassador Thermal Motel",
+      "region": "rotorua",
+      "lat": -38.135,
+      "lng": 176.247,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Lake-edge motel with free geothermal mineral pool."
+    },
+    {
+      "id": "rotorua-aspen-manor-rotorua",
+      "name": "Aspen Manor Motel Rotorua",
+      "region": "rotorua",
+      "lat": -38.1475,
+      "lng": 176.244,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Fenton Street motor lodge with free spa pool."
+    },
+    {
+      "id": "rotorua-baycourt-motel",
+      "name": "Baycourt Motel Rotorua",
+      "region": "rotorua",
+      "lat": -38.1355,
+      "lng": 176.248,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Lakefront-adjacent motel with private thermal spas."
+    },
+    {
+      "id": "rotorua-arista-of-rotorua",
+      "name": "Arista of Rotorua Motor Lodge",
+      "region": "rotorua",
+      "lat": -38.1465,
+      "lng": 176.2435,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Modern Fenton Street motel with geothermal spa baths."
+    },
+    {
+      "id": "rotorua-silver-fern-rotorua",
+      "name": "Silver Fern Rotorua Suites & Spa",
+      "region": "rotorua",
+      "lat": -38.1355,
+      "lng": 176.2495,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.4,
+      "short": "Luxury motel-style suites with thermal spa near Whakarewarewa."
+    },
+    {
+      "id": "rotorua-rotorua-top10",
+      "name": "Rotorua TOP 10 Holiday Park",
+      "region": "rotorua",
+      "lat": -38.122,
+      "lng": 176.243,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.4,
+      "short": "Whakarewarewa-side park with geothermal mineral pools and cabins."
+    },
+    {
+      "id": "rotorua-cosy-cottage-thermal",
+      "name": "Cosy Cottage Thermal Holiday Park",
+      "region": "rotorua",
+      "lat": -38.107,
+      "lng": 176.256,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Lakefront Rotorua park with natural thermal hot pools."
+    },
+    {
+      "id": "rotorua-blue-lake-top10",
+      "name": "Blue Lake TOP 10 Holiday Park",
+      "region": "rotorua",
+      "lat": -38.182,
+      "lng": 176.333,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.4,
+      "short": "Lakeside Tikitapu park in bush near the redwoods."
+    },
+    {
+      "id": "rotorua-waiteti-trout-stream",
+      "name": "Waiteti Trout Stream Holiday Park",
+      "region": "rotorua",
+      "lat": -38.07,
+      "lng": 176.174,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Ngongotaha park on a trout stream with mountain views."
+    },
+    {
+      "id": "rotorua-treetops-lodge",
+      "name": "Treetops Lodge & Estate",
+      "region": "rotorua",
+      "lat": -38.253,
+      "lng": 176.218,
+      "type": "lodge",
+      "price_nzd_per_night": 1850,
+      "rating": 4.9,
+      "short": "2,500-acre luxury lodge with private estate trout streams."
+    },
+    {
+      "id": "rotorua-black-swan-rotorua",
+      "name": "Black Swan Lakeside Boutique Hotel",
+      "region": "rotorua",
+      "lat": -38.138,
+      "lng": 176.247,
+      "type": "lodge",
+      "price_nzd_per_night": 750,
+      "rating": 4.8,
+      "short": "Boutique lakefront lodge with private chef and spa."
+    },
+    {
+      "id": "rotorua-solitaire-lodge",
+      "name": "Solitaire Lodge",
+      "region": "rotorua",
+      "lat": -38.291,
+      "lng": 176.411,
+      "type": "lodge",
+      "price_nzd_per_night": 1450,
+      "rating": 4.8,
+      "short": "Nine-suite lodge on Lake Tarawera with volcano views."
+    }
+  ]
+}

@@ -1,0 +1,1384 @@
+{
+  "region": {
+    "id": "rotorua",
+    "name": "Rotorua",
+    "island": "North",
+    "centre": {
+      "lat": -38.1368,
+      "lng": 176.2497
+    },
+    "bounds": {
+      "north": -37.9,
+      "south": -38.4,
+      "east": 176.6,
+      "west": 175.8
+    },
+    "description": "Rohe of Te Arawa and the heart of North Island geothermal country — sulphur, mud pots, geysers, and the 1886 Tarawera eruption that rewrote the landscape in six hours."
+  },
+  "pois": [
+    {
+      "id": "waiotapu",
+      "name": "Waiotapu Thermal Wonderland",
+      "region": "rotorua",
+      "lat": -38.3567,
+      "lng": 176.3689,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "colours",
+        "lady-knox",
+        "champagne-pool",
+        "walkway"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The most colourful geothermal field in the country — orange, green, yellow and red mineral pools, plus a geyser that erupts daily at 10:15.",
+      "commentary": "Wai-o-tapu — 'sacred waters' — is a 30-minute drive south of Rotorua and the country's most photographed geothermal field. The Champagne Pool, 65 metres across, is ringed with orange arsenic and antimony sulphides; the Devil's Bath is a brilliant fluorescent green from dissolved sulphur. The Lady Knox Geyser erupts daily at 10:15 after a park ranger drops surfactant soap in to trigger it (a practice that began with 1901 prison workers washing clothes). Three walking loops; the full circuit is 75 minutes.",
+      "scripts": {
+        "headline": "scripts/waiotapu.headline.md",
+        "standard": "scripts/waiotapu.standard.md"
+      },
+      "sources_to_check": [
+        "Waiotapu — waiotapu.co.nz",
+        "GNS Science"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Waiotapu Thermal Wonderland draws visitors back time and again for its natural beauty and peaceful atmosphere. The most colourful geothermal field in the country — orange, green, yellow and red mineral pools, plus a geyser that erupts daily at 10:15. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "waimangu-tarawera",
+      "name": "Waimangu Volcanic Valley / 1886 Tarawera Eruption",
+      "region": "rotorua",
+      "lat": -38.2811,
+      "lng": 176.3856,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "1886-eruption",
+        "youngest-ecosystem",
+        "pink-and-white-terraces",
+        "walkway"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 3,
+      "short": "The youngest geothermal valley on Earth — blown open by the 1886 Tarawera eruption, which also destroyed the Pink and White Terraces.",
+      "commentary": "On 10 June 1886, Mount Tarawera split open along a 17 km rift. Over six hours, the eruption buried 150 Māori in the village of Te Wairoa, killed an estimated 120 total, and obliterated the Pink and White Terraces — described in the 1870s as the 'Eighth Wonder of the World.' The Waimangu Valley is what the eruption left: a long hydrothermal system born that day, and technically the world's youngest ecosystem. The walkway runs 4 km from Frying Pan Lake (the largest hot-water lake on Earth) past Inferno Crater and down to Lake Rotomahana, where the Terraces lay drowned.",
+      "scripts": {
+        "headline": "scripts/waimangu-tarawera.headline.md",
+        "standard": "scripts/waimangu-tarawera.standard.md"
+      },
+      "sources_to_check": [
+        "Waimangu Volcanic Valley — waimangu.co.nz",
+        "GNS Science",
+        "Te Ara — Tarawera eruption"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Waimangu Volcanic Valley / 1886 Tarawera Eruption draws visitors back time and again for its natural beauty and peaceful atmosphere. The youngest geothermal valley on Earth — blown open by the 1886 Tarawera eruption, which also destroyed the Pink and White Terraces. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "te-puia",
+      "name": "Te Puia / Whakarewarewa Thermal Valley",
+      "region": "rotorua",
+      "lat": -38.1628,
+      "lng": 176.2561,
+      "category": "māori",
+      "tags": [
+        "geyser",
+        "māori-arts",
+        "pohutu",
+        "carving-school",
+        "te-arawa"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Pōhutu Geyser, the largest active geyser in the Southern Hemisphere — plus the NZ Māori Arts & Crafts Institute carving and weaving schools.",
+      "commentary": "Te Puia is a single site that combines the Whakarewarewa thermal valley with the New Zealand Māori Arts and Crafts Institute (established 1963). Pōhutu Geyser erupts 15–20 times a day, shooting up to 30 metres — the largest active geyser in the Southern Hemisphere. On the same ground: the national wood-carving school (Te Wānanga Whakairo Rākau) and the weaving school (Te Rito). Guided tours are the only way to see the geyser area. Evening cultural performances with hangi are the marquee tourist experience — done respectfully, worth doing.",
+      "scripts": {
+        "headline": "scripts/te-puia.headline.md",
+        "standard": "scripts/te-puia.standard.md"
+      },
+      "sources_to_check": [
+        "Te Puia — tepuia.com",
+        "NZ Māori Arts & Crafts Institute"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Puia / Whakarewarewa Thermal Valley as a place where the history and cultural significance of Aotearoa become tangible and real. Pōhutu Geyser, the largest active geyser in the Southern Hemisphere — plus the NZ Māori Arts & Crafts Institute carving and weaving schools. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "whakarewarewa-village",
+      "name": "Whakarewarewa — The Living Māori Village",
+      "region": "rotorua",
+      "lat": -38.17,
+      "lng": 176.2525,
+      "category": "māori",
+      "tags": [
+        "living-village",
+        "tūhourangi-ngāti-wāhiao",
+        "geothermal",
+        "hāngi"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A working Māori village with people actually living in it — cooking in boiling pools, bathing in thermal baths, for over 200 years.",
+      "commentary": "Whakarewarewa is one of the few geothermal Māori villages in the world still lived in. Around 20 families of Tūhourangi-Ngāti Wāhiao remain, cooking in the boiling pools, bathing in the thermal baths, as their tūpuna have for more than 200 years. They refused to leave after the 1886 Tarawera eruption (which forced relocation from Te Wairoa); this became their permanent home. Guided tours are led by village residents and — unlike Te Puia, which is a separate operation next door — the money goes directly to the community.",
+      "scripts": {
+        "headline": "scripts/whakarewarewa-village.headline.md",
+        "standard": "scripts/whakarewarewa-village.standard.md"
+      },
+      "sources_to_check": [
+        "Whakarewarewa — whakarewarewa.com",
+        "Tūhourangi Ngāti Wāhiao"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Whakarewarewa — The Living Māori Village as a place where the history and cultural significance of Aotearoa become tangible and real. A working Māori village with people actually living in it — cooking in boiling pools, bathing in thermal baths, for over 200 years. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "buried-village-te-wairoa",
+      "name": "Buried Village of Te Wairoa",
+      "region": "rotorua",
+      "lat": -38.2125,
+      "lng": 176.345,
+      "category": "nature",
+      "tags": [
+        "1886-eruption",
+        "archaeology",
+        "tourism-history",
+        "pink-white-terraces"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "The Te Arawa village of Te Wairoa — buried by 1886 Tarawera eruption ash, now excavated.",
+      "commentary": "Before 10 June 1886, Te Wairoa was the tourist hub for European visitors to the Pink and White Terraces — Māori guides led canoe tours of Lake Rotomahana, and mud-brick hotels served silver-service dinners. The eruption buried the village under 1.5 metres of mud and ash within hours. 150 of the 153 villagers died or were unaccounted for. Excavations began in 1931 and are still ongoing. The site today includes the excavated whare and hotel foundations, a small museum with survivor accounts, and a walk through bush to Wairere Falls.",
+      "scripts": {
+        "headline": "scripts/buried-village-te-wairoa.headline.md",
+        "standard": "scripts/buried-village-te-wairoa.standard.md"
+      },
+      "sources_to_check": [
+        "Buried Village — buriedvillage.co.nz",
+        "NZHistory"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Buried Village of Te Wairoa draws visitors back time and again for its natural beauty and peaceful atmosphere. The Te Arawa village of Te Wairoa — buried by 1886 Tarawera eruption ash, now excavated. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rainbow-mountain",
+      "name": "Rainbow Mountain / Maungakākaramea",
+      "region": "rotorua",
+      "lat": -38.3581,
+      "lng": 176.3489,
+      "category": "nature",
+      "tags": [
+        "rhyolite",
+        "walk",
+        "colours",
+        "crater-lakes",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "An eroded rhyolite dome streaked red, orange, white and black — a short walk past bright crater lakes to a 360° summit.",
+      "commentary": "Maungakākaramea — 'the mountain of coloured earth' — is a partially eroded rhyolite dome whose exposed hydrothermally-altered rock shows in bands of red, orange, yellow, white and black. A track leads past two small crater lakes (one bright green, one turquoise) to the 743 m summit in about 2 hours return. On a clear day the view includes Lake Taupō, Ruapehu, Ngāuruhoe and Tongariro. Access is from a signposted carpark on SH5 between Waiotapu and Taupō.",
+      "scripts": {
+        "headline": "scripts/rainbow-mountain.headline.md",
+        "standard": "scripts/rainbow-mountain.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Rainbow Mountain"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Rainbow Mountain / Maungakākaramea draws visitors back time and again for its natural beauty and peaceful atmosphere. An eroded rhyolite dome streaked red, orange, white and black — a short walk past bright crater lakes to a 360° summit. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "blue-green-lakes",
+      "name": "Blue & Green Lakes / Tikitapu & Rotokākahi",
+      "region": "rotorua",
+      "lat": -38.2167,
+      "lng": 176.3292,
+      "category": "nature",
+      "tags": [
+        "lakes",
+        "viewpoint",
+        "colours",
+        "sacred"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "Two small lakes separated by a narrow ridge — one turquoise, one green, side by side.",
+      "commentary": "Tikitapu (the Blue Lake) and Rotokākahi (the Green Lake) lie side by side, separated by a narrow 100-metre ridge, on the scenic road to Lake Tarawera. The colour difference is from their different underlying sediments: Tikitapu has a rhyolite and pumice bed that scatters blue light; Rotokākahi has a shallower bottom with silt from a small catchment. Rotokākahi is privately owned by Tūhourangi-Ngāti Wāhiao and no swimming, boating or fishing is permitted — it is a wāhi tapu (sacred place). Tikitapu is the public swimming lake. A scenic ridge-walk lookout is signposted.",
+      "scripts": {
+        "headline": "scripts/blue-green-lakes.headline.md",
+        "standard": "scripts/blue-green-lakes.standard.md"
+      },
+      "sources_to_check": [
+        "Tūhourangi-Ngāti Wāhiao",
+        "Te Ara"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Blue & Green Lakes / Tikitapu & Rotokākahi draws visitors back time and again for its natural beauty and peaceful atmosphere. Two small lakes separated by a narrow ridge — one turquoise, one green, side by side. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "redwoods-whakarewarewa-forest",
+      "name": "Redwoods / Whakarewarewa Forest",
+      "region": "rotorua",
+      "lat": -38.1567,
+      "lng": 176.2833,
+      "category": "nature",
+      "tags": [
+        "redwoods",
+        "mountain-biking",
+        "walking",
+        "treewalk",
+        "night-lights"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A 5,600-hectare Californian redwood forest right next to the city — the premier mountain-bike destination in the North Island.",
+      "commentary": "The Whakarewarewa Forest was planted from 1899 onwards with dozens of exotic tree species to test which would grow best in New Zealand. The Californian coastal redwoods in the small 'Redwood Grove' near the entrance won: they are now over 70 metres tall. The wider forest has 180+ km of mountain-biking trails (genuine world-class), a family-friendly Treewalk through the canopy (open day and evening with Hundertwasser-style night lighting), and free walking tracks. Entry to the grove and walks is free; Treewalk is ticketed.",
+      "scripts": {
+        "headline": "scripts/redwoods-whakarewarewa-forest.headline.md",
+        "standard": "scripts/redwoods-whakarewarewa-forest.standard.md"
+      },
+      "sources_to_check": [
+        "Redwoods — redwoods.co.nz",
+        "Rotorua Lakes Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Redwoods / Whakarewarewa Forest draws visitors back time and again for its natural beauty and peaceful atmosphere. A 5,600-hectare Californian redwood forest right next to the city — the premier mountain-bike destination in the North Island. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "mount-tarawera",
+      "name": "Mount Tarawera",
+      "region": "rotorua",
+      "lat": -38.235,
+      "lng": 176.5,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "1886-eruption",
+        "crater-hike",
+        "helicopter",
+        "rift"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 4,
+      "short": "The 1,111 m volcano that split open in 1886 — viewed from the lakeshore, or (with iwi permission) walked along the 17 km rift.",
+      "commentary": "Mount Tarawera is sacred to Tūhourangi-Ngāti Wāhiao. At 2:30 am on 10 June 1886 the whole mountain split along a 17 km rift, erupting for six hours — the most violent eruption in New Zealand since European contact. What you see from the lakeshore is the scarred crater rim; the rift is a deep, 17 km gash across the summit. Guided 4WD tours (Mt Tarawera NZ, Kaitiaki Adventures) take visitors to the summit and along the rim by arrangement with the iwi owners. Helicopter flights also land on the summit. No independent access — the mountain is private and sacred.",
+      "scripts": {
+        "headline": "scripts/mount-tarawera.headline.md",
+        "standard": "scripts/mount-tarawera.standard.md"
+      },
+      "sources_to_check": [
+        "Tūhourangi Tribal Authority",
+        "Mt Tarawera NZ",
+        "GNS Science"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Mount Tarawera draws visitors back time and again for its natural beauty and peaceful atmosphere. The 1,111 m volcano that split open in 1886 — viewed from the lakeshore, or (with iwi permission) walked along the 17 km rift. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "okere-falls",
+      "name": "Ōkere Falls / Kaituna River",
+      "region": "rotorua",
+      "lat": -38.0333,
+      "lng": 176.35,
+      "category": "adventure",
+      "tags": [
+        "rafting",
+        "7m-waterfall",
+        "walking",
+        "world-record"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Home to Tutea's Falls — at 7 metres, the highest commercially-rafted waterfall in the world.",
+      "commentary": "The Kaituna River drains Lake Rotoiti out to the Bay of Plenty, falling through a short steep gorge of three named waterfalls. Tutea's Falls, the tallest at 7 metres, is the highest commercially-rafted waterfall in the world — and the whole of Kaituna is Grade 5 white water. Rafting operators run year-round. Non-rafters can walk the short track to viewing platforms overlooking all three falls and Tutea's Cave, a refuge for local hapū during Musket War–era attacks in the 1820s.",
+      "scripts": {
+        "headline": "scripts/okere-falls.headline.md",
+        "standard": "scripts/okere-falls.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Ōkere Falls Scenic Reserve",
+        "Kaituna rafting operators"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Ōkere Falls / Kaituna River adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Home to Tutea's Falls — at 7 metres, the highest commercially-rafted waterfall in the world. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-government-gardens",
+      "name": "Government Gardens & Bath House",
+      "region": "rotorua",
+      "lat": -38.1378,
+      "lng": 176.2533,
+      "category": "nature",
+      "tags": [
+        "edwardian",
+        "spa",
+        "museum",
+        "bowling"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Rotorua's Edwardian heart — manicured gardens, the Tudor Tower bath house, and a steaming lake at your back.",
+      "commentary": "Government Gardens were laid out in 1903 around the Bath House (now the Rotorua Museum), built as a great curative spa to make Rotorua the South Pacific Brighton.",
+      "audio_story": "You are walking through the Government Gardens, the formal Edwardian heart of Rotorua. The land you are walking on was gifted to the Crown by the Ngāti Whakaue chief Te Kiharoa in eighteen eighty, on the condition that it be used for the people. In nineteen oh three the gardens were laid out in their current form around the great Tudor revival bath house at their centre, a building so unlike anything else in New Zealand that you will probably stop to take a photograph before you understand what you are looking at. The bath house was the government's bid to turn Rotorua into the great spa town of the South Pacific. Wealthy invalids came from around the world to bathe in mineral water that, depending on the pool, could be hot, cold, alkaline, or pleasantly fizzy with carbon dioxide. The building has since been a museum and is currently undergoing earthquake strengthening, but the gardens around it are still beautifully kept, complete with manicured lawns, croquet greens, lake views, and the unmistakable, faintly eggy smell of geothermal Rotorua on a still day. Sit on a bench. Watch the locals lawn bowl. Smell the sulphur. This is the city's drawing room.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Rotorua Bath House",
+        "Rotorua Lakes Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Government Gardens & Bath House draws visitors back time and again for its natural beauty and peaceful atmosphere. Rotorua's Edwardian heart — manicured gardens, the Tudor Tower bath house, and a steaming lake at your back. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rotorua-ohinemutu",
+      "name": "Ōhinemutu Village",
+      "region": "rotorua",
+      "lat": -38.1283,
+      "lng": 176.2422,
+      "category": "māori",
+      "tags": [
+        "māori-village",
+        "ngati-whakaue",
+        "st-faiths",
+        "hot-springs"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The original Rotorua — a working Ngāti Whakaue village on the lake, with a famous Māori-English church.",
+      "commentary": "Ōhinemutu is the Ngāti Whakaue lakeside village, with Tama-te-kapua wharenui and the 1910 St Faith's Anglican Church.",
+      "audio_story": "You have arrived at Ōhinemutu, the original Rotorua. Long before the Edwardian bath house and the tourist hotels, this was the lakeside village of Ngāti Whakaue, built directly above one of the most active geothermal fields in the country. People still live here today. Steam rises gently from cracks in the pavement. Hot pools bubble under the back yards. The most famous building is Saint Faith's Anglican Church, built in nineteen ten. From outside it is a pretty white wooden country church. Inside, every panel, every beam and every stained glass window is decorated with Māori carving and tukutuku weaving. On the wall above the altar hangs a single small etched window of Christ in a feather korowai cloak, and at certain times of day, when the light catches him from across the church, he appears to walk on the waters of Lake Rotorua just outside. Across a small open square stands the Tama-te-kapua wharenui, an exquisite traditional meeting house carved with tribal ancestors. Walk slowly. This is a working village, not a tourist site. If a service is on, listen from a respectful distance. You are a guest here.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Ara — Ngāti Whakaue",
+        "St Faiths Ōhinemutu"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Ōhinemutu Village as a place where the history and cultural significance of Aotearoa become tangible and real. The original Rotorua — a working Ngāti Whakaue village on the lake, with a famous Māori-English church. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-skyline-luge",
+      "name": "Skyline Rotorua & Luge",
+      "region": "rotorua",
+      "lat": -38.1156,
+      "lng": 176.2456,
+      "category": "adventure",
+      "tags": [
+        "gondola",
+        "luge",
+        "mountain-bike",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "Up the gondola, down the luge — Rotorua's most reliable family afternoon, with a view of the lake and the city.",
+      "commentary": "Gondola to the top of Mt Ngongotahā. Includes the original NZ luge track (1985) and downhill mountain biking trails.",
+      "audio_story": "You have arrived at Skyline Rotorua, and you should give yourself at least a couple of hours. The gondola lifts you out of the bottom of Fairy Springs Road and up the western slopes of Mount Ngongotahā, climbing steadily until you are looking down over Lake Rotorua, the city, and on a clear day the long blue ridge of the Mamaku Plateau on the horizon. The original luge track was built here in nineteen eighty five, the first of its kind in New Zealand, and the formula is exactly as compelling now as it was then. You ride a chairlift further up the hill, board a wheeled luge cart, and ride a gentle, then less gentle, then more wickedly twisty concrete track back down. There are three different tracks of increasing intensity. One ride is fun. Three rides is a habit. Bring kids. Bring grandparents. Around the top complex are walking tracks, a swing, and the start of dozens of kilometres of downhill mountain biking trails that have made Rotorua a world-renowned cycling destination. The restaurant at the top has full picture windows facing the lake. Time your last gondola for sunset.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Skyline Rotorua"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Skyline Rotorua & Luge adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Up the gondola, down the luge — Rotorua's most reliable family afternoon, with a view of the lake and the city. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rot_hist_tarawera_eruption",
+      "name": "Mount Tarawera Eruption Site",
+      "region": "rotorua",
+      "lat": -38.2272,
+      "lng": 176.5092,
+      "category": "māori",
+      "tags": [
+        "volcano",
+        "eruption",
+        "tarawera",
+        "heritage",
+        "maori"
+      ],
+      "trigger_radius_m": 400,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are looking at Mount Tarawera, a dark broken-backed mountain split by a long jagged rift. On the night of the tenth of June, eighteen eighty six, this peaceful peak tore itself apart in one of New Zealand's deadliest volcanic eruptions. A line of vents ripped open the summit, hurling ash and scoria for kilometres and burying the villages of Te Wairoa, Te Ariki, and Moura. Around one hundred and twenty people died, most of them Tūhourangi and Ngāti Rangitihi. The world-famous Pink and White Terraces, vast natural staircases of silica that drew European tourists by paddle steamer, were destroyed in minutes. Days before the eruption, witnesses on Lake Tarawera reported seeing a phantom war canoe gliding through the mist, an omen later understood as a warning from the ancestors. The eruption reshaped the entire landscape and changed Te Arawa's relationship with this place forever. Today the mountain is sacred wāhi tapu. From the lookout you can trace the rift and the dark scoria flows, and feel how recent and how violent this story still is.",
+      "sources_to_check": [
+        "NZHistory Tarawera",
+        "Te Arawa records",
+        "Buried Village",
+        "GNS Science"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Mount Tarawera Eruption Site as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_buried_village",
+      "name": "Te Wairoa Buried Village",
+      "region": "rotorua",
+      "lat": -38.1969,
+      "lng": 176.3603,
+      "category": "culture",
+      "tags": [
+        "tarawera",
+        "village",
+        "heritage",
+        "museum"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Te Wairoa, the village buried by the Tarawera eruption of eighteen eighty six. Before that night this was a thriving settlement of Tūhourangi people and a small number of European hoteliers and guides who served visitors travelling to see the famed Pink and White Terraces. When the mountain erupted, hot mud and ash up to two metres deep crushed and entombed the village. Some sheltered in a sturdy whare and survived, including the elderly tohunga Tūhoto Ariki, who was dug out alive after four days. Many others did not survive. Decades later, archaeologists carefully excavated parts of the site, revealing the flour mill, the schoolhouse, the blacksmith's, and the homes of villagers. Walking the path here is a sombre experience. You see ovens still warm-looking with ash, doorways framed in earth, and a small museum holding photographs taken before that night. The waterfall at the end of the trail offers a moment of quiet. Te Wairoa is a memorial as much as a village, a place where you walk softly, listen carefully, and remember.",
+      "sources_to_check": [
+        "Buried Village of Te Wairoa",
+        "Te Arawa records",
+        "NZHistory"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Te Wairoa Buried Village is praised for being both accessible and genuinely informative. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "rot_hist_ohinemutu",
+      "name": "Ohinemutu Village and St Faith's",
+      "region": "rotorua",
+      "lat": -38.1281,
+      "lng": 176.2484,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "ohinemutu",
+        "te-arawa",
+        "village"
+      ],
+      "trigger_radius_m": 120,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are walking into Ohinemutu, the lakeside Te Arawa village that pre-dates Rotorua town by centuries. Steam rises through the cracks in the pavement and from the warm pools where families have cooked, washed, and bathed for generations. At the heart of the village stands Tama-te-Kapua, a magnificently carved meeting house named for the captain of the Te Arawa waka. Beside it is St Faith's Anglican Church, an extraordinary fusion of Māori and English forms. Inside, an etched window shows Christ in a feathered cloak appearing to walk on the waters of Lake Rotorua, and tukutuku panels and carvings line the walls. This is a living village. The marae is in daily use and the cemetery beside the church holds many of the rangatira who shaped Te Arawa's modern history. Walk gently, do not enter the wharenui without invitation, and respect the small signs asking for quiet. Ohinemutu shows what a Māori village looked like, and looks like, in a country where so much has been lost or moved aside.",
+      "sources_to_check": [
+        "Te Arawa Lakes Trust",
+        "St Faith's Church",
+        "Heritage NZ Ohinemutu"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ohinemutu Village and St Faith's as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_te_arawa_arrival",
+      "name": "Te Arawa Waka Arrival (Maketū to Rotorua)",
+      "region": "rotorua",
+      "lat": -38.138,
+      "lng": 176.2488,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "te-arawa",
+        "waka",
+        "origins"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are in the rohe of Te Arawa, descended from the great waka that made landfall at Maketū around six hundred years ago, captained by Tamatekapua and navigated by the tohunga Ngātoroirangi. From the coast, the people moved inland, claiming the lakes and forests of the central plateau. Ngātoroirangi, exploring the high country, found himself caught in a snowstorm on the slopes of Mount Tongariro and called to his sisters in distant Hawaiki for fire. They sent it through underground channels, and where the fire surfaced, the geothermal wonders of the central North Island appeared, the boiling pools of Rotorua, the steam vents of Tokaanu, and the volcanoes themselves. This is why the lands of Te Arawa, from Maketū to Tongariro, share a single fiery thread. Every geyser, every silica terrace, every warm spring is part of one story of a navigator who could not be allowed to freeze. As you walk this region, remember that the heat under your feet has a name, a family, and a journey behind it.",
+      "sources_to_check": [
+        "Te Arawa Lakes Trust",
+        "Te Ara Te Arawa",
+        "Ngātoroirangi traditions"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Arawa Waka Arrival (Maketū to Rotorua) as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_government_gardens",
+      "name": "Government Gardens and Bath House",
+      "region": "rotorua",
+      "lat": -38.1379,
+      "lng": 176.258,
+      "category": "nature",
+      "tags": [
+        "bathhouse",
+        "spa",
+        "government-gardens",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are walking through the Government Gardens, a large lakeside park gifted by Ngāti Whakaue to the Crown in eighteen eighty as a place of healing for all people. Within them stands the elaborate Bath House, an Edwardian half-timbered building that opened in nineteen oh eight and was once the grandest spa complex in the southern hemisphere. The government promoted Rotorua as a health resort, and visitors travelled from across the British Empire to soak in the mineral pools, hoping to cure rheumatism, gout, and a long list of other complaints. The grounds were laid out with formal lawns, rose gardens, and croquet greens, deliberately European in feeling. The Bath House now houses the Rotorua Museum, currently closed for earthquake strengthening, but its silhouette remains the most photographed building in the city. Behind the genteel surface lies the gift of the people of Te Arawa, whose hospitality and willingness to share their land made the spa town possible. Pause and notice both stories, the Edwardian fantasy and the much older generosity that underpinned it.",
+      "sources_to_check": [
+        "Heritage NZ Bath House",
+        "Rotorua Museum",
+        "Ngāti Whakaue history"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Government Gardens and Bath House draws visitors back time and again for its natural beauty and peaceful atmosphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rot_hist_pukeroa_pa",
+      "name": "Pukeroa Pā Site",
+      "region": "rotorua",
+      "lat": -38.1372,
+      "lng": 176.2486,
+      "category": "māori",
+      "tags": [
+        "pa",
+        "ngati-whakaue",
+        "heritage",
+        "maori"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are on Pukeroa, the low hill that rises just behind Ohinemutu and looks out across Lake Rotorua. This was once the principal pā of Ngāti Whakaue, a defended settlement with terraces, palisades, and storage pits laid out across its slopes. From here the people watched canoes coming across the lake and could see far enough to spot any threat from rival hapū. In the nineteenth century the hospital was built on top of the hill, and today modern medical buildings cover much of the old fortification, but pou and signs mark its significance. Pukeroa is more than a hill, it is a living title held by the descendants of the chiefs who once stood at its summit. The land was leased to the Crown in the nineteenth century, and its return to Ngāti Whakaue ownership has been a long and ongoing story. Stand at the lookout, picture the wooden palisades and the smoke of cooking fires, and remember that beneath the hospital's foundations lies the heart of an iwi.",
+      "sources_to_check": [
+        "Ngāti Whakaue records",
+        "Heritage NZ",
+        "Te Ara Te Arawa"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Pukeroa Pā Site as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_mokoia_island",
+      "name": "Mokoia Island and Hinemoa",
+      "region": "rotorua",
+      "lat": -38.078,
+      "lng": 176.2658,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "mokoia",
+        "hinemoa",
+        "legend"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are looking out at Mokoia Island, the green dome rising from the centre of Lake Rotorua. This island is home to one of Aotearoa's most beloved love stories. The chief's daughter Hinemoa lived on the lake's edge, and her people opposed her love for Tūtānekai, who lived on Mokoia. Her family beached all the canoes so she could not cross. But each evening Tūtānekai played his flute on the island, and the music carried across the water. One night Hinemoa tied empty calabashes to her body for floats and swam through cold dark water guided by his music. She arrived chilled and exhausted, and warmed herself in a hot spring on the island that still bears her name, Hinemoa's Pool. Tūtānekai's servant came to draw water, and Hinemoa, hidden in the steam, broke his calabashes one by one until he ran to fetch his master. Their love story was finally accepted by both families. Mokoia today is jointly managed for conservation. From the lakeshore you can still see the island where bravery met music.",
+      "sources_to_check": [
+        "Te Arawa Lakes Trust",
+        "Ngāti Whakaue",
+        "Te Ara Hinemoa"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Mokoia Island and Hinemoa as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_whakarewarewa_living_village",
+      "name": "Whakarewarewa Living Māori Village",
+      "region": "rotorua",
+      "lat": -38.1622,
+      "lng": 176.2545,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "whakarewarewa",
+        "tuhourangi",
+        "village"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Whakarewarewa, the living thermal village where Tūhourangi and Ngāti Wāhiao have lived for generations. After the Tarawera eruption of eighteen eighty six destroyed Te Wairoa, displaced Tūhourangi families were welcomed here by Ngāti Wāhiao, and together they built a community around the geysers and boiling pools. Children of the village still dive for coins in the warm streams, and food is cooked in steam boxes set into the ground. The village's full name is Te Whakarewarewatanga o te Ope Taua a Wahiao, the gathering place of the war party of Wahiao. Pohutu Geyser, one of the most reliable in the country, erupts a column of hot water many times a day from the village's grounds. Generations of guides, including the legendary guides Maggie Papakura and Rangitiaria Dennan, led visitors through these landscapes and shaped the way the world saw Māori hospitality. As you walk, remember that this is home, not a stage. The kūmara cooked in the steam, the carved gateway, and the guides who tell their own stories all carry centuries of resilience.",
+      "sources_to_check": [
+        "Whakarewarewa Living Village",
+        "Te Ara Tūhourangi",
+        "Maggie Papakura biography"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Whakarewarewa Living Māori Village as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rot_hist_te_wairoa_pink_white_terraces",
+      "name": "Lake Rotomahana and the Pink and White Terraces",
+      "region": "rotorua",
+      "lat": -38.2697,
+      "lng": 176.4406,
+      "category": "nature",
+      "tags": [
+        "terraces",
+        "tarawera",
+        "heritage",
+        "tourism"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Lake Rotomahana, a large warm lake that did not exist in its present form before eighteen eighty six. Before the Tarawera eruption, two small lakes lay here, with the famous Pink and White Terraces cascading down their shores. The terraces were vast staircases of silica laid down by hot springs over centuries, the white terrace at one end and the smaller pink terrace at the other. They were considered the eighth wonder of the world, and travellers from London and New York paid handsomely to be guided here by Tūhourangi from Te Wairoa. On the night the mountain erupted, the terraces vanished, blasted to pieces or buried beneath ash and a vastly enlarged Rotomahana. For more than a century researchers debated whether any fragments remained. Recent expeditions have searched the lake bed with sonar and found tantalising clues. Today you can take a boat across the new Rotomahana, see steaming cliffs and bird life, and reflect on a wonder lost. The terraces are gone but they live on in paintings, photographs, and the grief of the people who guided visitors to them.",
+      "sources_to_check": [
+        "GNS Science",
+        "Te Arawa records",
+        "NZHistory Pink and White Terraces"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Lake Rotomahana and the Pink and White Terraces draws visitors back time and again for its natural beauty and peaceful atmosphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rot_hist_te_wairoa_orakei_korako",
+      "name": "Te Pohue Pā and Te Arawa Confederation",
+      "region": "rotorua",
+      "lat": -38.1297,
+      "lng": 176.254,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "te-arawa",
+        "confederation",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are in the heart of the Te Arawa rohe, the homelands of a great confederation of iwi descended from the Te Arawa waka. The confederation includes Ngāti Whakaue, Tūhourangi, Ngāti Pikiao, Ngāti Rangiwewehi, Ngāti Rangitihi, Ngāti Tarawhai, Ngāti Tūwharetoa ki Kawerau, and Tūhoe relatives, among others, each with their own takiwā around the central lakes. Their unity was tested in the New Zealand Wars when Te Arawa chose to support the Crown rather than join the Kīngitanga, fighting at Maketū and along the eastern lakes against forces moving south through the Bay of Plenty. That decision shaped land outcomes for generations. Today Te Arawa Lakes Trust holds the lake beds returned by Treaty settlement, and Te Arawa identity is strong in language, kapa haka, and tribal radio. As you travel this region from the geothermal Whakarewarewa to the forests of Te Urewera, remember that you are crossing the territories of many hapū, each with its own marae and its own stories, all linked by one ancestral canoe.",
+      "sources_to_check": [
+        "Te Arawa Lakes Trust",
+        "Te Ara Te Arawa",
+        "Treaty of Waitangi settlements"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Te Pohue Pā and Te Arawa Confederation as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-mokoia-island",
+      "name": "Mokoia Island, Lake Rotorua",
+      "region": "rotorua",
+      "lat": -38.083,
+      "lng": 176.271,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "island",
+        "hinemoa-tutanekai",
+        "love-story",
+        "pā",
+        "te-arawa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "The island of the Hinemoa and Tūtānekai love story — a fortified pā at the heart of Te Arawa identity.",
+      "commentary": "Mokoia Island is the setting for the famous love story of Hinemoa and Tūtānekai. But it was also a major fortified pā attacked during the Musket Wars in 1823. Access is by boat.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Mokoia Island, Lake Rotorua as a place where the history and cultural significance of Aotearoa become tangible and real. The island of the Hinemoa and Tūtānekai love story — a fortified pā at the heart of Te Arawa identity. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-tamatekapua",
+      "name": "Tamatekapua Meeting House, Ōhinemutu",
+      "region": "rotorua",
+      "lat": -38.1285,
+      "lng": 176.2418,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "wharenui",
+        "carving",
+        "te-arawa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The principal meeting house of Ngāti Whakaue — named for the captain of the Te Arawa waka.",
+      "commentary": "Tamatekapua is the great wharenui of Ngāti Whakaue at Ōhinemutu village. Named for the captain of the Te Arawa waka, the house is richly carved and sits on geothermally active ground.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Tamatekapua Meeting House, Ōhinemutu as a place where the history and cultural significance of Aotearoa become tangible and real. The principal meeting house of Ngāti Whakaue — named for the captain of the Te Arawa waka. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-te-puia-arts",
+      "name": "NZ Māori Arts & Crafts Institute, Te Puia",
+      "region": "rotorua",
+      "lat": -38.165,
+      "lng": 176.251,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "carving",
+        "weaving",
+        "arts",
+        "te-puia"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The national school for Māori carving and weaving — keeping ancient arts alive at Te Puia.",
+      "commentary": "The institute trains young Māori artists in traditional wood carving and weaving. Visitors can watch students at work and see the Pōhutu Geyser in the geothermal valley.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe NZ Māori Arts & Crafts Institute, Te Puia as a place where the history and cultural significance of Aotearoa become tangible and real. The national school for Māori carving and weaving — keeping ancient arts alive at Te Puia. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-buried-village",
+      "name": "Te Wairoa — The Buried Village",
+      "region": "rotorua",
+      "lat": -38.23,
+      "lng": 176.358,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "eruption",
+        "tarawera",
+        "buried",
+        "1886"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A Māori village buried by the 1886 Tarawera eruption — NZ's Pompeii, now partly excavated.",
+      "commentary": "On 10 June 1886, Mount Tarawera erupted, burying Te Wairoa under metres of mud and ash. Over 120 people were killed. The tohunga Tūhoto Ariki, who warned of the eruption, was found alive four days later.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Te Wairoa — The Buried Village as a place where the history and cultural significance of Aotearoa become tangible and real. A Māori village buried by the 1886 Tarawera eruption — NZ's Pompeii, now partly excavated. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-tikitere",
+      "name": "Tikitere / Hell's Gate",
+      "region": "rotorua",
+      "lat": -38.07,
+      "lng": 176.365,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "geothermal",
+        "mud",
+        "bathing"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "NZ's most active geothermal reserve — used by Māori warriors for centuries to heal battle wounds.",
+      "commentary": "For local hapū, the thermal features have been used for centuries — warriors bathed in the hot mud and sulphur springs to heal wounds. George Bernard Shaw visited in 1934 and said it reminded him of hell.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Tikitere / Hell's Gate as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's most active geothermal reserve — used by Māori warriors for centuries to heal battle wounds. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-kuirau-park",
+      "name": "Kuirau Park",
+      "region": "rotorua",
+      "lat": -38.13,
+      "lng": 176.243,
+      "category": "nature",
+      "tags": [
+        "māori",
+        "geothermal",
+        "free",
+        "hot-pools"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A free geothermal park named for the maiden Kuirau who was pulled into a boiling pool by a taniwha.",
+      "commentary": "Kuirau Park features boiling mud pools, steaming vents, and a free public foot bath — all in the middle of town. One of the few places in the world where geothermal activity occurs in an urban park.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Kuirau Park draws visitors back time and again for its natural beauty and peaceful atmosphere. A free geothermal park named for the maiden Kuirau who was pulled into a boiling pool by a taniwha. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "rotorua-museum",
+      "name": "Te Whare Taonga o Te Arawa — Rotorua Museum",
+      "region": "rotorua",
+      "lat": -38.142,
+      "lng": 176.258,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "museum",
+        "te-arawa",
+        "bathhouse",
+        "taonga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The former Tudor-style bathhouse housing Te Arawa taonga — telling the story of the people and the land.",
+      "commentary": "The museum holds significant Te Arawa taonga. The building — a Tudor-style bathhouse built on Māori land to exploit geothermal resources — embodies the complex colonial relationship.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Whare Taonga o Te Arawa — Rotorua Museum as a place where the history and cultural significance of Aotearoa become tangible and real. The former Tudor-style bathhouse housing Te Arawa taonga — telling the story of the people and the land. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-te-arawa-lakes",
+      "name": "Te Arawa Lakes — Ancestral Waters",
+      "region": "rotorua",
+      "lat": -38.15,
+      "lng": 176.27,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "te-arawa",
+        "lakes",
+        "settlement",
+        "fisheries"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The Rotorua lakes are ancestral taonga of Te Arawa — lakebeds returned through Treaty settlement.",
+      "commentary": "The 2006 Te Arawa Lakes Settlement Act returned the lakebeds to Te Arawa, recognising their ancestral relationship. Te Arawa are actively involved in lake restoration.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Arawa Lakes — Ancestral Waters as a place where the history and cultural significance of Aotearoa become tangible and real. The Rotorua lakes are ancestral taonga of Te Arawa — lakebeds returned through Treaty settlement. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-tikitapu-rotokakahi",
+      "name": "Tikitapu & Rotokākahi — The Forbidden Lakes",
+      "region": "rotorua",
+      "lat": -38.197,
+      "lng": 176.335,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "lake",
+        "wāhi-tapu",
+        "love-story",
+        "te-arawa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Two side-by-side lakes — Rotokākahi is privately owned by Te Arawa and closed to all water access.",
+      "commentary": "Rotokākahi was declared wāhi tapu after a chief's daughter drowned herself rather than be separated from her lover. The lake is owned by Tūhourangi-Ngāti Wāhiao — no access permitted.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Tikitapu & Rotokākahi — The Forbidden Lakes as a place where the history and cultural significance of Aotearoa become tangible and real. Two side-by-side lakes — Rotokākahi is privately owned by Te Arawa and closed to all water access. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-st-faiths-church",
+      "name": "St Faith's Church, Ōhinemutu",
+      "region": "rotorua",
+      "lat": -38.128,
+      "lng": 176.241,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "church",
+        "christ-on-lake",
+        "te-arawa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A lakeside Māori Anglican church with a famous etched window showing Christ walking on Lake Rotorua.",
+      "commentary": "Built in 1910, St Faith's is decorated with Māori carvings, tukutuku panels, and painted kowhaiwhai patterns. The famous window shows Christ in a Māori cloak appearing to walk on the lake.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe St Faith's Church, Ōhinemutu as a place where the history and cultural significance of Aotearoa become tangible and real. A lakeside Māori Anglican church with a famous etched window showing Christ walking on Lake Rotorua. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-te-arawa-war-memorial",
+      "name": "Te Arawa War Memorial, Government Gardens",
+      "region": "rotorua",
+      "lat": -38.141,
+      "lng": 176.26,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "war-memorial",
+        "te-arawa",
+        "wwi",
+        "wwii"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Honouring Te Arawa soldiers who served in both World Wars — a striking memorial in the Government Gardens.",
+      "commentary": "Te Arawa contributed significantly to NZ's war efforts, with the 28th (Māori) Battalion earning a legendary reputation in WWII. The memorial honours their service and sacrifice.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Te Arawa War Memorial, Government Gardens as a place where the history and cultural significance of Aotearoa become tangible and real. Honouring Te Arawa soldiers who served in both World Wars — a striking memorial in the Government Gardens. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "rotorua-redwoods-treewalk",
+      "name": "Whakarewarewa Redwoods Treewalk",
+      "region": "rotorua",
+      "lat": -38.171,
+      "lng": 176.278,
+      "category": "journey",
+      "tags": [
+        "forest-walk",
+        "redwoods",
+        "elevated",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1.5,
+      "short": "Walk among towering Californian redwoods on elevated platforms and suspension bridges in central Rotorua.",
+      "commentary": "The Redwoods Treewalk features 28 suspension bridges connecting 27 platforms through 117-year-old Californian redwoods. The trees were planted in 1901 as part of a forestry experiment. The wider Whakarewarewa Forest has over 100 km of mountain biking trails and walking tracks.",
+      "audio_story": "You are stepping onto the first of 28 suspension bridges strung between century-old Californian coastal redwoods in the heart of Rotorua. These towering trees were planted in 1901 as part of a New Zealand government experiment to find the fastest-growing timber species for commercial forestry. The redwoods thrived but were never logged commercially — instead they became Rotorua's most beloved forest. The treewalk takes you 12 metres above the forest floor, swaying gently between platforms bolted into trunks over a metre in diameter. At night, the walk is transformed by artist David Trubridge's lantern installations, which glow in organic shapes inspired by the forest. Below and around you, the wider Whakarewarewa Forest extends across 5,600 hectares, crisscrossed by over 100 kilometres of mountain bike trails that draw riders from around the world.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Redwoods Treewalk",
+        "Rotorua Lakes Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Whakarewarewa Redwoods Treewalk route delivers a memorable journey through exceptional New Zealand scenery. Walk among towering Californian redwoods on elevated platforms and suspension bridges in central Rotorua. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-waimangu-volcanic-valley",
+      "name": "Waimangu Volcanic Valley Walk",
+      "region": "rotorua",
+      "lat": -38.281,
+      "lng": 176.372,
+      "category": "journey",
+      "tags": [
+        "geothermal",
+        "volcanic",
+        "walking",
+        "hot-springs",
+        "lake"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2.5,
+      "short": "Walk through the world's youngest geothermal valley, created by the cataclysmic 1886 Tarawera eruption.",
+      "commentary": "Waimangu Volcanic Valley is the world's youngest geothermal system, formed by the 1886 eruption of Mount Tarawera. The walk descends through the valley past Frying Pan Lake (the world's largest hot spring by surface area), Inferno Crater Lake, and steaming cliffs to Lake Rotomahana. The eruption destroyed the famous Pink and White Terraces.",
+      "audio_story": "You are descending into Waimangu Volcanic Valley, walking through a landscape that did not exist before 10 June 1886. On that night, Mount Tarawera erupted with devastating force, killing over 120 people and burying the world-famous Pink and White Terraces — once called the eighth natural wonder of the world. This valley was ripped open by the eruption, and the geothermal activity that followed created an entirely new thermal wonderland. You pass Inferno Crater Lake, its water an unearthly shade of blue-green, rising and falling in a 38-day cycle. Further down, Frying Pan Lake is the world's largest hot spring, covering 38,000 square metres and steaming at 50 to 60 degrees. The walk is all downhill, ending at Lake Rotomahana, where the Pink and White Terraces once stood. In 2011, scientists found remnants of the terraces beneath the lake. The valley is a vivid reminder that New Zealand's geology is anything but settled.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Waimangu Volcanic Valley",
+        "GeoNet",
+        "GNS Science"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Waimangu Volcanic Valley Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk through the world's youngest geothermal valley, created by the cataclysmic 1886 Tarawera eruption. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-tarawera-trail",
+      "name": "Mount Tarawera Crater Walk",
+      "region": "rotorua",
+      "lat": -38.227,
+      "lng": 176.506,
+      "category": "journey",
+      "tags": [
+        "volcanic",
+        "tramping",
+        "crater",
+        "guided",
+        "history"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 5,
+      "short": "Walk along the rim of the volcano that tore itself apart in 1886, forever changing New Zealand's landscape.",
+      "commentary": "Mount Tarawera's 1886 eruption created a 17 km long rift across its summit. Guided walks to the crater rim operate year-round, crossing barren volcanic terrain to reach the 700-metre summit. The eruption was one of New Zealand's deadliest natural disasters and destroyed the Pink and White Terraces.",
+      "audio_story": "You are climbing Mount Tarawera, and the landscape grows increasingly stark as you ascend. On the night of 10 June 1886, this mountain split apart in a devastating eruption that sent a rift 17 kilometres long tearing across the summit. The blast killed over 120 people and buried several villages, including Te Wairoa, which today is partly excavated as an archaeological site. As you reach the crater rim, the sheer scale of the rift takes your breath away — a chasm 250 metres deep and over a kilometre wide, with rust-red and ochre walls steaming in places. Before the eruption, Tarawera had three smooth dome-shaped peaks. Now it is a shattered ruin, beautiful in its raw volcanic power. Looking south from the rim, Lake Rotomahana fills the void where the Pink and White Terraces once drew visitors from around the world. This walk requires a guide — the mountain is sacred to the local hapu.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Kaitiaki Adventures",
+        "GNS Science",
+        "Te Wairoa Buried Village"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Mount Tarawera Crater Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk along the rim of the volcano that tore itself apart in 1886, forever changing New Zealand's landscape. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-te-puia-geothermal-walk",
+      "name": "Te Puia – Whakarewarewa Geothermal Walk",
+      "region": "rotorua",
+      "lat": -38.164,
+      "lng": 176.252,
+      "category": "journey",
+      "tags": [
+        "geothermal",
+        "maori-culture",
+        "geyser",
+        "urban"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Walk among geysers, mud pools, and silica terraces at Rotorua's premier geothermal and cultural site.",
+      "commentary": "Te Puia is home to the Pohutu Geyser, the Southern Hemisphere's largest active geyser, erupting up to 30 metres high. The site also houses the New Zealand Maori Arts and Crafts Institute, established in 1963 to preserve traditional carving and weaving arts. The geothermal field contains mud pools, hot springs, and silica formations.",
+      "audio_story": "You are walking into Te Puia, where the earth's geothermal energy is on full display in the heart of Rotorua. The smell of sulphur is unmistakable — locals call it 'Sulphur City' for good reason. Ahead, Pohutu Geyser erupts dramatically, shooting superheated water up to 30 metres into the air. It is the largest active geyser in the Southern Hemisphere and erupts up to 20 times a day. Around you, mud pools blurp and splatter with thick grey geothermal mud, and silica terraces gleam white in the steam. This is also home to the New Zealand Maori Arts and Crafts Institute, established in 1963 to ensure that traditional carving and weaving skills were not lost. You can watch master carvers at work, shaping totara and pounamu into intricate designs that connect past and present. The Tuhourangi Ngati Wahiao people have lived with this geothermal activity for centuries, using the hot pools for cooking, bathing, and heating.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Te Puia",
+        "New Zealand Maori Arts and Crafts Institute"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Te Puia – Whakarewarewa Geothermal Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk among geysers, mud pools, and silica terraces at Rotorua's premier geothermal and cultural site. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-blue-green-lakes-cycle",
+      "name": "Blue and Green Lakes Cycle Loop",
+      "region": "rotorua",
+      "lat": -38.204,
+      "lng": 176.352,
+      "category": "journey",
+      "tags": [
+        "cycling",
+        "lakes",
+        "scenic",
+        "easy-ride"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Cycle between Rotorua's famous Blue and Green Lakes through native bush on easy lakeside trails.",
+      "commentary": "The Blue Lake (Tikitapu) and Green Lake (Rotokakahi) sit side by side separated by a narrow bush-covered isthmus. The colour difference is striking — the blue lake's clarity contrasts with the green lake's algae-tinted waters. The 12 km loop trail is part of Rotorua's extensive cycling network.",
+      "audio_story": "You are cycling the loop between Rotorua's Blue and Green Lakes, two bodies of water that sit side by side yet look remarkably different. Tikitapu, the Blue Lake, is a deep, clear blue thanks to the purity of its water — it has no significant inflows. Rotokakahi, the Green Lake, is tinted by algae and appears vivid emerald green. Where the two lakes nearly touch, a narrow bush-clad isthmus separates them, and the colour contrast when you look from one to the other is startling. The 12-kilometre trail is flat and well-formed, winding through native bush and past picnic spots. The Green Lake is tapu — sacred — to the local iwi and swimming is not permitted, but the Blue Lake has a lovely swimming beach. This ride is perfect for families or anyone wanting an easy, scenic outing. On a calm day, the reflections of the surrounding bush in both lakes are mirror-perfect.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Rotorua Lakes Council",
+        "Rotorua Trails Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Blue and Green Lakes Cycle Loop route delivers a memorable journey through exceptional New Zealand scenery. Cycle between Rotorua's famous Blue and Green Lakes through native bush on easy lakeside trails. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-okere-falls-track",
+      "name": "Okere Falls Track",
+      "region": "rotorua",
+      "lat": -38.047,
+      "lng": 176.358,
+      "category": "journey",
+      "tags": [
+        "bush-walk",
+        "waterfall",
+        "river",
+        "short-walk"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1,
+      "short": "Short walk past dramatic waterfalls where the Kaituna River cascades from Lake Rotoiti through a forested gorge.",
+      "commentary": "The Okere Falls track follows the Kaituna River as it drops through a bush-clad gorge below Lake Rotoiti. The river drops 7 metres over the main falls, which are also a popular whitewater kayaking and rafting spot. Tutea Falls downstream is a 7-metre drop that is one of the highest commercially rafted waterfalls in the world.",
+      "audio_story": "You are walking the Okere Falls track where the Kaituna River thunders out of Lake Rotoiti and plunges through a tight, bush-clad gorge. The main falls drop 7 metres into a churning pool — and if you time it right, you might see whitewater kayakers launching themselves over the lip. Further downstream, Tutea Falls is a vertical 7-metre drop that commercial rafting companies run — one of the highest commercially rafted waterfalls in the world. The track itself is short, about 30 minutes return, but it is dramatic. Native bush clings to the gorge walls, and the roar of the water fills the air. A natural cave behind one of the cascades was used by Maori as a shelter. Watch the power of the river as it forces its way through the narrow gorge — this is the only outlet for all of Lake Rotoiti's water, and the volume is immense.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Rotorua Lakes Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Okere Falls Track route delivers a memorable journey through exceptional New Zealand scenery. Short walk past dramatic waterfalls where the Kaituna River cascades from Lake Rotoiti through a forested gorge. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-wai-o-tapu-walk",
+      "name": "Wai-O-Tapu Thermal Wonderland Walk",
+      "region": "rotorua",
+      "lat": -38.353,
+      "lng": 176.368,
+      "category": "journey",
+      "tags": [
+        "geothermal",
+        "walking",
+        "colourful",
+        "volcanic"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk through the most colourful geothermal landscape in New Zealand, from Champagne Pool to the Devil's Bath.",
+      "commentary": "Wai-O-Tapu is a geothermal area south of Rotorua featuring the Champagne Pool (a 65-metre-wide hot spring with orange and green mineral deposits), the bright green Devil's Bath, and the Lady Knox Geyser. The colours are caused by mineral deposits including sulphur, arsenic, antimony, and iron oxides.",
+      "audio_story": "You are walking through Wai-O-Tapu, and the colour palette here belongs to another planet. The Champagne Pool is a 65-metre-wide hot spring where carbon dioxide bubbles rise through water at 74 degrees, creating a fizzing effect that gives the pool its name. The rim is encrusted with brilliant orange and yellow mineral deposits — antimony, arsenic, gold, and silver have been precipitating here for over 900 years. Next comes the Primrose Terraces, delicate silica formations streaked in white and pink. Then the Devil's Bath, a crater pool of such vivid chartreuse green it looks like it has been filled with neon paint — the colour comes from suspended sulphur and ferrous salts. Each feature along the walking loop has its own chemistry and character. The Lady Knox Geyser performs daily at 10:15 am, erupting up to 20 metres — though it needs a little soap to get started, a quirk discovered by prisoners from a nearby camp who washed clothes in the hot water. Even with that assist, it is a spectacle.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wai-O-Tapu",
+        "GNS Science"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Wai-O-Tapu Thermal Wonderland Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk through the most colourful geothermal landscape in New Zealand, from Champagne Pool to the Devil's Bath. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "rotorua-redwoods-mtb",
+      "name": "Whakarewarewa Forest Mountain Biking",
+      "region": "rotorua",
+      "lat": -38.1803,
+      "lng": 176.2838,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trail-park",
+        "world-class",
+        "free"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Ride over 160 km of world-class mountain bike trails through towering redwood forest.",
+      "commentary": "Whakarewarewa Forest is one of the world's top mountain biking destinations, with over 160 km of trails through California redwood and native bush. The trail network ranges from beginner flow to World Cup-level downhill. It has hosted multiple Crankworx events and is free to ride.",
+      "audio_story": "You have arrived at the Whakarewarewa Forest, known to mountain bikers worldwide simply as The Redwoods. This trail network is legendary, over 160 kilometres of singletrack winding through towering California redwood trees and native bush, with trails for every ability from gentle meanders to full-throttle World Cup downhill runs. The soil here is volcanic, perfectly suited to trail building, it drains fast and creates grippy, durable surfaces that ride well in almost any weather. Rotorua has hosted multiple Crankworx festivals here, and the trail builders are among the most creative in the world, with features that will make your jaw drop. Beginners should try the Grade 2 loops near the car park, while advanced riders will want to shuttle to the top for runs like Tuhoto, Billy T, or the infamous Tig's. Best of all, every single trail is free to ride.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Trail Forks",
+        "Rotorua Trails Trust",
+        "Crankworx"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Whakarewarewa Forest Mountain Biking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride over 160 km of world-class mountain bike trails through towering redwood forest. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-zorb",
+      "name": "ZORB Rotorua",
+      "region": "rotorua",
+      "lat": -38.067,
+      "lng": 176.242,
+      "category": "adventure",
+      "tags": [
+        "zorbing",
+        "unique",
+        "commercial",
+        "family-friendly",
+        "adrenaline"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "Roll downhill inside a giant inflatable ball, the original Kiwi-invented ZORB.",
+      "commentary": "ZORB Rotorua is the original zorbing site, where the Kiwi-invented adventure activity began. Riders climb inside a giant transparent inflatable ball and roll downhill on purpose-built tracks. Options include straight or zigzag tracks, and wet rides with warm water inside the ball.",
+      "audio_story": "You have arrived at ZORB Rotorua, the birthplace of one of New Zealand's most wonderfully absurd inventions. In 1994, two Kiwi mates asked the question, what if you could roll downhill inside a giant inflatable ball, and the answer turned out to be pure joy. You will climb through a tunnel into the inner chamber of the ZORB, a transparent sphere about 3.5 metres across, and then gravity takes over as you tumble and slide down the hillside. The wet ride adds warm water inside the ball, turning it into a rolling waterslide. The zigzag track adds extra spins as you navigate banked corners. It sounds terrifying but it is surprisingly safe, you are cushioned by a layer of air between the inner and outer spheres. This is one of those experiences that exists nowhere else in the world in its original form, and the laughter starts the moment the ball begins to roll.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "ZORB Rotorua"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The ZORB Rotorua adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Roll downhill inside a giant inflatable ball, the original Kiwi-invented ZORB. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-waimangu-volcanic-hike",
+      "name": "Waimangu Volcanic Valley Walk",
+      "region": "rotorua",
+      "lat": -38.282,
+      "lng": 176.388,
+      "category": "adventure",
+      "tags": [
+        "volcano-hiking",
+        "geothermal",
+        "commercial",
+        "scenic",
+        "history"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Hike through the world's youngest geothermal system, created by the 1886 Tarawera eruption.",
+      "commentary": "Waimangu Volcanic Valley is the world's youngest geothermal system, formed entirely by the 1886 Mount Tarawera eruption. The downhill walk passes Frying Pan Lake, the world's largest hot spring, and Inferno Crater's vivid blue lake. The valley is a living geological laboratory.",
+      "audio_story": "You have arrived at Waimangu Volcanic Valley, the youngest geothermal system on Earth, born from the catastrophic eruption of Mount Tarawera on 10 June 1886. That eruption, the deadliest in New Zealand's European history, destroyed the famous Pink and White Terraces and created this entire valley from scratch. The walk is downhill, passing through a landscape that is still evolving and steaming. You will encounter Frying Pan Lake, the world's largest hot spring at 38,000 square metres, its surface perpetually simmering. Further along, Inferno Crater holds a lake of intensely blue, acidic water that rises and falls on a mysterious 38-day cycle. The bush regeneration around you is remarkable, life reclaiming land that was bare rock just over a century ago. This is not just a walk, it is a front-row seat to the planet rebuilding itself in real time.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Waimangu Volcanic Valley",
+        "GeoNet"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Waimangu Volcanic Valley Walk adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Hike through the world's youngest geothermal system, created by the 1886 Tarawera eruption. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-black-water-raft-waitomo",
+      "name": "Rotorua Canopy Tour Zipline",
+      "region": "rotorua",
+      "lat": -38.156,
+      "lng": 176.251,
+      "category": "adventure",
+      "tags": [
+        "zip-lining",
+        "canopy-tour",
+        "native-bush",
+        "commercial",
+        "conservation"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Zipline through 500-year-old native forest on New Zealand's original canopy tour.",
+      "commentary": "Rotorua Canopy Tours is New Zealand's original zipline experience, set in a 500-year-old native forest. The course includes six ziplines, two swing bridges, and 22 platforms among ancient rimu, tawa, and kamahi trees. A portion of proceeds funds pest trapping in the forest.",
+      "audio_story": "You have arrived at Rotorua Canopy Tours, where you are about to fly through the canopy of a 500-year-old native forest on New Zealand's original zipline experience. Your guides will clip you into the safety system and lead you across swing bridges to platforms built high in ancient trees, some of which were seedlings when European explorers had not yet left their shores. Six ziplines carry you between the treetops, the longest spanning over 220 metres, with the forest floor 22 metres below. Between zips, your guides share their deep knowledge of the ecology around you, pointing out birds like tui, kereru, and if you are very lucky, a North Island robin. This is conservation tourism at its best, a portion of every ticket funds a predator trapping network that protects the forest and its birdlife. You will hear the difference, this bush is alive with birdsong.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Rotorua Canopy Tours"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Rotorua Canopy Tour Zipline adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Zipline through 500-year-old native forest on New Zealand's original canopy tour. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-tarawera-kayak",
+      "name": "Lake Tarawera Kayaking & Hot Water Beach",
+      "region": "rotorua",
+      "lat": -38.22,
+      "lng": 176.432,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "geothermal",
+        "lake",
+        "commercial",
+        "hot-spring"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 4,
+      "short": "Kayak across Lake Tarawera to a geothermally heated beach at the foot of the volcano.",
+      "commentary": "Kayaking across Lake Tarawera leads to Hot Water Beach, where geothermal water flows into the lake at the base of Mount Tarawera. Paddlers dig pools in the lakeshore sand and soak in naturally heated water. The lake sits in the caldera of the volcano that erupted in 1886.",
+      "audio_story": "You have arrived at the shores of Lake Tarawera, a strikingly beautiful lake that fills part of the volcanic rift created by the 1886 eruption of Mount Tarawera. Your kayak journey takes you across the lake towards the brooding profile of the mountain itself, its peak still scarred by the massive rift that opened during the eruption. The destination is Hot Water Beach on the far shore, where geothermal springs bubble up through the sand at the water's edge. You will dig a shallow pool, mix the hot spring water with cool lake water, and soak in your own natural spa with the volcano towering above you. The lake is also home to excellent trout fishing and the submerged remains of the Pink Terraces, once called the eighth wonder of the natural world before the eruption buried them. On a calm morning, the paddling is easy and the reflections on the lake surface are mirror-perfect.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Tarawera Water Taxi",
+        "DOC",
+        "Rotorua Lakes Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Lake Tarawera Kayaking & Hot Water Beach adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak across Lake Tarawera to a geothermally heated beach at the foot of the volcano. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "rotorua-rafting-tarawera",
+      "name": "Tarawera River Rafting",
+      "region": "rotorua",
+      "lat": -38.19,
+      "lng": 176.497,
+      "category": "adventure",
+      "tags": [
+        "white-water-rafting",
+        "waterfall",
+        "grade-3",
+        "commercial"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 3.5,
+      "short": "Raft the Tarawera River through Grade 3 rapids and over a hidden 7-metre waterfall.",
+      "commentary": "The Tarawera River offers Grade 3 rafting through bush-lined gorges near Rotorua, culminating in a dramatic 7-metre waterfall drop. The river flows from the geothermal area and passes hot springs along its banks. Suitable for beginners with a sense of adventure.",
+      "audio_story": "You have arrived at the put-in for the Tarawera River, where a Grade 3 rafting adventure awaits through one of the Rotorua region's most scenic gorges. The river here flows through dense native bush, its waters warmed in places by the geothermal activity that defines this landscape. Your guide will navigate the raft through bouncy rapids and past steaming hot springs emerging from the riverbank. But the signature moment of this trip is the 7-metre waterfall drop. Your guide will line up the raft at the lip, everyone paddles hard, and then you tip over the edge into a thundering cauldron of white water. It is the biggest rafted waterfall in the Rotorua region and delivers an adrenaline hit that is hard to match. The rapids on this river are exciting but forgiving, making it suitable for beginners who want a genuine challenge without the commitment of a Grade 5 river.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "River Rats Rafting",
+        "Kaitiaki Adventures"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Tarawera River Rafting adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Raft the Tarawera River through Grade 3 rapids and over a hidden 7-metre waterfall. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

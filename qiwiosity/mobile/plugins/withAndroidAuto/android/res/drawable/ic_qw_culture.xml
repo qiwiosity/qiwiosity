@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ic_qw_culture — Culture category.
+  Two overlapping speech bubbles — a conversation, people telling
+  stories. Deliberately non-literal (no tā moko, no figures), per the
+  brand brief's respectful approach to te ao Māori.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Back bubble (sand) -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M14,4c-3.31,0 -6,2.24 -6,5 0,1.5 0.8,2.85 2.05,3.77L9.5,15l2.8,-1.1c0.55,0.1 1.12,0.1 1.7,0.1 3.31,0 6,-2.24 6,-5s-2.69,-5 -6,-5z" />
+    <!-- Front bubble (teal) -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M8,10c-2.76,0 -5,1.8 -5,4 0,1.15 0.6,2.2 1.6,2.95L4,19l2.5,-1c0.5,0.1 1,0.15 1.5,0.15 2.76,0 5,-1.8 5,-4S10.76,10 8,10z" />
+</vector>

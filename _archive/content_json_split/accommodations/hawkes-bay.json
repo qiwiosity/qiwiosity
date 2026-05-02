@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "hawkes-bay",
+    "name": "Hawke's Bay / Te Matau-a-Māui",
+    "island": "North",
+    "centre": {
+      "lat": -39.4928,
+      "lng": 176.912
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "hawkes-bay-art-deco-masonic",
+      "name": "Art Deco Masonic Hotel Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4895,
+      "lng": 176.917,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "1932 heritage hotel on Napier's Marine Parade Art Deco row."
+    },
+    {
+      "id": "hawkes-bay-scenic-te-pania",
+      "name": "Scenic Hotel Te Pania",
+      "region": "hawkes-bay",
+      "lat": -39.485,
+      "lng": 176.9175,
+      "type": "hotel",
+      "price_nzd_per_night": 235,
+      "rating": 4.2,
+      "short": "Curved glass tower overlooking Napier's Marine Parade."
+    },
+    {
+      "id": "hawkes-bay-navigate-oceania",
+      "name": "Navigate Oceania Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4931,
+      "lng": 176.914,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.4,
+      "short": "Ahuriri harbour-front apartment hotel beside Napier's fishing marina."
+    },
+    {
+      "id": "hawkes-bay-crown-hotel-napier",
+      "name": "The Crown Hotel Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4935,
+      "lng": 176.9133,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Historic 1883 Ahuriri hotel reborn as boutique rooms and suites."
+    },
+    {
+      "id": "hawkes-bay-porters-hotel-havelock",
+      "name": "Porters Boutique Hotel Havelock North",
+      "region": "hawkes-bay",
+      "lat": -39.67,
+      "lng": 176.88,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.5,
+      "short": "Village-centre boutique hotel in wine country Havelock North."
+    },
+    {
+      "id": "hawkes-bay-quest-napier",
+      "name": "Quest Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4907,
+      "lng": 176.917,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.3,
+      "short": "Serviced apartment hotel on Emerson Street's Art Deco strip."
+    },
+    {
+      "id": "hawkes-bay-fountain-court-motel",
+      "name": "Fountain Court Motor Inn",
+      "region": "hawkes-bay",
+      "lat": -39.4878,
+      "lng": 176.899,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Tree-lined Napier motel near Hastings Street shops."
+    },
+    {
+      "id": "hawkes-bay-kennedy-park-motel",
+      "name": "Kennedy Park Resort Motel Units",
+      "region": "hawkes-bay",
+      "lat": -39.505,
+      "lng": 176.895,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Resort-style Napier motel units within the Kennedy Park complex."
+    },
+    {
+      "id": "hawkes-bay-ascot-motor-lodge",
+      "name": "Ascot Motor Lodge Hastings",
+      "region": "hawkes-bay",
+      "lat": -39.64,
+      "lng": 176.84,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Hastings motel on Karamu Road, central to the wine trail."
+    },
+    {
+      "id": "hawkes-bay-havelock-motor-lodge",
+      "name": "Havelock North Motor Lodge",
+      "region": "hawkes-bay",
+      "lat": -39.6705,
+      "lng": 176.875,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Village motel a block from the Havelock North clock tower."
+    },
+    {
+      "id": "hawkes-bay-harbour-view-motel",
+      "name": "Harbour View Motor Lodge Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4918,
+      "lng": 176.916,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Ahuriri motel with harbour-view spa suites."
+    },
+    {
+      "id": "hawkes-bay-aqua-soleil-motel",
+      "name": "Aqua Soleil Motor Inn",
+      "region": "hawkes-bay",
+      "lat": -39.488,
+      "lng": 176.9165,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Marine Parade motel with heated outdoor pool."
+    },
+    {
+      "id": "hawkes-bay-colonial-lodge-motel",
+      "name": "Colonial Lodge Motel Napier",
+      "region": "hawkes-bay",
+      "lat": -39.493,
+      "lng": 176.906,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4,
+      "short": "Spanish Mission motel in central Napier with spa units."
+    },
+    {
+      "id": "hawkes-bay-kennedy-park-top10",
+      "name": "Kennedy Park Resort Napier (TOP 10)",
+      "region": "hawkes-bay",
+      "lat": -39.505,
+      "lng": 176.896,
+      "type": "holiday-park",
+      "price_nzd_per_night": 130,
+      "rating": 4.4,
+      "short": "Napier's flagship resort park with pool, playground and villas."
+    },
+    {
+      "id": "hawkes-bay-bay-view-snapper-top10",
+      "name": "Bay View Snapper Holiday Park",
+      "region": "hawkes-bay",
+      "lat": -39.455,
+      "lng": 176.872,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Northern Napier beachside park with simple cabins and tent sites."
+    },
+    {
+      "id": "hawkes-bay-westshore-holiday-park",
+      "name": "Westshore Holiday Park",
+      "region": "hawkes-bay",
+      "lat": -39.472,
+      "lng": 176.888,
+      "type": "holiday-park",
+      "price_nzd_per_night": 85,
+      "rating": 4,
+      "short": "Quiet beachside park by Westshore Beach, north of Ahuriri."
+    },
+    {
+      "id": "hawkes-bay-clifton-holiday-park",
+      "name": "Clifton Bay Holiday Park Te Awanga",
+      "region": "hawkes-bay",
+      "lat": -39.629,
+      "lng": 176.983,
+      "type": "holiday-park",
+      "price_nzd_per_night": 90,
+      "rating": 4.1,
+      "short": "Te Awanga coastal park at the Cape Kidnappers gannet-walk start."
+    },
+    {
+      "id": "hawkes-bay-cape-kidnappers-lodge",
+      "name": "The Farm at Cape Kidnappers",
+      "region": "hawkes-bay",
+      "lat": -39.65,
+      "lng": 177.082,
+      "type": "lodge",
+      "price_nzd_per_night": 2300,
+      "rating": 4.9,
+      "short": "Robertson Lodges clifftop farm with Tom Doak golf above gannet colony."
+    },
+    {
+      "id": "hawkes-bay-craggy-range-lodge",
+      "name": "Craggy Range Giants Winery Lodge",
+      "region": "hawkes-bay",
+      "lat": -39.674,
+      "lng": 176.878,
+      "type": "lodge",
+      "price_nzd_per_night": 950,
+      "rating": 4.7,
+      "short": "Vineyard cottages below Te Mata Peak at Craggy Range winery."
+    },
+    {
+      "id": "hawkes-bay-black-barn-lodge",
+      "name": "Black Barn Retreats",
+      "region": "hawkes-bay",
+      "lat": -39.68,
+      "lng": 176.872,
+      "type": "lodge",
+      "price_nzd_per_night": 880,
+      "rating": 4.7,
+      "short": "Collection of luxury vineyard villas in Havelock North hills."
+    }
+  ]
+}

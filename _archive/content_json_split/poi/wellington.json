@@ -1,0 +1,1801 @@
+{
+  "region": {
+    "id": "wellington",
+    "name": "Wellington / Te Whanganui-a-Tara",
+    "island": "North",
+    "centre": {
+      "lat": -41.2866,
+      "lng": 174.7756
+    },
+    "bounds": {
+      "north": -41.1,
+      "south": -41.45,
+      "east": 174.95,
+      "west": 174.6
+    },
+    "description": "The harbour-bowl capital — Te Whanganui-a-Tara, named for the great harbour of Tara."
+  },
+  "pois": [
+    {
+      "id": "wellington-te-papa",
+      "name": "Te Papa Tongarewa",
+      "region": "wellington",
+      "lat": -41.2905,
+      "lng": 174.782,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "national",
+        "te-reo",
+        "must-see"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 3,
+      "short": "Our Place — New Zealand's national museum on the Wellington waterfront.",
+      "commentary": "Te Papa Tongarewa — 'the container of treasures' — opened in 1998 on reclaimed harbour land. Free entry, bicultural by design: the marae on level 4 belongs to all iwi, a deliberate break with earlier museum framings. Highlights rotate, but the colossal squid and Gallipoli: The Scale of Our War are the draws that last.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "New Zealand's national museum consistently earns five stars for its bicultural approach, its stunning Māori collection, and its free entry. The giant squid exhibit and earthquake simulator draw the crowds, but the Treaty of Waitangi exhibition is rated by many as the most important. Allow a full day."
+      }
+    },
+    {
+      "id": "wellington-cable-car",
+      "name": "Wellington Cable Car",
+      "region": "wellington",
+      "lat": -41.2846,
+      "lng": 174.7702,
+      "category": "heritage",
+      "tags": [
+        "transport",
+        "victorian",
+        "viewpoint",
+        "engineering"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.5,
+      "short": "A 120-year-old funicular climbing from Lambton Quay to the botanic garden ridge.",
+      "commentary": "Built in 1902 to open up the Kelburn hill suburbs, rebuilt as a Swiss-engineered funicular in 1978. The ride is 612 metres long, climbs 120 vertical metres, takes about five minutes — and the top station has one of the best free views in the country.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Wellington Cable Car — the site rewards those who take time to read the signage and absorb the context. A 120-year-old funicular climbing from Lambton Quay to the botanic garden ridge. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-mt-victoria",
+      "name": "Mount Victoria / Matairangi",
+      "region": "wellington",
+      "lat": -41.2961,
+      "lng": 174.7942,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "walking",
+        "lord-of-the-rings"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "196m ridge above the harbour — the best 360° of Wellington.",
+      "commentary": "Matairangi — 'to watch the sky' — was a Māori observation ridge long before it was Mount Victoria. Today you can walk the short loop through the pine forest that doubled as the Hobbits' flight in Fellowship of the Ring, then stand at the lookout for what's arguably the best urban panorama in New Zealand.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Mount Victoria / Matairangi draws visitors back time and again for its natural beauty and peaceful atmosphere. 196m ridge above the harbour — the best 360° of Wellington. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-zealandia",
+      "name": "Zealandia Te Māra a Tāne",
+      "region": "wellington",
+      "lat": -41.29,
+      "lng": 174.7431,
+      "category": "wildlife",
+      "tags": [
+        "sanctuary",
+        "birds",
+        "predator-free",
+        "conservation"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 3,
+      "short": "A 225ha predator-fenced sanctuary five minutes from parliament — tūī, kākā, takahē, tuatara.",
+      "commentary": "The world's first fully fenced urban ecosanctuary, opened in 1999. 8.6km of predator-proof fence, 500-year restoration vision. Birds are so dense they've spilled into the city: the tūī and kākā you hear across downtown Wellington came from here.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The world's first fully-fenced urban ecosanctuary delivers encounters with native wildlife that visitors simply can't get elsewhere — tuatara sunning themselves, kākā overhead, and the night tours promise kiwi sightings. Reviewers call it Wellington's unmissable attraction. Book the evening tour for kiwi."
+      }
+    },
+    {
+      "id": "wellington-parliament",
+      "name": "Parliament & The Beehive",
+      "region": "wellington",
+      "lat": -41.2784,
+      "lng": 174.7764,
+      "category": "māori",
+      "tags": [
+        "politics",
+        "architecture",
+        "free-tour"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The circular Beehive and the neoclassical Parliament House — free tours daily.",
+      "commentary": "The Beehive was designed by Sir Basil Spence in 1964 — the story goes that Spence sketched it on a napkin over dinner. It's one of the world's most recognisable parliamentary buildings, love it or hate it. Free guided tours cover the debating chamber, the Māori affairs select committee room, and (on quieter days) the basement-level earthquake base isolators — 417 of them, each one the size of a small car.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Parliament & The Beehive as a place where the history and cultural significance of Aotearoa become tangible and real. The circular Beehive and the neoclassical Parliament House — free tours daily. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-oriental-bay",
+      "name": "Oriental Bay",
+      "region": "wellington",
+      "lat": -41.292,
+      "lng": 174.7887,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "walking",
+        "swimming",
+        "city"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "The city's beach — a curve of golden sand ten minutes from Te Papa.",
+      "commentary": "The sand is trucked in from Golden Bay at the top of the South Island, replenished every few years — Wellington's harbour doesn't naturally produce a beach this golden. The promenade is a three-kilometre waterfront walk that passes Freyberg Pool, the best salt-water pool in the city, and the small art-deco band rotunda where free concerts run through summer.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Oriental Bay draws visitors back time and again for its natural beauty and peaceful atmosphere. The city's beach — a curve of golden sand ten minutes from Te Papa. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-cuba-street",
+      "name": "Cuba Street",
+      "region": "wellington",
+      "lat": -41.2937,
+      "lng": 174.7744,
+      "category": "culture",
+      "tags": [
+        "food",
+        "arts",
+        "bohemian",
+        "nightlife"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 2,
+      "short": "The bohemian heart of the capital — independent cafés, bars and vintage shops for two blocks.",
+      "commentary": "Named not after the country but after an 1840 immigrant ship. The pedestrianised section opened in 1969 — one of the earliest mall streets in the country, and one of the few that didn't kill its surroundings. The Bucket Fountain, Wellington's most photographed piece of public art, has been soaking unsuspecting tourists since 1969 too.",
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Cuba Street is praised for being both accessible and genuinely informative. The bohemian heart of the capital — independent cafés, bars and vintage shops for two blocks. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-red-rocks",
+      "name": "Red Rocks / Pariwhero",
+      "region": "wellington",
+      "lat": -41.3556,
+      "lng": 174.7322,
+      "category": "nature",
+      "tags": [
+        "coastal-walk",
+        "seal-colony",
+        "geology",
+        "red-rocks",
+        "māori-legend"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2.5,
+      "short": "The rust-red rocks of Owhiro Bay, a winter fur-seal colony, and one of the easiest coastal walks from the city.",
+      "commentary": "Pariwhero — the red cliffs — are pillow lavas, the squeezed-out tubes of 200-million-year-old underwater volcanic eruptions, now rusted red by oxidised iron. Māori tradition says the red is the blood of Kupe, who cut himself here while prising pāua from the rocks. A 30-minute walk from Owhiro Bay leads to the rocks; continue another 30 minutes and in winter (May–October) you'll reach the New Zealand fur-seal colony at Sinclair Head — a male-only bachelor colony of up to 500 bulls. Stay 10 m back. The full round trip is ~3 hours.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Red Rocks / Pariwhero draws visitors back time and again for its natural beauty and peaceful atmosphere. The rust-red rocks of Owhiro Bay, a winter fur-seal colony, and one of the easiest coastal walks from the city. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-kapiti-island",
+      "name": "Kāpiti Island",
+      "region": "wellington",
+      "lat": -40.8567,
+      "lng": 174.91,
+      "category": "māori",
+      "tags": [
+        "island",
+        "bird-sanctuary",
+        "takahē",
+        "kiwi-spotting",
+        "te-rauparaha"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 8,
+      "short": "A 10 km predator-free bird-sanctuary island an hour up the coast — and the 1820s base of paramount chief Te Rauparaha.",
+      "commentary": "Kāpiti is a 10 km long island, 5 km off the Kāpiti Coast, and was the base of Ngāti Toa chief Te Rauparaha in the 1820s-30s, from which he launched raids across the Cook Strait and into the South Island. The island has been predator-free since the 1990s and is now one of the country's premier bird sanctuaries — kākā, kererū, weka, takahē, hihi, kōkako, and wild kiwi (the evening overnight tour gives the best chance of seeing a kiwi in the wild). Ferries leave from Paraparaumu Beach; visitor numbers are strictly capped, book ahead.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Kāpiti Island as a place where the history and cultural significance of Aotearoa become tangible and real. A 10 km predator-free bird-sanctuary island an hour up the coast — and the 1820s base of paramount chief Te Rauparaha. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-cape-palliser",
+      "name": "Cape Palliser Lighthouse",
+      "region": "wellington",
+      "lat": -41.6103,
+      "lng": 175.2894,
+      "category": "heritage",
+      "tags": [
+        "lighthouse",
+        "seal-colony",
+        "southernmost-north-island",
+        "putangirua-pinnacles"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The southernmost point of the North Island — 258 steps up a red-and-white lighthouse, and the biggest fur-seal colony in the lower North Island.",
+      "commentary": "Cape Palliser is the southernmost tip of the North Island and the end of a long, lonely drive down the Wairarapa coast through the villages of Ngāwī (famous for its rows of beached fishing bulldozers). The 18 m cast-iron lighthouse was built in 1897 and electrified in 1954 — 258 steps up a red-and-white staircase. Below the light is the largest North Island fur-seal colony (up to 1,500 seals, year-round, including pups born November-January). Stay 10 m back. Check the road forecast before you go — it floods.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cape Palliser Lighthouse — the site rewards those who take time to read the signage and absorb the context. The southernmost point of the North Island — 258 steps up a red-and-white lighthouse, and the biggest fur-seal colony in the lower North Island. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-martinborough",
+      "name": "Martinborough",
+      "region": "wellington",
+      "lat": -41.2197,
+      "lng": 175.4581,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "pinot-noir",
+        "cycle",
+        "village",
+        "wairarapa"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "A tiny village laid out in the shape of the Union Jack, surrounded by 20+ boutique Pinot Noir vineyards you can cycle between.",
+      "commentary": "Martinborough was laid out by John Martin in 1879 on a grid shaped like the Union Jack — streets named for world capitals, a square at the centre. For a century it was an ordinary rural town. In 1978 a DSIR soil survey identified it as ideal for cool-climate Pinot Noir; the first vineyards planted in 1980. Martinborough now has 20+ boutique wineries, most within cycling distance of the town square, and the region produces some of the country's most highly-rated Pinot. The annual Martinborough Fair is February. Stay overnight; it's an 80-minute drive from Wellington.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Martinborough delivers an excellent food and wine experience that visitors describe as a highlight of the region. A tiny village laid out in the shape of the Union Jack, surrounded by 20+ boutique Pinot Noir vineyards you can cycle between. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "wellington-castlepoint",
+      "name": "Castlepoint Lighthouse & Reef",
+      "region": "wellington",
+      "lat": -40.9042,
+      "lng": 176.2225,
+      "category": "nature",
+      "tags": [
+        "lighthouse",
+        "reef",
+        "beach",
+        "wairarapa",
+        "castle-rock"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A 1913 lighthouse, a curved limestone reef enclosing a lagoon, and the 162 m Castle Rock behind — one of the dramatic small places of the Wairarapa coast.",
+      "commentary": "Cook named the cape in 1770 after Castle Rock, the 162 m volcanic plug that looms over the settlement. The limestone reef extends 1.5 km offshore and is an easy walk across the sand spit — you can stand beside the 1913 lighthouse 52 m above the Pacific. At the base of Castle Rock, the lagoon is shallow and safe for swimming. Fossils are common in the reef limestone. On the March weekend of the Castlepoint Beach Races, the village's ~100 residents become 5,000.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Castlepoint Lighthouse & Reef draws visitors back time and again for its natural beauty and peaceful atmosphere. A 1913 lighthouse, a curved limestone reef enclosing a lagoon, and the 162 m Castle Rock behind — one of the dramatic small places of the Wairarapa coast. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-putangirua-pinnacles",
+      "name": "Putangirua Pinnacles",
+      "region": "wellington",
+      "lat": -41.4483,
+      "lng": 175.2528,
+      "category": "nature",
+      "tags": [
+        "hoodoos",
+        "walk",
+        "lord-of-the-rings",
+        "badlands",
+        "geology"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A badlands gorge of stone pinnacles — the 'Paths of the Dead' in *The Return of the King*, 120,000 years in the making.",
+      "commentary": "The Putangirua Pinnacles are a classic earth-pillar landscape — vertical rock columns formed where softer surrounding sediment has eroded away, leaving harder cap-stones protecting the earth beneath them. The 120,000-year-old gravel cliffs are still actively eroding. Peter Jackson used them for the 'Paths of the Dead' in *The Return of the King*. A 1.5-hour return walk from the DOC carpark leads up the stream bed to the pinnacle amphitheatre; a lookout loop adds another hour. On the way to Cape Palliser.",
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Putangirua Pinnacles draws visitors back time and again for its natural beauty and peaceful atmosphere. A badlands gorge of stone pinnacles — the 'Paths of the Dead' in *The Return of the King*, 120,000 years in the making. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-weta",
+      "name": "Wētā Workshop Tours, Miramar",
+      "region": "wellington",
+      "lat": -41.3192,
+      "lng": 174.8175,
+      "category": "culture",
+      "tags": [
+        "film",
+        "lord-of-the-rings",
+        "tour",
+        "workshop"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "A behind-the-scenes tour of the workshop that built Middle-earth — and almost every other major fantasy film of the past 25 years.",
+      "commentary": "Wētā Workshop in Miramar offers daily public tours of its production facilities. Visit includes Lord of the Rings, Hobbit, District 9 and Avatar artefacts.",
+      "audio_story": "You have arrived in Miramar at the public entrance of Wētā Workshop, the small Wellington company that, over the past twenty five years, has built the props, weapons, prosthetics and miniatures for some of the most ambitious films ever made. The list runs from the Lord of the Rings trilogy and the Hobbit films through District Nine, Avatar, Black Panther, the Halo television series, and dozens more. The public tour takes you through the workshop spaces themselves. You walk past sculptors actually working on resin armour, painters airbrushing alien skin, and chainmail makers individually linking thousands of aluminium rings. Cabinets along the walls hold original screen-used pieces, including some of the most iconic objects in modern cinema, the One Ring itself, Gandalf's staff, the Witch King's helm. The guides are working artists who can answer technical questions in detail. Afterwards, walk a hundred metres up the road to the small Wētā Cave shop and museum, which is free, and to the more recent immersive Wētā Workshop Unleashed experience nearby. Together they make a half day in Miramar that will please both serious film geeks and visitors who only saw the films once.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wētā Workshop"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Wētā Workshop Tours, Miramar is praised for being both accessible and genuinely informative. A behind-the-scenes tour of the workshop that built Middle-earth — and almost every other major fantasy film of the past 25 years. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-makara-peak",
+      "name": "Mākara Peak Mountain Bike Park",
+      "region": "wellington",
+      "lat": -41.3083,
+      "lng": 174.7311,
+      "category": "nature",
+      "tags": [
+        "mountain-bike",
+        "regenerating-bush",
+        "city",
+        "volunteer"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 3,
+      "short": "Forty kilometres of mountain bike trails on regenerating bush hillsides — twenty minutes from Parliament.",
+      "commentary": "Mākara Peak is a Wellington City Council reserve managed by a volunteer trust. 40+km of trails for all skill levels, with a 410m summit.",
+      "audio_story": "You have arrived at Mākara Peak, a council reserve on a steep regenerating hillside in the suburb of Karori, only a twenty minute drive from central Wellington. Two and a half decades ago this was rough farmland with the occasional fragment of bush. A determined group of local volunteers formed a trust, planted hundreds of thousands of native trees, and built a network of mountain bike trails as a way to fund the planting and bring more people into the bush. Today there are over forty kilometres of trails, ranging from gentle climbs along the Koru Track suitable for any reasonably fit cyclist, to advanced descending lines like Vertigo and Nikau Valley that locals will rate among the best in the country. The summit at Mākara Peak itself sits at four hundred and ten metres and offers a clear view across Cook Strait to the Marlborough Sounds. Many people walk rather than ride, and the park welcomes both. Bike hire is available in Karori. Pack lunch. Allow at least three hours, and try not to be too smug about a city that, fifteen minutes from Parliament, can drop you into a regenerating native forest with this kind of view.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Mākara Peak Supporters",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Mākara Peak Mountain Bike Park draws visitors back time and again for its natural beauty and peaceful atmosphere. Forty kilometres of mountain bike trails on regenerating bush hillsides — twenty minutes from Parliament. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-old-st-pauls",
+      "name": "Old St Paul's, Thorndon",
+      "region": "wellington",
+      "lat": -41.2756,
+      "lng": 174.78,
+      "category": "heritage",
+      "tags": [
+        "church",
+        "gothic-revival",
+        "wood",
+        "1866"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "A Gothic Revival church built entirely of native timber — one of the most beautiful interiors in the country.",
+      "commentary": "Built 1866 by Frederick Thatcher. All native timber: tōtara, mataī, rimu, kauri. Now a Heritage NZ-managed historic church.",
+      "audio_story": "You have arrived at Old St Paul's, an unassuming dark red building tucked into the Thorndon end of Wellington, and you should not let the modest exterior fool you. Step inside, and you are standing in one of the most beautiful interiors in the country. The church was built in eighteen sixty six to a Gothic Revival design by the Reverend Frederick Thatcher, who was both a clergyman and an architect. He could not afford stone, so he built the entire church out of native New Zealand timbers. The pillars are tōtara. The pews are mataī. The roof beams and trusses, soaring above your head in a great honey coloured forest of wood, are kauri and rimu. The afternoon light through the stained glass turns the whole space gold. Old St Paul's was the Anglican Cathedral for Wellington until nineteen sixty four, when the new cathedral was finally completed and the old building was scheduled for demolition. A public outcry saved it, and it has been beautifully preserved by Heritage New Zealand ever since. There is no charge to enter. Sit quietly for a few minutes. Listen to the wooden building creak in the wind. There is no other space in Wellington quite like it.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Old St Paul's"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Old St Paul's, Thorndon — the site rewards those who take time to read the signage and absorb the context. A Gothic Revival church built entirely of native timber — one of the most beautiful interiors in the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-mt-kaukau",
+      "name": "Mt Kaukau / Pukeahu",
+      "region": "wellington",
+      "lat": -41.2333,
+      "lng": 174.7833,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "transmitter",
+        "skyline-walk",
+        "city"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "Wellington's tallest accessible peak — a 445m hill with the broadcast tower and the view to the South Island on a clear day.",
+      "commentary": "Mt Kaukau (445m) is part of the Skyline Walkway and is most often climbed from Khandallah suburb. The summit transmitter dominates the Wellington skyline.",
+      "audio_story": "You are climbing Mount Kaukau, the highest accessible point in central Wellington and the great green hill behind the city's western suburbs. Most walkers begin from Khandallah Park at the end of Woodmancote Road. From there a track climbs steadily up through native bush, then out into open tussock and grass on the upper slopes. The total walk to the summit takes around forty minutes one way for someone of average fitness. From the four hundred and forty five metre summit, marked by the broadcast tower that you can see from anywhere in the city, the view is one of the great unsung panoramas of New Zealand. To the south, all of central Wellington stretches out below, with the harbour glinting and the airport runway sticking out into the strait beyond. To the north, the Tararua Ranges. To the west, on a clear day, the ranges of the South Island rise above Cook Strait. Mount Kaukau is also part of the Skyline Walkway, a longer ridge route that runs all the way to Johnsonville. Start early, take warm layers, and consider walking down a different way to extend the loop. The wind, as always in Wellington, is your faithful companion.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Wellington City Council walks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Mt Kaukau / Pukeahu draws visitors back time and again for its natural beauty and peaceful atmosphere. Wellington's tallest accessible peak — a 445m hill with the broadcast tower and the view to the South Island on a clear day. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-pataka-porirua",
+      "name": "Pātaka Art + Museum, Porirua",
+      "region": "wellington",
+      "lat": -41.1331,
+      "lng": 174.8392,
+      "category": "culture",
+      "tags": [
+        "art-gallery",
+        "māori",
+        "pacific",
+        "free"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "Porirua's art gallery — strong Māori and Pacific contemporary art programme, and the largest Pacific population in any NZ city.",
+      "commentary": "Pātaka Art + Museum opened 1998. Free entry. Programme is heavily focused on Māori and Pacific contemporary art reflecting the city's communities.",
+      "audio_story": "You have arrived at Pātaka, the art gallery and museum of Porirua, half an hour north of Wellington central. Porirua is one of the most ethnically diverse cities in New Zealand, with the largest Pacific population by proportion of any urban centre in the country. Pātaka is its cultural heart. The gallery opened in nineteen ninety eight and is named for a traditional Māori storehouse, raised on poles to protect food from rats. The architecture deliberately echoes that idea, with the main galleries lifted above a public courtyard. Inside, the programme is unusual for a regional gallery. Where many similar galleries focus on traditional landscape painting and historical artefacts, Pātaka has deliberately built its identity around contemporary Māori and Pacific art. You will see works by Lonnie Hutchinson, John Pule, Lisa Reihana, Robert Jahnke and others, alongside touring exhibitions from across the Pacific. There are quiet, beautifully curated rooms, and a busy programme of artist talks and education events. Entry is free. Combine your visit with the Aotea Lagoon next door, where you can walk a kilometre of waterfront, and you have a perfect Porirua afternoon.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Pātaka Art + Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Pātaka Art + Museum, Porirua is praised for being both accessible and genuinely informative. Porirua's art gallery — strong Māori and Pacific contemporary art programme, and the largest Pacific population in any NZ city. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-greytown",
+      "name": "Greytown / Wairarapa Heritage Town",
+      "region": "wellington",
+      "lat": -41.0786,
+      "lng": 175.46,
+      "category": "culture",
+      "tags": [
+        "wairarapa",
+        "victorian",
+        "shopping",
+        "wineries"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "An almost-intact Victorian timber main street in the heart of the Wairarapa — boutique shops, cafes and country gardens.",
+      "commentary": "Greytown was founded in 1854 and retains the most complete Victorian wooden main street in the country.",
+      "audio_story": "You have arrived in Greytown, in the middle of the Wairarapa, and you are about to walk down what is widely considered the most complete and best preserved Victorian wooden main street in the country. The town was founded in eighteen fifty four as one of the first inland farming settlements south of the Manawatū, and a series of prudent decisions, lucky escapes from fire and earthquake, and stubborn local conservation have left the buildings remarkably intact. Walk down Main Street and you will pass the Cobblestones Museum, an open air collection of historic buildings clustered around an old coaching stables, then the long row of two storey timber shops, hotels and cafes that line the street. Many have been carefully repurposed as boutique clothing shops, design stores, bakeries, and food destinations. The Wairarapa is dairy and wine country, and the cafes here showcase both. Just out of town, Schoc Chocolates and a string of wineries fill out a long lazy afternoon. Greytown gets very busy on weekends. If you can come on a quieter weekday, the buildings, the trees, and the slow rural pace will reward you twice as much. Bring an empty bag. You will not leave empty handed.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Greytown",
+        "Wairarapa NZ tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Greytown / Wairarapa Heritage Town is praised for being both accessible and genuinely informative. An almost-intact Victorian timber main street in the heart of the Wairarapa — boutique shops, cafes and country gardens. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-hist-parliament",
+      "name": "Parliament Buildings & Beehive",
+      "region": "wellington",
+      "lat": -41.2784,
+      "lng": 174.7765,
+      "category": "heritage",
+      "tags": [
+        "parliament",
+        "government",
+        "beehive",
+        "1899",
+        "1922"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "The seat of New Zealand's government — the Edwardian Parliament House, the 1899 General Assembly Library, and the unmistakeable Beehive.",
+      "commentary": "Free tours daily. Parliament House was completed 1922 in Edwardian neo-classical. The Beehive (Executive Wing) was designed by Basil Spence, opened 1979.",
+      "audio_story": "You have arrived at Parliament Buildings, the political heart of the country. Three buildings share the grounds, and each tells a different story. The Gothic Revival wooden library, completed in eighteen ninety nine, is the oldest, and the only surviving part of the original parliamentary complex that burned down in nineteen o seven. Next to it stands Parliament House itself, the grand Edwardian neo classical building in pale Takaka marble, completed in nineteen twenty two. This is where the House of Representatives sits. The debating chamber, with its green leather benches modelled on Westminster, can be visited on the free guided tour. And then there is the Beehive, the cylindrical modernist block that houses the Prime Minister, the Cabinet, and most of the executive government. Designed by the Scottish architect Sir Basil Spence and opened in nineteen seventy nine, it is loved by some and disliked by many, but no one who has ever seen it forgets it. The free tours run seven days a week. You walk the debating chamber, the legislative council chamber now used for select committees, and in some years the Prime Minister''s offices in the Beehive itself. Book ahead in parliamentary sitting weeks.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Parliament — parliament.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Parliament Buildings & Beehive — the site rewards those who take time to read the signage and absorb the context. The seat of New Zealand's government — the Edwardian Parliament House, the 1899 General Assembly Library, and the unmistakeable Beehive. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-te-papa",
+      "name": "Te Papa Tongarewa",
+      "region": "wellington",
+      "lat": -41.2904,
+      "lng": 174.7821,
+      "category": "culture",
+      "tags": [
+        "national-museum",
+        "te-papa",
+        "marae",
+        "free",
+        "cable-street"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "New Zealand's national museum — a bicultural statement in five floors on the Wellington waterfront, with a living marae inside.",
+      "commentary": "Te Papa opened 1998 as NZ's national museum. Free general entry. The marae on Level 4 is a living contemporary wharenui, Rongomaraeroa.",
+      "audio_story": "You are at Te Papa Tongarewa, the Museum of New Zealand, which opened on the Wellington waterfront in nineteen ninety eight. The name means the container of treasures, and that is a fair description of what is inside. Over five floors you can see everything from the world''s only preserved colossal squid, recovered from the Southern Ocean, to the original Treaty of Waitangi signed in eighteen forty, to the restored Māori wharenui Te Hau ki Tūranga, one of the oldest surviving carved meeting houses in the country. Unusually for a major national museum, general admission is free. Te Papa was designed as a bicultural institution. Its first charter commits it to telling the story of this country from both tangata whenua and settler perspectives. On Level Four you will find Rongomaraeroa, the museum''s own living marae, a striking contemporary wharenui painted in rainbow colours that anyone is welcome to enter. Allow at least half a day, more if you have children. The museum shop is a good source of genuine New Zealand design. And the view from the fifth floor balcony across the harbour to the Miramar peninsula is one of the best in the capital.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Te Papa — tepapa.govt.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Te Papa Tongarewa is praised for being both accessible and genuinely informative. New Zealand's national museum — a bicultural statement in five floors on the Wellington waterfront, with a living marae inside. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-hist-old-st-pauls",
+      "name": "Old St Paul''s, Thorndon",
+      "region": "wellington",
+      "lat": -41.277,
+      "lng": 174.7803,
+      "category": "heritage",
+      "tags": [
+        "anglican",
+        "timber-gothic",
+        "1866",
+        "heritage"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "A 1866 Gothic Revival cathedral built entirely of native timber — considered the finest wooden church in New Zealand.",
+      "commentary": "Built 1866, designed by Rev. Frederick Thatcher in pure Gothic Revival style using entirely native timber. Now cared for by Heritage NZ.",
+      "audio_story": "You are at Old St Paul''s, a wooden Gothic cathedral built in eighteen sixty six to serve as the pro cathedral of the new Anglican diocese of Wellington. Its architect, the Reverend Frederick Thatcher, was also an Anglican clergyman and had designed a number of timber churches around the country. Old St Paul''s is considered his masterpiece. The entire building, inside and out, is made from native New Zealand timber. Tōtara, rimu, mātai, and kauri. The soaring nave with its pointed arches and ribbed ceiling was built entirely from tōtara beams, and the warm tones of the timber have darkened beautifully with a century and a half of use. Stand in the centre aisle and look up. The timber vaulting, designed to mimic the stone ribbed vaults of European cathedrals, is unexpectedly moving in wood. In nineteen sixty four the congregation moved to the new concrete cathedral up the hill, and Old St Paul''s was scheduled for demolition. A public campaign saved it, and today it is cared for by Heritage New Zealand. Free to visit, often hosting weddings and concerts on weekends. Quietly one of the finest buildings in the country.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Old St Pauls"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Old St Paul''s, Thorndon — the site rewards those who take time to read the signage and absorb the context. A 1866 Gothic Revival cathedral built entirely of native timber — considered the finest wooden church in New Zealand. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-wellington-cable-car",
+      "name": "Wellington Cable Car",
+      "region": "wellington",
+      "lat": -41.2844,
+      "lng": 174.7756,
+      "category": "heritage",
+      "tags": [
+        "cable-car",
+        "1902",
+        "iconic",
+        "transport",
+        "lambton-quay"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The 1902 cable car that links Lambton Quay to the Botanic Gardens — and one of the great postcards of Wellington.",
+      "commentary": "Opened 1902 to serve the new suburb of Kelburn. The current electric cars date from 1979 but retain the original route and grade.",
+      "audio_story": "You are at the Lambton Quay terminus of the Wellington Cable Car, possibly the most photographed piece of public transport in the country. The line opened in nineteen o two to serve the new hillside suburb of Kelburn, which had been cut off from the central city by the steep ridge behind Lambton Quay. The route rises six hundred and twelve metres in horizontal distance but climbs one hundred and twenty metres in altitude, at a sustained grade of one in five. The original cars were wooden and were hauled by a heavy cable powered by steam. Today''s red cars are electric, dating from a nineteen seventy nine modernisation, but the route, the tunnels, and the three intermediate stops have not changed. At the top station in Kelburn you emerge into one of the best panoramic views of the city and harbour, directly above the Carter Observatory and the Botanic Gardens. A separate cable car museum at the top displays two of the original wooden cars and explains the engineering. From here you can wander down through the Gardens back to town, a forty five minute stroll under mature trees and across the historic Bolton Street Cemetery. Classic Wellington.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wellington Cable Car Museum",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Wellington Cable Car — the site rewards those who take time to read the signage and absorb the context. The 1902 cable car that links Lambton Quay to the Botanic Gardens — and one of the great postcards of Wellington. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-premier-house",
+      "name": "Premier House, Tinakori Road",
+      "region": "wellington",
+      "lat": -41.2714,
+      "lng": 174.7736,
+      "category": "heritage",
+      "tags": [
+        "premier-house",
+        "prime-minister",
+        "colonial",
+        "thorndon"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.25,
+      "short": "The official residence of the Prime Minister — a wooden villa in Thorndon dating from 1843. Viewed from the street only.",
+      "commentary": "Premier House (originally Parliamentary Residence) has been the home of successive Prime Ministers since 1865. Not open to the public.",
+      "audio_story": "You are passing Premier House, the official residence of the Prime Minister of New Zealand. The house sits discreetly behind a hedge on Tinakori Road in the leafy suburb of Thorndon, a short walk from Parliament. The original single storey cottage on this site was built in eighteen forty three, making it one of the oldest surviving buildings in Wellington. It became the Premier''s residence in eighteen sixty five, and has housed every sitting Prime Minister since, with two notable exceptions. Sir Robert Muldoon refused to live there, and ran it as a boys'' home during his time as Prime Minister in the nineteen seventies and eighties, and David Lange preferred his own home in Auckland. The current Prime Minister uses the house for both private living and some official entertaining. It is not open to the public under any circumstances. From the street you can see the tall white wooden facade through the hedge, and the ornamental garden at the front. Drive or walk past with appropriate discretion, and then continue to explore Thorndon, which retains more nineteenth century wooden cottages than any other part of central Wellington, a legacy of being spared the wrecking ball during the tower block booms of the seventies and eighties.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Department of Internal Affairs",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Premier House, Tinakori Road — the site rewards those who take time to read the signage and absorb the context. The official residence of the Prime Minister — a wooden villa in Thorndon dating from 1843. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-katherine-mansfield",
+      "name": "Katherine Mansfield Birthplace, Thorndon",
+      "region": "wellington",
+      "lat": -41.269,
+      "lng": 174.7772,
+      "category": "culture",
+      "tags": [
+        "katherine-mansfield",
+        "literature",
+        "writer",
+        "1888",
+        "house-museum"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "Where New Zealand''s most internationally famous writer was born in 1888 — now a literary house museum.",
+      "commentary": "Katherine Mansfield (1888–1923), born Kathleen Beauchamp, spent her first five years at 25 Tinakori Road. She left NZ at 19 and died in France aged 34. Now a Literary Heritage site.",
+      "audio_story": "You are at twenty five Tinakori Road, the birthplace of Katherine Mansfield, the modernist short story writer who became, and remains, the most internationally celebrated literary figure New Zealand has ever produced. She was born here as Kathleen Beauchamp in October eighteen eighty eight, the daughter of a prominent Wellington banker. The family lived in this modest two storey wooden villa for the first five years of her life, until a move to a larger house in Karori. At nineteen she left New Zealand for London and never came back. In the fifteen years that followed she transformed the short story as a literary form, producing works like The Garden Party, Prelude, Bliss, and At the Bay, several of which draw directly on her Wellington childhood. She died in France in nineteen twenty three, aged thirty four, of tuberculosis. The house has been restored to the period of her birth and operates as a literary house museum. Original furniture, family photographs, and early manuscripts are on display. A small garden at the rear is planted with the flowers she mentioned in her stories. An hour well spent for any reader.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Katherine Mansfield House — katherinemansfield.com",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at Katherine Mansfield Birthplace, Thorndon is praised for being both accessible and genuinely informative. Where New Zealand''s most internationally famous writer was born in 1888 — now a literary house museum. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-hist-wairarapa-moana",
+      "name": "Lake Wairarapa / Wairarapa Moana",
+      "region": "wellington",
+      "lat": -41.25,
+      "lng": 175.25,
+      "category": "māori",
+      "tags": [
+        "wetland",
+        "ngati-kahungunu",
+        "rangitane",
+        "eel-fisheries",
+        "ramsar"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "The great traditional fishery of Wairarapa iwi — a shallow lake whose eel runs fed generations.",
+      "commentary": "Wairarapa Moana is the third largest lake in the North Island. For centuries Ngāti Kahungunu ki Wairarapa and Rangitāne harvested its eel runs. The Crown took ownership in 1896; returned 2021.",
+      "audio_story": "You are looking at Wairarapa Moana, the large shallow lake that gives this district its name. For centuries before European settlement, this lake was the great traditional fishery of Ngāti Kahungunu ki Wairarapa and Rangitāne o Wairarapa. Every autumn the migrating eel runs from the lake down to the sea, and the iwi built intricate eel weirs at the channel known as Lake Ōnoke where the lake meets the Pacific, harvesting enough eels in a single season to feed many hundreds of people through the winter. The eels are called tuna in te reo Māori, and the Wairarapa tuna was famous for its size and quality. In eighteen ninety six the Crown effectively took ownership of the lake and its bed, and over the following decades drainage schemes for pastoral farming substantially reduced its extent and damaged the eel fishery. In twenty twenty one, after decades of negotiation, ownership of the lakebed was finally returned to the iwi in a landmark Treaty settlement. The lake today is recognised as a wetland of international importance under the Ramsar Convention. Stop at one of the public access points. Look across the shallow water. The history under this lake is older and deeper than any tourist guidebook can capture.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu ki Wairarapa",
+        "Rangitāne o Wairarapa",
+        "DOC — Wairarapa Moana"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Lake Wairarapa / Wairarapa Moana as a place where the history and cultural significance of Aotearoa become tangible and real. The great traditional fishery of Wairarapa iwi — a shallow lake whose eel runs fed generations. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-hist-treaty-wairarapa",
+      "name": "Kuratawhiti Memorial, Greytown",
+      "region": "wellington",
+      "lat": -41.0806,
+      "lng": 175.4625,
+      "category": "māori",
+      "tags": [
+        "treaty",
+        "1853",
+        "land-deed",
+        "wairarapa",
+        "kuratawhiti"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where the 1853 Wairarapa land deed was signed — a transaction that passed almost a million acres from Māori to the Crown.",
+      "commentary": "The Wairarapa Block was acquired from local iwi in 1853 in a deed signed at Kuratawhiti. Greytown was settled on this block in 1854.",
+      "audio_story": "You are near the quiet spot at Kuratawhiti where in eighteen fifty three one of the most consequential land transactions in New Zealand history was signed. Before the deed was signed, the Wairarapa Plains belonged to Ngāti Kahungunu ki Wairarapa, Rangitāne o Wairarapa, and Ngāti Kahungunu ki Heretaunga. Lightly settled European pastoralists had been running sheep here since the eighteen forties, paying small annual rentals to the local iwi. In the early eighteen fifties the Crown, under Land Purchase Commissioner Donald McLean, moved to consolidate colonial control. In April eighteen fifty three, after lengthy negotiations at Kuratawhiti on the bank of the Ruamahanga River, local rangatira signed a deed transferring most of the Wairarapa Plains, nearly a million acres, to the Crown. The total price paid was around thirty one thousand pounds. The following year the town of Greytown was surveyed on the block and the first settler sections went on sale. The iwi, in oral tradition, remember the transaction very differently from the written deed, and it remains the subject of ongoing Treaty settlement discussions. A modern memorial pou marks the spot. Pause and read it.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZHistory — Wairarapa Purchase",
+        "Ngāti Kahungunu ki Wairarapa",
+        "Waitangi Tribunal"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Kuratawhiti Memorial, Greytown as a place where the history and cultural significance of Aotearoa become tangible and real. Where the 1853 Wairarapa land deed was signed — a transaction that passed almost a million acres from Māori to the Crown. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-hist-featherston-pow",
+      "name": "Featherston POW Camp Site",
+      "region": "wellington",
+      "lat": -41.11,
+      "lng": 175.3253,
+      "category": "heritage",
+      "tags": [
+        "wwii",
+        "japanese-pow",
+        "1943",
+        "memorial"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where 48 Japanese prisoners of war were killed in a 1943 riot — and where New Zealand and Japan now share a peace garden.",
+      "commentary": "Featherston held up to 800 Japanese POWs during WWII. On 25 February 1943, 48 prisoners and 1 guard died in a confrontation. A Japanese-funded peace garden was opened in 1983.",
+      "audio_story": "You are at the site of the Featherston prisoner of war camp, a place in New Zealand history that was long quietly half forgotten and that now, thanks to a remarkable act of reconciliation, has found a more honest public memory. During the Second World War, up to eight hundred Japanese servicemen captured in the Pacific were held here. On the twenty fifth of February, nineteen forty three, a confrontation between prisoners and guards escalated into gunfire. Forty eight Japanese prisoners and one New Zealand guard were killed. Dozens more on both sides were wounded. It was, by any measure, the worst incident of its kind to occur in New Zealand during the war. For decades the site lay unmarked on a state highway bend, a simple paddock with no memorial. Then in nineteen eighty three, with funding from the Japanese government and the cooperation of the New Zealand government, a small formal Japanese peace garden was laid out on the former camp grounds. A granite stone carries a haiku by the seventeenth century poet Matsuo Bashō. Stop for a few minutes. Walk around the small garden. This is what genuine reconciliation looks like, made gently in landscape.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZHistory — Featherston POW",
+        "South Wairarapa District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Featherston POW Camp Site — the site rewards those who take time to read the signage and absorb the context. Where 48 Japanese prisoners of war were killed in a 1943 riot — and where New Zealand and Japan now share a peace garden. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-bolton-street-cemetery",
+      "name": "Bolton Street Cemetery",
+      "region": "wellington",
+      "lat": -41.2761,
+      "lng": 174.7714,
+      "category": "heritage",
+      "tags": [
+        "cemetery",
+        "founding-settlers",
+        "victorian",
+        "motorway"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The original colonial cemetery of Wellington — and a leafy walking bridge between Parliament and the Botanic Gardens.",
+      "commentary": "Wellington''s main cemetery 1840–1892. Over 8,600 burials. Cut by the motorway in 1971; 3,700 remains relocated. Now a heritage reserve and walking route.",
+      "audio_story": "You are walking through Bolton Street Cemetery, which from eighteen forty to eighteen ninety two was the principal cemetery of Wellington. It was established in the earliest months of the city''s colonial settlement, and over its working life more than eight thousand six hundred people were buried here. Many of them are the founding settler families of the capital, merchants, members of parliament, and the first colonial soldiers. Māori are also buried here, though in smaller numbers. In nineteen seventy one, in one of the most ruthless pieces of urban planning in the country''s history, the motorway that now runs between Parliament and the Botanic Gardens was driven directly through the middle of the cemetery. Around three thousand seven hundred sets of human remains were exhumed and reinterred in a modern memorial block. Many of the headstones were damaged or lost entirely. What remains today is a leafy, melancholic, surprisingly peaceful linear park that zigzags down the hillside between memorials. A footbridge crosses the motorway. On the lower side, the restored family plot of Richard Seddon, the great Liberal Prime Minister, stands near the Bolton Street entrance. Walk through slowly. Read the headstones. A city''s first draft.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Bolton Street Cemetery",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Bolton Street Cemetery — the site rewards those who take time to read the signage and absorb the context. The original colonial cemetery of Wellington — and a leafy walking bridge between Parliament and the Botanic Gardens. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-pipitea-pa",
+      "name": "Pipitea Pā / Thorndon Foreshore",
+      "region": "wellington",
+      "lat": -41.2728,
+      "lng": 174.7794,
+      "category": "māori",
+      "tags": [
+        "pa-site",
+        "te-atiawa",
+        "taranaki-whanui",
+        "treaty",
+        "1840"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Where the principal pā of Te Āti Awa once stood — and where the Treaty of Waitangi was signed in Wellington on 29 April 1840.",
+      "commentary": "Pipitea Pā, near the modern Thorndon rail yards, was the principal kainga of Te Āti Awa in Wellington. Rangatira here signed Te Tiriti o Waitangi on 29 April 1840.",
+      "audio_story": "You are on the Thorndon foreshore, and although today you are surrounded by rail yards, a motorway and office blocks, this entire flat was once the site of Pipitea Pā, the principal settlement of Te Āti Awa of Wellington and one of three major Māori kāinga around the harbour in eighteen forty. On the twenty ninth of April of that year, Major Thomas Bunbury of HMS Herald arrived off Wellington with a copy of the Treaty of Waitangi. He came ashore here, and at Pipitea Pā the rangatira Te Wharepōuri and others signed the Treaty. It was the first time the Treaty was signed south of the Bay of Islands and it extended the process that had begun on the sixth of February at Waitangi. Within five years of that signing, almost all the land of this foreshore had been alienated from Te Āti Awa through purchases, surveys and the harbour reclamations that would eventually push the shoreline hundreds of metres further out. Pipitea Pā itself was progressively demolished. Today there is a small interpretive pou near Pipitea Marae on Thorndon Quay, the last surviving fragment of Te Āti Awa''s ancestral foreshore. Visit the pou. Acknowledge the history. Then walk back into the modern city knowing exactly what it is built on.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Te Āti Awa",
+        "NZHistory — Treaty signings",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Pipitea Pā / Thorndon Foreshore as a place where the history and cultural significance of Aotearoa become tangible and real. Where the principal pā of Te Āti Awa once stood — and where the Treaty of Waitangi was signed in Wellington on 29 April 1840. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-hist-national-war-memorial",
+      "name": "National War Memorial, Mount Cook",
+      "region": "wellington",
+      "lat": -41.3003,
+      "lng": 174.7764,
+      "category": "heritage",
+      "tags": [
+        "memorial",
+        "wwi",
+        "carillon",
+        "anzac",
+        "pukeahu"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The country''s national memorial to its war dead — with a 74-bell carillon and the Tomb of the Unknown Warrior.",
+      "commentary": "The Carillon opened 1932. The Hall of Memories completed 1964. The Tomb of the Unknown Warrior added 2004. Pukeahu National War Memorial Park opened 2015.",
+      "audio_story": "You are at Pukeahu, the National War Memorial Park, which since nineteen thirty two has been the country''s central place of commemoration for those who served in its wars. The dominant structure is the Carillon, a slim fifty metre tower containing seventy four bells. It was funded by public subscription in the aftermath of the First World War as a memorial to the eighteen thousand New Zealanders who died in that conflict. The bells are still played regularly, including at every Anzac Day dawn service. Behind the carillon stands the Hall of Memories, completed in nineteen sixty four, which contains memorials to every war and peacekeeping operation in which New Zealand forces have served. In two thousand and four the Tomb of the Unknown Warrior was added in front of the carillon, holding the remains of an unknown New Zealand soldier brought home from the battlefields of the Western Front. In twenty fifteen the whole precinct was remade as a national park, with walkways, a ceremonial courtyard, and a rotating international memorial garden where partner countries including Australia, Turkey, France and the United Kingdom have contributed their own memorials. Walk the park. The silence is considered, and it is earned.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Manatū Taonga — Pukeahu",
+        "NZ War Memorials"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at National War Memorial, Mount Cook — the site rewards those who take time to read the signage and absorb the context. The country''s national memorial to its war dead — with a 74-bell carillon and the Tomb of the Unknown Warrior. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wellington-hist-mt-victoria-lookout",
+      "name": "Mount Victoria / Matairangi Lookout",
+      "region": "wellington",
+      "lat": -41.2961,
+      "lng": 174.7939,
+      "category": "nature",
+      "tags": [
+        "lookout",
+        "matairangi",
+        "harbour",
+        "city-view"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The classic panoramic view of Wellington — and a summit with its own Māori name, Matairangi, that predates the colonial one.",
+      "commentary": "Mount Victoria / Matairangi rises 196m directly above the city. Lookout accessible by road and foot tracks. Māori name means 'to gaze at the sky'.",
+      "audio_story": "You are on Mount Victoria, the steep green hill that rises directly behind the eastern edge of central Wellington. Its older name is Matairangi, which can be translated as to gaze at the sky, and it has been used for that purpose by the iwi of this harbour for centuries. The summit lookout gives you what is probably the single finest panoramic view of the city and its harbour. From here you can see the central business district spread out on the reclaimed flats, the curving line of Oriental Bay, the airport across on the Miramar Peninsula, and on a clear day the white cone of the Tararua Range inland and the snowy peaks of the Kaikōura Range across Cook Strait. Look closely at the harbour. It is a flooded ancient caldera, the crater of a volcanic complex that was active around ten million years ago. The Miramar Peninsula, the flat airport at its base, was originally an island, connected to the mainland by an earthquake uplift in the eighteen fifties. The hill below you is a ridge of volcanic rock that has survived millennia of weathering. At the summit stands the Byrd Memorial, dedicated to the American Antarctic explorer Richard Byrd, who used Wellington as his staging port in the nineteen twenties.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wellington City Council",
+        "Te Āti Awa",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Mount Victoria / Matairangi Lookout draws visitors back time and again for its natural beauty and peaceful atmosphere. The classic panoramic view of Wellington — and a summit with its own Māori name, Matairangi, that predates the colonial one. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-hist-petone-settlers",
+      "name": "Petone Settlers Museum & Waitangi Site",
+      "region": "wellington",
+      "lat": -41.2294,
+      "lng": 174.8733,
+      "category": "māori",
+      "tags": [
+        "petone",
+        "settlers",
+        "1840",
+        "aurora",
+        "museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Where the first organised European settlers to Wellington landed in 1840 — and a free museum that tells their story well.",
+      "commentary": "The Aurora arrived at Petone on 22 January 1840, carrying the first New Zealand Company settlers. Settlement briefly here before relocating to Thorndon.",
+      "audio_story": "You are at Petone, the long beach at the head of Wellington Harbour where the first organised shipload of European settlers bound for Wellington landed on the twenty second of January, eighteen forty. The ship was the Aurora, a small wooden barque owned by the New Zealand Company, and it had been at sea for four months from Gravesend. The settlers disembarked onto the beach here in driving rain and erected tents on the flat behind the strand. Te Āti Awa of Pipitea and Ngāti Awa, who already had kainga along this shoreline, gave the newcomers food and shelter through the first difficult weeks. Within a year, persistent flooding of the Hutt River and the lack of safe anchorage had persuaded the settlers to abandon Petone and move the main settlement across to Thorndon. The Petone Esplanade, laid out along the original beach, has a modern memorial to the landing, and the small Settlers Museum, in a nineteen thirties art deco bathing pavilion, is one of the best free local museums in the Wellington region. It tells the story of the landing, the early cross cultural relationships, and the later industrial history of the suburb, which was once a major meatworks and soap factory hub. A good hour and a pleasant beach walk.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Petone Settlers Museum",
+        "Hutt City Council",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Petone Settlers Museum & Waitangi Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where the first organised European settlers to Wellington landed in 1840 — and a free museum that tells their story well. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-rongomaraeroa",
+      "name": "Rongomaraeroa — Te Papa Marae",
+      "region": "wellington",
+      "lat": -41.2905,
+      "lng": 174.7825,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "museum",
+        "te-papa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A contemporary marae inside Te Papa museum — the first marae in a national museum, welcoming all.",
+      "commentary": "Unlike most marae, Rongomaraeroa is a national marae. Regular cultural performances and pōwhiri take place here, making it one of the most accessible marae experiences.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Rongomaraeroa — Te Papa Marae as a place where the history and cultural significance of Aotearoa become tangible and real. A contemporary marae inside Te Papa museum — the first marae in a national museum, welcoming all. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-kapiti-te-rauparaha",
+      "name": "Kapiti Island — Te Rauparaha's Fortress",
+      "region": "wellington",
+      "lat": -40.85,
+      "lng": 174.926,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "te-rauparaha",
+        "ngāti-toa",
+        "ka-mate"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 6,
+      "short": "Island fortress of Te Rauparaha — the most feared war leader of the Musket Wars, who composed Ka Mate.",
+      "commentary": "From Kapiti, Te Rauparaha controlled Cook Strait trade and raided as far south as Canterbury. He composed 'Ka Mate', the haka performed by the All Blacks. Now a predator-free nature reserve.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Kapiti Island — Te Rauparaha's Fortress as a place where the history and cultural significance of Aotearoa become tangible and real. Island fortress of Te Rauparaha — the most feared war leader of the Musket Wars, who composed Ka Mate. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-pipitea-pa",
+      "name": "Pipitea Pā Site",
+      "region": "wellington",
+      "lat": -41.274,
+      "lng": 174.778,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "wellington",
+        "te-ātiawa",
+        "parliament"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "A major Wellington pā — now beneath Parliament and the Beehive, remembered in place names.",
+      "commentary": "Pipitea Pā was a thriving Te Ātiawa community when NZ Company settlers arrived in 1840. Today, almost nothing physical remains, but the site's history is acknowledged in the government precinct.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Pipitea Pā Site as a place where the history and cultural significance of Aotearoa become tangible and real. A major Wellington pā — now beneath Parliament and the Beehive, remembered in place names. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-rangiatea-church",
+      "name": "Rangiātea Church, Ōtaki",
+      "region": "wellington",
+      "lat": -40.765,
+      "lng": 175.154,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "church",
+        "ngāti-raukawa",
+        "carved"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A Māori-designed church with tukutuku panels — rebuilt after arson, a community triumph.",
+      "commentary": "Originally built in 1849–51, destroyed by arson in 1995, faithfully rebuilt and reopened in 2003. A fusion of Māori and Christian traditions.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Rangiātea Church, Ōtaki as a place where the history and cultural significance of Aotearoa become tangible and real. A Māori-designed church with tukutuku panels — rebuilt after arson, a community triumph. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-petone-foreshore",
+      "name": "Pito-one / Petone — First Pākehā Settlement",
+      "region": "wellington",
+      "lat": -41.226,
+      "lng": 174.872,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "colonial",
+        "settlement",
+        "te-ātiawa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where NZ Company settlers first landed in 1840 — on Te Ātiawa land.",
+      "commentary": "A settlers' memorial and Te Ātiawa pou stand on the foreshore, representing both sides of this founding encounter.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Pito-one / Petone — First Pākehā Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. Where NZ Company settlers first landed in 1840 — on Te Ātiawa land. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-matiu-somes",
+      "name": "Matiu / Somes Island",
+      "region": "wellington",
+      "lat": -41.258,
+      "lng": 174.866,
+      "category": "wildlife",
+      "tags": [
+        "māori",
+        "island",
+        "pā",
+        "quarantine",
+        "wildlife"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "An island pā in Wellington harbour — later quarantine station and internment camp, now wildlife sanctuary.",
+      "commentary": "Matiu was a pā site for several iwi. The pā terraces are still visible alongside colonial-era buildings. Accessible by ferry from Queens Wharf.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The wildlife encounters at Matiu / Somes Island earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. An island pā in Wellington harbour — later quarantine station and internment camp, now wildlife sanctuary. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "wellington-nga-taonga",
+      "name": "Ngā Taonga Sound & Vision",
+      "region": "wellington",
+      "lat": -41.291,
+      "lng": 174.776,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "archive",
+        "film",
+        "sound",
+        "taonga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "NZ's audiovisual archive — holding taonga recordings of Māori language and oral history dating back over a century.",
+      "commentary": "The archive holds irreplaceable recordings of Māori language, waiata, haka, and oral traditions, some dating to the early 1900s.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Ngā Taonga Sound & Vision as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's audiovisual archive — holding taonga recordings of Māori language and oral history dating back over a century. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-otaki-cultural",
+      "name": "Ōtaki — Ngāti Raukawa Heartland",
+      "region": "wellington",
+      "lat": -40.758,
+      "lng": 175.149,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-raukawa",
+        "te-reo",
+        "education"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A town with one of the strongest Māori cultural identities — centre for te reo Māori and the Māoriland Film Festival.",
+      "commentary": "Home to Te Wānanga o Raukawa, kōhanga reo, and the annual Māoriland Film Festival — a world-leading indigenous film event.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Ōtaki — Ngāti Raukawa Heartland as a place where the history and cultural significance of Aotearoa become tangible and real. A town with one of the strongest Māori cultural identities — centre for te reo Māori and the Māoriland Film Festival. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-palliser-bay",
+      "name": "Palliser Bay — Ancient Māori Gardens",
+      "region": "wellington",
+      "lat": -41.54,
+      "lng": 175.22,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "gardens",
+        "archaeological",
+        "kūmara",
+        "ancient"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Stone-walled kūmara gardens dating back 700 years — sophisticated Māori agricultural engineering.",
+      "commentary": "Extensive stone-walled garden enclosures demonstrate sophisticated agricultural engineering, with stone walls creating micro-climates to extend the growing season.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Palliser Bay — Ancient Māori Gardens as a place where the history and cultural significance of Aotearoa become tangible and real. Stone-walled kūmara gardens dating back 700 years — sophisticated Māori agricultural engineering. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-otari-rongoa",
+      "name": "Ōtari-Wilton's Bush — Rongoā Garden",
+      "region": "wellington",
+      "lat": -41.263,
+      "lng": 174.751,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rongoā",
+        "native-plants",
+        "medicinal"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "NZ's only native-plant botanic garden — including a rongoā (traditional Māori medicine) garden.",
+      "commentary": "The rongoā garden showcases plants used in traditional Māori medicine — kawakawa for pain, harakeke for wounds, koromiko for digestion.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Ōtari-Wilton's Bush — Rongoā Garden as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's only native-plant botanic garden — including a rongoā (traditional Māori medicine) garden. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-nga-hau-e-wha",
+      "name": "Ngā Hau e Whā National Marae",
+      "region": "wellington",
+      "lat": -41.213,
+      "lng": 174.925,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "urban",
+        "national"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A national marae open to all tribes and cultures — established 1980 as a gathering place for urban Māori.",
+      "commentary": "Unlike tribal marae, Ngā Hau e Whā welcomes all. It serves as a vital cultural institution for Māori living away from their home marae.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Ngā Hau e Whā National Marae as a place where the history and cultural significance of Aotearoa become tangible and real. A national marae open to all tribes and cultures — established 1980 as a gathering place for urban Māori. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-waiwhetu-marae",
+      "name": "Waiwhetū Marae",
+      "region": "wellington",
+      "lat": -41.217,
+      "lng": 174.928,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "hutt-valley",
+        "urban"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "An urban marae representing Taranaki Whānui in the Hutt Valley.",
+      "commentary": "Waiwhetū Marae serves as a cultural anchor for Māori in the Hutt Valley, providing space for tangihanga and cultural activities.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Waiwhetū Marae as a place where the history and cultural significance of Aotearoa become tangible and real. An urban marae representing Taranaki Whānui in the Hutt Valley. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-te-ahumairangi",
+      "name": "Te Ahumairangi Hill",
+      "region": "wellington",
+      "lat": -41.267,
+      "lng": 174.763,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "viewpoint",
+        "wellington"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A pā site above central Wellington — the name means 'raised up by the breath of chiefs'.",
+      "commentary": "The hill was strategically important for its views over the harbour entrance. The restoration of the Māori name acknowledges the pre-European history.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Ahumairangi Hill as a place where the history and cultural significance of Aotearoa become tangible and real. A pā site above central Wellington — the name means 'raised up by the breath of chiefs'. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-wairarapa-moana",
+      "name": "Wairarapa Moana Wetlands",
+      "region": "wellington",
+      "lat": -41.22,
+      "lng": 175.44,
+      "category": "nature",
+      "tags": [
+        "māori",
+        "wetlands",
+        "lake",
+        "mahinga-kai"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A vast wetland of deep significance — a traditional mahinga kai (food-gathering place).",
+      "commentary": "Lake Wairarapa, Lake Ōnoke, and the surrounding wetlands were a critical mahinga kai for tuna, birds, and plant foods.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Wairarapa Moana Wetlands draws visitors back time and again for its natural beauty and peaceful atmosphere. A vast wetland of deep significance — a traditional mahinga kai (food-gathering place). Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "wellington-pukerua-pa",
+      "name": "Pukerua Bay — Ngāti Toa Pā Sites",
+      "region": "wellington",
+      "lat": -41.037,
+      "lng": 174.883,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāti-toa",
+        "coastal"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Coastal pā sites part of the Ngāti Toa rohe established by Te Rauparaha.",
+      "commentary": "The headlands contain pā terracing from the Ngāti Toa migration and Musket Wars period.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Pukerua Bay — Ngāti Toa Pā Sites as a place where the history and cultural significance of Aotearoa become tangible and real. Coastal pā sites part of the Ngāti Toa rohe established by Te Rauparaha. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-porirua-pataka",
+      "name": "Pātaka Art + Museum, Porirua",
+      "region": "wellington",
+      "lat": -41.137,
+      "lng": 174.841,
+      "category": "culture",
+      "tags": [
+        "māori",
+        "museum",
+        "art",
+        "porirua",
+        "ngāti-toa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Porirua's museum with excellent Māori and Pacific collections — in the heart of Ngāti Toa country.",
+      "commentary": "Pātaka combines a museum and art gallery with strong Māori and Pacific collections. Porirua is the heartland of Ngāti Toa Rangatira, and the museum reflects this through its exhibitions and programmes.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Pātaka Art + Museum, Porirua is praised for being both accessible and genuinely informative. Porirua's museum with excellent Māori and Pacific collections — in the heart of Ngāti Toa country. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "wellington-rimutaka-crossing",
+      "name": "Remutaka / Rimutaka Crossing",
+      "region": "wellington",
+      "lat": -41.094,
+      "lng": 175.031,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "trail",
+        "trade-route",
+        "wairarapa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "An ancient Māori travel route between the Hutt Valley and Wairarapa — later followed by the road and rail.",
+      "commentary": "The crossing of the Remutaka Range was a major Māori travel route connecting the Wellington coast with the Wairarapa. The modern road and the old Rimutaka Incline railway both follow routes that Māori had been using for centuries. The crossing was challenging and sometimes fatal in bad weather.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Remutaka / Rimutaka Crossing as a place where the history and cultural significance of Aotearoa become tangible and real. An ancient Māori travel route between the Hutt Valley and Wairarapa — later followed by the road and rail. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wellington-northern-explorer-train",
+      "name": "Northern Explorer – Wellington to National Park",
+      "region": "wellington",
+      "lat": -41.2794,
+      "lng": 174.7776,
+      "category": "journey",
+      "tags": [
+        "rail-journey",
+        "scenic",
+        "heritage",
+        "volcanic-plateau"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 5.5,
+      "short": "Ride the Northern Explorer train from Wellington through the Kapiti Coast and over the volcanic plateau.",
+      "commentary": "The Northern Explorer scenic train runs between Wellington and Auckland, covering 681 km in about 11 hours. The southern section from Wellington passes through the Kapiti Coast, the Manawatu Gorge area, and ascends to the volcanic plateau. The train features open-air viewing carriages and commentary.",
+      "audio_story": "You are settling into your seat on the Northern Explorer as it pulls out of Wellington Railway Station, one of the finest Edwardian baroque buildings in the country. This scenic rail journey takes you through landscapes that road travellers never see. The train hugs the Kapiti Coast, with views across to Kapiti Island wildlife sanctuary, then turns inland through rich Manawatu farmland. As the train climbs towards the volcanic plateau, the vegetation changes — lush lowland bush gives way to tussock and scrub. The engineering becomes dramatic: the Raurimu Spiral is a section where the track loops, spirals, and tunnels to gain 132 metres of elevation in just 6 kilometres — a masterpiece of early 20th-century railway engineering. The open-air viewing carriage lets you lean into the rushing air and take in the panorama of the central North Island. Approaching National Park station, the volcanic cones of Ruapehu, Ngauruhoe, and Tongariro appear to the southeast, and the scale of this volcanic landscape hits you in a way that driving simply cannot match.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "KiwiRail Scenic Journeys",
+        "Heritage New Zealand"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Northern Explorer – Wellington to National Park route delivers a memorable journey through exceptional New Zealand scenery. Ride the Northern Explorer train from Wellington through the Kapiti Coast and over the volcanic plateau. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-rimutaka-cycle-trail",
+      "name": "Remutaka Cycle Trail – Great Ride",
+      "region": "wellington",
+      "lat": -41.098,
+      "lng": 174.961,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "rail-trail",
+        "tunnel",
+        "heritage"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 6,
+      "short": "Cycle over the Remutaka Ranges on a historic rail trail through tunnels and past rusting rail relics.",
+      "commentary": "The Remutaka Cycle Trail follows the route of the former Fell railway over the Remutaka Ranges from Upper Hutt to the Wairarapa. The trail passes through the 576-metre Summit Tunnel and features remnants of the Fell engine technology used on the steep incline from 1878 to 1955. The full loop is about 115 km.",
+      "audio_story": "You are cycling the Remutaka Cycle Trail, following the route of a railway that was an engineering marvel of its era. From 1878 to 1955, trains crossed the Remutaka Range using the Fell system — a unique central rail that special engines gripped to haul themselves up the steep incline. The gradient was so severe that derailments and runaways were common, and in 1880 the entire train crew was killed when their engine lost its brakes. Today, you cycle the old railbed through native bush, entering the 576-metre Summit Tunnel in almost total darkness — bring a good light. On the other side, the Wairarapa opens up, a wide valley of vineyards and farmland quite different from the Wellington side. Rusting rail relics, old platforms, and cuttings mark the route throughout. The descent into the Wairarapa is exhilarating, following the smooth gravel trail through bush and alongside streams. This is one of the most historically rich cycle trails in the country, and the contrast between the two sides of the ranges is remarkable.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Greater Wellington Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Remutaka Cycle Trail – Great Ride route delivers a memorable journey through exceptional New Zealand scenery. Cycle over the Remutaka Ranges on a historic rail trail through tunnels and past rusting rail relics. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-south-coast-red-rocks",
+      "name": "Wellington South Coast – Red Rocks Walk",
+      "region": "wellington",
+      "lat": -41.346,
+      "lng": 174.727,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "seals",
+        "geological",
+        "wild-coast"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Walk the wild south coast from Owhiro Bay to the Red Rocks seal colony, where 200-million-year-old pillow lavas meet the sea.",
+      "commentary": "The Red Rocks walk follows the wild, exposed south coast of Wellington from Owhiro Bay to Sinclair Head. The red rocks are 200-million-year-old pillow lavas formed on the ocean floor. A colony of up to 100 New Zealand fur seals occupies the coast during winter months.",
+      "audio_story": "You are walking out along Wellington's wild south coast, leaving the city behind as the track rounds Owhiro Bay and enters a landscape that feels more like the subantarctic than a capital city. The Cook Strait wind hits you here — this is one of the most exposed coastlines in the North Island. After about 40 minutes, you reach the Red Rocks, a striking formation of 200-million-year-old pillow lavas — formed when molten rock erupted onto the ocean floor and cooled into bulbous, pillow-shaped masses. The iron-rich rock has oxidised to a deep rust red. During winter, a colony of up to 100 New Zealand fur seals hauls out on the rocks at Sinclair Head. They are resting and moulting, so keep your distance — at least 10 metres. The Cook Strait stretches south from here towards the South Island, and on a clear day the Kaikoura Ranges are visible. This walk is a powerful reminder that Wellington sits at the collision point of two tectonic plates, and the geological forces here are anything but dormant.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Wellington City Council",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Wellington South Coast – Red Rocks Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk the wild south coast from Owhiro Bay to the Red Rocks seal colony, where 200-million-year-old pillow lavas meet the sea. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-waterfront-heritage-walk",
+      "name": "Wellington Waterfront Heritage Walk",
+      "region": "wellington",
+      "lat": -41.2865,
+      "lng": 174.781,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "heritage",
+        "waterfront",
+        "museums",
+        "parliament"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2.5,
+      "short": "Walk Wellington's waterfront from Te Papa to the Beehive, through the creative heart of New Zealand's capital.",
+      "commentary": "Wellington's waterfront walk connects Te Papa Tongarewa (the national museum), the Civic Square, Old Bank Arcade, Parliament Buildings (including the Beehive), and the cable car. The waterfront has been transformed from working port to cultural precinct over the past 30 years. Wellington is the world's southernmost capital city.",
+      "audio_story": "You are walking Wellington's waterfront, and for a city of barely 215,000 people, the cultural density is extraordinary. Start at Te Papa Tongarewa, the national museum, whose collection spans everything from a colossal squid to the Treaty of Waitangi. The building itself sits on base isolators that let it move independently during earthquakes — a prudent design in this seismic city. Head north along the waterfront promenade past public art installations, heritage wharves, and the Wharewaka — a traditional Maori canoe house on the harbour edge. Cut inland to Civic Square and its distinctive Nikau palm columns, then continue to Parliament grounds, where the circular Beehive designed by Sir Basil Spence sits alongside the neo-classical Parliament House. If you have time, ride the Wellington Cable Car from Lambton Quay to the Botanic Garden for views across the harbour. Wellington packs more culture, cafes, and character per square kilometre than anywhere else in New Zealand.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wellington City Council",
+        "Te Papa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Wellington Waterfront Heritage Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk Wellington's waterfront from Te Papa to the Beehive, through the creative heart of New Zealand's capital. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-makara-peak-mountain-bike",
+      "name": "Makara Peak Mountain Bike Park",
+      "region": "wellington",
+      "lat": -41.282,
+      "lng": 174.728,
+      "category": "journey",
+      "tags": [
+        "mountain-biking",
+        "urban-trails",
+        "native-bush",
+        "conservation"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Ride 40 km of mountain bike trails through regenerating bush just minutes from Wellington's CBD.",
+      "commentary": "Makara Peak Mountain Bike Park is a community-built trail network covering 250 hectares of regenerating native bush, just 4 km from Wellington's CBD. Over 40 km of trails range from beginner to expert grade. The park is also a significant conservation project with extensive native planting and pest control.",
+      "audio_story": "You are at the trailhead of Makara Peak, one of the finest urban mountain bike parks in the Southern Hemisphere, and it is just a 10-minute drive from Wellington's parliament buildings. The park covers 250 hectares of hillside that was once bare farmland and is now lush with regenerating native bush, thanks to decades of volunteer planting and predator control. Over 40 kilometres of trails wind through the forest, from smooth beginner tracks to technical, rooty descents. The climbing is honest — Wellington's hills do not do gentle — but the views from the upper trails across the city, harbour, and Cook Strait are magnificent. The park is almost entirely the work of volunteers who have spent over 20 years building trails, planting trees, and trapping pests. Tui, kereru, and fantails are now common here thanks to that effort. This is Wellington at its most characteristic: steep, windy, green, and built by a community that rolls up its sleeves.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Makara Peak Supporters Inc",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Makara Peak Mountain Bike Park route delivers a memorable journey through exceptional New Zealand scenery. Ride 40 km of mountain bike trails through regenerating bush just minutes from Wellington's CBD. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-kapiti-island-nature-walk",
+      "name": "Kapiti Island Nature Reserve Walk",
+      "region": "wellington",
+      "lat": -40.853,
+      "lng": 174.931,
+      "category": "journey",
+      "tags": [
+        "island-walk",
+        "conservation",
+        "native-birds",
+        "predator-free"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 6,
+      "short": "Visit predator-free Kapiti Island to walk among some of New Zealand's rarest birds in pristine coastal forest.",
+      "commentary": "Kapiti Island is a 1,965-hectare predator-free nature reserve 5 km off the Kapiti Coast. The island was declared a nature reserve in 1897 and has been predator-free since 1998. It is home to little spotted kiwi, takahe, kokako, hihi, and many other rare species. Access is limited to 100 visitors per day by permit.",
+      "audio_story": "You are crossing the 5-kilometre strait to Kapiti Island on a small boat, heading for one of New Zealand's most significant nature reserves. Only 100 people per day are permitted to land, and before boarding you will have your bags thoroughly checked for any hitchhiking pests — this island has been predator-free since 1998, and it must stay that way. Once ashore, the difference is immediately audible. The forest is deafeningly alive with birdsong — tui, bellbirds, saddlebacks, hihi, and the liquid notes of kokako fill the canopy. Little spotted kiwi, the smallest kiwi species, live here in their thousands — the island is their main stronghold. The walking tracks climb through coastal broadleaf forest to the 521-metre summit, where views stretch to the South Island. Te Rauparaha, the famous Ngati Toa chief who composed the Ka Mate haka, made Kapiti his stronghold in the early 1800s. The island carries both natural and human history in equal measure.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Kapiti Island Nature Reserve Walk route delivers a memorable journey through exceptional New Zealand scenery. Visit predator-free Kapiti Island to walk among some of New Zealand's rarest birds in pristine coastal forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-wairarapa-wine-trail",
+      "name": "Martinborough Wine Trail",
+      "region": "wellington",
+      "lat": -41.213,
+      "lng": 175.459,
+      "category": "journey",
+      "tags": [
+        "wine-trail",
+        "cycling",
+        "cellar-doors",
+        "pinot-noir"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 4,
+      "short": "Cycle between boutique cellar doors in Martinborough, the Wairarapa's world-renowned pinot noir village.",
+      "commentary": "Martinborough is a small village in the Wairarapa renowned for producing exceptional pinot noir. Over 20 wineries are clustered within cycling distance of the village square. The region's dry, warm microclimate and free-draining soils produce wines that regularly rival the best in the country.",
+      "audio_story": "You are cycling out from the charming village square of Martinborough into the heart of New Zealand's finest pinot noir country. Over 20 wineries are clustered within a few kilometres of the village, making this the most cycle-friendly wine region in the country. The terroir here — free-draining river gravels, a warm and dry microclimate sheltered by the Rimutaka Range — produces pinot noir that has won international acclaim since the first vines were planted in the early 1980s. Stop at Ata Rangi, whose pinot noir has been rated among the best in the world, or Palliser Estate for their aromatic whites. The cellar doors are intimate and unpretentious — in most, you will be tasted by the people who actually made the wine. The village itself is laid out on a symmetrical grid modelled on the Union Jack, an oddity that makes navigation easy even after several tastings. Each November, the Toast Martinborough festival draws thousands to the vineyards for a day of wine, food, and music under the Wairarapa sun.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Martinborough Wine Merchants",
+        "Destination Wairarapa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Martinborough Wine Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle between boutique cellar doors in Martinborough, the Wairarapa's world-renowned pinot noir village. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-rimutaka-incline-rail-heritage",
+      "name": "Remutaka Incline Rail Heritage Walk",
+      "region": "wellington",
+      "lat": -41.076,
+      "lng": 175.068,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "rail-history",
+        "tunnel",
+        "walking"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 4,
+      "short": "Walk the historic Fell railway incline over the Remutaka Ranges, through tunnels and past derelict infrastructure.",
+      "commentary": "The Remutaka Incline walk follows the former Fell railway line from Kaitoke to Cross Creek over the Remutaka Range summit. The 18 km walk passes through the Summit Tunnel, across viaduct sites, and past the remains of railway infrastructure including the Cross Creek engine shed. The Fell line operated from 1878 to 1955.",
+      "audio_story": "You are walking the Remutaka Incline, tracing the route of one of the most remarkable railways ever built in New Zealand. From 1878 to 1955, trains hauled themselves over the Remutaka Range using the Fell system — a third central rail that specially equipped engines gripped with horizontal wheels to maintain traction on the 1-in-15 gradient. The climb was gruelling for the locomotives, and in bad weather the exposed summit was treacherous. You enter the Summit Tunnel — 576 metres of dripping darkness carved through the range top — and emerge on the Wairarapa side to begin the descent to Cross Creek. The remains of the Cross Creek engine shed and railway village are slowly being claimed by the bush. The workers who lived here, high in the ranges with the constant roar of the wind, led an isolated existence. This walk takes about four hours one way, and you will need transport arranged at the far end — or retrace your steps for a full-day outing. The history layered along this route makes it one of the most evocative heritage walks in the country.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Heritage New Zealand",
+        "Greater Wellington Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Remutaka Incline Rail Heritage Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk the historic Fell railway incline over the Remutaka Ranges, through tunnels and past derelict infrastructure. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "wellington-zealandia-night-tour",
+      "name": "Zealandia Night Tour",
+      "region": "wellington",
+      "lat": -41.29,
+      "lng": 174.753,
+      "category": "adventure",
+      "tags": [
+        "wildlife",
+        "night-tour",
+        "conservation",
+        "kiwi",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Spot kiwi, tuatara, and glow worms on a guided night tour in an urban ecosanctuary.",
+      "commentary": "Zealandia is a 225-hectare predator-free ecosanctuary in the heart of Wellington, home to over 40 rare native species. Night tours offer the best chance to see little spotted kiwi, tuatara, and glow worms in a natural bush setting just minutes from the city centre.",
+      "audio_story": "You have arrived at Zealandia as darkness falls, the ideal time to experience this remarkable urban ecosanctuary. Within 225 hectares of fenced, predator-free bush just minutes from downtown Wellington, over 40 rare and endangered species are thriving. Your guide carries a special red-filtered torch that does not disturb the nocturnal residents, and as your eyes adjust, the bush comes alive. Little spotted kiwi, once nearly extinct with just five birds surviving, now number over 200 in this sanctuary, and your chances of spotting one are excellent. Tuatara, the ancient reptile that has been on Earth for over 200 million years, emerge from their burrows to hunt insects in the dark. Glow worms illuminate the stream banks like fairy lights. Wellington was the first city in the world to attempt a mainland ecosanctuary of this scale, and the results have exceeded all expectations. The dawn chorus inside the fence is now audible from the surrounding suburbs.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Zealandia",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Zealandia Night Tour adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Spot kiwi, tuatara, and glow worms on a guided night tour in an urban ecosanctuary. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-makara-peak-mtb",
+      "name": "Makara Peak Mountain Bike Park",
+      "region": "wellington",
+      "lat": -41.269,
+      "lng": 174.727,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trail-park",
+        "urban",
+        "free"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2.5,
+      "short": "Ride 40+ km of singletrack through regenerating bush minutes from central Wellington.",
+      "commentary": "Makara Peak is Wellington's premier mountain bike park with over 40 km of trails through regenerating native bush. The park is accessible from Karori and offers trails from gentle climbs to expert-grade descents. The trail network links to other Wellington riding areas.",
+      "audio_story": "You have arrived at Makara Peak, Wellington's mountain biking heartland and proof that world-class riding can exist minutes from a capital city. Over 40 kilometres of singletrack wind through 250 hectares of regenerating native bush, with trails that range from smooth, flowy climbs to white-knuckle descents through tight bush corridors. The park was built from the ground up by passionate volunteers who have been cutting, shaping, and maintaining trails since the early 2000s, and their work is exceptional. Start with a climb on one of the main access tracks, each one earning you a choice of descents that get progressively more challenging as you explore further. The bush here is regenerating beautifully, and the birdlife is increasing year on year thanks to predator control. The summit offers views across to Makara Beach and the South Island on a clear day. This is free to ride, but consider donating to the volunteer trail builders who make it all possible.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Makara Peak MTB Park",
+        "Trail Forks",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Makara Peak Mountain Bike Park adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride 40+ km of singletrack through regenerating bush minutes from central Wellington. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-palliser-seal-coast",
+      "name": "Cape Palliser Seal Colony & Coasteering",
+      "region": "wellington",
+      "lat": -41.612,
+      "lng": 175.287,
+      "category": "adventure",
+      "tags": [
+        "coasteering",
+        "seals",
+        "lighthouse",
+        "free",
+        "remote"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Explore the wild seal colony at Cape Palliser, the southernmost point of the North Island.",
+      "commentary": "Cape Palliser is the southernmost point of the North Island, home to a large New Zealand fur seal colony and the 258-step climb to the Cape Palliser Lighthouse. The rocky coastline offers adventurous scrambling and exploration along the wild Wairarapa coast.",
+      "audio_story": "You have arrived at Cape Palliser, the southernmost point of the North Island, where the land meets the Cook Strait in a collision of rock, wind, and waves. The fur seal colony here is one of the largest on the North Island, with hundreds of seals hauled out on the rocky platforms, barking, sparring, and basking in whatever sun they can find. Keep your distance, these are wild animals and the bulls can be aggressive, but from a respectful vantage point, the experience is extraordinary. The 258 steps up to the Cape Palliser Lighthouse reward you with views across to the South Island and along the rugged Wairarapa coastline. The rocky shore here offers adventurous scrambling and exploration, with rockpools, caves, and dramatic formations sculpted by the relentless Southern Ocean. The road to get here is an adventure in itself, clinging to the coast past the eerie Putangirua Pinnacles, rock formations that stood in for the Dimholt Road in Lord of the Rings.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "DOC",
+        "South Wairarapa District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Cape Palliser Seal Colony & Coasteering adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Explore the wild seal colony at Cape Palliser, the southernmost point of the North Island. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-harbour-sailing",
+      "name": "Wellington Harbour Sailing",
+      "region": "wellington",
+      "lat": -41.2866,
+      "lng": 174.788,
+      "category": "adventure",
+      "tags": [
+        "sailing",
+        "harbour",
+        "commercial",
+        "windy"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Sail the famously windy Wellington Harbour with the city skyline as your backdrop.",
+      "commentary": "Wellington is known as the Windy City for good reason, and its harbour offers some of the best sailing conditions in New Zealand. Charter yachts and sailing experiences operate from Chaffers Marina, with views of the waterfront, Oriental Bay, and the surrounding hills.",
+      "audio_story": "You have arrived at Chaffers Marina in Wellington, the Windy City, and if there is one thing this city's famous winds are good for, it is sailing. Wellington Harbour is a natural amphitheatre surrounded by hills that funnel and accelerate the prevailing northerly and southerly winds, creating conditions that thrill experienced sailors. Your yacht will tack across the harbour with the city skyline on one side and the bush-clad hills of the Eastern Bays on the other. On a good northerly, the harbour comes alive with whitecaps and the sailing is fast, exhilarating, and occasionally damp. Oriental Bay's golden sand beach, the vibrant waterfront with Te Papa museum, and the Interislander ferries all slide past as you sail. Wellington has produced numerous Olympic and America's Cup sailors, and once you feel the wind here, you will understand why. Even the harbour ferry commuters look envious when a yacht heels past them at speed.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Wellington Ocean Sports",
+        "Royal Port Nicholson Yacht Club"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Wellington Harbour Sailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sail the famously windy Wellington Harbour with the city skyline as your backdrop. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-lyall-bay-surf",
+      "name": "Lyall Bay Surfing",
+      "region": "wellington",
+      "lat": -41.329,
+      "lng": 174.796,
+      "category": "adventure",
+      "tags": [
+        "surfing",
+        "beach-break",
+        "urban",
+        "free",
+        "lessons"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "Surf the exposed beach break at Lyall Bay with planes landing overhead.",
+      "commentary": "Lyall Bay is Wellington's most accessible surf beach, located next to the airport. The exposed south-facing beach picks up consistent Cook Strait swells. The western end near the reef is best for experienced surfers, while the main beach suits learners. Planes landing overhead add to the atmosphere.",
+      "audio_story": "You have arrived at Lyall Bay, Wellington's urban surf beach and one of the most uniquely situated breaks in New Zealand. This exposed, south-facing beach catches every swell that funnels through Cook Strait, making it one of the most consistent surf spots in the lower North Island. The main beach offers beginner-friendly whitewater and small waves on moderate days, while the western end near the reef produces punchy peaks for experienced surfers when the swell picks up. What makes Lyall Bay unforgettable is the airport next door, planes on approach to Wellington Airport pass directly overhead at alarmingly low altitude, and the surreal combination of surfing with 737s roaring past is something you will not experience anywhere else. The water here is brisk, a good wetsuit is essential year-round, and the southerly swells can pack surprising power. Surf schools operate from the beach, and gear hire is available from shops in the bay.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Surfline",
+        "Wellington Surf Guide"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Lyall Bay Surfing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Surf the exposed beach break at Lyall Bay with planes landing overhead. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-queen-charlotte-kayak",
+      "name": "Kapiti Island Nature Tour & Kayak",
+      "region": "wellington",
+      "lat": -40.849,
+      "lng": 174.928,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "island",
+        "conservation",
+        "wildlife",
+        "commercial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 6,
+      "short": "Kayak to predator-free Kapiti Island and encounter rare native birds up close.",
+      "commentary": "Kapiti Island is a predator-free nature reserve off the Kapiti Coast, home to many rare bird species including kiwi, kokako, and takahe. Access is by permit only, with limited daily visitor numbers. Sea kayaking to the island combines coastal adventure with a world-class conservation experience.",
+      "audio_story": "You are preparing to kayak across to Kapiti Island, one of New Zealand's most important nature reserves. This 10-kilometre-long island was cleared of predators in the late 1990s in one of the country's most ambitious conservation projects, and the results have been transformational. As you paddle across the two-kilometre channel, the island looms larger and larger, its bush-clad slopes rising steeply from the sea. Landing on the island requires a DOC permit, and daily visitor numbers are strictly limited, making this an exclusive and special experience. Once ashore, the bush is alive with bird species that have vanished from the mainland, including little spotted kiwi, kokako, and stitchbird. The volume of birdsong is almost overwhelming, this is what all of New Zealand once sounded like. The island also holds significant Maori history, as it was the stronghold of the great chief Te Rauparaha. Return permits must be arranged in advance.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Kapiti Island Nature Tours",
+        "Kapiti Coast District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Kapiti Island Nature Tour & Kayak adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak to predator-free Kapiti Island and encounter rare native birds up close. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "wellington-red-rocks-walk",
+      "name": "Red Rocks Seal Colony Walk",
+      "region": "wellington",
+      "lat": -41.351,
+      "lng": 174.719,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "seals",
+        "geological",
+        "free",
+        "coastal"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Walk the wild south coast to 200-million-year-old red rocks and a fur seal colony.",
+      "commentary": "The Red Rocks coastal walk follows the rugged south coast of Wellington past 200-million-year-old pillow lava formations that give the area its name. A fur seal colony winters near Sinclair Head. The walk starts at Owhiro Bay and covers about 8 km return.",
+      "audio_story": "You have arrived at Owhiro Bay, the starting point for one of Wellington's most dramatic coastal walks. The track follows the wild south coast towards Sinclair Head, passing through a landscape that feels a world away from the city just over the hill. About 30 minutes along, the rocks change colour dramatically, turning a deep, rusty red. These are 200-million-year-old pillow lavas, formed when molten rock erupted underwater on the ancient ocean floor, making them some of the oldest rocks visible anywhere in the Wellington region. Continue further and you reach the fur seal colony near Sinclair Head, where between May and October, up to 100 New Zealand fur seals haul out on the rocky shore. Keep your distance, these are powerful wild animals, but watching them from a respectful vantage point is mesmerising. The return walk faces into the prevailing northerly, and this is Wellington, so expect wind. The rawness of this coastline, just kilometres from Parliament, is one of the city's great contrasts.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Wellington City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Red Rocks Seal Colony Walk adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Walk the wild south coast to 200-million-year-old red rocks and a fur seal colony. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

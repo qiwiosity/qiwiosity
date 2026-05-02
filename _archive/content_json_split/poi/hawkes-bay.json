@@ -1,0 +1,1598 @@
+{
+  "region": {
+    "id": "hawkes-bay",
+    "name": "Hawke's Bay / Te Matau-a-Māui",
+    "island": "North",
+    "centre": {
+      "lat": -39.4928,
+      "lng": 176.912
+    },
+    "bounds": {
+      "north": -38.9,
+      "south": -40.2,
+      "east": 178.3,
+      "west": 176.3
+    },
+    "description": "Wine country, Art Deco seafront, and the dramatic coastline of Te Matau-a-Māui — the fish hook of Māui."
+  },
+  "pois": [
+    {
+      "id": "napier-marine-parade",
+      "name": "Marine Parade / Art Deco Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4919,
+      "lng": 176.9169,
+      "category": "heritage",
+      "tags": [
+        "art-deco",
+        "coastal",
+        "1931-earthquake",
+        "walking"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The world's most complete Art Deco seafront — rebuilt in 30 months after the 1931 quake.",
+      "commentary": "On February 3rd, 1931, a 7.8 earthquake flattened Napier in two and a half minutes. 256 people died. The rebuild started within weeks — and they chose Art Deco, the newest style in the world at the time. What you see now is almost unchanged from 1933.",
+      "scripts": {
+        "headline": "scripts/napier-marine-parade.headline.md",
+        "standard": "scripts/napier-marine-parade.standard.md"
+      },
+      "sources_to_check": [
+        "Hawke's Bay Museum (MTG Hawke's Bay) earthquake archive",
+        "Napier Art Deco Trust — artdeconapier.com",
+        "Te Ara: 1931 Hawke's Bay earthquake"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Marine Parade / Art Deco Napier — the site rewards those who take time to read the signage and absorb the context. The world's most complete Art Deco seafront — rebuilt in 30 months after the 1931 quake. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "napier-bluff-hill",
+      "name": "Bluff Hill Lookout / Mataruahou",
+      "region": "hawkes-bay",
+      "lat": -39.4776,
+      "lng": 176.9246,
+      "category": "heritage",
+      "tags": [
+        "viewpoint",
+        "1931-earthquake",
+        "port",
+        "geology"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The hill that rose 2 metres in the 1931 quake — now the best view of the port.",
+      "commentary": "In 1931 this hill literally grew. The earthquake pushed Mataruahou up by about two metres, and dried out 3,500 hectares of sea floor to create the land Napier airport now sits on. From up here you can see exactly how the coastline changed.",
+      "scripts": {
+        "headline": "scripts/napier-bluff-hill.headline.md",
+        "standard": "scripts/napier-bluff-hill.standard.md"
+      },
+      "sources_to_check": [
+        "GNS Science — 1931 Hawke's Bay earthquake uplift data",
+        "Te Ara: Hawke's Bay region geography"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Bluff Hill Lookout / Mataruahou — the site rewards those who take time to read the signage and absorb the context. The hill that rose 2 metres in the 1931 quake — now the best view of the port. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "te-mata-peak",
+      "name": "Te Mata Peak / Te Mata o Rongokako",
+      "region": "hawkes-bay",
+      "lat": -39.6419,
+      "lng": 176.8869,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "hiking",
+        "legend",
+        "māori"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "The 'face of Rongokako' — a 399m ridge with views from the Ruahines to the Pacific.",
+      "commentary": "The ridgeline here is the body of the giant Rongokako, lying on his back. The story goes he was challenged to eat his way through the hill to prove his love for a Pakipaki chief's daughter, and the shape of the ridge — head to feet — is where he finally choked. Drive up at sunset for the colour; walk up at dawn for the silence.",
+      "scripts": {
+        "headline": "scripts/te-mata-peak.headline.md",
+        "standard": "scripts/te-mata-peak.standard.md"
+      },
+      "sources_to_check": [
+        "Te Mata Park Trust — tematapark.co.nz",
+        "Ngāti Kahungunu Iwi Incorporated — for cultural accuracy before recording"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Te Mata Peak / Te Mata o Rongokako draws visitors back time and again for its natural beauty and peaceful atmosphere. The 'face of Rongokako' — a 399m ridge with views from the Ruahines to the Pacific. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "cape-kidnappers",
+      "name": "Cape Kidnappers / Te Kauwae-a-Māui",
+      "region": "hawkes-bay",
+      "lat": -39.645,
+      "lng": 177.09,
+      "category": "nature",
+      "tags": [
+        "wildlife",
+        "coastal",
+        "gannet-colony",
+        "legend",
+        "cook-voyage"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 3,
+      "short": "The jaw of Māui's fish — a 140m cliff face and the world's most accessible mainland gannet colony.",
+      "commentary": "Two stories, same piece of rock. In Māori tradition this is Te Kauwae-a-Māui — the jawbone Māui used to fish up the North Island. In European history it's 'Cape Kidnappers', named by Cook on 15 October 1769 after a Ngāi Te Whatuiāpiti party under Te Rangikoianake tried to free a young Tahitian boy, Taiata, whom they believed was being held captive on the Endeavour. Around 6,500 pairs of Australasian gannets nest on the cliff edge from September to April — the world's most accessible mainland colony. Three ways in: the low-tide walk from Clifton Beach (~3 hrs each way, check tides), tractor-trailer tours up the beach, or the overland route through Cape Kidnappers Station.",
+      "scripts": {
+        "headline": "scripts/cape-kidnappers.headline.md",
+        "standard": "scripts/cape-kidnappers.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Cape Kidnappers/Te Kauwae-a-Māui Gannet Reserve",
+        "Te Ara: Naming Cape Kidnappers / Te Kauwae-a-Māui",
+        "LINZ — Place-name stories: Cape Kidnappers",
+        "Cook's Endeavour journal, 15 Oct 1769",
+        "Ngāi Te Whatuiāpiti / Ngāti Kahungunu Iwi Inc."
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Cape Kidnappers / Te Kauwae-a-Māui draws visitors back time and again for its natural beauty and peaceful atmosphere. The jaw of Māui's fish — a 140m cliff face and the world's most accessible mainland gannet colony. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "waipawa-township",
+      "name": "Waipawa",
+      "region": "hawkes-bay",
+      "lat": -39.9428,
+      "lng": 176.5867,
+      "category": "heritage",
+      "tags": [
+        "settler-history",
+        "town",
+        "heritage-walk",
+        "rural"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "Central Hawke's Bay's quiet historic town — 1860s settler heritage, still-working rural New Zealand.",
+      "commentary": "Laid out in 1860 by runholder Frederick Abbott, who called it Abbottsford — a name the other settlers quietly ignored in favour of the original Māori name, Waipawa. Long before the ford that gave the place its colonial reason to exist, this was a major Ngāti Kahungunu occupation: the plains here are the rohe of Ngāi Toroiwaho and Ngāti Whatuiāpiti, with kainga, gardens and eel weirs along the river. The Central Hawke's Bay land was opened to runholders after Donald McLean's huge 1851 Crown purchases — over 254,000 hectares across three blocks. What makes the town worth a stop now is what didn't happen: Waipawa never boomed, so the 1870s–1920s shopfronts, the old CHB County Council chambers and one of New Zealand's last genuinely in-use country-town pubs are all still here. Two marae on the edge of town — Mataweka and Nohomaiterangi — belong to the same hapū who've been here all along. Coffee at the Red Bridge café.",
+      "scripts": {
+        "headline": "scripts/waipawa-township.headline.md",
+        "standard": "scripts/waipawa-township.standard.md"
+      },
+      "sources_to_check": [
+        "Central Hawke's Bay District Council heritage inventory",
+        "CHB Settlers Museum, Waipawa",
+        "Te Ara — Hawke's Bay places: Waipawa",
+        "Kahungunu.iwi.nz"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Waipawa — the site rewards those who take time to read the signage and absorb the context. Central Hawke's Bay's quiet historic town — 1860s settler heritage, still-working rural New Zealand. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "mahia-peninsula",
+      "name": "Māhia Peninsula / Te Māhia-mai-tawhiti",
+      "region": "hawkes-bay",
+      "lat": -39.1436,
+      "lng": 177.8647,
+      "category": "māori",
+      "tags": [
+        "coastal",
+        "māori",
+        "rocket-lab",
+        "legend",
+        "whaling",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "A thousand-year-old waka landing site that now launches rockets — the rohe of Rongomaiwahine.",
+      "commentary": "Te Māhia-mai-tawhiti — 'the sound heard from a distance' — is the homeland of Ngāti Rongomaiwahine, who descend from the high-ranking ancestor Rongomaiwahine through both the Tākitimu and Kurahaupō canoes. Tradition holds that Whatonga, grandson of the navigator Toi, settled here after arriving from Hawaiki. Centuries later a brief shore-whaling industry ran from the west coast (1830s). In 2016 Rocket Lab, leasing land from the Māori-owned Tawapata South Incorporation, built Launch Complex 1 on the southern tip. On 21 January 2018 *Still Testing* reached orbit — the first orbital launch from New Zealand, and the first orbital launch from a private spaceport anywhere. Same peninsula. Very different centuries.",
+      "scripts": {
+        "headline": "scripts/mahia-peninsula.headline.md",
+        "standard": "scripts/mahia-peninsula.standard.md"
+      },
+      "sources_to_check": [
+        "Rongomaiwahine Iwi Trust — rongomaiwahine.iwi.nz",
+        "Te Ara — Ngāti Rongomaiwahine",
+        "Rocket Lab / Tawapata South Incorporation",
+        "Wikipedia — Māhia Peninsula, Rocket Lab Launch Complex 1"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Māhia Peninsula / Te Māhia-mai-tawhiti as a place where the history and cultural significance of Aotearoa become tangible and real. A thousand-year-old waka landing site that now launches rockets — the rohe of Rongomaiwahine. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "lake-tutira",
+      "name": "Lake Tūtira",
+      "region": "hawkes-bay",
+      "lat": -39.2167,
+      "lng": 176.8833,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "ecology",
+        "guthrie-smith",
+        "walking",
+        "hidden-gem",
+        "literary"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "The lake that became a book — Herbert Guthrie-Smith's forty-year study of one sheep station changed how New Zealand thinks about land.",
+      "commentary": "Herbert Guthrie-Smith farmed this valley from 1882 to 1940, and kept notes the whole time — weather, birds, rainfall, erosion, flood, introduced species, everything. He published it in 1921 as *Tutira: the story of a New Zealand sheep station*: roughly 600 pages, a foundational work of New Zealand ecology. The 1953 edition added a chapter on the 1931 earthquake. The lake itself has been reshaped since — the earthquake altered drainage, and both Cyclone Bola (1988) and Cyclone Gabrielle (2023) dumped serious silt. The short walkway to the water's edge takes ten minutes; the longer Tūtira Walkway up into regenerating bush is ~2 hrs return, on land Guthrie-Smith himself replanted.",
+      "scripts": {
+        "headline": "scripts/lake-tutira.headline.md",
+        "standard": "scripts/lake-tutira.standard.md"
+      },
+      "sources_to_check": [
+        "H. Guthrie-Smith, *Tutira* (1921, 1926, 1953 eds)",
+        "NZ Geographic — 'Guthrie-Smith of Tutira'",
+        "Te Ara — Lake Tūtira",
+        "DOC — Tūtira Walkway"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Lake Tūtira draws visitors back time and again for its natural beauty and peaceful atmosphere. The lake that became a book — Herbert Guthrie-Smith's forty-year study of one sheep station changed how New Zealand thinks about land. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "mohaka-viaduct",
+      "name": "Mōhaka Viaduct",
+      "region": "hawkes-bay",
+      "lat": -39.0667,
+      "lng": 177.0333,
+      "category": "heritage",
+      "tags": [
+        "engineering",
+        "railway",
+        "1931-earthquake",
+        "viewpoint",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "95 metres tall and 277 metres long — the tallest railway viaduct in Australasia, built across a depression and an earthquake.",
+      "commentary": "Designed by PWD engineers John Lelliot Cull and William Langston Newnham, construction began in 1930. The Depression halted work in 1931 — the same year the Hawke's Bay earthquake tore through the region and damaged the half-finished line. For five years the unfinished piers sat in the gorge. Work resumed in 1936; the viaduct opened in July 1937, having been completed in about a year once the money returned. It's a Heritage New Zealand Category 1 structure (listing no. 4418) and still carries freight to Gisborne. The best pull-off view is from SH2 at Raupunga. The Mōhaka river below is a taonga river to Ngāti Pāhauwera.",
+      "scripts": {
+        "headline": "scripts/mohaka-viaduct.headline.md",
+        "standard": "scripts/mohaka-viaduct.standard.md"
+      },
+      "sources_to_check": [
+        "Engineering New Zealand heritage record — Mōhaka Viaduct",
+        "Heritage New Zealand Pouhere Taonga — listing no. 4418",
+        "Wikipedia — Mohaka Viaduct",
+        "Ngāti Pāhauwera — for the river framing"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Mōhaka Viaduct — the site rewards those who take time to read the signage and absorb the context. 95 metres tall and 277 metres long — the tallest railway viaduct in Australasia, built across a depression and an earthquake. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "ocean-beach-waipuka",
+      "name": "Ocean Beach / Waipuka",
+      "region": "hawkes-bay",
+      "lat": -39.6983,
+      "lng": 177.0139,
+      "category": "nature",
+      "tags": [
+        "coastal",
+        "surf",
+        "whaling-history",
+        "wreck",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A wild golden-sand surf beach between Cape Kidnappers and Waimarama — whaling station, shipwreck, and a living Māori community.",
+      "commentary": "Known locally as Waipuka, this is the rawest coast in Hawke's Bay — long sand, heavy surf, a scatter of baches, few amenities. In 1838, William Morris set up the Rangaiika shore whaling station here. In 1887 the coastal steamer *Go Ahead* wrecked offshore; her iron boiler is still wedged in the rocks at the southern end. Two sea arches at low tide, nesting shags on the cliffs, and one of the stronger rips on the east coast — summer lifeguard patrols only, swim between the flags. The small community here would prefer not to be over-promoted; visit quietly.",
+      "scripts": {
+        "headline": "scripts/ocean-beach-waipuka.headline.md",
+        "standard": "scripts/ocean-beach-waipuka.standard.md"
+      },
+      "sources_to_check": [
+        "Wikipedia — Ocean Beach, Hawke's Bay",
+        "Hastings District Council — Ocean Beach page",
+        "Ngāti Kahungunu ki Heretaunga / Waimārama hapū — for the Waipuka framing"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Ocean Beach / Waipuka draws visitors back time and again for its natural beauty and peaceful atmosphere. A wild golden-sand surf beach between Cape Kidnappers and Waimarama — whaling station, shipwreck, and a living Māori community. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taumata-hill",
+      "name": "Taumata­whakatangi­hanga­koauau­o­Tamatea­turi­pukaka­piki­maunga­horo­nuku­pokai­whenua­ki­tana­tahu",
+      "region": "hawkes-bay",
+      "lat": -40.3453,
+      "lng": 176.5394,
+      "category": "māori",
+      "tags": [
+        "record",
+        "place-name",
+        "māori",
+        "legend",
+        "hidden-gem",
+        "roadside"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.25,
+      "short": "The hill with the 85-letter name — a whole story compressed into one word, about Tamatea and a kōauau flute.",
+      "commentary": "A 305-metre hill near Pōrangahau, southern Hawke's Bay. The 85-letter name is the Guinness World Record for longest place name in an English-speaking country. It tells the story of the explorer Tamatea-pōkai-whenua, who after a battle in this area lost his brother and remained here, mourning, playing his kōauau (bone flute) to his beloved. The name is the song. A longer 105-letter version exists in some tellings. The hill itself is on private farmland — the sign at the base is the public experience, and it's enough.",
+      "scripts": {
+        "headline": "scripts/taumata-hill.headline.md",
+        "standard": "scripts/taumata-hill.standard.md"
+      },
+      "sources_to_check": [
+        "Wikipedia — Taumatawhakatangihangakoauauotamateaturipukakapikimaungahoronukupokaiwhenuakitanatahu",
+        "Ngāti Kere (Pōrangahau) — cultural content and pronunciation",
+        "Te Ara — Tamatea traditions"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Taumata­whakatangi­hanga­koauau­o­Tamatea­turi­pukaka­piki­maunga­horo­nuku­pokai­whenua­ki­tana­tahu as a place where the history and cultural significance of Aotearoa become tangible and real. The hill with the 85-letter name — a whole story compressed into one word, about Tamatea and a kōauau flute. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "mission-estate",
+      "name": "Mission Estate / La Grande Maison",
+      "region": "hawkes-bay",
+      "lat": -39.5197,
+      "lng": 176.8767,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "french-marist",
+        "1931-earthquake",
+        "heritage",
+        "1851"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "New Zealand's oldest winery — French Marist missionaries since 1851, through two relocations, a flood, and the 1931 earthquake.",
+      "commentary": "French Marist missionaries arrived in Hawke's Bay in 1851 with vines for sacramental wine, establishing their first site at Pakowhai. Inter-iwi conflict forced a move to Meeanee in 1858, and a later flood drove the mission uphill to Greenmeadows in 1909 — the seminary building itself cut into 11 sections, rolled on logs and pulled by traction engines over 5 km across 2 days. Twenty-two years later, on 3 February 1931, the earthquake collapsed the stone chapel while two priests and seven seminarians were at prayer; all nine were killed. There's a memorial on the site. Today Mission Estate is a working cellar door and restaurant, and the annual Mission Concert is one of NZ's biggest outdoor events. A hundred and seventy-five years of wine from the same valley.",
+      "scripts": {
+        "headline": "scripts/mission-estate.headline.md",
+        "standard": "scripts/mission-estate.standard.md"
+      },
+      "sources_to_check": [
+        "Mission Estate Winery — missionestate.co.nz",
+        "New Zealand Wine — nzwine.com",
+        "Napier City Council heritage file no. 198 — 'La Grande Maison'",
+        "Wikipedia — Mission Estate Winery"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Mission Estate / La Grande Maison delivers an excellent food and wine experience that visitors describe as a highlight of the region. New Zealand's oldest winery — French Marist missionaries since 1851, through two relocations, a flood, and the 1931 earthquake. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "shine-falls",
+      "name": "Shine Falls / Boundary Stream",
+      "region": "hawkes-bay",
+      "lat": -39.2139,
+      "lng": 176.7636,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "hiking",
+        "hidden-gem",
+        "conservation",
+        "bush",
+        "cyclone-gabrielle"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3.5,
+      "short": "Hawke's Bay's tallest waterfall — 58 metres off a limestone cliff, deep in a DOC Mainland Island where the birds are coming back.",
+      "commentary": "Shine Falls is a 58-metre horsetail waterfall inside the Boundary Stream Mainland Island — a DOC reserve where intensive predator control (since the late 1990s) has restored bird life to levels you rarely hear on the mainland. The walk from Heays Access Road is about 1 hour 45 minutes each way through kanuka, kawakawa, kōwhai and tītoki, with a shallow pool and long-fin eels at the base of the falls. Cyclone Gabrielle (February 2023) severely damaged the track and bridges; DOC has been reopening sections in stages. Always check the DOC status page before driving out.",
+      "scripts": {
+        "headline": "scripts/shine-falls.headline.md",
+        "standard": "scripts/shine-falls.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Boundary Stream Mainland Island / Shine Falls track",
+        "Wilderness Magazine — Shine Falls trip report",
+        "World of Waterfalls"
+      ],
+      "content_status": "draft_access_check_required",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Shine Falls / Boundary Stream draws visitors back time and again for its natural beauty and peaceful atmosphere. Hawke's Bay's tallest waterfall — 58 metres off a limestone cliff, deep in a DOC Mainland Island where the birds are coming back. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "napier-taupo-road",
+      "name": "Napier–Taupō Road (SH5)",
+      "region": "hawkes-bay",
+      "lat": -39.25,
+      "lng": 176.6,
+      "category": "journey",
+      "tags": [
+        "corridor",
+        "sh5",
+        "road-history",
+        "cobb-and-co",
+        "cyclone-gabrielle",
+        "engineering"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 2.5,
+      "short": "A 145 km mountain highway with a 150-year history — Māori track, Cobb & Co coach road, and twice-rebuilt modern SH5.",
+      "commentary": "SH5 climbs from Napier to Taupō through some of the North Island's most technically challenging terrain. The line you're driving was first a pre-European Māori inland track, then a surveyed coach road cut through dense forest in the 1870s; Cobb & Co began scheduled coaches on 1 January 1872. A chain of stockades, change stations and hotels grew along it — Te Pōhue, Tarawera, Rangitaiki, Opepe — some still standing, some marked only by graves. Pre-WWII freight companies stashed spare gearboxes at the summits because the climbs were famous for wrecking them. Major realignments in the 1950s — enabled by the then-new technology of aerial photogrammetry — cut the summit of Turangakumu by 100 m. In February 2023, Cyclone Gabrielle closed the entire corridor: washouts at Te Pōhue, the Esk Valley floor under silt, and slip damage the whole length. NZTA has been rebuilding ever since. What you're driving is the latest version of one of NZ's oldest roads.",
+      "scripts": {
+        "headline": "scripts/napier-taupo-road.headline.md",
+        "standard": "scripts/napier-taupo-road.standard.md"
+      },
+      "sources_to_check": [
+        "Contractor Magazine — Heritage Trails: Napier–Taupō Road",
+        "HB Knowledge Bank — SH5 heritage collection",
+        "NZTA — SH5 Cyclone Gabrielle recovery updates",
+        "Te Ara — Roadside Stories: Napier to Taupō"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Napier–Taupō Road (SH5) route delivers a memorable journey through exceptional New Zealand scenery. A 145 km mountain highway with a 150-year history — Māori track, Cobb & Co coach road, and twice-rebuilt modern SH5. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "esk-valley",
+      "name": "Esk Valley",
+      "region": "hawkes-bay",
+      "lat": -39.4056,
+      "lng": 176.8528,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "cyclone-gabrielle",
+        "recovery",
+        "vineyards",
+        "2023-flood"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1,
+      "short": "The northernmost Hawke's Bay wine sub-region — devastated by Cyclone Gabrielle in February 2023, now visibly coming back.",
+      "commentary": "The Esk Valley sits at the foot of the climb onto the Napier–Taupō Road. Flat, fertile, wine country. At around 4 am on 14 February 2023, after two days of Cyclone Gabrielle rain, the Esk River jumped its banks. Within two hours houses were under eaves and vineyards were under two metres of silt. Petane Wines (winemaker Philip Barber dug out 12,000 bottles by hand), Sacred Hill (≈15 ha of Dartmoor vineyard now permanently under a new riverbed) and Linden Estate (≈6 ha under silt, cellar door torn apart) were among the worst hit. Eleven people died across Hawke's Bay that day. What you're driving through is the slow work of recovery — some vineyards replanted in the same rows, some moved uphill, some sold up. SH5 through Eskdale has been rebuilt in sections; the fresh tarmac is a scar.",
+      "scripts": {
+        "headline": "scripts/esk-valley.headline.md",
+        "standard": "scripts/esk-valley.standard.md"
+      },
+      "sources_to_check": [
+        "RNZ News — Esk Valley recovery coverage",
+        "Wine Spectator / NZ Herald",
+        "Hawke's Bay Wine Growers' Association",
+        "Petane / Sacred Hill / Linden Estate"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Esk Valley delivers an excellent food and wine experience that visitors describe as a highlight of the region. The northernmost Hawke's Bay wine sub-region — devastated by Cyclone Gabrielle in February 2023, now visibly coming back. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "te-pohue",
+      "name": "Te Pōhue",
+      "region": "hawkes-bay",
+      "lat": -39.245,
+      "lng": 176.6475,
+      "category": "heritage",
+      "tags": [
+        "cobb-and-co",
+        "settler-history",
+        "three-hotels",
+        "1931-earthquake",
+        "road-history"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 0.5,
+      "short": "Former Cobb & Co coach stop — a small township whose three hotels each came to an unlucky end.",
+      "commentary": "Te Pōhue is a scattered township around a small lake, about 55 km north of Napier, on the climb before Titiokura Saddle. It was the mid-morning change-of-horses and feed stop for Cobb & Co coaches on the Napier–Taupō run, which launched on 1 January 1872. The first hotel was built c. 1869. The second burnt down in 1897 when sparks from a farmer's burn-off landed on the shingle roof. The third — the Lake Hotel, built 1899 by Joseph King — was destroyed by the 1931 Hawke's Bay earthquake. What's here now is a rural crossroads: school, fire station, homes, and a servo that has saved a lot of drivers on the climb ahead.",
+      "scripts": {
+        "headline": "scripts/te-pohue.headline.md",
+        "standard": "scripts/te-pohue.standard.md"
+      },
+      "sources_to_check": [
+        "HB Knowledge Bank — SH5 Napier to Te Pōhue",
+        "Te Ara — Roadside Stories: Te Pōhue",
+        "Wikipedia — Te Pōhue",
+        "BayBuzz — Exploring Hawke's Bay: Te Pōhue"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Te Pōhue — the site rewards those who take time to read the signage and absorb the context. Former Cobb & Co coach stop — a small township whose three hotels each came to an unlucky end. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "titiokura-saddle",
+      "name": "Titiokura Saddle",
+      "region": "hawkes-bay",
+      "lat": -39.1678,
+      "lng": 176.5694,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "road-history",
+        "maungaharuru-range",
+        "colenso",
+        "nz-wars"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.3,
+      "short": "736 m on the Maungaharuru Range — one of the great roadside views on the North Island.",
+      "commentary": "The high point of SH5 on the Hawke's Bay side: 736 metres, on the ridgeline of the Maungaharuru Range. East is the entire Hawke's Bay basin down to the Pacific; west is the Kaweka Range and the Mohaka River valley. The saddle sits on the old Māori inland track; missionary William Colenso climbed it in the 1840s, and in the 1870s a colonial stockade was built here as part of the NZ Wars–era chain of outposts along the coaching road. Pre-WWII truckies used to burn out gearboxes on the climb up; transport firms kept spare gearboxes stashed at the summit. A lookout and pull-off are on the ridge.",
+      "scripts": {
+        "headline": "scripts/titiokura-saddle.headline.md",
+        "standard": "scripts/titiokura-saddle.standard.md"
+      },
+      "sources_to_check": [
+        "HB Knowledge Bank — SH5 Titiokura to Stoney Creek",
+        "Contractor Magazine — Heritage Trails: Napier–Taupō Road",
+        "NZ Topo Map / Mapcarta"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Titiokura Saddle draws visitors back time and again for its natural beauty and peaceful atmosphere. 736 m on the Maungaharuru Range — one of the great roadside views on the North Island. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "heretaunga-rohe-intro",
+      "name": "Welcome to Heretaunga",
+      "region": "hawkes-bay",
+      "lat": -39.64,
+      "lng": 176.84,
+      "category": "māori",
+      "tags": [
+        "welcome",
+        "iwi",
+        "rohe",
+        "cultural-context"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 0,
+      "short": "A short cultural welcome to the Heretaunga plains — the rohe of Ngāti Kahungunu.",
+      "commentary": "PLACEHOLDER — do not ship until reviewed with Ngāti Kahungunu Iwi Inc. Intended as a respectful, general-level welcome: 'You are entering the rohe of Ngāti Kahungunu, one of Aotearoa's largest iwi. The plains from Takapau to the Mohaka are Heretaunga — named for the bindings of a great canoe. We'll point out sites as we pass them; we won't tell stories that aren't ours to tell.'",
+      "scripts": null,
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Welcome to Heretaunga as a place where the history and cultural significance of Aotearoa become tangible and real. A short cultural welcome to the Heretaunga plains — the rohe of Ngāti Kahungunu. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hawkes-bay-art-deco-tour",
+      "name": "Art Deco Walking Tour, Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4892,
+      "lng": 176.91,
+      "category": "heritage",
+      "tags": [
+        "art-deco",
+        "walking-tour",
+        "1931-earthquake",
+        "guided"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "A daily guided walk through the most complete Art Deco city centre in the world.",
+      "commentary": "Run by the Art Deco Trust from their visitor centre on Tennyson Street; daily 1-hour guided walks plus a longer afternoon option.",
+      "audio_story": "You have signed up for an Art Deco walking tour in Napier and you are about to spend an hour learning to read a city. Almost everything in the central business district was built in the four years between nineteen thirty one and nineteen thirty five, after the Hawke's Bay earthquake on the third of February nineteen thirty one flattened the old Victorian centre in two and a half minutes. Two hundred and fifty six people died that morning. The rebuild started within weeks, and the architects in charge chose Art Deco, the newest and most optimistic style in the world at the time. Your guide will take you slowly along Emerson Street and Tennyson Street, pointing out the geometric sunbursts, the zigzag chevrons, the stylised Māori motifs, and the curved corner windows that mark the style. You will hear about the architect Louis Hay and the painter Charles Bourne, about the local concrete mixers who poured the foundations. You will be shown the National Tobacco Building in Ahuriri, with its great oak doors and roses, often picked as the most beautiful Art Deco building in the country. By the end of the walk you will see a city you missed when you arrived. Stay for a coffee at the Daily Telegraph Building afterward.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Napier Art Deco Trust",
+        "Te Ara — 1931 Hawkes Bay earthquake"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Art Deco Walking Tour, Napier — the site rewards those who take time to read the signage and absorb the context. A daily guided walk through the most complete Art Deco city centre in the world. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hawkes-bay-craggy-range",
+      "name": "Craggy Range / Tukituki Wineries",
+      "region": "hawkes-bay",
+      "lat": -39.6611,
+      "lng": 176.8453,
+      "category": "food-wine",
+      "tags": [
+        "winery",
+        "te-mata-peak",
+        "syrah",
+        "fine-dining"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Hawke's Bay's most photographed winery — a vineyard cellar door under the great south face of Te Mata Peak.",
+      "commentary": "Craggy Range is sited directly under Te Mata Peak. Known for its Sophia red blend and the Terrôir restaurant.",
+      "audio_story": "You are standing in front of the Craggy Range cellar door, and you have probably already taken a photograph of the building. Behind the dark slate roof and white shingled walls, the southern face of Te Mata Peak rises four hundred metres almost vertically into the sky. There is no other winery view quite like it in the country. Craggy Range was established in nineteen ninety eight as a dedicated single vineyard producer. Its Sophia, a Bordeaux blend from the gravel terraces of the Gimblett Road, and its syrahs from the same area, are some of the most consistently awarded wines in Hawke's Bay. The cellar door pours both, and the staff are unusually patient and knowledgeable. The Terrôir restaurant on site has been one of the country's better fine dining destinations for years, with wood fired meats, garden vegetables, and a long list of by the glass options to accompany a tasting flight. You can also walk straight from the carpark up the Te Mata Peak track, which begins on the property. Do that first, work up an appetite, then come back down to the restaurant and reward yourself.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Craggy Range winery",
+        "Hawkes Bay Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Craggy Range / Tukituki Wineries delivers an excellent food and wine experience that visitors describe as a highlight of the region. Hawke's Bay's most photographed winery — a vineyard cellar door under the great south face of Te Mata Peak. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "hawkes-bay-wairoa",
+      "name": "Wairoa & Mahia Coast",
+      "region": "hawkes-bay",
+      "lat": -39.0469,
+      "lng": 177.4197,
+      "category": "heritage",
+      "tags": [
+        "small-town",
+        "river",
+        "māori-town",
+        "lighthouse"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A small river town with a strong Māori majority, a lighthouse on the riverbank, and the gateway to Mahia.",
+      "commentary": "Wairoa sits on the Wairoa River. Population around 4,500. The Portland Island lighthouse was relocated to the riverbank in 1961.",
+      "audio_story": "You have arrived in Wairoa, a small river town in the northern Hawke's Bay, and you should slow down enough to actually notice it. The town sits on a wide brown river that loops once around the centre and then runs out to the sea four kilometres east. The population is around four and a half thousand and is one of the few in the country that is more than half Māori, mostly Ngāti Kahungunu and Ngāi Tāmanuhiri. The town carries that identity quietly and confidently. Walk along the river esplanade and you will pass several pou whenua, modern Māori sculptures, and the old Portland Island Lighthouse, a white wooden tower that was lifted from its original site on Portland Island in nineteen sixty one and reerected here as a riverside landmark. Wairoa is also the western gateway to the Māhia Peninsula, with its swimming beaches, surf breaks, and the Rocket Lab launch site at the southern tip. To the west the road climbs into the deep bush of Te Urewera and Lake Waikaremoana. Wairoa itself is a place travellers tend to drive through. Stop. Have a pie. Walk the river. The town will reward your attention.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Wairoa District Council",
+        "Te Ara — Wairoa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Wairoa & Mahia Coast — the site rewards those who take time to read the signage and absorb the context. A small river town with a strong Māori majority, a lighthouse on the riverbank, and the gateway to Mahia. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hawkes-bay-lake-waikaremoana-edge",
+      "name": "Cape Sanctuary",
+      "region": "hawkes-bay",
+      "lat": -39.65,
+      "lng": 177.0833,
+      "category": "wildlife",
+      "tags": [
+        "sanctuary",
+        "private",
+        "kiwi",
+        "tuatara"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "The largest privately owned predator-fenced sanctuary in NZ — 2,500 hectares on the Cape Kidnappers peninsula.",
+      "commentary": "Established 2006 by three landowners. Home to North Island brown kiwi, tuatara, takahē, kākā, hihi and other species. Limited public access via guided tours.",
+      "audio_story": "You are looking out toward the great Cape Kidnappers peninsula, and tucked behind its windswept cliffs is one of the most ambitious conservation projects in the country. Cape Sanctuary is twenty five hundred hectares of private land that, since two thousand and six, has been enclosed within a ten and a half kilometre predator-proof fence stretching across the neck of the peninsula. Inside, the three landowner families and a team of rangers have eliminated rats, possums, stoats and wild cats, and have begun reintroducing native species that vanished from this coast a century or more ago. Today the sanctuary is home to North Island brown kiwi, tuatara, kākā, hihi, takahē, and a growing population of seabirds drawn back by sound systems and decoys. It is the largest privately owned and managed sanctuary on the New Zealand mainland. Public access is limited and is generally only available through pre-booked guided tours, often combined with stays at the lodge on the property. From outside the fence, what you can see is a great green sweep of regenerating bush along the spine of the cape, and the satisfying knowledge that just beyond the next ridge, a slice of pre-human New Zealand is being patiently brought back to life.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Cape Sanctuary",
+        "Royal Forest and Bird Society"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The wildlife encounters at Cape Sanctuary earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. The largest privately owned predator-fenced sanctuary in NZ — 2,500 hectares on the Cape Kidnappers peninsula. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "hawkes-bay-tukituki-trail",
+      "name": "Tukituki River Trail",
+      "region": "hawkes-bay",
+      "lat": -39.6308,
+      "lng": 176.79,
+      "category": "food-wine",
+      "tags": [
+        "cycle-trail",
+        "river",
+        "easy",
+        "wineries"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "A flat 32km cycle trail along the Tukituki River through orchards, vineyards and limestone bluffs.",
+      "commentary": "Part of the Hawke's Bay Trails network, one of NZ's 22 Great Rides. Mostly off-road, links wineries and Te Mata Peak.",
+      "audio_story": "You are riding the Tukituki River Trail, one of the easier and prettier sections of the wider Hawke's Bay Trails network, which is in turn one of the official Great Rides of New Zealand. The trail follows the gentle blue green Tukituki River for around thirty two kilometres from Waipawa down to the Pacific Ocean at Haumoana. There are almost no hills. The path is wide and well graded. You will pass orchards heavy with fruit in late summer, vineyards that turn gold in autumn, and dramatic white limestone bluffs above the river that have been named, with characteristic Hawke's Bay confidence, the Crab Farm Cliffs. You can hire bikes from operators in Hastings, Havelock North, or Napier, and many of them will do a one way drop off and pick up so you do not have to ride back. The trail connects naturally to several of the region's best wineries, including Black Barn and Craggy Range, and a relaxed afternoon can easily turn into a long lunch and a slow late return. Wear sunscreen. The Hawke's Bay sun is strong, and there is little shade along the gravel stretches. Take a picnic. Ride at the pace of the river.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Hawke's Bay Trails",
+        "Nga Haerenga — Great Rides"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Tukituki River Trail delivers an excellent food and wine experience that visitors describe as a highlight of the region. A flat 32km cycle trail along the Tukituki River through orchards, vineyards and limestone bluffs. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "hb-hist-te-mata-peak",
+      "name": "Te Mata Peak",
+      "region": "hawkes-bay",
+      "lat": -39.6369,
+      "lng": 176.8767,
+      "category": "nature",
+      "tags": [
+        "te-mata",
+        "peak",
+        "legend",
+        "heretaunga",
+        "ngati-kahungunu"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The sleeping giant chief of Heretaunga — a 399m ridge with one of the great views and a great love story.",
+      "commentary": "Te Mata is the ancestor chief of Waimārama. The ridge is said to be his sleeping body after he attempted to eat through the mountain for love of Hinerākau.",
+      "audio_story": "You are on Te Mata Peak, the dramatic limestone ridge that rises three hundred and ninety nine metres above the Heretaunga Plains. The view is deservedly one of the most famous in Hawke''s Bay, reaching across the orchards and vineyards to Napier and Cape Kidnappers on a clear day. The Māori story of this ridge is a love story. Te Mata was a rangatira of Waimārama iwi on the coast, powerful in battle and handsome. The daughter of an enemy chief, a young woman named Hinerākau, was promised to him in marriage to secure peace between their peoples. Her father, still resentful, set an impossible bride price. Te Mata was to eat a path directly through the hills between the two iwi. Driven by love, he set to work. He had eaten part of the ridge when the task killed him. His body lies along the ridge today. The peak is his forehead, the long slope is his chest, and the drop into Havelock North is his feet. Hinerākau, in the oldest version of the story, threw herself from the cliff in grief. The whole country holds him. On the drive up, in the wind at the lookout, keep that story in mind as you look around.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "Te Ara — Te Mata",
+        "Heretaunga hapū"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Te Mata Peak draws visitors back time and again for its natural beauty and peaceful atmosphere. The sleeping giant chief of Heretaunga — a 399m ridge with one of the great views and a great love story. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "hb-hist-waitangi-tribunal-heretaunga",
+      "name": "Heretaunga Tamatea Settlement Pou, Ahuriri",
+      "region": "hawkes-bay",
+      "lat": -39.48,
+      "lng": 176.9,
+      "category": "māori",
+      "tags": [
+        "heretaunga",
+        "treaty",
+        "land-loss",
+        "ahuriri-purchase",
+        "pou"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Pou commemorating the 2016 settlement — and the long story of how most of Heretaunga passed out of Ngāti Kahungunu hands.",
+      "commentary": "The Heretaunga Tamatea settlement with the Crown (2016) addressed 19th century land loss including the 1851 Ahuriri Purchase and the 1867 Heretaunga block.",
+      "audio_story": "You are at a memorial pou commemorating the Heretaunga Tamatea Treaty settlement of twenty sixteen. The Crown''s formal apology to the iwi and hapū of Heretaunga and Tamatea acknowledged a long and complicated sequence of nineteenth century land loss. In eighteen fifty one the Ahuriri Purchase transferred around two hundred and sixty five thousand acres, much of modern Napier included, to the Crown for a total of one thousand five hundred pounds. In eighteen sixty seven the Heretaunga block of one hundred and seventy thousand acres was sold to a small syndicate of ten settler landowners in one of the most controversial individual deals of the colonial era, after those landowners had extended credit to individual Māori and called in debts at critical moments. By the eighteen eighties most of the best lowland in Hawke''s Bay had passed out of Māori ownership. The twenty sixteen settlement included a Crown apology, a financial redress of around one hundred million dollars, and the return of a number of culturally significant sites including several important maunga. The pou itself, with carvings that represent the twenty one hapū of the settlement, stands at Ahuriri. Stop, read it, and understand how the landscape around you came to look as it does.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "Office of Treaty Settlements",
+        "Waitangi Tribunal"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Heretaunga Tamatea Settlement Pou, Ahuriri as a place where the history and cultural significance of Aotearoa become tangible and real. Pou commemorating the 2016 settlement — and the long story of how most of Heretaunga passed out of Ngāti Kahungunu hands. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-hist-napier-prison",
+      "name": "Napier Prison",
+      "region": "hawkes-bay",
+      "lat": -39.4775,
+      "lng": 176.9119,
+      "category": "heritage",
+      "tags": [
+        "prison",
+        "1862",
+        "bluff",
+        "heritage",
+        "tour"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "New Zealand''s oldest prison — opened 1862 and closed 1993, now run as an audio-guided heritage experience.",
+      "commentary": "Napier Prison opened 1862 on Bluff Hill. Housed some of NZ''s most notorious prisoners including murderers executed in its courtyard. Closed 1993. Now audio tours.",
+      "audio_story": "You are at Napier Prison, the oldest former prison in New Zealand. Built in eighteen sixty two, perched on the side of Bluff Hill above the port, the prison held male and sometimes female prisoners for one hundred and thirty years before finally closing in nineteen ninety three. The early decades were brutal. In the nineteen hundreds the prison was the site of several state executions, carried out in a small courtyard that visitors can still walk through. Over the years the walls held some of New Zealand''s most notorious criminals and also some quite ordinary people convicted of quite ordinary crimes. Several of the original small cells in the oldest wing have been preserved as they were when the institution was functioning, complete with the graffiti left by the prisoners who lived and died in them. Self guided audio tours run daily. The narrator is a former guard, and the tour moves through the exercise yard, the isolation cells, the hanging yard, and a reconstruction of the governor''s office. There is a deliberate heaviness to the atmosphere, not manufactured. If you have limited time in Napier, pair this with a walk through the art deco quarter, since the same nineteen thirty one earthquake that destroyed the city also cracked the prison''s outer walls, and the repairs you see today are part of that same aftermath.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Napier Prison",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Napier Prison — the site rewards those who take time to read the signage and absorb the context. New Zealand''s oldest prison — opened 1862 and closed 1993, now run as an audio-guided heritage experience. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hb-hist-waipukurau-pa",
+      "name": "Pukeora Pā & CHB Settler Country",
+      "region": "hawkes-bay",
+      "lat": -40.0167,
+      "lng": 176.5667,
+      "category": "māori",
+      "tags": [
+        "pukeora",
+        "pa-site",
+        "waipukurau",
+        "ngati-kahungunu",
+        "settler"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.75,
+      "short": "The ancient pā above Waipukurau — home to generations of Ngāti Kahungunu before the Waipukurau Purchase of 1851.",
+      "commentary": "Pukeora Pā sits above Waipukurau township. The Waipukurau Purchase (1851) transferred 279,000 acres of Central Hawke''s Bay to the Crown.",
+      "audio_story": "You are at Pukeora, the prominent rounded hill above Waipukurau in Central Hawke''s Bay, and one of the great pre European pā of Ngāti Kahungunu in the Tamatea region. Terraces cut into the slopes by generations of occupiers are still visible, and the central defended platform on the summit is thought to date back at least four hundred years. The surrounding country, the rolling sheep and crop country of modern Central Hawke''s Bay, was known to Māori as Tamatea, and was among the richest food producing regions in the South Pacific before the nineteenth century. In April eighteen fifty one, rangatira of the area signed the Waipukurau Purchase, transferring around two hundred and seventy nine thousand acres to the Crown for a total price of four and a half thousand pounds. It was one of the largest land transactions in the North Island. Within a decade, most of the rich flats had been converted to vast sheep runs under a small number of pākehā leaseholders, and the economic dislocation to the iwi was profound. Drive the back roads around Waipukurau and Takapau. Look up to the hills. Every one of them is a pā, and each carries a name and a story that predate the sheep by centuries.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "Heritage NZ",
+        "Waitangi Tribunal"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Pukeora Pā & CHB Settler Country as a place where the history and cultural significance of Aotearoa become tangible and real. The ancient pā above Waipukurau — home to generations of Ngāti Kahungunu before the Waipukurau Purchase of 1851. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-hist-omarunui",
+      "name": "Ōmarunui Battle Site",
+      "region": "hawkes-bay",
+      "lat": -39.57,
+      "lng": 176.83,
+      "category": "māori",
+      "tags": [
+        "omarunui",
+        "1866",
+        "pai-marire",
+        "battle",
+        "wahi-tapu"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where colonial forces and pro-government Māori pre-emptively attacked a Pai Mārire party in 1866 — one of the least-known battles of the NZ Wars.",
+      "commentary": "12 October 1866. Colonial forces and Ngāti Kahungunu under Renata Kawepo attacked a Hauhau party of ~120 at Ōmarunui. About 23 were killed; the rest taken prisoner.",
+      "audio_story": "You are at Ōmarunui, a small farm settlement near Taradale that on the twelfth of October, eighteen sixty six, was the site of one of the less commonly taught engagements of the New Zealand Wars. A party of around one hundred and twenty Pai Mārire followers had been travelling through inland Hawke''s Bay, apparently hoping to rally support among local iwi. The colonial government, concerned at the movement''s spread and acting on intelligence from Ngāti Kahungunu leaders who opposed Pai Mārire, decided to intercept the party before it reached Napier. A combined force of colonial militia and Ngāti Kahungunu warriors under the senior Hawke''s Bay rangatira Renata Kawepo moved on the camp before dawn. The engagement was short. Around twenty three of the Pai Mārire were killed. Most of the rest were taken prisoner and sent into exile on the Chatham Islands, joining the group that would later include Te Kooti. Among the colonial dead was the son of a prominent Napier merchant. Today the site is a quiet roadside reserve with an interpretive pou. A small engagement, but one that illustrates how complex the New Zealand Wars were, with Māori fighting on both sides of the colonial divide for their own reasons.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "NZHistory — Ōmarunui",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Ōmarunui Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where colonial forces and pro-government Māori pre-emptively attacked a Pai Mārire party in 1866 — one of the least-known battles of the NZ Wars. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-hist-waipatu-marae",
+      "name": "Waipatu Marae, Hastings",
+      "region": "hawkes-bay",
+      "lat": -39.6389,
+      "lng": 176.8433,
+      "category": "māori",
+      "tags": [
+        "waipatu",
+        "ngati-kahungunu",
+        "marae",
+        "kotahitanga",
+        "1892"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.25,
+      "short": "Where the Māori Parliament movement was founded in 1892 — a landmark in nineteenth-century Māori politics.",
+      "commentary": "Waipatu Marae hosted the first Kotahitanga Māori Parliament in June 1892, a pan-tribal political assembly that met annually into the early 1900s.",
+      "audio_story": "You are passing Waipatu Marae, the principal marae of Ngāti Kahungunu in the Hastings area, and the birthplace of one of the great experiments in nineteenth century Māori politics. In June eighteen ninety two, rangatira from iwi across the North Island gathered at Waipatu for the first session of the Kotahitanga Māori Parliament, also called Te Paremata Māori. The parliament met annually for over a decade, rotating between marae, and passed its own legislation, elected its own members and speaker, and attempted to create a Māori political forum that could negotiate with the Crown on equal terms. The driving idea, rooted in Article Two of the Treaty of Waitangi, was tino rangatiratanga, the exercise of full Māori self government over Māori affairs. The colonial government never formally recognised Te Paremata Māori, and by the early nineteen hundreds the movement had declined in influence. But it left a lasting imprint on Māori political thinking. Many of the ideas and relationships built at Kotahitanga flowed directly into the later Young Māori Party of Āpirana Ngata and Māui Pōmare. Pass Waipatu with respect. This is a marae where the modern Māori political movement was, in a real sense, first born.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "Te Ara — Kotahitanga",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Waipatu Marae, Hastings as a place where the history and cultural significance of Aotearoa become tangible and real. Where the Māori Parliament movement was founded in 1892 — a landmark in nineteenth-century Māori politics. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-hist-hb-museum",
+      "name": "MTG Hawke''s Bay, Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4861,
+      "lng": 176.9175,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "taonga",
+        "ngati-kahungunu",
+        "art-deco"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "The regional museum, art gallery and theatre of Hawke''s Bay — with outstanding Ngāti Kahungunu taonga and earthquake exhibits.",
+      "commentary": "Museum Theatre Gallery, Napier. Major taonga collection includes the carved waka taua Taimutu. Earthquake exhibit is national in quality.",
+      "audio_story": "You are at MTG Hawke''s Bay, the combined museum, theatre and art gallery in central Napier. It sits on Marine Parade and occupies a striking modernist building opened in twenty thirteen alongside the preserved shell of the original nineteen thirties Masonic Hall. The museum holds one of the finest regional collections of Ngāti Kahungunu taonga anywhere, including the carved waka taua Taimutu and a number of whakairo whole panels rescued from abandoned marae in the early twentieth century. The permanent gallery on the nineteen thirty one Hawke''s Bay earthquake is outstanding, and in terms of public history is among the best single disaster exhibits in the country. It opens with a simulated three minute shake in a darkened room, followed by contemporary newsreel footage, survivor oral histories, and a walk through display of the reconstruction that created the art deco city outside. A separate gallery rotates contemporary Māori and Pākehā art. Allow at least two hours. If you are only going to visit one museum in Hawke''s Bay, this is the one, and the café is good enough to extend the visit into lunch. Excellent orientation before any deeper exploration of the region''s landscape and stories.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "MTG Hawke''s Bay",
+        "Ngāti Kahungunu"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at MTG Hawke''s Bay, Napier — the site rewards those who take time to read the signage and absorb the context. The regional museum, art gallery and theatre of Hawke''s Bay — with outstanding Ngāti Kahungunu taonga and earthquake exhibits. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hb-hist-wairoa",
+      "name": "Wairoa — Museum & Māori History",
+      "region": "hawkes-bay",
+      "lat": -39.0378,
+      "lng": 177.4197,
+      "category": "māori",
+      "tags": [
+        "wairoa",
+        "ngati-kahungunu",
+        "museum",
+        "tuhoe"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "The northernmost town of Hawke''s Bay — gateway to Tūhoe country and a district with its own deep Māori history.",
+      "commentary": "Wairoa is the principal town of the northern Ngāti Kahungunu rohe and the coastal gateway to Tūhoe and Te Urewera. Local museum on the river.",
+      "audio_story": "You have arrived at Wairoa, the principal town of the northern Ngāti Kahungunu rohe. This is a smaller, quieter, and more distinctly Māori community than the larger centres further south. The Wairoa River runs straight through the middle of the town before emptying into the Pacific a short distance away, and from here State Highway thirty eight runs inland into the remote forested heart of Tūhoe country and Te Urewera. The Wairoa Museum, housed in a small former bank building near the river, tells the local story well. Exhibits cover the iwi history of the district, the coastal whaling and early missionary contact period, the central North Island land wars and the campaigns against Te Kooti, the difficult twentieth century history of land confiscations and returns, and the small town farming and forestry culture that has persisted since. Many of the families you will see in Wairoa carry names that go directly back to the founding families of the town. The historic Presbyterian church near the river dates from the eighteen nineties. The wooden wharf on the river was used into living memory for coastal steamers. Take thirty minutes. Drive the main street. Visit the museum. And then continue.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wairoa Museum",
+        "Ngāti Kahungunu ki Wairoa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Wairoa — Museum & Māori History as a place where the history and cultural significance of Aotearoa become tangible and real. The northernmost town of Hawke''s Bay — gateway to Tūhoe country and a district with its own deep Māori history. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-hist-clive-squarepub",
+      "name": "Clive — Battle of Hauraki, 1857",
+      "region": "hawkes-bay",
+      "lat": -39.58,
+      "lng": 176.92,
+      "category": "heritage",
+      "tags": [
+        "clive",
+        "pakeha-maori",
+        "1857",
+        "boundary-dispute"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "A small memorial in a small town — the site of an 1857 Māori-on-Māori skirmish that shaped the early colonial relationship with Heretaunga.",
+      "commentary": "In 1857 a boundary dispute between Ngāti Kahungunu hapū and a visiting Waikato party ended in a short battle at Pākōwhai near Clive.",
+      "audio_story": "You are at Clive, a small settlement on the Ngaruroro River between Napier and Hastings, and near a memorial that marks an episode from eighteen fifty seven that is rarely told in the general histories. A visiting Waikato war party had come to Hawke''s Bay partly for trade and partly to reassert older land claims. Tensions escalated with local Ngāti Kahungunu hapū, and on a February day a short but sharp engagement took place on the river flats near what is now the settlement of Pākōwhai. The deaths were not large in number, perhaps fewer than twenty on both sides combined, but the skirmish became politically significant because it happened in the presence of a number of colonial officials and missionaries who watched, took notes, and reported back to Governor Gore Browne. The report directly shaped the Crown''s later land purchase policy in Hawke''s Bay, since the Crown presented itself as the sole legitimate keeper of the peace between iwi. The memorial today, a simple stone with a plaque, stands near the road. A small site with a big footnote. Slow down, read the plaque, and keep going.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Ngāti Kahungunu",
+        "Heritage NZ",
+        "Waitangi Tribunal"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Clive — Battle of Hauraki, 1857 — the site rewards those who take time to read the signage and absorb the context. A small memorial in a small town — the site of an 1857 Māori-on-Māori skirmish that shaped the early colonial relationship with Heretaunga. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hb-hist-cape-kidnappers",
+      "name": "Cape Kidnappers / Te Kauwae-a-Māui",
+      "region": "hawkes-bay",
+      "lat": -39.65,
+      "lng": 177.0906,
+      "category": "heritage",
+      "tags": [
+        "cape-kidnappers",
+        "te-kauwae-a-maui",
+        "gannet",
+        "1769",
+        "cook"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 4,
+      "short": "The dramatic promontory where Cook was chased off in 1769 — and where Māui pulled up the North Island.",
+      "commentary": "Cook named the cape after Te Aitanga-a-Hauiti attempted to seize a Tahitian crewmember. Māori name Te Kauwae-a-Māui refers to Māui''s fish hook.",
+      "audio_story": "You are looking at Cape Kidnappers, the long dramatic white cliff promontory that closes the southern end of Hawke''s Bay. Māori call this place Te Kauwae a Māui, the jawbone of Māui, because in the foundational tradition, when the great ancestor Māui fished up the North Island from his canoe, the fish hook caught in what is now the eastern horn of the North Island. This promontory is the eastern arc of that ancient shape. Cook''s name for the place comes from an incident on the fifteenth of October, seventeen sixty nine. While the Endeavour was briefly anchored in the bay, a local party of Te Aitanga a Hauiti came out in waka, and in the course of a trading exchange, several attempted to seize a young Tahitian crew member who was working as interpreter. The crew fired muskets, killed one Māori, and the attempt failed. Cook sailed on, noting the cape in his journal as the place of the kidnappers. The modern cape is most famous for one of the largest mainland colonies of Australasian gannets in the world, around twenty thousand breeding pairs on the tiered ledges of the cliffs. Accessible by guided tractor tour, on foot along the beach at low tide, or by a private walking track above.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Cape Kidnappers",
+        "Te Aitanga-a-Hauiti",
+        "NZHistory — Cook"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cape Kidnappers / Te Kauwae-a-Māui — the site rewards those who take time to read the signage and absorb the context. The dramatic promontory where Cook was chased off in 1769 — and where Māui pulled up the North Island. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "hb-otatara-pa",
+      "name": "Ōtātara Pā Historic Reserve",
+      "region": "hawkes-bay",
+      "lat": -39.558,
+      "lng": 176.86,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "terraces",
+        "archaeological"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "One of NZ's most impressive archaeological sites — 33 hectares of pā terraces, ditches, and storage pits.",
+      "commentary": "The complex includes two main pā — Ōtātara and Hikurangi — with extensive terracing, defensive ditches, and hundreds of storage pits. Walking tracks wind through with interpretation panels.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Ōtātara Pā Historic Reserve as a place where the history and cultural significance of Aotearoa become tangible and real. One of NZ's most impressive archaeological sites — 33 hectares of pā terraces, ditches, and storage pits. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-te-mata-ancestor",
+      "name": "Te Mata o Rongokako",
+      "region": "hawkes-bay",
+      "lat": -39.679,
+      "lng": 176.896,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "ancestor",
+        "mythology"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "The sleeping giant — Te Mata Peak is the body of the ancestor Rongokako who was tricked into eating through the hillside.",
+      "commentary": "The ridgeline is the body of Rongokako who was challenged to eat through the range. He failed and his body became the hill. The profile of the sleeping giant is clearly visible from Havelock North.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Mata o Rongokako as a place where the history and cultural significance of Aotearoa become tangible and real. The sleeping giant — Te Mata Peak is the body of the ancestor Rongokako who was tricked into eating through the hillside. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-lake-waikaremoana",
+      "name": "Lake Waikaremoana — The Sea of Rippling Waters",
+      "region": "hawkes-bay",
+      "lat": -38.75,
+      "lng": 177.067,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "tūhoe",
+        "sacred",
+        "great-walk",
+        "mythology"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 8,
+      "short": "A sacred lake formed by a taniwha — the Great Walk circles a lake that Tūhoe consider an ancestor.",
+      "commentary": "In Tūhoe tradition, the lake was formed when Haumapuhia was turned into a taniwha. The 2014 Te Urewera Act gave the area legal personhood — the first in the world.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Lake Waikaremoana — The Sea of Rippling Waters as a place where the history and cultural significance of Aotearoa become tangible and real. A sacred lake formed by a taniwha — the Great Walk circles a lake that Tūhoe consider an ancestor. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-waimarama",
+      "name": "Waimārama — Ancestral Coastline",
+      "region": "hawkes-bay",
+      "lat": -39.771,
+      "lng": 176.971,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-kahungunu",
+        "coastal",
+        "settlement"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A Māori coastal settlement with cultural tours offering insights into the living heritage landscape.",
+      "commentary": "The local hapū maintain an active marae and Waimārama Māori Tours offers visitors insights into fishing grounds, gardening sites, and wāhi tapu.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Waimārama — Ancestral Coastline as a place where the history and cultural significance of Aotearoa become tangible and real. A Māori coastal settlement with cultural tours offering insights into the living heritage landscape. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-omarunui-battle",
+      "name": "Ōmarunui Battle Site",
+      "region": "hawkes-bay",
+      "lat": -39.515,
+      "lng": 176.825,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "battle",
+        "pai-mārire"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Site of the 1866 battle — a Pai Mārire gathering attacked by colonial forces, survivors imprisoned without trial.",
+      "commentary": "Colonial forces attacked Pai Mārire followers. Survivors — men, women and children — were arrested and imprisoned on the Chatham Islands without trial.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Ōmarunui Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. Site of the 1866 battle — a Pai Mārire gathering attacked by colonial forces, survivors imprisoned without trial. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hb-heretaunga-rohe",
+      "name": "Heretaunga Plains — Māori Agricultural Heartland",
+      "region": "hawkes-bay",
+      "lat": -39.6,
+      "lng": 176.8,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāti-kahungunu",
+        "agriculture",
+        "settlement"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The fertile Heretaunga Plains were densely settled by Ngāti Kahungunu for centuries.",
+      "commentary": "Ngāti Kahungunu cultivated kūmara, fern root, and other crops. The coast and rivers provided abundant seafood and eels.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Heretaunga Plains — Māori Agricultural Heartland as a place where the history and cultural significance of Aotearoa become tangible and real. The fertile Heretaunga Plains were densely settled by Ngāti Kahungunu for centuries. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hawkes-bay-napier-pania",
+      "name": "Pania of the Reef, Napier",
+      "region": "hawkes-bay",
+      "lat": -39.4907,
+      "lng": 176.9178,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "mythology",
+        "statue",
+        "napier",
+        "love-story"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "The famous statue of Pania — a Māori maiden of the sea who fell in love with a young chief.",
+      "commentary": "Pania of the Reef is Napier's most famous landmark. In Māori tradition, Pania was a maiden of the sea who came ashore each night to be with her lover Karitoki. When people tried to capture her, she returned to the sea forever and became the reef. The statue on Marine Parade has become Napier's icon.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Pania of the Reef, Napier as a place where the history and cultural significance of Aotearoa become tangible and real. The famous statue of Pania — a Māori maiden of the sea who fell in love with a young chief. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "hawkes-bay-art-deco-walking-trail",
+      "name": "Napier Art Deco Walking Trail",
+      "region": "hawkes-bay",
+      "lat": -39.4928,
+      "lng": 176.912,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "heritage",
+        "art-deco",
+        "architecture"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Walk through the world's most complete Art Deco city, rebuilt after the devastating 1931 earthquake.",
+      "commentary": "Napier's Art Deco quarter was built after the 3 February 1931 earthquake, which killed 256 people and levelled the city. The rebuild, completed mostly within two years, created one of the world's finest collections of Art Deco, Spanish Mission, and Stripped Classical architecture. The Art Deco Trust leads guided walking tours daily.",
+      "audio_story": "You are walking through Napier's Art Deco quarter, and every building tells a story of resilience. On 3 February 1931, a magnitude 7.8 earthquake struck Hawke's Bay, killing 256 people and destroying most of Napier's commercial centre. The city was rebuilt in just two years in the architectural styles of the era — Art Deco, Spanish Mission, and Stripped Classical. The result is one of the most complete and concentrated collections of 1930s architecture anywhere in the world, rivalling Miami's South Beach. Look up as you walk Emerson Street and Tennyson Street — the geometric patterns, sunburst motifs, zigzag lines, and Maori-influenced designs on the facades are exquisite. The Daily Telegraph building, with its ornate sunbursts and zigzags, is a standout. Each February, the city hosts Art Deco Weekend, when thousands dress in period costume and the streets come alive with vintage cars, jazz bands, and 1930s glamour.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Art Deco Trust Napier",
+        "Heritage New Zealand"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Napier Art Deco Walking Trail route delivers a memorable journey through exceptional New Zealand scenery. Walk through the world's most complete Art Deco city, rebuilt after the devastating 1931 earthquake. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-te-mata-peak-walk",
+      "name": "Te Mata Peak Summit Walk",
+      "region": "hawkes-bay",
+      "lat": -39.644,
+      "lng": 176.888,
+      "category": "journey",
+      "tags": [
+        "summit-walk",
+        "panoramic-views",
+        "legend",
+        "short-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "Walk to the 399-metre summit of Te Mata Peak for sweeping views across Hawke's Bay and beyond.",
+      "commentary": "Te Mata Peak rises 399 metres above the Heretaunga Plains near Havelock North. According to Maori legend, the peak is the body of a sleeping giant, Te Mata o Rongokako. Multiple walking and mountain biking tracks traverse the peak, and the summit is also accessible by road.",
+      "audio_story": "You are climbing Te Mata Peak, and with every step the views expand across the Heretaunga Plains, the Pacific coast, and the distant Ruahine and Kaweka ranges. At 399 metres, this is not a high summit, but its position overlooking flat plains amplifies the sense of height dramatically. In Maori legend, this peak is the reclining body of the giant Te Mata o Rongokako, who was challenged to eat through the hills to prove his love for a chief's daughter. He choked and died, and his body became this ridge — if you look at the profile from the right angle, you can see the sleeping figure. The grassy slopes are dotted with sheep and swept by wind. On a clear day, you can see from Cape Kidnappers to the Mahia Peninsula. Multiple tracks criss-cross the peak — the ridge walk from the car park to the summit takes about 30 minutes and rewards you with one of the finest panoramas in the lower North Island.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Hastings District Council",
+        "Te Mata Park Trust Board"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Te Mata Peak Summit Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to the 399-metre summit of Te Mata Peak for sweeping views across Hawke's Bay and beyond. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-cape-kidnappers-gannet-walk",
+      "name": "Cape Kidnappers Gannet Colony Walk",
+      "region": "hawkes-bay",
+      "lat": -39.646,
+      "lng": 177.097,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "wildlife",
+        "gannet-colony",
+        "cliffs"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 5,
+      "short": "Walk along dramatic coastal cliffs to the world's largest mainland gannet colony at Cape Kidnappers.",
+      "commentary": "Cape Kidnappers hosts the world's largest and most accessible mainland gannet colony, with around 20,000 birds. The 8 km beach and cliff walk from Clifton is passable only at low tide. The cape was named by Captain Cook in 1769 after local Maori attempted to kidnap his Tahitian interpreter.",
+      "audio_story": "You are setting out along the beach from Clifton towards Cape Kidnappers, timing your walk with the low tide because the route passes beneath eroding cliffs that are cut off at high water. This is an 8-kilometre walk along the base of spectacular sandstone and mudstone cliffs banded in layers of geological time. The reward at the end is extraordinary: the world's largest mainland gannet colony, around 20,000 birds packed onto cliff-top platforms in a noisy, pungent, endlessly fascinating spectacle. From September to April, the colony is at its most active — adults soaring in on 1.8-metre wingspans, chicks begging for food, and pairs performing their elaborate greeting rituals of sky-pointing and bill-fencing. Captain Cook named this cape in 1769 after local Maori tried to take his young Tahitian interpreter, Tiata, from the Endeavour. Check the tide tables before you go and allow four to five hours return. This is one of those rare places where you can sit within metres of thousands of wild seabirds.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Hastings District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Cape Kidnappers Gannet Colony Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk along dramatic coastal cliffs to the world's largest mainland gannet colony at Cape Kidnappers. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-wine-country-cycle",
+      "name": "Hawke's Bay Wine Country Cycle Trail",
+      "region": "hawkes-bay",
+      "lat": -39.574,
+      "lng": 176.83,
+      "category": "journey",
+      "tags": [
+        "wine-trail",
+        "cycling",
+        "cellar-doors",
+        "great-ride"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 5,
+      "short": "Cycle between world-class wineries on flat, scenic trails through New Zealand's oldest wine region.",
+      "commentary": "The Hawke's Bay Trails network covers over 200 km of cycling and walking paths linking wineries, orchards, and coastal areas. Hawke's Bay is one of New Zealand's premier wine regions, particularly noted for Bordeaux-style reds and syrah. The Landscapes Ride connects multiple cellar doors on flat, easy trails.",
+      "audio_story": "You are pedalling through the heart of New Zealand's oldest wine region on the Hawke's Bay Trails, a network of over 200 kilometres of flat, easy cycling paths. The Landscapes Ride is the classic wine-tasting route, linking some of the region's best cellar doors through vineyards and orchards on the Heretaunga Plains. Hawke's Bay has been producing wine since 1851, and today it is best known for its rich, Bordeaux-style reds — cabernet sauvignon, merlot, and especially syrah, which thrives in the warm, dry climate. Stop at Craggy Range for their pinot noir with views of Te Mata Peak, or at Mission Estate, the country's oldest winery, established by Marist missionaries in 1851. The trails pass through avenues of plane trees, alongside the Ngaruroro River, and through the charming village of Havelock North. Cycling between wineries is both the responsible and the most enjoyable way to experience this region — and the flat terrain means even well-lunched riders will manage just fine.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Hawke's Bay Trails",
+        "Hawke's Bay Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Hawke's Bay Wine Country Cycle Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle between world-class wineries on flat, scenic trails through New Zealand's oldest wine region. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-kaweka-range-crossing",
+      "name": "Kaweka Range Backcountry Track",
+      "region": "hawkes-bay",
+      "lat": -39.213,
+      "lng": 176.31,
+      "category": "journey",
+      "tags": [
+        "tramping",
+        "backcountry",
+        "mountain",
+        "hunting",
+        "hot-springs"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 14,
+      "short": "Tramp through the rugged Kaweka Ranges to Mangatutu Hot Springs, deep in the North Island backcountry.",
+      "commentary": "The Kaweka Forest Park covers 66,000 hectares of rugged hill country west of Hawke's Bay. The ranges rise to 1,724 metres at Kaweka J and are popular for tramping and hunting. The Mangatutu Hot Springs are a natural thermal pool in a remote bush-clad valley accessible by a full-day tramp.",
+      "audio_story": "You are heading into the Kaweka Ranges, 66,000 hectares of rugged backcountry that feels genuinely wild. These ranges separate Hawke's Bay from the volcanic plateau and rise to 1,724 metres at Kaweka J, where on a clear day you can see from Mount Ruapehu to the Pacific Ocean. The trails here are quieter than the more famous walks — you might see more deer than people. Red deer, introduced for hunting in the early 1900s, are abundant, and the Kawekas are one of New Zealand's most popular recreational hunting areas. Your destination is the Mangatutu Hot Springs, a natural thermal pool nestled in a bush-clad valley, where you can soak in warm mineral water surrounded by nothing but forest and birdsong. The track crosses tussock tops, drops through beech forest, and follows river valleys. DOC huts along the way are basic but welcome. This is not a manicured Great Walk — it is real backcountry tramping, and you need to be self-sufficient and prepared for changeable conditions.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Kaweka Range Backcountry Track route delivers a memorable journey through exceptional New Zealand scenery. Tramp through the rugged Kaweka Ranges to Mangatutu Hot Springs, deep in the North Island backcountry. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-tukituki-valley-drive",
+      "name": "Tukituki Valley Scenic Drive",
+      "region": "hawkes-bay",
+      "lat": -39.77,
+      "lng": 176.62,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "rural",
+        "limestone",
+        "river-valley"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "Drive the Tukituki River valley past limestone formations and sheep stations to the remote Makaroro Valley.",
+      "commentary": "The Tukituki Valley drive follows the Tukituki River inland from Havelock North through pastoral farmland to the rugged Ruahine Ranges. The route passes the Patangata limestone bluffs and leads to the Makaroro and Waipawa River valleys. The area is renowned for its trout fishing and pastoral beauty.",
+      "audio_story": "You are driving up the Tukituki Valley, leaving the vineyards and orchards of Hawke's Bay behind as the road narrows and climbs into the hills. The Tukituki River is one of the most beautiful in the region, winding through a valley of sheep stations and limestone outcrops. At Patangata, dramatic pale limestone bluffs rise above the river, catching golden light in the late afternoon. Further inland, the valley narrows and the Ruahine Ranges loom ahead, their summits often cloud-wrapped. This is renowned trout fishing country — the Tukituki and its tributaries hold good populations of brown and rainbow trout. The road eventually becomes gravel and enters the Makaroro Valley, where the bush closes in and the farming thins out. If you have time, walk to the Sunrise Hut in the Ruahine Ranges from the road end — a three-hour climb to an alpine hut with panoramic views. The Tukituki Valley is Hawke's Bay beyond the cellar doors, and it is quietly magnificent.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Hastings District Council",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Tukituki Valley Scenic Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive the Tukituki River valley past limestone formations and sheep stations to the remote Makaroro Valley. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "hawkes-bay-cape-kidnappers-mtb",
+      "name": "Cape Kidnappers Mountain Bike Trail",
+      "region": "hawkes-bay",
+      "lat": -39.647,
+      "lng": 177.095,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "coastal",
+        "gannet-colony",
+        "commercial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Ride the coastal trail to the world's largest mainland gannet colony at Cape Kidnappers.",
+      "commentary": "Mountain biking to Cape Kidnappers combines a scenic coastal ride along the beach and clifftop tracks with a visit to the world's largest accessible mainland gannet colony. The 20-km return ride follows the beach at low tide and optional overland tracks. The colony is home to around 20,000 gannets from September to April.",
+      "audio_story": "You have arrived at Clifton, the start of an unforgettable mountain bike ride to Cape Kidnappers. The route follows the beach beneath towering striped sedimentary cliffs that have been tilted and folded by millions of years of tectonic activity, a geology lesson in living colour. Your destination is the world's largest accessible mainland gannet colony, home to around 20,000 Australasian gannets from September to April. The birds are utterly unfazed by human visitors, allowing you to watch their elaborate courtship rituals, feeding their chicks, and spectacular plunge-diving from just metres away. Timing is critical, you must check the tides before departing, as the beach section is only passable at low tide. The cape was named by Captain Cook in 1769 after local Maori attempted to kidnap his Tahitian interpreter. Allow four hours for the return trip with time at the colony.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Gannet Beach Adventures",
+        "DOC",
+        "Napier i-SITE"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Cape Kidnappers Mountain Bike Trail adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride the coastal trail to the world's largest mainland gannet colony at Cape Kidnappers. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-mohaka-river-raft",
+      "name": "Mohaka River White Water Rafting",
+      "region": "hawkes-bay",
+      "lat": -39.079,
+      "lng": 176.842,
+      "category": "adventure",
+      "tags": [
+        "white-water-rafting",
+        "grade-5",
+        "multi-day",
+        "commercial",
+        "wilderness"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 8,
+      "short": "Raft the remote Grade 3-5 rapids of the Mohaka River through pristine gorge country.",
+      "commentary": "The Mohaka River is one of the North Island's premier white water rafting rivers, offering sections from Grade 3 to Grade 5 through deep gorges and native bush. Multi-day trips include wilderness camping. The river is also a renowned trout fishery.",
+      "audio_story": "You have arrived at the put-in for the Mohaka River, one of the most exhilarating white water experiences in the North Island. This river flows through deep gorges carved into the Kaweka Range, its rapids ranging from bouncy Grade 3 to the serious Grade 5 of the lower gorge. Your raft guide knows every rock and hydraulic on this river, which is essential because some of these rapids demand precise lines. Between the white water, the river is stunningly beautiful, flowing through pristine native bush with no roads, no buildings, and no cellphone signal. Multi-day trips include camping on riverside terraces under a canopy of stars, with the sound of the river as your soundtrack. The Mohaka is also one of New Zealand's finest trout rivers, and you might spot large browns holding in the pools between rapids. This is genuine backcountry adventure.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Mohaka Rafting",
+        "DOC",
+        "Hawke's Bay Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Mohaka River White Water Rafting adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Raft the remote Grade 3-5 rapids of the Mohaka River through pristine gorge country. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-ocean-beach-horse-trek",
+      "name": "Ocean Beach Horse Trekking",
+      "region": "hawkes-bay",
+      "lat": -39.538,
+      "lng": 177.043,
+      "category": "adventure",
+      "tags": [
+        "horse-trekking",
+        "beach",
+        "commercial",
+        "scenic"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2.5,
+      "short": "Gallop along the wild black sand of Ocean Beach on horseback.",
+      "commentary": "Horse trekking at Ocean Beach near Hastings takes riders along a remote stretch of wild black sand beach backed by cliffs. Treks cater to all experience levels, with the option to canter or gallop along the waterline. The beach is too dangerous for swimming but perfect for riding.",
+      "audio_story": "You have arrived at Ocean Beach, one of Hawke's Bay's wildest and most remote stretches of coastline. This is not a swimming beach, the surf is powerful and unpredictable, but from the saddle of a well-trained horse, it is absolutely magnificent. Your trek begins in the paddock where you will be matched with your horse, and after a safety briefing, you will head down the track to the beach. The black sand stretches for kilometres in both directions, backed by dramatic eroded cliffs and pounded by Hawke's Bay swells. Depending on your experience, you may walk gently along the waterline or open up to a full gallop with the wind in your face and spray flying from the hooves. There are few experiences in New Zealand quite as exhilarating as galloping along a deserted black sand beach with the Pacific Ocean roaring beside you.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Ocean Beach Horse Treks",
+        "Hawke's Bay Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Ocean Beach Horse Trekking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Gallop along the wild black sand of Ocean Beach on horseback. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-napier-parasail",
+      "name": "Napier Parasailing",
+      "region": "hawkes-bay",
+      "lat": -39.4796,
+      "lng": 176.9173,
+      "category": "adventure",
+      "tags": [
+        "parasailing",
+        "ocean",
+        "commercial",
+        "scenic"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "Parasail 150 metres above Hawke's Bay for Art Deco city and Cape views.",
+      "commentary": "Parasailing from Napier's Marine Parade offers aerial views of the Art Deco city, Bluff Hill, and the sweeping arc of Hawke's Bay. Flights reach up to 150 metres and operate from a boat launch off the main beach. The bay's calm conditions make it one of the more reliable parasailing spots.",
+      "audio_story": "You have arrived at Napier's Marine Parade, where a boat and parasail are ready to lift you high above one of New Zealand's most distinctive cities. As you ascend to 150 metres above Hawke's Bay, the entire Napier skyline reveals itself beneath you, a collection of Art Deco buildings rebuilt after the devastating 1931 earthquake that reshaped this city forever. The earthquake actually raised the seabed by up to two metres, creating the flat land where the airport and surrounding suburbs now sit. From your vantage point, you can see the full sweep of Hawke's Bay curving south towards Cape Kidnappers, the vineyards of the Heretaunga Plains stretching inland, and if conditions are clear, the snow-capped peaks of the Kaweka and Ruahine Ranges. The ride is peaceful, just the whisper of wind and an unbeatable view.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Napier Parasailing",
+        "Hawke's Bay Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Napier Parasailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Parasail 150 metres above Hawke's Bay for Art Deco city and Cape views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-waimarama-surf",
+      "name": "Waimarama Beach Surf",
+      "region": "hawkes-bay",
+      "lat": -39.749,
+      "lng": 176.994,
+      "category": "adventure",
+      "tags": [
+        "surfing",
+        "beach-break",
+        "free",
+        "uncrowded"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "Surf uncrowded beach breaks at one of Hawke's Bay's premier surf beaches.",
+      "commentary": "Waimarama is a popular surf beach south of Hastings with consistent beach breaks on easterly and southeasterly swells. The beach has a surf lifesaving club and is patrolled in summer. It offers more reliable swell than the sheltered Napier beaches.",
+      "audio_story": "You have arrived at Waimarama Beach, one of Hawke's Bay's premier surf spots and a welcome contrast to the calmer waters further north. This exposed beach catches swell from the east and southeast, producing fun, punchy beach breaks that work across a range of tide states. The beauty of surfing here is the lack of crowds, unlike the packed lineups of the Bay of Plenty or Raglan, you will often share the waves with just a handful of locals. The Waimarama Surf Lifesaving Club has patrolled this beach since 1933, and the lifeguards can point you to the best banks on any given day. After your session, the beach itself is stunning, a golden crescent backed by farmland-covered hills. The small settlement has a store and takeaways, but not much else, which is exactly the point.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Waimarama SLSC",
+        "Surfline"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Waimarama Beach Surf adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Surf uncrowded beach breaks at one of Hawke's Bay's premier surf beaches. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-shine-falls-hike",
+      "name": "Shine Falls / Te Puna o Te Taniwha",
+      "region": "hawkes-bay",
+      "lat": -39.16,
+      "lng": 176.86,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "waterfall",
+        "free",
+        "family-friendly",
+        "swimming"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Hike through bush and farmland to the 58-metre Shine Falls, the North Island's tallest.",
+      "commentary": "Shine Falls (Te Puna o Te Taniwha) is the tallest waterfall in the North Island at 58 metres. The 2.5-hour return walk crosses farmland and native bush along the Boundary Stream. Swimming at the base of the falls is popular in summer.",
+      "audio_story": "You have arrived at the trailhead for Shine Falls, home to a waterfall that many New Zealanders do not even know exists. At 58 metres, it is the tallest waterfall in the entire North Island, and the walk to reach it is a genuine delight. The track crosses open farmland with grazing sheep before entering native bush along the Boundary Stream. You will cross the stream several times on footbridges, passing through a forest of tree ferns and native broadleaf. Then the bush opens and there it is, a sheer curtain of water plunging over a limestone cliff into a deep, clear pool. The falls are named Te Puna o Te Taniwha, the spring of the taniwha, in Maori tradition. On a hot Hawke's Bay summer day, the pool at the base is perfect for swimming, though the water is bracing. Allow about two and a half hours for the return trip.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Hawke's Bay Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Shine Falls / Te Puna o Te Taniwha adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Hike through bush and farmland to the 58-metre Shine Falls, the North Island's tallest. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "hawkes-bay-ngaruroro-river-kayak",
+      "name": "Ngaruroro River Kayaking",
+      "region": "hawkes-bay",
+      "lat": -39.54,
+      "lng": 176.56,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "river",
+        "braided-river",
+        "free",
+        "scenic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Kayak the braided Ngaruroro River through Hawke's Bay's dramatic gorge country.",
+      "commentary": "The Ngaruroro River is one of the last unmodified braided rivers in the North Island, flowing from the Kaweka Range through gorge country to the Heretaunga Plains. Upper sections offer scenic kayaking through bush-clad gorges, while the lower braided reaches are more relaxed.",
+      "audio_story": "You have arrived at the Ngaruroro River, one of the last great unmodified braided rivers in the North Island. This river flows from the remote Kaweka Range through dramatic gorge country before spreading across the Heretaunga Plains in a network of braided channels. The upper gorge sections offer kayaking through bush-lined canyons with Grade 2 rapids and crystal-clear pools that glow with a distinctive blue-green colour from the greywacke rock. The river supports excellent brown trout fishing, and you might spot large fish holding in the pools as you paddle over them. Below the gorge, the river braids across a wide shingle bed, and the paddling becomes more relaxed but no less scenic, with views to the ranges on both sides. The Ngaruroro is significant both ecologically and culturally, its waters sustain the productive orchards and vineyards of Hawke's Bay downstream. Bring your own kayak or arrange with local operators for guided trips through the best sections.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Hawke's Bay Regional Council",
+        "DOC",
+        "Whitewater NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Ngaruroro River Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak the braided Ngaruroro River through Hawke's Bay's dramatic gorge country. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

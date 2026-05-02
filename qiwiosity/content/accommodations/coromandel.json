@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "coromandel",
+    "name": "Coromandel Peninsula",
+    "island": "North",
+    "centre": {
+      "lat": -36.75,
+      "lng": 175.7
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "coromandel-grand-mercure-puka",
+      "name": "Grand Mercure Puka Park Resort",
+      "region": "coromandel",
+      "lat": -36.841,
+      "lng": 175.787,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.4,
+      "short": "Architect-designed chalets in bush above Pauanui Beach."
+    },
+    {
+      "id": "coromandel-admiralty-lodge",
+      "name": "Admiralty Lodge Whitianga",
+      "region": "coromandel",
+      "lat": -36.8326,
+      "lng": 175.709,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.5,
+      "short": "Luxury apartment hotel on Whitianga's Buffalo Beach."
+    },
+    {
+      "id": "coromandel-oceans-resort-whitianga",
+      "name": "Oceans Resort Whitianga",
+      "region": "coromandel",
+      "lat": -36.836,
+      "lng": 175.707,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Beachfront resort with Mediterranean villa styling and pool."
+    },
+    {
+      "id": "coromandel-pauanui-pines",
+      "name": "Pauanui Pines Motor Lodge",
+      "region": "coromandel",
+      "lat": -36.999,
+      "lng": 175.856,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.3,
+      "short": "Motel-resort in pine-shaded Pauanui minutes from the beach."
+    },
+    {
+      "id": "coromandel-driftwood-seaside-estate",
+      "name": "Driftwood Seaside Escapes",
+      "region": "coromandel",
+      "lat": -36.84,
+      "lng": 175.712,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.4,
+      "short": "Boutique Whitianga villas with Mercury Bay views."
+    },
+    {
+      "id": "coromandel-hot-water-beach-top-hotel",
+      "name": "The Church Boutique Accommodation",
+      "region": "coromandel",
+      "lat": -36.848,
+      "lng": 175.754,
+      "type": "hotel",
+      "price_nzd_per_night": 245,
+      "rating": 4.4,
+      "short": "Boutique cottages around a restored 1916 church at Hahei."
+    },
+    {
+      "id": "coromandel-whitianga-motel",
+      "name": "Whitianga Motel",
+      "region": "coromandel",
+      "lat": -36.837,
+      "lng": 175.706,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Central Whitianga motor lodge close to the ferry to Cooks Beach."
+    },
+    {
+      "id": "coromandel-coromandel-town-motel",
+      "name": "Coromandel Colonial Cottages Motel",
+      "region": "coromandel",
+      "lat": -36.761,
+      "lng": 175.498,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Stand-alone cottages in a garden setting a stroll from Coromandel town."
+    },
+    {
+      "id": "coromandel-thames-motel",
+      "name": "Coastal Motor Lodge Thames",
+      "region": "coromandel",
+      "lat": -37.136,
+      "lng": 175.555,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Garden-set motel at the gateway to the Coromandel Peninsula."
+    },
+    {
+      "id": "coromandel-pauanui-motel",
+      "name": "Pauanui Palms Motel",
+      "region": "coromandel",
+      "lat": -37.009,
+      "lng": 175.853,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.1,
+      "short": "Classic beachside Pauanui motel with pool and family units."
+    },
+    {
+      "id": "coromandel-tairua-shores-motel",
+      "name": "Tairua Shores Motel",
+      "region": "coromandel",
+      "lat": -37.005,
+      "lng": 175.856,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Harbourside Tairua motel with a view over Paku Hill."
+    },
+    {
+      "id": "coromandel-whangamata-motel",
+      "name": "Brenton Lodge Whangamata",
+      "region": "coromandel",
+      "lat": -37.207,
+      "lng": 175.87,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.3,
+      "short": "Studio-cottage motel in gardens above Whangamata."
+    },
+    {
+      "id": "coromandel-tairua-motel-inn",
+      "name": "Pacific Harbour Lodge Tairua",
+      "region": "coromandel",
+      "lat": -37.003,
+      "lng": 175.862,
+      "type": "motel",
+      "price_nzd_per_night": 200,
+      "rating": 4.3,
+      "short": "Tropical bungalow-style motel on Tairua's harbour."
+    },
+    {
+      "id": "coromandel-hot-water-beach-top10",
+      "name": "Hot Water Beach TOP 10 Holiday Park",
+      "region": "coromandel",
+      "lat": -36.8864,
+      "lng": 175.818,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.4,
+      "short": "Famous hot-water-beach park with thermal pool and cabins."
+    },
+    {
+      "id": "coromandel-whitianga-top10",
+      "name": "Whitianga TOP 10 Holiday Park",
+      "region": "coromandel",
+      "lat": -36.829,
+      "lng": 175.696,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Family Whitianga park with kid pool, jumping pillow and cabins."
+    },
+    {
+      "id": "coromandel-coromandel-top10",
+      "name": "Coromandel TOP 10 Holiday Park",
+      "region": "coromandel",
+      "lat": -36.766,
+      "lng": 175.5,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.2,
+      "short": "Bush-fringed Coromandel Town park with motel units and sites."
+    },
+    {
+      "id": "coromandel-shelly-beach-top10",
+      "name": "Shelly Beach TOP 10 Coromandel",
+      "region": "coromandel",
+      "lat": -36.738,
+      "lng": 175.494,
+      "type": "holiday-park",
+      "price_nzd_per_night": 125,
+      "rating": 4.3,
+      "short": "Absolute-beachfront park north of Coromandel Town."
+    },
+    {
+      "id": "coromandel-the-lost-spring-lodge",
+      "name": "The Lost Spring Resort",
+      "region": "coromandel",
+      "lat": -36.835,
+      "lng": 175.706,
+      "type": "lodge",
+      "price_nzd_per_night": 780,
+      "rating": 4.6,
+      "short": "Thermal spa villas in lush Whitianga jungle gardens."
+    },
+    {
+      "id": "coromandel-kauri-cliffs-adjacent",
+      "name": "Puka Park Ridge Lodge Suites",
+      "region": "coromandel",
+      "lat": -36.8395,
+      "lng": 175.789,
+      "type": "lodge",
+      "price_nzd_per_night": 820,
+      "rating": 4.6,
+      "short": "Premium ridge chalets at Puka Park with Pauanui beach views."
+    },
+    {
+      "id": "coromandel-whangapoua-lodge",
+      "name": "Whangapoua Estuary Lodge",
+      "region": "coromandel",
+      "lat": -36.72,
+      "lng": 175.641,
+      "type": "lodge",
+      "price_nzd_per_night": 850,
+      "rating": 4.7,
+      "short": "Hidden Coromandel lodge at Whangapoua estuary near New Chums Beach."
+    }
+  ]
+}

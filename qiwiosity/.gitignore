@@ -1,0 +1,18 @@
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+.DS_Store
+
+# Secrets
+.env
+.env.local
+
+# Generated audio (large; we'll host these separately)
+content/audio/*.mp3
+content/audio/*.wav
+!content/audio/.gitkeep
+
+# OS
+Thumbs.db

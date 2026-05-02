@@ -1,0 +1,2104 @@
+{
+  "region": {
+    "id": "otago",
+    "name": "Otago",
+    "island": "South",
+    "centre": {
+      "lat": -45.4,
+      "lng": 170
+    },
+    "bounds": {
+      "north": -44.3,
+      "south": -46.3,
+      "east": 171.3,
+      "west": 168.5
+    },
+    "description": "The dry, gold-bearing heart of the south — Central Otago's schist hills, the Clutha/Mata-Au river, the Dunedin coast, and a string of pioneer villages preserved by low rainfall."
+  },
+  "pois": [
+    {
+      "id": "wanaka-lakefront",
+      "name": "Wānaka Lakefront & #ThatWānakaTree",
+      "region": "otago",
+      "lat": -44.7,
+      "lng": 169.1333,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "willow",
+        "instagram",
+        "alps",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "The lakefront village and the lone willow standing in the lake — the most-photographed tree in New Zealand.",
+      "commentary": "Wānaka sits on the southern shore of 42 km-long Lake Wānaka, with the Buchanan Peaks and Mount Aspiring behind. The village lakefront is a long grass-edged walk with cafés, a pier, and the famous willow — a self-seeded crack willow growing out of the water about 50 m offshore, branded around 2014 as #ThatWānakaTree after a photographer's viral image. It's now one of the most-photographed trees in the world. The tree was partly chainsaw-vandalised in 2020 and has regrown. Early morning with alpenglow on the mountains is the shot. Wānaka is also the less-manic alternative to Queenstown — 70 minutes away over the Crown Range.",
+      "scripts": {
+        "headline": "scripts/wanaka-lakefront.headline.md",
+        "standard": "scripts/wanaka-lakefront.standard.md"
+      },
+      "sources_to_check": [
+        "Lake Wānaka Tourism",
+        "Queenstown Lakes District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Wānaka Lakefront & #ThatWānakaTree draws visitors back time and again for its natural beauty and peaceful atmosphere. The lakefront village and the lone willow standing in the lake — the most-photographed tree in New Zealand. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "cardrona",
+      "name": "Cardrona Valley",
+      "region": "otago",
+      "lat": -44.875,
+      "lng": 168.95,
+      "category": "heritage",
+      "tags": [
+        "historic-hotel",
+        "1863",
+        "crown-range",
+        "bra-fence",
+        "ski"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1,
+      "short": "An 1863 gold-rush hotel, a roadside bra fence, and the highway over the Crown Range — New Zealand's highest sealed road.",
+      "commentary": "The Cardrona Valley is the back road between Wānaka and Queenstown, climbing the Crown Range to 1,076 m — the highest sealed pass in the country. Halfway up the valley sits the Cardrona Hotel, a yellow-painted 1863 gold-rush pub with a famous verandah, craft beer, and a dining room that's barely changed in 160 years. A few kilometres further south is the Cardrona Bra Fence — a wire fence that accidentally became a crowd-sourced art installation in 1999 and now carries several thousand donated bras as a fundraiser for women's health. Above the valley are two of Otago's four ski areas: Cardrona Alpine Resort and Snow Farm (NZ's only Nordic cross-country area).",
+      "scripts": {
+        "headline": "scripts/cardrona.headline.md",
+        "standard": "scripts/cardrona.standard.md"
+      },
+      "sources_to_check": [
+        "Cardrona Hotel",
+        "NZTA — Crown Range Road"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cardrona Valley — the site rewards those who take time to read the signage and absorb the context. An 1863 gold-rush hotel, a roadside bra fence, and the highway over the Crown Range — New Zealand's highest sealed road. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "cromwell-lake-dunstan",
+      "name": "Cromwell & Lake Dunstan",
+      "region": "otago",
+      "lat": -45.0369,
+      "lng": 169.2039,
+      "category": "heritage",
+      "tags": [
+        "gold-town",
+        "fruit",
+        "stone-fruit",
+        "clyde-dam",
+        "heritage-precinct"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2,
+      "short": "A relocated gold-rush town on a man-made lake — the fruit basket of the south, announced by the giant roadside stone fruit.",
+      "commentary": "Cromwell sits at the junction of the Clutha and Kawarau rivers and is defined by two things: fruit and water. The giant sculpted apricot, peach, pear, and apple on the highway entrance (installed 1990) mark the start of Central Otago's stone-fruit country — the region's long dry summers and cold winters make it the country's prime apricot and cherry district. The second defining fact: in 1993 the Clyde Dam flooded the original 1860s gold-rush town. Surviving buildings were moved upslope and reassembled as the Cromwell Heritage Precinct — a small lakeside strip of original schist-stone cottages and storefronts. The 41 km Lake Dunstan Cycle Trail now follows the lake edge from Cromwell to Clyde.",
+      "scripts": {
+        "headline": "scripts/cromwell-lake-dunstan.headline.md",
+        "standard": "scripts/cromwell-lake-dunstan.standard.md"
+      },
+      "sources_to_check": [
+        "Central Otago District Council",
+        "Lake Dunstan Cycle Trail"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cromwell & Lake Dunstan — the site rewards those who take time to read the signage and absorb the context. A relocated gold-rush town on a man-made lake — the fruit basket of the south, announced by the giant roadside stone fruit. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "clyde-village",
+      "name": "Clyde Village",
+      "region": "otago",
+      "lat": -45.1908,
+      "lng": 169.3228,
+      "category": "heritage",
+      "tags": [
+        "schist-stone",
+        "gold-rush",
+        "clyde-dam",
+        "rail-trail-start"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A preserved 1860s schist-stone village below the Clyde Dam — and the start of the Otago Central Rail Trail.",
+      "commentary": "Clyde (original name Dunstan) is the best-preserved of the Otago gold-rush villages — a compact grid of honey-coloured schist-stone buildings from the 1860s–80s, many still in daily use as cafés, pubs, and B&Bs. Gold was struck here in 1862; by 1863 Clyde was the region's largest town. The 100-m-high Clyde Dam (built 1977–92, NZ's third-largest) looms above the village — its construction was one of the longest, most controversial 'Think Big' projects. Clyde is also the western terminus of the Otago Central Rail Trail, the 152 km cycle trail to Middlemarch built on the old railway grade. Eat at Olivers, stay in a schist cottage.",
+      "scripts": {
+        "headline": "scripts/clyde-village.headline.md",
+        "standard": "scripts/clyde-village.standard.md"
+      },
+      "sources_to_check": [
+        "Central Otago Heritage",
+        "Otago Central Rail Trail Trust"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Clyde Village — the site rewards those who take time to read the signage and absorb the context. A preserved 1860s schist-stone village below the Clyde Dam — and the start of the Otago Central Rail Trail. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "alexandra",
+      "name": "Alexandra / Aoraki-Manu-a-Tarakaihana",
+      "region": "otago",
+      "lat": -45.2528,
+      "lng": 169.3856,
+      "category": "food-wine",
+      "tags": [
+        "clock-on-hill",
+        "dredge-tailings",
+        "blossom-festival",
+        "apricots"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "Central Otago's service town — known for the illuminated clock on the hillside and the gold-dredge tailings along the Clutha.",
+      "commentary": "Alexandra is the practical capital of Central Otago — banks, supermarkets, the district hospital, the country's highest summers and coldest winters (recorded highs over 38°C, lows below −12°C). The giant clock face on the hillside above town was installed in 1968 and illuminated in 1983 — it's the emblem. Along the Clutha/Mata-Au below Alexandra are the most visible remnants of gold-dredging: long parallel walls of grey river-gravel tailings, dredged and re-dredged between the 1860s and 1950s. The annual Alexandra Blossom Festival (late September) celebrates the spring apricot and peach bloom; it's been running since 1957. Also where the Otago Central Rail Trail crosses the Clutha on a historic steel bridge.",
+      "scripts": {
+        "headline": "scripts/alexandra.headline.md",
+        "standard": "scripts/alexandra.standard.md"
+      },
+      "sources_to_check": [
+        "Central Otago District Council",
+        "Alexandra Blossom Festival"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Alexandra / Aoraki-Manu-a-Tarakaihana delivers an excellent food and wine experience that visitors describe as a highlight of the region. Central Otago's service town — known for the illuminated clock on the hillside and the gold-dredge tailings along the Clutha. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "naseby-curling",
+      "name": "Naseby",
+      "region": "otago",
+      "lat": -45.0244,
+      "lng": 170.1489,
+      "category": "nature",
+      "tags": [
+        "curling",
+        "gold-town",
+        "2000ft-above-worry",
+        "indoor-rink",
+        "forest"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "'2000 feet above worry level' — a tiny 1860s gold village, surrounded by pine forest, and the southern hemisphere's home of curling.",
+      "commentary": "Naseby sits at ~620 m in the Maniototo basin — its slogan, printed on the welcome sign, is '2000 feet above worry level.' The old gold town (1863) was saved from decline by its altitude and forest: Scottish migrants planted pines here in the 1870s to provide timber for sluicing. The town is now a grid of wooden cottages among mature conifers, and unexpectedly the home of New Zealand curling. The Naseby indoor curling rink (open year-round) and the outdoor Maniototo Ice Rink (June–August) host international-level bonspiels. In a proper Central Otago winter (−10 °C at night) the outdoor rink is hard enough to curl on naturally. Also: luge, mountain-biking through the forest.",
+      "scripts": {
+        "headline": "scripts/naseby-curling.headline.md",
+        "standard": "scripts/naseby-curling.standard.md"
+      },
+      "sources_to_check": [
+        "Naseby Information",
+        "Curling NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Naseby draws visitors back time and again for its natural beauty and peaceful atmosphere. '2000 feet above worry level' — a tiny 1860s gold village, surrounded by pine forest, and the southern hemisphere's home of curling. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "oturehua-hayes-engineering",
+      "name": "Oturehua & Hayes Engineering Works",
+      "region": "otago",
+      "lat": -45.0167,
+      "lng": 169.9167,
+      "category": "heritage",
+      "tags": [
+        "ida-valley",
+        "hayes-engineering",
+        "parallel-wire-strainer",
+        "rail-trail"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "A tiny Ida Valley village on the Rail Trail — and the workshop where Ernest Hayes invented the parallel-wire strainer that fenced New Zealand.",
+      "commentary": "Oturehua is a blink-and-miss-it village on the Otago Central Rail Trail, distinguished by one remarkable small heritage site: the Hayes Engineering Works. Ernest Hayes emigrated from England in 1882 and established a backyard forge here that eventually produced the parallel-wire strainer — the geared mechanical device still used across New Zealand to tension a wire fence. Over four generations, Hayes Engineering produced windmills, fence droppers, and the strainers that are still made today. The workshop (closed 1952) is preserved essentially untouched — drive belts, lathes, hand-written ledgers — and is a Heritage NZ Category 1 site. Also in Oturehua: the Gilchrist's General Store (1902), one of NZ's oldest continuously-operating shops.",
+      "scripts": {
+        "headline": "scripts/oturehua-hayes-engineering.headline.md",
+        "standard": "scripts/oturehua-hayes-engineering.standard.md"
+      },
+      "sources_to_check": [
+        "Hayes Engineering Works — Heritage NZ",
+        "Central Otago District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Oturehua & Hayes Engineering Works — the site rewards those who take time to read the signage and absorb the context. A tiny Ida Valley village on the Rail Trail — and the workshop where Ernest Hayes invented the parallel-wire strainer that fenced New Zealand. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "dunedin-octagon",
+      "name": "Dunedin Octagon & Historic Precinct",
+      "region": "otago",
+      "lat": -45.8742,
+      "lng": 170.5036,
+      "category": "heritage",
+      "tags": [
+        "scottish",
+        "edinburgh-of-south",
+        "robbie-burns",
+        "university",
+        "victorian"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "The eight-sided heart of 'the Edinburgh of the South' — presided over by a statue of Robbie Burns.",
+      "commentary": "Dunedin was founded in 1848 by Scottish Free Church settlers and the name is Gaelic for Edinburgh. The Octagon — an eight-sided plaza designed by Charles Kettle in 1846 — is the civic centre: St Paul's Cathedral (1919), the Municipal Chambers (1880), the Regent Theatre, and a bronze Robbie Burns (1887) whose back is pointedly turned to the kirk and front to the pub. From here you can walk to Dunedin's Victorian and Edwardian set-piece streets: Princes Street, Stuart Street, George Street. Dunedin's 19th-century gold wealth built an extraordinary density of heritage architecture — it's often called New Zealand's best-preserved Victorian city. The University of Otago (founded 1869) is the oldest in the country.",
+      "scripts": {
+        "headline": "scripts/dunedin-octagon.headline.md",
+        "standard": "scripts/dunedin-octagon.standard.md"
+      },
+      "sources_to_check": [
+        "Dunedin City Council",
+        "Heritage NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Dunedin Octagon & Historic Precinct — the site rewards those who take time to read the signage and absorb the context. The eight-sided heart of 'the Edinburgh of the South' — presided over by a statue of Robbie Burns. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "dunedin-railway-station",
+      "name": "Dunedin Railway Station",
+      "region": "otago",
+      "lat": -45.8742,
+      "lng": 170.5089,
+      "category": "heritage",
+      "tags": [
+        "flemish-renaissance",
+        "1906",
+        "gingerbread-george",
+        "mosaic-floor",
+        "taieri-gorge"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The most-photographed building in New Zealand — George Troup's 1906 Flemish-Renaissance masterpiece, nicknamed 'Gingerbread George'.",
+      "commentary": "Opened in 1906, designed by NZ Railways architect George Troup — who was nicknamed 'Gingerbread George' because of the extravagance of this building. It's Flemish Renaissance revival, built of Kokonga basalt and Ōamaru limestone, with a 37 m clock tower, colonnaded booking hall, and a floor laid with 725,000 Royal Doulton porcelain mosaic tiles in a pattern of little locomotives. The stained glass over the staircase is original. Still a working station — the Dunedin Railways tourist trains depart from here, running the Taieri Gorge line inland to Middlemarch (the far end of the Rail Trail). Has been voted 'New Zealand's most-photographed building' on multiple occasions. Entry is free.",
+      "scripts": {
+        "headline": "scripts/dunedin-railway-station.headline.md",
+        "standard": "scripts/dunedin-railway-station.standard.md"
+      },
+      "sources_to_check": [
+        "Heritage NZ — Dunedin Railway Station",
+        "Dunedin Railways"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Dunedin Railway Station — the site rewards those who take time to read the signage and absorb the context. The most-photographed building in New Zealand — George Troup's 1906 Flemish-Renaissance masterpiece, nicknamed 'Gingerbread George'. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "larnach-castle",
+      "name": "Larnach Castle",
+      "region": "otago",
+      "lat": -45.8456,
+      "lng": 170.6125,
+      "category": "nature",
+      "tags": [
+        "only-castle",
+        "1871",
+        "larnach",
+        "suicide",
+        "otago-peninsula",
+        "gardens"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "New Zealand's only castle — an 1871 Otago Peninsula folly with a tragic family history and extraordinary gardens.",
+      "commentary": "Larnach Castle sits on the ridge of the Otago Peninsula, 300 m above the harbour, and is the only building in New Zealand formally called a castle. Built 1871–87 for William Larnach, merchant-banker and politician — he imported Italian marble, English glass, and a team of Italian craftsmen who spent 12 years on the interior. Larnach shot himself in Parliament Buildings in 1898 after a series of business failures and a family scandal. The castle passed through multiple owners, was derelict by the 1960s, and has been painstakingly restored since 1967 by the Barker family. The 14-hectare gardens are New Zealand Garden Trust 'Garden of International Significance' — well worth the entry.",
+      "scripts": {
+        "headline": "scripts/larnach-castle.headline.md",
+        "standard": "scripts/larnach-castle.standard.md"
+      },
+      "sources_to_check": [
+        "Larnach Castle — larnachcastle.co.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Larnach Castle draws visitors back time and again for its natural beauty and peaceful atmosphere. New Zealand's only castle — an 1871 Otago Peninsula folly with a tragic family history and extraordinary gardens. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "baldwin-street",
+      "name": "Baldwin Street",
+      "region": "otago",
+      "lat": -45.8507,
+      "lng": 170.5383,
+      "category": "culture",
+      "tags": [
+        "steepest-street",
+        "guinness",
+        "350m",
+        "gravity",
+        "jaffa-race"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.5,
+      "short": "The world's steepest residential street — 350 m long and a 34.8% gradient at the top.",
+      "commentary": "Baldwin Street, in the suburb of North East Valley, was laid out on the 1840s grid without regard for the hill behind. The result: a 350 m straight, ending at a 34.8% gradient at the top — steeper than one metre up for every three along. From 1987 to 2019 Guinness listed it as the world's steepest residential street; it was briefly displaced by Ffordd Pen Llech in Wales, but reinstated in 2020 after Welsh measurements were disputed. The pavement at the top is poured concrete — asphalt would sag in the sun. Every July, the Cadbury 'Jaffa Race' rolls 30,000 numbered chocolate candies down the street for charity. Walk up, don't drive — a small white car has to turn at the bottom.",
+      "scripts": {
+        "headline": "scripts/baldwin-street.headline.md",
+        "standard": "scripts/baldwin-street.standard.md"
+      },
+      "sources_to_check": [
+        "Dunedin City Council",
+        "Guinness World Records"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Baldwin Street is praised for being both accessible and genuinely informative. The world's steepest residential street — 350 m long and a 34. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "otago-peninsula-wildlife",
+      "name": "Otago Peninsula Wildlife (Taiaroa Head)",
+      "region": "otago",
+      "lat": -45.7725,
+      "lng": 170.7286,
+      "category": "wildlife",
+      "tags": [
+        "royal-albatross",
+        "yellow-eyed-penguin",
+        "hooker-sea-lion",
+        "fort-taiaroa",
+        "disappearing-gun"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 3,
+      "short": "The world's only mainland royal albatross breeding colony — plus yellow-eyed penguins, NZ sea lions, and an 1880s disappearing gun.",
+      "commentary": "Taiaroa Head, at the tip of the Otago Peninsula, is the world's only mainland breeding colony of the Northern Royal Albatross (Toroa) — a 3 m-wingspan seabird that otherwise breeds only on subantarctic islands. The colony has been active since the 1930s; live albatross-cam runs 24/7. The Royal Albatross Centre offers guided viewings from October–September. Within the same headland: Fort Taiaroa, with the only working Armstrong 'disappearing gun' in the world, installed in 1889 against the supposed Russian threat. On the Pilots Beach side, little blue penguins come ashore at dusk. At nearby Sandfly Bay and Pipikaretu Beach you can see endangered yellow-eyed penguins (hoiho) and NZ sea lions.",
+      "scripts": {
+        "headline": "scripts/otago-peninsula-wildlife.headline.md",
+        "standard": "scripts/otago-peninsula-wildlife.standard.md"
+      },
+      "sources_to_check": [
+        "Royal Albatross Centre",
+        "DOC",
+        "Yellow-eyed Penguin Trust"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The wildlife encounters at Otago Peninsula Wildlife (Taiaroa Head) earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. The world's only mainland royal albatross breeding colony — plus yellow-eyed penguins, NZ sea lions, and an 1880s disappearing gun. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "tunnel-beach",
+      "name": "Tunnel Beach",
+      "region": "otago",
+      "lat": -45.9294,
+      "lng": 170.4636,
+      "category": "nature",
+      "tags": [
+        "sandstone-cliffs",
+        "hand-cut-tunnel",
+        "cadell",
+        "sea-stacks"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "A hand-cut 72-step tunnel through Ōamaru limestone, leading to a private sandstone beach at the base of 20 m sea cliffs.",
+      "commentary": "Tunnel Beach is 10 minutes south of Dunedin. John Cargill — son of Dunedin founder William Cargill — had the tunnel cut in the 1870s to give his family private access to the beach at the base of the sandstone cliffs. The 72 hand-cut limestone steps pass through 23 m of rock and emerge on a small beach flanked by honeycombed cliffs and a natural arch. The track in from the farmland above is 30 minutes down, 45 back up (it's steep). Closed during lambing (mid-August to late October). Check the tide — at high tide the beach is submerged. One of the best short walks in the Dunedin area.",
+      "scripts": {
+        "headline": "scripts/tunnel-beach.headline.md",
+        "standard": "scripts/tunnel-beach.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "Dunedin City Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Tunnel Beach draws visitors back time and again for its natural beauty and peaceful atmosphere. A hand-cut 72-step tunnel through Ōamaru limestone, leading to a private sandstone beach at the base of 20 m sea cliffs. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "moeraki-boulders",
+      "name": "Moeraki Boulders / Kaihinaki",
+      "region": "otago",
+      "lat": -45.3456,
+      "lng": 170.8264,
+      "category": "nature",
+      "tags": [
+        "spherical-boulders",
+        "concretions",
+        "māori-legend",
+        "beach",
+        "60-million-years"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "Fifty spherical grey boulders — up to 2.2 m across — scattered along a beach, 60 million years in the making.",
+      "commentary": "The Moeraki Boulders are mudstone concretions — spheres formed on the ancient seafloor around an organic nucleus, as calcite cemented the surrounding mud outward over millions of years. They eroded out of the cliffs as the softer mudstone wore away, tumbling onto the beach where they now sit half-buried and splitting into cracked geode-like shells. Māori tradition (Kāi Tahu) calls them kaihinaki — the food baskets of the wrecked canoe *Āraiteuru*, which foundered here carrying the ancestors. Best at low tide when all are exposed; worst at peak tour-bus time. The nearby village of Moeraki has the famous Fleur's Place seafood restaurant.",
+      "scripts": {
+        "headline": "scripts/moeraki-boulders.headline.md",
+        "standard": "scripts/moeraki-boulders.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "GNS Science",
+        "Kāi Tahu — ngaitahu.iwi.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Moeraki Boulders / Kaihinaki draws visitors back time and again for its natural beauty and peaceful atmosphere. Fifty spherical grey boulders — up to 2. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "otago-central-rail-trail",
+      "name": "Otago Central Rail Trail",
+      "region": "otago",
+      "lat": -45.15,
+      "lng": 169.8,
+      "category": "food-wine",
+      "tags": [
+        "cycle-trail",
+        "152km",
+        "first-rail-trail",
+        "maniototo",
+        "viaducts"
+      ],
+      "trigger_radius_m": 10000,
+      "duration_hours": 24,
+      "short": "New Zealand's first and most famous rail trail — 152 km of gentle cycling through the Ida and Maniototo basins.",
+      "commentary": "The Otago Central Railway ran from Middlemarch to Clyde from 1879 to 1990. The 152 km line was removed in the 1990s and reopened in 2000 as the country's first Rail Trail — a gravel cycleway that has become the template for 23 others. The trail follows the same gentle grade as the train (max 1:50) across the schist tors of the Maniototo, through eight tunnels and ten viaducts. Typical ride: 4 days, Clyde to Middlemarch, staying in Alexandra, Omakau, Oturehua, Ranfurly. Hire bikes and shuttle at either end. The long dry summers, clear winter frosts, and string of preserved gold-era villages make it distinctively Central Otago.",
+      "scripts": {
+        "headline": "scripts/otago-central-rail-trail.headline.md",
+        "standard": "scripts/otago-central-rail-trail.standard.md"
+      },
+      "sources_to_check": [
+        "Otago Central Rail Trail Trust — otagocentralrailtrail.co.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Otago Central Rail Trail delivers an excellent food and wine experience that visitors describe as a highlight of the region. New Zealand's first and most famous rail trail — 152 km of gentle cycling through the Ida and Maniototo basins. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "roxburgh-dam-fruit",
+      "name": "Roxburgh & the Teviot Valley",
+      "region": "otago",
+      "lat": -45.5411,
+      "lng": 169.3133,
+      "category": "heritage",
+      "tags": [
+        "hydro-dam",
+        "stone-fruit",
+        "clutha",
+        "jimmys-pies",
+        "clutha-gold-trail"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 1.5,
+      "short": "A 1956 hydro-dam town on the Clutha, surrounded by apricot, peach, and cherry orchards — and the home of Jimmy's Pies.",
+      "commentary": "Roxburgh sits in the Teviot Valley on the Clutha/Mata-Au, 1956-ish — the 76 m Roxburgh Dam, completed that year, was New Zealand's largest hydro station at the time and still generates 320 MW. The dam drowned a gold-era canyon that was once called 'the Molyneux'. The valley's wide, frost-drained slopes grow most of the country's apricots; roadside fruit stalls open late November (cherries) through March (apples). Roxburgh is also the home of Jimmy's Pies, a pie bakery founded in 1960 that's a pilgrimage stop for road-trippers. The Clutha Gold Cycle Trail runs south from Roxburgh to Lawrence (a logical continuation of the Rail Trail loop).",
+      "scripts": {
+        "headline": "scripts/roxburgh-dam-fruit.headline.md",
+        "standard": "scripts/roxburgh-dam-fruit.standard.md"
+      },
+      "sources_to_check": [
+        "Central Otago District Council",
+        "Contact Energy — Roxburgh"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Roxburgh & the Teviot Valley — the site rewards those who take time to read the signage and absorb the context. A 1956 hydro-dam town on the Clutha, surrounded by apricot, peach, and cherry orchards — and the home of Jimmy's Pies. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "lindis-pass",
+      "name": "Lindis Pass",
+      "region": "otago",
+      "lat": -44.5722,
+      "lng": 169.6578,
+      "category": "journey",
+      "tags": [
+        "mountain-pass",
+        "tussock",
+        "scenic-drive",
+        "971m",
+        "mackenzie-border"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 0.5,
+      "short": "A 971 m tussock pass between the Ahuriri and Lindis valleys — the most photographed stretch of State Highway 8.",
+      "commentary": "The Lindis Pass is the state highway over the mountain range between Central Otago and the Mackenzie Basin — a 971 m saddle, the border between Otago and Canterbury catchments. Unlike the bush-clad alpine passes further west, the Lindis is almost entirely open tussock grassland. In summer the hills glow gold; in winter they're frost-pale or snow-dusted. The pass is classified under the Lindis Pass Scenic Reserve (5,650 ha) to protect the native tussock cover that's intact for kilometres in every direction. Lookout layby at the top with the classic view. Road is open year-round but occasionally closes in winter snow; check before you go.",
+      "scripts": {
+        "headline": "scripts/lindis-pass.headline.md",
+        "standard": "scripts/lindis-pass.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Lindis Pass Scenic Reserve",
+        "NZTA"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Lindis Pass route delivers a memorable journey through exceptional New Zealand scenery. A 971 m tussock pass between the Ahuriri and Lindis valleys — the most photographed stretch of State Highway 8. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-dunedin-otago-museum",
+      "name": "Otago Museum",
+      "region": "otago",
+      "lat": -45.8661,
+      "lng": 170.5108,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "tropical-forest",
+        "maori-treasures",
+        "free"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "One of New Zealand's great museums — free, with a live tropical forest full of butterflies.",
+      "commentary": "Otago Museum is one of the four metropolitan museums of New Zealand. Strong Pacific collection, Tāngata Whenua gallery, and a popular butterfly room.",
+      "audio_story": "You are walking into the Otago Museum, one of the four metropolitan museums of New Zealand and a place that has been at the heart of Dunedin since eighteen sixty eight. The museum is free. That fact alone buys you at least two hours. Inside, the collection ranges from a carefully curated Tāngata Whenua gallery, with some of the most important surviving taonga of Ngāi Tahu, to an extensive Pacific ethnographic collection assembled by nineteenth century collectors in the days when Dunedin was one of the richest ports in the southern hemisphere. Natural history halls hold the skeletal moa, the huge ruru, the pygmy sperm whale, and a recently expanded Tūhura science centre aimed at children. The unexpected highlight for many visitors is the living butterfly house on the top floor, a glass roofed tropical room held at around twenty six degrees, through which hundreds of free flying butterflies circulate and occasionally land on your sleeve. It is deeply out of place in the Dunedin climate and all the more wonderful for it. Give yourself at least two hours, more if you have children, and do not skip the lovely cafe on the ground floor.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Otago Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The cultural experience at Otago Museum is praised for being both accessible and genuinely informative. One of New Zealand's great museums — free, with a live tropical forest full of butterflies. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "otago-oamaru-steampunk",
+      "name": "Steampunk HQ, Ōamaru",
+      "region": "otago",
+      "lat": -45.0944,
+      "lng": 170.9733,
+      "category": "culture",
+      "tags": [
+        "steampunk",
+        "museum",
+        "art",
+        "victorian"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "The world's self-styled Steampunk Capital — Steampunk HQ, in an old grain store next to Ōamaru's Victorian precinct.",
+      "commentary": "Opened 2011 in a converted grain store. Houses sculptures, art installations and interactive contraptions. Ōamaru hosts an annual Steampunk festival.",
+      "audio_story": "You have arrived at Steampunk HQ, tucked into an old blue stone grain store in the heart of Ōamaru, and you are about to spend an hour inside a building that exists nowhere else in the world. Ōamaru has an unusually intact Victorian commercial precinct, and at some point in the early two thousands a local movement began to embrace an aesthetic that fused that Victorian architecture with imagined retro futurist machinery, the subculture known as Steampunk. Steampunk HQ opened in twenty eleven as the physical home of the movement. Inside, the rooms are dimly lit and filled with art installations, kinetic sculptures, and repurposed industrial machinery by local and international artists. There is an old steam locomotive, rebuilt as a brass and copper dreadnought, hissing smoke from its funnel. There is a mirror room of infinite lights. There are pedal powered contraptions and levers that do mysterious things. It is a little theatrical, a little tongue in cheek, and completely charming. Combine your visit with a walk through the Victorian precinct just outside, dinner at Harbour Street, and the little blue penguin viewing area down at the harbour at dusk. Ōamaru does not do anything like the rest of the country, and that is exactly the pleasure of it.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Steampunk HQ Ōamaru",
+        "Waitaki District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "The cultural experience at Steampunk HQ, Ōamaru is praised for being both accessible and genuinely informative. The world's self-styled Steampunk Capital — Steampunk HQ, in an old grain store next to Ōamaru's Victorian precinct. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "otago-dunedin-taieri-gorge",
+      "name": "Taieri Gorge Railway",
+      "region": "otago",
+      "lat": -45.878,
+      "lng": 170.5028,
+      "category": "nature",
+      "tags": [
+        "railway",
+        "scenic",
+        "gorge",
+        "tunnel"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 4,
+      "short": "One of the great train journeys of the world — from Dunedin Station into the spectacular Taieri River gorge.",
+      "commentary": "The Taieri Gorge Railway is a scenic passenger service from Dunedin that runs into the Taieri River gorge, crossing tall wrought iron viaducts and through multiple tunnels.",
+      "audio_story": "You have boarded the Taieri Gorge Railway at Dunedin Station, itself one of the most photographed buildings in the country, and you are about to ride one of the great scenic train journeys of New Zealand. The line was originally built in the eighteen seventies as part of the Otago Central Railway, the great engineering project that pushed a narrow gauge line from Dunedin into the remote Central Otago gold country. The main line is no longer used for regular commercial traffic, but the gorge section has been preserved and is still run by a heritage operator using restored carriages pulled by either vintage diesel or steam locomotives. The journey takes you out of Dunedin, past Mosgiel and up into the Taieri Gorge, where the line clings to the side of the canyon on spectacular wrought iron bridges and threads through ten tunnels carved by hand by eighteen eighties railway workers. The train stops at photographic points, and the commentary on board adds layers of history about the gorge, the gold rush, and the extraordinary construction. Allow half a day for the round trip. Dress warmly if you ride in winter, and sit on the river side of the train wherever you can.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dunedin Railways",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Taieri Gorge Railway draws visitors back time and again for its natural beauty and peaceful atmosphere. One of the great train journeys of the world — from Dunedin Station into the spectacular Taieri River gorge. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "otago-catlins-purakaunui",
+      "name": "Purakaunui Falls",
+      "region": "otago",
+      "lat": -46.615,
+      "lng": 169.3611,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "catlins",
+        "three-tier",
+        "easy-walk"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "The three-tier Purakaunui Falls — probably the most photographed waterfall in New Zealand.",
+      "commentary": "Ten-minute easy walk in the Catlins to a 20m three-tiered waterfall. Featured on NZ's 1976 postage stamp.",
+      "audio_story": "You have arrived at Purakaunui Falls in the Catlins, and you are about to spend ten minutes walking to what is very likely the most photographed waterfall in New Zealand. The falls appeared on a New Zealand postage stamp in nineteen seventy six, and that one image fixed them in the collective memory. They deserve their fame. From the small carpark, a flat well maintained track winds through silver beech and kāmahi forest, past ferns and moss and the gentle song of bellbirds, for around ten minutes to a wooden viewing platform. Here the Purakaunui Stream drops twenty metres in three distinct tiers of equal size, cascading over dark bands of rock. The whole composition is very calm, very green, and very satisfyingly symmetrical. The Catlins themselves are the great under appreciated corner of the South Island, a rolling forested coast between the Clutha and the Southland border. A single road loop, the Southern Scenic Route, links dozens of small beaches, waterfalls, sea lion haul outs, and lighthouses. Purakaunui Falls is one of the gentlest stops on the route. Combine it with nearby Matai Falls and Horseshoe Falls for an easy morning of waterfalls, and then drive on to the coast for lunch.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Purakaunui Falls",
+        "Catlins tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Purakaunui Falls draws visitors back time and again for its natural beauty and peaceful atmosphere. The three-tier Purakaunui Falls — probably the most photographed waterfall in New Zealand. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "otago-nugget-seal",
+      "name": "Cathedral Caves, Catlins",
+      "region": "otago",
+      "lat": -46.605,
+      "lng": 169.3942,
+      "category": "nature",
+      "tags": [
+        "sea-cave",
+        "catlins",
+        "low-tide",
+        "beach"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "A pair of 30m high sea caves joined inside in a cathedral-shaped chamber — only accessible at low tide.",
+      "commentary": "Cathedral Caves are a pair of interconnected sea caves at Waipati Beach in the Catlins. Open only at low tide, generally in summer.",
+      "audio_story": "You have come to Cathedral Caves in the Catlins, and you have checked the tide, which is crucial. The caves are on Waipati Beach, reached by a short walk through podocarp forest and then along the beach itself. At the far end of the sand, two great sea caves open into the cliff. They are each about thirty metres high, and inside, they curve and meet in a single cathedral-shaped chamber where your voice comes back at you from somewhere you cannot quite place. The caves are only accessible on a falling tide, approximately one hour each side of low water, and only during the season when the tide falls low enough, generally the summer months. The local landowner charges a small entry fee that maintains the walking track and the carpark. Time your visit carefully, check the published tide access windows, and do not try to enter on a rising tide. Inside, the light is soft and green, the sand is damp, and the hush is unexpected. Waipati Beach itself is beautiful, and often almost empty. Walk back along it slowly after the caves, and look for dolphins in the bay. This is one of the special places of the deep south.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Cathedral Caves Tours",
+        "DOC — Catlins"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Cathedral Caves, Catlins draws visitors back time and again for its natural beauty and peaceful atmosphere. A pair of 30m high sea caves joined inside in a cathedral-shaped chamber — only accessible at low tide. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "otago-first-church",
+      "name": "First Church of Otago, Dunedin",
+      "region": "otago",
+      "lat": -45.8764,
+      "lng": 170.5075,
+      "category": "heritage",
+      "tags": [
+        "gothic-revival",
+        "presbyterian",
+        "1873",
+        "architecture"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.5,
+      "short": "R.A. Lawson's 1873 masterpiece — Dunedin's Gothic Revival Presbyterian church, described as one of the finest in the country.",
+      "commentary": "First Church was completed in 1873 to a design by Robert Arthur Lawson. Listed Category 1 Historic Place.",
+      "audio_story": "You are standing in front of First Church of Otago, the Gothic Revival masterpiece that looks over Dunedin from its small hill in Moray Place. The church was completed in eighteen seventy three to a design by the Scottish born Dunedin architect Robert Arthur Lawson, who also designed the Otago Boys High School and Knox Presbyterian Church, among many other of the city's finest buildings. First Church was the mother church of the Presbyterian settlement of Otago, which had been founded only twenty five years earlier by the Free Church of Scotland. The architecture inside is vertical, steep, dark timbered, with a great rose window of coloured glass at the back of the nave. The spire is fifty six metres high and was the tallest building in Dunedin for many years. Entry is usually free during the day, and small brochures inside tell the story of the congregation and of Lawson's wider work. Dunedin has one of the richest concentrations of Victorian stone architecture in the southern hemisphere, and First Church is, for many visitors, the single most satisfying example. Sit in the back pew for ten minutes and listen to the silence. Let your eyes adjust. This is Dunedin's quiet heart.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — First Church",
+        "Te Ara — R.A. Lawson"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at First Church of Otago, Dunedin — the site rewards those who take time to read the signage and absorb the context. R. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-otakou-marae",
+      "name": "Ōtākou Marae",
+      "region": "otago",
+      "lat": -45.8283,
+      "lng": 170.7194,
+      "category": "māori",
+      "tags": [
+        "otakou",
+        "ngai-tahu",
+        "marae",
+        "treaty",
+        "whaling"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The Ngāi Tahu marae at the entrance to Otago Harbour — origin of the regional name, and site of the 1840 Treaty signing.",
+      "commentary": "Ōtākou was a major Ngāi Tahu kāinga and early whaling station. Rangatira signed Te Tiriti here on 13 June 1840. The current wharenui Tamatea was opened 1946.",
+      "audio_story": "You are at Ōtākou, at the outer entrance to Otago Harbour, and you are standing on one of the most historically layered pieces of ground in the South Island. Ōtākou was a major pre European kāinga of Ngāi Tahu. The name of the whole province of Otago is an anglicised spelling of Ōtākou. In the eighteen twenties and thirties one of the largest shore based whaling stations in the country operated here, bringing European whalers, goods, and eventually settlers into long contact with the Kāi Tahu of the harbour. On the thirteenth of June, eighteen forty, rangatira of Kāi Tahu at Ōtākou signed the Treaty of Waitangi aboard HMS Herald, one of the most important of the southern signings. The present wharenui at the marae, Tamatea, was built in nineteen forty six and replaced an earlier building. The marae is not open to casual visitors, but there is a small cemetery with graves of Ngāi Tahu leaders and early whalers that can be visited respectfully from the road. From here you can look directly across the harbour mouth to Aramoana and see the distinctive headlands that have sheltered fishing and whaling in this harbour for hundreds of years. Stop, read the interpretive signs on the verge, and understand that Dunedin is a very recent chapter in a much older story.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Tahu",
+        "Te Ara — Ōtākou",
+        "NZHistory"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Ōtākou Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The Ngāi Tahu marae at the entrance to Otago Harbour — origin of the regional name, and site of the 1840 Treaty signing. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-hist-dunedin-railway",
+      "name": "Dunedin Railway Station",
+      "region": "otago",
+      "lat": -45.8747,
+      "lng": 170.5117,
+      "category": "heritage",
+      "tags": [
+        "railway",
+        "george-troup",
+        "1906",
+        "edwardian",
+        "bluestone"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "Arguably New Zealand''s most photographed building — George Troup''s Flemish Renaissance fantasy of bluestone and white limestone.",
+      "commentary": "Designed by George Troup, opened 1906 at the height of Dunedin''s wealth. Mosaic floor of 750,000 Royal Doulton tiles. Still operational.",
+      "audio_story": "You are at Dunedin Railway Station, possibly the most photographed building in the country. It was designed by George Troup, a young architect working for New Zealand Railways, and opened in nineteen o six at the absolute peak of Dunedin''s prosperity as the financial capital of colonial New Zealand. The style is Flemish Renaissance, a deliberate quotation of the prosperous merchant cities of northern Europe. The exterior combines dark Port Chalmers bluestone with bands of white Oamaru limestone, and is topped with a central clock tower and a perfectly proportioned copper dome. Inside, the ticket hall is even more astonishing. The mosaic floor contains around seven hundred and fifty thousand individual Royal Doulton tiles, depicting locomotives, tenders, signals and Railways Department insignia. The upper gallery, in glowing imported Italian marble, is lined with stained glass windows depicting railway scenes. The building is still operational, serving the Dunedin to Middlemarch Taieri Gorge tourist train. You can walk freely through the ticket hall, climb to the first floor to see the Otago Sports Hall of Fame, and simply look up at the ceiling. For a railway station in a provincial city, the ambition is extraordinary and remains, as it was designed to be, a civic statement.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Dunedin Railway Station",
+        "Dunedin City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Dunedin Railway Station — the site rewards those who take time to read the signage and absorb the context. Arguably New Zealand''s most photographed building — George Troup''s Flemish Renaissance fantasy of bluestone and white limestone. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-first-church",
+      "name": "First Church of Otago",
+      "region": "otago",
+      "lat": -45.8781,
+      "lng": 170.5047,
+      "category": "heritage",
+      "tags": [
+        "presbyterian",
+        "first-church",
+        "1873",
+        "gothic",
+        "free-church"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The mother church of the Scottish Free Church settlement of Otago — a soaring bluestone Gothic spire by R. A. Lawson.",
+      "commentary": "Built 1873 by Robert Lawson as the Presbyterian founding church of the Otago settlement. 54m spire. Built of Port Chalmers bluestone and Oamaru limestone.",
+      "audio_story": "You are at First Church of Otago, the mother church of the Scottish Free Church settlement that founded Dunedin. The original congregation held its first services in a small wooden structure in eighteen forty eight, the year settlers arrived from Scotland. The present building, consecrated in eighteen seventy three, was designed by Robert Arthur Lawson, the Melbourne trained Scottish architect who would go on to design much of the fine Victorian architecture of Otago. First Church is widely considered Lawson''s masterpiece. The spire rises fifty four metres, and for most of the nineteenth century it was the tallest structure in Dunedin. The bluestone of the exterior was quarried at Port Chalmers and shipped down the harbour, and the white decorative dressings are Oamaru limestone. The interior is high and austere in the Scottish Free Church tradition, with a single uncluttered nave focused on the pulpit rather than an altar, reflecting Presbyterian theology. The organ, installed in the eighteen nineties, is itself of significant heritage interest. Regular services continue. Visitors are welcome in the nave during the day. Stand in the central aisle and look up at the great east window. Dunedin was built on wool, gold and Presbyterian conviction, and this church is the physical summary of the third.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — First Church",
+        "Presbyterian Church of Aotearoa"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at First Church of Otago — the site rewards those who take time to read the signage and absorb the context. The mother church of the Scottish Free Church settlement of Otago — a soaring bluestone Gothic spire by R. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-arrowtown-chinese",
+      "name": "Arrowtown Chinese Settlement",
+      "region": "otago",
+      "lat": -44.9386,
+      "lng": 168.8292,
+      "category": "heritage",
+      "tags": [
+        "chinese",
+        "goldfields",
+        "1860s",
+        "arrowtown",
+        "wah-lee"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "The surviving stone huts of the Chinese gold miners of the Arrow River — a sobering memorial to the conditions they endured.",
+      "commentary": "Invited to Otago as labour 1865. By 1874 there were 3,500 Chinese on the Otago goldfields. Arrowtown settlement restored 1980s as a heritage reserve.",
+      "audio_story": "You are walking into what remains of the Chinese settlement at Arrowtown, on the banks of the Arrow River a short walk from the tourist village. From eighteen sixty five the Otago Provincial Council actively invited Chinese miners to come from Australia and from southern China to rework the claims on the fields that European miners were abandoning. By eighteen seventy four there were around three thousand five hundred Chinese men on the Otago goldfields. They built their own accommodation, bakeries, stores and social clubs, and kept largely to themselves, partly by choice and partly because they faced persistent prejudice from European miners and colonial authorities. The Chinese settlement at Arrowtown was one of the largest in the country, at its peak home to around one hundred men. The settlement was in use into the early twentieth century and then gradually abandoned as the miners either died, returned to China, or moved to the cities. In the nineteen eighties the site was cleared of scrub and the surviving stone huts were stabilised as a public heritage reserve. Walk through quietly. The huts are small, dark, and built from schist dug out of the riverbed. The lives they housed were hard, and they are too often missing from the romantic picture of the Otago gold rush. Go and look.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Arrowtown Chinese Settlement",
+        "Lakes District Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Arrowtown Chinese Settlement — the site rewards those who take time to read the signage and absorb the context. The surviving stone huts of the Chinese gold miners of the Arrow River — a sobering memorial to the conditions they endured. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-larnach-castle",
+      "name": "Larnach Castle, Otago Peninsula",
+      "region": "otago",
+      "lat": -45.8436,
+      "lng": 170.5864,
+      "category": "heritage",
+      "tags": [
+        "larnach",
+        "castle",
+        "1874",
+        "otago-peninsula",
+        "edwardian"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2.5,
+      "short": "New Zealand''s only castle — built by banker William Larnach from 1871 as an Otago expression of his ambition.",
+      "commentary": "Built 1871–87 for William Larnach, banker and politician, at a cost of £125,000. Larnach shot himself in Parliament in 1898.",
+      "audio_story": "You have come to Larnach Castle, perched on the spine of the Otago Peninsula high above the harbour. It is commonly described as New Zealand''s only castle, though properly speaking it is a grand Victorian country house built in the imitation castellated style. Its builder was William Larnach, an Australian born banker, financier and sometime politician, who arrived in Dunedin in the eighteen sixties on the tide of the Otago gold boom. He was one of the wealthiest men in the country at his peak, and he built this residence between eighteen seventy one and eighteen eighty seven at the then astronomical cost of one hundred and twenty five thousand pounds. The workforce of two hundred included European stonemasons, Italian woodcarvers, and local Māori labourers. The turrets, the ballroom, the elaborate ceilings, all were imported or crafted on site over a period of fifteen years. By the eighteen nineties Larnach''s fortunes had collapsed in the long depression. Three of his wives had died and the castle had become a melancholy place. In eighteen ninety eight, facing both financial ruin and personal scandal, Larnach shot himself in a committee room at Parliament. The castle passed through several hands before being restored in the nineteen sixties by the Barker family, who still run it as a private house museum and garden.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Larnach Castle",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Larnach Castle, Otago Peninsula — the site rewards those who take time to read the signage and absorb the context. New Zealand''s only castle — built by banker William Larnach from 1871 as an Otago expression of his ambition. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-olveston",
+      "name": "Olveston Historic Home, Dunedin",
+      "region": "otago",
+      "lat": -45.875,
+      "lng": 170.5083,
+      "category": "heritage",
+      "tags": [
+        "olveston",
+        "house-museum",
+        "edwardian",
+        "theomin",
+        "1906"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1.5,
+      "short": "A perfectly preserved Edwardian merchant family home — the Theomin house, left to the city by their daughter Dorothy in 1966.",
+      "commentary": "Built 1904–06 for David Theomin. Daughter Dorothy lived here until 1966 when she bequeathed it to the city of Dunedin with all contents intact.",
+      "audio_story": "You are at Olveston, the large red brick and Oamaru stone house that David Theomin, a successful Dunedin merchant of German Jewish origin, built for his family between nineteen o four and nineteen o six. Theomin''s company imported pianos, musical instruments and fine furnishings, and he filled Olveston with the best of what he imported. The interiors, complete with original wallpapers, furniture, paintings, silverware, books, and toys, are unusually intact for a house of this age. David Theomin died in nineteen thirty three. His daughter Dorothy continued to live here as a single woman, unmarried and increasingly reclusive, surrounded by the original furnishings of her youth. When she died in nineteen sixty six, she bequeathed Olveston to the city of Dunedin in its entirety. Because she had never remodelled and never cleared out old things, what visitors see today is essentially a time capsule of an Edwardian haute bourgeois household. Guided tours are an hour long and are excellent. The tour leader can point out the Victorian dumbwaiter, the billiard room photographs of the Theomin family''s Grand Tour of Europe, and the small chapel where the family kept their Jewish religious life quiet. An unusually intimate slice of Dunedin''s wealthy years.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Olveston — olveston.co.nz",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Olveston Historic Home, Dunedin — the site rewards those who take time to read the signage and absorb the context. A perfectly preserved Edwardian merchant family home — the Theomin house, left to the city by their daughter Dorothy in 1966. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-university-clocktower",
+      "name": "University of Otago Clock Tower",
+      "region": "otago",
+      "lat": -45.8644,
+      "lng": 170.5139,
+      "category": "culture",
+      "tags": [
+        "university",
+        "clocktower",
+        "1878",
+        "maxwell-bury",
+        "leith"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The oldest building of New Zealand''s oldest university — a bluestone Scottish baronial pile on the Water of Leith.",
+      "commentary": "New Zealand''s first university opened 1869. The Clock Tower building, designed by Maxwell Bury, opened 1878 and remains the university''s ceremonial heart.",
+      "audio_story": "You are at the Clock Tower, the oldest building of the University of Otago, which is itself the oldest university in New Zealand. The university was established in eighteen sixty nine. This central building, on the bank of the Water of Leith, opened in eighteen seventy eight, designed by the English architect Maxwell Bury in a Scottish Baronial style that consciously echoed the universities of Edinburgh and Glasgow. Dunedin in the eighteen seventies was a proudly Scottish city, and the university was deliberately designed to look the part. The ceremonial University Oval and Graduation Hall, the crested window above the entrance arch, and the clock that still keeps time in the tower, all reflect those founding aspirations. The student body in the early years was small, under one hundred students. Today Otago has over twenty thousand and is one of the two or three leading universities in the country. The Clock Tower building still houses the Vice Chancellor''s office, the Senate Room, and the main ceremonial spaces of the institution. Around it a tightly planned central campus extends along both sides of the Leith, linked by the many footbridges that give this university its distinct character. Walk around freely, the grounds are open to the public, and admire what was built to last.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ",
+        "University of Otago archives"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "The cultural experience at University of Otago Clock Tower is praised for being both accessible and genuinely informative. The oldest building of New Zealand''s oldest university — a bluestone Scottish baronial pile on the Water of Leith. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "otago-hist-oamaru-harbour",
+      "name": "Oamaru Harbour & Historic Precinct",
+      "region": "otago",
+      "lat": -45.0936,
+      "lng": 170.9717,
+      "category": "heritage",
+      "tags": [
+        "oamaru",
+        "victorian",
+        "limestone",
+        "harbour",
+        "steampunk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A Victorian port town frozen in the 1880s — complete with a steampunk community that has adopted it as their spiritual home.",
+      "commentary": "Oamaru boomed 1870s–80s as the grain and wool port of North Otago. Historic Precinct survives near-intact; now centre of NZ''s steampunk community.",
+      "audio_story": "You are in Oamaru''s Victorian Historic Precinct, which ranks among the most complete streetscapes of late Victorian commercial architecture anywhere in the southern hemisphere. Between the eighteen seventies and eighteen eighties Oamaru boomed as the grain and wool port for North Otago, and the local limestone, known as whitestone, was quarried and dressed to build a grand port district with banks, warehouses, grain stores, and merchant offices. By the eighteen nineties the boom had ended as better railways allowed South Island produce to bypass the port for Dunedin and Timaru. Unusually for a small New Zealand town, Oamaru''s Victorian core was never demolished for modern buildings because there was no commercial pressure to do so. The town quietly slid into a long low grade decline, which turned out to be the best preservation policy imaginable. In the nineteen eighties and nineties a revival began, this time driven by heritage tourism, craftspeople, whiskey distillers, and the arrival of a large community of New Zealand steampunk enthusiasts who have adopted Oamaru as their spiritual capital, complete with an annual festival. Walk Harbour Street and Tyne Street, visit Steampunk HQ, and then stop at Fleur''s Place for seafood. And do not forget to visit the blue penguin colony at the harbour at dusk.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — Oamaru Historic Precinct",
+        "Waitaki District Council",
+        "Steampunk HQ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Oamaru Harbour & Historic Precinct — the site rewards those who take time to read the signage and absorb the context. A Victorian port town frozen in the 1880s — complete with a steampunk community that has adopted it as their spiritual home. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-moeraki-boulders",
+      "name": "Moeraki Boulders / Kaihinaki",
+      "region": "otago",
+      "lat": -45.3464,
+      "lng": 170.8258,
+      "category": "nature",
+      "tags": [
+        "moeraki",
+        "boulders",
+        "kaihinaki",
+        "araiteuru",
+        "ngai-tahu"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Giant spherical concretions on a north Otago beach — and in Kāi Tahu tradition, the food baskets from the Araiteuru waka.",
+      "commentary": "Natural concretions formed over 60 million years by calcite cementation in the Palaeocene mudstone. Māori tradition identifies them as kai from the Araiteuru waka wreck.",
+      "audio_story": "You are walking along Koekohe Beach, where a procession of enormous spherical stones emerges from the surf at low tide and lies half buried in the sand. Geologists explain them as concretions, formed over sixty million years in the soft Palaeocene mudstone of this coast, when dissolved calcite migrated through the sediment and cemented itself around a central particle, a seed, a shell, or a small bone. Over millions of years each concretion grew in layers, until the modern sea cut into the cliffs and exposed them. The largest are over two metres in diameter and weigh many tonnes. That is the geological story. The older story, carried by Kāi Tahu, is about a great waka called Araiteuru that sailed south from Hawaiki many generations before European arrival. The waka was wrecked in heavy seas just offshore, and the food baskets, the gourds and the kūmara that had been stored in its hold washed ashore and petrified into the stones you see today. Both stories belong here. Both are true in their own ways. The boulders are most spectacular in the early morning when the light is low and the tide is halfway out. Park at the Moeraki Boulders carpark or walk the beach from Hampden.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Kāi Tahu ki Moeraki",
+        "DOC — Moeraki Boulders",
+        "GNS Science"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Moeraki Boulders / Kaihinaki draws visitors back time and again for its natural beauty and peaceful atmosphere. Giant spherical concretions on a north Otago beach — and in Kāi Tahu tradition, the food baskets from the Araiteuru waka. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "otago-hist-toitu-museum",
+      "name": "Toitū Otago Settlers Museum",
+      "region": "otago",
+      "lat": -45.878,
+      "lng": 170.507,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "dunedin",
+        "social-history",
+        "free"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "The story of Otago''s people — from Māori settlement and the Free Church to modern Dunedin. Free and excellent.",
+      "commentary": "Formerly Otago Settlers Museum, renamed Toitū. Free entry. Excellent galleries on Kāi Tahu, Scottish migration, and the gold rush.",
+      "audio_story": "You have arrived at Toitū Otago Settlers Museum, one of the best social history museums in New Zealand. It is housed partly in the magnificent early twentieth century former NZR Bus Station, and partly in a modern extension that was built for the twenty twelve relaunch. Entry is free. The galleries are arranged in a broadly chronological sweep, beginning with the Kāi Tahu exhibition that tells the story of Māori settlement of the Otago region over the past seven hundred years. This moves into the early European contact period, with a wonderful display on the whalers, sealers and early merchants at Ōtākou. The core of the museum is the Scottish Free Church migration of the eighteen forties and fifties, with personal letters, passenger lists, and the original minute book of the Otago Association. A dedicated transport gallery displays horse carriages, steam carriages, veteran cars, and the restored nineteen twenty five bus that once plied Princes Street. A gallery on the Otago gold rush features recreated goldfield scenes and artefacts from the Arrowtown Chinese settlement. Toitū means a still point, something that remains. A good two to three hours. Start here to understand the rest of the city.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Toitū Otago Settlers Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Toitū Otago Settlers Museum is praised for being both accessible and genuinely informative. The story of Otago''s people — from Māori settlement and the Free Church to modern Dunedin. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "otago-hist-gabriels-gully",
+      "name": "Gabriel''s Gully — Start of the Otago Gold Rush",
+      "region": "otago",
+      "lat": -45.8167,
+      "lng": 169.7333,
+      "category": "heritage",
+      "tags": [
+        "gold-rush",
+        "1861",
+        "gabriel-read",
+        "lawrence",
+        "heritage-reserve"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Where Gabriel Read struck gold in May 1861 — kicking off the Otago gold rush that transformed the country.",
+      "commentary": "Australian prospector Gabriel Read found gold in this gully in May 1861. Within weeks thousands of miners flooded in. Town of Tuapeka (now Lawrence) boomed.",
+      "audio_story": "You are at Gabriel''s Gully, near the town of Lawrence, where on the twentieth of May, eighteen sixty one, an Australian prospector named Gabriel Read struck the find that changed New Zealand. Read had been working alone in this remote creek bed for several weeks. The gold he found that day, a good handful of coarse alluvial gold, was genuine payable quantity. News travelled fast. Within weeks thousands of miners had arrived from Australia, from Victoria''s exhausted goldfields, from Californian camps by way of the Pacific, and from Britain. The nearby township of Tuapeka, now called Lawrence, swelled from nothing to a population of thirteen thousand in a matter of months. By eighteen sixty two the Otago fields had overtaken Victoria''s as the most productive in the British Empire. The money flooded south to Dunedin, which became, for a single decade, the largest and wealthiest city in New Zealand. Today Gabriel''s Gully is a quiet heritage reserve with a short interpretive walking track, the remnants of tailings and sluice channels, and a monument to Read at the point of his original claim. Around Lawrence itself a number of other gold rush buildings survive, including the original Clydesdale station buildings and a heritage cemetery. A compact, well interpreted, surprisingly moving pocket of national history.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Gabriels Gully",
+        "Lawrence Historical Society",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Gabriel''s Gully — Start of the Otago Gold Rush — the site rewards those who take time to read the signage and absorb the context. Where Gabriel Read struck gold in May 1861 — kicking off the Otago gold rush that transformed the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "otago-hist-royal-albatross",
+      "name": "Royal Albatross Centre, Taiaroa Head",
+      "region": "otago",
+      "lat": -45.7733,
+      "lng": 170.7297,
+      "category": "wildlife",
+      "tags": [
+        "albatross",
+        "taiaroa-head",
+        "fortifications",
+        "wwi",
+        "peninsula"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "The only mainland breeding colony of royal albatross in the world — on a headland that was also a WWI coastal fort.",
+      "commentary": "Colony established itself 1930s. Also site of Fort Taiaroa with the Armstrong disappearing gun (1886). Combined wildlife + heritage visit.",
+      "audio_story": "You are at Taiaroa Head, the dramatic cliff headland that guards the outer entrance of Otago Harbour. Two quite different stories meet here. The headland has been inhabited seasonally by Kāi Tahu for hundreds of years, and it was a strategically important pā site. In the eighteen eighties, during a period when Russia was thought to be a serious naval threat, the colonial government built Fort Taiaroa here, a coastal battery whose centrepiece was an Armstrong disappearing gun, a massive eight inch cannon mounted on a hydraulic carriage that could rise, fire, and retract below the parapet. The gun was never fired in anger but survives in working order and can be seen on the heritage tour. The other and more famous story is the royal albatross. In the nineteen thirties the species began nesting on the grassy cliff tops above the fort, the only mainland breeding colony of royal albatross anywhere in the world. Conservation work has since grown the colony to around forty breeding pairs. Visitors access the site through the Royal Albatross Centre, and the guided tour takes you through hides overlooking active nests, where you may see the birds on their eggs or their fledgling chicks. Combine the two tours to get the richer picture.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Royal Albatross Centre — albatross.org.nz",
+        "DOC",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The wildlife encounters at Royal Albatross Centre, Taiaroa Head earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. The only mainland breeding colony of royal albatross in the world — on a headland that was also a WWI coastal fort. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "otago-otakou-marae",
+      "name": "Ōtākou Marae",
+      "region": "otago",
+      "lat": -45.772,
+      "lng": 170.723,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāi-tahu",
+        "otago-harbour"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The principal Ngāi Tahu marae of Otago — at the harbour entrance that gave the region its name.",
+      "commentary": "Otago is an anglicisation of Ōtākou. The nearby whaling station was one of the first European-Māori economic partnerships in the South Island.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ōtākou Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The principal Ngāi Tahu marae of Otago — at the harbour entrance that gave the region its name. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-mapoutahi",
+      "name": "Mapoutahi Pā",
+      "region": "otago",
+      "lat": -45.742,
+      "lng": 170.578,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāi-tahu",
+        "headland"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the largest and best-preserved pā in the South Island — a dramatic headland at Purakaunui.",
+      "commentary": "Clearly visible terracing, ditches, and palisade lines. The dramatic cliff-edge position made it nearly impregnable from the sea.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Mapoutahi Pā as a place where the history and cultural significance of Aotearoa become tangible and real. One of the largest and best-preserved pā in the South Island — a dramatic headland at Purakaunui. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-moeraki-myth",
+      "name": "Te Kaihinaki — Moeraki Boulders",
+      "region": "otago",
+      "lat": -45.344,
+      "lng": 170.826,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "mythology",
+        "waka",
+        "ārai-te-uru"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "In Ngāi Tahu tradition, the boulders are cargo from the wrecked waka Ārai-te-uru.",
+      "commentary": "The boulders are food baskets and gourds washed ashore. The canoe became the reef, and the surviving crew became the hills.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Kaihinaki — Moeraki Boulders as a place where the history and cultural significance of Aotearoa become tangible and real. In Ngāi Tahu tradition, the boulders are cargo from the wrecked waka Ārai-te-uru. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-tuturau",
+      "name": "Tuturau Battle Site",
+      "region": "otago",
+      "lat": -46.29,
+      "lng": 169.15,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "battle",
+        "musket-wars",
+        "ngāi-tahu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "The southernmost battle of the Musket Wars — where Ngāi Tahu defeated Ngāti Tama in 1836–37.",
+      "commentary": "A Ngāti Tama war party had marched the length of the South Island and was defeated by Tūhawaiki. The southernmost engagement of the Musket Wars.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tuturau Battle Site as a place where the history and cultural significance of Aotearoa become tangible and real. The southernmost battle of the Musket Wars — where Ngāi Tahu defeated Ngāti Tama in 1836–37. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-matakaea",
+      "name": "Matakaea / Shag Point",
+      "region": "otago",
+      "lat": -45.47,
+      "lng": 170.83,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "pā",
+        "seals",
+        "coastal"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A coastal pā site and seal colony — ancient Māori settlement on a windswept headland.",
+      "commentary": "Archaeological evidence includes middens, terracing, and stone tool-working sites. Today home to fur seals and yellow-eyed penguins.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Matakaea / Shag Point as a place where the history and cultural significance of Aotearoa become tangible and real. A coastal pā site and seal colony — ancient Māori settlement on a windswept headland. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-waikouaiti",
+      "name": "Waikouaiti — Early Southern Settlement",
+      "region": "otago",
+      "lat": -45.62,
+      "lng": 170.67,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "early-settlement",
+        "whaling"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the earliest European-Māori trading posts in the South Island.",
+      "commentary": "A mixed community of Māori, Europeans, and their families developed around the whaling station established in the 1830s.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Waikouaiti — Early Southern Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. One of the earliest European-Māori trading posts in the South Island. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-catlins-coast",
+      "name": "Catlins Coast — Ancient Southern Sites",
+      "region": "otago",
+      "lat": -46.48,
+      "lng": 169.74,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "coastal",
+        "settlement",
+        "catlins",
+        "archaeological"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Remote Catlins beaches with evidence of early Māori habitation — part of the ancient southern settlement network.",
+      "commentary": "Middens, stone tools, and camp sites suggest seasonal food gathering. Some of the oldest archaeological evidence in the south.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Catlins Coast — Ancient Southern Sites as a place where the history and cultural significance of Aotearoa become tangible and real. Remote Catlins beaches with evidence of early Māori habitation — part of the ancient southern settlement network. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-puketeraki-marae",
+      "name": "Puketeraki Marae, Karitāne",
+      "region": "otago",
+      "lat": -45.637,
+      "lng": 170.635,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāi-tahu",
+        "karitane"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A Ngāi Tahu marae at Karitāne — known for cultural tourism experiences and traditional food.",
+      "commentary": "Puketeraki Marae offers cultural experiences including guided walks, storytelling, and traditional food preparation. The marae looks out over the Huriawa Peninsula and its significant pā site.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Puketeraki Marae, Karitāne as a place where the history and cultural significance of Aotearoa become tangible and real. A Ngāi Tahu marae at Karitāne — known for cultural tourism experiences and traditional food. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-huriawa-pa",
+      "name": "Huriawa Peninsula Pā, Karitāne",
+      "region": "otago",
+      "lat": -45.634,
+      "lng": 170.645,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāi-tahu",
+        "headland",
+        "archaeological"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A dramatic headland pā at Karitāne — one of the most significant archaeological sites in coastal Otago.",
+      "commentary": "Huriawa Peninsula was a major Ngāi Tahu pā site, strategically positioned on a narrow headland. The terracing and earthworks are well preserved. Walking tracks around the peninsula offer coastal views.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Huriawa Peninsula Pā, Karitāne as a place where the history and cultural significance of Aotearoa become tangible and real. A dramatic headland pā at Karitāne — one of the most significant archaeological sites in coastal Otago. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-toitu-museum",
+      "name": "Toitū Otago Settlers Museum — Māori Galleries",
+      "region": "otago",
+      "lat": -45.877,
+      "lng": 170.506,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "museum",
+        "ngāi-tahu",
+        "dunedin"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "Dunedin's history museum with Māori galleries — the Southern People exhibition tells the full Ngāi Tahu story.",
+      "commentary": "Toitū's Southern People gallery traces Ngāi Tahu history from the earliest settlement through the Musket Wars, colonial encounter, and into the present. The museum also holds significant taonga and historical photographs.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Toitū Otago Settlers Museum — Māori Galleries as a place where the history and cultural significance of Aotearoa become tangible and real. Dunedin's history museum with Māori galleries — the Southern People exhibition tells the full Ngāi Tahu story. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-orokonui-ecosanctuary",
+      "name": "Ōrokonui Ecosanctuary",
+      "region": "otago",
+      "lat": -45.776,
+      "lng": 170.54,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "conservation",
+        "sanctuary",
+        "kaitiakitanga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A fenced ecosanctuary north of Dunedin — restoring native species to their ancestral habitat.",
+      "commentary": "Ōrokonui combines modern predator-exclusion fencing with the Māori principle of kaitiakitanga. Rare species including kākā and takahē have been reintroduced to forest that was logged in the 19th century. The sanctuary demonstrates how conservation science and indigenous values can work together.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Ōrokonui Ecosanctuary as a place where the history and cultural significance of Aotearoa become tangible and real. A fenced ecosanctuary north of Dunedin — restoring native species to their ancestral habitat. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "otago-crown-range-road",
+      "name": "Crown Range Road",
+      "region": "otago",
+      "lat": -44.93,
+      "lng": 168.96,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "alpine-pass",
+        "mountain",
+        "historic"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 1.5,
+      "short": "New Zealand's highest sealed road crosses the Crown Range between Queenstown and Wanaka.",
+      "commentary": "The Crown Range Road climbs to 1,076 m, making it the highest sealed road in New Zealand. It connects Queenstown to Wanaka via the Cardrona Valley, cutting travel time compared to the alternative via Cromwell. The road was originally a pack track used during the Cardrona gold rush of the 1860s. The Cardrona Hotel, built in 1863, is one of New Zealand's most photographed buildings.",
+      "audio_story": "You are climbing the Crown Range Road, and at 1,076 metres, this is the highest sealed road in New Zealand. The switchbacks are steep and tight, but the reward at the summit is one of the great South Island views — the Wakatipu Basin sprawls below with the Remarkables standing like a wall to the south. This road was first a pack track, built in the 1860s when thousands of miners flooded into the Cardrona Valley chasing gold. On the descent into Cardrona, stop at the Cardrona Hotel, a wonderfully crooked wooden building from 1863 that has barely straightened up since. In winter, this road can close with snow — keep an eye on the forecast and carry chains between June and October.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZTA Crown Range",
+        "Queenstown Lakes District heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Crown Range Road route delivers a memorable journey through exceptional New Zealand scenery. New Zealand's highest sealed road crosses the Crown Range between Queenstown and Wanaka. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-taieri-gorge-railway",
+      "name": "Taieri Gorge Railway",
+      "region": "otago",
+      "lat": -45.8742,
+      "lng": 170.5036,
+      "category": "journey",
+      "tags": [
+        "rail-journey",
+        "scenic",
+        "gorge",
+        "heritage",
+        "engineering"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 4,
+      "short": "A heritage railway threading through the dramatic Taieri Gorge on century-old viaducts and tunnels.",
+      "commentary": "The Taieri Gorge Railway operates from Dunedin Railway Station through the dramatic Taieri Gorge to Pukerangi or Middlemarch. The line, built in the 1880s, features 12 tunnels, numerous bridges, and the spectacular Wingatui Viaduct. Dunedin Railway Station itself is a Flemish Renaissance masterpiece completed in 1906 with over 700,000 mosaic tiles in its floor.",
+      "audio_story": "You are boarding the train at Dunedin Railway Station, and before the journey even begins, the building itself deserves your attention — completed in 1906, its Flemish Renaissance facade earned it the nickname 'Gingerbread George' after the architect George Troup. The floor contains over 700,000 Royal Doulton mosaic tiles. As the train pulls out and enters the Taieri Gorge, the landscape becomes increasingly dramatic. The railway engineers of the 1880s performed miracles here: 12 tunnels were blasted through schist rock, and viaducts were built across side gorges that drop away dizzyingly below. The Wingatui Viaduct, the largest wrought-iron structure in New Zealand, spans the gorge at a height that makes passengers instinctively grip their armrests.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dunedin Railways",
+        "Heritage NZ Dunedin Station"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Taieri Gorge Railway route delivers a memorable journey through exceptional New Zealand scenery. A heritage railway threading through the dramatic Taieri Gorge on century-old viaducts and tunnels. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-otago-peninsula-drive",
+      "name": "Otago Peninsula Drive",
+      "region": "otago",
+      "lat": -45.85,
+      "lng": 170.65,
+      "category": "journey",
+      "tags": [
+        "peninsula-drive",
+        "wildlife",
+        "albatross",
+        "penguin",
+        "coastal"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "Drive the length of the Otago Peninsula to the world's only mainland albatross colony.",
+      "commentary": "The Otago Peninsula stretches 20 km from Dunedin into the Pacific, with a road along the harbour side and the spectacular Highcliff Road along the top. At Taiaroa Head, the Royal Albatross Centre protects the world's only mainland breeding colony of northern royal albatross. The peninsula is also home to yellow-eyed penguins, blue penguins, and New Zealand fur seals.",
+      "audio_story": "You are driving out the Otago Peninsula, following the harbour road past boatsheds and fishing villages toward one of the most remarkable wildlife encounters in the Southern Hemisphere. At Taiaroa Head, the very tip of the peninsula, northern royal albatross nest on the grassy clifftops — the only place on any mainland in the world where these birds breed. Their wingspan reaches over three metres, and watching one launch off the cliff and ride the updraft is genuinely breathtaking. On the way back, take the Highcliff Road along the ridge for dramatic views, and stop at one of the penguin viewing areas at dusk. Yellow-eyed penguins — among the rarest penguins on Earth — waddle up from the surf to their bush nests as the light fades.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Royal Albatross Centre",
+        "DOC Otago Peninsula wildlife"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Otago Peninsula Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive the length of the Otago Peninsula to the world's only mainland albatross colony. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-roxburgh-gorge-trail",
+      "name": "Roxburgh Gorge Trail",
+      "region": "otago",
+      "lat": -45.45,
+      "lng": 169.4,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "gorge",
+        "gold-mining",
+        "river"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 6,
+      "short": "Cycle through the schist-walled Clutha River gorge past relics of the gold rush.",
+      "commentary": "The Roxburgh Gorge Trail is a 34 km cycle trail along the Clutha River between Alexandra and Roxburgh Dam, including a jet boat transfer through an inaccessible middle section. The gorge walls are dramatic schist rock formations, and the trail passes numerous relics of the 1860s gold mining era including sluice workings and abandoned stone huts.",
+      "audio_story": "You are cycling the Roxburgh Gorge Trail, and the Clutha River — New Zealand's highest-volume river — is your constant companion. The gorge walls rise in layers of golden schist, split and folded by geological forces, and along the banks you will spot relics of the men who came here in the 1860s chasing gold. Stone huts, sluice channels cut into rock, and tailings piles line the river, each one a story of backbreaking labour and slim chances. The middle section of the gorge is too rugged for a trail, so a jet boat whisks you through the narrows — a thrilling transfer that shows you just how wild this country is. The Clutha carries more water than any other New Zealand river, and in the narrow gorge, its green surface moves with a quiet, unstoppable power.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Central Otago heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Roxburgh Gorge Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle through the schist-walled Clutha River gorge past relics of the gold rush. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-pigroot-sh85",
+      "name": "The Pigroot (SH85)",
+      "region": "otago",
+      "lat": -45.19,
+      "lng": 170.06,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "heritage",
+        "gold-rush",
+        "back-road",
+        "central-otago"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 1.5,
+      "short": "The old gold miners' road from Palmerston to Central Otago through the Pig Root hills.",
+      "commentary": "State Highway 85, known as The Pigroot, runs 118 km from Palmerston inland to Kyeburn. It was the original route from the coast to the Central Otago goldfields in the 1860s, named for the wild pigs that once roamed the hills. The road passes through Macraes, home to New Zealand's largest gold mine, still operational today.",
+      "audio_story": "You are driving the Pigroot, and this old road has been carrying fortune-seekers into Central Otago since the 1860s. SH85 climbs from the coast at Palmerston over tussock-covered hills into the dry interior, and its name comes from the wild pigs that once rooted through the bush along its route. Thousands of miners walked this road with picks over their shoulders, heading for the Dunstan goldfields. At Macraes, you pass New Zealand's largest gold mine, which is still extracting gold today using methods the old miners could never have imagined — the rock here contains microscopic gold invisible to the naked eye, freed by industrial processing. The Pigroot is quieter than the highway through the Kawarau Gorge, and that is exactly its appeal.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Central Otago tourism",
+        "OceanaGold Macraes mine"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The The Pigroot (SH85) route delivers a memorable journey through exceptional New Zealand scenery. The old gold miners' road from Palmerston to Central Otago through the Pig Root hills. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-clutha-gold-trail",
+      "name": "Clutha Gold Trail",
+      "region": "otago",
+      "lat": -46.15,
+      "lng": 169.31,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "heritage",
+        "bridges",
+        "river"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 10,
+      "short": "Cycle 73 km along the mighty Clutha River from Roxburgh Dam to the coast at Balclutha.",
+      "commentary": "The Clutha Gold Trail follows the Clutha Mata-Au River for 73 km from Roxburgh Dam to Lawrence, with an extension to Balclutha. The trail uses old railway corridors, river terraces, and farm tracks, passing through the historic gold town of Lawrence where Gabriel Read discovered gold in 1861, triggering the Otago gold rush.",
+      "audio_story": "You are riding the Clutha Gold Trail along New Zealand's most powerful river. The Clutha Mata-Au carries more water than any other river in the country, and it was the gold in its gravels that changed Otago forever. At Lawrence, where the trail passes through, a Tasmanian prospector named Gabriel Read found gold in May 1861 and declared it a 'beautiful soft, heavy, golden kind of gravel.' Within months, thousands had descended on the region. The trail follows old railway corridors and river terraces, crossing bridges that span side streams and gullies. You pedal through farmland that was once crawling with miners, and in Lawrence itself the heritage buildings tell the story of a town that boomed and then quietly settled into the landscape.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Clutha District heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Clutha Gold Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle 73 km along the mighty Clutha River from Roxburgh Dam to the coast at Balclutha. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-dunstan-road-sh8-cromwell",
+      "name": "Cromwell Gorge & Dunstan Road (SH8)",
+      "region": "otago",
+      "lat": -45.04,
+      "lng": 169.2,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "gorge",
+        "dam",
+        "heritage",
+        "fruit"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Drive through the Cromwell Gorge past the Clyde Dam and into the fruit bowl of Central Otago.",
+      "commentary": "The drive along SH8 through the Cromwell Gorge follows the shore of Lake Dunstan, created when the Clyde Dam was completed in 1992. The dam was New Zealand's most expensive and controversial infrastructure project of the era. Cromwell, once a gold mining town, is now the centre of Central Otago's stone fruit and cherry industry.",
+      "audio_story": "You are driving through the Cromwell Gorge, and the lake beside you is not natural — Lake Dunstan was created in 1992 when the Clyde Dam was completed, flooding a valley that had been home to gold miners, orchardists, and the old town of Cromwell's main street. The dam was the most expensive and controversial construction project in New Zealand's history at the time, plagued by geological problems that doubled its cost. What the lake also covered were some of Central Otago's oldest fruit trees. But the region adapted: today, Cromwell and the surrounding valleys produce world-class cherries, apricots, and pinot noir grapes. At the old Cromwell Heritage Precinct, a handful of buildings were relocated above the new waterline, a small memorial to what lies beneath.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Central Otago tourism",
+        "NZ Heritage Clyde Dam"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Cromwell Gorge & Dunstan Road (SH8) route delivers a memorable journey through exceptional New Zealand scenery. Drive through the Cromwell Gorge past the Clyde Dam and into the fruit bowl of Central Otago. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-kawarau-gorge-sh6",
+      "name": "Kawarau Gorge Drive (SH6)",
+      "region": "otago",
+      "lat": -45.01,
+      "lng": 168.99,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "gorge",
+        "bungy",
+        "gold-mining",
+        "river"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Drive through the Kawarau Gorge where gold miners once worked and bungy jumping was born.",
+      "commentary": "The Kawarau Gorge on SH6 between Queenstown and Cromwell follows the turquoise Kawarau River through a narrow schist gorge. The historic Kawarau Bridge, built in 1880 for gold miners, became the world's first commercial bungy jumping site in 1988 when AJ Hackett leapt from it. Goldfields Mining Centre preserves the area's 1860s gold rush heritage.",
+      "audio_story": "You are driving through the Kawarau Gorge, and the river below is running that peculiar milky turquoise that means glacial melt. The gorge walls are schist — Central Otago's signature rock, splitting into flat golden slabs. In the 1860s, Chinese and European miners worked every inch of this gorge, moving extraordinary quantities of rock by hand to extract tiny quantities of gold. Then, in 1988, a young New Zealander named AJ Hackett jumped off the 1880 Kawarau Bridge with a rubber cord tied to his ankles, and a different kind of gold rush began. The AJ Hackett Bungy site is still operating, and watching someone step off the bridge into the void above that turquoise river is almost as thrilling as doing it yourself.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "AJ Hackett Bungy",
+        "Central Otago heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Kawarau Gorge Drive (SH6) route delivers a memorable journey through exceptional New Zealand scenery. Drive through the Kawarau Gorge where gold miners once worked and bungy jumping was born. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-gibbston-valley-wine-trail",
+      "name": "Gibbston Valley Wine Trail",
+      "region": "otago",
+      "lat": -45.02,
+      "lng": 168.93,
+      "category": "journey",
+      "tags": [
+        "wine-trail",
+        "pinot-noir",
+        "vineyard",
+        "cycling",
+        "tasting"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Explore the world's southernmost wine region in the Gibbston Valley's dramatic schist gorge.",
+      "commentary": "Gibbston Valley, nicknamed the 'Valley of the Vines,' is the heart of the Central Otago wine region and one of the most southerly wine-producing areas on Earth. The valley's steep schist walls create a warm microclimate ideal for pinot noir. Notable wineries include Gibbston Valley, Peregrine, and Chard Farm, the last of which is accessed by a dramatic narrow road cut into the cliff above the Kawarau River.",
+      "audio_story": "You are entering the Gibbston Valley, and these vines are growing in one of the most improbable wine regions on Earth. This far south, at this altitude, conventional wisdom says grapes should not ripen. But the schist rock walls of the valley trap heat like a natural oven, and Central Otago's extreme continental climate — blazing summers and freezing winters — produces pinot noir of extraordinary intensity. The first vines were planted here in 1981 by Alan Brady, who everyone thought was mad. Now Gibbston Valley, Peregrine, and Chard Farm are producing wines that compete with the best in the world. If you visit Chard Farm, the access road alone is worth the trip — a narrow shelf carved into the cliff above the Kawarau River that will test your nerve before the first glass.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Central Otago Winegrowers",
+        "Gibbston Valley tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Gibbston Valley Wine Trail route delivers a memorable journey through exceptional New Zealand scenery. Explore the world's southernmost wine region in the Gibbston Valley's dramatic schist gorge. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-dansey-pass-road",
+      "name": "Danseys Pass Road",
+      "region": "otago",
+      "lat": -44.93,
+      "lng": 170.42,
+      "category": "journey",
+      "tags": [
+        "back-road",
+        "alpine-pass",
+        "gravel",
+        "heritage",
+        "remote"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2.5,
+      "short": "Cross the remote Danseys Pass on a gravel road linking the Waitaki Valley to Central Otago.",
+      "commentary": "Danseys Pass Road is a 67 km unsealed road crossing the Kakanui Mountains at 935 m between Duntroon in the Waitaki Valley and Naseby in Central Otago. The road was an important 19th-century route to the goldfields and passes through tussock-covered high country with dramatic views. The historic Danseys Pass Hotel, built in 1862, sits at the summit.",
+      "audio_story": "You are driving the Danseys Pass Road, and the gravel crunches under your tyres as the tussock country opens up around you. This 67-kilometre unsealed road crosses the Kakanui Mountains at 935 metres, connecting the green Waitaki Valley to the dry goldfields of Central Otago. In the 1860s, miners slogged over this pass on foot and horseback, heading for the diggings at Naseby and the Maniototo. At the summit, the Danseys Pass Hotel has been offering shelter since 1862 — one of the oldest continuously operating hotels in the South Island. The views from the top are quintessentially Central Otago: rolling tussock hills stretching to the horizon under a sky that seems bigger than anywhere else in New Zealand. This road requires a sturdy vehicle, reasonable weather, and a willingness to take the slow route.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Central Otago tourism",
+        "Waitaki District heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Danseys Pass Road route delivers a memorable journey through exceptional New Zealand scenery. Cross the remote Danseys Pass on a gravel road linking the Waitaki Valley to Central Otago. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-wanaka-to-hawea-lakeside",
+      "name": "Lake Wanaka to Lake Hawea Drive",
+      "region": "otago",
+      "lat": -44.69,
+      "lng": 169.14,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "lakeside",
+        "mountain",
+        "short-drive"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 0.5,
+      "short": "A short drive between two stunning alpine lakes separated by a narrow isthmus called 'The Neck'.",
+      "commentary": "The 30 km road from Wanaka to Hawea follows the shore of Lake Wanaka before crossing 'The Neck,' a narrow strip of land between the two lakes. Both lakes were carved by glaciers and are surrounded by mountains rising to over 2,000 m. Lake Hawea is a deeper blue than Wanaka due to its greater depth and different glacial flour content.",
+      "audio_story": "You are driving from Wanaka to Hawea, and this short journey between two glacial lakes is quietly one of the most beautiful drives in Central Otago. Lake Wanaka stretches to your left, wide and blue-grey, backed by mountains that still hold winter snow well into summer. At The Neck — a narrow isthmus of land barely 200 metres wide — you are between two entirely different lakes. Wanaka is the larger, shallower, and gentler of the pair, while Hawea is deeper, darker, and somehow more serious. The blue of Lake Hawea is intense and slightly different from Wanaka's — the two lakes were carved by separate glaciers that left different mineral signatures in the water. Pull over at The Neck lookout and you can see both lakes simultaneously, stretching away in opposite directions like a geological magic trick.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wanaka tourism",
+        "Queenstown Lakes District"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Lake Wanaka to Lake Hawea Drive route delivers a memorable journey through exceptional New Zealand scenery. A short drive between two stunning alpine lakes separated by a narrow isthmus called 'The Neck'. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-mt-aspiring-rob-roy-glacier",
+      "name": "Rob Roy Glacier Track",
+      "region": "otago",
+      "lat": -44.51,
+      "lng": 168.76,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "glacier",
+        "day-walk",
+        "alpine",
+        "mt-aspiring"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "Walk into a hanging glacier valley in the heart of Mt Aspiring National Park.",
+      "commentary": "The Rob Roy Glacier Track is a 10 km return walk from the Raspberry Creek car park in the Matukituki Valley to a viewpoint beneath the Rob Roy Glacier. The track crosses the Matukituki River on a swing bridge and climbs through beech forest to a glacial basin where waterfalls cascade from hanging ice. It is widely considered one of the best day walks in the South Island.",
+      "audio_story": "You are crossing the swing bridge over the Matukituki River, and the Rob Roy Glacier Track is about to take you into one of the most dramatic day-walk destinations in New Zealand. The path climbs steeply through beech forest, the canopy filtering the light into green and gold, before emerging into a glacial cirque that stops you in your tracks. The Rob Roy Glacier hangs on the mountainside above, its face broken into blue seracs and crevasses, and waterfalls pour from the ice in long white threads that drift in the wind before hitting the rocks below. The scale is difficult to process — the glacier face is hundreds of metres high, and the sound of ice cracking echoes around the basin like distant thunder. This is a 10-kilometre return walk from the car park, and it packs more visual punch per step than almost any other day walk in the South Island.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Rob Roy Glacier Track",
+        "Mt Aspiring National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Rob Roy Glacier Track route delivers a memorable journey through exceptional New Zealand scenery. Walk into a hanging glacier valley in the heart of Mt Aspiring National Park. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "otago-treble-cone-ski",
+      "name": "Treble Cone Ski Area",
+      "region": "otago",
+      "lat": -44.6333,
+      "lng": 168.9,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "winter",
+        "wanaka",
+        "expert-terrain"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "The South Island's largest ski area with legendary off-piste terrain above Lake Wanaka.",
+      "commentary": "Treble Cone is the largest ski area in the South Island with 550 hectares of skiable terrain. It's known for long groomers, challenging off-piste bowls, and spectacular views of Lake Wanaka and Mount Aspiring. The terrain is 45% advanced, making it a favourite with experienced skiers.",
+      "audio_story": "You have arrived at Treble Cone, the South Island's largest ski area and a mecca for serious skiers and snowboarders. With 550 hectares of terrain and a 700-metre vertical drop, Treble Cone offers the long, sustained runs that other ski areas can only dream of. The views from the summit are extraordinary — Lake Wanaka stretches out below like a sheet of blue glass, framed by the peaks of Mount Aspiring National Park. Nearly half the terrain is rated advanced, with legendary off-piste bowls like Motatapu and Saddle Basin offering steep chutes and untouched powder after a storm. If you're an intermediate, the Home Basin groomers are wide and perfectly maintained. This is where the locals ski when they want the real thing.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Treble Cone",
+        "NZSki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Treble Cone Ski Area adventure draws rave reviews for the combination of adrenaline and spectacular scenery. The South Island's largest ski area with legendary off-piste terrain above Lake Wanaka. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-cardrona-ski",
+      "name": "Cardrona Alpine Resort",
+      "region": "otago",
+      "lat": -44.8667,
+      "lng": 168.95,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "winter",
+        "terrain-parks",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Family-favourite ski resort with top terrain parks between Queenstown and Wanaka.",
+      "commentary": "Cardrona Alpine Resort sits on the Crown Range road between Queenstown and Wanaka. It's renowned for its terrain parks, half-pipe, and family-friendly facilities. With 345 hectares of terrain spread across four basins and reliable snowmaking, it consistently delivers excellent conditions.",
+      "audio_story": "You have arrived at Cardrona Alpine Resort, perched high on the Crown Range between Queenstown and Wanaka. Cardrona is beloved by families, freestyle riders, and anyone who appreciates a perfectly run ski area. The four basins offer 345 hectares of varied terrain, from gentle learner slopes to the Captain's Basin chutes. But Cardrona's real claim to fame is its terrain parks — ranked among the best in the Southern Hemisphere, with features that have produced Olympic-level freestyle athletes. The half-pipe here is competition grade, and the progression of parks means riders of all levels can safely push their limits. New Zealand's highest cafe sits at the summit, and on a clear day you can see forever.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Cardrona Alpine Resort",
+        "RealNZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Cardrona Alpine Resort adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Family-favourite ski resort with top terrain parks between Queenstown and Wanaka. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-wanaka-skydive",
+      "name": "Skydive Wanaka",
+      "region": "otago",
+      "lat": -44.7222,
+      "lng": 169.2456,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "extreme",
+        "wanaka",
+        "aerial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "Skydive over Lake Wanaka with Mount Aspiring and the Southern Alps as your backdrop.",
+      "commentary": "Skydive Wanaka offers tandem jumps from up to 15,000 feet with views of Lake Wanaka, Mount Aspiring, and the full sweep of the Southern Alps. Freefall lasts up to 60 seconds with a scenic parachute descent of 5-7 minutes over the lake and mountains.",
+      "audio_story": "You have arrived at Wanaka Airport, and the sky above you is about to become your playground. Skydive Wanaka will take you up to 15,000 feet — that's nearly three miles above the earth — where you'll step out of the plane into thin, cold air with one of the most spectacular views in all of New Zealand spread below. Lake Wanaka, Lake Hawea, Mount Aspiring, the Southern Alps — it's all there, a living map of mountains and water. You'll freefall for up to 60 seconds, the wind roaring at 200 kilometres per hour, before the chute opens and everything goes quiet. The five-minute parachute ride down is pure bliss, floating above the lake with snow-capped peaks in every direction. Many say this is the most scenic skydive in the world.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Skydive Wanaka"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Skydive Wanaka adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Skydive over Lake Wanaka with Mount Aspiring and the Southern Alps as your backdrop. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-wanaka-rock-climbing",
+      "name": "Wanaka Rock Climbing & Via Ferrata",
+      "region": "otago",
+      "lat": -44.6936,
+      "lng": 169.1322,
+      "category": "adventure",
+      "tags": [
+        "rock-climbing",
+        "via-ferrata",
+        "climbing",
+        "wanaka",
+        "outdoor"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Climb natural rock faces and a thrilling via ferrata with Lake Wanaka views.",
+      "commentary": "The Wanaka region offers world-class rock climbing at crags like Hospital Flat and Roadside, plus guided via ferrata experiences on Wildwire's twin waterfall route. The via ferrata ascends alongside Twin Falls, combining climbing rungs, wire bridges, and waterfall exposure at heights up to 350 metres.",
+      "audio_story": "You have arrived in Wanaka's climbing heartland, where schist rock faces and a world-class via ferrata await. If you've never tried climbing, the guided crags at Hospital Flat offer perfect introductory routes on grippy schist with mountain views. But the real showstopper is the Wildwire via ferrata — a series of iron rungs, ladders, and wire bridges bolted into the cliff face beside a twin waterfall. You'll climb up to 350 metres, crossing swing bridges above cascading water with Lake Wanaka glittering far below. It's a physical challenge, but the via ferrata system means you're always clipped to a safety cable. The sensation of climbing alongside a roaring waterfall, spray on your face, mountains all around — it's genuinely unforgettable.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Wildwire Wanaka",
+        "Wanaka Rock Climbing"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Wanaka Rock Climbing & Via Ferrata adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Climb natural rock faces and a thrilling via ferrata with Lake Wanaka views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-wanaka-sup",
+      "name": "Stand-Up Paddleboarding on Lake Wanaka",
+      "region": "otago",
+      "lat": -44.698,
+      "lng": 169.128,
+      "category": "adventure",
+      "tags": [
+        "paddleboarding",
+        "sup",
+        "lake",
+        "wanaka",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Glide across Lake Wanaka's pristine waters on a stand-up paddleboard.",
+      "commentary": "Stand-up paddleboarding on Lake Wanaka offers a serene way to explore the lake's bays, islands, and famous lone tree. Rental and guided tour options are available from the Wanaka waterfront. The calm morning conditions are ideal, with water clarity revealing the lake bed metres below.",
+      "audio_story": "You have arrived at the shores of Lake Wanaka, where crystal-clear water stretches toward snow-dusted mountains in every direction. Standing on a paddleboard here is like walking on glass — the water is so clear you can see the stones on the lake bed five metres below your feet. Paddle out toward the famous That Wanaka Tree, a lone willow that has become one of New Zealand's most photographed sights. Continue further and you'll reach Ruby Island, a nature reserve just offshore with native bush and birdsong. The mornings are best, when the lake is often perfectly flat and the mountains reflect on the surface like a mirror. It's equal parts exercise, meditation, and natural wonder.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "SUP Wanaka",
+        "Paddle Wanaka"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Stand-Up Paddleboarding on Lake Wanaka adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Glide across Lake Wanaka's pristine waters on a stand-up paddleboard. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-clutha-river-cruise",
+      "name": "Clutha River Jet Boat & Fishing",
+      "region": "otago",
+      "lat": -45.1833,
+      "lng": 169.3167,
+      "category": "adventure",
+      "tags": [
+        "jet-boat",
+        "fishing",
+        "river",
+        "clutha",
+        "scenic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Jet boat New Zealand's highest-volume river, the mighty Clutha.",
+      "commentary": "The Clutha River is New Zealand's highest-volume river and second longest. Jet boat tours explore the upper reaches near Lake Wanaka outlet and the dramatic gorges downstream. The river also supports excellent brown trout fishing, with guided trips available throughout the season.",
+      "audio_story": "You have arrived at the banks of the Clutha River, the mightiest river in New Zealand by volume. More water flows through here than any other river in the country, and you're about to experience its power firsthand from a jet boat. The Clutha carves through dramatic gorges where sheer rock walls tower above the blue-green water, then opens into braided channels where your driver will demonstrate the full agility of the jet boat with 360-degree spins and high-speed turns. This river was the heart of Central Otago's gold rush in the 1860s, and you'll pass old mining sites where fortunes were made and lost. The Clutha is also home to some of New Zealand's finest brown trout — if you spot one, consider coming back with a rod.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Clutha River Cruises",
+        "Fish & Game Otago"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Clutha River Jet Boat & Fishing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat New Zealand's highest-volume river, the mighty Clutha. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-central-rail-trail-biking",
+      "name": "Otago Central Rail Trail",
+      "region": "otago",
+      "lat": -45.0833,
+      "lng": 169.8667,
+      "category": "adventure",
+      "tags": [
+        "cycling",
+        "rail-trail",
+        "heritage",
+        "multi-day",
+        "scenic"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 8,
+      "short": "Cycle 152 km along a historic rail trail through Central Otago's golden landscapes.",
+      "commentary": "The Otago Central Rail Trail follows 152 km of disused railway between Middlemarch and Clyde. The trail passes through tunnels, over viaducts, and across the tussock-covered Maniototo Plain. It's one of New Zealand's Great Rides and can be completed in 3-5 days or sampled on day rides.",
+      "audio_story": "You have arrived at one end of New Zealand's original Great Ride — the Otago Central Rail Trail. This 152-kilometre trail follows the old Otago Central railway line through some of the South Island's most distinctive and hauntingly beautiful landscapes. You'll cycle through hand-hewn tunnels, across towering viaducts, and along the vast golden plains of the Maniototo, where the big Central Otago sky stretches forever. The grade never exceeds one in fifty — it was built for trains, after all — so it's gentle riding through terrain that changes from gorge to farmland to semi-arid steppe. Along the way, tiny heritage towns like Wedderburn, Ranfurly, and Naseby offer refreshments, accommodation, and a genuine taste of rural New Zealand life. Allow three to five days for the full trail, or pick a day section.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Otago Central Rail Trail Trust",
+        "DOC Great Rides"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Otago Central Rail Trail adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Cycle 152 km along a historic rail trail through Central Otago's golden landscapes. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-moeraki-boulders-kayak",
+      "name": "Moeraki Boulders Kayak Tour",
+      "region": "otago",
+      "lat": -45.3444,
+      "lng": 170.8278,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "coastal",
+        "moeraki",
+        "geology",
+        "wildlife"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Kayak past the mysterious Moeraki Boulders and along the Otago coast.",
+      "commentary": "Kayaking from Moeraki offers a unique perspective on the famous spherical boulders and the rugged Otago coastline. Tours often include encounters with fur seals, blue penguins, and seabirds. The boulders formed over millions of years on the ancient seabed through a process called concretion.",
+      "audio_story": "You have arrived at Moeraki, home to one of New Zealand's most mysterious geological formations. The Moeraki Boulders are enormous spherical rocks scattered along the beach, some over two metres in diameter and weighing several tonnes. From your kayak, you'll see them from an angle most visitors never experience — framed by the waves, with the wild Otago coastline stretching behind them. Scientists say the boulders formed over four million years ago through a process called concretion on the ancient seabed. Maori legend tells a different story — they're gourds washed ashore from the wreck of the great canoe Araiteuru. As you paddle along the coast, watch for New Zealand fur seals basking on rocks and little blue penguins bobbing in the waves.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Moeraki Boulders",
+        "Coastal Otago Tours"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Moeraki Boulders Kayak Tour adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak past the mysterious Moeraki Boulders and along the Otago coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-dunedin-wildlife-cruise",
+      "name": "Otago Peninsula Wildlife Cruise",
+      "region": "otago",
+      "lat": -45.85,
+      "lng": 170.6833,
+      "category": "adventure",
+      "tags": [
+        "wildlife",
+        "cruise",
+        "albatross",
+        "penguins",
+        "marine"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Cruise the Otago Peninsula to see albatross, seals, and rare penguins.",
+      "commentary": "Wildlife cruises from Wellers Rock explore Otago Harbour and the exposed coastline of the Otago Peninsula. The area is home to the world's only mainland breeding colony of royal albatross, plus New Zealand fur seals, blue penguins, and yellow-eyed penguins. Guided tours run year-round.",
+      "audio_story": "You have arrived at the gateway to one of the world's most remarkable wildlife experiences. The Otago Peninsula is home to the only mainland breeding colony of royal albatross on earth — these magnificent birds have wingspans of over three metres and can fly for years without touching land. Your cruise will take you along the rugged coastline where New Zealand fur seals haul out on rocky platforms, rare yellow-eyed penguins waddle ashore at dusk, and if you're lucky, you might spot a pod of dusky dolphins riding the bow wave. The Otago Peninsula has been called the wildlife capital of New Zealand, and from the water you'll understand why. Keep your camera ready — the albatross often soar directly over the boat.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Monarch Wildlife Cruises",
+        "Royal Albatross Centre",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Otago Peninsula Wildlife Cruise adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Cruise the Otago Peninsula to see albatross, seals, and rare penguins. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-cromwell-atv-goldfields",
+      "name": "Cromwell Goldfields ATV Adventure",
+      "region": "otago",
+      "lat": -45.05,
+      "lng": 169.2,
+      "category": "adventure",
+      "tags": [
+        "quad-biking",
+        "atv",
+        "gold-mining",
+        "heritage",
+        "off-road"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "ATV through historic gold mining country in the Cromwell Gorge.",
+      "commentary": "ATV tours in the Cromwell area explore the historic goldfields of Central Otago, where Chinese and European miners sought fortunes in the 1860s. Routes pass through river gorges, over tussock ridgelines, and past remnants of the gold rush era including stone cottages and mine workings.",
+      "audio_story": "You have arrived in Cromwell, the heart of Central Otago's gold mining heritage, and your ATV is about to carry you through landscapes where fortune seekers once panned for gold in every creek and river. The trails wind through the dramatic Cromwell Gorge, across tussock-covered ridgelines, and past the stone ruins of Chinese miners' cottages that have stood here since the 1860s. Central Otago has a wild, dry beauty that's unlike anywhere else in New Zealand — golden hills, schist rock outcrops, and big open skies. Your ATV handles the rough terrain with ease, splashing through creek crossings and climbing to viewpoints where you can see the turquoise waters of Lake Dunstan and the snow-capped peaks beyond. The history here is tangible — you're riding through a landscape that was once swarming with thousands of miners, and their traces are everywhere if you know where to look.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Goldfields Mining Centre",
+        "Central Otago Tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Cromwell Goldfields ATV Adventure adventure draws rave reviews for the combination of adrenaline and spectacular scenery. ATV through historic gold mining country in the Cromwell Gorge. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-ice-climbing-wye-creek",
+      "name": "Wye Creek Ice Climbing",
+      "region": "otago",
+      "lat": -44.9833,
+      "lng": 168.7333,
+      "category": "adventure",
+      "tags": [
+        "ice-climbing",
+        "winter",
+        "extreme",
+        "climbing",
+        "guided"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 6,
+      "short": "Climb frozen waterfalls with ice axes near Queenstown in winter.",
+      "commentary": "Winter ice climbing near Queenstown and Wanaka takes place on frozen waterfalls and ice formations in accessible gullies. Guided trips provide all technical equipment including ice axes, crampons, ropes, and helmets. The season typically runs from June to September depending on freeze conditions.",
+      "audio_story": "You have arrived at the base of a frozen waterfall, and in your hands are an ice axe and crampons — the tools you'll use to climb it. Winter ice climbing in the Queenstown and Wanaka region transforms familiar waterfalls into vertical ice walls that offer a completely different kind of climbing challenge. Your guide will set up top-rope anchors and teach you the techniques — front-pointing your crampons into the ice, swinging your axes to find placements, and trusting the friction of steel on frozen water. The ice is a living material, groaning and creaking as you climb, and its colours range from clear glass to deep blue. No previous climbing experience is necessary — the guides are expert instructors and the roped systems keep you safe. But make no mistake, pulling yourself up a frozen waterfall is physically demanding and genuinely thrilling. The winter landscapes around you are stunning — snow-covered peaks, frozen creeks, and the crisp silence of the alpine zone.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Basecamp Adventures",
+        "Aspiring Guides"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Wye Creek Ice Climbing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Climb frozen waterfalls with ice axes near Queenstown in winter. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "otago-gibbston-valley-zipline",
+      "name": "Gibbston Valley Zipline",
+      "region": "otago",
+      "lat": -45.0167,
+      "lng": 168.9333,
+      "category": "adventure",
+      "tags": [
+        "zipline",
+        "wine-region",
+        "gibbston",
+        "scenic",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Zipline through the Gibbston Valley wine region above the Kawarau River.",
+      "commentary": "The Gibbston Valley zipline experience features a series of lines above the Kawarau River gorge in the heart of the Gibbston wine region. Lines reach heights of 60 metres above the valley floor with views of vineyards, the river, and surrounding mountains. It combines adventure with the area's wine heritage.",
+      "audio_story": "You have arrived in the Gibbston Valley, known as the Valley of the Vines and home to some of Central Otago's finest pinot noir — and now, a zipline experience that lets you fly above it all. Your series of ziplines will carry you up to 60 metres above the Kawarau River gorge, soaring past schist rock cliffs and over the vineyard terraces that produce some of New Zealand's most celebrated wines. Each line offers a different perspective on this dramatic landscape, from close-up views of the gorge walls to wide panoramas of the valley and surrounding mountains. Between lines, your guides share the geological and viticultural stories of the region — how ancient glaciers carved this gorge, and how the unique microclimate creates perfect conditions for world-class pinot noir. It's the rare adventure that feeds both your adrenaline and your appreciation for fine wine.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Gibbston Valley",
+        "Ziptrek"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Gibbston Valley Zipline adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Zipline through the Gibbston Valley wine region above the Kawarau River. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

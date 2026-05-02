@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "taupo",
+    "name": "Taupō / Taupō-nui-a-Tia",
+    "island": "North",
+    "centre": {
+      "lat": -38.6857,
+      "lng": 176.0702
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "taupo-hilton-lake-taupo",
+      "name": "Hilton Lake Taupo",
+      "region": "taupo",
+      "lat": -38.697,
+      "lng": 176.082,
+      "type": "hotel",
+      "price_nzd_per_night": 340,
+      "rating": 4.5,
+      "short": "Historic Terraces Hotel reborn as Hilton on a hill above the lake."
+    },
+    {
+      "id": "taupo-wairakei-resort",
+      "name": "Wairakei Resort Taupo",
+      "region": "taupo",
+      "lat": -38.63,
+      "lng": 176.099,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.4,
+      "short": "Geothermal-valley resort with three pools near Huka Falls."
+    },
+    {
+      "id": "taupo-millennium-manuels",
+      "name": "Millennium Hotel & Resort Manuels",
+      "region": "taupo",
+      "lat": -38.697,
+      "lng": 176.079,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Lakefront hotel with restaurants looking across to volcanoes."
+    },
+    {
+      "id": "taupo-lakeland-resort-taupo",
+      "name": "Lakeland Resort Taupo",
+      "region": "taupo",
+      "lat": -38.69,
+      "lng": 176.078,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.3,
+      "short": "Sprawling lakeside resort with pools and cottage-style rooms."
+    },
+    {
+      "id": "taupo-suncourt-hotel",
+      "name": "Suncourt Hotel & Conference Centre",
+      "region": "taupo",
+      "lat": -38.692,
+      "lng": 176.079,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.2,
+      "short": "Lake-view hotel a short walk from Taupo CBD."
+    },
+    {
+      "id": "taupo-reef-resort-taupo",
+      "name": "The Reef Resort Taupo",
+      "region": "taupo",
+      "lat": -38.695,
+      "lng": 176.08,
+      "type": "hotel",
+      "price_nzd_per_night": 275,
+      "rating": 4.4,
+      "short": "Taupo lakefront resort with walk-in private pool villas."
+    },
+    {
+      "id": "taupo-taupo-gateway-motor-lodge",
+      "name": "Taupo Gateway Motor Lodge",
+      "region": "taupo",
+      "lat": -38.71,
+      "lng": 176.076,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Southern-Taupo motel on the road to Turangi."
+    },
+    {
+      "id": "taupo-acapulco-motel",
+      "name": "Acapulco Motel Taupo",
+      "region": "taupo",
+      "lat": -38.688,
+      "lng": 176.076,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Central Taupo motel minutes from the Domain playground."
+    },
+    {
+      "id": "taupo-aspen-lodge-taupo",
+      "name": "Aspen Lodge Taupo",
+      "region": "taupo",
+      "lat": -38.69,
+      "lng": 176.074,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Downtown Taupo motel with spa pool and BBQ area."
+    },
+    {
+      "id": "taupo-baycrest-lodge-motel",
+      "name": "Baycrest Lodge Motel",
+      "region": "taupo",
+      "lat": -38.687,
+      "lng": 176.071,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Elevated Taupo motel with lake-view units."
+    },
+    {
+      "id": "taupo-beechtree-motel",
+      "name": "Beechtree Motel Taupo",
+      "region": "taupo",
+      "lat": -38.69,
+      "lng": 176.076,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Compact Taupo motel a block from the lake."
+    },
+    {
+      "id": "taupo-bradshaws-boutique-motel",
+      "name": "Bradshaws Travel Lodge",
+      "region": "taupo",
+      "lat": -38.686,
+      "lng": 176.073,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Central Taupo motor lodge with spa studio units."
+    },
+    {
+      "id": "taupo-cascades-lakefront-motel",
+      "name": "Cascades Lakefront Motor Lodge",
+      "region": "taupo",
+      "lat": -38.692,
+      "lng": 176.08,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.4,
+      "short": "Absolute lakefront Taupo motel with water-facing balconies."
+    },
+    {
+      "id": "taupo-taupo-top10",
+      "name": "Taupo TOP 10 Holiday Park",
+      "region": "taupo",
+      "lat": -38.6923,
+      "lng": 176.0641,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.4,
+      "short": "Central Taupo park with heated pool, hydroslide and minigolf."
+    },
+    {
+      "id": "taupo-all-seasons-taupo",
+      "name": "All Seasons Kiwi Holiday Park Taupo",
+      "region": "taupo",
+      "lat": -38.704,
+      "lng": 176.073,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "Rainbow-themed Taupo park with hot mineral pools."
+    },
+    {
+      "id": "taupo-de-bretts-spa-resort",
+      "name": "De Bretts Spa Resort Park",
+      "region": "taupo",
+      "lat": -38.701,
+      "lng": 176.085,
+      "type": "holiday-park",
+      "price_nzd_per_night": 135,
+      "rating": 4.5,
+      "short": "Geothermal-pool resort park on the south-east edge of Taupo."
+    },
+    {
+      "id": "taupo-turangi-top10",
+      "name": "Turangi Kiwi Holiday Park",
+      "region": "taupo",
+      "lat": -39.0085,
+      "lng": 175.81,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Trout-fishing capital park minutes from Tongariro River."
+    },
+    {
+      "id": "taupo-huka-lodge",
+      "name": "Huka Lodge",
+      "region": "taupo",
+      "lat": -38.659,
+      "lng": 176.0923,
+      "type": "lodge",
+      "price_nzd_per_night": 2500,
+      "rating": 4.9,
+      "short": "NZ's grand dame lodge on the Waikato River above Huka Falls."
+    },
+    {
+      "id": "taupo-acacia-cliffs-lodge",
+      "name": "Acacia Cliffs Lodge",
+      "region": "taupo",
+      "lat": -38.722,
+      "lng": 176.023,
+      "type": "lodge",
+      "price_nzd_per_night": 1450,
+      "rating": 4.8,
+      "short": "Boutique clifftop lodge with sweeping Lake Taupo views."
+    },
+    {
+      "id": "taupo-kinloch-manor-villas",
+      "name": "Kinloch Manor & Villas",
+      "region": "taupo",
+      "lat": -38.67,
+      "lng": 175.91,
+      "type": "lodge",
+      "price_nzd_per_night": 1150,
+      "rating": 4.8,
+      "short": "Small Luxury Hotels of the World member at Kinloch golf village."
+    }
+  ]
+}

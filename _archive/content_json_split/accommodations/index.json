@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-04-19",
+  "project": "Qiwiosity — New Zealand travel companion",
+  "schema_version": "1.0",
+  "totals": {
+    "regions": 19,
+    "accommodations": 382,
+    "by_type": {
+      "hotel": 116,
+      "motel": 134,
+      "holiday-park": 77,
+      "lodge": 55
+    },
+    "by_region": {
+      "auckland": 20,
+      "bay-of-plenty": 20,
+      "canterbury": 20,
+      "coromandel": 20,
+      "hawkes-bay": 20,
+      "marlborough": 20,
+      "nelson-tasman": 20,
+      "northland": 20,
+      "otago": 20,
+      "queenstown": 21,
+      "rotorua": 20,
+      "southland": 20,
+      "tairawhiti": 20,
+      "taranaki": 20,
+      "taupo": 20,
+      "waikato": 20,
+      "wellington": 20,
+      "west-coast": 20,
+      "whanganui-manawatu": 21
+    }
+  },
+  "regions": [
+    {
+      "id": "auckland",
+      "name": "Auckland / Tāmaki Makaurau",
+      "island": "North",
+      "centre": {
+        "lat": -36.8485,
+        "lng": 174.7633
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/auckland.json"
+    },
+    {
+      "id": "bay-of-plenty",
+      "name": "Bay of Plenty / Te Moana-a-Toi",
+      "island": "North",
+      "centre": {
+        "lat": -37.6878,
+        "lng": 176.1651
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/bay-of-plenty.json"
+    },
+    {
+      "id": "canterbury",
+      "name": "Canterbury / Waitaha",
+      "island": "South",
+      "centre": {
+        "lat": -43.532,
+        "lng": 172.6362
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/canterbury.json"
+    },
+    {
+      "id": "coromandel",
+      "name": "Coromandel Peninsula",
+      "island": "North",
+      "centre": {
+        "lat": -36.75,
+        "lng": 175.7
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/coromandel.json"
+    },
+    {
+      "id": "hawkes-bay",
+      "name": "Hawke's Bay / Te Matau-a-Māui",
+      "island": "North",
+      "centre": {
+        "lat": -39.4928,
+        "lng": 176.912
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/hawkes-bay.json"
+    },
+    {
+      "id": "marlborough",
+      "name": "Marlborough",
+      "island": "South",
+      "centre": {
+        "lat": -41.5136,
+        "lng": 173.9614
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/marlborough.json"
+    },
+    {
+      "id": "nelson-tasman",
+      "name": "Nelson / Tasman",
+      "island": "South",
+      "centre": {
+        "lat": -41.2706,
+        "lng": 173.284
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/nelson-tasman.json"
+    },
+    {
+      "id": "northland",
+      "name": "Northland / Te Tai Tokerau",
+      "island": "North",
+      "centre": {
+        "lat": -35.5,
+        "lng": 174
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/northland.json"
+    },
+    {
+      "id": "otago",
+      "name": "Otago",
+      "island": "South",
+      "centre": {
+        "lat": -45.4,
+        "lng": 170
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/otago.json"
+    },
+    {
+      "id": "queenstown",
+      "name": "Queenstown / Tāhuna",
+      "island": "South",
+      "centre": {
+        "lat": -45.0312,
+        "lng": 168.6626
+      },
+      "accommodation_count": 21,
+      "file": "content/accommodations/queenstown.json"
+    },
+    {
+      "id": "rotorua",
+      "name": "Rotorua",
+      "island": "North",
+      "centre": {
+        "lat": -38.1368,
+        "lng": 176.2497
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/rotorua.json"
+    },
+    {
+      "id": "southland",
+      "name": "Southland & Fiordland",
+      "island": "South",
+      "centre": {
+        "lat": -45.8,
+        "lng": 167.8
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/southland.json"
+    },
+    {
+      "id": "tairawhiti",
+      "name": "Tairāwhiti / Gisborne / East Cape",
+      "island": "North",
+      "centre": {
+        "lat": -38.05,
+        "lng": 178.2
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/tairawhiti.json"
+    },
+    {
+      "id": "taranaki",
+      "name": "Taranaki",
+      "island": "North",
+      "centre": {
+        "lat": -39.2968,
+        "lng": 174.0756
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/taranaki.json"
+    },
+    {
+      "id": "taupo",
+      "name": "Taupō / Taupō-nui-a-Tia",
+      "island": "North",
+      "centre": {
+        "lat": -38.6857,
+        "lng": 176.0702
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/taupo.json"
+    },
+    {
+      "id": "waikato",
+      "name": "Waikato",
+      "island": "North",
+      "centre": {
+        "lat": -37.787,
+        "lng": 175.2793
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/waikato.json"
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington / Te Whanganui-a-Tara",
+      "island": "North",
+      "centre": {
+        "lat": -41.2866,
+        "lng": 174.7756
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/wellington.json"
+    },
+    {
+      "id": "west-coast",
+      "name": "West Coast / Te Tai Poutini",
+      "island": "South",
+      "centre": {
+        "lat": -42.75,
+        "lng": 171.1
+      },
+      "accommodation_count": 20,
+      "file": "content/accommodations/west-coast.json"
+    },
+    {
+      "id": "whanganui-manawatu",
+      "name": "Whanganui / Manawatū",
+      "island": "North",
+      "centre": {
+        "lat": -40.05,
+        "lng": 175.3
+      },
+      "accommodation_count": 21,
+      "file": "content/accommodations/whanganui-manawatu.json"
+    }
+  ]
+}

@@ -1,0 +1,1784 @@
+{
+  "region": {
+    "id": "west-coast",
+    "name": "West Coast / Te Tai Poutini",
+    "island": "South",
+    "centre": {
+      "lat": -42.75,
+      "lng": 171.1
+    },
+    "bounds": {
+      "north": -41.5,
+      "south": -44.5,
+      "east": 172.3,
+      "west": 168.3
+    },
+    "description": "A 600 km coastline of rainforest, glaciers, pounamu, gold, coal — and some of the country's wildest weather."
+  },
+  "pois": [
+    {
+      "id": "punakaiki-pancake-rocks",
+      "name": "Punakaiki Pancake Rocks & Blowholes",
+      "region": "west-coast",
+      "lat": -42.1136,
+      "lng": 171.3292,
+      "category": "nature",
+      "tags": [
+        "limestone",
+        "blowholes",
+        "stylobedding",
+        "boardwalk",
+        "paparoa"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "30-million-year-old limestone eroded into stacks that look impossibly like stacked pancakes — plus blowholes on a big swell.",
+      "commentary": "The Punakaiki limestone formed ~30 million years ago on an ancient sea floor from cemented shell and coral fragments. Uplift exposed the rock; rain and sea have eroded it into horizontally-banded 'pancake' stacks — a geological process called stylobedding, still not fully explained. At high tide with a big westerly swell, sea water forces up through vertical chimneys in the rock to create spectacular blowholes. The 20-minute loop boardwalk is short, flat and accessible. Time it for high tide; check the tide board at the visitor centre.",
+      "scripts": {
+        "headline": "scripts/punakaiki-pancake-rocks.headline.md",
+        "standard": "scripts/punakaiki-pancake-rocks.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Punakaiki",
+        "GNS Science"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Punakaiki Pancake Rocks & Blowholes draws visitors back time and again for its natural beauty and peaceful atmosphere. 30-million-year-old limestone eroded into stacks that look impossibly like stacked pancakes — plus blowholes on a big swell. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "franz-josef-glacier",
+      "name": "Franz Josef Glacier / Kā Roimata o Hine Hukatere",
+      "region": "west-coast",
+      "lat": -43.4658,
+      "lng": 170.1844,
+      "category": "nature",
+      "tags": [
+        "glacier",
+        "rainforest",
+        "helicopter",
+        "retreat",
+        "sacred"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "A 12 km glacier that descends from the Southern Alps to just 240 m above sea level through temperate rainforest — viewed from a valley walk or helicopter.",
+      "commentary": "Franz Josef is one of only three glaciers in temperate latitudes that descend to near sea level in native forest. Māori name: Kā Roimata o Hine Hukatere — 'the tears of the avalanche girl' — from the tradition of Hine Hukatere, whose lover fell from the mountains and whose tears froze to form the glacier. The ice has retreated significantly since 2008: unguided walks to the terminal face are no longer possible. Guided ice walks and helicopter landings are the current options. The short valley walks from the carpark give good views of the terminal.",
+      "scripts": {
+        "headline": "scripts/franz-josef-glacier.headline.md",
+        "standard": "scripts/franz-josef-glacier.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Westland Tai Poutini National Park",
+        "Franz Josef Glacier Guides",
+        "Ngāi Tahu"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Franz Josef Glacier / Kā Roimata o Hine Hukatere draws visitors back time and again for its natural beauty and peaceful atmosphere. A 12 km glacier that descends from the Southern Alps to just 240 m above sea level through temperate rainforest — viewed from a valley walk or helicopter. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "fox-glacier",
+      "name": "Fox Glacier / Te Moeka o Tuawe",
+      "region": "west-coast",
+      "lat": -43.535,
+      "lng": 170.0167,
+      "category": "nature",
+      "tags": [
+        "glacier",
+        "lake-matheson-nearby",
+        "helicopter",
+        "valley-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "The quieter of the two West Coast glaciers — 13 km long, and the nearby mirror lake Matheson gives the iconic Mount Cook reflection.",
+      "commentary": "Fox Glacier — Te Moeka o Tuawe, 'the bed of Tuawe' — is 13 km long and sits 25 km south of Franz Josef. Same access pattern: valley walks to the terminal viewpoint (check DOC for current status, routes change with glacier retreat) or helicopter rides to land on the ice. Fox is typically less crowded than Franz. The township itself is smaller. The big reason to detour: Lake Matheson, 5 km from the town, is the famous mirror lake that on calm mornings reflects Aoraki/Mount Cook and Mount Tasman. Easy 45-minute loop walk.",
+      "scripts": {
+        "headline": "scripts/fox-glacier.headline.md",
+        "standard": "scripts/fox-glacier.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "Fox Glacier Guiding"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Fox Glacier / Te Moeka o Tuawe draws visitors back time and again for its natural beauty and peaceful atmosphere. The quieter of the two West Coast glaciers — 13 km long, and the nearby mirror lake Matheson gives the iconic Mount Cook reflection. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "hokitika",
+      "name": "Hokitika",
+      "region": "west-coast",
+      "lat": -42.7189,
+      "lng": 170.9658,
+      "category": "heritage",
+      "tags": [
+        "gold-rush",
+        "pounamu",
+        "clock-tower",
+        "beach",
+        "driftwood-signs"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "The 1860s gold-rush town turned pounamu (greenstone) capital — with one of the country's most photographable beaches.",
+      "commentary": "Hokitika boomed almost overnight in 1864 when gold was found in the Hokitika River — within 18 months it was the fifth-largest town in New Zealand. The gold ran out; what stayed is a quiet west-coast town with one of the finest surviving 1900 post office clock towers in the country. The region is the traditional source of pounamu (greenstone / nephrite jade), culturally central to Ngāi Tahu, and Hokitika has the greatest concentration of Māori-owned pounamu carvers and galleries anywhere. The beach — enormous, wild, driftwood-strewn, often featuring the giant 'HOKITIKA' sign built from driftwood — is worth the sunset.",
+      "scripts": {
+        "headline": "scripts/hokitika.headline.md",
+        "standard": "scripts/hokitika.standard.md"
+      },
+      "sources_to_check": [
+        "Te Runanga o Ngāi Tahu — pounamu protocols",
+        "Hokitika Museum"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Hokitika — the site rewards those who take time to read the signage and absorb the context. The 1860s gold-rush town turned pounamu (greenstone) capital — with one of the country's most photographable beaches. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "lake-matheson",
+      "name": "Lake Matheson",
+      "region": "west-coast",
+      "lat": -43.4478,
+      "lng": 169.9631,
+      "category": "nature",
+      "tags": [
+        "mirror-lake",
+        "aoraki-reflection",
+        "walk",
+        "photo-spot"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "The mirror lake that gives the country's most-reproduced reflection of Aoraki/Mount Cook — 5 km from Fox Glacier.",
+      "commentary": "Lake Matheson is a small, shallow, dark-bottomed tarn just west of Fox Glacier. Its darkness comes from tannins leached from the surrounding kahikatea forest. On windless mornings — best within an hour of dawn — the lake's surface goes perfectly still and reflects the full line of the Southern Alps, including Aoraki/Mount Cook and Mount Tasman. The 1.5-hour loop walk is well-graded and passes through mature rainforest. A café at the carpark. Check the forecast; any wind ruins the reflection.",
+      "scripts": {
+        "headline": "scripts/lake-matheson.headline.md",
+        "standard": "scripts/lake-matheson.standard.md"
+      },
+      "sources_to_check": [
+        "DOC"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Lake Matheson draws visitors back time and again for its natural beauty and peaceful atmosphere. The mirror lake that gives the country's most-reproduced reflection of Aoraki/Mount Cook — 5 km from Fox Glacier. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "okarito-tai-poutini",
+      "name": "Ōkārito Lagoon",
+      "region": "west-coast",
+      "lat": -43.2219,
+      "lng": 170.1825,
+      "category": "nature",
+      "tags": [
+        "lagoon",
+        "kotuku",
+        "white-heron",
+        "rainforest",
+        "kiwi-spotting"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 4,
+      "short": "The largest unmodified wetland in New Zealand — and the only breeding colony of kōtuku / white herons in the country.",
+      "commentary": "Ōkārito Lagoon is the biggest unmodified coastal wetland in NZ — 3,200 hectares of tidal salt marsh, mud flats, and kahikatea forest. The only breeding colony of kōtuku (white heron, *Ardea alba modesta*) in the country is here — about 200 birds, nesting in a remote kahikatea grove from November to February. Guided tours operate from Ōkārito village in the breeding season; outside it the birds disperse around the country. The small village also offers kiwi-spotting tours by night — the Ōkārito kiwi is one of the rarest kiwi species, fewer than 500 in the wild.",
+      "scripts": {
+        "headline": "scripts/okarito-tai-poutini.headline.md",
+        "standard": "scripts/okarito-tai-poutini.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "White Heron Sanctuary Tours"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Ōkārito Lagoon draws visitors back time and again for its natural beauty and peaceful atmosphere. The largest unmodified wetland in New Zealand — and the only breeding colony of kōtuku / white herons in the country. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "haast-pass",
+      "name": "Haast Pass / Tioripatea",
+      "region": "west-coast",
+      "lat": -44.1039,
+      "lng": 169.3531,
+      "category": "journey",
+      "tags": [
+        "mountain-pass",
+        "rainforest",
+        "waterfalls",
+        "scenic-drive",
+        "sh6"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 2,
+      "short": "The southernmost alpine pass in NZ — a rainforest drive over 563 m between Westland and the Queenstown/Wanaka region.",
+      "commentary": "Haast Pass — Tioripatea, 'the way is clear' — was a known Māori pounamu trail long before European surveyor Charles Cameron crossed it in 1863. At 563 m it is NZ's lowest alpine pass, and SH6 now runs over it through one of the wettest parts of the country (6,000+ mm/year at the summit). The drive is genuinely spectacular: rainforest tunnels, waterfalls (Fantail Falls, Thunder Creek Falls, Roaring Billy Falls all signposted), alpine beech forest, and the Blue Pools walk (clear glacier water, 30-min loop). Check road status before travel in winter.",
+      "scripts": {
+        "headline": "scripts/haast-pass.headline.md",
+        "standard": "scripts/haast-pass.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Mount Aspiring National Park",
+        "NZTA — SH6"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Haast Pass / Tioripatea route delivers a memorable journey through exceptional New Zealand scenery. The southernmost alpine pass in NZ — a rainforest drive over 563 m between Westland and the Queenstown/Wanaka region. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "knights-point",
+      "name": "Knights Point",
+      "region": "west-coast",
+      "lat": -43.7525,
+      "lng": 169.2875,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "roadside",
+        "sh6-completion",
+        "memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.3,
+      "short": "The memorial lookout where SH6 was finally completed in 1965 — the last link in the South Island's highway network.",
+      "commentary": "Knights Point marks the place where the road between Haast and Paringa was finally pushed through in 1965 — completing SH6 and linking Westland to Central Otago by road for the first time. Before that, the only overland route to South Westland was a walking track. A plaque commemorates the opening. But the real reason to stop is the view: the coastline here is one of the most dramatic pull-offs in New Zealand — vertical bush cliffs plunging to coves, the Tasman, and (on a clear day) the Southern Alps behind.",
+      "scripts": {
+        "headline": "scripts/knights-point.headline.md",
+        "standard": "scripts/knights-point.standard.md"
+      },
+      "sources_to_check": [
+        "NZTA — SH6 history"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Knights Point draws visitors back time and again for its natural beauty and peaceful atmosphere. The memorial lookout where SH6 was finally completed in 1965 — the last link in the South Island's highway network. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "cape-foulwind",
+      "name": "Cape Foulwind / Tauranga Bay",
+      "region": "west-coast",
+      "lat": -41.7417,
+      "lng": 171.4675,
+      "category": "heritage",
+      "tags": [
+        "seal-colony",
+        "lighthouse",
+        "walk",
+        "cook-naming"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A year-round NZ fur-seal colony at the end of an easy walkway — and the cape Cook named for its terrible weather in 1770.",
+      "commentary": "Cape Foulwind sits 10 minutes west of Westport and earned its English name from Cook, who was driven offshore by the weather here in 1770. The Cape Foulwind Walkway (4 km one way, easy) runs from the small settlement of Tauranga Bay along cliff-tops to a 1926 lighthouse, passing a large NZ fur-seal colony where seals (including pups November–February) can be viewed from platforms. Stay 10 m back. The Tauranga Bay end is the shorter option if you just want to see the seals: it's a 15-minute walk from the carpark.",
+      "scripts": {
+        "headline": "scripts/cape-foulwind.headline.md",
+        "standard": "scripts/cape-foulwind.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Cape Foulwind Walkway"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cape Foulwind / Tauranga Bay — the site rewards those who take time to read the signage and absorb the context. A year-round NZ fur-seal colony at the end of an easy walkway — and the cape Cook named for its terrible weather in 1770. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "denniston-plateau",
+      "name": "Denniston / Westport Coal Country",
+      "region": "west-coast",
+      "lat": -41.7464,
+      "lng": 171.8122,
+      "category": "heritage",
+      "tags": [
+        "coal",
+        "denniston-incline",
+        "industrial",
+        "museum",
+        "pike-river"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "The abandoned coal town of Denniston and its notorious 1880 incline — a gravity-powered rail that dropped full coal wagons at a 45° angle.",
+      "commentary": "The Denniston Plateau was one of NZ's great coal fields, operating 1879–1967 and at peak producing half a million tonnes a year. Getting coal off the plateau was the engineering problem: the 1880 Denniston Incline, a gravity-powered double-track rail that dropped full wagons 518 m at a 45° gradient while hauling empties back up, solved it. The town at the top was famously grim — women in particular, hauled up once and rarely descending, left diaries of the isolation. The town is gone; the incline and machinery remain. A DOC-managed historic reserve with short loop walks. The 2010 Pike River mine disaster occurred in the same coal country, 50 km south.",
+      "scripts": {
+        "headline": "scripts/denniston-plateau.headline.md",
+        "standard": "scripts/denniston-plateau.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "Friends of the Hill / Denniston Historical Society"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Denniston / Westport Coal Country — the site rewards those who take time to read the signage and absorb the context. The abandoned coal town of Denniston and its notorious 1880 incline — a gravity-powered rail that dropped full coal wagons at a 45° angle. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "ross-goldfields",
+      "name": "Ross",
+      "region": "west-coast",
+      "lat": -42.8956,
+      "lng": 170.8175,
+      "category": "heritage",
+      "tags": [
+        "gold-rush",
+        "biggest-nugget",
+        "historic-walk",
+        "cemetery"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "A tiny town below Hokitika where a single miner in 1909 found the largest gold nugget ever dug up in New Zealand — 99 ounces.",
+      "commentary": "Ross boomed in the 1860s gold rush. But its most famous find came in September 1909, when local miner Mister Sharp dug up a single nugget — the 'Honourable Roddy' — weighing 99.26 ounces (3.09 kg). It was sold to the government, presented to King George V in 1910 as a coronation gift, and has not been seen publicly since. The small Ross Heritage Centre has a replica and an excellent local history display. A 2-hour loop walk, the Water Race Walkway, takes you past gold-rush relics including the original jail cells. Still plenty of prospectors come here.",
+      "scripts": {
+        "headline": "scripts/ross-goldfields.headline.md",
+        "standard": "scripts/ross-goldfields.standard.md"
+      },
+      "sources_to_check": [
+        "Westland District Council",
+        "Ross Heritage Centre"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ross — the site rewards those who take time to read the signage and absorb the context. A tiny town below Hokitika where a single miner in 1909 found the largest gold nugget ever dug up in New Zealand — 99 ounces. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "paparoa-track",
+      "name": "Paparoa Track",
+      "region": "west-coast",
+      "lat": -42.2,
+      "lng": 171.45,
+      "category": "nature",
+      "tags": [
+        "great-walk",
+        "pike-river",
+        "mountain-biking",
+        "newest-great-walk"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 48,
+      "short": "NZ's newest Great Walk (opened 2019) — a 55 km trail built in memory of the 29 miners killed at Pike River in 2010.",
+      "commentary": "The Paparoa Track runs 55 km across the Paparoa Range between Blackball and Punakaiki — the newest of NZ's 10 Great Walks, opened in December 2019 and the first built since the 1980s. Its dual purpose: to open up the remarkable Paparoa country to visitors, and to memorialise the 29 men killed in the Pike River mine explosion on 19 November 2010 (whose bodies have never been recovered; the mine remains sealed). The Pike29 Memorial Track, a side spur, leads to a memorial near the mine entrance. The Paparoa is also one of only three Great Walks open to mountain biking.",
+      "scripts": {
+        "headline": "scripts/paparoa-track.headline.md",
+        "standard": "scripts/paparoa-track.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Paparoa Track",
+        "Pike River families"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Paparoa Track draws visitors back time and again for its natural beauty and peaceful atmosphere. NZ's newest Great Walk (opened 2019) — a 55 km trail built in memory of the 29 miners killed at Pike River in 2010. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "westcoast-oparara-arches",
+      "name": "Ōparara Basin Arches",
+      "region": "west-coast",
+      "lat": -41.1708,
+      "lng": 172.2167,
+      "category": "nature",
+      "tags": [
+        "limestone",
+        "arch",
+        "kahurangi",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "Giant natural limestone arches and caves in an untouched beech and nīkau forest, reached by a long gravel road north of Karamea.",
+      "commentary": "Deep in Kahurangi National Park, the Ōparara Arches include Moria Gate (43m) and the 200m-long Ōparara Arch. Access is a bumpy gravel road from Karamea.",
+      "audio_story": "You have driven a long way up the West Coast, past Westport, past Mokihinui, past Karamea, and onto a narrow gravel road that winds into the Ōparara Basin. The road is rough and slow, and you begin to wonder if you made the right choice, and then you arrive, and you know you did. Hidden here, inside Kahurangi National Park, are some of the most spectacular limestone arches in the country. The largest, the Ōparara Arch, is a vast orange stone tunnel two hundred metres long and forty metres high, carved over millions of years by the tannin-stained Ōparara River. Walk through its shadowed centre and listen to your voice come back at you from the distant far end. Follow the loop tracks on to Moria Gate, a smaller but equally lovely arch named by a local guide who saw Tolkien in its shape. Nearby, short side tracks lead into the Crazy Paving and Box Canyon caves, where with a torch you can explore small dry cave passages and see the rare cave spider Spelungula on the walls. Bring layers. Allow a full day from Karamea. Drive slowly. This is one of the quiet great experiences of the West Coast.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Ōparara Basin",
+        "Kahurangi National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Ōparara Basin Arches draws visitors back time and again for its natural beauty and peaceful atmosphere. Giant natural limestone arches and caves in an untouched beech and nīkau forest, reached by a long gravel road north of Karamea. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "westcoast-jackson-bay",
+      "name": "Jackson Bay / Ōkahu",
+      "region": "west-coast",
+      "lat": -43.9789,
+      "lng": 168.6181,
+      "category": "heritage",
+      "tags": [
+        "fishing-village",
+        "end-of-road",
+        "failed-settlement",
+        "remote"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The end of the road on the West Coast — a tiny fishing village, a famous food caravan, and the ruins of a failed 1870s immigrant settlement.",
+      "commentary": "Jackson Bay is the southernmost settlement on the West Coast. In the 1870s it was the site of a disastrous government assisted immigration scheme.",
+      "audio_story": "You have driven to the end of the road. Jackson Bay, also known by its Māori name of Ōkahu, sits at the southernmost end of the West Coast highway, beyond Haast, at the bottom of a long winding road that hugs the side of wild forested mountains. The village is small, perhaps thirty permanent residents, a handful of crayfish boats on the jetty, a small fish packing shed, and a single famous food caravan called the Cray Pot that serves fresh seafood to anyone willing to make the drive. Behind the slow, sunlit simplicity of the bay today lies a much sadder story. In the eighteen seventies the colonial government tried to establish a major planned settlement here with hundreds of assisted immigrants from Italy, Poland, Germany and elsewhere. The scheme was a disaster. The land was too wet, the forest too dense, the rainfall too extreme, the access too poor. Within a few years most of the families had left. A few stayed, and some of their descendants still live on the coast. Walk the short Wharekai Te Kou loop track along the bay, eat a bowl of mussels at the Cray Pot, and consider the difficult gap between a map and a place.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZHistory — Jackson Bay settlement",
+        "Te Ara — West Coast"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Jackson Bay / Ōkahu — the site rewards those who take time to read the signage and absorb the context. The end of the road on the West Coast — a tiny fishing village, a famous food caravan, and the ruins of a failed 1870s immigrant settlement. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "westcoast-blackball",
+      "name": "Blackball",
+      "region": "west-coast",
+      "lat": -42.3533,
+      "lng": 171.4281,
+      "category": "heritage",
+      "tags": [
+        "coal-town",
+        "union",
+        "1908-strike",
+        "salami"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The coal town where New Zealand's Labour Party was born — and where the best salami in the country is still smoked.",
+      "commentary": "Blackball was the site of the 1908 miners' strike that led directly to the formation of the Labour Party. The Blackball Salami Co. operates from the old butchery.",
+      "audio_story": "You have arrived in Blackball, a small West Coast settlement tucked up a side road off the main highway between Greymouth and Reefton, and you have arrived in the birthplace of an entire political movement. Coal was mined here from the eighteen nineties. In nineteen oh eight a dispute about meal breaks in the mine escalated into a three month strike, led by the charismatic unionist Pat Hickey. The strike was the first major industrial action in the country and it radicalised a generation of union activists, many of whom went on to found the New Zealand Labour Party in nineteen sixteen. The mine closed in nineteen sixty four, but the town has never quite given up its political memory. The pub, which was called, with characteristic coast humour, Formerly The Blackball Hilton, keeps the history alive with photographs, songs, and the occasional visiting historian. Around the corner, the Blackball Salami Company operates out of the old butcher shop and smokes some of the best salami in the country, drawing West Coasters and visitors alike for their Saturday morning queues. Sit on the pub veranda, order a pie, and think about the quiet West Coast towns where this country, for better and for worse, made itself.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZHistory — Blackball strike",
+        "Te Ara — Labour Party"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Blackball — the site rewards those who take time to read the signage and absorb the context. The coal town where New Zealand's Labour Party was born — and where the best salami in the country is still smoked. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "westcoast-reefton",
+      "name": "Reefton — Town of Light",
+      "region": "west-coast",
+      "lat": -42.1175,
+      "lng": 171.8617,
+      "category": "heritage",
+      "tags": [
+        "gold",
+        "first-electric-light",
+        "1888",
+        "town"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "The first town in the Southern Hemisphere to have electric street lighting — lit up in 1888 thanks to gold rush wealth.",
+      "commentary": "Reefton was a wealthy quartz-gold mining town in the 1880s. On 4 August 1888 it became the first town in the Southern Hemisphere with electric street lighting.",
+      "audio_story": "You have arrived in Reefton, a small inland town on the West Coast, and you have arrived in the place that was lit up before any other town in the southern half of the world. Reefton is quartz gold country. Through the eighteen seventies and eighties, deep hard rock mines were sunk into the ridges around the town to extract gold that was locked inside veins of quartz. The technology was industrial, the capital was considerable, and the town became briefly one of the wealthiest in the colony. In eighteen eighty eight the Reefton Electric Light and Power Company, an extraordinarily forward looking local venture, completed a small hydro station on the Inangahua River and switched on electric street lighting on the fourth of August. Reefton thereby became the first town in the southern hemisphere with street lights powered by electricity. Today the town still leans into the story. A small museum and the original power house site are open to visitors, and the main street still has many of its eighteen eighties facades. Costumed guides sometimes walk visitors through the town in character as nineteenth century residents. Stop for a coffee at the Broadway Tearooms, and take a photograph of the preserved stamper battery at the end of town.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Reefton",
+        "NZHistory — electric light"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Reefton — Town of Light — the site rewards those who take time to read the signage and absorb the context. The first town in the Southern Hemisphere to have electric street lighting — lit up in 1888 thanks to gold rush wealth. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "westcoast-shantytown",
+      "name": "Shantytown Heritage Park",
+      "region": "west-coast",
+      "lat": -42.6833,
+      "lng": 171.1833,
+      "category": "heritage",
+      "tags": [
+        "gold-rush",
+        "museum",
+        "steam-train",
+        "family"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 3,
+      "short": "A recreated 1860s gold-rush town with steam trains, a church, a pub, and a working gold-panning stream.",
+      "commentary": "Shantytown opened 1971 and is a living-history recreation of a West Coast gold-rush town, with over 30 buildings and a working bush steam tram.",
+      "audio_story": "You have arrived at Shantytown, about twenty minutes south of Greymouth, and you are about to spend a few hours in the eighteen sixties. The park opened in nineteen seventy one and grew over the following decades into a complete living history recreation of a West Coast gold rush town. More than thirty buildings line its streets, including a printing office, a blacksmith, a gaol, a general store, a church, and a proper working pub that serves a decent lunch. At the back of the town, a historic bush steam tram runs on a short rail loop through the regenerating bush to a working gold panning stream, where you can try your luck and actually take home the small flakes you pan. The park is staffed by volunteers and local re-enactors in period costume, and the atmosphere is deliberately unpolished, which is the better for it. Children love the steam train and the pan for your own gold activity. History-minded adults will appreciate the buildings, many of which have been carefully relocated from original sites around the West Coast. Allow at least two hours. You will leave a little sooty, a little dusty, and with a much clearer idea of what a mid Victorian boom town actually smelled and sounded like.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Shantytown Heritage Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Shantytown Heritage Park — the site rewards those who take time to read the signage and absorb the context. A recreated 1860s gold-rush town with steam trains, a church, a pub, and a working gold-panning stream. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-hokitika-clock",
+      "name": "Hokitika — Gold Rush Town",
+      "region": "west-coast",
+      "lat": -42.7167,
+      "lng": 170.9667,
+      "category": "heritage",
+      "tags": [
+        "hokitika",
+        "gold-rush",
+        "1864",
+        "port",
+        "heritage"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The West Coast gold rush port that briefly outgrew Dunedin and Wellington — at its peak one of the busiest ports in the country.",
+      "commentary": "Hokitika was the principal port of the West Coast gold rush from 1864. By 1867 over 100 ships a month were crossing the hazardous Hokitika River bar.",
+      "audio_story": "You are in Hokitika, and it is hard to believe now, looking at the quiet, slightly weather beaten coastal town, that in eighteen sixty six and eighteen sixty seven it was one of the busiest ports in New Zealand and a plausible contender for becoming one of the country''s major cities. The catalyst was gold. The West Coast gold rush exploded in eighteen sixty four when the first payable fields were worked on the Greenstone Creek and the Taramakau, and Hokitika, at the river mouth closest to the diggings, became the principal port. At its peak the population reached around twenty five thousand, more than Dunedin at the same date. Over one hundred ships a month were crossing the notorious Hokitika bar, and many were wrecked on it. Between eighteen sixty five and eighteen seventy over forty ships were lost at the river mouth. The town was a raucous boomtown of hotels, dance halls, Chinese laundries, banks, and a working opium den. By the eighteen eighties the easy gold was worked out and the rush had moved elsewhere. Hokitika gradually settled into its current quiet and wonderfully preserved form. Walk Revell Street. The facades are mostly nineteenth century. The river bar, now quieter than it used to be, is still a place to stop and look.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Hokitika",
+        "West Coast Historical Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Hokitika — Gold Rush Town — the site rewards those who take time to read the signage and absorb the context. The West Coast gold rush port that briefly outgrew Dunedin and Wellington — at its peak one of the busiest ports in the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-ross-goldmine",
+      "name": "Ross Goldfields Heritage Area",
+      "region": "west-coast",
+      "lat": -42.89,
+      "lng": 170.8167,
+      "category": "heritage",
+      "tags": [
+        "ross",
+        "gold",
+        "1865",
+        "mining",
+        "honourable-roddy"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "The West Coast town where the largest gold nugget ever found in NZ — the 99oz Honourable Roddy — was dug in 1909.",
+      "commentary": "Gold found at Ross 1865. The 99oz Honourable Roddy nugget was unearthed 1909 and gifted to King George V as a coronation present.",
+      "audio_story": "You are at Ross, a small settlement south of Hokitika that was once the centre of one of the richest gold bearing areas on the West Coast. The first payable gold was found here in eighteen sixty five, and a settlement of several thousand miners sprang up around the workings within months. What made Ross special was the nature of the gold. Unlike the alluvial flakes that were washed by sluice boxes elsewhere on the coast, Ross yielded substantial nuggets and coarse gold from deep buried gravels that had to be shaft mined. The most famous find was the Honourable Roddy nugget, a single lump of gold weighing ninety nine ounces, or just under three kilograms, dug up by a miner named Arthur Sharp in nineteen o nine. The nugget was named Honourable Roddy after the Premier of the day, Sir Joseph Ward, and after some internal local politics it was ultimately gifted to King George the Fifth as a coronation present in nineteen eleven. A replica is on display at the small Ross Heritage Area museum. Today the town still hosts both commercial and recreational gold mining, the heritage museum, a walking track that follows old mining tracks through the bush, and a cemetery holding the graves of many who died young in the brutal conditions of the early mining years.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Ross Goldfield",
+        "DOC — Ross",
+        "West Coast Regional Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ross Goldfields Heritage Area — the site rewards those who take time to read the signage and absorb the context. The West Coast town where the largest gold nugget ever found in NZ — the 99oz Honourable Roddy — was dug in 1909. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-shantytown",
+      "name": "Shantytown Heritage Park, Rutherglen",
+      "region": "west-coast",
+      "lat": -42.5383,
+      "lng": 171.1572,
+      "category": "heritage",
+      "tags": [
+        "shantytown",
+        "heritage-village",
+        "gold-rush",
+        "steam-train",
+        "panning"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "A full-scale reconstruction of an 1860s West Coast gold-rush town — steam train, sluice, church, schoolhouse and all.",
+      "commentary": "Shantytown has 30 period buildings, a working steam locomotive, live gold panning, and the original 1885 Kumara Post Office among other relocated heritage.",
+      "audio_story": "You are at Shantytown, a full scale heritage village reconstruction just south of Greymouth at Rutherglen. It was opened in nineteen seventy one by a local historical society who were concerned that the distinctive character of West Coast gold rush architecture was vanishing into weathered boards and scrub. Over fifty years of patient work, the team has brought together some thirty period buildings either relocated from their original sites or carefully rebuilt in matching period style. The main street has a church, a schoolhouse, a jailhouse, a blacksmith, a printing works, a Chinese laundry, a general store, a hotel, and a post office, all fitted out with original period furniture and tools. At the heart of the village is a working steam locomotive, Gertie, a nineteen o six vertical boiler logging engine, which hauls visitors on a short scenic rail loop through the surrounding bush. A separate section of the park offers hands on gold panning in a real sluice box worked by children and adults under supervision. Allow at least two to three hours. The coastal weather will throw everything at you, so dress for it. Easily the best heritage experience on the coast.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Shantytown — shantytown.co.nz",
+        "West Coast Historical Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Shantytown Heritage Park, Rutherglen — the site rewards those who take time to read the signage and absorb the context. A full-scale reconstruction of an 1860s West Coast gold-rush town — steam train, sluice, church, schoolhouse and all. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-arahura",
+      "name": "Arahura River — Pounamu Country",
+      "region": "west-coast",
+      "lat": -42.7,
+      "lng": 171,
+      "category": "māori",
+      "tags": [
+        "arahura",
+        "pounamu",
+        "greenstone",
+        "ngati-waewae",
+        "poutini"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 1,
+      "short": "The river of Poutini — sacred to Ngāti Waewae as the source of most of the pounamu traded across the Pacific.",
+      "commentary": "The Arahura River is the principal source of pounamu (NZ greenstone). Since the 1997 Te Tai Poutini settlement, pounamu in its natural state is owned exclusively by Ngāi Tahu.",
+      "audio_story": "You are crossing the Arahura River, a wide braided river that comes down out of the Southern Alps and reaches the sea a few kilometres north of Hokitika. For Ngāti Waewae, and more broadly for Ngāi Tahu, this is the river of Poutini, the taniwha who guards pounamu. Pounamu, known in English as greenstone or New Zealand jade, is found in the boulders and gravels of this river in unusual quality and variety. For over eight hundred years the Arahura was the principal source of pounamu traded across the Māori world, carried by foot over the Southern Alps to the East Coast, worked into meres and hei tiki, and traded onwards to the North Island and occasionally, in trade networks reaching deep into the Pacific, to islands far distant. In nineteen ninety seven, under the Ngāi Tahu Treaty settlement, legal ownership of all naturally occurring pounamu in the West Coast region was formally returned to the iwi. The collection of pounamu from the Arahura is now strictly regulated. You can still stop at the river, walk the shingle flats, and look at the enormous rounded boulders. But do not take anything. The river belongs to Poutini, and to Ngāi Tahu, and to the taniwha who guards them both.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāti Waewae",
+        "Te Runanga o Ngāi Tahu",
+        "DOC — Arahura"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Arahura River — Pounamu Country as a place where the history and cultural significance of Aotearoa become tangible and real. The river of Poutini — sacred to Ngāti Waewae as the source of most of the pounamu traded across the Pacific. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-hist-cape-foulwind",
+      "name": "Cape Foulwind & Tauranga Bay",
+      "region": "west-coast",
+      "lat": -41.75,
+      "lng": 171.4667,
+      "category": "heritage",
+      "tags": [
+        "cape-foulwind",
+        "cook",
+        "1770",
+        "lighthouse",
+        "seals"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Where Cook was blown onto a windy coastline in 1770 — now a sealion colony with a walking track.",
+      "commentary": "Cook named the cape in March 1770 after being blown offshore in a gale. Now a seal colony and lighthouse, with a clifftop walk of about 3km one way.",
+      "audio_story": "You are at Cape Foulwind, the dramatic cliff headland north of Westport. The English name is Cook''s. In March seventeen seventy, on his circumnavigation of the South Island, the Endeavour was blown offshore by a severe southerly gale that kept the ship out at sea for several days. When Cook finally regained sight of the land he named the low headland Cape Foulwind in memory of his ordeal. The Māori name is Tauranga, a sheltered anchorage, referring to the small cove just south of the headland. A lighthouse has operated on the headland since eighteen seventy five. The current automated tower dates from the nineteen twenties. The Cape Foulwind Walkway, about three kilometres one way, follows the clifftop past the lighthouse and ends at Tauranga Bay, where a substantial colony of New Zealand fur seals breeds on the rocks below a purpose built viewing platform. In spring and early summer you can see pups, sometimes within metres of the boardwalk. The walkway is easy, mostly flat, and one of the best short walks on the West Coast. Take sensible clothing. The cape still lives up to its name. The lighthouse side offers one of the few panoramic views across the full curve of the upper West Coast, from the Paparoa Range to the hills of Buller.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Cape Foulwind",
+        "NZHistory — Cook"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cape Foulwind & Tauranga Bay — the site rewards those who take time to read the signage and absorb the context. Where Cook was blown onto a windy coastline in 1770 — now a sealion colony with a walking track. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-denniston",
+      "name": "Denniston Plateau & Incline",
+      "region": "west-coast",
+      "lat": -41.75,
+      "lng": 171.8,
+      "category": "heritage",
+      "tags": [
+        "denniston",
+        "coal",
+        "incline",
+        "1879",
+        "mining-town"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2.5,
+      "short": "The abandoned coal mining plateau above Westport — home to an engineering marvel, the Denniston Incline.",
+      "commentary": "Denniston was a coal town 1879–1967. The Incline lowered coal wagons 549m down a 45° slope. Settlement was for decades the most inaccessible in NZ.",
+      "audio_story": "You are on the Denniston Plateau, a windswept high plateau above the Buller coast, where between eighteen seventy nine and nineteen sixty seven one of the most famous coal mining communities in the country lived and worked. At its peak Denniston had a population of around fifteen hundred people and was, for its first two decades, one of the most inaccessible inhabited places in New Zealand. There was no road up to the plateau until nineteen o two. People, supplies, coffins, horses and occasionally newborn babies were all transported up and down on the extraordinary Denniston Incline, an iron funicular that lowered loaded coal wagons five hundred and forty nine metres down a forty five degree slope to the rail yards at Conns Creek below. The incline was the principal coal transport method for over seventy years. At its working peak it was moving over one thousand tonnes of coal every twenty four hours. When mining finally ended in nineteen sixty seven, the town was abandoned. What remains today is a haunting complex of ruined brick chimneys, rusted iron wheel houses, collapsed mine shafts, and the incline itself, largely intact, a national heritage landmark. The walking tracks on the plateau take you through the principal ruins and the incline head. Bring warm clothing. It is always cold up here, even in summer.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Denniston",
+        "Heritage NZ",
+        "Friends of the Hill"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Denniston Plateau & Incline — the site rewards those who take time to read the signage and absorb the context. The abandoned coal mining plateau above Westport — home to an engineering marvel, the Denniston Incline. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-brunner",
+      "name": "Brunner Mine Industrial Site",
+      "region": "west-coast",
+      "lat": -42.4597,
+      "lng": 171.2703,
+      "category": "heritage",
+      "tags": [
+        "brunner",
+        "1896",
+        "mine-disaster",
+        "coking-ovens",
+        "memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "The site of New Zealand''s worst mine disaster — 65 killed in March 1896 — and the best preserved coking ovens in the country.",
+      "commentary": "Brunner Mine operated 1864–1906. On 26 March 1896 a gas explosion killed 65 miners. The restored industrial complex includes brick coking ovens.",
+      "audio_story": "You are at the Brunner Mine industrial site on the north bank of the Grey River, near Stillwater. Coal was mined here from eighteen sixty four. At its operational peak in the eighteen nineties, Brunner was one of the largest coal mines in the country, served by its own rail branch and its own distinctive brick coking ovens that converted raw coal into high value coke for the iron works at Onehunga. The mine is best known for the Brunner Mine disaster. On the morning of the twenty sixth of March, eighteen ninety six, sixty five miners descended into the tunnel on the early shift. A gas explosion deep underground killed every single one of them. It remains the worst mine disaster in New Zealand history. Most of the dead were buried in the small Stillwater Cemetery across the river. The mine never properly recovered. Production continued until nineteen o six, when it was finally abandoned. Today the site is a Heritage New Zealand industrial historic reserve. A walking loop takes you past the mine entrance, the brick coking ovens, the remnants of the tramway bridges, and the small memorial to the disaster. About an hour on site, plus a separate visit to the cemetery to read the names.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Brunner Mine",
+        "Grey District Historical Society"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Brunner Mine Industrial Site — the site rewards those who take time to read the signage and absorb the context. The site of New Zealand''s worst mine disaster — 65 killed in March 1896 — and the best preserved coking ovens in the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-reefton",
+      "name": "Reefton — Town of Light",
+      "region": "west-coast",
+      "lat": -42.1167,
+      "lng": 171.8667,
+      "category": "heritage",
+      "tags": [
+        "reefton",
+        "1888",
+        "electric-light",
+        "quartz-mining",
+        "heritage"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The first town in the southern hemisphere with electric street lighting — funded by the wealth of quartz gold mining.",
+      "commentary": "Reefton was connected to a hydroelectric plant in 1888, beating London and Sydney to have public electric street lights. Quartz gold mining peaked 1885–1895.",
+      "audio_story": "You are in Reefton, a small inland West Coast town that in eighteen eighty eight became the first place in the southern hemisphere to have public electric street lighting. A small hydroelectric plant on the nearby Inangahua River powered a handful of carbon arc lamps along the main street, beating London, Paris and Sydney to the honour. The town''s wealth at the time came not from alluvial gold but from hard rock quartz gold mining. Deep underground shafts driven into the quartz reefs of the surrounding hills produced large quantities of gold bearing ore through the eighteen eighties and nineties. The quartz fields peaked around eighteen ninety five and declined thereafter. The town today retains an unusually complete streetscape of nineteenth century wooden buildings, including the Broadway hotel, the old Bank of New Zealand, and the Golden Nugget Saloon. A small but well presented visitor centre and working replica quartz stamping battery on the edge of town tells the story. You can also do an accompanied walk underground into the reopened Blacks Point Museum mine. Add a meal at the Dawsons and, if the weather is good, a drive up into the Victoria Forest Park which surrounds the town on three sides.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Reefton Museum",
+        "Heritage NZ",
+        "DOC — Victoria Forest Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Reefton — Town of Light — the site rewards those who take time to read the signage and absorb the context. The first town in the southern hemisphere with electric street lighting — funded by the wealth of quartz gold mining. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-haast-jackson",
+      "name": "Jackson Bay — Italian Settlement",
+      "region": "west-coast",
+      "lat": -43.9667,
+      "lng": 168.6167,
+      "category": "heritage",
+      "tags": [
+        "jackson-bay",
+        "italian-settlement",
+        "1875",
+        "special-settlement",
+        "haast"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "An 1875 'special settlement' scheme that brought Italian, Polish and Scottish families to one of the most remote coastlines in the country.",
+      "commentary": "The Jackson Bay Special Settlement began 1875 as a government-sponsored scheme to populate South Westland. Italians, Poles, Germans, and Scots settled here.",
+      "audio_story": "You are at Jackson Bay, the southernmost settlement on the West Coast road, where the sealed highway finally ends on a curving pebble beach at the end of the Haast valley. In eighteen seventy five the colonial government launched the Jackson Bay Special Settlement, an ambitious scheme to populate the remote and almost inaccessible South Westland coast with a mixed group of European migrants. Over five hundred settlers were brought here over two years, including Italians from the Ticino region of southern Switzerland, Poles, Germans, Scots, and English. They were promised land and government support. What they found was almost impenetrable rainforest, continuous rain, no roads, and a soil that would not grow the vegetables they had planned on. Within a few years most of the settlement had been abandoned. Families drifted back north to the Haast valley, to Greymouth, or in some cases back to Europe. A small core remained at Jackson Bay and on nearby flats, and their descendants, with surnames like Nolan, Cron, Buchanan, Eggeling and others, still live and work the fishing and farming grounds today. The memorial on the waterfront lists the original settlers. The Cray Pot, a fish and chip shop open only on fine days, is a reliable lunch.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "NZHistory — Jackson Bay",
+        "Heritage NZ",
+        "South Westland Historical"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Jackson Bay — Italian Settlement — the site rewards those who take time to read the signage and absorb the context. An 1875 'special settlement' scheme that brought Italian, Polish and Scottish families to one of the most remote coastlines in the country. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "wc-hist-greymouth-floodwall",
+      "name": "Greymouth Floodwall & Māwhera Pā",
+      "region": "west-coast",
+      "lat": -42.4469,
+      "lng": 171.2106,
+      "category": "māori",
+      "tags": [
+        "greymouth",
+        "mawhera",
+        "floodwall",
+        "ngati-waewae",
+        "pa-site"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The town that floods — and the ancestral Māwhera Pā of Ngāti Waewae, returned to the iwi in 1976.",
+      "commentary": "Greymouth stands on the Māwhera River flats, Ngāti Waewae ancestral land. The floodwall completed 1988–90 after major 1988 flooding. Māwhera Incorporation owns the CBD.",
+      "audio_story": "You are in Greymouth, the largest town on the West Coast, built on the flat river terrace where the Grey River, known to Māori as Māwhera, meets the sea. The ancestral Māwhera Pā of Ngāti Waewae stood on this flat long before European settlement. Under the so called West Coast Purchase of eighteen sixty, the area was transferred to the Crown for an almost nominal sum, a transfer that has been the subject of Treaty claims since. In the nineteen seventies, after decades of work, the central business district of Greymouth was legally returned to the iwi as the Māwhera Incorporation, which now owns the freehold of the core town and leases it to commercial tenants, one of the most successful examples of Treaty driven economic restoration in the country. The town is also famous for flooding. The Grey River is one of the largest on the coast, and it has flooded the town dozens of times in its colonial history. The current massive concrete floodwall that now protects the CBD was built following the devastating nineteen eighty eight flood which inundated the entire town centre. Walk along the top of the wall. You have the river on one side and the town it holds back on the other. Not subtle, but it does the job.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Ngāti Waewae",
+        "Māwhera Incorporation",
+        "Grey District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Greymouth Floodwall & Māwhera Pā as a place where the history and cultural significance of Aotearoa become tangible and real. The town that floods — and the ancestral Māwhera Pā of Ngāti Waewae, returned to the iwi in 1976. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-arahura-pounamu",
+      "name": "Arahura River — Source of Pounamu",
+      "region": "west-coast",
+      "lat": -42.72,
+      "lng": 171.065,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pounamu",
+        "greenstone",
+        "ngāi-tahu",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The most important pounamu source in NZ — the sacred Arahura River, returned to Ngāi Tahu.",
+      "commentary": "Pounamu from the Arahura was traded the length of the country. The 1998 Treaty settlement returned ownership of the pounamu resource to Ngāi Tahu.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Arahura River — Source of Pounamu as a place where the history and cultural significance of Aotearoa become tangible and real. The most important pounamu source in NZ — the sacred Arahura River, returned to Ngāi Tahu. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-mawhera",
+      "name": "Māwhera — Greymouth Māori Heritage",
+      "region": "west-coast",
+      "lat": -42.45,
+      "lng": 171.21,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "pounamu",
+        "settlement"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A major pounamu processing and trading settlement at the Grey River mouth.",
+      "commentary": "Māwhera was one of the most important Ngāi Tahu settlements on the West Coast, a centre for pounamu processing and trade.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Māwhera — Greymouth Māori Heritage as a place where the history and cultural significance of Aotearoa become tangible and real. A major pounamu processing and trading settlement at the Grey River mouth. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-okarito",
+      "name": "Ōkārito — Ngāi Tahu Settlement",
+      "region": "west-coast",
+      "lat": -43.225,
+      "lng": 170.162,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "settlement",
+        "lagoon",
+        "kōtuku"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "An ancient settlement near the only kōtuku (white heron) breeding colony — kōtuku feathers were taonga of great value.",
+      "commentary": "Ōkārito was strategically located near rich food-gathering grounds. The nearby kōtuku colony held special significance as the feathers were highly prized taonga.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ōkārito — Ngāi Tahu Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. An ancient settlement near the only kōtuku (white heron) breeding colony — kōtuku feathers were taonga of great value. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-hokitika-pounamu",
+      "name": "Hokitika — Pounamu Capital",
+      "region": "west-coast",
+      "lat": -42.717,
+      "lng": 170.964,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pounamu",
+        "greenstone",
+        "carving",
+        "ngāi-tahu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The pounamu capital — workshops continue a carving tradition stretching back centuries.",
+      "commentary": "Pounamu is the most treasured material in Māori culture — taonga pounamu carry the mana of their makers and are passed down through generations.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Hokitika — Pounamu Capital as a place where the history and cultural significance of Aotearoa become tangible and real. The pounamu capital — workshops continue a carving tradition stretching back centuries. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-oparara",
+      "name": "Ōpārara Basin — Caves & Ancient Forest",
+      "region": "west-coast",
+      "lat": -41.22,
+      "lng": 172.18,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "caves",
+        "ancient-forest",
+        "moa-bones"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 3,
+      "short": "Massive limestone arches with moa bones suggesting Māori hunting in ancient forest.",
+      "commentary": "Moa bones found in caves suggest Māori hunting. The basin represents the primeval landscape early settlers encountered — dense forest and giant flightless birds.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ōpārara Basin — Caves & Ancient Forest as a place where the history and cultural significance of Aotearoa become tangible and real. Massive limestone arches with moa bones suggesting Māori hunting in ancient forest. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "wc-jackson-bay-smoothwater",
+      "name": "Jackson Bay / Okahu — Southern Pounamu Settlement",
+      "region": "west-coast",
+      "lat": -43.969,
+      "lng": 168.618,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "pounamu",
+        "settlement",
+        "remote"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "The most remote settlement on the West Coast — a Ngāi Tahu pounamu-gathering outpost at road's end.",
+      "commentary": "Jackson Bay (Okahu) was a southern pounamu-gathering settlement for Ngāi Tahu. The bay is the end of the road on the West Coast and was historically accessible mainly by sea. Archaeological evidence of seasonal camps has been found.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Jackson Bay / Okahu — Southern Pounamu Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. The most remote settlement on the West Coast — a Ngāi Tahu pounamu-gathering outpost at road's end. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "west-coast-west-coast-wilderness-trail",
+      "name": "West Coast Wilderness Trail",
+      "region": "west-coast",
+      "lat": -42.45,
+      "lng": 171.21,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "rainforest",
+        "wetland",
+        "gold-mining"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 24,
+      "short": "Cycle 136 km through ancient rainforest, glacial valleys, and gold mining ghost towns on the Wild West Coast.",
+      "commentary": "The West Coast Wilderness Trail covers 136 km from Greymouth to Ross, passing through podocarp rainforest, wetlands, and former gold mining settlements. The trail uses old tramways, water races, and railway corridors. It traverses some of the highest-rainfall landscapes in New Zealand, where the bush is extraordinarily lush and the rivers run tea-brown with tannins.",
+      "audio_story": "You are pedalling the West Coast Wilderness Trail, and the bush here is so dense, so green, so wet that it feels like cycling through a living tunnel. The 136 kilometres from Greymouth to Ross follow old mining tramways and water races through podocarp rainforest that has stood for centuries. The West Coast gets up to five metres of rain a year in places, and you can see it in every surface — moss covers the branches, ferns erupt from every crevice, and the rivers run brown with tannins leached from the forest floor. You will ride past the remains of gold dredges rusting in lakes, through the former boom town of Kumara, and alongside wetlands where white herons stalk through the shallows. At Ross, the trail ends in a town that once produced the largest gold nugget ever found in New Zealand — the 99-ounce Honourable Doris, discovered in 1909.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "West Coast Wilderness Trail Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The West Coast Wilderness Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle 136 km through ancient rainforest, glacial valleys, and gold mining ghost towns on the Wild West Coast. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-fox-glacier-approach",
+      "name": "Fox Glacier / Te Moeka o Tuawe Walk",
+      "region": "west-coast",
+      "lat": -43.47,
+      "lng": 170.02,
+      "category": "journey",
+      "tags": [
+        "glacier",
+        "walking",
+        "ice",
+        "rainforest",
+        "geological"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk through rainforest to the terminal face of Fox Glacier, where ice meets temperate bush.",
+      "commentary": "Fox Glacier / Te Moeka o Tuawe descends from the Southern Alps to just 300 m above sea level, one of the most accessible glaciers in a temperate zone anywhere in the world. The valley walk from the car park to the current viewpoint is about 2.6 km return. The glacier has retreated significantly in recent decades but remains a dramatic sight, with its terminal face often blue-tinged and groaning.",
+      "audio_story": "You are walking toward Fox Glacier, and the landscape around you tells a story of retreat. Just decades ago, the ice filled this valley far beyond where you are standing now, and the raw grey rock and sparse vegetation are signs of recently deglaciated ground. As you walk closer, the terminal face comes into view — a wall of ice that can appear white, grey, or startling blue depending on the light and the age of the ice. What makes Fox extraordinary is its context: this glacier descends from the Southern Alps to just 300 metres above sea level, terminating in temperate rainforest. Nowhere else at this latitude do ice and lush bush exist so close together. The glacier groans and cracks as you watch, the sound echoing off the valley walls. It is alive, moving, and shrinking — a vast frozen river adjusting to a warming world.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Fox Glacier",
+        "GNS Science glacier monitoring"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Fox Glacier / Te Moeka o Tuawe Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk through rainforest to the terminal face of Fox Glacier, where ice meets temperate bush. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-franz-josef-glacier-approach",
+      "name": "Franz Josef Glacier / Ka Roimata o Hine Hukatere Walk",
+      "region": "west-coast",
+      "lat": -43.39,
+      "lng": 170.16,
+      "category": "journey",
+      "tags": [
+        "glacier",
+        "walking",
+        "ice",
+        "rainforest",
+        "day-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Approach the dramatic terminal face of Franz Josef Glacier through a valley of ancient rock and new growth.",
+      "commentary": "Franz Josef Glacier / Ka Roimata o Hine Hukatere is a 12 km glacier descending from near the main divide to 240 m above sea level. The valley walk to the current viewpoint is approximately 5.4 km return. The Maori name translates to 'the tears of Hine Hukatere,' from a legend about a woman whose tears froze to form the glacier. Heli-hike and scenic flights offer closer access to the ice.",
+      "audio_story": "You are walking up the Waiho River valley toward Franz Josef Glacier, and the Maori name for this place tells you everything about its power. Ka Roimata o Hine Hukatere means 'the tears of Hine Hukatere,' a woman in Maori tradition who loved the mountains so much that her tears of joy froze into this river of ice. The valley walk takes you through a landscape in constant change — the glacier's retreat has left behind walls of moraine and pools of milky water. The terminal face, when you reach the viewpoint, is a tumbled cliff of ice that creaks and shifts as gravity pulls it downward. Franz Josef was named by the geologist Julius von Haast in 1865, after the Emperor of Austria-Hungary. Helicopter flights from the township can land you on the ice itself, where crevasses glow blue and the silence is absolute.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Franz Josef Glacier",
+        "West Coast tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Franz Josef Glacier / Ka Roimata o Hine Hukatere Walk route delivers a memorable journey through exceptional New Zealand scenery. Approach the dramatic terminal face of Franz Josef Glacier through a valley of ancient rock and new growth. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-great-coast-road",
+      "name": "Great Coast Road (SH6 Greymouth-Hokitika)",
+      "region": "west-coast",
+      "lat": -42.55,
+      "lng": 171.12,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "coastal",
+        "state-highway",
+        "iconic"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 1,
+      "short": "One of New Zealand's top scenic drives, hugging the wild Tasman Sea coast between Greymouth and Hokitika.",
+      "commentary": "The Great Coast Road runs 44 km along SH6 between Greymouth and Hokitika, hugging the Tasman Sea coast. Named one of the 'Top 10 Coastal Drives in the World' by Lonely Planet, the road passes between surf-battered beaches and bush-clad hills. It was originally carved from the coastal rock face and can be dramatic in stormy weather when waves crash across the road.",
+      "audio_story": "You are driving the Great Coast Road, and the Tasman Sea is throwing everything it has at the shoreline to your right. This 44-kilometre stretch of SH6 between Greymouth and Hokitika was carved from coastal rock and clings to the edge of the land with a determination that feels almost personal. Lonely Planet named it one of the top ten coastal drives in the world, and on a big swell day you will understand why — waves explode against the sea walls and spray drifts across the road. To your left, the bush-covered hills are impossibly green, fed by rain that can arrive horizontally off the Tasman. The road passes through small settlements that were once mining towns, and at several points you can pull over and walk onto black-sand beaches where driftwood logs the size of trees lie scattered like matchsticks.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "West Coast tourism",
+        "NZTA scenic routes"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Great Coast Road (SH6 Greymouth-Hokitika) route delivers a memorable journey through exceptional New Zealand scenery. One of New Zealand's top scenic drives, hugging the wild Tasman Sea coast between Greymouth and Hokitika. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-pancake-rocks-walk",
+      "name": "Pancake Rocks & Blowholes Walk",
+      "region": "west-coast",
+      "lat": -42.1136,
+      "lng": 171.3261,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "geological",
+        "blowholes",
+        "limestone",
+        "iconic"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 0.5,
+      "short": "Walk among the layered limestone formations and surging blowholes at Punakaiki.",
+      "commentary": "The Pancake Rocks at Dolomite Point, Punakaiki, are heavily eroded limestone formations resembling stacks of pancakes. The rocks were formed 30 million years ago from layers of marine organisms and were uplifted and sculpted by seawater. At high tide, seawater surges through caverns beneath the rocks and explodes upward through blowholes. The short walk takes about 20 minutes.",
+      "audio_story": "You are walking among the Pancake Rocks at Punakaiki, and the geology here is genuinely strange. These layered limestone formations look exactly like stacks of giant pancakes, each layer a few centimetres thick and separated by softer bands that have eroded away over millions of years. The rocks formed 30 million years ago on the sea floor from alternating layers of hard and soft sediment. Then they were lifted, tilted, and the sea went to work sculpting them into the formations you see today. At high tide — especially during a big swell — seawater forces its way through underground caverns and erupts through blowholes with a boom that you feel in your chest. The spray shoots metres into the air, and if you are standing too close, you will get drenched. Time your visit for high tide if you can; the blowholes at low tide are merely impressive rather than extraordinary.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "DOC Punakaiki",
+        "GNS Science Pancake Rocks"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Pancake Rocks & Blowholes Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk among the layered limestone formations and surging blowholes at Punakaiki. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-hokitika-gorge-walk",
+      "name": "Hokitika Gorge Walk",
+      "region": "west-coast",
+      "lat": -42.95,
+      "lng": 170.9,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "gorge",
+        "turquoise",
+        "rainforest",
+        "short-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "Walk to a gorge where the Hokitika River runs an electric turquoise through ancient podocarp forest.",
+      "commentary": "Hokitika Gorge is a short walk (about 1 km return) through native podocarp forest to a swing bridge above the Hokitika River where the water is an intense, milky turquoise. The colour is caused by glacial flour — finely ground rock particles suspended in the water. The surrounding forest includes rimu, miro, and kahikatea trees up to 600 years old.",
+      "audio_story": "You are walking through ancient podocarp forest toward the Hokitika Gorge, and when the river appears below the swing bridge, the colour hits you like a surprise. The Hokitika River is running a blue so vivid, so electric, that it looks like someone has poured pigment into the water. This is glacial flour — rock ground to powder by the glaciers at the river's source in the Southern Alps — and when it catches the light, the effect is otherworldly. The forest around you is equally impressive: rimu and kahikatea trees up to 600 years old, their trunks wrapped in mosses and epiphytes, their canopy blocking most of the sky. This is one of the West Coast's most accessible natural spectacles — the walk takes just 15 minutes — but the combination of ancient forest and impossible water colour makes it one of the most memorable.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Hokitika Gorge",
+        "Westland District tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Hokitika Gorge Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to a gorge where the Hokitika River runs an electric turquoise through ancient podocarp forest. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-oparara-arches",
+      "name": "Oparara Basin & Arches Walk",
+      "region": "west-coast",
+      "lat": -41.2,
+      "lng": 172.14,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "limestone",
+        "arch",
+        "rainforest",
+        "cave",
+        "remote"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Walk to massive limestone arches hidden in primeval rainforest near Karamea — the West Coast's secret wonder.",
+      "commentary": "The Oparara Basin near Karamea contains the Oparara Arch, one of the largest natural arches in the Southern Hemisphere at 219 m long, 79 m wide, and 37 m high. The basin is accessed by a narrow gravel road and features several limestone arches, caves containing sub-fossil moa bones, and pristine podocarp forest. It is one of the least-visited significant natural sites in New Zealand.",
+      "audio_story": "You are driving the narrow gravel road into the Oparara Basin, and very few tourists make it this far. Karamea is already the end of the road on the West Coast, and the Oparara Basin is another 16 kilometres beyond on a track that discourages all but the curious. But what waits here is extraordinary. The Oparara Arch is one of the largest natural limestone arches in the Southern Hemisphere — 219 metres long, nearly 80 metres wide, and 37 metres high. The Oparara River flows through it, dark and tea-stained, beneath a canopy of ancient rainforest. In the caves nearby, sub-fossil bones of moa and other extinct birds have been found, preserved in the limestone for thousands of years. Standing beneath the arch, with the forest pressing in and the river murmuring through the gloom, you feel the weight of geological time.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Oparara Basin",
+        "Karamea tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Oparara Basin & Arches Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to massive limestone arches hidden in primeval rainforest near Karamea — the West Coast's secret wonder. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-pounamu-trail-hokitika",
+      "name": "Hokitika Pounamu Heritage Trail",
+      "region": "west-coast",
+      "lat": -42.7178,
+      "lng": 170.9681,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "pounamu",
+        "maori",
+        "greenstone",
+        "town-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Explore the pounamu capital of New Zealand — where jade rivers meet the Tasman Sea.",
+      "commentary": "Hokitika is the traditional centre of New Zealand's pounamu (greenstone/jade) industry. The West Coast rivers, particularly the Arahura, are the primary source of pounamu, which holds immense spiritual significance for Maori. The town has numerous jade carving studios and galleries. Pounamu can only be legally collected from the West Coast with Ngai Tahu permission.",
+      "audio_story": "You are walking through Hokitika, and this small West Coast town is the pounamu capital of New Zealand. Pounamu — greenstone, nephrite jade — is found in the rivers that flow from the Southern Alps to the Tasman Sea, particularly the Arahura River just north of town. For Maori, pounamu is a taonga of immense spiritual value, more precious than gold, and the West Coast's pounamu resources are the reason Ngai Tahu sent expeditions over the Alps for centuries. Today, Hokitika's studios keep the carving tradition alive, and you can watch artisans shape raw river stones into pendants, mere, and tiki using techniques both ancient and modern. The Ngai Tahu iwi hold legal guardianship over all West Coast pounamu — it cannot be commercially collected without their authority, a recognition of a relationship with this stone that stretches back over a thousand years.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Hokitika tourism",
+        "Ngai Tahu pounamu information"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Hokitika Pounamu Heritage Trail route delivers a memorable journey through exceptional New Zealand scenery. Explore the pounamu capital of New Zealand — where jade rivers meet the Tasman Sea. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-jackson-bay-road",
+      "name": "Jackson Bay / Okahu Road",
+      "region": "west-coast",
+      "lat": -43.97,
+      "lng": 168.62,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "remote",
+        "end-of-road",
+        "rainforest",
+        "coastal"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1.5,
+      "short": "Drive to the end of the road at Jackson Bay — one of the wettest, most remote settlements in New Zealand.",
+      "commentary": "The road from Haast to Jackson Bay / Okahu covers 50 km through dense rainforest to one of the most isolated settlements in New Zealand. Jackson Bay was the site of a failed 19th-century immigration settlement and receives over 5,000 mm of rain annually. The Whitebaiter's Track and Smoothwater Bay Track offer walks through pristine coastal bush. The settlement has a population of about 30.",
+      "audio_story": "You are driving the Jackson Bay Road, and with each kilometre the world gets smaller and wilder. The road runs 50 kilometres south of Haast through rainforest so thick that the canopy arches over the road like a green tunnel. At the end sits Jackson Bay, a fishing settlement of about 30 hardy souls in one of the wettest locations in New Zealand — over five metres of rain falls here annually. In the 1870s, the government attempted to establish an immigrant settlement here, bringing in workers from across Europe. It was a disaster: the rain was relentless, the bush impenetrable, and the promised infrastructure never materialised. Most settlers left within years. Today, the old wharf juts into the bay, fishing boats bob on the grey water, and the Cray Pot cafe serves fresh fish. This is the end of the road in every sense, and there is a peace here that comes from having nowhere further to go.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Haast area",
+        "West Coast heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Jackson Bay / Okahu Road route delivers a memorable journey through exceptional New Zealand scenery. Drive to the end of the road at Jackson Bay — one of the wettest, most remote settlements in New Zealand. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-reefton-heritage-walk",
+      "name": "Reefton Historic Walk",
+      "region": "west-coast",
+      "lat": -42.1167,
+      "lng": 171.8667,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "gold-mining",
+        "historic-town",
+        "walking",
+        "electricity"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk through the town that was first in the Southern Hemisphere to have electric street lights, in 1888.",
+      "commentary": "Reefton was the first town in the Southern Hemisphere to have a public electricity supply and electric street lighting, installed in 1888 — just six years after New York. The gold-mining town has a well-preserved Victorian streetscape and a heritage walk that covers its mining history, early electricity, and the boom-and-bust cycles that shaped West Coast towns.",
+      "audio_story": "You are walking through Reefton, and this small West Coast town did something remarkable in 1888: it switched on electric street lights, becoming the first town in the entire Southern Hemisphere to have a public electricity supply. This was just six years after Thomas Edison illuminated part of Manhattan. The power came from a small hydro scheme on the Inangahua River, and for a few glorious years, tiny Reefton was more technologically advanced than Sydney, Melbourne, and every other city south of the equator. The gold that funded this innovation came from quartz reef mines in the surrounding hills — hard rock mining that required crushing machinery, which required electricity, which required the kind of ambitious thinking that seems extraordinary in a town this small. The heritage walk takes you past the old powerhouse site, the miners' cottages, and the main street where those lights first blazed.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Reefton heritage trust",
+        "West Coast history"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Reefton Historic Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk through the town that was first in the Southern Hemisphere to have electric street lights, in 1888. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-lake-matheson-walk",
+      "name": "Lake Matheson Mirror Walk",
+      "region": "west-coast",
+      "lat": -43.44,
+      "lng": 169.97,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "lake",
+        "reflection",
+        "photography",
+        "glacier"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk around the 'mirror lake' that perfectly reflects Aoraki/Mt Cook and Mt Tasman on still mornings.",
+      "commentary": "Lake Matheson is a small kettle lake formed by the Fox Glacier about 14,000 years ago. The dark tannin-stained water creates perfect reflections of Aoraki/Mt Cook and Mt Tasman, making it one of the most photographed locations in New Zealand. The 2.6 km loop walk through kahikatea forest is best visited at dawn when the lake is stillest.",
+      "audio_story": "You are walking the loop track around Lake Matheson, and if you have timed it right — early morning, no wind — you are about to see one of New Zealand's most iconic images in person. The lake is small and dark, its water stained brown by tannins from the surrounding forest, and that darkness creates a perfect mirror. When Aoraki/Mt Cook and Mt Tasman appear reflected in the still surface, the image is so sharp, so symmetrical, that photographs of it look manipulated. But it is real. The lake itself was formed about 14,000 years ago when the Fox Glacier retreated and left a block of buried ice that melted into this hollow. The surrounding kahikatea forest drips with moss, and the boardwalk winds through a green world so lush it feels submarine. Get here before the wind rises and the other walkers arrive.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Lake Matheson",
+        "West Coast tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Lake Matheson Mirror Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk around the 'mirror lake' that perfectly reflects Aoraki/Mt Cook and Mt Tasman on still mornings. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-buller-gorge-road",
+      "name": "Buller Gorge Scenic Drive",
+      "region": "west-coast",
+      "lat": -41.77,
+      "lng": 171.6,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "gorge",
+        "river",
+        "earthquake",
+        "geological"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 2,
+      "short": "Drive through the dramatic Buller Gorge where the river has carved a path through the mountains to the sea.",
+      "commentary": "The Buller Gorge road follows the Buller River from Murchison to Westport through a narrow, bush-clad gorge. The gorge was partly reshaped by the devastating 1929 Murchison earthquake (magnitude 7.8) which killed 17 people and triggered massive landslides. The road passes the Buller Gorge Swing Bridge, New Zealand's longest, and the dramatic Hawks Crag overhang.",
+      "audio_story": "You are driving through the Buller Gorge, and the road clings to a narrow shelf above the river as it carves through the mountains on its way to the Tasman Sea. The Buller is one of the great rivers of the West Coast, draining a vast catchment from the Nelson Lakes, and in the gorge it compresses into a fast, powerful torrent. At Hawks Crag, the road passes beneath an enormous overhanging rock face that leans out above your car — it is dramatic in any weather and genuinely intimidating in the rain. In 1929, a magnitude 7.8 earthquake struck at Murchison, upstream, killing 17 people and sending landslides crashing into the gorge that dammed the river in several places. The evidence is still visible in the landscape: scarred hillsides, displaced rock, and a river that had to find new channels through the debris.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Buller Gorge",
+        "GNS Science 1929 earthquake"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Buller Gorge Scenic Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive through the dramatic Buller Gorge where the river has carved a path through the mountains to the sea. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-old-ghost-road",
+      "name": "Old Ghost Road Trail",
+      "region": "west-coast",
+      "lat": -41.75,
+      "lng": 171.9,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "tramping",
+        "backcountry",
+        "heritage",
+        "multi-day"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 30,
+      "short": "Ride or walk 85 km of remote backcountry trail that completes the route gold miners began in the 1870s.",
+      "commentary": "The Old Ghost Road is an 85 km trail from Lyell to Seddonville, completing a route that gold miners began but never finished in the 1870s. Built by volunteers over 10 years and opened in 2015, it traverses some of the most remote terrain on the West Coast, including the Lyell Range at 1,280 m. It is considered one of the best mountain bike trails in New Zealand.",
+      "audio_story": "You are setting out on the Old Ghost Road, and the name tells you something important: this trail exists because of a road that was never finished. In the 1870s, gold miners began building a road from the Buller Gorge through to Seddonville on the coast, but the terrain defeated them. The bush was too thick, the mountains too steep, the budget too thin. The road was abandoned, and the forest reclaimed it. Over a hundred years later, a dedicated team of volunteers spent a decade building an 85-kilometre trail that finally completes the route. Opened in 2015, the Old Ghost Road is now considered one of the finest backcountry trails in New Zealand — a demanding multi-day ride or walk through river valleys, over the Lyell Range at 1,280 metres, and down through ancient beech forest to the coast. It is a monument to stubbornness, both the miners' and the volunteers'.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Old Ghost Road Trust",
+        "NZ Cycle Trail"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Old Ghost Road Trail route delivers a memorable journey through exceptional New Zealand scenery. Ride or walk 85 km of remote backcountry trail that completes the route gold miners began in the 1870s. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-denniston-plateau",
+      "name": "Denniston Plateau Heritage Walk",
+      "region": "west-coast",
+      "lat": -41.74,
+      "lng": 171.77,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "coal-mining",
+        "incline",
+        "industrial",
+        "walking"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2.5,
+      "short": "Walk the haunting Denniston Plateau — site of a dramatic coal mining incline and a vanished community.",
+      "commentary": "The Denniston Plateau above Westport was one of New Zealand's major coal mining centres from the 1880s to 1960s. The famous Denniston Incline, which lowered coal-laden wagons 500 m down an impossibly steep slope using a self-acting brake system, was considered one of the steepest industrial railways in the world. At its peak, over 1,500 people lived on the plateau.",
+      "audio_story": "You are walking the Denniston Plateau, and the wind up here is relentless — it has been stripping this exposed hilltop for millennia. But from the 1880s to the 1960s, over 1,500 people lived here, mining the coal seams that run through the plateau. The coal was so good — hard bituminous, perfect for steamships — that they built the Denniston Incline to get it down the mountain: a self-acting railway that lowered loaded wagons 500 metres down a slope so steep it defied common sense. The full wagons going down hauled the empty ones back up. At its peak, it was one of the steepest industrial railways in the world. Today, the foundations of houses, the mine entrances, and the incline track itself remain, slowly being reclaimed by the bush. Walking here, with the ruins emerging from the scrub and the sea visible far below, you feel the weight of the lives lived and spent in this harsh, beautiful place.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Denniston",
+        "West Coast heritage"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Denniston Plateau Heritage Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk the haunting Denniston Plateau — site of a dramatic coal mining incline and a vanished community. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-haast-to-jackson-bay-coast",
+      "name": "Ship Creek & Monro Beach Walk",
+      "region": "west-coast",
+      "lat": -43.79,
+      "lng": 169.07,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "rainforest",
+        "penguin",
+        "wetland",
+        "remote"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk from ancient rainforest swamp to a wild coast where Fiordland crested penguins come ashore.",
+      "commentary": "Ship Creek, south of Haast on SH6, offers two short walks: the Kahikatea Swamp Walk through a flooded podocarp forest, and the Dune Lake Walk to a wild beach. Nearby Monro Beach is one of the few accessible locations where the rare tawaki / Fiordland crested penguin can be seen coming ashore between July and November. Ship Creek was named after a shipwreck in the 1860s.",
+      "audio_story": "You are walking the boardwalk at Ship Creek, and the kahikatea forest around you is standing in water. This is a swamp forest — the trees rise from permanently flooded ground, their buttress roots spreading wide for stability, and the reflections in the dark water create a mirror world beneath the canopy. A second track leads over sand dunes to a wild, driftwood-strewn beach facing the Tasman Sea. But the real treasure is nearby Monro Beach: between July and November, tawaki — Fiordland crested penguins, one of the rarest penguin species on Earth — come ashore here through the surf and waddle into the bush to nest. Seeing one emerge from the waves, its yellow crests slicked back, is a wildlife encounter that few people outside New Zealand even know is possible.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Ship Creek",
+        "DOC tawaki information"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Ship Creek & Monro Beach Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk from ancient rainforest swamp to a wild coast where Fiordland crested penguins come ashore. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "west-coast-franz-josef-glacier-hike",
+      "name": "Franz Josef Glacier Heli-Hike",
+      "region": "west-coast",
+      "lat": -43.4833,
+      "lng": 170.1833,
+      "category": "adventure",
+      "tags": [
+        "glacier",
+        "heli-hike",
+        "ice",
+        "franz-josef",
+        "guided"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Helicopter onto Franz Josef Glacier and hike through ancient blue ice formations.",
+      "commentary": "The Franz Josef Glacier heli-hike flies you by helicopter onto the glacier for a guided walk among ice caves, seracs, and crevasses. The glacier descends from 3,000 metres to just 240 metres above sea level — one of the steepest and fastest-moving glaciers in the world. Crampons and equipment are provided.",
+      "audio_story": "You have arrived at Franz Josef Glacier, known to Maori as Ka Roimata o Hine Hukatere — the tears of the avalanche girl. This is one of the most accessible glaciers on earth, descending from 3,000 metres in the Southern Alps to just 240 metres above sea level, almost to the temperate rainforest. A helicopter will lift you onto the glacier's mid-section, where your guide will lead you through a wonderland of blue ice caves, towering seracs, and deep crevasses. The ice glows an incredible shade of blue caused by compressed air bubbles, and the formations change daily as the glacier creeps forward at up to 70 centimetres per day. You'll strap on crampons and explore ice features that literally didn't exist yesterday and won't exist tomorrow. It's a walk on one of earth's great frozen rivers.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Franz Josef Glacier Guides",
+        "DOC Westland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Franz Josef Glacier Heli-Hike adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Helicopter onto Franz Josef Glacier and hike through ancient blue ice formations. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-fox-glacier-heli-hike",
+      "name": "Fox Glacier Heli-Hike",
+      "region": "west-coast",
+      "lat": -43.5667,
+      "lng": 170.1,
+      "category": "adventure",
+      "tags": [
+        "glacier",
+        "heli-hike",
+        "ice",
+        "fox-glacier",
+        "guided"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Explore dramatic ice falls and blue crevasses on Fox Glacier by heli-hike.",
+      "commentary": "Fox Glacier is 13 km long, making it one of the most substantial glaciers in New Zealand. The heli-hike experience lands you among dramatic ice falls and seracs. Fox is generally less crowded than neighbouring Franz Josef and offers views toward Aoraki/Mount Cook and Mount Tasman.",
+      "audio_story": "You have arrived at Fox Glacier, the longer and slightly wilder cousin of nearby Franz Josef. At 13 kilometres, Fox is one of the most substantial glaciers in the temperate world, and a helicopter flight onto its surface reveals a landscape of ice that is both beautiful and humbling. Your pilot will land on a section of the glacier where your guide has scouted the best features — ice caves glowing blue from within, crevasses that drop away into darkness, and seracs the size of buildings. What makes Fox special is its relative solitude and the views — on a clear day, you can see Aoraki/Mount Cook and Mount Tasman, the two highest peaks in New Zealand, rising above the glacier's source. The ice beneath your crampons is ancient, compressed, and constantly moving, a frozen river grinding its way toward the coast.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Fox Glacier Guiding",
+        "DOC Westland"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Fox Glacier Heli-Hike adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Explore dramatic ice falls and blue crevasses on Fox Glacier by heli-hike. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-buller-river-rafting",
+      "name": "Buller River White Water Rafting",
+      "region": "west-coast",
+      "lat": -41.75,
+      "lng": 171.5833,
+      "category": "adventure",
+      "tags": [
+        "rafting",
+        "white-water",
+        "buller-river",
+        "grade-3-4",
+        "gorge"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4.5,
+      "short": "Raft grade 3-4 rapids through the remote Buller Gorge on the West Coast.",
+      "commentary": "White water rafting on the Buller River runs through the spectacular Buller Gorge, featuring grade 3-4 rapids in a remote and scenic section of the river. The Buller is one of New Zealand's most powerful rivers, draining the Nelson Lakes region. The gorge section combines adrenaline with wilderness scenery.",
+      "audio_story": "You have arrived at the put-in for the Buller River, one of the West Coast's mightiest waterways. The Buller drains all of Lake Rotoiti in the Nelson Lakes and charges through a spectacular gorge on its way to the Tasman Sea. Your raft will tackle grade 3 and 4 rapids with names that tell their own stories — your guides know every rock, every eddy, and every wave in this river. The gorge walls tower above you, draped in native bush so dense it looks like a green curtain. Between the rapids, you'll float through calm pools where the only sounds are birdsong and the distant rumble of the next set of white water ahead. The Buller Gorge is remote, powerful, and beautiful — this is West Coast rafting at its finest, far from the crowds and deep in the wilderness.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Buller Adventure Tours",
+        "DOC Buller"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Buller River White Water Rafting adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Raft grade 3-4 rapids through the remote Buller Gorge on the West Coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-paparoa-track-biking",
+      "name": "Paparoa Track Mountain Biking",
+      "region": "west-coast",
+      "lat": -42.1167,
+      "lng": 171.4167,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "tramping",
+        "paparoa",
+        "great-walk",
+        "multi-day"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 10,
+      "short": "Ride or walk New Zealand's newest Great Walk through the Paparoa Range.",
+      "commentary": "The Paparoa Track is New Zealand's newest Great Walk and the only one designed for both walking and mountain biking. The 55 km track crosses the Paparoa Range from Blackball to Punakaiki, passing through subalpine landscapes and lush bush. It was built as a memorial to the 29 miners lost in the 2010 Pike River disaster.",
+      "audio_story": "You have arrived at the start of the Paparoa Track, New Zealand's newest Great Walk and the only one designed for both trampers and mountain bikers. This 55-kilometre trail crosses the Paparoa Range through landscapes that shift from dense West Coast bush to open subalpine tops with views to the Tasman Sea and the Southern Alps. The track was built as a living memorial to the 29 men who lost their lives in the Pike River mine disaster of 2010, and there's a profound sense of purpose woven into every kilometre. Two new purpose-built huts provide comfortable overnight accommodation along the way. Whether you walk it in two to three days or ride it in one or two, the Paparoa Track offers a genuine wilderness experience through terrain that few people have ever seen up close. It's a fitting tribute to those who are remembered here.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Paparoa Track",
+        "Great Walks NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Paparoa Track Mountain Biking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride or walk New Zealand's newest Great Walk through the Paparoa Range. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-punakaiki-pancake-rocks",
+      "name": "Punakaiki Pancake Rocks & Blowholes",
+      "region": "west-coast",
+      "lat": -42.1133,
+      "lng": 171.3267,
+      "category": "adventure",
+      "tags": [
+        "walking",
+        "geology",
+        "coastal",
+        "free",
+        "blowholes"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Watch the sea explode through blowholes at the iconic Pancake Rocks.",
+      "commentary": "The Pancake Rocks at Punakaiki are layered limestone formations that resemble stacks of pancakes, formed 30 million years ago. At high tide, the sea surges through blowholes with dramatic force. The short loop track is wheelchair accessible and free to visit.",
+      "audio_story": "You have arrived at the Pancake Rocks, one of the West Coast's most iconic natural wonders. These extraordinary limestone formations were laid down on an ancient seabed 30 million years ago, and the alternating layers of hard and soft limestone have been eroded by wind and rain into shapes that look remarkably like stacks of giant pancakes. But the real show is the blowholes — at high tide, the Tasman Sea surges into caverns beneath the rocks and explodes upward through narrow openings with a thundering boom, sending spray metres into the air. If you've timed your visit with a high tide and a big swell, the display is genuinely spectacular. The short loop walk is easy and accessible, winding through coastal bush with nikau palms — the most southerly palm tree in the world. Free to visit, and no two visits are ever quite the same.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Punakaiki",
+        "Paparoa National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Punakaiki Pancake Rocks & Blowholes adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Watch the sea explode through blowholes at the iconic Pancake Rocks. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-okarito-kayak",
+      "name": "Okarito Lagoon Kayaking",
+      "region": "west-coast",
+      "lat": -43.2333,
+      "lng": 170.2333,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "lagoon",
+        "wildlife",
+        "white-heron",
+        "wetland"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Kayak New Zealand's largest unmodified wetland, home to the rare kotuku white heron.",
+      "commentary": "Okarito Lagoon is New Zealand's largest unmodified wetland and the sole breeding ground for the kotuku (white heron), one of New Zealand's rarest birds. Kayaking the lagoon offers intimate wildlife encounters in a pristine wetland backed by the Southern Alps. Guided and self-guided options available.",
+      "audio_story": "You have arrived at Okarito Lagoon, the largest unmodified wetland in New Zealand and one of its best-kept secrets. Your kayak will carry you silently across three thousand hectares of tidal lagoon, through channels lined with native bush and backed by the towering wall of the Southern Alps. This is the only breeding ground for the kotuku, the white heron — one of New Zealand's rarest and most sacred birds, with fewer than 200 remaining. Paddle quietly and you may see one standing motionless in the shallows, or watch a royal spoonbill sweep its beak through the water. The lagoon changes character with the tides, revealing mudflats teeming with wading birds at low water and becoming a glassy mirror at high tide. The tiny settlement of Okarito has just 30 permanent residents, and the sense of solitude here is profound.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Okarito Nature Tours",
+        "DOC Okarito"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Okarito Lagoon Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak New Zealand's largest unmodified wetland, home to the rare kotuku white heron. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-west-coast-treetop-walkway",
+      "name": "West Coast Treetop Walkway",
+      "region": "west-coast",
+      "lat": -42.4519,
+      "lng": 171.2103,
+      "category": "adventure",
+      "tags": [
+        "walkway",
+        "treetop",
+        "rainforest",
+        "family-friendly",
+        "scenic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Walk among the canopy of ancient rainforest on a steel treetop platform.",
+      "commentary": "The West Coast Treetop Walkway near Hokitika rises 20 metres into the canopy of a lowland podocarp rainforest on a steel and timber platform. The walkway spans 450 metres with a 47-metre-high tower offering panoramic views of the forest, Lake Mahinapua, and the Southern Alps.",
+      "audio_story": "You have arrived at the West Coast Treetop Walkway, where a network of steel platforms and walkways lifts you 20 metres into the canopy of one of New Zealand's finest lowland rainforests. The 450-metre walkway threads through rimu, kahikatea, and kamahi trees that are hundreds of years old, and at canopy level you'll see an entirely different world from the forest floor — epiphytes clinging to branches, birds flitting through the leaves, and shafts of light filtering through the green. The highlight is the Hokitika Tower, rising 47 metres above the forest floor to give you panoramic views across Lake Mahinapua to the snow-capped Southern Alps. Standing at the top with the forest stretching out in every direction below you, you really grasp the vastness of the West Coast bush. It's peaceful, beautiful, and gently exhilarating all at once.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "West Coast Treetop Walkway"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The West Coast Treetop Walkway adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Walk among the canopy of ancient rainforest on a steel treetop platform. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-underground-adventures-charleston",
+      "name": "Underworld Adventures Charleston",
+      "region": "west-coast",
+      "lat": -41.9,
+      "lng": 171.4333,
+      "category": "adventure",
+      "tags": [
+        "caving",
+        "glow-worms",
+        "underground",
+        "rafting",
+        "adventure"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Float through glow-worm-lit caves on an underground river adventure.",
+      "commentary": "Underworld Adventures at Charleston offers guided cave experiences including the Rainforest to Underworld tour, where you travel through rainforest to reach an underground river and float through caves illuminated by thousands of glow-worms. The cave system includes ancient fossils and dramatic limestone formations.",
+      "audio_story": "You have arrived at Charleston, gateway to an extraordinary underground world. Your adventure begins with a journey through dense West Coast rainforest before you descend into a cave system that has been sculpted by water over millions of years. The highlight is floating down an underground river on a tube, drifting through darkness as thousands of glow-worms light up the cave ceiling above you like a living galaxy. These tiny creatures — actually the larvae of a native fungus gnat — produce a bioluminescent glow to attract prey, and in the darkness of the cave, the effect is truly magical. The cave system also contains ancient marine fossils embedded in the limestone walls, evidence that this land was once beneath the sea. It's an adventure that combines wonder, geology, and a healthy dose of getting wet in the dark.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Underworld Adventures",
+        "DOC Charleston"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Underworld Adventures Charleston adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Float through glow-worm-lit caves on an underground river adventure. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-skydive-franz-josef",
+      "name": "Skydive Franz Josef & Fox Glacier",
+      "region": "west-coast",
+      "lat": -43.3636,
+      "lng": 170.1344,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "extreme",
+        "glacier",
+        "aerial"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "Skydive over glaciers, rainforest, and the Tasman Sea all in one jump.",
+      "commentary": "Skydive Franz Josef offers tandem jumps from up to 20,000 feet — the highest commercial skydive in New Zealand. Views span glaciers, the Southern Alps, ancient rainforest, and the Tasman Sea coastline. The unique geography means you can see mountains, forest, and ocean simultaneously during freefall.",
+      "audio_story": "You have arrived at what might be the most scenic skydiving drop zone in the world. Skydive Franz Josef takes you up to 20,000 feet — higher than any other commercial skydive in New Zealand — and the views from up there are beyond belief. You'll see both the east and west coasts of the South Island, the white rivers of Franz Josef and Fox Glaciers flowing through emerald rainforest, and the infinite blue of the Tasman Sea. When you jump, you freefall for up to 75 seconds, hurtling toward a landscape that combines every type of New Zealand scenery in a single panorama — snow, ice, mountains, rainforest, rivers, and ocean. It's the combination of altitude, scenery, and sheer diversity of landscape that makes this jump truly unique. If you're going to skydive once in your life, this is a very strong contender.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Skydive Franz Josef"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Skydive Franz Josef & Fox Glacier adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Skydive over glaciers, rainforest, and the Tasman Sea all in one jump. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-sand-dune-tours",
+      "name": "West Coast Sand Dune Adventures",
+      "region": "west-coast",
+      "lat": -42.45,
+      "lng": 171.2,
+      "category": "adventure",
+      "tags": [
+        "sand-dunes",
+        "quad-biking",
+        "sandboarding",
+        "coastal",
+        "adventure"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "Ride ATVs and sandboard down massive coastal dunes on the West Coast.",
+      "commentary": "The West Coast's coastal sand dunes near Hokitika offer quad biking and sandboarding experiences. The dunes rise up to 30 metres above the beach with views of the Tasman Sea. The remote, wild setting on the West Coast adds to the adventure atmosphere.",
+      "audio_story": "You have arrived at the West Coast's coastal sand dunes, where mountains of golden sand meet the wild Tasman Sea. These aren't gentle ripples — some of these dunes rise over 30 metres above the beach, and you're about to conquer them. Climb aboard an ATV and carve your way across the dune field, or grab a sandboard and slide down the steep faces at surprising speed. The West Coast setting is dramatic — to one side, the dunes and the crashing surf; to the other, dense native bush backed by the distant Southern Alps. The sand is firm enough for serious speed but soft enough for safe landings when sandboarding. This is a raw, unpolished adventure that captures the wild spirit of the West Coast — no fancy infrastructure, just sand, sea, and adrenaline. Bring sunscreen and a sense of adventure.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "West Coast Sand Dunes",
+        "Hokitika Adventures"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The West Coast Sand Dune Adventures adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride ATVs and sandboard down massive coastal dunes on the West Coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "west-coast-lake-brunner-fishing",
+      "name": "Lake Brunner Trout Fishing",
+      "region": "west-coast",
+      "lat": -42.6167,
+      "lng": 171.45,
+      "category": "adventure",
+      "tags": [
+        "fishing",
+        "trout",
+        "lake",
+        "west-coast",
+        "relaxation"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 5,
+      "short": "Fish for trophy trout in the untouched waters of Lake Brunner.",
+      "commentary": "Lake Brunner (Moana Kotuku) is the West Coast's largest lake and one of New Zealand's top trout fisheries. The lake and its tributaries hold large brown and rainbow trout in pristine bush-fringed waters. Guided trips use fly fishing and trolling methods. The Arnold River outlet is particularly renowned.",
+      "audio_story": "You have arrived at Lake Brunner, known in Maori as Moana Kotuku — the Sea of the White Heron. This is the largest lake on the West Coast and one of New Zealand's most beautiful and productive trout fisheries. The lake is fringed by dense native bush, backed by the Paparoa Range, and home to brown and rainbow trout that grow large on the rich food supply. The Arnold River, which flows from the lake, is particularly renowned among fly fishers for its trophy-sized brown trout — fish over five pounds are not uncommon, and the sight of a large trout rising to a dry fly in the Arnold's clear water is enough to make any angler's heart race. Guided trips will put you on the fish, whether you prefer trolling the lake's deep waters or casting a fly in the river shallows. The West Coast bush and mountain scenery surrounding the lake is world-class, and on a calm morning, the reflections on the water are perfect.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Fish & Game West Coast",
+        "Lake Brunner Country"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Lake Brunner Trout Fishing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Fish for trophy trout in the untouched waters of Lake Brunner. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

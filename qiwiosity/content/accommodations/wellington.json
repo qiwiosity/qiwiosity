@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "wellington",
+    "name": "Wellington / Te Whanganui-a-Tara",
+    "island": "North",
+    "centre": {
+      "lat": -41.2866,
+      "lng": 174.7756
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "wellington-intercontinental-wellington",
+      "name": "InterContinental Wellington",
+      "region": "wellington",
+      "lat": -41.286,
+      "lng": 174.7785,
+      "type": "hotel",
+      "price_nzd_per_night": 410,
+      "rating": 4.6,
+      "short": "Five-star InterContinental on Grey Street by the waterfront."
+    },
+    {
+      "id": "wellington-sofitel-wellington",
+      "name": "Sofitel Wellington",
+      "region": "wellington",
+      "lat": -41.278,
+      "lng": 174.777,
+      "type": "hotel",
+      "price_nzd_per_night": 450,
+      "rating": 4.7,
+      "short": "Five-star Sofitel in restored Bolton Hotel on Bolton Street."
+    },
+    {
+      "id": "wellington-novotel-wellington",
+      "name": "Novotel Wellington",
+      "region": "wellington",
+      "lat": -41.2888,
+      "lng": 174.776,
+      "type": "hotel",
+      "price_nzd_per_night": 320,
+      "rating": 4.5,
+      "short": "Taranaki Street hotel close to Te Papa museum."
+    },
+    {
+      "id": "wellington-qt-wellington",
+      "name": "QT Wellington",
+      "region": "wellington",
+      "lat": -41.288,
+      "lng": 174.781,
+      "type": "hotel",
+      "price_nzd_per_night": 380,
+      "rating": 4.6,
+      "short": "Arty Cable Street hotel with Hippopotamus French restaurant."
+    },
+    {
+      "id": "wellington-west-plaza-hotel",
+      "name": "West Plaza Hotel Wellington",
+      "region": "wellington",
+      "lat": -41.2825,
+      "lng": 174.778,
+      "type": "hotel",
+      "price_nzd_per_night": 265,
+      "rating": 4.3,
+      "short": "Central Wakefield Street hotel close to Queens Wharf."
+    },
+    {
+      "id": "wellington-rydges-wellington",
+      "name": "Rydges Wellington Airport",
+      "region": "wellington",
+      "lat": -41.329,
+      "lng": 174.808,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.4,
+      "short": "Connected-to-terminal airport hotel in Rongotai."
+    },
+    {
+      "id": "wellington-bella-vista-motel-welly",
+      "name": "Bella Vista Motel Wellington",
+      "region": "wellington",
+      "lat": -41.317,
+      "lng": 174.762,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.2,
+      "short": "Mt Victoria motel a short walk from Oriental Parade."
+    },
+    {
+      "id": "wellington-apollo-lodge",
+      "name": "Apollo Lodge Motel Wellington",
+      "region": "wellington",
+      "lat": -41.288,
+      "lng": 174.788,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.2,
+      "short": "Mt Victoria motel steps from the Embassy Theatre."
+    },
+    {
+      "id": "wellington-cable-court-motel",
+      "name": "Cable Court Motel Wellington",
+      "region": "wellington",
+      "lat": -41.2855,
+      "lng": 174.7818,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Courtenay Place motel in the heart of Wellington's theatre district."
+    },
+    {
+      "id": "wellington-capital-gateway-motel",
+      "name": "Capital Gateway Motor Inn",
+      "region": "wellington",
+      "lat": -41.27,
+      "lng": 174.778,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.1,
+      "short": "Thorndon motel between the railway station and Bolton Street cemetery."
+    },
+    {
+      "id": "wellington-harbour-city-motor-inn",
+      "name": "Harbour City Motor Inn",
+      "region": "wellington",
+      "lat": -41.2918,
+      "lng": 174.777,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Central Wellington motel near Cuba Street and Te Papa."
+    },
+    {
+      "id": "wellington-chevron-motel-newtown",
+      "name": "Chevron Motor Inn Upper Hutt",
+      "region": "wellington",
+      "lat": -41.1256,
+      "lng": 175.071,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4,
+      "short": "Upper Hutt motel close to train station and Expressions Whirinaki."
+    },
+    {
+      "id": "wellington-kapiti-gateway-motel",
+      "name": "Kapiti Gateway Motel Paraparaumu",
+      "region": "wellington",
+      "lat": -40.902,
+      "lng": 174.99,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Paraparaumu motel minutes from the Kapiti ferry terminal."
+    },
+    {
+      "id": "wellington-wellington-top10",
+      "name": "Wellington Top 10 Holiday Park Lower Hutt",
+      "region": "wellington",
+      "lat": -41.226,
+      "lng": 174.918,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "Hutt Valley park 20 minutes from central Wellington."
+    },
+    {
+      "id": "wellington-capital-gateway-holiday-park",
+      "name": "Capital Gateway Kiwi Holiday Park",
+      "region": "wellington",
+      "lat": -41.266,
+      "lng": 174.778,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.1,
+      "short": "Thorndon holiday park 10 minutes from Wellington CBD."
+    },
+    {
+      "id": "wellington-kapiti-holiday-resort",
+      "name": "Kapiti Coast Holiday Park Raumati",
+      "region": "wellington",
+      "lat": -40.926,
+      "lng": 174.977,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.3,
+      "short": "Seaside Raumati park with views across to Kapiti Island."
+    },
+    {
+      "id": "wellington-martinborough-experience-park",
+      "name": "Martinborough Village Camping",
+      "region": "wellington",
+      "lat": -41.22,
+      "lng": 175.458,
+      "type": "holiday-park",
+      "price_nzd_per_night": 80,
+      "rating": 4,
+      "short": "Wine-village park a short stroll from Martinborough Square."
+    },
+    {
+      "id": "wellington-wharekauhau-country-estate",
+      "name": "Wharekauhau Country Estate",
+      "region": "wellington",
+      "lat": -41.449,
+      "lng": 175.138,
+      "type": "lodge",
+      "price_nzd_per_night": 2300,
+      "rating": 4.9,
+      "short": "Relais & Chateaux sheep-station lodge on Palliser Bay."
+    },
+    {
+      "id": "wellington-wellington-bolton-lodge",
+      "name": "Bolton Boutique Hotel (lodge suites)",
+      "region": "wellington",
+      "lat": -41.278,
+      "lng": 174.776,
+      "type": "lodge",
+      "price_nzd_per_night": 650,
+      "rating": 4.7,
+      "short": "Heritage Bolton Street boutique stay with luxury penthouse suites."
+    },
+    {
+      "id": "wellington-orua-lodge-martinborough",
+      "name": "Orua Lodge Wairarapa",
+      "region": "wellington",
+      "lat": -41.215,
+      "lng": 175.454,
+      "type": "lodge",
+      "price_nzd_per_night": 720,
+      "rating": 4.7,
+      "short": "Martinborough vineyard lodge with private plunge pools."
+    }
+  ]
+}

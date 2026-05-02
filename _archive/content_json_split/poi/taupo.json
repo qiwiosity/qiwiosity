@@ -1,0 +1,1319 @@
+{
+  "region": {
+    "id": "taupo",
+    "name": "Taupō / Taupō-nui-a-Tia",
+    "island": "North",
+    "centre": {
+      "lat": -38.6857,
+      "lng": 176.0702
+    },
+    "bounds": {
+      "north": -38.3,
+      "south": -39.2,
+      "east": 176.8,
+      "west": 175.5
+    },
+    "description": "The great inland lake and its ring of volcanic country — rohe of Ngāti Tūwharetoa, site of the largest eruption on Earth in the last 5,000 years, and the journey's-end of the Napier–Taupō Road."
+  },
+  "pois": [
+    {
+      "id": "waipunga-falls",
+      "name": "Waipunga Falls",
+      "region": "taupo",
+      "lat": -38.9631,
+      "lng": 176.6183,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "roadside",
+        "sh5",
+        "kaimanawa",
+        "three-tiered"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 0.3,
+      "short": "A 40-metre, three-tiered waterfall straight off the side of SH5 — one of the few NZ waterfalls visible from the car.",
+      "commentary": "Waipunga Falls drops about 40 metres in three tiers into a narrow pumice gorge. The Waipunga River rises in the Kaimanawa Range to the west and drains east into the Mohaka. There's a purpose-built roadside lookout on SH5 between Te Pōhue and Taupō. In winter after heavy rain the falls thunder; in summer they narrow to a clean white ribbon. Bush toilets, no charge.",
+      "scripts": {
+        "headline": "scripts/waipunga-falls.headline.md",
+        "standard": "scripts/waipunga-falls.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Waipunga Falls",
+        "LINZ topographic",
+        "HB Knowledge Bank — SH5"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Waipunga Falls draws visitors back time and again for its natural beauty and peaceful atmosphere. A 40-metre, three-tiered waterfall straight off the side of SH5 — one of the few NZ waterfalls visible from the car. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "opepe",
+      "name": "Opepe Historic Reserve",
+      "region": "taupo",
+      "lat": -38.7211,
+      "lng": 176.2189,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "te-kooti",
+        "1869",
+        "graves",
+        "historic-reserve",
+        "bush-walk"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "Site of the 7 June 1869 ambush in which Te Kooti's forces killed nine Bay of Plenty Volunteer Cavalry troopers — graves preserved in a quiet bush clearing.",
+      "commentary": "Opepe was an old forest clearing used by travellers on the inland route from Napier to Taupō. On 6 June 1869 a detachment of 14 Bay of Plenty Volunteer Cavalry camped here. They took off their boots and tunics and set no proper watch. At dawn on 7 June, Te Kooti Arikirangi's forces attacked. Nine troopers were killed; a few escaped into the bush (trooper George Crosswell is said to have run for kilometres nearly naked and without boots to raise the alarm). The nine graves are preserved in a small clearing, enclosed by a low white fence, inside a DOC historic reserve. A 20-minute loop walks through native bush.",
+      "scripts": {
+        "headline": "scripts/opepe.headline.md",
+        "standard": "scripts/opepe.standard.md"
+      },
+      "sources_to_check": [
+        "NZHistory.govt.nz — Opepe ambush",
+        "Te Ara — Te Kooti Arikirangi Te Tūruki",
+        "DOC — Opepe Historic Reserve",
+        "Tūwharetoa Māori Trust Board"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Opepe Historic Reserve — the site rewards those who take time to read the signage and absorb the context. Site of the 7 June 1869 ambush in which Te Kooti's forces killed nine Bay of Plenty Volunteer Cavalry troopers — graves preserved in a quiet bush clearing. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "lake-taupo",
+      "name": "Lake Taupō / Taupō-nui-a-Tia",
+      "region": "taupo",
+      "lat": -38.785,
+      "lng": 175.955,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "supervolcano",
+        "caldera",
+        "tuwharetoa",
+        "oruanui",
+        "hatepe"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "A 616 km² caldera lake — fills the hole left by one of the largest volcanic eruptions on Earth in the last 100,000 years.",
+      "commentary": "Lake Taupō is the caldera of a supervolcano. The basin has been forming for ~300,000 years, but the shape visible today was carved by the Oruanui eruption ~25,500 years ago — ~1,200 km³ of ejecta, one of the largest eruptions globally in the last 100,000 years. The volcano has erupted 28 times since; the most recent major eruption, Hatepe, occurred c. 232 CE (a VEI 7 event, among the most violent eruptions of the last 5,000 years — Roman and Chinese records noted unusually red skies). The lake is the rohe of Ngāti Tūwharetoa; in tradition the ancestor Ngātoro-i-rangi stood on Mount Tauhara and threw a tōtara tree to create the lake's passage. The full name Taupō-nui-a-Tia means 'the great cloak of Tia.' The lake drains north via the Waikato, New Zealand's longest river.",
+      "scripts": {
+        "headline": "scripts/lake-taupo.headline.md",
+        "standard": "scripts/lake-taupo.standard.md"
+      },
+      "sources_to_check": [
+        "GNS Science — Taupō Volcano",
+        "Te Ara — Ngāti Tūwharetoa",
+        "Ngāti Tūwharetoa Māori Trust Board",
+        "LINZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Lake Taupō / Taupō-nui-a-Tia draws visitors back time and again for its natural beauty and peaceful atmosphere. A 616 km² caldera lake — fills the hole left by one of the largest volcanic eruptions on Earth in the last 100,000 years. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "huka-falls",
+      "name": "Huka Falls",
+      "region": "taupo",
+      "lat": -38.6489,
+      "lng": 176.0889,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "waikato-river",
+        "viewpoint",
+        "geology",
+        "ignimbrite"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "The Waikato narrows from 100 m to 15 m and fires 220 cumecs through a rock canyon — NZ's highest-volume waterfall.",
+      "commentary": "At Huka Falls the Waikato River is forced from a ~100 m wide, 4 m deep channel through a 15-m-wide ignimbrite canyon, 130 m long, dropping 11 m at the lip. Average flow ~220 cubic metres per second — an Olympic swimming pool every 11 seconds. The rock is ignimbrite from the Oruanui eruption 25,000 years ago. The water glows pale turquoise. 'Huka' means foam. The viewing footbridge sits directly above the final drop; a 5-minute walk leads down to the base from the lower carpark. The Huka Falls Walkway continues upstream to Aratiatia Dam (~8 km, 2.5–3 h one way).",
+      "scripts": {
+        "headline": "scripts/huka-falls.headline.md",
+        "standard": "scripts/huka-falls.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Huka Falls Walkway",
+        "GNS Science — Taupō Volcanic Zone geology",
+        "NIWA — Waikato flow data"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Huka Falls draws visitors back time and again for its natural beauty and peaceful atmosphere. The Waikato narrows from 100 m to 15 m and fires 220 cumecs through a rock canyon — NZ's highest-volume waterfall. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "craters-of-the-moon",
+      "name": "Craters of the Moon / Karapiti",
+      "region": "taupo",
+      "lat": -38.6483,
+      "lng": 176.0642,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "wairakei",
+        "karapiti",
+        "recent-formation",
+        "boardwalk"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A geothermal field that mostly didn't exist a century ago — the 1958 Wairakei Power Station drawdown made it blow open.",
+      "commentary": "Known in Māori as Karapiti. Before 1950 the area was a mildly steaming hillside with small vents. In 1958 the Wairakei Geothermal Power Station came online (the world's second such plant, and at the time the largest) and began drawing enormous volumes of hot water and steam from the underground system a few kilometres north. The resulting pressure drop allowed remaining groundwater at Karapiti to flash to steam; new craters opened, new vents appeared, and the hissing, bubbling landscape you see today largely post-dates that industrial intervention. A ~2 km boardwalk loop is maintained by a private trust (small fee). Ground temperatures reach boiling. Wear shoes, stick to the boardwalk, come on a cool overcast day for the best steam.",
+      "scripts": {
+        "headline": "scripts/craters-of-the-moon.headline.md",
+        "standard": "scripts/craters-of-the-moon.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Craters of the Moon",
+        "GNS Science — Taupō Volcanic Zone",
+        "Contact Energy — Wairakei Geothermal history"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Craters of the Moon / Karapiti draws visitors back time and again for its natural beauty and peaceful atmosphere. A geothermal field that mostly didn't exist a century ago — the 1958 Wairakei Power Station drawdown made it blow open. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tongariro-alpine-crossing",
+      "name": "Tongariro Alpine Crossing",
+      "region": "taupo",
+      "lat": -39.1333,
+      "lng": 175.65,
+      "category": "nature",
+      "tags": [
+        "great-day-walk",
+        "volcanoes",
+        "emerald-lakes",
+        "ngati-tuwharetoa",
+        "dual-world-heritage",
+        "mount-doom"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 8,
+      "short": "19.4 km across an active volcanic landscape — 'the best one-day walk in the world' — climbing between Tongariro and Ngāuruhoe.",
+      "commentary": "The Tongariro Alpine Crossing is a 19.4 km point-to-point walk from Mangatepōpō to Ketetahi, climbing over the saddle between two active volcanoes — Tongariro (1,978 m) and Ngāuruhoe (2,291 m, the 'Mount Doom' of Peter Jackson's films). It crosses a moonscape of red scoria, fresh lava flows from the 1954 Ngāuruhoe eruptions, and the electric blue-green Emerald Lakes — pools coloured by dissolved minerals from geothermal springs. The surrounding Tongariro National Park was given to the Crown by Te Heuheu Tukino IV of Ngāti Tūwharetoa in 1887 on condition it be protected — the world's fourth national park, and a dual natural/cultural World Heritage Site. Treat the whole area, and especially the summits, as sacred. Book the shuttle, dress for four seasons.",
+      "scripts": {
+        "headline": "scripts/tongariro-alpine-crossing.headline.md",
+        "standard": "scripts/tongariro-alpine-crossing.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Tongariro Alpine Crossing",
+        "Ngāti Tūwharetoa Māori Trust Board",
+        "GNS Science"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Tongariro Alpine Crossing draws visitors back time and again for its natural beauty and peaceful atmosphere. 19. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tokaanu-thermal",
+      "name": "Tokaanu Thermal Park & Hot Pools",
+      "region": "taupo",
+      "lat": -38.9758,
+      "lng": 175.7706,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "hot-pools",
+        "ngati-tuwharetoa",
+        "south-taupo",
+        "boardwalk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "A small geothermal park, boardwalk, and public hot pools on the southern shore of Lake Taupō — the authentic, unfussy version.",
+      "commentary": "Tokaanu sits on the south-west corner of Lake Taupō, at the mouth of the Tokaanu River. The Tokaanu Thermal Park is a free 20-minute boardwalk loop through bubbling mud pools, hot springs, and silica terraces — much smaller than Rotorua's commercial parks, but authentic and within the rohe of Ngāti Tūwharetoa. Next to the park is the Tokaanu Thermal Pools complex (Taupō District Council) — a public swimming pool, private hot tubs, picnic lawn. No frills, low entry fee, heated by the same system. A good overnight if you're heading south from Taupō to the Desert Road, or pausing before the Tongariro Crossing. Respect the tapu places — signposted, do not enter.",
+      "scripts": {
+        "headline": "scripts/tokaanu-thermal.headline.md",
+        "standard": "scripts/tokaanu-thermal.standard.md"
+      },
+      "sources_to_check": [
+        "Taupō District Council",
+        "Ngāti Tūwharetoa Māori Trust Board",
+        "DOC"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Tokaanu Thermal Park & Hot Pools draws visitors back time and again for its natural beauty and peaceful atmosphere. A small geothermal park, boardwalk, and public hot pools on the southern shore of Lake Taupō — the authentic, unfussy version. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "aratiatia-rapids",
+      "name": "Aratiatia Rapids",
+      "region": "taupo",
+      "lat": -38.6164,
+      "lng": 176.1431,
+      "category": "nature",
+      "tags": [
+        "rapids",
+        "hydro-controlled",
+        "dam-release",
+        "waikato",
+        "four-times-daily"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A hydro dam that opens its gates four times a day — releasing a white-water torrent through a rock gorge while you watch.",
+      "commentary": "Aratiatia was a natural 800 m rock gorge on the Waikato River, with the most dramatic rapids in the country — until 1964, when the Aratiatia Dam was built 500 m upstream and diverted almost all the river through a power-station tunnel. The gorge stayed dry. Public outcry pushed the operator to release the river down the old gorge at scheduled times — now 10am, noon, 2pm and 4pm in summer (10/noon/2pm in winter). Arrive 20 minutes early, stand on one of three viewing platforms, and watch the bed fill from trickle to torrent over about 10 minutes, hold for 30 minutes, then drain. 10 minutes from Taupō, free. Also a jet-boat run from the Huka Falls jetties.",
+      "scripts": {
+        "headline": "scripts/aratiatia-rapids.headline.md",
+        "standard": "scripts/aratiatia-rapids.standard.md"
+      },
+      "sources_to_check": [
+        "Mercury Energy — Aratiatia dam release times",
+        "DOC",
+        "Taupō District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Aratiatia Rapids draws visitors back time and again for its natural beauty and peaceful atmosphere. A hydro dam that opens its gates four times a day — releasing a white-water torrent through a rock gorge while you watch. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-tongariro-summit",
+      "name": "Mt Ngāuruhoe (Mt Doom)",
+      "region": "taupo",
+      "lat": -39.1564,
+      "lng": 175.6322,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "tongariro",
+        "mt-doom",
+        "active"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 5,
+      "short": "The perfect young cone of Ngāuruhoe — Tolkien's Mount Doom — an active volcano you must respectfully not climb.",
+      "commentary": "Ngāuruhoe is a 2,291m active stratovolcano on the Tongariro massif, sacred to Ngāti Hikairo ki Tongariro. Filming location for Mt Doom in The Lord of the Rings.",
+      "audio_story": "You are looking at Ngāuruhoe, a perfect dark cone of an active volcano rising above the Central Plateau. To Ngāti Tūwharetoa and Ngāti Hikairo ki Tongariro, this maunga is a tūpuna, an ancestor. To readers of The Lord of the Rings, the same shape will be unmistakable. Ngāuruhoe was the body double for Mount Doom in Peter Jackson's films, and although the close-up shots of lava were created on a model, the wide silhouette is exactly the one Tolkien's readers have imagined for seventy years. Ngāuruhoe is young, only around two and a half thousand years old, and it is still active. Its last significant eruptions were in nineteen seventy four and seventy five. For decades trampers on the Tongariro Alpine Crossing climbed the side of the cone as a side trip. Today the local iwi ask, and the Department of Conservation strongly supports, that no one climb Ngāuruhoe. The mountain is sacred, and the loose volcanic scree is also dangerous. Walk the wider Crossing instead, take the long photograph from the saddle below the South Crater, and let the cone do its work in the distance. Some places are most respected by being looked at, not climbed.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Tongariro National Park",
+        "Ngāti Tūwharetoa",
+        "Ngāti Hikairo ki Tongariro"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Mt Ngāuruhoe (Mt Doom) draws visitors back time and again for its natural beauty and peaceful atmosphere. The perfect young cone of Ngāuruhoe — Tolkien's Mount Doom — an active volcano you must respectfully not climb. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-mt-ruapehu-whakapapa",
+      "name": "Whakapapa & Mt Ruapehu",
+      "region": "taupo",
+      "lat": -39.2378,
+      "lng": 175.5417,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "ski-field",
+        "national-park",
+        "crater-lake"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 6,
+      "short": "The North Island's highest mountain — an active 2,797m volcano with two commercial ski fields and a hot crater lake.",
+      "commentary": "Mt Ruapehu, NZ's largest active volcano, sits at the southern end of Tongariro National Park. Has erupted multiple times in living memory (1995, 1996, 2007).",
+      "audio_story": "You have arrived at Whakapapa Village, on the northern flank of Mount Ruapehu, the largest and most active volcano in the North Island. Ruapehu rises to two thousand seven hundred and ninety seven metres, and it is the highest mountain on the North Island. Its summit holds a hot crater lake that, every few decades, releases a violent eruption of water, ash and rock. The most recent significant eruption was in two thousand and seven. In summer, Whakapapa is the starting point for the alpine summer track to the upper mountain, where on a clear day you can ride a chairlift to over two thousand metres and walk to the edge of the volcanic plateau. In winter the same chairlifts open as the Whakapapa ski field, the larger of the mountain's two commercial fields, with the smaller Tūroa field on the south side near Ohakune. Ruapehu is sacred to Ngāti Tūwharetoa. In eighteen eighty seven their paramount chief Te Heuheu Tukino IV gifted the heart of the three central volcanoes to the Crown in trust for all New Zealanders, and Tongariro became the country's first national park, and the fourth in the world. Walk respectfully. Do not stand in the crater. Read the volcanic alert level before you go.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Tongariro National Park",
+        "GNS Science volcano monitoring"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Whakapapa & Mt Ruapehu draws visitors back time and again for its natural beauty and peaceful atmosphere. The North Island's highest mountain — an active 2,797m volcano with two commercial ski fields and a hot crater lake. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-orakei-korako",
+      "name": "Orakei Korako Geothermal Park",
+      "region": "taupo",
+      "lat": -38.4708,
+      "lng": 176.1414,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "silica-terraces",
+        "hidden-valley",
+        "boat"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "The hidden valley between Taupo and Rotorua — silica terraces, geysers, and access only by boat across Lake Ohakuri.",
+      "commentary": "Orakei Korako (the Hidden Valley) is one of NZ's premier geothermal sites, accessed by short boat ride across the lake. Approximately 25% of NZ's surviving silica terraces are here.",
+      "audio_story": "You have arrived at Orakei Korako, halfway between Taupo and Rotorua, and you are about to visit a geothermal valley that almost no tourists have heard of. The site sits across the Waikato River from the carpark, and to reach it you board a small jet boat that ferries visitors continuously across the inlet. As you step off the boat you climb directly onto the broad pale silica terraces of Emerald Terrace, which spread up the hillside in delicate layered shelves built drop by drop from boiling silica-laden water. Around twenty five percent of the silica terraces remaining in New Zealand after the destruction of the Pink and White Terraces by the eighteen eighty six Tarawera eruption are at this site. The walking loop takes you past dozens of bubbling pools, several geysers that erupt unpredictably, the stunning Artists Palette with its splashes of mineral colour, and finally to Ruatapu Cave, a deep cave with a perfectly turquoise pool of warm water at its bottom. Allow at least an hour and a half for the loop. The site is family run, less crowded than its better known neighbours at Wai-O-Tapu and Te Puia, and the experience is the better for it.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Orakei Korako Geothermal Park",
+        "GNS Science geothermal mapping"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Orakei Korako Geothermal Park draws visitors back time and again for its natural beauty and peaceful atmosphere. The hidden valley between Taupo and Rotorua — silica terraces, geysers, and access only by boat across Lake Ohakuri. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-tongariro-river-trail",
+      "name": "Tongariro River Trail",
+      "region": "taupo",
+      "lat": -38.9833,
+      "lng": 175.8,
+      "category": "nature",
+      "tags": [
+        "cycle",
+        "easy",
+        "trout-fishing",
+        "tongariro"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "An easy 15km cycle and walking loop along the Tongariro River — the most famous trout fishing river in the world.",
+      "commentary": "The Tongariro River Trail is a 15km loop near Tūrangi. World-renowned for fly fishing for rainbow and brown trout, especially in the spring spawning run.",
+      "audio_story": "You have arrived in Tūrangi, at the southern end of Lake Taupō, and you are at the gateway to one of the most famous trout fishing rivers in the world. The Tongariro River runs cold and clear out of the central mountains, flows north through Tūrangi, and empties into Lake Taupō. Every winter and spring, large rainbow and brown trout move up out of the lake to spawn in the river, and serious fly fishers travel from Europe, North America, and Japan to stand thigh deep in its braided pools. You do not have to fish to enjoy the river. The Tongariro River Trail is a beautifully maintained fifteen kilometre loop on both banks, suitable for walking or for an easy half-day cycle. The track passes the famous Major Jones Pool, the Hydro Pool, the Red Hut Bridge, and the Reed Pool, all named in the angling history of the river. There are interpretation panels explaining the geology, ecology and fishing tradition of the area. The Tongariro National Trout Centre, run by Department of Conservation just south of town, is a small free museum where you can also feed trout in a viewing pond. Combine the two for an easy and unexpectedly engaging afternoon.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Tongariro National Trout Centre",
+        "Tūrangi tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Tongariro River Trail draws visitors back time and again for its natural beauty and peaceful atmosphere. An easy 15km cycle and walking loop along the Tongariro River — the most famous trout fishing river in the world. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tau_hist_te_heuheu_gift",
+      "name": "Te Heuheu Tūkino IV and the Gift of Tongariro",
+      "region": "taupo",
+      "lat": -39.0297,
+      "lng": 175.6453,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "tongariro",
+        "te-heuheu",
+        "tuwharetoa",
+        "gift"
+      ],
+      "trigger_radius_m": 500,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are looking towards the sacred peaks of Tongariro, Ngāuruhoe, and Ruapehu, the ancestral mountains of Ngāti Tūwharetoa. In eighteen eighty seven the paramount chief Horonuku Te Heuheu Tūkino the Fourth made an extraordinary gesture. To prevent the summits being broken up and sold off in pieces to settlers, he gifted the three peaks to the Crown to be held in trust as a national park for all people of New Zealand. The gift was the founding act of Tongariro National Park, which became the world's fourth national park and the first ever offered by an indigenous people. Te Heuheu's vision protected the maunga as one whole, sacred and inviolate. Today the park is also a UNESCO World Heritage site recognised for both its natural and cultural values, one of only a handful of dual-listed sites globally. As you stand here, in sight of the snow on Ruapehu or the perfect cone of Ngāuruhoe, remember that this view exists as it does because of one chief's foresight in protecting his ancestors from the auctioneer's hammer.",
+      "sources_to_check": [
+        "Ngāti Tūwharetoa",
+        "DOC Tongariro",
+        "NZHistory national parks"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Te Heuheu Tūkino IV and the Gift of Tongariro as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tau_hist_opepe_ambush",
+      "name": "Ōpepe Reserve and the Ambush of 1869",
+      "region": "taupo",
+      "lat": -38.7197,
+      "lng": 176.2153,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "te-kooti",
+        "opepe",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Ōpepe, today a quiet pocket of beech forest with a small graveyard, but in eighteen sixty nine this was the scene of a sharp tragedy of the New Zealand Wars. A detachment of Bay of Plenty Cavalry Volunteers, around fourteen men, had paused here on patrol against Te Kooti and his followers. Their officers had ridden ahead, the men were unarmed and resting, when a war party of Te Kooti's loyalists approached, masquerading as friendly Māori. They drew close, then opened fire. Nine of the soldiers were killed, the survivors fled into the bush. Te Kooti himself led the action, part of his long campaign across the central North Island after his escape from Chatham Island imprisonment. The reserve preserves the small cemetery where the soldiers were buried and a track through the totara and beech that still feels remote. Walk slowly, read the names on the headstones, and consider how easily a quiet roadside camp became a battlefield. Ōpepe is a memorial both to colonial soldiers and to the broader violence of land confiscation that drove Te Kooti's resistance.",
+      "sources_to_check": [
+        "NZHistory Ōpepe",
+        "Te Kooti biography",
+        "DOC Ōpepe Reserve"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ōpepe Reserve and the Ambush of 1869 — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tau_hist_orakeikorako",
+      "name": "Orakei Korako Hidden Valley",
+      "region": "taupo",
+      "lat": -38.4767,
+      "lng": 176.1431,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "geothermal",
+        "orakei-korako",
+        "tuwharetoa"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You have arrived at Orakei Korako, a hidden geothermal valley reached by ferry across Lake Ohakuri. The name means the place of adorning, recalling how rangatira used the warm pools and natural mirrors here to dress their hair and apply tattoo before important meetings. The site has the most concentrated set of geyser features still active in New Zealand after the loss of the Pink and White Terraces. Vast silica terraces in subtle pinks and whites step down to the river, geysers play, and the rare Aladdin's Cave reveals a hot pool deep underground. The land belongs to Ngāti Tahu Ngāti Whaoa, who have cared for it for generations. When the Ohakuri hydro dam was built in nineteen sixty one, around two thirds of the original geothermal field was flooded, a loss still keenly felt. What remains is sacred and astonishing. Walk the boardwalks, do not touch the silica, and remember that this is a wāhi tapu still active in the cultural and economic life of its iwi.",
+      "sources_to_check": [
+        "Orakei Korako",
+        "Ngāti Tahu Ngāti Whaoa",
+        "DOC geothermal heritage"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Orakei Korako Hidden Valley as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tau_hist_pukawa_meeting",
+      "name": "Pūkawa and the Kīngitanga Meeting of 1856",
+      "region": "taupo",
+      "lat": -38.7711,
+      "lng": 175.7886,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "kingitanga",
+        "pukawa",
+        "tuwharetoa",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Pūkawa, on the southwest shore of Lake Taupō, where in eighteen fifty six the chief Iwikau Te Heuheu Tūkino the Third hosted one of the most significant gatherings in Māori history. Hundreds of chiefs from across the North Island travelled here for a hui to consider establishing a Māori king who could unite the tribes and stop the steady loss of land to settlers. After long debate, they nominated Pōtatau Te Wherowhero of Waikato, who reluctantly agreed and was raised as the first Māori King in eighteen fifty eight. The Kīngitanga movement was born here at the lake's edge. The gathering was symbolised by a great pou around which flags representing the mountains of each iwi were planted, all leaning in towards the centre to show the unity of purpose. A monument now marks the spot. Stand here, look out across the great lake to Tongariro, and recognise that you are at one of the founding sites of modern Māori political organisation, a movement that endures to this day.",
+      "sources_to_check": [
+        "Ngāti Tūwharetoa",
+        "Kīngitanga records",
+        "NZHistory Pūkawa"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Pūkawa and the Kīngitanga Meeting of 1856 as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tau_hist_lake_taupo_eruption",
+      "name": "The Taupō Eruption of 232 CE",
+      "region": "taupo",
+      "lat": -38.7333,
+      "lng": 176.0833,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "taupo",
+        "eruption",
+        "geology"
+      ],
+      "trigger_radius_m": 500,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are looking at Lake Taupō, the largest lake in New Zealand by area, but it is not really a lake at all. It is the flooded caldera of one of the most violent volcanoes on Earth. Around the year two hundred and thirty two of the common era, the Taupō volcano erupted in a single cataclysmic event, the largest known eruption anywhere in the world during the past five thousand years. Pyroclastic flows raced outwards at hurricane speeds, flattening forest as far away as the present-day Bay of Plenty. The ash column reached the stratosphere, and reports of brightly coloured skies appeared as far away as Rome and China. The crater that collapsed afterwards filled with water to become the lake you see today. Geothermal activity continues all around its shores. Although Taupō has been quiet for nearly two thousand years, it remains a living volcano, monitored constantly by GNS Science. Stand at the lake edge, watch the wind ripple its surface, and try to grasp the scale of fire and silence held within this immense water.",
+      "sources_to_check": [
+        "GNS Science Taupō Volcano",
+        "DOC Taupō",
+        "NIWA"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Taupō Eruption of 232 CE draws visitors back time and again for its natural beauty and peaceful atmosphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tau_hist_armed_constabulary_redoubt",
+      "name": "Tapuaeharuru Armed Constabulary Redoubt",
+      "region": "taupo",
+      "lat": -38.6889,
+      "lng": 176.0747,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "redoubt",
+        "constabulary",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are near the site of the old Tapuaeharuru Redoubt, built by the Armed Constabulary in eighteen sixty nine to defend the new township of Taupō during the campaigns against Te Kooti. The constabulary was a hybrid force of soldiers and police created to garrison the central plateau and to guard supply routes. Their stockaded redoubt overlooked the lake at the present site of central Taupō, and in its early years the town was little more than a military camp surrounded by raupo huts. The remoteness of the post, the bitter winters, and the fear of attack made service here unpopular. After the wars wound down in the eighteen seventies, the redoubt was abandoned, and the town slowly grew into a fishing and tourism centre. Little above ground remains today, but heritage signs near the lakefront mark its position. Pause for a moment near the harbour and imagine timber walls, sentries on the parapet, and trout and lake fish replacing rifles as the focus of life by the water's edge.",
+      "sources_to_check": [
+        "NZHistory Armed Constabulary",
+        "Heritage NZ Taupō"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Tapuaeharuru Armed Constabulary Redoubt — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tau_hist_tokaanu_geothermal",
+      "name": "Tokaanu Thermal Walk and Pā",
+      "region": "taupo",
+      "lat": -38.975,
+      "lng": 175.7711,
+      "category": "nature",
+      "tags": [
+        "maori",
+        "tokaanu",
+        "tuwharetoa",
+        "geothermal"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Tokaanu, on the southern shore of Lake Taupō, where geothermal pools steam through a network of boardwalks behind a small Māori village. This is heartland Ngāti Tūwharetoa country. The pā here once defended the southern lake and the entrance to the great food gathering grounds of the wetlands. Tokaanu's hot pools were used for cooking, bathing, and healing long before Europeans arrived, and they continue in family use today. A simple wooden bath house offers visitors the chance to soak in private mineral pools heated naturally from below. Just along the road, the Catholic mission church of St Werenfried's holds beautifully carved Māori interior panels, an early example of fusion between Catholicism and Tūwharetoa craft. The thermal walk is short but striking, with mud pools that plop and gurgle and small geyser jets. As you stand in the steam, remember that for centuries the warmth of this ground has fed and healed the people who call themselves the smoke of Tongariro.",
+      "sources_to_check": [
+        "Ngāti Tūwharetoa",
+        "Heritage NZ Tokaanu",
+        "DOC geothermal"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Tokaanu Thermal Walk and Pā draws visitors back time and again for its natural beauty and peaceful atmosphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tau_hist_waihi_village",
+      "name": "Waihi Village and the 1846 and 1910 Disasters",
+      "region": "taupo",
+      "lat": -38.9836,
+      "lng": 175.7911,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "waihi",
+        "landslide",
+        "tuwharetoa",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Waihi village, on the steep southern slope above Lake Taupō, ancestral home of senior Ngāti Tūwharetoa families including Te Heuheu. Twice in its history this beautiful site has been struck by tragedy. In eighteen forty six a massive landslide swept down the Te Heuheu papakāinga, killing the paramount chief Te Heuheu Tūkino the Second, his family, and scores of others, an event remembered as Te Tatau o te Pō, the door of night. In nineteen ten another landslide, smaller but still deadly, again destroyed homes. The community rebuilt each time. The current Waihi pā includes the carved meeting house Tapeka and a small chapel. Above the village, the steep mountainsides still bear scars where the earth broke away. Visitors should not enter the village without invitation, but from the road below you can see the pā nestled between bush and lake. Reflect on the courage of a community that has stayed loyal to a place that has cost it so much.",
+      "sources_to_check": [
+        "Ngāti Tūwharetoa",
+        "NZHistory Waihi landslide",
+        "Te Ara Te Heuheu"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Waihi Village and the 1846 and 1910 Disasters as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-mine-bay-carvings",
+      "name": "Ngātoroirangi — Mine Bay Māori Rock Carvings",
+      "region": "taupo",
+      "lat": -38.743,
+      "lng": 176.025,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rock-art",
+        "carving",
+        "ngātoroirangi",
+        "lake-taupo"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "A 14-metre carved face in the cliff above Lake Taupō — depicting the navigator Ngātoroirangi, accessible only by water.",
+      "commentary": "The carvings were created by master carver Matahi Whakataka-Brightwell, depicting the navigator who guided the Te Arawa and Tainui waka. The 14-metre face is accessible only by boat or kayak.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Ngātoroirangi — Mine Bay Māori Rock Carvings as a place where the history and cultural significance of Aotearoa become tangible and real. A 14-metre carved face in the cliff above Lake Taupō — depicting the navigator Ngātoroirangi, accessible only by water. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-waihi-village",
+      "name": "Waihi Village",
+      "region": "taupo",
+      "lat": -38.805,
+      "lng": 175.928,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "village",
+        "ngāti-tūwharetoa",
+        "living-village"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A living Ngāti Tūwharetoa village — the oldest continually inhabited Māori settlement in the Taupō district.",
+      "commentary": "Waihi Village is one of the few remaining traditional Māori villages in the Taupō district, continuously occupied for centuries. It retains a working marae and strong community life.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Waihi Village as a place where the history and cultural significance of Aotearoa become tangible and real. A living Ngāti Tūwharetoa village — the oldest continually inhabited Māori settlement in the Taupō district. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-tongariro-gift",
+      "name": "Tongariro — Te Heuheu's Gift",
+      "region": "taupo",
+      "lat": -39.133,
+      "lng": 175.633,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "national-park",
+        "ngāti-tūwharetoa",
+        "gift",
+        "sacred"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "The world's fourth national park — gifted by Te Heuheu Tūkino IV in 1887 to protect sacred peaks.",
+      "commentary": "In 1887, Te Heuheu Tūkino IV gifted the sacred peaks to the Crown. By making them a national taonga, he ensured they could never be privately owned. Tongariro became the world's fourth national park.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tongariro — Te Heuheu's Gift as a place where the history and cultural significance of Aotearoa become tangible and real. The world's fourth national park — gifted by Te Heuheu Tūkino IV in 1887 to protect sacred peaks. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-orakei-korako-cave",
+      "name": "Ōrākei Kōrako — The Hidden Valley",
+      "region": "taupo",
+      "lat": -38.472,
+      "lng": 176.185,
+      "category": "nature",
+      "tags": [
+        "māori",
+        "geothermal",
+        "sacred",
+        "cave"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "'Place of adorning' — where Māori chiefs prepared for ceremony, with a sacred cave and spectacular thermal features.",
+      "commentary": "Ōrākei Kōrako was where chiefs decorated themselves before ceremonies. Ruatapu Cave — a sacred cave with a jade-green pool — was used for rituals. About 70% of features were flooded by the Ohakuri Dam.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Ōrākei Kōrako — The Hidden Valley draws visitors back time and again for its natural beauty and peaceful atmosphere. 'Place of adorning' — where Māori chiefs prepared for ceremony, with a sacred cave and spectacular thermal features. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-pukawa-bay",
+      "name": "Pūkawa Bay — Where the Kīngitanga Was Born",
+      "region": "taupo",
+      "lat": -38.84,
+      "lng": 175.848,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "kīngitanga",
+        "ngāti-tūwharetoa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Where the first Māori King was chosen in 1858 — a quiet bay where the Kīngitanga was born.",
+      "commentary": "Chiefs gathered here in 1858 to select Pōtatau Te Wherowhero as the first Māori King. The Kīngitanga continues today as the most significant pan-tribal Māori institution.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Pūkawa Bay — Where the Kīngitanga Was Born as a place where the history and cultural significance of Aotearoa become tangible and real. Where the first Māori King was chosen in 1858 — a quiet bay where the Kīngitanga was born. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-tokaanu-thermal",
+      "name": "Tokaanu Thermal Walk",
+      "region": "taupo",
+      "lat": -38.977,
+      "lng": 175.764,
+      "category": "nature",
+      "tags": [
+        "māori",
+        "geothermal",
+        "hot-springs",
+        "ngāti-tūwharetoa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A free thermal walkway through boiling pools — a geothermal taonga of Ngāti Tūwharetoa.",
+      "commentary": "A short loop track through geothermally active ground. The energy comes from the fire goddesses called by the navigator Ngātoroirangi when he was freezing on Tongariro's summit.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Tokaanu Thermal Walk draws visitors back time and again for its natural beauty and peaceful atmosphere. A free thermal walkway through boiling pools — a geothermal taonga of Ngāti Tūwharetoa. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-aratiatia-rapids",
+      "name": "Aratiatia Rapids",
+      "region": "taupo",
+      "lat": -38.612,
+      "lng": 176.245,
+      "category": "nature",
+      "tags": [
+        "māori",
+        "rapids",
+        "dam",
+        "waikato-river"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Spectacular rapids released from a dam several times daily — once a feared stretch of the ancestral Waikato River.",
+      "commentary": "The rapids were once formidable white water. Dammed for hydroelectric power in 1964, the spillway gates are opened several times daily, releasing a dramatic surge through the gorge.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Aratiatia Rapids draws visitors back time and again for its natural beauty and peaceful atmosphere. Spectacular rapids released from a dam several times daily — once a feared stretch of the ancestral Waikato River. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taupo-te-porere-redoubt",
+      "name": "Te Pōrere Redoubt",
+      "region": "taupo",
+      "lat": -39.169,
+      "lng": 175.676,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "redoubt",
+        "te-kooti"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the last battles of the NZ Wars — a unique Māori adaptation of European military design.",
+      "commentary": "Te Pōrere was a redoubt designed by Te Kooti's forces, blending Māori pā concepts with European military engineering. The 1869 battle here was one of the last major engagements of the NZ Wars.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Te Pōrere Redoubt as a place where the history and cultural significance of Aotearoa become tangible and real. One of the last battles of the NZ Wars — a unique Māori adaptation of European military design. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taupo-tongariro-northern-circuit",
+      "name": "Tongariro Northern Circuit",
+      "region": "taupo",
+      "lat": -39.133,
+      "lng": 175.647,
+      "category": "journey",
+      "tags": [
+        "great-walk",
+        "multi-day",
+        "volcanic",
+        "alpine",
+        "tramping"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 36,
+      "short": "Circle Mount Ngauruhoe on New Zealand's most dramatic Great Walk through a volcanic moonscape.",
+      "commentary": "The Tongariro Northern Circuit is a 43 km loop around Mount Ngauruhoe in Tongariro National Park, taking 3-4 days. It includes the famous Tongariro Alpine Crossing section and passes through volcanic terrain including craters, lava flows, and the Emerald Lakes. The park is a dual World Heritage site for both natural and cultural significance.",
+      "audio_story": "You are setting out on the Tongariro Northern Circuit, a 43-kilometre loop around Mount Ngauruhoe — the perfectly conical volcano that stood in as Mount Doom in the Lord of the Rings films. This is one of New Zealand's ten Great Walks, and it takes three to four days to complete. The landscape is extraordinary: steaming vents, ancient lava flows, the brilliant turquoise Emerald Lakes, and the vast emptiness of the Oturere Valley. Tongariro National Park was the fourth national park established anywhere in the world, gifted in 1887 by Te Heuheu Tukino IV of Ngati Tuwharetoa to protect its sacred peaks. It holds dual World Heritage status for both its volcanic geology and its significance to Maori. You will need to book huts in advance during the Great Walks season, and conditions can change rapidly — snow is possible in any month. The circuit includes the famous Alpine Crossing section, but by doing the full loop you escape the day-trippers and experience the deeper solitude of this volcanic wilderness.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Tongariro National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Tongariro Northern Circuit route delivers a memorable journey through exceptional New Zealand scenery. Circle Mount Ngauruhoe on New Zealand's most dramatic Great Walk through a volcanic moonscape. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-great-lake-trail",
+      "name": "Great Lake Trail – Cycle Ride",
+      "region": "taupo",
+      "lat": -38.758,
+      "lng": 175.87,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "lakeside",
+        "native-bush"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 8,
+      "short": "Cycle 71 km of purpose-built singletrack along the western shore of Lake Taupo through native bush.",
+      "commentary": "The Great Lake Trail is a 71 km mountain biking trail along the western shore of Lake Taupo, from Whakaipo Bay to Waihaha. It is one of the NZ Cycle Trail Great Rides and features purpose-built singletrack, lake views, and native bush. The W2K section from Waihora to Kinloch is the most popular day ride.",
+      "audio_story": "You are riding the Great Lake Trail along the western shore of Lake Taupo, New Zealand's largest lake. This 71-kilometre trail is purpose-built singletrack that winds through native bush, over ridgelines, and along cliff edges with sweeping views across the lake to the volcanic peaks of Tongariro National Park. The trail is divided into four sections, and the W2K stretch from Waihora to Kinloch is the sweet spot — 25 kilometres of flowing trail through podocarp forest with constant lake views. Lake Taupo itself fills the caldera of a supervolcano — its last major eruption around 186 CE was one of the most violent in the last 5,000 years, documented in Chinese and Roman records. Today the lake is serene, a deep blue expanse covering 616 square kilometres. On the trail, you will ride through bush alive with tui and fantails, cross suspension bridges, and catch glimpses of trout rising in the shallows below.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Great Lake Trail Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Great Lake Trail – Cycle Ride route delivers a memorable journey through exceptional New Zealand scenery. Cycle 71 km of purpose-built singletrack along the western shore of Lake Taupo through native bush. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-huka-falls-walk",
+      "name": "Huka Falls River Walk",
+      "region": "taupo",
+      "lat": -38.651,
+      "lng": 176.089,
+      "category": "journey",
+      "tags": [
+        "river-walk",
+        "waterfall",
+        "short-walk",
+        "scenic"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 1,
+      "short": "Walk along the Waikato River to Huka Falls, where 220,000 litres of water per second surge through a narrow chasm.",
+      "commentary": "Huka Falls is a set of waterfalls on the Waikato River where the river narrows from 100 metres to 15 metres, creating a dramatic surge. The falls drop 11 metres and discharge about 220,000 litres of water per second. The 4 km walking track from Taupo follows the riverbank through native bush.",
+      "audio_story": "You are following the Waikato River downstream from Taupo on a track that leads to one of New Zealand's most visited natural attractions. The river starts wide and deceptively calm, flowing smoothly through native bush. Then you hear it — a growing roar that hints at what is ahead. At Huka Falls, the river is suddenly squeezed from 100 metres wide into a rock channel just 15 metres across. The result is extraordinary: 220,000 litres of water per second thunder through the gap and plunge 11 metres into a churning turquoise pool. The colour is almost unreal — a glacial blue caused by aerated water and dissolved minerals. Despite being only 11 metres high, the sheer volume of water makes Huka Falls feel immensely powerful. Stand on the footbridge over the falls and feel the spray on your face. The Maori name Hukanui means 'great body of spray,' and you will understand why instantly.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Taupo District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Huka Falls River Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk along the Waikato River to Huka Falls, where 220,000 litres of water per second surge through a narrow chasm. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-tongariro-alpine-crossing",
+      "name": "Tongariro Alpine Crossing",
+      "region": "taupo",
+      "lat": -39.148,
+      "lng": 175.652,
+      "category": "journey",
+      "tags": [
+        "day-walk",
+        "alpine",
+        "volcanic",
+        "iconic",
+        "tramping"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 7,
+      "short": "New Zealand's most popular day walk — 19.4 km across an active volcanic landscape of craters, coloured lakes, and lava flows.",
+      "commentary": "The Tongariro Alpine Crossing is a 19.4 km one-way walk across the volcanic terrain between Mangatepopo and Ketetahi. The route crosses the saddle between Mount Tongariro and Mount Ngauruhoe, passing Red Crater, the Emerald Lakes, and Blue Lake. It is widely regarded as one of the best day walks in the world.",
+      "audio_story": "You are starting the Tongariro Alpine Crossing at Mangatepopo, and ahead of you stretches 19.4 kilometres of the most dramatic volcanic landscape you will ever walk through. The track climbs steadily to the South Crater, a flat expanse of grey volcanic sand ringed by ridges. Then comes the steep scramble up to Red Crater, the highest point at 1,886 metres, where the ground is warm underfoot and the air smells faintly of sulphur. The descent from Red Crater is unforgettable — loose red and black scoria sliding underfoot, with the Emerald Lakes glowing an impossible turquoise below you. These lakes get their colour from dissolved volcanic minerals. To your right, Mount Ngauruhoe's perfect cone rises another 600 metres — it last erupted in 1975. The walk continues past Blue Lake, sacred to Ngati Tuwharetoa, and then begins a long descent through tussock and bush to Ketetahi. Start early to beat the crowds and be prepared for all weather — conditions here can shift from sunshine to whiteout in minutes.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Tongariro National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Tongariro Alpine Crossing route delivers a memorable journey through exceptional New Zealand scenery. New Zealand's most popular day walk — 19. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-desert-road-sh1",
+      "name": "Desert Road – SH1",
+      "region": "taupo",
+      "lat": -39.171,
+      "lng": 175.83,
+      "category": "journey",
+      "tags": [
+        "scenic-highway",
+        "volcanic",
+        "tussock",
+        "mountain-views"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 1.5,
+      "short": "Drive the dramatic Desert Road below the volcanoes — a stark tussock landscape unlike anywhere else in the North Island.",
+      "commentary": "The Desert Road section of SH1 runs about 50 km from Waiouru to Rangipo, skirting the eastern flanks of the Tongariro volcanic plateau. Despite its name, it is not a true desert but a volcanic tussock landscape. The road frequently closes in winter due to snow. The army training area at Waiouru borders the road.",
+      "audio_story": "You are driving the Desert Road, and the North Island suddenly looks nothing like itself. Gone are the green pastures and bush-clad hills — instead, a vast tussock landscape stretches to the horizon, dominated by the volcanic cones of Ruapehu, Ngauruhoe, and Tongariro to the west. Despite the name, this is not a desert — it receives plenty of rain — but the volcanic soils and harsh alpine conditions create a stark, treeless landscape. The road runs straight and exposed at around 1,000 metres elevation, and in winter it frequently closes as snow and ice sweep across. To the east, the Kaimanawa Ranges form a distant blue wall. The New Zealand Army's training ground at Waiouru occupies a vast area alongside the road — you may hear distant rumbles that are either military exercises or the volcanoes clearing their throat. Either way, this is one of the most atmospherically dramatic drives in the country.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "NZ Transport Agency",
+        "Department of Conservation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Desert Road – SH1 route delivers a memorable journey through exceptional New Zealand scenery. Drive the dramatic Desert Road below the volcanoes — a stark tussock landscape unlike anywhere else in the North Island. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-orakei-korako-walk",
+      "name": "Orakei Korako Geothermal Walk",
+      "region": "taupo",
+      "lat": -38.47,
+      "lng": 176.187,
+      "category": "journey",
+      "tags": [
+        "geothermal",
+        "walking",
+        "silica-terraces",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Discover the 'Hidden Valley' — New Zealand's finest silica terraces and a geothermal cave accessible only by boat.",
+      "commentary": "Orakei Korako is a geothermal field accessible by boat across the Waikato River. It contains the largest area of silica sinter terraces in New Zealand and a geothermal cave called Ruatapu with a jade-green pool. The site retains about a quarter of the original thermal features — the rest were submerged by the Ohakuri Dam in 1961.",
+      "audio_story": "You are crossing the Waikato River by boat to reach Orakei Korako, sometimes called the Hidden Valley, and many who visit consider it the finest geothermal area in the country. The silica terraces here are more extensive than anywhere else in New Zealand — great cascading steps of white and gold sinter, deposited over thousands of years by mineral-laden water. In 1961, the Ohakuri Dam flooded about three-quarters of the original thermal area, making what survives all the more precious. The walking trail leads past erupting geysers, boiling mud pools, and brilliantly coloured hot springs to Ruatapu Cave — a sacred geothermal cave with a pool of jade-green thermal water 15 metres below ground. Maori women once used the warm mineral waters here as a mirror for applying ochre face paint, giving the area its name, which translates roughly as 'a place of adorning.' This is less crowded than the Rotorua thermal areas and arguably more beautiful.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Orakei Korako",
+        "GNS Science"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Orakei Korako Geothermal Walk route delivers a memorable journey through exceptional New Zealand scenery. Discover the 'Hidden Valley' — New Zealand's finest silica terraces and a geothermal cave accessible only by boat. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-waikato-river-trails",
+      "name": "Waikato River Trails – Great Ride",
+      "region": "taupo",
+      "lat": -38.409,
+      "lng": 175.841,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "river",
+        "hydro-lakes",
+        "native-bush"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 12,
+      "short": "Cycle 103 km along the Waikato River through native bush and past hydro dams on one of NZ's classic Great Rides.",
+      "commentary": "The Waikato River Trails cover 103 km of cycling from Atiamuri to Karapiro, following the Waikato River past eight hydro dams. The trail passes through native bush, farmland, and lakeside sections. It is one of the NZ Cycle Trail Great Rides and is suitable for intermediate riders.",
+      "audio_story": "You are riding the Waikato River Trails, 103 kilometres of smooth cycling along New Zealand's mightiest river as it drops through a chain of eight hydro lakes between Atiamuri and Karapiro. These lakes and dams were built from the 1920s onward and generate a substantial portion of the North Island's electricity. The trail weaves between lake edges and native bush, with frequent views of the deep green river and the forested gorges it has carved. The riding is mostly easy to intermediate, with well-graded surfaces and gentle gradients — the river is doing the descending for you. Highlights include the Whakamaru section, where the trail passes through regenerating bush alive with birdlife, and the Arapuni Dam — a massive concrete structure built in 1929 that was once the largest hydro dam in the Southern Hemisphere. Hot springs emerge along the riverbanks in several places, hinting at the geothermal energy still simmering below. Allow two to three days for the full trail, overnighting in the small towns along the way.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail",
+        "Waikato River Trails Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Waikato River Trails – Great Ride route delivers a memorable journey through exceptional New Zealand scenery. Cycle 103 km along the Waikato River through native bush and past hydro dams on one of NZ's classic Great Rides. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taupo-skydive-taupo",
+      "name": "Skydive Taupo",
+      "region": "taupo",
+      "lat": -38.74,
+      "lng": 176.084,
+      "category": "adventure",
+      "tags": [
+        "skydiving",
+        "tandem",
+        "adrenaline",
+        "commercial",
+        "iconic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Freefall over Lake Taupo and three volcanic peaks at NZ's most popular skydive site.",
+      "commentary": "Skydive Taupo is one of the most popular tandem skydiving operations in the world, with jumps from up to 15,000 feet above Lake Taupo. The views take in Tongariro, Ngauruhoe, and Ruapehu volcanoes, the lake itself, and the surrounding volcanic plateau.",
+      "audio_story": "You have arrived at Taupo Airport, the home of what many consider the most scenic tandem skydive on Earth. As the aircraft climbs to 15,000 feet, the views become increasingly spectacular: Lake Taupo, the largest lake in New Zealand, fills the landscape below, while the three volcanic peaks of Tongariro, Ngauruhoe, and Ruapehu line the southern horizon like sentinels. Then the door opens, and you step into 60 seconds of pure freefall at 200 kilometres per hour. The lake that seems so vast from the air is actually the caldera of a supervolcano, its most recent major eruption 26,500 years ago was one of the largest on the planet. Under canopy, your instructor may let you steer as you drift gently back to earth with that extraordinary panorama all around you. Skydive Taupo has been operating since the 1990s and has an impeccable safety record.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Skydive Taupo",
+        "NZ Parachute Federation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Skydive Taupo adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Freefall over Lake Taupo and three volcanic peaks at NZ's most popular skydive site. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-huka-falls-jet",
+      "name": "Hukafalls Jet",
+      "region": "taupo",
+      "lat": -38.6498,
+      "lng": 176.088,
+      "category": "adventure",
+      "tags": [
+        "jet-boating",
+        "waterfall",
+        "adrenaline",
+        "commercial",
+        "iconic"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.5,
+      "short": "Jet boat to the base of the thundering Huka Falls at 220,000 litres per second.",
+      "commentary": "Hukafalls Jet takes passengers up the Waikato River to within metres of Huka Falls, where 220,000 litres of water per second squeeze through an 11-metre-wide canyon. The 30-minute ride includes 360-degree spins and high-speed runs on the crystal-blue water.",
+      "audio_story": "You have arrived at the Hukafalls Jet base, where a purpose-built jet boat is about to take you face-to-face with one of the most powerful natural forces in the North Island. Huka Falls is where the full volume of the Waikato River, New Zealand's longest, is squeezed through a canyon just 11 metres wide, creating a thundering cascade of 220,000 litres per second. The jet boat will race upstream through the vivid blue water at exhilarating speed, executing 360-degree spins that throw up walls of spray. Then comes the climax, the boat edges as close as physically possible to the base of the falls, close enough to feel the mist on your face and the vibration through the hull. The water here has a remarkable blue colour caused by its exceptional clarity and the silica dissolved from the volcanic rock upstream. The whole experience is over in 30 minutes, but it will stay with you much longer.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Hukafalls Jet",
+        "Great Lake Taupo"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Hukafalls Jet adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat to the base of the thundering Huka Falls at 220,000 litres per second. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-tongariro-crossing",
+      "name": "Tongariro Alpine Crossing",
+      "region": "taupo",
+      "lat": -39.133,
+      "lng": 175.654,
+      "category": "adventure",
+      "tags": [
+        "volcano-hiking",
+        "alpine",
+        "iconic",
+        "world-heritage",
+        "free"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 8,
+      "short": "Hike across active volcanic terrain on New Zealand's most famous one-day walk.",
+      "commentary": "The Tongariro Alpine Crossing is widely regarded as New Zealand's best one-day hike, traversing 19.4 km of volcanic landscape including the Emerald Lakes, Red Crater, and Blue Lake. The route crosses between Tongariro and Ngauruhoe, both active volcanoes, through a UNESCO World Heritage site.",
+      "audio_story": "You are at the Mangatepopo car park, the start of the Tongariro Alpine Crossing, widely regarded as New Zealand's finest one-day hike. Over the next 19.4 kilometres, you will traverse a landscape that is equal parts otherworldly and awe-inspiring. The track climbs through volcanic desert to the South Crater, a flat, barren expanse that feels like walking on the moon, then up to Red Crater at 1,886 metres, the highest point, where the ground is stained with iron oxides and the air carries a faint whiff of sulphur. Below you, the Emerald Lakes glow an almost unnatural green, coloured by dissolved minerals from the volcanic vents. Ngauruhoe, the symmetrical cone to your right, served as Mount Doom in the Lord of the Rings films. This is an active volcanic zone, GeoNet monitors it constantly, and eruptions do occur. Check conditions before departure and carry warm layers, as the exposed terrain can turn hostile without warning.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "DOC",
+        "GeoNet",
+        "Tongariro National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Universally described as one of the world's great day hikes — the Red Crater, Emerald Lakes, and Blue Lake views are extraordinary. Reviewers emphasise starting early to beat the crowds and checking weather carefully; the route is exposed and weather changes fast. Allow 6–8 hours and book the shuttle in advance."
+      }
+    },
+    {
+      "id": "taupo-taupo-bungy",
+      "name": "Taupo Bungy & Cliffhanger Swing",
+      "region": "taupo",
+      "lat": -38.648,
+      "lng": 176.087,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "bridge-swing",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "Bungy jump or swing 47 metres above the crystal-blue Waikato River.",
+      "commentary": "Taupo Bungy offers a 47-metre bungy jump and the Cliffhanger swing from a cantilevered platform over the Waikato River near Huka Falls. Jumpers can choose to touch or be submerged in the river below. The Cliffhanger swings riders through an arc at up to 70 km/h.",
+      "audio_story": "You have arrived at Taupo Bungy, where a cantilevered platform extends over the Waikato River, 47 metres above the crystal-blue water. This is the North Island's most scenic bungy site, with the river flowing through a rock-walled canyon towards Huka Falls just downstream. You have two choices here. The bungy jump gives you a classic freefall towards the river, and you can choose to touch the water, be fully dunked, or stay dry. The Cliffhanger swing is a different beast entirely, you are released from a platform and swing through a massive arc at up to 70 kilometres per hour, with the river rushing beneath you. Both options deliver that primal rush of stepping into nothing and trusting the equipment. The crew here are experienced and entertaining, they will read your nerves and know exactly when to count you down. Three, two, one.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Taupo Bungy",
+        "Great Lake Taupo"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Taupo Bungy & Cliffhanger Swing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Bungy jump or swing 47 metres above the crystal-blue Waikato River. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-craters-mtb",
+      "name": "Craters of the Moon Mountain Bike Park",
+      "region": "taupo",
+      "lat": -38.653,
+      "lng": 176.063,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "trail-park",
+        "volcanic",
+        "family-friendly",
+        "free"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2.5,
+      "short": "Ride flowy singletrack through volcanic landscape near the Craters of the Moon.",
+      "commentary": "The Taupo mountain bike trail network near Craters of the Moon offers over 50 km of trails through pine forest and native bush on volcanic terrain. The W2K (Waikato to K-Road) trails are renowned for their flow and variety, with trails for all abilities.",
+      "audio_story": "You have arrived at one of the Taupo region's excellent mountain bike trail networks, where volcanic terrain and dedicated trail builders have created a riding experience that draws cyclists from across the country. The trails here wind through a mix of pine forest and regenerating native bush, built on the soft, pumice-rich soil that is a gift from the Taupo supervolcano. This soil drains brilliantly, meaning the trails ride well even after rain, and the surface has a unique, almost cushioned feel under the tyres. Beginners will find smooth, flowing trails with gentle gradients and wide corners, while experienced riders can tackle technical descents, drops, and gap jumps on the advanced tracks. The nearby Craters of the Moon geothermal walk is worth combining with your ride, steaming vents and mud pools just metres from the mountain bike car park remind you that this landscape is very much alive.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Bike Taupo",
+        "Trail Forks",
+        "Great Lake Taupo"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Craters of the Moon Mountain Bike Park adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride flowy singletrack through volcanic landscape near the Craters of the Moon. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-lake-taupo-fishing",
+      "name": "Lake Taupo Trout Fishing Charter",
+      "region": "taupo",
+      "lat": -38.704,
+      "lng": 175.999,
+      "category": "adventure",
+      "tags": [
+        "fishing",
+        "trout",
+        "lake",
+        "commercial",
+        "world-class"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 4,
+      "short": "Fish for trophy rainbow and brown trout on the world-famous Lake Taupo.",
+      "commentary": "Lake Taupo is one of the world's premier trout fisheries, stocked with rainbow and brown trout averaging 2-3 kg. Charter boats troll the lake or fish the river mouths. The lake and its tributaries produce an estimated 500 tonnes of trout annually.",
+      "audio_story": "You have arrived at the shore of Lake Taupo, the trout fishing capital of the world. When European settlers released rainbow and brown trout into this lake in the early 1900s, they created what would become one of the greatest freshwater fisheries on Earth. The lake covers 616 square kilometres and produces trout averaging 2 to 3 kilograms, with fish over 5 kilograms caught regularly. Your charter boat will troll the lake using local techniques perfected over decades, working the drop-offs and current lines where trout feed on smelt. The fishing here is genuinely world-class, an estimated 500 tonnes of trout are caught each year, and the catch rate is remarkably consistent. A Taupo fishing licence is required and available on the spot. Whether you land a trophy brown or a scrappy rainbow, cooking your catch over a lakeside barbecue that evening is the perfect ending.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Fish & Game NZ",
+        "Great Lake Taupo",
+        "Taupo Fishing Charters"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Lake Taupo Trout Fishing Charter adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Fish for trophy rainbow and brown trout on the world-famous Lake Taupo. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-whakapapa-ski",
+      "name": "Whakapapa Ski Area (Mount Ruapehu)",
+      "region": "taupo",
+      "lat": -39.241,
+      "lng": 175.548,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "alpine",
+        "commercial",
+        "volcano"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Ski or snowboard on an active volcano at the North Island's largest ski field.",
+      "commentary": "Whakapapa is the largest ski area in New Zealand with over 550 hectares of skiable terrain on the northwestern slopes of Mount Ruapehu. The area ranges from beginner slopes to the above-treeline terrain of the Pinnacles. Skiing on an active volcano adds a unique edge.",
+      "audio_story": "You have arrived at Whakapapa ski area on Mount Ruapehu, where skiing and snowboarding happen on the slopes of an active volcano, an experience unique even in New Zealand. With over 550 hectares of skiable terrain spread across the northwestern face of the mountain, Whakapapa is the largest ski area in the country. Beginners have dedicated learner areas at the base, while intermediate and advanced skiers can ride the upper lifts to access wide-open volcanic slopes, the dramatic rock formations of the Pinnacles, and on the biggest days, the Crater Lake run that descends from near the 2,797-metre summit. The volcano is monitored constantly by GeoNet, and the ski area has evacuation plans in place, but do not let that put you off, Ruapehu has been a beloved ski destination since the 1950s. The snow here has a unique character, sometimes dry powder, sometimes heavy and volcanic-ash-dusted, always memorable.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Mt Ruapehu",
+        "GeoNet",
+        "NZ Ski"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Whakapapa Ski Area (Mount Ruapehu) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ski or snowboard on an active volcano at the North Island's largest ski field. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-sail-lake-taupo",
+      "name": "Lake Taupo Sailing",
+      "region": "taupo",
+      "lat": -38.696,
+      "lng": 176.07,
+      "category": "adventure",
+      "tags": [
+        "sailing",
+        "lake",
+        "scenic",
+        "commercial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Sail across Lake Taupo to the Maori rock carvings at Mine Bay.",
+      "commentary": "Sailing on Lake Taupo combines a relaxing cruise with a visit to the Mine Bay Maori rock carvings, a striking 14-metre carving accessible only from the water. The lake's size creates genuine sailing conditions, and the volcanic backdrop is stunning.",
+      "audio_story": "You have arrived at Taupo Marina to board a yacht for a sailing trip across one of New Zealand's most spectacular lakes. Lake Taupo is so large that it generates its own weather systems, and the afternoon thermal winds provide excellent sailing conditions. Your destination is Mine Bay, where a striking 14-metre Maori rock carving of Ngatoroirangi adorns the cliff face, accessible only from the water. The carving was created in the late 1970s by master carver Matahi Whakataka-Brightwell and depicts the navigator who guided the Tuwharetoa and Te Arawa people to this region. As you sail, the volcanic peaks of Tongariro, Ngauruhoe, and Ruapehu form a dramatic southern skyline, and on a clear day, their reflections shimmer on the lake surface. The lake itself fills the caldera of a supervolcano whose largest eruption ejected enough material to darken skies across the entire planet. From the deck of a yacht, it is hard to imagine such violence beneath such beauty.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Sail Barbary",
+        "Great Lake Taupo",
+        "Destination Great Lake Taupo"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Lake Taupo Sailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sail across Lake Taupo to the Maori rock carvings at Mine Bay. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taupo-rapids-jet",
+      "name": "Rapids Jet Taupo",
+      "region": "taupo",
+      "lat": -38.828,
+      "lng": 176.068,
+      "category": "adventure",
+      "tags": [
+        "jet-boating",
+        "rapids",
+        "adrenaline",
+        "commercial"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.5,
+      "short": "Jet boat through narrow canyon rapids at the outlet of Lake Taupo.",
+      "commentary": "Rapids Jet takes riders through the narrow canyon at the Waikato River outlet from Lake Taupo. The boat navigates through Grade 3 rapids at high speed, with 360-degree spins between rock walls. The crystal-clear water and narrow gorge create an intense experience.",
+      "audio_story": "You have arrived at the outlet of Lake Taupo, where the Waikato River begins its journey north through a narrow volcanic canyon. Rapids Jet will take you through this canyon at speeds that seem impossible given the width of the passage. The jet boat threads between rock walls at high speed, the driver reading the rapids with precision born of thousands of runs. Between the rapids, the boat executes 360-degree spins that send walls of water into the air, and the passengers into a mixture of screaming and laughter. The water here is extraordinarily clear, fed directly from the lake, and you can see every rock on the river bed as you fly over it. The canyon walls are carved from volcanic ignimbrite, the same material that was blasted out of the Taupo supervolcano in eruptions over the past 26,000 years. The entire experience lasts about 30 minutes, but the adrenaline lingers considerably longer.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Rapids Jet Taupo",
+        "Great Lake Taupo"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Rapids Jet Taupo adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat through narrow canyon rapids at the outlet of Lake Taupo. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ic_qw_regions — Regions tab.
+  Abstracted NZ landscape: a mountain peak over a coastline curve. Reads
+  as "somewhere on the map" without being a literal NZ outline.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Sky / background circle for weight at small sizes -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12c0,5.52 4.48,10 10,10 5.52,0 10,-4.48 10,-10C22,6.48 17.52,2 12,2z" />
+    <!-- Distant mountain (sand) -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M6,15 L10,9 L14,15 Z" />
+    <!-- Foreground mountain (cream) -->
+    <path
+        android:fillColor="#FFF8EF"
+        android:pathData="M9,16 L13,10 L18,16 Z" />
+    <!-- Coastline curve (cream) -->
+    <path
+        android:fillColor="#FFF8EF"
+        android:pathData="M4,17c2,0 3,1.2 6,1.2 3,0 4,-1.2 6,-1.2 2,0 3,1 4,1v1H4z" />
+</vector>

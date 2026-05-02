@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "marlborough",
+    "name": "Marlborough",
+    "island": "South",
+    "centre": {
+      "lat": -41.5136,
+      "lng": 173.9614
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "marlborough-scenic-marlborough",
+      "name": "Scenic Hotel Marlborough",
+      "region": "marlborough",
+      "lat": -41.5175,
+      "lng": 173.9605,
+      "type": "hotel",
+      "price_nzd_per_night": 225,
+      "rating": 4.2,
+      "short": "Blenheim's central wine-country hotel with heated pool."
+    },
+    {
+      "id": "marlborough-chateau-marlborough",
+      "name": "Chateau Marlborough",
+      "region": "marlborough",
+      "lat": -41.5149,
+      "lng": 173.9585,
+      "type": "hotel",
+      "price_nzd_per_night": 275,
+      "rating": 4.4,
+      "short": "Flagship Seymour Square hotel opposite Blenheim's cathedral."
+    },
+    {
+      "id": "marlborough-picton-yacht-club-hotel",
+      "name": "Picton Yacht Club Hotel",
+      "region": "marlborough",
+      "lat": -41.29,
+      "lng": 174.003,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.3,
+      "short": "Harbour-front Picton hotel a few steps from the ferry terminal."
+    },
+    {
+      "id": "marlborough-marlborough-vintners",
+      "name": "Marlborough Vintners Hotel",
+      "region": "marlborough",
+      "lat": -41.509,
+      "lng": 173.826,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Vineyard villas on Rapaura Road in the heart of wine country."
+    },
+    {
+      "id": "marlborough-peppers-parehua",
+      "name": "Peppers Marlborough Sounds Lodge",
+      "region": "marlborough",
+      "lat": -41.142,
+      "lng": 174.178,
+      "type": "hotel",
+      "price_nzd_per_night": 340,
+      "rating": 4.5,
+      "short": "Sounds-edge resort cottages in Punga Cove on Queen Charlotte Track."
+    },
+    {
+      "id": "marlborough-asure-alpine-lodge",
+      "name": "ASURE Alpine Lodge & Motel Blenheim",
+      "region": "marlborough",
+      "lat": -41.516,
+      "lng": 173.952,
+      "type": "hotel",
+      "price_nzd_per_night": 195,
+      "rating": 4.2,
+      "short": "Central Blenheim motor-inn-style hotel close to wineries."
+    },
+    {
+      "id": "marlborough-admirals-motor-lodge",
+      "name": "Admirals Motor Lodge Blenheim",
+      "region": "marlborough",
+      "lat": -41.517,
+      "lng": 173.96,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Classic Blenheim motel a walk from Seymour Square."
+    },
+    {
+      "id": "marlborough-blenheim-palms-motel",
+      "name": "Blenheim Palms Motel",
+      "region": "marlborough",
+      "lat": -41.52,
+      "lng": 173.958,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Palm-lined Blenheim motel with spa studio units."
+    },
+    {
+      "id": "marlborough-beaver-motel-picton",
+      "name": "Beaver Motel Picton",
+      "region": "marlborough",
+      "lat": -41.2935,
+      "lng": 174.0043,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Cosy Picton motel a short walk from ferry departures."
+    },
+    {
+      "id": "marlborough-aldan-lodge-motel",
+      "name": "Aldan Lodge Motel Picton",
+      "region": "marlborough",
+      "lat": -41.293,
+      "lng": 174.002,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Quiet Picton motor lodge close to London Quay."
+    },
+    {
+      "id": "marlborough-havelock-motel",
+      "name": "Blue Moon Motel Havelock",
+      "region": "marlborough",
+      "lat": -41.28,
+      "lng": 173.763,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Havelock motel at the Kenepuru Sound gateway, famous for mussels."
+    },
+    {
+      "id": "marlborough-kaikoura-hanmer-gateway-motel",
+      "name": "Peppertree Motel Blenheim",
+      "region": "marlborough",
+      "lat": -41.5135,
+      "lng": 173.962,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Boutique Blenheim motel on the northern edge of town."
+    },
+    {
+      "id": "marlborough-renwick-vineyard-motel",
+      "name": "Renwick Vineyard Motel",
+      "region": "marlborough",
+      "lat": -41.505,
+      "lng": 173.85,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.3,
+      "short": "Purpose-built motel in Renwick amid the cellar doors."
+    },
+    {
+      "id": "marlborough-blenheim-top10",
+      "name": "Blenheim TOP 10 Holiday Park",
+      "region": "marlborough",
+      "lat": -41.502,
+      "lng": 173.962,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.3,
+      "short": "Northern Blenheim park with pool and spa overlooking the Wairau plain."
+    },
+    {
+      "id": "marlborough-alexanders-picton-top10",
+      "name": "Alexanders Picton TOP 10",
+      "region": "marlborough",
+      "lat": -41.292,
+      "lng": 174.009,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Scenic Picton park on the hill with Queen Charlotte Sound views."
+    },
+    {
+      "id": "marlborough-parklands-marina-holiday",
+      "name": "Parklands Marina Holiday Park Picton",
+      "region": "marlborough",
+      "lat": -41.278,
+      "lng": 174.004,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.2,
+      "short": "Waikawa Bay marina-side park with sounds swimming off the shore."
+    },
+    {
+      "id": "marlborough-havelock-holiday-park",
+      "name": "Havelock Motor Camp & Holiday Park",
+      "region": "marlborough",
+      "lat": -41.281,
+      "lng": 173.762,
+      "type": "holiday-park",
+      "price_nzd_per_night": 75,
+      "rating": 4,
+      "short": "Small-town Havelock park handy to Pelorus Sound boat trips."
+    },
+    {
+      "id": "marlborough-wairau-river-lodge",
+      "name": "Wairau River Wines Lodge",
+      "region": "marlborough",
+      "lat": -41.506,
+      "lng": 173.834,
+      "type": "lodge",
+      "price_nzd_per_night": 780,
+      "rating": 4.6,
+      "short": "Adobe lodge in the Wairau Valley at a historic Rapaura winery."
+    },
+    {
+      "id": "marlborough-bay-of-many-coves",
+      "name": "Bay of Many Coves Resort",
+      "region": "marlborough",
+      "lat": -41.121,
+      "lng": 174.178,
+      "type": "lodge",
+      "price_nzd_per_night": 1450,
+      "rating": 4.8,
+      "short": "Waterfront Queen Charlotte Sounds resort reached only by boat."
+    },
+    {
+      "id": "marlborough-marlborough-lodge",
+      "name": "Marlborough Lodge",
+      "region": "marlborough",
+      "lat": -41.481,
+      "lng": 173.9,
+      "type": "lodge",
+      "price_nzd_per_night": 950,
+      "rating": 4.7,
+      "short": "1901 heritage convent turned luxury vineyard lodge on Rapaura Road."
+    }
+  ]
+}

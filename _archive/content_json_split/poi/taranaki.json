@@ -1,0 +1,1633 @@
+{
+  "region": {
+    "id": "taranaki",
+    "name": "Taranaki",
+    "island": "North",
+    "centre": {
+      "lat": -39.2968,
+      "lng": 174.0756
+    },
+    "bounds": {
+      "north": -38.8,
+      "south": -39.8,
+      "east": 174.8,
+      "west": 173.6
+    },
+    "description": "The perfect cone of Mount Taranaki, the rugged black-sand coast, and the land confiscated in the 1860s — site of Parihaka, where non-violent resistance was born half a century before Gandhi."
+  },
+  "pois": [
+    {
+      "id": "mount-taranaki",
+      "name": "Mount Taranaki / Egmont National Park",
+      "region": "taranaki",
+      "lat": -39.2963,
+      "lng": 174.0644,
+      "category": "nature",
+      "tags": [
+        "volcano",
+        "national-park",
+        "dormant",
+        "sacred",
+        "climbing"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 6,
+      "short": "A 2,518 m dormant stratovolcano — an almost-perfect cone, sacred to eight iwi, and a mountain that kills climbers every year.",
+      "commentary": "Taranaki is a 2,518 m stratovolcano — dormant, not extinct. Its last eruption was in 1854. Traditions say Taranaki once stood with Tongariro and Ruapehu on the volcanic plateau but was driven west after a fight over Pihanga and now stands alone. The mountain is sacred to eight Taranaki iwi, and was granted legal personhood under New Zealand law in 2017. Pouakai Circuit, Pouakai Tarns (for the classic reflection shot), and the summit climb are the three main hikes. The climb is deceptively dangerous — sudden cloud, ice above 1,800 m, average of 2 deaths a year. Never attempt without guide or serious preparation.",
+      "scripts": {
+        "headline": "scripts/mount-taranaki.headline.md",
+        "standard": "scripts/mount-taranaki.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Egmont National Park",
+        "Te Ara — Taranaki volcano",
+        "Taranaki iwi collective"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Mount Taranaki / Egmont National Park draws visitors back time and again for its natural beauty and peaceful atmosphere. A 2,518 m dormant stratovolcano — an almost-perfect cone, sacred to eight iwi, and a mountain that kills climbers every year. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "new-plymouth-coastal-walkway",
+      "name": "New Plymouth Coastal Walkway",
+      "region": "taranaki",
+      "lat": -39.0561,
+      "lng": 174.0767,
+      "category": "nature",
+      "tags": [
+        "walk",
+        "cycle",
+        "wind-wand",
+        "city",
+        "coastline"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A 13 km paved walk/cycle path along the full city waterfront — past the Len Lye Wind Wand, Puke Ariki, and two black-sand beaches.",
+      "commentary": "The New Plymouth Coastal Walkway runs 13 km from Port Taranaki in the west to Bell Block Beach in the east, hugging the coast the whole way. Walk or cycle any section. Highlights: the 48-metre Len Lye Wind Wand (artist's kinetic sculpture, 2001); Puke Ariki museum and library; the Govett-Brewster / Len Lye Centre — the only institution dedicated to a single contemporary artist in the country; and Te Rewa Rewa Bridge. On a clear day, the mountain rises behind you the whole walk.",
+      "scripts": {
+        "headline": "scripts/new-plymouth-coastal-walkway.headline.md",
+        "standard": "scripts/new-plymouth-coastal-walkway.standard.md"
+      },
+      "sources_to_check": [
+        "New Plymouth District Council",
+        "Govett-Brewster Art Gallery"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "New Plymouth Coastal Walkway draws visitors back time and again for its natural beauty and peaceful atmosphere. A 13 km paved walk/cycle path along the full city waterfront — past the Len Lye Wind Wand, Puke Ariki, and two black-sand beaches. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "te-rewa-rewa-bridge",
+      "name": "Te Rewa Rewa Bridge",
+      "region": "taranaki",
+      "lat": -39.0347,
+      "lng": 174.1408,
+      "category": "māori",
+      "tags": [
+        "bridge",
+        "architecture",
+        "whale-skeleton",
+        "mountain-view"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.3,
+      "short": "A swooping white bridge inspired by a whale skeleton — frames Mount Taranaki perfectly on a clear day.",
+      "commentary": "Te Rewa Rewa Bridge opened in 2010 to carry the Coastal Walkway across the Waiwhakaiho River. Designed by architect Peter Mulqueen in consultation with Ngāti Tawhirikura hapū, its white steel ribs suggest both a whale skeleton and a breaking wave. On a clear day, standing at the town end and looking along the bridge axis, the structure perfectly frames Mount Taranaki. It is the single most photographed view in the region. Free, always open.",
+      "scripts": {
+        "headline": "scripts/te-rewa-rewa-bridge.headline.md",
+        "standard": "scripts/te-rewa-rewa-bridge.standard.md"
+      },
+      "sources_to_check": [
+        "New Plymouth District Council",
+        "Ngāti Tawhirikura hapū"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Te Rewa Rewa Bridge as a place where the history and cultural significance of Aotearoa become tangible and real. A swooping white bridge inspired by a whale skeleton — frames Mount Taranaki perfectly on a clear day. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "cape-egmont-lighthouse",
+      "name": "Cape Egmont Lighthouse",
+      "region": "taranaki",
+      "lat": -39.2822,
+      "lng": 173.7503,
+      "category": "nature",
+      "tags": [
+        "lighthouse",
+        "cast-iron",
+        "viewpoint",
+        "windswept"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "A cast-iron 1865 lighthouse on the westernmost tip of Taranaki — moved twice, shipped from London in a thousand pieces.",
+      "commentary": "The Cape Egmont light was built in London in 1864, shipped to Wellington in 1865 in pre-cast iron plates, and first erected on Mana Island. It was dismantled in 1877 and re-erected at Cape Egmont, where it has stood ever since (electrified 1951, automated 1986). The tower itself is 20 m tall. On a clear day the light looks straight across at the summit of Mount Taranaki. The beach below is black iron-sand and usually deserted.",
+      "scripts": {
+        "headline": "scripts/cape-egmont-lighthouse.headline.md",
+        "standard": "scripts/cape-egmont-lighthouse.standard.md"
+      },
+      "sources_to_check": [
+        "Maritime NZ",
+        "Heritage NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Cape Egmont Lighthouse draws visitors back time and again for its natural beauty and peaceful atmosphere. A cast-iron 1865 lighthouse on the westernmost tip of Taranaki — moved twice, shipped from London in a thousand pieces. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "oakura",
+      "name": "Ōākura",
+      "region": "taranaki",
+      "lat": -39.1167,
+      "lng": 173.9458,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "surf",
+        "black-sand",
+        "village",
+        "artist"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A small artist-and-surfer village 15 minutes west of New Plymouth — black-sand beach, consistent swell, good coffee.",
+      "commentary": "Ōākura is a beach village on the Surf Highway 45, southwest of New Plymouth. The black iron-sand beach is one of the best surf breaks on the Taranaki coast, reliable year-round. The village itself has a cluster of cafés, a surf shop, and the Taranaki Pioneer Village (not in Ōākura itself but nearby in Stratford — a colonial theme park). Fitzroy, on the other side of New Plymouth, is the town-beach alternative; Ōākura is the surf-town version. Summer lifeguards only.",
+      "scripts": {
+        "headline": "scripts/oakura.headline.md",
+        "standard": "scripts/oakura.standard.md"
+      },
+      "sources_to_check": [
+        "New Plymouth District Council",
+        "Surfing NZ"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Ōākura draws visitors back time and again for its natural beauty and peaceful atmosphere. A small artist-and-surfer village 15 minutes west of New Plymouth — black-sand beach, consistent swell, good coffee. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "parihaka",
+      "name": "Parihaka",
+      "region": "taranaki",
+      "lat": -39.3119,
+      "lng": 173.9228,
+      "category": "māori",
+      "tags": [
+        "non-violent-resistance",
+        "te-whiti",
+        "tohu",
+        "1881-invasion",
+        "white-feather"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "The village where Māori leaders Te Whiti and Tohu pioneered non-violent resistance in the 1870s — decades before Gandhi.",
+      "commentary": "Parihaka was founded in the 1860s as a refuge for Māori dispossessed by the Taranaki Wars. Under spiritual leaders Te Whiti o Rongomai and Tohu Kākahi it became the largest Māori settlement in the country — and the first place in the world to systematically practise organised non-violent resistance: ploughing confiscated land, obstructing surveyors, singing instead of fighting. On 5 November 1881 a force of 1,589 armed constabulary invaded. Te Whiti and Tohu were imprisoned without trial. The white feather, symbol of peace, is still worn at Parihaka today. Visit with reverence. A formal Crown apology was delivered in 2017.",
+      "scripts": {
+        "headline": "scripts/parihaka.headline.md",
+        "standard": "scripts/parihaka.standard.md"
+      },
+      "sources_to_check": [
+        "Parihaka Papakāinga Trust",
+        "NZHistory — Parihaka",
+        "Te Ara — Te Whiti"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Parihaka as a place where the history and cultural significance of Aotearoa become tangible and real. The village where Māori leaders Te Whiti and Tohu pioneered non-violent resistance in the 1870s — decades before Gandhi. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "pouakai-tarns",
+      "name": "Pouākai Tarns",
+      "region": "taranaki",
+      "lat": -39.2603,
+      "lng": 174.0428,
+      "category": "nature",
+      "tags": [
+        "hiking",
+        "reflection",
+        "photography",
+        "overnight",
+        "boardwalk"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Small alpine tarns that, on a windless dawn, give the most photographed view of Mount Taranaki in the country.",
+      "commentary": "The Pouākai Tarns are small alpine pools on the Pouākai Range, on the northern side of Mount Taranaki. On a calm, clear dawn the tarns reflect the full cone of the mountain — the image that has launched a thousand Taranaki Instagram posts. Access is a steep 3–4 hour hike from Māngōrei Road; most people stay overnight at Pouākai Hut (DOC, book ahead) to catch the dawn. Track is a mix of clay, tree roots and boardwalk; the last section to the tarns is exposed alpine. Weather changes fast.",
+      "scripts": {
+        "headline": "scripts/pouakai-tarns.headline.md",
+        "standard": "scripts/pouakai-tarns.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Pouākai Crossing / Circuit"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Pouākai Tarns draws visitors back time and again for its natural beauty and peaceful atmosphere. Small alpine tarns that, on a windless dawn, give the most photographed view of Mount Taranaki in the country. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "forgotten-world-highway",
+      "name": "Forgotten World Highway (SH43)",
+      "region": "taranaki",
+      "lat": -39.1167,
+      "lng": 174.8667,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "sh43",
+        "isolated",
+        "republic-of-whangamomona"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "The 155 km backroad between Stratford and Taumarunui — one of the quietest, weirdest drives in the country.",
+      "commentary": "SH43, the Forgotten World Highway, runs 155 km between Stratford (Taranaki) and Taumarunui (Ruapehu). It takes 4 hours. There's one town, four saddles, one single-lane tunnel (the 1936 Moki Tunnel), and about 12 km of unsealed road in the middle. The town is Whangamomona, which in 1989 responded to being moved from Taranaki into the Manawatū-Whanganui region by declaring itself an independent republic. It has a biennial Republic Day (January odd years), a Hotel that serves excellent food, and elected a poodle as president in 2003. Fill your tank before you leave.",
+      "scripts": {
+        "headline": "scripts/forgotten-world-highway.headline.md",
+        "standard": "scripts/forgotten-world-highway.standard.md"
+      },
+      "sources_to_check": [
+        "NZTA — SH43",
+        "Whangamomona Hotel"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Forgotten World Highway (SH43) route delivers a memorable journey through exceptional New Zealand scenery. The 155 km backroad between Stratford and Taumarunui — one of the quietest, weirdest drives in the country. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-pouakai-circuit",
+      "name": "Pouākai Circuit",
+      "region": "taranaki",
+      "lat": -39.2833,
+      "lng": 174.0333,
+      "category": "nature",
+      "tags": [
+        "tramping",
+        "alpine",
+        "tarns",
+        "overnight"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 24,
+      "short": "A 25km two-day loop in Egmont National Park with the most photographed reflection of Mount Taranaki.",
+      "commentary": "The Pouākai Circuit traverses the Pouākai Range north of Mt Taranaki. The Pouākai Tarns are the famous reflective alpine pools.",
+      "audio_story": "You are about to walk the Pouākai Circuit, a twenty five kilometre two day loop through Egmont National Park that is, in clear weather, one of the most rewarding short tramps in the country. The route begins at the North Egmont Visitor Centre and climbs up across the Ahukawakawa Wetland, a strange high altitude swamp, before traversing along the Pouākai Range to the Pouākai Hut on the second night. The reason most people do the walk, however, is for one specific spot. From the hut, an easy fifteen minute side track leads to the Pouākai Tarns, two small alpine pools perched on the ridge with a clear south facing view of Mount Taranaki across the valley. On a still morning, the great cone of the maunga reflects perfectly in the still water, and you understand instantly why this image has become the symbolic photograph of all of Taranaki. Mount Taranaki is sacred to the eight iwi of this region, and the maunga itself was granted legal personhood in twenty twenty three. Walk respectfully, do not summit unless invited, leave nothing behind. The circuit can also be walked in a long single day by the very fit. Most should take it slowly over two.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Pouākai Circuit",
+        "Te Kāhui Tupua settlement"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Pouākai Circuit draws visitors back time and again for its natural beauty and peaceful atmosphere. A 25km two-day loop in Egmont National Park with the most photographed reflection of Mount Taranaki. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-len-lye-centre",
+      "name": "Len Lye Centre, New Plymouth",
+      "region": "taranaki",
+      "lat": -39.0581,
+      "lng": 174.0764,
+      "category": "culture",
+      "tags": [
+        "art",
+        "kinetic-sculpture",
+        "architecture",
+        "modern"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "A wave of polished stainless steel housing the world's largest collection of works by kinetic artist Len Lye.",
+      "commentary": "Opened 2015 by Patterson Associates. Houses the works of Len Lye (1901–1980), a NZ-born modernist who pioneered direct film and kinetic sculpture.",
+      "audio_story": "You have arrived at the Len Lye Centre in central New Plymouth, and even before you go inside, the building itself is the first artwork. The exterior is a great curving wave of polished stainless steel, mirror bright, designed by Patterson Associates and opened in twenty fifteen. The rippled surface throws back a constantly shifting reflection of the sky, the trees, and the people on the street. Inside, the centre houses the world's largest collection of work by Len Lye, a New Zealand born modernist who left this country in nineteen twenty six and spent the next half century in London and New York. Lye was a pioneer of two new art forms, direct film, in which he scratched and painted directly onto strips of celluloid, and kinetic sculpture, great motorised constructions of steel and rod that bend, dance, and clang. The gallery has a dedicated kinetic sculpture room where you can sit and watch one of the great works perform on a half hourly schedule. The sound is part of the art. Combine your visit with a walk along the New Plymouth Coastal Walkway just outside, and you have one of the better afternoons in the North Island.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Len Lye Centre",
+        "Govett Brewster Art Gallery"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Len Lye Centre, New Plymouth is praised for being both accessible and genuinely informative. A wave of polished stainless steel housing the world's largest collection of works by kinetic artist Len Lye. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "taranaki-three-sisters",
+      "name": "Three Sisters & Elephant Rock, Tongaporutu",
+      "region": "taranaki",
+      "lat": -38.8019,
+      "lng": 174.6181,
+      "category": "nature",
+      "tags": [
+        "sea-stacks",
+        "low-tide",
+        "north-taranaki",
+        "iconic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Sea stacks rising out of black sand on the wild north Taranaki coast — only accessible at low tide.",
+      "commentary": "Three sea stacks (originally four; one collapsed in 2003) and the eroded Elephant Rock sit at the mouth of the Tongaporutu River. Tide-dependent.",
+      "audio_story": "You have arrived at the Tongaporutu River mouth on the north Taranaki coast, and you should check the tide. There were once four Three Sisters, slender sandstone sea stacks rising thirty metres from the black sand at the mouth of the river. One of them collapsed in two thousand and three, leaving the three you see today. They are slowly being eaten by the sea, and within the lifetime of any visitor reading this, another may go. Beside them stands the famously lopsided Elephant Rock, a great eroded headland whose silhouette, viewed from the right angle, looks unmistakably like an elephant lifting its trunk to drink from the surf. The trunk too is fragile, and may not always be there. Access is across the sand from the carpark, and only possible at low tide. Bring a tide chart, give yourself a couple of hours either side of low water, and never be tempted to round the southern headland on a rising tide. People have been trapped here. The black sand, the white sandstone, the late afternoon light and the wide Tasman swells together make this one of the most photographed sections of coast in the North Island. Take it in while it lasts.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Tongaporutu",
+        "GNS Science coastal erosion"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Three Sisters & Elephant Rock, Tongaporutu draws visitors back time and again for its natural beauty and peaceful atmosphere. Sea stacks rising out of black sand on the wild north Taranaki coast — only accessible at low tide. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-puke-ariki",
+      "name": "Puke Ariki Museum, New Plymouth",
+      "region": "taranaki",
+      "lat": -39.0589,
+      "lng": 174.0739,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "library",
+        "iwi",
+        "free"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 2,
+      "short": "Taranaki's regional museum and library combined — free entry, with a strong telling of the Taranaki Wars and the Parihaka story.",
+      "commentary": "Opened 2003 on the site of an original Te Atiawa pā. Combines library, museum and iSite. Free entry.",
+      "audio_story": "You are walking into Puke Ariki, the museum, library and visitor centre that sits on the New Plymouth waterfront. The building is built on the site of the original Te Atiawa pā that gave the place its name, the hill of chiefs. Entry is free, and the museum is the best single introduction you can find to the layered history of the Taranaki region. The exhibits move from the geological story of the maunga, through the long Te Atiawa and Taranaki iwi presence on this land, to the New Zealand wars of the eighteen sixties, the great confiscations, and the extraordinary nonviolent resistance led from Parihaka by Te Whiti o Rongomai and Tohu Kākahi in the eighteen seventies. The story is told without flinching, and is still difficult to read in places. Upstairs there are also natural history displays, a beautiful waka, and rotating contemporary exhibitions. Combine your visit with the Govett Brewster gallery and the Len Lye Centre next door, and a short walk along the Coastal Walkway, and you have a single perfect day in central New Plymouth. Allow at least an hour and a half inside Puke Ariki itself.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Puke Ariki",
+        "NZHistory — Parihaka"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The cultural experience at Puke Ariki Museum, New Plymouth is praised for being both accessible and genuinely informative. Taranaki's regional museum and library combined — free entry, with a strong telling of the Taranaki Wars and the Parihaka story. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "taranaki-surf-highway",
+      "name": "Surf Highway 45",
+      "region": "taranaki",
+      "lat": -39.45,
+      "lng": 173.95,
+      "category": "heritage",
+      "tags": [
+        "scenic-drive",
+        "surf",
+        "lighthouse",
+        "rural"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "The 105km coast road around the western base of Mt Taranaki — past dairy land, surf breaks, and the Cape Egmont lighthouse.",
+      "commentary": "SH45 from New Plymouth to Hāwera loops around the volcano. Long-standing favourite of touring surfers and motorbikers.",
+      "audio_story": "You are about to drive the Surf Highway, State Highway forty five, the one hundred and five kilometre loop that runs around the western base of Mount Taranaki from New Plymouth to Hāwera. On a clear day the maunga is on your left for the entire journey, never quite the same shape twice. On the right, dairy farms drop down to a coastline famous among New Zealand surfers for its consistent west and southwest swells. There are dozens of named breaks along the route, from the family-friendly Ōākura just outside New Plymouth, to Stent Road, Kumara Patch, and the rocky points near Ōpunake. You do not have to surf to enjoy the drive. Stop at the Cape Egmont Lighthouse, a slender white tower removed from Mana Island in eighteen eighty one and rebuilt here. Wander the small museum next door. Detour into Parihaka and pay your respects. Have lunch in Ōpunake at a cafe with a view down the cliffs. Buy fresh dairy from a farm gate. The whole loop can be done in three hours of driving if you push it, but it really wants a day. Time it for late afternoon to catch the maunga in golden light.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Taranaki tourism — Surf Highway 45"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Surf Highway 45 — the site rewards those who take time to read the signage and absorb the context. The 105km coast road around the western base of Mt Taranaki — past dairy land, surf breaks, and the Cape Egmont lighthouse. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "taranaki-dawson-falls",
+      "name": "Dawson Falls & the Mountain House",
+      "region": "taranaki",
+      "lat": -39.3253,
+      "lng": 174.1025,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "mt-taranaki",
+        "doc",
+        "mountain-house"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "An 18-metre waterfall on the southern flank of Mt Taranaki, reached by a ten-minute walk from the Dawson Falls car park.",
+      "commentary": "Dawson Falls is an 18-m waterfall on the Kāpuni Stream on the southern side of Mt Taranaki. The historic 1896 Dawson Falls Mountain Lodge sits nearby at 900 m elevation.",
+      "audio_story": "You have arrived at Dawson Falls, on the southern side of Mount Taranaki at around nine hundred metres elevation. The falls themselves are an eighteen metre drop on the Kāpuni Stream, where the water vaults in a single clean column over a cliff of hardened lava and plunges into a moss ringed pool below. A sealed track from the car park winds through an enchanted stretch of goblin forest, old twisted kāmahi trees shrouded in hanging moss, to the viewing platform. The walk is around ten minutes each way and suits most abilities. Next to the car park stands the Dawson Falls Mountain Lodge, a Swiss chalet style building dating to eighteen ninety six that is one of the oldest mountain lodges still operating in New Zealand. The lodge sits at the trailhead for several longer walks, including the Wilkies Pools Loop and the more serious Fantham's Peak climb. The falls are named for Thomas Dawson, a New Plymouth merchant who cut the first track to them in the eighteen eighties. The Māori name for the falls is Te Rere o Noke, the leaping of Noke, honouring the legendary warrior who hid behind the waterfall to escape pursuers. Both names are used today.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Egmont National Park",
+        "Dawson Falls Mountain Lodge"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Dawson Falls & the Mountain House draws visitors back time and again for its natural beauty and peaceful atmosphere. An 18-metre waterfall on the southern flank of Mt Taranaki, reached by a ten-minute walk from the Dawson Falls car park. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-goblin-forest",
+      "name": "Kamahi Loop / Goblin Forest",
+      "region": "taranaki",
+      "lat": -39.3078,
+      "lng": 174.1083,
+      "category": "nature",
+      "tags": [
+        "goblin-forest",
+        "moss",
+        "egmont",
+        "walk"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.7,
+      "short": "A short loop walk on Mt Taranaki through a moss-draped cloud forest that feels like it belongs in a fairy tale.",
+      "commentary": "Mt Taranaki's goblin forest of kāmahi and moss-draped kaikawaka is unique. The Kāmahi Loop at Stratford Plateau is a 30-minute introduction.",
+      "audio_story": "You have arrived at one of Mount Taranaki's most unusual ecological features, the goblin forest. Between around eight hundred and a thousand metres on the mountain's flanks, the forest enters a zone of persistent cloud cover. Humidity is high. Temperatures are cool. Direct sunlight is rare. In these conditions, the stunted kāmahi and kaikawaka trees that grow here become encased in thick layers of moss, liverworts, and filmy ferns. The trees grow slowly, crookedly, and are twisted by weight and weather into extraordinary shapes. Walking here, especially on a misty morning, the forest does genuinely feel enchanted. Trunks glow green. Branches seem to reach. The air is damp and still. Goblin forests occur in only a handful of places in the world, all of them in persistently wet mountainous maritime climates. The Kāmahi Loop at Stratford Plateau is the easiest introduction, a flat thirty minute walk on boardwalk. For a longer immersion, walk the Wilkies Pools Loop above Dawson Falls, an hour and a half of mossy magic. Please stay on the tracks. The soils under these forests are thin and easily compacted by boots, and the surrounding moss mat is a thousand years in the making.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Egmont National Park",
+        "Te Ara — Mountain forests"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Kamahi Loop / Goblin Forest draws visitors back time and again for its natural beauty and peaceful atmosphere. A short loop walk on Mt Taranaki through a moss-draped cloud forest that feels like it belongs in a fairy tale. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-tupare",
+      "name": "Tupare Garden",
+      "region": "taranaki",
+      "lat": -39.0853,
+      "lng": 174.1092,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "chapman-taylor",
+        "rhododendron",
+        "new-plymouth"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1.5,
+      "short": "A Garden of National Significance on the Waiwhakaiho River — with a 1930s Chapman-Taylor Arts-and-Crafts home at its heart.",
+      "commentary": "Tupare is a 3.6-ha garden in New Plymouth with a Garden of National Significance rating. The Chapman-Taylor home (1932) is an exceptional Arts and Crafts building.",
+      "audio_story": "You have arrived at Tupare, a Garden of National Significance that slopes gently down to the Waiwhakaiho River in New Plymouth's northern suburbs. Tupare was the lifelong project of Sir Russell Matthews, a civil engineer who made his fortune bringing asphalt to New Zealand, and his wife Mary, who laid out the garden from nineteen thirty two onwards with help from the great New Zealand botanist and garden designer Leonard Cockayne. The result, after ninety years of careful planting, is a three and a half hectare hillside garden that is most famous for its rhododendron collection. In September and October, when the rhododendrons are in full flower, Tupare is one of the more spectacular gardens in the country. At the centre of the garden sits the Matthews' family home, an exceptional Arts and Crafts design by the architect James Chapman-Taylor, built in nineteen thirty two from rough-cast plaster, heavy timber beams, and slate floors. The house feels like a piece of the English Cotswolds dropped into the Taranaki bush. Both the garden and the house are now owned by the Taranaki Regional Council and are free to enter. Allow ninety minutes for the garden. The house is open for guided tours at advertised times.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Taranaki Regional Council — Tupare",
+        "NZ Gardens Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Tupare Garden draws visitors back time and again for its natural beauty and peaceful atmosphere. A Garden of National Significance on the Waiwhakaiho River — with a 1930s Chapman-Taylor Arts-and-Crafts home at its heart. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-hollard-gardens",
+      "name": "Hollard Gardens",
+      "region": "taranaki",
+      "lat": -39.4125,
+      "lng": 174.2372,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "rhododendron",
+        "magnolia",
+        "eltham"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "A farm garden near Eltham that became one of Taranaki's finest rhododendron and magnolia collections — free to visit, year round.",
+      "commentary": "Started 1927 by Bernard and Rose Hollard on their farm. Now owned by Taranaki Regional Council. 5.5 hectares, Garden of National Significance.",
+      "audio_story": "You have arrived at Hollard Gardens, a quiet Garden of National Significance just east of the small south Taranaki town of Eltham. Hollard Gardens is a dairy farmer's garden in origin. In nineteen twenty seven, Bernard and Rose Hollard began laying out a pleasure garden on the edge of their working dairy farm, and together over the following six decades they planted what has become one of the finest collections of rhododendrons, magnolias, and camellias in the country. Bernard had a particular passion for hybridising rhododendrons in the Taranaki climate, and the garden today contains several hundred named varieties, many of them developed on site. In nineteen eighty two the Hollards gifted the garden to the Taranaki Regional Council, and it has been free to the public ever since. Five and a half hectares of meandering paths run through cathedral-like canopies of rhododendron arching overhead, through dense plantings of hosta and rodgersia in the shade, and out into open lawns where giant magnolias bloom every spring. The garden peaks in September and October. Entry is free, parking is easy, and the volunteer run cafe at the entrance serves a legitimately excellent scone. Allow sixty minutes. Take your time.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Taranaki Regional Council — Hollard Gardens"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Hollard Gardens draws visitors back time and again for its natural beauty and peaceful atmosphere. A farm garden near Eltham that became one of Taranaki's finest rhododendron and magnolia collections — free to visit, year round. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-tawhiti-museum",
+      "name": "Tawhiti Museum",
+      "region": "taranaki",
+      "lat": -39.6028,
+      "lng": 174.2972,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "tawhiti",
+        "miniatures",
+        "traders-and-whalers"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 2,
+      "short": "A private museum near Hāwera — widely regarded as the best private museum in New Zealand, built around astonishingly detailed life-size and miniature dioramas.",
+      "commentary": "Tawhiti Museum was founded 1975 by artist and historian Nigel Ogle. Life-size mannequins and scale dioramas depict Taranaki history in extraordinary detail.",
+      "audio_story": "You have arrived at Tawhiti Museum, four kilometres north of Hāwera in a converted dairy factory, and you are about to visit what most New Zealanders who know about it consider the best private museum in the country. Tawhiti is the life's work of one man. Nigel Ogle, an artist and historian, bought the property in nineteen seventy five and has spent every day since building its collection. The museum is not a cabinet of curiosities. It is an immersive history of Taranaki told through an extraordinary number of life-sized mannequins and miniature scale dioramas. The mannequins are modelled from real local people, down to their teeth and glasses, and placed in historically accurate scenes. You walk through a nineteenth century Māori pā, a Taranaki War battle scene, a colonial bush mill, a cream cart on a dairy farm, a railway station. Downstairs, the Traders and Whalers gallery takes you underground into a fully built recreation of an eighteen forties whaling station, complete with a life-size whale hanging in a dripping grotto. The detail everywhere is astonishing. Allow at least two hours. Children are enchanted. Adults are quietly stunned. Bookings recommended at busy times.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Tawhiti Museum — tawhitimuseum.co.nz"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The cultural experience at Tawhiti Museum is praised for being both accessible and genuinely informative. A private museum near Hāwera — widely regarded as the best private museum in New Zealand, built around astonishingly detailed life-size and miniature dioramas. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "taranaki-waitomo-valley-opunake",
+      "name": "Ōpunake Beach & Loop Walk",
+      "region": "taranaki",
+      "lat": -39.4547,
+      "lng": 173.8494,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "opunake",
+        "surf",
+        "coastal-walk"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A quiet black-sand beach on the coast road — with a superb clifftop walkway and an outdoor pool that is surprisingly warm.",
+      "commentary": "Ōpunake is a small town on SH45. The clifftop Ōpunake Walkway (7 km) loops the town with ocean views. The Middleton Bay lake offers freshwater swimming.",
+      "audio_story": "You have arrived at Ōpunake, a small town of around fifteen hundred people on the Surf Highway around the southwestern flank of Mount Taranaki. Ōpunake is a surfers' town. The cliff top above the beach looks out on a long sweeping bay where, in the right conditions, the left hand reef break called Arawhata is one of the best point breaks in the country. For visitors who do not surf, Ōpunake offers a superb small town day out. The Ōpunake Walkway is a seven kilometre loop that circles the town on the clifftop above the sea, winding through coastal scrub, past the old lighthouse, and along the beach. On a clear day the maunga is close and huge above you for much of the loop. The freshwater Lake Te Ikaparua at Middleton Bay is warmer than the sea and safe for swimming. In the main street, look for the Tom Cruise memorial water fountain, an oddity commemorating the fact that Tom Cruise lived in Ōpunake for several months in nineteen ninety two while filming The Last Samurai in the nearby forests. Ōpunake rewards a full afternoon. Lunch at one of the small cafes. A coffee looking at the sea. Time slows down here.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "South Taranaki District Council",
+        "Surfing Taranaki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Ōpunake Beach & Loop Walk draws visitors back time and again for its natural beauty and peaceful atmosphere. A quiet black-sand beach on the coast road — with a superb clifftop walkway and an outdoor pool that is surprisingly warm. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-stratford-clocktower",
+      "name": "Stratford Glockenspiel",
+      "region": "taranaki",
+      "lat": -39.3378,
+      "lng": 174.2842,
+      "category": "culture",
+      "tags": [
+        "quirky",
+        "stratford",
+        "glockenspiel",
+        "shakespeare"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.3,
+      "short": "Stratford has streets named for Shakespeare characters and a glockenspiel clock tower that re-enacts the balcony scene from Romeo and Juliet four times a day.",
+      "commentary": "Stratford's streets are named for Shakespeare characters. The glockenspiel clock tower (1996) plays the Romeo and Juliet balcony scene at 10am, 1pm, 3pm, and 7pm.",
+      "audio_story": "You have arrived in Stratford, a dairy town on State Highway Three east of Mount Taranaki, and you have arrived in probably the only town in New Zealand where you can drive down Juliet Street and turn into Romeo Street on your way to Hamlet Street. Stratford was named in eighteen seventy eight after Stratford upon Avon, and the founders took the theme and ran with it. Every street in the central area is named for a Shakespeare character or play. Juliet and Romeo cross each other at right angles, which has amused generations of lovers driving through. In nineteen ninety six the town added the final flourish. A large mechanical glockenspiel clock tower was erected in the main street. Four times a day, at ten, one, three, and seven, the tower springs to life and two wooden figures emerge onto a small balcony to re-enact the famous balcony scene. Hamming it up, in full Elizabethan costume, for around three minutes. The crowd that gathers to watch is usually a mixture of bemused tourists and locals waiting for the bus. If you time your drive through Stratford to coincide with a performance, stop for it. It is extremely silly and completely charming.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Stratford District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Stratford Glockenspiel is praised for being both accessible and genuinely informative. Stratford has streets named for Shakespeare characters and a glockenspiel clock tower that re-enacts the balcony scene from Romeo and Juliet four times a day. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "taranaki-pukeiti",
+      "name": "Pukeiti Rhododendron Garden",
+      "region": "taranaki",
+      "lat": -39.1583,
+      "lng": 173.9992,
+      "category": "nature",
+      "tags": [
+        "rhododendron",
+        "garden",
+        "pukeiti",
+        "taranaki"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "A 360-hectare rhododendron garden set against the bush of Mount Taranaki — one of the largest rhododendron collections in the southern hemisphere.",
+      "commentary": "Pukeiti was founded 1951 and holds around 2000 rhododendron species. Now owned by Taranaki Regional Council and free to enter.",
+      "audio_story": "You have arrived at Pukeiti, which is almost certainly the largest public rhododendron garden in the southern hemisphere. Pukeiti sits at three hundred and seventy metres elevation on the western flank of Mount Taranaki, surrounded on three sides by the untouched bush of Egmont National Park. In nineteen fifty one a group of New Plymouth enthusiasts formed the Pukeiti Rhododendron Trust to preserve this piece of regenerating farmland and begin planting. Seventy five years later the garden contains around two thousand species and cultivars of rhododendron, including several found nowhere else in cultivation. The main flowering season runs from September to November, and peaks in the first two weeks of October, when the garden is simply extraordinary. Shades of pink, white, red, purple, and yellow stretch in every direction under the towering tree ferns. A sealed path winds for over five kilometres through the collection. The great advantage of Pukeiti over the garden at Tupare is its sheer scale. You can walk for an hour and still not see everything. The garden was gifted to Taranaki Regional Council in twenty ten and is free to enter. The visitor centre has a cafe with views of the mountain that is well worth the stop in its own right.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Taranaki Regional Council — Pukeiti"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Pukeiti Rhododendron Garden draws visitors back time and again for its natural beauty and peaceful atmosphere. A 360-hectare rhododendron garden set against the bush of Mount Taranaki — one of the largest rhododendron collections in the southern hemisphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-mt-damper",
+      "name": "Mt Damper Falls",
+      "region": "taranaki",
+      "lat": -38.9894,
+      "lng": 174.6122,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "inland-taranaki",
+        "forgotten-world",
+        "walk"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "At 85 metres, the tallest waterfall in the North Island outside of National Parks — reached by a 50-minute farmland walk.",
+      "commentary": "Mt Damper Falls is an 85-metre single-drop waterfall in rural inland Taranaki, off the Forgotten World Highway. Access is across private farmland open only via an easement.",
+      "audio_story": "You have arrived at Mt Damper Falls, which at eighty five metres is one of the tallest waterfalls in the North Island and probably the tallest one that is not inside a national park. The falls are genuinely remote. They lie in the rolling hill country of inland Taranaki, down a side road from the Forgotten World Highway, and access is across private farmland via a permitted easement. The walk in is flat, about twenty five minutes each way, and crosses sheep and beef country that is quite different from the tidy dairy farms of the coastal Taranaki. You pass through several gates, please close them, cross a small stream, and emerge at a viewing platform on the lip of the canyon. The Mangaatukutuku Stream, which is much smaller than the drama of the falls might suggest, flows quietly along the farm paddock for most of its length before vaulting over the edge of a sheer sandstone bluff and dropping eighty five metres into a narrow bush clad canyon below. The view from the platform is directly into the plunge pool. In low summer flows the waterfall becomes a thin ribbon. In winter after heavy rain it is thunderous. Check the farmer's current access arrangements before you go. Take nothing. Leave nothing.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Stratford District Council",
+        "Forgotten World Highway"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Mt Damper Falls draws visitors back time and again for its natural beauty and peaceful atmosphere. At 85 metres, the tallest waterfall in the North Island outside of National Parks — reached by a 50-minute farmland walk. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "taranaki-fort-saint-george",
+      "name": "Hāwera Water Tower",
+      "region": "taranaki",
+      "lat": -39.5922,
+      "lng": 174.2839,
+      "category": "nature",
+      "tags": [
+        "hawera",
+        "water-tower",
+        "viewpoint",
+        "landmark"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.4,
+      "short": "Climb Hāwera's 1914 reinforced-concrete water tower for one of the best viewing platforms in South Taranaki — maunga, coast, and town spread below.",
+      "commentary": "Hāwera Water Tower (1914) is a 54-metre reinforced concrete water tower that dominates the town skyline. Climbable via 215 internal stairs to a viewing platform.",
+      "audio_story": "You have arrived at the Hāwera Water Tower, and you have found the most recognisable landmark in south Taranaki. The tower was built in nineteen fourteen by the Hāwera Borough Council as a proper municipal water supply, replacing earlier and inadequate wells and springs. At fifty four metres the tower was once the tallest reinforced concrete structure in the country, and even now it dominates the town's flat skyline from almost every angle. What makes it more than a utility monument is that it is open, on most days, to the public. For a small donation at the information centre nearby, you collect a key, cross the car park, unlock the small steel door, and climb two hundred and fifteen internal stairs to an open viewing platform at the top. From there, on a clear day, the view is extraordinary. Mount Taranaki fills the northwestern horizon, textured and close. South, the coast stretches away toward Whanganui. East, the steep hill country of the King Country rises. The town of Hāwera spreads below in a tidy grid. On windy days, and there are many in Taranaki, the tower is closed for safety. Check the information centre for current opening arrangements before you climb.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "South Taranaki District Council",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Hāwera Water Tower draws visitors back time and again for its natural beauty and peaceful atmosphere. Climb Hāwera's 1914 reinforced-concrete water tower for one of the best viewing platforms in South Taranaki — maunga, coast, and town spread below. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "tar_hist_parihaka",
+      "name": "Parihaka",
+      "region": "taranaki",
+      "lat": -39.2928,
+      "lng": 173.8719,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "parihaka",
+        "te-whiti",
+        "tohu",
+        "nonviolence"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are approaching Parihaka, a small settlement in the shadow of Mount Taranaki that carries one of the most important stories in Aotearoa's history. In the eighteen seventies, under the leadership of the prophets Te Whiti o Rongomai and Tohu Kākahi, Parihaka grew into a prosperous village of hundreds, a place of peaceful resistance to the theft of confiscated Taranaki land. When government surveyors arrived to divide up the fields, Parihaka's ploughmen quietly ploughed the surveyors' lines back in. They were arrested and sent south to prison, yet more ploughmen came forward. On the fifth of November eighteen eighty one, over sixteen hundred armed soldiers marched on Parihaka. They found children sitting across the road singing and offering food. The troops destroyed crops and homes, arrested Te Whiti and Tohu, and scattered the people. Yet the village rebuilt. Today Parihaka is a living community and a symbol of peaceful resistance honoured worldwide. A formal Crown apology was made in two thousand and seventeen. Do not enter without invitation. Park on the road and remember a courage that the musket could not break.",
+      "sources_to_check": [
+        "Parihaka Trust",
+        "NZHistory Parihaka",
+        "Crown apology 2017"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Parihaka as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tar_hist_waireka_battle",
+      "name": "Waireka Battle Site",
+      "region": "taranaki",
+      "lat": -39.1122,
+      "lng": 173.9878,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "waireka",
+        "taranaki",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at the site of the Battle of Waireka, fought on the twenty eighth of March eighteen sixty on the coast just south of New Plymouth. It was one of the opening engagements of the First Taranaki War, triggered by the government's attempt to force through a disputed land sale at Waitara. Settler militia and British regulars attacked a Māori position held mostly by Ngāti Ruanui and Taranaki iwi. The fighting was confused and bloody, night fell before it was decided, and a naval detachment under Captain Peter Cracroft eventually stormed the pā. The battle was claimed as a colonial victory, but it hardened Māori resistance and convinced many North Island tribes that the Crown could not be trusted. For years afterwards, settler families fled inland and the Taranaki countryside emptied. Today the battle site is quiet farmland near the sea. A modest monument marks the engagement. Stand here and consider that this unremarkable slope set in motion a long war whose land confiscations still shape Taranaki's Treaty claims in our own century.",
+      "sources_to_check": [
+        "NZHistory Waireka",
+        "Taranaki War records",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Waireka Battle Site — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tar_hist_sentry_hill",
+      "name": "Sentry Hill (Te Morere)",
+      "region": "taranaki",
+      "lat": -39.0272,
+      "lng": 174.1125,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "sentry-hill",
+        "pai-marire",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Sentry Hill, known in te reo as Te Morere, the site of a redoubt manned by colonial forces during the Second Taranaki War. On the thirtieth of April eighteen sixty four, a large force of Pai Mārire warriors attacked the redoubt believing that their faith would turn aside the bullets. Led by prophets of the new religion, they walked upright into the British rifle fire calling the karakia Hapa, meaning pass over. Between thirty and fifty warriors were killed in minutes. The devastating defeat shook the Pai Mārire movement in Taranaki, though it continued elsewhere. A small memorial and interpretive panels tell the story today. Sentry Hill stands as a deeply tragic site, where courage, belief, and colonial firepower met with brutal consequences. Stand at the redoubt outline, face inland toward Mount Taranaki, and reflect on the desperation of land defenders asked to believe that prayer alone could shield them. The war that followed continued for years, and the confiscations that came after reshaped this province.",
+      "sources_to_check": [
+        "NZHistory Sentry Hill",
+        "Pai Mārire records",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Sentry Hill (Te Morere) — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tar_hist_te_koru_pa",
+      "name": "Te Koru Pā",
+      "region": "taranaki",
+      "lat": -39.2294,
+      "lng": 173.8856,
+      "category": "māori",
+      "tags": [
+        "pa",
+        "taranaki",
+        "maori",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Te Koru Pā, an exceptionally well preserved pre-European Māori fortification set on a ridge above the Oakura River south of New Plymouth. From the walking track you can see the deep terraces, ditches, and palisade emplacements cut into the hillside by generations of labour. The pā was a stronghold of Ngā Māhanga a Tairi, a hapū of Taranaki iwi. Its defensive earthworks are among the finest still visible anywhere in the North Island. Stone walls of tabular andesite line some of the terraces, unusual in a country where most pā were built in volcanic soil with timber palisades. Te Koru was abandoned during the wars of the eighteen thirties when Taranaki people retreated from Te Rauparaha's raids, later to return after peace returned in the eighteen forties. The bush has reclaimed much of the site, and walking its paths today is a quiet, moving experience. Stay on the track, do not climb on the terraces, and listen. This is a place where you can stand inside the walls of a civilisation and feel the shape of a very old plan for living safely and well.",
+      "sources_to_check": [
+        "DOC Te Koru Pā",
+        "Ngā Māhanga a Tairi",
+        "Heritage NZ"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Te Koru Pā as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tar_hist_mount_taranaki_ancestor",
+      "name": "Mount Taranaki as Ancestor",
+      "region": "taranaki",
+      "lat": -39.2968,
+      "lng": 174.0638,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "taranaki-maunga",
+        "ancestor",
+        "tupua"
+      ],
+      "trigger_radius_m": 1000,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are in the presence of Taranaki Maunga, the mountain that stands almost perfectly conical at the centre of this province. For the iwi of Taranaki, the maunga is not a feature of landscape but an ancestor. The story tells that Taranaki once stood beside Tongariro, Ruapehu, and Ngāuruhoe in the central plateau, but he loved Pihanga and fought Tongariro over her. Defeated, he fled westward, gouging the course of the Whanganui River in his grief, and finally stopped here to face the sea alone. The tears he weeps feed the rivers of the province. In two thousand and fourteen, Taranaki iwi reached a Treaty redress that ultimately granted legal personhood to the mountain, recognising it as Te Kāhui Tupua with all the rights of a person. You cannot own an ancestor. Climb the maunga with respect, do not stand on the summit peak which is the tapu head, and leave nothing behind. This mountain watches over you even as you look up to it.",
+      "sources_to_check": [
+        "Taranaki iwi",
+        "DOC Egmont National Park",
+        "Treaty settlement legislation"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Mount Taranaki as Ancestor as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tar_hist_bell_block_stockade",
+      "name": "Bell Block Stockade Site",
+      "region": "taranaki",
+      "lat": -39.0122,
+      "lng": 174.1497,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "bell-block",
+        "stockade",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are in Bell Block, today a busy suburb northeast of New Plymouth, but in the eighteen sixties this flat land was a defended line of stockades and blockhouses. Settler families whose farms had been burnt in the Taranaki Wars crowded into redoubts here for protection, unable to work their fields safely. The Bell Block stockade was one of a string of such posts built along the coast to hold open the road to New Plymouth. Life inside was cramped and anxious. Farmers ventured out by day to tend to what remained of their crops, knowing an ambush might be waiting in the manuka. Māori attacks and raids continued until the troops of General Cameron marched further south and the confiscation legislation emptied much of the Taranaki interior. The stockade was dismantled when the wars ended. Little above ground survives, but the suburb's name carries the memory. As you walk or drive through Bell Block, remember that the suburb was born of fear, displacement, and the long violence of land confiscation.",
+      "sources_to_check": [
+        "NZHistory Taranaki Wars",
+        "Heritage NZ",
+        "Puke Ariki"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Bell Block Stockade Site — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tar_hist_te_whiti_peace",
+      "name": "Tohu and Te Whiti Memorial at Parihaka",
+      "region": "taranaki",
+      "lat": -39.2928,
+      "lng": 173.8719,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "te-whiti",
+        "tohu",
+        "parihaka",
+        "memorial"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are near the memorial to Te Whiti o Rongomai and Tohu Kākahi, the two prophets who led Parihaka. Together they preached a message of peaceful resistance grounded in Te Tiriti o Waitangi and in the older authority of the land itself. Their symbol, the raukura, three white feathers, represented peace, courage, and the unity of people. After the invasion of November eighteen eighty one, both men were taken without trial and held for years in the South Island, paraded in humiliation through colonial towns. Yet they returned, and Parihaka rebuilt. Te Whiti died in nineteen oh seven and Tohu the same year. Their message spread far beyond Aotearoa, influencing later non-violent movements around the world, including leaders who looked to Parihaka as an early example of civil disobedience. On the eighteenth of each month, many people in Parihaka still wear the raukura. Pause quietly here and take in what peaceful resistance costs, and what it builds in return.",
+      "sources_to_check": [
+        "Parihaka Trust",
+        "NZHistory Te Whiti",
+        "Te Ara prophets"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Tohu and Te Whiti Memorial at Parihaka as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "tar_hist_waitara_purchase",
+      "name": "Waitara and the Disputed Purchase",
+      "region": "taranaki",
+      "lat": -39.0022,
+      "lng": 174.2364,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "waitara",
+        "purchase",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Waitara, at the mouth of the Waitara River, the flashpoint of the First Taranaki War. In eighteen fifty nine the Crown agreed to buy a small block of land here from Te Teira, ignoring the objections of Wiremu Kīngi Te Rangitāke, the chief of the hapū who shared rights to the block. Wiremu Kīngi and his people built a pā on the disputed ground and refused to allow surveyors on to the land. In March eighteen sixty, British troops attacked. That small disagreement over one block ignited more than a decade of war across Taranaki, reshaping the province through military campaigns and confiscation of more than a million acres. The disputed land was eventually returned to its owners a hundred and fifty seven years later, in twenty seventeen, when the Waitara Lands Bill passed parliament. Today Waitara is a small town and river port. Stand on the riverbank and consider how one bureaucratic signature ignited a war, and how long it took for the balance to be even partially restored.",
+      "sources_to_check": [
+        "NZHistory Waitara",
+        "Waitara Lands Bill 2017",
+        "Te Ati Awa"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Waitara and the Disputed Purchase — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tar_hist_rewa_rewa_railway",
+      "name": "Rewa Rewa Bridge and Coastal Walkway",
+      "region": "taranaki",
+      "lat": -39.04,
+      "lng": 174.1025,
+      "category": "heritage",
+      "tags": [
+        "bridge",
+        "taranaki",
+        "walkway",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are on the Coastal Walkway at the Rewa Rewa Bridge, an elegant white curved footbridge that arcs across the Waiwhakaiho River. The shape of the bridge, opened in two thousand and ten, echoes a whale's jawbone, acknowledging the Ngāti Tawhirikura people who hold mana whenua here and the whales once hunted off this coast. The bridge sits near the old Rewa Rewa urupā, an important burial ground, and the design deliberately directs foot traffic past the cemetery with respect. The Coastal Walkway itself stretches more than thirteen kilometres along the New Plymouth shore, linking city and suburbs and offering framed views of Mount Taranaki on a clear day. It has become one of New Zealand's most admired public works, winning international design awards. As you walk or cycle here, look up to the maunga, then down at the surf and rocks, and remember that even a footpath can be a way of acknowledging ancestry and repairing the bonds between city and tangata whenua.",
+      "sources_to_check": [
+        "Ngāti Tawhirikura",
+        "New Plymouth District Council",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Rewa Rewa Bridge and Coastal Walkway — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "tar_hist_oakura_history",
+      "name": "Ōākura Redoubt and Village",
+      "region": "taranaki",
+      "lat": -39.1158,
+      "lng": 173.9472,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "oakura",
+        "redoubt",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Ōākura, a pretty seaside village south of New Plymouth. In the eighteen sixties the settlement was the site of a colonial redoubt protecting the coast road and the farms of returning settlers. A notorious ambush occurred near here at Wairau in eighteen sixty three when Captain Tragett and eight other soldiers were killed by a war party, an event that further inflamed the Second Taranaki War. Ōākura's black sand beach is one of the most photographed in the province, with Mount Taranaki rising behind on a clear day. The village today is a mix of surf shops, galleries, and holiday houses, but its military origins are still visible in the layout of old farm roads and in interpretive signs near the beach. As you stand with the waves at your back, picture a timber redoubt on the headland, sentries looking into the bush, and a steep line of dairy country stretching north to New Plymouth. The beach is a reminder of how quickly a coastline can shift from battlefield to holiday resort.",
+      "sources_to_check": [
+        "NZHistory Ōākura",
+        "Puke Ariki",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ōākura Redoubt and Village — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "taranaki-parihaka-village",
+      "name": "Parihaka — The Peace Village",
+      "region": "taranaki",
+      "lat": -39.161,
+      "lng": 174.02,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "parihaka",
+        "peace",
+        "te-whiti",
+        "tohu",
+        "resistance"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "Where Te Whiti and Tohu pioneered peaceful protest decades before Gandhi — invaded by 1,600 troops in 1881.",
+      "commentary": "Through ploughing confiscated land and passive resistance, they built a community of over 2,000. On 5 November 1881, troops invaded. Residents met them with singing children and offered food.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Parihaka — The Peace Village as a place where the history and cultural significance of Aotearoa become tangible and real. Where Te Whiti and Tohu pioneered peaceful protest decades before Gandhi — invaded by 1,600 troops in 1881. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-pukerangiora",
+      "name": "Pukerangiora Pā",
+      "region": "taranaki",
+      "lat": -39.006,
+      "lng": 174.228,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "waitara",
+        "musket-wars",
+        "siege"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A massive cliff-top pā above the Waitara River — site of a devastating 1831 Musket Wars siege.",
+      "commentary": "In 1831, Waikato forces besieged the pā for three months. The siege caused massive displacement, with many Taranaki iwi fleeing south.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Pukerangiora Pā as a place where the history and cultural significance of Aotearoa become tangible and real. A massive cliff-top pā above the Waitara River — site of a devastating 1831 Musket Wars siege. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-waitara",
+      "name": "Waitara — Where the Taranaki War Began",
+      "region": "taranaki",
+      "lat": -38.997,
+      "lng": 174.235,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "taranaki-war",
+        "land-confiscation"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The disputed land purchase that sparked the first Taranaki War in 1860.",
+      "commentary": "The Crown enforced a disputed purchase from a minor chief, over the objections of the principal chief. Fighting broke out and continued for years, leading to massive land confiscations.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Waitara — Where the Taranaki War Began as a place where the history and cultural significance of Aotearoa become tangible and real. The disputed land purchase that sparked the first Taranaki War in 1860. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-maunga-ancestor",
+      "name": "Taranaki Maunga — The Ancestor Mountain",
+      "region": "taranaki",
+      "lat": -39.2967,
+      "lng": 174.064,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "maunga",
+        "mythology",
+        "ancestor"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 6,
+      "short": "In Māori tradition, Taranaki fought Tongariro for the love of Pihanga and fled west, carving the Whanganui River.",
+      "commentary": "A Treaty settlement granted the mountain legal personhood. For the eight iwi of Taranaki, the mountain is a sacred ancestor and the centre of their identity.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Taranaki Maunga — The Ancestor Mountain as a place where the history and cultural significance of Aotearoa become tangible and real. In Māori tradition, Taranaki fought Tongariro for the love of Pihanga and fled west, carving the Whanganui River. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-puke-ariki-gallery",
+      "name": "Puke Ariki Museum, New Plymouth",
+      "region": "taranaki",
+      "lat": -39.057,
+      "lng": 174.077,
+      "category": "culture",
+      "tags": [
+        "māori",
+        "museum",
+        "taranaki",
+        "taonga"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "Taranaki's museum with significant Māori taonga and a powerful telling of the region's turbulent history.",
+      "commentary": "The museum presents the region's complex history — Musket Wars, Taranaki Wars, Parihaka, and land confiscations — with sensitivity to Māori perspectives.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The cultural experience at Puke Ariki Museum, New Plymouth is praised for being both accessible and genuinely informative. Taranaki's museum with significant Māori taonga and a powerful telling of the region's turbulent history. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "taranaki-nga-motu",
+      "name": "Ngā Motu / Sugar Loaf Islands",
+      "region": "taranaki",
+      "lat": -39.058,
+      "lng": 174.034,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "islands",
+        "volcanic",
+        "pā",
+        "marine-reserve"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "Dramatic volcanic remnants off New Plymouth — pā sites, Māori fishing grounds, and a marine reserve.",
+      "commentary": "The islands were used by Māori as pā sites, fishing platforms, and burial places. They sit within a marine protected area.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Ngā Motu / Sugar Loaf Islands as a place where the history and cultural significance of Aotearoa become tangible and real. Dramatic volcanic remnants off New Plymouth — pā sites, Māori fishing grounds, and a marine reserve. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-owae-marae",
+      "name": "Owae Marae, Waitara",
+      "region": "taranaki",
+      "lat": -38.997,
+      "lng": 174.24,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "te-ātiawa",
+        "carving"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "One of the most finely carved marae in Taranaki — the spiritual centre for Te Ātiawa.",
+      "commentary": "Owae Marae features some of the finest contemporary Māori carving in the Taranaki region.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Owae Marae, Waitara as a place where the history and cultural significance of Aotearoa become tangible and real. One of the most finely carved marae in Taranaki — the spiritual centre for Te Ātiawa. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-pariokariwa",
+      "name": "Pariokariwa Point — Coastal Pā",
+      "region": "taranaki",
+      "lat": -39.283,
+      "lng": 173.746,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "coastal",
+        "surf"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Coastal headland pā sites along the North Taranaki coast — where volcanic cliffs meet the Tasman Sea.",
+      "commentary": "The coastline is dotted with pā sites on prominent headlands, exploiting natural defences of volcanic cliffs above the surf.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Pariokariwa Point — Coastal Pā as a place where the history and cultural significance of Aotearoa become tangible and real. Coastal headland pā sites along the North Taranaki coast — where volcanic cliffs meet the Tasman Sea. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-te-koru-pa",
+      "name": "Te Koru Pā, Oakura",
+      "region": "taranaki",
+      "lat": -39.037,
+      "lng": 174.056,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "coastal",
+        "terraces"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A beautifully preserved coastal pā near Oakura — terraces overlooking the Tasman Sea.",
+      "commentary": "Te Koru Pā occupies a dramatic coastal headland with well-preserved terracing, ditches, and palisade lines.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Koru Pā, Oakura as a place where the history and cultural significance of Aotearoa become tangible and real. A beautifully preserved coastal pā near Oakura — terraces overlooking the Tasman Sea. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-eight-tribes",
+      "name": "Taranaki Iwi — Eight Tribes of the Mountain",
+      "region": "taranaki",
+      "lat": -39.056,
+      "lng": 174.074,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "iwi",
+        "taranaki",
+        "identity"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "Eight iwi share Mount Taranaki as their ancestor — each distinct but united by the mountain.",
+      "commentary": "Te Ātiawa, Taranaki, Ngāti Ruanui, Ngāruahine, Ngāti Mutunga, Ngāti Tama, Ngāti Maru, and Ngā Rauru Kītahi all share 'Ko Taranaki te maunga'.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Taranaki Iwi — Eight Tribes of the Mountain as a place where the history and cultural significance of Aotearoa become tangible and real. Eight iwi share Mount Taranaki as their ancestor — each distinct but united by the mountain. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-cape-egmont",
+      "name": "Cape Egmont — Te Kape o Taranaki",
+      "region": "taranaki",
+      "lat": -39.28,
+      "lng": 173.75,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "coastal",
+        "lighthouse",
+        "taranaki"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "The westernmost point of Taranaki — a significant coastal landmark in tribal navigation traditions.",
+      "commentary": "Cape Egmont was a major navigation reference point for Māori travelling along the coast. The lighthouse marks the point, but the cape's significance predates European arrival by centuries.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Cape Egmont — Te Kape o Taranaki as a place where the history and cultural significance of Aotearoa become tangible and real. The westernmost point of Taranaki — a significant coastal landmark in tribal navigation traditions. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "taranaki-surf-highway-45",
+      "name": "Surf Highway 45",
+      "region": "taranaki",
+      "lat": -39.178,
+      "lng": 173.961,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "surf",
+        "scenic-highway",
+        "beach"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 2,
+      "short": "Drive the Surf Highway past a string of world-class breaks on the Taranaki coast with the volcanic cone as backdrop.",
+      "commentary": "State Highway 45, known as the Surf Highway, runs 105 km along the southwestern Taranaki coast from New Plymouth to Hawera. The road passes numerous surf breaks including Oakura, Kumara Patch, Stent Road, and Opunake. Mount Taranaki provides a dramatic volcanic backdrop to the coastline.",
+      "audio_story": "You are cruising down State Highway 45, officially known as the Surf Highway, and the name is no exaggeration. This 105-kilometre coastal road from New Plymouth to Hawera passes break after break — Oakura, Kumara Patch, Stent Road, Green Meadows, Opunake — each with its own character and loyal following. The Taranaki coastline catches swells from across the Tasman Sea, and the numerous reefs and points shape them into rideable waves almost year-round. Pull over at any of the layby viewpoints and you will likely see surfers dotting the lineup. To your east, Mount Taranaki rises 2,518 metres in near-perfect symmetry, its snow-capped peak often reflected in the calm sea at dawn. This is small-town New Zealand at its best — friendly cafes, uncrowded beaches, and a genuine surf culture that has been thriving since the 1960s. Opunake, roughly halfway, is the main town on this coast and has a community-owned cinema that is absolutely worth a stop.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Venture Taranaki",
+        "NZ Transport Agency"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Surf Highway 45 route delivers a memorable journey through exceptional New Zealand scenery. Drive the Surf Highway past a string of world-class breaks on the Taranaki coast with the volcanic cone as backdrop. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-pouakai-crossing",
+      "name": "Pouakai Crossing",
+      "region": "taranaki",
+      "lat": -39.226,
+      "lng": 174.058,
+      "category": "journey",
+      "tags": [
+        "day-walk",
+        "alpine",
+        "volcanic",
+        "tarn",
+        "tramping"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 8,
+      "short": "Walk the Pouakai Crossing for the famous tarn reflection of Mount Taranaki — the North Island's answer to the Tongariro Crossing.",
+      "commentary": "The Pouakai Crossing is a 19 km one-way walk in Egmont National Park, traversing the Pouakai Range with stunning views of Mount Taranaki. The route passes the Pouakai Tarns, where the mountain's reflection in still water has become one of New Zealand's most photographed scenes. The track crosses subalpine terrain and goblin forest.",
+      "audio_story": "You are setting out on the Pouakai Crossing, Taranaki's answer to the Tongariro Alpine Crossing and increasingly regarded as its equal. The 19-kilometre route traverses the ancient Pouakai Range, a remnant of a much older volcano than Mount Taranaki. The terrain shifts from lush goblin forest — twisted rata and kamahi trees draped in moss and ferns — to open subalpine tussock with breathtaking views. The highlight is the Pouakai Tarns, small alpine pools that on a calm day create a mirror-perfect reflection of Mount Taranaki. This image has become one of the most iconic photographs in New Zealand, and standing here you understand why. The mountain's symmetrical cone fills the sky to the southeast, and the reflection doubles its impact. Egmont National Park receives extraordinary rainfall — up to 8,000 millimetres a year on the mountain — so come prepared for wet conditions. The track can be muddy, and the subalpine section is exposed. But on a clear day, this walk is genuinely world-class.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Egmont National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Pouakai Crossing route delivers a memorable journey through exceptional New Zealand scenery. Walk the Pouakai Crossing for the famous tarn reflection of Mount Taranaki — the North Island's answer to the Tongariro Crossing. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-stratford-mountain-road",
+      "name": "Stratford Mountain House Road",
+      "region": "taranaki",
+      "lat": -39.308,
+      "lng": 174.144,
+      "category": "journey",
+      "tags": [
+        "mountain-road",
+        "scenic-drive",
+        "volcanic",
+        "ski-area"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Drive up the eastern slopes of Mount Taranaki on the only road to the mountain's ski area.",
+      "commentary": "The Stratford Mountain House Road (Pembroke Road) climbs from Stratford to the Manganui Ski Area at 1,300 metres on Mount Taranaki's eastern slopes. The narrow road passes through farmland, dense bush, and subalpine scrub with views across the Taranaki ring plain. It is the highest road on the mountain.",
+      "audio_story": "You are driving up Pembroke Road from Stratford, climbing the eastern flank of Mount Taranaki on the only road that reaches the upper slopes. The road rises steadily through dairy farmland, then plunges into dense native bush. As you gain altitude, the bush transitions from broadleaf forest to stunted subalpine scrub, and views open up across the Taranaki ring plain — the circular pattern of farmland that radiates out from the mountain's base. At the road end, 1,300 metres above sea level, you reach the Manganui Ski Area, a small community-run ski field that operates from makeshift infrastructure and raw enthusiasm. In summer, this is the starting point for the summit track. From here, Mount Taranaki's cone rises steeply above you, and on a clear day the shadow of the mountain stretches across the plain at sunset in a perfect triangular silhouette. The road is narrow with tight switchbacks — take your time and use the passing bays.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Stratford District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Stratford Mountain House Road route delivers a memorable journey through exceptional New Zealand scenery. Drive up the eastern slopes of Mount Taranaki on the only road to the mountain's ski area. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-len-lye-heritage-walk",
+      "name": "New Plymouth Coastal Walkway",
+      "region": "taranaki",
+      "lat": -39.0556,
+      "lng": 174.0697,
+      "category": "journey",
+      "tags": [
+        "urban-walk",
+        "coastal",
+        "art",
+        "wind-wand"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "Walk 13 km along New Plymouth's award-winning coastal pathway, past the iconic Wind Wand and Len Lye Centre.",
+      "commentary": "The New Plymouth Coastal Walkway stretches 13 km from the Bell Block mouth to Port Taranaki. Highlights include the Len Lye Wind Wand (a 45-metre kinetic sculpture), Te Rewa Rewa Bridge, and Pukekura Park. The walkway has won international design awards and offers views of Mount Taranaki and the Tasman Sea.",
+      "audio_story": "You are walking the New Plymouth Coastal Walkway, 13 kilometres of award-winning pathway that hugs the Tasman Sea coastline. Ahead of you, the 45-metre Wind Wand by kinetic artist Len Lye sways and dips in the breeze — a slender red wand tipped with a glowing sphere, constantly moving, constantly mesmerising. Lye, born in Christchurch in 1901, became an internationally celebrated artist, and the Len Lye Centre nearby houses his extraordinary kinetic sculptures and experimental films. Continue along the walkway to Te Rewa Rewa Bridge, a graceful wave-shaped structure that perfectly frames Mount Taranaki when you stand at the right angle — it has become one of the most photographed spots in the region. The pathway passes rocky beaches, grassy berms, and Pukekura Park, a stunning botanical garden with a fernery and lake. To the south, Mount Taranaki dominates the skyline. This coastal walkway has set the standard for urban waterfront development in New Zealand.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "New Plymouth District Council",
+        "Len Lye Centre"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The New Plymouth Coastal Walkway route delivers a memorable journey through exceptional New Zealand scenery. Walk 13 km along New Plymouth's award-winning coastal pathway, past the iconic Wind Wand and Len Lye Centre. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-around-the-mountain-circuit",
+      "name": "Around the Mountain Circuit",
+      "region": "taranaki",
+      "lat": -39.296,
+      "lng": 174.064,
+      "category": "journey",
+      "tags": [
+        "multi-day",
+        "tramping",
+        "volcanic",
+        "circumnavigation",
+        "alpine"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 30,
+      "short": "Circle Mount Taranaki on a 3-5 day tramp through rainforest, lava fields, and subalpine gardens.",
+      "commentary": "The Around the Mountain Circuit is a 46 km loop circumnavigating Mount Taranaki through Egmont National Park. The route passes through diverse vegetation zones from lowland rainforest to subalpine desert. Multiple DOC huts provide accommodation. The circuit offers ever-changing perspectives of the mountain.",
+      "audio_story": "You are embarking on the Around the Mountain Circuit, a 46-kilometre loop that circumnavigates Mount Taranaki through every possible landscape the mountain offers. Over three to five days, you pass through dripping lowland rainforest, twisted goblin forest, alpine herb fields, barren lava flows, and dramatic river gorges carved by lahars. The mountain reveals a different face from every angle — seen from the north it is symmetrical perfection, from the east the Fanthams Peak subsidiary cone adds complexity, and from the south the older, eroded Pouakai Range provides contrast. This national park receives some of the highest rainfall in New Zealand — up to 8,000 millimetres annually on the upper slopes — so expect wet conditions and be prepared. The bush is extraordinarily lush as a result, with rata, kamahi, and rimu draped in mosses and epiphytes. DOC huts are spaced a day's walk apart. Take your time and absorb the remarkable ecological diversity — you will walk through more vegetation zones in three days than most trampers see in a week.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Department of Conservation",
+        "Egmont National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Around the Mountain Circuit route delivers a memorable journey through exceptional New Zealand scenery. Circle Mount Taranaki on a 3-5 day tramp through rainforest, lava fields, and subalpine gardens. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-whangamomona-republic",
+      "name": "Whangamomona – Republic of Whangamomona Drive",
+      "region": "taranaki",
+      "lat": -39.034,
+      "lng": 174.782,
+      "category": "journey",
+      "tags": [
+        "back-road",
+        "heritage",
+        "quirky",
+        "rural",
+        "republic"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1.5,
+      "short": "Drive to the self-declared Republic of Whangamomona, a quirky backcountry settlement that once elected a goat as president.",
+      "commentary": "Whangamomona is a remote settlement on the Forgotten World Highway (SH43) that declared itself an independent republic in 1989 to protest being moved from the Taranaki to the Manawatu-Wanganui region. The republic has its own passport stamp and has elected a goat and a poodle as president. Republic Day is held in January.",
+      "audio_story": "You are approaching Whangamomona on the Forgotten World Highway, and things are about to get delightfully strange. This tiny settlement, population approximately 20, declared itself an independent republic in 1989 when a local government boundary change threatened to move it out of the Taranaki region. The locals were having none of it. The Republic of Whangamomona now issues its own passports — you can get yours stamped at the Whangamomona Hotel, a classic early 1900s country pub that is the social hub of the entire republic. The presidency has been held by a series of increasingly unusual candidates: a human, a goat named Billy Gumboot, and a poodle named Tai. Every January, Republic Day features a race to shear a sheep, a gumboot-throwing competition, and a possum-skinning contest. The humour is dry, the beer is cold, and the spirit of independent-minded rural New Zealand is alive and flourishing. Stay for lunch and raise a glass to the republic.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Republic of Whangamomona",
+        "Venture Taranaki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Whangamomona – Republic of Whangamomona Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive to the self-declared Republic of Whangamomona, a quirky backcountry settlement that once elected a goat as president. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "taranaki-summit-climb",
+      "name": "Mount Taranaki Summit Climb",
+      "region": "taranaki",
+      "lat": -39.296,
+      "lng": 174.064,
+      "category": "adventure",
+      "tags": [
+        "volcano-hiking",
+        "summit",
+        "alpine",
+        "free",
+        "iconic"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 10,
+      "short": "Summit the near-perfect volcanic cone of Mount Taranaki at 2,518 metres.",
+      "commentary": "Mount Taranaki (2,518m) is a stunning symmetrical stratovolcano and one of the most climbed mountains in New Zealand. The main route from North Egmont Visitor Centre is a strenuous 12-14 km return. Alpine experience and preparation are essential as conditions can change rapidly.",
+      "audio_story": "You have arrived at the North Egmont Visitor Centre at 960 metres, the start of your ascent of Mount Taranaki. Above you, the near-perfect volcanic cone rises another 1,558 metres to the 2,518-metre summit, and on a clear day, the peak seems to pierce the sky. The route climbs through goblin forest, where moss-draped kamahi trees give way to alpine tussock and then bare volcanic rock and scoria. This mountain demands respect, it creates its own weather systems, and conditions at the summit can be 20 degrees colder with winds exceeding 100 kilometres per hour, even when the coast below is calm. Carry warm layers, a map, and a PLB regardless of the forecast. Taranaki last erupted around 1854, and from the summit crater, you can see the geological evidence of its violent history. The reward is one of the finest summit panoramas in New Zealand, extending from the Kaimanawa Ranges to the South Island on the clearest days.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "DOC",
+        "Taranaki Alpine Club",
+        "Mountain Safety Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Mount Taranaki Summit Climb adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Summit the near-perfect volcanic cone of Mount Taranaki at 2,518 metres. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taranaki-forgotten-world-adventures",
+      "name": "Forgotten World Adventures Rail Cart",
+      "region": "taranaki",
+      "lat": -39.071,
+      "lng": 174.605,
+      "category": "adventure",
+      "tags": [
+        "rail-cart",
+        "scenic",
+        "commercial",
+        "unique",
+        "tunnel"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 4,
+      "short": "Ride self-drive rail carts through 20 tunnels on the abandoned Forgotten World railway.",
+      "commentary": "Forgotten World Adventures operates self-drive rail carts on the abandoned railway between Whangamomona and Stratford. The route passes through 20 tunnels, including the 1.6 km Moki Tunnel, across bridges, and through remote farmland that time has largely forgotten.",
+      "audio_story": "You have arrived in one of the most remote corners of the North Island for an adventure that exists nowhere else in New Zealand. Forgotten World Adventures has converted the abandoned railway between Whangamomona and Stratford into a unique rail cart experience. You will drive your own small motorised cart along the original tracks, passing through 20 tunnels carved through the hills over a century ago. The longest, the Moki Tunnel, stretches 1.6 kilometres and is so dark that your headlight barely touches the far end. Between tunnels, the railway crosses bridges, skirts steep hillsides, and passes through countryside so remote that some farms here are still only accessible by the rail line. The self-proclaimed Republic of Whangamomona adds a dash of Kiwi eccentricity to the journey, this tiny settlement declared independence in 1989 and has elected a goat and a poodle as president.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Forgotten World Adventures",
+        "Stratford i-SITE"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Forgotten World Adventures Rail Cart adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ride self-drive rail carts through 20 tunnels on the abandoned Forgotten World railway. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taranaki-dawson-falls-abseil",
+      "name": "Dawson Falls Waterfall Walk",
+      "region": "taranaki",
+      "lat": -39.33,
+      "lng": 174.101,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "waterfall",
+        "free",
+        "family-friendly",
+        "volcano"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Walk through goblin forest to the 18-metre Dawson Falls on Mount Taranaki's south side.",
+      "commentary": "Dawson Falls is an 18-metre waterfall on the southern slopes of Mount Taranaki, reached by a 20-minute walk through mossy goblin forest. The track starts from the Dawson Falls Visitor Centre and passes through some of the most atmospheric forest on the mountain.",
+      "audio_story": "You have arrived at the Dawson Falls Visitor Centre on the southern slopes of Mount Taranaki, where a short walk through enchanting goblin forest leads to one of the mountain's most photogenic waterfalls. The track winds through a world of moss-draped trees, their branches twisted into fantastical shapes by the mountain winds and dripping with moisture. Every surface is covered in green, creating an atmosphere that feels ancient and slightly magical. After about 20 minutes of easy walking, you will hear the falls before you see them, an 18-metre cascade of water plunging over volcanic rock into a bush-fringed pool. The falls are named after Thomas Dawson, who explored this area in the 1880s and was one of the first Europeans to climb the mountain. The goblin forest effect is caused by constant cloud and mist at this elevation, creating perfect growing conditions for mosses and epiphytes that smother every branch.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC",
+        "Egmont National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Dawson Falls Waterfall Walk adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Walk through goblin forest to the 18-metre Dawson Falls on Mount Taranaki's south side. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taranaki-new-plymouth-coastal-walkway-sup",
+      "name": "New Plymouth Coastal Walkway SUP",
+      "region": "taranaki",
+      "lat": -39.056,
+      "lng": 174.048,
+      "category": "adventure",
+      "tags": [
+        "stand-up-paddleboarding",
+        "coastal",
+        "hire",
+        "scenic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Paddleboard along New Plymouth's iconic coastal walkway with Taranaki as your backdrop.",
+      "commentary": "Stand-up paddleboarding along the New Plymouth coast offers a unique perspective of the city's award-winning 13 km coastal walkway and the Wind Wand sculpture. The sheltered waters near the port are ideal for SUP, with Mount Taranaki as a stunning backdrop.",
+      "audio_story": "You have arrived at the New Plymouth waterfront, where a stand-up paddleboard offers one of the most scenic coastal perspectives in the North Island. From the water, you can appreciate the full sweep of the city's award-winning 13-kilometre coastal walkway, including Len Lye's iconic Wind Wand swaying on the foreshore. The waters near the port breakwater are sheltered from the prevailing swell, creating flat conditions ideal for paddling. Behind the city, Mount Taranaki dominates the skyline, its snow-capped cone reflected in the water on calm days. Paddle north towards the Len Lye Centre and the Puke Ariki landing, or south towards Paritutu Rock, a dramatic volcanic monolith that rises 154 metres from the coast. Board hire is available from operators near the waterfront. Early mornings are best for flat water and the finest mountain views.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Beach Street SUP",
+        "Venture Taranaki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The New Plymouth Coastal Walkway SUP adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Paddleboard along New Plymouth's iconic coastal walkway with Taranaki as your backdrop. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taranaki-egmont-skiing",
+      "name": "Manganui Ski Area (Mount Taranaki)",
+      "region": "taranaki",
+      "lat": -39.273,
+      "lng": 174.098,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "club-field",
+        "affordable"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 5,
+      "short": "Ski the intimate club field on Mount Taranaki with views to the coast.",
+      "commentary": "Manganui Ski Area is a club-operated ski field on the eastern face of Mount Taranaki. It offers a small rope tow and T-bar serving intermediate to advanced terrain. The field has a loyal local following and is one of the most affordable skiing options in the North Island.",
+      "audio_story": "You have arrived at Manganui Ski Area on the eastern slopes of Mount Taranaki, one of New Zealand's last true club ski fields and a world away from the commercial resorts. A rope tow and T-bar serve a compact but rewarding area of volcanic slopes that offer genuine alpine skiing at a fraction of the usual cost. The terrain suits intermediate to advanced skiers and snowboarders, with natural features, chutes, and on a powder day, some of the best skiing in the North Island. What makes Manganui special is the atmosphere, this is a community-run field where everyone mucks in, the coffee is from a thermos, and the vibe is welcoming. The views are extraordinary, on a clear day you can see from the volcanic slopes all the way to the Tasman Sea coastline. Snow conditions depend entirely on the weather patterns hitting Taranaki, so check the field report before making the drive. When it is on, it is genuinely on.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Manganui Ski Club",
+        "NZ Ski"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Manganui Ski Area (Mount Taranaki) adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Ski the intimate club field on Mount Taranaki with views to the coast. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "taranaki-waterfall-abseil-taranaki",
+      "name": "Taranaki Waterfall Abseiling",
+      "region": "taranaki",
+      "lat": -39.306,
+      "lng": 174.081,
+      "category": "adventure",
+      "tags": [
+        "abseiling",
+        "waterfall",
+        "canyoning",
+        "commercial",
+        "adrenaline"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Abseil down waterfalls on the rainforest-clad slopes of Mount Taranaki.",
+      "commentary": "Waterfall abseiling on Mount Taranaki involves descending waterfalls of varying heights in the bush-clad gorges of Egmont National Park. Operators guide participants down cascades surrounded by dense native rainforest. No prior experience is needed.",
+      "audio_story": "You have arrived in Egmont National Park for one of the most exhilarating adventure experiences on Mount Taranaki, descending waterfalls by rope through lush native rainforest. Your guides will equip you with a wetsuit, harness, and helmet before leading you into a bush-filled gorge where the mountain's streams cascade over rock faces draped in ferns and moss. The abseils range in height, building your confidence on smaller drops before tackling the main event, a full waterfall descent with water streaming over your head and the gorge dropping away beneath your feet. The forest around you is some of the densest and most pristine in the North Island, a rainforest microclimate created by the mountain's massive influence on local weather patterns. Taranaki receives enormous rainfall, which is exactly what creates the waterfalls you are descending. No experience is needed, your guides control the safety systems while you focus on the extraordinary sensation of walking backwards down a waterfall in the middle of the bush.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Taranaki Outdoor Adventures",
+        "DOC"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Taranaki Waterfall Abseiling adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Abseil down waterfalls on the rainforest-clad slopes of Mount Taranaki. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

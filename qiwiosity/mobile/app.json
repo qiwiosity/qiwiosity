@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Qiwiosity",
+    "slug": "qiwiosity",
+    "scheme": "qiwiosity",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0B4F3C"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "nz.qiwiosity.app",
+      "config": {
+        "usesNonExemptEncryption": false,
+        "googleMapsApiKey": "AIzaSyDKPDEK032DcR-BxHVjGlISHT3Asfvt3z8"
+      },
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Qiwiosity uses your location to trigger stories as you pass points of interest.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Qiwiosity uses your location in the background so stories keep playing while you drive, even with the screen off.",
+        "UIBackgroundModes": [
+          "audio",
+          "location"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B4F3C"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDKPDEK032DcR-BxHVjGlISHT3Asfvt3z8"
+        }
+      },
+      "package": "nz.qiwiosity.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "_plugins_full_build": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Qiwiosity to use your location to trigger stories as you drive past them, even when the screen is off.",
+          "locationWhenInUsePermission": "Allow Qiwiosity to use your location to show nearby attractions and play their stories.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ],
+      "./plugins/withCarPlay",
+      "./plugins/withAndroidAuto"
+    ],
+    "plugins": []
+  }
+}

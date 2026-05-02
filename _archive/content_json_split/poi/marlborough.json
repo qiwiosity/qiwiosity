@@ -1,0 +1,1540 @@
+{
+  "region": {
+    "id": "marlborough",
+    "name": "Marlborough",
+    "island": "South",
+    "centre": {
+      "lat": -41.5136,
+      "lng": 173.9614
+    },
+    "bounds": {
+      "north": -40.8,
+      "south": -42.2,
+      "east": 174.5,
+      "west": 172.9
+    },
+    "description": "The South Island's wine bowl and the Marlborough Sounds — the drowned river valleys that make up a fifth of New Zealand's coastline."
+  },
+  "pois": [
+    {
+      "id": "queen-charlotte-track",
+      "name": "Queen Charlotte Track",
+      "region": "marlborough",
+      "lat": -41.1333,
+      "lng": 174.1,
+      "category": "nature",
+      "tags": [
+        "walking",
+        "mountain-biking",
+        "sounds",
+        "resupply-by-boat",
+        "74km"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 12,
+      "short": "A 74 km ridge-line walk/ride across the Marlborough Sounds — with water-taxi luggage transfers and lodges along the way.",
+      "commentary": "The Queen Charlotte Track runs 74 km from Ship Cove (Meretoto) — where Cook anchored five times between 1770 and 1777 — to Anakiwa. It sits on the ridge between Queen Charlotte Sound and Kenepuru Sound, with long saltwater views either side. The clever part of the infrastructure: water taxis will transfer your luggage between the lodges each day, so you walk or ride with just a daypack. 3–5 days walking; 2–3 days mountain biking (bikes banned on some sections Dec–Feb to share the track).",
+      "scripts": {
+        "headline": "scripts/queen-charlotte-track.headline.md",
+        "standard": "scripts/queen-charlotte-track.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Queen Charlotte Track",
+        "Marlborough Sounds Adventure Co."
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Queen Charlotte Track draws visitors back time and again for its natural beauty and peaceful atmosphere. A 74 km ridge-line walk/ride across the Marlborough Sounds — with water-taxi luggage transfers and lodges along the way. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "picton",
+      "name": "Picton / Waitohi",
+      "region": "marlborough",
+      "lat": -41.2928,
+      "lng": 174.0042,
+      "category": "culture",
+      "tags": [
+        "ferry-port",
+        "edwin-fox",
+        "south-island-gateway",
+        "sound"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "The South Island's main ferry port — and home to the ninth-oldest ship in the world, the 1853 *Edwin Fox*.",
+      "commentary": "Picton is the ferry town: the 3-hour Interislander and Bluebridge crossings from Wellington dock here. Beyond that it's a small, pretty harbour town and the gateway to Queen Charlotte Sound. The *Edwin Fox* — a 1853 teak sailing ship, and the ninth-oldest ship in the world — sits in a dry dock at the wharf. She carried migrants to Australia and NZ, convicts to Western Australia, troops to the Crimea, and ended her career as a Picton freezer-hulk. The EcoWorld aquarium next door is a decent wet-weather option.",
+      "scripts": {
+        "headline": "scripts/picton.headline.md",
+        "standard": "scripts/picton.standard.md"
+      },
+      "sources_to_check": [
+        "Edwin Fox Museum",
+        "Marlborough District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The cultural experience at Picton / Waitohi is praised for being both accessible and genuinely informative. The South Island's main ferry port — and home to the ninth-oldest ship in the world, the 1853 *Edwin Fox*. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "blenheim-wine-country",
+      "name": "Blenheim Wine Country",
+      "region": "marlborough",
+      "lat": -41.518,
+      "lng": 173.9613,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "sauvignon-blanc",
+        "cloudy-bay",
+        "cycle",
+        "cellar-doors"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 5,
+      "short": "The largest wine region in the country — 27,000 hectares of mostly Sauvignon Blanc between Blenheim and the coast.",
+      "commentary": "Marlborough produces around 77% of New Zealand's wine by volume, and overwhelmingly Sauvignon Blanc — a style the region effectively invented internationally. The first commercial vines were planted by Montana (now Brancott) in 1973 on land that had been considered too dry for anything but grazing. The current ~27,000 hectares makes this by far NZ's biggest wine region. Cloudy Bay, Brancott, Villa Maria, Cloudy Bay, Dog Point, Seresin — all have cellar doors, most within 15 minutes of Blenheim. Cycle the vineyards: hire bikes, follow the flat Wairau Valley Wine Trail.",
+      "scripts": {
+        "headline": "scripts/blenheim-wine-country.headline.md",
+        "standard": "scripts/blenheim-wine-country.standard.md"
+      },
+      "sources_to_check": [
+        "Wine Marlborough — wine-marlborough.co.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Blenheim Wine Country delivers an excellent food and wine experience that visitors describe as a highlight of the region. The largest wine region in the country — 27,000 hectares of mostly Sauvignon Blanc between Blenheim and the coast. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "omaka-aviation",
+      "name": "Omaka Aviation Heritage Centre",
+      "region": "marlborough",
+      "lat": -41.5333,
+      "lng": 173.8667,
+      "category": "culture",
+      "tags": [
+        "aviation",
+        "wingnut",
+        "ww1",
+        "ww2",
+        "peter-jackson"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Peter Jackson's personal WW1 aircraft collection, displayed in cinematic dioramas by the Weta Workshop team.",
+      "commentary": "Omaka holds Peter Jackson's personal collection of WW1 and WW2 aircraft — nearly 30 original and reproduction planes. But the magic is the staging: rather than static exhibits, Weta Workshop designed cinematic dioramas — crashed Fokker Triplanes, pilots frozen in mid-action, forced landings in French fields, the Red Baron's last day. The WW2 hall opened in 2016 and is equally immersive. Two hours minimum. One of the most distinctive museums in the country, in an unexpected place.",
+      "scripts": {
+        "headline": "scripts/omaka-aviation.headline.md",
+        "standard": "scripts/omaka-aviation.standard.md"
+      },
+      "sources_to_check": [
+        "Omaka — omaka.org.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The cultural experience at Omaka Aviation Heritage Centre is praised for being both accessible and genuinely informative. Peter Jackson's personal WW1 aircraft collection, displayed in cinematic dioramas by the Weta Workshop team. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "havelock-mussels",
+      "name": "Havelock",
+      "region": "marlborough",
+      "lat": -41.2833,
+      "lng": 173.7667,
+      "category": "food-wine",
+      "tags": [
+        "mussels",
+        "green-lipped",
+        "rutherford",
+        "pelorus"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "'Greenshell mussel capital of the world' — and the place Ernest Rutherford went to school.",
+      "commentary": "Havelock sits at the head of the Pelorus Sound. The Marlborough Sounds produce most of the world's farmed green-lipped mussels — *Perna canaliculus* — and Havelock is where they're boated in, processed, and sent worldwide. The town branding is self-aware: 'Mussel capital.' Eat at The Mussel Pot. Secondarily, Havelock is where Ernest Rutherford attended primary school (his family moved here in 1883, when he was 12); the small museum has a modest exhibit. Also the departure point for Pelorus Sound mail-boat cruises.",
+      "scripts": {
+        "headline": "scripts/havelock-mussels.headline.md",
+        "standard": "scripts/havelock-mussels.standard.md"
+      },
+      "sources_to_check": [
+        "Marlborough District Council",
+        "The Mussel Pot"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Havelock delivers an excellent food and wine experience that visitors describe as a highlight of the region. 'Greenshell mussel capital of the world' — and the place Ernest Rutherford went to school. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "kenepuru-sound",
+      "name": "Kenepuru Sound",
+      "region": "marlborough",
+      "lat": -41.1833,
+      "lng": 173.9833,
+      "category": "journey",
+      "tags": [
+        "sound",
+        "scenic-drive",
+        "remote",
+        "hidden-gem",
+        "one-lane-road"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 4,
+      "short": "A 70 km one-lane road to nowhere, along the edge of one of the quietest Sounds.",
+      "commentary": "Kenepuru Road is 70 km of winding, single-lane, partly-sealed coastal road — one of the most beautiful dead-ends in New Zealand. It follows the edge of Kenepuru Sound out to Portage and beyond. There's one small grocery store in the middle, two small lodges, some baches, and a lot of water. Fill your tank in Havelock. Add 2 hours to any estimate. The road is frequently closed by slips; the 2021 storms damaged it badly and sections are still being repaired. Worth it for the sense of being somewhere genuinely remote.",
+      "scripts": {
+        "headline": "scripts/kenepuru-sound.headline.md",
+        "standard": "scripts/kenepuru-sound.standard.md"
+      },
+      "sources_to_check": [
+        "Marlborough District Council",
+        "NZTA"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Kenepuru Sound route delivers a memorable journey through exceptional New Zealand scenery. A 70 km one-lane road to nowhere, along the edge of one of the quietest Sounds. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "ship-cove-meretoto",
+      "name": "Ship Cove / Meretoto",
+      "region": "marlborough",
+      "lat": -41.0925,
+      "lng": 174.2392,
+      "category": "heritage",
+      "tags": [
+        "cook-voyages",
+        "1770",
+        "first-contact",
+        "monument",
+        "queen-charlotte-track"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "The cove where Cook careened the *Endeavour* in 1770 and returned four times — the start of the Queen Charlotte Track.",
+      "commentary": "Meretoto / Ship Cove, on the outer Queen Charlotte Sound, is where Cook anchored the *Endeavour* for three weeks in January–February 1770, repairing the ship and establishing trading relationships with local Māori. He returned here four more times over his three Pacific voyages — more than any other place in the country. The cove has a stone monument (1913), interpretive panels, and is the northern terminus of the Queen Charlotte Track. Access is by water taxi from Picton. It remains an important site for Te Ātiawa o Te Waka-a-Māui and Ngāti Kuia.",
+      "scripts": {
+        "headline": "scripts/ship-cove-meretoto.headline.md",
+        "standard": "scripts/ship-cove-meretoto.standard.md"
+      },
+      "sources_to_check": [
+        "DOC",
+        "Te Ātiawa o Te Waka-a-Māui Trust",
+        "NZHistory — Cook's voyages"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ship Cove / Meretoto — the site rewards those who take time to read the signage and absorb the context. The cove where Cook careened the *Endeavour* in 1770 and returned four times — the start of the Queen Charlotte Track. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "edwin-fox-museum",
+      "name": "Edwin Fox Maritime Museum",
+      "region": "marlborough",
+      "lat": -41.2922,
+      "lng": 174.0042,
+      "category": "culture",
+      "tags": [
+        "1853-ship",
+        "ninth-oldest",
+        "convict-ship",
+        "migrant-ship"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 1,
+      "short": "The ninth-oldest ship in the world — an 1853 teak merchantman that carried convicts, soldiers, and migrants.",
+      "commentary": "The *Edwin Fox* was launched in Bengal in 1853. Over 70 years of service, she carried cargo to Britain, convicts to Australia (1858–59), troops to the Crimea, and nine loads of British and Scandinavian migrants to New Zealand (1870s). She was decommissioned in 1897 and used as a freezer-hulk at Picton until 1965. The present museum preserves what's left: the largely-original teak hull, sitting in a purpose-built dry dock. Only five older wooden ships survive worldwide, and three of them are warships — the *Edwin Fox* is the oldest wooden merchant ship in the world.",
+      "scripts": {
+        "headline": "scripts/edwin-fox-museum.headline.md",
+        "standard": "scripts/edwin-fox-museum.standard.md"
+      },
+      "sources_to_check": [
+        "Edwin Fox Maritime Museum — edwinfoxship.nz"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The cultural experience at Edwin Fox Maritime Museum is praised for being both accessible and genuinely informative. The ninth-oldest ship in the world — an 1853 teak merchantman that carried convicts, soldiers, and migrants. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "marlborough-wither-hills",
+      "name": "Wither Hills Farm Park",
+      "region": "marlborough",
+      "lat": -41.5478,
+      "lng": 173.9542,
+      "category": "nature",
+      "tags": [
+        "walking",
+        "viewpoint",
+        "blenheim",
+        "mountain-biking"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "1,100 hectares of tussock-covered hills above Blenheim — short walks and long ones, with huge views over the vineyards.",
+      "commentary": "Wither Hills Farm Park is a council reserve south of Blenheim. Working sheep farm crossed by a network of walking and mountain biking tracks.",
+      "audio_story": "You are looking up at the Wither Hills from the edge of Blenheim, and you are looking at eleven hundred hectares of working sheep country that also happens to be one of the best walking parks in the South Island. A network of tracks climbs gently from the carparks along Taylor River into golden tussock ridges, then further up to the main ridgelines from which, on a clear day, the view opens to the north over the entire Wairau Plain, across the patchwork of vineyards that makes this New Zealand's most famous wine region. The tracks range from short half hour loops to several hour traverses. The tussock in late summer turns silver gold, and the sheep peel away politely as you walk past. Mountain bikers share some of the tracks, and there is an excellent network of purpose built bike trails on the eastern side of the park. The farm park is open year round except during the driest summer months, when fire risk closes certain tracks. Check the council website before you go, take water, and time your walk for the cool ends of the day. From the top, Marlborough looks exactly as beautiful as it tastes.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Marlborough District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Wither Hills Farm Park draws visitors back time and again for its natural beauty and peaceful atmosphere. 1,100 hectares of tussock-covered hills above Blenheim — short walks and long ones, with huge views over the vineyards. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-molesworth",
+      "name": "Molesworth Station",
+      "region": "marlborough",
+      "lat": -42.0167,
+      "lng": 173.1833,
+      "category": "nature",
+      "tags": [
+        "high-country",
+        "largest-farm",
+        "summer-only",
+        "remote"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 8,
+      "short": "The largest farm in New Zealand — 180,000 hectares of tussock, river valleys and mountain ranges in the Marlborough backcountry.",
+      "commentary": "Molesworth is a DOC-managed recreation reserve and working high-country cattle station. Public vehicle access is seasonal, usually late December to Easter.",
+      "audio_story": "You are driving into Molesworth Station, and you are about to spend the day in the largest single farm in New Zealand. Molesworth sprawls across one hundred and eighty thousand hectares of tussock valleys, braided rivers, and high mountain country between the Awatere and Wairau valleys. The road in is long and unsealed, climbing through river gorges, fording small streams, and crossing windswept saddles where the only company may be a harrier hawk hanging on the updraft. Molesworth is a working cattle station, farmed with patience and care for several thousand beef cattle, but it is also a DOC recreation reserve, and the back road from Hanmer Springs to Blenheim through its heart is open to public vehicles only in summer, typically from late December to Easter. There are simple campgrounds, a visitor centre at the main homestead, and a handful of historic farm buildings dating to the eighteen sixties. The scale of the landscape is not quite like anywhere else in the country. Fuel up before you start. Carry water. Drive slowly. The trip takes the better part of a day, and you will not be the same person at the other end.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Molesworth Station",
+        "Landcorp high country"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Molesworth Station draws visitors back time and again for its natural beauty and peaceful atmosphere. The largest farm in New Zealand — 180,000 hectares of tussock, river valleys and mountain ranges in the Marlborough backcountry. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-rarangi",
+      "name": "Rārangi Beach & Monkey Bay",
+      "region": "marlborough",
+      "lat": -41.4344,
+      "lng": 174.0444,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "secluded",
+        "sea-cave",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A long empty stony beach north of Blenheim — and the tiny hidden Monkey Bay sea cave at its northern end.",
+      "commentary": "Rārangi is a grey stone and driftwood beach at the base of the Richmond Range. Monkey Bay is a small rock-walled cove accessed by a short walk.",
+      "audio_story": "You are driving out to Rārangi, a long quiet stone beach on the northern side of Cloudy Bay, and you are probably heading for Monkey Bay. Most people do not come all the way to Rārangi just for the main beach, which is a wind swept sweep of grey stones and grey driftwood and sometimes grey sky, dramatic and lonely and not really for swimming. They come for the short walk around the northern headland to Monkey Bay, a tiny hidden cove barely fifty metres across, surrounded by rocky cliffs on three sides. At one end of the cove, a short natural tunnel has been carved through the headland by the sea, and you can walk through it into a small second chamber where the only sound is the sea and the surprised laughter of the next group walking in. At low tide, the pool in the centre of the cove is calm enough to swim in. Time your visit to the tide, bring a picnic, and take the easy short walk up onto the headland for a view back over the whole bay. You can make a very good morning of it. Just be back before the tide turns.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Marlborough tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Rārangi Beach & Monkey Bay draws visitors back time and again for its natural beauty and peaceful atmosphere. A long empty stony beach north of Blenheim — and the tiny hidden Monkey Bay sea cave at its northern end. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-nydia-track",
+      "name": "Nydia Track",
+      "region": "marlborough",
+      "lat": -41.1667,
+      "lng": 173.85,
+      "category": "nature",
+      "tags": [
+        "tramping",
+        "pelorus-sound",
+        "kaiuma-bay",
+        "doc-walk"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 6,
+      "short": "A beautiful two-day bush-and-coast walk from Kaiuma Bay in Pelorus Sound to Nydia Bay and out to Duncan Bay — quiet, remote, and well-benched.",
+      "commentary": "The Nydia Track is a 27 km two-day DOC walk between Kaiuma Bay and Duncan Bay in the outer Pelorus Sound. Two saddles, a remote bay, and a historic sawmill setting.",
+      "audio_story": "You are heading for the Nydia Track, a twenty seven kilometre walking track that crosses from Kaiuma Bay on the inner side of the Pelorus Sound over two low forested saddles to the remote Nydia Bay and out again to Duncan Bay. The Nydia Track is everything the Queen Charlotte Track is not. Where the Queen Charlotte is busy with mountain bikes and day walkers and well served with lodges, the Nydia is quiet, often empty, and cuts through country that feels genuinely remote. The standard plan is to tramp in one day from Kaiuma Bay to Nydia Bay, stay at either the DOC hut or the beautiful private Nydia Lodge, and walk out the second day to Duncan Bay. Each day is around six hours. The forest is mature beech on the ridges and regenerating kahikatea in the valleys. Birdlife is excellent, especially bellbird and tui. Nydia Bay itself is one of the quietest inhabited bays in the Marlborough Sounds, with a small community of long-term residents and no road access. Water taxi transfers are available at either end. Carry all your food and water. This is a proper small wilderness walk, only an hour by boat from the main Picton ferry terminal.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Nydia Track"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Nydia Track draws visitors back time and again for its natural beauty and peaceful atmosphere. A beautiful two-day bush-and-coast walk from Kaiuma Bay in Pelorus Sound to Nydia Bay and out to Duncan Bay — quiet, remote, and well-benched. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-te-aroha-pa",
+      "name": "Karaka Point Pā",
+      "region": "marlborough",
+      "lat": -41.2217,
+      "lng": 174.0933,
+      "category": "māori",
+      "tags": [
+        "pa-site",
+        "queen-charlotte",
+        "waitohi",
+        "iwi",
+        "historic-reserve"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.7,
+      "short": "A coastal pā site ten minutes north of Picton — with fine terraces and commanding views over Queen Charlotte Sound.",
+      "commentary": "Karaka Point is a historic reserve on a small promontory north of Picton. The pā was a major Ngāti Kurī settlement. Interpretive signs in English and Māori.",
+      "audio_story": "You have arrived at Karaka Point, a small historic reserve on a low promontory ten minutes drive north of Picton. Karaka Point holds the remains of a substantial pā that was once one of the main strongholds in Queen Charlotte Sound. The pā belonged to Ngāti Kurī, a subtribe of the Ngāi Tahu group, and from its commanding position on the headland, it guarded the main sea approach into Tōtaranui, Queen Charlotte Sound. The inhabitants would have watched for waka coming across from the Wellington side of Cook Strait, and would have been among the first in the country to see the sails of Captain Cook's Endeavour when it first entered the Sound in January seventeen seventy. A short walking loop takes you around the headland. Look for the terraces cut into the hillside on the landward side, where whare would have stood. Look for the defensive ditches that once marked the approach. Look for the great karaka trees that still ring the site, planted centuries ago for their orange fruit. Interpretive signs in both English and te reo Māori tell the story of the people who lived here. The reserve is looked after jointly by DOC and local iwi. Walk quietly. This is a wāhi tapu.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "DOC — Karaka Point",
+        "Ngāti Kurī"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Karaka Point Pā as a place where the history and cultural significance of Aotearoa become tangible and real. A coastal pā site ten minutes north of Picton — with fine terraces and commanding views over Queen Charlotte Sound. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-renwick-cycling",
+      "name": "Renwick Wine Cycle Trail",
+      "region": "marlborough",
+      "lat": -41.505,
+      "lng": 173.8464,
+      "category": "food-wine",
+      "tags": [
+        "cycling",
+        "wine",
+        "renwick",
+        "marlborough",
+        "sauvignon-blanc"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "Flat easy cycling between 20-plus cellar doors in a small area around Renwick — the classic Marlborough wine-tasting day out on two wheels.",
+      "commentary": "Renwick sits in the heart of the Wairau Valley. Over 20 cellar doors are within a 10 km cycling radius.",
+      "audio_story": "You have arrived in Renwick, a small town ten kilometres west of Blenheim that is the unofficial cycling capital of Marlborough wine country. Renwick's genius is geographical. Within a ten kilometre radius of the town centre, there are more than twenty cellar doors, almost all of them reachable by a dedicated flat cycling network that avoids the main roads. Half a dozen local bike hire companies will set you up with a bike, a helmet, a map, a picnic lunch, and a list of cellar doors to taste at. If you want, they will drop off a car at your final tasting so you do not need to cycle home in a wine-fuelled condition. The trail takes in famous names like Cloudy Bay, Brancott, Yealands, and Allan Scott alongside tiny family producers working out of single tanks. The tasting focus is, of course, Sauvignon Blanc, for which Marlborough is world famous, but many cellar doors also showcase Chardonnay, Pinot Noir, and sparkling wine. A full day of cycling and tasting for most fit adults will be around thirty kilometres, with plenty of stops. Book a lunch at one of the vineyard restaurants. Drink plenty of water between tastings. This is one of the great gentle cycling days of New Zealand.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wine Marlborough",
+        "Explore Marlborough"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Renwick Wine Cycle Trail delivers an excellent food and wine experience that visitors describe as a highlight of the region. Flat easy cycling between 20-plus cellar doors in a small area around Renwick — the classic Marlborough wine-tasting day out on two wheels. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "marlborough-cullen-point",
+      "name": "Cullen Point Lookout",
+      "region": "marlborough",
+      "lat": -41.2844,
+      "lng": 173.7647,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "havelock",
+        "pelorus",
+        "short-walk"
+      ],
+      "trigger_radius_m": 150,
+      "duration_hours": 0.5,
+      "short": "A fifteen-minute climb above Havelock for the best view over the inner Pelorus Sound — no crowds, a good payoff.",
+      "commentary": "Cullen Point is a small DOC reserve above Havelock with a 30-minute return walk to a viewing platform over the inner Pelorus.",
+      "audio_story": "You have arrived at Cullen Point, a small DOC reserve perched above the small town of Havelock at the head of the Pelorus Sound. Havelock itself is a little fishing town, famous for its green-shell mussels, but most visitors drive through it without stopping. They should stop, because five minutes out of town there is one of the nicest short walks in Marlborough. The Cullen Point track is thirty minutes return, steep in places but never difficult, and climbs through regenerating beech forest to a wooden viewing platform on the top of the ridge. The platform looks almost straight down onto Havelock Marina, where a small forest of fishing boats and pleasure craft float on mirror water, and out across the inner Pelorus Sound with its classic Marlborough pattern of deep drowned valleys stretching away in every direction. On a sunny morning, with mist still burning off the water below, the view is one of the loveliest short-walk rewards in the country. You will often have it to yourself. The track is well graded, easy to follow, and signposted from the main road. There is a small car park at the trailhead. Wear sturdy shoes.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Cullen Point",
+        "Marlborough District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Cullen Point Lookout draws visitors back time and again for its natural beauty and peaceful atmosphere. A fifteen-minute climb above Havelock for the best view over the inner Pelorus Sound — no crowds, a good payoff. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-torea-saddle",
+      "name": "Torea Saddle & Portage",
+      "region": "marlborough",
+      "lat": -41.125,
+      "lng": 173.9667,
+      "category": "nature",
+      "tags": [
+        "queen-charlotte-track",
+        "viewpoint",
+        "waterfront",
+        "portage"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "The saddle between Queen Charlotte Sound and Kenepuru Sound — with a classic Marlborough Sounds lodge at the waterfront below.",
+      "commentary": "Torea Saddle is a low pass linking Queen Charlotte Sound and Kenepuru Sound. The Queen Charlotte Track crosses here. Portage Resort Hotel sits on Kenepuru below.",
+      "audio_story": "You have arrived at Torea Saddle, a low pass that separates the waters of Queen Charlotte Sound from the waters of Kenepuru Sound, the two great arms of the outer Marlborough Sounds. The saddle sits at a spectacular point on Queen Charlotte Drive, and the Queen Charlotte Walking Track crosses here at the midpoint of its seventy kilometre length. On the Queen Charlotte Sound side, looking west, you see the long straight sweep of the main sound stretching away to Ship Cove. On the Kenepuru side, looking east, the water is a flatter shimmering inlet with the Portage Resort Hotel and a small marina nestled on the water's edge. The Portage is one of the classic Sounds lodges, dating from the eighteen nineties in its earliest form, and remains a very popular stop for walkers, cyclists, and yachties. The saddle itself is worth pausing at. There are two short walks from the car park, one to each sound, that deliver very different views in about fifteen minutes each way. And there is an honesty box at the top where local honey and preserves are often for sale. The light in the sounds changes every five minutes. Stop here, get out of the car, and let it change around you.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC — Queen Charlotte Track",
+        "Portage Resort"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Torea Saddle & Portage draws visitors back time and again for its natural beauty and peaceful atmosphere. The saddle between Queen Charlotte Sound and Kenepuru Sound — with a classic Marlborough Sounds lodge at the waterfront below. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-tuamarina-cemetery",
+      "name": "Wairau Affray Site & Tuamarina Cemetery",
+      "region": "marlborough",
+      "lat": -41.4311,
+      "lng": 173.9483,
+      "category": "heritage",
+      "tags": [
+        "wairau-affray",
+        "maori-history",
+        "cemetery",
+        "memorial",
+        "colonial-conflict"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The site of the 1843 Wairau Affray — the first armed clash between Māori and Pākehā settlers after the Treaty of Waitangi. A simple memorial, a quiet cemetery.",
+      "commentary": "The Wairau Affray (17 June 1843) was the first armed conflict in post-Treaty New Zealand. Te Rauparaha and Te Rangihaeata resisted an illegal survey of Wairau by settlers. Four Māori and 22 settlers died.",
+      "audio_story": "You have arrived at Tuamarina, a small settlement a few kilometres north of Blenheim, and you have arrived at one of the most consequential locations in early colonial New Zealand history. On the seventeenth of June eighteen forty three, an armed party of Nelson settlers, led by Captain Arthur Wakefield and the Police Magistrate, arrived here to arrest the paramount chiefs Te Rauparaha and Te Rangihaeata for resisting an illegal survey of Wairau. In a confused and sudden exchange of fire, a settler accidentally shot and killed Te Rongo, the wife of Te Rangihaeata. The affray that followed killed four Māori and twenty two settlers, including Wakefield. The incident became known as the Wairau Affray, the first armed conflict in post-Treaty New Zealand, and marked the start of a decade of growing hostility that would lead to the New Zealand Wars. The settlers who were killed are buried in the small cemetery on the hill above you. A simple obelisk marks the site. There is also, further up the hill, a more recent memorial recognising the Māori perspective on events. Read both carefully. The story is genuinely contested. This place, now so quiet, was once a pivot of the entire country's history.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "NZ History — Wairau",
+        "Te Ara — Wairau Affray",
+        "Marlborough District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors consistently appreciate the rich historical layers at Wairau Affray Site & Tuamarina Cemetery — the site rewards those who take time to read the signage and absorb the context. The site of the 1843 Wairau Affray — the first armed clash between Māori and Pākehā settlers after the Treaty of Waitangi. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "marlborough-tennyson-inlet",
+      "name": "Tennyson Inlet & Elaine Bay",
+      "region": "marlborough",
+      "lat": -41.0722,
+      "lng": 173.7739,
+      "category": "nature",
+      "tags": [
+        "outer-sounds",
+        "remote",
+        "elaine-bay",
+        "kayak",
+        "dive"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 2,
+      "short": "The far northwestern end of the Marlborough Sounds — remote, hard to reach, and some of the quietest kayaking water in the country.",
+      "commentary": "Tennyson Inlet is at the outer end of the Pelorus Sound system, reached by a slow winding gravel road from Rai Valley. Elaine Bay is the road end.",
+      "audio_story": "You have arrived at Tennyson Inlet, the far northwestern branch of the Pelorus Sound, which is to say, one of the more remote drivable waters in the country. Getting here is a commitment. From Rai Valley on the Havelock to Nelson highway, the road to Tennyson Inlet is thirty five kilometres of narrow winding gravel through beech forest and over a high saddle. Elaine Bay at the road end is a tiny settlement of around twenty houses and a small boat ramp. For most visitors, the journey itself is the point. The drive in is spectacular. The sealed road peels off the main highway and climbs steeply through old beech forest. At the top, Opouri Saddle gives the first glimpse down onto the inlet's turquoise water. At the bottom, Elaine Bay feels like the edge of the known world. From the boat ramp you can launch a kayak into some of the quietest paddling water in New Zealand, with native bush running right down to the shoreline in every direction, and with deep clean water for diving. The nearby Nydia Track ends at Duncan Bay, a short drive further. Pack your own food. Bring fuel. Phone reception is uncertain. This is deep Sounds country.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Marlborough District Council",
+        "DOC — Mount Richmond Forest Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Tennyson Inlet & Elaine Bay draws visitors back time and again for its natural beauty and peaceful atmosphere. The far northwestern end of the Marlborough Sounds — remote, hard to reach, and some of the quietest kayaking water in the country. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-taylor-dam",
+      "name": "Taylor Dam Reserve",
+      "region": "marlborough",
+      "lat": -41.5861,
+      "lng": 173.9269,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "picnic",
+        "wither-hills",
+        "birdwatching",
+        "blenheim"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A small flood-control lake just south of Blenheim — picnic area, duck pond, and gateway to the Wither Hills walking network.",
+      "commentary": "Taylor Dam was built in 1983 to control Taylor River flooding in Blenheim. The reserve is now a popular family picnic spot.",
+      "audio_story": "You have arrived at the Taylor Dam Reserve, on the southern outskirts of Blenheim. The dam itself was built in nineteen eighty three, not for hydroelectric power or for water supply, but simply to control the flooding of the Taylor River through the centre of Blenheim. The town had been repeatedly and disastrously flooded during heavy rain in the hills above. The dam stores the flood flow, releasing it gradually downstream. Forty years later, the small lake behind the dam has become one of the most used recreation spaces in Blenheim. There is a flat walking loop around the lake, about a kilometre, that is stroller and wheelchair friendly. There is a duck pond, a picnic area, a playground, and a swimming beach on the western side for hot days. The water is clean and sheltered. More ambitiously, Taylor Dam is one of the main access points to the Wither Hills walking network, a trail system that covers around a thousand hectares of rolling grassland country directly south of Blenheim, with dozens of kilometres of walking and mountain biking routes. You can start short and easy here, or head up onto the Wither tops for a view across the whole Wairau Valley. Something for everyone.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Marlborough District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Taylor Dam Reserve draws visitors back time and again for its natural beauty and peaceful atmosphere. A small flood-control lake just south of Blenheim — picnic area, duck pond, and gateway to the Wither Hills walking network. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "marlborough-grovetown-lagoon",
+      "name": "Grovetown Lagoon",
+      "region": "marlborough",
+      "lat": -41.4708,
+      "lng": 173.9533,
+      "category": "wildlife",
+      "tags": [
+        "lagoon",
+        "birdwatching",
+        "restoration",
+        "wairau"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A restored freshwater lagoon just north of Blenheim — with excellent birdlife and a volunteer-led wetland restoration story.",
+      "commentary": "Grovetown Lagoon is a relict oxbow of the Wairau River. Since 2001 the Te Whānau Hou Grovetown Lagoon Inc. trust and Marlborough District Council have jointly restored the site.",
+      "audio_story": "You have arrived at Grovetown Lagoon, a kilometre north of Blenheim. Grovetown is a relict oxbow of the Wairau River, left behind when the main river channel shifted centuries ago. For most of the twentieth century the lagoon was neglected, edged with willows, and slowly choking on sediment and introduced pest fish. Then in two thousand and one, a community led restoration project took it on. Two decades of work by volunteers, supported by local iwi, the district council, and various funders, have steadily cleared the exotic trees, replanted tens of thousands of native species along the margins, and slowly restored the water quality. The restoration is ongoing, which is half the interest of visiting. A well formed walking track about two and a half kilometres long loops the lagoon. Birdlife is excellent. Pūkeko, swans, grey teal, Australasian shoveler, and the occasional bittern are all regular. Interpretive boards tell the story of the restoration. Schools come here. Scientists visit from overseas. It is a small, quiet, volunteer driven triumph, and a rare example in New Zealand of a community freshwater wetland that has been properly brought back. Bring binoculars. Walk slowly. The best birdwatching is early in the morning.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Te Whānau Hou Grovetown Lagoon Inc",
+        "Marlborough District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The wildlife encounters at Grovetown Lagoon earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. A restored freshwater lagoon just north of Blenheim — with excellent birdlife and a volunteer-led wetland restoration story. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "mar_hist_ship_cove",
+      "name": "Ship Cove (Meretoto)",
+      "region": "marlborough",
+      "lat": -41.0883,
+      "lng": 174.2428,
+      "category": "heritage",
+      "tags": [
+        "cook",
+        "meretoto",
+        "ship-cove",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Meretoto, known to Europeans as Ship Cove, at the northern end of Queen Charlotte Sound. Between seventeen seventy and seventeen seventy seven Captain Cook visited this sheltered bay five times on his three Pacific voyages, using it as a base to resupply with water, timber, and wild greens, and to meet with local Māori. The cove's steep bush walls were quiet, its water deep enough for large ships, and the streams clear. Cook planted gardens here of cabbage and turnip, the first European vegetables deliberately grown in New Zealand. He met with local chiefs and established a pattern of cautious trade and diplomacy. A monument raised in nineteen thirteen marks his landings, and a paepae carved with the waka Kurahaupō stands as a meeting place of peoples. Te Ātiawa o Te Waka a Māui hold mana whenua here and share the story. Ship Cove is also the start or end of the Queen Charlotte Track. Stand on the beach, listen for tui, and picture a wooden ship riding at anchor in this bay two and a half centuries ago.",
+      "sources_to_check": [
+        "DOC Meretoto",
+        "Te Ātiawa",
+        "NZHistory Cook"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors consistently appreciate the rich historical layers at Ship Cove (Meretoto) — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "mar_hist_french_pass",
+      "name": "French Pass (Te Aumiti)",
+      "region": "marlborough",
+      "lat": -40.9214,
+      "lng": 173.8356,
+      "category": "heritage",
+      "tags": [
+        "french-pass",
+        "dumont-durville",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at French Pass, the narrow and wildly tidal gap between D'Urville Island and the South Island mainland. In eighteen twenty seven the French navigator Jules Dumont d'Urville threaded his ship Astrolabe through this channel, the first European to do so. The tidal race here can run at eight knots and swirl in whirlpools that can spin a small boat. The Māori name Te Aumiti refers to a famous local taniwha, Kaikai-a-waro, said to guide and protect waka through the passage. A small settlement sits at the land end of the pass, and a viewing platform looks directly down into the churning water. Pelorus Jack, a Risso's dolphin who between eighteen eighty eight and nineteen twelve escorted ships through the nearby Pelorus Sound, became world famous, and was the first individual marine creature protected by law in any country. Sit at the viewing platform, watch the water tear through the gap, and appreciate how this speck of ocean has been a guidepost for navigators Māori and European alike.",
+      "sources_to_check": [
+        "DOC French Pass",
+        "NZHistory Dumont d'Urville",
+        "Te Ātiawa"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at French Pass (Te Aumiti) — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "mar_hist_tuamarina",
+      "name": "Tua Marina Monument and Wairau Affray",
+      "region": "marlborough",
+      "lat": -41.4303,
+      "lng": 173.9561,
+      "category": "heritage",
+      "tags": [
+        "nz-wars",
+        "wairau",
+        "tuamarina",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are at Tua Marina, a quiet stream crossing north of Blenheim. Here on the seventeenth of June eighteen forty three the first serious armed conflict between Māori and the British Crown after the Treaty of Waitangi took place. Surveyors from the New Zealand Company had begun laying out sections on the Wairau plains, ignoring Ngāti Toa chief Te Rauparaha's clear statement that the land had not been sold. A party of armed settler constables and magistrates, led by Police Magistrate Henry Thompson, attempted to arrest Te Rauparaha and Te Rangihaeata at their camp. A shot was fired, Te Rangihaeata's wife Rongo was killed, and the ensuing fight left twenty two of the settlers and four Māori dead. A stone memorial erected in eighteen sixty nine on the small hill at Tua Marina records the names of those who died. Governor FitzRoy later concluded the settlers had acted unlawfully, a decision that outraged colonists but prevented wider war. Stand at the monument and remember a confrontation that foreshadowed the long land wars to come.",
+      "sources_to_check": [
+        "NZHistory Wairau Affray",
+        "Ngāti Toa",
+        "Heritage NZ Tua Marina"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Tua Marina Monument and Wairau Affray — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "mar_hist_perano_whaling",
+      "name": "Perano Whaling Station Arapaoa Island",
+      "region": "marlborough",
+      "lat": -41.1228,
+      "lng": 174.3494,
+      "category": "heritage",
+      "tags": [
+        "whaling",
+        "perano",
+        "arapaoa",
+        "heritage"
+      ],
+      "trigger_radius_m": 200,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Fishing Bay on Arapaoa Island, the last commercial whaling station in New Zealand. The Perano family began shore-based whaling here in nineteen eleven, using high-speed chase boats to pursue humpback whales that migrated through Cook Strait each winter. The family killed, towed, and rendered whales on the beach for nearly five decades. By the nineteen sixties humpback numbers were collapsing. The station finally closed in nineteen sixty four, the last commercial catch in the country. Today the old corrugated sheds, try-pots, and slipways remain on the bay, protected as a heritage site. Humpbacks are slowly returning to the strait. A memorial walk explains the operation and its end. As you read the panels, think about how this steep beach, once thick with the smell of whale oil and the sound of flensing knives, now sees the same species swimming past the shore as tourist boats try to spot them. Arapaoa is a place where extraction ended and recovery may yet succeed.",
+      "sources_to_check": [
+        "DOC Perano Whaling Station",
+        "Heritage NZ",
+        "NZHistory whaling"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Perano Whaling Station Arapaoa Island — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "mar_hist_havelock_schools",
+      "name": "Havelock and the Two Nobel Laureates",
+      "region": "marlborough",
+      "lat": -41.2769,
+      "lng": 173.7681,
+      "category": "food-wine",
+      "tags": [
+        "havelock",
+        "rutherford",
+        "pickering",
+        "heritage"
+      ],
+      "trigger_radius_m": 150,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are in Havelock, a small green town at the head of the Pelorus Sound, famous for green-lipped mussels and for being the schooling place of two of the country's greatest scientists. Ernest Rutherford, who would later split the atom and win the nineteen oh eight Nobel Prize in Chemistry, attended Havelock School as a boy. Decades later William Pickering, who would become director of the Jet Propulsion Laboratory and lead the first American missions to the outer planets, attended the same school. Two Nobel scale minds from a village in the Marlborough Sounds. The old Havelock School building still stands, and a small museum in town tells their story. Rutherford's family home at nearby Brightwater is another pilgrimage site. Havelock is also the launching point for the Pelorus Sound mail boat, which still delivers groceries and post to remote bays. Stop at the bronze statue of the young Rutherford, admire the simple timber school, and remember that world-changing curiosity can start in an ordinary classroom with a clever, well-taught child.",
+      "sources_to_check": [
+        "NZHistory Rutherford",
+        "Havelock Museum",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Havelock and the Two Nobel Laureates delivers an excellent food and wine experience that visitors describe as a highlight of the region. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "mar_hist_picton_edwin_fox",
+      "name": "Edwin Fox Museum Picton",
+      "region": "marlborough",
+      "lat": -41.2914,
+      "lng": 174.004,
+      "category": "culture",
+      "tags": [
+        "ship",
+        "edwin-fox",
+        "convict",
+        "migrant"
+      ],
+      "trigger_radius_m": 100,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at the Edwin Fox Museum in Picton, home to the oldest surviving merchant sailing ship in the world. Built in eighteen fifty three in Calcutta of Burmese teak, the Edwin Fox carried British troops to the Crimean War, then transported convicts to Australia, before taking migrant families, including Irish and Scottish settlers, to Lyttelton and Picton in the eighteen seventies. She ended her long life as a freezer hulk at Picton, where her original refrigeration equipment helped launch the frozen meat trade that transformed New Zealand's economy. When frozen meat exports began in eighteen eighty two, ships like this made it possible to feed British cities from South Island farms. The Edwin Fox was nearly lost to rot and demolition, but a local trust saved her. Today her timbers lie in a specially built dry dock, where you can walk her decks and smell the old hold. Stand below her bow, put your hand on her planking, and imagine troops, convicts, migrants, and frozen lamb carcasses, all lives this one ship has carried.",
+      "sources_to_check": [
+        "Edwin Fox Society",
+        "Heritage NZ",
+        "NZHistory frozen meat trade"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The cultural experience at Edwin Fox Museum Picton is praised for being both accessible and genuinely informative. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "mar_hist_te_rauparaha_raids",
+      "name": "Te Rauparaha's Southern Raids",
+      "region": "marlborough",
+      "lat": -41.518,
+      "lng": 173.9675,
+      "category": "māori",
+      "tags": [
+        "maori",
+        "te-rauparaha",
+        "ngati-toa",
+        "musket-wars"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "reverent",
+      "audio_story": "You are on the Wairau plain, across which in the eighteen twenties and eighteen thirties the Ngāti Toa war chief Te Rauparaha swept with devastating effect. After leading his iwi south from Kawhia to Kapiti, Te Rauparaha obtained muskets and used them to strike deep into the South Island, capturing Kāpiti and then crossing the strait to raid Rangitāne, Ngāti Māmoe, and Ngāi Tahu settlements. His campaigns reached as far south as Kaikōura and the Canterbury plains. The demographic effects were severe. Whole communities were displaced or killed, while survivors fled into the hills. By the time Europeans began buying land in Marlborough, Ngāti Toa held rights of conquest over much of it, which is why Te Rauparaha could speak for the Wairau in eighteen forty three. These raids are remembered in many iwi, a shaping reality that preceded the colonial era. Look across the Wairau plain today with new eyes. The quiet farmland you see hides the tracks of musket war parties who reshaped the whole southern North Island and upper South Island within a generation.",
+      "sources_to_check": [
+        "Ngāti Toa",
+        "Te Ara Te Rauparaha",
+        "NZHistory musket wars"
+      ],
+      "content_status": "draft_pending_review",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Te Rauparaha's Southern Raids as a place where the history and cultural significance of Aotearoa become tangible and real. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "mar_hist_cloudy_bay_whaling",
+      "name": "Cloudy Bay Shore Whaling",
+      "region": "marlborough",
+      "lat": -41.505,
+      "lng": 174.0989,
+      "category": "heritage",
+      "tags": [
+        "whaling",
+        "cloudy-bay",
+        "heritage"
+      ],
+      "trigger_radius_m": 300,
+      "suggested_voice_tone": "informative",
+      "audio_story": "You are at Cloudy Bay, the wide shallow bay that opens onto the eastern end of the Wairau plain. In the eighteen twenties and thirties this was one of the earliest sites of European settlement in the South Island, with shore whaling stations operating along the beaches south of the Wairau bar. Whaling crews lived alongside local Māori, often marrying into Rangitāne and Ngāti Toa families and raising mixed-heritage children who went on to trade and farm in the region. The oil of right whales and sperm whales was rendered in try-pots on the sand, a hard and stinking business. Whalers like John Guard at Kakapo Bay and Jacky Guard's enterprises further north pioneered European settlement before any formal colonisation. Today Cloudy Bay is famous for sauvignon blanc and long flat stony beaches, but the stonework of old try-pots and whalers' graves can still be found if you know where to look. Look at the lagoon, the low dunes, and the Wairau Bar, and remember that European settlement on this coast began not with farms or churches but with harpoons.",
+      "sources_to_check": [
+        "NZHistory shore whaling",
+        "Heritage NZ",
+        "Rangitāne"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Cloudy Bay Shore Whaling — the site rewards those who take time to read the signage and absorb the context. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "marlborough-wairau-bar",
+      "name": "Te Pokohiwi / Wairau Bar",
+      "region": "marlborough",
+      "lat": -41.526,
+      "lng": 174.078,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "archaeological",
+        "burial",
+        "earliest-settlement",
+        "wāhi-tapu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "NZ's most important archaeological site — earliest substantial Māori settlement, with burials dating to the 1280s.",
+      "commentary": "Excavations revealed 44 burials with rich grave goods. In 2009, kōiwi were repatriated to Rangitāne and reburied. The site is wāhi tapu.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Te Pokohiwi / Wairau Bar as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's most important archaeological site — earliest substantial Māori settlement, with burials dating to the 1280s. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-wairau-affray",
+      "name": "Wairau Affray Site",
+      "region": "marlborough",
+      "lat": -41.511,
+      "lng": 173.99,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "nz-wars",
+        "te-rauparaha",
+        "first-clash"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Site of the 1843 Wairau Affray — the first armed clash between Māori and settlers.",
+      "commentary": "22 settlers and 4–6 Māori were killed. Governor FitzRoy ruled that the settlers were in the wrong. Considered the first clash of the New Zealand Wars.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Wairau Affray Site as a place where the history and cultural significance of Aotearoa become tangible and real. Site of the 1843 Wairau Affray — the first armed clash between Māori and settlers. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-meretoto",
+      "name": "Meretoto / Ship Cove",
+      "region": "marlborough",
+      "lat": -41.103,
+      "lng": 174.264,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "cook",
+        "contact",
+        "queen-charlotte"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "Cook's favourite NZ anchorage — five visits between 1770 and 1777, trading with local Māori.",
+      "commentary": "Cook spent over 170 days here across five visits. The cove was an active Māori settlement. A memorial marks the start of the Queen Charlotte Track.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Meretoto / Ship Cove as a place where the history and cultural significance of Aotearoa become tangible and real. Cook's favourite NZ anchorage — five visits between 1770 and 1777, trading with local Māori. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-port-underwood",
+      "name": "Port Underwood — Whaling & Conflict",
+      "region": "marlborough",
+      "lat": -41.44,
+      "lng": 174.14,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "whaling",
+        "conflict",
+        "early-contact"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A sheltered bay with violent early contact history — whaling, raids, and inter-tribal conflict.",
+      "commentary": "One of the first whaling stations in the Sounds. The bay saw interactions between Māori, whalers, and sealers ranging from peaceful trade to violent conflict.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Port Underwood — Whaling & Conflict as a place where the history and cultural significance of Aotearoa become tangible and real. A sheltered bay with violent early contact history — whaling, raids, and inter-tribal conflict. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-picton-kaipupu",
+      "name": "Kaipupu Wildlife Sanctuary, Picton",
+      "region": "marlborough",
+      "lat": -41.285,
+      "lng": 174.013,
+      "category": "wildlife",
+      "tags": [
+        "māori",
+        "conservation",
+        "sanctuary",
+        "predator-free"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A predator-free sanctuary on a peninsula in Queen Charlotte Sound — combining conservation with Māori cultural values.",
+      "commentary": "Kaipupu Point is a mainland island sanctuary managed in partnership with local iwi. The project reflects the Māori principle of kaitiakitanga (guardianship) applied to modern conservation.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The wildlife encounters at Kaipupu Wildlife Sanctuary, Picton earn near-universal five-star reviews — visitors say seeing New Zealand's unique native species up close is unforgettable. A predator-free sanctuary on a peninsula in Queen Charlotte Sound — combining conservation with Māori cultural values. Morning and dusk visits are praised as the most rewarding times."
+      }
+    },
+    {
+      "id": "marlborough-pelorus-canoe",
+      "name": "Pelorus River — Te Hoiere Canoe Route",
+      "region": "marlborough",
+      "lat": -41.31,
+      "lng": 173.56,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "river",
+        "canoe",
+        "trade-route",
+        "pounamu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "An ancient Māori canoe route connecting the Marlborough Sounds to the interior — part of the pounamu trade network.",
+      "commentary": "Te Hoiere (Pelorus River) was an important Māori canoe route connecting the sheltered Marlborough Sounds to the interior and across to the West Coast pounamu sources. The river and its tributaries provided a network of water highways through the mountainous terrain.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors describe Pelorus River — Te Hoiere Canoe Route as a place where the history and cultural significance of Aotearoa become tangible and real. An ancient Māori canoe route connecting the Marlborough Sounds to the interior — part of the pounamu trade network. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "marlborough-queen-charlotte-track",
+      "name": "Queen Charlotte Track",
+      "region": "marlborough",
+      "lat": -41.0975,
+      "lng": 174.2644,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "multi-day",
+        "coastal",
+        "sounds",
+        "mountain-biking"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 24,
+      "short": "A 70 km coastal track winding through the Marlborough Sounds between Ship Cove and Anakiwa.",
+      "commentary": "The Queen Charlotte Track covers 70 km from Ship Cove (where Captain Cook landed in 1770) to Anakiwa, typically walked in 3-5 days. The track follows ridgelines between Queen Charlotte Sound and Kenepuru Sound, offering constant water views. It is one of the few major NZ tracks that permits mountain biking on most sections.",
+      "audio_story": "You are starting the Queen Charlotte Track at Ship Cove, the very spot where Captain James Cook anchored the Endeavour in January 1770. A water taxi has dropped you at this roadless bay, and for the next 70 kilometres you will follow ridgelines and shorelines through the Marlborough Sounds. The track rises to saddles where you can see water on both sides — Queen Charlotte Sound to the north, Kenepuru Sound to the south — then drops through lush coastal forest to secluded bays. Unlike most of New Zealand's great walks, the Queen Charlotte allows mountain biking on all but one section, and boat transfers mean you can walk it in stages. Each night you descend to the shore, where lodges and campsites sit at the water's edge and the only sounds are birdsong and the gentle lap of the tide.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Queen Charlotte Track",
+        "Marlborough Sounds tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "70km of stunning coastal track above the Marlborough Sounds — rated New Zealand's best multi-day walk by many reviewers for its combination of scenery, accessibility, and the fact you can have your pack water-taxied ahead. The views over the sounds from the ridgeline are breathtaking."
+      }
+    },
+    {
+      "id": "marlborough-wairau-valley-wine-trail",
+      "name": "Wairau Valley Wine Trail",
+      "region": "marlborough",
+      "lat": -41.5136,
+      "lng": 173.953,
+      "category": "journey",
+      "tags": [
+        "wine-trail",
+        "cycling",
+        "sauvignon-blanc",
+        "vineyard",
+        "gourmet"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 4,
+      "short": "Cycle or drive through the vineyards that made New Zealand sauvignon blanc world-famous.",
+      "commentary": "The Wairau Valley around Blenheim contains over 150 wineries and produces 77% of New Zealand's wine. Marlborough sauvignon blanc, first planted by Montana (now Brancott Estate) in 1973, revolutionised the global wine industry with its intense, zesty style. The flat terrain and network of vineyard roads make it ideal for cycling between cellar doors.",
+      "audio_story": "You are cycling through the Wairau Valley, and in every direction the view is the same: row upon row of vines stretching to the distant mountains. This is where New Zealand's wine revolution began. In 1973, Montana planted the first sauvignon blanc vines here, and within two decades Marlborough had changed the world's expectations of what that grape could do. The secret is the climate — long sunny days, cool nights, and free-draining river gravels that stress the vines just enough to concentrate their flavours. There are over 150 wineries here now, from tiny family operations to global brands, and the flat roads between them were practically designed for leisurely cycling. Pull into a cellar door, taste something extraordinary, then pedal on to the next.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wine Marlborough",
+        "NZ Wine industry statistics"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Wairau Valley Wine Trail route delivers a memorable journey through exceptional New Zealand scenery. Cycle or drive through the vineyards that made New Zealand sauvignon blanc world-famous. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-sounds-mail-boat",
+      "name": "Pelorus Mail Boat Cruise",
+      "region": "marlborough",
+      "lat": -41.13,
+      "lng": 173.95,
+      "category": "journey",
+      "tags": [
+        "water-journey",
+        "cruise",
+        "heritage",
+        "sounds",
+        "remote"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 7,
+      "short": "Ride the working mail boat that delivers to remote homesteads in the Pelorus Sound.",
+      "commentary": "The Pelorus Mail Boat has been delivering mail, supplies, and passengers to isolated Pelorus Sound homesteads since the early 1900s. The full-day cruise from Havelock covers over 100 km of waterways, stopping at farms accessible only by boat. It is one of the last working mail boat runs in New Zealand.",
+      "audio_story": "You are boarding the Pelorus Mail Boat at Havelock, and today you will deliver the mail. This is not a tourist cruise pretending to be something it is not — this is a working service that has run since the early 1900s, connecting remote Sound homesteads to the outside world. Over the next seven hours, the boat will cover more than 100 kilometres of sheltered waterways, pulling into tiny jetties where farmers collect their post, groceries, and sometimes livestock supplies. Some of these families are the only residents in their entire bay. You will see dolphins in the narrows, mussel farms strung across the channels, and forest-covered hillsides that have barely changed since Abel Tasman sailed past in 1642. Bring lunch and a warm jacket — the Sound can be cool even in summer.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Beachcomber Cruises Havelock",
+        "Marlborough tourism"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Pelorus Mail Boat Cruise route delivers a memorable journey through exceptional New Zealand scenery. Ride the working mail boat that delivers to remote homesteads in the Pelorus Sound. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-awatere-valley-drive",
+      "name": "Awatere Valley Wine Drive",
+      "region": "marlborough",
+      "lat": -41.63,
+      "lng": 174.02,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "wine-trail",
+        "remote",
+        "valley",
+        "vineyard"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2,
+      "short": "Explore the wilder, less-visited wine valley south of the Wairau producing bold reds and aromatics.",
+      "commentary": "The Awatere Valley lies south of the main Wairau Valley wine region and offers a drier, more extreme climate that produces distinctive wines, particularly pinot noir, syrah, and aromatic whites. The valley road follows the Awatere River inland past scattered vineyards and high-country sheep stations toward the Molesworth Station.",
+      "audio_story": "You are driving into the Awatere Valley, and this is Marlborough's wilder side. While the Wairau Valley gets most of the attention and the tour buses, the Awatere sits behind a range of hills in its own microclimate — hotter, drier, and windier. The wines from here have a different character: more concentrated, with a mineral edge that sommeliers get excited about. The road follows the Awatere River past vineyards that give way to high-country stations, and if you keep driving long enough you will reach the boundary of Molesworth, New Zealand's largest farm at 180,000 hectares. This is frontier Marlborough, where wine country meets the wild interior.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wine Marlborough",
+        "Awatere Valley wine producers"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Awatere Valley Wine Drive route delivers a memorable journey through exceptional New Zealand scenery. Explore the wilder, less-visited wine valley south of the Wairau producing bold reds and aromatics. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-port-underwood-drive",
+      "name": "Port Underwood Road",
+      "region": "marlborough",
+      "lat": -41.37,
+      "lng": 174.13,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "remote",
+        "heritage",
+        "whaling",
+        "gravel-road"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "A remote coastal drive to historic whaling bays on the exposed southern Sounds coast.",
+      "commentary": "Port Underwood Road winds around the exposed southeastern coast of the Marlborough Sounds to a series of bays that were major whaling stations in the 1820s-1840s. Ocean Bay, Robin Hood Bay, and Oyster Bay all had shore-based whaling operations. The Wairau Affray of 1843, one of the first armed conflicts between Maori and European settlers, took place nearby.",
+      "audio_story": "You are driving the Port Underwood Road, and this is about as remote as you can get while still being in Marlborough. The road narrows and turns to gravel as it winds around headlands above a wild, south-facing coast. In the 1820s and 30s, these bays were the centre of a brutal whaling industry — Shore whalers from Sydney and London set up stations at Ocean Bay and Robin Hood Bay, hunting southern right whales as they migrated past. The remains of try-works where blubber was rendered can still be found if you know where to look. It was in this area, in 1843, that the Wairau Affray erupted — a confrontation between settlers and Ngati Toa chief Te Rauparaha that left 22 Europeans and 4 Maori dead, one of the first armed clashes of colonisation.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Marlborough District heritage",
+        "NZ History Wairau Affray"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Port Underwood Road route delivers a memorable journey through exceptional New Zealand scenery. A remote coastal drive to historic whaling bays on the exposed southern Sounds coast. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-molesworth-road",
+      "name": "Molesworth Station Road",
+      "region": "marlborough",
+      "lat": -42,
+      "lng": 173.3,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "back-road",
+        "high-country",
+        "heritage",
+        "seasonal"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 5,
+      "short": "Drive through NZ's largest farm — 180,000 hectares of high-country station open only in summer.",
+      "commentary": "The Molesworth Road crosses Molesworth Station, New Zealand's largest farm at 180,000 hectares, connecting the Awatere Valley to Hanmer Springs. The road is only open to public vehicles from late December to early March and traverses remote tussock high country at over 1,000 m elevation. The station runs 10,000 cattle and has a dramatic history of ecological degradation and restoration.",
+      "audio_story": "You are driving through Molesworth Station, and at 180,000 hectares, you are on the largest farm in New Zealand. The road is only open for about ten weeks each summer — snow and ice close it for the rest of the year — and it feels like driving through the set of a Western. The tussock country rolls away in every direction, golden and vast, with the Inland Kaikoura Range rising to the east. Molesworth has a troubled history: in the early twentieth century, rabbits and overgrazing stripped the land almost bare, and it took decades of DOC management to bring it back. Today, 10,000 cattle graze here in summer, mustered by helicopter and horseback. There are no services, no cell signal, and no shortcuts. Carry water, fuel, and patience.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Molesworth Station",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Molesworth Station Road route delivers a memorable journey through exceptional New Zealand scenery. Drive through NZ's largest farm — 180,000 hectares of high-country station open only in summer. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-taylor-pass-road",
+      "name": "Taylor Pass Heritage Road",
+      "region": "marlborough",
+      "lat": -41.57,
+      "lng": 173.88,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "wine-trail",
+        "heritage",
+        "vineyard"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "A winding pass road through premium vineyards connecting the Wairau and upper Omaka valleys.",
+      "commentary": "Taylor Pass Road climbs from Blenheim over a low saddle into the upper Wairau Valley, passing some of Marlborough's most prestigious vineyards including Dog Point and Greywacke. The pass was an early settler route and offers elevated views across the entire Wairau Plain to the Richmond Range.",
+      "audio_story": "You are climbing Taylor Pass Road out of Blenheim, and the vineyards here are some of the most prized in Marlborough. Dog Point, Greywacke, Clos Henri — names that make wine lovers sit up straight. The road winds uphill past mature vines planted on rocky alluvial terraces, each winery taking advantage of slightly different soils and aspects. At the top of the pass, you can look back across the entire Wairau Plain, a patchwork of green vineyard blocks stretching to the sea. This was an early settler route, used long before the valley floor roads were built, and it gives you a perspective on the wine region that you simply cannot get from down below.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wine Marlborough",
+        "Marlborough heritage trails"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Taylor Pass Heritage Road route delivers a memorable journey through exceptional New Zealand scenery. A winding pass road through premium vineyards connecting the Wairau and upper Omaka valleys. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-picton-to-havelock-drive",
+      "name": "Picton to Havelock Drive (SH6)",
+      "region": "marlborough",
+      "lat": -41.29,
+      "lng": 173.96,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "sounds",
+        "state-highway",
+        "coastal",
+        "mussel"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Drive the winding road between Picton and Havelock through the heart of the Marlborough Sounds.",
+      "commentary": "The 35 km drive from Picton to Havelock on SH6 follows the shores of Grove Arm and Mahakipawa Arm through the Marlborough Sounds. The road winds past mussel farms, native bush, and sheltered bays. Havelock is the 'Greenshell Mussel Capital of the World,' with the Sounds producing over 60% of New Zealand's farmed mussels.",
+      "audio_story": "You are driving from Picton to Havelock, and the road winds through the Marlborough Sounds like it cannot quite make up its mind. Every curve reveals another sheltered bay, another arm of the sea reaching into the hills, and in the water you will see the dark lines of mussel farms stretching across the channels. The Sounds produce over 60 percent of New Zealand's greenshell mussels, and Havelock at the road's end calls itself the Greenshell Mussel Capital of the World. The mussels are farmed on ropes suspended from long lines, and they grow fat and sweet in these clean, plankton-rich waters. In Havelock, a plate of mussels — steamed, or baked with garlic butter — is not just recommended, it is practically compulsory. The town sits at the confluence of the Pelorus and Kaituna rivers, a working fishing village that has resisted the temptation to become quaint.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Marlborough Sounds tourism",
+        "Aquaculture NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Picton to Havelock Drive (SH6) route delivers a memorable journey through exceptional New Zealand scenery. Drive the winding road between Picton and Havelock through the heart of the Marlborough Sounds. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-blenheim-to-picton-sh1",
+      "name": "Blenheim to Picton Drive (SH1)",
+      "region": "marlborough",
+      "lat": -41.43,
+      "lng": 174,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "vineyard",
+        "state-highway",
+        "gateway"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 0.5,
+      "short": "The gateway drive from the ferry terminal through wine country to Marlborough's capital.",
+      "commentary": "The 28 km drive from Picton to Blenheim on SH1 is the first stretch of road most visitors encounter when arriving in the South Island by ferry. The route descends from the Sounds hills through the Elevation vineyard and into the Wairau Plain. For many, this is their introduction to the Marlborough wine region.",
+      "audio_story": "You are driving from Picton to Blenheim, and if you have just stepped off the Interislander or Bluebridge ferry, this is your introduction to the South Island. The road climbs out of Picton's harbour through bush-covered hills before dropping into the Wairau Valley, and somewhere along this descent the landscape shifts from maritime to viticultural. The first vineyards appear on the hillsides, and by the time you reach the valley floor, you are surrounded by them. This 28-kilometre drive has converted more visitors to the idea of stopping in Marlborough than any tourism campaign ever could. The vines are impossibly orderly against the wild backdrop of the Richmond Range, and in late summer the grapes hang heavy on the wires, filling the air with a sweetness you can almost taste through the car window.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Marlborough tourism",
+        "KiwiRail ferry connections"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Blenheim to Picton Drive (SH1) route delivers a memorable journey through exceptional New Zealand scenery. The gateway drive from the ferry terminal through wine country to Marlborough's capital. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "marlborough-marlborough-sounds-kayak",
+      "name": "Queen Charlotte Sound Kayaking",
+      "region": "marlborough",
+      "lat": -41.2333,
+      "lng": 174.0833,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "sounds",
+        "coastal",
+        "queen-charlotte",
+        "multi-day"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 5,
+      "short": "Kayak the sheltered waters of Queen Charlotte Sound through native bush-clad coves.",
+      "commentary": "Queen Charlotte Sound offers superb sea kayaking through sheltered waterways, bush-clad headlands, and secluded bays. Multi-day paddle options follow the Queen Charlotte Track with accommodation in lodges or DOC campsites. Dolphins, seals, and king shags are regular sightings.",
+      "audio_story": "You have arrived at the Marlborough Sounds, a vast network of drowned river valleys that creates over 1,500 kilometres of sheltered coastline. Queen Charlotte Sound is the jewel of this system, and by kayak you'll explore it the way it was meant to be experienced — silently, intimately, and at water level. Your paddle will take you past bush-clad headlands, into secluded bays where the only footprints on the sand might be a weka's, and through channels where bottlenose dolphins often bow-ride alongside kayaks. The Sounds are home to the rare king shag, found nowhere else on earth, and you'll pass their nesting colonies on rocky outcrops. The water is sheltered and calm, making this suitable for paddlers of all abilities. Multi-day options allow you to kayak sections of the Queen Charlotte Track, staying in lodges or campsites along the way.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Wilderness Guides",
+        "Marlborough Sounds Adventure Company"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Queen Charlotte Sound Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak the sheltered waters of Queen Charlotte Sound through native bush-clad coves. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-queen-charlotte-track-biking",
+      "name": "Queen Charlotte Track Mountain Biking",
+      "region": "marlborough",
+      "lat": -41.2167,
+      "lng": 174.1,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "queen-charlotte-track",
+        "coastal",
+        "multi-day",
+        "scenic"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 8,
+      "short": "Mountain bike the 70 km Queen Charlotte Track through the Marlborough Sounds.",
+      "commentary": "The Queen Charlotte Track stretches 70 km from Ship Cove to Anakiwa through the Marlborough Sounds. Mountain bikers can ride most of the track (sections restricted seasonally for walkers), with water taxi services providing boat access and luggage transfers. The coastal bush scenery is superb.",
+      "audio_story": "You have arrived at the start of one of New Zealand's most scenic mountain bike rides. The Queen Charlotte Track winds 70 kilometres through the Marlborough Sounds, tracing ridgelines and coastline between Ship Cove and Anakiwa. Captain Cook visited Ship Cove five times during his Pacific voyages, and the views from the track's high points explain why — this is a landscape of extraordinary beauty, with forested ridges dropping to turquoise bays in every direction. The riding is mostly intermediate level, with flowing singletrack through native bush, climbs to stunning saddle viewpoints, and descents to secluded bays. Water taxis carry you and your luggage between accommodation options, so you can ride light and enjoy the experience. Allow two to three days for the full track, or choose a day section for a taste of what the Sounds have to offer.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Queen Charlotte Track",
+        "Marlborough Sounds Adventure Company"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Queen Charlotte Track Mountain Biking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Mountain bike the 70 km Queen Charlotte Track through the Marlborough Sounds. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-dolphin-swim-kaikoura",
+      "name": "Marlborough Sounds Dolphin Cruise",
+      "region": "marlborough",
+      "lat": -41.2833,
+      "lng": 174.05,
+      "category": "adventure",
+      "tags": [
+        "dolphins",
+        "cruise",
+        "wildlife",
+        "sounds",
+        "marine"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3.5,
+      "short": "Cruise the Marlborough Sounds to see dolphins, seals, and rare king shags.",
+      "commentary": "Wildlife cruises in the Marlborough Sounds offer encounters with bottlenose dolphins, New Zealand fur seals, blue penguins, and the globally rare king shag. The sheltered waters of Pelorus and Queen Charlotte Sounds provide excellent viewing conditions year-round.",
+      "audio_story": "You have arrived at the gateway to the Marlborough Sounds, one of New Zealand's richest marine environments. Your cruise will navigate the sheltered waterways where bottlenose dolphins frequently ride the bow wave, sometimes in pods of twenty or more. The Sounds are the only home of the king shag — a critically rare seabird with a global population of just a few hundred — and your boat will pass close to their nesting colonies on rocky outcrops. New Zealand fur seals bask on sun-warmed rocks, and if you're lucky, a little blue penguin might pop up alongside the boat. The landscape is extraordinary too — endless green headlands, hidden bays, and the deep blue channels between the sounds. With over 1,500 kilometres of coastline packed into a relatively small area, the Sounds are a microcosm of everything that makes New Zealand's coast special.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "E-Ko Tours",
+        "Beachcomber Cruises",
+        "DOC Marlborough"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Marlborough Sounds Dolphin Cruise adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Cruise the Marlborough Sounds to see dolphins, seals, and rare king shags. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-pelorus-river-kayak",
+      "name": "Pelorus River Kayaking & Hobbit Scene",
+      "region": "marlborough",
+      "lat": -41.2986,
+      "lng": 173.5794,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "river",
+        "hobbit",
+        "swimming",
+        "scenic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Kayak the crystal-clear Pelorus River — the barrel scene location from The Hobbit.",
+      "commentary": "The Pelorus River was used to film the barrel-riding scene in The Hobbit: The Desolation of Smaug. Guided kayak trips explore the remarkably clear river through native bush. The Pelorus Bridge Scenic Reserve features deep swimming holes and ancient lowland podocarp forest.",
+      "audio_story": "You have arrived at the Pelorus River, a waterway so beautifully clear it was chosen by Peter Jackson to film the famous barrel-riding escape scene in The Hobbit: The Desolation of Smaug. Your kayak trip will take you downstream through crystal-clear pools and gentle rapids framed by native bush that has barely changed since the days of the dinosaurs. The Pelorus Bridge Scenic Reserve protects some of the finest remaining lowland podocarp forest in the Marlborough region, with towering rimu and kahikatea trees. Between paddling, you'll discover deep swimming holes where the water glows emerald green over smooth river stones. The river is gentle enough for beginners yet interesting enough for experienced paddlers, and the combination of cinematic fame and natural beauty makes it one of the hidden gems of the South Island.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Pelorus Eco Adventures",
+        "DOC Pelorus Bridge"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Pelorus River Kayaking & Hobbit Scene adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak the crystal-clear Pelorus River — the barrel scene location from The Hobbit. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-wine-cycle-tour",
+      "name": "Marlborough Wine Trail Cycling",
+      "region": "marlborough",
+      "lat": -41.5167,
+      "lng": 173.95,
+      "category": "adventure",
+      "tags": [
+        "cycling",
+        "wine",
+        "blenheim",
+        "food-and-drink",
+        "family-friendly"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 5,
+      "short": "Cycle between world-class wineries on flat, scenic trails through Marlborough.",
+      "commentary": "Marlborough's flat terrain and network of cycling trails connect over 35 wineries in New Zealand's largest wine region. Self-guided and guided tours are available with bike hire. The region produces over 75% of New Zealand's wine, predominantly Sauvignon Blanc, which thrives in the sunny, dry climate.",
+      "audio_story": "You have arrived in Marlborough, New Zealand's largest and most celebrated wine region, and there's no better way to explore it than by bicycle. The terrain here is blissfully flat — this is a river plain, after all — and a network of quiet roads and dedicated cycle paths connects over 35 wineries, many with cellar doors eager to welcome you. Marlborough produces over 75% of New Zealand's wine, and the Sauvignon Blanc from this region has conquered the world with its intense, zesty flavours. Pedal between tasting rooms, stop for a vineyard lunch, and let someone else worry about the driving. The cycling distances are short — most wineries are just a few minutes' ride apart — so you can set your own pace and follow your palate. On a sunny Marlborough day, with the vines glowing green and the Wither Hills golden in the background, this is cycling at its most civilised.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Wine Tours by Bike",
+        "Explore Marlborough"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Marlborough Wine Trail Cycling adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Cycle between world-class wineries on flat, scenic trails through Marlborough. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-scuba-dive-sounds",
+      "name": "Marlborough Sounds Scuba Diving",
+      "region": "marlborough",
+      "lat": -41.25,
+      "lng": 174.0667,
+      "category": "adventure",
+      "tags": [
+        "scuba-diving",
+        "marine",
+        "sounds",
+        "underwater",
+        "wildlife"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 4,
+      "short": "Dive the sheltered Marlborough Sounds with diverse marine life and wrecks.",
+      "commentary": "The Marlborough Sounds offer sheltered diving with visibility of 5-15 metres depending on conditions. Sites include rocky reef walls, kelp forests, and the Mikhail Lermontov wreck — the largest diveable shipwreck in the Southern Hemisphere. Marine life includes crayfish, octopus, nudibranchs, and occasional dolphins.",
+      "audio_story": "You have arrived at one of the South Island's most diverse diving destinations. The Marlborough Sounds offer a range of dive sites from sheltered rocky reefs teeming with crayfish and colourful nudibranchs to the Mikhail Lermontov — a 155-metre Russian cruise liner that sank in Port Gore in 1986, making it the largest diveable shipwreck in the Southern Hemisphere. The ship lies on her side in 36 metres of water, and penetration dives reveal eerily preserved staterooms and corridors. For less extreme diving, the reef walls of the Sounds are home to octopus, blue cod, and forests of kelp that sway in the current. The sheltered waters mean diving is possible year-round, though summer offers the best visibility at up to 15 metres. Whether you're exploring a wreck frozen in time or drifting along a reef, the Sounds deliver world-class diving in a uniquely beautiful setting.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Dive Marlborough",
+        "Go Dive Marlborough"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Marlborough Sounds Scuba Diving adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Dive the sheltered Marlborough Sounds with diverse marine life and wrecks. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-jet-ski-sounds",
+      "name": "Marlborough Sounds Jet Ski Tour",
+      "region": "marlborough",
+      "lat": -41.265,
+      "lng": 173.9833,
+      "category": "adventure",
+      "tags": [
+        "jet-ski",
+        "sounds",
+        "coastal",
+        "marine",
+        "adrenaline"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Explore the Marlborough Sounds by jet ski through sheltered bays and channels.",
+      "commentary": "Guided jet ski tours explore the Marlborough Sounds, covering distances and accessing bays that would take hours by kayak. Tours often include wildlife encounters and stops at remote beaches. The sheltered waterways provide ideal conditions for jet skiing year-round.",
+      "audio_story": "You have arrived at the starting point for a jet ski adventure through the Marlborough Sounds. While kayaking the Sounds is beautiful, jet skiing lets you cover far more ground and access remote bays and channels that would take hours to reach under paddle power. Your guided tour will take you racing across the sheltered waterways, past bush-clad headlands and through narrow channels, with stops at secluded beaches accessible only from the water. The Sounds' 1,500 kilometres of coastline means there's always somewhere new to explore, and your guide knows the best spots for wildlife, scenery, and sheer riding enjoyment. Keep watch for dolphins — they sometimes race alongside the jet skis. The combination of speed, scenery, and the freedom of the open water makes this one of the most exhilarating ways to experience the Sounds.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Sounds Fun Jet Ski",
+        "Marlborough Sounds"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Marlborough Sounds Jet Ski Tour adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Explore the Marlborough Sounds by jet ski through sheltered bays and channels. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-sailing-charter-sounds",
+      "name": "Marlborough Sounds Sailing",
+      "region": "marlborough",
+      "lat": -41.27,
+      "lng": 174.05,
+      "category": "adventure",
+      "tags": [
+        "sailing",
+        "sounds",
+        "charter",
+        "scenic",
+        "overnight"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 6,
+      "short": "Sail the pristine waterways of the Marlborough Sounds on a chartered yacht.",
+      "commentary": "The Marlborough Sounds offer some of the best cruising waters in New Zealand, with sheltered anchorages, consistent winds, and stunning bush-clad scenery. Day charters and multi-day sailing trips explore Queen Charlotte and Pelorus Sounds, with options from skippered yachts to bareboat hire for experienced sailors.",
+      "audio_story": "You have arrived at one of the finest sailing grounds in the Southern Hemisphere. The Marlborough Sounds offer over 1,500 kilometres of sheltered coastline, consistent winds, and countless pristine anchorages where you can drop the hook and have an entire bay to yourself. Under sail, you'll glide past forested headlands that plunge into deep water, through narrow channels where the wind funnels perfectly, and into hidden bays where the only sounds are birdsong and the gentle lap of water on the hull. Whether you charter a skippered yacht for the day or take a bareboat for a multi-day cruise, the Sounds reward sailors with ever-changing scenery and reliably good conditions. Drop anchor in a quiet cove, dive off the stern for a swim, and watch the sunset paint the hills gold. This is sailing as it should be — unhurried, beautiful, and free.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Compass Charters",
+        "Sounds Sailing"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Marlborough Sounds Sailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sail the pristine waterways of the Marlborough Sounds on a chartered yacht. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "marlborough-heli-wine-tour",
+      "name": "Helicopter Wine Tour Marlborough",
+      "region": "marlborough",
+      "lat": -41.5333,
+      "lng": 173.9667,
+      "category": "adventure",
+      "tags": [
+        "helicopter",
+        "wine",
+        "scenic-flight",
+        "luxury",
+        "marlborough"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3.5,
+      "short": "Helicopter between Marlborough's finest wineries with aerial vineyard views.",
+      "commentary": "Helicopter wine tours combine scenic flying over the Marlborough wine region with exclusive cellar door visits at premium wineries. Routes may include flights over the Sounds, the Wither Hills, and vineyard landscapes. These premium experiences include tastings and often a gourmet lunch.",
+      "audio_story": "You have arrived at the helipad for what might be the most luxurious wine-tasting experience in New Zealand. Your helicopter will lift off over the patchwork of Marlborough's vineyards — rows of vines stretching to the hills in perfect geometric lines — before landing at exclusive cellar doors that most visitors never reach. Between tastings, you'll fly over the Wither Hills, the Marlborough Sounds, and the vineyard landscapes that produce over 75% of New Zealand's wine. From the air, the scale of the wine industry here is astonishing — hundreds of vineyards quilting the Wairau and Awatere valleys in every shade of green and gold. A gourmet lunch at one of the region's top restaurants rounds out an experience that combines world-class wine, spectacular scenery, and the sheer thrill of helicopter flying. This is Marlborough at its most indulgent.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Sounds Air Helicopters",
+        "Marlborough Wine Tours"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Helicopter Wine Tour Marlborough adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Helicopter between Marlborough's finest wineries with aerial vineyard views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}

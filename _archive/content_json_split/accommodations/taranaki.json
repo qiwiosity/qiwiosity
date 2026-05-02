@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "taranaki",
+    "name": "Taranaki",
+    "island": "North",
+    "centre": {
+      "lat": -39.2968,
+      "lng": 174.0756
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "taranaki-novotel-new-plymouth",
+      "name": "Novotel New Plymouth Taranaki",
+      "region": "taranaki",
+      "lat": -39.063,
+      "lng": 174.076,
+      "type": "hotel",
+      "price_nzd_per_night": 265,
+      "rating": 4.4,
+      "short": "Modern Novotel a block from Pukekura Park."
+    },
+    {
+      "id": "taranaki-devon-hotel",
+      "name": "The Devon Hotel New Plymouth",
+      "region": "taranaki",
+      "lat": -39.065,
+      "lng": 174.081,
+      "type": "hotel",
+      "price_nzd_per_night": 245,
+      "rating": 4.3,
+      "short": "Long-standing Devon Street hotel with pool and buffet."
+    },
+    {
+      "id": "taranaki-plymouth-hotel",
+      "name": "Plymouth International Hotel",
+      "region": "taranaki",
+      "lat": -39.064,
+      "lng": 174.08,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.2,
+      "short": "Central New Plymouth hotel at the top of Courtenay Street."
+    },
+    {
+      "id": "taranaki-king-country-hotel",
+      "name": "Nice Hotel & Bistro New Plymouth",
+      "region": "taranaki",
+      "lat": -39.06,
+      "lng": 174.077,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.6,
+      "short": "Restored 1856 heritage hotel with acclaimed bistro."
+    },
+    {
+      "id": "taranaki-auto-lodge-new-plymouth",
+      "name": "Auto Lodge Motor Inn",
+      "region": "taranaki",
+      "lat": -39.066,
+      "lng": 174.073,
+      "type": "hotel",
+      "price_nzd_per_night": 225,
+      "rating": 4.3,
+      "short": "Courtenay Street hotel-style motor inn with large family rooms."
+    },
+    {
+      "id": "taranaki-waterfront-hotel-new-plymouth",
+      "name": "The Waterfront New Plymouth",
+      "region": "taranaki",
+      "lat": -39.056,
+      "lng": 174.07,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.5,
+      "short": "Boutique hotel on New Plymouth's coastal walkway."
+    },
+    {
+      "id": "taranaki-cottage-mews-motel",
+      "name": "Cottage Mews Motel",
+      "region": "taranaki",
+      "lat": -39.071,
+      "lng": 174.083,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Quiet Brooklands motel close to the Bowl of Brooklands."
+    },
+    {
+      "id": "taranaki-saddle-and-sulky",
+      "name": "Saddle & Sulky Motor Lodge",
+      "region": "taranaki",
+      "lat": -39.079,
+      "lng": 174.088,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "New Plymouth motel on the raceway doorstep."
+    },
+    {
+      "id": "taranaki-amber-court-motel",
+      "name": "Amber Court Motel New Plymouth",
+      "region": "taranaki",
+      "lat": -39.068,
+      "lng": 174.079,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Central-New-Plymouth motor lodge on Courtenay Street."
+    },
+    {
+      "id": "taranaki-coronation-court-motel",
+      "name": "Coronation Court Motel",
+      "region": "taranaki",
+      "lat": -39.072,
+      "lng": 174.08,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.2,
+      "short": "Park-side New Plymouth motel close to Pukekura Park."
+    },
+    {
+      "id": "taranaki-tasman-holiday-stratford",
+      "name": "Amity Court Motel Stratford",
+      "region": "taranaki",
+      "lat": -39.341,
+      "lng": 174.292,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Central Stratford motel beneath Mt Taranaki."
+    },
+    {
+      "id": "taranaki-hawera-tairoa-lodge",
+      "name": "Tairoa Lodge Motel Hawera",
+      "region": "taranaki",
+      "lat": -39.594,
+      "lng": 174.283,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Heritage grounds motel in central Hawera."
+    },
+    {
+      "id": "taranaki-opunake-motel",
+      "name": "Opunake Beach Kiwi Motel",
+      "region": "taranaki",
+      "lat": -39.459,
+      "lng": 173.852,
+      "type": "motel",
+      "price_nzd_per_night": 155,
+      "rating": 4,
+      "short": "Coastal Opunake motel on the Surf Highway."
+    },
+    {
+      "id": "taranaki-belt-road-holiday-park",
+      "name": "Belt Road Seaside Holiday Park",
+      "region": "taranaki",
+      "lat": -39.057,
+      "lng": 174.065,
+      "type": "holiday-park",
+      "price_nzd_per_night": 100,
+      "rating": 4.2,
+      "short": "Clifftop park above Ngamotu Beach and the Coastal Walkway."
+    },
+    {
+      "id": "taranaki-opunake-beach-holiday",
+      "name": "Opunake Beach Kiwi Holiday Park",
+      "region": "taranaki",
+      "lat": -39.458,
+      "lng": 173.85,
+      "type": "holiday-park",
+      "price_nzd_per_night": 90,
+      "rating": 4.3,
+      "short": "Family park with cabins right on Opunake Beach."
+    },
+    {
+      "id": "taranaki-stratford-top10",
+      "name": "Stratford TOP 10 Holiday Park",
+      "region": "taranaki",
+      "lat": -39.34,
+      "lng": 174.293,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.1,
+      "short": "Alpine-view Stratford park beneath Mt Taranaki."
+    },
+    {
+      "id": "taranaki-hawera-kiwi-holiday-park",
+      "name": "Kaponga-Hawera Tawhiti Holiday Park",
+      "region": "taranaki",
+      "lat": -39.591,
+      "lng": 174.282,
+      "type": "holiday-park",
+      "price_nzd_per_night": 80,
+      "rating": 4,
+      "short": "Small South Taranaki park with cabins and tent sites."
+    },
+    {
+      "id": "taranaki-tongaporutu-white-cliffs",
+      "name": "White Cliffs Retreat Taranaki",
+      "region": "taranaki",
+      "lat": -38.83,
+      "lng": 174.59,
+      "type": "lodge",
+      "price_nzd_per_night": 720,
+      "rating": 4.7,
+      "short": "Clifftop eco-retreat above the Tongaporutu coast."
+    },
+    {
+      "id": "taranaki-taranaki-country-lodge",
+      "name": "Ahu Ahu Beach Villas",
+      "region": "taranaki",
+      "lat": -39.252,
+      "lng": 173.817,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.7,
+      "short": "Hand-built beachfront villas on Taranaki's Surf Highway."
+    },
+    {
+      "id": "taranaki-makino-cottage-lodge",
+      "name": "Makino Cottages",
+      "region": "taranaki",
+      "lat": -39.227,
+      "lng": 174.431,
+      "type": "lodge",
+      "price_nzd_per_night": 540,
+      "rating": 4.6,
+      "short": "Hilltop spa cottages near Inglewood with Mt Taranaki views."
+    }
+  ]
+}

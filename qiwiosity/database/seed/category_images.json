@@ -1,0 +1,37 @@
+[
+  {
+    "category_id": "nature",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tongariro%20Alpine%20Crossing%20-%20NZ.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "culture",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Waharoa%20by%20Neke%20Kapua%20in%20mus%C3%A9um%20Te%20Papa%20Tongarewa%20Wellington%20%28N.Z%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "adventure",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mombas%20over%20Kawarau%20bridge%20--Queenstown--.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "food-wine",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Wairau%20Valley%20vineyards%20in%20the%20Marlborough%20wine%20region%2C%20New%20Zealand.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "heritage",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/00%201563%20Waitangi%20Treaty%20Grounds%2C%20National%20Reserve%20%28NZ%29.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "māori",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018-12-30%20150954%20Whakarewarewa%20Thermal%20Village%20anagoria.jpg?width=800",
+    "display_order": 1
+  },
+  {
+    "category_id": "wildlife",
+    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Australasian%20Gannet%20greeting%20mate.jpg?width=800",
+    "display_order": 1
+  }
+]

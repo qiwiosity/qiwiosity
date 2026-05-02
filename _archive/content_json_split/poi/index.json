@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-04-20",
+  "project": "Qiwiosity — New Zealand travel companion",
+  "schema_version": "1.1",
+  "totals": {
+    "regions": 19,
+    "pois": 1100,
+    "by_island": {
+      "North": 682,
+      "South": 418
+    },
+    "by_category": {
+      "heritage": 166,
+      "nature": 201,
+      "culture": 59,
+      "food-wine": 15,
+      "māori": 295,
+      "wildlife": 18,
+      "journey": 169,
+      "adventure": 177
+    },
+    "by_content_status": {
+      "draft": 911,
+      "pending_scripts": 158,
+      "draft_pending_review": 30,
+      "draft_access_check_required": 1
+    },
+    "cultural_review_required": 30
+  },
+  "regions": [
+    {
+      "id": "auckland",
+      "name": "Auckland / Tāmaki Makaurau",
+      "island": "North",
+      "centre": {
+        "lat": -36.8485,
+        "lng": 174.7633
+      },
+      "poi_count": 62,
+      "file": "content/poi/auckland.json"
+    },
+    {
+      "id": "bay-of-plenty",
+      "name": "Bay of Plenty / Te Moana-a-Toi",
+      "island": "North",
+      "centre": {
+        "lat": -37.6878,
+        "lng": 176.1651
+      },
+      "poi_count": 60,
+      "file": "content/poi/bay-of-plenty.json"
+    },
+    {
+      "id": "canterbury",
+      "name": "Canterbury / Waitaha",
+      "island": "South",
+      "centre": {
+        "lat": -43.532,
+        "lng": 172.6362
+      },
+      "poi_count": 76,
+      "file": "content/poi/canterbury.json"
+    },
+    {
+      "id": "coromandel",
+      "name": "Coromandel Peninsula",
+      "island": "North",
+      "centre": {
+        "lat": -36.75,
+        "lng": 175.7
+      },
+      "poi_count": 48,
+      "file": "content/poi/coromandel.json"
+    },
+    {
+      "id": "hawkes-bay",
+      "name": "Hawke's Bay / Te Matau-a-Māui",
+      "island": "North",
+      "centre": {
+        "lat": -39.4928,
+        "lng": 176.912
+      },
+      "poi_count": 52,
+      "file": "content/poi/hawkes-bay.json"
+    },
+    {
+      "id": "marlborough",
+      "name": "Marlborough",
+      "island": "South",
+      "centre": {
+        "lat": -41.5136,
+        "lng": 173.9614
+      },
+      "poi_count": 52,
+      "file": "content/poi/marlborough.json"
+    },
+    {
+      "id": "nelson-tasman",
+      "name": "Nelson / Tasman",
+      "island": "South",
+      "centre": {
+        "lat": -41.2706,
+        "lng": 173.284
+      },
+      "poi_count": 47,
+      "file": "content/poi/nelson-tasman.json"
+    },
+    {
+      "id": "northland",
+      "name": "Northland / Te Tai Tokerau",
+      "island": "North",
+      "centre": {
+        "lat": -35.5,
+        "lng": 174.0
+      },
+      "poi_count": 73,
+      "file": "content/poi/northland.json"
+    },
+    {
+      "id": "otago",
+      "name": "Otago",
+      "island": "South",
+      "centre": {
+        "lat": -45.4,
+        "lng": 170.0
+      },
+      "poi_count": 70,
+      "file": "content/poi/otago.json"
+    },
+    {
+      "id": "queenstown",
+      "name": "Queenstown / Tāhuna",
+      "island": "South",
+      "centre": {
+        "lat": -45.0312,
+        "lng": 168.6626
+      },
+      "poi_count": 53,
+      "file": "content/poi/queenstown.json"
+    },
+    {
+      "id": "rotorua",
+      "name": "Rotorua",
+      "island": "North",
+      "centre": {
+        "lat": -38.1368,
+        "lng": 176.2497
+      },
+      "poi_count": 47,
+      "file": "content/poi/rotorua.json"
+    },
+    {
+      "id": "southland",
+      "name": "Southland & Fiordland",
+      "island": "South",
+      "centre": {
+        "lat": -45.8,
+        "lng": 167.8
+      },
+      "poi_count": 61,
+      "file": "content/poi/southland.json"
+    },
+    {
+      "id": "tairawhiti",
+      "name": "Tairāwhiti / Gisborne / East Cape",
+      "island": "North",
+      "centre": {
+        "lat": -38.05,
+        "lng": 178.2
+      },
+      "poi_count": 48,
+      "file": "content/poi/tairawhiti.json"
+    },
+    {
+      "id": "taranaki",
+      "name": "Taranaki",
+      "island": "North",
+      "centre": {
+        "lat": -39.2968,
+        "lng": 174.0756
+      },
+      "poi_count": 56,
+      "file": "content/poi/taranaki.json"
+    },
+    {
+      "id": "taupo",
+      "name": "Taupō / Taupō-nui-a-Tia",
+      "island": "North",
+      "centre": {
+        "lat": -38.6857,
+        "lng": 176.0702
+      },
+      "poi_count": 44,
+      "file": "content/poi/taupo.json"
+    },
+    {
+      "id": "waikato",
+      "name": "Waikato",
+      "island": "North",
+      "centre": {
+        "lat": -37.787,
+        "lng": 175.2793
+      },
+      "poi_count": 68,
+      "file": "content/poi/waikato.json"
+    },
+    {
+      "id": "wellington",
+      "name": "Wellington / Te Whanganui-a-Tara",
+      "island": "North",
+      "centre": {
+        "lat": -41.2866,
+        "lng": 174.7756
+      },
+      "poi_count": 65,
+      "file": "content/poi/wellington.json"
+    },
+    {
+      "id": "west-coast",
+      "name": "West Coast / Te Tai Poutini",
+      "island": "South",
+      "centre": {
+        "lat": -42.75,
+        "lng": 171.1
+      },
+      "poi_count": 59,
+      "file": "content/poi/west-coast.json"
+    },
+    {
+      "id": "whanganui-manawatu",
+      "name": "Whanganui / Manawatū",
+      "island": "North",
+      "centre": {
+        "lat": -40.05,
+        "lng": 175.3
+      },
+      "poi_count": 59,
+      "file": "content/poi/whanganui-manawatu.json"
+    }
+  ]
+}

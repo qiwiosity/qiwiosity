@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "auckland",
+    "name": "Auckland / Tāmaki Makaurau",
+    "island": "North",
+    "centre": {
+      "lat": -36.8485,
+      "lng": 174.7633
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "auckland-sofitel-viaduct",
+      "name": "Sofitel Auckland Viaduct Harbour",
+      "region": "auckland",
+      "lat": -36.8432,
+      "lng": 174.7591,
+      "type": "hotel",
+      "price_nzd_per_night": 420,
+      "rating": 4.6,
+      "short": "Five-star harbourside luxury on Viaduct marina with Sofitel signature spa."
+    },
+    {
+      "id": "auckland-hilton-auckland",
+      "name": "Hilton Auckland",
+      "region": "auckland",
+      "lat": -36.8423,
+      "lng": 174.7649,
+      "type": "hotel",
+      "price_nzd_per_night": 415,
+      "rating": 4.5,
+      "short": "Iconic pier-end hotel on Princes Wharf with 180-degree harbour views."
+    },
+    {
+      "id": "auckland-cordis-auckland",
+      "name": "Cordis Auckland",
+      "region": "auckland",
+      "lat": -36.8635,
+      "lng": 174.7666,
+      "type": "hotel",
+      "price_nzd_per_night": 320,
+      "rating": 4.5,
+      "short": "Langham-group hotel near Karangahape Road with heated rooftop pool."
+    },
+    {
+      "id": "auckland-pullman-auckland",
+      "name": "Pullman Auckland",
+      "region": "auckland",
+      "lat": -36.8519,
+      "lng": 174.7683,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.4,
+      "short": "Business hotel overlooking Albert Park in central CBD."
+    },
+    {
+      "id": "auckland-park-hyatt-auckland",
+      "name": "Park Hyatt Auckland",
+      "region": "auckland",
+      "lat": -36.8421,
+      "lng": 174.758,
+      "type": "hotel",
+      "price_nzd_per_night": 550,
+      "rating": 4.7,
+      "short": "Waterfront Wynyard Quarter flagship with infinity pool and superyacht views."
+    },
+    {
+      "id": "auckland-grand-millennium",
+      "name": "Grand Millennium Auckland",
+      "region": "auckland",
+      "lat": -36.8527,
+      "lng": 174.7624,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Queen Street hotel close to SkyCity and Aotea Square."
+    },
+    {
+      "id": "auckland-quality-parnell",
+      "name": "Quality Hotel Parnell",
+      "region": "auckland",
+      "lat": -36.858,
+      "lng": 174.7765,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.1,
+      "short": "Boutique motor lodge in leafy Parnell, minutes from the CBD."
+    },
+    {
+      "id": "auckland-siesta-motel",
+      "name": "Siesta Motel Auckland",
+      "region": "auckland",
+      "lat": -36.882,
+      "lng": 174.806,
+      "type": "motel",
+      "price_nzd_per_night": 150,
+      "rating": 4,
+      "short": "Classic Kiwi motel on Great South Road with spacious family units."
+    },
+    {
+      "id": "auckland-motel-de-ville",
+      "name": "Motel De Ville Ellerslie",
+      "region": "auckland",
+      "lat": -36.896,
+      "lng": 174.815,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.2,
+      "short": "Quiet Ellerslie motor lodge near the racecourse and motorway."
+    },
+    {
+      "id": "auckland-parnell-inn",
+      "name": "Parnell Inn Motel",
+      "region": "auckland",
+      "lat": -36.8605,
+      "lng": 174.7788,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4,
+      "short": "Character motel on Parnell Road with off-street parking."
+    },
+    {
+      "id": "auckland-cornwall-park-motel",
+      "name": "Cornwall Park Motel",
+      "region": "auckland",
+      "lat": -36.8875,
+      "lng": 174.788,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4.1,
+      "short": "Family-run motel across from Cornwall Park and One Tree Hill."
+    },
+    {
+      "id": "auckland-airport-gateway",
+      "name": "Airport Gateway Motor Lodge",
+      "region": "auckland",
+      "lat": -36.9901,
+      "lng": 174.7933,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.2,
+      "short": "Convenient Mangere motel with 24-hour airport shuttle."
+    },
+    {
+      "id": "auckland-remuera-motor-lodge",
+      "name": "Remuera Motor Lodge",
+      "region": "auckland",
+      "lat": -36.881,
+      "lng": 174.799,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.3,
+      "short": "Upmarket motel on Remuera Road with spa-bath suites."
+    },
+    {
+      "id": "auckland-auckland-top10",
+      "name": "Auckland Airport TOP 10 Holiday Park",
+      "region": "auckland",
+      "lat": -36.9741,
+      "lng": 174.8203,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Handy Mangere Bridge park with cabins, pool and airport shuttle."
+    },
+    {
+      "id": "auckland-orewa-beach-top10",
+      "name": "Orewa Beach TOP 10 Holiday Park",
+      "region": "auckland",
+      "lat": -36.5855,
+      "lng": 174.701,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.3,
+      "short": "Absolute beachfront park on Orewa's golden sands north of the city."
+    },
+    {
+      "id": "auckland-remuera-motor-park",
+      "name": "Remuera Motor Lodge & Holiday Park",
+      "region": "auckland",
+      "lat": -36.8775,
+      "lng": 174.8033,
+      "type": "holiday-park",
+      "price_nzd_per_night": 85,
+      "rating": 4,
+      "short": "Central Auckland park in leafy Remuera with tents, cabins and powered sites."
+    },
+    {
+      "id": "auckland-takapuna-beach-holiday",
+      "name": "Takapuna Beach Holiday Park",
+      "region": "auckland",
+      "lat": -36.782,
+      "lng": 174.776,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.1,
+      "short": "Absolute beachfront park on the North Shore with Rangitoto views."
+    },
+    {
+      "id": "auckland-the-hotel-britomart",
+      "name": "The Hotel Britomart",
+      "region": "auckland",
+      "lat": -36.8441,
+      "lng": 174.768,
+      "type": "hotel",
+      "price_nzd_per_night": 380,
+      "rating": 4.7,
+      "short": "NZ's first 5-Green-Star hotel in Britomart's brick warehouse precinct."
+    },
+    {
+      "id": "auckland-waiheke-delamore",
+      "name": "Delamore Lodge Waiheke",
+      "region": "auckland",
+      "lat": -36.779,
+      "lng": 175.018,
+      "type": "lodge",
+      "price_nzd_per_night": 1450,
+      "rating": 4.8,
+      "short": "Mediterranean-style clifftop lodge on Waiheke with Hauraki Gulf views."
+    },
+    {
+      "id": "auckland-mollies-herne-bay",
+      "name": "Mollies Boutique Hotel",
+      "region": "auckland",
+      "lat": -36.843,
+      "lng": 174.7385,
+      "type": "lodge",
+      "price_nzd_per_night": 950,
+      "rating": 4.7,
+      "short": "Historic Herne Bay villa turned intimate boutique lodge with harbour outlook."
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "bay-of-plenty",
+    "name": "Bay of Plenty / Te Moana-a-Toi",
+    "island": "North",
+    "centre": {
+      "lat": -37.6878,
+      "lng": 176.1651
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "bay-of-plenty-trinity-wharf",
+      "name": "Trinity Wharf Tauranga",
+      "region": "bay-of-plenty",
+      "lat": -37.6781,
+      "lng": 176.177,
+      "type": "hotel",
+      "price_nzd_per_night": 295,
+      "rating": 4.5,
+      "short": "Over-water hotel on Tauranga Harbour with three wharfside wings."
+    },
+    {
+      "id": "bay-of-plenty-hotel-armitage",
+      "name": "Hotel Armitage Tauranga",
+      "region": "bay-of-plenty",
+      "lat": -37.686,
+      "lng": 176.166,
+      "type": "hotel",
+      "price_nzd_per_night": 225,
+      "rating": 4.2,
+      "short": "Central Tauranga hotel on Willow Street with heated lap pool."
+    },
+    {
+      "id": "bay-of-plenty-ridge-country",
+      "name": "Ridge Country Retreat",
+      "region": "bay-of-plenty",
+      "lat": -37.726,
+      "lng": 176.238,
+      "type": "hotel",
+      "price_nzd_per_night": 485,
+      "rating": 4.8,
+      "short": "Boutique wellness retreat in Welcome Bay hills with outdoor spa pools."
+    },
+    {
+      "id": "bay-of-plenty-hotel-on-devonport",
+      "name": "Hotel on Devonport",
+      "region": "bay-of-plenty",
+      "lat": -37.689,
+      "lng": 176.168,
+      "type": "hotel",
+      "price_nzd_per_night": 215,
+      "rating": 4.3,
+      "short": "Boutique city hotel tucked into Tauranga's Historic Village district."
+    },
+    {
+      "id": "bay-of-plenty-oceanside-mount",
+      "name": "Oceanside Resort Mount Maunganui",
+      "region": "bay-of-plenty",
+      "lat": -37.633,
+      "lng": 176.184,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.4,
+      "short": "Beachfront resort steps from Mount Main Beach and Mauao summit walk."
+    },
+    {
+      "id": "bay-of-plenty-quest-mount",
+      "name": "Quest Mount Maunganui",
+      "region": "bay-of-plenty",
+      "lat": -37.6369,
+      "lng": 176.185,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Serviced-apartment hotel on Maunganui Road near The Mount beach."
+    },
+    {
+      "id": "bay-of-plenty-motel-on-devonport",
+      "name": "Motel on Devonport",
+      "region": "bay-of-plenty",
+      "lat": -37.6925,
+      "lng": 176.1612,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.1,
+      "short": "Tauranga motor lodge close to the harbour and city centre."
+    },
+    {
+      "id": "bay-of-plenty-harbourside-city-lights",
+      "name": "Harbourside City Lights Motel",
+      "region": "bay-of-plenty",
+      "lat": -37.68,
+      "lng": 176.166,
+      "type": "motel",
+      "price_nzd_per_night": 185,
+      "rating": 4.2,
+      "short": "Tauranga motel with water-view balconies and spa suites."
+    },
+    {
+      "id": "bay-of-plenty-mount-maunganui-motel",
+      "name": "Mount Maunganui Beachside Motel",
+      "region": "bay-of-plenty",
+      "lat": -37.64,
+      "lng": 176.187,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.2,
+      "short": "Classic beachside motel two blocks from Mount Main Beach."
+    },
+    {
+      "id": "bay-of-plenty-whakatane-motel",
+      "name": "Whakatane Motor Inn",
+      "region": "bay-of-plenty",
+      "lat": -37.954,
+      "lng": 176.991,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Riverside Whakatane motel near the wharf and White Island tours."
+    },
+    {
+      "id": "bay-of-plenty-pacific-coast-motel",
+      "name": "Pacific Coast Motor Lodge Papamoa",
+      "region": "bay-of-plenty",
+      "lat": -37.698,
+      "lng": 176.275,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "Family-friendly Papamoa motel a block from the surf beach."
+    },
+    {
+      "id": "bay-of-plenty-beachside-motel-ohope",
+      "name": "Beachside Ohope Motel",
+      "region": "bay-of-plenty",
+      "lat": -37.979,
+      "lng": 177.106,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4,
+      "short": "Chill Ohope motel on NZ's voted best beach."
+    },
+    {
+      "id": "bay-of-plenty-aspen-manor",
+      "name": "Aspen Manor Motel Tauranga",
+      "region": "bay-of-plenty",
+      "lat": -37.6825,
+      "lng": 176.156,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Colonial-style Tauranga motel handy to the hospital and CBD."
+    },
+    {
+      "id": "bay-of-plenty-papamoa-beach-top10",
+      "name": "Papamoa Beach TOP 10 Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.7005,
+      "lng": 176.2863,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.5,
+      "short": "Absolute beachfront Papamoa park with surfside cabins and dune tracks."
+    },
+    {
+      "id": "bay-of-plenty-tauranga-top10",
+      "name": "Tauranga TOP 10 Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.7029,
+      "lng": 176.1425,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.3,
+      "short": "Central Tauranga holiday park with pool, jumping pillow and cabins."
+    },
+    {
+      "id": "bay-of-plenty-mount-maunganui-beachside",
+      "name": "Mount Maunganui Beachside Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.6279,
+      "lng": 176.1829,
+      "type": "holiday-park",
+      "price_nzd_per_night": 130,
+      "rating": 4.4,
+      "short": "DOC-leased park right at the foot of Mauao with ocean-front tent sites."
+    },
+    {
+      "id": "bay-of-plenty-ohope-beach-top10",
+      "name": "Ohope Beach TOP 10 Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.9795,
+      "lng": 177.135,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.5,
+      "short": "Long-running Ohope beachfront park with pool and family villas."
+    },
+    {
+      "id": "bay-of-plenty-waihi-beach-top10",
+      "name": "Waihi Beach TOP 10 Holiday Resort",
+      "region": "bay-of-plenty",
+      "lat": -37.409,
+      "lng": 175.937,
+      "type": "holiday-park",
+      "price_nzd_per_night": 125,
+      "rating": 4.4,
+      "short": "Resort-style holiday park 300m from Waihi's surf beach."
+    },
+    {
+      "id": "bay-of-plenty-rock-salt-lodge",
+      "name": "Rock Salt Lodge",
+      "region": "bay-of-plenty",
+      "lat": -37.634,
+      "lng": 176.1855,
+      "type": "lodge",
+      "price_nzd_per_night": 850,
+      "rating": 4.6,
+      "short": "Boutique Mount Maunganui lodge with ocean views and private beach access."
+    },
+    {
+      "id": "bay-of-plenty-solitaire-lodge-bop",
+      "name": "Ridge Country Retreat Lodge Wing",
+      "region": "bay-of-plenty",
+      "lat": -37.725,
+      "lng": 176.236,
+      "type": "lodge",
+      "price_nzd_per_night": 1250,
+      "rating": 4.8,
+      "short": "Adults-only luxury lodge wing above Tauranga harbour with cliff-top spa."
+    }
+  ]
+}

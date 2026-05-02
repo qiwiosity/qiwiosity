@@ -1,0 +1,245 @@
+{
+  "region": {
+    "id": "queenstown",
+    "name": "Queenstown / Tāhuna",
+    "island": "South",
+    "centre": {
+      "lat": -45.0312,
+      "lng": 168.6626
+    }
+  },
+  "count": 21,
+  "accommodations": [
+    {
+      "id": "queenstown-sofitel-queenstown",
+      "name": "Sofitel Queenstown",
+      "region": "queenstown",
+      "lat": -45.0311,
+      "lng": 168.6613,
+      "type": "hotel",
+      "price_nzd_per_night": 520,
+      "rating": 4.7,
+      "short": "Five-star Sofitel in central Queenstown on Duke Street."
+    },
+    {
+      "id": "queenstown-qt-queenstown",
+      "name": "QT Queenstown",
+      "region": "queenstown",
+      "lat": -45.029,
+      "lng": 168.658,
+      "type": "hotel",
+      "price_nzd_per_night": 430,
+      "rating": 4.5,
+      "short": "Designer lakefront hotel with Reds Bar and lake views."
+    },
+    {
+      "id": "queenstown-rydges-lakeland",
+      "name": "Rydges Lakeland Resort Queenstown",
+      "region": "queenstown",
+      "lat": -45.028,
+      "lng": 168.653,
+      "type": "hotel",
+      "price_nzd_per_night": 410,
+      "rating": 4.5,
+      "short": "Terraced lakefront resort on Lake Esplanade with heated pool."
+    },
+    {
+      "id": "queenstown-hilton-queenstown",
+      "name": "Hilton Queenstown Resort & Spa",
+      "region": "queenstown",
+      "lat": -45.054,
+      "lng": 168.622,
+      "type": "hotel",
+      "price_nzd_per_night": 470,
+      "rating": 4.5,
+      "short": "Across-the-lake Kawarau Village Hilton with resort spa."
+    },
+    {
+      "id": "queenstown-st-moritz",
+      "name": "The St Moritz Queenstown",
+      "region": "queenstown",
+      "lat": -45.034,
+      "lng": 168.657,
+      "type": "hotel",
+      "price_nzd_per_night": 455,
+      "rating": 4.6,
+      "short": "MGallery boutique hotel above Queenstown Bay."
+    },
+    {
+      "id": "queenstown-crowne-plaza-queenstown",
+      "name": "Crowne Plaza Queenstown",
+      "region": "queenstown",
+      "lat": -45.032,
+      "lng": 168.662,
+      "type": "hotel",
+      "price_nzd_per_night": 425,
+      "rating": 4.5,
+      "short": "Lakefront Beach Street hotel moments from the gondola."
+    },
+    {
+      "id": "queenstown-eichardts-hotel",
+      "name": "Eichardts Private Hotel",
+      "region": "queenstown",
+      "lat": -45.032,
+      "lng": 168.662,
+      "type": "hotel",
+      "price_nzd_per_night": 1250,
+      "rating": 4.8,
+      "short": "Historic 1867 five-suite boutique on the Queenstown waterfront."
+    },
+    {
+      "id": "queenstown-alpine-sunset-motel",
+      "name": "Alpine Sunset Motel Queenstown",
+      "region": "queenstown",
+      "lat": -45.023,
+      "lng": 168.67,
+      "type": "motel",
+      "price_nzd_per_night": 220,
+      "rating": 4.2,
+      "short": "Queenstown hillside motel with Remarkables views."
+    },
+    {
+      "id": "queenstown-amber-lodge-motel",
+      "name": "Amber Lodge Motel Queenstown",
+      "region": "queenstown",
+      "lat": -45.029,
+      "lng": 168.67,
+      "type": "motel",
+      "price_nzd_per_night": 215,
+      "rating": 4.3,
+      "short": "Short-walk-to-CBD Queenstown motel with mountain-view units."
+    },
+    {
+      "id": "queenstown-a-line-motel",
+      "name": "A-Line Motel Queenstown",
+      "region": "queenstown",
+      "lat": -45.028,
+      "lng": 168.671,
+      "type": "motel",
+      "price_nzd_per_night": 225,
+      "rating": 4.3,
+      "short": "Classic Queenstown motor inn on Frankton Road."
+    },
+    {
+      "id": "queenstown-aspen-lodge-motel",
+      "name": "Aspen Lodge Motel Queenstown",
+      "region": "queenstown",
+      "lat": -45.03,
+      "lng": 168.669,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.2,
+      "short": "Budget-friendly Queenstown motel minutes from Steamer Wharf."
+    },
+    {
+      "id": "queenstown-autoline-motel",
+      "name": "Autoline Motel Queenstown",
+      "region": "queenstown",
+      "lat": -45.024,
+      "lng": 168.673,
+      "type": "motel",
+      "price_nzd_per_night": 200,
+      "rating": 4.1,
+      "short": "Suite-style Queenstown motel on the walkway to town."
+    },
+    {
+      "id": "queenstown-arrowtown-lodge-motel",
+      "name": "Arrowtown Lodge Motel & Apartments",
+      "region": "queenstown",
+      "lat": -44.938,
+      "lng": 168.831,
+      "type": "motel",
+      "price_nzd_per_night": 230,
+      "rating": 4.4,
+      "short": "Boutique motel within walking distance of Arrowtown village."
+    },
+    {
+      "id": "queenstown-queenstown-motor-lodge",
+      "name": "Queenstown Motor Park Motel Units",
+      "region": "queenstown",
+      "lat": -45.022,
+      "lng": 168.666,
+      "type": "motel",
+      "price_nzd_per_night": 205,
+      "rating": 4.1,
+      "short": "Budget motel units within the Queenstown Motor Park complex."
+    },
+    {
+      "id": "queenstown-queenstown-top10",
+      "name": "Queenstown Lakeview Holiday Park",
+      "region": "queenstown",
+      "lat": -45.025,
+      "lng": 168.665,
+      "type": "holiday-park",
+      "price_nzd_per_night": 150,
+      "rating": 4.3,
+      "short": "Walk-to-town Queenstown park with panoramic lake views."
+    },
+    {
+      "id": "queenstown-arrowtown-top10",
+      "name": "Arrowtown Holiday Park",
+      "region": "queenstown",
+      "lat": -44.94,
+      "lng": 168.83,
+      "type": "holiday-park",
+      "price_nzd_per_night": 130,
+      "rating": 4.2,
+      "short": "Leafy riverside park on the edge of historic Arrowtown."
+    },
+    {
+      "id": "queenstown-frankton-top10",
+      "name": "Queenstown TOP 10 Holiday Park Creeksyde",
+      "region": "queenstown",
+      "lat": -45.026,
+      "lng": 168.67,
+      "type": "holiday-park",
+      "price_nzd_per_night": 140,
+      "rating": 4.3,
+      "short": "Architect-designed Queenstown central park with eco credentials."
+    },
+    {
+      "id": "queenstown-kingston-holiday-park",
+      "name": "Kingston Holiday Park",
+      "region": "queenstown",
+      "lat": -45.34,
+      "lng": 168.72,
+      "type": "holiday-park",
+      "price_nzd_per_night": 90,
+      "rating": 4,
+      "short": "Quiet lakeside park at the southern end of Lake Wakatipu."
+    },
+    {
+      "id": "queenstown-matakauri-lodge",
+      "name": "Matakauri Lodge",
+      "region": "queenstown",
+      "lat": -45.085,
+      "lng": 168.602,
+      "type": "lodge",
+      "price_nzd_per_night": 2300,
+      "rating": 4.9,
+      "short": "Robertson Lodges flagship on a private Lake Wakatipu bay."
+    },
+    {
+      "id": "queenstown-blanket-bay",
+      "name": "Blanket Bay Lodge",
+      "region": "queenstown",
+      "lat": -44.905,
+      "lng": 168.36,
+      "type": "lodge",
+      "price_nzd_per_night": 2400,
+      "rating": 4.9,
+      "short": "Stone-and-schist lodge beneath Mt Earnslaw near Glenorchy."
+    },
+    {
+      "id": "queenstown-azur-lodge",
+      "name": "Azur Lodge Queenstown",
+      "region": "queenstown",
+      "lat": -45.05,
+      "lng": 168.64,
+      "type": "lodge",
+      "price_nzd_per_night": 1750,
+      "rating": 4.8,
+      "short": "Nine architect villas on a Queenstown hillside above the lake."
+    }
+  ]
+}

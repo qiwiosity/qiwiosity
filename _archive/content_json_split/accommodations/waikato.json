@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "waikato",
+    "name": "Waikato",
+    "island": "North",
+    "centre": {
+      "lat": -37.787,
+      "lng": 175.2793
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "waikato-novotel-tainui-hamilton",
+      "name": "Novotel Tainui Hamilton",
+      "region": "waikato",
+      "lat": -37.788,
+      "lng": 175.277,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.3,
+      "short": "Hamilton riverside hotel steps from Victoria Street."
+    },
+    {
+      "id": "waikato-distinction-hamilton",
+      "name": "Distinction Hamilton Hotel",
+      "region": "waikato",
+      "lat": -37.7842,
+      "lng": 175.282,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.3,
+      "short": "Central Hamilton hotel with full-service restaurant."
+    },
+    {
+      "id": "waikato-ibis-hamilton-tainui",
+      "name": "Ibis Hamilton Tainui",
+      "region": "waikato",
+      "lat": -37.788,
+      "lng": 175.2775,
+      "type": "hotel",
+      "price_nzd_per_night": 200,
+      "rating": 4.2,
+      "short": "Riverfront Ibis opposite the Claudelands bridge."
+    },
+    {
+      "id": "waikato-hobbiton-shire-inn",
+      "name": "Hobbiton Movie Set - Shire's Rest Lodge",
+      "region": "waikato",
+      "lat": -37.872,
+      "lng": 175.681,
+      "type": "hotel",
+      "price_nzd_per_night": 520,
+      "rating": 4.8,
+      "short": "Boutique lodge on the Hobbiton Movie Set grounds at Matamata."
+    },
+    {
+      "id": "waikato-ventura-inn-suites",
+      "name": "Ventura Inn & Suites Hamilton",
+      "region": "waikato",
+      "lat": -37.788,
+      "lng": 175.281,
+      "type": "hotel",
+      "price_nzd_per_night": 200,
+      "rating": 4.2,
+      "short": "Hamilton apartment-hotel close to Waikato Hospital."
+    },
+    {
+      "id": "waikato-lake-karapiro-lodge-hotel",
+      "name": "Brian Perry Lodge at Mighty River Domain",
+      "region": "waikato",
+      "lat": -37.928,
+      "lng": 175.551,
+      "type": "hotel",
+      "price_nzd_per_night": 240,
+      "rating": 4.4,
+      "short": "Lakefront Karapiro rowing-venue lodge rooms."
+    },
+    {
+      "id": "waikato-anglesea-motor-lodge",
+      "name": "Anglesea Motor Lodge Hamilton",
+      "region": "waikato",
+      "lat": -37.781,
+      "lng": 175.267,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Central Hamilton motel beside Anglesea Clinic."
+    },
+    {
+      "id": "waikato-ambassador-motor-inn-ham",
+      "name": "Ambassador Motor Inn Hamilton",
+      "region": "waikato",
+      "lat": -37.782,
+      "lng": 175.282,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.1,
+      "short": "City-edge Hamilton motel with spa pool units."
+    },
+    {
+      "id": "waikato-arena-lodge-motel",
+      "name": "Arena Lodge Motel Hamilton",
+      "region": "waikato",
+      "lat": -37.783,
+      "lng": 175.279,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Close-to-Claudelands motel in Hamilton East."
+    },
+    {
+      "id": "waikato-cambridge-motor-lodge",
+      "name": "Cambridge Motor Lodge",
+      "region": "waikato",
+      "lat": -37.889,
+      "lng": 175.467,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Victorian-village motel on Duke Street in the Town of Trees."
+    },
+    {
+      "id": "waikato-raglan-palm-beach-motel",
+      "name": "Raglan Palm Beach Motel",
+      "region": "waikato",
+      "lat": -37.799,
+      "lng": 174.877,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.3,
+      "short": "Tropical-planted Raglan motel close to Ngarunui surf beach."
+    },
+    {
+      "id": "waikato-te-aroha-motel",
+      "name": "Aroha Mountain Lodge Motel Units",
+      "region": "waikato",
+      "lat": -37.54,
+      "lng": 175.713,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.2,
+      "short": "Te Aroha motel on the way to the Domain mineral pools."
+    },
+    {
+      "id": "waikato-tirau-motel",
+      "name": "Tirau Motor Inn",
+      "region": "waikato",
+      "lat": -37.977,
+      "lng": 175.755,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Corrugated-iron-town motel in Tirau junction village."
+    },
+    {
+      "id": "waikato-hamilton-top10",
+      "name": "Hamilton City Holiday Park",
+      "region": "waikato",
+      "lat": -37.778,
+      "lng": 175.238,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "West-city Hamilton park handy to the Zoo and motorway."
+    },
+    {
+      "id": "waikato-cambridge-top10",
+      "name": "Cambridge Motor Park",
+      "region": "waikato",
+      "lat": -37.888,
+      "lng": 175.466,
+      "type": "holiday-park",
+      "price_nzd_per_night": 90,
+      "rating": 4.1,
+      "short": "Central Cambridge park with cabins and powered sites."
+    },
+    {
+      "id": "waikato-raglan-kopua-holiday-park",
+      "name": "Raglan Kopua Holiday Park",
+      "region": "waikato",
+      "lat": -37.806,
+      "lng": 174.879,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.4,
+      "short": "Peninsula park in Raglan harbour with pool and cabins."
+    },
+    {
+      "id": "waikato-waitomo-top10",
+      "name": "Waitomo TOP 10 Holiday Park",
+      "region": "waikato",
+      "lat": -38.259,
+      "lng": 175.112,
+      "type": "holiday-park",
+      "price_nzd_per_night": 95,
+      "rating": 4.2,
+      "short": "Family park minutes from Waitomo's glow-worm caves."
+    },
+    {
+      "id": "waikato-solitaire-lodge-waikato-n",
+      "name": "Hobbiton Movie Set Country Retreat",
+      "region": "waikato",
+      "lat": -37.872,
+      "lng": 175.68,
+      "type": "lodge",
+      "price_nzd_per_night": 780,
+      "rating": 4.7,
+      "short": "Private farmstay lodge on the Hobbiton Movie Set pastureland."
+    },
+    {
+      "id": "waikato-waitomo-caves-lodge",
+      "name": "Waitomo Boutique Lodge",
+      "region": "waikato",
+      "lat": -38.262,
+      "lng": 175.108,
+      "type": "lodge",
+      "price_nzd_per_night": 580,
+      "rating": 4.6,
+      "short": "Boutique lodge minutes from the Waitomo Caves complex."
+    },
+    {
+      "id": "waikato-lake-karapiro-lodge",
+      "name": "Karapiro Lodge",
+      "region": "waikato",
+      "lat": -37.926,
+      "lng": 175.548,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.7,
+      "short": "Lakefront lodge at the Karapiro rowing venue with spa suites."
+    }
+  ]
+}

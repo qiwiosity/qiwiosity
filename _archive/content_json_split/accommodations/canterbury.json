@@ -1,0 +1,234 @@
+{
+  "region": {
+    "id": "canterbury",
+    "name": "Canterbury / Waitaha",
+    "island": "South",
+    "centre": {
+      "lat": -43.532,
+      "lng": 172.6362
+    }
+  },
+  "count": 20,
+  "accommodations": [
+    {
+      "id": "canterbury-the-george",
+      "name": "The George Christchurch",
+      "region": "canterbury",
+      "lat": -43.5283,
+      "lng": 172.633,
+      "type": "hotel",
+      "price_nzd_per_night": 385,
+      "rating": 4.7,
+      "short": "Five-star boutique overlooking Hagley Park, famed for 50 Bistro dining."
+    },
+    {
+      "id": "canterbury-sudima-christchurch",
+      "name": "Sudima Christchurch City",
+      "region": "canterbury",
+      "lat": -43.5306,
+      "lng": 172.6403,
+      "type": "hotel",
+      "price_nzd_per_night": 250,
+      "rating": 4.4,
+      "short": "Central five-star hotel steps from the Convention Centre and Margaret Mahy park."
+    },
+    {
+      "id": "canterbury-distinction-christchurch",
+      "name": "Distinction Christchurch Hotel",
+      "region": "canterbury",
+      "lat": -43.533,
+      "lng": 172.6328,
+      "type": "hotel",
+      "price_nzd_per_night": 220,
+      "rating": 4.3,
+      "short": "Restored Crown Plaza site with heritage facade and modern rooms."
+    },
+    {
+      "id": "canterbury-chateau-on-the-park",
+      "name": "Chateau on the Park - DoubleTree by Hilton",
+      "region": "canterbury",
+      "lat": -43.534,
+      "lng": 172.608,
+      "type": "hotel",
+      "price_nzd_per_night": 265,
+      "rating": 4.4,
+      "short": "French-chateau-styled hotel opposite Hagley Park with extensive gardens."
+    },
+    {
+      "id": "canterbury-heritage-christchurch",
+      "name": "Heritage Christchurch",
+      "region": "canterbury",
+      "lat": -43.5305,
+      "lng": 172.6368,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.5,
+      "short": "Elegant all-suite hotel in the restored Old Government Building."
+    },
+    {
+      "id": "canterbury-crowne-plaza-christchurch",
+      "name": "Crowne Plaza Christchurch",
+      "region": "canterbury",
+      "lat": -43.5294,
+      "lng": 172.6366,
+      "type": "hotel",
+      "price_nzd_per_night": 295,
+      "rating": 4.5,
+      "short": "Flagship Victoria Square hotel with panoramic rooftop suites."
+    },
+    {
+      "id": "canterbury-airport-gateway-motel",
+      "name": "Airport Gateway Motor Lodge Christchurch",
+      "region": "canterbury",
+      "lat": -43.49,
+      "lng": 172.562,
+      "type": "motel",
+      "price_nzd_per_night": 175,
+      "rating": 4.2,
+      "short": "Harewood motel minutes from Christchurch airport terminals."
+    },
+    {
+      "id": "canterbury-admiral-motel",
+      "name": "Admiral Motel Christchurch",
+      "region": "canterbury",
+      "lat": -43.5199,
+      "lng": 172.618,
+      "type": "motel",
+      "price_nzd_per_night": 165,
+      "rating": 4.1,
+      "short": "Papanui Road motel with large units and complimentary parking."
+    },
+    {
+      "id": "canterbury-akaroa-waterfront-motel",
+      "name": "Akaroa Waterfront Motels",
+      "region": "canterbury",
+      "lat": -43.803,
+      "lng": 172.9598,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.4,
+      "short": "Harbour-view motel on Akaroa's French-flavoured waterfront."
+    },
+    {
+      "id": "canterbury-kaikoura-motel",
+      "name": "Kaikoura Boutique Hotel & Motel",
+      "region": "canterbury",
+      "lat": -42.4,
+      "lng": 173.681,
+      "type": "motel",
+      "price_nzd_per_night": 195,
+      "rating": 4.2,
+      "short": "Seafront motel where sperm whales and Southern Alps share the horizon."
+    },
+    {
+      "id": "canterbury-ashburton-motor-lodge",
+      "name": "Ashburton Motor Lodge",
+      "region": "canterbury",
+      "lat": -43.905,
+      "lng": 171.7505,
+      "type": "motel",
+      "price_nzd_per_night": 160,
+      "rating": 4,
+      "short": "Canterbury plains motel handy to Mt Hutt skifield access."
+    },
+    {
+      "id": "canterbury-methven-motel",
+      "name": "Methven Motel & Apartments",
+      "region": "canterbury",
+      "lat": -43.634,
+      "lng": 171.643,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Alpine-town motel 20 minutes from Mt Hutt's lifts."
+    },
+    {
+      "id": "canterbury-hanmer-springs-motel",
+      "name": "Hanmer Springs Scenic Views Motel",
+      "region": "canterbury",
+      "lat": -42.5245,
+      "lng": 172.829,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.3,
+      "short": "Ridge-top motel with alpine views above Hanmer's thermal pools."
+    },
+    {
+      "id": "canterbury-christchurch-top10",
+      "name": "Christchurch TOP 10 Holiday Park",
+      "region": "canterbury",
+      "lat": -43.478,
+      "lng": 172.5703,
+      "type": "holiday-park",
+      "price_nzd_per_night": 110,
+      "rating": 4.4,
+      "short": "Belfast park with indoor heated pool, jumping pillow and motorway access."
+    },
+    {
+      "id": "canterbury-akaroa-top10",
+      "name": "Akaroa TOP 10 Holiday Park",
+      "region": "canterbury",
+      "lat": -43.807,
+      "lng": 172.952,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Hilltop Akaroa park with harbour-view cabins and families campsites."
+    },
+    {
+      "id": "canterbury-kaikoura-top10",
+      "name": "Kaikoura TOP 10 Holiday Park",
+      "region": "canterbury",
+      "lat": -42.424,
+      "lng": 173.683,
+      "type": "holiday-park",
+      "price_nzd_per_night": 125,
+      "rating": 4.4,
+      "short": "Coastal park with alpine backdrop, walking distance to seal colonies."
+    },
+    {
+      "id": "canterbury-hanmer-springs-top10",
+      "name": "Hanmer Springs TOP 10 Holiday Park",
+      "region": "canterbury",
+      "lat": -42.526,
+      "lng": 172.832,
+      "type": "holiday-park",
+      "price_nzd_per_night": 120,
+      "rating": 4.4,
+      "short": "Alpine village park next to the Hanmer thermal pools complex."
+    },
+    {
+      "id": "canterbury-otahuna-lodge",
+      "name": "Otahuna Lodge",
+      "region": "canterbury",
+      "lat": -43.678,
+      "lng": 172.533,
+      "type": "lodge",
+      "price_nzd_per_night": 1750,
+      "rating": 4.9,
+      "short": "1895 Lord Rhodes mansion and Relais & Chateaux lodge in Tai Tapu."
+    },
+    {
+      "id": "canterbury-hapuku-lodge",
+      "name": "Hapuku Lodge & Tree Houses",
+      "region": "canterbury",
+      "lat": -42.349,
+      "lng": 173.683,
+      "type": "lodge",
+      "price_nzd_per_night": 1250,
+      "rating": 4.8,
+      "short": "Tree-house suites above a deer farm between mountains and Kaikoura sea."
+    },
+    {
+      "id": "canterbury-annandale-banks",
+      "name": "Annandale Coastal Farm Escape",
+      "region": "canterbury",
+      "lat": -43.874,
+      "lng": 172.887,
+      "type": "lodge",
+      "price_nzd_per_night": 2100,
+      "rating": 4.9,
+      "short": "Private Banks Peninsula villas on a 4,000-acre working farm."
+    }
+  ]
+}

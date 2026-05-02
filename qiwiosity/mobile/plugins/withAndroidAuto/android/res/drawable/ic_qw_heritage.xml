@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ic_qw_heritage — Heritage category.
+  Stepped Art Deco facade — a nod to Napier's 1931 rebuild, which is
+  where our heritage content concentration starts.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Base plinth -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M3,19h18v2H3z" />
+    <!-- Main facade with stepped top -->
+    <path
+        android:fillColor="#0B4F3C"
+        android:pathData="M6,19V8h3V6h6v2h3v11zM10,10v2h4v-2z M10,14v2h4v-2z" />
+    <!-- Accent stripe up the centre -->
+    <path
+        android:fillColor="#C46B2E"
+        android:pathData="M11.5,3h1v3h-1z" />
+</vector>

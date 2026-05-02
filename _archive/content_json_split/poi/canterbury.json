@@ -1,0 +1,2264 @@
+{
+  "region": {
+    "id": "canterbury",
+    "name": "Canterbury / Waitaha",
+    "island": "South",
+    "centre": {
+      "lat": -43.532,
+      "lng": 172.6362
+    },
+    "bounds": {
+      "north": -42.4,
+      "south": -44.6,
+      "east": 173.5,
+      "west": 169.5
+    },
+    "description": "The great plains of Waitaha — Kaikōura whales in the north, Christchurch at the centre, the alps and Aoraki to the west, Ōamaru's Victorian precinct to the south."
+  },
+  "pois": [
+    {
+      "id": "christchurch-quake-city",
+      "name": "Christchurch Quake City & Memorial",
+      "region": "canterbury",
+      "lat": -43.5321,
+      "lng": 172.6325,
+      "category": "heritage",
+      "tags": [
+        "2011-earthquake",
+        "memorial",
+        "cathedral-rebuild",
+        "re-start"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "On 22 February 2011 a magnitude 6.3 earthquake killed 185 people in central Christchurch. The city you see is still rebuilding.",
+      "commentary": "At 12:51 pm on Tuesday 22 February 2011, a 6.3 magnitude earthquake struck Christchurch at shallow depth. 185 people died; 115 of them in the collapse of the CTV Building. Two-thirds of the CBD was damaged beyond repair; over 1,500 buildings were demolished. The Quake City exhibition on Durham Street tells the story through survivor accounts and objects. The 185 Empty Chairs Memorial, opposite, is a quiet white sculpture — one chair for each death. Christ Church Cathedral, ruined in the quake, is being rebuilt.",
+      "scripts": {
+        "headline": "scripts/christchurch-quake-city.headline.md",
+        "standard": "scripts/christchurch-quake-city.standard.md"
+      },
+      "sources_to_check": [
+        "Quake City — quakecity.co.nz",
+        "NZHistory — Canterbury earthquakes"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Christchurch Quake City & Memorial — the site rewards those who take time to read the signage and absorb the context. On 22 February 2011 a magnitude 6. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "christchurch-botanic-gardens",
+      "name": "Christchurch Botanic Gardens & Avon",
+      "region": "canterbury",
+      "lat": -43.5303,
+      "lng": 172.6211,
+      "category": "nature",
+      "tags": [
+        "gardens",
+        "river",
+        "punting",
+        "oaks",
+        "1863"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "30 hectares of gardens inside a loop of the Avon — established 1863, one of the finest city botanic gardens in the Southern Hemisphere.",
+      "commentary": "The Christchurch Botanic Gardens were founded in 1863 with the planting of an English oak to celebrate Prince Albert's marriage. They now cover 30 hectares inside a loop of the Avon / Ōtākaro river. Highlights include the New Zealand native plant collection (the Cockayne Memorial Garden), the ~100-year-old rose garden, and the 1923 'Curator's House' restaurant. Punts on the Avon leave from the Worcester Boulevard entrance for a 30-minute ride through the Gardens. Free entry, all year.",
+      "scripts": {
+        "headline": "scripts/christchurch-botanic-gardens.headline.md",
+        "standard": "scripts/christchurch-botanic-gardens.standard.md"
+      },
+      "sources_to_check": [
+        "Christchurch City Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Christchurch Botanic Gardens & Avon draws visitors back time and again for its natural beauty and peaceful atmosphere. 30 hectares of gardens inside a loop of the Avon — established 1863, one of the finest city botanic gardens in the Southern Hemisphere. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "akaroa",
+      "name": "Akaroa",
+      "region": "canterbury",
+      "lat": -43.8042,
+      "lng": 172.9672,
+      "category": "heritage",
+      "tags": [
+        "french-settlement",
+        "1840",
+        "hectors-dolphin",
+        "harbour"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 4,
+      "short": "The only French-settled town in NZ — and the home port of the world's rarest dolphin, Hector's.",
+      "commentary": "Akaroa sits in a drowned volcanic crater on Banks Peninsula. In 1840 a French company landed 63 settlers to establish 'Nanto-Bordelaise', a French colony — only to find the British had signed the Treaty of Waitangi five months earlier, placing Akaroa under British sovereignty. The French stayed anyway. Streets still bear French names (Rue Lavaud, Rue Jolie). The real draw: Hector's dolphins, the world's smallest and rarest marine dolphin, live here. Swimming tours and harbour cruises operate. The 80-minute drive from Christchurch over the Summit Road is worth the price of admission.",
+      "scripts": {
+        "headline": "scripts/akaroa.headline.md",
+        "standard": "scripts/akaroa.standard.md"
+      },
+      "sources_to_check": [
+        "Akaroa Museum",
+        "Banks Peninsula Conservation Trust"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Akaroa — the site rewards those who take time to read the signage and absorb the context. The only French-settled town in NZ — and the home port of the world's rarest dolphin, Hector's. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "banks-peninsula",
+      "name": "Banks Peninsula / Summit Road",
+      "region": "canterbury",
+      "lat": -43.75,
+      "lng": 172.8,
+      "category": "nature",
+      "tags": [
+        "scenic-drive",
+        "volcanic",
+        "bays",
+        "summit-road"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "The bulbous eroded remnant of two merged extinct volcanoes — 50 km of scenic ridgeline road and dozens of hidden bays.",
+      "commentary": "Banks Peninsula began as two volcanic cones — Lyttelton (erupted 11 million years ago) and Akaroa (9 million years ago) — that grew, merged, and have since eroded into the cragged peninsula you see. The Summit Road runs 50 km along the ridgeline and offers one of the best scenic drives in the South Island on a clear day. Side roads drop to small harbour bays — Okains, Le Bons, Pigeon — each with a few baches and a beach. Most were settled in the mid-19th century by French, English and Irish colonists. Take a full day; don't rush it.",
+      "scripts": {
+        "headline": "scripts/banks-peninsula.headline.md",
+        "standard": "scripts/banks-peninsula.standard.md"
+      },
+      "sources_to_check": [
+        "Christchurch City Council",
+        "GNS Science"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Banks Peninsula / Summit Road draws visitors back time and again for its natural beauty and peaceful atmosphere. The bulbous eroded remnant of two merged extinct volcanoes — 50 km of scenic ridgeline road and dozens of hidden bays. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "lake-tekapo",
+      "name": "Lake Tekapo / Church of the Good Shepherd",
+      "region": "canterbury",
+      "lat": -44.0044,
+      "lng": 170.4783,
+      "category": "nature",
+      "tags": [
+        "turquoise-lake",
+        "church",
+        "dark-sky-reserve",
+        "lupins"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "A turquoise glacial lake with a tiny 1935 stone church in the foreground — and an International Dark Sky Reserve.",
+      "commentary": "Lake Tekapo gets its intense turquoise colour from glacial rock-flour suspended in the water, scattering blue and green light. The Church of the Good Shepherd, built in 1935 of local stone on the lake shore, is the most-photographed church in New Zealand: the uncurtained altar window frames the lake and mountains behind it. In 2012 the Mackenzie Basin became an International Dark Sky Reserve (one of the world's largest) — the Mt John Observatory above the lake offers nightly stargazing tours. Summer lupin fields draw crowds; both Tekapo and Aoraki Mackenzie were the first reserves in the Southern Hemisphere.",
+      "scripts": {
+        "headline": "scripts/lake-tekapo.headline.md",
+        "standard": "scripts/lake-tekapo.standard.md"
+      },
+      "sources_to_check": [
+        "Mackenzie District Council",
+        "Dark Sky Project"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Lake Tekapo / Church of the Good Shepherd draws visitors back time and again for its natural beauty and peaceful atmosphere. A turquoise glacial lake with a tiny 1935 stone church in the foreground — and an International Dark Sky Reserve. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "aoraki-mount-cook",
+      "name": "Aoraki / Mount Cook",
+      "region": "canterbury",
+      "lat": -43.735,
+      "lng": 170.0944,
+      "category": "nature",
+      "tags": [
+        "highest-peak",
+        "sacred",
+        "hooker-valley",
+        "glacier",
+        "national-park"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 5,
+      "short": "At 3,724 m, New Zealand's highest mountain — sacred to Ngāi Tahu, and gateway to the Hooker Valley walk.",
+      "commentary": "Aoraki — 'cloud-piercer' — is the tallest peak in New Zealand at 3,724 m (after a 2014 landslide removed 30 m from its summit). In Ngāi Tahu tradition, Aoraki and his brothers were turned to stone when their canoe ran aground, becoming the Southern Alps. The 2014 Ngāi Tahu settlement returned the summit to the iwi, who then gifted it back to the nation. Most visitors never climb it — they do the Hooker Valley Track instead, a 3-hour return walk from the White Horse Hill carpark across three swing bridges to the glacial terminal lake. One of the best short walks in the country.",
+      "scripts": {
+        "headline": "scripts/aoraki-mount-cook.headline.md",
+        "standard": "scripts/aoraki-mount-cook.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Aoraki/Mount Cook National Park",
+        "Ngāi Tahu"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Aoraki / Mount Cook draws visitors back time and again for its natural beauty and peaceful atmosphere. At 3,724 m, New Zealand's highest mountain — sacred to Ngāi Tahu, and gateway to the Hooker Valley walk. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "arthurs-pass",
+      "name": "Arthur's Pass Village",
+      "region": "canterbury",
+      "lat": -42.9444,
+      "lng": 171.5639,
+      "category": "heritage",
+      "tags": [
+        "alpine-village",
+        "kea",
+        "train",
+        "viaduct",
+        "tranzalpine"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A one-street village at 740 m in the Southern Alps — crossed by the TranzAlpine train and home to cheeky kea.",
+      "commentary": "Arthur's Pass is a tiny alpine village on SH73, between Christchurch and the West Coast, at 740 m in the heart of the Southern Alps. It's a base for alpine tramping (Bealey Valley, Avalanche Peak, the Ōtira Valley), the classic scenery of the Ōtira Viaduct 10 minutes west, and the TranzAlpine train, which runs between Christchurch and Greymouth and stops here. The village is also one of the best places in the country to see kea — the world's only alpine parrot, notoriously cheeky and unfortunately prone to destroying rubber trim on parked cars. Don't feed them.",
+      "scripts": {
+        "headline": "scripts/arthurs-pass.headline.md",
+        "standard": "scripts/arthurs-pass.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Arthur's Pass National Park",
+        "KiwiRail — TranzAlpine"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Arthur's Pass Village — the site rewards those who take time to read the signage and absorb the context. A one-street village at 740 m in the Southern Alps — crossed by the TranzAlpine train and home to cheeky kea. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "castle-hill-kura-tawhiti",
+      "name": "Castle Hill / Kura Tāwhiti",
+      "region": "canterbury",
+      "lat": -43.2103,
+      "lng": 171.7153,
+      "category": "nature",
+      "tags": [
+        "limestone-tors",
+        "sacred",
+        "bouldering",
+        "dalai-lama"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A basin of enormous limestone tors on SH73 — a sacred rock-art site, a bouldering paradise, and (per the Dalai Lama) a 'spiritual centre of the universe'.",
+      "commentary": "The limestone boulders at Kura Tāwhiti were laid down 25–30 million years ago on the seabed, uplifted, then eroded into enormous pale grey tors scattered across a high-country basin. The site is sacred to Ngāi Tahu and contains some of the earliest rock drawings in New Zealand (around 500–1000 years old, not publicly accessible to protect them). During a 2002 visit the Dalai Lama described the site as 'one of the spiritual centres of the universe.' It's also a world-class bouldering site — international climbers travel here specifically. A 30-minute loop walk from the SH73 carpark.",
+      "scripts": {
+        "headline": "scripts/castle-hill-kura-tawhiti.headline.md",
+        "standard": "scripts/castle-hill-kura-tawhiti.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Kura Tāwhiti Conservation Area",
+        "Ngāi Tahu"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Castle Hill / Kura Tāwhiti draws visitors back time and again for its natural beauty and peaceful atmosphere. A basin of enormous limestone tors on SH73 — a sacred rock-art site, a bouldering paradise, and (per the Dalai Lama) a 'spiritual centre of the universe'. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "hanmer-springs",
+      "name": "Hanmer Springs",
+      "region": "canterbury",
+      "lat": -42.5231,
+      "lng": 172.8292,
+      "category": "nature",
+      "tags": [
+        "thermal-pools",
+        "ski",
+        "spa",
+        "forestry",
+        "alpine"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 4,
+      "short": "Canterbury's alpine spa village — natural thermal pools piped into a public-pool complex in the middle of town.",
+      "commentary": "Hanmer Springs sits in a mountain basin 90 minutes north of Christchurch and has been a spa town since the 1880s. The public thermal pools complex, fed by natural hot springs at 52°C and mixed down, is the main attraction: multiple pools, slides, family areas, private spa pools, a sauna. The surrounding area has the commercial-forestry Hanmer Forest Park (mountain biking, walking, horse-riding), the 400-metre Waiau Ferry Bridge bungy (NZ's first commercial bungy site at 35 m, now 50 m), and — in winter — the Hanmer Ski Area. Stay overnight; the spa is better in the evening.",
+      "scripts": {
+        "headline": "scripts/hanmer-springs.headline.md",
+        "standard": "scripts/hanmer-springs.standard.md"
+      },
+      "sources_to_check": [
+        "Hanmer Springs Thermal Pools"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Hanmer Springs draws visitors back time and again for its natural beauty and peaceful atmosphere. Canterbury's alpine spa village — natural thermal pools piped into a public-pool complex in the middle of town. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "kaikoura",
+      "name": "Kaikōura",
+      "region": "canterbury",
+      "lat": -42.4,
+      "lng": 173.6811,
+      "category": "heritage",
+      "tags": [
+        "whales",
+        "sperm-whale",
+        "2016-earthquake",
+        "seals",
+        "crayfish"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "Permanent resident sperm whales, a deep submarine canyon right offshore, and the town that rose two metres in the 2016 earthquake.",
+      "commentary": "Kaikōura — 'meal of crayfish' — sits on the only stretch of mainland NZ coast where a deep submarine canyon runs right up to the shore. The canyon's upwellings bring squid to depth, and sperm whales follow: resident males like 'Tiaki' and 'Tutu' can be seen year-round. Dusky dolphins in pods of hundreds, NZ fur seals, orcas (December–March), and occasional humpbacks round out the marine life. The 14 November 2016 magnitude 7.8 earthquake lifted the Kaikōura coastline by up to 2 metres, drying out entire pāua beds and altering the coastline permanently. The town is still recovering.",
+      "scripts": {
+        "headline": "scripts/kaikoura.headline.md",
+        "standard": "scripts/kaikoura.standard.md"
+      },
+      "sources_to_check": [
+        "Whale Watch Kaikōura — whalewatch.co.nz",
+        "GNS Science",
+        "Ngāti Kurī"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Kaikōura — the site rewards those who take time to read the signage and absorb the context. Permanent resident sperm whales, a deep submarine canyon right offshore, and the town that rose two metres in the 2016 earthquake. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "waipara-wine-country",
+      "name": "Waipara Wine Country",
+      "region": "canterbury",
+      "lat": -43.0678,
+      "lng": 172.7547,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "riesling",
+        "pinot-noir",
+        "small-producers"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "Canterbury's boutique wine region — Riesling, Pinot Noir, Gewürztraminer, 30 minutes north of Christchurch.",
+      "commentary": "The Waipara Valley was first planted in vines in the 1980s and has grown into the third-largest South Island wine region after Marlborough and Central Otago. The sheltered inland valley has warmer summers and colder winters than the coast, ideal for aromatic whites (Riesling, Gewürztraminer, Pinot Gris) and Pinot Noir. Pegasus Bay, Mud House, Torlesse, Waipara Springs — all have cellar doors. Smaller and quieter than Marlborough. Combine with a drive over to Hanmer Springs or a stop on the way north to Kaikōura.",
+      "scripts": {
+        "headline": "scripts/waipara-wine-country.headline.md",
+        "standard": "scripts/waipara-wine-country.standard.md"
+      },
+      "sources_to_check": [
+        "Waipara Valley Winegrowers"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Waipara Wine Country delivers an excellent food and wine experience that visitors describe as a highlight of the region. Canterbury's boutique wine region — Riesling, Pinot Noir, Gewürztraminer, 30 minutes north of Christchurch. Reviewers praise the quality of produce and the setting, and recommend combining it with nearby cellar doors or restaurants."
+      }
+    },
+    {
+      "id": "oamaru-victorian",
+      "name": "Ōamaru Victorian Precinct & Penguins",
+      "region": "canterbury",
+      "lat": -45.0947,
+      "lng": 170.9689,
+      "category": "culture",
+      "tags": [
+        "victorian",
+        "whitestone",
+        "steampunk",
+        "blue-penguin",
+        "yellow-eyed-penguin"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "A remarkably preserved Victorian whitestone precinct — and two penguin colonies (blue and yellow-eyed) a short walk away.",
+      "commentary": "Ōamaru's 1870s–80s boom as a wool and grain port left a Victorian warehouse district that the 20th-century economy subsequently passed by. Restoration since the 1980s has turned the Whitestone Historic Precinct into one of the best-preserved 19th-century streetscapes in Australasia. Add the 2000s steampunk subculture — Steampunk HQ museum, annual festival — and the precinct has unusual layered character. The Blue Penguin Colony at Oamaru Harbour is the world's most accessible: ticketed evening viewing as the birds come ashore. The Yellow-Eyed Penguin colony, 10 minutes south at Bushy Beach, is free (viewing hide only, no approach).",
+      "scripts": {
+        "headline": "scripts/oamaru-victorian.headline.md",
+        "standard": "scripts/oamaru-victorian.standard.md"
+      },
+      "sources_to_check": [
+        "Waitaki District Council",
+        "Ōamaru Blue Penguin Colony"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "The cultural experience at Ōamaru Victorian Precinct & Penguins is praised for being both accessible and genuinely informative. A remarkably preserved Victorian whitestone precinct — and two penguin colonies (blue and yellow-eyed) a short walk away. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "methven-mt-hutt",
+      "name": "Methven / Mt Hutt",
+      "region": "canterbury",
+      "lat": -43.6319,
+      "lng": 171.6478,
+      "category": "culture",
+      "tags": [
+        "ski",
+        "snow-season",
+        "rural",
+        "lord-of-the-rings"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 5,
+      "short": "Canterbury's largest ski field — and in summer, a quiet rural town with views of the Rakaia Gorge.",
+      "commentary": "Mt Hutt Ski Area, 35 km from Methven, consistently has the longest ski season in the South Island (typically June to mid-October). The chairlift rises to 2,086 m and overlooks the Canterbury Plains — on a clear day you can see the Pacific. In summer Methven reverts to a farming town of ~1,500 people. The Rakaia Gorge, a 10-minute drive north, is both a classic braided-river scenic drive and a major LOTR filming location (standing in for the Ford of Bruinen). Good small-town restaurants; the winter season fills all beds.",
+      "scripts": {
+        "headline": "scripts/methven-mt-hutt.headline.md",
+        "standard": "scripts/methven-mt-hutt.standard.md"
+      },
+      "sources_to_check": [
+        "NZSki — Mt Hutt",
+        "Ashburton District Council"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Methven / Mt Hutt is praised for being both accessible and genuinely informative. Canterbury's largest ski field — and in summer, a quiet rural town with views of the Rakaia Gorge. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "lake-pukaki",
+      "name": "Lake Pukaki",
+      "region": "canterbury",
+      "lat": -44.1783,
+      "lng": 170.1333,
+      "category": "nature",
+      "tags": [
+        "turquoise",
+        "salmon",
+        "viewpoint",
+        "aoraki",
+        "mackenzie"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1,
+      "short": "The turquoise lake with Aoraki at its head — the most Instagrammed view in the South Island, and home to the country's best salmon.",
+      "commentary": "Lake Pukaki is a glacial lake 169 m deep, 70% the size of Lake Taupō. Its intense turquoise colour (brighter than Tekapo) comes from glacial rock-flour suspended in the Tasman River inflow. The lake forms part of the Waitaki hydroelectric scheme; its level is raised and lowered. From the SH8 lookout at the southern end, Aoraki/Mount Cook is framed at the north end of the lake — the classic Mackenzie Basin shot. The salmon farm at the lake outlet sells fresh Aoraki sockeye, farmed in the cold clear water. Best eaten raw.",
+      "scripts": {
+        "headline": "scripts/lake-pukaki.headline.md",
+        "standard": "scripts/lake-pukaki.standard.md"
+      },
+      "sources_to_check": [
+        "Mackenzie District Council",
+        "Aoraki Salmon"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Lake Pukaki draws visitors back time and again for its natural beauty and peaceful atmosphere. The turquoise lake with Aoraki at its head — the most Instagrammed view in the South Island, and home to the country's best salmon. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "mt-john-observatory",
+      "name": "Mount John Observatory",
+      "region": "canterbury",
+      "lat": -43.9864,
+      "lng": 170.4644,
+      "category": "culture",
+      "tags": [
+        "astronomy",
+        "stargazing",
+        "dark-sky",
+        "lake-tekapo",
+        "summit"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A 1,031 m summit above Lake Tekapo — the country's leading astronomical observatory, and a cornerstone of the Mackenzie Dark Sky Reserve.",
+      "commentary": "Mount John Observatory has been operated by the University of Canterbury since 1965. Its four telescopes (up to 1.8 m aperture) sit at 1,031 m on an isolated summit with ~200 clear nights a year — among the best observing conditions in the Southern Hemisphere. The observatory is part of the 4,367 km² Aoraki Mackenzie International Dark Sky Reserve, established in 2012. Public can drive or walk up by day (summit café with huge Lake Tekapo view); Dark Sky Project runs guided night tours on-site — booking essential, warm clothing essential.",
+      "scripts": {
+        "headline": "scripts/mt-john-observatory.headline.md",
+        "standard": "scripts/mt-john-observatory.standard.md"
+      },
+      "sources_to_check": [
+        "University of Canterbury — Mt John",
+        "Dark Sky Project"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The cultural experience at Mount John Observatory is praised for being both accessible and genuinely informative. A 1,031 m summit above Lake Tekapo — the country's leading astronomical observatory, and a cornerstone of the Mackenzie Dark Sky Reserve. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "twizel-salmon-canals",
+      "name": "Twizel / Salmon Canals",
+      "region": "canterbury",
+      "lat": -44.2547,
+      "lng": 170.1056,
+      "category": "nature",
+      "tags": [
+        "hydro-town",
+        "waitaki-scheme",
+        "salmon-fishing",
+        "ohau-canal"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "A 1968 hydro-construction town that kept going — now the base for the salmon-farming canals of the Waitaki scheme.",
+      "commentary": "Twizel was built in 1968 as a temporary construction town for the Upper Waitaki hydro scheme. It was meant to be dismantled in 1984; the residents voted to stay. Today it's the base for exploring the Mackenzie Basin and Aoraki National Park. The hydro canals that carry water between the lakes are famously clear, cold and flow-controlled: salmon farms along them produce some of the world's cleanest aquaculture, and the canals themselves are a mecca for trout and salmon fishers — truly giant fish, because the farm escapees feed the wild population. Tekapo Canal (connecting Tekapo to Pukaki) is the best-known stretch.",
+      "scripts": {
+        "headline": "scripts/twizel-salmon-canals.headline.md",
+        "standard": "scripts/twizel-salmon-canals.standard.md"
+      },
+      "sources_to_check": [
+        "Mackenzie District Council",
+        "Meridian Energy",
+        "High Country Salmon"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Twizel / Salmon Canals draws visitors back time and again for its natural beauty and peaceful atmosphere. A 1968 hydro-construction town that kept going — now the base for the salmon-farming canals of the Waitaki scheme. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "peel-forest",
+      "name": "Peel Forest",
+      "region": "canterbury",
+      "lat": -43.9056,
+      "lng": 171.2583,
+      "category": "nature",
+      "tags": [
+        "rainforest",
+        "remnant",
+        "big-tree",
+        "rangitata",
+        "hidden-gem"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 3,
+      "short": "A 770-hectare remnant of the podocarp forest that once covered the Canterbury plains — with 1,000-year-old tōtara.",
+      "commentary": "Peel Forest is a 770-hectare pocket of the lowland podocarp-hardwood forest that covered the Canterbury Plains before Māori and European clearance. Today almost nothing else of it remains. The ancient tōtara here include the famous 'Big Tree' — a millennium-old specimen over 9 m around. Several easy walks (Dennistoun Bush, Big Tree Walk, Emily Falls) loop through the forest. On the way out, the Rangitata River (just south of Peel Forest) is the 'River Anduin' from *The Fellowship of the Ring* and a Grade-2 white-water rafting destination.",
+      "scripts": {
+        "headline": "scripts/peel-forest.headline.md",
+        "standard": "scripts/peel-forest.standard.md"
+      },
+      "sources_to_check": [
+        "DOC — Peel Forest"
+      ],
+      "content_status": "pending_scripts",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Peel Forest draws visitors back time and again for its natural beauty and peaceful atmosphere. A 770-hectare remnant of the podocarp forest that once covered the Canterbury plains — with 1,000-year-old tōtara. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "canterbury-littleton-port",
+      "name": "Lyttelton Port & Timeball",
+      "region": "canterbury",
+      "lat": -43.6039,
+      "lng": 172.7183,
+      "category": "heritage",
+      "tags": [
+        "port",
+        "timeball",
+        "heritage-nz",
+        "quake"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1.5,
+      "short": "Christchurch's historic port town — scene of the 1850 founding arrivals, and of the 1870s Timeball Station rebuilt stone by stone.",
+      "commentary": "Lyttelton was Canterbury's port of arrival from 1850. The Timeball Station (1876) collapsed in the 2011 quake and was rebuilt in 2018 using original stones.",
+      "audio_story": "You have arrived at Lyttelton, Christchurch's historic port town, tucked into the old crater of the Banks Peninsula volcano. On the sixteenth of December eighteen fifty, the first four immigrant ships of the Canterbury Association anchored in this harbour and began landing the settlers who founded Christchurch on the other side of the Port Hills. You are walking on the ground they walked on. Up the hill above the main street stands the beautifully rebuilt Timeball Station, a Victorian signal tower originally built in eighteen seventy six. Every day at one o'clock, a large ball was raised up its mast and allowed to drop, so that the ship captains in the harbour below could set their chronometers and navigate accurately by longitude. The original stone tower collapsed in the February twenty eleven Christchurch earthquake. Over the next seven years it was painstakingly rebuilt, stone by numbered stone, using as much of the original material as could be salvaged. It reopened in twenty eighteen, and the ball still drops each day at one. Walk down through the rebuilt main street, stop at the famous Lyttelton Farmers Market if it is a Saturday morning, and take the ferry across to Diamond Harbour for the view back.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Heritage NZ — Timeball Station",
+        "NZHistory — Canterbury settlement"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors consistently appreciate the rich historical layers at Lyttelton Port & Timeball — the site rewards those who take time to read the signage and absorb the context. Christchurch's historic port town — scene of the 1850 founding arrivals, and of the 1870s Timeball Station rebuilt stone by stone. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-christchurch-cathedral",
+      "name": "Christchurch Cathedral & Transitional Cathedral",
+      "region": "canterbury",
+      "lat": -43.5307,
+      "lng": 172.6366,
+      "category": "heritage",
+      "tags": [
+        "cathedral",
+        "earthquake",
+        "reinstatement",
+        "architecture"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The Gothic stone cathedral slowly being rebuilt after the 2011 earthquake — and its cardboard interim replacement nearby.",
+      "commentary": "Christchurch Cathedral (Benjamin Mountfort, 1881) was severely damaged in 2011. Reinstatement is underway. The Transitional Cathedral (Shigeru Ban, 2013) is built of cardboard tubes.",
+      "audio_story": "You are standing at Cathedral Square, and you are looking at the patient slow rebuilding of the spiritual centre of Christchurch. The stone Christchurch Cathedral was built between eighteen sixty four and eighteen eighty one to a design by Benjamin Mountfort, and it stood in the centre of the city for a hundred and thirty years before the February twenty eleven earthquake brought down its great spire and heavily damaged its nave. After almost a decade of debate between those who wanted to demolish what remained and those who wanted to rebuild, the decision was made in twenty seventeen to reinstate the cathedral in a form that combines preserved original fabric with modern seismic engineering. The work is ongoing, and the site is publicly visible through viewing windows in the surrounding hoarding. A short walk away, on Latimer Square, stands the Transitional Cathedral, designed by Japanese architect Shigeru Ban and opened in twenty thirteen. It is built from ninety eight identical cardboard tubes, waxed and sealed, and it is functional, beautiful, and internationally famous. Visit both. Together they tell the story of a city learning to live with the ground that betrayed it, and choosing, slowly and carefully, to rebuild.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Christchurch Cathedral Reinstatement",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Christchurch Cathedral & Transitional Cathedral — the site rewards those who take time to read the signage and absorb the context. The Gothic stone cathedral slowly being rebuilt after the 2011 earthquake — and its cardboard interim replacement nearby. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-new-regent-street",
+      "name": "New Regent Street, Christchurch",
+      "region": "canterbury",
+      "lat": -43.5283,
+      "lng": 172.6378,
+      "category": "heritage",
+      "tags": [
+        "spanish-mission",
+        "1932",
+        "cafes",
+        "tram"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 1,
+      "short": "A pedestrian-only pastel-coloured Spanish Mission street from 1932 — survived the quakes, survived the rebuild.",
+      "commentary": "New Regent Street was opened in 1932 in the Spanish Mission style. Severely damaged in 2011 but carefully restored. Christchurch Tram passes through.",
+      "audio_story": "You have arrived at New Regent Street, a single short block in central Christchurch, and you have arrived at one of the prettiest pieces of urban architecture in the country. The street was opened in nineteen thirty two, built in a single coordinated Spanish Mission style. All the buildings are the same height, the same soft pastel colours, and the same terracotta roof tiles. The effect is less a New Zealand town and more a Mediterranean courtyard. New Regent Street was severely damaged in the twenty eleven earthquake, closed for years, carefully and thoroughly repaired, and reopened as a pedestrian lane in twenty thirteen. The restoration was one of the most visible and most beloved successes of the city's rebuild. Today the street is lined with small cafes, galleries, and the ever popular Rollickin Gelato. The historic Christchurch Tram runs right through the centre of it, its bell ringing softly past the outdoor tables. Sit at one of those tables, order a long black, let the tram go by, and consider that the Christchurch rebuild has not been a straightforward success, but in this one short block, the city remembered exactly who it wanted to be.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Heritage NZ — New Regent Street"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at New Regent Street, Christchurch — the site rewards those who take time to read the signage and absorb the context. A pedestrian-only pastel-coloured Spanish Mission street from 1932 — survived the quakes, survived the rebuild. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-arts-centre",
+      "name": "The Arts Centre, Christchurch",
+      "region": "canterbury",
+      "lat": -43.5306,
+      "lng": 172.6256,
+      "category": "culture",
+      "tags": [
+        "gothic-revival",
+        "university",
+        "rutherford",
+        "restoration"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 2,
+      "short": "The Gothic Revival stone university where Ernest Rutherford studied — damaged in 2011, painstakingly restored.",
+      "commentary": "The former Canterbury College (1877–1957) buildings. Rutherford earned his BA here in 1892. The largest heritage restoration in NZ history.",
+      "audio_story": "You have arrived at the Arts Centre of Christchurch, a great stone block of Gothic Revival buildings that was, from eighteen seventy seven to nineteen fifty seven, the campus of Canterbury College. Ernest Rutherford, the father of nuclear physics and one of the greatest scientists New Zealand has produced, earned his BA here in eighteen ninety two, and his tiny laboratory den, tucked under a staircase where he conducted his early experiments, is still preserved inside. After the university moved to its current suburban campus at Ilam, the old stone buildings were saved and reopened as the Arts Centre, a home for artists, craftspeople, galleries and small theatres. The twenty eleven earthquake damaged almost every building on the site. The restoration that followed has been the largest heritage project in the country's history, and has taken over a decade. Buildings have reopened slowly one by one, and the site is today almost whole again. Walk the cloistered quadrangles. Visit the market on Sundays. See Rutherford's Den. Stop at one of the cafes in the south quadrangle, look up at the carved stone gargoyles above you, and take in a Christchurch that almost did not survive but did.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Heritage NZ — Arts Centre",
+        "Te Ara — Ernest Rutherford"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "The cultural experience at The Arts Centre, Christchurch is praised for being both accessible and genuinely informative. The Gothic Revival stone university where Ernest Rutherford studied — damaged in 2011, painstakingly restored. Visitors appreciate the quality of the interpretation and often say they learned something they didn't expect to."
+      }
+    },
+    {
+      "id": "canterbury-banks-peninsula-summit",
+      "name": "Port Hills Summit Road",
+      "region": "canterbury",
+      "lat": -43.6167,
+      "lng": 172.6967,
+      "category": "nature",
+      "tags": [
+        "scenic-drive",
+        "viewpoint",
+        "hill",
+        "city"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "The ridgeline drive along the top of the Port Hills — city on one side, crater harbour on the other.",
+      "commentary": "Summit Road runs along the crater rim of Banks Peninsula from Gebbies Pass to Godley Head. Severely damaged in the 2017 fires, sections are still closed.",
+      "audio_story": "You are driving Summit Road, the high ridgeline along the northern rim of the Banks Peninsula volcanic crater. On one side of the ridge, Christchurch spreads out over the Canterbury Plains to the Southern Alps. On the other side, Lyttelton Harbour sits dark and blue in the old crater, with Quail Island in the middle and the container ships at its wharves. Summit Road was originally laid out in the early nineteen hundreds by the visionary surveyor Harry Ell, who dreamed of a chain of rest houses along the ridge from Cashmere to Akaroa. Four of those rest houses were built, and three survive, including the beautifully restored Sign of the Takahē at the Christchurch end. You can stop for lunch in the great stone dining hall. The road has had a hard decade. The twenty eleven earthquake badly damaged sections of the route, and a major fire in twenty seventeen burned much of the Port Hills. Some sections remain closed, and the landscape is still recovering. But where the road is open, the views are still among the best in the country. Drive it slowly. Stop at the layby below Mount Pleasant at sunset.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Christchurch City Council",
+        "Heritage NZ — Sign of the Takahē"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Port Hills Summit Road draws visitors back time and again for its natural beauty and peaceful atmosphere. The ridgeline drive along the top of the Port Hills — city on one side, crater harbour on the other. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "canterbury-little-river",
+      "name": "Little River Rail Trail",
+      "region": "canterbury",
+      "lat": -43.7833,
+      "lng": 172.7833,
+      "category": "nature",
+      "tags": [
+        "cycle-trail",
+        "flat",
+        "rail-trail",
+        "lakeshore"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "A flat 45km rail trail from Hornby to Little River — wheat paddocks, lake shore, and a spectacular final lagoon section.",
+      "commentary": "Little River Rail Trail follows the former Little River Branch railway. Flat, well-maintained, includes beautiful Lake Ellesmere sections.",
+      "audio_story": "You are about to ride the Little River Rail Trail, a forty five kilometre flat cycling route from the outer Christchurch suburb of Hornby to the small village of Little River at the base of Banks Peninsula. The route follows the original formation of the Little River Branch railway, which was built in the eighteen eighties and closed in nineteen sixty two. The rails are long gone, and the old embankment has been beautifully resurfaced as a gravel cycle trail. The first third of the ride is classic Canterbury Plains, flat open wheat and sheep country with the Southern Alps a clean white ridge on the western horizon. The middle section skirts the shore of the vast shallow Lake Ellesmere, which the locals call Te Waihora, one of the largest lakes in the country and one of the most important wetland bird habitats. The final stretch climbs gently to Little River, a charming small village with an arts centre in the old railway station, a cafe, and a modest craft shop. Many riders do the trail in stages over a couple of days, or ride from either end and catch a shuttle back. It is one of the easiest and most rewarding trails in the South Island.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Little River Rail Trail Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Little River Rail Trail draws visitors back time and again for its natural beauty and peaceful atmosphere. A flat 45km rail trail from Hornby to Little River — wheat paddocks, lake shore, and a spectacular final lagoon section. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "canterbury-hist-canterbury-pilgrims",
+      "name": "Port Lyttelton — First Four Ships Memorial",
+      "region": "canterbury",
+      "lat": -43.6019,
+      "lng": 172.7208,
+      "category": "heritage",
+      "tags": [
+        "canterbury-pilgrims",
+        "1850",
+        "four-ships",
+        "memorial"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where the Canterbury Pilgrims landed in December 1850 — the First Four Ships that founded the Canterbury settlement.",
+      "commentary": "The Charlotte Jane, Randolph, Sir George Seymour and Cressy arrived at Lyttelton in Dec 1850, bringing the first 782 Canterbury Association settlers.",
+      "audio_story": "You are at Port Lyttelton, and in the days before Christmas eighteen fifty four sailing ships came into this harbour in close succession. The Charlotte Jane, the Randolph, the Sir George Seymour and the Cressy, collectively known in Canterbury history as the First Four Ships, carried the founding settlers of the Canterbury Association scheme, around seven hundred and eighty men, women and children who had paid for passage to build a planned Anglican colony in the new world. They disembarked here at Lyttelton, which was known to Ngāi Tahu as Whakaraupō. Over the following weeks they hauled their belongings over the steep Bridle Path, the narrow track that climbs directly over the rim of the Port Hills, and descended on the other side to the flat swampy ground of what would become Christchurch. The port still carries the energy of that arrival. A memorial on the waterfront names the passengers of all four ships. The Lyttelton Museum, although temporarily closed in recent years after earthquake damage, holds much of the original archive. Walk along the Esplanade. Look up at the ridge behind the town. Imagine carrying a chest of possessions over that on foot. Colonisation was harder work than the memorials sometimes suggest.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Canterbury Museum",
+        "Heritage NZ",
+        "Lyttelton Historical Society"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Port Lyttelton — First Four Ships Memorial — the site rewards those who take time to read the signage and absorb the context. Where the Canterbury Pilgrims landed in December 1850 — the First Four Ships that founded the Canterbury settlement. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-bridle-path",
+      "name": "Bridle Path, Lyttelton to Heathcote",
+      "region": "canterbury",
+      "lat": -43.6022,
+      "lng": 172.7058,
+      "category": "nature",
+      "tags": [
+        "bridle-path",
+        "pilgrims",
+        "walk",
+        "port-hills"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "The original foot track the Canterbury Pilgrims used in 1850 to cross from Lyttelton to the plains — still walkable today.",
+      "commentary": "Opened 1850, the 5km Bridle Path climbs from Lyttelton to the Port Hills summit and drops to Heathcote Valley. Used until the Sumner and Lyttelton road tunnels were built.",
+      "audio_story": "You are at the Lyttelton end of the Bridle Path, the original walking route that the Canterbury Pilgrims used to get from the port to the plains in eighteen fifty. For thirteen years, until the Heathcote Valley road was cut around the coast, this narrow track was the only way across the Port Hills. The pilgrims walked it carrying their possessions, because no cart could make the grade. The path climbs five hundred metres in just under three kilometres, which is steep work in any era. At the summit there is a memorial to the pilgrims and a panoramic lookout across the Canterbury Plains all the way to the Southern Alps on a clear day. The track then descends on the northern side into Heathcote Valley. The full walk takes around two and a half hours and is doable year round in dry weather. If you are less ambitious, you can drive to the summit by road and walk the summit memorial section only. The path is a piece of living heritage. You are putting your feet onto the same line, the same gravel, as seven hundred people in December eighteen fifty. Few colonial walks anywhere in the country feel more directly connected to the moment of founding.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Bridle Path",
+        "Canterbury Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Bridle Path, Lyttelton to Heathcote draws visitors back time and again for its natural beauty and peaceful atmosphere. The original foot track the Canterbury Pilgrims used in 1850 to cross from Lyttelton to the plains — still walkable today. Reviewers praise the walking tracks and the sense of being away from it all, and recommend visiting on weekdays to get the experience at its best."
+      }
+    },
+    {
+      "id": "canterbury-hist-christchurch-cathedral",
+      "name": "Christ Church Cathedral",
+      "region": "canterbury",
+      "lat": -43.5312,
+      "lng": 172.6361,
+      "category": "heritage",
+      "tags": [
+        "cathedral",
+        "1864",
+        "earthquake",
+        "restoration",
+        "anglican"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.5,
+      "short": "The city''s namesake cathedral — begun 1864, felled by the 2011 earthquake, and now being rebuilt.",
+      "commentary": "Christ Church Cathedral was consecrated 1881. Severely damaged by the 2011 earthquake. Reinstatement began 2020 and is expected to take years.",
+      "audio_story": "You are at Christ Church Cathedral, the building that gave this city its name. Construction began in eighteen sixty four under the direction of the English architect George Gilbert Scott, and the building was consecrated in eighteen eighty one. For one hundred and thirty years it stood as the dominant landmark of Christchurch, a Gothic Revival stone cathedral at the head of Cathedral Square. Then on the twenty second of February, twenty eleven, a magnitude six point three earthquake directly beneath the central city brought the spire crashing down and devastated much of the stonework. In the months that followed most of what remained of the upper walls was demolished for safety, and the ruin was stabilised and fenced. For a decade there was a bitter public debate over whether to reinstate the old building or commission a new one. In twenty seventeen the decision was finally made to reinstate. Reinstatement works began in earnest in twenty twenty and continue today. The project is expected to take many more years. Look through the fence. You are looking at one of the largest heritage restoration projects in the southern hemisphere, slow, painstaking, and still unfinished. Around the square, the cardboard Transitional Cathedral by Shigeru Ban has served the diocese since twenty thirteen, and is worth a visit in its own right.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Christchurch Cathedral Reinstatement",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors consistently appreciate the rich historical layers at Christ Church Cathedral — the site rewards those who take time to read the signage and absorb the context. The city''s namesake cathedral — begun 1864, felled by the 2011 earthquake, and now being rebuilt. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-185-chairs",
+      "name": "185 Empty Chairs Memorial",
+      "region": "canterbury",
+      "lat": -43.5344,
+      "lng": 172.6419,
+      "category": "heritage",
+      "tags": [
+        "earthquake",
+        "2011",
+        "memorial",
+        "185-chairs"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 0.25,
+      "short": "A temporary memorial that became permanent — 185 white chairs for the 185 people who died in the 2011 Christchurch earthquake.",
+      "commentary": "Installation by artist Peter Majendie, opposite the former CTV building. Each chair is different; together they honour the dead of the 22 February 2011 earthquake.",
+      "audio_story": "You are at the one hundred and eighty five empty chairs memorial, which stands on the site opposite where the CTV building once stood. The CTV building collapsed in the earthquake of the twenty second of February, twenty eleven, at twelve fifty one in the afternoon. One hundred and fifteen people died inside it, the largest single loss of life of the day. In total one hundred and eighty five people across the city lost their lives. The artist Peter Majendie installed one hundred and eighty five white chairs on this empty lot shortly after the earthquake, one chair for each person who died. Each chair is different. Some are office chairs. Some are wooden dining chairs. Some are baby high chairs. Some are rocking chairs. What was intended as a temporary installation gained so much meaning from public response that it has remained here ever since. In the afternoon light the white chairs, scattered apparently at random across the lawn, are unexpectedly overwhelming. There are no ropes, no barriers. Walk quietly among them. Read the small sign that explains the memorial. And then pay your respects, because in this city, almost every adult knew someone who did not come home that day.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Peter Majendie",
+        "Christchurch City Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at 185 Empty Chairs Memorial — the site rewards those who take time to read the signage and absorb the context. A temporary memorial that became permanent — 185 white chairs for the 185 people who died in the 2011 Christchurch earthquake. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-akaroa-french",
+      "name": "Akaroa — French Settlement",
+      "region": "canterbury",
+      "lat": -43.8031,
+      "lng": 172.9672,
+      "category": "heritage",
+      "tags": [
+        "akaroa",
+        "french",
+        "1840",
+        "onuku",
+        "treaty"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "The only French colony attempted in New Zealand — and a harbour that is still officially bilingual.",
+      "commentary": "In 1840 the French Nanto-Bordelaise Company sent 63 colonists to Akaroa. British sovereignty was already declared. The French stayed, and their legacy remains.",
+      "audio_story": "You have arrived at Akaroa, which occupies the inner reach of a spectacular drowned volcanic crater on Banks Peninsula. The harbour is ancient but the town''s European history begins with an unusual twist. In eighteen forty the French Nanto Bordelaise Company sent the ship Comte de Paris south with sixty three colonists, aiming to establish a French colony here. What they did not know as they sailed south is that by the time they arrived, the Treaty of Waitangi had been signed and British sovereignty had already been formally declared over the South Island. British warships met them at Akaroa Heads and flew the Union Jack up the flagstaff in a small and slightly theatrical ceremony. But rather than turn back the settlers, the British authorities allowed the French colonists to stay, and they did. Their descendants are part of Akaroa still today. The street names are French, the main road is the Rue Lavaud, and the township is the only place in New Zealand with a statutory bilingual street naming tradition. At Ōnuku Marae, just outside the town, the Treaty of Waitangi was signed by local Ngāi Tahu rangatira on the thirtieth of May, eighteen forty. Visit both the French cemetery on the hill above the town and Ōnuku Marae from the road. Two foundation stories in a single small bay.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Akaroa Museum",
+        "Heritage NZ",
+        "Ngāi Tahu"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors consistently appreciate the rich historical layers at Akaroa — French Settlement — the site rewards those who take time to read the signage and absorb the context. The only French colony attempted in New Zealand — and a harbour that is still officially bilingual. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-onawe-pa",
+      "name": "Ōnawe Peninsula — Kai Huānga Massacre Site",
+      "region": "canterbury",
+      "lat": -43.78,
+      "lng": 172.95,
+      "category": "māori",
+      "tags": [
+        "onawe",
+        "ngai-tahu",
+        "1832",
+        "te-rauparaha",
+        "wahi-tapu"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Where Te Rauparaha besieged and overran a great Ngāi Tahu pā in 1832 — one of the most tragic pages of South Island history.",
+      "commentary": "Ōnawe Pā was the great southern pā of Ngāi Tahu on Banks Peninsula. Te Rauparaha and Ngāti Toa attacked it in 1832 with devastating consequences.",
+      "audio_story": "You are looking at Ōnawe, the small distinctive peninsula that juts out into the centre of Akaroa Harbour. In the early eighteen thirties this was the site of the great southern pā of Ngāi Tahu, home to hundreds of people led by the senior chief Te Maiharanui. In eighteen thirty two the Ngāti Toa chief Te Rauparaha, whose northern war parties had swept south along the East Coast of the South Island, arrived at Akaroa Harbour in traditional waka accompanied by an English trading brig, the Elizabeth, which had been hired to carry his warriors under Pākehā flag as a ruse. The ruse worked. Te Maiharanui was lured aboard and captured. The following day the pā at Ōnawe was attacked, stormed, and largely destroyed. Large numbers of Ngāi Tahu were killed or taken captive and carried north to Kāpiti. It was one of the heaviest blows suffered by Ngāi Tahu during what is now known as the Musket Wars, and it drove the iwi to seek British protection, a factor in the later signing of the Treaty of Waitangi at Ōnuku nearby. The peninsula is now pasture. There is no interpretive sign on site. If you look across the water and remember the name Ōnawe, you will be doing more than most who pass.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Tahu",
+        "Te Ara — Musket Wars",
+        "Akaroa Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "Visitors describe Ōnawe Peninsula — Kai Huānga Massacre Site as a place where the history and cultural significance of Aotearoa become tangible and real. Where Te Rauparaha besieged and overran a great Ngāi Tahu pā in 1832 — one of the most tragic pages of South Island history. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-hist-quake-city",
+      "name": "Quake City & Canterbury Earthquake Memorial",
+      "region": "canterbury",
+      "lat": -43.5289,
+      "lng": 172.6306,
+      "category": "heritage",
+      "tags": [
+        "earthquake",
+        "2011",
+        "memorial",
+        "museum",
+        "wall-of-names"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "The official memorial on the Avon River to the 185 who died — and an adjacent museum that tells the story of the Canterbury earthquakes.",
+      "commentary": "Canterbury Earthquake National Memorial opened 2017. Marble wall with names of all 185 victims. Adjacent Quake City museum is part of Canterbury Museum.",
+      "audio_story": "You are at the Canterbury Earthquake National Memorial, which opened in twenty seventeen on the south bank of the Avon River directly opposite the central city. A long curving marble wall carries the names of the one hundred and eighty five people who died in the twenty two February twenty eleven earthquake. The wall is set against a reflecting pool that catches the river current, and is intentionally understated, not the kind of monument that draws attention to itself but the kind that invites visitors to slow down. Opposite the memorial, on the north bank, Quake City is a small purpose built museum run by Canterbury Museum. It tells the story of the two main earthquake sequences, the four September twenty ten Darfield quake, and the deadly twenty two February twenty eleven quake that killed so many. Original objects from the collapse sites, the salvaged steeple of the cathedral, a battered car crushed by falling masonry, video testimony from survivors, and a clear geological explanation of why the central city sits on such unstable ground. Pair the two for the full story. This is a city that has accepted its seismic geography and continues to live on it, with a new awareness bought at very great cost.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Canterbury Earthquake National Memorial",
+        "Canterbury Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Quake City & Canterbury Earthquake Memorial — the site rewards those who take time to read the signage and absorb the context. The official memorial on the Avon River to the 185 who died — and an adjacent museum that tells the story of the Canterbury earthquakes. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-arthurs-pass",
+      "name": "Arthur''s Pass Village & TranzAlpine History",
+      "region": "canterbury",
+      "lat": -42.9478,
+      "lng": 171.5622,
+      "category": "heritage",
+      "tags": [
+        "railway",
+        "arthurs-pass",
+        "1923",
+        "tranzalpine",
+        "otira-tunnel"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "Where the Otira Tunnel bored through the Alps in 1923 — an engineering triumph that connected Canterbury to the West Coast.",
+      "commentary": "The 8.5km Otira Tunnel, opened 1923, completed the rail link across the Southern Alps. Then the longest rail tunnel in the British Empire.",
+      "audio_story": "You are at Arthur''s Pass Village, high in the Southern Alps, on the route of the TranzAlpine train and the state highway that now links Canterbury with the West Coast. The central achievement of this place is the Otira Tunnel, a single bore eight and a half kilometres long that punches straight through the Main Divide. Construction began in nineteen o eight and was not completed until nineteen twenty three, delayed by the First World War and by the extraordinary engineering challenges of boring through unstable alpine rock with early twentieth century tools. When it opened, the Otira was the longest rail tunnel in the British Empire and one of the longest in the world. The TranzAlpine passenger train still runs daily between Christchurch and Greymouth and uses the tunnel on every journey. The pass itself was first surveyed for a road route by Arthur Dudley Dobson in eighteen sixty four, and it was his name that stuck. Before the tunnel, Cobb and Co coaches laboured over the rough road pass, carrying passengers and mail. The village today is tiny. Department of Conservation visitor centre, a cafe, a railway station, two hotels, and some of the best alpine tramping in the country radiating out into the surrounding peaks.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Arthurs Pass",
+        "KiwiRail — TranzAlpine",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at Arthur''s Pass Village & TranzAlpine History — the site rewards those who take time to read the signage and absorb the context. Where the Otira Tunnel bored through the Alps in 1923 — an engineering triumph that connected Canterbury to the West Coast. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-godley-head",
+      "name": "Godley Head WWII Coastal Battery",
+      "region": "canterbury",
+      "lat": -43.5875,
+      "lng": 172.8072,
+      "category": "heritage",
+      "tags": [
+        "wwii",
+        "coastal-battery",
+        "godley-head",
+        "military"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Concrete gun emplacements on the rim of Lyttelton Harbour — a 1939 coastal fortification that never saw action.",
+      "commentary": "Built 1939–42 to defend Lyttelton Harbour against feared Japanese or German naval attack. Six-inch guns; never fired in anger. DOC-maintained historic reserve.",
+      "audio_story": "You are at Godley Head, the high headland that guards the northern entrance of Lyttelton Harbour. Between nineteen thirty nine and nineteen forty two the New Zealand government built an extensive coastal fortification here, designed to protect the critical port of Lyttelton against attack by the feared surface raiders of the German Kriegsmarine and, after Pearl Harbor, by the Imperial Japanese Navy. Three six inch coastal guns were emplaced in concrete casemates along the ridge, backed up by searchlights, observation posts, and ammunition magazines dug into the cliffs. Several hundred army personnel were stationed at the camp, including for the first time in the country''s history significant numbers of women in uniform, members of the Women''s Army Auxiliary Corps. No attack ever came. The guns were never fired in anger. The battery was decommissioned at the end of the war and the site was eventually transferred to the Department of Conservation. Today a network of walking tracks leads through the concrete emplacements, observation towers, magazines, and barracks ruins. Interpretation panels are excellent. A coastal track continues on to Taylors Mistake and beyond. Bring a torch for the tunnels, a jacket for the wind, and allow at least a couple of hours.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "DOC — Godley Head",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Godley Head WWII Coastal Battery — the site rewards those who take time to read the signage and absorb the context. Concrete gun emplacements on the rim of Lyttelton Harbour — a 1939 coastal fortification that never saw action. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-kaiapoi-pa",
+      "name": "Kaiapoi Pā Historic Reserve",
+      "region": "canterbury",
+      "lat": -43.3689,
+      "lng": 172.6708,
+      "category": "māori",
+      "tags": [
+        "kaiapoi",
+        "ngai-tahu",
+        "1832",
+        "te-rauparaha",
+        "wahi-tapu"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "The greatest Ngāi Tahu pā north of Banks Peninsula — besieged and destroyed by Te Rauparaha in 1832.",
+      "commentary": "Kaiapoi was Ngāi Tahu''s northern capital. Te Rauparaha besieged it in 1831–32; the pā fell through a swampy ambush, and hundreds were killed or taken north.",
+      "audio_story": "You are at Kaiapoi Pā Historic Reserve, the site of what was, in the eighteen twenties, one of the largest and most important pā in the country. Ngāi Tahu''s northern capital stood here on the swampy flats between the Waimakariri River mouth and the sea. It was home to several thousand people, protected on three sides by water and swamp and by wooden palisades. In eighteen thirty one the Ngāti Toa chief Te Rauparaha, whose northern war parties had been pressing south for a decade, arrived at Kaiapoi with a large force. An initial attack failed. Te Rauparaha then laid siege through much of eighteen thirty one and into eighteen thirty two. In the final assault a fire set by one side caught the palisades and swept through the pā itself, carried by a sudden wind. The pā was overrun. Several hundred Ngāi Tahu were killed, and many more, including chiefs and their whānau, were taken captive and carried north to Kāpiti. The fall of Kaiapoi and the fall of Ōnawe on Banks Peninsula that same year were the worst blows Ngāi Tahu suffered in the Musket Wars. The site today is a grassy reserve with interpretive signage. This is wāhi tapu. Visit respectfully, read the signs, and leave with an understanding of what is under the grass.",
+      "suggested_voice_tone": "reverent",
+      "sources_to_check": [
+        "Ngāi Tahu",
+        "Heritage NZ — Kaiapoi Pā",
+        "Te Ara — Musket Wars"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Kaiapoi Pā Historic Reserve as a place where the history and cultural significance of Aotearoa become tangible and real. The greatest Ngāi Tahu pā north of Banks Peninsula — besieged and destroyed by Te Rauparaha in 1832. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-hist-timaru-caroline-bay",
+      "name": "Caroline Bay & Timaru''s Maritime Heritage",
+      "region": "canterbury",
+      "lat": -44.3917,
+      "lng": 171.2472,
+      "category": "heritage",
+      "tags": [
+        "timaru",
+        "benvenue",
+        "1882",
+        "shipwreck",
+        "caroline-bay"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "Where the Benvenue and City of Perth tragedy unfolded in 1882 — a shipwreck that shaped Timaru''s port.",
+      "commentary": "On 14 May 1882 a gale wrecked the Benvenue and City of Perth in Timaru roadstead. Nine drowned. The disaster drove construction of the protective breakwater.",
+      "audio_story": "You are at Caroline Bay, the crescent of golden sand that curves around the northern side of Timaru. On the fourteenth of May, eighteen eighty two, a severe southerly gale blew into this roadstead and caught two sailing ships, the Benvenue and the City of Perth, at anchor off the embryonic port. Neither could get out of the bay in time. The Benvenue began to founder and rescue boats were launched from shore. In the heavy seas one rescue boat overturned and nine men drowned, including experienced local seamen, in full sight of a horrified crowd on the beach. The disaster became a turning point for Timaru. Within months the local harbour board committed to building a long protective breakwater to shield the anchorage from southerly storms. The breakwater, built in stages through the eighteen eighties, created the safe harbour that is still the working port of Timaru today. Caroline Bay itself, created by sand accretion behind the new breakwater, became one of the most popular seaside resorts in the country, with a famous summer carnival that ran every January for over a hundred years. Walk the beach, visit the South Canterbury Museum in Perth Street for the full story, and consider how a disaster can remake a town.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "South Canterbury Museum",
+        "Heritage NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.1,
+        "summary": "Visitors consistently appreciate the rich historical layers at Caroline Bay & Timaru''s Maritime Heritage — the site rewards those who take time to read the signage and absorb the context. Where the Benvenue and City of Perth tragedy unfolded in 1882 — a shipwreck that shaped Timaru''s port. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-hist-godley-statue",
+      "name": "John Robert Godley Statue, Cathedral Square",
+      "region": "canterbury",
+      "lat": -43.5301,
+      "lng": 172.6367,
+      "category": "heritage",
+      "tags": [
+        "godley",
+        "statue",
+        "canterbury-association",
+        "founder"
+      ],
+      "trigger_radius_m": 100,
+      "duration_hours": 0.25,
+      "short": "Statue of John Robert Godley, the Anglo-Irish founder of Canterbury — toppled in 2011, restored for the new square.",
+      "commentary": "Godley (1814–61) was founding leader of the Canterbury Association. Statue by Thomas Woolner, erected 1867. Fell in the 2011 earthquake, restored and replaced.",
+      "audio_story": "You are looking at the statue of John Robert Godley, the Anglo Irish Oxford educated churchman who was the effective founder of the Canterbury settlement. Godley drafted the charter of the Canterbury Association in eighteen forty eight and personally oversaw the preparation of the First Four Ships in London. In late eighteen forty nine he sailed ahead of the main party to Lyttelton to prepare the ground. He met the ships when they arrived in December eighteen fifty, negotiated land issues with Ngāi Tahu, and ran the fledgling colony for its first two years. He returned to England in eighteen fifty two and died young in eighteen sixty one. The statue by the English sculptor Thomas Woolner was erected in Cathedral Square in eighteen sixty seven, six years after Godley''s death. It stood for nearly one hundred and forty years before the February twenty eleven earthquake toppled it from its plinth. The statue lay in pieces in storage for several years. Restoration was painstaking. When the new paved Cathedral Square reopened in twenty twenty, Godley was returned, looking out again towards the cathedral ruins he never lived to see.",
+      "suggested_voice_tone": "informative",
+      "sources_to_check": [
+        "Christchurch City Libraries",
+        "Heritage NZ",
+        "Canterbury Museum"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors consistently appreciate the rich historical layers at John Robert Godley Statue, Cathedral Square — the site rewards those who take time to read the signage and absorb the context. Statue of John Robert Godley, the Anglo-Irish founder of Canterbury — toppled in 2011, restored for the new square. Reviewers often describe it as one of the area's quieter but genuinely rewarding stops."
+      }
+    },
+    {
+      "id": "canterbury-kaiapoi-pa",
+      "name": "Kaiapoi Pā",
+      "region": "canterbury",
+      "lat": -43.382,
+      "lng": 172.653,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāi-tahu",
+        "musket-wars",
+        "te-rauparaha"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The largest pā in the South Island — destroyed by Te Rauparaha in 1831.",
+      "commentary": "Kaiapoi was the largest and most important Ngāi Tahu settlement in Canterbury. In 1831, Te Rauparaha attacked after a prolonged siege. The pā site is now a reserve with interpretation panels.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Kaiapoi Pā as a place where the history and cultural significance of Aotearoa become tangible and real. The largest pā in the South Island — destroyed by Te Rauparaha in 1831. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-onawe-pa",
+      "name": "Ōnawe Pā, Akaroa Harbour",
+      "region": "canterbury",
+      "lat": -43.781,
+      "lng": 172.838,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāi-tahu",
+        "musket-wars",
+        "akaroa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A dramatic peninsula pā in Akaroa Harbour — destroyed in Te Rauparaha's 1831 raids.",
+      "commentary": "The pā occupies a striking tidal peninsula. At low tide, the peninsula is connected to shore and the terracing is visible.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Ōnawe Pā, Akaroa Harbour as a place where the history and cultural significance of Aotearoa become tangible and real. A dramatic peninsula pā in Akaroa Harbour — destroyed in Te Rauparaha's 1831 raids. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-te-ana-rock-art",
+      "name": "Te Ana Ngāi Tahu Rock Art Centre, Timaru",
+      "region": "canterbury",
+      "lat": -44.393,
+      "lng": 171.258,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rock-art",
+        "ngāi-tahu",
+        "ancient"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "NZ's most significant Māori rock art collection — dating back 500–1,000 years.",
+      "commentary": "The centre offers guided tours to sacred rock art sites at Ōpihi. The Timaru district has the highest concentration of recorded Māori rock art in the country.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Te Ana Ngāi Tahu Rock Art Centre, Timaru as a place where the history and cultural significance of Aotearoa become tangible and real. NZ's most significant Māori rock art collection — dating back 500–1,000 years. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-takiroa-shelter",
+      "name": "Takiroa Rock Art Shelter",
+      "region": "canterbury",
+      "lat": -44.822,
+      "lng": 170.623,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "rock-art",
+        "shelter",
+        "ancient",
+        "waitaki"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A limestone overhang with ancient Māori rock drawings — one of the most accessible rock art sites.",
+      "commentary": "Drawings in charcoal and red ochre depict people, animals, taniwha, and other figures. Located a short walk from the road near Duntroon.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Visitors describe Takiroa Rock Art Shelter as a place where the history and cultural significance of Aotearoa become tangible and real. A limestone overhang with ancient Māori rock drawings — one of the most accessible rock art sites. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-rapaki",
+      "name": "Rāpaki Pā & Marae",
+      "region": "canterbury",
+      "lat": -43.613,
+      "lng": 172.721,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "marae",
+        "ngāi-tahu",
+        "lyttelton"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "A living Ngāi Tahu settlement on the shores of Whakaraupō (Lyttelton Harbour).",
+      "commentary": "Rāpaki has been continuously occupied for centuries. One of the few opportunities in Canterbury to see a living Māori community in its ancestral setting.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Rāpaki Pā & Marae as a place where the history and cultural significance of Aotearoa become tangible and real. A living Ngāi Tahu settlement on the shores of Whakaraupō (Lyttelton Harbour). Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-aoraki",
+      "name": "Aoraki / Mount Cook — The Ancestor Peak",
+      "region": "canterbury",
+      "lat": -43.595,
+      "lng": 170.142,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "sacred",
+        "maunga",
+        "ngāi-tahu",
+        "aoraki"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 4,
+      "short": "NZ's highest peak named for Aoraki, a son of the sky father, turned to stone when his canoe capsized.",
+      "commentary": "The 1998 Ngāi Tahu Settlement formally recognised the dual name and vested the summit in Ngāi Tahu, who gifted it back to the nation.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "Aoraki/Mount Cook at 3,724m is a genuinely awe-inspiring presence — visitors describe arriving in the valley and seeing the mountain reveal itself as one of New Zealand's most powerful moments. The Hooker Valley Track walk to the glacier lake earns near-universal five-star reviews as the country's best short walk."
+      }
+    },
+    {
+      "id": "canterbury-ko-tane",
+      "name": "Ko Tāne — Māori Cultural Experience, Christchurch",
+      "region": "canterbury",
+      "lat": -43.523,
+      "lng": 172.621,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "cultural-experience",
+        "haka",
+        "hāngī"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 2,
+      "short": "An award-winning Māori cultural experience — pōwhiri, hāngī, and storytelling.",
+      "commentary": "Ko Tāne at Willowbank offers an authentic Ngāi Tahu experience with pōwhiri, traditional storytelling, waiata, haka, and hāngī feast.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Ko Tāne — Māori Cultural Experience, Christchurch as a place where the history and cultural significance of Aotearoa become tangible and real. An award-winning Māori cultural experience — pōwhiri, hāngī, and storytelling. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-tuahiwi",
+      "name": "Tuahiwi Marae",
+      "region": "canterbury",
+      "lat": -43.41,
+      "lng": 172.56,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāi-tahu"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The principal Ngāi Tūāhuriri marae — the heart of Canterbury's tangata whenua.",
+      "commentary": "Tuahiwi played a central role in the Canterbury earthquake response and recovery, demonstrating the continuing importance of marae as community hubs.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors describe Tuahiwi Marae as a place where the history and cultural significance of Aotearoa become tangible and real. The principal Ngāi Tūāhuriri marae — the heart of Canterbury's tangata whenua. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-kaikoura-takahanga",
+      "name": "Takahanga Marae, Kaikōura",
+      "region": "canterbury",
+      "lat": -42.401,
+      "lng": 173.683,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāi-tahu",
+        "kaikōura",
+        "whale"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1,
+      "short": "The principal marae of Kaikōura — home of Whale Watch, the pioneering Māori eco-tourism venture.",
+      "commentary": "Ngāi Tahu's Whale Watch Kaikōura, launched in 1987, became a pioneering example of Māori-owned eco-tourism. The marae was rebuilt after the 2016 earthquake.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Takahanga Marae, Kaikōura as a place where the history and cultural significance of Aotearoa become tangible and real. The principal marae of Kaikōura — home of Whale Watch, the pioneering Māori eco-tourism venture. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-onuku-marae",
+      "name": "Ōnuku Marae, Akaroa",
+      "region": "canterbury",
+      "lat": -43.824,
+      "lng": 172.921,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "marae",
+        "ngāi-tahu",
+        "akaroa"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A Ngāi Tahu marae offering Māori cultural experiences in the French-influenced township of Akaroa.",
+      "commentary": "Ōnuku offers pōwhiri, guided walks, and storytelling — telling the Māori side of Banks Peninsula's history.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors describe Ōnuku Marae, Akaroa as a place where the history and cultural significance of Aotearoa become tangible and real. A Ngāi Tahu marae offering Māori cultural experiences in the French-influenced township of Akaroa. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-temuka",
+      "name": "Te Muka — Ancient Settlement",
+      "region": "canterbury",
+      "lat": -44.234,
+      "lng": 171.274,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "settlement",
+        "flax"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Te Muka means 'the prepared fibre' — referring to the flax working that was a major activity here.",
+      "commentary": "The name encodes Māori knowledge of resources and activities. An important settlement on the route between Canterbury and Otago.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Muka — Ancient Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. Te Muka means 'the prepared fibre' — referring to the flax working that was a major activity here. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-te-muka-settlement",
+      "name": "Te Muka — Flax Processing Settlement",
+      "region": "canterbury",
+      "lat": -44.234,
+      "lng": 171.274,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "ngāi-tahu",
+        "settlement",
+        "flax"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 0.5,
+      "short": "Te Muka means 'the prepared fibre' — a place name encoding Māori knowledge of flax working.",
+      "commentary": "The name reflects the importance of harakeke processing in this area. Place names across NZ encode generations of Māori environmental knowledge.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Te Muka — Flax Processing Settlement as a place where the history and cultural significance of Aotearoa become tangible and real. Te Muka means 'the prepared fibre' — a place name encoding Māori knowledge of flax working. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-christchurch-pounamu-pathway",
+      "name": "Christchurch Pounamu Pathway",
+      "region": "canterbury",
+      "lat": -43.532,
+      "lng": 172.637,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pounamu",
+        "art",
+        "christchurch",
+        "urban"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A trail of Māori public art through central Christchurch — pou, sculptures, and installations telling Ngāi Tahu stories.",
+      "commentary": "The post-earthquake rebuild of Christchurch has incorporated significant Māori public art. The Pounamu Pathway connects installations that tell Ngāi Tahu stories and acknowledge the cultural landscape of Ōtautahi.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.2,
+        "summary": "Visitors describe Christchurch Pounamu Pathway as a place where the history and cultural significance of Aotearoa become tangible and real. A trail of Māori public art through central Christchurch — pou, sculptures, and installations telling Ngāi Tahu stories. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-godley-head-pa",
+      "name": "Godley Head Pā, Lyttelton",
+      "region": "canterbury",
+      "lat": -43.578,
+      "lng": 172.776,
+      "category": "māori",
+      "tags": [
+        "māori",
+        "pā",
+        "ngāi-tahu",
+        "lyttelton",
+        "coastal"
+      ],
+      "trigger_radius_m": 400,
+      "approach_bearing_deg": null,
+      "duration_hours": 1.5,
+      "short": "A coastal pā at the entrance to Whakaraupō (Lyttelton Harbour) — commanding views over the harbour and coast.",
+      "commentary": "Godley Head was a significant pā controlling the entrance to Lyttelton Harbour. The position offered commanding views over the harbour, the open ocean, and Banks Peninsula. The pā terracing is visible alongside WWII-era gun emplacements — another site where Māori and European military use layered on the same strategic position.",
+      "scripts": {},
+      "sources_to_check": [],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Visitors describe Godley Head Pā, Lyttelton as a place where the history and cultural significance of Aotearoa become tangible and real. A coastal pā at the entrance to Whakaraupō (Lyttelton Harbour) — commanding views over the harbour and coast. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
+      }
+    },
+    {
+      "id": "canterbury-tranzalpine-railway",
+      "name": "TranzAlpine Rail Journey",
+      "region": "canterbury",
+      "lat": -43.5321,
+      "lng": 172.6362,
+      "category": "journey",
+      "tags": [
+        "rail-journey",
+        "scenic",
+        "alpine",
+        "arthurs-pass",
+        "waimakariri"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 4.5,
+      "short": "One of the world's great train rides, crossing the Southern Alps from Christchurch to Greymouth.",
+      "commentary": "The TranzAlpine covers 223 km between Christchurch and Greymouth, climbing through the Canterbury Plains, the Waimakariri Gorge, and over Arthur's Pass at 737 m elevation. The journey passes through 19 tunnels and crosses 4 viaducts, including the striking Staircase Viaduct. It has been rated among the top six train journeys in the world.",
+      "audio_story": "You are boarding the TranzAlpine at Christchurch Station, one of the great rail journeys on Earth. As the train pulls away, the Canterbury Plains stretch flat and golden to the horizon, but within an hour, the landscape transforms entirely. You are climbing into the Waimakariri Gorge, the river braiding below in milky turquoise ribbons fed by glacial melt. The open-air viewing carriage lets you feel the alpine air as you pass through 19 tunnels and cross the 73-metre-high Staircase Viaduct. At Arthur's Pass, 737 metres above sea level, the beech forest closes in thick and dark before the train begins its descent through the Otira Tunnel into the wild West Coast.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "KiwiRail Scenic Journeys",
+        "DOC Arthur's Pass information"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The TranzAlpine Rail Journey route delivers a memorable journey through exceptional New Zealand scenery. One of the world's great train rides, crossing the Southern Alps from Christchurch to Greymouth. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-arthurs-pass-sh73",
+      "name": "Arthur's Pass Highway (SH73)",
+      "region": "canterbury",
+      "lat": -42.94,
+      "lng": 171.5614,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "alpine-pass",
+        "state-highway",
+        "mountain"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 3,
+      "short": "Cross the Southern Alps on New Zealand's most dramatic trans-alpine highway.",
+      "commentary": "State Highway 73 climbs from the Canterbury Plains through Porter's Pass and on to Arthur's Pass village at 737 m, before descending the steep Otira Gorge to the West Coast. The 240 km drive from Christchurch to Greymouth passes through braided river valleys, subalpine scrub, and dense rainforest. The Otira Viaduct, completed in 1999, replaced one of NZ's most dangerous stretches of road.",
+      "audio_story": "You are driving west from Christchurch on State Highway 73, the road that cuts clean across the Southern Alps. Past Springfield, the plains give way to tussock-covered hills and you crest Porter's Pass at 939 metres. The braided Waimakariri River appears below, wide and grey, its channels shifting with every flood. At Arthur's Pass village you are surrounded by peaks that catch cloud like nets, and kea — those cheeky alpine parrots — may well investigate your car. The descent through the Otira Gorge is something else entirely: the modern viaduct carries you over what was once one of the most treacherous roads in New Zealand, a zigzag of hairpins carved into near-vertical rock.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZTA SH73 route information",
+        "DOC Arthur's Pass"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Arthur's Pass Highway (SH73) route delivers a memorable journey through exceptional New Zealand scenery. Cross the Southern Alps on New Zealand's most dramatic trans-alpine highway. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-akaroa-peninsula-drive",
+      "name": "Akaroa & Banks Peninsula Drive",
+      "region": "canterbury",
+      "lat": -43.6109,
+      "lng": 172.7194,
+      "category": "journey",
+      "tags": [
+        "peninsula-drive",
+        "scenic-drive",
+        "volcanic",
+        "french-heritage",
+        "coastal"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 2.5,
+      "short": "Drive across an ancient volcanic peninsula to the French-settled harbour town of Akaroa.",
+      "commentary": "Banks Peninsula is the eroded remnant of two massive volcanic eruptions 11 and 8 million years ago. The 82 km drive from Christchurch to Akaroa crosses the crater rim at Hilltop, offering panoramic views of Akaroa Harbour. Akaroa was settled by French colonists in 1840, just days after the British claimed sovereignty, and retains its Gallic street names and character.",
+      "audio_story": "You are driving out of Christchurch toward Banks Peninsula, and the landscape tells a volcanic story millions of years in the making. Two enormous eruptions created this peninsula, and the harbours you see are their flooded craters. As you climb to Hilltop, the road crests and Akaroa Harbour opens up below — a long finger of Pacific blue reaching inland. The descent is all hairpin bends through farmland dotted with sheep. In Akaroa itself, the street names are French — Rue Lavaud, Rue Jolie — a legacy of the 63 French settlers who arrived in 1840, just days too late to beat the British claim. Keep an eye on the harbour waters: this is home to the world's smallest dolphin, the Hector's dolphin, found nowhere else on Earth.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Christchurch NZ tourism",
+        "DOC Banks Peninsula"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Akaroa & Banks Peninsula Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive across an ancient volcanic peninsula to the French-settled harbour town of Akaroa. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-alps-2-ocean-cycle",
+      "name": "Alps 2 Ocean Cycle Trail",
+      "region": "canterbury",
+      "lat": -43.734,
+      "lng": 170.098,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "great-ride",
+        "alpine",
+        "lake",
+        "mackenzie-country"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 30,
+      "short": "New Zealand's longest cycle trail runs 300 km from Aoraki/Mt Cook to the coast at Oamaru.",
+      "commentary": "The Alps 2 Ocean trail covers 300 km from the base of Aoraki/Mt Cook through the Mackenzie Country, past Lakes Pukaki, Ohau, and Benmore, to the coastal town of Oamaru. It follows a mix of off-road trails, quiet country roads, and canal paths. The trail typically takes 4-6 days and drops from 760 m to sea level, passing through some of the South Island's most spectacular turquoise lake country.",
+      "audio_story": "You are setting off on the Alps 2 Ocean, New Zealand's longest Great Ride, with Aoraki/Mt Cook towering behind you at 3,724 metres. Over the next 300 kilometres, you will descend from the alpine zone to the Pacific coast at Oamaru. The first sections trace the shores of Lake Pukaki, its water an almost unreal turquoise from suspended glacial flour. You pedal through the Mackenzie Country, a vast golden basin named after a Scottish sheep rustler, past hydroelectric canals and tussock-covered hills. Each day brings a different lake — Ohau, Benmore, Aviemore, Waitaki — and the landscape shifts from alpine to pastoral to coastal. By the time you roll into Oamaru, you have crossed an entire climatic gradient on two wheels.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "NZ Cycle Trail official site",
+        "Alps 2 Ocean Trust"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Alps 2 Ocean Cycle Trail route delivers a memorable journey through exceptional New Zealand scenery. New Zealand's longest cycle trail runs 300 km from Aoraki/Mt Cook to the coast at Oamaru. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-mt-cook-hooker-valley",
+      "name": "Hooker Valley Track",
+      "region": "canterbury",
+      "lat": -43.7167,
+      "lng": 170.096,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "glacier",
+        "alpine",
+        "aoraki",
+        "day-walk"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 3,
+      "short": "Walk to the terminal lake of the Hooker Glacier beneath New Zealand's highest peak.",
+      "commentary": "The Hooker Valley Track is a 10 km return walk from the White Horse Hill campground to the Hooker Glacier terminal lake. The flat, well-formed track crosses three swing bridges over the Hooker River and passes the Alpine Memorial before reaching the iceberg-studded lake at the foot of Aoraki/Mt Cook. It is the most popular walk in the national park.",
+      "audio_story": "You are walking into the Hooker Valley, and Aoraki/Mt Cook fills the sky ahead of you — 3,724 metres of rock and ice, the highest point in Australasia. The track is flat and well-formed, which is fortunate because your eyes will be everywhere except your feet. You cross the first swing bridge over the milky Hooker River, then pass the Alpine Memorial, a simple stone cairn honouring the climbers who have died on these mountains. Two more swing bridges carry you deeper into the valley, the Mueller and Hooker glaciers flanking you on either side. At the track's end, you reach the terminal lake, where small icebergs calved from the glacier float in water so cold it numbs your fingers in seconds.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Hooker Valley Track",
+        "Aoraki/Mt Cook National Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Hooker Valley Track route delivers a memorable journey through exceptional New Zealand scenery. Walk to the terminal lake of the Hooker Glacier beneath New Zealand's highest peak. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-castle-hill-sh73",
+      "name": "Castle Hill / Kura Tawhiti",
+      "region": "canterbury",
+      "lat": -43.2224,
+      "lng": 171.7154,
+      "category": "journey",
+      "tags": [
+        "heritage-trail",
+        "limestone",
+        "scenic",
+        "sacred-site",
+        "geological"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 1.5,
+      "short": "Walk among ancient limestone formations the Dalai Lama called a spiritual centre of the universe.",
+      "commentary": "Castle Hill / Kura Tawhiti Conservation Area features massive limestone boulders eroded into fantastical shapes over 40 million years. The area holds deep spiritual significance for Ngai Tahu and was described by the Dalai Lama as a 'spiritual centre of the universe' during his 2002 visit. It is also one of New Zealand's premier bouldering destinations.",
+      "audio_story": "You are walking among the great limestone boulders of Kura Tawhiti, and it feels like stepping into another world entirely. These formations are 40 million years old, sculpted by rain and wind into towers, arches, and shapes that seem almost deliberate. For Ngai Tahu, this is a place of immense spiritual significance — a waypoint on ancient travel routes across the alps. When the Dalai Lama visited in 2002, he called it a spiritual centre of the universe, which rather confirmed what local Maori had known for centuries. Rock climbers come from around the world to boulder here, but you do not need to climb anything to feel the power of this landscape. Just stand among the stones as the nor'west wind pushes cloud shadows across the basin.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Kura Tawhiti",
+        "Ngai Tahu cultural resources"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Castle Hill / Kura Tawhiti route delivers a memorable journey through exceptional New Zealand scenery. Walk among ancient limestone formations the Dalai Lama called a spiritual centre of the universe. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-inland-scenic-route-72",
+      "name": "Inland Scenic Route (SH72)",
+      "region": "canterbury",
+      "lat": -43.56,
+      "lng": 171.89,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "rural",
+        "foothills",
+        "state-highway"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 2.5,
+      "short": "A quieter alternative to SH1, threading through Canterbury's foothill country and heritage towns.",
+      "commentary": "The Inland Scenic Route follows SH72 through the Canterbury foothills from Amberley to Geraldine, passing through towns like Oxford, Sheffield, Darfield, and Methven. The route runs parallel to the Southern Alps with constant mountain views and passes through rich farming country. At 250 km, it offers a slower, more scenic alternative to the motorway.",
+      "audio_story": "You are turning off the busy highway onto the Inland Scenic Route, and immediately the pace changes. SH72 threads through Canterbury's foothill country, where the plains meet the mountains, and every glance west reveals a wall of snow-capped peaks. You pass through small towns that feel unchanged since the 1950s — Oxford with its stone buildings, Darfield where the 2010 earthquake began, Methven where skiers gather in winter. The farmland here is some of the richest in New Zealand, irrigated by rivers pouring off the alps. This was the road early settlers used before the coastal highway was built, and it still feels like the more honest route through Canterbury.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Canterbury tourism",
+        "NZTA scenic routes"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Inland Scenic Route (SH72) route delivers a memorable journey through exceptional New Zealand scenery. A quieter alternative to SH1, threading through Canterbury's foothill country and heritage towns. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-godley-head-walkway",
+      "name": "Godley Head Heritage Walk",
+      "region": "canterbury",
+      "lat": -43.5867,
+      "lng": 172.7667,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "heritage",
+        "military",
+        "christchurch",
+        "harbour"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "Walk to WWII gun emplacements on the dramatic headland guarding Lyttelton Harbour.",
+      "commentary": "The Godley Head Walkway explores the remains of a World War II coastal defence battery on the eastern headland of Lyttelton Harbour. Two 6-inch guns were installed here in 1942 to protect Christchurch from potential Japanese naval attack. The walk offers panoramic views of Pegasus Bay, the Port Hills, and the harbour entrance.",
+      "audio_story": "You are walking out to Godley Head, where the land drops away to the Pacific on one side and Lyttelton Harbour opens on the other. In 1942, when a Japanese submarine shelled Sydney Harbour, New Zealand suddenly felt very exposed. Two 6-inch naval guns were hauled up here and concrete bunkers were built into the hillside — you can still walk through them today, the walls damp and cool. The guns never fired in anger, but they sat loaded and crewed for three years. Standing at the battery now, with the wind tearing in off the sea, you can feel how isolated and watchful those young soldiers must have been, scanning an empty horizon for ships that never came.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "DOC Godley Head",
+        "Christchurch heritage trails"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Godley Head Heritage Walk route delivers a memorable journey through exceptional New Zealand scenery. Walk to WWII gun emplacements on the dramatic headland guarding Lyttelton Harbour. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-rakaia-gorge-drive",
+      "name": "Rakaia Gorge Scenic Drive",
+      "region": "canterbury",
+      "lat": -43.48,
+      "lng": 171.75,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "gorge",
+        "river",
+        "braided-river"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1.5,
+      "short": "Drive alongside the spectacular turquoise Rakaia River through its deep inland gorge.",
+      "commentary": "The Rakaia Gorge cuts through greywacke rock as the river transitions from its mountain source to the Canterbury Plains. The river is one of New Zealand's great braided rivers, stretching up to 2 km wide on the plains but compressing to a narrow torrent through the gorge. It is famous for salmon fishing, with the Rakaia being one of the best salmon rivers in New Zealand.",
+      "audio_story": "You are driving along the Rakaia Gorge, and the river below has squeezed from a two-kilometre-wide braid on the plains into a single churning channel of impossible blue. The colour comes from glacial flour — rock ground to powder by the glaciers at the river's source — and in certain light it looks like someone has poured paint into the water. The gorge walls are greywacke, the same grey basement rock that underlies most of the Southern Alps. Salmon run this river between December and March, fighting their way upstream from the sea, and anglers line the banks with a patience that borders on devotion. Pull over at the walkway and peer down into the gorge — the depth and power of the water is genuinely humbling.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Canterbury tourism",
+        "Fish & Game NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Rakaia Gorge Scenic Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive alongside the spectacular turquoise Rakaia River through its deep inland gorge. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-coastal-pacific-kaikoura",
+      "name": "Coastal Pacific Rail – Kaikoura Section",
+      "region": "canterbury",
+      "lat": -42.4,
+      "lng": 173.681,
+      "category": "journey",
+      "tags": [
+        "rail-journey",
+        "coastal",
+        "kaikoura",
+        "marine",
+        "scenic"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 2.5,
+      "short": "A rail journey squeezed between mountains and sea along the Kaikoura coast.",
+      "commentary": "The Coastal Pacific train runs between Picton and Christchurch, with the most dramatic section along the Kaikoura coast where the track is wedged between the Seaward Kaikoura Range and the Pacific Ocean. The line was severely damaged in the 2016 Kaikoura earthquake and took over a year to rebuild. Passengers regularly spot seals, dolphins, and whales from the train.",
+      "audio_story": "You are aboard the Coastal Pacific, and the Kaikoura coast is putting on a show. The railway line here is squeezed into a narrow strip between mountains that rise 2,600 metres and an ocean that drops to similar depths just offshore. This dramatic meeting of land and sea is why Kaikoura is one of the best whale-watching spots on Earth — sperm whales hunt in the deep submarine canyon just kilometres from shore. In November 2016, a magnitude 7.8 earthquake ripped this coastline apart, lifting the seabed by up to two metres and destroying sections of both road and rail. The rebuilding took years and cost over a billion dollars. As you roll along the restored track, you can still see the earthquake's scars on the hillsides above.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "KiwiRail Scenic Journeys",
+        "Kaikoura District Council"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Coastal Pacific Rail – Kaikoura Section route delivers a memorable journey through exceptional New Zealand scenery. A rail journey squeezed between mountains and sea along the Kaikoura coast. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-lake-tekapo-to-pukaki",
+      "name": "Lake Tekapo to Lake Pukaki Drive",
+      "region": "canterbury",
+      "lat": -44,
+      "lng": 170.48,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "mackenzie-country",
+        "dark-sky",
+        "turquoise-lakes",
+        "alpine"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 1,
+      "short": "Drive between two impossibly turquoise glacial lakes in the Mackenzie Country dark sky reserve.",
+      "commentary": "The 50 km drive between Lake Tekapo and Lake Pukaki on SH8 passes through the heart of the Mackenzie Country, a tussock-covered basin surrounded by mountains. Both lakes owe their vivid turquoise colour to glacial flour suspended in the water. The area is an International Dark Sky Reserve, one of only a handful in the world, making it one of the best stargazing locations on Earth.",
+      "audio_story": "You are driving through the Mackenzie Country, and the light here is unlike anywhere else in New Zealand. The basin sits high — around 700 metres — and the air is dry and clear, which is why this became one of the world's few International Dark Sky Reserves. Lake Tekapo falls behind you, its turquoise surface bright against golden tussock, and ahead Lake Pukaki appears with Aoraki/Mt Cook framed perfectly at its head. The colour of these lakes is not a trick of photography — it really is that vivid, caused by rock flour so fine it stays suspended in the water and refracts light. At night, when the stars come out, the Milky Way is so bright here it casts shadows on the ground.",
+      "suggested_voice_tone": "reflective",
+      "sources_to_check": [
+        "Mackenzie District tourism",
+        "Aoraki Mackenzie Dark Sky Reserve"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Lake Tekapo to Lake Pukaki Drive route delivers a memorable journey through exceptional New Zealand scenery. Drive between two impossibly turquoise glacial lakes in the Mackenzie Country dark sky reserve. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-geraldine-to-fairlie-sh79",
+      "name": "Geraldine to Fairlie Scenic Drive (SH79)",
+      "region": "canterbury",
+      "lat": -44.09,
+      "lng": 171.24,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "rural",
+        "foothills",
+        "state-highway"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Drive between two charming country towns as the Canterbury Plains give way to the Mackenzie Country.",
+      "commentary": "State Highway 79 covers 48 km between Geraldine and Fairlie, climbing through rolling downland from the Canterbury Plains into the Mackenzie Basin. The drive passes through Burke Pass, the narrow gateway to the Mackenzie Country, where the landscape transforms from green farmland to golden tussock. Fairlie claims to be the 'gateway to the Mackenzie' and is known for its heritage bakehouse.",
+      "audio_story": "You are driving SH79 from Geraldine to Fairlie, and somewhere along this road, Canterbury ends and the Mackenzie begins. The transformation happens at Burke Pass, a narrow gap in the Two Thumb Range that frames a complete change of world. Behind you, green Canterbury farmland rolls under a maritime sky. Ahead, the Mackenzie Country stretches gold and dry under a continental sky that is sharper, brighter, and somehow bigger. The pass is named after James Mackenzie, a Scottish shepherd convicted of stealing 1,000 sheep and driving them through this gap in 1855 — though many believe he was set up. In Fairlie, stop at the old bakehouse for a pie. This small town takes its pies seriously, and after the drive through the pass, you will have earned one.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Canterbury tourism",
+        "Mackenzie District"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.6,
+        "summary": "The Geraldine to Fairlie Scenic Drive (SH79) route delivers a memorable journey through exceptional New Zealand scenery. Drive between two charming country towns as the Canterbury Plains give way to the Mackenzie Country. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-porters-pass-to-castle-hill",
+      "name": "Porter's Pass to Castle Hill Basin Drive",
+      "region": "canterbury",
+      "lat": -43.29,
+      "lng": 171.76,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "alpine",
+        "ski-field",
+        "basin",
+        "mountain"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 1,
+      "short": "Cross Canterbury's gateway pass into the high-country basins beneath the Torlesse Range.",
+      "commentary": "Porter's Pass at 939 m is the first significant mountain crossing on SH73 heading west from Christchurch. The road descends into the Castle Hill and Craigieburn basins, expansive tussock-covered valleys surrounded by mountains. The area is home to several ski fields including Porters, Cheeseman, and Broken River, and the distinctive Castle Hill limestone outcrops.",
+      "audio_story": "You are climbing Porter's Pass, and as you crest 939 metres, the Canterbury Plains vanish behind you and a different world opens ahead. The Castle Hill Basin is a wide, wind-scoured valley of golden tussock hemmed in by the Torlesse Range and the Craigieburn Range. In winter, this area comes alive with skiers heading to club fields like Porters, Cheeseman, and Broken River — small, rope-tow operations run by volunteer clubs that are about as far from a commercial resort as skiing gets. The snow here can be superb, cold and dry, and the club field culture is uniquely New Zealand: bring your own lunch, help dig out the access road, and ski with the people who maintain the tows. Even in summer, the basin has a high-country beauty that rewards a slow drive with the windows down.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Canterbury ski fields",
+        "NZTA SH73"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Porter's Pass to Castle Hill Basin Drive route delivers a memorable journey through exceptional New Zealand scenery. Cross Canterbury's gateway pass into the high-country basins beneath the Torlesse Range. Visitors recommend allowing extra time to stop at viewpoints — reviewers consistently say the journey itself is as rewarding as the destination."
+      }
+    },
+    {
+      "id": "canterbury-mt-hutt-ski",
+      "name": "Mount Hutt Ski Area",
+      "region": "canterbury",
+      "lat": -43.4833,
+      "lng": 171.55,
+      "category": "adventure",
+      "tags": [
+        "skiing",
+        "snowboarding",
+        "winter",
+        "canterbury-plains-views",
+        "ski-field"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Canterbury's premier ski field with the longest season and epic Canterbury Plains views.",
+      "commentary": "Mount Hutt consistently opens earliest and closes latest of any New Zealand ski area, typically operating June to October. At 2,086 metres, the summit offers sweeping views across the Canterbury Plains to the Pacific Ocean. The 365 hectares of terrain cater to all abilities.",
+      "audio_story": "You have arrived at Mount Hutt, consistently voted New Zealand's best ski resort and the pride of Canterbury skiing. What makes Mount Hutt special is its combination of reliable snow, a massive 683-metre vertical drop, and views that stretch all the way from the Southern Alps to the Pacific Ocean. On a clear day from the summit at 2,086 metres, you can see the patchwork farmland of the Canterbury Plains laid out like a quilt below you. The season here is the longest in New Zealand — the south-east facing slopes and high elevation catch snow early and hold it late. Whether you're a beginner on the dedicated learning area or an expert tackling the South Face, Mount Hutt delivers. The access road is an adventure in itself — a winding 13-kilometre climb that's part of the experience.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "NZSki",
+        "Mt Hutt"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Mount Hutt Ski Area adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Canterbury's premier ski field with the longest season and epic Canterbury Plains views. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-christchurch-adventure-park",
+      "name": "Christchurch Adventure Park",
+      "region": "canterbury",
+      "lat": -43.5983,
+      "lng": 172.5928,
+      "category": "adventure",
+      "tags": [
+        "mountain-biking",
+        "zipline",
+        "adventure-park",
+        "family-friendly",
+        "chairlift"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 4,
+      "short": "Chairlift-accessed mountain biking and NZ's longest zipline, right in Christchurch.",
+      "commentary": "The Christchurch Adventure Park on the Port Hills offers chairlift-accessed mountain biking trails and a 1.1 km zipline dual ride — the longest in New Zealand. The park covers 370 hectares of regenerating native bush and exotic forest with views over Christchurch and the Southern Alps.",
+      "audio_story": "You have arrived at the Christchurch Adventure Park, a 370-hectare playground on the Port Hills just minutes from the city centre. The chairlift carries you and your bike to the top of the hill, where a network of purpose-built mountain bike trails winds down through native bush and pine forest with Christchurch and the Pacific Ocean spread out below. If you prefer to stay off a bike, the park is home to New Zealand's longest zipline — a 1.1-kilometre dual ride that lets you race a friend at speeds of up to 130 kilometres per hour. The park was rebuilt after the devastating 2017 Port Hills fires and has become a symbol of Christchurch's resilience and regeneration. The trails range from gentle flow trails to challenging black runs.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Christchurch Adventure Park"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Christchurch Adventure Park adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Chairlift-accessed mountain biking and NZ's longest zipline, right in Christchurch. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-waimakariri-jet-boat",
+      "name": "Waimakariri River Jet Boating",
+      "region": "canterbury",
+      "lat": -43.3833,
+      "lng": 171.8333,
+      "category": "adventure",
+      "tags": [
+        "jet-boat",
+        "river",
+        "braided-river",
+        "canterbury",
+        "scenic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Jet boat through the braided Waimakariri River gorge in the Canterbury foothills.",
+      "commentary": "Jet boating on the Waimakariri River explores the dramatic gorge and braided river system flowing from Arthur's Pass to the Canterbury Plains. The river's constantly shifting channels require expert navigation. The surrounding landscape features mountain beech forest and towering bluffs.",
+      "audio_story": "You have arrived at the Waimakariri River, Canterbury's great braided river that flows from the glaciers of the Southern Alps all the way to the Pacific. Your jet boat is about to hurtle through a landscape of constantly shifting channels, gravel islands, and towering canyon walls. The Waimakariri's braided system is one of the most dynamic river environments on earth — what was a channel yesterday might be a gravel bar today. Your driver reads the water with practised eyes, threading between channels at thrilling speed. The gorge section is particularly spectacular, where bluffs of ancient greywacke rock tower above the turquoise water. This is the same river that Canterbury's early settlers had to ford on their journeys west — today you cross it at 80 kilometres per hour.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Alpine Jet Thrills",
+        "Waimakariri River"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Waimakariri River Jet Boating adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat through the braided Waimakariri River gorge in the Canterbury foothills. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-hanmer-springs-bungy",
+      "name": "Hanmer Springs Bungy Jump",
+      "region": "canterbury",
+      "lat": -42.5167,
+      "lng": 172.8167,
+      "category": "adventure",
+      "tags": [
+        "bungy",
+        "hanmer-springs",
+        "adrenaline",
+        "river-gorge"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Bungy jump 35 metres into the Waiau River gorge at Hanmer Springs.",
+      "commentary": "The Hanmer Springs Bungy is a 35-metre jump over the Waiau River gorge, surrounded by native bush and mountain scenery. It's operated near the Hanmer Springs thermal resort town. The relatively moderate height makes it popular as a first bungy experience.",
+      "audio_story": "You have arrived at the Hanmer Springs Bungy, set in the beautiful Waiau River gorge surrounded by native bush and mountain scenery. At 35 metres, this jump is less extreme than the big Queenstown bungy sites, but don't let the height fool you — standing on the platform looking down at the rocky gorge and river below is still a genuine test of courage. The bridge spans the narrowest point of the gorge, and the natural amphitheatre means your screams echo beautifully off the canyon walls. Many people choose Hanmer for their first bungy because the setting is so beautiful and the height is manageable. Afterwards, the Hanmer Springs thermal pools are just minutes away — the perfect reward for your bravery.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Thrillseekers Hanmer",
+        "Hanmer Springs"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.8,
+        "summary": "The Hanmer Springs Bungy Jump adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Bungy jump 35 metres into the Waiau River gorge at Hanmer Springs. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-hanmer-jet-boat",
+      "name": "Waiau River Jet Boat Hanmer",
+      "region": "canterbury",
+      "lat": -42.52,
+      "lng": 172.82,
+      "category": "adventure",
+      "tags": [
+        "jet-boat",
+        "hanmer-springs",
+        "river",
+        "gorge",
+        "scenic"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Jet boat through the Waiau River gorge near Hanmer Springs.",
+      "commentary": "Jet boating on the Waiau River near Hanmer Springs takes you through a scenic canyon of native bush and limestone bluffs. The 30-minute ride includes 360-degree spins and high-speed runs through shallow braided sections. It's a popular add-on to the Hanmer Springs thermal resort visit.",
+      "audio_story": "You have arrived at the Waiau River gorge, where a jet boat is about to show you why New Zealand invented this incredible machine. Sir William Hamilton developed the jet boat right here in Canterbury to navigate the shallow braided rivers of the high country, and the Waiau is a perfect showcase for the technology. Your boat will skim across water just centimetres deep, spin through 360-degree turns, and race through narrow gaps in the limestone gorge walls. The native bush lining the banks is lush with ferns and beech trees, and the surrounding mountains frame it all perfectly. The whole experience takes about 30 minutes, but it packs in enough thrills to fuel your stories for years. And the Hanmer Springs thermal pools are just up the hill when you're done.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Thrillseekers Hanmer",
+        "Hanmer Springs"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Waiau River Jet Boat Hanmer adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Jet boat through the Waiau River gorge near Hanmer Springs. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-surf-sumner",
+      "name": "Surfing at Sumner & New Brighton",
+      "region": "canterbury",
+      "lat": -43.5667,
+      "lng": 172.7667,
+      "category": "adventure",
+      "tags": [
+        "surfing",
+        "beach",
+        "lessons",
+        "christchurch",
+        "coastal"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Catch waves at Christchurch's best surf beaches — Sumner and New Brighton.",
+      "commentary": "Sumner and New Brighton are Christchurch's premier surf beaches, offering consistent beach breaks suitable for beginners through to experienced surfers. Surf schools operate year-round with board and wetsuit hire. The best swells come from the south and east, particularly in autumn and winter.",
+      "audio_story": "You have arrived at one of Canterbury's best surf spots. The beaches of Sumner and New Brighton pick up swells from the Southern Ocean and Pacific, producing consistent waves that break over sandy bottoms — perfect for learning and fun for experienced surfers alike. The water is cool year-round, so a good wetsuit is essential, but that's part of the experience. Sumner Beach, tucked at the base of the Port Hills, offers a more sheltered break, while New Brighton's long, exposed beach catches bigger swells. Surf schools here will have you standing on your first wave within an hour — the sandy seabed is forgiving and the local instructors know every sandbar shift. After your session, Sumner village has excellent cafes for warming up with a flat white.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Sumner Surf School",
+        "New Brighton Surf"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Surfing at Sumner & New Brighton adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Catch waves at Christchurch's best surf beaches — Sumner and New Brighton. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-arthurs-pass-tramp",
+      "name": "Arthur's Pass Alpine Adventures",
+      "region": "canterbury",
+      "lat": -42.94,
+      "lng": 171.56,
+      "category": "adventure",
+      "tags": [
+        "tramping",
+        "alpine",
+        "arthurs-pass",
+        "wilderness",
+        "hiking"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 5,
+      "short": "Explore dramatic alpine terrain and waterfalls in Arthur's Pass National Park.",
+      "commentary": "Arthur's Pass National Park straddles the Southern Alps with walks ranging from the easy Devils Punchbowl Falls track to challenging alpine routes like Avalanche Peak. The park is home to kea, the world's only alpine parrot. Ice climbing is available in winter on frozen waterfalls.",
+      "audio_story": "You have arrived at Arthur's Pass, the highest settlement in the Southern Alps and the gateway to some of Canterbury's most dramatic alpine scenery. The village sits at 739 metres, surrounded by peaks that soar above 2,000 metres, and the range of adventures here is extraordinary. Walk the short track to Devils Punchbowl Falls, where water plunges 131 metres down a cliff face, or tackle the legendary Avalanche Peak route for a challenging climb to the summit with panoramic views in every direction. In winter, the frozen waterfalls attract ice climbers from around the world. Keep your ears open for the unmistakable call of the kea — the world's only alpine parrot — cheeky, intelligent birds that will investigate anything left unattended. Arthur's Pass is where the Canterbury Plains meet the wild West Coast.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "DOC Arthur's Pass",
+        "Arthur's Pass Alpine Recreation"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Arthur's Pass Alpine Adventures adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Explore dramatic alpine terrain and waterfalls in Arthur's Pass National Park. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-kaikoura-whale-watch",
+      "name": "Whale Watch Kaikoura",
+      "region": "canterbury",
+      "lat": -42.4,
+      "lng": 173.6833,
+      "category": "adventure",
+      "tags": [
+        "whale-watching",
+        "wildlife",
+        "marine",
+        "kaikoura",
+        "ocean"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3.5,
+      "short": "See giant sperm whales year-round in Kaikoura's deep coastal waters.",
+      "commentary": "Whale Watch Kaikoura is New Zealand's only marine-based whale watching operation, offering year-round encounters with giant sperm whales. The Kaikoura Canyon, a 1,600-metre deep underwater trench close to shore, creates a nutrient-rich environment that attracts whales, dolphins, and seals. The company is Maori-owned and operated.",
+      "audio_story": "You have arrived at Kaikoura, one of the few places on earth where you can reliably see giant sperm whales year-round. Just offshore, the seafloor drops away into the Kaikoura Canyon — a massive underwater trench over 1,600 metres deep that comes remarkably close to land. This creates a nutrient superhighway that draws sperm whales, dusky dolphins, fur seals, and albatross in extraordinary numbers. Your boat will use hydrophones to locate the whales by their sonar clicks, then position you for the magical moment when a giant surfaces to breathe — these animals can be 18 metres long and weigh 50 tonnes. Whale Watch Kaikoura is Maori-owned and has operated since 1987, transforming what was a struggling fishing town into one of New Zealand's premier eco-tourism destinations.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Whale Watch Kaikoura",
+        "DOC Marine"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Whale Watch Kaikoura adventure draws rave reviews for the combination of adrenaline and spectacular scenery. See giant sperm whales year-round in Kaikoura's deep coastal waters. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-kaikoura-dolphin-swim",
+      "name": "Dolphin Encounter Kaikoura",
+      "region": "canterbury",
+      "lat": -42.4028,
+      "lng": 173.6806,
+      "category": "adventure",
+      "tags": [
+        "dolphins",
+        "swimming",
+        "wildlife",
+        "kaikoura",
+        "marine"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "Swim with pods of wild dusky dolphins in Kaikoura's coastal waters.",
+      "commentary": "Dolphin Encounter offers swimming and viewing experiences with pods of wild dusky dolphins off Kaikoura. Pods can number in the hundreds, and the dolphins are famously playful and interactive. Swimmers are provided with wetsuits and snorkels and encouraged to make sounds to attract the dolphins' curiosity.",
+      "audio_story": "You have arrived at one of the world's best places to swim with wild dolphins. The waters off Kaikoura are home to large pods of dusky dolphins — acrobatic, curious, and wonderfully playful. You'll suit up in a wetsuit, slip into the water, and within moments you could be surrounded by dolphins spinning, leaping, and making eye contact just metres away. The trick is to make noise — sing, hum, squeal — the dolphins are drawn to interesting sounds and will come in close to investigate. Pods here can number in the hundreds, and the experience of being in the water as dolphins barrel-roll around you is genuinely life-changing. The dusky dolphin is one of the most acrobatic of all dolphin species, and Kaikoura's population is one of the most interactive anywhere on earth.",
+      "suggested_voice_tone": "playful",
+      "sources_to_check": [
+        "Dolphin Encounter Kaikoura",
+        "DOC Marine Mammals"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.9,
+        "summary": "The Dolphin Encounter Kaikoura adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Swim with pods of wild dusky dolphins in Kaikoura's coastal waters. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-akaroa-harbour-sailing",
+      "name": "Akaroa Harbour Sailing",
+      "region": "canterbury",
+      "lat": -43.8033,
+      "lng": 172.9672,
+      "category": "adventure",
+      "tags": [
+        "sailing",
+        "harbour",
+        "akaroa",
+        "scenic",
+        "dolphins"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Sail the volcanic Akaroa Harbour and spot the world's smallest dolphin.",
+      "commentary": "Sailing on Akaroa Harbour explores the flooded crater of an ancient volcano on Banks Peninsula. The harbour is home to Hector's dolphins, the world's smallest and rarest marine dolphin. The French colonial heritage of Akaroa village adds cultural depth to the adventure.",
+      "audio_story": "You have arrived at Akaroa Harbour, a stunning natural harbour formed inside the crater of an ancient volcano on Banks Peninsula. You're about to sail across waters that are home to one of the world's rarest marine creatures — Hector's dolphin, the smallest dolphin species on earth, found only in New Zealand. These distinctive dolphins with their rounded dorsal fins often play around boats in the harbour. As you sail, the dramatic volcanic cliffs of the old crater rim rise around you, and your skipper will share the fascinating story of Akaroa's French colonial history — this little town was nearly the capital of a French New Zealand. The sailing conditions in the harbour are sheltered and reliable, making this a perfect experience for sailors of all levels.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Akaroa Dolphins",
+        "Black Cat Cruises",
+        "DOC Banks Peninsula"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.4,
+        "summary": "The Akaroa Harbour Sailing adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Sail the volcanic Akaroa Harbour and spot the world's smallest dolphin. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-castle-hill-bouldering",
+      "name": "Castle Hill / Kura Tawhiti Bouldering",
+      "region": "canterbury",
+      "lat": -43.2167,
+      "lng": 171.7167,
+      "category": "adventure",
+      "tags": [
+        "rock-climbing",
+        "bouldering",
+        "free",
+        "limestone",
+        "scenic"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Free bouldering among surreal limestone formations the Dalai Lama called a spiritual centre.",
+      "commentary": "Castle Hill (Kura Tawhiti) features hundreds of limestone boulders scattered across an alpine basin, offering world-class bouldering. The site was described by the Dalai Lama as one of the spiritual centres of the universe. Over 1,000 boulder problems have been documented across all difficulty grades. Access is free.",
+      "audio_story": "You have arrived at Kura Tawhiti, also known as Castle Hill, one of the most extraordinary bouldering destinations on the planet. Hundreds of massive limestone formations rise from the tussock grass like the ruins of an ancient castle, sculpted by millions of years of wind and rain into shapes that seem almost designed for climbing. The Dalai Lama visited in 2002 and declared this a spiritual centre of the universe, and standing among these ancient stones, you might agree. Over 1,000 boulder problems have been documented here, ranging from beginner-friendly slabs to desperately hard overhangs. The rock is grippy limestone, and the setting — a wide alpine basin ringed by mountains — is simply magical. Bring a crash pad if you have one, but even just wandering among the boulders is a memorable experience. Access is completely free.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "DOC Castle Hill",
+        "Climb NZ"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Castle Hill / Kura Tawhiti Bouldering adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Free bouldering among surreal limestone formations the Dalai Lama called a spiritual centre. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-lake-tekapo-stargazing",
+      "name": "Dark Sky Stargazing - Mt John Observatory",
+      "region": "canterbury",
+      "lat": -43.9856,
+      "lng": 170.465,
+      "category": "adventure",
+      "tags": [
+        "stargazing",
+        "dark-sky",
+        "observatory",
+        "night",
+        "astro-tourism"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2,
+      "short": "Stargaze at the world's largest Dark Sky Reserve from Mt John Observatory.",
+      "commentary": "The Aoraki Mackenzie International Dark Sky Reserve is the world's largest, and Mt John Observatory near Lake Tekapo offers guided stargazing tours using powerful telescopes. The reserve's minimal light pollution reveals the Milky Way, Magellanic Clouds, and thousands of stars invisible from cities.",
+      "audio_story": "You have arrived at Mt John, home to New Zealand's premier astronomical observatory and the gateway to the largest Dark Sky Reserve in the world. The Aoraki Mackenzie region has some of the clearest, darkest skies on earth, and tonight you're going to see stars like you've never seen them before. Through powerful telescopes, your astronomers will show you the craters of the moon in breathtaking detail, the rings of Saturn, distant galaxies, and the glowing clouds of stellar nurseries where new stars are being born. But it's what you see with your naked eyes that will truly astound you — the Milky Way blazing across the sky so brightly it casts shadows, the Magellanic Clouds glowing like smudges of light, and shooting stars streaking through the darkness. The reserve's strict lighting controls mean virtually no artificial light interferes with the view. Looking up from Mt John on a clear night is as close to a spiritual experience as astronomy gets.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Dark Sky Project",
+        "Mt John Observatory",
+        "Earth & Sky"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.3,
+        "summary": "The Dark Sky Stargazing - Mt John Observatory adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Stargaze at the world's largest Dark Sky Reserve from Mt John Observatory. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-glacier-kayak-tasman",
+      "name": "Tasman Glacier Lake Kayaking",
+      "region": "canterbury",
+      "lat": -43.59,
+      "lng": 170.2233,
+      "category": "adventure",
+      "tags": [
+        "kayaking",
+        "glacier",
+        "icebergs",
+        "mt-cook",
+        "alpine"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 3,
+      "short": "Kayak among icebergs on the terminal lake of New Zealand's largest glacier.",
+      "commentary": "Kayaking on Tasman Glacier Lake puts you among icebergs calved from the terminal face of the Tasman Glacier — New Zealand's longest at 23.5 km. The icebergs can be up to 200 years old, glowing shades of blue and white. Guided tours operate from Aoraki/Mount Cook National Park.",
+      "audio_story": "You have arrived at one of the most extraordinary kayaking experiences in New Zealand. The terminal lake of the Tasman Glacier is filled with icebergs — chunks of ancient ice that have calved from the face of New Zealand's longest glacier. Your kayak will weave between these floating sculptures, some as large as houses, glowing in shades of brilliant blue and pristine white. The ice you're paddling past is up to 200 years old, compressed and shaped by its journey down the 23.5-kilometre glacier from the heights of the Southern Alps. Aoraki/Mount Cook, New Zealand's tallest mountain at 3,724 metres, towers above the scene. The lake itself only formed in the last few decades as the glacier retreated, making this a landscape that is quite literally brand new. Touch an iceberg as you paddle past — you're holding frozen history in your hand.",
+      "suggested_voice_tone": "warm",
+      "sources_to_check": [
+        "Glacier Explorers",
+        "DOC Aoraki Mount Cook"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.5,
+        "summary": "The Tasman Glacier Lake Kayaking adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Kayak among icebergs on the terminal lake of New Zealand's largest glacier. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    },
+    {
+      "id": "canterbury-heli-ski-mt-cook",
+      "name": "Heli-Skiing Mount Cook Region",
+      "region": "canterbury",
+      "lat": -43.7333,
+      "lng": 170.1,
+      "category": "adventure",
+      "tags": [
+        "heli-skiing",
+        "skiing",
+        "extreme",
+        "backcountry",
+        "powder"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 6,
+      "short": "Heli-ski untouched powder runs in the shadow of Aoraki/Mount Cook.",
+      "commentary": "Heli-skiing in the Aoraki/Mount Cook and Mackenzie region accesses terrain that's impossible to reach any other way. Runs of 1,500+ vertical metres on untouched powder descend through glacial terrain with views of New Zealand's highest peak. Experienced intermediate to expert skiers only.",
+      "audio_story": "You have arrived at one of the most exclusive skiing experiences on earth. Heli-skiing in the Mount Cook region puts you on runs that no lift system could ever reach — vast, untouched powder fields descending through glacial terrain in the shadow of Aoraki/Mount Cook, New Zealand's tallest peak at 3,724 metres. Your helicopter will land you on a pristine snowfield high in the Southern Alps, and from there, you ski down — 1,500 vertical metres or more of untracked powder with nobody in sight. The terrain is extraordinary — wide open glacial bowls, spine lines between ridges, and couloirs that funnel you between rock walls. Your guides are among the most experienced in the world, reading the snow and terrain to find the safest and most exciting lines. This is skiing in its purest form — no lifts, no crowds, no grooming — just you, the mountain, and metre after metre of perfect snow.",
+      "suggested_voice_tone": "adventurous",
+      "sources_to_check": [
+        "Methven Heliski",
+        "Alpine Guides Aoraki"
+      ],
+      "content_status": "draft",
+      "reviews": {
+        "rating": 4.7,
+        "summary": "The Heli-Skiing Mount Cook Region adventure draws rave reviews for the combination of adrenaline and spectacular scenery. Heli-ski untouched powder runs in the shadow of Aoraki/Mount Cook. Reviewers praise the professionalism of the operators and say the experience is worth every dollar for the memories it creates."
+      }
+    }
+  ]
+}
