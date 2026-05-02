@@ -757,6 +757,36 @@
   }
   .echo-popup-open-btn:hover { background: rgba(224,123,60,0.18); }
 
+  /* ============ JOURNEY START BAR ============ */
+  .journey-start-bar {
+    background: rgba(21,136,138,0.07); border: 1.5px solid rgba(21,136,138,0.22);
+    border-radius: 10px; padding: 9px 11px; margin-bottom: 10px; position: relative;
+  }
+  .journey-start-label {
+    font-size: 10px; font-weight: 700; color: var(--primary);
+    letter-spacing: 0.6px; margin-bottom: 6px;
+  }
+  .journey-start-input-row { display: flex; align-items: center; gap: 6px; }
+  .journey-start-input {
+    flex: 1; border: 1.5px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; font-size: 12px; background: var(--surface); color: var(--text);
+    min-width: 0;
+  }
+  .journey-start-input:focus { outline: none; border-color: var(--primary); }
+  .journey-start-clear {
+    background: none; border: none; color: var(--muted); font-size: 15px;
+    cursor: pointer; padding: 4px; flex-shrink: 0; line-height: 1;
+  }
+  .journey-start-set-label {
+    font-size: 11px; font-weight: 600; color: var(--primary);
+    margin-top: 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  /* highlight flash when a pin is clicked in Plan view */
+  .plan-stop-card.pin-highlight {
+    outline: 2px solid var(--primary); background: rgba(21,136,138,0.07);
+    transition: all 0.3s;
+  }
+
   /* ============ DECISION OVERLAY ============ */
   .decision-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -1146,6 +1176,16 @@
       <div id="accomList"></div>
     </div>
     <div class="view" id="view-plan">
+      <div class="journey-start-bar">
+        <div class="journey-start-label">🟢 STARTING POINT</div>
+        <div class="journey-start-input-row">
+          <input class="journey-start-input" id="journeyStartInput"
+            placeholder="Type a city or address in NZ…" autocomplete="off" />
+          <button class="journey-start-clear" id="journeyStartClear"
+            onclick="clearJourneyStart()" style="display:none" title="Clear start point">✕</button>
+        </div>
+        <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
+      </div>
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
         <span class="toggle-label">Show nearby attractions on map</span>
@@ -1733,6 +1773,7 @@ const state = {
   expandedStops: new Set(),
   itiStatsOpen: false,
   templatesOpen: false,
+  journeyStart: null,
 };
 
 // ============ GOOGLE MAPS GLOBALS ============
@@ -1863,11 +1904,20 @@ function openTripDirections() {
 function openInAppTripRoute() {
   const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
   if (!dayStops.length) { showToast('No stops to route'); return; }
-  if (dayStops.length === 1) { showInAppRoute(dayStops[0]); return; }
   if (_directionsRenderer) { _directionsRenderer.setMap(null); _directionsRenderer = null; }
-  const origin = { lat: dayStops[0].lat, lng: dayStops[0].lng };
+
+  const hasCustomStart = !!state.journeyStart;
+  const origin = hasCustomStart
+    ? { lat: state.journeyStart.lat, lng: state.journeyStart.lng }
+    : { lat: dayStops[0].lat, lng: dayStops[0].lng };
   const destination = { lat: dayStops[dayStops.length - 1].lat, lng: dayStops[dayStops.length - 1].lng };
-  const waypoints = dayStops.slice(1, -1).map(a => ({ location: { lat: a.lat, lng: a.lng }, stopover: true }));
+  // If custom start: all stops are waypoints; else: middle stops only
+  const waypointStops = hasCustomStart ? dayStops : dayStops.slice(1, -1);
+  const waypoints = waypointStops.map(a => ({ location: { lat: a.lat, lng: a.lng }, stopover: true }));
+
+  // Single stop with no custom start — just show a simple route from current pos
+  if (!hasCustomStart && dayStops.length === 1) { showInAppRoute(dayStops[0]); return; }
+
   const directionsService = new google.maps.DirectionsService();
   _directionsRenderer = new google.maps.DirectionsRenderer({
     map,
@@ -1882,7 +1932,8 @@ function openInAppTripRoute() {
         const totalTime = result.routes[0].legs.reduce((s, l) => s + l.duration.value, 0);
         const mins = Math.round(totalTime / 60);
         const distKm = Math.round(totalDist / 1000);
-        showToast(`📍 ${dayStops.length}-stop route · ${distKm} km · ${mins < 60 ? mins + ' min' : Math.floor(mins/60) + 'h ' + (mins%60) + 'm'}`);
+        const startLabel = hasCustomStart ? state.journeyStart.label : dayStops[0].name;
+        showToast(`🟢 From ${startLabel} · ${dayStops.length} stop${dayStops.length!==1?'s':''} · ${distKm} km · ${mins < 60 ? mins + ' min' : Math.floor(mins/60) + 'h ' + (mins%60) + 'm'}`);
         if (state.view !== 'plan') {
           document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
           document.querySelector('.tab[data-view="plan"]').classList.add('active');
@@ -2924,6 +2975,72 @@ function createNumberedIcon(number, color) {
   };
 }
 
+function createStartIcon() {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="36" height="46">
+    <circle cx="18" cy="18" r="16" fill="#2E7D32" stroke="white" stroke-width="2.5"/>
+    <polygon points="18,44 12,26 24,26" fill="#2E7D32" />
+    <text x="18" y="23" text-anchor="middle" font-size="12" font-weight="800"
+      fill="white" font-family="system-ui, sans-serif">S</text>
+  </svg>`;
+  return {
+    url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+    scaledSize: new google.maps.Size(36, 46),
+    anchor: new google.maps.Point(18, 46),
+  };
+}
+
+// ============ JOURNEY START LOCATION ============
+let _journeyStartAC = null;
+
+function initJourneyStartAutocomplete() {
+  const input = document.getElementById('journeyStartInput');
+  if (!input) return;
+  // Restore UI state if journeyStart is already set
+  if (state.journeyStart) {
+    input.value = state.journeyStart.label;
+    const clearBtn = document.getElementById('journeyStartClear');
+    const setLabel = document.getElementById('journeyStartSetLabel');
+    if (clearBtn) clearBtn.style.display = 'inline';
+    if (setLabel) { setLabel.textContent = '✓ ' + state.journeyStart.label; setLabel.style.display = 'block'; }
+  }
+  if (_journeyStartAC) return; // already initialised
+  google.maps.importLibrary('places').then(() => {
+    _journeyStartAC = new google.maps.places.Autocomplete(input, {
+      componentRestrictions: { country: 'nz' },
+      fields: ['geometry', 'name', 'formatted_address'],
+    });
+    _journeyStartAC.addListener('place_changed', () => {
+      const place = _journeyStartAC.getPlace();
+      if (!place.geometry) return;
+      state.journeyStart = {
+        label: place.name || place.formatted_address,
+        lat: place.geometry.location.lat(),
+        lng: place.geometry.location.lng(),
+      };
+      input.value = state.journeyStart.label;
+      const clearBtn = document.getElementById('journeyStartClear');
+      const setLabel = document.getElementById('journeyStartSetLabel');
+      if (clearBtn) clearBtn.style.display = 'inline';
+      if (setLabel) { setLabel.textContent = '✓ ' + state.journeyStart.label; setLabel.style.display = 'block'; }
+      renderPlanMap();
+      showToast(`🟢 Starting from: ${state.journeyStart.label}`);
+    });
+  });
+}
+
+function clearJourneyStart() {
+  state.journeyStart = null;
+  _journeyStartAC = null;
+  const input = document.getElementById('journeyStartInput');
+  const clearBtn = document.getElementById('journeyStartClear');
+  const setLabel = document.getElementById('journeyStartSetLabel');
+  if (input) input.value = '';
+  if (clearBtn) clearBtn.style.display = 'none';
+  if (setLabel) setLabel.style.display = 'none';
+  renderPlanMap();
+  showToast('Starting point cleared');
+}
+
 function createDimmedIcon(color) {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
     <circle cx="6" cy="6" r="5" fill="${color}" fill-opacity="0.3" stroke="white" stroke-width="1" stroke-opacity="0.6"/>
@@ -2964,6 +3081,19 @@ function renderPlanMap() {
     });
   }
 
+  // Draw start location pin if set
+  if (state.journeyStart) {
+    const startMarker = new google.maps.Marker({
+      position: { lat: state.journeyStart.lat, lng: state.journeyStart.lng },
+      map: map,
+      icon: createStartIcon(),
+      title: 'Start: ' + state.journeyStart.label,
+      zIndex: 500,
+    });
+    startMarker.addListener('click', () => showToast('🟢 Start: ' + state.journeyStart.label));
+    planNumberMarkers.push(startMarker);
+  }
+
   // Draw itinerary stops as numbered pins
   state.itinerary.forEach((a, i) => {
     const color = catColor(a.category);
@@ -2975,10 +3105,32 @@ function renderPlanMap() {
       zIndex: 100 + i,
     });
     marker._poiId = a.id;
-    marker.addListener('click', () => openPoiInfoWindow(a, marker));
+    marker.addListener('click', () => {
+      openPoiInfoWindow(a, marker);
+      // Scroll + flash the matching stop card in the Plan sidebar
+      if (state.view === 'plan') {
+        setTimeout(() => {
+          const card = document.querySelector(`.plan-stop-card[data-id="${a.id}"]`);
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            card.classList.add('pin-highlight');
+            setTimeout(() => card.classList.remove('pin-highlight'), 1400);
+          }
+        }, 80);
+      }
+    });
     poiMarkers.push(marker);
     planNumberMarkers.push(marker);
   });
+
+  // Extend bounds to include start pin
+  if (state.journeyStart && state.itinerary.length > 0) {
+    const bounds = new google.maps.LatLngBounds();
+    bounds.extend({ lat: state.journeyStart.lat, lng: state.journeyStart.lng });
+    state.itinerary.forEach(a => bounds.extend({ lat: a.lat, lng: a.lng }));
+    map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
+    return; // skip the regular bounds fit below
+  }
 
   // Draw route polyline
   if (state.itinerary.length >= 2) {
@@ -3371,6 +3523,7 @@ document.querySelectorAll('.tab').forEach(t => {
       renderPlanSidebar();
       renderPlanMap();
       setLegendVisible(false);
+      setTimeout(initJourneyStartAutocomplete, 100);
     } else if (v === 'compare') {
       state.accomLayerOn = false;
       renderAccommodations();

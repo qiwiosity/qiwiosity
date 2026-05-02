@@ -34,17 +34,16 @@
 
 ## 🔴 HIGH PRIORITY / CRITICAL
 
-### 1. Map Integration — Type-In Start Location
-**What's still needed:**
-- Type-in "starting location" when geolocation is denied
-- Store journey start/end point (e.g. arrive Auckland, depart Christchurch)
-- Round-trip mode
-- Navigate function on itinerary map uses stored start/end point
+### ✅ 1. Map Integration — Type-In Start Location
+- "🟢 STARTING POINT" input at top of Plan sidebar with Google Places Autocomplete (NZ only)
+- Stores `state.journeyStart { label, lat, lng }`; persists across tab switches
+- Green "S" pin appears on the plan map at the chosen start location
+- `openInAppTripRoute()` uses custom start as origin; route toast shows "From [city] · N stops · X km · Y min"
+- ✕ clear button removes the start and resets the map
 
-### 2. Itinerary Map — Numbered Pin Click
-**What's needed:**
-- Click a numbered stop pin on the plan map → show that POI details in the sidebar
-- Dragging a numbered pin on the map to reorder (complex — lower priority)
+### ✅ 2. Itinerary Map — Numbered Pin Click → Sidebar Highlight
+- Click any numbered stop pin → opens POI info popup AND scrolls the matching stop card into view in the sidebar
+- Card flashes with a teal outline highlight for 1.4 seconds so the user can see which stop was tapped
 
 ---
 
