@@ -384,6 +384,24 @@
   .plan-empty .plan-empty-icon { font-size: 36px; margin-bottom: 8px; opacity: 0.4; }
   .plan-empty p { font-size: 13px; line-height: 1.5; margin: 0; }
 
+  /* ============ ACCOMMODATION LIST ============ */
+  .accom-card {
+    display: flex; gap: 10px; align-items: flex-start;
+    background: white; border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px 12px; margin-bottom: 6px;
+    cursor: pointer; transition: border-color 0.15s;
+  }
+  .accom-card:hover { border-color: var(--primary); }
+  .accom-card-left { flex: 1; min-width: 0; }
+  .accom-card-name { font-size: 13px; font-weight: 600; margin: 0 0 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .accom-card-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 3px; }
+  .accom-type-chip { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 99px; color: white; }
+  .accom-price { font-size: 12px; font-weight: 700; color: var(--primary-dark); }
+  .accom-rating { font-size: 11px; color: #E07B3C; font-weight: 600; }
+  .accom-short { font-size: 11px; color: var(--muted); line-height: 1.4; margin: 0;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  #accomList { overflow-y: auto; max-height: calc(100vh - 260px); }
+
   /* ============ COMPARE ============ */
   .compare-badge {
     display: inline-flex; align-items: center; justify-content: center;
@@ -530,6 +548,7 @@
       <div id="accomTypeChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;"></div>
       <div id="accomRegionChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;"></div>
       <p class="accom-count" id="accomCount" style="font-size:12px;color:var(--muted);margin:8px 0 4px;"></p>
+      <div id="accomList"></div>
     </div>
     <div class="view" id="view-plan">
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
@@ -1289,9 +1308,54 @@ function renderAccomRegionChips() {
 
 function renderAccommodationList() {
   const filtered = accomFilteredList();
-  // Update count
+
   const countEl = document.getElementById('accomCount');
   if (countEl) countEl.textContent = `${filtered.length} of ${ACCOMMODATIONS.length} places`;
+
+  const listEl = document.getElementById('accomList');
+  if (!listEl) return;
+
+  if (filtered.length === 0) {
+    listEl.innerHTML = `<div style="text-align:center;padding:30px 16px;color:var(--muted);">
+      <div style="font-size:30px;opacity:0.3;margin-bottom:8px;">🛏</div>
+      <p style="font-size:13px;">No accommodations match your filters.</p>
+    </div>`;
+    return;
+  }
+
+  listEl.innerHTML = filtered.map(a => {
+    const color = accomTypeColor(a.type);
+    const label = accomTypeLabel(a.type);
+    const region = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
+    const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
+    const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
+    return `<div class="accom-card" onclick="accomCardClick('${a.id}')">
+      <div class="accom-card-left">
+        <div class="accom-card-name">${a.name}</div>
+        <div class="accom-card-meta">
+          <span class="accom-type-chip" style="background:${color};">${label}</span>
+          ${price ? `<span class="accom-price">${price}</span>` : ''}
+          ${rating ? `<span class="accom-rating">${rating}</span>` : ''}
+        </div>
+        ${region ? `<div style="font-size:10px;color:var(--muted);margin-bottom:3px;">📍 ${region}</div>` : ''}
+        <p class="accom-short">${a.short || ''}</p>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function accomCardClick(id) {
+  const a = ACCOMMODATIONS.find(x => x.id === id);
+  if (!a || !map) return;
+  map.panTo({ lat: a.lat, lng: a.lng });
+  map.setZoom(14);
+  // Find and click the marker to open the info window
+  const marker = accomMarkers.find(m => m._accomId === id);
+  if (marker) {
+    google.maps.event.trigger(marker, 'click');
+  } else {
+    openAccomInfoWindow(a, null);
+  }
 }
 
 // ============ GOOGLE MAPS: CREATE SVG MARKER ICON ============
@@ -1391,25 +1455,37 @@ function openAccomInfoWindow(a, marker) {
   const color = accomTypeColor(a.type);
   const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region;
   const accomImgUrl = getPoiImageUrl(a);
+  const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
+  const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
   const content = `
     <div class="popup-inner">
       <div class="popup-hero-wrap">
         <img class="popup-hero" src="${accomImgUrl}" alt="${a.name}"
              onerror="this.style.display='none'" loading="lazy" />
-        <span class="cat-chip" style="background:${color}99;">🛏 ${accomTypeLabel(a.type)}</span>
-        <span class="credit">&copy; Wikimedia Commons</span>
+        <span class="credit">&copy; Wikimedia</span>
+        <div class="popup-hero-overlay">
+          <h3>${a.name}</h3>
+          <div class="hero-meta">
+            <span class="cat-chip" style="background:${color}cc;">🛏 ${accomTypeLabel(a.type)}</span>
+            ${rating ? `<span class="hero-rating">${rating}</span>` : ''}
+            ${price ? `<span class="hero-duration" style="font-weight:700;">${price}</span>` : ''}
+          </div>
+        </div>
       </div>
-      <h3>${a.name}</h3>
-      <div class="pop-meta">
-        <span style="color:${color};font-weight:600;">★ ${a.rating}</span>
-        <span class="price">NZ$${a.price_nzd_per_night}/night</span>
-        <span style="color:var(--muted);font-size:11px;">${rName}</span>
+      <p style="margin:0;padding:10px 14px 8px;font-size:13px;line-height:1.5;color:var(--text);">${a.short || ''}</p>
+      <div style="padding:0 14px 10px;font-size:11px;color:var(--muted);">📍 ${rName}</div>
+      <div class="pop-actions">
+        <button onclick="showInAppRoute({lat:${a.lat},lng:${a.lng},name:'${a.name.replace(/'/g,"\\'")}'})" class="btn" style="grid-column:1/-1;">🧭 Get Directions</button>
       </div>
-      <p>${a.short || ''}</p>
     </div>
   `;
   infoWindow.setContent(content);
-  infoWindow.open(map, marker);
+  if (marker) {
+    infoWindow.open(map, marker);
+  } else {
+    infoWindow.setPosition({ lat: a.lat, lng: a.lng });
+    infoWindow.open(map);
+  }
 }
 
 // ============ RENDER ATTRACTIONS (Google Maps markers) ============
@@ -1466,6 +1542,7 @@ function renderAccommodations() {
       title: a.name,
       zIndex: 50,
     });
+    marker._accomId = a.id;
 
     marker.addListener('click', () => {
       openAccomInfoWindow(a, marker);
@@ -2012,6 +2089,7 @@ document.querySelectorAll('.tab').forEach(t => {
       renderAccommodations();
       renderAccomTypeChips();
       renderAccomRegionChips();
+      renderAccommodationList();
       updateLegendContent();
       setLegendVisible(true);
     } else if (v === 'plan') {
