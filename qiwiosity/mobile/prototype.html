@@ -90,14 +90,15 @@
   header .tab.active {
     background: rgba(255,255,255,0.16); color: white;
   }
-  .header-actions { display: flex; gap: 4px; margin-left: 8px; }
+  .header-actions { display: flex; gap: 2px; margin-left: 8px; }
   .header-btn {
-    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
-    color: rgba(255,255,255,0.8); border-radius: 7px;
+    background: none; border: none;
+    color: rgba(255,255,255,0.65);
     width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
-    cursor: pointer; font-size: 15px; transition: all 0.15s; position: relative;
+    cursor: pointer; font-size: 17px; transition: all 0.15s; position: relative;
+    border-radius: 6px;
   }
-  .header-btn:hover { background: rgba(255,255,255,0.2); color: white; }
+  .header-btn:hover { background: rgba(255,255,255,0.12); color: white; }
   .header-btn .hb-badge {
     position: absolute; top: -4px; right: -4px;
     background: var(--accent); color: white;
@@ -251,8 +252,14 @@
     gap: 5px; padding: 9px 11px 12px;
     border-top: 1px solid var(--border);
   }
-  .popup-inner .pop-actions .btn { font-size: 11px; padding: 8px 6px; text-align: center; border-radius: 8px; }
+  .popup-inner .pop-actions .btn {
+    font-size: 11px; padding: 8px 4px; text-align: center; border-radius: 8px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
   .popup-inner .pop-actions .btn.primary { grid-column: 1 / -1; }
+  .popup-inner .pop-actions .btn-save {
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
 
   /* ============ BUTTONS ============ */
   .btn {
@@ -854,7 +861,6 @@
 <div class="app">
   <header>
     <img class="brand-mark" src="./assets/logo-mark.png" alt="Qiwiosity" />
-    <h1>Qiwiosity</h1>
     <div class="tabs">
       <button class="tab active" data-view="explore">Explore</button>
       <button class="tab" data-view="stay">Stay</button>
@@ -1474,9 +1480,13 @@ function clearInAppRoute() {
 }
 
 function openDirections(attraction) {
-  const url = `https://www.google.com/maps/dir/?api=1&destination=${attraction.lat},${attraction.lng}&travelmode=driving`;
-  window.open(url, '_blank');
-  showToast(`Opening directions to ${attraction.name}`);
+  if (!attraction || !attraction.lat) return;
+  // Stay in-app: pan/zoom map to the destination, don't open external apps
+  if (map) {
+    map.panTo({ lat: attraction.lat, lng: attraction.lng });
+    map.setZoom(14);
+  }
+  showToast(`📍 ${attraction.name} — allow location access for turn-by-turn route`);
 }
 
 function showToast(message) {
@@ -1859,19 +1869,20 @@ function renderCategoryList() {
   ATTRACTIONS.forEach(a => counts[a.category] = (counts[a.category] || 0) + 1);
 
   const allOn = isAllCategories();
-  const allChip = `<div class="cat${allOn ? ' on' : ''}" data-id="__all__" style="margin-bottom:4px;border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:8px;">
+  const noneOn = state.activeCategories.size === 0;
+  const allChip = `<div class="cat${allOn ? ' on' : ''}" data-id="__all__"
+    style="margin-bottom:4px;border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:8px;${allOn?'background:var(--surface2);':''}">
     <div class="swatch" style="background:linear-gradient(135deg,#15888A,#E07B3C);"></div>
-    <span style="font-weight:${allOn?'700':'500'}">All categories</span>
+    <span style="font-weight:600">All categories</span>
     <span class="count">${ATTRACTIONS.length}</span>
   </div>`;
 
   el.innerHTML = allChip + CATEGORIES.map(c => {
-    const solo = !allOn && state.activeCategories.has(c.id) && state.activeCategories.size === 1;
-    const active = state.activeCategories.has(c.id) && !allOn;
+    const active = state.activeCategories.has(c.id);
     return `<div class="cat ${active ? 'on' : ''}" data-id="${c.id}"
-      style="${solo ? `background:${c.color}18;border-left:3px solid ${c.color};` : ''}">
-      <div class="swatch" style="background:${c.color}"></div>
-      <span>${c.label}</span>
+      style="${active ? `background:${c.color}18;border-left:3px solid ${c.color};` : 'opacity:0.55;'}">
+      <div class="swatch" style="background:${c.color};${!active?'opacity:0.4;':''}"></div>
+      <span style="font-weight:${active?'600':'400'}">${c.label}</span>
       <span class="count">${counts[c.id] || 0}</span>
     </div>`;
   }).join('');
@@ -1880,13 +1891,16 @@ function renderCategoryList() {
     node.addEventListener('click', () => {
       const id = node.dataset.id;
       if (id === '__all__') {
-        CATEGORIES.forEach(c => state.activeCategories.add(c.id));
-      } else if (isAllCategories()) {
-        state.activeCategories = new Set([id]);
-      } else if (state.activeCategories.has(id) && state.activeCategories.size === 1) {
+        // "All" always restores full set
         CATEGORIES.forEach(c => state.activeCategories.add(c.id));
       } else {
-        state.activeCategories = new Set([id]);
+        // True multi-toggle: click to turn on/off individually
+        if (state.activeCategories.has(id)) {
+          // Don't allow deselecting the last active category
+          if (state.activeCategories.size > 1) state.activeCategories.delete(id);
+        } else {
+          state.activeCategories.add(id);
+        }
       }
       renderCategoryList();
       renderAttractions();
@@ -2717,10 +2731,19 @@ function renderDecisionResults() {
       <div style="font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.5px;margin-bottom:6px">DIDN'T MAKE THE CUT</div>
       ${restHtml}
     </div>` : ''}
-    <div style="display:flex;gap:8px;margin-top:16px">
-      <button class="btn primary" style="flex:1" onclick="document.getElementById('decisionOverlay').classList.remove('active')">Done</button>
-      <button class="btn" style="flex:1" onclick="decisionPhase='pick-count';renderDecisionOverlay()">Redo</button>
+    <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap;">
+      <button class="btn primary" style="flex:1;min-width:120px;" onclick="addDecisionWinnersToItinerary()">＋ Add to Itinerary</button>
+      <button class="btn" style="flex:1;min-width:100px;" onclick="document.getElementById('decisionOverlay').classList.remove('active')">Done</button>
+      <button class="btn" style="flex:1;min-width:80px;" onclick="decisionPhase='pick-count';renderDecisionOverlay()">Redo</button>
     </div>`;
+}
+
+function addDecisionWinnersToItinerary() {
+  const ranked = [...decisionItems].sort((a, b) => decisionScores[b.id] - decisionScores[a.id]);
+  const kept = ranked.slice(0, decisionKeepCount);
+  kept.forEach(a => addToItinerary(a));
+  document.getElementById('decisionOverlay').classList.remove('active');
+  showToast(`✓ Added ${kept.length} winner${kept.length > 1 ? 's' : ''} to your itinerary`);
 }
 
 document.getElementById('decisionClose').addEventListener('click', () => {
@@ -2977,6 +3000,8 @@ function initVoiceSystem() {
   loadSavedPOIs();
   // Load affiliate IDs
   loadAffiliateSettings();
+  // Cancel any stray speech from previous sessions
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
 }
 
 // ============ INIT: Google Maps + Data ============
