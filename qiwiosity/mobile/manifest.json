@@ -1,0 +1,20 @@
+{
+  "name": "Qiwiosity — Explore New Zealand",
+  "short_name": "Qiwiosity",
+  "description": "2,400+ curated NZ attractions · AI voice audio guides · Trip planner",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3EF",
+  "theme_color": "#15888A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Zealand_flag_icon_round.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["travel", "navigation", "lifestyle"],
+  "lang": "en-NZ"
+}

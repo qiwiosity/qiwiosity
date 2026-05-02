@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#15888A" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Qiwiosity" />
+<meta name="description" content="Explore New Zealand with curated places, voice audio stories, trip planner and driving directions." />
+<meta property="og:title" content="Qiwiosity — Explore New Zealand" />
+<meta property="og:description" content="2,400+ curated NZ attractions · AI voice audio guides · Trip planner" />
+<meta property="og:type" content="website" />
+<link rel="manifest" href="manifest.json" />
 <title>Qiwiosity — Explore New Zealand</title>
 <style>
   /* ============ CSS VARIABLES ============ */
@@ -113,6 +123,15 @@
     background: var(--surface); border-right: 1px solid var(--border);
     overflow-y: auto; padding: 14px 14px 20px;
     transition: background 0.3s, border-color 0.3s;
+    position: relative;
+  }
+  .sidebar-back-top {
+    position: sticky; bottom: 12px; float: right; margin-right: -4px;
+    width: 32px; height: 32px; border-radius: 50%;
+    background: var(--primary); color: white; border: none;
+    font-size: 15px; cursor: pointer; display: none; align-items: center;
+    justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+    transition: opacity 0.2s; z-index: 10; line-height: 1;
   }
   .sidebar h2 {
     font-size: 10px; text-transform: uppercase; letter-spacing: 1.4px;
@@ -143,6 +162,75 @@
   .cat .count { margin-left: auto; color: var(--muted); font-size: 11px; }
 
   .region-list { display: flex; flex-direction: column; gap: 1px; }
+  .search-wrap { position:relative; margin-bottom:8px; }
+  .search-suggestions {
+    position:absolute; top:100%; left:0; right:0; z-index:50;
+    background:var(--surface); border:1px solid var(--border);
+    border-top:none; border-radius:0 0 10px 10px;
+    box-shadow:var(--shadow-lg); max-height:240px; overflow-y:auto;
+    display:none;
+  }
+  .search-suggestions.open { display:block; }
+  .search-sug-item {
+    padding:9px 13px; font-size:13px; cursor:pointer;
+    display:flex; align-items:center; gap:8px;
+    border-bottom:1px solid var(--border); color:var(--text);
+    transition:background .1s;
+  }
+  .search-sug-item:last-child { border-bottom:none; }
+  .search-sug-item:hover { background:var(--surface2); }
+  .search-sug-item .sug-cat { font-size:10px; color:var(--muted); margin-left:auto; flex-shrink:0; }
+  .search-sug-item .sug-match { font-weight:700; color:var(--primary); }
+  .surprise-btn {
+    width:100%; margin-bottom:10px; padding:10px 12px;
+    background:linear-gradient(135deg,#15888A,#0f6e70);
+    color:white; border:none; border-radius:10px;
+    font-size:13px; font-weight:700; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; gap:7px;
+    transition: opacity 0.15s, transform 0.1s;
+  }
+  .surprise-btn:hover { opacity:0.88; }
+  .surprise-btn:active { transform:scale(0.97); }
+  .region .poi-count {
+    font-size:10px; font-weight:700; color:var(--primary);
+    background:rgba(21,136,138,0.12); border-radius:99px;
+    padding:1px 7px; margin-left:auto; flex-shrink:0;
+  }
+  .map-style-btn {
+    width:34px; height:34px; border:none; border-radius:8px;
+    background:var(--surface); box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+    transition: background .12s, transform .1s;
+    opacity: 0.85;
+  }
+  .map-style-btn:hover { opacity:1; transform:scale(1.08); }
+  .map-style-btn.active { background:var(--primary); box-shadow:0 2px 10px rgba(21,136,138,0.35); opacity:1; }
+  .kb-key {
+    display:inline-flex; align-items:center; justify-content:center;
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:5px; padding:2px 8px; font-size:12px; font-weight:700;
+    color:var(--text); min-width:28px; font-family:monospace;
+    box-shadow:0 1px 2px rgba(0,0,0,0.1);
+  }
+  .near-me-btn {
+    width:100%; margin-bottom:6px; padding:9px 12px;
+    background:var(--surface2); color:var(--primary); border:1.5px solid var(--primary);
+    border-radius:10px; font-size:13px; font-weight:700; cursor:pointer;
+    display:flex; align-items:center; justify-content:center; gap:7px;
+    transition: background 0.15s, color 0.15s, transform 0.1s;
+  }
+  .near-me-btn.active { background:var(--primary); color:white; }
+  .near-me-btn:active { transform:scale(0.97); }
+  .poi-dist-badge {
+    display:inline-block; font-size:10px; font-weight:700;
+    color:var(--primary); background:rgba(21,136,138,0.12);
+    border-radius:99px; padding:1px 8px; margin-left:4px;
+  }
+  @keyframes nearMePulse {
+    0% { transform: scale(1); opacity: 1; }
+    70% { transform: scale(2.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 0; }
+  }
   .region {
     padding: 6px 9px; border-radius: 6px; cursor: pointer;
     font-size: 13px; color: var(--text); transition: background 0.12s;
@@ -449,6 +537,23 @@
   }
   .commentary-play-btn:hover { background: rgba(255,255,255,0.25); }
   .commentary-play-btn.playing { background: var(--accent); border-color: var(--accent); }
+  .comm-length-row { display:flex; gap:6px; margin-bottom:10px; }
+  .comm-len-pill {
+    flex:1; text-align:center; padding:5px 10px; border-radius:20px;
+    font-size:11px; font-weight:700; cursor:pointer;
+    border:1px solid rgba(255,255,255,0.22);
+    background:rgba(255,255,255,0.08); color:rgba(255,255,255,0.75);
+    transition: all 0.15s;
+  }
+  .comm-len-pill.active { background:rgba(255,255,255,0.24); color:white; border-color:rgba(255,255,255,0.5); }
+  .driving-mode-btn {
+    width:100%; margin-bottom:8px; padding:9px 12px;
+    border-radius:10px; border:2px dashed var(--primary);
+    background:transparent; color:var(--primary);
+    font-size:12px; font-weight:700; cursor:pointer;
+    transition:all 0.2s; display:flex; align-items:center; justify-content:center; gap:6px;
+  }
+  .driving-mode-btn.active { background:var(--primary); color:white; border-style:solid; }
 
   /* ============ TOAST ============ */
   .toast {
@@ -526,6 +631,87 @@
     border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
   }
   .plan-stats .plan-nav-btn:hover { background: var(--primary-dark); }
+  .cost-toggle-row {
+    display:flex; align-items:center; justify-content:space-between;
+    margin-top:10px; padding:8px 0 0; border-top:1px solid var(--border);
+    cursor:pointer; font-size:12px; font-weight:700; color:var(--primary);
+    user-select:none;
+  }
+  .cost-toggle-row:hover { opacity:0.8; }
+  .cost-breakdown {
+    display:none; margin-top:8px; font-size:12px;
+    background:rgba(21,136,138,0.06); border-radius:8px; padding:10px;
+  }
+  .cost-breakdown.open { display:block; }
+  .cost-line { display:flex; justify-content:space-between; padding:3px 0; color:var(--text2); }
+  .cost-line.cost-total { font-weight:700; color:var(--primary); border-top:1px solid var(--border); padding-top:7px; margin-top:4px; }
+  .cost-disclaimer { font-size:10px; color:var(--muted); margin-top:6px; line-height:1.4; }
+
+  /* ---- RECENTLY VIEWED ---- */
+  .recently-viewed { margin-bottom:8px; }
+  .recently-viewed h4 { font-size:10px; font-weight:700; color:var(--muted); letter-spacing:.8px; text-transform:uppercase; margin:0 0 4px; }
+  .rv-strip { display:flex; gap:5px; overflow-x:auto; scrollbar-width:none; padding-bottom:2px; }
+  .rv-strip::-webkit-scrollbar { display:none; }
+  .rv-chip {
+    flex:0 0 auto; max-width:110px;
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:20px; padding:4px 10px;
+    font-size:11px; font-weight:600; color:var(--text); cursor:pointer;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    transition: background 0.12s, border-color 0.12s;
+  }
+  .rv-chip:hover { border-color:var(--primary); color:var(--primary); }
+  .top-pick-chip {
+    max-width:none !important;
+    display:flex !important;
+    align-items:center;
+    padding:5px 10px 5px 6px !important;
+    border-radius:10px !important;
+    gap:0;
+    white-space:normal !important;
+    overflow:visible !important;
+    text-overflow:unset !important;
+    border-color:var(--primary)22 !important;
+  }
+  .top-pick-chip:hover { border-color:var(--primary) !important; background:rgba(21,136,138,0.07) !important; }
+
+  /* ---- POI DETAIL OVERLAY ---- */
+  .poi-detail-overlay {
+    position:fixed; inset:0; z-index:300;
+    background:var(--bg); display:none; flex-direction:column;
+    overscroll-behavior:contain;
+  }
+  .poi-detail-overlay.open { display:flex; }
+  .poi-detail-header {
+    position:sticky; top:0; z-index:10;
+    display:flex; align-items:center; gap:10px;
+    padding:10px 14px; background:var(--bg);
+    border-bottom:1px solid var(--border);
+  }
+  .poi-detail-back {
+    background:none; border:none; font-size:22px; cursor:pointer;
+    color:var(--text); padding:0 4px; line-height:1;
+  }
+  .poi-detail-body { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+  .poi-detail-hero { width:100%; height:240px; object-fit:cover; }
+  .poi-detail-gallery {
+    display:flex; gap:4px; overflow-x:auto; scrollbar-width:none;
+    padding:8px 12px; background:var(--surface2);
+  }
+  .poi-detail-gallery::-webkit-scrollbar { display:none; }
+  .poi-detail-gallery img {
+    flex:0 0 auto; width:72px; height:54px;
+    object-fit:cover; border-radius:5px; cursor:pointer;
+    border:2px solid transparent; transition:border-color .15s;
+  }
+  .poi-detail-gallery img.active { border-color:var(--primary); }
+  .poi-detail-section { padding:14px; border-bottom:1px solid var(--border); }
+  .poi-detail-section:last-child { border-bottom:none; }
+  .poi-detail-section h3 { margin:0 0 8px; font-size:14px; font-weight:700; color:var(--primary); }
+  .poi-detail-commentary { font-size:13px; line-height:1.7; color:var(--text); white-space:pre-wrap; }
+  .poi-detail-actions { display:flex; flex-wrap:wrap; gap:6px; padding:14px; }
+  .poi-detail-actions .btn { flex:1; min-width:calc(50% - 6px); text-align:center; }
+
   .plan-empty { text-align: center; padding: 40px 18px; color: var(--muted); }
   .plan-empty .plan-empty-icon { font-size: 34px; margin-bottom: 8px; opacity: 0.4; }
   .plan-empty p { font-size: 13px; line-height: 1.5; margin: 0; }
@@ -639,6 +825,112 @@
   .compare-sheet-opt .opt-icon { font-size: 22px; flex-shrink: 0; }
   .compare-sheet-opt .opt-title { font-size: 13px; font-weight: 700; color: var(--text); }
   .compare-sheet-opt .opt-desc { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+  /* ============ ADMIN PANEL ============ */
+  .admin-overlay {
+    position:fixed; inset:0; background:#0f1923; z-index:99000;
+    display:none; flex-direction:column; font-family:system-ui,sans-serif;
+  }
+  .admin-overlay.on { display:flex; }
+  .admin-topbar {
+    background:#0d1520; border-bottom:1px solid #1e3a4a;
+    padding:12px 20px; display:flex; align-items:center; gap:12px; flex-shrink:0;
+  }
+  .admin-logo { font-size:15px; font-weight:800; color:#15888A; letter-spacing:-0.3px; }
+  .admin-logo span { color:#fff; }
+  .admin-badge {
+    background:#15888A22; border:1px solid #15888A55; color:#15888A;
+    font-size:9px; font-weight:800; letter-spacing:1.5px; padding:2px 8px; border-radius:99px;
+  }
+  .admin-close-btn {
+    margin-left:auto; background:none; border:1px solid #1e3a4a; color:#7a9aaa;
+    padding:6px 14px; border-radius:8px; cursor:pointer; font-size:12px; font-weight:600;
+    transition:all 0.15s;
+  }
+  .admin-close-btn:hover { background:#1e3a4a; color:#fff; }
+  .admin-body { display:flex; flex:1; overflow:hidden; }
+  .admin-sidebar {
+    width:180px; flex-shrink:0; background:#0d1520;
+    border-right:1px solid #1e3a4a; padding:16px 0; display:flex; flex-direction:column; gap:2px;
+  }
+  .admin-nav-btn {
+    background:none; border:none; color:#7a9aaa; text-align:left;
+    padding:10px 20px; font-size:13px; font-weight:600; cursor:pointer;
+    border-left:3px solid transparent; transition:all 0.15s; display:flex; align-items:center; gap:8px;
+  }
+  .admin-nav-btn:hover { color:#fff; background:#1e3a4a33; }
+  .admin-nav-btn.active { color:#15888A; border-left-color:#15888A; background:#15888A11; }
+  .admin-nav-section { padding:14px 20px 6px; font-size:9px; font-weight:800;
+    color:#3a5a6a; letter-spacing:1.8px; }
+  .admin-content { flex:1; overflow-y:auto; padding:24px; }
+  .admin-stat-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:14px; margin-bottom:28px; }
+  .admin-stat-card {
+    background:#0d1520; border:1px solid #1e3a4a; border-radius:12px; padding:16px;
+  }
+  .admin-stat-val { font-size:28px; font-weight:800; color:#15888A; line-height:1; margin-bottom:4px; }
+  .admin-stat-label { font-size:11px; color:#7a9aaa; font-weight:600; }
+  .admin-stat-sub { font-size:10px; color:#3a5a6a; margin-top:3px; }
+  .admin-section-title {
+    font-size:13px; font-weight:800; color:#fff; margin:0 0 14px;
+    padding-bottom:10px; border-bottom:1px solid #1e3a4a;
+    display:flex; align-items:center; gap:8px;
+  }
+  .admin-count-pill {
+    background:#15888A22; border:1px solid #15888A44; color:#15888A;
+    font-size:10px; font-weight:700; padding:2px 8px; border-radius:99px;
+  }
+  .admin-search {
+    width:100%; background:#0d1520; border:1px solid #1e3a4a; border-radius:10px;
+    color:#fff; padding:9px 14px; font-size:13px; margin-bottom:14px; box-sizing:border-box;
+    outline:none; transition:border-color 0.15s;
+  }
+  .admin-search:focus { border-color:#15888A; }
+  .admin-filter-row { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; }
+  .admin-filter-chip {
+    padding:5px 12px; border-radius:99px; border:1px solid #1e3a4a;
+    background:transparent; color:#7a9aaa; font-size:11px; font-weight:600; cursor:pointer;
+    transition:all 0.15s;
+  }
+  .admin-filter-chip.active { background:#15888A22; border-color:#15888A55; color:#15888A; }
+  .admin-table { width:100%; border-collapse:collapse; }
+  .admin-table th {
+    text-align:left; padding:8px 12px; font-size:10px; font-weight:800;
+    color:#3a5a6a; letter-spacing:1.2px; border-bottom:1px solid #1e3a4a;
+  }
+  .admin-table td {
+    padding:9px 12px; font-size:12px; color:#c0d0d8; border-bottom:1px solid #1a2e3a;
+    vertical-align:middle;
+  }
+  .admin-table tr:hover td { background:#0d1a24; cursor:pointer; }
+  .admin-table tr.admin-row-expanded td { background:#0a1520; }
+  .admin-expand-row td { padding:0; background:#0a1520 !important; cursor:default !important; }
+  .admin-expand-body { padding:14px 16px; border-bottom:1px solid #1e3a4a; color:#9ab0bc; font-size:12px; line-height:1.6; }
+  .admin-cat-chip {
+    display:inline-block; padding:2px 8px; border-radius:99px;
+    font-size:10px; font-weight:700; background:#1e3a4a; color:#7a9aaa;
+  }
+  .admin-rating { color:#f0a030; font-weight:700; }
+  .admin-form { max-width:640px; }
+  .admin-form-group { margin-bottom:16px; }
+  .admin-form-label { display:block; font-size:11px; font-weight:700; color:#7a9aaa; margin-bottom:6px; letter-spacing:0.5px; }
+  .admin-form-input, .admin-form-select, .admin-form-textarea {
+    width:100%; background:#0d1520; border:1px solid #1e3a4a; border-radius:8px;
+    color:#fff; padding:9px 13px; font-size:13px; box-sizing:border-box;
+    outline:none; transition:border-color 0.15s; font-family:inherit;
+  }
+  .admin-form-input:focus, .admin-form-select:focus, .admin-form-textarea:focus { border-color:#15888A; }
+  .admin-form-textarea { min-height:90px; resize:vertical; }
+  .admin-form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .admin-form-submit {
+    background:#15888A; color:#fff; border:none; border-radius:10px;
+    padding:12px 28px; font-size:14px; font-weight:700; cursor:pointer;
+    transition:background 0.15s;
+  }
+  .admin-form-submit:hover { background:#0f6e70; }
+  .admin-activity-row { display:flex; gap:10px; align-items:flex-start; padding:10px 0; border-bottom:1px solid #1a2e3a; }
+  .admin-activity-dot { width:8px; height:8px; border-radius:50%; background:#15888A; flex-shrink:0; margin-top:4px; }
+  .admin-activity-text { font-size:12px; color:#9ab0bc; flex:1; line-height:1.5; }
+  .admin-activity-time { font-size:10px; color:#3a5a6a; flex-shrink:0; }
 
   /* ============ COMMUNITY VOICES / ECHOVERSE ============ */
   .echo-overlay {
@@ -1321,12 +1613,56 @@
     </div>
   </header>
 
-  <aside class="sidebar">
+  <aside class="sidebar" id="mainSidebar">
+    <button class="sidebar-back-top" id="sidebarBackTop" onclick="document.getElementById('mainSidebar').scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
     <div class="view active" id="view-explore">
-      <input class="search" id="search" placeholder="Search attractions..." />
+      <div class="search-wrap">
+        <input class="search" id="search" placeholder="Search attractions..." autocomplete="off" style="margin-bottom:0;" />
+        <div class="search-suggestions" id="searchSuggestions"></div>
+      </div>
+      <div style="display:flex;gap:6px;margin-bottom:4px;">
+        <button class="surprise-btn" style="flex:1;margin-bottom:0;" onclick="surpriseMe()">🎲 Surprise Me</button>
+        <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()">📍 Near Me</button>
+      </div>
+      <div class="recently-viewed" id="recentlyViewedSection" style="display:none;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+          <h4 style="margin:0;">Recently Viewed</h4>
+          <button onclick="clearRecentlyViewed()" style="font-size:10px;background:none;border:none;cursor:pointer;color:var(--muted);padding:0;font-weight:700;">✕ Clear</button>
+        </div>
+        <div class="rv-strip" id="recentlyViewedStrip"></div>
+      </div>
+      <div id="topPicksSection" style="display:none;margin-bottom:8px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+          <h4 style="margin:0;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;">✦ Top Picks</h4>
+          <button onclick="document.getElementById('topPicksSection').style.display='none'" style="font-size:10px;background:none;border:none;cursor:pointer;color:var(--muted);padding:0;">✕</button>
+        </div>
+        <div class="rv-strip" id="topPicksStrip"></div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
+        <p id="attractionCounter" style="font-size:11px;color:var(--muted);margin:0;font-weight:600;"></p>
+        <button id="clearFiltersBtn" onclick="clearAllFilters()" style="display:none;font-size:10px;padding:2px 8px;border:1.5px solid var(--primary);border-radius:20px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">✕ Clear</button>
+      </div>
+      <div style="margin-bottom:8px;">
+        <div id="tagFilterStrip" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;color:var(--muted);white-space:nowrap;">Sort:</span>
+        <div id="sortChips" style="display:flex;gap:4px;"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;color:var(--muted);white-space:nowrap;">★ Min rating:</span>
+        <div id="ratingFilterChips" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;color:var(--muted);white-space:nowrap;">⏱ Max duration:</span>
+        <div id="durationFilterChips" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
+      </div>
       <h2>Categories</h2>
       <div class="category-list" id="categoryList"></div>
-      <h2>Regions</h2>
+      <h2 style="display:flex;align-items:center;justify-content:space-between;">
+        Regions
+        <span id="activeRegionChip" style="display:none;font-size:10px;font-weight:700;padding:2px 8px;background:var(--primary);color:white;border-radius:12px;cursor:pointer;" onclick="clearRegionFilter()" title="Clear region filter"></span>
+      </h2>
       <div class="region-list" id="regionList"></div>
     </div>
     <div class="view" id="view-stay">
@@ -1334,7 +1670,18 @@
       <input class="search" id="accomSearch" placeholder="Search accommodations..." />
       <div id="accomTypeChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;"></div>
       <div id="accomRegionChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;"></div>
-      <p class="accom-count" id="accomCount" style="font-size:12px;color:var(--muted);margin:8px 0 4px;"></p>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;color:var(--muted);">Sort:</span>
+        <div id="accomSortChips" style="display:flex;gap:4px;"></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;margin-top:6px;flex-wrap:wrap;">
+        <span style="font-size:11px;font-weight:700;color:var(--muted);">Budget:</span>
+        <div id="accomBudgetChips" style="display:flex;gap:4px;"></div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px;">
+        <p class="accom-count" id="accomCount" style="font-size:12px;color:var(--muted);margin:0;"></p>
+        <button id="clearAccomFiltersBtn" onclick="clearAccomFilters()" style="display:none;font-size:10px;padding:2px 8px;border:1.5px solid var(--primary);border-radius:20px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">✕ Clear</button>
+      </div>
       <div id="accomList"></div>
     </div>
     <div class="view" id="view-plan">
@@ -1348,7 +1695,8 @@
         </div>
         <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
       </div>
-      <button class="btn primary" style="width:100%;margin-bottom:10px;font-size:13px;" onclick="openAIGen()">✨ Generate AI Trip</button>
+      <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()">✨ Generate AI Trip</button>
+      <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()">🚗 Driving Mode <span id="drivingModeStatus">off</span></button>
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
         <span class="toggle-label">Show nearby attractions on map</span>
@@ -1379,14 +1727,41 @@
     </div>
 
     <div class="view" id="view-saved">
-      <h2>Saved Places</h2>
-      <p style="font-size:12px;color:var(--muted);margin:0 0 10px;">Your personal wishlist. Tap ❤ on any place to save it here.</p>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+        <h2 style="margin:0;">Saved Places</h2>
+        <div style="display:flex;gap:5px;">
+          <button onclick="addAllSavedToTrip()" title="Add all saved places to your itinerary" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--primary);border-radius:20px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">＋ Add all to trip</button>
+          <button onclick="shareWishlist()" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--border);border-radius:20px;background:var(--surface2);color:var(--text);cursor:pointer;font-weight:700;">📤 Share</button>
+          <button onclick="exportWishlist()" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--border);border-radius:20px;background:var(--surface2);color:var(--text);cursor:pointer;font-weight:700;">📋 Export</button>
+          <button onclick="exportSavedToCSV()" title="Export saved places as CSV" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--border);border-radius:20px;background:var(--surface2);color:var(--text);cursor:pointer;font-weight:700;">⬇ CSV</button>
+        </div>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin:0 0 4px;">Your personal wishlist. Tap ❤ on any place to save it here.</p>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px;" id="savedSortChips"></div>
+      <div id="savedRegionSummary"></div>
       <div id="savedList"></div>
+      <div id="savedAccomsSection" style="margin-top:16px;display:none;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+          <h3 style="margin:0;font-size:14px;color:var(--text);">🛏 Saved Stays</h3>
+        </div>
+        <div id="savedAccomList"></div>
+      </div>
     </div>
   </aside>
 
   <main style="position: relative;">
     <div id="map"></div>
+    <!-- Map style switcher -->
+    <div id="mapStyleSwitcher" style="
+      position:absolute; top:70px; right:10px; z-index:10;
+      display:flex; flex-direction:column; gap:3px;
+    ">
+      <button class="map-style-btn active" id="mapStyleRoad" onclick="setMapStyle('roadmap')" title="Standard map">🗺</button>
+      <button class="map-style-btn" id="mapStyleSat" onclick="setMapStyle('satellite')" title="Satellite">🛰</button>
+      <button class="map-style-btn" id="mapStyleTerrain" onclick="setMapStyle('terrain')" title="Terrain">⛰</button>
+      <button class="map-style-btn" id="heatmapToggleBtn" onclick="toggleHeatmap()" title="Toggle attraction density heatmap">🌡</button>
+      <button class="map-style-btn" onclick="resetMapToNZ()" title="Reset to NZ overview">🇳🇿</button>
+    </div>
     <div class="legend" id="legend">
       <div class="legend-header" onclick="toggleLegend()">
         <strong>Legend</strong>
@@ -1472,6 +1847,63 @@
     </div>
     <button class="btn" style="width:100%" onclick="closeCompareSheet()">Cancel</button>
   </div>
+</div>
+
+<!-- ============ ADMIN PANEL ============ -->
+<div class="admin-overlay" id="adminOverlay">
+  <div class="admin-topbar">
+    <div class="admin-logo">Qiwi<span>osity</span></div>
+    <div class="admin-badge">ADMIN</div>
+    <button class="admin-close-btn" onclick="closeAdmin()">✕ Exit Admin</button>
+  </div>
+  <div class="admin-body">
+    <nav class="admin-sidebar">
+      <div class="admin-nav-section">CONTENT</div>
+      <button class="admin-nav-btn active" id="adminNav-overview" onclick="switchAdminTab('overview')">📊 Overview</button>
+      <button class="admin-nav-btn" id="adminNav-pois" onclick="switchAdminTab('pois')">📍 POIs</button>
+      <button class="admin-nav-btn" id="adminNav-accom" onclick="switchAdminTab('accom')">🛏 Stays</button>
+      <div class="admin-nav-section">TOOLS</div>
+      <button class="admin-nav-btn" id="adminNav-add" onclick="switchAdminTab('add')">➕ Add POI</button>
+      <button class="admin-nav-btn" id="adminNav-activity" onclick="switchAdminTab('activity')">🕐 Activity</button>
+    </nav>
+    <div class="admin-content" id="adminContent"></div>
+  </div>
+</div>
+
+<!-- ============ KEYBOARD SHORTCUTS OVERLAY ============ -->
+<div id="keyboardHelp" style="
+  display:none; position:fixed; inset:0; z-index:500;
+  background:rgba(0,0,0,0.55); backdrop-filter:blur(4px);
+  align-items:center; justify-content:center;
+">
+  <div style="
+    background:var(--surface); border-radius:16px; padding:22px 26px;
+    max-width:360px; width:90%; box-shadow:var(--shadow-lg);
+  ">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;">
+      <h2 style="margin:0;font-size:16px;color:var(--primary);">⌨ Keyboard Shortcuts</h2>
+      <button onclick="closeKeyboardHelp()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted);">✕</button>
+    </div>
+    <div id="kbShortcutList" style="display:grid;grid-template-columns:auto 1fr;gap:7px 14px;font-size:13px;"></div>
+    <p style="margin:14px 0 0;font-size:11px;color:var(--muted);text-align:center;">Press ? anywhere to toggle this help</p>
+  </div>
+</div>
+
+<!-- ============ POI DETAIL FULL-SCREEN OVERLAY ============ -->
+<div class="poi-detail-overlay" id="poiDetailOverlay">
+  <div class="poi-detail-header">
+    <button class="poi-detail-back" onclick="closePoiDetail()">←</button>
+    <div style="flex:1;min-width:0;">
+      <div id="poiDetailName" style="font-size:15px;font-weight:700;color:var(--text);overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"></div>
+      <div id="poiDetailMeta" style="font-size:11px;color:var(--muted);margin-top:1px;"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:4px;flex-shrink:0;">
+      <button id="poiDetailSaveBtn" class="btn-save" onclick="toggleSaveFromDetail()">♡ Save</button>
+      <button onclick="navigatePoiDetail(-1)" title="Previous place" style="background:none;border:1px solid var(--border);border-radius:6px;padding:3px 7px;cursor:pointer;font-size:13px;color:var(--text);">‹</button>
+      <button onclick="navigatePoiDetail(1)" title="Next place" style="background:none;border:1px solid var(--border);border-radius:6px;padding:3px 7px;cursor:pointer;font-size:13px;color:var(--text);">›</button>
+    </div>
+  </div>
+  <div class="poi-detail-body" id="poiDetailBody"></div>
 </div>
 
 <!-- ============ COMMUNITY VOICES / ECHOVERSE ============ -->
@@ -1794,6 +2226,9 @@
 <!-- Hidden audio element for ElevenLabs playback -->
 <audio id="ttsAudio" style="display:none"></audio>
 
+<!-- ============ MARKER CLUSTERER ============ -->
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
 <!-- ============ GOOGLE MAPS ============ -->
 <script>
 (function(g){var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
@@ -2058,6 +2493,15 @@ async function loadAllData() {
 
     console.log('Qiwiosity: loaded', ATTRACTIONS.length, 'POIs,', ACCOMMODATIONS.length, 'accommodations from Supabase');
     setProgress(100);
+    renderRecentlyViewed();
+    renderRatingFilter();
+    renderDurationFilter();
+    renderSortChips();
+    renderTagFilter();
+    renderTopPicks();
+    restoreItineraryFromStorage();
+    renderAccomSortChips();
+    if (document.getElementById('adminOverlay')?.classList.contains('on')) switchAdminTab('overview');
 
   } catch (err) {
     console.error('Failed to load from Supabase:', err);
@@ -2105,6 +2549,9 @@ const state = {
   itiStatsOpen: false,
   templatesOpen: false,
   journeyStart: null,
+  nearMeActive: false,
+  userLat: null,
+  userLng: null,
 };
 
 // ============ GOOGLE MAPS GLOBALS ============
@@ -2112,6 +2559,7 @@ let map;
 let infoWindow;
 let poiMarkers = [];   // attraction markers
 let accomMarkers = [];  // accommodation markers
+let poiClusterer = null; // MarkerClusterer instance
 
 function catLabel(id) { return CATEGORIES.find(c => c.id === id)?.label || id; }
 function catColor(id) { return CATEGORIES.find(c => c.id === id)?.color || '#15888A'; }
@@ -2141,17 +2589,95 @@ function accomTypeLabel(typeId) {
   return t ? t.label : typeId;
 }
 
+let _accomBudget = 'any';
+const ACCOM_BUDGET_OPTIONS = [
+  { id: 'any',    label: 'Any',    min: 0,   max: Infinity },
+  { id: 'budget', label: '$ Budget', min: 0, max: 120 },
+  { id: 'mid',    label: '$$ Mid',   min: 121, max: 250 },
+  { id: 'luxury', label: '$$$ Luxury', min: 251, max: Infinity },
+];
+
+function renderAccomBudgetChips() {
+  const el = document.getElementById('accomBudgetChips');
+  if (!el) return;
+  el.innerHTML = ACCOM_BUDGET_OPTIONS.map(o => {
+    const active = _accomBudget === o.id;
+    return `<button onclick="setAccomBudget('${o.id}')" style="
+      padding:3px 9px;font-size:11px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--accent)' : 'var(--border)'};
+      background:${active ? 'var(--accent)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};
+      transition:all .12s;
+    ">${o.label}</button>`;
+  }).join('');
+}
+
+function setAccomBudget(b) {
+  _accomBudget = b;
+  renderAccomBudgetChips();
+  renderAccommodationList();
+}
+
+let _accomSort = 'default';
+const ACCOM_SORT_OPTIONS = [
+  { id: 'default',   label: 'Default' },
+  { id: 'rating',    label: '★ Rating' },
+  { id: 'price-lo',  label: '$ Low' },
+  { id: 'price-hi',  label: '$ High' },
+  { id: 'near-iti',  label: '📍 Near Trip' },
+];
+
+function renderAccomSortChips() {
+  const el = document.getElementById('accomSortChips');
+  if (!el) return;
+  el.innerHTML = ACCOM_SORT_OPTIONS.map(o => {
+    const active = _accomSort === o.id;
+    return `<button onclick="setAccomSort('${o.id}')" style="
+      padding:3px 9px;font-size:11px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};
+      transition:all .12s;
+    ">${o.label}</button>`;
+  }).join('');
+}
+
+function setAccomSort(m) {
+  _accomSort = m;
+  renderAccomSortChips();
+  renderAccommodationList();
+}
+
 function accomFilteredList() {
   const q = state.accomSearch.toLowerCase().trim();
-  return ACCOMMODATIONS.filter(a => {
+  const budgetOpt = ACCOM_BUDGET_OPTIONS.find(o => o.id === _accomBudget) || ACCOM_BUDGET_OPTIONS[0];
+  let list = ACCOMMODATIONS.filter(a => {
     if (state.accomRegionFilter && a.region !== state.accomRegionFilter) return false;
     if (!state.activeAccomTypes.has(a.type)) return false;
+    if (_accomBudget !== 'any') {
+      const p = a.price_nzd_per_night || 0;
+      if (p < budgetOpt.min || p > budgetOpt.max) return false;
+    }
     if (q) {
       const rName = (REGIONS.find(r => r.id === a.region) || {}).name || '';
       if (!a.name.toLowerCase().includes(q) && !(a.short||'').toLowerCase().includes(q) && !rName.toLowerCase().includes(q)) return false;
     }
     return true;
   });
+  if (state.nearMeActive && state.userLat != null) {
+    list.sort((a, b) => haversine({lat:state.userLat,lng:state.userLng},a) - haversine({lat:state.userLat,lng:state.userLng},b));
+  } else if (_accomSort === 'rating') list.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+  else if (_accomSort === 'price-lo') list.sort((a, b) => (a.price_nzd_per_night || 999) - (b.price_nzd_per_night || 999));
+  else if (_accomSort === 'price-hi') list.sort((a, b) => (b.price_nzd_per_night || 0) - (a.price_nzd_per_night || 0));
+  else if (_accomSort === 'near-iti' && state.itinerary.length) {
+    // Sort by minimum distance to any itinerary stop
+    const itiCentroid = state.itinerary.reduce((acc, s) => { acc.lat += s.lat; acc.lng += s.lng; return acc; },
+      { lat: 0, lng: 0 });
+    itiCentroid.lat /= state.itinerary.length;
+    itiCentroid.lng /= state.itinerary.length;
+    list.sort((a, b) => haversine(itiCentroid, a) - haversine(itiCentroid, b));
+  }
+  return list;
 }
 
 let _directionsRenderer = null;
@@ -2282,17 +2808,31 @@ function openInAppTripRoute() {
 }
 
 function showMoreLikeThis(a) {
+  // Filter to same category, prefer same region first
   state.activeCategories = new Set([a.category]);
+  state.activeRegion = a.region || null;
   renderCategoryList();
+  renderRegionList?.();
+  const chip = document.getElementById('activeRegionChip');
+  if (chip && a.region) {
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region;
+    chip.textContent = `${rName.split(' / ')[0]} ✕`;
+    chip.style.display = 'inline-block';
+  }
+  // Sort similar by rating desc so best show first
+  _sortMode = 'rating';
+  renderSortChips?.();
   renderAttractions();
   if (infoWindow) infoWindow.close();
-  const similar = ATTRACTIONS.filter(x => x.category === a.category);
-  if (similar.length > 1) {
+  const similar = ATTRACTIONS.filter(x => x.category === a.category && x.region === a.region && x.id !== a.id);
+  const allCat  = ATTRACTIONS.filter(x => x.category === a.category && x.id !== a.id);
+  const useList = similar.length >= 2 ? similar : allCat;
+  if (useList.length > 1) {
     const bounds = new google.maps.LatLngBounds();
-    similar.forEach(x => bounds.extend({ lat: x.lat, lng: x.lng }));
+    useList.slice(0,30).forEach(x => bounds.extend({ lat: x.lat, lng: x.lng }));
     map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
   }
-  showToast(`Showing ${similar.length} places like "${a.name}" — ${catLabel(a.category)}`);
+  showToast(`Showing ${useList.length} similar to "${a.name}" — ${catLabel(a.category)}`);
 }
 
 function openAttractionDetails(id) {
@@ -2484,6 +3024,771 @@ function showCommentaryPopup(id) {
   showCommentary(a, false);
 }
 
+// ============ COMMENTARY LENGTH + DRIVING MODE ============
+let commLengthMode = 'full';
+let drivingModeOn = false;
+
+function getCommText(a) {
+  if (commLengthMode === 'short') {
+    if (a.short) return a.short;
+    const sentences = (a.commentary || '').split(/(?<=[.!?])\s+/);
+    return sentences.slice(0, 2).join(' ') || a.commentary || 'No commentary available.';
+  }
+  return a.commentary || 'No commentary available for this location.';
+}
+
+function setCommLength(mode, poiId) {
+  commLengthMode = mode;
+  document.querySelectorAll('.comm-len-pill').forEach(p => {
+    p.classList.toggle('active', p.dataset.mode === mode);
+  });
+  const textEl = document.getElementById('commBodyText');
+  if (textEl && poiId) {
+    const a = ATTRACTIONS.find(x => x.id === poiId);
+    if (a) textEl.textContent = getCommText(a);
+  }
+}
+
+function toggleDrivingMode() {
+  drivingModeOn = !drivingModeOn;
+  const btn = document.getElementById('drivingModeBtn');
+  const status = document.getElementById('drivingModeStatus');
+  if (btn) btn.classList.toggle('active', drivingModeOn);
+  if (status) status.textContent = drivingModeOn ? 'ON' : 'off';
+  if (drivingModeOn) {
+    commLengthMode = 'short';
+    showToast('🚗 Driving Mode on — tap any stop for auto-play commentary');
+  } else {
+    showToast('Driving Mode off');
+  }
+}
+
+// ============ RECENTLY VIEWED ============
+const RV_KEY = 'qiwiosity_recently_viewed';
+const RV_MAX = 12;
+
+function getRV() {
+  try { return JSON.parse(localStorage.getItem(RV_KEY) || '[]'); } catch { return []; }
+}
+
+function addToRV(poiId) {
+  let rv = getRV().filter(id => id !== poiId);
+  rv.unshift(poiId);
+  if (rv.length > RV_MAX) rv = rv.slice(0, RV_MAX);
+  try { localStorage.setItem(RV_KEY, JSON.stringify(rv)); } catch {}
+  renderRecentlyViewed();
+}
+
+function renderRecentlyViewed() {
+  const rv = getRV();
+  const section = document.getElementById('recentlyViewedSection');
+  const strip = document.getElementById('recentlyViewedStrip');
+  if (!section || !strip) return;
+  if (!rv.length || !ATTRACTIONS?.length) { section.style.display = 'none'; return; }
+  const pois = rv.map(id => ATTRACTIONS.find(a => a.id === id)).filter(Boolean);
+  if (!pois.length) { section.style.display = 'none'; return; }
+  section.style.display = '';
+  strip.innerHTML = pois.map(a => {
+    const color = catColor(a.category);
+    const inIti = state.itinerary.some(x => x.id === a.id);
+    return `<div class="rv-chip" title="${a.name} · ${catLabel(a.category)}" onclick="jumpToPoi('${a.id}')" style="${inIti?'border-color:var(--primary);color:var(--primary);':''}">
+      <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${color};margin-right:4px;vertical-align:middle;flex-shrink:0;"></span>${a.name}${inIti?'<span style="margin-left:3px;font-size:9px;">✓</span>':''}
+    </div>`;
+  }).join('');
+}
+
+function clearRecentlyViewed() {
+  localStorage.removeItem('qiwiosity_recently_viewed');
+  renderRecentlyViewed();
+  showToast('Recently viewed cleared');
+}
+
+function renderTopPicks() {
+  const el = document.getElementById('topPicksStrip');
+  const section = document.getElementById('topPicksSection');
+  if (!el || !section || !ATTRACTIONS?.length) return;
+  // Top 8 highest-rated attractions with reviews
+  const top = [...ATTRACTIONS]
+    .filter(a => a.reviews?.rating >= 4.5 && a.reviews?.count > 50)
+    .sort((a,b) => (b.reviews.rating - a.reviews.rating) || (b.reviews.count - a.reviews.count))
+    .slice(0, 8);
+  if (!top.length) { section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  el.innerHTML = top.map(a => {
+    const thumb = getPoiImageUrl(a);
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || '';
+    const inIti = state.itinerary.some(x => x.id === a.id);
+    return `<div class="rv-chip top-pick-chip" onclick="jumpToPoi('${a.id}')" title="${a.name} · ★${a.reviews.rating.toFixed(1)} · ${catLabel(a.category)} · ${rName.split(' / ')[0]}">
+      ${thumb ? `<img src="${thumb}" alt="" style="width:32px;height:32px;object-fit:cover;border-radius:6px;flex-shrink:0;margin-right:5px;" onerror="this.style.display='none'">` : ''}
+      <span style="display:flex;flex-direction:column;min-width:0;">
+        <span style="font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:120px;">${a.name}</span>
+        <span style="font-size:9px;color:var(--muted);">
+          <span style="color:#F59E0B;font-weight:700;">★${a.reviews.rating.toFixed(1)}</span>
+          · ${catLabel(a.category)}${inIti ? ' · <span style="color:var(--primary);font-weight:700;">✓</span>' : ''}
+        </span>
+      </span>
+    </div>`;
+  }).join('');
+}
+
+function jumpToPoi(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  map.panTo({ lat: a.lat, lng: a.lng });
+  map.setZoom(13);
+  const marker = poiMarkers.find(m => m._poiId === id);
+  if (marker) openPoiInfoWindow(a, marker);
+  else {
+    const m = new google.maps.Marker({ position: { lat: a.lat, lng: a.lng }, map, visible: false });
+    m._poiId = id;
+    openPoiInfoWindow(a, m);
+  }
+}
+
+// ============ STOP NOTES ============
+function toggleStopNote(id) {
+  const el = document.getElementById(`noteInput_${id}`);
+  if (!el) return;
+  const open = el.style.display === 'none';
+  el.style.display = open ? 'block' : 'none';
+  if (open) document.getElementById(`noteText_${id}`)?.focus();
+}
+
+function saveStopNote(id, text) {
+  const stop = state.itinerary.find(a => a.id === id);
+  if (stop) stop.note = text.trim();
+  saveItineraryToStorage();
+  renderPlanSidebar();
+}
+
+// ============ TAG FILTER ============
+const POPULAR_TAGS = [
+  'waterfall','beach','free','bucket-list','iconic','hike','scenic-drive',
+  'māori','film-location','hot-pools','wildlife','wine','family','history',
+  'summit','glacier','fjord','thermal','cave','lighthouse'
+];
+let _activeTag = '';
+
+function renderTagFilter() {
+  const el = document.getElementById('tagFilterStrip');
+  if (!el) return;
+  // Count POIs per tag (only from currently active categories)
+  const tagCounts = {};
+  ATTRACTIONS.forEach(a => {
+    if (!state.activeCategories.has(a.category)) return;
+    (a.tags || []).forEach(t => { tagCounts[t] = (tagCounts[t] || 0) + 1; });
+  });
+  el.innerHTML = POPULAR_TAGS.map(t => {
+    const active = _activeTag === t;
+    const count = tagCounts[t] || 0;
+    return `<button onclick="setTagFilter('${t}')" style="
+      padding:2px 9px;font-size:10px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--muted)'};
+      transition:all .12s;white-space:nowrap;
+    ">#${t}${count ? ` <span style="font-size:9px;opacity:0.75;">${count}</span>` : ''}</button>`;
+  }).join('');
+}
+
+function setTagFilter(t) {
+  _activeTag = _activeTag === t ? '' : t;
+  renderTagFilter();
+  renderAttractions();
+}
+
+function clearRegionFilter() {
+  state.activeRegion = null;
+  renderRegionList?.();
+  renderAttractions();
+  showToast('Region filter cleared');
+}
+
+function setRegionFilter(regionId) {
+  state.activeRegion = regionId;
+  renderRegionList?.();
+  renderAttractions();
+  switchView('explore');
+  const r = REGIONS.find(x => x.id === regionId);
+  if (r && map) { map.panTo({ lat: r.lat, lng: r.lng }); map.setZoom(9); }
+  showToast(r ? `Filtering: ${r.name}` : 'Region filter set');
+}
+
+function clearAllFilters() {
+  _minRating = 0;
+  _maxDuration = 0;
+  _sortMode = 'default';
+  _activeTag = '';
+  state.search = '';
+  const searchEl = document.getElementById('search');
+  if (searchEl) searchEl.value = '';
+  CATEGORIES.forEach(c => state.activeCategories.add(c.id));
+  state.activeRegion = null;
+  renderRatingFilter();
+  renderDurationFilter();
+  renderSortChips();
+  renderTagFilter();
+  renderCategoryList?.();
+  renderRegionList?.();
+  renderAttractions();
+}
+
+// ============ SORT CONTROL ============
+let _sortMode = 'default';
+const SORT_OPTIONS = [
+  { id: 'default',   label: 'Default' },
+  { id: 'rating',    label: '★ Rating' },
+  { id: 'name',      label: 'A–Z' },
+  { id: 'reviewed',  label: '💬 Popular' },
+  { id: 'duration',  label: '⏱ Shortest' },
+];
+
+function renderSortChips() {
+  const el = document.getElementById('sortChips');
+  if (!el) return;
+  el.innerHTML = SORT_OPTIONS.map(o => {
+    const active = _sortMode === o.id;
+    return `<button onclick="setSortMode('${o.id}')" style="
+      padding:3px 9px;font-size:11px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};
+      transition:all .12s;
+    ">${o.label}</button>`;
+  }).join('');
+}
+
+function setSortMode(m) {
+  _sortMode = m;
+  renderSortChips();
+  renderAttractions();
+}
+
+// ============ RATING FILTER ============
+let _minRating = 0;
+const RATING_OPTIONS = [0, 3.5, 4.0, 4.5];
+const RATING_LABELS = ['Any', '3.5+', '4.0+', '4.5+'];
+
+function renderRatingFilter() {
+  const el = document.getElementById('ratingFilterChips');
+  if (!el) return;
+  el.innerHTML = RATING_OPTIONS.map((r, i) => {
+    const active = _minRating === r;
+    return `<button onclick="setMinRating(${r})" style="
+      padding:3px 9px;font-size:11px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};
+      transition:all .12s;
+    ">${RATING_LABELS[i]}</button>`;
+  }).join('');
+}
+
+function setMinRating(r) {
+  _minRating = r;
+  renderRatingFilter();
+  renderAttractions();
+}
+
+// ============ DURATION FILTER ============
+let _maxDuration = 0;
+const DURATION_OPTIONS = [0, 1, 2, 4, 8];
+const DURATION_LABELS  = ['Any', '≤1h', '≤2h', '≤4h', '≤8h'];
+
+function renderDurationFilter() {
+  const el = document.getElementById('durationFilterChips');
+  if (!el) return;
+  el.innerHTML = DURATION_OPTIONS.map((d, i) => {
+    const active = _maxDuration === d;
+    return `<button onclick="setMaxDuration(${d})" style="
+      padding:3px 9px;font-size:11px;font-weight:700;border-radius:20px;cursor:pointer;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};
+      transition:all .12s;
+    ">${DURATION_LABELS[i]}</button>`;
+  }).join('');
+}
+
+function setMaxDuration(d) {
+  _maxDuration = d;
+  renderDurationFilter();
+  renderAttractions();
+}
+
+// ============ NEAR ME — GEOLOCATION ============
+let userLocationMarker = null;
+
+function toggleNearMe() {
+  if (state.nearMeActive) {
+    state.nearMeActive = false;
+    state.userLat = null;
+    state.userLng = null;
+    if (userLocationMarker) { userLocationMarker.setMap(null); userLocationMarker = null; }
+    document.getElementById('nearMeBtn').classList.remove('active');
+    document.getElementById('nearMeBtn').textContent = '📍 Near Me';
+    renderAttractions();
+    renderAccommodationList();
+    showToast('Near Me off');
+    return;
+  }
+  if (!navigator.geolocation) { showToast('Geolocation not supported by your browser.'); return; }
+  showToast('📍 Getting your location…');
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      state.userLat = pos.coords.latitude;
+      state.userLng = pos.coords.longitude;
+      state.nearMeActive = true;
+      const btn = document.getElementById('nearMeBtn');
+      if (btn) { btn.classList.add('active'); btn.textContent = '📍 Near Me ✓'; }
+      renderUserLocationMarker();
+      map.panTo({ lat: state.userLat, lng: state.userLng });
+      map.setZoom(10);
+      renderAttractions();
+      renderAccommodationList();
+      showToast('Showing attractions nearest you first');
+    },
+    err => {
+      const msgs = { 1: 'Location access denied — allow it in browser settings.', 2: 'Location unavailable.', 3: 'Location request timed out.' };
+      showToast(msgs[err.code] || 'Location error.');
+    },
+    { timeout: 10000, maximumAge: 60000 }
+  );
+}
+
+function renderUserLocationMarker() {
+  if (userLocationMarker) userLocationMarker.setMap(null);
+  if (!state.userLat) return;
+  userLocationMarker = new google.maps.Marker({
+    position: { lat: state.userLat, lng: state.userLng },
+    map,
+    icon: {
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 10,
+      fillColor: '#4285F4',
+      fillOpacity: 1,
+      strokeColor: '#fff',
+      strokeWeight: 3,
+    },
+    title: 'Your location',
+    zIndex: 999,
+  });
+}
+
+function distKmFromUser(a) {
+  if (!state.nearMeActive || state.userLat == null) return null;
+  return haversine({ lat: state.userLat, lng: state.userLng }, a);
+}
+
+function fmtDist(km) {
+  if (km == null) return '';
+  if (km < 1) return `${Math.round(km * 1000)} m`;
+  return `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
+}
+
+// ============ POI DETAIL FULL-SCREEN OVERLAY ============
+let _detailPoiId = null;
+
+function openPoiDetail(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  _detailPoiId = id;
+  const color = catColor(a.category);
+  const rName = regionName(a.region);
+  const allImgs = getPoiImageUrls(a);
+  const heroUrl = allImgs[0] || '';
+  const price = a.price_nzd ? `NZ$${a.price_nzd}` : (a.free ? 'Free' : '');
+  const dist = distKmFromUser(a);
+
+  document.getElementById('poiDetailName').textContent = a.name;
+  document.getElementById('poiDetailMeta').textContent =
+    [catLabel(a.category), rName, a.reviews?.rating ? `★ ${a.reviews.rating.toFixed(1)}` : '', dist != null ? `📍 ${fmtDist(dist)}` : ''].filter(Boolean).join(' · ');
+  const saveBtn = document.getElementById('poiDetailSaveBtn');
+  if (saveBtn) { saveBtn.textContent = isSaved(id) ? '❤ Saved' : '♡ Save'; saveBtn.classList.toggle('saved', isSaved(id)); }
+
+  const galleryHtml = allImgs.length > 1
+    ? `<div class="poi-detail-gallery" id="poiDetailGallery">${
+        allImgs.map((u, i) => `<img src="${u}" class="${i===0?'active':''}" loading="lazy" onerror="this.style.display='none'"
+          onclick="(function(el,src){document.getElementById('poiDetailHeroImg').src=src;el.closest('#poiDetailGallery').querySelectorAll('img').forEach(t=>t.classList.remove('active'));el.classList.add('active');})(this,'${u}')" />`).join('')
+      }</div>`
+    : '';
+
+  const inIti = state.itinerary.some(x => x.id === id);
+  const voiceName = (VOICE_PERSONAS.find(p => p.id === selectedPersonaId) || VOICE_PERSONAS[0] || {}).name || 'Audio Guide';
+  const affilRName = rName;
+
+  document.getElementById('poiDetailBody').innerHTML = `
+    <img id="poiDetailHeroImg" class="poi-detail-hero" src="${heroUrl}" alt="${a.name}" onerror="this.style.display='none'" />
+    ${galleryHtml}
+    <div class="poi-detail-section">
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px;align-items:center;">
+        <span class="cat-chip" style="background:${color}cc;color:#fff;">${catLabel(a.category)}</span>
+        ${a.reviews?.rating ? `<span style="color:#F59E0B;font-weight:700;">★ ${a.reviews.rating.toFixed(1)}</span><span style="font-size:11px;color:var(--muted);">(${(a.reviews.count||0).toLocaleString()} reviews)</span>` : ''}
+        <span style="font-size:12px;color:var(--muted);">⏱ ${a.duration_hours} hr${a.duration_hours!==1?'s':''}</span>
+        ${price ? `<span style="font-size:12px;font-weight:700;color:var(--accent);">${price}</span>` : ''}
+      </div>
+      ${a.reviews?.summary ? `<div style="background:rgba(21,136,138,0.07);border:1px solid rgba(21,136,138,0.18);border-radius:8px;padding:9px 12px;margin-bottom:8px;font-size:12px;line-height:1.5;color:var(--text);">${a.reviews.summary}</div>` : ''}
+      ${(a.tags||[]).length ? `<div>${a.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>` : ''}
+    </div>
+    ${a.short ? `<div class="poi-detail-section"><h3>About</h3><p class="poi-detail-commentary">${a.short}</p></div>` : ''}
+    ${a.commentary ? `<div class="poi-detail-section"><h3>Full Audio Story</h3><p class="poi-detail-commentary">${a.commentary}</p></div>` : ''}
+    <div class="poi-detail-section">
+      <h3>Audio Guide</h3>
+      <button class="btn primary" style="width:100%;margin-bottom:8px;" onclick="showCommentaryPopup('${id}')">🔊 Play Audio Guide with ${voiceName}</button>
+      <button class="btn" style="width:100%;" onclick="openEchoVerse('${id}')">🎙 Community Voices (${echoMemoryCount(id)} stories)</button>
+    </div>
+    <div class="poi-detail-actions">
+      <button class="btn primary" onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${id}'))">${inIti?'✓ In Itinerary':'＋ Add to Itinerary'}</button>
+      <button class="btn" onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${id}'))">🧭 Get Directions</button>
+      <button class="btn" onclick="closePoiDetail();switchView('explore');setTimeout(()=>{if(map){map.panTo({lat:${a.lat},lng:${a.lng}});map.setZoom(14);}},300)">🗺 See on Map</button>
+      <button class="btn" onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${id}'))">🔍 Similar</button>
+      <button class="btn" onclick="filterExploreByRegion('${a.region}')">📍 More from Region</button>
+      <button class="btn ${isInCompare(id)?'primary':''}" onclick="toggleCompare('${id}');renderPlanSidebar();">${isInCompare(id)?'⚖ Comparing':'⚖ Compare'}</button>
+      <button class="btn" onclick="sharePoi('${id}')">📤 Share</button>
+    </div>
+    <div class="poi-detail-section">
+      <h3>Book Activities</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;">
+        <a href="${affilViatorUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;">🎯 Viator</a>
+        <a href="${affilGYGUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 GetYourGuide</a>
+      </div>
+      <a href="${affilBookingUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="margin-top:6px;display:block;width:100%;box-sizing:border-box;text-align:center;">🛏 Find nearby stays</a>
+    </div>
+    <div style="padding:10px 14px 14px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;">
+      <span style="font-size:11px;color:var(--muted);">📍 ${rName} · ${a.lat?.toFixed(4)}, ${a.lng?.toFixed(4)}</span>
+      <a href="https://www.google.com/maps/search/?api=1&query=${a.lat},${a.lng}" target="_blank" rel="noopener"
+        style="font-size:11px;font-weight:700;color:var(--primary);text-decoration:none;border:1px solid var(--primary);border-radius:6px;padding:3px 9px;">
+        🗺 Google Maps ↗
+      </a>
+    </div>
+  `;
+
+  document.getElementById('poiDetailOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePoiDetail() {
+  document.getElementById('poiDetailOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  _detailPoiId = null;
+}
+
+// Swipe left/right in POI detail to navigate
+;(() => {
+  let _swipeStartX = null;
+  document.addEventListener('touchstart', e => {
+    if (document.getElementById('poiDetailOverlay')?.classList.contains('open')) {
+      _swipeStartX = e.touches[0].clientX;
+    }
+  }, { passive: true });
+  document.addEventListener('touchend', e => {
+    if (!_detailPoiId || _swipeStartX === null) return;
+    const dx = e.changedTouches[0].clientX - _swipeStartX;
+    _swipeStartX = null;
+    if (Math.abs(dx) > 60) navigatePoiDetail(dx < 0 ? 1 : -1);
+  }, { passive: true });
+})();
+
+function navigatePoiDetail(dir) {
+  if (!_detailPoiId || !ATTRACTIONS?.length) return;
+  // Build the same filtered list as renderAttractions
+  const q = state.search.toLowerCase().trim();
+  let pool = ATTRACTIONS.filter(a => {
+    if (!state.activeCategories.has(a.category)) return false;
+    if (_minRating > 0 && (a.reviews?.rating || 0) < _minRating) return false;
+    if (_maxDuration > 0 && (a.duration_hours || 0) > _maxDuration) return false;
+    if (_activeTag && !(a.tags || []).includes(_activeTag)) return false;
+    if (state.activeRegion && a.region !== state.activeRegion) return false;
+    if (q) {
+      const hay = `${a.name} ${a.short} ${a.region} ${(a.tags || []).join(' ')}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  if (!pool.length) return;
+  const idx = pool.findIndex(a => a.id === _detailPoiId);
+  const nextIdx = (idx + dir + pool.length) % pool.length;
+  openPoiDetail(pool[nextIdx].id);
+}
+
+function toggleSaveFromDetail() {
+  if (!_detailPoiId) return;
+  toggleSave(_detailPoiId);
+  const btn = document.getElementById('poiDetailSaveBtn');
+  if (btn) { btn.textContent = isSaved(_detailPoiId) ? '❤ Saved' : '♡ Save'; btn.classList.toggle('saved', isSaved(_detailPoiId)); }
+}
+
+// ============ SURPRISE ME / DISCOVER ============
+let _surpriseHistory = [];
+function surpriseMe() {
+  if (!ATTRACTIONS || !ATTRACTIONS.length) { showToast('Still loading…'); return; }
+  // Pick from top-rated POIs (rating ≥ 4.0 or top 30%), excluding recently shown
+  let pool = ATTRACTIONS.filter(a => a.reviews?.rating >= 4.0);
+  if (pool.length < 20) pool = [...ATTRACTIONS].sort((a,b) => (b.reviews?.rating||0) - (a.reviews?.rating||0)).slice(0, Math.ceil(ATTRACTIONS.length * 0.3));
+  // If a region filter is active, prefer that region (with 70% probability)
+  if (state.activeRegion && Math.random() < 0.7) {
+    const regional = pool.filter(a => a.region === state.activeRegion);
+    if (regional.length >= 3) pool = regional;
+  }
+  // Exclude recently shown to avoid repeats
+  const fresh = pool.filter(a => !_surpriseHistory.includes(a.id));
+  const candidates = fresh.length >= 5 ? fresh : pool;
+  const pick = candidates[Math.floor(Math.random() * candidates.length)];
+  if (!pick) return;
+  _surpriseHistory = [..._surpriseHistory.slice(-20), pick.id];
+
+  // Zoom map to picked POI and open its popup
+  map.panTo({ lat: pick.lat, lng: pick.lng });
+  map.setZoom(13);
+  // Find or create marker at that position
+  const existing = poiMarkers.find(m => m._poiId === pick.id);
+  if (existing) {
+    openPoiInfoWindow(pick, existing);
+  } else {
+    const tempMarker = new google.maps.Marker({ position: { lat: pick.lat, lng: pick.lng }, map, visible: false });
+    tempMarker._poiId = pick.id;
+    openPoiInfoWindow(pick, tempMarker);
+  }
+  const rName = (REGIONS.find(r => r.id === pick.region) || {}).name || pick.region;
+  showToast(`✨ Discovering: ${pick.name} · ${rName}`);
+}
+
+// ============ SOCIAL SHARING ============
+function shareAccom(id) {
+  const a = ACCOMMODATIONS.find(x => x.id === id);
+  if (!a) return;
+  const rName = (REGIONS.find(r => r.id === a.region) || {}).name || 'New Zealand';
+  const price = a.price_nzd_per_night ? ` · ~NZ$${a.price_nzd_per_night}/night` : '';
+  const shareText = `${a.name} in ${rName}${price} — found on Qiwiosity NZ!`;
+  const shareUrl = window.location.origin + window.location.pathname + '?accom=' + encodeURIComponent(id);
+  if (navigator.share) {
+    navigator.share({ title: a.name, text: shareText, url: shareUrl }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(shareUrl + '\n\n' + shareText)
+      .then(() => showToast('📋 Accommodation link copied!'))
+      .catch(() => showToast('Copy: ' + shareUrl));
+  }
+}
+
+function sharePoi(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || 'New Zealand';
+  const shareText = `Discovered ${a.name} in ${rName} on Qiwiosity! ${a.short || ''}`.trim();
+  const shareUrl = window.location.origin + window.location.pathname + '?poi=' + encodeURIComponent(id);
+  if (navigator.share) {
+    navigator.share({ title: a.name, text: shareText, url: shareUrl }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(shareUrl + '\n\n' + shareText)
+      .then(() => showToast('📋 Link copied to clipboard!'))
+      .catch(() => showToast('Copy: ' + shareUrl));
+  }
+}
+
+function printTrip() {
+  if (!state.itinerary.length) { showToast('Add stops to your trip first'); return; }
+  const days = state.itineraryDays || 1;
+  let byDay = {};
+  for (let d = 1; d <= days; d++) byDay[d] = [];
+  state.itinerary.forEach(a => byDay[a.day || 1].push(a));
+
+  function _printFmtTime(mins) {
+    const h = Math.floor(mins / 60) % 24;
+    const m = mins % 60;
+    const ampm = h < 12 ? 'am' : 'pm';
+    return `${h % 12 || 12}:${String(m).padStart(2,'0')}${ampm}`;
+  }
+
+  const rows = Object.keys(byDay).map(d => {
+    const stops = byDay[d];
+    if (!stops.length) return '';
+    let dayDist = 0;
+    for (let i = 1; i < stops.length; i++) dayDist += haversine(stops[i-1], stops[i]);
+
+    // Calculate arrival times for this day
+    let cursor = 9 * 60;
+    const times = stops.map((a, i) => {
+      if (i > 0) cursor += Math.round((haversine(stops[i-1], a) / 75) * 60);
+      const t = cursor;
+      cursor += Math.round(a.duration_hours * 60);
+      return t;
+    });
+
+    const stopRows = stops.map((a, i) => {
+      const fee = CATEGORY_FEE_NZD[a.category];
+      const feeStr = fee > 0 ? `~NZ$${fee}` : fee === 0 ? 'Free' : '';
+      return `
+      <tr>
+        <td style="text-align:center;font-weight:700;color:#15888A;">${i + 1}</td>
+        <td><strong>${a.name}</strong><br><span style="color:#666;font-size:12px;">${a.region || ''}</span></td>
+        <td style="color:#555;font-size:13px;">${catLabel(a.category)}</td>
+        <td style="text-align:center;color:#555;">${a.duration_hours}h</td>
+        <td style="text-align:center;color:#15888A;font-weight:700;">${_printFmtTime(times[i])}</td>
+        <td style="text-align:center;color:#E07B3C;font-size:12px;">${feeStr}</td>
+        <td style="font-size:12px;color:#777;">${a.note || ''}</td>
+      </tr>`;
+    }).join('');
+    const dayHrs = stops.reduce((s, a) => s + a.duration_hours, 0);
+    return `<h3 style="margin:24px 0 6px;color:#15888A;">Day ${d} — ${stops.length} stops · ${dayHrs}h activity · ~${Math.round(dayDist)} km</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+        <thead><tr style="background:#f0f8f8;">
+          <th style="padding:6px 8px;text-align:left;">#</th>
+          <th style="padding:6px 8px;text-align:left;">Place</th>
+          <th style="padding:6px 8px;text-align:left;">Type</th>
+          <th style="padding:6px 8px;text-align:left;">Duration</th>
+          <th style="padding:6px 8px;text-align:left;">Arrive</th>
+          <th style="padding:6px 8px;text-align:left;">~Cost</th>
+          <th style="padding:6px 8px;text-align:left;">Notes</th>
+        </tr></thead>
+        <tbody>${stopRows}</tbody>
+      </table>`;
+  }).join('');
+
+  const totalStops = state.itinerary.length;
+  const totalHrs = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
+  let totalDist = 0;
+  for (let i = 1; i < state.itinerary.length; i++) totalDist += haversine(state.itinerary[i-1], state.itinerary[i]);
+
+  const html = `<!DOCTYPE html><html><head><meta charset="utf-8">
+  <title>Qiwiosity Trip Itinerary</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 820px; margin: 0 auto; padding: 32px 24px; color: #1a2a2e; }
+    h1 { color: #15888A; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 13px; margin-bottom: 24px; }
+    table td, table th { padding: 6px 8px; border-bottom: 1px solid #e8eef0; vertical-align: top; }
+    @media print { body { padding: 12px; } }
+  </style></head><body>
+  <h1>🥝 Qiwiosity Trip Itinerary</h1>
+  <p class="meta">Generated ${new Date().toLocaleDateString('en-NZ', {day:'numeric',month:'long',year:'numeric'})} &nbsp;·&nbsp; ${days} day${days>1?'s':''} &nbsp;·&nbsp; ${totalStops} stops &nbsp;·&nbsp; ${totalHrs} activity hours &nbsp;·&nbsp; ~${Math.round(totalDist)} km driving</p>
+  ${rows}
+  <p style="margin-top:32px;color:#aaa;font-size:11px;border-top:1px solid #e8eef0;padding-top:12px;">Created with Qiwiosity — Explore New Zealand with Curiosity &nbsp;·&nbsp; qiwiosity.com</p>
+  </body></html>`;
+
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+  setTimeout(() => win.print(), 500);
+}
+
+function resetMapToNZ() {
+  if (!map) return;
+  map.panTo({ lat: -41.2865, lng: 174.7762 });
+  map.setZoom(6);
+  showToast('🇳🇿 Map reset to New Zealand');
+}
+
+function exportToCalendar() {
+  if (!state.itinerary.length) { showToast('Add stops to your trip first'); return; }
+  const days = state.itineraryDays || 1;
+  let byDay = {};
+  for (let d = 1; d <= days; d++) byDay[d] = [];
+  state.itinerary.forEach(a => byDay[a.day || 1].push(a));
+
+  // Ask user for trip start date
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const pickedStr = prompt('Trip start date (YYYY-MM-DD):', todayStr);
+  if (!pickedStr) return;
+
+  const startDate = new Date(pickedStr + 'T09:00:00');
+  if (isNaN(startDate.getTime())) { showToast('Invalid date — try YYYY-MM-DD'); return; }
+
+  let icsLines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Qiwiosity//NZ Travel App//EN',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+  ];
+
+  Object.keys(byDay).forEach(d => {
+    const stops = byDay[d];
+    if (!stops.length) return;
+    const dayDate = new Date(startDate);
+    dayDate.setDate(startDate.getDate() + parseInt(d) - 1);
+
+    let minutesCursor = 9 * 60; // 9am
+    stops.forEach((a, i) => {
+      if (i > 0) minutesCursor += Math.round((haversine(stops[i-1], a) / 75) * 60);
+      const start = new Date(dayDate);
+      start.setHours(Math.floor(minutesCursor / 60), minutesCursor % 60, 0, 0);
+      minutesCursor += Math.round(a.duration_hours * 60);
+      const end = new Date(dayDate);
+      end.setHours(Math.floor(minutesCursor / 60), minutesCursor % 60, 0, 0);
+
+      const fmt = dt => dt.toISOString().replace(/[-:]/g, '').replace('.000', '');
+      const uid = `qwiosity-${a.id}-day${d}-stop${i}@qiwiosity.nz`;
+      const desc = (a.short || '').replace(/[,;\\]/g, ' ').replace(/\n/g, '\\n');
+      const loc = `${a.name}, ${a.region || 'New Zealand'}`;
+
+      icsLines = icsLines.concat([
+        'BEGIN:VEVENT',
+        `UID:${uid}`,
+        `DTSTART:${fmt(start)}`,
+        `DTEND:${fmt(end)}`,
+        `SUMMARY:Day ${d} Stop ${i+1}: ${a.name}`,
+        `DESCRIPTION:${desc}\\nCategory: ${catLabel(a.category)}\\n${a.reviews?.rating ? '★ '+a.reviews.rating : ''}`,
+        `LOCATION:${loc}`,
+        `GEO:${a.lat};${a.lng}`,
+        'END:VEVENT',
+      ]);
+    });
+  });
+
+  icsLines.push('END:VCALENDAR');
+  const blob = new Blob([icsLines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'qiwiosity-trip.ics';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+  showToast('📅 Calendar file downloaded');
+}
+
+function shareTrip() {
+  if (!state.itinerary.length) { showToast('Add some stops first!'); return; }
+  const byDay = {};
+  state.itinerary.forEach(a => {
+    const d = a.day || 1;
+    if (!byDay[d]) byDay[d] = [];
+    byDay[d].push(a);
+  });
+  const totalKm = Math.round((() => {
+    let d = 0;
+    const sorted = [...state.itinerary].sort((a,b) => (a.day||1)-(b.day||1));
+    for (let i = 1; i < sorted.length; i++) { if ((sorted[i].day||1)===(sorted[i-1].day||1)) d += haversine(sorted[i-1], sorted[i]); }
+    return d;
+  })());
+  const totalCost = state.itinerary.reduce((s,a) => s + (CATEGORY_FEE_NZD[a.category] ?? CATEGORY_FEE_NZD['default']), 0);
+  const lines = [`🗺️ My NZ Adventure — ${state.itinerary.length} stops · ${state.itineraryDays} day${state.itineraryDays > 1 ? 's' : ''}\n`];
+  Object.keys(byDay).sort((a,b) => a - b).forEach(d => {
+    const dStops = byDay[d];
+    let dDist = 0;
+    for (let i = 1; i < dStops.length; i++) dDist += haversine(dStops[i-1], dStops[i]);
+    const dHrs = dStops.reduce((s,a) => s + a.duration_hours, 0);
+    lines.push(`Day ${d}: ${dStops.length} stop${dStops.length>1?'s':''} · ${dHrs}h · ~${Math.round(dDist)} km`);
+    dStops.forEach((a, i) => {
+      const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
+      const rating = a.reviews?.rating ? ` ★${a.reviews.rating.toFixed(1)}` : '';
+      lines.push(`  ${i + 1}. ${a.name}${rName ? ' · ' + rName.split(' / ')[0] : ''}${rating}`);
+    });
+    lines.push('');
+  });
+  if (totalKm > 0) lines.push(`📍 Total driving: ~${totalKm} km`);
+  if (totalCost > 0) lines.push(`💰 Est. activity cost: ~NZ$${totalCost}`);
+  lines.push('\nPlanned with Qiwiosity — New Zealand\'s travel guide\nhttps://qiwiosity.replit.app');
+  const text = lines.join('\n');
+  if (navigator.share) {
+    navigator.share({ title: 'My NZ Trip', text }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(text)
+      .then(() => showToast('📋 Trip copied to clipboard!'))
+      .catch(() => {});
+  }
+}
+
 function showCommentary(a, autoPlay) {
   closeCommentary();
   _currentPoiId = a.id;
@@ -2497,7 +3802,11 @@ function showCommentary(a, autoPlay) {
 
   document.getElementById('commentaryText').innerHTML =
     `<div style="font-weight:700;margin-bottom:6px;font-size:14px;">${a.name}</div>`
-    + `<div style="opacity:0.88;line-height:1.6;font-size:13px;">${a.commentary || 'No commentary available for this location.'}</div>`
+    + `<div class="comm-length-row">`
+    + `<button class="comm-len-pill ${commLengthMode==='short'?'active':''}" data-mode="short" onclick="setCommLength('short','${a.id}')">⚡ Quick (30s)</button>`
+    + `<button class="comm-len-pill ${commLengthMode==='full'?'active':''}" data-mode="full" onclick="setCommLength('full','${a.id}')">📖 Full Guide</button>`
+    + `</div>`
+    + `<div id="commBodyText" style="opacity:0.88;line-height:1.6;font-size:13px;">${getCommText(a)}</div>`
     + `<div class="commentary-play-row">`
     + `<button id="commentaryPlayBtn" class="commentary-play-btn" onclick="toggleCommentarySpeech('${a.id}')">▶ Play</button>`
     + `<span style="font-size:11px;opacity:0.6;">${elevenLabsKey ? 'AI voice' : 'Browser voice'} · ${persona.name}</span>`
@@ -2516,23 +3825,75 @@ function toggleCommentarySpeech(id) {
     updateCommentaryPlayBtn(false);
     return;
   }
-  if (!a || !a.commentary) return;
+  if (!a) return;
+  const text = getCommText(a);
+  if (!text) return;
   updateCommentaryPlayBtn(true);
-  speakText(`${a.name}. ${a.commentary}`);
+  speakText(`${a.name}. ${text}`);
 }
 
 // ============ ITINERARY ============
+const ITI_KEY = 'qw_itinerary';
+
+function saveItineraryToStorage() {
+  try {
+    const payload = {
+      items: state.itinerary.map(a => ({ id: a.id, day: a.day || 1, note: a.note || '' })),
+      days: state.itineraryDays,
+      activeDay: state.planActiveDay,
+    };
+    localStorage.setItem(ITI_KEY, JSON.stringify(payload));
+  } catch (e) { /* quota */ }
+}
+
+function restoreItineraryFromStorage() {
+  try {
+    const raw = localStorage.getItem(ITI_KEY);
+    if (!raw || !ATTRACTIONS?.length) return;
+    const payload = JSON.parse(raw);
+    if (!payload?.items?.length) return;
+    state.itinerary = payload.items.map(item => {
+      const a = ATTRACTIONS.find(x => String(x.id) === String(item.id));
+      if (!a) return null;
+      return Object.assign({}, a, { day: item.day || 1, note: item.note || '' });
+    }).filter(Boolean);
+    state.itineraryDays = payload.days || 1;
+    state.planActiveDay = payload.activeDay || 1;
+    renderItinerary();
+    if (state.itinerary.length) showToast(`Trip restored — ${state.itinerary.length} stop${state.itinerary.length > 1 ? 's' : ''} loaded`);
+  } catch (e) { localStorage.removeItem(ITI_KEY); }
+}
+
 function addToItinerary(a) {
-  if (state.itinerary.find(x => x.id === a.id)) return;
-  state.itinerary.push(a);
+  if (!a) return;
+  if (state.itinerary.find(x => x.id === a.id)) { showToast(`✓ Already in trip: ${a.name}`); return; }
+  // Assign to active day
+  const dayA = Object.assign({}, a, { day: state.planActiveDay || 1 });
+  state.itinerary.push(dayA);
+  saveItineraryToStorage();
   renderItinerary();
   renderAttractions();
+  showToast(`＋ Added: ${a.name}`);
 }
 
 function removeFromItinerary(id) {
   state.itinerary = state.itinerary.filter(x => x.id !== id);
+  saveItineraryToStorage();
   renderItinerary();
   renderAttractions();
+}
+
+function duplicateStop(id) {
+  const orig = state.itinerary.find(x => x.id === id);
+  if (!orig) return;
+  const idx = state.itinerary.indexOf(orig);
+  // Create a shallow copy with a synthetic unique id so it can be removed independently
+  const dup = Object.assign({}, orig, { id: orig.id + '_dup' + Date.now(), note: '' });
+  state.itinerary.splice(idx + 1, 0, dup);
+  saveItineraryToStorage();
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+  showToast(`⧉ Duplicated: ${orig.name}`);
 }
 
 function haversine(a, b) {
@@ -2644,6 +4005,14 @@ function renderItinerary() {
     <div class="iti-stat-line"><span>Activity time</span><span>${hours} hrs</span></div>
     <div class="iti-stat-line"><span>Today's distance</span><span>~${Math.round(dayDist)} km</span></div>
     <div class="iti-stat-line total"><span>Est. drive time</span><span>~${driveHrs} hrs</span></div>
+    ${(() => {
+      const regionCounts = {};
+      state.itinerary.forEach(a => { if (a.region) regionCounts[a.region] = (regionCounts[a.region] || 0) + 1; });
+      const topRegion = Object.entries(regionCounts).sort((a,b) => b[1]-a[1])[0];
+      if (!topRegion) return '';
+      const rName = (REGIONS.find(r => r.id === topRegion[0]) || {}).name || topRegion[0];
+      return `<div class="iti-stat-line"><span>Top region</span><span>${rName.split(' / ')[0]}</span></div>`;
+    })()}
     <button class="iti-nav-btn" onclick="openInAppTripRoute()">🧭 Show route on map</button>
   `;
 
@@ -2737,16 +4106,49 @@ function updateLegendContent() {
 
 function renderRegionList() {
   const el = document.getElementById('regionList');
-  el.innerHTML = REGIONS.map(r => `
-    <div class="region" data-id="${r.id}">
-      <div>${r.name} <span class="small">${r.island} Island</span></div>
+  const poiCountByRegion = {};
+  ATTRACTIONS.forEach(a => { poiCountByRegion[a.region] = (poiCountByRegion[a.region] || 0) + 1; });
+
+  const accomCountByRegion = {};
+  ACCOMMODATIONS.forEach(a => { accomCountByRegion[a.region] = (accomCountByRegion[a.region] || 0) + 1; });
+
+  el.innerHTML = REGIONS.map(r => {
+    const isActive = state.activeRegion === r.id;
+    const accomN = accomCountByRegion[r.id] || 0;
+    return `
+    <div class="region ${isActive ? 'region-active' : ''}" data-id="${r.id}"
+      style="display:flex;align-items:center;gap:6px;${isActive ? 'background:rgba(21,136,138,0.12);border-left:3px solid var(--primary);padding-left:6px;border-radius:6px;' : ''}">
+      <div style="flex:1;">
+        ${r.name}
+        <span class="small" style="font-size:10px;color:var(--muted);margin-left:4px;">${r.island} Is.</span>
+      </div>
+      ${accomN ? `<span title="${accomN} stays" style="font-size:9px;color:var(--muted);white-space:nowrap;">🛏${accomN}</span>` : ''}
+      ${poiCountByRegion[r.id] ? `<span class="poi-count" style="${isActive ? 'background:var(--primary);color:white;' : ''}">${poiCountByRegion[r.id]}</span>` : ''}
     </div>
-  `).join('');
+  `;}).join('');
+  // Update active region chip indicator
+  const chipEl = document.getElementById('activeRegionChip');
+  if (chipEl) {
+    const activeR = REGIONS.find(r => r.id === state.activeRegion);
+    if (activeR) {
+      chipEl.textContent = `${activeR.name} ✕`;
+      chipEl.style.display = 'inline-block';
+    } else {
+      chipEl.style.display = 'none';
+    }
+  }
+
   el.querySelectorAll('.region').forEach(node => {
     node.addEventListener('click', () => {
       const r = REGIONS.find(x => x.id === node.dataset.id);
-      map.panTo({ lat: r.lat, lng: r.lng });
-      map.setZoom(9);
+      if (!r) return;
+      // Pan map to region
+      if (map) { map.panTo({ lat: r.lat, lng: r.lng }); map.setZoom(9); }
+      // Toggle region filter on the Explore tab — second click on same region clears it
+      state.activeRegion = (state.activeRegion === r.id) ? null : r.id;
+      renderRegionList();
+      renderAttractions();
+      showToast(state.activeRegion ? `Filtering: ${r.name}` : 'Region filter cleared');
     });
   });
 }
@@ -2800,11 +4202,35 @@ function renderAccomRegionChips() {
   });
 }
 
+function clearAccomFilters() {
+  state.accomRegionFilter = null;
+  state.activeAccomTypes = new Set(ACCOMMODATIONS.map(a => a.type));
+  _accomBudget = 'any';
+  _accomSort = 'default';
+  state.accomSearch = '';
+  const searchEl = document.getElementById('accomSearch');
+  if (searchEl) searchEl.value = '';
+  renderAccomRegionChips();
+  renderAccomSortChips();
+  renderAccomBudgetChips();
+  renderAccomTypeChips?.();
+  renderAccommodationList();
+  renderAccommodations();
+}
+
 function renderAccommodationList() {
   const filtered = accomFilteredList();
 
   const countEl = document.getElementById('accomCount');
   if (countEl) countEl.textContent = `${filtered.length} of ${ACCOMMODATIONS.length} places`;
+
+  // Show/hide clear button
+  const clearBtn = document.getElementById('clearAccomFiltersBtn');
+  if (clearBtn) {
+    const hasFilter = state.accomRegionFilter || _accomBudget !== 'any' || _accomSort !== 'default' ||
+      (ACCOMMODATIONS.length && state.activeAccomTypes.size < new Set(ACCOMMODATIONS.map(a=>a.type)).size);
+    clearBtn.style.display = hasFilter ? 'inline-block' : 'none';
+  }
 
   const listEl = document.getElementById('accomList');
   if (!listEl) return;
@@ -2823,13 +4249,32 @@ function renderAccommodationList() {
     const region = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
     const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
     const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
+    const distBadge = (() => {
+      if (state.nearMeActive && state.userLat != null) {
+        const km = haversine({lat:state.userLat,lng:state.userLng},a);
+        return `<span style="font-size:10px;font-weight:700;color:var(--primary);margin-left:4px;">📍 ${fmtDist(km)}</span>`;
+      }
+      if (_accomSort === 'near-iti' && state.itinerary.length) {
+        const centroid = state.itinerary.reduce((acc,s)=>{acc.lat+=s.lat;acc.lng+=s.lng;return acc;},{lat:0,lng:0});
+        centroid.lat/=state.itinerary.length; centroid.lng/=state.itinerary.length;
+        const km = haversine(centroid, a);
+        return `<span style="font-size:10px;font-weight:700;color:#15888A77;margin-left:4px;">~${fmtDist(km)} from trip</span>`;
+      }
+      return '';
+    })();
+    const accomSaved = (typeof savedAccoms !== 'undefined') && savedAccoms.includes(String(a.id));
     return `<div class="accom-card" onclick="accomCardClick('${a.id}')">
       <div class="accom-card-left">
-        <div class="accom-card-name">${a.name}</div>
+        <div style="display:flex;align-items:flex-start;gap:4px;">
+          <div class="accom-card-name" style="flex:1;">${a.name}</div>
+          <button onclick="event.stopPropagation();toggleAccomSave('${a.id}',this)" title="${accomSaved?'Remove from saved':'Save'}"
+            style="background:none;border:none;cursor:pointer;font-size:14px;padding:0;line-height:1;color:${accomSaved?'#e05;':'var(--muted)'};">${accomSaved?'❤':'♡'}</button>
+        </div>
         <div class="accom-card-meta">
           <span class="accom-type-chip" style="background:${color};">${label}</span>
           ${price ? `<span class="accom-price">${price}</span>` : ''}
           ${rating ? `<span class="accom-rating">${rating}</span>` : ''}
+          ${distBadge}
         </div>
         ${region ? `<div style="font-size:10px;color:var(--muted);margin-bottom:3px;">📍 ${region}</div>` : ''}
         <p class="accom-short">${a.short || ''}</p>
@@ -2913,12 +4358,14 @@ function openPoiInfoWindow(a, marker) {
         <img class="popup-hero" src="${imgUrl}" alt="${a.name}"
              onerror="this.style.display='none'" loading="lazy" />
         <span class="credit">&copy; Wikimedia</span>
+        ${allImgs.length > 1 ? `<span style="position:absolute;bottom:4px;right:6px;font-size:9px;font-weight:700;color:rgba(255,255,255,0.85);background:rgba(0,0,0,0.45);border-radius:8px;padding:1px 6px;">📷 ${allImgs.length}</span>` : ''}
         <div class="popup-hero-overlay">
           <h3>${a.name}</h3>
           <div class="hero-meta">
             <span class="cat-chip" style="background:${color}cc;">${catLabel(a.category)}</span>
-            ${a.reviews?.rating ? `<span class="hero-rating">★ ${a.reviews.rating.toFixed(1)}</span>` : ''}
+            ${a.reviews?.rating ? `<span class="hero-rating">★ ${a.reviews.rating.toFixed(1)}</span>${a.reviews.count ? `<span class="hero-duration">(${(a.reviews.count).toLocaleString()})</span>` : ''}` : ''}
             <span class="hero-duration">⏱ ${a.duration_hours}h</span>
+            ${(() => { const d = distKmFromUser(a); return d != null ? `<span class="poi-dist-badge">📍 ${fmtDist(d)}</span>` : ''; })()}
           </div>
         </div>
       </div>
@@ -2947,14 +4394,19 @@ function openPoiInfoWindow(a, marker) {
         <button class="echo-popup-open-btn" onclick="event.stopPropagation();openEchoVerse('${a.id}')">${echoMemoryCount(a.id) > 0 ? 'Hear & Share →' : 'Be first →'}</button>
       </div>
       <div class="pop-actions-bottom">
-        <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
-          class="btn primary" style="width:100%;margin-bottom:7px;">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
+        <div style="display:flex;gap:6px;margin-bottom:7px;">
+          <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
+            class="btn primary" style="flex:1;">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
+          <button onclick="openPoiDetail('${a.id}')" class="btn" style="flex-shrink:0;">📖 More</button>
+        </div>
         <div class="pop-btn-row">
           <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
             onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤' : '♡'} Save</button>
           <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Drive</button>
           <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar</button>
+          <button onclick="sharePoi('${a.id}')" class="btn">📤 Share</button>
           <button onclick="openCompareSheet('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}">${isInCompare(a.id) ? '✓' : '⚖'} Compare</button>
+          <button onclick="(function(){navigator.clipboard.writeText('${a.lat.toFixed(5)},${a.lng.toFixed(5)}');showToast('📋 Coords copied');})()" class="btn" title="Copy coordinates">📋 Coords</button>
         </div>
       </div>
     </div>
@@ -2962,6 +4414,7 @@ function openPoiInfoWindow(a, marker) {
 
   infoWindow.setContent(content);
   infoWindow.open(map, marker);
+  addToRV(a.id);
 }
 
 function openAccomInfoWindow(a, marker) {
@@ -2969,7 +4422,8 @@ function openAccomInfoWindow(a, marker) {
   const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region;
   const accomImgUrl = getPoiImageUrl(a);
   const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
-  const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
+  const reviewCount = a.review_count ? ` (${a.review_count.toLocaleString()})` : '';
+  const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}${reviewCount}` : '';
   const content = `
     <div class="popup-inner">
       <div class="popup-hero-wrap">
@@ -2993,7 +4447,15 @@ function openAccomInfoWindow(a, marker) {
       </div>
       <div class="affiliate-strip">
         <span>Prices shown by partners · Commission may be earned</span>
-        <button onclick="showInAppRoute({lat:${a.lat},lng:${a.lng},name:'${a.name.replace(/'/g,"\\'")}'})" class="btn" style="padding:4px 10px;font-size:11px;">🧭 Directions</button>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;">
+          <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(a.name + ' ' + rName)}" target="_blank" rel="noopener"
+            class="btn" style="padding:4px 10px;font-size:11px;text-decoration:none;">🗺 Maps ↗</a>
+          <button onclick="showInAppRoute({lat:${a.lat},lng:${a.lng},name:'${a.name.replace(/'/g,"\\'")}'})" class="btn" style="padding:4px 10px;font-size:11px;">🧭 Directions</button>
+          <button id="accomSaveBtn_${a.id}" onclick="toggleAccomSave('${a.id}',this)" class="btn" style="padding:4px 10px;font-size:11px;${savedAccoms.includes(String(a.id))?'color:#e05;':''}">
+            ${savedAccoms.includes(String(a.id)) ? '❤ Saved' : '♡ Save'}
+          </button>
+          <button onclick="shareAccom('${a.id}')" class="btn" style="padding:4px 10px;font-size:11px;">📤 Share</button>
+        </div>
       </div>
     </div>
   `;
@@ -3008,7 +4470,8 @@ function openAccomInfoWindow(a, marker) {
 
 // ============ RENDER ATTRACTIONS (Google Maps markers) ============
 function renderAttractions() {
-  // Clear existing POI markers
+  // Destroy old clusterer and clear markers
+  if (poiClusterer) { poiClusterer.clearMarkers(); poiClusterer = null; }
   poiMarkers.forEach(m => m.setMap(null));
   poiMarkers = [];
 
@@ -3016,32 +4479,108 @@ function renderAttractions() {
   if (state.view === 'stay') return;
 
   const q = state.search.toLowerCase().trim();
-  ATTRACTIONS.forEach(a => {
-    if (!state.activeCategories.has(a.category)) return;
+  const newMarkers = [];
+
+  // Build filtered list — sort by distance from user if Near Me is active
+  let filtered = ATTRACTIONS.filter(a => {
+    if (!state.activeCategories.has(a.category)) return false;
+    if (_minRating > 0 && (a.reviews?.rating || 0) < _minRating) return false;
+    if (_maxDuration > 0 && (a.duration_hours || 0) > _maxDuration) return false;
+    if (_activeTag && !(a.tags || []).includes(_activeTag)) return false;
+    if (state.activeRegion && a.region !== state.activeRegion) return false;
     if (q) {
       const haystack = `${a.name} ${a.short} ${a.region} ${(a.tags || []).join(' ')}`.toLowerCase();
-      if (!haystack.includes(q)) return;
+      if (!haystack.includes(q)) return false;
     }
+    return true;
+  });
+  if (state.nearMeActive && state.userLat != null) {
+    filtered.sort((a, b) => haversine({ lat: state.userLat, lng: state.userLng }, a) - haversine({ lat: state.userLat, lng: state.userLng }, b));
+  } else if (_sortMode === 'rating') {
+    filtered.sort((a, b) => (b.reviews?.rating || 0) - (a.reviews?.rating || 0));
+  } else if (_sortMode === 'reviewed') {
+    filtered.sort((a, b) => (b.reviews?.count || 0) - (a.reviews?.count || 0));
+  } else if (_sortMode === 'duration') {
+    filtered.sort((a, b) => (a.duration_hours || 0) - (b.duration_hours || 0));
+  } else if (_sortMode === 'name') {
+    filtered.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  filtered.forEach(a => {
     const inItinerary = state.itinerary.some(x => x.id === a.id);
     const color = catColor(a.category);
     const radius = inItinerary ? 10 : 7;
 
     const marker = new google.maps.Marker({
       position: { lat: a.lat, lng: a.lng },
-      map: map,
       icon: createCircleIcon(color, radius, inItinerary),
       title: a.name,
       zIndex: inItinerary ? 100 : 10,
       opacity: 1.0,
     });
     marker._poiId = a.id;
-
-    marker.addListener('click', () => {
-      openPoiInfoWindow(a, marker);
-    });
-
+    marker.addListener('click', () => { openPoiInfoWindow(a, marker); });
+    newMarkers.push(marker);
     poiMarkers.push(marker);
   });
+
+  // Use MarkerClusterer when available and there are enough markers
+  const MC = window.markerClusterer?.MarkerClusterer;
+  if (MC && newMarkers.length > 50) {
+    poiClusterer = new MC({
+      map,
+      markers: newMarkers,
+      renderer: {
+        render({ count, position }) {
+          return new google.maps.Marker({
+            position,
+            icon: {
+              url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
+                `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+                  <circle cx="22" cy="22" r="20" fill="#15888A" stroke="white" stroke-width="2.5" opacity="0.9"/>
+                  <text x="22" y="27" text-anchor="middle" font-size="${count > 99 ? 11 : 13}" font-weight="800"
+                    fill="white" font-family="system-ui,sans-serif">${count > 999 ? '999+' : count}</text>
+                </svg>`
+              ),
+              scaledSize: new google.maps.Size(44, 44),
+              anchor: new google.maps.Point(22, 22),
+            },
+            zIndex: 200,
+            title: `${count} places`,
+          });
+        }
+      }
+    });
+  } else {
+    // Fewer markers or library not loaded — add directly to map
+    newMarkers.forEach(m => m.setMap(map));
+  }
+
+  // Update visible count in sidebar
+  const counterEl = document.getElementById('attractionCounter');
+  if (counterEl && ATTRACTIONS?.length) {
+    const total = ATTRACTIONS.length;
+    const shown = filtered.length;
+    counterEl.textContent = shown === total
+      ? `Showing all ${total.toLocaleString()} places`
+      : `Showing ${shown.toLocaleString()} of ${total.toLocaleString()} places`;
+    counterEl.style.color = shown < total ? 'var(--primary)' : 'var(--muted)';
+  }
+
+  // Show/hide "Clear all filters" button with count badge
+  const clearBtn = document.getElementById('clearFiltersBtn');
+  if (clearBtn) {
+    let activeCount = 0;
+    if (_minRating > 0) activeCount++;
+    if (_maxDuration > 0) activeCount++;
+    if (_sortMode !== 'default') activeCount++;
+    if (_activeTag) activeCount++;
+    if (state.search?.trim()) activeCount++;
+    if (state.activeRegion) activeCount++;
+    if (CATEGORIES?.length && state.activeCategories.size < CATEGORIES.length) activeCount++;
+    clearBtn.style.display = activeCount > 0 ? 'inline-block' : 'none';
+    clearBtn.textContent = activeCount > 1 ? `✕ Clear (${activeCount})` : '✕ Clear';
+  }
 }
 
 // ============ RENDER ACCOMMODATIONS (Google Maps markers) ============
@@ -3105,6 +4644,7 @@ function moveStop(id, dir) {
     const nextGlobalIdx = state.itinerary.findIndex(x => x.id === nextId);
     [state.itinerary[globalIdx], state.itinerary[nextGlobalIdx]] = [state.itinerary[nextGlobalIdx], state.itinerary[globalIdx]];
   }
+  saveItineraryToStorage();
   renderItinerary();
   if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
 }
@@ -3112,6 +4652,7 @@ function moveStop(id, dir) {
 function moveStopToDay(id, newDay) {
   const stop = state.itinerary.find(x => x.id === id);
   if (stop) stop.day = parseInt(newDay);
+  saveItineraryToStorage();
   renderItinerary();
   if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
   showToast(`Moved to Day ${newDay}`);
@@ -3131,6 +4672,7 @@ function clearItinerary() {
   state.itineraryDays = 1;
   state.planActiveDay = 1;
   state.expandedStops = new Set();
+  localStorage.removeItem(ITI_KEY);
   renderItinerary();
   renderAttractions();
   if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
@@ -3150,7 +4692,7 @@ function togglePlanTemplates() {
 
 function showCommentaryForStop(id) {
   const a = ATTRACTIONS.find(x => x.id === id);
-  if (a) showCommentary(a, false);
+  if (a) showCommentary(a, drivingModeOn);
 }
 
 function loadTemplate(id) {
@@ -3158,6 +4700,7 @@ function loadTemplate(id) {
   state.itinerary = ids.map(x => ATTRACTIONS.find(a => a.id === x)).filter(Boolean);
   state.itinerary.forEach(a => { a.day = 1; });
   state.itineraryDays = 1; state.planActiveDay = 1;
+  saveItineraryToStorage();
   renderItinerary();
   if (state.view === 'plan') {
     renderPlanSidebar();
@@ -3197,11 +4740,18 @@ function togglePlanCategory(id) {
 
 function renderPlanCategoryChips() {
   const el = document.getElementById('planCategoryChips');
+  if (!el) return;
+  // Count POIs in plan per category
+  const catCounts = {};
+  state.itinerary.filter(a => (a.day||1) === state.planActiveDay).forEach(a => {
+    catCounts[a.category] = (catCounts[a.category] || 0) + 1;
+  });
   el.innerHTML = CATEGORIES.map(c => {
     const on = state.planActiveCategories.has(c.id);
+    const n = catCounts[c.id] || 0;
     return `<span class="plan-cat-chip ${on ? 'on' : ''}"
       style="${on ? 'background:' + c.color + ';border-color:' + c.color : ''}"
-      onclick="togglePlanCategory('${c.id}')">${c.label}</span>`;
+      onclick="togglePlanCategory('${c.id}')" title="${c.label}${n ? ': ' + n + ' stop' + (n>1?'s':'') : ''}">${c.label}${n ? ` <sup>${n}</sup>` : ''}</span>`;
   }).join('');
 }
 
@@ -3213,9 +4763,17 @@ function renderPlanSidebar() {
   state.itinerary.forEach(a => { if (!a.day) a.day = 1; });
 
   if (state.itinerary.length === 0) {
+    const savedNotInTrip = savedPOIs.filter(id => !state.itinerary.some(x => String(x.id) === id));
+    const nudge = savedNotInTrip.length > 0
+      ? `<div style="margin-top:14px;padding:9px 12px;background:rgba(21,136,138,0.08);border:1px solid rgba(21,136,138,0.2);border-radius:8px;font-size:11px;text-align:left;">
+          <span style="font-weight:700;color:var(--primary);">❤ ${savedNotInTrip.length} saved place${savedNotInTrip.length>1?'s':''}!</span>
+          <span style="color:var(--muted);"> Not in your trip yet.</span>
+          <button onclick="addAllSavedToTrip()" style="margin-left:6px;font-size:10px;padding:2px 9px;border:1px solid var(--primary);border-radius:10px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">Add all →</button>
+        </div>` : '';
     listEl.innerHTML = `<div class="plan-empty">
       <div class="plan-empty-icon">🗺</div>
       <p>No stops planned yet.<br>Switch to Explore to add places, or try a template below.</p>
+      ${nudge}
     </div>`;
     statsEl.innerHTML = '';
     return;
@@ -3231,12 +4789,58 @@ function renderPlanSidebar() {
 
   const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
 
+  // Day summary strip
+  let daySummaryHtml = '';
+  if (dayStops.length) {
+    const dayHrs = dayStops.reduce((s, a) => s + a.duration_hours, 0);
+    let dayDist = 0;
+    for (let i = 1; i < dayStops.length; i++) dayDist += haversine(dayStops[i-1], dayStops[i]);
+    const dayCost = dayStops.reduce((s, a) => {
+      const fee = CATEGORY_FEE_NZD[a.category] ?? CATEGORY_FEE_NZD['default'];
+      return s + (fee > 0 ? fee : 0);
+    }, 0);
+    const costStr = dayCost > 0 ? ` · <span style="color:var(--accent)">~NZ$${dayCost}</span>` : '';
+    daySummaryHtml = `<div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;padding:6px 8px;
+        background:var(--surface2);border-radius:8px;font-size:11px;font-weight:700;color:var(--muted);">
+      <span>${dayStops.length} stop${dayStops.length > 1 ? 's' : ''}</span>
+      <span style="color:var(--border)">·</span>
+      <span>${dayHrs}h${costStr}</span>
+      <span style="color:var(--border)">·</span>
+      <span>~${Math.round(dayDist)} km</span>
+      <div style="margin-left:auto;display:flex;gap:4px;">
+        <button onclick="collapseAllStops()" title="Collapse all stops" style="background:none;border:1px solid var(--border);border-radius:6px;padding:2px 7px;cursor:pointer;font-size:10px;color:var(--text);">⊟ All</button>
+        <button onclick="expandAllStops()" title="Expand all stops" style="background:none;border:1px solid var(--border);border-radius:6px;padding:2px 7px;cursor:pointer;font-size:10px;color:var(--text);">⊞ All</button>
+        <button onclick="focusDayOnMap(${state.planActiveDay})" title="Fit map to Day ${state.planActiveDay}" style="background:none;border:1px solid var(--border);border-radius:6px;padding:2px 7px;cursor:pointer;font-size:10px;color:var(--text);">🔍 Focus</button>
+        <button onclick="clearActiveDay()" title="Remove all stops from Day ${state.planActiveDay}" style="background:none;border:1px solid #e05;border-radius:6px;padding:2px 7px;cursor:pointer;font-size:10px;color:#e05;">🗑 Day</button>
+      </div>
+    </div>`;
+  }
+
+  // Estimated arrival time calculation (start at 9:00am)
+  let minutesCursor = 9 * 60; // 9:00am in minutes from midnight
+  const arrivalTimes = [];
+  dayStops.forEach((a, idx) => {
+    if (idx > 0) {
+      const distKm = haversine(dayStops[idx - 1], a);
+      minutesCursor += Math.round((distKm / 75) * 60); // drive time
+    }
+    arrivalTimes.push(minutesCursor);
+    minutesCursor += Math.round(a.duration_hours * 60); // activity time
+  });
+  function fmtTime(mins) {
+    const h = Math.floor(mins / 60) % 24;
+    const m = mins % 60;
+    const ampm = h < 12 ? 'am' : 'pm';
+    return `${h % 12 || 12}:${String(m).padStart(2,'0')}${ampm}`;
+  }
+
   let stopsHtml = '';
   dayStops.forEach((a, idx) => {
     const color = catColor(a.category);
     const isExpanded = state.expandedStops.has(a.id);
     const isFirst = idx === 0;
     const isLast = idx === dayStops.length - 1;
+    const arriveTime = fmtTime(arrivalTimes[idx]);
     // Drive time row
     if (!isFirst) {
       const prev = dayStops[idx - 1];
@@ -3250,7 +4854,7 @@ function renderPlanSidebar() {
         <div class="plan-stop-num" style="background:${color}">${idx + 1}</div>
         <div class="plan-stop-info" style="flex:1;min-width:0;">
           <p class="plan-stop-name">${a.name}</p>
-          <p class="plan-stop-meta">${catLabel(a.category)} · ${a.duration_hours}h</p>
+          <p class="plan-stop-meta">${catLabel(a.category)} · ${a.duration_hours}h${(CATEGORY_FEE_NZD[a.category] > 0) ? ` · <span style="color:var(--accent)">~NZ$${CATEGORY_FEE_NZD[a.category]}</span>` : ''} · <span style="color:var(--primary);font-weight:700;">${arriveTime}</span></p>
         </div>
         <div style="display:flex;flex-direction:column;gap:1px;flex-shrink:0;">
           <button style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:9px;padding:1px 4px;line-height:1.4;" onclick="event.stopPropagation();moveStop('${a.id}','up')" ${isFirst?'disabled style="opacity:0.2"':''}>▲</button>
@@ -3258,15 +4862,46 @@ function renderPlanSidebar() {
         </div>
         <button class="plan-stop-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
       </div>
+      ${a.note ? `<p style="margin:4px 0 0;font-size:11px;line-height:1.4;color:var(--muted);font-style:italic;padding-left:2px;">📝 ${a.note}</p>` : ''}
       ${isExpanded ? `<div class="iti-card-actions" style="margin-top:6px;">
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();showCommentaryForStop('${a.id}')">🔊 Audio</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();openAttractionDetails('${a.id}')">👁 Details</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();panToStop('${a.id}')">📍 Map</button>
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();toggleStopNote('${a.id}')">📝 Note</button>
+        <button class="btn ${isSaved(a.id)?'saved':''}" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();toggleSave('${a.id}');renderPlanSidebar();">${isSaved(a.id)?'❤':'♡'}</button>
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();duplicateStop('${a.id}')">⧉ Dup</button>
+        ${state.itineraryDays > 1 ? `<select onchange="event.stopPropagation();moveStopToDay('${a.id}',+this.value);this.value=''" style="font-size:10px;padding:3px;border:1px solid var(--border);border-radius:6px;background:var(--surface2);color:var(--text);cursor:pointer;" title="Move to day">
+          <option value="">→ Day…</option>
+          ${Array.from({length:state.itineraryDays},(_,i)=>i+1).filter(d=>d!==a.day).map(d=>`<option value="${d}">Day ${d}</option>`).join('')}
+        </select>` : ''}
+      </div>
+      <div id="noteInput_${a.id}" style="display:none;margin-top:6px;" onclick="event.stopPropagation()">
+        <textarea id="noteText_${a.id}" placeholder="Add a reminder for this stop…"
+          style="width:100%;box-sizing:border-box;font-size:12px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;resize:vertical;background:var(--surface2);color:var(--text);min-height:54px;"
+          onchange="saveStopNote('${a.id}',this.value)">${a.note||''}</textarea>
       </div>` : ''}
     </div>`;
   });
 
-  listEl.innerHTML = dayTabsHtml + '<div class="plan-stop-list">' + stopsHtml + '</div>';
+  // Nearest accommodation suggestion for this day
+  let accomSugHtml = '';
+  if (dayStops.length && ACCOMMODATIONS?.length) {
+    const lastStop = dayStops[dayStops.length - 1];
+    const nearest = ACCOMMODATIONS.reduce((best, ac) => {
+      const d = haversine(lastStop, ac);
+      return (!best || d < best._d) ? Object.assign({}, ac, { _d: d }) : best;
+    }, null);
+    if (nearest && nearest._d < 50) {
+      const price = nearest.price_nzd_per_night ? ` · ~NZ$${nearest.price_nzd_per_night}/night` : '';
+      accomSugHtml = `<div onclick="accomCardClick('${nearest.id}')" style="margin:6px 0 10px;padding:8px 10px;background:rgba(21,136,138,0.07);border:1px solid rgba(21,136,138,0.2);border-radius:8px;font-size:11px;cursor:pointer;display:flex;align-items:center;gap:4px;">
+        <span style="font-weight:700;color:var(--primary);">🛏 Nearby stay</span>&nbsp;
+        <span style="color:var(--text);flex:1;">${nearest.name}<span style="color:var(--muted);font-weight:400;">${price} · ${Math.round(nearest._d)} km away</span></span>
+        <span style="font-size:10px;color:var(--primary);font-weight:700;">View ›</span>
+      </div>`;
+    }
+  }
+
+  listEl.innerHTML = dayTabsHtml + daySummaryHtml + '<div class="plan-stop-list">' + stopsHtml + '</div>' + accomSugHtml;
 
   // Stats
   const hours = state.itinerary.reduce((s, a) => s + a.duration_hours, 0);
@@ -3274,13 +4909,176 @@ function renderPlanSidebar() {
   for (let i = 1; i < dayStops.length; i++) dist += haversine(dayStops[i-1], dayStops[i]);
   const driveHrs = Math.round((Math.round(dist) / 75) * 10) / 10;
 
+  const totalAllDist = (() => { let d = 0; for (let i = 1; i < state.itinerary.length; i++) d += haversine(state.itinerary[i-1], state.itinerary[i]); return d; })();
+  const costHtml = buildCostEstimate(totalAllDist);
+  // Avg rating of all itinerary stops
+  const ratedStops = state.itinerary.filter(a => a.reviews?.rating > 0);
+  const avgRating = ratedStops.length ? (ratedStops.reduce((s, a) => s + a.reviews.rating, 0) / ratedStops.length).toFixed(1) : null;
+  const uniqueRegions = [...new Set(state.itinerary.map(a => a.region).filter(Boolean))].length;
+
   statsEl.innerHTML = `<div class="plan-stats">
     <div class="stat-row"><span>Total stops</span><span>${state.itinerary.length}</span></div>
+    <div class="stat-row"><span>Days</span><span>${state.itineraryDays}</span></div>
+    <div class="stat-row"><span>Regions visited</span><span>${uniqueRegions}</span></div>
+    ${avgRating ? `<div class="stat-row"><span>Avg stop rating</span><span>★ ${avgRating}</span></div>` : ''}
     <div class="stat-row"><span>Activity time</span><span>${hours} hrs</span></div>
-    <div class="stat-row"><span>Today's distance</span><span>~${Math.round(dist)} km</span></div>
-    <div class="stat-row total"><span>Est. drive time</span><span>~${driveHrs} hrs</span></div>
-    <button class="plan-nav-btn" onclick="openInAppTripRoute()">🧭 Show route on map</button>
+    <div class="stat-row"><span>Total distance</span><span>~${Math.round(totalAllDist)} km</span></div>
+    <div class="stat-row"><span>Day ${state.planActiveDay} distance</span><span>~${Math.round(dist)} km</span></div>
+    <div class="stat-row total"><span>Est. drive time today</span><span>~${driveHrs} hrs</span></div>
+    ${(() => {
+      const dayCost = state.itinerary.filter(a => (a.day||1) === state.planActiveDay).reduce((s,a) => {
+        const f = CATEGORY_FEE_NZD[a.category] ?? CATEGORY_FEE_NZD['default'];
+        return s + (f > 0 ? f : 0);
+      }, 0);
+      const totalCostAll = state.itinerary.reduce((s,a) => {
+        const f = CATEGORY_FEE_NZD[a.category] ?? CATEGORY_FEE_NZD['default'];
+        return s + (f > 0 ? f : 0);
+      }, 0);
+      let html = '';
+      if (dayCost > 0) html += `<div class="stat-row"><span>Day ${state.planActiveDay} activity cost</span><span style="color:var(--accent)">~NZ$${dayCost}</span></div>`;
+      if (state.itineraryDays > 1 && totalCostAll > 0) html += `<div class="stat-row"><span>Total activity costs</span><span style="color:var(--accent)">~NZ$${totalCostAll}</span></div>`;
+      return html;
+    })()}
+    <div class="cost-toggle-row" onclick="toggleCostBreakdown()">
+      <span>💰 Cost estimate</span><span id="costArrow">▶</span>
+    </div>
+    <div class="cost-breakdown" id="costBreakdown">${costHtml}</div>
+    <div style="display:flex;gap:6px;margin-top:6px;">
+      <button class="plan-nav-btn" style="flex:1;" onclick="openInAppTripRoute()">🧭 Show route</button>
+      <button class="plan-nav-btn" style="flex:1;" onclick="openTripInGoogleMaps()" title="Open full trip in Google Maps">🗺 Google Maps</button>
+      <button class="plan-nav-btn" style="flex:1;background:var(--primary);color:white;border-color:var(--primary);" onclick="shareTrip()">📤 Share</button>
+    </div>
+    <div style="display:flex;gap:6px;margin-top:4px;">
+      <button class="plan-nav-btn" style="flex:1;" onclick="printTrip()">🖨 Print / Export</button>
+      <button class="plan-nav-btn" style="flex:1;" onclick="exportToCalendar()" title="Export to calendar (.ics)">📅 Calendar</button>
+      <button class="plan-nav-btn" style="flex:1;" onclick="shuffleDayStops(${state.planActiveDay})" title="Randomly reorder stops for today">🔀 Shuffle</button>
+    </div>
+    <div style="display:flex;gap:6px;margin-top:4px;">
+      <button class="plan-nav-btn" style="flex:1;" onclick="openNearbyStaysFromPlan()" title="Find stays near your trip stops">🛏 Nearby Stays</button>
+      <button class="plan-nav-btn" style="flex:1;" onclick="focusDayOnMap(${state.planActiveDay})" title="Fit today's stops on map">🎯 Focus Map</button>
+    </div>
   </div>`;
+}
+
+function filterExploreByRegion(regionId) {
+  closePoiDetail();
+  switchView('explore');
+  if (regionId) {
+    state.activeRegion = regionId;
+    const chip = document.getElementById('activeRegionChip');
+    if (chip) {
+      const rName = (REGIONS.find(r => r.id === regionId) || {}).name || regionId;
+      chip.textContent = '📍 ' + rName.split(' / ')[0];
+      chip.style.display = 'inline-block';
+    }
+    renderAttractions();
+    showToast('Showing ' + ((REGIONS.find(r => r.id === regionId) || {}).name || regionId));
+  }
+}
+
+function openNearbyStaysFromPlan() {
+  if (!state.itinerary.length) { showToast('Add stops to your trip first'); return; }
+  // Find the most common region in the itinerary
+  const regionCounts = {};
+  state.itinerary.filter(a => (a.day||1) === state.planActiveDay).forEach(a => {
+    if (a.region) regionCounts[a.region] = (regionCounts[a.region] || 0) + 1;
+  });
+  const topRegion = Object.entries(regionCounts).sort((a,b) => b[1]-a[1])[0];
+  switchView('stay');
+  if (topRegion) {
+    state.accomRegionFilter = topRegion[0];
+    renderAccomRegionChips();
+  }
+  _accomSort = 'near-iti';
+  renderAccomSortChips();
+  renderAccommodationList();
+  const rName = topRegion ? ((REGIONS.find(r => r.id === topRegion[0]) || {}).name || topRegion[0]) : 'your trip';
+  showToast('🛏 Stays near ' + (rName.split(' / ')[0] || 'your stops'));
+}
+
+function openTripInGoogleMaps() {
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
+  if (!dayStops.length) { showToast('No stops for this day'); return; }
+  // Google Maps directions URL supports origin + up to 8 waypoints + destination
+  const [origin, ...rest] = dayStops;
+  const dest = rest.pop() || origin;
+  const waypoints = rest.map(a => `${a.lat},${a.lng}`).join('|');
+  let url = `https://www.google.com/maps/dir/?api=1&origin=${origin.lat},${origin.lng}&destination=${dest.lat},${dest.lng}&travelmode=driving`;
+  if (waypoints) url += `&waypoints=${encodeURIComponent(waypoints)}`;
+  window.open(url, '_blank', 'noopener');
+}
+
+function focusDayOnMap(day) {
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === day);
+  if (!dayStops.length || !map) return;
+  const bounds = new google.maps.LatLngBounds();
+  dayStops.forEach(a => bounds.extend({ lat: a.lat, lng: a.lng }));
+  map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
+  showToast(`Day ${day}: ${dayStops.length} stop${dayStops.length > 1 ? 's' : ''} focused`);
+}
+
+function shuffleDayStops(day) {
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === day);
+  if (dayStops.length < 2) { showToast('Need at least 2 stops to shuffle'); return; }
+  // Fisher-Yates shuffle
+  const n = dayStops.length;
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const gi = state.itinerary.indexOf(dayStops[i]);
+    const gj = state.itinerary.indexOf(dayStops[j]);
+    [state.itinerary[gi], state.itinerary[gj]] = [state.itinerary[gj], state.itinerary[gi]];
+    [dayStops[i], dayStops[j]] = [dayStops[j], dayStops[i]];
+  }
+  saveItineraryToStorage();
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+  showToast(`🔀 Day ${day} stops shuffled`);
+}
+
+// ============ TRIP COST ESTIMATOR ============
+const CATEGORY_FEE_NZD = {
+  'museums-galleries': 18, 'wineries-breweries': 22, 'hot-pools-spas': 35,
+  'adventure-activities': 90, 'nature-walks': 5, 'beaches': 0,
+  'scenic-viewpoints': 0, 'cultural-heritage': 12, 'wildlife': 25,
+  'default': 15
+};
+const ACCOM_PER_NIGHT = { camping: 28, hostel: 45, 'bb-farmstay': 135, hotel: 195, luxury: 310 };
+
+function buildCostEstimate(totalDistKm) {
+  if (!state.itinerary.length) return '<p style="color:var(--muted);font-size:12px;">Add stops to get a cost estimate.</p>';
+  const nights = Math.max(1, state.itineraryDays || 1);
+  const fuel = Math.round(totalDistKm * 0.105 * 2.52);   // 10.5 L/100km × NZ$2.52/L
+  const activities = state.itinerary.reduce((s, a) => {
+    const fee = CATEGORY_FEE_NZD[a.category] ?? CATEGORY_FEE_NZD['default'];
+    return s + fee;
+  }, 0);
+  // Accommodation — use AI-selected accommodation if available, else mid-range default
+  let accomCostPerNight = 150;
+  if (state.itinerary.length > 0) {
+    const pref = state.tripConfig?.accommodation_pref;
+    if (pref && ACCOM_PER_NIGHT[pref]) accomCostPerNight = ACCOM_PER_NIGHT[pref];
+  }
+  const accom = accomCostPerNight * nights;
+  const food = 90 * nights;
+  const totalLow = Math.round((fuel + activities + accom + food) * 0.85);
+  const totalHigh = Math.round((fuel + activities + accom + food) * 1.2);
+
+  return `
+    <div class="cost-line"><span>⛽ Fuel (~${Math.round(totalDistKm)} km)</span><span>NZ$${fuel}</span></div>
+    <div class="cost-line"><span>🎟 Activity entries</span><span>NZ$${activities}</span></div>
+    <div class="cost-line"><span>🛏 Accommodation (${nights} night${nights>1?'s':''})</span><span>NZ$${accom}</span></div>
+    <div class="cost-line"><span>🍽 Food & drink</span><span>NZ$${food}</span></div>
+    <div class="cost-line cost-total"><span>Estimated total</span><span>NZ$${totalLow}–$${totalHigh}</span></div>
+    <p class="cost-disclaimer">Rough estimates per person. Prices in NZD. Fuel at NZ$2.52/L, 10.5 L/100 km. Activities vary — check ahead.</p>
+  `;
+}
+
+function toggleCostBreakdown() {
+  const el = document.getElementById('costBreakdown');
+  const arrow = document.getElementById('costArrow');
+  if (!el) return;
+  const open = el.classList.toggle('open');
+  if (arrow) arrow.textContent = open ? '▼' : '▶';
 }
 
 function panToStop(id) {
@@ -3489,9 +5287,38 @@ function renderPlanMap() {
   }
 }
 
+// Undo last stop removal
+let _lastRemovedStop = null;
+let _undoTimeout = null;
+
+function undoLastRemoval() {
+  if (!_lastRemovedStop) return;
+  const { stop, idx } = _lastRemovedStop;
+  state.itinerary.splice(idx, 0, stop);
+  _lastRemovedStop = null;
+  clearTimeout(_undoTimeout);
+  saveItineraryToStorage();
+  renderItinerary();
+  if (state.view === 'plan') { renderPlanSidebar(); renderPlanMap(); }
+  showToast(`↩ Restored: ${stop.name}`);
+}
+
 // Also update renderItinerary to refresh plan sidebar when in plan view
 const _origRemoveFromItinerary = removeFromItinerary;
 removeFromItinerary = function(id) {
+  const idx = state.itinerary.findIndex(x => x.id === id);
+  if (idx !== -1) {
+    _lastRemovedStop = { stop: Object.assign({}, state.itinerary[idx]), idx };
+    clearTimeout(_undoTimeout);
+    // Show toast with undo button for 6 seconds
+    const toastEl = document.getElementById('toast');
+    if (toastEl) {
+      toastEl.textContent = '';
+      toastEl.innerHTML = `Removed stop &nbsp;<button onclick="undoLastRemoval()" style="background:white;color:#15888A;border:none;font-weight:700;padding:2px 8px;border-radius:6px;cursor:pointer;font-size:12px;">↩ Undo</button>`;
+      toastEl.classList.add('on');
+      _undoTimeout = setTimeout(() => { toastEl.classList.remove('on'); _lastRemovedStop = null; }, 6000);
+    }
+  }
   _origRemoveFromItinerary(id);
   if (state.view === 'plan') {
     renderPlanSidebar();
@@ -3587,11 +5414,17 @@ function renderCompareView() {
     g.items.forEach(a => {
       const cat = CATEGORIES.find(c => c.id === a.category) || { color: '#999', label: a.category };
       const rating = a.reviews?.rating ? `★ ${a.reviews.rating.toFixed(1)}` : '';
+      const inIti = state.itinerary.some(x => x.id === a.id);
+      const rName = (REGIONS.find(r => r.id === a.region) || {}).name || '';
       html += `<div class="compare-card">
         <div class="cc-color" style="background:${cat.color}"></div>
         <div class="cc-info">
           <div class="cc-name">${a.name}</div>
-          <div class="cc-meta">${cat.label} · ${a.duration_hours}h${rating ? ' · ' + rating : ''}</div>
+          <div class="cc-meta">${cat.label} · ${a.duration_hours}h${rating ? ' · ' + rating : ''}${rName ? ' · ' + rName.split(' / ')[0] : ''}</div>
+          <div style="margin-top:4px;display:flex;gap:4px;">
+            <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'))" style="font-size:9px;padding:2px 7px;border:1px solid ${inIti?'var(--primary)':'var(--border)'};border-radius:10px;background:${inIti?'var(--primary)':'transparent'};color:${inIti?'white':'var(--text)'};cursor:pointer;">${inIti?'✓ In trip':'+ Trip'}</button>
+            <button onclick="openPoiDetail('${a.id}')" style="font-size:9px;padding:2px 7px;border:1px solid var(--border);border-radius:10px;background:transparent;color:var(--text);cursor:pointer;">📖 Detail</button>
+          </div>
         </div>
         <button class="cc-remove" onclick="toggleCompare('${a.id}')" title="Remove">✕</button>
       </div>`;
@@ -3819,6 +5652,13 @@ function setLegendVisible(visible) {
   legend.classList.toggle('hidden', !visible);
 }
 
+// ============ switchView() / switchTab() — programmatic tab switching ============
+function switchView(v) {
+  const tab = document.querySelector(`.tab[data-view="${v}"]`);
+  if (tab) tab.click();
+}
+function switchTab(v) { switchView(v); }
+
 // ============ TABS ============
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => {
@@ -3841,6 +5681,8 @@ document.querySelectorAll('.tab').forEach(t => {
       renderAccommodations();
       renderAccomTypeChips();
       renderAccomRegionChips();
+      renderAccomSortChips();
+      renderAccomBudgetChips();
       renderAccommodationList();
       updateLegendContent();
       setLegendVisible(true);
@@ -3865,7 +5707,9 @@ document.querySelectorAll('.tab').forEach(t => {
       state.accomLayerOn = false;
       renderAccommodations();
       renderAttractions();
+      renderSavedSortChips();
       renderWishlistView();
+      renderSavedAccomsView();
       setLegendVisible(false);
     } else {
       state.accomLayerOn = false;
@@ -3877,11 +5721,46 @@ document.querySelectorAll('.tab').forEach(t => {
   });
 });
 
-// ============ SEARCH ============
-document.getElementById('search').addEventListener('input', (e) => {
+// ============ SEARCH + AUTOCOMPLETE ============
+const searchEl = document.getElementById('search');
+const sugEl = document.getElementById('searchSuggestions');
+
+function showSearchSuggestions(q) {
+  if (!sugEl) return;
+  if (!q || q.length < 2 || !ATTRACTIONS?.length) { sugEl.classList.remove('open'); return; }
+  const lower = q.toLowerCase();
+  const hits = ATTRACTIONS.filter(a => {
+    const hay = `${a.name} ${(a.tags||[]).join(' ')}`.toLowerCase();
+    return hay.includes(lower);
+  }).slice(0, 6);
+  if (!hits.length) { sugEl.classList.remove('open'); return; }
+  sugEl.innerHTML = hits.map(a => {
+    const nameHighlight = a.name.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'),
+      '<span class="sug-match">$1</span>');
+    return `<div class="search-sug-item" onclick="selectSuggestion('${a.id}')">
+      <span>${nameHighlight}</span>
+      <span class="sug-cat">${catLabel(a.category)}</span>
+    </div>`;
+  }).join('');
+  sugEl.classList.add('open');
+}
+
+function selectSuggestion(id) {
+  sugEl.classList.remove('open');
+  if (searchEl) searchEl.value = '';
+  state.search = '';
+  jumpToPoi(id);
+}
+
+searchEl.addEventListener('input', (e) => {
   state.search = e.target.value;
   renderAttractions();
+  showSearchSuggestions(e.target.value);
 });
+
+searchEl.addEventListener('blur', () => setTimeout(() => sugEl?.classList.remove('open'), 180));
+searchEl.addEventListener('focus', (e) => { if (e.target.value.length >= 2) showSearchSuggestions(e.target.value); });
+searchEl.addEventListener('keydown', (e) => { if (e.key === 'Escape') { sugEl.classList.remove('open'); searchEl.blur(); } });
 
 function dismissSplash() {
   document.getElementById('splash').classList.add('hidden');
@@ -4718,6 +6597,29 @@ function loadSavedPOIs() {
   try { savedPOIs = JSON.parse(localStorage.getItem('qw_saved') || '[]'); } catch(e) { savedPOIs = []; }
   updateSavedBadge();
 }
+
+// Saved accommodations (separate from POI wishlist)
+let savedAccoms = [];
+function loadSavedAccoms() {
+  try { savedAccoms = JSON.parse(localStorage.getItem('qw_saved_accoms') || '[]'); } catch(e) { savedAccoms = []; }
+}
+function saveSavedAccoms() {
+  localStorage.setItem('qw_saved_accoms', JSON.stringify(savedAccoms));
+}
+function toggleAccomSave(id, btn) {
+  id = String(id);
+  if (savedAccoms.includes(id)) {
+    savedAccoms = savedAccoms.filter(x => x !== id);
+    showToast('Removed from saved stays');
+    if (btn) { btn.textContent = '♡'; btn.style.color = 'var(--muted)'; }
+  } else {
+    savedAccoms.push(id);
+    const a = ACCOMMODATIONS.find(x => String(x.id) === id);
+    showToast(`Saved stay: ${a ? a.name : 'Accommodation'}`);
+    if (btn) { btn.textContent = '❤'; btn.style.color = '#e05'; }
+  }
+  saveSavedAccoms();
+}
 function saveSavedPOIs() {
   localStorage.setItem('qw_saved', JSON.stringify(savedPOIs));
   updateSavedBadge();
@@ -4750,9 +6652,69 @@ function updateSavedBadge() {
   badge.textContent = n;
   badge.style.display = n > 0 ? 'inline-flex' : 'none';
 }
+function renderSavedAccomsView() {
+  const section = document.getElementById('savedAccomsSection');
+  const listEl = document.getElementById('savedAccomList');
+  if (!section || !listEl) return;
+  if (!savedAccoms.length) { section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  listEl.innerHTML = savedAccoms.map(id => {
+    const a = ACCOMMODATIONS.find(x => String(x.id) === id);
+    if (!a) return '';
+    const color = accomTypeColor(a.type);
+    const label = accomTypeLabel(a.type);
+    const region = (REGIONS.find(r => r.id === a.region) || {}).name || '';
+    const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
+    const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
+    return `<div class="accom-card" onclick="accomCardClick('${a.id}')" style="margin-bottom:6px;">
+      <div class="accom-card-left">
+        <div style="display:flex;align-items:flex-start;gap:4px;">
+          <div class="accom-card-name" style="flex:1;">${a.name}</div>
+          <button onclick="event.stopPropagation();toggleAccomSave('${a.id}',this);renderSavedAccomsView();" title="Remove"
+            style="background:none;border:none;cursor:pointer;font-size:14px;padding:0;color:#e05;">❤</button>
+        </div>
+        <div class="accom-card-meta">
+          <span class="accom-type-chip" style="background:${color};">${label}</span>
+          ${price ? `<span class="accom-price">${price}</span>` : ''}
+          ${rating ? `<span class="accom-rating">${rating}</span>` : ''}
+        </div>
+        ${region ? `<div style="font-size:10px;color:var(--muted);">📍 ${region}</div>` : ''}
+      </div>
+    </div>`;
+  }).filter(Boolean).join('');
+}
+
+function renderWishlistRegionSummary() {
+  const el = document.getElementById('savedRegionSummary');
+  if (!el) return;
+  if (!savedPOIs.length) { el.innerHTML = ''; return; }
+  const regionCounts = {};
+  savedPOIs.forEach(id => {
+    const a = ATTRACTIONS.find(x => String(x.id) === id);
+    if (!a) return;
+    regionCounts[a.region] = (regionCounts[a.region] || 0) + 1;
+  });
+  const topRegions = Object.entries(regionCounts).sort((a,b) => b[1]-a[1]).slice(0,5);
+  const inTrip = savedPOIs.filter(id => state.itinerary.some(x => String(x.id) === id)).length;
+  el.innerHTML = `<div style="margin-bottom:8px;padding:8px 10px;background:var(--surface2);border-radius:8px;font-size:11px;">
+    <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+      <span style="font-weight:700;color:var(--muted);">📍 Regions</span>
+      <span style="color:var(--primary);font-weight:700;">${inTrip}/${savedPOIs.length} in trip</span>
+    </div>
+    <div style="display:flex;gap:5px;flex-wrap:wrap;">
+      ${topRegions.map(([rId,n]) => {
+        const rName = (REGIONS.find(r => r.id === rId) || {}).name || rId;
+        return `<button onclick="setRegionFilter('${rId}')" style="font-size:9px;padding:2px 8px;border:1px solid var(--border);border-radius:12px;background:var(--surface2);color:var(--text);cursor:pointer;white-space:nowrap;">${rName.split(' / ')[0]} <sup>${n}</sup></button>`;
+      }).join('')}
+    </div>
+  </div>`;
+}
+
 function renderWishlistView() {
   const el = document.getElementById('savedList');
   if (!el) return;
+  renderSavedAccomsView();
+  renderWishlistRegionSummary();
   if (savedPOIs.length === 0) {
     el.innerHTML = `<div class="wishlist-empty">
       <div class="we-icon">❤</div>
@@ -4761,20 +6723,203 @@ function renderWishlistView() {
     </div>`;
     return;
   }
-  el.innerHTML = savedPOIs.map(id => {
+  // Sort saved POIs
+  let sortedIds = [...savedPOIs];
+  if (_savedSort === 'rating') {
+    sortedIds.sort((a, b) => {
+      const ra = (ATTRACTIONS.find(x => String(x.id) === a)?.reviews?.rating) || 0;
+      const rb = (ATTRACTIONS.find(x => String(x.id) === b)?.reviews?.rating) || 0;
+      return rb - ra;
+    });
+  } else if (_savedSort === 'az') {
+    sortedIds.sort((a, b) => {
+      const na = ATTRACTIONS.find(x => String(x.id) === a)?.name || '';
+      const nb = ATTRACTIONS.find(x => String(x.id) === b)?.name || '';
+      return na.localeCompare(nb);
+    });
+  } else if (_savedSort === 'region') {
+    sortedIds.sort((a, b) => {
+      const ra = ATTRACTIONS.find(x => String(x.id) === a)?.region || '';
+      const rb = ATTRACTIONS.find(x => String(x.id) === b)?.region || '';
+      return ra.localeCompare(rb);
+    });
+  }
+
+  el.innerHTML = sortedIds.map(id => {
     const a = ATTRACTIONS.find(x => String(x.id) === id);
     if (!a) return '';
     const cat = CATEGORIES.find(c => c.id === a.category) || { color: '#999', label: a.category };
-    const thumb = a.photos?.[0] || '';
+    const thumb = getPoiImageUrl(a);
+    const inIti = state.itinerary.some(x => x.id === a.id);
+    const rating = a.reviews?.rating ? `<span style="font-size:10px;color:#F59E0B;font-weight:700;">★${a.reviews.rating.toFixed(1)}</span> ` : '';
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
     return `<div class="wishlist-card" onclick="openAttractionDetails('${a.id}')">
-      ${thumb ? `<img class="wishlist-card-thumb" src="${thumb}" alt="" onerror="this.style.display='none'" />` : `<div class="wishlist-card-thumb" style="background:${cat.color}22;"></div>`}
+      <img class="wishlist-card-thumb" src="${thumb}" alt="" onerror="this.style.display='none'" />
       <div class="wishlist-card-info">
         <div class="wishlist-card-name">${a.name}</div>
-        <div class="wishlist-card-meta">${cat.label} · ${a.region || ''}</div>
+        <div class="wishlist-card-meta">${rating}${cat.label} · ${rName.split(' / ')[0] || ''}</div>
+        <button onclick="event.stopPropagation();addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'))"
+          style="margin-top:3px;font-size:10px;padding:2px 8px;border:1px solid ${inIti?'var(--primary)':'var(--border)'};
+          border-radius:12px;background:${inIti?'var(--primary)':'transparent'};color:${inIti?'white':'var(--text)'};cursor:pointer;font-weight:700;">
+          ${inIti ? '✓ In trip' : '+ Add to trip'}
+        </button>
       </div>
       <button class="wishlist-card-remove" onclick="event.stopPropagation();toggleSave('${a.id}');renderWishlistView();" title="Remove">✕</button>
     </div>`;
   }).filter(Boolean).join('');
+}
+
+function addAllSavedToTrip() {
+  if (!savedPOIs.length) { showToast('No saved places to add'); return; }
+  let added = 0;
+  savedPOIs.forEach(id => {
+    const a = ATTRACTIONS.find(x => String(x.id) === id);
+    if (a && !state.itinerary.find(x => x.id === a.id)) {
+      state.itinerary.push(a);
+      added++;
+    }
+  });
+  if (added === 0) { showToast('All saved places are already in your trip'); return; }
+  saveItineraryToStorage();
+  renderItinerary();
+  renderAttractions();
+  renderWishlistView();
+  showToast(`✓ Added ${added} place${added > 1 ? 's' : ''} to your trip`);
+}
+
+let _savedSort = 'saved'; // 'saved'|'rating'|'az'|'region'
+
+function renderSavedSortChips() {
+  const el = document.getElementById('savedSortChips');
+  if (!el) return;
+  const opts = [
+    { id: 'saved', label: '⏱ Order Saved' },
+    { id: 'rating', label: '★ Rating' },
+    { id: 'az', label: 'A–Z' },
+    { id: 'region', label: '📍 Region' },
+  ];
+  el.innerHTML = opts.map(o => {
+    const active = _savedSort === o.id;
+    return `<button onclick="setSavedSort('${o.id}')" style="
+      padding:2px 9px;font-size:10px;font-weight:700;border-radius:20px;cursor:pointer;white-space:nowrap;
+      border:1.5px solid ${active ? 'var(--primary)' : 'var(--border)'};
+      background:${active ? 'var(--primary)' : 'var(--surface2)'};
+      color:${active ? 'white' : 'var(--text)'};transition:all .12s;">${o.label}</button>`;
+  }).join('');
+}
+
+function setSavedSort(s) {
+  _savedSort = s;
+  renderSavedSortChips();
+  renderWishlistView();
+}
+
+function exportSavedToCSV() {
+  if (!savedPOIs.length) { showToast('No saved places to export'); return; }
+  const places = savedPOIs.map(id => ATTRACTIONS.find(x => String(x.id) === id)).filter(Boolean);
+  const header = 'Name,Region,Category,Rating,Reviews,Duration (hrs),Lat,Lng,Short Description';
+  const rows = places.map(a => {
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
+    const cat = catLabel(a.category);
+    const rating = a.reviews?.rating ?? '';
+    const reviews = a.reviews?.count ?? '';
+    const dur = a.duration_hours ?? '';
+    const desc = (a.short || '').replace(/"/g, '""');
+    return `"${a.name.replace(/"/g,'""')}","${rName.replace(/"/g,'""')}","${cat}",${rating},${reviews},${dur},${a.lat},${a.lng},"${desc}"`;
+  });
+  const csv = [header, ...rows].join('\r\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'qiwiosity-saved-places.csv';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+  showToast(`⬇ Exported ${places.length} places as CSV`);
+}
+
+function exportWishlist() {
+  if (!savedPOIs.length) { showToast('No saved places to export'); return; }
+  const places = savedPOIs.map(id => ATTRACTIONS.find(x => String(x.id) === id)).filter(Boolean);
+  if (!places.length) { showToast('No matching places found'); return; }
+
+  const rows = places.map((a, i) => {
+    const cat = CATEGORIES.find(c => c.id === a.category) || { label: a.category };
+    const rating = a.reviews?.rating ? `${a.reviews.rating}★` : '—';
+    return `<tr>
+      <td style="padding:6px 8px;font-weight:700;color:#15888A;text-align:center;">${i + 1}</td>
+      <td style="padding:6px 8px;"><strong>${a.name}</strong></td>
+      <td style="padding:6px 8px;color:#555;">${a.region || ''}</td>
+      <td style="padding:6px 8px;color:#555;">${cat.label}</td>
+      <td style="padding:6px 8px;text-align:center;">${rating}</td>
+      <td style="padding:6px 8px;font-size:12px;color:#666;">${(a.short || '').slice(0, 80)}${(a.short || '').length > 80 ? '…' : ''}</td>
+    </tr>`;
+  }).join('');
+
+  const html = `<!DOCTYPE html><html><head><meta charset="utf-8">
+  <title>Qiwiosity — Saved Places</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 900px; margin: 0 auto; padding: 32px 24px; color: #1a2a2e; }
+    h1 { color: #15888A; }
+    .meta { color: #666; font-size: 13px; margin-bottom: 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th { background: #f0f8f8; padding: 8px; text-align: left; }
+    td { border-bottom: 1px solid #e8eef0; vertical-align: top; }
+    @media print { body { padding: 12px; } }
+  </style></head><body>
+  <h1>❤ Qiwiosity Saved Places</h1>
+  <p class="meta">Exported ${new Date().toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })} &nbsp;·&nbsp; ${places.length} saved place${places.length > 1 ? 's' : ''}</p>
+  <table>
+    <thead><tr>
+      <th>#</th><th>Place</th><th>Region</th><th>Type</th><th>Rating</th><th>Description</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <p style="margin-top:32px;color:#aaa;font-size:11px;border-top:1px solid #e8eef0;padding-top:12px;">Created with Qiwiosity — Explore New Zealand with Curiosity &nbsp;·&nbsp; qiwiosity.com</p>
+  </body></html>`;
+
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
+}
+
+function clearActiveDay() {
+  const d = state.planActiveDay;
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === d);
+  if (!dayStops.length) return;
+  if (!confirm(`Remove all ${dayStops.length} stop${dayStops.length > 1 ? 's' : ''} from Day ${d}?`)) return;
+  state.itinerary = state.itinerary.filter(a => (a.day || 1) !== d);
+  saveItineraryToStorage();
+  renderItinerary();
+  renderPlanSidebar();
+  renderPlanMap();
+  showToast(`Day ${d} cleared`);
+}
+
+function collapseAllStops() {
+  state.expandedStops.clear();
+  renderPlanSidebar();
+}
+
+function expandAllStops() {
+  const dayStops = state.itinerary.filter(a => (a.day || 1) === state.planActiveDay);
+  dayStops.forEach(a => state.expandedStops.add(a.id));
+  renderPlanSidebar();
+}
+
+function shareWishlist() {
+  if (!savedPOIs.length) { showToast('No saved places to share'); return; }
+  const places = savedPOIs.map(id => ATTRACTIONS.find(x => String(x.id) === id)).filter(Boolean);
+  const text = `❤ My Qiwiosity NZ Wishlist — ${places.length} places\n\n` +
+    places.map((a, i) => `${i + 1}. ${a.name} (${a.region || 'NZ'})`).join('\n') +
+    '\n\nExplore New Zealand with Qiwiosity!';
+  if (navigator.share) {
+    navigator.share({ title: 'My Qiwiosity NZ Wishlist', text }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(text).then(() => showToast('Wishlist copied to clipboard!')).catch(() => showToast('Could not share'));
+  }
 }
 
 // ============ VOICE SYSTEM INIT ============
@@ -4799,6 +6944,7 @@ function initVoiceSystem() {
   }
   // Load saved places
   loadSavedPOIs();
+  loadSavedAccoms();
   // Load affiliate IDs
   loadAffiliateSettings();
   // Cancel any stray speech from previous sessions
@@ -4839,10 +6985,41 @@ async function initMap() {
   renderRegionList();
   renderAccomTypeChips();
   renderAccomRegionChips();
+  renderAccomSortChips();
   renderAccommodationList();
   renderAttractions();
   renderAccommodations();
   renderItinerary();
+
+  // Deep-link: open POI/accommodation from ?poi= or ?accom= URL param after all data is loaded
+  (function handleDeepLink() {
+    const params = new URLSearchParams(window.location.search);
+    const poiId = params.get('poi');
+    const accomId = params.get('accom');
+    if (poiId) {
+      const poi = ATTRACTIONS.find(a => String(a.id) === String(poiId));
+      if (poi) {
+        setTimeout(() => {
+          if (map) { map.panTo({ lat: poi.lat, lng: poi.lng }); map.setZoom(14); }
+          openPoiInfoWindow(poi, null);
+          showToast(`🔗 Opened: ${poi.name}`);
+        }, 800);
+      }
+    } else if (accomId) {
+      const accom = ACCOMMODATIONS.find(a => String(a.id) === String(accomId));
+      if (accom) {
+        setTimeout(() => {
+          // Switch to Stay tab first
+          document.querySelector('.tab[data-view="stay"]')?.click();
+          setTimeout(() => {
+            if (map) { map.panTo({ lat: accom.lat, lng: accom.lng }); map.setZoom(14); }
+            openAccomInfoWindow(accom, null);
+            showToast(`🔗 Opened: ${accom.name}`);
+          }, 400);
+        }, 800);
+      }
+    }
+  })();
 
   // Wire up accommodation search
   const accomSearchEl = document.getElementById('accomSearch');
@@ -4853,6 +7030,531 @@ async function initMap() {
       renderAccommodations();
     });
   }
+
+  // Wire up sidebar back-to-top button
+  const sidebarEl = document.getElementById('mainSidebar');
+  const backTopBtn = document.getElementById('sidebarBackTop');
+  if (sidebarEl && backTopBtn) {
+    sidebarEl.addEventListener('scroll', () => {
+      const show = sidebarEl.scrollTop > 200;
+      backTopBtn.style.display = show ? 'flex' : 'none';
+    });
+  }
+
+  renderAccomBudgetChips();
+}
+
+// ============ ADMIN PANEL ============
+let adminTab = 'overview';
+let adminPoiSearch = '';
+let adminPoiFilter = 'all';
+let adminAccomSearch = '';
+let adminExpandedRow = null;
+let _adminKeyBuffer = '';
+
+function openAdmin() {
+  document.getElementById('adminOverlay').classList.add('on');
+  switchAdminTab('overview');
+}
+
+function closeAdmin() {
+  document.getElementById('adminOverlay').classList.remove('on');
+}
+
+function switchAdminTab(tab) {
+  adminTab = tab;
+  document.querySelectorAll('.admin-nav-btn').forEach(b => b.classList.remove('active'));
+  const btn = document.getElementById('adminNav-' + tab);
+  if (btn) btn.classList.add('active');
+  const content = document.getElementById('adminContent');
+  if (tab === 'overview') content.innerHTML = renderAdminOverview();
+  else if (tab === 'pois') { content.innerHTML = renderAdminPois(); attachAdminPoiEvents(); }
+  else if (tab === 'accom') { content.innerHTML = renderAdminAccom(); attachAdminAccomEvents(); }
+  else if (tab === 'add') content.innerHTML = renderAdminAddPoi();
+  else if (tab === 'activity') content.innerHTML = renderAdminActivity();
+}
+
+function renderAdminOverview() {
+  if (!ATTRACTIONS || !ATTRACTIONS.length) {
+    setTimeout(() => {
+      if (ATTRACTIONS?.length && adminTab === 'overview' && document.getElementById('adminContent')) {
+        document.getElementById('adminContent').innerHTML = renderAdminOverview();
+      }
+    }, 600);
+    return '<p style="color:#7a9aaa;margin-top:20px;">Loading data from Supabase…</p>';
+  }
+  const totalPois = ATTRACTIONS.length;
+  const totalAccom = ACCOMMODATIONS.length;
+  const regionCount = new Set(ATTRACTIONS.map(a => a.region)).size;
+  const catCount = new Set(ATTRACTIONS.map(a => a.category)).size;
+  const withRating = ATTRACTIONS.filter(a => a.reviews?.rating);
+  const avgRating = withRating.length ? (withRating.reduce((s,a) => s + a.reviews.rating, 0) / withRating.length).toFixed(2) : 'N/A';
+  const totalReviews = ATTRACTIONS.reduce((s,a) => s + (a.reviews?.count || 0), 0);
+  const withComm = ATTRACTIONS.filter(a => a.commentary && a.commentary.length > 10).length;
+  const withImg = ATTRACTIONS.filter(a => a._images && a._images.length > 0).length;
+
+  const catBreakdown = {};
+  ATTRACTIONS.forEach(a => { catBreakdown[a.category] = (catBreakdown[a.category] || 0) + 1; });
+  const catRows = Object.entries(catBreakdown).sort((a,b) => b[1]-a[1]).map(([cat,n]) =>
+    `<tr><td style="color:#c0d0d8">${catLabel(cat)}</td><td style="color:#15888A;font-weight:700">${n}</td><td>
+      <div style="background:#15888A33;border-radius:4px;height:6px;width:${Math.round(n/totalPois*200)}px"></div>
+    </td></tr>`
+  ).join('');
+
+  const regionBreakdown = {};
+  ATTRACTIONS.forEach(a => { regionBreakdown[a.region] = (regionBreakdown[a.region] || 0) + 1; });
+  const top5Regions = Object.entries(regionBreakdown).sort((a,b) => b[1]-a[1]).slice(0,5);
+  const regionRows = top5Regions.map(([rid, n]) => {
+    const rName = (REGIONS.find(r => r.id === rid) || {}).name || rid;
+    return `<tr><td style="color:#c0d0d8">${rName.split(' / ')[0]}</td><td style="color:#15888A;font-weight:700">${n}</td><td>
+      <div style="background:#15888A33;border-radius:4px;height:6px;width:${Math.round(n/top5Regions[0][1]*120)}px"></div></td></tr>`;
+  }).join('');
+
+  // Rating distribution histogram
+  const buckets = { '< 3': 0, '3–3.9': 0, '4–4.4': 0, '4.5–4.9': 0, '5': 0 };
+  withRating.forEach(a => {
+    const r = a.reviews.rating;
+    if (r < 3) buckets['< 3']++;
+    else if (r < 4) buckets['3–3.9']++;
+    else if (r < 4.5) buckets['4–4.4']++;
+    else if (r < 5) buckets['4.5–4.9']++;
+    else buckets['5']++;
+  });
+  const maxBucket = Math.max(...Object.values(buckets), 1);
+  const ratingHistRows = Object.entries(buckets).map(([label, n]) =>
+    `<tr><td style="color:#c0d0d8;white-space:nowrap;">${label}</td><td style="color:#15888A;font-weight:700;width:32px;">${n}</td><td>
+      <div style="background:#F59E0B;border-radius:4px;height:6px;width:${Math.round(n/maxBucket*120)}px"></div></td></tr>`
+  ).join('');
+
+  const withImgPct = Math.round(withImg/totalPois*100);
+
+  return `
+    <div class="admin-section-title">📊 Database Overview</div>
+    <div class="admin-stat-grid">
+      <div class="admin-stat-card"><div class="admin-stat-val">${totalPois.toLocaleString()}</div><div class="admin-stat-label">Total POIs</div><div class="admin-stat-sub">across ${regionCount} regions</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${totalAccom.toLocaleString()}</div><div class="admin-stat-label">Accommodations</div><div class="admin-stat-sub">${accomTypesSummary()}</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${catCount}</div><div class="admin-stat-label">Categories</div><div class="admin-stat-sub">POI types</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${avgRating}</div><div class="admin-stat-label">Avg Rating</div><div class="admin-stat-sub">${withRating.length} rated POIs</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${totalReviews >= 1000 ? (totalReviews/1000).toFixed(0)+'k' : totalReviews}</div><div class="admin-stat-label">Total Reviews</div><div class="admin-stat-sub">across all POIs</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${Math.round(withComm/totalPois*100)}%</div><div class="admin-stat-label">Has Commentary</div><div class="admin-stat-sub">${withComm} POIs</div></div>
+      <div class="admin-stat-card"><div class="admin-stat-val">${withImgPct}%</div><div class="admin-stat-label">Has Images</div><div class="admin-stat-sub">${withImg} POIs</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+      <div>
+        <div class="admin-section-title" style="font-size:12px;">By Category</div>
+        <table class="admin-table"><tbody>${catRows}</tbody></table>
+      </div>
+      <div>
+        <div class="admin-section-title" style="font-size:12px;">Top Regions</div>
+        <table class="admin-table"><tbody>${regionRows}</tbody></table>
+        <p style="color:#3a5a6a;font-size:11px;margin-top:8px;">Top 5 of ${regionCount} regions</p>
+      </div>
+      <div>
+        <div class="admin-section-title" style="font-size:12px;">Rating Distribution</div>
+        <table class="admin-table"><tbody>${ratingHistRows}</tbody></table>
+        <p style="color:#3a5a6a;font-size:11px;margin-top:8px;">${withRating.length} rated POIs</p>
+      </div>
+    </div>`;
+}
+
+function accomTypesSummary() {
+  const types = {};
+  ACCOMMODATIONS.forEach(a => { types[a.type] = (types[a.type] || 0) + 1; });
+  return Object.entries(types).sort((a,b) => b[1]-a[1]).slice(0,2).map(([t,n]) => `${n} ${t}`).join(', ');
+}
+
+function renderAdminPois() {
+  const cats = ['all', ...new Set(ATTRACTIONS.map(a => a.category))];
+  const filterChips = cats.map(c =>
+    `<button class="admin-filter-chip ${adminPoiFilter===c?'active':''}" onclick="setAdminPoiFilter('${c}')">${c==='all'?'All':catLabel(c)}</button>`
+  ).join('');
+
+  const filtered = ATTRACTIONS.filter(a => {
+    const matchSearch = !adminPoiSearch || a.name.toLowerCase().includes(adminPoiSearch.toLowerCase()) || (a.region||'').toLowerCase().includes(adminPoiSearch.toLowerCase());
+    const matchCat = adminPoiFilter === 'all' || a.category === adminPoiFilter;
+    return matchSearch && matchCat;
+  });
+
+  const rows = filtered.slice(0, 200).map((a, i) => {
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '—';
+    const isExpanded = adminExpandedRow === a.id;
+    const expandHtml = isExpanded ? `
+      <tr class="admin-expand-row">
+        <td colspan="6">
+          <div class="admin-expand-body">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px;">
+              <div><span style="color:#3a5a6a;font-size:10px;font-weight:700;">COORDS</span><br>${a.lat?.toFixed(5)}, ${a.lng?.toFixed(5)}</div>
+              <div><span style="color:#3a5a6a;font-size:10px;font-weight:700;">DURATION</span><br>${a.duration_hours}h</div>
+              <div><span style="color:#3a5a6a;font-size:10px;font-weight:700;">TAGS</span><br>${(a.tags||[]).join(', ') || '—'}</div>
+              <div><span style="color:#3a5a6a;font-size:10px;font-weight:700;">REVIEWS</span><br>${a.reviews?.count || 0} reviews</div>
+            </div>
+            <div style="margin-bottom:8px;"><span style="color:#3a5a6a;font-size:10px;font-weight:700;">SHORT</span><br>${a.short || '—'}</div>
+            <div><span style="color:#3a5a6a;font-size:10px;font-weight:700;">COMMENTARY</span><br>${(a.commentary||'').slice(0,300)}${a.commentary?.length > 300 ? '…' : ''}</div>
+            <div style="margin-top:10px;display:flex;gap:8px;">
+              <button onclick="switchTab('explore');panToStop('${a.id}');closeAdmin();" style="background:#15888A22;border:1px solid #15888A44;color:#15888A;padding:5px 12px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;">📍 View on map</button>
+              <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));closeAdmin();switchTab('plan');" style="background:#1e3a4a;border:none;color:#c0d0d8;padding:5px 12px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;">＋ Add to trip</button>
+            </div>
+          </div>
+        </td>
+      </tr>` : '';
+    return `
+      <tr onclick="toggleAdminRow('${a.id}')" ${isExpanded ? 'class="admin-row-expanded"' : ''}>
+        <td style="font-weight:600;color:#e0eaf0;">${a.name}</td>
+        <td>${rName}</td>
+        <td><span class="admin-cat-chip">${catLabel(a.category)}</span></td>
+        <td class="admin-rating">${a.reviews?.rating ? '★ ' + a.reviews.rating.toFixed(1) : '—'}</td>
+        <td style="color:${a.commentary ? '#4ade80' : '#ef4444'};font-size:10px;font-weight:800;">${a.commentary ? '✓' : '✗'}</td>
+        <td style="color:#3a5a6a;font-size:11px;">${a.id}</td>
+      </tr>${expandHtml}`;
+  }).join('');
+
+  return `
+    <div class="admin-section-title">📍 POIs <span class="admin-count-pill">${filtered.length.toLocaleString()} results</span></div>
+    <input class="admin-search" placeholder="Search by name or region…" value="${adminPoiSearch}" oninput="updateAdminPoiSearch(this.value)" />
+    <div class="admin-filter-row">${filterChips}</div>
+    ${filtered.length > 200 ? `<p style="color:#7a9aaa;font-size:11px;margin-bottom:10px;">Showing first 200 of ${filtered.length} results. Refine search to find more.</p>` : ''}
+    <table class="admin-table">
+      <thead><tr><th>Name</th><th>Region</th><th>Category</th><th>Rating</th><th>Audio</th><th>ID</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderAdminAccom() {
+  const filtered = ACCOMMODATIONS.filter(a => {
+    return !adminAccomSearch || a.name.toLowerCase().includes(adminAccomSearch.toLowerCase()) || (a.region||'').toLowerCase().includes(adminAccomSearch.toLowerCase());
+  });
+  const rows = filtered.slice(0, 200).map(a => {
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '—';
+    const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}` : '—';
+    return `<tr>
+      <td style="font-weight:600;color:#e0eaf0;">${a.name}</td>
+      <td>${rName}</td>
+      <td><span class="admin-cat-chip">${a.type || '—'}</span></td>
+      <td class="admin-rating">${a.rating ? '★ ' + Number(a.rating).toFixed(1) : '—'}</td>
+      <td style="color:#15888A;font-weight:700;">${price}</td>
+    </tr>`;
+  }).join('');
+  return `
+    <div class="admin-section-title">🛏 Accommodations <span class="admin-count-pill">${filtered.length.toLocaleString()} results</span></div>
+    <input class="admin-search" placeholder="Search by name or region…" value="${adminAccomSearch}" oninput="updateAdminAccomSearch(this.value)" />
+    <table class="admin-table">
+      <thead><tr><th>Name</th><th>Region</th><th>Type</th><th>Rating</th><th>Price/night</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+function renderAdminAddPoi() {
+  const regionOptions = REGIONS.map(r => `<option value="${r.id}">${r.name}</option>`).join('');
+  const catOptions = (CATEGORIES||[]).map(c => `<option value="${c.id}">${c.name||c.id}</option>`).join('');
+  return `
+    <div class="admin-section-title">➕ Add New POI</div>
+    <p style="color:#7a9aaa;font-size:12px;margin-bottom:20px;line-height:1.6;">
+      Fill in the details below. In the live app this would submit to Supabase for admin review before going live.
+    </p>
+    <div class="admin-form">
+      <div class="admin-form-row">
+        <div class="admin-form-group">
+          <label class="admin-form-label">Name *</label>
+          <input class="admin-form-input" placeholder="e.g. Milford Sound" />
+        </div>
+        <div class="admin-form-group">
+          <label class="admin-form-label">Region *</label>
+          <select class="admin-form-select"><option value="">Select region…</option>${regionOptions}</select>
+        </div>
+      </div>
+      <div class="admin-form-row">
+        <div class="admin-form-group">
+          <label class="admin-form-label">Category *</label>
+          <select class="admin-form-select"><option value="">Select category…</option>${catOptions}</select>
+        </div>
+        <div class="admin-form-group">
+          <label class="admin-form-label">Duration (hours)</label>
+          <input class="admin-form-input" type="number" min="0.5" max="24" step="0.5" placeholder="2" />
+        </div>
+      </div>
+      <div class="admin-form-row">
+        <div class="admin-form-group">
+          <label class="admin-form-label">Latitude *</label>
+          <input class="admin-form-input" placeholder="-44.67" />
+        </div>
+        <div class="admin-form-group">
+          <label class="admin-form-label">Longitude *</label>
+          <input class="admin-form-input" placeholder="167.92" />
+        </div>
+      </div>
+      <div class="admin-form-group">
+        <label class="admin-form-label">Short description (1–2 sentences)</label>
+        <input class="admin-form-input" placeholder="A brief teaser shown in the popup." />
+      </div>
+      <div class="admin-form-group">
+        <label class="admin-form-label">Full commentary (audio guide script)</label>
+        <textarea class="admin-form-textarea" placeholder="Written in present tense, conversational. This is what the audio guide reads aloud. Aim for 200–400 words."></textarea>
+      </div>
+      <div class="admin-form-group">
+        <label class="admin-form-label">Tags (comma separated)</label>
+        <input class="admin-form-input" placeholder="waterfall, scenic, family-friendly" />
+      </div>
+      <div class="admin-form-group">
+        <label class="admin-form-label">Star rating (0–5)</label>
+        <input class="admin-form-input" type="number" min="0" max="5" step="0.1" placeholder="4.5" />
+      </div>
+      <button class="admin-form-submit" onclick="submitAdminPoi()">Submit for Review</button>
+    </div>`;
+}
+
+function renderAdminActivity() {
+  const recentPois = ATTRACTIONS.slice().sort((a,b) => (b.id > a.id ? 1 : -1)).slice(0, 30);
+  const activityItems = recentPois.map(a => {
+    const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
+    const rating = a.reviews?.rating ? `<span style="color:#F59E0B;font-size:10px;margin-left:6px;">★${a.reviews.rating.toFixed(1)}</span>` : '';
+    const imgBadge = (a._images?.length || 0) > 0 ? `<span style="font-size:9px;color:#4a8a9a;margin-left:4px;">📷${a._images.length}</span>` : '';
+    return `<div class="admin-activity-row" style="cursor:pointer;" onclick="jumpToPoiAdmin('${a.id}')">
+      <div class="admin-activity-dot" style="${a._images?.length?'background:#F59E0B':a.reviews?.rating?'':'background:#e05'}"></div>
+      <div class="admin-activity-text"><strong style="color:#e0eaf0;">${a.name}</strong>${rating}${imgBadge}
+        <span style="color:#7a9aaa;font-size:10px;"> · ${catLabel(a.category)} · ${rName.split(' / ')[0]}</span>
+      </div>
+      <div class="admin-activity-time">${a.id.slice(-8)}</div>
+    </div>`;
+  }).join('');
+
+  // Stats quick panel
+  const noImg = ATTRACTIONS.filter(a => !a._images?.length).length;
+  const noRating = ATTRACTIONS.filter(a => !a.reviews?.rating).length;
+  const noComm = ATTRACTIONS.filter(a => !a.commentary || a.commentary.length < 10).length;
+
+  return `
+    <div class="admin-section-title">📊 Data Quality</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px;">
+      <div class="admin-stat-card" style="border-left:3px solid #e05;">
+        <div class="admin-stat-val" style="color:#e05;">${noImg}</div>
+        <div class="admin-stat-label">Missing Images</div>
+        <div class="admin-stat-sub">${Math.round(noImg/ATTRACTIONS.length*100)}% of POIs</div>
+      </div>
+      <div class="admin-stat-card" style="border-left:3px solid #F59E0B;">
+        <div class="admin-stat-val" style="color:#F59E0B;">${noRating}</div>
+        <div class="admin-stat-label">No Rating</div>
+        <div class="admin-stat-sub">${Math.round(noRating/ATTRACTIONS.length*100)}% of POIs</div>
+      </div>
+      <div class="admin-stat-card" style="border-left:3px solid #15888A;">
+        <div class="admin-stat-val" style="color:#15888A;">${noComm}</div>
+        <div class="admin-stat-label">No Commentary</div>
+        <div class="admin-stat-sub">${Math.round(noComm/ATTRACTIONS.length*100)}% of POIs</div>
+      </div>
+    </div>
+    <div class="admin-section-title">🕐 Recent POIs (by ID)</div>
+    <p style="color:#7a9aaa;font-size:12px;margin-bottom:10px;">Latest ${recentPois.length} POIs · 🟡 = has images · 🔴 = no rating</p>
+    ${activityItems}`;
+}
+
+function jumpToPoiAdmin(id) {
+  switchAdminTab('pois');
+  setTimeout(() => {
+    const input = document.getElementById('adminPoiSearch');
+    if (input) {
+      const a = ATTRACTIONS.find(x => x.id === id);
+      if (a) { input.value = a.name; updateAdminPoiSearch(a.name); }
+    }
+  }, 100);
+}
+
+function toggleAdminRow(id) {
+  adminExpandedRow = adminExpandedRow === id ? null : id;
+  switchAdminTab('pois');
+}
+
+function updateAdminPoiSearch(val) {
+  adminPoiSearch = val;
+  adminExpandedRow = null;
+  document.getElementById('adminContent').innerHTML = renderAdminPois();
+  attachAdminPoiEvents();
+}
+
+function setAdminPoiFilter(cat) {
+  adminPoiFilter = cat;
+  adminExpandedRow = null;
+  document.getElementById('adminContent').innerHTML = renderAdminPois();
+  attachAdminPoiEvents();
+}
+
+function updateAdminAccomSearch(val) {
+  adminAccomSearch = val;
+  document.getElementById('adminContent').innerHTML = renderAdminAccom();
+  attachAdminAccomEvents();
+}
+
+function attachAdminPoiEvents() {}
+function attachAdminAccomEvents() {}
+
+function submitAdminPoi() {
+  showToast('✓ Submitted for review — would save to Supabase in production');
+  setTimeout(() => switchAdminTab('overview'), 1200);
+}
+
+// ============ MAP STYLE SWITCHER ============
+let _currentMapStyle = 'roadmap';
+function setMapStyle(style) {
+  if (!map) return;
+  _currentMapStyle = style;
+  map.setMapTypeId(style);
+  ['Road','Sat','Terrain'].forEach(s => document.getElementById(`mapStyle${s}`)?.classList.remove('active'));
+  const idMap = { roadmap: 'mapStyleRoad', satellite: 'mapStyleSat', terrain: 'mapStyleTerrain' };
+  document.getElementById(idMap[style])?.classList.add('active');
+}
+
+// ============ HEATMAP TOGGLE ============
+let _heatmapLayer = null;
+let _heatmapOn = false;
+
+function toggleHeatmap() {
+  if (!map) return;
+  _heatmapOn = !_heatmapOn;
+  const btn = document.getElementById('heatmapToggleBtn');
+
+  if (_heatmapOn) {
+    // Build heatmap from visible attractions
+    const pts = (ATTRACTIONS || [])
+      .filter(a => state.activeCategories.has(a.category) && a.lat && a.lng)
+      .map(a => new google.maps.LatLng(a.lat, a.lng));
+
+    if (google.maps.visualization && google.maps.visualization.HeatmapLayer) {
+      _heatmapLayer = new google.maps.visualization.HeatmapLayer({
+        data: pts, map: map, radius: 25, opacity: 0.6
+      });
+      showToast(`🌡 Heatmap on — ${pts.length} attractions`);
+    } else {
+      // Fallback: load visualization library dynamically
+      const script = document.createElement('script');
+      const existingSrc = document.querySelector('script[src*="maps.googleapis"]')?.src || '';
+      const match = existingSrc.match(/key=([^&]+)/);
+      const apiKey = match ? match[1] : '';
+      script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=visualization&callback=_onHeatmapLibLoaded`;
+      script.async = true;
+      window._onHeatmapLibLoaded = () => {
+        _heatmapLayer = new google.maps.visualization.HeatmapLayer({
+          data: pts, map: map, radius: 25, opacity: 0.6
+        });
+        showToast(`🌡 Heatmap on — ${pts.length} attractions`);
+      };
+      document.head.appendChild(script);
+    }
+    if (btn) btn.classList.add('active');
+  } else {
+    if (_heatmapLayer) { _heatmapLayer.setMap(null); _heatmapLayer = null; }
+    if (btn) btn.classList.remove('active');
+    showToast('🌡 Heatmap off');
+  }
+}
+
+// ============ KEYBOARD SHORTCUTS ============
+const KB_SHORTCUTS = [
+  ['/', 'Focus search box'],
+  ['Escape', 'Close overlays / popups'],
+  ['E', 'Switch to Explore tab'],
+  ['P', 'Switch to Plan tab'],
+  ['S', 'Switch to Stays tab'],
+  ['M', 'Cycle map style (Road → Satellite → Terrain)'],
+  ['H', 'Toggle attraction density heatmap'],
+  ['D', 'Toggle dark mode'],
+  ['N', 'Toggle Near Me geolocation'],
+  ['R', 'Surprise Me — random hidden gem'],
+  ['F', 'Focus map on current plan day'],
+  ['Z', 'Shuffle stops for active plan day'],
+  ['U', 'Undo last stop removal'],
+  ['C', 'Clear all Explore filters'],
+  ['T', 'Find stays near your trip stops'],
+  ['← →', 'Previous / next place in POI detail view'],
+  ['?', 'Show / hide this keyboard help'],
+];
+
+function openKeyboardHelp() {
+  const el = document.getElementById('keyboardHelp');
+  if (!el) return;
+  const list = document.getElementById('kbShortcutList');
+  if (list && !list.children.length) {
+    list.innerHTML = KB_SHORTCUTS.map(([key, desc]) =>
+      `<span class="kb-key">${key}</span><span style="color:var(--text2);">${desc}</span>`
+    ).join('');
+  }
+  el.style.display = 'flex';
+}
+function closeKeyboardHelp() {
+  const el = document.getElementById('keyboardHelp');
+  if (el) el.style.display = 'none';
+}
+document.getElementById('keyboardHelp').addEventListener('click', e => {
+  if (e.target === document.getElementById('keyboardHelp')) closeKeyboardHelp();
+});
+
+// Secret keyboard trigger: type "qiwiadmin" anywhere
+document.addEventListener('keydown', (e) => {
+  const inInput = document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA';
+  if (!inInput) {
+    _adminKeyBuffer = (_adminKeyBuffer + e.key).slice(-9);
+    if (_adminKeyBuffer === 'qiwiadmin') { openAdmin(); return; }
+
+    // Global keyboard shortcuts
+    switch (e.key) {
+      case '?': e.preventDefault(); {
+        const kh = document.getElementById('keyboardHelp');
+        if (kh?.style.display === 'flex') closeKeyboardHelp(); else openKeyboardHelp();
+        break;
+      }
+      case '/': e.preventDefault(); searchEl?.focus(); break;
+      case 'Escape':
+        closeKeyboardHelp();
+        closePoiDetail();
+        if (infoWindow) infoWindow.close();
+        break;
+      case 'e': case 'E': switchView('explore'); break;
+      case 'p': case 'P': switchView('plan'); break;
+      case 's': case 'S': switchView('stay'); break;
+      case 'd': case 'D': {
+        const isDark = document.documentElement.classList.contains('dark');
+        toggleDarkMode(!isDark);
+        const tog = document.getElementById('darkModeToggle');
+        if (tog) tog.checked = !isDark;
+        break;
+      }
+      case 'n': case 'N': toggleNearMe(); break;
+      case 'r': case 'R': surpriseMe(); break;
+      case 'f': case 'F':
+        if (state.itinerary.length) focusDayOnMap(state.planActiveDay);
+        break;
+      case 'c': case 'C':
+        if (state.view === 'explore') clearAllFilters();
+        break;
+      case 'z': case 'Z':
+        if (state.view === 'plan') shuffleDayStops(state.planActiveDay);
+        break;
+      case 'u': case 'U':
+        undoLastRemoval();
+        break;
+      case 'h': case 'H':
+        toggleHeatmap();
+        break;
+      case 't': case 'T':
+        openNearbyStaysFromPlan();
+        break;
+      case 'm': case 'M': {
+        const styles = ['roadmap','satellite','terrain'];
+        const next = styles[(styles.indexOf(_currentMapStyle) + 1) % styles.length];
+        setMapStyle(next);
+        showToast(`Map: ${next.charAt(0).toUpperCase() + next.slice(1)}`);
+        break;
+      }
+      case 'ArrowLeft':
+        if (_detailPoiId) { e.preventDefault(); navigatePoiDetail(-1); }
+        break;
+      case 'ArrowRight':
+        if (_detailPoiId) { e.preventDefault(); navigatePoiDetail(1); }
+        break;
+    }
+  }
+});
+
+// URL param trigger: ?admin=true
+if (new URLSearchParams(window.location.search).get('admin') === 'true') {
+  document.addEventListener('DOMContentLoaded', () => setTimeout(openAdmin, 800));
 }
 
 initMap();

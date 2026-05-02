@@ -85,6 +85,59 @@ All applied to `qiwiosity/mobile/prototype.html`:
 - **Progress dots** — Active dot stretches to pill shape
 - **Persistent** — Shown once on first visit; stored in `localStorage` as `qiwiosity_onboarded`; "Skip" dismisses immediately
 
+### Audio Commentary Options
+- **Short / Full toggle** — "⚡ Quick (30s)" pill plays `a.short` field; "📖 Full Guide" plays the full `a.commentary`; toggling swaps displayed text live without closing the overlay
+- **Driving Mode** — Dashed teal button in Plan sidebar; when active turns solid; auto-sets commentary to short; tapping any stop's Audio button triggers immediate auto-play; `drivingModeOn` state flag
+- **`getCommText(a)`** / **`setCommLength(mode, poiId)`** — centralised helpers
+
+### Social & Sharing
+- **Share POI** — "📤 Share" button in every POI popup action row; Web Share API on mobile; clipboard fallback on desktop with `?poi=<id>` URL + description
+- **Share Trip** — "📤 Share Trip" in Plan stats; formats itinerary day-by-day as shareable text; Web Share API or clipboard fallback
+- **`sharePoi(id)`** + **`shareTrip()`**
+
+### Admin Panel
+- **Secret access** — Type `qiwiadmin` on the page (not in an input), or use `?admin=true` URL param
+- **5 tabs** — Overview (stat cards + category/region breakdowns), POIs (searchable/filterable table of all 2,453 with expandable rows), Stays (searchable table of 382 accommodations), Add POI (full form), Activity (feed of recently added POIs)
+- **Dark navy/teal design** — Full-screen overlay with left sidebar nav
+- **Admin → app actions** — Expand a POI row → "View on map" + "Add to trip" buttons bridge admin back to the live app
+- **Auto-refresh** — Overview polls until Supabase data is ready
+
+### Surprise Me / Discover
+- **"🎲 Surprise Me" button** in Explore sidebar — picks a random top-rated POI (rating ≥ 4.0, or top 30%); avoids repeating the last 20 shown; pans map + opens popup + shows toast with name & region; `_surpriseHistory` tracks recent picks
+
+### Region List Enhancement
+- **POI counts** — Each region in the sidebar now shows a teal pill count of how many POIs are in that region, computed live from ATTRACTIONS data
+
+### Trip Cost Estimator
+- **"💰 Cost estimate" row** in Plan stats — collapsible; estimates fuel (10.5 L/100 km × NZ$2.52), activity entry fees by category, accommodation (from AI pref or NZ$150 default), food (NZ$90/day); shows a low–high NZD range; `buildCostEstimate(totalDistKm)` / `toggleCostBreakdown()`
+
+### Near Me — Geolocation
+- **"📍 Near Me" toggle** in Explore sidebar — requests browser geolocation; blue Google-style dot marker placed on map; markers re-sorted nearest-first; distance badge (📍 X km/m) shown in POI popup hero row; toggles off cleanly; keyboard shortcut N
+- **`distKmFromUser(a)`** + **`fmtDist(km)`** + **`renderUserLocationMarker()`** helpers
+
+### Recently Viewed History Strip
+- **Horizontal chip strip** below search box in Explore — tracks last 12 tapped POIs in `localStorage` (`qiwiosity_recently_viewed`); chips jump to POI on map; hidden when empty; `addToRV()` called inside `openPoiInfoWindow()`
+
+### POI Detail Full-Screen Overlay
+- **"📖 More" button** on every popup — opens full-screen overlay with large hero, swipeable gallery strip, full commentary, visitor overview, tags, audio guide + Community Voices buttons, add-to-itinerary, directions, share, affiliate booking links; `openPoiDetail()` / `closePoiDetail()` / `toggleSaveFromDetail()`
+
+### Search Autocomplete
+- **Dropdown suggestions** under search input as user types (≥2 chars) — top 6 matching POIs by name/tags; matched text highlighted in teal; category label shown; click jumps to POI + clears search; Escape dismisses; blur auto-closes
+
+### Map Style Switcher
+- **3-button vertical panel** on map (top-right) — 🗺 Standard, 🛰 Satellite, ⛰ Terrain; active button turns teal; `setMapStyle(type)`; keyboard shortcut M cycles styles
+
+### Keyboard Shortcuts
+- **Press `?` anywhere** (outside inputs) to open the shortcuts overlay — lists all shortcuts including `/` search, `E/P/S` tabs, `M` map style, `D` dark mode, `N` near me, `R` surprise me, `Esc` close
+- All shortcuts handled in the global `keydown` listener alongside the admin `qiwiadmin` buffer
+
+### PWA Manifest & Meta Tags
+- **`manifest.json`** — name, short_name, standalone display, teal theme/background colors, icon
+- **Meta tags** — `theme-color`, Apple mobile web app capable/title/status-bar, OG title/description, `viewport-fit=cover` for notched phones
+
+### Marker Clustering
+- **@googlemaps/markerclusterer** loaded from CDN; `renderAttractions()` now wraps all markers in a `MarkerClusterer` when there are >50 visible markers; custom teal SVG cluster icons show the count; at higher zoom levels clusters break into individual pins; falls back to direct map rendering for small filtered sets
+
 ### AI Trip Generator
 - **3-step wizard** — When & Who → Interests & Pace → Stay & Route; animated step progress indicator
 - **Smart routing algorithm** — `buildAIItinerary()` scores all 2,453 POIs by category interest match, rating, review count, and budget; greedy nearest-neighbor from start region builds a geographically sensible route; distance penalty relaxes over days to allow spread
@@ -141,6 +194,44 @@ All applied to `qiwiosity/mobile/prototype.html`:
 ### Other
 - **`<audio id="ttsAudio">` element** — Used for ElevenLabs streaming audio playback
 - **`closeCommentary()`** — Properly cancels both Web Speech and `<audio>` sources
+
+## Phase 4 Feature Sprint (Completed — May 2026)
+
+All applied to `qiwiosity/mobile/prototype.html`:
+
+### Stay Tab Enhancements
+- **Accommodation sort chips** — Default / ★ Rating / $ Low / $ High; `setAccomSort()` / `renderAccomSortChips()`
+- **Budget filter chips** — Any / Budget (≤$120) / Mid ($120–$250) / Luxury (>$250); `setAccomBudget()` / `renderAccomBudgetChips()`
+- **Near Me sort** — Near Me active on Explore also sorts accommodations by distance; distance badge on stay cards
+- **"Open in Maps ↗" + Directions buttons** in accommodation popup
+- **Share accommodation** — "📤 Share" button in accommodation popup; uses Web Share API or clipboard; builds `?accom=<id>` URL; `shareAccom(id)`
+
+### Deep-Link Handlers
+- **`?poi=<id>` URL param** — After Supabase loads, pans map, opens popup, shows toast
+- **`?accom=<id>` URL param** — Switches to Stay tab, pans map, opens accommodation popup, shows toast
+- Both handled in the `handleDeepLink()` IIFE at end of boot
+
+### Plan Sidebar Enhancements
+- **`duplicateStop(id)`** — Clones a stop into the same day; button `⧉ Dup` on expanded stop cards
+- **Move to Day dropdown** — `<select>` on expanded stop cards to move to any other day
+- **Shuffle day stops** — `🔀 Shuffle` button in Plan stats + keyboard shortcut `Z`; Fisher-Yates shuffle of stops within the active day; `shuffleDayStops(day)`
+- **Undo last stop removal** — Removing a stop shows an inline "↩ Undo" button in the toast for 6 seconds; `undoLastRemoval()` + keyboard shortcut `U`; stores `_lastRemovedStop` with index
+- **Save/favourite toggle on plan card** — ♡/❤ button on each expanded stop card toggles `savedPOIs`; re-renders sidebar
+- **Plan stats: avg stop rating** — "Avg stop rating ★ X.X" row in stats; computed from rated stops in itinerary
+- **Plan stats: regions visited** — "Regions visited N" row in stats
+- **`focusDayOnMap(day)`** + keyboard shortcut `F` — Fits map bounds to all stops in active day
+
+### Saved Tab Improvements
+- `"＋ Add all to trip"` button + `addAllSavedToTrip()` function
+- Saved cards show rating badge + "Add to trip" / "✓ In trip" buttons
+- Thumbnail via `getPoiImageUrl()`; `📋 Coords` copy-coordinates button in POI popup
+
+### Sidebar UX
+- Back-to-top sticky button in sidebar (appears after 200px scroll)
+- Review count `(N)` shown next to rating in POI popup hero-meta
+- Region click in sidebar: pans map + **toggles `state.activeRegion` filter** on `renderAttractions()`; active region highlighted with teal border + pill
+- `clearAllFilters()` now also clears `state.activeRegion` and calls `renderRegionList()`
+- Keyboard shortcuts `F`, `C`, `Z`, `U` added to `KB_SHORTCUTS` display
 
 ## Phase 1 UI Changes (Completed)
 

@@ -5,72 +5,56 @@
 
 ---
 
-## ✅ COMPLETED
+## ✅ COMPLETED (latest batch — Phase 4)
 
-- Premium splash screen
-- Dark mode (toggle in Settings)
-- 5 named voice personas (Kiri / James / Aroha / Sam / Grace)
-- ElevenLabs AI voice integration + Web Speech API fallback
-- Settings modal (voice, speed, dark mode, ElevenLabs key, affiliate IDs)
-- Wishlist / saved places with ♡ button and ❤ Saved tab
-- Affiliate links: Booking.com, Wotif, Viator, GetYourGuide
-- Audio commentary player per POI
-- Annoying intro voice removed (speech cancelled on load)
-- Settings cog — no more green circle, now flat icon
-- Category filter — true multi-toggle (click any combo on/off; "All" resets)
-- Directions keep user in-app — no more jumping to Google Maps externally
-- Decision results — "＋ Add to Itinerary" button for winners
-- Popup action button text overflow — fixed with ellipsis clipping
-- "Qiwiosity" removed as a screen label — now logo-only in header
-- **[NEW] Itinerary Section Redesign** — multi-day tabs, collapsible stop cards, drive time rows, up/down reorder, drag-and-drop reorder, audio/details/drive actions per stop, collapsible stats, Add Day button, Move to Day
-- **[NEW] In-app trip routing** — Google DirectionsService draws full-day route polyline in-app, shows distance + time toast
-- **[NEW] POI Popup Redesign** — wider (360px), taller hero (260px), audio strip with "🔊 Play Audio Guide" button and voice name, action buttons in clean bottom row
-- **[NEW] Decision Mode enhancements** — VS cards now show hero images, price, rating, and inline 🔊 Audio button per option
-- **[NEW] Compare Sheet + Find Similar Nearby** — Compare button opens a sheet offering "Add this place only" OR "Find similar nearby" with 25/50/100/All NZ radius picker
-- **[NEW] First-Time Onboarding** — 4-slide animated bottom-sheet shown on first visit, localStorage "don't show again", Skip + Next/Finish buttons
-- **[NEW] Community Voices (EchoVerse)** — Location-based audio memory layer: visitors record short audio stories at any POI using MediaRecorder API; base64 stored in localStorage keyed by POI id; "Hear Stories" tab shows all memory cards with ▶ play + progress bar; "Leave a Memory" tab has animated record button, timer, preview, name/anonymous toggle, 9-tag picker; POI popup shows "🎙 Community Voices" strip with voice count badge
+- **[NEW] Stay tab: Accommodation sort chips** — Default / ★ Rating / $ Low / $ High; `setAccomSort()` / `renderAccomSortChips()`
+- **[NEW] Stay tab: Budget filter chips** — Any / Budget / Mid / Luxury; `setAccomBudget()` / `renderAccomBudgetChips()`
+- **[NEW] Stay tab: Near Me distance sort + badge** — accom cards sorted by distance when Near Me active
+- **[NEW] Stay tab: "Open in Maps ↗" + Directions** buttons in accommodation popup
+- **[NEW] Share accommodation** — "📤 Share" in accom popup; builds `?accom=<id>` URL; Web Share API or clipboard fallback; `shareAccom(id)`
+- **[NEW] Deep-link ?accom=** — Boot handler: switches to Stay tab, pans map, opens accom popup
+- **[NEW] duplicateStop(id)** — "⧉ Dup" button on expanded plan stop cards; clones stop into same day
+- **[NEW] Move to Day dropdown** — `<select>` on expanded plan stop cards
+- **[NEW] shuffleDayStops(day)** — "🔀 Shuffle" in Plan stats + keyboard shortcut Z; Fisher-Yates shuffle within active day
+- **[NEW] Undo last stop removal** — "↩ Undo" inline in toast for 6s; `undoLastRemoval()` + keyboard shortcut U
+- **[NEW] Save/favourite toggle on plan stop card** — ♡/❤ button on expanded cards; re-renders sidebar
+- **[NEW] Plan stats: avg stop rating** — ★ X.X row computed from rated stops in itinerary
+- **[NEW] Plan stats: regions visited** — unique region count row in stats
+- **[NEW] Region filter active highlight** — Clicked region in sidebar gets teal border + pill; filter applied to `renderAttractions()`; second click clears; clearAllFilters also clears it; KB shortcut C
+- **[NEW] Keyboard shortcuts Z (shuffle) + U (undo)** — Wired into global keydown handler + shown in ? overlay
+- **[NEW] Saved tab: Add all to trip button** — `addAllSavedToTrip()` adds all saved POIs to current trip
+- **[NEW] Saved tab: Rating badge + In trip indicator** on wishlist cards
+- **[NEW] Coords copy button** — `📋 Coords` in POI popup copies lat/lng to clipboard
+- **[NEW] Review count** `(N)` shown next to rating in POI popup hero-meta
+- **[NEW] Back-to-top** sticky button in sidebar (appears after 200px scroll)
 
----
+## ✅ COMPLETED (previous batch)
 
-## 🔴 HIGH PRIORITY / CRITICAL
+- **[NEW] Per-stop notes** — "📝 Note" button on each expanded itinerary stop card; textarea stores note on the stop object; note preview shown below stop name in collapsed card; `toggleStopNote()` / `saveStopNote()`; persisted via localStorage itinerary save
+- **[NEW] Rating filter** — "★ Min rating" chip row in Explore sidebar (Any / 3.5+ / 4.0+ / 4.5+); filters `renderAttractions()` by `a.reviews.rating`; `_minRating` state; `renderRatingFilter()` / `setMinRating()`
+- **[NEW] Sort control** — "Sort" chip row in Explore sidebar (Default / ★ Rating / A–Z); sorts filtered list in `renderAttractions()`; overridden by Near Me distance sort; `_sortMode` state; `renderSortChips()` / `setSortMode()`
+- **[NEW] Attraction counter** — "Showing X of 2,453 places" line in Explore sidebar, updates on every filter change; turns teal when filtering is active; `#attractionCounter` element updated in `renderAttractions()`
+- **[NEW] switchView() / switchTab()** — Programmatic tab switching helpers wrapping the tab click event; keyboard shortcuts E/P/S now work correctly
+- **[NEW] Dark mode keyboard shortcut fix** — `D` key now properly toggles `toggleDarkMode()` and syncs the checkbox
+- **[NEW] Print / Export trip** — "🖨 Print / Export" button in Plan stats; opens a new window with formatted print-ready HTML itinerary (day-by-day tables, stop notes column, totals header, Qiwiosity branding); auto-triggers browser print dialog; `printTrip()`
+- **[NEW] Itinerary persistence** — Trip itinerary auto-saves to `localStorage` (`qw_itinerary`) on every add/remove/reorder/note/day-move; restored after Supabase data loads with a toast; `saveItineraryToStorage()` / `restoreItineraryFromStorage()`
+- **[NEW] Wishlist export** — "📋 Export" button in Saved Places sidebar; opens a print-ready HTML list with all saved places (name, region, type, rating, short description); `exportWishlist()`
 
-### ✅ 1. Map Integration — Type-In Start Location
-- "🟢 STARTING POINT" input at top of Plan sidebar with Google Places Autocomplete (NZ only)
-- Stores `state.journeyStart { label, lat, lng }`; persists across tab switches
-- Green "S" pin appears on the plan map at the chosen start location
-- `openInAppTripRoute()` uses custom start as origin; route toast shows "From [city] · N stops · X km · Y min"
-- ✕ clear button removes the start and resets the map
+## ✅ COMPLETED (earlier)
 
-### ✅ 2. Itinerary Map — Numbered Pin Click → Sidebar Highlight
-- Click any numbered stop pin → opens POI info popup AND scrolls the matching stop card into view in the sidebar
-- Card flashes with a teal outline highlight for 1.4 seconds so the user can see which stop was tapped
-
----
-
-## 🟠 MEDIUM PRIORITY
-
-### ✅ 4. Full AI Itinerary Generator
-- **3-step wizard overlay** — Step 1: When & Who; Step 2: Interests & Pace; Step 3: Stay & Route
-- **Step 1** — Days slider (1–21), adults/children counters, starting region dropdown (all 19 NZ regions), round-trip toggle, optional end-region picker
-- **Step 2** — Category interest chips (built from live CATEGORIES data), pace selector (Relaxed/Balanced/Active), budget selector (Budget/Mid-range/Luxury)
-- **Step 3** — Accommodation preference chips (Camping/Hostel/B&B/Hotel/Luxury Resort), free-text notes, trip summary preview
-- **Animated loading screen** — 5 progressive steps animate in over ~2.4s while algorithm runs
-- **`buildAIItinerary(config)`** — Scores all 2,453 POIs by: interest category match (+10), star rating ×2, log(review_count), budget alignment (+2); builds route using greedy nearest-neighbor from start region with distance penalty that relaxes as trip progresses; accommodation matched by keyword proximity per day
-- **Results screen** — Shows "Your N-Day NZ Adventure" with total stops, km, regions; collapsible day cards showing stop list + recommended accommodation + price per night; auto-expands Day 1; Regenerate button
-- **"Load into Planner"** — Clears existing itinerary and loads all AI stops with correct day numbers, sets journey start point from chosen region, switches to Plan tab, shows route summary toast
-- **"✨ Generate AI Trip" button** — Teal primary button at top of Plan sidebar opens the wizard
-
-### 3. Audio Commentary Options
-**What's needed:**
-- Short version (~30 sec) and full version (2–3 min) per POI
-- Auto-play driving commentary: when user is travelling between stops, play contextual commentary about the route and region
-- Commentary tailored to user interests (history / nature / Māori culture)
-
-### 4. Full AI Itinerary Generator
-**What's needed:**
-- Input form: arrival/departure dates, number of people, ages, interests, budget, accommodation preference, constraints
-- AI generates a day-by-day itinerary with stops, drive times, accommodation suggestions
-- User can tweak generated itinerary
+- **[NEW] Surprise Me / Discover** — "🎲 Surprise Me" teal button in Explore sidebar; picks from top-rated (≥4.0) or top-30% POIs; avoids last-20 repeats via `_surpriseHistory`; pans map + opens popup + toast
+- **[NEW] Region POI counts** — Each region in sidebar shows a teal pill with live count from ATTRACTIONS data
+- **[NEW] Trip Cost Estimator** — "💰 Cost estimate" collapsible row in Plan stats; estimates fuel, activity fees, accommodation, food; shows low–high NZD range
+- **[NEW] Near Me — Geolocation** — "📍 Near Me" toggle; browser geolocation; blue dot marker; distance sort; distance badge in POI popup
+- **[NEW] Recently Viewed strip** — Horizontal scrollable chip strip; tracks last 12 tapped POIs in localStorage
+- **[NEW] POI Detail Full-Screen Overlay** — "📖 More" button; full-screen overlay with hero, gallery, commentary, tags, affiliate links
+- **[NEW] Search Autocomplete** — Dropdown suggestions as user types; top 6 matches highlighted
+- **[NEW] PWA Manifest + Meta Tags** — `manifest.json`, Apple meta tags, OG tags
+- Premium splash screen, dark mode, 5 voice personas, ElevenLabs integration
+- Wishlist / saved places, affiliate links, audio commentary, admin panel
+- AI Trip Generator (3-step wizard), Community Voices (EchoVerse)
+- Marker clustering, in-app directions, decision mode, compare sheet
+- First-time onboarding, map style switcher, keyboard shortcuts overlay
 
 ---
 
@@ -82,9 +66,9 @@
 - Saved itineraries, wishlists, settings sync across devices
 - Different access levels (traveller vs admin)
 
-### 6. Social & Sharing
+### 6. Social & Sharing (extended)
 **What's needed:**
-- Share itinerary / POI to social media
+- Share itinerary / POI to social media (WhatsApp, Instagram, etc.)
 - Travel diary: save own photos, group by trip, add journal notes, video diary
 - Collaborate: invite others to join a trip, meet at stops
 
@@ -94,10 +78,9 @@
 - Full CarPlay UI (simplified for driving)
 - Auto-commentary during drives
 
-### 8. Admin Panel
+### 8. Admin Panel Enhancements
 **What's needed:**
 - Review and approve/reject new POI submissions
-- Add new POIs via standardised template
 - Edit existing POIs (images, description, GPS coords, category)
 - Bulk import / CSV upload
 - Image management
@@ -108,5 +91,5 @@
 
 - Google Maps `Marker` is deprecated — migrate to `AdvancedMarkerElement`
 - GPS coordinates on some POIs are inaccurate — need audit
-- App load speed — lazy-load POI images, paginate/cluster markers
 - ElevenLabs voice key stored in localStorage only — should be server-side for production
+- Community Voices audio stored as base64 in localStorage — migrate to cloud storage for production
