@@ -23,7 +23,7 @@ qiwiosity/
     App.js, app.json, ...   ← Expo entry points
     plugins/                ← CarPlay + Android Auto native plugins
   database/
-    seed/                   ← Canonical JSON data (1100+ POIs, 382 accommodations)
+    seed/                   ← Canonical JSON data (2453 POIs, 382 accommodations)
     migrations/             ← Supabase SQL migrations
     import-to-supabase.js   ← Data import script
   content/
@@ -42,22 +42,56 @@ server.js                   ← Simple Node.js HTTP server (port 5000)
 
 - **Web prototype**: Single-file HTML/CSS/JS (`qiwiosity/mobile/prototype.html`)
   - Google Maps JavaScript API (key embedded)
-  - Supabase (live data: 1100+ POIs, 382 accommodations, 19 regions)
+  - Supabase (live data: 2453 POIs, 382 accommodations, 19 regions)
+  - Web Speech API + ElevenLabs API for voice narration
 - **Mobile app**: React Native via Expo SDK 54, React 19.1, RN 0.81.5
 - **Backend**: Supabase (PostgreSQL) — `https://hauksnqehzaxuoeaezji.supabase.co`
 - **Server**: Node.js built-in `http` module
 
+## Phase 2 UI / Feature Overhaul (Completed)
+
+All applied to `qiwiosity/mobile/prototype.html`:
+
+### Design & Theming
+- **Dark mode** — Full `html.dark` CSS variable override; toggleable via Settings → persisted in `localStorage`
+- **Premium web-first design** — Proper desktop 3-column grid layout, refined typography, transitions, spacing
+- **Standalone splash screen** — Full-cover NZ landscape background, glassmorphism overlay, logo + brand name, bold headline, 4 feature-highlight chips, "Begin Exploring" CTA, animated entry
+- **Header redesign** — Deep teal background, bolder brand, improved tab styling, ⚙ Settings gear button
+
+### Voice & Audio
+- **5 named voice personas** — Kiri 🌿 (warm NZ), James 🎩 (BBC-style authoritative), Aroha ✨ (energetic), Sam 🎒 (casual Kiwi), Grace 📖 (poetic/thoughtful)
+- **ElevenLabs AI integration** — Enter API key in Settings to switch all voices to ultra-realistic AI narration; falls back to Web Speech API automatically
+- **Web Speech API fallback** — Each persona has a prioritised list of system voice names to match against
+- **Playback speed control** — 0.75×, 1×, 1.25×, 1.5× — persisted to `localStorage`
+- **Voice preview** — "▶ Preview" button in Settings lets you audition each persona before committing
+- **Commentary overlay** — Shows active persona pill with ⚙ shortcut to Settings; ▶/⏹ play toggle
+
+### Wishlist / Saved Places
+- **♡ Save button** — Every POI popup now has a ♡ Save / ❤ Saved toggle button
+- **Saved tab** — "❤ Saved" header tab with live badge count (red)
+- **Wishlist view** — Sidebar panel lists all saved places with thumbnail, category, region, and ✕ remove button
+- **Persistence** — Saved places stored in `localStorage` (`qw_saved`); survive page refresh
+
+### Settings Modal
+- Voice persona grid (5 cards, tap to select, Preview button per card)
+- ElevenLabs API key input (stored encrypted-style in `localStorage`)
+- Dark mode toggle
+- Playback speed picker
+- Opens from ⚙ button in header; closes on backdrop click or ✕
+
+### Other
+- **`<audio id="ttsAudio">` element** — Used for ElevenLabs streaming audio playback
+- **`closeCommentary()`** — Properly cancels both Web Speech and `<audio>` sources
+
 ## Phase 1 UI Changes (Completed)
 
-Applied to `qiwiosity/mobile/prototype.html`:
-
-1. **Header branding** — Removed long tagline; header now shows just "Qiwiosity" (logo already in header)
-2. **Category filter UX** — Changed from multi-toggle to solo-select: click any category to show ONLY that type, click again (or "All categories") to reset. New "All categories" chip at top of the list.
-3. **POI popup redesign** — Hero image expanded to 220px; place name, category chip, star rating, and duration now overlaid on the image with a gradient. Action buttons laid out in a 2×2 grid. Audio button added directly in popup ("🎧 Audio").
-4. **Commentary no-autoplay** — "Audio" button in popup opens a text panel with separate "▶ Play" / "⏹ Stop" toggle. No auto-speech on click.
-5. **In-app directions** — "🧭 Directions" button now draws the route on the existing Google Map using DirectionsService + geolocation (requests location permission). Falls back to opening Google Maps externally if location denied or unavailable.
-6. **Plan view toggle** — "Show all places" toggle renamed to "Show nearby attractions on map".
-7. **Route cleanup** — In-app direction routes are cleared when switching between tabs.
+1. **Category filter UX** — Solo-select with "All categories" chip
+2. **POI popup redesign** — Hero image with gradient overlay, action grid
+3. **Commentary no-autoplay** — Separate ▶/⏹ toggle
+4. **In-app directions** — DirectionsService + geolocation; falls back to external Maps
+5. **Plan view toggle** — "Show nearby attractions on map"
+6. **Route cleanup** — Routes cleared on tab switch
+7. **Accommodation list** — Real cards with `accomCardClick()` and map sync
 
 ## Deployment
 
