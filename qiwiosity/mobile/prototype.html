@@ -3617,14 +3617,17 @@ function printTrip() {
     const stopRows = stops.map((a, i) => {
       const fee = CATEGORY_FEE_NZD[a.category];
       const feeStr = fee > 0 ? `~NZ$${fee}` : fee === 0 ? 'Free' : '';
+      const ratingStr = a.reviews?.rating ? `★${a.reviews.rating.toFixed(1)}` : '';
+      const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
       return `
       <tr>
         <td style="text-align:center;font-weight:700;color:#15888A;">${i + 1}</td>
-        <td><strong>${a.name}</strong><br><span style="color:#666;font-size:12px;">${a.region || ''}</span></td>
+        <td><strong>${a.name}</strong><br><span style="color:#666;font-size:12px;">${rName.split(' / ')[0]}</span></td>
         <td style="color:#555;font-size:13px;">${catLabel(a.category)}</td>
         <td style="text-align:center;color:#555;">${a.duration_hours}h</td>
         <td style="text-align:center;color:#15888A;font-weight:700;">${_printFmtTime(times[i])}</td>
         <td style="text-align:center;color:#E07B3C;font-size:12px;">${feeStr}</td>
+        <td style="text-align:center;color:#F59E0B;font-size:12px;">${ratingStr}</td>
         <td style="font-size:12px;color:#777;">${a.note || ''}</td>
       </tr>`;
     }).join('');
@@ -3638,6 +3641,7 @@ function printTrip() {
           <th style="padding:6px 8px;text-align:left;">Duration</th>
           <th style="padding:6px 8px;text-align:left;">Arrive</th>
           <th style="padding:6px 8px;text-align:left;">~Cost</th>
+          <th style="padding:6px 8px;text-align:left;">Rating</th>
           <th style="padding:6px 8px;text-align:left;">Notes</th>
         </tr></thead>
         <tbody>${stopRows}</tbody>
@@ -4263,8 +4267,11 @@ function renderAccommodationList() {
       return '';
     })();
     const accomSaved = (typeof savedAccoms !== 'undefined') && savedAccoms.includes(String(a.id));
-    return `<div class="accom-card" onclick="accomCardClick('${a.id}')">
-      <div class="accom-card-left">
+    const thumbUrl = getPoiImageUrl(a);
+    return `<div class="accom-card" onclick="accomCardClick('${a.id}')" style="display:flex;gap:0;overflow:hidden;">
+      ${thumbUrl ? `<img src="${thumbUrl}" alt="" onerror="this.style.display='none'" loading="lazy"
+        style="width:72px;min-width:72px;height:80px;object-fit:cover;border-radius:10px 0 0 10px;flex-shrink:0;" />` : ''}
+      <div class="accom-card-left" style="flex:1;min-width:0;">
         <div style="display:flex;align-items:flex-start;gap:4px;">
           <div class="accom-card-name" style="flex:1;">${a.name}</div>
           <button onclick="event.stopPropagation();toggleAccomSave('${a.id}',this)" title="${accomSaved?'Remove from saved':'Save'}"
@@ -4276,8 +4283,8 @@ function renderAccommodationList() {
           ${rating ? `<span class="accom-rating">${rating}</span>` : ''}
           ${distBadge}
         </div>
-        ${region ? `<div style="font-size:10px;color:var(--muted);margin-bottom:3px;">📍 ${region}</div>` : ''}
-        <p class="accom-short">${a.short || ''}</p>
+        ${region ? `<div style="font-size:10px;color:var(--muted);margin-bottom:2px;">📍 ${region.split(' / ')[0]}</div>` : ''}
+        <p class="accom-short" style="margin:0;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden;">${a.short || ''}</p>
       </div>
     </div>`;
   }).join('');
@@ -4938,6 +4945,23 @@ function renderPlanSidebar() {
       if (dayCost > 0) html += `<div class="stat-row"><span>Day ${state.planActiveDay} activity cost</span><span style="color:var(--accent)">~NZ$${dayCost}</span></div>`;
       if (state.itineraryDays > 1 && totalCostAll > 0) html += `<div class="stat-row"><span>Total activity costs</span><span style="color:var(--accent)">~NZ$${totalCostAll}</span></div>`;
       return html;
+    })()}
+    ${(() => {
+      const regionCounts = {};
+      state.itinerary.forEach(a => { if (a.region) regionCounts[a.region] = (regionCounts[a.region]||0)+1; });
+      const topR = Object.entries(regionCounts).sort((a,b)=>b[1]-a[1])[0];
+      if (!topR) return '';
+      const rName = (REGIONS.find(r => r.id === topR[0]) || {}).name || topR[0];
+      return `<div class="stat-row"><span>Top region</span><span style="color:var(--primary);">📍 ${rName.split(' / ')[0]}</span></div>`;
+    })()}
+    ${(() => {
+      const notInTrip = savedPOIs.filter(id => !state.itinerary.some(x => String(x.id) === id));
+      return notInTrip.length > 0
+        ? `<div style="margin:6px 0;padding:6px 9px;background:rgba(21,136,138,0.07);border:1px solid rgba(21,136,138,0.18);border-radius:8px;font-size:10px;display:flex;align-items:center;gap:6px;">
+            <span style="color:var(--primary);font-weight:700;">❤ ${notInTrip.length} saved</span>
+            <span style="color:var(--muted);">not yet in trip</span>
+            <button onclick="addAllSavedToTrip()" style="margin-left:auto;font-size:9px;padding:1px 8px;border:1px solid var(--primary);border-radius:10px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">Add all</button>
+          </div>` : '';
     })()}
     <div class="cost-toggle-row" onclick="toggleCostBreakdown()">
       <span>💰 Cost estimate</span><span id="costArrow">▶</span>
