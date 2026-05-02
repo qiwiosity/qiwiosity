@@ -36,8 +36,8 @@
   }
   header h1 { font-size: 18px; font-weight: 700; margin: 0; letter-spacing: 0.3px; }
   header .brand-mark { width: 28px; height: 28px; margin-right: 10px; border-radius: 6px; }
-  header .tabs { margin-left: auto; display: flex; gap: 4px; }
-  header .tab { background: transparent; color: rgba(255,255,255,0.75); border: none; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; }
+  header .tabs { margin-left: auto; display: flex; gap: 2px; flex-shrink: 0; }
+  header .tab { background: transparent; color: rgba(255,255,255,0.75); border: none; padding: 7px 10px; border-radius: 6px; font-size: 12px; cursor: pointer; white-space: nowrap; }
   header .tab.active { background: rgba(255,255,255,0.15); color: white; }
 
   .sidebar { background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; padding: 16px; }
@@ -383,6 +383,109 @@
   }
   .plan-empty .plan-empty-icon { font-size: 36px; margin-bottom: 8px; opacity: 0.4; }
   .plan-empty p { font-size: 13px; line-height: 1.5; margin: 0; }
+
+  /* ============ COMPARE ============ */
+  .compare-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--accent); color: white;
+    font-size: 9px; font-weight: 700; min-width: 15px; height: 15px;
+    border-radius: 99px; padding: 0 3px;
+    margin-left: 4px; vertical-align: middle;
+  }
+  .compare-empty-state {
+    text-align: center; padding: 40px 16px; color: var(--muted);
+  }
+  .compare-empty-state .icon { font-size: 40px; opacity: 0.35; margin-bottom: 10px; }
+  .compare-empty-state h3 { font-size: 15px; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+  .compare-empty-state p { font-size: 12px; line-height: 1.55; }
+  .compare-group-toolbar {
+    display: flex; gap: 5px; padding: 8px 0 10px;
+    overflow-x: auto; scrollbar-width: none; flex-shrink: 0;
+  }
+  .compare-group-toolbar .chip {
+    padding: 4px 12px; border-radius: 99px;
+    border: 1px solid var(--border); background: white;
+    font-size: 11px; font-weight: 600; cursor: pointer; white-space: nowrap;
+  }
+  .compare-group-toolbar .chip.active {
+    background: var(--primary); color: white; border-color: var(--primary);
+  }
+  .compare-group-section { margin-bottom: 12px; }
+  .compare-group-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  .compare-group-title { font-size: 13px; font-weight: 700; color: var(--primary-dark); }
+  .compare-group-count { font-size: 11px; color: var(--muted); }
+  .compare-card {
+    display: flex; align-items: center; background: white;
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 9px 10px; margin-bottom: 5px; gap: 9px;
+  }
+  .compare-card .cc-color { width: 4px; height: 34px; border-radius: 2px; flex-shrink: 0; }
+  .compare-card .cc-info { flex: 1; min-width: 0; }
+  .compare-card .cc-name { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .compare-card .cc-meta { font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .compare-card .cc-rating { font-size: 12px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+  .compare-card .cc-remove { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 17px; padding: 2px 4px; line-height: 1; }
+  .compare-card .cc-remove:hover { color: #c62828; }
+  .compare-decide-btn {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    width: 100%; margin-top: 8px; padding: 10px;
+    background: var(--accent); color: white; border: none;
+    border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .compare-decide-btn:hover { opacity: 0.88; }
+  .compare-clear-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 100%; margin-top: 6px; padding: 7px;
+    background: none; color: var(--muted); border: 1px solid var(--border);
+    border-radius: 8px; font-size: 12px; cursor: pointer;
+  }
+  .compare-clear-btn:hover { border-color: #c62828; color: #c62828; }
+
+  /* Decision Mode overlay */
+  .decision-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--bg); z-index: 9000;
+    display: none; flex-direction: column;
+  }
+  .decision-overlay.active { display: flex; }
+  .decision-header {
+    background: var(--primary-dark); padding: 14px 16px;
+    display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+  }
+  .decision-header h2 { color: white; font-size: 17px; font-weight: 700; flex: 1; }
+  .decision-close { background: none; border: none; color: rgba(255,255,255,0.75); font-size: 22px; cursor: pointer; }
+  .decision-progress { padding: 10px 14px; background: white; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+  .decision-progress .bar-track { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .decision-progress .bar-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s; }
+  .decision-progress .bar-label { font-size: 11px; color: var(--muted); margin-top: 5px; }
+  .decision-body { flex: 1; overflow-y: auto; padding: 16px; }
+  .decision-prompt { text-align: center; margin-bottom: 16px; }
+  .decision-prompt h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .decision-prompt p { font-size: 12px; color: var(--muted); }
+  .vs-container { display: flex; flex-direction: column; gap: 10px; }
+  .vs-card {
+    background: white; border: 2px solid var(--border);
+    border-radius: 12px; padding: 14px; cursor: pointer; transition: all 0.2s;
+  }
+  .vs-card:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(21,136,138,0.12); }
+  .vs-card .vs-name { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+  .vs-card .vs-meta { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+  .vs-card .vs-desc { font-size: 13px; line-height: 1.5; color: var(--text); }
+  .vs-card .vs-stats { display: flex; gap: 14px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .vs-card .vs-stat { font-size: 12px; }
+  .vs-card .vs-stat strong { color: var(--primary-dark); }
+  .vs-divider { display: flex; align-items: center; justify-content: center; }
+  .vs-badge { background: var(--accent); color: white; width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; }
+  .btn-compare {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 5px 10px; border-radius: 99px;
+    border: 1px solid var(--primary); background: white;
+    font-size: 11px; font-weight: 700; color: var(--primary); cursor: pointer;
+  }
+  .btn-compare.added { background: var(--accent); border-color: var(--accent); color: white; }
 </style>
 </head>
 <body>
@@ -409,6 +512,7 @@
       <button class="tab active" data-view="explore">Explore</button>
       <button class="tab" data-view="stay">Stay</button>
       <button class="tab" data-view="plan">Plan</button>
+      <button class="tab" data-view="compare">⚖ Compare<span class="compare-badge" id="compareBadge" style="display:none">0</span></button>
     </div>
   </header>
 
@@ -439,6 +543,17 @@
       <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')">10-day North Island Classic</button>
       <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')">14-day South Island Epic</button>
       <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')">7-day Adventure Capital</button>
+    </div>
+
+    <div class="view" id="view-compare">
+      <h2>Compare Places</h2>
+      <p style="font-size:12px;color:var(--muted);margin:0 0 8px;">Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.</p>
+      <div class="compare-group-toolbar" id="compareGroupToolbar">
+        <button class="chip active" data-group="category">By Category</button>
+        <button class="chip" data-group="region">By Region</button>
+        <button class="chip" data-group="none">All together</button>
+      </div>
+      <div id="compareContent"></div>
     </div>
   </aside>
 
@@ -473,6 +588,19 @@
       <div class="total"><span>Driving distance</span><span id="sumDistance">— km</span></div>
     </div>
   </aside>
+</div>
+
+<!-- ============ DECISION MODE OVERLAY ============ -->
+<div class="decision-overlay" id="decisionOverlay">
+  <div class="decision-header">
+    <h2 id="decisionTitle">Pick your favourite</h2>
+    <button class="decision-close" id="decisionClose">✕</button>
+  </div>
+  <div class="decision-progress">
+    <div class="bar-track"><div class="bar-fill" id="decisionBarFill"></div></div>
+    <div class="bar-label" id="decisionBarLabel"></div>
+  </div>
+  <div class="decision-body" id="decisionBody"></div>
 </div>
 
 <!-- ============ GOOGLE MAPS ============ -->
@@ -1248,7 +1376,9 @@ function openPoiInfoWindow(a, marker) {
           class="btn primary">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
         <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Directions</button>
         <button onclick="showCommentaryPopup('${a.id}')" class="btn">🎧 Audio</button>
-        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar places</button>
+        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar</button>
+        <button onclick="toggleCompare('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}"
+          style="grid-column:1/-1;">${isInCompare(a.id) ? '✓ In Compare' : '⚖ Compare'}</button>
       </div>
     </div>
   `;
@@ -1566,6 +1696,287 @@ addToItinerary = function(a) {
   }
 };
 
+// ============ COMPARE ============
+let compareList = [];
+let compareGroupBy = 'category';
+let decisionItems = [], decisionPairs = [], decisionPairIdx = 0;
+let decisionScores = {}, decisionKeepCount = 1, decisionPhase = 'pick-count';
+let decisionGroupName = '';
+
+const isInCompare = id => compareList.some(c => c.id === id);
+
+function updateCompareBadge() {
+  const el = document.getElementById('compareBadge');
+  if (compareList.length > 0) {
+    el.style.display = 'inline-flex';
+    el.textContent = compareList.length;
+  } else {
+    el.style.display = 'none';
+  }
+}
+
+function toggleCompare(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  if (isInCompare(id)) {
+    compareList = compareList.filter(c => c.id !== id);
+    showToast(`Removed from compare`);
+  } else {
+    compareList.push(a);
+    showToast(`Added to compare`);
+  }
+  updateCompareBadge();
+  if (state.view === 'compare') renderCompareView();
+}
+
+function getCompareGroups() {
+  if (compareGroupBy === 'category') {
+    const map = {};
+    compareList.forEach(a => {
+      const cat = CATEGORIES.find(c => c.id === a.category) || { label: a.category, color: '#999' };
+      if (!map[cat.id]) map[cat.id] = { key: cat.id, name: cat.label, color: cat.color, items: [] };
+      map[cat.id].items.push(a);
+    });
+    return Object.values(map);
+  }
+  if (compareGroupBy === 'region') {
+    const map = {};
+    compareList.forEach(a => {
+      const key = a.region_id || a.region || 'other';
+      if (!map[key]) map[key] = { key, name: key.replace(/-/g,' ').replace(/\b\w/g,c=>c.toUpperCase()), color: '#15888A', items: [] };
+      map[key].items.push(a);
+    });
+    return Object.values(map);
+  }
+  return [{ key: 'all', name: 'All shortlisted', color: '#15888A', items: [...compareList] }];
+}
+
+function renderCompareView() {
+  const el = document.getElementById('compareContent');
+  if (compareList.length === 0) {
+    el.innerHTML = `<div class="compare-empty-state">
+      <div class="icon">⚖️</div>
+      <h3>Nothing to compare yet</h3>
+      <p>Open any place on the map and tap <strong>⚖ Compare</strong> to add it here. Then use Decision Mode to find your winner.</p>
+    </div>`;
+    return;
+  }
+
+  const groups = getCompareGroups();
+  let html = '';
+  groups.forEach(g => {
+    html += `<div class="compare-group-section">`;
+    if (groups.length > 1) {
+      html += `<div class="compare-group-header">
+        <span class="compare-group-title" style="border-left:3px solid ${g.color};padding-left:6px;">${g.name}</span>
+        <span class="compare-group-count">${g.items.length} places</span>
+      </div>`;
+    }
+    g.items.forEach(a => {
+      const cat = CATEGORIES.find(c => c.id === a.category) || { color: '#999', label: a.category };
+      const rating = a.reviews?.rating ? `★ ${a.reviews.rating.toFixed(1)}` : '';
+      html += `<div class="compare-card">
+        <div class="cc-color" style="background:${cat.color}"></div>
+        <div class="cc-info">
+          <div class="cc-name">${a.name}</div>
+          <div class="cc-meta">${cat.label} · ${a.duration_hours}h${rating ? ' · ' + rating : ''}</div>
+        </div>
+        <button class="cc-remove" onclick="toggleCompare('${a.id}')" title="Remove">✕</button>
+      </div>`;
+    });
+    if (g.items.length >= 2) {
+      html += `<button class="compare-decide-btn" onclick="startDecision('${g.key}')">🏆 Decision Mode — ${g.name}</button>`;
+    }
+    html += `</div>`;
+  });
+
+  if (compareList.length >= 2) {
+    html += `<button class="compare-clear-btn" onclick="compareList=[];updateCompareBadge();renderCompareView();">Clear all</button>`;
+  }
+
+  el.innerHTML = html;
+}
+
+// --- Decision Mode ---
+function startDecision(groupKey) {
+  const group = getCompareGroups().find(g => g.key === groupKey);
+  if (!group || group.items.length < 2) return;
+  decisionGroupName = group.name;
+  decisionItems = [...group.items];
+  decisionScores = {};
+  decisionItems.forEach(a => decisionScores[a.id] = 0);
+  decisionPairs = []; decisionPairIdx = 0; decisionKeepCount = 1;
+  decisionPhase = 'pick-count';
+  renderDecisionOverlay();
+  document.getElementById('decisionOverlay').classList.add('active');
+}
+
+function buildDecisionPairs() {
+  decisionPairs = [];
+  const shuffled = [...decisionItems].sort(() => Math.random() - 0.5);
+  for (let i = 0; i < shuffled.length; i++)
+    for (let j = i + 1; j < shuffled.length; j++)
+      decisionPairs.push({ a: shuffled[i], b: shuffled[j] });
+  decisionPairs.sort(() => Math.random() - 0.5);
+  decisionPairIdx = 0;
+  decisionScores = {};
+  decisionItems.forEach(a => decisionScores[a.id] = 0);
+}
+
+function renderDecisionOverlay() {
+  document.getElementById('decisionTitle').textContent = `Decide: ${decisionGroupName}`;
+  if (decisionPhase === 'pick-count') renderDecisionPickCount();
+  else if (decisionPhase === 'comparing') renderDecisionPair();
+  else renderDecisionResults();
+}
+
+function renderDecisionPickCount() {
+  const n = decisionItems.length;
+  document.getElementById('decisionBarFill').style.width = '0%';
+  document.getElementById('decisionBarLabel').textContent = `${n} places to compare`;
+  let options = '';
+  for (let k = 1; k < n; k++) {
+    const label = k === 1 ? 'Find the single best' : `Pick the best ${k}`;
+    options += `<div class="vs-card" onclick="decisionKeepCount=${k};beginDecisionComparisons()">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div><div class="vs-name">${label}</div><div class="vs-meta">out of ${n} options</div></div>
+        <div style="font-size:22px;opacity:0.3">${k === 1 ? '🏆' : '🎯'}</div>
+      </div>
+    </div>`;
+  }
+  document.getElementById('decisionBody').innerHTML = `
+    <div class="decision-prompt"><h3>How many to keep?</h3><p>Every place is compared against every other — no one gets unfairly cut</p></div>
+    <div class="vs-container">${options}</div>`;
+}
+
+function beginDecisionComparisons() {
+  buildDecisionPairs();
+  decisionPhase = 'comparing';
+  renderDecisionOverlay();
+}
+
+function renderDecisionPair() {
+  const total = decisionPairs.length;
+  const current = decisionPairIdx;
+  if (current >= total) { decisionPhase = 'results'; renderDecisionOverlay(); return; }
+  const pct = ((current + 1) / total) * 100;
+  document.getElementById('decisionBarFill').style.width = `${pct}%`;
+  document.getElementById('decisionBarLabel').textContent = `Comparison ${current + 1} of ${total}`;
+  const pair = decisionPairs[current];
+  const catA = CATEGORIES.find(c => c.id === pair.a.category) || { color: '#999', label: pair.a.category };
+  const catB = CATEGORIES.find(c => c.id === pair.b.category) || { color: '#999', label: pair.b.category };
+  const rA = pair.a.reviews?.rating ? `★ ${pair.a.reviews.rating.toFixed(1)}` : '';
+  const rB = pair.b.reviews?.rating ? `★ ${pair.b.reviews.rating.toFixed(1)}` : '';
+  document.getElementById('decisionBody').innerHTML = `
+    <div class="decision-prompt"><h3>Which do you prefer?</h3><p>Keeping the best ${decisionKeepCount} of ${decisionItems.length}</p></div>
+    <div class="vs-container">
+      <div class="vs-card" onclick="pickDecisionWinner('${pair.a.id}')">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+          <div style="width:4px;height:22px;border-radius:2px;background:${catA.color}"></div>
+          <div class="vs-name">${pair.a.name}</div>
+        </div>
+        <div class="vs-meta">${catA.label} · ${pair.a.duration_hours}h ${rA}</div>
+        <div class="vs-desc">${pair.a.short || ''}</div>
+        <div class="vs-stats">
+          ${rA ? `<div class="vs-stat"><strong>${rA}</strong> rating</div>` : ''}
+          <div class="vs-stat"><strong>${pair.a.duration_hours}h</strong> duration</div>
+        </div>
+      </div>
+      <div class="vs-divider"><div class="vs-badge">VS</div></div>
+      <div class="vs-card" onclick="pickDecisionWinner('${pair.b.id}')">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+          <div style="width:4px;height:22px;border-radius:2px;background:${catB.color}"></div>
+          <div class="vs-name">${pair.b.name}</div>
+        </div>
+        <div class="vs-meta">${catB.label} · ${pair.b.duration_hours}h ${rB}</div>
+        <div class="vs-desc">${pair.b.short || ''}</div>
+        <div class="vs-stats">
+          ${rB ? `<div class="vs-stat"><strong>${rB}</strong> rating</div>` : ''}
+          <div class="vs-stat"><strong>${pair.b.duration_hours}h</strong> duration</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function pickDecisionWinner(id) {
+  decisionScores[id] = (decisionScores[id] || 0) + 1;
+  const w = decisionItems.find(a => a.id === id);
+  showToast(`+1 ${w.name}`);
+  decisionPairIdx++;
+  setTimeout(() => renderDecisionOverlay(), 280);
+}
+
+function renderDecisionResults() {
+  document.getElementById('decisionBarFill').style.width = '100%';
+  document.getElementById('decisionBarLabel').textContent = 'All comparisons done!';
+  const ranked = [...decisionItems].sort((a, b) => decisionScores[b.id] - decisionScores[a.id]);
+  const maxScore = decisionItems.length - 1 || 1;
+  const kept = ranked.slice(0, decisionKeepCount);
+  const rest = ranked.slice(decisionKeepCount);
+
+  const keptHtml = kept.map((a, i) => {
+    const cat = CATEGORIES.find(c => c.id === a.category) || { color: '#999' };
+    const score = decisionScores[a.id];
+    const barW = Math.round((score / maxScore) * 100);
+    return `<div style="display:flex;align-items:center;gap:10px;padding:12px;background:white;border:2px solid var(--primary);border-radius:10px;margin-bottom:6px">
+      <div style="font-size:18px;font-weight:700;color:var(--primary);min-width:26px;text-align:center">${i + 1}</div>
+      <div style="width:4px;height:30px;border-radius:2px;background:${cat.color}"></div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:14px;font-weight:600">${a.name}</div>
+        <div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+          <div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden">
+            <div style="width:${barW}%;height:100%;background:var(--primary);border-radius:2px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:600;color:var(--primary)">${score} wins</span>
+        </div>
+      </div>
+      <div style="font-size:15px">${i === 0 ? '🏆' : '✅'}</div>
+    </div>`;
+  }).join('');
+
+  const restHtml = rest.map((a, i) => {
+    const score = decisionScores[a.id];
+    return `<div style="display:flex;align-items:center;gap:10px;padding:9px;background:white;border:1px solid var(--border);border-radius:8px;margin-bottom:4px;opacity:0.55">
+      <div style="font-size:13px;font-weight:600;color:var(--muted);min-width:26px;text-align:center">${decisionKeepCount + i + 1}</div>
+      <div style="flex:1;font-size:12px;font-weight:600">${a.name}</div>
+      <div style="font-size:11px;color:var(--muted)">${score} wins</div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('decisionBody').innerHTML = `
+    <div style="text-align:center;margin-bottom:18px">
+      <div style="font-size:44px;margin-bottom:8px">${decisionKeepCount === 1 ? '🏆' : '🎯'}</div>
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:var(--accent)">${decisionKeepCount === 1 ? 'YOUR WINNER' : `YOUR TOP ${decisionKeepCount}`}</div>
+      <div style="font-size:12px;color:var(--muted);margin-top:4px">Ranked across ${decisionPairs.length} comparisons</div>
+    </div>
+    <div style="margin-bottom:14px">
+      <div style="font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.5px;margin-bottom:8px">CHOSEN</div>
+      ${keptHtml}
+    </div>
+    ${rest.length ? `<div style="margin-bottom:14px">
+      <div style="font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.5px;margin-bottom:6px">DIDN'T MAKE THE CUT</div>
+      ${restHtml}
+    </div>` : ''}
+    <div style="display:flex;gap:8px;margin-top:16px">
+      <button class="btn primary" style="flex:1" onclick="document.getElementById('decisionOverlay').classList.remove('active')">Done</button>
+      <button class="btn" style="flex:1" onclick="decisionPhase='pick-count';renderDecisionOverlay()">Redo</button>
+    </div>`;
+}
+
+document.getElementById('decisionClose').addEventListener('click', () => {
+  document.getElementById('decisionOverlay').classList.remove('active');
+});
+
+// Compare group-by chips
+document.getElementById('compareGroupToolbar').querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    compareGroupBy = chip.dataset.group;
+    document.getElementById('compareGroupToolbar').querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    renderCompareView();
+  });
+});
+
 // ============ LEGEND TOGGLE ============
 function toggleLegend() {
   const body = document.getElementById('legendBody');
@@ -1612,6 +2023,13 @@ document.querySelectorAll('.tab').forEach(t => {
       renderPlanCategoryChips();
       renderPlanSidebar();
       renderPlanMap();
+      setLegendVisible(false);
+    } else if (v === 'compare') {
+      state.accomLayerOn = false;
+      renderAccommodations();
+      renderCompareView();
+      // Show compare pins on map
+      renderAttractions();
       setLegendVisible(false);
     } else {
       state.accomLayerOn = false;
