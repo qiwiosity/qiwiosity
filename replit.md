@@ -85,6 +85,15 @@ All applied to `qiwiosity/mobile/prototype.html`:
 - **Progress dots** — Active dot stretches to pill shape
 - **Persistent** — Shown once on first visit; stored in `localStorage` as `qiwiosity_onboarded`; "Skip" dismisses immediately
 
+### AI Trip Generator
+- **3-step wizard** — When & Who → Interests & Pace → Stay & Route; animated step progress indicator
+- **Smart routing algorithm** — `buildAIItinerary()` scores all 2,453 POIs by category interest match, rating, review count, and budget; greedy nearest-neighbor from start region builds a geographically sensible route; distance penalty relaxes over days to allow spread
+- **Accommodation matching** — Finds best accommodation near each day's final stop using keyword matching against user's preference (camping/hostel/B&B/hotel/luxury)
+- **Loading UX** — Animated 5-step progress list over 2.4s while algorithm processes
+- **Results screen** — Collapsible day cards; shows stops, distance, regions, recommended stay + price/night; Regenerate button
+- **Load into Planner** — Transfers full AI itinerary into Plan tab with correct day assignments; sets journey start from chosen region; switches view automatically
+- **Entry point** — "✨ Generate AI Trip" primary button at top of Plan sidebar
+
 ### Community Voices (EchoVerse)
 - **Full-screen overlay** — Teal header showing POI name + two tabs: "👂 Hear Stories" and "🎙 Leave a Memory"
 - **MediaRecorder API** — Records audio in `audio/webm;codecs=opus`; pulsing red button with live timer; 60s max; auto-stops at limit

@@ -787,6 +787,168 @@
     transition: all 0.3s;
   }
 
+  /* ============ AI TRIP GENERATOR ============ */
+  .aigen-overlay {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--bg); z-index: 19000; display: none; flex-direction: column;
+  }
+  .aigen-overlay.active { display: flex; }
+  .aigen-header {
+    background: var(--primary-deep); padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+  }
+  .aigen-header-title { color: white; font-size: 16px; font-weight: 800; }
+  .aigen-header-sub { color: rgba(255,255,255,0.6); font-size: 11px; margin-top: 1px; }
+  .aigen-close-btn { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 22px; cursor: pointer; }
+  .aigen-progress-bar {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 10px 16px; display: flex; align-items: center; gap: 0; flex-shrink: 0;
+  }
+  .aigen-progress-step {
+    display: flex; flex-direction: column; align-items: center; gap: 3px; flex: 1;
+  }
+  .aigen-progress-dot {
+    width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 800; color: var(--muted); background: var(--surface);
+    transition: all 0.25s;
+  }
+  .aigen-progress-dot.active { border-color: var(--primary); background: var(--primary); color: white; }
+  .aigen-progress-dot.done { border-color: var(--primary); background: rgba(21,136,138,0.1); color: var(--primary); }
+  .aigen-progress-label { font-size: 9px; font-weight: 700; color: var(--muted); letter-spacing: 0.3px; }
+  .aigen-progress-line {
+    flex: 1; height: 2px; background: var(--border); margin-bottom: 14px; transition: background 0.25s;
+  }
+  .aigen-progress-line.done { background: var(--primary); }
+  .aigen-panel { flex: 1; overflow-y: auto; padding: 20px 16px 100px; }
+  .aigen-panel-title { font-size: 20px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+  .aigen-panel-sub { font-size: 13px; color: var(--muted); margin-bottom: 22px; line-height: 1.5; }
+  .aigen-field { margin-bottom: 20px; }
+  .aigen-field-label {
+    font-size: 11px; font-weight: 700; color: var(--muted);
+    letter-spacing: 0.5px; margin-bottom: 8px;
+  }
+  .aigen-counter-row {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .aigen-counter-btn {
+    width: 38px; height: 38px; border-radius: 50%; border: 2px solid var(--border);
+    background: var(--surface); font-size: 20px; cursor: pointer; display: flex;
+    align-items: center; justify-content: center; color: var(--text2); font-weight: 700;
+    transition: all 0.15s; flex-shrink: 0;
+  }
+  .aigen-counter-btn:hover { border-color: var(--primary); color: var(--primary); }
+  .aigen-counter-val { font-size: 26px; font-weight: 800; color: var(--text); min-width: 44px; text-align: center; }
+  .aigen-counter-unit { font-size: 12px; color: var(--muted); }
+  .aigen-days-slider {
+    width: 100%; accent-color: var(--primary); height: 6px;
+    cursor: pointer; margin-bottom: 6px;
+  }
+  .aigen-days-markers {
+    display: flex; justify-content: space-between;
+    font-size: 10px; color: var(--muted); padding: 0 1px;
+  }
+  .aigen-select {
+    width: 100%; padding: 10px 12px; border: 1.5px solid var(--border);
+    border-radius: 9px; font-size: 13px; background: var(--surface); color: var(--text);
+    appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M0 0l6 8 6-8z' fill='%23999'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+  }
+  .aigen-select:focus { outline: none; border-color: var(--primary); }
+  .aigen-toggle-row { display: flex; align-items: center; justify-content: space-between; padding: 2px 0; }
+  .aigen-toggle-label { font-size: 13px; color: var(--text); font-weight: 600; }
+  .aigen-toggle {
+    position: relative; width: 44px; height: 24px; border-radius: 12px;
+    background: var(--border); cursor: pointer; transition: background 0.2s; flex-shrink: 0;
+  }
+  .aigen-toggle.on { background: var(--primary); }
+  .aigen-toggle-knob {
+    position: absolute; top: 3px; left: 3px; width: 18px; height: 18px;
+    border-radius: 50%; background: white; transition: left 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .aigen-toggle.on .aigen-toggle-knob { left: 23px; }
+  .aigen-chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .aigen-chip {
+    padding: 8px 14px; border-radius: 99px; font-size: 12px; font-weight: 700;
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--text2);
+    cursor: pointer; transition: all 0.15s; user-select: none;
+  }
+  .aigen-chip.selected { border-color: var(--primary); background: rgba(21,136,138,0.1); color: var(--primary); }
+  .aigen-3btn-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; }
+  .aigen-3btn {
+    padding: 10px 4px; border-radius: 9px; font-size: 11px; font-weight: 700;
+    border: 1.5px solid var(--border); background: var(--surface); color: var(--text2);
+    cursor: pointer; text-align: center; transition: all 0.15s;
+  }
+  .aigen-3btn.selected { border-color: var(--primary); background: rgba(21,136,138,0.1); color: var(--primary); }
+  .aigen-nav-bar {
+    position: fixed; bottom: 0; left: 0; right: 0; max-width: 100%;
+    background: var(--surface); border-top: 1px solid var(--border);
+    padding: 12px 16px; display: flex; gap: 10px; z-index: 10;
+  }
+  .aigen-back-btn { padding: 12px 20px; border-radius: 10px; border: 1.5px solid var(--border); background: none; color: var(--text2); font-size: 14px; font-weight: 700; cursor: pointer; }
+  .aigen-next-btn { flex: 1; padding: 13px; border-radius: 10px; border: none; background: var(--primary); color: white; font-size: 14px; font-weight: 800; cursor: pointer; transition: opacity 0.15s; }
+  .aigen-next-btn:hover { opacity: 0.9; }
+  /* Loading */
+  .aigen-loading {
+    flex: 1; display: none; flex-direction: column;
+    align-items: center; justify-content: center; padding: 40px 20px;
+  }
+  .aigen-loading.active { display: flex; }
+  .aigen-spinner-emoji { font-size: 48px; animation: aigenSpin 2s linear infinite; margin-bottom: 20px; }
+  @keyframes aigenSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+  .aigen-loading-text { font-size: 16px; font-weight: 700; color: var(--text); text-align: center; margin-bottom: 8px; }
+  .aigen-loading-sub { font-size: 12px; color: var(--muted); text-align: center; }
+  .aigen-loading-steps { margin-top: 24px; text-align: left; width: 100%; max-width: 280px; }
+  .aigen-loading-step {
+    font-size: 12px; color: var(--muted); padding: 4px 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .aigen-loading-step.done { color: var(--primary); }
+  /* Results */
+  .aigen-results { flex: 1; overflow-y: auto; padding: 16px 16px 120px; display: none; }
+  .aigen-results.active { display: block; }
+  .aigen-results-title { font-size: 18px; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+  .aigen-results-sub { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
+  .aigen-result-day {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; margin-bottom: 10px; overflow: hidden;
+  }
+  .aigen-result-day-header {
+    padding: 12px 14px; display: flex; align-items: center; gap: 10px; cursor: pointer;
+  }
+  .aigen-result-day-header:hover { background: var(--surface2); }
+  .aigen-day-num {
+    width: 34px; height: 34px; border-radius: 50%; background: var(--primary);
+    color: white; font-size: 12px; font-weight: 800; display: flex;
+    align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .aigen-day-info { flex: 1; min-width: 0; }
+  .aigen-day-title { font-size: 13px; font-weight: 700; color: var(--text); }
+  .aigen-day-meta { font-size: 11px; color: var(--muted); margin-top: 1px; }
+  .aigen-day-arrow { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+  .aigen-result-stops { padding: 0 14px 12px; border-top: 1px solid var(--border); }
+  .aigen-result-stop {
+    display: flex; align-items: center; gap: 9px; padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .aigen-result-stop:last-of-type { border-bottom: none; }
+  .aigen-result-stop-num {
+    width: 22px; height: 22px; border-radius: 50%; font-size: 10px;
+    font-weight: 800; color: white; display: flex; align-items: center;
+    justify-content: center; flex-shrink: 0;
+  }
+  .aigen-result-stop-name { font-size: 12px; font-weight: 600; color: var(--text); }
+  .aigen-result-stop-meta { font-size: 10px; color: var(--muted); }
+  .aigen-result-accom {
+    display: flex; align-items: center; gap: 8px; padding: 8px 0 0;
+    font-size: 11px; color: var(--primary); font-weight: 600;
+  }
+  .aigen-results-actions { display: flex; gap: 10px; margin-top: 6px; }
+  .aigen-load-btn { flex: 1; padding: 14px; border-radius: 10px; border: none; background: var(--primary); color: white; font-size: 14px; font-weight: 800; cursor: pointer; }
+  .aigen-regen-btn { padding: 14px 18px; border-radius: 10px; border: 1.5px solid var(--border); background: none; color: var(--text2); font-size: 13px; font-weight: 700; cursor: pointer; }
+
   /* ============ DECISION OVERLAY ============ */
   .decision-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -1186,6 +1348,7 @@
         </div>
         <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
       </div>
+      <button class="btn primary" style="width:100%;margin-bottom:10px;font-size:13px;" onclick="openAIGen()">✨ Generate AI Trip</button>
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
         <span class="toggle-label">Show nearby attractions on map</span>
@@ -1359,6 +1522,174 @@
     <div class="echo-tags" id="echoTagsRow"></div>
     <button class="btn primary" style="width:100%;margin-bottom:10px" id="echoSaveBtn" onclick="saveEchoMemory()">Save My Memory</button>
     <button class="btn" style="width:100%" onclick="closeEchoOverlay()">Cancel</button>
+  </div>
+</div>
+
+<!-- ============ AI TRIP GENERATOR ============ -->
+<div class="aigen-overlay" id="aigenOverlay">
+  <!-- Header -->
+  <div class="aigen-header">
+    <div>
+      <div class="aigen-header-title">✨ AI Trip Planner</div>
+      <div class="aigen-header-sub">Powered by your 2,400+ NZ places</div>
+    </div>
+    <button class="aigen-close-btn" onclick="closeAIGen()">✕</button>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="aigen-progress-bar" id="aigenProgressBar">
+    <div class="aigen-progress-step">
+      <div class="aigen-progress-dot active" id="aigenDot1">1</div>
+      <div class="aigen-progress-label">When & Who</div>
+    </div>
+    <div class="aigen-progress-line" id="aigenLine1"></div>
+    <div class="aigen-progress-step">
+      <div class="aigen-progress-dot" id="aigenDot2">2</div>
+      <div class="aigen-progress-label">Interests</div>
+    </div>
+    <div class="aigen-progress-line" id="aigenLine2"></div>
+    <div class="aigen-progress-step">
+      <div class="aigen-progress-dot" id="aigenDot3">3</div>
+      <div class="aigen-progress-label">Stay & Route</div>
+    </div>
+  </div>
+
+  <!-- STEP 1: When & Who -->
+  <div class="aigen-panel" id="aigenPanel1">
+    <div class="aigen-panel-title">Let's plan your trip</div>
+    <div class="aigen-panel-sub">Tell us the basics and we'll do the rest.</div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">HOW MANY DAYS?</div>
+      <input type="range" class="aigen-days-slider" id="aigenDaysSlider" min="1" max="21" value="7"
+        oninput="document.getElementById('aigenDaysVal').textContent=this.value+' days'" />
+      <div style="text-align:center;font-size:22px;font-weight:800;color:var(--primary);margin-bottom:4px;" id="aigenDaysVal">7 days</div>
+      <div class="aigen-days-markers">
+        <span>1 day</span><span>7</span><span>14</span><span>21 days</span>
+      </div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">TRAVELLERS</div>
+      <div class="aigen-counter-row">
+        <button class="aigen-counter-btn" onclick="aigenAdj('adults',-1)">−</button>
+        <div>
+          <div class="aigen-counter-val" id="aigenAdultsVal">2</div>
+          <div class="aigen-counter-unit">adults</div>
+        </div>
+        <button class="aigen-counter-btn" onclick="aigenAdj('adults',1)">+</button>
+        <div style="width:16px;"></div>
+        <button class="aigen-counter-btn" onclick="aigenAdj('children',-1)">−</button>
+        <div>
+          <div class="aigen-counter-val" id="aigenChildrenVal">0</div>
+          <div class="aigen-counter-unit">children</div>
+        </div>
+        <button class="aigen-counter-btn" onclick="aigenAdj('children',1)">+</button>
+      </div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">STARTING FROM</div>
+      <select class="aigen-select" id="aigenStartRegion">
+        <option value="">— Choose a region —</option>
+      </select>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-toggle-row">
+        <span class="aigen-toggle-label">Round trip (return to start)</span>
+        <div class="aigen-toggle on" id="aigenRoundTripToggle" onclick="toggleAigenRoundTrip()">
+          <div class="aigen-toggle-knob"></div>
+        </div>
+      </div>
+    </div>
+    <div class="aigen-field" id="aigenEndRegionField" style="display:none">
+      <div class="aigen-field-label">ENDING IN</div>
+      <select class="aigen-select" id="aigenEndRegion">
+        <option value="">— Choose a region —</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- STEP 2: Interests & Pace -->
+  <div class="aigen-panel" id="aigenPanel2" style="display:none">
+    <div class="aigen-panel-title">What do you love?</div>
+    <div class="aigen-panel-sub">Pick as many as you like — we'll weight your trip around them.</div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">INTERESTS (select all that apply)</div>
+      <div class="aigen-chip-grid" id="aigenInterestChips"></div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">TRAVEL PACE</div>
+      <div class="aigen-3btn-row">
+        <button class="aigen-3btn selected" id="aigenPaceRelaxed" onclick="selectAigenPace('relaxed')">😌 Relaxed<br><span style="font-size:9px;font-weight:400;">2–3 stops/day</span></button>
+        <button class="aigen-3btn" id="aigenPaceBalanced" onclick="selectAigenPace('balanced')">🚶 Balanced<br><span style="font-size:9px;font-weight:400;">3–4 stops/day</span></button>
+        <button class="aigen-3btn" id="aigenPaceActive" onclick="selectAigenPace('active')">🏃 Active<br><span style="font-size:9px;font-weight:400;">4–5 stops/day</span></button>
+      </div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">BUDGET</div>
+      <div class="aigen-3btn-row">
+        <button class="aigen-3btn" id="aigenBudgetBudget" onclick="selectAigenBudget('budget')">💸 Budget<br><span style="font-size:9px;font-weight:400;">Free/low-cost spots</span></button>
+        <button class="aigen-3btn selected" id="aigenBudgetMid" onclick="selectAigenBudget('mid')">💳 Mid-range<br><span style="font-size:9px;font-weight:400;">Mix of everything</span></button>
+        <button class="aigen-3btn" id="aigenBudgetLuxury" onclick="selectAigenBudget('luxury')">💎 Luxury<br><span style="font-size:9px;font-weight:400;">Premium experiences</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STEP 3: Stay & Special Requests -->
+  <div class="aigen-panel" id="aigenPanel3" style="display:none">
+    <div class="aigen-panel-title">Almost there!</div>
+    <div class="aigen-panel-sub">Tell us where you'd like to sleep, and anything special to consider.</div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">ACCOMMODATION PREFERENCE</div>
+      <div class="aigen-chip-grid">
+        <span class="aigen-chip" id="aigenAccomCamping" onclick="selectAigenAccom('camping')">⛺ Camping</span>
+        <span class="aigen-chip" id="aigenAccomHostel" onclick="selectAigenAccom('hostel')">🛏 Hostel / Backpackers</span>
+        <span class="aigen-chip selected" id="aigenAccomBnb" onclick="selectAigenAccom('bnb')">🏡 B&amp;B / Guesthouse</span>
+        <span class="aigen-chip" id="aigenAccomHotel" onclick="selectAigenAccom('hotel')">🏨 Hotel / Motel</span>
+        <span class="aigen-chip" id="aigenAccomLuxury" onclick="selectAigenAccom('luxury')">✨ Luxury Resort</span>
+      </div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">ANY SPECIAL INTERESTS OR NOTES? <span style="font-weight:400;text-transform:none;">(optional)</span></div>
+      <textarea id="aigenNotes" style="width:100%;border:1.5px solid var(--border);border-radius:9px;padding:10px 12px;font-size:12px;background:var(--surface);color:var(--text);resize:none;height:72px;font-family:inherit;" placeholder="e.g. We love geothermal areas, have a 5-year-old, prefer less driving…"></textarea>
+    </div>
+
+    <div class="aigen-field" style="background:rgba(21,136,138,0.06);border-radius:10px;padding:12px;">
+      <div style="font-size:12px;font-weight:700;color:var(--primary);margin-bottom:8px;">✨ Your trip summary</div>
+      <div id="aigenSummaryText" style="font-size:12px;color:var(--text2);line-height:1.7;"></div>
+    </div>
+  </div>
+
+  <!-- LOADING -->
+  <div class="aigen-loading" id="aigenLoading">
+    <div class="aigen-spinner-emoji" id="aigenSpinnerEmoji">✨</div>
+    <div class="aigen-loading-text" id="aigenLoadingText">Building your NZ adventure…</div>
+    <div class="aigen-loading-sub">Scanning 2,400+ places across Aotearoa</div>
+    <div class="aigen-loading-steps" id="aigenLoadingSteps"></div>
+  </div>
+
+  <!-- RESULTS -->
+  <div class="aigen-results" id="aigenResults">
+    <div class="aigen-results-title" id="aigenResultsTitle"></div>
+    <div class="aigen-results-sub" id="aigenResultsSub"></div>
+    <div id="aigenResultsDays"></div>
+    <div class="aigen-results-actions">
+      <button class="aigen-load-btn" onclick="loadAIGenItinerary()">✓ Load into Planner</button>
+      <button class="aigen-regen-btn" onclick="runAIGen()">↺ Regenerate</button>
+    </div>
+  </div>
+
+  <!-- Nav bar (hidden during loading/results) -->
+  <div class="aigen-nav-bar" id="aigenNavBar">
+    <button class="aigen-back-btn" id="aigenBackBtn" onclick="aigenStepBack()" style="display:none">← Back</button>
+    <button class="aigen-next-btn" id="aigenNextBtn" onclick="aigenStepNext()">Next →</button>
   </div>
 </div>
 
@@ -3555,6 +3886,378 @@ document.getElementById('search').addEventListener('input', (e) => {
 function dismissSplash() {
   document.getElementById('splash').classList.add('hidden');
   setTimeout(showOnboarding, 600);
+}
+
+// ============ AI TRIP GENERATOR ============
+const aigenState = {
+  step: 1,
+  numDays: 7,
+  adults: 2,
+  children: 0,
+  startRegion: '',
+  roundTrip: true,
+  endRegion: '',
+  interests: new Set(),
+  pace: 'relaxed',
+  budget: 'mid',
+  accomType: 'bnb',
+};
+let aigenResult = null;
+let aigenExpandedDays = new Set();
+
+function openAIGen() {
+  aigenState.step = 1;
+  aigenResult = null;
+  aigenExpandedDays = new Set();
+
+  // Populate region dropdowns
+  const opts = '<option value="">— Choose a region —</option>' +
+    REGIONS.sort((a,b) => a.name.localeCompare(b.name))
+      .map(r => `<option value="${r.id}">${r.name}</option>`).join('');
+  document.getElementById('aigenStartRegion').innerHTML = opts;
+  document.getElementById('aigenEndRegion').innerHTML = opts;
+  if (state.journeyStart) {
+    const match = REGIONS.find(r => state.journeyStart.label.toLowerCase().includes(r.name.toLowerCase()));
+    if (match) document.getElementById('aigenStartRegion').value = match.id;
+  }
+
+  // Build interest chips from CATEGORIES
+  document.getElementById('aigenInterestChips').innerHTML = CATEGORIES.map(c =>
+    `<span class="aigen-chip${aigenState.interests.has(c.id) ? ' selected' : ''}"
+      id="aigenCat_${c.id}" onclick="toggleAigenInterest('${c.id}')">${c.label}</span>`
+  ).join('');
+
+  // Reset UI
+  document.getElementById('aigenDaysSlider').value = 7;
+  document.getElementById('aigenDaysVal').textContent = '7 days';
+  document.getElementById('aigenAdultsVal').textContent = '2';
+  document.getElementById('aigenChildrenVal').textContent = '0';
+  aigenSetStep(1);
+  document.getElementById('aigenOverlay').classList.add('active');
+}
+
+function closeAIGen() {
+  document.getElementById('aigenOverlay').classList.remove('active');
+}
+
+function aigenAdj(field, delta) {
+  const min = field === 'adults' ? 1 : 0;
+  const max = field === 'adults' ? 12 : 10;
+  const el = document.getElementById(field === 'adults' ? 'aigenAdultsVal' : 'aigenChildrenVal');
+  const cur = parseInt(el.textContent) || (field === 'adults' ? 1 : 0);
+  const next = Math.max(min, Math.min(max, cur + delta));
+  el.textContent = next;
+  aigenState[field] = next;
+}
+
+function toggleAigenRoundTrip() {
+  aigenState.roundTrip = !aigenState.roundTrip;
+  const tog = document.getElementById('aigenRoundTripToggle');
+  tog.classList.toggle('on', aigenState.roundTrip);
+  document.getElementById('aigenEndRegionField').style.display = aigenState.roundTrip ? 'none' : 'block';
+}
+
+function toggleAigenInterest(catId) {
+  if (aigenState.interests.has(catId)) {
+    aigenState.interests.delete(catId);
+    document.getElementById('aigenCat_' + catId)?.classList.remove('selected');
+  } else {
+    aigenState.interests.add(catId);
+    document.getElementById('aigenCat_' + catId)?.classList.add('selected');
+  }
+}
+
+function selectAigenPace(pace) {
+  aigenState.pace = pace;
+  ['relaxed', 'balanced', 'active'].forEach(p => {
+    const el = document.getElementById('aigenPace' + p.charAt(0).toUpperCase() + p.slice(1));
+    if (el) el.classList.toggle('selected', p === pace);
+  });
+}
+
+function selectAigenBudget(budget) {
+  aigenState.budget = budget;
+  ['budget', 'mid', 'luxury'].forEach(b => {
+    const el = document.getElementById('aigenBudget' + b.charAt(0).toUpperCase() + b.slice(1));
+    if (el) el.classList.toggle('selected', b === budget);
+  });
+}
+
+function selectAigenAccom(type) {
+  aigenState.accomType = type;
+  ['camping', 'hostel', 'bnb', 'hotel', 'luxury'].forEach(t => {
+    const el = document.getElementById('aigenAccom' + t.charAt(0).toUpperCase() + t.slice(1));
+    if (el) el.classList.toggle('selected', t === type);
+  });
+}
+
+function aigenSetStep(n) {
+  aigenState.step = n;
+  [1,2,3].forEach(i => {
+    document.getElementById('aigenPanel' + i).style.display = i === n ? 'block' : 'none';
+    const dot = document.getElementById('aigenDot' + i);
+    dot.classList.toggle('active', i === n);
+    dot.classList.toggle('done', i < n);
+    if (i < 3) {
+      document.getElementById('aigenLine' + i).classList.toggle('done', i < n);
+    }
+  });
+  document.getElementById('aigenLoading').classList.remove('active');
+  document.getElementById('aigenResults').classList.remove('active');
+  document.getElementById('aigenProgressBar').style.display = 'flex';
+  document.getElementById('aigenNavBar').style.display = 'flex';
+  document.getElementById('aigenBackBtn').style.display = n > 1 ? 'block' : 'none';
+  document.getElementById('aigenNextBtn').textContent = n === 3 ? '✨ Generate My Trip' : 'Next →';
+}
+
+function aigenStepNext() {
+  if (aigenState.step < 3) {
+    if (aigenState.step === 3 || aigenState.step < 3) {
+      aigenState.numDays = parseInt(document.getElementById('aigenDaysSlider').value) || 7;
+      aigenState.startRegion = document.getElementById('aigenStartRegion').value;
+      aigenState.endRegion = document.getElementById('aigenEndRegion').value;
+      aigenState.adults = parseInt(document.getElementById('aigenAdultsVal').textContent) || 2;
+      aigenState.children = parseInt(document.getElementById('aigenChildrenVal').textContent) || 0;
+    }
+    if (aigenState.step === 2) {
+      // Build summary for step 3
+      const startRegionName = REGIONS.find(r => r.id === aigenState.startRegion)?.name || 'New Zealand';
+      const interestLabels = [...aigenState.interests].map(id => catLabel(id)).join(', ') || 'All types';
+      const paceLabel = { relaxed: 'Relaxed', balanced: 'Balanced', active: 'Active' }[aigenState.pace];
+      const budgetLabel = { budget: 'Budget', mid: 'Mid-range', luxury: 'Luxury' }[aigenState.budget];
+      document.getElementById('aigenSummaryText').innerHTML =
+        `📅 <b>${aigenState.numDays}-day</b> trip starting from <b>${startRegionName}</b><br>` +
+        `👥 <b>${aigenState.adults}</b> adults${aigenState.children ? ` + ${aigenState.children} children` : ''}<br>` +
+        `🏷 Interests: <b>${interestLabels}</b><br>` +
+        `🚶 Pace: <b>${paceLabel}</b> · Budget: <b>${budgetLabel}</b>`;
+    }
+    aigenSetStep(aigenState.step + 1);
+  } else {
+    runAIGen();
+  }
+}
+
+function aigenStepBack() {
+  if (aigenState.step > 1) aigenSetStep(aigenState.step - 1);
+}
+
+function runAIGen() {
+  // Show loading
+  [1,2,3].forEach(i => document.getElementById('aigenPanel'+i).style.display = 'none');
+  document.getElementById('aigenProgressBar').style.display = 'none';
+  document.getElementById('aigenNavBar').style.display = 'none';
+  document.getElementById('aigenLoading').classList.add('active');
+  document.getElementById('aigenResults').classList.remove('active');
+
+  const steps = [
+    '🗺 Scanning all 2,400+ NZ places…',
+    '⭐ Scoring by your interests…',
+    '🚗 Planning the best geographic route…',
+    '🛏 Finding accommodation near each stop…',
+    '✨ Putting your itinerary together…',
+  ];
+  const stepsEl = document.getElementById('aigenLoadingSteps');
+  stepsEl.innerHTML = steps.map(s => `<div class="aigen-loading-step">${s}</div>`).join('');
+  const stepEls = stepsEl.querySelectorAll('.aigen-loading-step');
+  let si = 0;
+  const stepInt = setInterval(() => {
+    if (si < stepEls.length) {
+      stepEls[si].classList.add('done');
+      si++;
+    }
+  }, 400);
+
+  // Run algorithm after a short delay for UX
+  setTimeout(() => {
+    clearInterval(stepInt);
+    stepEls.forEach(e => e.classList.add('done'));
+    try {
+      aigenResult = buildAIItinerary(aigenState);
+      setTimeout(() => renderAigenResults(aigenResult), 400);
+    } catch(e) {
+      showToast('Could not generate — try different settings');
+      aigenSetStep(1);
+    }
+  }, 2400);
+}
+
+function buildAIItinerary(config) {
+  const { numDays, interests, pace, budget, startRegion: startRegionId, accomType } = config;
+  const stopsPerDay = { relaxed: 3, balanced: 4, active: 5 }[pace] || 3;
+  const totalStops = numDays * stopsPerDay;
+
+  // Score each POI
+  const candidates = ATTRACTIONS.filter(p => p.lat && p.lng).map(poi => {
+    let score = (poi.rating || 3.5) * 2;
+    score += Math.min(Math.log1p(poi.review_count || 0), 6);
+    if (interests.has(poi.category)) score += 10;
+    // Light family-friendly bonus if children
+    if (config.children > 0 && (poi.price_nzd || 0) < 30) score += 1;
+    // Budget alignment
+    const priceLevel = !poi.price_nzd ? 2 : poi.price_nzd < 20 ? 1 : poi.price_nzd < 80 ? 2 : 3;
+    if (budget === 'budget' && priceLevel === 1) score += 2;
+    if (budget === 'luxury' && priceLevel === 3) score += 2;
+    return { ...poi, _aiScore: score };
+  });
+
+  // Starting position from region
+  const startReg = REGIONS.find(r => r.id === startRegionId);
+  let pos = startReg?.lat ? { lat: startReg.lat, lng: startReg.lng } : { lat: -36.85, lng: 174.77 };
+
+  // Top pool: more candidates = more diversity, fewer = tighter scoring
+  const pool = [...candidates].sort((a,b) => b._aiScore - a._aiScore).slice(0, Math.min(totalStops * 5, 400));
+  const used = new Set();
+  const route = [];
+
+  for (let i = 0; i < totalStops && used.size < pool.length; i++) {
+    let best = null, bestS = -Infinity;
+    for (const poi of pool) {
+      if (used.has(poi.id)) continue;
+      const dist = haversine(pos, poi);
+      // Distance penalty decreases as trip progresses (allow spreading out)
+      const penalty = dist / Math.max(20, 15 + i * 4);
+      const s = poi._aiScore - penalty;
+      if (s > bestS) { bestS = s; best = poi; }
+    }
+    if (!best) break;
+    route.push(best);
+    used.add(best.id);
+    pos = { lat: best.lat, lng: best.lng };
+  }
+
+  // Accommodation keyword matching
+  const accomKeywords = {
+    camping: ['camp', 'holiday park', 'motor camp', 'caravan'],
+    hostel: ['hostel', 'backpacker', 'yha'],
+    bnb: ['bed and breakfast', 'b&b', 'boutique', 'guesthouse', 'farmstay'],
+    hotel: ['hotel', 'motel', 'lodge', 'inn'],
+    luxury: ['resort', 'lodge', 'luxury', 'boutique hotel', 'spa'],
+  };
+  const wantedKw = accomKeywords[accomType] || [];
+
+  const days = [];
+  for (let d = 0; d < numDays; d++) {
+    const stops = route.slice(d * stopsPerDay, (d + 1) * stopsPerDay);
+    if (!stops.length) break;
+    const last = stops[stops.length - 1];
+    // Score accommodation: closer + type match wins
+    const bestAccom = ACCOMMODATIONS
+      .filter(a => a.lat && a.lng)
+      .map(a => {
+        const dist = haversine(last, a);
+        const nameL = (a.name + ' ' + (a.type || '')).toLowerCase();
+        const typeMatch = wantedKw.some(kw => nameL.includes(kw)) ? 15 : 0;
+        return { ...a, _score: typeMatch - dist };
+      })
+      .sort((a,b) => b._score - a._score)[0] || null;
+
+    const dist = stops.slice(1).reduce((s, stop, i) => s + haversine(stops[i], stop), 0);
+    days.push({
+      day: d + 1,
+      stops: stops.map(s => ({ ...s, day: d + 1 })),
+      accom: bestAccom,
+      distKm: Math.round(dist),
+      regions: [...new Set(stops.map(s => regionName(s.region)).filter(Boolean))],
+    });
+  }
+  return days;
+}
+
+function renderAigenResults(days) {
+  const numDays = days.length;
+  const totalStops = days.reduce((s, d) => s + d.stops.length, 0);
+  const totalKm = days.reduce((s, d) => s + d.distKm, 0);
+  const allRegions = [...new Set(days.flatMap(d => d.regions))];
+  const startRegionName = REGIONS.find(r => r.id === aigenState.startRegion)?.name || 'New Zealand';
+
+  document.getElementById('aigenResultsTitle').textContent = `Your ${numDays}-Day NZ Adventure`;
+  document.getElementById('aigenResultsSub').textContent =
+    `${totalStops} stops · ~${totalKm} km of driving · ${allRegions.length} region${allRegions.length !== 1 ? 's' : ''} · from ${startRegionName}`;
+
+  document.getElementById('aigenResultsDays').innerHTML = days.map(day => {
+    const regLabel = day.regions.join(' → ') || 'New Zealand';
+    const driveStr = day.distKm < 60 ? `${day.distKm} km` : `${day.distKm} km drive`;
+    return `
+    <div class="aigen-result-day" id="aigenDay_${day.day}">
+      <div class="aigen-result-day-header" onclick="toggleAigenDay(${day.day})">
+        <div class="aigen-day-num">${day.day}</div>
+        <div class="aigen-day-info">
+          <div class="aigen-day-title">${regLabel}</div>
+          <div class="aigen-day-meta">${day.stops.length} stops · ${driveStr}</div>
+        </div>
+        <div class="aigen-day-arrow" id="aigenDayArrow_${day.day}">▶</div>
+      </div>
+      <div class="aigen-result-stops" id="aigenDayStops_${day.day}" style="display:none">
+        ${day.stops.map((s, i) => `
+          <div class="aigen-result-stop">
+            <div class="aigen-result-stop-num" style="background:${catColor(s.category)}">${i+1}</div>
+            <div>
+              <div class="aigen-result-stop-name">${s.name}</div>
+              <div class="aigen-result-stop-meta">${catLabel(s.category)} · ${s.duration_hours}h${s.rating ? ' · ★ ' + s.rating : ''}</div>
+            </div>
+          </div>`).join('')}
+        ${day.accom ? `<div class="aigen-result-accom">🛏 Stay: ${day.accom.name}${day.accom.price_nzd_per_night ? ' · ~$'+day.accom.price_nzd_per_night+'/night' : ''}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // Auto-expand day 1
+  toggleAigenDay(1);
+
+  document.getElementById('aigenLoading').classList.remove('active');
+  document.getElementById('aigenResults').classList.add('active');
+  document.getElementById('aigenNavBar').style.display = 'none';
+}
+
+function toggleAigenDay(dayNum) {
+  const stopsEl = document.getElementById('aigenDayStops_' + dayNum);
+  const arrowEl = document.getElementById('aigenDayArrow_' + dayNum);
+  if (!stopsEl) return;
+  const isOpen = stopsEl.style.display !== 'none';
+  stopsEl.style.display = isOpen ? 'none' : 'block';
+  if (arrowEl) arrowEl.textContent = isOpen ? '▶' : '▼';
+}
+
+function loadAIGenItinerary() {
+  if (!aigenResult || !aigenResult.length) return;
+  // Clear existing itinerary and load AI result
+  state.itinerary = [];
+  state.itineraryDays = aigenResult.length;
+  state.planActiveDay = 1;
+  state.expandedStops = new Set();
+  aigenResult.forEach(day => {
+    day.stops.forEach(stop => {
+      if (!state.itinerary.find(s => s.id === stop.id)) {
+        state.itinerary.push({ ...stop, day: day.day });
+      }
+    });
+  });
+  // Set journey start if region selected
+  const startReg = REGIONS.find(r => r.id === aigenState.startRegion);
+  if (startReg?.lat) {
+    state.journeyStart = { label: startReg.name, lat: startReg.lat, lng: startReg.lng };
+    const input = document.getElementById('journeyStartInput');
+    const clearBtn = document.getElementById('journeyStartClear');
+    const setLabel = document.getElementById('journeyStartSetLabel');
+    if (input) input.value = startReg.name;
+    if (clearBtn) clearBtn.style.display = 'inline';
+    if (setLabel) { setLabel.textContent = '✓ ' + startReg.name; setLabel.style.display = 'block'; }
+  }
+  closeAIGen();
+  // Switch to plan tab
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelector('.tab[data-view="plan"]').classList.add('active');
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-plan').classList.add('active');
+  state.view = 'plan';
+  state.accomLayerOn = false;
+  renderAccommodations();
+  renderPlanSidebar();
+  renderPlanMap();
+  setTimeout(initJourneyStartAutocomplete, 100);
+  const days = aigenResult.length;
+  const stops = aigenResult.reduce((s, d) => s + d.stops.length, 0);
+  showToast(`✨ ${days}-day trip loaded · ${stops} stops ready to explore!`);
 }
 
 // ============ COMMUNITY VOICES (EchoVerse) ============

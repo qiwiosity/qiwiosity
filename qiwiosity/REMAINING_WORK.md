@@ -49,6 +49,17 @@
 
 ## 🟠 MEDIUM PRIORITY
 
+### ✅ 4. Full AI Itinerary Generator
+- **3-step wizard overlay** — Step 1: When & Who; Step 2: Interests & Pace; Step 3: Stay & Route
+- **Step 1** — Days slider (1–21), adults/children counters, starting region dropdown (all 19 NZ regions), round-trip toggle, optional end-region picker
+- **Step 2** — Category interest chips (built from live CATEGORIES data), pace selector (Relaxed/Balanced/Active), budget selector (Budget/Mid-range/Luxury)
+- **Step 3** — Accommodation preference chips (Camping/Hostel/B&B/Hotel/Luxury Resort), free-text notes, trip summary preview
+- **Animated loading screen** — 5 progressive steps animate in over ~2.4s while algorithm runs
+- **`buildAIItinerary(config)`** — Scores all 2,453 POIs by: interest category match (+10), star rating ×2, log(review_count), budget alignment (+2); builds route using greedy nearest-neighbor from start region with distance penalty that relaxes as trip progresses; accommodation matched by keyword proximity per day
+- **Results screen** — Shows "Your N-Day NZ Adventure" with total stops, km, regions; collapsible day cards showing stop list + recommended accommodation + price per night; auto-expands Day 1; Regenerate button
+- **"Load into Planner"** — Clears existing itinerary and loads all AI stops with correct day numbers, sets journey start point from chosen region, switches to Plan tab, shows route summary toast
+- **"✨ Generate AI Trip" button** — Teal primary button at top of Plan sidebar opens the wizard
+
 ### 3. Audio Commentary Options
 **What's needed:**
 - Short version (~30 sec) and full version (2–3 min) per POI
