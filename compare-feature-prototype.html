@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qiwiosity — Compare Feature Prototype</title>
+<style>
+  :root {
+    --primary: #15888A;
+    --primary-dark: #0E5F5F;
+    --primary-deep: #083D3D;
+    --accent: #E07B3C;
+    --bg: #F5F3EF;
+    --surface: #FFFFFF;
+    --text: #1A1A1A;
+    --muted: #6B6B6B;
+    --border: #E5E1D8;
+    --danger: #C62828;
+    --success: #2E7D32;
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-pill: 999px;
+    /* category colors */
+    --cat-adventure: #E65100;
+    --cat-culture: #2C6FAD;
+    --cat-food: #B71C1C;
+    --cat-heritage: #4527A0;
+    --cat-nature: #2E7D32;
+    --cat-wildlife: #00695C;
+    --cat-journey: #37474F;
+    --cat-maori: #C0392B;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); max-width: 430px; margin: 0 auto; height: 100vh; display: flex; flex-direction: column; position: relative; overflow: hidden; }
+
+  /* --- Bottom Tab Bar --- */
+  .tab-bar { display: flex; background: var(--surface); border-top: 1px solid var(--border); padding: 6px 0 env(safe-area-inset-bottom, 8px); position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 430px; z-index: 100; }
+  .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 6px 0; cursor: pointer; border: none; background: none; color: var(--muted); font-size: 10px; font-weight: 600; transition: color 0.2s; position: relative; }
+  .tab-item.active { color: var(--primary); }
+  .tab-icon { font-size: 22px; line-height: 1; }
+  .tab-badge { position: absolute; top: 2px; right: calc(50% - 18px); background: var(--accent); color: white; font-size: 9px; font-weight: 700; min-width: 16px; height: 16px; border-radius: 8px; display: flex; align-items: center; justify-content: center; padding: 0 4px; }
+
+  /* --- Screens --- */
+  .screen { flex: 1; overflow-y: auto; padding-bottom: 72px; display: none; min-height: 0; }
+  .screen.active { display: flex; flex-direction: column; }
+
+  /* --- Header --- */
+  .screen-header { background: var(--primary-deep); padding: 16px 16px 14px; flex-shrink: 0; }
+  .screen-header h1 { color: white; font-size: 22px; font-weight: 700; }
+  .screen-header p { color: rgba(255,255,255,0.7); font-size: 12px; margin-top: 2px; }
+
+  /* --- Search Bar --- */
+  .search-bar { margin: 12px; padding: 10px 14px; border-radius: var(--radius-md); background: var(--surface); border: 1px solid var(--border); font-size: 14px; width: calc(100% - 24px); outline: none; }
+  .search-bar:focus { border-color: var(--primary); }
+
+  /* --- Filter chips --- */
+  .filter-row { display: flex; gap: 6px; padding: 0 12px 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-shrink: 0; flex-wrap: nowrap; max-width: 100%; }
+  .filter-row::-webkit-scrollbar { display: none; }
+  .chip { padding: 6px 14px; border-radius: var(--radius-pill); border: 1px solid var(--border); background: var(--surface); font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; transition: all 0.2s; }
+  .chip.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* --- Attraction Card --- */
+  .card { display: flex; background: var(--surface); border-radius: var(--radius-md); margin: 0 12px 8px; overflow: hidden; border: 1px solid var(--border); }
+  .card-strip { width: 6px; flex-shrink: 0; }
+  .card-body { flex: 1; padding: 12px; }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .card-name { font-size: 15px; font-weight: 600; }
+  .card-meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .card-desc { font-size: 13px; color: var(--text); margin-top: 6px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-footer { display: flex; gap: 6px; margin-top: 8px; }
+
+  /* --- Buttons --- */
+  .btn-compare { display: flex; align-items: center; gap: 4px; padding: 5px 10px; border-radius: var(--radius-pill); border: 1px solid var(--primary); background: var(--surface); font-size: 11px; font-weight: 700; color: var(--primary); cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+  .btn-compare.added { background: var(--accent); border-color: var(--accent); color: white; }
+  .btn-compare:hover { opacity: 0.85; }
+  .btn-trip { display: flex; align-items: center; gap: 4px; padding: 5px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border); background: var(--surface); font-size: 11px; font-weight: 700; color: var(--muted); cursor: pointer; }
+  .btn-primary { background: var(--primary); color: white; border: none; border-radius: var(--radius-md); padding: 12px 20px; font-size: 14px; font-weight: 700; cursor: pointer; transition: opacity 0.2s; }
+  .btn-primary:hover { opacity: 0.85; }
+  .btn-outline { background: none; border: 1.5px solid var(--primary); color: var(--primary); border-radius: var(--radius-md); padding: 10px 16px; font-size: 13px; font-weight: 700; cursor: pointer; }
+  .btn-accent { background: var(--accent); color: white; border: none; border-radius: var(--radius-md); padding: 12px 20px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .btn-sm { padding: 6px 12px; font-size: 12px; border-radius: var(--radius-sm); }
+  .btn-danger { background: none; border: 1px solid var(--danger); color: var(--danger); border-radius: var(--radius-pill); padding: 4px 10px; font-size: 11px; font-weight: 600; cursor: pointer; }
+
+  /* --- Compare Screen --- */
+  .compare-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 32px; text-align: center; }
+  .compare-empty .icon { font-size: 48px; margin-bottom: 16px; opacity: 0.4; }
+  .compare-empty h2 { font-size: 18px; margin-bottom: 8px; }
+  .compare-empty p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* Group section */
+  .group-section { margin: 16px 12px; }
+  .group-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .group-title { font-size: 16px; font-weight: 700; }
+  .group-count { font-size: 12px; color: var(--muted); }
+  .group-actions { display: flex; gap: 6px; }
+
+  /* Compare grid cards */
+  .compare-card { display: flex; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 10px 12px; margin-bottom: 6px; gap: 10px; }
+  .compare-card .cc-color { width: 4px; height: 36px; border-radius: 2px; flex-shrink: 0; }
+  .compare-card .cc-info { flex: 1; min-width: 0; }
+  .compare-card .cc-name { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .compare-card .cc-meta { font-size: 11px; color: var(--muted); }
+  .compare-card .cc-remove { background: none; border: none; color: var(--muted); cursor: pointer; font-size: 18px; padding: 4px; }
+  .compare-card .cc-remove:hover { color: var(--danger); }
+  .compare-card .cc-rating { font-size: 12px; font-weight: 600; color: var(--accent); white-space: nowrap; }
+
+  /* Grouping toolbar */
+  .group-toolbar { display: flex; gap: 6px; padding: 12px; background: var(--surface); border-bottom: 1px solid var(--border); align-items: center; overflow-x: auto; flex-shrink: 0; flex-wrap: nowrap; max-width: 100%; }
+  .group-toolbar label { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+
+  /* Mini map */
+  .mini-map { margin: 0 12px 12px; height: 180px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); background: #d4e6d4; position: relative; }
+  .mini-map .map-bg { width: 100%; height: 100%; object-fit: cover; }
+  .map-placeholder { width: 100%; height: 100%; background: linear-gradient(135deg, #c8dcc8 0%, #a8c8b8 50%, #b8d4c8 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+  .map-pin { position: absolute; width: 24px; height: 24px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); border: 2px solid white; box-shadow: 0 2px 6px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; }
+  .map-pin-inner { transform: rotate(45deg); font-size: 10px; font-weight: 700; color: white; }
+  .map-label { font-size: 12px; color: var(--primary-deep); font-weight: 600; z-index: 1; }
+
+  /* --- Decision Mode --- */
+  .decision-overlay { position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 430px; height: 100%; background: var(--bg); z-index: 200; display: none; flex-direction: column; }
+  .decision-overlay.active { display: flex; }
+  .decision-header { background: var(--primary-deep); padding: 16px; display: flex; align-items: center; gap: 12px; }
+  .decision-header h2 { color: white; font-size: 18px; font-weight: 700; flex: 1; }
+  .decision-close { background: none; border: none; color: rgba(255,255,255,0.7); font-size: 24px; cursor: pointer; }
+  .decision-progress { padding: 12px 16px; background: var(--surface); border-bottom: 1px solid var(--border); }
+  .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; }
+  .progress-text { font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+  .decision-body { flex: 1; padding: 20px 16px; overflow-y: auto; }
+  .decision-prompt { text-align: center; margin-bottom: 20px; }
+  .decision-prompt h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .decision-prompt p { font-size: 13px; color: var(--muted); }
+
+  .vs-container { display: flex; flex-direction: column; gap: 12px; }
+  .vs-card { background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius-lg); padding: 16px; cursor: pointer; transition: all 0.2s; }
+  .vs-card:hover { border-color: var(--primary); transform: scale(1.01); }
+  .vs-card.selected { border-color: var(--primary); background: rgba(21,136,138,0.05); }
+  .vs-card .vs-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+  .vs-card .vs-meta { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .vs-card .vs-desc { font-size: 13px; line-height: 1.5; }
+  .vs-card .vs-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .vs-card .vs-tag { padding: 2px 8px; border-radius: var(--radius-pill); background: var(--bg); font-size: 10px; color: var(--muted); }
+  .vs-card .vs-stats { display: flex; gap: 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .vs-card .vs-stat { font-size: 12px; }
+  .vs-card .vs-stat strong { color: var(--primary-dark); }
+  .vs-divider { display: flex; align-items: center; justify-content: center; }
+  .vs-badge { background: var(--accent); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13px; }
+
+  /* Winner screen */
+  .winner-screen { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 40px 20px; }
+  .winner-trophy { font-size: 64px; margin-bottom: 16px; }
+  .winner-label { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); font-weight: 700; margin-bottom: 8px; }
+  .winner-name { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+  .winner-desc { font-size: 14px; color: var(--muted); line-height: 1.5; max-width: 300px; }
+  .winner-actions { display: flex; gap: 10px; margin-top: 24px; }
+
+  /* Constraint bar */
+  .constraint-bar { display: flex; align-items: center; gap: 8px; padding: 10px 12px; margin: 0 12px 8px; background: rgba(224,123,60,0.08); border: 1px solid rgba(224,123,60,0.2); border-radius: var(--radius-md); }
+  .constraint-bar .cb-icon { font-size: 16px; }
+  .constraint-bar .cb-text { flex: 1; font-size: 12px; color: var(--text); }
+  .constraint-bar input { width: 48px; text-align: center; border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 4px; font-size: 13px; font-weight: 600; }
+  .constraint-bar .cb-label { font-size: 11px; color: var(--muted); }
+
+  /* Fade in animation */
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-in { animation: fadeIn 0.3s ease; }
+
+  /* Toast */
+  .toast { position: fixed; bottom: 80px; left: 50%; transform: translateX(-50%); background: var(--primary-deep); color: white; padding: 10px 20px; border-radius: var(--radius-pill); font-size: 13px; font-weight: 600; z-index: 300; opacity: 0; transition: opacity 0.3s; pointer-events: none; }
+  .toast.show { opacity: 1; }
+
+  /* Detail overlay */
+  .detail-overlay { position: fixed; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 430px; height: 100%; background: var(--bg); z-index: 150; display: none; flex-direction: column; }
+  .detail-overlay.active { display: flex; }
+  .detail-scroll { flex: 1; overflow-y: auto; }
+  .detail-hero { padding: 20px 16px 28px; }
+  .detail-hero .cat-label { color: rgba(255,255,255,0.7); font-size: 11px; letter-spacing: 1.5px; font-weight: 700; }
+  .detail-hero h1 { color: white; font-size: 24px; font-weight: 700; margin-top: 4px; }
+  .detail-hero .meta { color: rgba(255,255,255,0.8); font-size: 13px; margin-top: 6px; }
+  .detail-body { padding: 16px; }
+  .detail-back { position: absolute; top: 16px; right: 16px; background: rgba(0,0,0,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .detail-actions { display: flex; gap: 8px; margin-top: 16px; }
+</style>
+</head>
+<body>
+
+<!-- ============ BROWSE SCREEN ============ -->
+<div class="screen active" id="screen-browse">
+  <div class="screen-header">
+    <h1>Explore</h1>
+  </div>
+  <input class="search-bar" placeholder="Search attractions, tags, regions..." id="search-input" style="flex-shrink:0">
+  <div class="filter-row" id="filter-row"></div>
+  <div id="attractions-list" style="flex:1;overflow-y:auto;min-height:0"></div>
+</div>
+
+<!-- ============ COMPARE SCREEN ============ -->
+<div class="screen" id="screen-compare">
+  <div class="screen-header">
+    <h1>Compare</h1>
+  </div>
+
+  <div class="group-toolbar" id="group-toolbar">
+    <label>Group by:</label>
+    <button class="chip active" data-group="category">Category</button>
+    <button class="chip" data-group="region">Region</button>
+    <button class="chip" data-group="day">Day / Plan</button>
+    <button class="chip" data-group="none">All together</button>
+  </div>
+
+  <div id="compare-content" style="flex:1;overflow-y:auto;min-height:0"></div>
+</div>
+
+<!-- ============ DETAIL OVERLAY ============ -->
+<div class="detail-overlay" id="detail-overlay">
+  <div class="detail-scroll" id="detail-scroll"></div>
+</div>
+
+<!-- ============ DECISION MODE OVERLAY ============ -->
+<div class="decision-overlay" id="decision-overlay">
+  <div class="decision-header">
+    <h2 id="decision-title">Pick your favourite</h2>
+    <button class="decision-close" id="decision-close">✕</button>
+  </div>
+  <div class="decision-progress">
+    <div class="progress-bar"><div class="progress-fill" id="decision-progress-fill"></div></div>
+    <div class="progress-text" id="decision-progress-text"></div>
+  </div>
+  <div class="decision-body" id="decision-body"></div>
+</div>
+
+<!-- ============ TAB BAR ============ -->
+<div class="tab-bar">
+  <button class="tab-item active" data-tab="browse">
+    <span class="tab-icon">🧭</span>
+    Explore
+  </button>
+  <button class="tab-item" data-tab="compare">
+    <span class="tab-icon">⚖️</span>
+    Compare
+    <span class="tab-badge" id="compare-badge" style="display:none">0</span>
+  </button>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ========== DATA ==========
+const CATEGORIES = [
+  { id: 'adventure', label: 'Adventure', color: '#E65100' },
+  { id: 'culture', label: 'Arts & Culture', color: '#2C6FAD' },
+  { id: 'food-wine', label: 'Food & Wine', color: '#B71C1C' },
+  { id: 'heritage', label: 'Historic Sites', color: '#4527A0' },
+  { id: 'nature', label: 'Nature', color: '#2E7D32' },
+  { id: 'wildlife', label: 'Wildlife', color: '#00695C' },
+  { id: 'journey', label: 'Scenic Journeys', color: '#37474F' },
+  { id: 'māori', label: 'Māori Heritage', color: '#C0392B' },
+];
+
+const REGIONS = [
+  { id: 'auckland', name: 'Auckland' },
+  { id: 'rotorua', name: 'Rotorua' },
+  { id: 'queenstown', name: 'Queenstown' },
+  { id: 'hawkes-bay', name: "Hawke's Bay" },
+  { id: 'wellington', name: 'Wellington' },
+  { id: 'canterbury', name: 'Canterbury' },
+  { id: 'bay-of-plenty', name: 'Bay of Plenty' },
+  { id: 'coromandel', name: 'Coromandel' },
+];
+
+// Realistic sample attractions
+const ATTRACTIONS = [
+  { id: 'sky-jump', name: 'SkyJump Auckland', region: 'auckland', category: 'adventure', duration: 1, rating: 4.5, short: 'Leap 192m from the Sky Tower — NZ\'s highest bungee-style jump with stunning city views.', tags: ['bungee', 'sky-tower', 'adrenaline'], lat: -36.848, lng: 174.762 },
+  { id: 'bungy-kawarau', name: 'Kawarau Bridge Bungy', region: 'queenstown', category: 'adventure', duration: 2, rating: 4.8, short: 'The original commercial bungy — 43m above the turquoise Kawarau River.', tags: ['bungy', 'original', 'river'], lat: -45.013, lng: 168.825 },
+  { id: 'shotover-jet', name: 'Shotover Jet', region: 'queenstown', category: 'adventure', duration: 1.5, rating: 4.7, short: 'Jet boat through narrow Shotover Canyon at 85km/h with 360° spins.', tags: ['jet-boat', 'canyon', 'speed'], lat: -44.987, lng: 168.742 },
+  { id: 'nevis-swing', name: 'Nevis Swing', region: 'queenstown', category: 'adventure', duration: 2, rating: 4.6, short: 'The world\'s biggest swing — 160m arc over the Nevis River valley.', tags: ['swing', 'canyon', 'extreme'], lat: -45.038, lng: 168.981 },
+  { id: 'zorb-rotorua', name: 'Zorb Rotorua', region: 'rotorua', category: 'adventure', duration: 1, rating: 4.3, short: 'Roll downhill inside a giant inflatable ball — the original Zorb experience born in NZ.', tags: ['zorb', 'family', 'fun'], lat: -38.095, lng: 176.274 },
+  { id: 'huka-falls', name: 'Huka Falls', region: 'rotorua', category: 'nature', duration: 1, rating: 4.7, short: 'NZ\'s most visited natural attraction — 220,000 litres per second thundering through a narrow chasm.', tags: ['waterfall', 'river', 'free'], lat: -38.651, lng: 176.089 },
+  { id: 'te-puia', name: 'Te Puia', region: 'rotorua', category: 'māori', duration: 3, rating: 4.5, short: 'Geothermal valley with Pōhutu geyser, Māori carving and weaving schools, and cultural performances.', tags: ['geothermal', 'geyser', 'cultural'], lat: -38.165, lng: 176.256 },
+  { id: 'cathedral-cove', name: 'Cathedral Cove', region: 'coromandel', category: 'nature', duration: 2.5, rating: 4.8, short: 'Iconic arched cavern framing a pristine white sand beach — the Coromandel\'s crown jewel.', tags: ['beach', 'hike', 'iconic'], lat: -36.828, lng: 175.788 },
+  { id: 'hot-water-beach', name: 'Hot Water Beach', region: 'coromandel', category: 'nature', duration: 2, rating: 4.4, short: 'Dig your own hot pool in the sand as geothermal water rises from below — two hours either side of low tide.', tags: ['geothermal', 'beach', 'unique'], lat: -36.879, lng: 175.822 },
+  { id: 'tongariro-crossing', name: 'Tongariro Alpine Crossing', region: 'rotorua', category: 'nature', duration: 8, rating: 4.9, short: 'NZ\'s greatest day walk — 19.4km across volcanic terrain, emerald lakes, and steaming craters.', tags: ['hike', 'volcano', 'epic'], lat: -39.133, lng: 175.652 },
+  { id: 'milford-sound', name: 'Milford Sound', region: 'queenstown', category: 'nature', duration: 8, rating: 4.9, short: 'Fiordland\'s most famous fjord — sheer cliffs, cascading waterfalls, dolphins, and seals.', tags: ['fjord', 'cruise', 'bucket-list'], lat: -44.672, lng: 167.926 },
+  { id: 'ahi-restaurant', name: 'Ahi Restaurant', region: 'auckland', category: 'food-wine', duration: 2, rating: 4.6, short: 'Chef Ben Bayly\'s CBD restaurant — Māori cooking techniques meet fine-dining craftsmanship.', tags: ['fine-dining', 'māori-cuisine', 'restaurant'], lat: -36.843, lng: 174.766 },
+  { id: 'craggy-range', name: 'Craggy Range Winery', region: 'hawkes-bay', category: 'food-wine', duration: 2.5, rating: 4.7, short: 'World-class winery beneath Te Mata Peak — stunning Syrah and the acclaimed Restaurant & Cellar Door.', tags: ['winery', 'vineyard', 'fine-dining'], lat: -39.682, lng: 176.912 },
+  { id: 'elephant-hill', name: 'Elephant Hill Winery', region: 'hawkes-bay', category: 'food-wine', duration: 2.5, rating: 4.5, short: 'Coastal winery with ocean views, bold reds, and an architectural cellar door at Te Awanga.', tags: ['winery', 'ocean-view', 'restaurant'], lat: -39.639, lng: 177.023 },
+  { id: 'mission-estate', name: 'Mission Estate Winery', region: 'hawkes-bay', category: 'food-wine', duration: 2, rating: 4.4, short: 'NZ\'s oldest winery (est. 1851) — Marist brothers, heritage gardens, and the summer concert series.', tags: ['winery', 'heritage', 'concerts'], lat: -39.541, lng: 176.866 },
+  { id: 'te-mata-peak', name: 'Te Mata Peak', region: 'hawkes-bay', category: 'nature', duration: 1.5, rating: 4.7, short: 'Dramatic ridgeline walk with 360° views across Hawke\'s Bay — the sleeping giant of local Māori legend.', tags: ['hike', 'views', 'free'], lat: -39.710, lng: 176.898 },
+  { id: 'zealandia', name: 'Zealandia Eco-Sanctuary', region: 'wellington', category: 'wildlife', duration: 3, rating: 4.7, short: 'Predator-fenced valley sanctuary — home to tuatara, takahē, kākā, and little spotted kiwi.', tags: ['sanctuary', 'native-birds', 'kiwi'], lat: -41.290, lng: 174.753 },
+  { id: 'te-papa', name: 'Te Papa Tongarewa', region: 'wellington', category: 'culture', duration: 3, rating: 4.6, short: 'NZ\'s national museum — from the Colossal Squid to the Treaty of Waitangi, free admission.', tags: ['museum', 'free', 'national'], lat: -41.290, lng: 174.782 },
+  { id: 'auckland-museum', name: 'Auckland War Memorial Museum', region: 'auckland', category: 'culture', duration: 2.5, rating: 4.5, short: 'Grand neo-classical museum in the Auckland Domain — Māori taonga, natural history, and war memorials.', tags: ['museum', 'māori', 'history'], lat: -36.860, lng: 174.777 },
+  { id: 'acacia-cottage', name: 'Acacia Cottage, Cornwall Park', region: 'auckland', category: 'heritage', duration: 0.5, rating: 4.3, short: 'The oldest surviving building in Auckland — the 1841 cottage of Sir John Logan Campbell.', tags: ['1841', 'oldest-building', 'heritage'], lat: -36.891, lng: 174.785 },
+  { id: 'polynesian-spa', name: 'Polynesian Spa', region: 'rotorua', category: 'adventure', duration: 2, rating: 4.4, short: 'Lakefront thermal bathing complex fed by two natural springs — acidic and alkaline pools.', tags: ['hot-pools', 'thermal', 'spa'], lat: -38.147, lng: 176.251 },
+  { id: 'hell-gate', name: "Hell's Gate Geothermal Park", region: 'rotorua', category: 'nature', duration: 2, rating: 4.3, short: 'The most active geothermal reserve — mud baths, boiling pools, and a Māori bathing tradition.', tags: ['geothermal', 'mud-bath', 'thermal'], lat: -38.082, lng: 176.365 },
+  { id: 'waimangu', name: 'Waimangu Volcanic Valley', region: 'rotorua', category: 'nature', duration: 3, rating: 4.6, short: 'The world\'s youngest geothermal ecosystem — created by the 1886 Tarawera eruption.', tags: ['geothermal', 'volcano', 'hike'], lat: -38.280, lng: 176.375 },
+  { id: 'black-barn', name: 'Black Barn Vineyards', region: 'hawkes-bay', category: 'food-wine', duration: 2, rating: 4.5, short: 'Boutique vineyard with Saturday farmers\' market, outdoor amphitheatre, and award-winning wines.', tags: ['winery', 'market', 'events'], lat: -39.643, lng: 176.913 },
+];
+
+// ========== STATE ==========
+let compareList = [];
+let activeTab = 'browse';
+let activeFilter = 'all';
+let searchQuery = '';
+let groupBy = 'category';
+let decisionItems = [];
+let decisionPairs = [];       // all possible pairs for round-robin
+let decisionPairIdx = 0;      // current pair being shown
+let decisionScores = {};       // id -> win count
+let decisionKeepCount = 1;     // how many to keep
+let decisionGroupName = '';
+let decisionPhase = 'pick-count'; // 'pick-count' | 'comparing' | 'results'
+
+// ========== HELPERS ==========
+const getCat = id => CATEGORIES.find(c => c.id === id) || { label: '?', color: '#999' };
+const getRegion = id => REGIONS.find(r => r.id === id) || { name: '?' };
+const isInCompare = id => compareList.some(c => c.id === id);
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+function updateBadge() {
+  const b = document.getElementById('compare-badge');
+  if (compareList.length > 0) {
+    b.style.display = 'flex';
+    b.textContent = compareList.length;
+  } else {
+    b.style.display = 'none';
+  }
+}
+
+function toggleCompare(id) {
+  if (isInCompare(id)) {
+    compareList = compareList.filter(c => c.id !== id);
+    showToast('Removed from compare');
+  } else {
+    const a = ATTRACTIONS.find(a => a.id === id);
+    compareList.push(a);
+    showToast('Added to compare list');
+  }
+  updateBadge();
+  renderBrowse();
+  renderCompare();
+}
+
+// ========== RENDER BROWSE ==========
+function renderBrowse() {
+  // Filters
+  const filterRow = document.getElementById('filter-row');
+  filterRow.innerHTML = `<button class="chip ${activeFilter === 'all' ? 'active' : ''}" onclick="setFilter('all')">All</button>` +
+    CATEGORIES.map(c => `<button class="chip ${activeFilter === c.id ? 'active' : ''}" onclick="setFilter('${c.id}')">${c.label}</button>`).join('');
+
+  // Filter & search
+  let items = ATTRACTIONS;
+  if (activeFilter !== 'all') items = items.filter(a => a.category === activeFilter);
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    items = items.filter(a => a.name.toLowerCase().includes(q) || a.short.toLowerCase().includes(q) || a.tags.some(t => t.includes(q)));
+  }
+
+  const list = document.getElementById('attractions-list');
+  list.innerHTML = items.map(a => {
+    const cat = getCat(a.category);
+    const region = getRegion(a.region);
+    const inCompare = isInCompare(a.id);
+    return `<div class="card fade-in">
+      <div class="card-strip" style="background:${cat.color}"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div style="flex:1;cursor:pointer" onclick="showDetail('${a.id}')">
+            <div class="card-name">${a.name}</div>
+            <div class="card-meta">${region.name} · ${a.duration}h · ${cat.label} · ★ ${a.rating}</div>
+          </div>
+        </div>
+        <div class="card-desc" onclick="showDetail('${a.id}')" style="cursor:pointer">${a.short}</div>
+        <div class="card-footer">
+          <button class="btn-compare ${inCompare ? 'added' : ''}" onclick="toggleCompare('${a.id}')">
+            ${inCompare ? '✓ Comparing' : '⚖ Compare'}
+          </button>
+          <button class="btn-trip">+ Itinerary</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function setFilter(f) { activeFilter = f; renderBrowse(); }
+
+document.getElementById('search-input').addEventListener('input', e => {
+  searchQuery = e.target.value;
+  renderBrowse();
+});
+
+// ========== RENDER COMPARE ==========
+function renderCompare() {
+  const content = document.getElementById('compare-content');
+
+  if (compareList.length === 0) {
+    content.innerHTML = `<div class="compare-empty">
+      <div class="icon">⚖️</div>
+      <h2>Nothing to compare yet</h2>
+      <p>Browse attractions and tap <strong>⚖ Compare</strong> to add items here. Group them, compare side by side, and use Decision Mode to find your winner.</p>
+    </div>`;
+    return;
+  }
+
+  let html = '';
+
+  // Mini map
+  html += renderMiniMap();
+
+  // Group items
+  const groups = groupItems();
+
+  groups.forEach(g => {
+    html += `<div class="group-section fade-in">
+      <div class="group-header">
+        <div>
+          <div class="group-title">${g.name}</div>
+          <div class="group-count">${g.items.length} option${g.items.length > 1 ? 's' : ''}</div>
+        </div>
+        <div class="group-actions">
+          ${g.items.length >= 2 ? `<button class="btn-accent btn-sm" onclick="startDecision('${encodeURIComponent(g.name)}', '${g.key}')">🏆 Decide</button>` : ''}
+        </div>
+      </div>`;
+
+    // Constraint bar for day groups
+    if (groupBy === 'day') {
+      html += `<div class="constraint-bar">
+        <span class="cb-icon">⏱</span>
+        <span class="cb-text">Only have time for</span>
+        <input type="number" value="2" min="1" max="${g.items.length}" id="constraint-${g.key}">
+        <span class="cb-label">of ${g.items.length} — use Decide to narrow down</span>
+      </div>`;
+    }
+
+    g.items.forEach(a => {
+      const cat = getCat(a.category);
+      const region = getRegion(a.region);
+      html += `<div class="compare-card">
+        <div class="cc-color" style="background:${cat.color}"></div>
+        <div class="cc-info" onclick="showDetail('${a.id}')" style="cursor:pointer">
+          <div class="cc-name">${a.name}</div>
+          <div class="cc-meta">${region.name} · ${a.duration}h · ${cat.label}</div>
+        </div>
+        <div class="cc-rating">★ ${a.rating}</div>
+        <button class="cc-remove" onclick="toggleCompare('${a.id}')" title="Remove">✕</button>
+      </div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  content.innerHTML = html;
+}
+
+function groupItems() {
+  if (groupBy === 'none') {
+    return [{ key: 'all', name: 'All shortlisted', items: [...compareList] }];
+  }
+  if (groupBy === 'category') {
+    const map = {};
+    compareList.forEach(a => {
+      const cat = getCat(a.category);
+      if (!map[a.category]) map[a.category] = { key: a.category, name: cat.label, items: [] };
+      map[a.category].items.push(a);
+    });
+    return Object.values(map);
+  }
+  if (groupBy === 'region') {
+    const map = {};
+    compareList.forEach(a => {
+      const region = getRegion(a.region);
+      if (!map[a.region]) map[a.region] = { key: a.region, name: region.name, items: [] };
+      map[a.region].items.push(a);
+    });
+    return Object.values(map);
+  }
+  if (groupBy === 'day') {
+    // Simulate day grouping by region as a proxy
+    const dayMap = {
+      'auckland': 'Tuesday — Auckland',
+      'rotorua': 'Wednesday — Rotorua',
+      'queenstown': 'Thursday — Queenstown',
+      'hawkes-bay': "Friday — Hawke's Bay",
+      'wellington': 'Saturday — Wellington',
+      'coromandel': 'Sunday — Coromandel',
+      'canterbury': 'Monday — Canterbury',
+      'bay-of-plenty': 'Tuesday — Bay of Plenty',
+    };
+    const map = {};
+    compareList.forEach(a => {
+      const day = dayMap[a.region] || 'Unplanned';
+      if (!map[a.region]) map[a.region] = { key: a.region, name: day, items: [] };
+      map[a.region].items.push(a);
+    });
+    return Object.values(map);
+  }
+  return [{ key: 'all', name: 'All', items: [...compareList] }];
+}
+
+function renderMiniMap() {
+  // Position pins roughly based on relative lat/lng
+  const lats = compareList.map(a => a.lat);
+  const lngs = compareList.map(a => a.lng);
+  const minLat = Math.min(...lats), maxLat = Math.max(...lats);
+  const minLng = Math.min(...lngs), maxLng = Math.max(...lngs);
+  const padLat = (maxLat - minLat) * 0.15 || 0.05;
+  const padLng = (maxLng - minLng) * 0.15 || 0.05;
+
+  const pins = compareList.map((a, i) => {
+    const x = ((a.lng - (minLng - padLng)) / ((maxLng + padLng) - (minLng - padLng))) * 90 + 5;
+    const y = (1 - (a.lat - (minLat - padLat)) / ((maxLat + padLat) - (minLat - padLat))) * 80 + 10;
+    const cat = getCat(a.category);
+    return `<div class="map-pin" style="background:${cat.color};left:${x}%;top:${y}%" title="${a.name}">
+      <span class="map-pin-inner">${i + 1}</span>
+    </div>`;
+  }).join('');
+
+  return `<div class="mini-map" style="margin-top:12px">
+    <div class="map-placeholder">
+      <div class="map-label">${compareList.length} locations on map</div>
+      ${pins}
+    </div>
+  </div>`;
+}
+
+// ========== GROUP TOOLBAR ==========
+document.getElementById('group-toolbar').addEventListener('click', e => {
+  const btn = e.target.closest('[data-group]');
+  if (!btn) return;
+  groupBy = btn.dataset.group;
+  document.querySelectorAll('#group-toolbar .chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  renderCompare();
+});
+
+// ========== DETAIL OVERLAY ==========
+function showDetail(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  const cat = getCat(a.category);
+  const region = getRegion(a.region);
+  const inCompare = isInCompare(a.id);
+
+  const overlay = document.getElementById('detail-overlay');
+  document.getElementById('detail-scroll').innerHTML = `
+    <div class="detail-hero" style="background:${cat.color};position:relative">
+      <button class="detail-back" onclick="closeDetail()">✕</button>
+      <div class="cat-label">${cat.label.toUpperCase()}</div>
+      <h1>${a.name}</h1>
+      <div class="meta">${region.name} · ${a.duration}h suggested · ★ ${a.rating}</div>
+    </div>
+    <div class="detail-body">
+      <p style="font-size:14px;line-height:1.6">${a.short}</p>
+
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:12px">
+        ${a.tags.map(t => `<span style="padding:3px 10px;border-radius:999px;background:var(--bg);font-size:11px;color:var(--muted)">#${t}</span>`).join('')}
+      </div>
+
+      <div class="detail-actions">
+        <button class="btn-compare ${inCompare ? 'added' : ''}" style="flex:1;justify-content:center;padding:10px" onclick="toggleCompare('${a.id}');showDetail('${a.id}')">
+          ${inCompare ? '✓ In compare list' : '⚖ Add to compare'}
+        </button>
+        <button class="btn-trip" style="flex:1;justify-content:center;padding:10px">+ Itinerary</button>
+      </div>
+
+      <div style="margin-top:20px;padding:14px;background:#FAF7F0;border-radius:10px;border:1px solid var(--border)">
+        <div style="font-size:10px;color:var(--muted);font-weight:700;letter-spacing:1px">🎧 TOUR GUIDE</div>
+        <p style="font-size:13px;line-height:1.6;margin-top:8px;font-style:italic;color:#5a4530">${a.short} Discover what makes this place special with the Qiwiosity audio guide.</p>
+        <button class="btn-primary btn-sm" style="margin-top:10px">▶ Listen</button>
+      </div>
+
+      <div style="margin-top:20px">
+        <div style="font-size:12px;color:var(--muted);font-weight:600">VISITOR RATING</div>
+        <div style="font-size:28px;font-weight:700;color:var(--accent);margin-top:4px">★ ${a.rating}<span style="font-size:14px;color:var(--muted);font-weight:400"> / 5</span></div>
+      </div>
+    </div>`;
+
+  overlay.classList.add('active');
+}
+
+function closeDetail() {
+  document.getElementById('detail-overlay').classList.remove('active');
+}
+
+// ========== DECISION MODE ==========
+function startDecision(groupNameEncoded, groupKey) {
+  const groupName = decodeURIComponent(groupNameEncoded);
+  const groups = groupItems();
+  const group = groups.find(g => g.key === groupKey);
+  if (!group || group.items.length < 2) return;
+
+  decisionGroupName = groupName;
+  decisionItems = [...group.items];
+  decisionScores = {};
+  decisionItems.forEach(a => decisionScores[a.id] = 0);
+  decisionPairs = [];
+  decisionPairIdx = 0;
+  decisionKeepCount = 1;
+
+  // If grouped by day with a constraint, pre-fill keepCount
+  if (groupBy === 'day') {
+    const input = document.getElementById(`constraint-${groupKey}`);
+    if (input) decisionKeepCount = Math.max(1, Math.min(parseInt(input.value) || 2, group.items.length - 1));
+  }
+
+  // Show the pick-count screen first
+  decisionPhase = 'pick-count';
+  renderDecision();
+  document.getElementById('decision-overlay').classList.add('active');
+}
+
+// Generate all unique pairs (round-robin)
+function buildAllPairs() {
+  decisionPairs = [];
+  // Shuffle items for variety in pair order
+  const shuffled = [...decisionItems].sort(() => Math.random() - 0.5);
+  for (let i = 0; i < shuffled.length; i++) {
+    for (let j = i + 1; j < shuffled.length; j++) {
+      decisionPairs.push({ a: shuffled[i], b: shuffled[j] });
+    }
+  }
+  // Shuffle pair order too so it doesn't feel formulaic
+  for (let i = decisionPairs.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [decisionPairs[i], decisionPairs[j]] = [decisionPairs[j], decisionPairs[i]];
+  }
+  decisionPairIdx = 0;
+  decisionScores = {};
+  decisionItems.forEach(a => decisionScores[a.id] = 0);
+}
+
+function renderDecision() {
+  document.getElementById('decision-title').textContent = `Decide: ${decisionGroupName}`;
+
+  if (decisionPhase === 'pick-count') {
+    renderPickCount();
+  } else if (decisionPhase === 'comparing') {
+    renderPairComparison();
+  } else if (decisionPhase === 'results') {
+    renderResults();
+  }
+}
+
+function renderPickCount() {
+  const body = document.getElementById('decision-body');
+  const n = decisionItems.length;
+  document.getElementById('decision-progress-fill').style.width = '0%';
+  document.getElementById('decision-progress-text').textContent = `${n} options to compare`;
+
+  // Build keep-count options — tapping goes straight into comparing
+  let options = '';
+  for (let k = 1; k < n; k++) {
+    const label = k === 1 ? 'Find the single best' : `Pick the best ${k}`;
+    options += `<div class="vs-card" onclick="decisionKeepCount=${k};beginComparisons()">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <div class="vs-name">${label}</div>
+          <div class="vs-meta">out of ${n} options</div>
+        </div>
+        <div style="font-size:24px;opacity:0.3">${k === 1 ? '🏆' : '🎯'}</div>
+      </div>
+    </div>`;
+  }
+
+  body.innerHTML = `
+    <div class="decision-prompt">
+      <h3>How many do you want to keep?</h3>
+      <p>Every option will be compared against every other — no one gets unfairly eliminated</p>
+    </div>
+    <div class="vs-container">${options}</div>`;
+}
+
+function beginComparisons() {
+  buildAllPairs();
+  decisionPhase = 'comparing';
+  renderDecision();
+}
+
+function renderPairComparison() {
+  const body = document.getElementById('decision-body');
+  const total = decisionPairs.length;
+  const current = decisionPairIdx;
+
+  if (current >= total) {
+    decisionPhase = 'results';
+    renderDecision();
+    return;
+  }
+
+  const pct = ((current + 1) / total) * 100;
+  document.getElementById('decision-progress-fill').style.width = `${pct}%`;
+  document.getElementById('decision-progress-text').textContent = `Comparison ${current + 1} of ${total} · ${total - current - 1} remaining`;
+
+  const pair = decisionPairs[current];
+  const catA = getCat(pair.a.category), regA = getRegion(pair.a.region);
+  const catB = getCat(pair.b.category), regB = getRegion(pair.b.region);
+
+  // Show running standings as subtle dots
+  const sorted = [...decisionItems].sort((a, b) => (decisionScores[b.id] || 0) - (decisionScores[a.id] || 0));
+  let standingsHtml = '<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:12px;justify-content:center">';
+  sorted.forEach(a => {
+    const cat = getCat(a.category);
+    const score = decisionScores[a.id] || 0;
+    standingsHtml += `<div style="display:flex;align-items:center;gap:3px;padding:3px 8px;border-radius:999px;background:var(--surface);border:1px solid var(--border);font-size:10px" title="${a.name}: ${score} wins">
+      <div style="width:6px;height:6px;border-radius:50%;background:${cat.color}"></div>
+      ${score}
+    </div>`;
+  });
+  standingsHtml += '</div>';
+
+  body.innerHTML = `
+    <div class="decision-prompt">
+      <h3>Which do you prefer?</h3>
+      <p>Picking ${decisionKeepCount === 1 ? 'the best' : 'the best ' + decisionKeepCount} from ${decisionItems.length} options</p>
+    </div>
+    <div class="vs-container">
+      <div class="vs-card" onclick="pickPreference('${pair.a.id}')">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="width:4px;height:24px;border-radius:2px;background:${catA.color}"></div>
+          <div class="vs-name">${pair.a.name}</div>
+        </div>
+        <div class="vs-meta">${regA.name} · ${pair.a.duration}h · ${catA.label}</div>
+        <div class="vs-desc">${pair.a.short}</div>
+        <div class="vs-tags">${pair.a.tags.map(t => `<span class="vs-tag">#${t}</span>`).join('')}</div>
+        <div class="vs-stats">
+          <div class="vs-stat"><strong>★ ${pair.a.rating}</strong> rating</div>
+          <div class="vs-stat"><strong>${pair.a.duration}h</strong> duration</div>
+        </div>
+      </div>
+
+      <div class="vs-divider"><div class="vs-badge">VS</div></div>
+
+      <div class="vs-card" onclick="pickPreference('${pair.b.id}')">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+          <div style="width:4px;height:24px;border-radius:2px;background:${catB.color}"></div>
+          <div class="vs-name">${pair.b.name}</div>
+        </div>
+        <div class="vs-meta">${regB.name} · ${pair.b.duration}h · ${catB.label}</div>
+        <div class="vs-desc">${pair.b.short}</div>
+        <div class="vs-tags">${pair.b.tags.map(t => `<span class="vs-tag">#${t}</span>`).join('')}</div>
+        <div class="vs-stats">
+          <div class="vs-stat"><strong>★ ${pair.b.rating}</strong> rating</div>
+          <div class="vs-stat"><strong>${pair.b.duration}h</strong> duration</div>
+        </div>
+      </div>
+    </div>
+    ${standingsHtml}`;
+}
+
+function pickPreference(winnerId) {
+  decisionScores[winnerId] = (decisionScores[winnerId] || 0) + 1;
+
+  const winner = decisionItems.find(a => a.id === winnerId);
+  showToast(`+1 ${winner.name}`);
+
+  decisionPairIdx++;
+  setTimeout(() => renderDecision(), 300);
+}
+
+function renderResults() {
+  const body = document.getElementById('decision-body');
+  document.getElementById('decision-progress-fill').style.width = '100%';
+  document.getElementById('decision-progress-text').textContent = 'All comparisons complete!';
+
+  // Sort by score descending
+  const ranked = [...decisionItems].sort((a, b) => decisionScores[b.id] - decisionScores[a.id]);
+  const maxScore = decisionPairs.length > 0 ? decisionItems.length - 1 : 1; // max possible wins
+  const kept = ranked.slice(0, decisionKeepCount);
+  const rest = ranked.slice(decisionKeepCount);
+
+  let keptHtml = kept.map((a, i) => {
+    const cat = getCat(a.category);
+    const region = getRegion(a.region);
+    const score = decisionScores[a.id];
+    const barW = Math.round((score / maxScore) * 100);
+    return `<div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:2px solid var(--primary);border-radius:var(--radius-md);margin-bottom:6px">
+      <div style="font-size:20px;font-weight:700;color:var(--primary);min-width:28px;text-align:center">${i + 1}</div>
+      <div style="width:4px;height:32px;border-radius:2px;background:${cat.color}"></div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:14px;font-weight:600">${a.name}</div>
+        <div style="font-size:11px;color:var(--muted)">${region.name} · ${cat.label} · ${a.duration}h</div>
+        <div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+          <div style="flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden">
+            <div style="width:${barW}%;height:100%;background:var(--primary);border-radius:2px"></div>
+          </div>
+          <span style="font-size:11px;font-weight:600;color:var(--primary)">${score} wins</span>
+        </div>
+      </div>
+      <div style="font-size:16px">${i === 0 ? '🏆' : '✅'}</div>
+    </div>`;
+  }).join('');
+
+  let restHtml = rest.map((a, i) => {
+    const cat = getCat(a.category);
+    const region = getRegion(a.region);
+    const score = decisionScores[a.id];
+    const barW = Math.round((score / maxScore) * 100);
+    return `<div style="display:flex;align-items:center;gap:10px;padding:10px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:4px;opacity:0.6">
+      <div style="font-size:16px;font-weight:600;color:var(--muted);min-width:28px;text-align:center">${decisionKeepCount + i + 1}</div>
+      <div style="width:4px;height:28px;border-radius:2px;background:${cat.color}"></div>
+      <div style="flex:1;min-width:0">
+        <div style="font-size:13px;font-weight:600">${a.name}</div>
+        <div style="font-size:10px;color:var(--muted)">${region.name} · ${score} wins</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  body.innerHTML = `
+    <div class="winner-screen fade-in" style="text-align:left;padding:0">
+      <div style="text-align:center;margin-bottom:20px">
+        <div style="font-size:48px;margin-bottom:8px">${decisionKeepCount === 1 ? '🏆' : '🎯'}</div>
+        <div class="winner-label" style="color:var(--accent);font-size:12px;letter-spacing:1.5px;font-weight:700">${decisionKeepCount === 1 ? 'YOUR WINNER' : `YOUR TOP ${decisionKeepCount}`}</div>
+        <p style="font-size:12px;color:var(--muted);margin-top:4px">Ranked by your preferences across ${decisionPairs.length} comparisons</p>
+      </div>
+
+      <div style="margin-bottom:16px">
+        <div style="font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.5px;margin-bottom:8px">CHOSEN (${kept.length})</div>
+        ${keptHtml}
+      </div>
+
+      ${rest.length > 0 ? `<div style="margin-bottom:16px">
+        <div style="font-size:11px;font-weight:700;color:var(--muted);letter-spacing:0.5px;margin-bottom:8px">DIDN'T MAKE THE CUT</div>
+        ${restHtml}
+      </div>` : ''}
+
+      <div style="display:flex;gap:10px;justify-content:center;margin-top:20px">
+        <button class="btn-primary" onclick="closeDecision()">Done</button>
+        <button class="btn-outline" onclick="restartDecision()">Redo</button>
+      </div>
+    </div>`;
+}
+
+function closeDecision() {
+  document.getElementById('decision-overlay').classList.remove('active');
+}
+
+function restartDecision() {
+  decisionPhase = 'pick-count';
+  renderDecision();
+}
+
+document.getElementById('decision-close').addEventListener('click', closeDecision);
+
+// ========== TAB SWITCHING ==========
+document.querySelectorAll('.tab-item').forEach(tab => {
+  tab.addEventListener('click', () => {
+    activeTab = tab.dataset.tab;
+    document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(`screen-${activeTab}`).classList.add('active');
+    if (activeTab === 'compare') renderCompare();
+  });
+});
+
+// ========== INIT ==========
+renderBrowse();
+updateBadge();
+</script>
+</body>
+</html>
