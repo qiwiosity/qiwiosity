@@ -84,25 +84,51 @@
   .gm-style .gm-style-iw-tc { display: none; }
 
   .popup-hero {
-    width: 100%; height: 150px;
+    width: 100%; height: 220px;
     object-fit: cover; display: block;
     background: #c8d8d8;
   }
   .popup-hero-wrap {
     position: relative; overflow: hidden;
   }
+  .popup-hero-wrap::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 110px;
+    background: linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+  }
+  .popup-hero-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 10px 12px 10px;
+    z-index: 2;
+  }
+  .popup-hero-overlay h3 {
+    margin: 0 0 4px; font-size: 16px; font-weight: 700;
+    color: white; text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    line-height: 1.2;
+  }
+  .popup-hero-overlay .hero-meta {
+    display: flex; align-items: center; gap: 8px;
+  }
   .popup-hero-wrap .cat-chip {
-    position: absolute; top: 8px; left: 8px;
-    background: rgba(0,0,0,0.55);
+    display: inline-block;
+    background: rgba(0,0,0,0.45);
     color: white; font-size: 10px; font-weight: 700;
     padding: 3px 9px; border-radius: 99px;
     text-transform: uppercase; letter-spacing: 0.5px;
   }
-  .popup-hero-wrap .credit {
-    position: absolute; bottom: 4px; right: 6px;
-    font-size: 9px; color: rgba(255,255,255,0.65); font-style: italic;
+  .popup-hero-wrap .hero-rating {
+    color: #FFD700; font-size: 12px; font-weight: 700;
   }
-  .popup-inner { font-family: inherit; width: 280px; }
+  .popup-hero-wrap .hero-duration {
+    color: rgba(255,255,255,0.85); font-size: 11px;
+  }
+  .popup-hero-wrap .credit {
+    position: absolute; top: 6px; right: 8px;
+    font-size: 9px; color: rgba(255,255,255,0.55); font-style: italic;
+    z-index: 3;
+  }
+  .popup-inner { font-family: inherit; width: 320px; }
   .popup-gallery {
     display: flex; gap: 4px; margin: 6px 0 8px;
     overflow-x: auto; scrollbar-width: none;
@@ -133,10 +159,17 @@
     padding: 2px 8px; font-size: 10px; color: var(--muted);
   }
   .popup-inner .pop-actions {
-    display: flex; flex-wrap: wrap; gap: 5px;
-    padding: 8px 14px 12px; border-top: 1px solid var(--border);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 6px; padding: 10px 12px 14px;
+    border-top: 1px solid var(--border);
   }
-  .popup-inner .pop-actions .btn { font-size: 11px; padding: 5px 10px; flex: 1; min-width: 0; text-align: center; }
+  .popup-inner .pop-actions .btn {
+    font-size: 12px; padding: 8px 6px;
+    text-align: center; border-radius: 8px;
+  }
+  .popup-inner .pop-actions .btn.primary {
+    grid-column: 1 / -1;
+  }
   .btn { padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); background: white; font-size: 12px; cursor: pointer; font-weight: 500; }
   .btn.primary { background: var(--primary); border-color: var(--primary); color: white; }
   .btn.primary:hover { background: var(--primary-dark); }
@@ -371,7 +404,7 @@
 <div class="app">
   <header>
     <img class="brand-mark" src="./assets/logo-mark.png" alt="Qiwiosity" />
-    <h1>Qiwiosity — Explore New Zealand with Curiosity</h1>
+    <h1>Qiwiosity</h1>
     <div class="tabs">
       <button class="tab active" data-view="explore">Explore</button>
       <button class="tab" data-view="stay">Stay</button>
@@ -396,8 +429,8 @@
     </div>
     <div class="view" id="view-plan">
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
-        <span class="toggle-eye">👁</span>
-        <span class="toggle-label">Show all places</span>
+        <span class="toggle-eye">🗺</span>
+        <span class="toggle-label">Show nearby attractions on map</span>
       </div>
       <div id="planCategoryChips" class="plan-category-chips" style="display:none;"></div>
       <div id="planStopList"></div>
@@ -421,7 +454,7 @@
       </div>
     </div>
     <div class="commentary-overlay" id="commentary">
-      <button onclick="document.getElementById('commentary').classList.remove('on')">×</button>
+      <button onclick="document.getElementById('commentary').classList.remove('on');window.speechSynthesis&&window.speechSynthesis.cancel();_speechPlaying=false;">×</button>
       <span id="commentaryText"></span>
     </div>
   </main>
@@ -724,6 +757,62 @@ function accomFilteredList() {
   });
 }
 
+let _directionsRenderer = null;
+
+function showInAppRoute(attraction) {
+  if (!attraction) return;
+  if (infoWindow) infoWindow.close();
+
+  if (_directionsRenderer) {
+    _directionsRenderer.setMap(null);
+    _directionsRenderer = null;
+  }
+
+  if (!navigator.geolocation) {
+    showToast('Location unavailable — open in Google Maps for directions');
+    openDirections(attraction);
+    return;
+  }
+
+  showToast('Getting your location…');
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const origin = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      const destination = { lat: attraction.lat, lng: attraction.lng };
+      const directionsService = new google.maps.DirectionsService();
+      _directionsRenderer = new google.maps.DirectionsRenderer({
+        map,
+        suppressMarkers: false,
+        polylineOptions: { strokeColor: '#15888A', strokeWeight: 5, strokeOpacity: 0.85 },
+      });
+      directionsService.route({
+        origin,
+        destination,
+        travelMode: google.maps.TravelMode.DRIVING,
+      }, (result, status) => {
+        if (status === 'OK') {
+          _directionsRenderer.setDirections(result);
+          const leg = result.routes[0].legs[0];
+          showToast(`${leg.distance.text} · ${leg.duration.text} to ${attraction.name}`);
+        } else {
+          showToast('Could not get route — tap to open in Google Maps');
+          _directionsRenderer = null;
+          openDirections(attraction);
+        }
+      });
+    },
+    () => {
+      showToast('Location permission denied — opening in Google Maps');
+      openDirections(attraction);
+    },
+    { timeout: 8000 }
+  );
+}
+
+function clearInAppRoute() {
+  if (_directionsRenderer) { _directionsRenderer.setMap(null); _directionsRenderer = null; }
+}
+
 function openDirections(attraction) {
   const url = `https://www.google.com/maps/dir/?api=1&destination=${attraction.lat},${attraction.lng}&travelmode=driving`;
   window.open(url, '_blank');
@@ -785,17 +874,51 @@ function openAttractionDetails(id) {
   }, 600);
 }
 
-function showCommentary(a) {
+let _speechPlaying = false;
+
+function showCommentaryPopup(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  showCommentary(a, false);
+}
+
+function showCommentary(a, autoPlay) {
+  window.speechSynthesis && window.speechSynthesis.cancel();
+  _speechPlaying = false;
   const el = document.getElementById('commentary');
-  document.getElementById('commentaryText').innerHTML = `<strong>${a.name}</strong> — ${a.commentary}`;
+  const btnId = 'commentaryPlayBtn';
+  document.getElementById('commentaryText').innerHTML =
+    `<div style="font-weight:700;margin-bottom:6px;">${a.name}</div>`
+    + `<div style="opacity:0.9;line-height:1.55;">${a.commentary || 'No commentary available for this location.'}</div>`
+    + `<div style="margin-top:10px;display:flex;gap:8px;align-items:center;">`
+    + `<button id="${btnId}" onclick="toggleCommentarySpeech('${a.id}')"
+        style="background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.4);color:white;
+               padding:5px 14px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:600;">▶ Play</button>`
+    + `<span style="font-size:11px;opacity:0.7;">Audio guide</span>`
+    + `</div>`;
   el.classList.add('on');
-  if ('speechSynthesis' in window) {
-    try {
-      window.speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(`${a.name}. ${a.commentary}`);
-      u.rate = 0.95;
-      window.speechSynthesis.speak(u);
-    } catch (e) {}
+  if (autoPlay) toggleCommentarySpeech(a.id);
+}
+
+function toggleCommentarySpeech(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  const btn = document.getElementById('commentaryPlayBtn');
+  if (_speechPlaying) {
+    window.speechSynthesis && window.speechSynthesis.cancel();
+    _speechPlaying = false;
+    if (btn) btn.textContent = '▶ Play';
+  } else {
+    if ('speechSynthesis' in window && a) {
+      try {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(`${a.name}. ${a.commentary}`);
+        u.rate = 0.92;
+        u.onend = () => { _speechPlaying = false; if (btn) btn.textContent = '▶ Play'; };
+        window.speechSynthesis.speak(u);
+        _speechPlaying = true;
+        if (btn) btn.textContent = '⏹ Stop';
+      } catch(e) {}
+    }
   }
 }
 
@@ -911,22 +1034,45 @@ function renderItinerary() {
 }
 
 // ============ CATEGORY + REGION FILTERS ============
+function isAllCategories() {
+  return state.activeCategories.size === CATEGORIES.length;
+}
+
 function renderCategoryList() {
   const el = document.getElementById('categoryList');
   const counts = CATEGORIES.reduce((o, c) => (o[c.id] = 0, o), {});
   ATTRACTIONS.forEach(a => counts[a.category] = (counts[a.category] || 0) + 1);
-  el.innerHTML = CATEGORIES.map(c => `
-    <div class="cat ${state.activeCategories.has(c.id) ? 'on' : ''}" data-id="${c.id}">
+
+  const allOn = isAllCategories();
+  const allChip = `<div class="cat${allOn ? ' on' : ''}" data-id="__all__" style="margin-bottom:4px;border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:8px;">
+    <div class="swatch" style="background:linear-gradient(135deg,#15888A,#E07B3C);"></div>
+    <span style="font-weight:${allOn?'700':'500'}">All categories</span>
+    <span class="count">${ATTRACTIONS.length}</span>
+  </div>`;
+
+  el.innerHTML = allChip + CATEGORIES.map(c => {
+    const solo = !allOn && state.activeCategories.has(c.id) && state.activeCategories.size === 1;
+    const active = state.activeCategories.has(c.id) && !allOn;
+    return `<div class="cat ${active ? 'on' : ''}" data-id="${c.id}"
+      style="${solo ? `background:${c.color}18;border-left:3px solid ${c.color};` : ''}">
       <div class="swatch" style="background:${c.color}"></div>
       <span>${c.label}</span>
       <span class="count">${counts[c.id] || 0}</span>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
+
   el.querySelectorAll('.cat').forEach(node => {
     node.addEventListener('click', () => {
       const id = node.dataset.id;
-      if (state.activeCategories.has(id)) state.activeCategories.delete(id);
-      else state.activeCategories.add(id);
+      if (id === '__all__') {
+        CATEGORIES.forEach(c => state.activeCategories.add(c.id));
+      } else if (isAllCategories()) {
+        state.activeCategories = new Set([id]);
+      } else if (state.activeCategories.has(id) && state.activeCategories.size === 1) {
+        CATEGORIES.forEach(c => state.activeCategories.add(c.id));
+      } else {
+        state.activeCategories = new Set([id]);
+      }
       renderCategoryList();
       renderAttractions();
     });
@@ -1073,36 +1219,36 @@ function openPoiInfoWindow(a, marker) {
       `</div>`
     : '';
 
+  const inIti = state.itinerary.some(x => x.id === a.id);
   const content = `
     <div class="popup-inner">
       <div class="popup-hero-wrap">
         <img class="popup-hero" src="${imgUrl}" alt="${a.name}"
              onerror="this.style.display='none'" loading="lazy" />
-        <span class="cat-chip" style="background:${color}88;">${catLabel(a.category)}</span>
-        <span class="credit">&copy; Wikimedia Commons</span>
+        <span class="credit">&copy; Wikimedia</span>
+        <div class="popup-hero-overlay">
+          <h3>${a.name}</h3>
+          <div class="hero-meta">
+            <span class="cat-chip" style="background:${color}cc;">${catLabel(a.category)}</span>
+            ${a.reviews?.rating ? `<span class="hero-rating">★ ${a.reviews.rating.toFixed(1)}</span>` : ''}
+            <span class="hero-duration">⏱ ${a.duration_hours}h</span>
+          </div>
+        </div>
       </div>
       ${galleryThumbs}
-      <h3>${a.name}</h3>
-      <div class="pop-meta">
-        <span style="color:${color};font-weight:600;">● ${catLabel(a.category)}</span>
-        <span>⏱ ${a.duration_hours}h</span>
-        ${a.reviews?.rating ? `<span style="color:#F5A623;font-weight:600;">★ ${a.reviews.rating.toFixed(1)}</span>` : ''}
-      </div>
-      <p>${a.short || ''}</p>
+      <p style="margin:0;padding:10px 14px 6px;font-size:13px;line-height:1.5;color:var(--text);">${a.short || ''}</p>
       ${a.reviews?.summary ? `
-      <div style="background:#F0F8F8;border:1px solid rgba(21,136,138,0.25);border-radius:8px;padding:10px 12px;margin:4px 14px 8px;">
-        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:4px;">
-          <span style="font-size:9px;font-weight:800;color:var(--primary);letter-spacing:1.2px;">✦ AI OVERVIEW</span>
-          <span style="font-size:9px;color:var(--muted);">Synthesised from visitor reviews</span>
-        </div>
-        <p style="margin:0;padding:0;font-size:12px;line-height:1.45;color:var(--text);">${a.reviews.summary}</p>
+      <div style="background:#F0F8F8;border:1px solid rgba(21,136,138,0.2);border-radius:8px;padding:8px 12px;margin:0 12px 6px;">
+        <div style="font-size:9px;font-weight:800;color:var(--primary);letter-spacing:1.2px;margin-bottom:3px;">✦ VISITOR OVERVIEW</div>
+        <p style="margin:0;font-size:12px;line-height:1.4;color:var(--text);">${a.reviews.summary}</p>
       </div>` : ''}
-      ${tagsHtml ? `<div class="tags">${tagsHtml}</div>` : ''}
+      ${tagsHtml ? `<div class="tags" style="padding:0 14px 8px;">${tagsHtml}</div>` : ''}
       <div class="pop-actions">
-        <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();" class="btn">＋ Add to Itinerary</button>
-        <button onclick="openDirections(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Directions</button>
-        <button onclick="showCommentary(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🎧 Commentary</button>
-        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">More like this</button>
+        <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
+          class="btn primary">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
+        <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Directions</button>
+        <button onclick="showCommentaryPopup('${a.id}')" class="btn">🎧 Audio</button>
+        <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar places</button>
       </div>
     </div>
   `;
@@ -1447,6 +1593,7 @@ document.querySelectorAll('.tab').forEach(t => {
     if (planRoutePolyline) { planRoutePolyline.setMap(null); planRoutePolyline = null; }
     planNumberMarkers.forEach(m => m.setMap(null));
     planNumberMarkers = [];
+    clearInAppRoute && clearInAppRoute();
 
     if (v === 'stay') {
       state.accomLayerOn = true;

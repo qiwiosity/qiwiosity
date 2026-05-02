@@ -47,6 +47,18 @@ server.js                   ← Simple Node.js HTTP server (port 5000)
 - **Backend**: Supabase (PostgreSQL) — `https://hauksnqehzaxuoeaezji.supabase.co`
 - **Server**: Node.js built-in `http` module
 
+## Phase 1 UI Changes (Completed)
+
+Applied to `qiwiosity/mobile/prototype.html`:
+
+1. **Header branding** — Removed long tagline; header now shows just "Qiwiosity" (logo already in header)
+2. **Category filter UX** — Changed from multi-toggle to solo-select: click any category to show ONLY that type, click again (or "All categories") to reset. New "All categories" chip at top of the list.
+3. **POI popup redesign** — Hero image expanded to 220px; place name, category chip, star rating, and duration now overlaid on the image with a gradient. Action buttons laid out in a 2×2 grid. Audio button added directly in popup ("🎧 Audio").
+4. **Commentary no-autoplay** — "Audio" button in popup opens a text panel with separate "▶ Play" / "⏹ Stop" toggle. No auto-speech on click.
+5. **In-app directions** — "🧭 Directions" button now draws the route on the existing Google Map using DirectionsService + geolocation (requests location permission). Falls back to opening Google Maps externally if location denied or unavailable.
+6. **Plan view toggle** — "Show all places" toggle renamed to "Show nearby attractions on map".
+7. **Route cleanup** — In-app direction routes are cleared when switching between tabs.
+
 ## Deployment
 
 Configured as autoscale deployment running `node server.js`.
