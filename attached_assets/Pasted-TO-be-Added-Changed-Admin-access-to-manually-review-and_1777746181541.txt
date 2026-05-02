@@ -1,0 +1,32 @@
+TO be Added/Changed
+•	Admin access to manually review and authenticate POIS
+•	Easy way to add POIs via a template – ideally automated so it is consistent. 
+•	Easy way to update existing PPIS (images etc)
+•	Google maps vs apple maps?  Want consistenency.
+•	Speed the app up.
+•	Don’t like the all off/all on feature in the main menu  rmove or change
+•	The loading screen is awful – it looks clunky and disconnected.  Please fix to make it look professional
+•	There is an annoying introduction voice that is playing something – get rid of it, shouldn’t be there.
+•	The explore screen with the map currently says Qiwiosity which makes it look like that is the name of the screen. Qiwiosity should appear with a logo on every page  - that is the brand
+•	The settings cog still looks out of place with the light green circle – remove that. 
+•	The pop up menu finally has pictures, can the image be made the whole background with the text over it?  Like it does in the main text page. The windown can be bigger if needed, half/third of screen if you want. Move the buttons that are currently down the right hand side to the bottom, and add the audio section to the menu too.
+•	The guide should be accessed within the rest of the app (each individual place, and the itenary, not a standalone section. The section can be removed. This should mean only 5 menu buttons at the bottom which can be made smaller so that the user doesn’t need to scroll any more, it can be fixed.
+•	Maybe create a how to guide for the first time the app is opened – what the buttons mean etc (make this list easy to update by admin)
+•	Full AI integration if the user wants an Ai itenary – user can get a template for how many days, when you arrive, when you leave, what your interests are, how many people, ages etc, budget, accommodation needs, constraints – how long in each place blah blah.
+•	User set up – currently no different user access, so that needs to be addressed.
+•	Collaboration with other people to meet up at different events on your tour.
+•	Share experiences.
+•	Diarise the itenary – save your own images, group your own iages, video diary, written journal, share to social media. 
+•	Car play full integration, voice commands. 
+•	Want to have longer and shorter audio commentary options. And also to have automatic tour guide during longer drives for example – if we are travelling from Auckland to Rotorua and stopping at 3 places on the way – the commentary should be tailored to the users interest (history, nature, maori culture etc) and give a commentary along the whole journey.
+•	The itinenary section is a mess. The important part which is the list of stops is the smallest section. The top is huge and the bottom is large the middle bit sis too small to be functional. All menus should be able to collapse and expand on click. Each poi should have the audio option on it (currently has details, and driving only). Each poi should contract and expand on click. Can be reorderd but buttons and by long press and drag. The estimated drive time etc should be collapsed by default and then expanded once the order of the trip is decided. 
+•	Major issue with the mas – it isn’t integrated, it keeps taking me away from the app, the idea is to bring people into the app and keep them in there, this is a huge red flag. What is the solution here?
+•	On the map section of the itenary – I want to be able to drag and drop the stops – I should be able to click the number of the stop and get the information about that drop. Then I can change the order, change the destination.  
+•	From each place the location shows up it needs an option to add that destination and all other similar options to the compare screen. For example, I see a waterfall in Hawkes Bay, I say add to compare and the system will give the user the option to add the one POI to the compare, or it can find all waterfalls within (specify a distance) all POIS within the distance, all comparable things within the distance (such as Nature if it’s a waterfall). 
+•	Navigate function on map doesn’t take into account where the user currently is and where they want to end up. Should store start and end point of the journey if required (arrive in Auckland and depart from Christchurch) or (round trip from hastings for example).
+•	GPS Coordinates not matching 
+•	Once decision comparison is made, option to add these direct to itenirary.
+•	Itenaryry should be able to cope with multiple days
+•	Decision function should display the whole information – including price for accurate decisions, image, audio
+•	POI pop up in explore screen should have button to add direct to itenary
+•	Text is overhanging from the buttons on the details screen. Looks very messy. Can split image on a different line, or can just show the image
