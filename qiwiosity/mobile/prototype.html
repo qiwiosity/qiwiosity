@@ -776,6 +776,53 @@
   }
   .speed-btn:hover { border-color: var(--primary); }
   .speed-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+
+  /* ============ AFFILIATE BUTTONS ============ */
+  .btn-book-now {
+    display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+    padding: 9px 14px; border-radius: 8px; border: none;
+    background: linear-gradient(135deg, #00875A, #007A4D);
+    color: white; font-size: 12px; font-weight: 700;
+    cursor: pointer; text-decoration: none; letter-spacing: 0.2px;
+    box-shadow: 0 2px 8px rgba(0,135,90,0.3);
+    transition: opacity 0.15s, transform 0.12s;
+  }
+  .btn-book-now:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  .btn-book-activity {
+    display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+    padding: 9px 14px; border-radius: 8px; border: none;
+    background: linear-gradient(135deg, #E07B3C, #C96820);
+    color: white; font-size: 12px; font-weight: 700;
+    cursor: pointer; text-decoration: none; letter-spacing: 0.2px;
+    box-shadow: 0 2px 8px rgba(224,123,60,0.3);
+    transition: opacity 0.15s, transform 0.12s;
+  }
+  .btn-book-activity:hover { opacity: 0.9; transform: translateY(-1px); }
+
+  .affiliate-strip {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 6px 13px 4px;
+    border-top: 1px solid var(--border);
+    font-size: 10px; color: var(--muted);
+    gap: 6px;
+  }
+  .affiliate-strip a {
+    display: flex; align-items: center; gap: 4px;
+    color: var(--muted); text-decoration: none; font-size: 10px;
+    transition: color 0.12s;
+  }
+  .affiliate-strip a:hover { color: var(--primary); }
+  .affiliate-strip .aff-badge {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 4px; padding: 1px 5px; font-size: 9px; font-weight: 700;
+    color: var(--muted); letter-spacing: 0.3px;
+  }
+  .affiliate-cta-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+    padding: 8px 11px 10px;
+  }
+  .affiliate-cta-row.single { grid-template-columns: 1fr; }
 </style>
 </head>
 <body>
@@ -968,6 +1015,47 @@
         </div>
       </div>
 
+      <!-- Affiliate IDs -->
+      <div class="settings-section">
+        <h3>💰 Affiliate IDs</h3>
+        <p style="font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.5;">
+          Register with each program then paste your IDs here. Every booking your users make earns you a commission. Leave blank to use non-tracked links.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div>
+            <label style="font-size:11px;font-weight:700;color:var(--muted);display:block;margin-bottom:4px;">
+              Booking.com AID
+              <a href="https://www.booking.com/affiliate-program/v2/" target="_blank" rel="noopener" style="color:var(--primary);font-weight:400;margin-left:6px;">Register →</a>
+            </label>
+            <input id="affBookingAid" type="text" placeholder="e.g. 1234567"
+              style="width:100%;padding:8px 11px;border:1.5px solid var(--border);border-radius:7px;font-size:12px;background:var(--surface);color:var(--text);outline:none;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:700;color:var(--muted);display:block;margin-bottom:4px;">
+              Viator Partner ID
+              <a href="https://www.viatoraffiliates.com/" target="_blank" rel="noopener" style="color:var(--primary);font-weight:400;margin-left:6px;">Register →</a>
+            </label>
+            <input id="affViatorPid" type="text" placeholder="e.g. P00012345"
+              style="width:100%;padding:8px 11px;border:1.5px solid var(--border);border-radius:7px;font-size:12px;background:var(--surface);color:var(--text);outline:none;" />
+          </div>
+          <div>
+            <label style="font-size:11px;font-weight:700;color:var(--muted);display:block;margin-bottom:4px;">
+              GetYourGuide Partner ID
+              <a href="https://partner.getyourguide.com/" target="_blank" rel="noopener" style="color:var(--primary);font-weight:400;margin-left:6px;">Register →</a>
+            </label>
+            <input id="affGYGPid" type="text" placeholder="e.g. AB1C2D"
+              style="width:100%;padding:8px 11px;border:1.5px solid var(--border);border-radius:7px;font-size:12px;background:var(--surface);color:var(--text);outline:none;" />
+          </div>
+          <button onclick="saveAffiliateSettings()"
+            style="margin-top:4px;padding:9px;background:var(--primary);color:white;border:none;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">
+            Save Affiliate IDs
+          </button>
+        </div>
+        <p style="font-size:11px;color:var(--muted);margin:10px 0 0;line-height:1.5;">
+          💡 Booking.com pays ~25–40% of their commission (~4–8% of booking). Viator pays 8%. GetYourGuide pays 8%.
+        </p>
+      </div>
+
     </div>
   </div>
 </div>
@@ -986,6 +1074,78 @@
 // ============ DATA (loaded from Supabase) ============
 const SUPABASE_URL = 'https://hauksnqehzaxuoeaezji.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhdWtzbnFlaHpheHVvZWFlemppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2Njg2NjEsImV4cCI6MjA5MjI0NDY2MX0.jaxhd4xgDwfO5POCTFI9G0M66Ev9vykcs6gPAZSiZSo';
+
+// ============ AFFILIATE CONFIG ============
+// Fill in your IDs after registering with each program.
+// Booking.com: https://www.booking.com/affiliate-program/v2/
+// Viator:      https://www.viatoraffiliates.com/
+// GetYourGuide:https://partner.getyourguide.com/
+const AFFILIATE = {
+  bookingAid: '',       // Booking.com AID (e.g. "1234567")
+  bookingLabel: 'qiwiosity-nz',
+  viatorPid: '',        // Viator Partner ID
+  viatorMcid: '42383',  // Viator default MCID for web
+  gygPartnerId: '',     // GetYourGuide partner_id
+};
+
+// Which POI categories map to bookable activities on Viator / GYG
+const ACTIVITY_CATEGORIES = new Set([
+  'adventure', 'tours', 'nature', 'wildlife', 'cultural', 'food',
+  'water', 'maori', 'experience', 'scenic', 'walk', 'hike', 'cruise'
+]);
+
+function affilBookingUrl(name, regionName) {
+  const q = encodeURIComponent((name || regionName || 'New Zealand') + ', New Zealand');
+  const aid = AFFILIATE.bookingAid ? `&aid=${AFFILIATE.bookingAid}` : '';
+  const label = `&label=${AFFILIATE.bookingLabel}`;
+  return `https://www.booking.com/searchresults.html?ss=${q}&lang=en-gb&group_adults=2&no_rooms=1${aid}${label}`;
+}
+
+function affilWotifUrl(regionName) {
+  const q = encodeURIComponent(regionName || 'New Zealand');
+  return `https://www.wotif.com/Hotel-Search?adults=2&regionId=&cityName=${q}&countryCode=NZ`;
+}
+
+function affilViatorUrl(name, regionName) {
+  const q = encodeURIComponent(name || regionName || 'New Zealand');
+  const pid = AFFILIATE.viatorPid ? `&pid=${AFFILIATE.viatorPid}&mcid=${AFFILIATE.viatorMcid}&medium=api` : '';
+  return `https://www.viator.com/search/new-zealand/?q=${q}${pid}`;
+}
+
+function affilGYGUrl(name, regionName) {
+  const q = encodeURIComponent((name || '') + ' ' + (regionName || 'New Zealand'));
+  const pid = AFFILIATE.gygPartnerId ? `&partner_id=${AFFILIATE.gygPartnerId}` : '';
+  return `https://www.getyourguide.com/s/?q=${q}${pid}`;
+}
+
+function isActivityCategory(categoryId) {
+  if (!categoryId) return false;
+  const id = categoryId.toLowerCase();
+  for (const k of ACTIVITY_CATEGORIES) { if (id.includes(k)) return true; }
+  return true; // Default: show activity links for all POIs — NZ is mostly active tourism
+}
+
+function loadAffiliateSettings() {
+  try {
+    const s = JSON.parse(localStorage.getItem('qw_affiliate') || '{}');
+    if (s.bookingAid) AFFILIATE.bookingAid = s.bookingAid;
+    if (s.viatorPid) AFFILIATE.viatorPid = s.viatorPid;
+    if (s.gygPartnerId) AFFILIATE.gygPartnerId = s.gygPartnerId;
+  } catch(e) {}
+}
+
+function saveAffiliateSettings() {
+  const s = {
+    bookingAid: document.getElementById('affBookingAid')?.value.trim() || '',
+    viatorPid: document.getElementById('affViatorPid')?.value.trim() || '',
+    gygPartnerId: document.getElementById('affGYGPid')?.value.trim() || '',
+  };
+  AFFILIATE.bookingAid = s.bookingAid;
+  AFFILIATE.viatorPid = s.viatorPid;
+  AFFILIATE.gygPartnerId = s.gygPartnerId;
+  localStorage.setItem('qw_affiliate', JSON.stringify(s));
+  showToast('Affiliate IDs saved ✓');
+}
 
 // Global data variables
 let ATTRACTIONS = [];
@@ -1943,7 +2103,15 @@ function openPoiInfoWindow(a, marker) {
         <p style="margin:0;font-size:12px;line-height:1.4;color:var(--text);">${a.reviews.summary}</p>
       </div>` : ''}
       ${tagsHtml ? `<div class="tags" style="padding:0 14px 8px;">${tagsHtml}</div>` : ''}
-      <div class="pop-actions">
+      <div class="affiliate-cta-row">
+        <a href="${affilViatorUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity">🎯 Book on Viator</a>
+        <a href="${affilGYGUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 GetYourGuide</a>
+      </div>
+      <div class="affiliate-strip">
+        <span>Book tours · earn us a small commission</span>
+        <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 Find nearby stays</a>
+      </div>
+      <div class="pop-actions" style="border-top:none;padding-top:6px;">
         <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
           class="btn primary">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
         <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
@@ -1983,9 +2151,14 @@ function openAccomInfoWindow(a, marker) {
         </div>
       </div>
       <p style="margin:0;padding:10px 14px 8px;font-size:13px;line-height:1.5;color:var(--text);">${a.short || ''}</p>
-      <div style="padding:0 14px 10px;font-size:11px;color:var(--muted);">📍 ${rName}</div>
-      <div class="pop-actions">
-        <button onclick="showInAppRoute({lat:${a.lat},lng:${a.lng},name:'${a.name.replace(/'/g,"\\'")}'})" class="btn" style="grid-column:1/-1;">🧭 Get Directions</button>
+      <div style="padding:0 14px 6px;font-size:11px;color:var(--muted);">📍 ${rName}${price ? ' · <strong style="color:var(--accent)">' + price + '</strong>' : ''}</div>
+      <div class="affiliate-cta-row">
+        <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-now">🛏 Book on Booking.com</a>
+        <a href="${affilWotifUrl(rName)}" target="_blank" rel="noopener sponsored" class="btn-book-now" style="background:linear-gradient(135deg,#1a6faf,#155a8a);">🛏 Book on Wotif</a>
+      </div>
+      <div class="affiliate-strip">
+        <span>Prices shown by partners · Commission may be earned</span>
+        <button onclick="showInAppRoute({lat:${a.lat},lng:${a.lng},name:'${a.name.replace(/'/g,"\\'")}'})" class="btn" style="padding:4px 10px;font-size:11px;">🧭 Directions</button>
       </div>
     </div>
   `;
@@ -2650,6 +2823,11 @@ function openSettings() {
   document.getElementById('darkModeToggle').checked = document.documentElement.classList.contains('dark');
   const saved = localStorage.getItem('qw_elevenlabs_key') || '';
   if (saved) document.getElementById('elevenLabsKeyInput').value = '••••••••';
+  // Populate affiliate fields
+  const aff = JSON.parse(localStorage.getItem('qw_affiliate') || '{}');
+  if (aff.bookingAid) document.getElementById('affBookingAid').value = aff.bookingAid;
+  if (aff.viatorPid) document.getElementById('affViatorPid').value = aff.viatorPid;
+  if (aff.gygPartnerId) document.getElementById('affGYGPid').value = aff.gygPartnerId;
   renderVoiceGrid();
 }
 function closeSettings() {
@@ -2797,6 +2975,8 @@ function initVoiceSystem() {
   }
   // Load saved places
   loadSavedPOIs();
+  // Load affiliate IDs
+  loadAffiliateSettings();
 }
 
 // ============ INIT: Google Maps + Data ============

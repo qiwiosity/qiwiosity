@@ -93,6 +93,32 @@ All applied to `qiwiosity/mobile/prototype.html`:
 6. **Route cleanup** — Routes cleared on tab switch
 7. **Accommodation list** — Real cards with `accomCardClick()` and map sync
 
+## Affiliate Monetisation (Completed)
+
+Added to `qiwiosity/mobile/prototype.html`:
+
+### Affiliate Programs Integrated
+| Program | Button colour | Commission | Registration |
+|---|---|---|---|
+| Booking.com | Green | ~4–8% of booking | booking.com/affiliate-program |
+| Wotif | Blue | ~4–8% of booking | wotif.com (Expedia Group) |
+| Viator | Orange | 8% of activity booking | viatoraffiliates.com |
+| GetYourGuide | Red | 8% of activity booking | partner.getyourguide.com |
+
+### How it works
+- **POI popups** — Show "🎯 Book on Viator" + "🎯 GetYourGuide" buttons above the regular action buttons, plus a "🛏 Find nearby stays" link in the affiliate strip
+- **Accommodation popups** — Show "🛏 Book on Booking.com" + "🛏 Book on Wotif" buttons replacing the old single directions button
+- **URL generation** — `affilBookingUrl()`, `affilWotifUrl()`, `affilViatorUrl()`, `affilGYGUrl()` build correctly-parameterised search URLs using the place/region name
+- **Affiliate ID management** — IDs stored in `localStorage` (`qw_affiliate`); loaded via `loadAffiliateSettings()` at startup
+- **Settings panel** — "💰 Affiliate IDs" section in the ⚙ Settings modal with input fields for all three programs, commission rate summary, and registration links. IDs are optional — links still work without them, they just won't be tracked.
+- **`rel="noopener sponsored"`** — Correct for affiliate links (Google/GDPR compliant)
+
+### To activate commissions
+1. Open Settings (⚙ in header) → scroll to Affiliate IDs
+2. Register at each program (links provided inline)
+3. Paste your IDs and click Save
+4. All booking/activity links will now include your tracking parameter
+
 ## Deployment
 
 Configured as autoscale deployment running `node server.js`.
