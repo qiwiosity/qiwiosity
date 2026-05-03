@@ -1963,8 +1963,8 @@
   <!-- Header -->
   <div class="aigen-header">
     <div>
-      <div class="aigen-header-title">✨ AI Trip Planner</div>
-      <div class="aigen-header-sub">Powered by your 2,400+ NZ places</div>
+      <div class="aigen-header-title" data-i18n="ai.title">✨ AI Trip Planner</div>
+      <div class="aigen-header-sub" data-i18n="ai.sub">Powered by your 2,400+ NZ places</div>
     </div>
     <button class="aigen-close-btn" onclick="closeAIGen()">✕</button>
   </div>
@@ -1973,27 +1973,27 @@
   <div class="aigen-progress-bar" id="aigenProgressBar">
     <div class="aigen-progress-step">
       <div class="aigen-progress-dot active" id="aigenDot1">1</div>
-      <div class="aigen-progress-label">When & Who</div>
+      <div class="aigen-progress-label" data-i18n="ai.step1">When & Who</div>
     </div>
     <div class="aigen-progress-line" id="aigenLine1"></div>
     <div class="aigen-progress-step">
       <div class="aigen-progress-dot" id="aigenDot2">2</div>
-      <div class="aigen-progress-label">Interests</div>
+      <div class="aigen-progress-label" data-i18n="ai.step2">Interests</div>
     </div>
     <div class="aigen-progress-line" id="aigenLine2"></div>
     <div class="aigen-progress-step">
       <div class="aigen-progress-dot" id="aigenDot3">3</div>
-      <div class="aigen-progress-label">Stay & Route</div>
+      <div class="aigen-progress-label" data-i18n="ai.step3">Stay & Route</div>
     </div>
   </div>
 
   <!-- STEP 1: When & Who -->
   <div class="aigen-panel" id="aigenPanel1">
-    <div class="aigen-panel-title">Let's plan your trip</div>
-    <div class="aigen-panel-sub">Tell us the basics and we'll do the rest.</div>
+    <div class="aigen-panel-title" data-i18n="ai.p1.title">Let's plan your trip</div>
+    <div class="aigen-panel-sub" data-i18n="ai.p1.sub">Tell us the basics and we'll do the rest.</div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">HOW MANY DAYS?</div>
+      <div class="aigen-field-label" data-i18n="ai.days">HOW MANY DAYS?</div>
       <input type="range" class="aigen-days-slider" id="aigenDaysSlider" min="1" max="21" value="7"
         oninput="document.getElementById('aigenDaysVal').textContent=this.value+' days'" />
       <div style="text-align:center;font-size:22px;font-weight:800;color:var(--primary);margin-bottom:4px;" id="aigenDaysVal">7 days</div>
@@ -2003,26 +2003,26 @@
     </div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">TRAVELLERS</div>
+      <div class="aigen-field-label" data-i18n="ai.travellers">TRAVELLERS</div>
       <div class="aigen-counter-row">
         <button class="aigen-counter-btn" onclick="aigenAdj('adults',-1)">−</button>
         <div>
           <div class="aigen-counter-val" id="aigenAdultsVal">2</div>
-          <div class="aigen-counter-unit">adults</div>
+          <div class="aigen-counter-unit" data-i18n="ai.adults">adults</div>
         </div>
         <button class="aigen-counter-btn" onclick="aigenAdj('adults',1)">+</button>
         <div style="width:16px;"></div>
         <button class="aigen-counter-btn" onclick="aigenAdj('children',-1)">−</button>
         <div>
           <div class="aigen-counter-val" id="aigenChildrenVal">0</div>
-          <div class="aigen-counter-unit">children</div>
+          <div class="aigen-counter-unit" data-i18n="ai.children">children</div>
         </div>
         <button class="aigen-counter-btn" onclick="aigenAdj('children',1)">+</button>
       </div>
     </div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">STARTING FROM</div>
+      <div class="aigen-field-label" data-i18n="ai.startFrom">STARTING FROM</div>
       <select class="aigen-select" id="aigenStartRegion">
         <option value="">— Choose a region —</option>
       </select>
@@ -2030,14 +2030,14 @@
 
     <div class="aigen-field">
       <div class="aigen-toggle-row">
-        <span class="aigen-toggle-label">Round trip (return to start)</span>
+        <span class="aigen-toggle-label" data-i18n="ai.roundTrip">Round trip (return to start)</span>
         <div class="aigen-toggle on" id="aigenRoundTripToggle" onclick="toggleAigenRoundTrip()">
           <div class="aigen-toggle-knob"></div>
         </div>
       </div>
     </div>
     <div class="aigen-field" id="aigenEndRegionField" style="display:none">
-      <div class="aigen-field-label">ENDING IN</div>
+      <div class="aigen-field-label" data-i18n="ai.endIn">ENDING IN</div>
       <select class="aigen-select" id="aigenEndRegion">
         <option value="">— Choose a region —</option>
       </select>
@@ -2046,16 +2046,16 @@
 
   <!-- STEP 2: Interests & Pace -->
   <div class="aigen-panel" id="aigenPanel2" style="display:none">
-    <div class="aigen-panel-title">What do you love?</div>
-    <div class="aigen-panel-sub">Pick as many as you like — we'll weight your trip around them.</div>
+    <div class="aigen-panel-title" data-i18n="ai.p2.title">What do you love?</div>
+    <div class="aigen-panel-sub" data-i18n="ai.p2.sub">Pick as many as you like — we'll weight your trip around them.</div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">INTERESTS (select all that apply)</div>
+      <div class="aigen-field-label" data-i18n="ai.interests">INTERESTS (select all that apply)</div>
       <div class="aigen-chip-grid" id="aigenInterestChips"></div>
     </div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">TRAVEL PACE</div>
+      <div class="aigen-field-label" data-i18n="ai.pace">TRAVEL PACE</div>
       <div class="aigen-3btn-row">
         <button class="aigen-3btn selected" id="aigenPaceRelaxed" onclick="selectAigenPace('relaxed')">😌 Relaxed<br><span style="font-size:9px;font-weight:400;">2–3 stops/day</span></button>
         <button class="aigen-3btn" id="aigenPaceBalanced" onclick="selectAigenPace('balanced')">🚶 Balanced<br><span style="font-size:9px;font-weight:400;">3–4 stops/day</span></button>
@@ -2064,7 +2064,7 @@
     </div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">BUDGET</div>
+      <div class="aigen-field-label" data-i18n="ai.budget">BUDGET</div>
       <div class="aigen-3btn-row">
         <button class="aigen-3btn" id="aigenBudgetBudget" onclick="selectAigenBudget('budget')">💸 Budget<br><span style="font-size:9px;font-weight:400;">Free/low-cost spots</span></button>
         <button class="aigen-3btn selected" id="aigenBudgetMid" onclick="selectAigenBudget('mid')">💳 Mid-range<br><span style="font-size:9px;font-weight:400;">Mix of everything</span></button>
@@ -2075,11 +2075,11 @@
 
   <!-- STEP 3: Stay & Special Requests -->
   <div class="aigen-panel" id="aigenPanel3" style="display:none">
-    <div class="aigen-panel-title">Almost there!</div>
-    <div class="aigen-panel-sub">Tell us where you'd like to sleep, and anything special to consider.</div>
+    <div class="aigen-panel-title" data-i18n="ai.p3.title">Almost there!</div>
+    <div class="aigen-panel-sub" data-i18n="ai.p3.sub">Tell us where you'd like to sleep, and anything special to consider.</div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">ACCOMMODATION PREFERENCE</div>
+      <div class="aigen-field-label" data-i18n="ai.accom">ACCOMMODATION PREFERENCE</div>
       <div class="aigen-chip-grid">
         <span class="aigen-chip" id="aigenAccomCamping" onclick="selectAigenAccom('camping')">⛺ Camping</span>
         <span class="aigen-chip" id="aigenAccomHostel" onclick="selectAigenAccom('hostel')">🛏 Hostel / Backpackers</span>
@@ -2090,8 +2090,8 @@
     </div>
 
     <div class="aigen-field">
-      <div class="aigen-field-label">ANY SPECIAL INTERESTS OR NOTES? <span style="font-weight:400;text-transform:none;">(optional)</span></div>
-      <textarea id="aigenNotes" style="width:100%;border:1.5px solid var(--border);border-radius:9px;padding:10px 12px;font-size:12px;background:var(--surface);color:var(--text);resize:none;height:72px;font-family:inherit;" placeholder="e.g. We love geothermal areas, have a 5-year-old, prefer less driving…"></textarea>
+      <div class="aigen-field-label"><span data-i18n="ai.special">ANY SPECIAL INTERESTS OR NOTES?</span> <span style="font-weight:400;text-transform:none;" data-i18n="ai.optional">(optional)</span></div>
+      <textarea id="aigenNotes" style="width:100%;border:1.5px solid var(--border);border-radius:9px;padding:10px 12px;font-size:12px;background:var(--surface);color:var(--text);resize:none;height:72px;font-family:inherit;" placeholder="e.g. We love geothermal areas, have a 5-year-old, prefer less driving…" data-i18n-ph="ai.notesPh"></textarea>
     </div>
 
     <div class="aigen-field" style="background:rgba(21,136,138,0.06);border-radius:10px;padding:12px;">
@@ -2103,8 +2103,8 @@
   <!-- LOADING -->
   <div class="aigen-loading" id="aigenLoading">
     <div class="aigen-spinner-emoji" id="aigenSpinnerEmoji">✨</div>
-    <div class="aigen-loading-text" id="aigenLoadingText">Building your NZ adventure…</div>
-    <div class="aigen-loading-sub">Scanning 2,400+ places across Aotearoa</div>
+    <div class="aigen-loading-text" id="aigenLoadingText" data-i18n="ai.building">Building your NZ adventure…</div>
+    <div class="aigen-loading-sub" data-i18n="ai.scanning">Scanning 2,400+ places across Aotearoa</div>
     <div class="aigen-loading-steps" id="aigenLoadingSteps"></div>
   </div>
 
@@ -2114,15 +2114,15 @@
     <div class="aigen-results-sub" id="aigenResultsSub"></div>
     <div id="aigenResultsDays"></div>
     <div class="aigen-results-actions">
-      <button class="aigen-load-btn" onclick="loadAIGenItinerary()">✓ Load into Planner</button>
-      <button class="aigen-regen-btn" onclick="runAIGen()">↺ Regenerate</button>
+      <button class="aigen-load-btn" onclick="loadAIGenItinerary()" data-i18n="ai.loadPlanner">✓ Load into Planner</button>
+      <button class="aigen-regen-btn" onclick="runAIGen()" data-i18n="ai.regen">↺ Regenerate</button>
     </div>
   </div>
 
   <!-- Nav bar (hidden during loading/results) -->
   <div class="aigen-nav-bar" id="aigenNavBar">
-    <button class="aigen-back-btn" id="aigenBackBtn" onclick="aigenStepBack()" style="display:none">← Back</button>
-    <button class="aigen-next-btn" id="aigenNextBtn" onclick="aigenStepNext()">Next →</button>
+    <button class="aigen-back-btn" id="aigenBackBtn" onclick="aigenStepBack()" style="display:none" data-i18n="ai.back">← Back</button>
+    <button class="aigen-next-btn" id="aigenNextBtn" onclick="aigenStepNext()" data-i18n="ai.next">Next →</button>
   </div>
 </div>
 
@@ -3205,6 +3205,24 @@ const LANG_DICT = {
     'compare.byCat': 'By Category', 'compare.byRegion': 'By Region', 'compare.all': 'All together',
     'saved.title': 'Saved Places', 'saved.empty': 'No saved places yet',
     'saved.emptyDesc': 'Open any place on the map and tap ♡ Save to add it here.',
+    'ai.title': '✨ AI Trip Planner', 'ai.sub': 'Powered by your 2,400+ NZ places',
+    'ai.step1': 'When & Who', 'ai.step2': 'Interests', 'ai.step3': 'Stay & Route',
+    'ai.p1.title': "Let's plan your trip", 'ai.p1.sub': "Tell us the basics and we'll do the rest.",
+    'ai.days': 'HOW MANY DAYS?', 'ai.travellers': 'TRAVELLERS', 'ai.adults': 'adults', 'ai.children': 'children',
+    'ai.startFrom': 'STARTING FROM', 'ai.roundTrip': 'Round trip (return to start)', 'ai.endIn': 'ENDING IN',
+    'ai.p2.title': 'What do you love?', 'ai.p2.sub': "Pick as many as you like — we'll weight your trip around them.",
+    'ai.interests': 'INTERESTS (select all that apply)', 'ai.pace': 'TRAVEL PACE', 'ai.budget': 'BUDGET',
+    'ai.p3.title': 'Almost there!', 'ai.p3.sub': "Tell us where you'd like to sleep, and anything special to consider.",
+    'ai.accom': 'ACCOMMODATION PREFERENCE', 'ai.special': 'ANY SPECIAL INTERESTS OR NOTES?', 'ai.optional': '(optional)',
+    'ai.notesPh': 'e.g. We love geothermal areas, have a 5-year-old, prefer less driving…',
+    'ai.building': 'Building your NZ adventure…', 'ai.scanning': 'Scanning 2,400+ places across Aotearoa',
+    'ai.loadPlanner': '✓ Load into Planner', 'ai.regen': '↺ Regenerate', 'ai.back': '← Back', 'ai.next': 'Next →',
+    'diary.title': 'Diary', 'diary.visitedOn': 'Visited on', 'diary.photos': 'Photos',
+    'diary.noPhotos': 'No photos yet', 'diary.journal': 'Journal entry',
+    'diary.journalPh': 'What happened here? What did you love, learn, or want to remember?',
+    'diary.save': 'Save', 'diary.cancel': 'Cancel',
+    'book.viator': 'Book on Viator', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'Book tours · earn us a small commission', 'book.nearby': 'Find nearby stays',
   },
   mi: {
     'splash.headline': 'Tūhuratia Aotearoa<br>me te Pīroiroi',
@@ -3236,6 +3254,24 @@ const LANG_DICT = {
     'compare.byCat': 'Mā Kāwai', 'compare.byRegion': 'Mā Rohe', 'compare.all': 'Katoa',
     'saved.title': 'Wāhi Tiakina', 'saved.empty': 'Kāore anō he wāhi i tiakina',
     'saved.emptyDesc': 'Tūwherahia tētahi wāhi ka pā ki te ♡ Tiaki.',
+    'ai.title': '✨ Kaiwhakamahere Haerenga AI', 'ai.sub': 'Mā ō wāhi 2,400+ o Aotearoa',
+    'ai.step1': 'Āhea & Ko Wai', 'ai.step2': 'Hiahia', 'ai.step3': 'Noho & Huarahi',
+    'ai.p1.title': 'Me whakamahere tō haerenga', 'ai.p1.sub': 'Kōrero mai ngā kōrero matua, mā mātou e mahi.',
+    'ai.days': 'E HIA NGĀ RĀ?', 'ai.travellers': 'KAIHAERE', 'ai.adults': 'pakeke', 'ai.children': 'tamariki',
+    'ai.startFrom': 'TĪMATA I', 'ai.roundTrip': 'Haere porotēhi (hoki mai)', 'ai.endIn': 'MUTU KI',
+    'ai.p2.title': 'He aha tō hiahia?', 'ai.p2.sub': 'Tīpakohia ngā mea katoa.',
+    'ai.interests': 'NGĀ HIAHIA (tīpakohia katoa)', 'ai.pace': 'TERE HAERE', 'ai.budget': 'PŪTEA',
+    'ai.p3.title': 'Kua tata!', 'ai.p3.sub': 'Kōrero mai he aha tō wāhi moe.',
+    'ai.accom': 'WĀHI NOHO MANAKO', 'ai.special': 'HE KŌRERO MOTUHAKE?', 'ai.optional': '(kōwhiringa)',
+    'ai.notesPh': 'Hei tauira: e pai ana mātou ki te wai wera…',
+    'ai.building': 'E hangaia ana tō haerenga…', 'ai.scanning': 'E rapu ana 2,400+ wāhi',
+    'ai.loadPlanner': '✓ Whakauruhia', 'ai.regen': '↺ Hangaia anō', 'ai.back': '← Hoki', 'ai.next': 'Tukuna →',
+    'diary.title': 'Rātaka', 'diary.visitedOn': 'I tae mai i', 'diary.photos': 'Whakaahua',
+    'diary.noPhotos': 'Kāore anō he whakaahua', 'diary.journal': 'Tuhinga rātaka',
+    'diary.journalPh': 'I aha koe ki konei?',
+    'diary.save': 'Tiaki', 'diary.cancel': 'Whakakore',
+    'book.viator': 'Tono ki Viator', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'Tono haerenga · ka utua mātou', 'book.nearby': 'Wāhi noho tata',
   },
   zh: {
     'splash.headline': '用好奇心<br>探索新西兰',
@@ -3267,6 +3303,24 @@ const LANG_DICT = {
     'compare.byCat': '按分类', 'compare.byRegion': '按地区', 'compare.all': '全部',
     'saved.title': '已保存景点', 'saved.empty': '暂无保存',
     'saved.emptyDesc': '在地图打开景点并点击 ♡ 保存即可添加到此处。',
+    'ai.title': '✨ AI 行程规划', 'ai.sub': '基于 2,400+ 新西兰景点',
+    'ai.step1': '时间与人数', 'ai.step2': '兴趣', 'ai.step3': '住宿与路线',
+    'ai.p1.title': '开始规划您的旅程', 'ai.p1.sub': '告诉我们基本信息,其余交给我们。',
+    'ai.days': '几天?', 'ai.travellers': '旅客', 'ai.adults': '成人', 'ai.children': '儿童',
+    'ai.startFrom': '出发地', 'ai.roundTrip': '环线行程(返回起点)', 'ai.endIn': '终点',
+    'ai.p2.title': '您喜欢什么?', 'ai.p2.sub': '选择越多越好,我们会据此规划。',
+    'ai.interests': '兴趣(可多选)', 'ai.pace': '旅行节奏', 'ai.budget': '预算',
+    'ai.p3.title': '快好了!', 'ai.p3.sub': '告诉我们住宿偏好和特别要求。',
+    'ai.accom': '住宿偏好', 'ai.special': '特别兴趣或备注?', 'ai.optional': '(可选)',
+    'ai.notesPh': '例如:喜欢地热区,有 5 岁孩子,少开车…',
+    'ai.building': '正在生成新西兰之旅…', 'ai.scanning': '扫描 2,400+ 个新西兰地点',
+    'ai.loadPlanner': '✓ 加入行程', 'ai.regen': '↺ 重新生成', 'ai.back': '← 返回', 'ai.next': '下一步 →',
+    'diary.title': '日记', 'diary.visitedOn': '到访日期', 'diary.photos': '照片',
+    'diary.noPhotos': '暂无照片', 'diary.journal': '日记内容',
+    'diary.journalPh': '您在这里发生了什么?最难忘的是?',
+    'diary.save': '保存', 'diary.cancel': '取消',
+    'book.viator': 'Viator 预订', 'book.gyg': 'GetYourGuide',
+    'book.tours': '预订观光 · 我们获得少量佣金', 'book.nearby': '查找附近住宿',
   },
   ja: {
     'splash.headline': '好奇心とともに<br>ニュージーランドを探索',
@@ -3298,6 +3352,24 @@ const LANG_DICT = {
     'compare.byCat': 'カテゴリー別', 'compare.byRegion': '地域別', 'compare.all': 'すべて',
     'saved.title': '保存したスポット', 'saved.empty': '保存はまだありません',
     'saved.emptyDesc': 'マップで開いて ♡ 保存をタップすると追加されます。',
+    'ai.title': '✨ AI旅行プランナー', 'ai.sub': 'NZの2,400+スポットから選定',
+    'ai.step1': 'いつ・誰と', 'ai.step2': '興味', 'ai.step3': '宿泊・ルート',
+    'ai.p1.title': '旅行を計画しましょう', 'ai.p1.sub': '基本情報をお聞かせください。',
+    'ai.days': '何日間?', 'ai.travellers': '旅行者', 'ai.adults': '大人', 'ai.children': '子供',
+    'ai.startFrom': '出発地', 'ai.roundTrip': '往復(出発地に戻る)', 'ai.endIn': '到着地',
+    'ai.p2.title': '何がお好きですか?', 'ai.p2.sub': '複数選択可能です。',
+    'ai.interests': '興味(複数選択可)', 'ai.pace': '旅のペース', 'ai.budget': '予算',
+    'ai.p3.title': 'もうすぐです!', 'ai.p3.sub': '宿泊と特別な要望をお聞かせください。',
+    'ai.accom': '宿泊の好み', 'ai.special': '特別な興味やご要望?', 'ai.optional': '(任意)',
+    'ai.notesPh': '例: 温泉が好き、5歳の子連れ、運転は少なめ希望…',
+    'ai.building': 'NZの冒険を作成中…', 'ai.scanning': 'アオテアロアの2,400+スポットを検索中',
+    'ai.loadPlanner': '✓ プランナーへ', 'ai.regen': '↺ 再生成', 'ai.back': '← 戻る', 'ai.next': '次へ →',
+    'diary.title': '日記', 'diary.visitedOn': '訪問日', 'diary.photos': '写真',
+    'diary.noPhotos': '写真はまだありません', 'diary.journal': '日記',
+    'diary.journalPh': 'ここで何が起こりましたか?',
+    'diary.save': '保存', 'diary.cancel': 'キャンセル',
+    'book.viator': 'Viatorで予約', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'ツアーを予約 · 少額の手数料を頂きます', 'book.nearby': '近くの宿泊先',
   },
   ko: {
     'splash.headline': '호기심으로<br>뉴질랜드를 탐험하세요',
@@ -3329,6 +3401,24 @@ const LANG_DICT = {
     'compare.byCat': '카테고리별', 'compare.byRegion': '지역별', 'compare.all': '전체',
     'saved.title': '저장된 장소', 'saved.empty': '저장된 장소가 없습니다',
     'saved.emptyDesc': '지도에서 장소를 열고 ♡ 저장을 탭하세요.',
+    'ai.title': '✨ AI 여행 플래너', 'ai.sub': '뉴질랜드 2,400+ 명소 기반',
+    'ai.step1': '언제·누가', 'ai.step2': '관심사', 'ai.step3': '숙소·경로',
+    'ai.p1.title': '여행을 계획해 봐요', 'ai.p1.sub': '기본 정보를 알려주시면 나머지는 저희가.',
+    'ai.days': '며칠 동안?', 'ai.travellers': '여행자', 'ai.adults': '성인', 'ai.children': '어린이',
+    'ai.startFrom': '출발지', 'ai.roundTrip': '왕복 (출발지로 복귀)', 'ai.endIn': '도착지',
+    'ai.p2.title': '무엇을 좋아하세요?', 'ai.p2.sub': '많이 선택할수록 좋습니다.',
+    'ai.interests': '관심사 (모두 선택)', 'ai.pace': '여행 속도', 'ai.budget': '예산',
+    'ai.p3.title': '거의 다 왔어요!', 'ai.p3.sub': '숙소와 특별한 요청을 알려주세요.',
+    'ai.accom': '숙소 선호', 'ai.special': '특별한 관심사나 메모?', 'ai.optional': '(선택)',
+    'ai.notesPh': '예: 온천을 좋아함, 5살 아이, 운전 적게…',
+    'ai.building': '뉴질랜드 모험을 만드는 중…', 'ai.scanning': '아오테아로아의 2,400+ 명소를 검색 중',
+    'ai.loadPlanner': '✓ 플래너에 추가', 'ai.regen': '↺ 다시 생성', 'ai.back': '← 뒤로', 'ai.next': '다음 →',
+    'diary.title': '일기', 'diary.visitedOn': '방문일', 'diary.photos': '사진',
+    'diary.noPhotos': '아직 사진 없음', 'diary.journal': '일기 작성',
+    'diary.journalPh': '여기서 무슨 일이 있었나요?',
+    'diary.save': '저장', 'diary.cancel': '취소',
+    'book.viator': 'Viator 예약', 'book.gyg': 'GetYourGuide',
+    'book.tours': '투어 예약 · 소액 수수료', 'book.nearby': '근처 숙소 찾기',
   },
   de: {
     'splash.headline': 'Erkunden Sie Neuseeland<br>mit Neugier',
@@ -3360,6 +3450,24 @@ const LANG_DICT = {
     'compare.byCat': 'Nach Kategorie', 'compare.byRegion': 'Nach Region', 'compare.all': 'Alle zusammen',
     'saved.title': 'Gespeicherte Orte', 'saved.empty': 'Noch keine gespeicherten Orte',
     'saved.emptyDesc': 'Öffnen Sie einen Ort auf der Karte und tippen Sie ♡ Speichern.',
+    'ai.title': '✨ KI-Reiseplaner', 'ai.sub': 'Mit 2.400+ Orten in NZ',
+    'ai.step1': 'Wann & Wer', 'ai.step2': 'Interessen', 'ai.step3': 'Übernachtung & Route',
+    'ai.p1.title': 'Planen wir Ihre Reise', 'ai.p1.sub': 'Sagen Sie uns das Wesentliche, wir machen den Rest.',
+    'ai.days': 'WIE VIELE TAGE?', 'ai.travellers': 'REISENDE', 'ai.adults': 'Erwachsene', 'ai.children': 'Kinder',
+    'ai.startFrom': 'STARTPUNKT', 'ai.roundTrip': 'Rundreise (zurück zum Start)', 'ai.endIn': 'ENDPUNKT',
+    'ai.p2.title': 'Was lieben Sie?', 'ai.p2.sub': 'Wählen Sie so viele wie möglich.',
+    'ai.interests': 'INTERESSEN (alle zutreffenden)', 'ai.pace': 'REISETEMPO', 'ai.budget': 'BUDGET',
+    'ai.p3.title': 'Fast geschafft!', 'ai.p3.sub': 'Sagen Sie uns, wo Sie schlafen möchten.',
+    'ai.accom': 'UNTERKUNFT', 'ai.special': 'BESONDERE INTERESSEN?', 'ai.optional': '(optional)',
+    'ai.notesPh': 'z.B. Wir lieben Geothermie, haben ein 5-jähriges Kind, weniger Fahrzeit…',
+    'ai.building': 'Erstelle Ihr NZ-Abenteuer…', 'ai.scanning': 'Durchsuche 2.400+ Orte in Aotearoa',
+    'ai.loadPlanner': '✓ In Planer laden', 'ai.regen': '↺ Neu erstellen', 'ai.back': '← Zurück', 'ai.next': 'Weiter →',
+    'diary.title': 'Tagebuch', 'diary.visitedOn': 'Besucht am', 'diary.photos': 'Fotos',
+    'diary.noPhotos': 'Noch keine Fotos', 'diary.journal': 'Tagebucheintrag',
+    'diary.journalPh': 'Was ist hier passiert? Was möchten Sie behalten?',
+    'diary.save': 'Speichern', 'diary.cancel': 'Abbrechen',
+    'book.viator': 'Auf Viator buchen', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'Touren buchen · kleine Provision für uns', 'book.nearby': 'Unterkünfte in der Nähe',
   },
   fr: {
     'splash.headline': 'Explorez la Nouvelle-Zélande<br>avec Curiosité',
@@ -3391,6 +3499,24 @@ const LANG_DICT = {
     'compare.byCat': 'Par catégorie', 'compare.byRegion': 'Par région', 'compare.all': 'Tous ensemble',
     'saved.title': 'Lieux favoris', 'saved.empty': 'Aucun lieu enregistré',
     'saved.emptyDesc': 'Ouvrez un lieu sur la carte et touchez ♡ Sauver.',
+    'ai.title': '✨ Planificateur IA', 'ai.sub': 'Basé sur vos 2 400+ lieux de NZ',
+    'ai.step1': 'Quand & Qui', 'ai.step2': 'Centres d\'intérêt', 'ai.step3': 'Hébergement & Route',
+    'ai.p1.title': 'Planifions votre voyage', 'ai.p1.sub': 'Donnez-nous l\'essentiel, on s\'occupe du reste.',
+    'ai.days': 'COMBIEN DE JOURS ?', 'ai.travellers': 'VOYAGEURS', 'ai.adults': 'adultes', 'ai.children': 'enfants',
+    'ai.startFrom': 'DÉPART DE', 'ai.roundTrip': 'Aller-retour (retour au départ)', 'ai.endIn': 'ARRIVÉE À',
+    'ai.p2.title': 'Qu\'aimez-vous ?', 'ai.p2.sub': 'Choisissez autant que vous voulez.',
+    'ai.interests': 'INTÉRÊTS (tous applicables)', 'ai.pace': 'RYTHME', 'ai.budget': 'BUDGET',
+    'ai.p3.title': 'Presque fini !', 'ai.p3.sub': 'Dites-nous où dormir et tout ce qui compte.',
+    'ai.accom': 'PRÉFÉRENCE D\'HÉBERGEMENT', 'ai.special': 'INTÉRÊTS SPÉCIAUX OU NOTES ?', 'ai.optional': '(facultatif)',
+    'ai.notesPh': 'ex. Géothermie, enfant de 5 ans, moins de conduite…',
+    'ai.building': 'Création de votre aventure NZ…', 'ai.scanning': 'Analyse de 2 400+ lieux d\'Aotearoa',
+    'ai.loadPlanner': '✓ Charger', 'ai.regen': '↺ Régénérer', 'ai.back': '← Retour', 'ai.next': 'Suivant →',
+    'diary.title': 'Journal', 'diary.visitedOn': 'Visité le', 'diary.photos': 'Photos',
+    'diary.noPhotos': 'Aucune photo', 'diary.journal': 'Entrée du journal',
+    'diary.journalPh': 'Que s\'est-il passé ici ?',
+    'diary.save': 'Enregistrer', 'diary.cancel': 'Annuler',
+    'book.viator': 'Réserver sur Viator', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'Réserver des visites · petite commission pour nous', 'book.nearby': 'Hébergements à proximité',
   },
   es: {
     'splash.headline': 'Explora Nueva Zelanda<br>con Curiosidad',
@@ -3422,6 +3548,24 @@ const LANG_DICT = {
     'compare.byCat': 'Por categoría', 'compare.byRegion': 'Por región', 'compare.all': 'Todos juntos',
     'saved.title': 'Lugares guardados', 'saved.empty': 'Aún no hay lugares guardados',
     'saved.emptyDesc': 'Abre un lugar en el mapa y toca ♡ Guardar para añadirlo aquí.',
+    'ai.title': '✨ Planificador IA', 'ai.sub': 'Basado en 2.400+ lugares de NZ',
+    'ai.step1': 'Cuándo y Quién', 'ai.step2': 'Intereses', 'ai.step3': 'Alojamiento y Ruta',
+    'ai.p1.title': 'Planifiquemos tu viaje', 'ai.p1.sub': 'Cuéntanos lo básico y nos encargamos del resto.',
+    'ai.days': '¿CUÁNTOS DÍAS?', 'ai.travellers': 'VIAJEROS', 'ai.adults': 'adultos', 'ai.children': 'niños',
+    'ai.startFrom': 'SALIDA DESDE', 'ai.roundTrip': 'Ida y vuelta (regreso al inicio)', 'ai.endIn': 'TERMINA EN',
+    'ai.p2.title': '¿Qué te gusta?', 'ai.p2.sub': 'Elige todo lo que quieras.',
+    'ai.interests': 'INTERESES (todos los que apliquen)', 'ai.pace': 'RITMO DE VIAJE', 'ai.budget': 'PRESUPUESTO',
+    'ai.p3.title': '¡Casi listo!', 'ai.p3.sub': 'Cuéntanos sobre alojamiento y peticiones especiales.',
+    'ai.accom': 'PREFERENCIA DE ALOJAMIENTO', 'ai.special': '¿INTERESES O NOTAS ESPECIALES?', 'ai.optional': '(opcional)',
+    'ai.notesPh': 'p.ej. Nos gustan zonas geotermales, niño de 5 años, menos conducción…',
+    'ai.building': 'Creando tu aventura en NZ…', 'ai.scanning': 'Analizando 2.400+ lugares de Aotearoa',
+    'ai.loadPlanner': '✓ Cargar', 'ai.regen': '↺ Regenerar', 'ai.back': '← Atrás', 'ai.next': 'Siguiente →',
+    'diary.title': 'Diario', 'diary.visitedOn': 'Visitado el', 'diary.photos': 'Fotos',
+    'diary.noPhotos': 'Aún sin fotos', 'diary.journal': 'Entrada del diario',
+    'diary.journalPh': '¿Qué pasó aquí? ¿Qué te encantó?',
+    'diary.save': 'Guardar', 'diary.cancel': 'Cancelar',
+    'book.viator': 'Reservar en Viator', 'book.gyg': 'GetYourGuide',
+    'book.tours': 'Reservar tours · pequeña comisión para nosotros', 'book.nearby': 'Alojamientos cercanos',
   },
 };
 
@@ -3513,24 +3657,24 @@ function openDiaryEditor(stopId, stopName) {
   overlay.innerHTML = `
     <div style="background:var(--surface);border-radius:14px;padding:20px;max-width:480px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 12px 40px rgba(0,0,0,0.5);">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
-        <strong style="color:var(--text);font-size:15px;">📔 Diary — ${stopName}</strong>
+        <strong style="color:var(--text);font-size:15px;">📔 ${t('diary.title')} — ${stopName}</strong>
         <button onclick="document.getElementById('diaryOverlay').remove()" style="background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;">×</button>
       </div>
 
-      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">Visited on</label>
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">${t('diary.visitedOn')}</label>
       <input type="date" id="diaryDate_${stopId}" value="${dateStr}" style="width:100%;padding:7px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface2);color:var(--text);font-size:13px;margin-bottom:12px;box-sizing:border-box;" />
 
-      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📸 Photos</label>
-      <div id="diaryPhotos_${stopId}" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;min-height:80px;">${photosHtml || '<p style="color:var(--muted);font-style:italic;font-size:12px;">No photos yet</p>'}</div>
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📸 ${t('diary.photos')}</label>
+      <div id="diaryPhotos_${stopId}" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;min-height:80px;">${photosHtml || `<p style="color:var(--muted);font-style:italic;font-size:12px;">${t('diary.noPhotos')}</p>`}</div>
       <input type="file" id="diaryPhotoUpload_${stopId}" accept="image/*" multiple onchange="addDiaryPhotos('${stopId}',this.files)" style="margin-bottom:14px;color:var(--text);font-size:12px;" />
 
-      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📝 Journal entry</label>
-      <textarea id="diaryJournal_${stopId}" placeholder="What happened here? What did you love, learn, or want to remember?"
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📝 ${t('diary.journal')}</label>
+      <textarea id="diaryJournal_${stopId}" placeholder="${t('diary.journalPh').replace(/"/g,'&quot;')}"
         style="width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface2);color:var(--text);font-size:13px;min-height:100px;resize:vertical;font-family:inherit;line-height:1.5;">${entry.journal || ''}</textarea>
 
       <div style="display:flex;gap:8px;margin-top:14px;">
-        <button onclick="saveDiaryEntry('${stopId}')" style="flex:1;background:var(--primary);color:white;border:none;padding:9px;border-radius:8px;font-weight:700;cursor:pointer;">💾 Save</button>
-        <button onclick="document.getElementById('diaryOverlay').remove()" style="background:transparent;color:var(--text);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-weight:700;cursor:pointer;">Cancel</button>
+        <button onclick="saveDiaryEntry('${stopId}')" style="flex:1;background:var(--primary);color:white;border:none;padding:9px;border-radius:8px;font-weight:700;cursor:pointer;">💾 ${t('diary.save')}</button>
+        <button onclick="document.getElementById('diaryOverlay').remove()" style="background:transparent;color:var(--text);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-weight:700;cursor:pointer;">${t('diary.cancel')}</button>
       </div>
     </div>`;
   document.body.appendChild(overlay);
@@ -4940,12 +5084,12 @@ function openPoiInfoWindow(a, marker) {
       </div>` : ''}
       ${tagsHtml ? `<div class="tags" style="padding:0 14px 8px;">${tagsHtml}</div>` : ''}
       <div class="affiliate-cta-row">
-        <a href="${affilViatorUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity">🎯 Book on Viator</a>
-        <a href="${affilGYGUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 GetYourGuide</a>
+        <a href="${affilViatorUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity">🎯 ${t('book.viator')}</a>
+        <a href="${affilGYGUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 ${t('book.gyg')}</a>
       </div>
       <div class="affiliate-strip">
-        <span>Book tours · earn us a small commission</span>
-        <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 Find nearby stays</a>
+        <span>${t('book.tours')}</span>
+        <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 ${t('book.nearby')}</a>
       </div>
       <div class="echo-popup-strip" onclick="openEchoVerse('${a.id}')">
         <div class="echo-popup-badge">🎙 ${echoMemoryCount(a.id) > 0 ? `${echoMemoryCount(a.id)} visitor voice${echoMemoryCount(a.id) !== 1 ? 's' : ''}` : 'Community Voices'} <span>· real stories from visitors</span></div>
