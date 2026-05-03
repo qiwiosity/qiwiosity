@@ -4506,6 +4506,9 @@ function openQuiz() {
 function closeQuiz() {
   document.getElementById('quizOverlay').classList.remove('open');
   _qzStopRecognition();
+  if (_qzAutoNextTimer) { clearTimeout(_qzAutoNextTimer); _qzAutoNextTimer = null; }
+  _qzHandsFreeActive = false;
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch {} }
 }
 
 function addQuizPlayer() {
@@ -4564,6 +4567,7 @@ function startQuiz() {
   if (!_quizState.players.length) { showToast('Add at least one player'); return; }
   const length = parseInt(document.getElementById('qzLength').value, 10) || 8;
   const cat = document.getElementById('qzCat').value;
+  const handsFree = !!document.getElementById('qzHandsFree')?.checked;
   let pool = QUIZ_BANK.slice();
   if (cat !== 'all') pool = pool.filter(q => q.cat === cat);
   // shuffle
@@ -4576,10 +4580,14 @@ function startQuiz() {
   });
   const scores = {};
   _quizState.players.forEach(p => scores[p.id] = 0);
-  _quizState = Object.assign(_quizState, { stage: 'play', questions, idx: 0, scores, length, lockedPlayer: null, transcript: '', answered: false });
-  // Announce first player turn (round-robin)
-  _qzAnnounceTurn();
-  renderQuiz();
+  _quizState = Object.assign(_quizState, { stage: 'play', questions, idx: 0, scores, length, lockedPlayer: null, transcript: '', answered: false, handsFree });
+  if (handsFree) {
+    renderQuiz();
+    setTimeout(() => _qzReadAndListen(), 400);
+  } else {
+    _qzAnnounceTurn();
+    renderQuiz();
+  }
 }
 function _qzAnnounceTurn() {
   // Optional: speak "Player X, your turn!" using saved voice or TTS
@@ -4644,6 +4652,8 @@ function manualOverrideCorrect(makeCorrect) {
 }
 
 function nextQuestion() {
+  _qzStopRecognition();
+  if (_qzAutoNextTimer) { clearTimeout(_qzAutoNextTimer); _qzAutoNextTimer = null; }
   _quizState.idx++;
   _quizState.lockedPlayer = null;
   _quizState.transcript = '';
@@ -4651,20 +4661,176 @@ function nextQuestion() {
   _quizState.lastResult = null;
   if (_quizState.idx >= _quizState.questions.length) {
     _quizState.stage = 'end';
+    if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch {} }
     const summary = {
       ts: Date.now(),
       length: _quizState.questions.length,
       results: _quizState.players.map(p => ({ name: p.name, score: _quizState.scores[p.id] || 0 })),
     };
     const hist = _loadQuizHistory(); hist.unshift(summary); _saveQuizHistory(hist);
+    if (_quizState.handsFree && 'speechSynthesis' in window) {
+      const top = _quizState.players.map(p => ({ name: p.name, sc: _quizState.scores[p.id] || 0 })).sort((a,b)=>b.sc-a.sc)[0];
+      try { const u = new SpeechSynthesisUtterance(`Quiz finished! ${top ? top.name + ' wins with ' + top.sc + ' points.' : ''}`); speechSynthesis.speak(u); } catch {}
+    }
+    renderQuiz();
+  } else if (_quizState.handsFree) {
+    renderQuiz();
+    setTimeout(() => _qzReadAndListen(), 300);
   } else {
     _qzAnnounceTurn();
+    renderQuiz();
   }
-  renderQuiz();
+}
+
+let _qzAutoNextTimer = null;
+let _qzHandsFreeActive = false;
+
+function _qzSpeak(text, onDone) {
+  if (!('speechSynthesis' in window)) { if (onDone) onDone(); return; }
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.rate = 1.0;
+    u.onend = () => { if (onDone) onDone(); };
+    u.onerror = () => { if (onDone) onDone(); };
+    speechSynthesis.speak(u);
+  } catch { if (onDone) onDone(); }
+}
+
+function _qzReadAndListen() {
+  if (!_quizState || _quizState.stage !== 'play' || !_quizState.handsFree) return;
+  const q = _quizState.questions[_quizState.idx];
+  const letters = ['A', 'B', 'C', 'D'];
+  const optsSpoken = q.opts.map((o, i) => `${letters[i]}. ${o}`).join('. ');
+  const text = `Question ${_quizState.idx + 1}. ${q.q} ${optsSpoken}. Say your name, then your answer.`;
+  _qzSpeak(text, () => {
+    if (_quizState && _quizState.stage === 'play' && _quizState.handsFree && !_quizState.answered) {
+      _qzStartContinuousListen();
+    }
+  });
+}
+
+function _qzStartContinuousListen() {
+  if (!_quizState || _quizState.stage !== 'play' || !_quizState.handsFree || _quizState.answered) return;
+  const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Rec) { showToast('Speech recognition unavailable — switch off hands-free mode'); return; }
+  if (_qzRecognition) { try { _qzRecognition.stop(); } catch {} _qzRecognition = null; }
+  const rec = new Rec();
+  rec.lang = 'en-NZ';
+  rec.continuous = true;
+  rec.interimResults = true;
+  rec.maxAlternatives = 2;
+  _qzHandsFreeActive = true;
+  rec.onresult = (ev) => {
+    let interim = '', finalText = '';
+    for (let i = ev.resultIndex; i < ev.results.length; i++) {
+      const r = ev.results[i];
+      if (r.isFinal) finalText += r[0].transcript + ' ';
+      else interim += r[0].transcript;
+    }
+    const tEl = document.getElementById('qzTranscript');
+    if (tEl) tEl.textContent = '"' + (finalText + interim).trim() + '"';
+    _quizState.transcript = (finalText + interim).trim();
+    if (finalText.trim()) _qzParseHandsFree(finalText.trim().toLowerCase());
+  };
+  rec.onerror = (e) => {
+    console.warn('hands-free rec error', e);
+    const err = e && e.error;
+    if (err === 'not-allowed' || err === 'service-not-allowed') {
+      showToast('Microphone permission denied — hands-free mode needs mic access');
+      _qzHandsFreeActive = false;
+    } else if (err === 'audio-capture') {
+      showToast('No microphone detected');
+      _qzHandsFreeActive = false;
+    }
+  };
+  rec.onend = () => {
+    _qzRecognition = null;
+    if (_qzHandsFreeActive && _quizState && _quizState.stage === 'play' && _quizState.handsFree && !_quizState.answered) {
+      try { rec.start(); _qzRecognition = rec; } catch { setTimeout(() => _qzStartContinuousListen(), 300); }
+    }
+  };
+  try { rec.start(); _qzRecognition = rec; } catch (e) { console.warn(e); }
+}
+
+function _qzParseHandsFree(text) {
+  if (!_quizState || _quizState.answered) return;
+  const q = _quizState.questions[_quizState.idx];
+  // Voice commands
+  if (/\b(repeat|say again|read again)\b/.test(text)) { _qzStopRecognition(); _qzReadAndListen(); return; }
+  if (/\b(skip|pass|next question)\b/.test(text)) {
+    _quizState.answered = true;
+    _quizState.lastResult = { optIdx: -1, correct: false, scorer: null, fromVoice: true };
+    _qzStopRecognition();
+    _qzSpeak('Skipping. The answer was ' + q.opts[q.a] + '.', () => nextQuestion());
+    return;
+  }
+  // Find player by name using word-boundary match (avoid 'sam' inside 'same')
+  let scorer = null, nameEndIdx = -1;
+  for (const p of _quizState.players) {
+    const nm = p.name.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp('\\b' + nm + '\\b');
+    const m = text.match(re);
+    if (m) { scorer = p.id; nameEndIdx = m.index + m[0].length; break; }
+  }
+  if (!scorer && _quizState.players.length === 1) scorer = _quizState.players[0].id;
+  // Search for answer in segment AFTER player name (or whole text if single player)
+  const segment = (nameEndIdx >= 0 ? text.slice(nameEndIdx) : text).trim();
+  let optIdx = -1;
+  // Letter/number answers: require explicit cue OR letter b/c/d (skip lone 'a' which is too common as article)
+  // Match: "answer is B", "letter C", "option D", or any cued b/c/d, or numbers one..four
+  const cuedLetter = segment.match(/\b(?:answer\s+is|answer\s*[:=]?|letter|option|choice|pick|i\s+say|i'?ll\s+say|going\s+with|it'?s)\s+([a-d])\b/);
+  const numMap = { one: 0, two: 1, three: 2, four: 3 };
+  const numWord = segment.match(/\b(one|two|three|four)\b/);
+  const bareBcd = segment.match(/\b([b-d])\b/); // safe: b/c/d aren't common articles
+  if (cuedLetter) optIdx = cuedLetter[1].charCodeAt(0) - 97;
+  else if (numWord) optIdx = numMap[numWord[1]];
+  else if (bareBcd) optIdx = bareBcd[1].charCodeAt(0) - 97;
+  else {
+    // Standalone short utterance: "a", "b", "Sarah a"
+    const tokens = segment.split(/\s+/).filter(Boolean);
+    if (tokens.length === 1 && /^[a-d]$/.test(tokens[0])) optIdx = tokens[0].charCodeAt(0) - 97;
+  }
+  if (optIdx < 0 || optIdx >= q.opts.length) {
+    // Fall back to keyword fuzzy match against options
+    let bestIdx = -1, bestScore = 0;
+    q.opts.forEach((opt, i) => {
+      const optWords = opt.toLowerCase().replace(/[^a-zāēīōū0-9 ]/gi, ' ').split(/\s+/).filter(w => w.length > 2);
+      let score = 0;
+      optWords.forEach(w => { if (segment.includes(w)) score++; });
+      if (segment.includes(opt.toLowerCase())) score += 5;
+      if (score > bestScore) { bestScore = score; bestIdx = i; }
+    });
+    if (bestScore >= 1) optIdx = bestIdx;
+  }
+  if (optIdx < 0) return; // keep listening
+  if (!scorer) {
+    _qzStopRecognition();
+    _qzSpeak("I heard an answer but didn't catch a name. Please say your name first.", () => {
+      if (_quizState && _quizState.stage === 'play' && _quizState.handsFree && !_quizState.answered) _qzStartContinuousListen();
+    });
+    return;
+  }
+  // Lock & answer
+  _quizState.lockedPlayer = scorer;
+  _qzHandsFreeActive = false;
+  _qzStopRecognition();
+  answerQuestion(optIdx, true);
+  // Spoken result + auto-advance
+  const scorerName = _quizState.players.find(p => p.id === scorer)?.name || '';
+  const resultText = _quizState.lastResult.correct
+    ? `Correct, ${scorerName}! Now on ${_quizState.scores[scorer]} points.`
+    : `Not quite, ${scorerName}. The answer was ${q.opts[q.a]}.`;
+  _qzSpeak(resultText, () => {
+    _qzAutoNextTimer = setTimeout(() => { if (_quizState && _quizState.stage === 'play' && _quizState.answered) nextQuestion(); }, 1500);
+  });
 }
 
 function backToSetup() {
   _qzStopRecognition();
+  _qzHandsFreeActive = false;
+  if (_qzAutoNextTimer) { clearTimeout(_qzAutoNextTimer); _qzAutoNextTimer = null; }
+  if ('speechSynthesis' in window) { try { speechSynthesis.cancel(); } catch {} }
   _quizState.stage = 'setup';
   _quizState.questions = [];
   _quizState.idx = 0;
@@ -4719,6 +4885,7 @@ function _qzStartRecognition() {
   } catch (e) { showToast('Could not start microphone'); }
 }
 function _qzStopRecognition() {
+  _qzHandsFreeActive = false;
   if (_qzRecognition) { try { _qzRecognition.stop(); } catch {} _qzRecognition = null; }
   const btn = document.getElementById('qzMicBtn');
   if (btn) btn.classList.remove('recording');
@@ -4799,6 +4966,10 @@ function renderQuiz() {
             <option value="20">20 — marathon</option>
           </select>
         </div>
+        <div class="al-row" style="align-items:flex-start;">
+          <div class="lbl" style="line-height:1.4;">🚗 Hands-free road trip mode<br><span style="font-weight:500;font-size:11px;color:var(--muted);">App reads questions aloud and listens. Say your name + answer (e.g. "Sarah, B" or "Tom, hongi"). Voice commands: "repeat", "skip".</span></div>
+          <label class="switch"><input type="checkbox" id="qzHandsFree" /><span class="slider"></span></label>
+        </div>
       </div>
 
       ${hist.length ? `<div class="al-section">
@@ -4868,10 +5039,16 @@ function renderQuiz() {
 
       <div class="qz-options">${optsHtml}</div>
 
-      ${speechAvail && !s.answered ? `
+      ${s.handsFree ? `
+        <div style="padding:10px 12px;background:rgba(124,58,237,0.08);border:1.5px solid #7c3aed;border-radius:8px;margin:10px 0;text-align:center;">
+          <div style="font-weight:800;font-size:13px;color:#7c3aed;margin-bottom:4px;">🚗 Hands-free mode active</div>
+          <div style="font-size:11px;color:var(--muted);line-height:1.4;">Listening… Say your name + answer (e.g. "Sarah, B"). Try "repeat" or "skip".</div>
+          <div class="qz-transcript" id="qzTranscript" style="margin-top:6px;">${s.transcript ? '"' + _esc(s.transcript) + '"' : '…'}</div>
+        </div>
+      ` : (speechAvail && !s.answered ? `
         <button id="qzMicBtn" class="qz-mic-btn" onclick="toggleQuizMic()">🎤 Speak your answer (say the letter or option)</button>
         <div class="qz-transcript" id="qzTranscript">${s.transcript ? '"' + _esc(s.transcript) + '"' : '…'}</div>
-      ` : (!speechAvail ? `<div style="font-size:11px;color:var(--muted);text-align:center;margin-top:8px;">Voice answers unavailable — tap an option above.</div>` : '')}
+      ` : (!speechAvail ? `<div style="font-size:11px;color:var(--muted);text-align:center;margin-top:8px;">Voice answers unavailable — tap an option above.</div>` : ''))}
 
       ${resultPanel}
 
