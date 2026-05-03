@@ -9855,19 +9855,31 @@ function buildAIItinerary(config) {
   const stopsPerDay = { relaxed: 3, balanced: 4, active: 5 }[pace] || 3;
   const totalStops = numDays * stopsPerDay;
 
-  // Score each POI
-  const candidates = ATTRACTIONS.filter(p => p.lat && p.lng).map(poi => {
-    let score = (poi.rating || 3.5) * 2;
-    score += Math.min(Math.log1p(poi.review_count || 0), 6);
-    if (interests.has(poi.category)) score += 10;
-    // Light family-friendly bonus if children
-    if (config.children > 0 && (poi.price_nzd || 0) < 30) score += 1;
-    // Budget alignment
-    const priceLevel = !poi.price_nzd ? 2 : poi.price_nzd < 20 ? 1 : poi.price_nzd < 80 ? 2 : 3;
-    if (budget === 'budget' && priceLevel === 1) score += 2;
-    if (budget === 'luxury' && priceLevel === 3) score += 2;
-    return { ...poi, _aiScore: score };
-  });
+  // Score each POI — uses real rating data this time (was previously reading non-existent fields)
+  const candidates = ATTRACTIONS
+    .filter(p => p.lat && p.lng)
+    // Quality floor: drop POIs with a known rating below 3.0 (clear duds). Unrated POIs are kept.
+    .filter(p => !(p.reviews && typeof p.reviews.rating === 'number' && p.reviews.rating < 3.0))
+    .map(poi => {
+      const rating = poi.reviews?.rating;
+      // Base quality score (0–10): rating-driven, with a neutral 3.6 default for unrated POIs
+      let score = (rating != null ? rating : 3.6) * 2.2;
+      // LANDMARK BONUS — these are the can't-miss stops a real planner anchors a trip around
+      if (rating != null) {
+        if (rating >= 4.7) score += 8;        // top-tier icon
+        else if (rating >= 4.5) score += 5;   // major attraction
+        else if (rating >= 4.2) score += 2;   // solid pick
+      }
+      // Interest match
+      if (interests.has(poi.category)) score += 10;
+      // Family-friendly bonus
+      if (config.children > 0 && (poi.price_nzd || 0) < 30) score += 1;
+      // Budget alignment
+      const priceLevel = !poi.price_nzd ? 2 : poi.price_nzd < 20 ? 1 : poi.price_nzd < 80 ? 2 : 3;
+      if (budget === 'budget' && priceLevel === 1) score += 2;
+      if (budget === 'luxury' && priceLevel === 3) score += 2;
+      return { ...poi, _aiScore: score, _rating: rating };
+    });
 
   // Starting & ending positions from regions
   const startReg = REGIONS.find(r => r.id === startRegionId);
@@ -9985,20 +9997,25 @@ function buildAIItinerary(config) {
       if (nearEnd.length >= stopsLeft) activePool = nearEnd;
     }
 
+    // Real-person planning: stops within a day cluster tightly (~30-50km between sights),
+    // but the FIRST stop of a new day is allowed a longer "morning drive" to the next region.
+    const isMorningDrive = i > 0 && (i % stopsPerDay === 0);
+
     let best = null, bestS = -Infinity;
     for (const p of activePool) {
       if (used.has(String(p.id))) continue;
       const dPrev = haversine(pos, p);
       const dNext = anchor ? haversine(p, anchor) : 0;
       const detour = anchor ? Math.max(0, (dPrev + dNext) - directDist) : 0;
-      // Distance from previous — steep
-      const prevPenalty = dPrev / 20;
-      // Long-hop penalty
+      // Distance penalty: TIGHT within a day (sightseeing), LOOSE between days (morning drive)
+      const prevPenalty = isMorningDrive
+        ? Math.min(dPrev / 60, 6)            // morning drive: gentle, allow long hops up to ~250km
+        : Math.max(0, (dPrev - 25) / 8);     // intra-day: punish anything beyond ~25km hard
+      // Long-hop penalty (kicks in for absurd jumps even on morning drive)
       const hopPenalty = dPrev > HARD_HOP_KM ? (dPrev - HARD_HOP_KM) / 15 : 0;
-      // Detour penalty (only if there's an anchor)
+      // Detour penalty (only with anchor)
       const detourPenalty = anchor ? (detour / 80) * (0.3 + 0.7 * endPull) : 0;
-      // Island penalty: ONLY for round trips or directed trips that don't span islands.
-      // For inter-island directed trips, crossing is mandatory so no penalty.
+      // Island penalty: only for non-island-crossing trips
       const islandPenalty = (!crossesIslands && islandOf(p.lat) !== prevIsland) ? 12 : 0;
       // Directed-trip progress penalty: candidate must move us closer to end at the required rate
       let progressPenalty = 0;
