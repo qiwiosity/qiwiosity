@@ -2670,7 +2670,7 @@ async function loadAllData() {
     renderTopPicks();
     restoreItineraryFromStorage();
     try { recomputeBadges(); updatePassportBadge(); } catch {}
-    try { seedDemoContributionsIfEmpty(); updateCommunityHeaderBadge(); } catch {}
+    try { loadContribsFromApi().catch(()=>{}); } catch {}
     renderAccomSortChips();
     if (document.getElementById('adminOverlay')?.classList.contains('on')) switchAdminTab('overview');
 
@@ -6985,35 +6985,80 @@ const REPUTATION_TIERS = [
   { id: 'kaitiaki',  label: 'Honorary Kaitiaki',emoji: '🏆', color: '#d97706',  minContrib: 100,minScore: 500 },
 ];
 
-function _loadContribs() { try { return JSON.parse(localStorage.getItem(COMMUNITY_KEY) || '[]') || []; } catch { return []; } }
-function _saveContribs(arr) { try { localStorage.setItem(COMMUNITY_KEY, JSON.stringify(arr)); } catch (e) { showToast('Storage full — try clearing old contributions'); } }
-function _loadMyVotes() { try { return JSON.parse(localStorage.getItem(COMM_VOTES_KEY) || '{}') || {}; } catch { return {}; } }
-function _saveMyVotes(v) { try { localStorage.setItem(COMM_VOTES_KEY, JSON.stringify(v)); } catch {} }
+// API-backed cache. All renders read from this cache; mutations refresh it.
+let _contribsCache = [];
+let _topCache = [];
+let _communityLoaded = false;
+
+function _apiHeaders() {
+  const p = getProfile();
+  const h = { 'Content-Type': 'application/json' };
+  if (p?.id) h['x-qw-user-id'] = p.id;
+  if (p?.handle) h['x-qw-handle'] = p.handle;
+  return h;
+}
+async function _api(path, opts) {
+  const r = await fetch(path, { headers: _apiHeaders(), ...(opts || {}) });
+  let data = null;
+  try { data = await r.json(); } catch {}
+  if (!r.ok) throw new Error((data && data.error) || `Request failed (${r.status})`);
+  return data;
+}
+
+async function loadContribsFromApi(opts) {
+  try {
+    const qs = opts?.poiId ? `?poiId=${encodeURIComponent(opts.poiId)}&limit=500` : '?limit=500';
+    const data = await _api('/api/community/contribs' + qs);
+    if (!opts?.poiId) _contribsCache = data.contribs || [];
+    _communityLoaded = true;
+    updateCommunityHeaderBadge();
+    return data.contribs || [];
+  } catch (e) {
+    console.warn('community load failed:', e.message);
+    return [];
+  }
+}
+async function loadTopFromApi() {
+  try {
+    const data = await _api('/api/community/top');
+    _topCache = data.contributors || [];
+  } catch { _topCache = []; }
+}
+
+function _loadContribs() { return _contribsCache; }
+function _voteScore(c) { return (c.score != null) ? c.score : ((c.upCount||0) - (c.downCount||0)); }
 
 function getProfile() {
   try { return JSON.parse(localStorage.getItem(PROFILE_KEY) || 'null'); } catch { return null; }
 }
 function _saveProfile(p) { try { localStorage.setItem(PROFILE_KEY, JSON.stringify(p)); } catch {} }
-function ensureProfile() {
+
+async function ensureProfile() {
   let p = getProfile();
-  if (p?.handle) return p;
+  if (p?.handle && p?.id) return p;
   const handle = (prompt('Pick a display name to contribute under:\n(Letters, numbers, 2-20 chars)', 'KiwiTraveller') || '').trim();
   if (!handle) return null;
   const safe = handle.replace(/[^\w\- ]/g, '').slice(0, 20);
   if (safe.length < 2) { showToast('Name too short'); return null; }
-  p = { handle: safe, joinedAt: Date.now(), id: 'u_' + Math.random().toString(36).slice(2, 10) };
+  const id = 'u_' + Math.random().toString(36).slice(2, 12);
+  try {
+    await fetch('/api/community/users', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, handle: safe }) })
+      .then(r => r.json()).then(d => { if (d.error) throw new Error(d.error); });
+  } catch (e) {
+    showToast('Could not register: ' + e.message);
+    return null;
+  }
+  p = { handle: safe, joinedAt: Date.now(), id };
   _saveProfile(p);
   showToast(`Welcome, ${safe} 🌿`);
   return p;
 }
 
-function getContribsForPoi(poiId) { return _loadContribs().filter(c => c.poiId === poiId && !c.hidden); }
+function getContribsForPoi(poiId) { return _contribsCache.filter(c => c.poiId === poiId); }
 function communityCountForPoi(poiId) { return getContribsForPoi(poiId).length; }
 
-function _voteScore(c) { return (c.upvotes?.length || 0) - (c.downvotes?.length || 0); }
-
 function _contribsByAuthor(handle) {
-  return _loadContribs().filter(c => c.authorHandle === handle && !c.hidden);
+  return _contribsCache.filter(c => c.authorHandle === handle);
 }
 
 function getReputation(handle) {
@@ -7037,7 +7082,7 @@ function _renderRepBadge(handle, small) {
 function updateCommunityHeaderBadge() {
   const el = document.getElementById('communityBadgeCount');
   if (!el) return;
-  const open = _loadContribs().filter(c => c.type === 'issue' && c.status === 'open' && !c.hidden).length;
+  const open = _contribsCache.filter(c => c.type === 'issue' && c.status === 'open').length;
   if (open > 0) { el.textContent = open; el.style.display = 'inline-flex'; }
   else el.style.display = 'none';
 }
@@ -7120,8 +7165,8 @@ async function _onComposePhotoChange(input) {
   }
 }
 
-function openCommunityCompose(poiId, presetType) {
-  const profile = ensureProfile();
+async function openCommunityCompose(poiId, presetType) {
+  const profile = await ensureProfile();
   if (!profile) return;
   _composeMediaDataUrl = null;
   const a = poiId ? ATTRACTIONS.find(x => x.id === poiId) : null;
@@ -7164,7 +7209,7 @@ function openCommunityCompose(poiId, presetType) {
       <button class="btn" onclick="closeCompose()" style="flex:1;">Cancel</button>
       <button class="btn primary" onclick="submitContribution()" style="flex:2;background:linear-gradient(135deg,#15888A,#7c3aed);">📨 Post to Community</button>
     </div>
-    <p style="font-size:10px;color:var(--muted);margin-top:14px;line-height:1.5;text-align:center;">By posting you agree to be respectful. In this preview build contributions are stored locally on your device. A real shared backend is coming.</p>
+    <p style="font-size:10px;color:var(--muted);margin-top:14px;line-height:1.5;text-align:center;">By posting you agree to be respectful. Posts are visible to all Qiwiosity users.</p>
   `;
   document.getElementById('composeOverlay').classList.add('open');
 }
@@ -7183,8 +7228,8 @@ function _selectComposeType(k) {
   if (help) help.textContent = CONTRIB_TYPES[k].help;
 }
 
-function submitContribution() {
-  const profile = ensureProfile();
+async function submitContribution() {
+  const profile = await ensureProfile();
   if (!profile) return;
   const type = _selectedComposeType || 'tip';
   const poiId = (document.getElementById('composePoi')?.value || '') || null;
@@ -7192,88 +7237,69 @@ function submitContribution() {
   const body = (document.getElementById('composeBodyText')?.value || '').trim().slice(0, 2000);
   if (!title) { showToast('Please add a title'); return; }
   if (!body && !_composeMediaDataUrl) { showToast('Add some details or a photo'); return; }
-  const arr = _loadContribs();
-  const c = {
-    id: 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-    type,
-    poiId,
-    title,
-    body,
-    mediaDataUrl: _composeMediaDataUrl || null,
-    authorHandle: profile.handle,
-    authorId: profile.id,
-    createdAt: Date.now(),
-    upvotes: [],
-    downvotes: [],
-    status: type === 'issue' ? 'open' : 'live',
-    hidden: false,
-  };
-  arr.push(c);
-  if (arr.length > 800) arr.splice(0, arr.length - 800);
-  _saveContribs(arr);
-  closeCompose();
-  showToast('✅ Posted to community — thank you!');
-  updateCommunityHeaderBadge();
-  // Refresh views if open
-  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
-  if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+  try {
+    await _api('/api/community/contribs', {
+      method: 'POST',
+      body: JSON.stringify({ type, poiId, title, body, mediaDataUrl: _composeMediaDataUrl || null }),
+    });
+    closeCompose();
+    showToast('✅ Posted to community — thank you!');
+    await loadContribsFromApi();
+    if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+    if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+  } catch (e) {
+    showToast('Post failed: ' + e.message);
+  }
 }
 
-function voteContrib(id, dir) {
-  const profile = ensureProfile();
+async function voteContrib(id, dir) {
+  const profile = await ensureProfile();
   if (!profile) return;
-  const arr = _loadContribs();
-  const c = arr.find(x => x.id === id);
-  if (!c) return;
-  if (c.authorId === profile.id) { showToast("Can't vote on your own post"); return; }
-  c.upvotes = c.upvotes || []; c.downvotes = c.downvotes || [];
-  const myVotes = _loadMyVotes();
-  const prev = myVotes[id]; // 1 | -1 | undefined
-  // Remove any prior
-  c.upvotes = c.upvotes.filter(v => v !== profile.id);
-  c.downvotes = c.downvotes.filter(v => v !== profile.id);
-  let newDir = dir;
-  if (prev === dir) newDir = 0; // toggle off
-  if (newDir === 1) c.upvotes.push(profile.id);
-  if (newDir === -1) c.downvotes.push(profile.id);
-  if (newDir === 0) delete myVotes[id]; else myVotes[id] = newDir;
-  _saveContribs(arr); _saveMyVotes(myVotes);
-  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  const c = _contribsCache.find(x => x.id === id);
+  const prev = c?.myVote || 0;
+  const newDir = (prev === dir) ? 0 : dir; // toggle off
+  try {
+    const res = await _api(`/api/community/contribs/${encodeURIComponent(id)}/vote`, {
+      method: 'POST',
+      body: JSON.stringify({ dir: newDir }),
+    });
+    // Update cache locally for instant feedback
+    const idx = _contribsCache.findIndex(x => x.id === id);
+    if (idx >= 0 && res.contrib) _contribsCache[idx] = res.contrib;
+    if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  } catch (e) {
+    showToast(e.message);
+  }
 }
 
-function resolveIssue(id) {
-  const profile = ensureProfile();
+async function resolveIssue(id) {
+  const profile = await ensureProfile();
   if (!profile) return;
-  const arr = _loadContribs();
-  const c = arr.find(x => x.id === id);
-  if (!c || c.type !== 'issue') return;
-  c.status = c.status === 'resolved' ? 'open' : 'resolved';
-  c.resolvedBy = c.status === 'resolved' ? profile.handle : null;
-  c.resolvedAt = c.status === 'resolved' ? Date.now() : null;
-  _saveContribs(arr);
-  showToast(c.status === 'resolved' ? '✓ Marked as resolved' : 'Reopened');
-  updateCommunityHeaderBadge();
-  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  try {
+    const res = await _api(`/api/community/contribs/${encodeURIComponent(id)}/resolve`, { method: 'POST' });
+    showToast(res.status === 'resolved' ? '✓ Marked as resolved' : 'Reopened');
+    await loadContribsFromApi();
+    if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  } catch (e) { showToast(e.message); }
 }
 
-function flagContrib(id) {
-  if (!confirm('Hide this contribution from your view? (Real moderation requires the shared backend.)')) return;
-  const arr = _loadContribs();
-  const c = arr.find(x => x.id === id);
-  if (!c) return;
-  c.hidden = true;
-  _saveContribs(arr);
-  showToast('Hidden from your view');
-  updateCommunityHeaderBadge();
-  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
-  if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+async function flagContrib(id) {
+  if (!confirm('Flag this contribution? Posts flagged by 5+ users get hidden automatically.')) return;
+  const profile = await ensureProfile();
+  if (!profile) return;
+  try {
+    const res = await _api(`/api/community/contribs/${encodeURIComponent(id)}/flag`, { method: 'POST' });
+    showToast(res.hidden ? 'Hidden — thanks for flagging' : `Flagged (${res.flagCount}/5)`);
+    await loadContribsFromApi();
+    if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+    if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+  } catch (e) { showToast(e.message); }
 }
 
 function _renderContribCard(c) {
   const def = CONTRIB_TYPES[c.type] || CONTRIB_TYPES.tip;
   const score = _voteScore(c);
-  const myVotes = _loadMyVotes();
-  const myVote = myVotes[c.id] || 0;
+  const myVote = c.myVote || 0;
   const a = c.poiId ? ATTRACTIONS.find(x => x.id === c.poiId) : null;
   const profile = getProfile();
   const isMine = profile && c.authorId === profile.id;
@@ -7307,32 +7333,31 @@ function _renderContribCard(c) {
 }
 
 function _topContributors(limit) {
-  const counts = {};
-  _loadContribs().filter(c => !c.hidden).forEach(c => {
-    if (!counts[c.authorHandle]) counts[c.authorHandle] = { handle: c.authorHandle, count: 0, score: 0, lastAt: 0 };
-    counts[c.authorHandle].count++;
-    counts[c.authorHandle].score += Math.max(0, _voteScore(c));
-    counts[c.authorHandle].lastAt = Math.max(counts[c.authorHandle].lastAt, c.createdAt);
-  });
-  return Object.values(counts).sort((a, b) => (b.score - a.score) || (b.count - a.count)).slice(0, limit || 10);
+  return _topCache.slice(0, limit || 10);
 }
 
 let _communityActiveTab = 'all';
 let _communityScopePoi = null;
 
-function openCommunity(scopePoiId) {
+async function openCommunity(scopePoiId) {
   _communityScopePoi = scopePoiId || null;
   _communityActiveTab = 'all';
-  renderCommunityHub('all', _communityScopePoi);
   document.getElementById('communityOverlay').classList.add('open');
+  document.getElementById('communityBody').innerHTML = '<div style="padding:40px;text-align:center;color:var(--muted);">Loading…</div>';
+  await Promise.all([loadContribsFromApi(), loadTopFromApi()]);
+  renderCommunityHub('all', _communityScopePoi);
 }
 function closeCommunity() { document.getElementById('communityOverlay')?.classList.remove('open'); }
 
-function _setCommunityTab(tab) { _communityActiveTab = tab; renderCommunityHub(tab, _communityScopePoi); }
+async function _setCommunityTab(tab) {
+  _communityActiveTab = tab;
+  if (tab === 'top') await loadTopFromApi();
+  renderCommunityHub(tab, _communityScopePoi);
+}
 
 function renderCommunityHub(tab, scopePoiId) {
   const profile = getProfile();
-  let all = _loadContribs().filter(c => !c.hidden);
+  let all = _loadContribs().slice();
   if (scopePoiId) all = all.filter(c => c.poiId === scopePoiId);
   const counts = {
     all: all.length,
@@ -7412,8 +7437,9 @@ function renderCommunityHub(tab, scopePoiId) {
   `;
 }
 
-function seedDemoContributionsIfEmpty() {
-  if (_loadContribs().length > 0) return;
+function seedDemoContributionsIfEmpty() { /* server-backed now; no local seeding */ }
+function _legacy_seed_disabled() {
+  if (true) return;
   if (!ATTRACTIONS || ATTRACTIONS.length < 3) return;
   const sample = ATTRACTIONS.slice(0, 3);
   const now = Date.now();

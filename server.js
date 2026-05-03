@@ -3,11 +3,17 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const OpenAI = require('openai');
+const { Pool, types: pgTypes } = require('pg');
+pgTypes.setTypeParser(20, v => v == null ? null : parseInt(v, 10));
+pgTypes.setTypeParser(1700, v => v == null ? null : parseFloat(v));
 
 const PORT = 5000;
 const HOST = '0.0.0.0';
 
 const ROOT = path.join(__dirname, 'qiwiosity', 'mobile');
+
+const pgPool = process.env.DATABASE_URL ? new Pool({ connectionString: process.env.DATABASE_URL, max: 5 }) : null;
+if (!pgPool) console.warn('[community] DATABASE_URL not set — community API disabled');
 
 const mimeTypes = {
   '.html': 'text/html',
@@ -190,6 +196,205 @@ The user message will contain fields delimited by triple-angle brackets (<<< …
   }
 }
 
+// ============ COMMUNITY API ============
+function jres(res, code, obj) {
+  res.writeHead(code, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify(obj));
+}
+class HttpError extends Error { constructor(code, msg) { super(msg); this.code = code; } }
+async function readJsonBody(req, max) {
+  let raw;
+  try { raw = await readBody(req, max || 2 * 1024 * 1024); }
+  catch (e) {
+    if (/too large|exceed/i.test(e.message)) throw new HttpError(413, 'Payload too large');
+    throw new HttpError(400, e.message);
+  }
+  if (!raw) return {};
+  try { return JSON.parse(raw); } catch { throw new HttpError(400, 'Invalid JSON'); }
+}
+function handleBodyError(res, e) {
+  return jres(res, e instanceof HttpError ? e.code : 400, { error: e.message });
+}
+function getCallerUser(req) {
+  const id = String(req.headers['x-qw-user-id'] || '').trim().slice(0, 64);
+  const handle = String(req.headers['x-qw-handle'] || '').trim().slice(0, 24);
+  if (!/^u_[a-z0-9]{4,40}$/.test(id)) return null;
+  if (!/^[\w\- ]{2,20}$/.test(handle)) return null;
+  return { id, handle };
+}
+
+async function communityRegister(req, res) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  let body;
+  try { body = await readJsonBody(req); } catch (e) { return handleBodyError(res, e); }
+  const id = String(body.id || '').trim();
+  const handle = String(body.handle || '').trim();
+  if (!/^u_[a-z0-9]{4,40}$/.test(id)) return jres(res, 400, { error: 'Bad user id' });
+  if (!/^[\w\- ]{2,20}$/.test(handle)) return jres(res, 400, { error: 'Handle must be 2-20 chars (letters/numbers/space/_/-)' });
+  try {
+    await pgPool.query(
+      `INSERT INTO qw_users (id, handle) VALUES ($1, $2)
+       ON CONFLICT (id) DO UPDATE SET handle = EXCLUDED.handle`,
+      [id, handle]
+    );
+    jres(res, 200, { id, handle });
+  } catch (e) { console.error('register:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+const CONTRIB_SELECT = `
+  SELECT c.id, c.type, c.poi_id AS "poiId", c.title, c.body, c.media_data_url AS "mediaDataUrl",
+         c.author_id AS "authorId", c.author_handle AS "authorHandle",
+         c.status, c.resolved_by AS "resolvedBy",
+         (EXTRACT(EPOCH FROM c.resolved_at)*1000)::bigint AS "resolvedAt",
+         (EXTRACT(EPOCH FROM c.created_at)*1000)::bigint AS "createdAt",
+         COALESCE((SELECT COUNT(*) FROM qw_votes v WHERE v.contrib_id = c.id AND v.dir = 1), 0)::int AS "upCount",
+         COALESCE((SELECT COUNT(*) FROM qw_votes v WHERE v.contrib_id = c.id AND v.dir = -1), 0)::int AS "downCount",
+         c.flag_count AS "flagCount"
+  FROM qw_contribs c
+  WHERE c.hidden_by_admin = FALSE`;
+
+async function communityList(req, res, urlObj) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const poiId = (urlObj.searchParams.get('poiId') || '').slice(0, 64) || null;
+  const type = (urlObj.searchParams.get('type') || '').slice(0, 24) || null;
+  const limit = Math.min(parseInt(urlObj.searchParams.get('limit') || '200', 10) || 200, 500);
+  const callerId = String(req.headers['x-qw-user-id'] || '').trim().slice(0, 64);
+  const conds = []; const params = [];
+  if (poiId) { conds.push(`c.poi_id = $${params.length+1}`); params.push(poiId); }
+  if (type && ['issue','suggestion','tip','photo'].includes(type)) { conds.push(`c.type = $${params.length+1}`); params.push(type); }
+  const where = conds.length ? ' AND ' + conds.join(' AND ') : '';
+  try {
+    const sql = `${CONTRIB_SELECT}${where} ORDER BY c.created_at DESC LIMIT ${limit}`;
+    const r = await pgPool.query(sql, params);
+    let myVotes = {};
+    if (/^u_[a-z0-9]{4,40}$/.test(callerId) && r.rows.length) {
+      const ids = r.rows.map(x => x.id);
+      const v = await pgPool.query(`SELECT contrib_id, dir FROM qw_votes WHERE user_id = $1 AND contrib_id = ANY($2)`, [callerId, ids]);
+      v.rows.forEach(row => { myVotes[row.contrib_id] = row.dir; });
+    }
+    jres(res, 200, { contribs: r.rows.map(c => ({ ...c, score: c.upCount - c.downCount, myVote: myVotes[c.id] || 0 })) });
+  } catch (e) { console.error('list:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function communityCreate(req, res) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const caller = getCallerUser(req);
+  if (!caller) return jres(res, 401, { error: 'Sign in first (set display name)' });
+  let body;
+  try { body = await readJsonBody(req, 1.5 * 1024 * 1024); } catch (e) { return handleBodyError(res, e); }
+  const type = String(body.type || '').slice(0, 24);
+  if (!['issue','suggestion','tip','photo'].includes(type)) return jres(res, 400, { error: 'Bad type' });
+  const poiId = body.poiId ? String(body.poiId).slice(0, 64) : null;
+  const title = String(body.title || '').trim().slice(0, 120);
+  const text = String(body.body || '').trim().slice(0, 2000);
+  const media = body.mediaDataUrl ? String(body.mediaDataUrl).slice(0, 1_000_000) : null;
+  if (!title) return jres(res, 400, { error: 'Title required' });
+  if (!text && !media) return jres(res, 400, { error: 'Body or photo required' });
+  if (media && !/^data:image\/(jpeg|png|webp);base64,/.test(media)) return jres(res, 400, { error: 'Bad image format' });
+  const id = 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  const status = type === 'issue' ? 'open' : 'live';
+  try {
+    await pgPool.query(
+      `INSERT INTO qw_users (id, handle) VALUES ($1, $2)
+       ON CONFLICT (id) DO UPDATE SET handle = EXCLUDED.handle`,
+      [caller.id, caller.handle]
+    );
+    await pgPool.query(
+      `INSERT INTO qw_contribs (id, type, poi_id, title, body, media_data_url, author_id, author_handle, status)
+       VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9)`,
+      [id, type, poiId, title, text, media, caller.id, caller.handle, status]
+    );
+    const r = await pgPool.query(`${CONTRIB_SELECT} AND c.id = $1`, [id]);
+    const c = r.rows[0];
+    jres(res, 200, { contrib: { ...c, score: c.upCount - c.downCount, myVote: 0 } });
+  } catch (e) { console.error('create:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function communityVote(req, res, contribId) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const caller = getCallerUser(req);
+  if (!caller) return jres(res, 401, { error: 'Sign in first' });
+  let body;
+  try { body = await readJsonBody(req, 4096); } catch (e) { return handleBodyError(res, e); }
+  const dir = parseInt(body.dir, 10);
+  if (![1, -1, 0].includes(dir)) return jres(res, 400, { error: 'dir must be 1, -1 or 0' });
+  try {
+    const owner = await pgPool.query(`SELECT author_id FROM qw_contribs WHERE id = $1`, [contribId]);
+    if (!owner.rowCount) return jres(res, 404, { error: 'Not found' });
+    if (owner.rows[0].author_id === caller.id) return jres(res, 403, { error: "Can't vote on your own post" });
+    if (dir === 0) {
+      await pgPool.query(`DELETE FROM qw_votes WHERE contrib_id = $1 AND user_id = $2`, [contribId, caller.id]);
+    } else {
+      await pgPool.query(
+        `INSERT INTO qw_votes (contrib_id, user_id, dir) VALUES ($1,$2,$3)
+         ON CONFLICT (contrib_id, user_id) DO UPDATE SET dir = EXCLUDED.dir, created_at = NOW()`,
+        [contribId, caller.id, dir]
+      );
+    }
+    const r = await pgPool.query(`${CONTRIB_SELECT} AND c.id = $1`, [contribId]);
+    const c = r.rows[0];
+    jres(res, 200, { contrib: { ...c, score: c.upCount - c.downCount, myVote: dir } });
+  } catch (e) { console.error('vote:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function communityResolve(req, res, contribId) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const caller = getCallerUser(req);
+  if (!caller) return jres(res, 401, { error: 'Sign in first' });
+  try {
+    const cur = await pgPool.query(`SELECT type, status FROM qw_contribs WHERE id = $1`, [contribId]);
+    if (!cur.rowCount || cur.rows[0].type !== 'issue') return jres(res, 404, { error: 'Not an issue' });
+    const newStatus = cur.rows[0].status === 'resolved' ? 'open' : 'resolved';
+    await pgPool.query(
+      `UPDATE qw_contribs SET status = $1, resolved_by = $2, resolved_at = $3 WHERE id = $4`,
+      [newStatus, newStatus === 'resolved' ? caller.handle : null, newStatus === 'resolved' ? new Date() : null, contribId]
+    );
+    jres(res, 200, { ok: true, status: newStatus });
+  } catch (e) { console.error('resolve:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function communityFlag(req, res, contribId) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const caller = getCallerUser(req);
+  if (!caller) return jres(res, 401, { error: 'Sign in first' });
+  try {
+    const exists = await pgPool.query(`SELECT 1 FROM qw_contribs WHERE id = $1`, [contribId]);
+    if (!exists.rowCount) return jres(res, 404, { error: 'Not found' });
+    await pgPool.query(
+      `INSERT INTO qw_flags (contrib_id, user_id) VALUES ($1, $2) ON CONFLICT DO NOTHING`,
+      [contribId, caller.id]
+    );
+    const r = await pgPool.query(
+      `UPDATE qw_contribs SET flag_count = (SELECT COUNT(*) FROM qw_flags WHERE contrib_id = $1),
+        hidden_by_admin = (SELECT COUNT(*) FROM qw_flags WHERE contrib_id = $1) >= 5
+       WHERE id = $1 RETURNING flag_count, hidden_by_admin`,
+      [contribId]
+    );
+    jres(res, 200, { ok: true, flagCount: r.rows[0]?.flag_count || 0, hidden: r.rows[0]?.hidden_by_admin || false });
+  } catch (e) { console.error('flag:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function communityTop(req, res) {
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  try {
+    const r = await pgPool.query(`
+      SELECT c.author_id AS "authorId", c.author_handle AS "handle",
+             COUNT(*)::int AS "count",
+             COALESCE(SUM(GREATEST(0,
+               (SELECT COUNT(*) FROM qw_votes v WHERE v.contrib_id = c.id AND v.dir = 1)
+               - (SELECT COUNT(*) FROM qw_votes v WHERE v.contrib_id = c.id AND v.dir = -1)
+             )), 0)::int AS "score",
+             (EXTRACT(EPOCH FROM MAX(c.created_at))*1000)::bigint AS "lastAt"
+      FROM qw_contribs c
+      WHERE c.hidden_by_admin = FALSE
+      GROUP BY c.author_id, c.author_handle
+      ORDER BY "score" DESC, "count" DESC
+      LIMIT 30
+    `);
+    jres(res, 200, { contributors: r.rows });
+  } catch (e) { console.error('top:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
 function ttsConfigured(res) {
   const ok = !!process.env.ELEVENLABS_API_KEY;
   res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -269,6 +474,19 @@ const server = http.createServer((req, res) => {
   if (urlPathRaw === '/api/identify/status') return identifyConfigured(res);
   if (urlPathRaw === '/api/identify' && req.method === 'POST') return identifyProxy(req, res);
   if (urlPathRaw === '/api/deepdive' && req.method === 'POST') return deepdiveProxy(req, res);
+
+  // Community API
+  if (urlPathRaw === '/api/community/status') return jres(res, 200, { available: !!pgPool });
+  if (urlPathRaw === '/api/community/users' && req.method === 'POST') return communityRegister(req, res);
+  if (urlPathRaw === '/api/community/contribs' && req.method === 'GET') return communityList(req, res, new URL(req.url, 'http://localhost'));
+  if (urlPathRaw === '/api/community/contribs' && req.method === 'POST') return communityCreate(req, res);
+  if (urlPathRaw === '/api/community/top' && req.method === 'GET') return communityTop(req, res);
+  const voteMatch = urlPathRaw.match(/^\/api\/community\/contribs\/([\w-]+)\/vote$/);
+  if (voteMatch && req.method === 'POST') return communityVote(req, res, voteMatch[1]);
+  const resMatch = urlPathRaw.match(/^\/api\/community\/contribs\/([\w-]+)\/resolve$/);
+  if (resMatch && req.method === 'POST') return communityResolve(req, res, resMatch[1]);
+  const flagMatch = urlPathRaw.match(/^\/api\/community\/contribs\/([\w-]+)\/flag$/);
+  if (flagMatch && req.method === 'POST') return communityFlag(req, res, flagMatch[1]);
 
   let urlPath = urlPathRaw;
   if (urlPath === '/') urlPath = '/prototype.html';

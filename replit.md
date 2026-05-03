@@ -48,6 +48,32 @@ server.js                   ← Simple Node.js HTTP server (port 5000)
 - **Backend**: Supabase (PostgreSQL) — `https://hauksnqehzaxuoeaezji.supabase.co`
 - **Server**: Node.js built-in `http` module
 
+## Community (Backend-Backed — May 2026)
+
+Real shared community feature backed by Replit's built-in PostgreSQL.
+
+**Database tables** (created via `executeSql`):
+- `qw_users` (id TEXT PK, handle, joined_at)
+- `qw_contribs` (id, type, poi_id, title, body, media_data_url, author_id FK, author_handle, status, resolved_by/at, hidden_by_admin, flag_count, created_at)
+- `qw_votes` (contrib_id+user_id PK, dir SMALLINT)
+- `qw_flags` (contrib_id+user_id PK) — auto-hides contrib once 5 distinct flags accumulate
+
+**Server endpoints in `server.js`** (uses `pg` driver, INT8 type parser → JS number):
+- `GET  /api/community/status` — health
+- `POST /api/community/users` — register/upsert profile
+- `GET  /api/community/contribs?poiId=&type=&limit=` — list (returns score, myVote, upCount, downCount)
+- `POST /api/community/contribs` — create (1.5MB body cap; validates `data:image/jpeg|png|webp` for photos)
+- `POST /api/community/contribs/:id/vote {dir: 1|-1|0}` — UPSERT, blocks self-vote
+- `POST /api/community/contribs/:id/resolve` — toggles open/resolved (issues only)
+- `POST /api/community/contribs/:id/flag` — auto-hides at 5 flags, returns 404 for unknown id
+- `GET  /api/community/top` — leaderboard
+
+**Auth**: `x-qw-user-id` + `x-qw-handle` headers, regex-validated. No real auth — header spoofing is possible (acknowledged limitation; ready to upgrade to OAuth/email later).
+
+**Client** (`qiwiosity/mobile/prototype.html` ~6976-7460): profile in localStorage but registered with server on creation; `_contribsCache`/`_topCache` populated by `loadContribsFromApi`/`loadTopFromApi`; all mutations are async fetch calls; image compression to ≤600KB JPEG before upload (loops dimension shrink + quality drop, rejects if still oversize).
+
+**Body-size errors** return HTTP 413; bad JSON returns 400; missing/invalid auth returns 401.
+
 ## Phase 3 Feature Sprint (Completed — May 2026)
 
 All applied to `qiwiosity/mobile/prototype.html`:
