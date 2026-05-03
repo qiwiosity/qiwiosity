@@ -9940,9 +9940,14 @@ function buildAIItinerary(config) {
   const regionCounts = new Map();
   orderedMust.forEach(p => regionCounts.set(p.region, (regionCounts.get(p.region) || 0) + 1));
 
-  // Helper: rough island detection (Cook Strait latitude ≈ -41.3). Penalize island-crossing.
+  // Helper: rough island detection (Cook Strait latitude ≈ -41.3).
   const islandOf = lat => (lat > -41.2 ? 'N' : 'S');
-  const HARD_HOP_KM = 220; // any hop over this is heavily penalized unless there's nothing closer
+  const HARD_HOP_KM = 220;
+
+  // A trip is "directed" when the user picked a different end region. Round-trips are NOT directed.
+  const isDirected = endPos && haversine(startPos, endPos) > 50 && !roundTrip;
+  // For directed trips that cross islands, the crossing is REQUIRED — don't penalize it.
+  const crossesIslands = isDirected && (islandOf(startPos.lat) !== islandOf(endPos.lat));
 
   let pos = startPos;
   let prevRegion = null;
@@ -9957,38 +9962,65 @@ function buildAIItinerary(config) {
       if (route[j]) { anchor = route[j]; break; }
     }
     const tripPct = i / Math.max(1, totalStops - 1);
-    // End-pull only kicks in over the last 40% so we wander outward first, then return
-    const endPull = endPos ? Math.max(0, (tripPct - 0.6) / 0.4) : 0;
+    const stopsLeft = totalStops - i; // including this stop
+
+    // End-pull behaviour:
+    //   - Directed trip: continuous from stop 1, ramps with progress
+    //   - Round-trip: only the last 40% (so we wander outward first, then return)
+    const endPull = endPos
+      ? (isDirected ? Math.min(1, 0.3 + tripPct * 0.7) : Math.max(0, (tripPct - 0.6) / 0.4))
+      : 0;
     if (!anchor && endPos && endPull > 0) anchor = endPos;
     const directDist = anchor ? haversine(pos, anchor) : 0;
     const regionsVisited = regionCounts.size;
     const prevIsland = islandOf(pos.lat);
+    const distToEnd = endPos ? haversine(pos, endPos) : 0;
+    // How much progress we need to make per remaining stop to reach the end on time
+    const requiredProgress = isDirected ? distToEnd / Math.max(1, stopsLeft) : 0;
+
+    // Final-day pool restriction: for directed trips, the last day MUST be near the endpoint.
+    let activePool = pool;
+    if (isDirected && stopsLeft <= stopsPerDay) {
+      const nearEnd = pool.filter(p => !used.has(String(p.id)) && haversine(p, endPos) < 180);
+      if (nearEnd.length >= stopsLeft) activePool = nearEnd;
+    }
 
     let best = null, bestS = -Infinity;
-    for (const p of pool) {
+    for (const p of activePool) {
       if (used.has(String(p.id))) continue;
       const dPrev = haversine(pos, p);
       const dNext = anchor ? haversine(p, anchor) : 0;
       const detour = anchor ? Math.max(0, (dPrev + dNext) - directDist) : 0;
-      // Distance penalty — STEEP. 100km ≈ -5 score, 200km ≈ -10. This dominates novelty.
+      // Distance from previous — steep
       const prevPenalty = dPrev / 20;
-      // Long-hop hard penalty: discourages cross-country jumps unless nothing closer exists
+      // Long-hop penalty
       const hopPenalty = dPrev > HARD_HOP_KM ? (dPrev - HARD_HOP_KM) / 15 : 0;
-      // Detour penalty (only with a real anchor)
+      // Detour penalty (only if there's an anchor)
       const detourPenalty = anchor ? (detour / 80) * (0.3 + 0.7 * endPull) : 0;
-      // Island-crossing penalty: avoid Cook Strait jumps mid-trip
-      const islandPenalty = (islandOf(p.lat) !== prevIsland) ? 12 : 0;
-      // Region novelty: only valuable while we're under our region budget
+      // Island penalty: ONLY for round trips or directed trips that don't span islands.
+      // For inter-island directed trips, crossing is mandatory so no penalty.
+      const islandPenalty = (!crossesIslands && islandOf(p.lat) !== prevIsland) ? 12 : 0;
+      // Directed-trip progress penalty: candidate must move us closer to end at the required rate
+      let progressPenalty = 0;
+      if (isDirected) {
+        const candDistToEnd = haversine(p, endPos);
+        const progress = distToEnd - candDistToEnd; // +ve = closer to end, -ve = farther
+        // Penalize falling short of required progress (and severely penalize backsliding)
+        const shortfall = Math.max(0, requiredProgress - progress);
+        progressPenalty = shortfall / 25;
+        if (progress < 0) progressPenalty += (-progress) / 30; // extra hit for moving away
+      }
+      // Region novelty (capped by realistic budget)
       const rCount = regionCounts.get(p.region) || 0;
       let novelty;
       if (rCount === 0) {
-        novelty = (regionsVisited < maxRegions) ? 5 : -2; // discourage opening a new region once budget is full
+        novelty = (regionsVisited < maxRegions) ? 5 : -2;
       } else {
-        novelty = -rCount * 1.5; // mild penalty for stacking, not a wall
+        novelty = -rCount * 1.5;
       }
-      // Stickiness: prefer staying in same region for the next stop or two (natural day flow)
       const sticky = (p.region === prevRegion && rCount < 3) ? 2 : 0;
-      const s = p._aiScore + novelty + sticky - prevPenalty - hopPenalty - islandPenalty - detourPenalty;
+      const s = p._aiScore + novelty + sticky
+              - prevPenalty - hopPenalty - islandPenalty - detourPenalty - progressPenalty;
       if (s > bestS) { bestS = s; best = p; }
     }
     if (!best) break;
