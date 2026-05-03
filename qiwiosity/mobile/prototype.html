@@ -7881,6 +7881,7 @@ function createAccomIcon(color) {
 // ============ INFOWINDOW HELPERS ============
 function openPoiInfoWindow(a, marker) {
   const color = catColor(a.category);
+  const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || 'New Zealand';
   const tagsHtml = (a.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
   const allImgs = getPoiImageUrls(a);
   const imgUrl = allImgs[0] || '';
