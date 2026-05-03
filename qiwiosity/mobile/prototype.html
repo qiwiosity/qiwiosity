@@ -9001,7 +9001,8 @@ function createDimmedIcon(color) {
 }
 
 function renderPlanMap() {
-  // Clear existing markers
+  // Clear existing markers AND the clusterer (otherwise clustered explore markers persist on Plan tab)
+  if (poiClusterer) { poiClusterer.clearMarkers(); poiClusterer = null; }
   poiMarkers.forEach(m => m.setMap(null));
   poiMarkers = [];
   planNumberMarkers.forEach(m => m.setMap(null));
@@ -9923,7 +9924,6 @@ function buildAIItinerary(config) {
   const used = new Set(orderedMust.map(p => String(p.id)));
 
   // Pool with per-region cap so big-city POIs don't crowd out other regions.
-  // Take the top N from each region by score, then merge.
   const perRegionCap = Math.max(8, Math.ceil(totalStops * 1.5));
   const byRegion = new Map();
   for (const c of [...candidates].sort((a,b) => b._aiScore - a._aiScore)) {
@@ -9933,11 +9933,17 @@ function buildAIItinerary(config) {
   }
   const pool = [...byRegion.values()].flat();
 
-  // Track region usage to push the route to spread across NZ
+  // Realistic region budget: a 7-day trip should hit 4-6 regions, NOT all 19 of them.
+  // After this budget is filled, the algorithm stops awarding novelty bonuses.
+  const maxRegions = Math.max(2, Math.min(REGIONS.length, Math.ceil(numDays * 0.7 + 1)));
+
   const regionCounts = new Map();
   orderedMust.forEach(p => regionCounts.set(p.region, (regionCounts.get(p.region) || 0) + 1));
 
-  // Greedy fill empty slots
+  // Helper: rough island detection (Cook Strait latitude ≈ -41.3). Penalize island-crossing.
+  const islandOf = lat => (lat > -41.2 ? 'N' : 'S');
+  const HARD_HOP_KM = 220; // any hop over this is heavily penalized unless there's nothing closer
+
   let pos = startPos;
   let prevRegion = null;
   for (let i = 0; i < totalStops; i++) {
@@ -9946,36 +9952,43 @@ function buildAIItinerary(config) {
       prevRegion = route[i].region;
       continue;
     }
-    // Find the next must-visit anchor (NOT endPos — endPos handled via end-pull below)
     let anchor = null;
     for (let j = i + 1; j < totalStops; j++) {
       if (route[j]) { anchor = route[j]; break; }
     }
-    // End-pull: only kicks in for the last ~40% of the trip, so the route can wander outward first
     const tripPct = i / Math.max(1, totalStops - 1);
+    // End-pull only kicks in over the last 40% so we wander outward first, then return
     const endPull = endPos ? Math.max(0, (tripPct - 0.6) / 0.4) : 0;
-    // For round-trip the anchor for the final stretch IS the start (= endPos)
-    const useEndAsAnchor = !anchor && endPos && endPull > 0;
-    if (useEndAsAnchor) anchor = endPos;
+    if (!anchor && endPos && endPull > 0) anchor = endPos;
     const directDist = anchor ? haversine(pos, anchor) : 0;
+    const regionsVisited = regionCounts.size;
+    const prevIsland = islandOf(pos.lat);
 
     let best = null, bestS = -Infinity;
     for (const p of pool) {
       if (used.has(String(p.id))) continue;
       const dPrev = haversine(pos, p);
       const dNext = anchor ? haversine(p, anchor) : 0;
-      // Detour penalty — only meaningful when there's a downstream anchor
       const detour = anchor ? Math.max(0, (dPrev + dNext) - directDist) : 0;
-      // Distance-from-prev penalty: lighter (we want to encourage longer hops)
-      const prevPenalty = Math.min(dPrev / 80, 6);
-      // Detour penalty: weighted by end-pull (gets stronger as trip ends)
-      const detourPenalty = anchor ? (detour / 80) * (0.2 + 0.8 * endPull) : 0;
-      // Region novelty: STRONG bonus for visiting a fresh region; STRONG penalty for stacking same region
+      // Distance penalty — STEEP. 100km ≈ -5 score, 200km ≈ -10. This dominates novelty.
+      const prevPenalty = dPrev / 20;
+      // Long-hop hard penalty: discourages cross-country jumps unless nothing closer exists
+      const hopPenalty = dPrev > HARD_HOP_KM ? (dPrev - HARD_HOP_KM) / 15 : 0;
+      // Detour penalty (only with a real anchor)
+      const detourPenalty = anchor ? (detour / 80) * (0.3 + 0.7 * endPull) : 0;
+      // Island-crossing penalty: avoid Cook Strait jumps mid-trip
+      const islandPenalty = (islandOf(p.lat) !== prevIsland) ? 12 : 0;
+      // Region novelty: only valuable while we're under our region budget
       const rCount = regionCounts.get(p.region) || 0;
-      const novelty = rCount === 0 ? 12 : -rCount * 4;
-      // Stickiness penalty: avoid 4+ consecutive stops in the same region (allow short clusters)
-      const sticky = (p.region === prevRegion && rCount >= 3) ? -6 : 0;
-      const s = p._aiScore + novelty + sticky - prevPenalty - detourPenalty;
+      let novelty;
+      if (rCount === 0) {
+        novelty = (regionsVisited < maxRegions) ? 5 : -2; // discourage opening a new region once budget is full
+      } else {
+        novelty = -rCount * 1.5; // mild penalty for stacking, not a wall
+      }
+      // Stickiness: prefer staying in same region for the next stop or two (natural day flow)
+      const sticky = (p.region === prevRegion && rCount < 3) ? 2 : 0;
+      const s = p._aiScore + novelty + sticky - prevPenalty - hopPenalty - islandPenalty - detourPenalty;
       if (s > bestS) { bestS = s; best = p; }
     }
     if (!best) break;
@@ -9985,7 +9998,6 @@ function buildAIItinerary(config) {
     prevRegion = best.region;
     pos = { lat: best.lat, lng: best.lng };
   }
-  // Drop any remaining nulls (e.g. if pool was exhausted)
   const finalRoute = route.filter(Boolean);
   route.length = 0;
   finalRoute.forEach(r => route.push(r));
