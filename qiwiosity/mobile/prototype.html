@@ -1864,6 +1864,7 @@
       <button class="admin-nav-btn" id="adminNav-accom" onclick="switchAdminTab('accom')">🛏 Stays</button>
       <div class="admin-nav-section">TOOLS</div>
       <button class="admin-nav-btn" id="adminNav-add" onclick="switchAdminTab('add')">➕ Add POI</button>
+      <button class="admin-nav-btn" id="adminNav-tools" onclick="switchAdminTab('tools')">🛠 Tools</button>
       <button class="admin-nav-btn" id="adminNav-activity" onclick="switchAdminTab('activity')">🕐 Activity</button>
     </nav>
     <div class="admin-content" id="adminContent"></div>
@@ -2971,19 +2972,27 @@ function speakWebSpeech(text, persona) {
 }
 
 async function speakElevenLabs(text, voiceId) {
-  const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
-    method: 'POST',
-    headers: {
-      'Accept': 'audio/mpeg',
-      'Content-Type': 'application/json',
-      'xi-api-key': elevenLabsKey,
-    },
-    body: JSON.stringify({
-      text,
-      model_id: 'eleven_monolingual_v1',
-      voice_settings: { stability: 0.52, similarity_boost: 0.76 }
-    })
-  });
+  // Prefer the server proxy when no client-side key is set.
+  const useServer = !elevenLabsKey;
+  const response = useServer
+    ? await fetch('/api/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, voiceId }),
+      })
+    : await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+        method: 'POST',
+        headers: {
+          'Accept': 'audio/mpeg',
+          'Content-Type': 'application/json',
+          'xi-api-key': elevenLabsKey,
+        },
+        body: JSON.stringify({
+          text,
+          model_id: 'eleven_monolingual_v1',
+          voice_settings: { stability: 0.52, similarity_boost: 0.76 }
+        })
+      });
   if (!response.ok) throw new Error('ElevenLabs ' + response.status);
   const blob = await response.blob();
   const url = URL.createObjectURL(blob);
@@ -3143,6 +3152,183 @@ function jumpToPoi(id) {
     m._poiId = id;
     openPoiInfoWindow(a, m);
   }
+}
+
+// ============ TRAVEL DIARY (per-stop photos + journal) ============
+const DIARY_KEY = 'qw_diary';
+
+function _loadDiary() {
+  try { return JSON.parse(localStorage.getItem(DIARY_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+function _saveDiary(d) { localStorage.setItem(DIARY_KEY, JSON.stringify(d)); }
+
+function getDiaryEntry(stopId) {
+  return _loadDiary()[stopId] || null;
+}
+
+function openDiaryEditor(stopId, stopName) {
+  const existing = document.getElementById('diaryOverlay');
+  if (existing) existing.remove();
+  const entry = getDiaryEntry(stopId) || { photos: [], journal: '', visitedAt: null };
+  const overlay = document.createElement('div');
+  overlay.id = 'diaryOverlay';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:10000;display:flex;align-items:center;justify-content:center;padding:16px;';
+  overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
+  const photosHtml = (entry.photos || []).map((p, i) => `
+    <div style="position:relative;display:inline-block;">
+      <img src="${p}" style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--border);" />
+      <button onclick="removeDiaryPhoto('${stopId}',${i})" style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;background:#e05;color:white;border:2px solid var(--surface);font-size:12px;cursor:pointer;line-height:1;padding:0;">×</button>
+    </div>`).join('');
+  const dateStr = entry.visitedAt ? new Date(entry.visitedAt).toISOString().slice(0,10) : '';
+  overlay.innerHTML = `
+    <div style="background:var(--surface);border-radius:14px;padding:20px;max-width:480px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 12px 40px rgba(0,0,0,0.5);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+        <strong style="color:var(--text);font-size:15px;">📔 Diary — ${stopName}</strong>
+        <button onclick="document.getElementById('diaryOverlay').remove()" style="background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;">×</button>
+      </div>
+
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">Visited on</label>
+      <input type="date" id="diaryDate_${stopId}" value="${dateStr}" style="width:100%;padding:7px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface2);color:var(--text);font-size:13px;margin-bottom:12px;box-sizing:border-box;" />
+
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📸 Photos</label>
+      <div id="diaryPhotos_${stopId}" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;min-height:80px;">${photosHtml || '<p style="color:var(--muted);font-style:italic;font-size:12px;">No photos yet</p>'}</div>
+      <input type="file" id="diaryPhotoUpload_${stopId}" accept="image/*" multiple onchange="addDiaryPhotos('${stopId}',this.files)" style="margin-bottom:14px;color:var(--text);font-size:12px;" />
+
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px;">📝 Journal entry</label>
+      <textarea id="diaryJournal_${stopId}" placeholder="What happened here? What did you love, learn, or want to remember?"
+        style="width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid var(--border);border-radius:7px;background:var(--surface2);color:var(--text);font-size:13px;min-height:100px;resize:vertical;font-family:inherit;line-height:1.5;">${entry.journal || ''}</textarea>
+
+      <div style="display:flex;gap:8px;margin-top:14px;">
+        <button onclick="saveDiaryEntry('${stopId}')" style="flex:1;background:var(--primary);color:white;border:none;padding:9px;border-radius:8px;font-weight:700;cursor:pointer;">💾 Save</button>
+        <button onclick="document.getElementById('diaryOverlay').remove()" style="background:transparent;color:var(--text);border:1px solid var(--border);padding:9px 16px;border-radius:8px;font-weight:700;cursor:pointer;">Cancel</button>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+}
+
+function addDiaryPhotos(stopId, files) {
+  if (!files || !files.length) return;
+  const diary = _loadDiary();
+  const entry = diary[stopId] || { photos: [], journal: '', visitedAt: null };
+  let pending = files.length;
+  Array.from(files).forEach(file => {
+    if (!file.type.startsWith('image/')) { pending--; return; }
+    if (file.size > 2 * 1024 * 1024) {
+      showToast(`⚠ ${file.name} too large (max 2MB)`);
+      pending--;
+      if (pending === 0) {
+        diary[stopId] = entry; _saveDiary(diary);
+        const overlay = document.getElementById('diaryOverlay');
+        if (overlay) {
+          // Re-render the photos grid
+          const grid = document.getElementById(`diaryPhotos_${stopId}`);
+          if (grid) {
+            grid.innerHTML = entry.photos.map((p, i) => `
+              <div style="position:relative;display:inline-block;">
+                <img src="${p}" style="width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--border);" />
+                <button onclick="removeDiaryPhoto('${stopId}',${i})" style="position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;background:#e05;color:white;border:2px solid var(--surface);font-size:12px;cursor:pointer;line-height:1;padding:0;">×</button>
+              </div>`).join('') || '<p style="color:var(--muted);font-style:italic;font-size:12px;">No photos yet</p>';
+          }
+        }
+      }
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = e => {
+      // Compress: draw to canvas at max 800px wide
+      const img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const maxW = 800;
+        const scale = Math.min(1, maxW / img.width);
+        canvas.width = img.width * scale;
+        canvas.height = img.height * scale;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.78);
+        entry.photos.push(dataUrl);
+        pending--;
+        if (pending === 0) {
+          diary[stopId] = entry; _saveDiary(diary);
+          // Re-open editor to refresh
+          const stopName = state.itinerary.find(s => s.id === stopId)?.name || 'Stop';
+          openDiaryEditor(stopId, stopName);
+          showToast(`📸 ${entry.photos.length} photo${entry.photos.length>1?'s':''} saved`);
+          renderPlanSidebar();
+        }
+      };
+      img.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+}
+
+function removeDiaryPhoto(stopId, idx) {
+  const diary = _loadDiary();
+  if (!diary[stopId]) return;
+  diary[stopId].photos.splice(idx, 1);
+  _saveDiary(diary);
+  const stopName = state.itinerary.find(s => s.id === stopId)?.name || 'Stop';
+  openDiaryEditor(stopId, stopName);
+  renderPlanSidebar();
+}
+
+function saveDiaryEntry(stopId) {
+  const diary = _loadDiary();
+  const entry = diary[stopId] || { photos: [], journal: '', visitedAt: null };
+  const journal = document.getElementById(`diaryJournal_${stopId}`)?.value.trim() || '';
+  const dateStr = document.getElementById(`diaryDate_${stopId}`)?.value || '';
+  entry.journal = journal;
+  entry.visitedAt = dateStr ? new Date(dateStr).getTime() : null;
+  diary[stopId] = entry;
+  _saveDiary(diary);
+  document.getElementById('diaryOverlay')?.remove();
+  showToast('📔 Diary saved');
+  renderPlanSidebar();
+}
+
+function openDiaryJournal() {
+  // Open a full-trip journal view
+  if (!state.itinerary.length) { showToast('Add stops to your trip first'); return; }
+  const diary = _loadDiary();
+  const entries = state.itinerary
+    .map(stop => ({ stop, entry: diary[stop.id] }))
+    .filter(x => x.entry && (x.entry.photos?.length || x.entry.journal));
+  if (!entries.length) { showToast('📔 No diary entries yet — tap 📔 Diary on any stop'); return; }
+  // Sort by visitedAt then by day
+  entries.sort((a, b) => (a.entry.visitedAt || 0) - (b.entry.visitedAt || 0) || (a.stop.day||1) - (b.stop.day||1));
+
+  const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>My NZ Travel Diary</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 720px; margin: 0 auto; padding: 32px 24px; color: #1a2a2e; background: #fafbfc; }
+    h1 { color: #15888A; margin-bottom: 4px; }
+    .meta { color: #666; font-size: 13px; margin-bottom: 28px; padding-bottom: 18px; border-bottom: 1px solid #e8eef0; }
+    .entry { background: white; border: 1px solid #e8eef0; border-radius: 12px; padding: 20px; margin-bottom: 18px; box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+    .entry h2 { color: #15888A; margin: 0 0 4px; font-size: 18px; }
+    .entry .where { color: #888; font-size: 12px; margin-bottom: 12px; }
+    .entry .photos { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .entry .photos img { width: 160px; height: 120px; object-fit: cover; border-radius: 8px; }
+    .entry p.journal { font-size: 14px; line-height: 1.7; color: #333; margin: 0; white-space: pre-wrap; }
+    @media print { body { padding: 12px; background: white; } .entry { page-break-inside: avoid; } }
+  </style></head><body>
+  <h1>📔 My New Zealand Travel Diary</h1>
+  <p class="meta">${entries.length} stop${entries.length>1?'s':''} documented · printed ${new Date().toLocaleDateString('en-NZ', {day:'numeric',month:'long',year:'numeric'})}</p>
+  ${entries.map(({stop, entry}) => {
+    const rName = (REGIONS.find(r => r.id === stop.region) || {}).name || stop.region || '';
+    const dateStr = entry.visitedAt ? new Date(entry.visitedAt).toLocaleDateString('en-NZ', {weekday:'long',day:'numeric',month:'long',year:'numeric'}) : `Day ${stop.day||1}`;
+    return `<div class="entry">
+      <h2>${stop.name}</h2>
+      <div class="where">${dateStr} · ${rName.split(' / ')[0]}</div>
+      ${entry.photos?.length ? `<div class="photos">${entry.photos.map(p => `<img src="${p}" />`).join('')}</div>` : ''}
+      ${entry.journal ? `<p class="journal">${entry.journal.replace(/</g,'&lt;')}</p>` : ''}
+    </div>`;
+  }).join('')}
+  <p style="margin-top:36px;color:#aaa;font-size:11px;border-top:1px solid #e8eef0;padding-top:12px;text-align:center;">Made with Qiwiosity — Explore New Zealand with Curiosity</p>
+  </body></html>`;
+  const win = window.open('', '_blank');
+  win.document.write(html);
+  win.document.close();
 }
 
 // ============ STOP NOTES ============
@@ -3554,6 +3740,54 @@ function surpriseMe() {
 }
 
 // ============ SOCIAL SHARING ============
+// HTML-escape helper to prevent XSS when injecting strings into innerHTML
+function _escHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+// Show a quick-share menu with WhatsApp / X / Email / Copy options
+function showShareMenu(title, text, url) {
+  const existing = document.getElementById('shareMenuOverlay');
+  if (existing) existing.remove();
+  const enc = s => encodeURIComponent(s);
+  const fullText = `${text}\n${url}`;
+  const safeTitle = _escHtml(title);
+  const overlay = document.createElement('div');
+  overlay.id = 'shareMenuOverlay';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px;';
+  overlay.onclick = e => { if (e.target === overlay) overlay.remove(); };
+  // Build via innerHTML for layout, then attach button handlers with addEventListener so user-supplied
+  // text never enters an inline JS string (prevents XSS from POI/accom names containing quotes/scripts).
+  overlay.innerHTML = `
+    <div style="background:var(--surface);border-radius:14px;padding:18px;max-width:340px;width:100%;box-shadow:0 12px 40px rgba(0,0,0,0.4);">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;">
+        <strong style="color:var(--text);font-size:14px;">📤 Share ${safeTitle}</strong>
+        <button data-act="close" style="background:none;border:none;color:var(--muted);font-size:18px;cursor:pointer;line-height:1;">×</button>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+        <a href="https://wa.me/?text=${enc(fullText)}" target="_blank" rel="noopener" style="background:#25D366;color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;text-decoration:none;display:block;">💬 WhatsApp</a>
+        <a href="https://twitter.com/intent/tweet?text=${enc(text)}&url=${enc(url)}" target="_blank" rel="noopener" style="background:#000;color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;text-decoration:none;display:block;">𝕏 Post</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=${enc(url)}" target="_blank" rel="noopener" style="background:#1877F2;color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;text-decoration:none;display:block;">📘 Facebook</a>
+        <a href="mailto:?subject=${enc(title)}&body=${enc(fullText)}" style="background:#EA4335;color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;text-decoration:none;display:block;">✉ Email</a>
+        <a href="sms:?body=${enc(fullText)}" style="background:#34B7F1;color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;text-decoration:none;display:block;">📱 SMS</a>
+        <button data-act="copy" style="background:var(--primary);color:white;padding:10px;border-radius:8px;font-size:12px;font-weight:700;text-align:center;border:none;cursor:pointer;">📋 Copy link</button>
+      </div>
+      ${navigator.share ? `<button data-act="native" style="width:100%;margin-top:8px;background:transparent;color:var(--primary);border:1.5px solid var(--primary);padding:9px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer;">📤 Use device share…</button>` : ''}
+    </div>`;
+  overlay.querySelector('[data-act="close"]').addEventListener('click', () => overlay.remove());
+  overlay.querySelector('[data-act="copy"]').addEventListener('click', () => {
+    navigator.clipboard.writeText(fullText).then(() => { showToast('📋 Copied!'); overlay.remove(); });
+  });
+  const nativeBtn = overlay.querySelector('[data-act="native"]');
+  if (nativeBtn) nativeBtn.addEventListener('click', () => {
+    navigator.share({ title, text, url }).catch(() => {});
+    overlay.remove();
+  });
+  document.body.appendChild(overlay);
+}
+
 function shareAccom(id) {
   const a = ACCOMMODATIONS.find(x => x.id === id);
   if (!a) return;
@@ -3561,13 +3795,7 @@ function shareAccom(id) {
   const price = a.price_nzd_per_night ? ` · ~NZ$${a.price_nzd_per_night}/night` : '';
   const shareText = `${a.name} in ${rName}${price} — found on Qiwiosity NZ!`;
   const shareUrl = window.location.origin + window.location.pathname + '?accom=' + encodeURIComponent(id);
-  if (navigator.share) {
-    navigator.share({ title: a.name, text: shareText, url: shareUrl }).catch(() => {});
-  } else {
-    navigator.clipboard.writeText(shareUrl + '\n\n' + shareText)
-      .then(() => showToast('📋 Accommodation link copied!'))
-      .catch(() => showToast('Copy: ' + shareUrl));
-  }
+  showShareMenu(a.name, shareText, shareUrl);
 }
 
 function sharePoi(id) {
@@ -3576,13 +3804,7 @@ function sharePoi(id) {
   const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || 'New Zealand';
   const shareText = `Discovered ${a.name} in ${rName} on Qiwiosity! ${a.short || ''}`.trim();
   const shareUrl = window.location.origin + window.location.pathname + '?poi=' + encodeURIComponent(id);
-  if (navigator.share) {
-    navigator.share({ title: a.name, text: shareText, url: shareUrl }).catch(() => {});
-  } else {
-    navigator.clipboard.writeText(shareUrl + '\n\n' + shareText)
-      .then(() => showToast('📋 Link copied to clipboard!'))
-      .catch(() => showToast('Copy: ' + shareUrl));
-  }
+  showShareMenu(a.name, shareText, shareUrl);
 }
 
 function printTrip() {
@@ -4870,11 +5092,18 @@ function renderPlanSidebar() {
         <button class="plan-stop-remove" onclick="event.stopPropagation();removeFromItinerary('${a.id}')" title="Remove">×</button>
       </div>
       ${a.note ? `<p style="margin:4px 0 0;font-size:11px;line-height:1.4;color:var(--muted);font-style:italic;padding-left:2px;">📝 ${a.note}</p>` : ''}
+      ${(() => {
+        const diary = getDiaryEntry(a.id);
+        if (!diary || (!diary.photos?.length && !diary.journal)) return '';
+        const photoCount = diary.photos?.length || 0;
+        return `<p style="margin:4px 0 0;font-size:10px;color:var(--primary);font-weight:700;padding-left:2px;">📔 Diary${photoCount?` · ${photoCount} photo${photoCount>1?'s':''}`:''}${diary.journal?' · journal':''}</p>`;
+      })()}
       ${isExpanded ? `<div class="iti-card-actions" style="margin-top:6px;">
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();showCommentaryForStop('${a.id}')">🔊 Audio</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();openAttractionDetails('${a.id}')">👁 Details</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();panToStop('${a.id}')">📍 Map</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();toggleStopNote('${a.id}')">📝 Note</button>
+        <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();openDiaryEditor('${a.id}','${a.name.replace(/'/g,"\\'")}')">📔 Diary</button>
         <button class="btn ${isSaved(a.id)?'saved':''}" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();toggleSave('${a.id}');renderPlanSidebar();">${isSaved(a.id)?'❤':'♡'}</button>
         <button class="btn" style="font-size:10px;padding:5px 2px;" onclick="event.stopPropagation();duplicateStop('${a.id}')">⧉ Dup</button>
         ${state.itineraryDays > 1 ? `<select onchange="event.stopPropagation();moveStopToDay('${a.id}',+this.value);this.value=''" style="font-size:10px;padding:3px;border:1px solid var(--border);border-radius:6px;background:var(--surface2);color:var(--text);cursor:pointer;" title="Move to day">
@@ -4975,6 +5204,7 @@ function renderPlanSidebar() {
     <div style="display:flex;gap:6px;margin-top:4px;">
       <button class="plan-nav-btn" style="flex:1;" onclick="printTrip()">🖨 Print / Export</button>
       <button class="plan-nav-btn" style="flex:1;" onclick="exportToCalendar()" title="Export to calendar (.ics)">📅 Calendar</button>
+      <button class="plan-nav-btn" style="flex:1;" onclick="openDiaryJournal()" title="View your trip diary with photos">📔 Diary</button>
       <button class="plan-nav-btn" style="flex:1;" onclick="shuffleDayStops(${state.planActiveDay})" title="Randomly reorder stops for today">🔀 Shuffle</button>
     </div>
     <div style="display:flex;gap:6px;margin-top:4px;">
@@ -7095,7 +7325,240 @@ function switchAdminTab(tab) {
   else if (tab === 'pois') { content.innerHTML = renderAdminPois(); attachAdminPoiEvents(); }
   else if (tab === 'accom') { content.innerHTML = renderAdminAccom(); attachAdminAccomEvents(); }
   else if (tab === 'add') content.innerHTML = renderAdminAddPoi();
+  else if (tab === 'tools') { content.innerHTML = renderAdminTools(); setTimeout(_checkAdminServerStatus, 50); }
   else if (tab === 'activity') content.innerHTML = renderAdminActivity();
+}
+
+// ============ ADMIN TOOLS — GPS audit, CSV upload, image admin, moderation ============
+function renderAdminTools() {
+  if (!ATTRACTIONS || !ATTRACTIONS.length) {
+    return '<p style="color:#7a9aaa;margin-top:20px;">Loading data…</p>';
+  }
+  // NZ bounding box (rough): lat -47.5..-34, lng 166..179
+  const NZ_BOUNDS = { latMin: -47.5, latMax: -34.0, lngMin: 166.0, lngMax: 179.0 };
+  const outOfBounds = ATTRACTIONS.filter(a => {
+    return a.lat < NZ_BOUNDS.latMin || a.lat > NZ_BOUNDS.latMax ||
+           a.lng < NZ_BOUNDS.lngMin || a.lng > NZ_BOUNDS.lngMax;
+  });
+  // Find duplicates by name (case-insensitive, trimmed)
+  const nameCount = {};
+  ATTRACTIONS.forEach(a => {
+    const key = (a.name||'').toLowerCase().trim();
+    if (key) nameCount[key] = (nameCount[key]||0) + 1;
+  });
+  const dupNames = Object.entries(nameCount).filter(([_, n]) => n > 1).slice(0, 20);
+  // Find suspicious clusters (POIs within 50m of each other - likely duplicates)
+  const suspectPairs = [];
+  for (let i = 0; i < ATTRACTIONS.length && suspectPairs.length < 10; i++) {
+    for (let j = i+1; j < ATTRACTIONS.length && suspectPairs.length < 10; j++) {
+      const a = ATTRACTIONS[i], b = ATTRACTIONS[j];
+      if (Math.abs(a.lat - b.lat) > 0.001 || Math.abs(a.lng - b.lng) > 0.001) continue;
+      const km = haversine(a, b);
+      if (km < 0.05 && a.name !== b.name) suspectPairs.push({a, b, km});
+    }
+  }
+  // Pending moderation queue (from localStorage)
+  const pending = JSON.parse(localStorage.getItem('qw_pending_pois') || '[]');
+  const pendingRows = pending.length ? pending.map((p, i) => `
+    <div style="background:#162230;padding:10px;border-radius:8px;margin-bottom:6px;border:1px solid #1e3a4a;">
+      <div style="display:flex;align-items:flex-start;gap:8px;">
+        <div style="flex:1;">
+          <strong style="color:#e0eaf0;font-size:13px;">${p.name}</strong>
+          <span style="color:#7a9aaa;font-size:11px;margin-left:6px;">${p.region||'?'} · ${p.category||'?'}</span>
+          <div style="color:#9ab;font-size:11px;margin-top:3px;">📍 ${p.lat?.toFixed(4)}, ${p.lng?.toFixed(4)}${p.short ? ' · ' + p.short.slice(0,80) : ''}</div>
+          <div style="color:#5a7a8a;font-size:10px;margin-top:3px;">Submitted ${new Date(p.submittedAt||0).toLocaleString()}</div>
+        </div>
+        <button onclick="approvePending(${i})" style="background:#15888A;color:#fff;border:0;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;">✓ Approve</button>
+        <button onclick="rejectPending(${i})" style="background:transparent;color:#e05;border:1px solid #e05;padding:4px 10px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;">✗ Reject</button>
+      </div>
+    </div>`).join('') :
+    '<p style="color:#5a7a8a;font-size:12px;font-style:italic;">No pending submissions.</p>';
+
+  return `
+    <div class="admin-section-title">🛠 Admin Tools</div>
+
+    <div class="admin-section-title" style="font-size:13px;margin-top:18px;">📋 Moderation Queue (${pending.length})</div>
+    <p style="color:#7a9aaa;font-size:12px;margin-bottom:10px;">User-submitted POIs awaiting review. Approval moves them into the live ATTRACTIONS list (this session only — production would persist to Supabase).</p>
+    <div id="adminPendingList">${pendingRows}</div>
+
+    <div class="admin-section-title" style="font-size:13px;margin-top:18px;">📍 GPS Audit</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+      <div class="admin-stat-card" style="border-left:3px solid #e05;">
+        <div class="admin-stat-val" style="color:#e05;">${outOfBounds.length}</div>
+        <div class="admin-stat-label">Outside NZ bounds</div>
+        <div class="admin-stat-sub">lat/lng outside NZ box</div>
+      </div>
+      <div class="admin-stat-card" style="border-left:3px solid #F59E0B;">
+        <div class="admin-stat-val" style="color:#F59E0B;">${suspectPairs.length}</div>
+        <div class="admin-stat-label">Suspicious pairs</div>
+        <div class="admin-stat-sub">POIs within 50m of each other</div>
+      </div>
+    </div>
+    ${outOfBounds.length ? `<div style="background:#162230;padding:10px;border-radius:8px;margin-bottom:10px;max-height:180px;overflow-y:auto;">
+      <div style="color:#e05;font-size:11px;font-weight:700;margin-bottom:6px;">⚠ Out of bounds:</div>
+      ${outOfBounds.slice(0,15).map(a => `<div style="font-size:11px;color:#c0d0d8;margin-bottom:3px;cursor:pointer;" onclick="jumpToPoiAdmin('${a.id}')">
+        ${a.name} <span style="color:#7a9aaa;">— ${a.lat.toFixed(3)}, ${a.lng.toFixed(3)}</span>
+      </div>`).join('')}
+      ${outOfBounds.length > 15 ? `<div style="color:#5a7a8a;font-size:10px;margin-top:4px;">+ ${outOfBounds.length - 15} more</div>` : ''}
+    </div>` : ''}
+    ${suspectPairs.length ? `<div style="background:#162230;padding:10px;border-radius:8px;margin-bottom:14px;max-height:180px;overflow-y:auto;">
+      <div style="color:#F59E0B;font-size:11px;font-weight:700;margin-bottom:6px;">⚠ Possible duplicates (same coords, different names):</div>
+      ${suspectPairs.map(p => `<div style="font-size:11px;color:#c0d0d8;margin-bottom:5px;">
+        <strong>${p.a.name}</strong> ↔ <strong>${p.b.name}</strong> <span style="color:#7a9aaa;">— ${(p.km*1000).toFixed(0)}m apart</span>
+      </div>`).join('')}
+    </div>` : ''}
+    ${dupNames.length ? `<div style="background:#162230;padding:10px;border-radius:8px;margin-bottom:14px;max-height:180px;overflow-y:auto;">
+      <div style="color:#F59E0B;font-size:11px;font-weight:700;margin-bottom:6px;">⚠ Duplicate names (${dupNames.length}):</div>
+      ${dupNames.map(([n, c]) => `<div style="font-size:11px;color:#c0d0d8;margin-bottom:3px;">${n} <span style="color:#7a9aaa;">× ${c}</span></div>`).join('')}
+    </div>` : ''}
+
+    <div class="admin-section-title" style="font-size:13px;margin-top:18px;">📥 Bulk CSV Upload</div>
+    <p style="color:#7a9aaa;font-size:12px;margin-bottom:10px;">Upload a CSV with columns: <code style="color:#15888A;">name, region, category, lat, lng, duration_hours, short, rating</code>. Validated and queued for moderation.</p>
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+      <input type="file" id="adminCsvFile" accept=".csv" style="color:#c0d0d8;flex:1;" />
+      <button onclick="uploadAdminCsv()" style="background:#15888A;color:#fff;border:0;padding:8px 14px;border-radius:6px;font-weight:700;cursor:pointer;">Upload</button>
+      <button onclick="downloadCsvTemplate()" style="background:transparent;color:#15888A;border:1px solid #15888A;padding:8px 14px;border-radius:6px;font-weight:700;cursor:pointer;">📋 Template</button>
+    </div>
+    <div id="adminCsvResult" style="font-size:11px;color:#7a9aaa;"></div>
+
+    <div class="admin-section-title" style="font-size:13px;margin-top:18px;">🖼 Image Management</div>
+    ${(() => {
+      const noImg = ATTRACTIONS.filter(a => !a._images?.length);
+      const lowImg = ATTRACTIONS.filter(a => a._images?.length === 1);
+      return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+        <div class="admin-stat-card"><div class="admin-stat-val">${noImg.length}</div><div class="admin-stat-label">No images</div><div class="admin-stat-sub">need photo sourcing</div></div>
+        <div class="admin-stat-card"><div class="admin-stat-val">${lowImg.length}</div><div class="admin-stat-label">Only 1 image</div><div class="admin-stat-sub">could use more</div></div>
+      </div>
+      <div style="background:#162230;padding:10px;border-radius:8px;max-height:200px;overflow-y:auto;">
+        <div style="color:#F59E0B;font-size:11px;font-weight:700;margin-bottom:6px;">📸 POIs needing images (top 20):</div>
+        ${noImg.slice(0,20).map(a => `<div style="font-size:11px;color:#c0d0d8;margin-bottom:3px;cursor:pointer;" onclick="jumpToPoiAdmin('${a.id}')">
+          ${a.name} <span style="color:#7a9aaa;">— ${(REGIONS.find(r=>r.id===a.region)||{}).name?.split(' / ')[0] || a.region || ''}</span>
+        </div>`).join('')}
+        ${noImg.length > 20 ? `<div style="color:#5a7a8a;font-size:10px;margin-top:4px;">+ ${noImg.length - 20} more</div>` : ''}
+      </div>`;
+    })()}
+
+    <div class="admin-section-title" style="font-size:13px;margin-top:18px;">⚙ Server Status</div>
+    <div id="adminServerStatus" style="font-size:12px;color:#7a9aaa;background:#162230;padding:10px;border-radius:8px;">Checking…</div>
+  `;
+}
+
+function approvePending(idx) {
+  const pending = JSON.parse(localStorage.getItem('qw_pending_pois') || '[]');
+  const p = pending[idx];
+  if (!p) return;
+  // Inject into live ATTRACTIONS for this session
+  const newPoi = {
+    id: 'pend-' + Date.now(),
+    name: p.name, region: p.region, category: p.category,
+    lat: p.lat, lng: p.lng,
+    duration_hours: p.duration_hours || 1,
+    short: p.short || '', commentary: p.commentary || '',
+    tags: p.tags || [], _images: [],
+    reviews: p.rating ? { rating: p.rating, count: 0 } : null
+  };
+  ATTRACTIONS.push(newPoi);
+  pending.splice(idx, 1);
+  localStorage.setItem('qw_pending_pois', JSON.stringify(pending));
+  showToast(`✓ Approved: ${p.name}`);
+  switchAdminTab('tools');
+}
+
+function rejectPending(idx) {
+  const pending = JSON.parse(localStorage.getItem('qw_pending_pois') || '[]');
+  const p = pending[idx];
+  if (!p) return;
+  if (!confirm(`Reject "${p.name}"? This cannot be undone.`)) return;
+  pending.splice(idx, 1);
+  localStorage.setItem('qw_pending_pois', JSON.stringify(pending));
+  showToast(`✗ Rejected: ${p.name}`);
+  switchAdminTab('tools');
+}
+
+function downloadCsvTemplate() {
+  const csv = 'name,region,category,lat,lng,duration_hours,short,rating\n' +
+    'Example Place,otago,nature,-45.0312,168.6626,2,A short description here,4.5\n';
+  const blob = new Blob([csv], { type: 'text/csv' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'qiwiosity-pois-template.csv'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('📋 Template downloaded');
+}
+
+// Robust CSV line parser — handles quoted fields with embedded commas and "" escapes
+function _parseCsvLine(line) {
+  const out = [];
+  let cur = '', inQ = false;
+  for (let i = 0; i < line.length; i++) {
+    const c = line[i];
+    if (inQ) {
+      if (c === '"' && line[i+1] === '"') { cur += '"'; i++; }
+      else if (c === '"') inQ = false;
+      else cur += c;
+    } else {
+      if (c === '"') inQ = true;
+      else if (c === ',') { out.push(cur); cur = ''; }
+      else cur += c;
+    }
+  }
+  out.push(cur);
+  return out.map(s => s.trim());
+}
+
+function uploadAdminCsv() {
+  const file = document.getElementById('adminCsvFile')?.files?.[0];
+  const result = document.getElementById('adminCsvResult');
+  if (!file) { result.innerHTML = '<span style="color:#e05;">Please select a CSV file first.</span>'; return; }
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      const lines = e.target.result.split(/\r?\n/).filter(l => l.trim());
+      if (lines.length < 2) { result.innerHTML = '<span style="color:#e05;">CSV is empty.</span>'; return; }
+      const headers = _parseCsvLine(lines[0]).map(h => h.toLowerCase());
+      const required = ['name','region','category','lat','lng'];
+      const missing = required.filter(r => !headers.includes(r));
+      if (missing.length) { result.innerHTML = `<span style="color:#e05;">Missing columns: ${missing.join(', ')}</span>`; return; }
+      const rows = lines.slice(1).map(line => {
+        const cells = _parseCsvLine(line);
+        const obj = {};
+        headers.forEach((h, i) => obj[h] = cells[i] || '');
+        return obj;
+      });
+      let valid = 0, invalid = 0;
+      const pending = JSON.parse(localStorage.getItem('qw_pending_pois') || '[]');
+      rows.forEach(r => {
+        const lat = parseFloat(r.lat), lng = parseFloat(r.lng);
+        if (!r.name || isNaN(lat) || isNaN(lng)) { invalid++; return; }
+        pending.push({
+          name: r.name, region: r.region, category: r.category,
+          lat, lng,
+          duration_hours: parseFloat(r.duration_hours) || 1,
+          short: r.short || '',
+          rating: parseFloat(r.rating) || null,
+          submittedAt: Date.now(), source: 'csv-upload'
+        });
+        valid++;
+      });
+      localStorage.setItem('qw_pending_pois', JSON.stringify(pending));
+      result.innerHTML = `<span style="color:#15888A;">✓ ${valid} added to moderation queue${invalid ? `, ${invalid} skipped (invalid)` : ''}.</span>`;
+      setTimeout(() => switchAdminTab('tools'), 1200);
+    } catch (err) {
+      result.innerHTML = `<span style="color:#e05;">Parse error: ${err.message}</span>`;
+    }
+  };
+  reader.readAsText(file);
+}
+
+// Check server TTS status when tools tab is rendered
+function _checkAdminServerStatus() {
+  const el = document.getElementById('adminServerStatus');
+  if (!el) return;
+  fetch('/api/tts/status').then(r => r.json()).then(data => {
+    el.innerHTML = data.available
+      ? '✓ <span style="color:#15888A;font-weight:700;">ElevenLabs server proxy enabled</span> — clients without their own key will fall back to the server.'
+      : '⚠ <span style="color:#F59E0B;">ElevenLabs server proxy not configured.</span> Set <code style="color:#15888A;">ELEVENLABS_API_KEY</code> env var to enable.';
+  }).catch(() => { el.textContent = '⚠ Cannot reach server'; });
 }
 
 function renderAdminOverview() {
@@ -7273,54 +7736,54 @@ function renderAdminAddPoi() {
   return `
     <div class="admin-section-title">➕ Add New POI</div>
     <p style="color:#7a9aaa;font-size:12px;margin-bottom:20px;line-height:1.6;">
-      Fill in the details below. In the live app this would submit to Supabase for admin review before going live.
+      Fill in the details below. Submissions go to the moderation queue (Tools tab) for admin approval.
     </p>
     <div class="admin-form">
       <div class="admin-form-row">
         <div class="admin-form-group">
           <label class="admin-form-label">Name *</label>
-          <input class="admin-form-input" placeholder="e.g. Milford Sound" />
+          <input id="newPoi_name" class="admin-form-input" placeholder="e.g. Milford Sound" />
         </div>
         <div class="admin-form-group">
           <label class="admin-form-label">Region *</label>
-          <select class="admin-form-select"><option value="">Select region…</option>${regionOptions}</select>
+          <select id="newPoi_region" class="admin-form-select"><option value="">Select region…</option>${regionOptions}</select>
         </div>
       </div>
       <div class="admin-form-row">
         <div class="admin-form-group">
           <label class="admin-form-label">Category *</label>
-          <select class="admin-form-select"><option value="">Select category…</option>${catOptions}</select>
+          <select id="newPoi_category" class="admin-form-select"><option value="">Select category…</option>${catOptions}</select>
         </div>
         <div class="admin-form-group">
           <label class="admin-form-label">Duration (hours)</label>
-          <input class="admin-form-input" type="number" min="0.5" max="24" step="0.5" placeholder="2" />
+          <input id="newPoi_duration" class="admin-form-input" type="number" min="0.5" max="24" step="0.5" placeholder="2" />
         </div>
       </div>
       <div class="admin-form-row">
         <div class="admin-form-group">
           <label class="admin-form-label">Latitude *</label>
-          <input class="admin-form-input" placeholder="-44.67" />
+          <input id="newPoi_lat" class="admin-form-input" placeholder="-44.67" />
         </div>
         <div class="admin-form-group">
           <label class="admin-form-label">Longitude *</label>
-          <input class="admin-form-input" placeholder="167.92" />
+          <input id="newPoi_lng" class="admin-form-input" placeholder="167.92" />
         </div>
       </div>
       <div class="admin-form-group">
         <label class="admin-form-label">Short description (1–2 sentences)</label>
-        <input class="admin-form-input" placeholder="A brief teaser shown in the popup." />
+        <input id="newPoi_short" class="admin-form-input" placeholder="A brief teaser shown in the popup." />
       </div>
       <div class="admin-form-group">
         <label class="admin-form-label">Full commentary (audio guide script)</label>
-        <textarea class="admin-form-textarea" placeholder="Written in present tense, conversational. This is what the audio guide reads aloud. Aim for 200–400 words."></textarea>
+        <textarea id="newPoi_commentary" class="admin-form-textarea" placeholder="Written in present tense, conversational. This is what the audio guide reads aloud. Aim for 200–400 words."></textarea>
       </div>
       <div class="admin-form-group">
         <label class="admin-form-label">Tags (comma separated)</label>
-        <input class="admin-form-input" placeholder="waterfall, scenic, family-friendly" />
+        <input id="newPoi_tags" class="admin-form-input" placeholder="waterfall, scenic, family-friendly" />
       </div>
       <div class="admin-form-group">
         <label class="admin-form-label">Star rating (0–5)</label>
-        <input class="admin-form-input" type="number" min="0" max="5" step="0.1" placeholder="4.5" />
+        <input id="newPoi_rating" class="admin-form-input" type="number" min="0" max="5" step="0.1" placeholder="4.5" />
       </div>
       <button class="admin-form-submit" onclick="submitAdminPoi()">Submit for Review</button>
     </div>`;
@@ -7410,8 +7873,36 @@ function attachAdminPoiEvents() {}
 function attachAdminAccomEvents() {}
 
 function submitAdminPoi() {
-  showToast('✓ Submitted for review — would save to Supabase in production');
-  setTimeout(() => switchAdminTab('overview'), 1200);
+  // Read the form fields by ID (robust to layout changes)
+  const get = id => (document.getElementById(id)?.value || '').trim();
+  const name = get('newPoi_name');
+  const region = get('newPoi_region');
+  const category = get('newPoi_category');
+  const duration = get('newPoi_duration');
+  const lat = get('newPoi_lat');
+  const lng = get('newPoi_lng');
+  const short = get('newPoi_short');
+  const commentary = get('newPoi_commentary');
+  const tags = get('newPoi_tags');
+  const rating = get('newPoi_rating');
+  if (!name || !region || !category || !lat || !lng) {
+    showToast('⚠ Required: name, region, category, lat, lng'); return;
+  }
+  const latNum = parseFloat(lat), lngNum = parseFloat(lng);
+  if (isNaN(latNum) || isNaN(lngNum)) { showToast('⚠ Lat/Lng must be numbers'); return; }
+  const pending = JSON.parse(localStorage.getItem('qw_pending_pois') || '[]');
+  pending.push({
+    name, region, category,
+    lat: latNum, lng: lngNum,
+    duration_hours: parseFloat(duration) || 1,
+    short, commentary,
+    tags: tags ? tags.split(',').map(t=>t.trim()).filter(Boolean) : [],
+    rating: parseFloat(rating) || null,
+    submittedAt: Date.now(), source: 'admin-form'
+  });
+  localStorage.setItem('qw_pending_pois', JSON.stringify(pending));
+  showToast(`✓ Queued for moderation: ${name}`);
+  setTimeout(() => switchAdminTab('tools'), 800);
 }
 
 // ============ MAP STYLE SWITCHER ============
