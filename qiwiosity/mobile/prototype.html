@@ -1617,7 +1617,7 @@
     <button class="sidebar-back-top" id="sidebarBackTop" onclick="document.getElementById('mainSidebar').scrollTo({top:0,behavior:'smooth'})" title="Back to top">↑</button>
     <div class="view active" id="view-explore">
       <div class="search-wrap">
-        <input class="search" id="search" placeholder="Search attractions..." autocomplete="off" style="margin-bottom:0;" />
+        <input class="search" id="search" placeholder="Search attractions..." data-i18n-ph="explore.searchPh" autocomplete="off" style="margin-bottom:0;" />
         <div class="search-suggestions" id="searchSuggestions"></div>
       </div>
       <div style="display:flex;gap:6px;margin-bottom:4px;">
@@ -1657,7 +1657,7 @@
         <span style="font-size:11px;font-weight:700;color:var(--muted);white-space:nowrap;">⏱ Max duration:</span>
         <div id="durationFilterChips" style="display:flex;gap:4px;flex-wrap:wrap;"></div>
       </div>
-      <h2>Categories</h2>
+      <h2 data-i18n="explore.categories">Categories</h2>
       <div class="category-list" id="categoryList"></div>
       <h2 style="display:flex;align-items:center;justify-content:space-between;">
         Regions
@@ -1686,49 +1686,49 @@
     </div>
     <div class="view" id="view-plan">
       <div class="journey-start-bar">
-        <div class="journey-start-label">🟢 STARTING POINT</div>
+        <div class="journey-start-label"><span>🟢</span> <span data-i18n="plan.startLabel">STARTING POINT</span></div>
         <div class="journey-start-input-row">
           <input class="journey-start-input" id="journeyStartInput"
-            placeholder="Type a city or address in NZ…" autocomplete="off" />
+            placeholder="Type a city or address in NZ…" data-i18n-ph="plan.startPh" autocomplete="off" />
           <button class="journey-start-clear" id="journeyStartClear"
             onclick="clearJourneyStart()" style="display:none" title="Clear start point">✕</button>
         </div>
         <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
       </div>
-      <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()">✨ Generate AI Trip</button>
-      <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()">🚗 Driving Mode <span id="drivingModeStatus">off</span></button>
+      <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()" data-i18n="plan.aiGen">✨ Generate AI Trip</button>
+      <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span data-i18n="plan.drivingMode">🚗 Driving Mode</span> <span id="drivingModeStatus">off</span></button>
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
-        <span class="toggle-label">Show nearby attractions on map</span>
+        <span class="toggle-label" data-i18n="plan.showNearby">Show nearby attractions on map</span>
       </div>
       <div id="planCategoryChips" class="plan-category-chips" style="display:none;"></div>
       <div id="planStopList"></div>
       <div id="planStats"></div>
       <div class="plan-section-toggle" onclick="togglePlanTemplates()">
-        <span>Quick templates</span>
+        <span data-i18n="plan.templates">Quick templates</span>
         <span class="plan-toggle-arrow" id="planTemplatesArrow">▶</span>
       </div>
       <div id="planTemplatesBody" style="display:none;">
-        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')">10-day North Island Classic</button>
-        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')">14-day South Island Epic</button>
-        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')">7-day Adventure Capital</button>
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')" data-i18n="plan.tpl1">10-day North Island Classic</button>
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')" data-i18n="plan.tpl2">14-day South Island Epic</button>
+        <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')" data-i18n="plan.tpl3">7-day Adventure Capital</button>
       </div>
     </div>
 
     <div class="view" id="view-compare">
-      <h2>Compare Places</h2>
-      <p style="font-size:12px;color:var(--muted);margin:0 0 8px;">Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.</p>
+      <h2 data-i18n="compare.title">Compare Places</h2>
+      <p style="font-size:12px;color:var(--muted);margin:0 0 8px;" data-i18n="compare.intro">Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.</p>
       <div class="compare-group-toolbar" id="compareGroupToolbar">
-        <button class="chip active" data-group="category">By Category</button>
-        <button class="chip" data-group="region">By Region</button>
-        <button class="chip" data-group="none">All together</button>
+        <button class="chip active" data-group="category" data-i18n="compare.byCat">By Category</button>
+        <button class="chip" data-group="region" data-i18n="compare.byRegion">By Region</button>
+        <button class="chip" data-group="none" data-i18n="compare.all">All together</button>
       </div>
       <div id="compareContent"></div>
     </div>
 
     <div class="view" id="view-saved">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
-        <h2 style="margin:0;">Saved Places</h2>
+        <h2 style="margin:0;" data-i18n="saved.title">Saved Places</h2>
         <div style="display:flex;gap:5px;">
           <button onclick="addAllSavedToTrip()" title="Add all saved places to your itinerary" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--primary);border-radius:20px;background:transparent;color:var(--primary);cursor:pointer;font-weight:700;">＋ Add all to trip</button>
           <button onclick="shareWishlist()" style="font-size:11px;padding:4px 10px;border:1.5px solid var(--border);border-radius:20px;background:var(--surface2);color:var(--text);cursor:pointer;font-weight:700;">📤 Share</button>
@@ -3195,6 +3195,16 @@ const LANG_DICT = {
     'poi.add': '＋ Add to Itinerary', 'poi.added': '✓ In Itinerary',
     'poi.more': '📖 More', 'poi.save': 'Save', 'poi.drive': '🧭 Drive',
     'poi.similar': 'Similar', 'poi.share': '📤 Share', 'poi.compare': '⚖ Compare',
+    'explore.categories': 'Categories', 'explore.searchPh': 'Search attractions...',
+    'plan.startLabel': 'STARTING POINT', 'plan.startPh': 'Type a city or address in NZ…',
+    'plan.aiGen': '✨ Generate AI Trip', 'plan.drivingMode': '🚗 Driving Mode',
+    'plan.showNearby': 'Show nearby attractions on map', 'plan.templates': 'Quick templates',
+    'plan.tpl1': '10-day North Island Classic', 'plan.tpl2': '14-day South Island Epic', 'plan.tpl3': '7-day Adventure Capital',
+    'compare.title': 'Compare Places',
+    'compare.intro': 'Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.',
+    'compare.byCat': 'By Category', 'compare.byRegion': 'By Region', 'compare.all': 'All together',
+    'saved.title': 'Saved Places', 'saved.empty': 'No saved places yet',
+    'saved.emptyDesc': 'Open any place on the map and tap ♡ Save to add it here.',
   },
   mi: {
     'splash.headline': 'Tūhuratia Aotearoa<br>me te Pīroiroi',
@@ -3216,6 +3226,16 @@ const LANG_DICT = {
     'poi.add': '＋ Tāpiri ki te Haerenga', 'poi.added': '✓ Kei roto',
     'poi.more': '📖 Atu anō', 'poi.save': 'Tiaki', 'poi.drive': '🧭 Taraiwa',
     'poi.similar': 'Ōrite', 'poi.share': '📤 Tiri', 'poi.compare': '⚖ Whakatauritea',
+    'explore.categories': 'Ngā Kāwai', 'explore.searchPh': 'Rapua ngā wāhi...',
+    'plan.startLabel': 'WĀHI TĪMATA', 'plan.startPh': 'Tāuruhia he tāone rānei…',
+    'plan.aiGen': '✨ Hangaia te Haerenga AI', 'plan.drivingMode': '🚗 Aratau Taraiwa',
+    'plan.showNearby': 'Whakaaturia ngā wāhi tata ki runga mapi', 'plan.templates': 'Ngā tauira tere',
+    'plan.tpl1': '10-rā Aporei Raki', 'plan.tpl2': '14-rā Aporei Tonga Nui', 'plan.tpl3': '7-rā Tāone Pīwheke',
+    'compare.title': 'Whakatauritea Wāhi',
+    'compare.intro': 'Pātōngia <strong>⚖ Whakatauritea</strong> i runga i tētahi puare mapi.',
+    'compare.byCat': 'Mā Kāwai', 'compare.byRegion': 'Mā Rohe', 'compare.all': 'Katoa',
+    'saved.title': 'Wāhi Tiakina', 'saved.empty': 'Kāore anō he wāhi i tiakina',
+    'saved.emptyDesc': 'Tūwherahia tētahi wāhi ka pā ki te ♡ Tiaki.',
   },
   zh: {
     'splash.headline': '用好奇心<br>探索新西兰',
@@ -3237,6 +3257,16 @@ const LANG_DICT = {
     'poi.add': '＋ 添加到行程', 'poi.added': '✓ 已在行程',
     'poi.more': '📖 更多', 'poi.save': '保存', 'poi.drive': '🧭 导航',
     'poi.similar': '相似', 'poi.share': '📤 分享', 'poi.compare': '⚖ 比较',
+    'explore.categories': '分类', 'explore.searchPh': '搜索景点...',
+    'plan.startLabel': '出发点', 'plan.startPh': '输入新西兰城市或地址…',
+    'plan.aiGen': '✨ AI 行程规划', 'plan.drivingMode': '🚗 驾驶模式',
+    'plan.showNearby': '在地图上显示附近景点', 'plan.templates': '快速模板',
+    'plan.tpl1': '北岛经典 10 天', 'plan.tpl2': '南岛史诗 14 天', 'plan.tpl3': '冒险之都 7 天',
+    'compare.title': '比较景点',
+    'compare.intro': '在地图弹窗点击 <strong>⚖ 比较</strong> 添加景点,然后用决策模式选出最爱。',
+    'compare.byCat': '按分类', 'compare.byRegion': '按地区', 'compare.all': '全部',
+    'saved.title': '已保存景点', 'saved.empty': '暂无保存',
+    'saved.emptyDesc': '在地图打开景点并点击 ♡ 保存即可添加到此处。',
   },
   ja: {
     'splash.headline': '好奇心とともに<br>ニュージーランドを探索',
@@ -3258,6 +3288,16 @@ const LANG_DICT = {
     'poi.add': '＋ プランに追加', 'poi.added': '✓ プラン済み',
     'poi.more': '📖 詳細', 'poi.save': '保存', 'poi.drive': '🧭 ナビ',
     'poi.similar': '類似', 'poi.share': '📤 共有', 'poi.compare': '⚖ 比較',
+    'explore.categories': 'カテゴリー', 'explore.searchPh': 'スポットを検索...',
+    'plan.startLabel': '出発地', 'plan.startPh': 'NZの都市や住所を入力…',
+    'plan.aiGen': '✨ AI旅行プラン作成', 'plan.drivingMode': '🚗 ドライブモード',
+    'plan.showNearby': '近くのスポットを地図に表示', 'plan.templates': 'テンプレート',
+    'plan.tpl1': '北島クラシック10日間', 'plan.tpl2': '南島エピック14日間', 'plan.tpl3': 'アドベンチャー首都7日間',
+    'compare.title': 'スポット比較',
+    'compare.intro': 'マップポップアップで <strong>⚖ 比較</strong> をタップしてスポットを追加。',
+    'compare.byCat': 'カテゴリー別', 'compare.byRegion': '地域別', 'compare.all': 'すべて',
+    'saved.title': '保存したスポット', 'saved.empty': '保存はまだありません',
+    'saved.emptyDesc': 'マップで開いて ♡ 保存をタップすると追加されます。',
   },
   ko: {
     'splash.headline': '호기심으로<br>뉴질랜드를 탐험하세요',
@@ -3279,6 +3319,16 @@ const LANG_DICT = {
     'poi.add': '＋ 일정에 추가', 'poi.added': '✓ 일정 포함',
     'poi.more': '📖 더보기', 'poi.save': '저장', 'poi.drive': '🧭 길찾기',
     'poi.similar': '유사', 'poi.share': '📤 공유', 'poi.compare': '⚖ 비교',
+    'explore.categories': '카테고리', 'explore.searchPh': '명소 검색...',
+    'plan.startLabel': '출발 지점', 'plan.startPh': '뉴질랜드 도시나 주소 입력…',
+    'plan.aiGen': '✨ AI 여행 생성', 'plan.drivingMode': '🚗 운전 모드',
+    'plan.showNearby': '근처 명소를 지도에 표시', 'plan.templates': '빠른 템플릿',
+    'plan.tpl1': '북섬 클래식 10일', 'plan.tpl2': '남섬 에픽 14일', 'plan.tpl3': '어드벤처 수도 7일',
+    'compare.title': '장소 비교',
+    'compare.intro': '지도 팝업에서 <strong>⚖ 비교</strong>를 탭하여 추가하세요.',
+    'compare.byCat': '카테고리별', 'compare.byRegion': '지역별', 'compare.all': '전체',
+    'saved.title': '저장된 장소', 'saved.empty': '저장된 장소가 없습니다',
+    'saved.emptyDesc': '지도에서 장소를 열고 ♡ 저장을 탭하세요.',
   },
   de: {
     'splash.headline': 'Erkunden Sie Neuseeland<br>mit Neugier',
@@ -3300,6 +3350,16 @@ const LANG_DICT = {
     'poi.add': '＋ Zur Reise', 'poi.added': '✓ In Reise',
     'poi.more': '📖 Mehr', 'poi.save': 'Speichern', 'poi.drive': '🧭 Route',
     'poi.similar': 'Ähnlich', 'poi.share': '📤 Teilen', 'poi.compare': '⚖ Vergleichen',
+    'explore.categories': 'Kategorien', 'explore.searchPh': 'Sehenswürdigkeiten suchen...',
+    'plan.startLabel': 'STARTPUNKT', 'plan.startPh': 'Stadt oder Adresse in NZ eingeben…',
+    'plan.aiGen': '✨ KI-Reise generieren', 'plan.drivingMode': '🚗 Fahrmodus',
+    'plan.showNearby': 'Nahe Sehenswürdigkeiten auf Karte zeigen', 'plan.templates': 'Vorlagen',
+    'plan.tpl1': '10 Tage Nordinsel Klassik', 'plan.tpl2': '14 Tage Südinsel Epos', 'plan.tpl3': '7 Tage Abenteuer-Hauptstadt',
+    'compare.title': 'Orte vergleichen',
+    'compare.intro': 'Tippen Sie <strong>⚖ Vergleichen</strong> in einem Karten-Popup, um Orte hinzuzufügen.',
+    'compare.byCat': 'Nach Kategorie', 'compare.byRegion': 'Nach Region', 'compare.all': 'Alle zusammen',
+    'saved.title': 'Gespeicherte Orte', 'saved.empty': 'Noch keine gespeicherten Orte',
+    'saved.emptyDesc': 'Öffnen Sie einen Ort auf der Karte und tippen Sie ♡ Speichern.',
   },
   fr: {
     'splash.headline': 'Explorez la Nouvelle-Zélande<br>avec Curiosité',
@@ -3321,6 +3381,16 @@ const LANG_DICT = {
     'poi.add': '＋ Ajouter', 'poi.added': '✓ Ajouté',
     'poi.more': '📖 Plus', 'poi.save': 'Sauver', 'poi.drive': '🧭 Itinéraire',
     'poi.similar': 'Similaire', 'poi.share': '📤 Partager', 'poi.compare': '⚖ Comparer',
+    'explore.categories': 'Catégories', 'explore.searchPh': 'Rechercher des attractions...',
+    'plan.startLabel': 'POINT DE DÉPART', 'plan.startPh': 'Saisir une ville ou adresse en NZ…',
+    'plan.aiGen': '✨ Générer un voyage IA', 'plan.drivingMode': '🚗 Mode conduite',
+    'plan.showNearby': 'Afficher les attractions proches sur la carte', 'plan.templates': 'Modèles rapides',
+    'plan.tpl1': 'Île du Nord Classique 10 jours', 'plan.tpl2': 'Île du Sud Épique 14 jours', 'plan.tpl3': 'Capitale de l\'aventure 7 jours',
+    'compare.title': 'Comparer les lieux',
+    'compare.intro': 'Touchez <strong>⚖ Comparer</strong> dans une popup de carte pour ajouter des lieux.',
+    'compare.byCat': 'Par catégorie', 'compare.byRegion': 'Par région', 'compare.all': 'Tous ensemble',
+    'saved.title': 'Lieux favoris', 'saved.empty': 'Aucun lieu enregistré',
+    'saved.emptyDesc': 'Ouvrez un lieu sur la carte et touchez ♡ Sauver.',
   },
   es: {
     'splash.headline': 'Explora Nueva Zelanda<br>con Curiosidad',
@@ -3342,6 +3412,16 @@ const LANG_DICT = {
     'poi.add': '＋ Añadir', 'poi.added': '✓ Añadido',
     'poi.more': '📖 Más', 'poi.save': 'Guardar', 'poi.drive': '🧭 Ruta',
     'poi.similar': 'Similar', 'poi.share': '📤 Compartir', 'poi.compare': '⚖ Comparar',
+    'explore.categories': 'Categorías', 'explore.searchPh': 'Buscar atracciones...',
+    'plan.startLabel': 'PUNTO DE PARTIDA', 'plan.startPh': 'Escribe una ciudad o dirección en NZ…',
+    'plan.aiGen': '✨ Generar viaje con IA', 'plan.drivingMode': '🚗 Modo conducción',
+    'plan.showNearby': 'Mostrar atracciones cercanas en el mapa', 'plan.templates': 'Plantillas rápidas',
+    'plan.tpl1': 'Isla Norte Clásica 10 días', 'plan.tpl2': 'Isla Sur Épica 14 días', 'plan.tpl3': 'Capital de aventura 7 días',
+    'compare.title': 'Comparar lugares',
+    'compare.intro': 'Toca <strong>⚖ Comparar</strong> en cualquier popup del mapa para añadir lugares.',
+    'compare.byCat': 'Por categoría', 'compare.byRegion': 'Por región', 'compare.all': 'Todos juntos',
+    'saved.title': 'Lugares guardados', 'saved.empty': 'Aún no hay lugares guardados',
+    'saved.emptyDesc': 'Abre un lugar en el mapa y toca ♡ Guardar para añadirlo aquí.',
   },
 };
 
@@ -7224,8 +7304,8 @@ function renderWishlistView() {
   if (savedPOIs.length === 0) {
     el.innerHTML = `<div class="wishlist-empty">
       <div class="we-icon">❤</div>
-      <h3>No saved places yet</h3>
-      <p>Open any place on the map and tap <strong>♡ Save</strong> to add it here.</p>
+      <h3>${t('saved.empty')}</h3>
+      <p>${t('saved.emptyDesc')}</p>
     </div>`;
     return;
   }
