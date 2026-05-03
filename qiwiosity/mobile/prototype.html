@@ -289,6 +289,21 @@
   .bg-savings-entry .amt { font-weight: 700; color: #16a34a; }
   .bg-savings-entry button { background:none; border:none; color: var(--muted); cursor:pointer; font-size: 14px; padding: 0 4px; }
   .bg-empty { text-align:center; padding: 30px 20px; color: var(--muted); }
+  .al-section { margin-bottom: 14px; padding: 12px; background: var(--surface2); border-radius: 10px; border: 1px solid var(--border); }
+  .al-section h4 { margin: 0 0 8px; font-size: 13px; font-weight: 800; color: var(--text); display:flex; align-items:center; gap:6px; }
+  .al-section .desc { font-size: 11px; color: var(--muted); margin: 0 0 8px; line-height: 1.45; }
+  .al-row { display:flex; justify-content:space-between; align-items:center; padding: 6px 0; font-size: 13px; gap: 10px; }
+  .al-row + .al-row { border-top: 1px dashed var(--border); }
+  .al-row .lbl { flex: 1; color: var(--text); }
+  .al-row select, .al-row input[type=text], .al-row input[type=number] { padding: 5px 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 12px; }
+  .al-feed { max-height: 220px; overflow-y: auto; padding: 4px 0; }
+  .al-card { padding: 10px 12px; background: var(--surface); border-left: 3px solid var(--primary); border-radius: 6px; margin-bottom: 6px; font-size: 12px; line-height: 1.45; }
+  .al-card.warn { border-left-color: #f59e0b; background: rgba(245,158,11,0.06); }
+  .al-card.info { border-left-color: #3b82f6; background: rgba(59,130,246,0.05); }
+  .al-card.good { border-left-color: #16a34a; background: rgba(22,163,74,0.05); }
+  .al-card .ttl { font-weight: 800; margin-bottom: 3px; color: var(--text); }
+  .al-card .meta { font-size: 10px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .al-fx-line { font-size: 10px; color: var(--muted); margin-top: 1px; font-weight: 600; }
   .near-me-btn:active { transform:scale(0.97); }
   .poi-dist-badge {
     display:inline-block; font-size:10px; font-weight:700;
@@ -1675,6 +1690,7 @@
       <button class="tab" data-view="saved"><span data-i18n="tab.saved">❤ Saved</span><span class="compare-badge" id="savedBadge" style="display:none;background:#e04f4f;">0</span></button>
     </div>
     <div class="header-actions">
+      <button class="header-btn" id="alertsHeaderBtn" onclick="openAlerts()" title="Smart Alerts & Currency" style="position:relative;">🔔<span id="alertsBadge" style="display:none;position:absolute;top:1px;right:1px;background:#e04f4f;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;">!</span></button>
       <button class="header-btn" onclick="openSettings()" title="Settings">⚙</button>
     </div>
   </header>
@@ -4383,6 +4399,482 @@ function toggleSaveFromDetail() {
 
 // ============ SURPRISE ME / DISCOVER ============
 let _surpriseHistory = [];
+// ============ SMART ALERTS & CURRENCY ============
+const ALERTS_KEY = 'qw_alerts_v1';
+const FX_KEY = 'qw_fx_v1';
+const FEED_KEY = 'qw_alerts_feed_v1';
+const ALERT_LAST_KEY = 'qw_alerts_last_check_v1';
+
+const CURRENCIES = [
+  { code: 'NZD', label: '🇳🇿 NZD' }, { code: 'USD', label: '🇺🇸 USD' },
+  { code: 'AUD', label: '🇦🇺 AUD' }, { code: 'GBP', label: '🇬🇧 GBP' },
+  { code: 'EUR', label: '🇪🇺 EUR' }, { code: 'JPY', label: '🇯🇵 JPY' },
+  { code: 'CNY', label: '🇨🇳 CNY' }, { code: 'KRW', label: '🇰🇷 KRW' },
+  { code: 'CAD', label: '🇨🇦 CAD' }, { code: 'SGD', label: '🇸🇬 SGD' },
+  { code: 'INR', label: '🇮🇳 INR' }, { code: 'ZAR', label: '🇿🇦 ZAR' },
+];
+const CURRENCY_SYMBOL = { NZD:'NZ$', USD:'US$', AUD:'A$', GBP:'£', EUR:'€', JPY:'¥', CNY:'¥', KRW:'₩', CAD:'C$', SGD:'S$', INR:'₹', ZAR:'R' };
+
+function _alertsDefaults() {
+  return {
+    weather: true, astronomy: true, aurora: true, dst: true, flights: false,
+    pushEnabled: false,
+    flightInfo: '',
+  };
+}
+function _loadAlerts() {
+  try {
+    const raw = localStorage.getItem(ALERTS_KEY);
+    if (!raw) return _alertsDefaults();
+    const p = JSON.parse(raw);
+    const d = _alertsDefaults();
+    return {
+      weather: p.weather !== false, astronomy: p.astronomy !== false,
+      aurora: p.aurora !== false, dst: p.dst !== false,
+      flights: p.flights === true,
+      pushEnabled: p.pushEnabled === true,
+      flightInfo: typeof p.flightInfo === 'string' ? p.flightInfo.slice(0, 200) : '',
+    };
+  } catch { return _alertsDefaults(); }
+}
+function _saveAlerts(a) { try { localStorage.setItem(ALERTS_KEY, JSON.stringify(a)); } catch {} }
+function _loadFx() {
+  try {
+    const raw = localStorage.getItem(FX_KEY);
+    if (!raw) return { currency: 'NZD', rates: {}, fetchedAt: 0 };
+    const p = JSON.parse(raw);
+    const code = (CURRENCIES.find(c => c.code === p.currency) || {}).code || 'NZD';
+    return { currency: code, rates: (p.rates && typeof p.rates === 'object') ? p.rates : {}, fetchedAt: Number(p.fetchedAt) || 0 };
+  } catch { return { currency: 'NZD', rates: {}, fetchedAt: 0 }; }
+}
+function _saveFx(fx) { try { localStorage.setItem(FX_KEY, JSON.stringify(fx)); } catch {} }
+function _loadFeed() {
+  try { return JSON.parse(localStorage.getItem(FEED_KEY) || '[]'); } catch { return []; }
+}
+function _saveFeed(feed) {
+  try { localStorage.setItem(FEED_KEY, JSON.stringify(feed.slice(0, 30))); } catch {}
+}
+function _addFeed(card) {
+  const feed = _loadFeed();
+  if (feed.some(c => c.dedupe === card.dedupe)) return false;
+  feed.unshift(Object.assign({ ts: Date.now() }, card));
+  _saveFeed(feed);
+  _updateAlertsBadge();
+  return true;
+}
+function _updateAlertsBadge() {
+  const b = document.getElementById('alertsBadge');
+  if (!b) return;
+  const unread = _loadFeed().filter(c => !c.read).length;
+  b.style.display = unread > 0 ? 'inline-block' : 'none';
+  b.textContent = unread > 9 ? '9+' : String(unread);
+}
+
+// ---- Currency ----
+async function refreshFxRates(currency) {
+  const fx = _loadFx();
+  if (currency) fx.currency = currency;
+  if (fx.currency === 'NZD') { fx.rates = { NZD: 1 }; fx.fetchedAt = Date.now(); _saveFx(fx); return fx; }
+  try {
+    const r = await fetch('https://open.er-api.com/v6/latest/NZD');
+    if (!r.ok) throw new Error('fx http ' + r.status);
+    const j = await r.json();
+    if (j && j.rates && typeof j.rates === 'object') {
+      fx.rates = j.rates; fx.fetchedAt = Date.now(); _saveFx(fx);
+    }
+  } catch (e) {
+    console.warn('FX fetch failed', e);
+  }
+  return fx;
+}
+function fxConvertFromNzd(nzd) {
+  const fx = _loadFx();
+  if (!fx || fx.currency === 'NZD') return null;
+  const rate = fx.rates[fx.currency];
+  if (!rate || !isFinite(rate)) return null;
+  const sym = CURRENCY_SYMBOL[fx.currency] || (fx.currency + ' ');
+  const v = Math.round(nzd * rate);
+  return sym + v.toLocaleString();
+}
+function fxNote(nzd) {
+  const c = fxConvertFromNzd(nzd);
+  return c ? `≈ ${c}` : '';
+}
+
+// ---- Astronomy: moon phase ----
+function _moonAge(dateMs) {
+  // Synodic period 29.53059 days, reference new moon 2000-01-06 18:14 UTC
+  const ref = Date.UTC(2000, 0, 6, 18, 14, 0);
+  const days = (dateMs - ref) / 86400000;
+  return ((days % 29.53059) + 29.53059) % 29.53059;
+}
+function _nextFullMoon(fromMs) {
+  // Full moon at age ~14.77
+  let age = _moonAge(fromMs);
+  let daysToFull = (14.77 - age + 29.53059) % 29.53059;
+  return new Date(fromMs + daysToFull * 86400000);
+}
+function _phaseLabel(age) {
+  if (age < 1.84) return 'New moon';
+  if (age < 5.53) return 'Waxing crescent';
+  if (age < 9.22) return 'First quarter';
+  if (age < 12.91) return 'Waxing gibbous';
+  if (age < 16.61) return 'Full moon';
+  if (age < 20.30) return 'Waning gibbous';
+  if (age < 23.99) return 'Last quarter';
+  if (age < 27.68) return 'Waning crescent';
+  return 'New moon';
+}
+
+// ---- DST: NZ ----
+function _lastSundayOfMonth(year, monthIdx /*0-11*/) {
+  const d = new Date(Date.UTC(year, monthIdx + 1, 0));
+  d.setUTCDate(d.getUTCDate() - d.getUTCDay());
+  return d;
+}
+function _firstSundayOfMonth(year, monthIdx) {
+  const d = new Date(Date.UTC(year, monthIdx, 1));
+  d.setUTCDate(1 + ((7 - d.getUTCDay()) % 7));
+  return d;
+}
+function _nextNzDst(now) {
+  const y = now.getUTCFullYear();
+  const candidates = [
+    { d: _lastSundayOfMonth(y, 8),     act: 'starts (clocks forward 1 hour)' }, // last Sun Sep
+    { d: _firstSundayOfMonth(y + 1, 3), act: 'ends (clocks back 1 hour)' },     // first Sun Apr next year
+    { d: _firstSundayOfMonth(y, 3),     act: 'ends (clocks back 1 hour)' },
+    { d: _lastSundayOfMonth(y + 1, 8), act: 'starts (clocks forward 1 hour)' },
+  ];
+  return candidates.filter(c => c.d > now).sort((a, b) => a.d - b.d)[0];
+}
+
+// ---- Itinerary helpers ----
+function _itineraryDayLatLng() {
+  // Group itinerary stops by day, pick centroid per day
+  const stops = state.itinerary || [];
+  if (!stops.length) return [];
+  const byDay = {};
+  stops.forEach(s => {
+    const d = s.day || 1;
+    if (!byDay[d]) byDay[d] = [];
+    byDay[d].push(s);
+  });
+  return Object.keys(byDay).map(d => {
+    const arr = byDay[d];
+    const lat = arr.reduce((s, x) => s + x.lat, 0) / arr.length;
+    const lng = arr.reduce((s, x) => s + x.lng, 0) / arr.length;
+    return { day: parseInt(d, 10), lat, lng, name: arr[0].name };
+  });
+}
+
+// ---- Weather check (Open-Meteo, no key) ----
+async function _checkWeather() {
+  const days = _itineraryDayLatLng();
+  if (!days.length) return [];
+  const cards = [];
+  for (const dy of days.slice(0, 5)) {
+    try {
+      const url = `https://api.open-meteo.com/v1/forecast?latitude=${dy.lat.toFixed(3)}&longitude=${dy.lng.toFixed(3)}&daily=precipitation_sum,uv_index_max,temperature_2m_max,temperature_2m_min&timezone=Pacific%2FAuckland&forecast_days=7`;
+      const r = await fetch(url);
+      if (!r.ok) continue;
+      const j = await r.json();
+      const idx = Math.min(dy.day - 1, (j.daily?.time || []).length - 1);
+      if (idx < 0) continue;
+      const date = j.daily.time[idx];
+      const rain = j.daily.precipitation_sum?.[idx] || 0;
+      const uv = j.daily.uv_index_max?.[idx] || 0;
+      const tMax = j.daily.temperature_2m_max?.[idx];
+      const tMin = j.daily.temperature_2m_min?.[idx];
+      let body = '', kind = 'info';
+      if (rain > 8) { body = `Heavy rain forecast (${rain.toFixed(0)}mm). Pack a waterproof and consider shifting outdoor activities.`; kind = 'warn'; }
+      else if (rain > 2) { body = `Light rain expected (${rain.toFixed(0)}mm). A light rain jacket would be wise.`; kind = 'info'; }
+      if (uv >= 10) { body += (body ? ' ' : '') + `Extreme UV (${uv.toFixed(0)}). Sunscreen, hat & shade between 10am–4pm.`; kind = 'warn'; }
+      else if (uv >= 8) { body += (body ? ' ' : '') + `Very high UV (${uv.toFixed(0)}). Sunscreen recommended.`; kind = kind === 'warn' ? 'warn' : 'info'; }
+      if (!body && tMax != null) body = `Looking good — high ${Math.round(tMax)}°C, low ${Math.round(tMin)}°C, dry day.`;
+      if (!body) continue;
+      const card = { kind, ttl: `Day ${dy.day}: ${dy.name} — ${date}`, body, dedupe: 'wx_' + dy.day + '_' + date, source: 'Open-Meteo' };
+      if (_addFeed(card)) cards.push(card);
+    } catch (e) { console.warn('weather check failed', e); }
+  }
+  return cards;
+}
+
+// ---- Astronomy check ----
+function _checkAstronomy() {
+  const cards = [];
+  const now = Date.now();
+  const next = _nextFullMoon(now);
+  const daysAway = Math.round((next - now) / 86400000);
+  if (daysAway <= 7) {
+    const dateStr = next.toISOString().slice(0, 10);
+    const card = {
+      kind: 'good',
+      ttl: `🌕 Full moon in ${daysAway} day${daysAway === 1 ? '' : 's'}`,
+      body: `Next full moon: ${dateStr}. Great for night photography at Lake Tekapo, Aoraki/Mt Cook, or any of NZ's Dark Sky reserves — if the weather plays ball.`,
+      dedupe: 'moon_' + dateStr,
+      source: 'Local computation',
+    };
+    if (_addFeed(card)) cards.push(card);
+  }
+  return cards;
+}
+
+// ---- Aurora check (NOAA SWPC, no key) ----
+async function _checkAurora() {
+  try {
+    const r = await fetch('https://services.swpc.noaa.gov/products/noaa-planetary-k-index.json');
+    if (!r.ok) return [];
+    const j = await r.json();
+    if (!Array.isArray(j) || j.length < 2) return [];
+    const rows = j.slice(1);
+    let maxKp = 0, maxRow = null;
+    rows.slice(-8).forEach(row => { // last 24h (8 × 3h windows)
+      const kp = parseFloat(row[1]);
+      if (kp > maxKp) { maxKp = kp; maxRow = row; }
+    });
+    if (maxKp >= 5) {
+      const dedupe = 'aurora_' + new Date().toISOString().slice(0, 10);
+      const card = {
+        kind: 'good',
+        ttl: `✨ Aurora Australis alert — Kp ${maxKp.toFixed(1)}`,
+        body: `Geomagnetic activity is elevated (Kp ${maxKp.toFixed(1)}). Head south for the best view: Lake Tekapo, the Catlins, Stewart Island, or anywhere with a clear southern horizon. Best from ~11pm.`,
+        dedupe,
+        source: 'NOAA SWPC',
+      };
+      if (_addFeed(card)) return [card];
+    }
+  } catch (e) { console.warn('aurora check failed', e); }
+  return [];
+}
+
+// ---- Flight check ----
+function _checkFlights() {
+  const cards = [];
+  const a = _loadAlerts();
+  if (!a.flights || !a.flightInfo) return cards;
+  const m = a.flightInfo.match(/(\d{4}-\d{2}-\d{2})/);
+  if (!m) return cards;
+  const flightDate = new Date(m[1] + 'T00:00:00');
+  if (isNaN(flightDate.getTime())) return cards;
+  const todayMs = new Date().setHours(0, 0, 0, 0);
+  const days = Math.round((flightDate.getTime() - todayMs) / 86400000);
+  if (days < 0 || days > 2) return cards;
+  const dedupe = 'flight_' + m[1] + '_' + days;
+  const when = days === 0 ? 'today' : (days === 1 ? 'tomorrow' : `in ${days} days`);
+  const card = {
+    kind: days <= 1 ? 'warn' : 'info',
+    ttl: `✈ Flight ${when} — check status`,
+    body: `Heads-up: ${a.flightInfo}. Confirm check-in time, baggage rules, and check the airline's status page or app for delays/cancellations before you head to the airport.`,
+    dedupe,
+    source: 'Your saved flight info',
+  };
+  if (_addFeed(card)) cards.push(card);
+  return cards;
+}
+
+// ---- DST check ----
+function _checkDst() {
+  const cards = [];
+  const now = new Date();
+  const next = _nextNzDst(now);
+  if (!next) return cards;
+  const days = Math.round((next.d - now) / 86400000);
+  if (days <= 14 && days >= 0) {
+    const dateStr = next.d.toISOString().slice(0, 10);
+    const card = {
+      kind: 'info',
+      ttl: `🕐 NZ Daylight Saving ${next.act.split(' ')[0]} in ${days} day${days === 1 ? '' : 's'}`,
+      body: `On ${dateStr}, NZ daylight saving ${next.act}. Update your watches and double-check tour bookings, especially if travelling between countries.`,
+      dedupe: 'dst_' + dateStr,
+      source: 'NZ DST rules',
+    };
+    if (_addFeed(card)) cards.push(card);
+  }
+  return cards;
+}
+
+// ---- Master check ----
+let _alertsCheckRunning = false;
+async function runAlertChecks(force) {
+  if (_alertsCheckRunning) return;
+  const last = parseInt(localStorage.getItem(ALERT_LAST_KEY) || '0', 10);
+  const sinceMs = Date.now() - last;
+  if (!force && sinceMs < 30 * 60 * 1000) return; // throttle to 30 min
+  _alertsCheckRunning = true;
+  const prefs = _loadAlerts();
+  try {
+    const newCards = [];
+    if (prefs.weather)   newCards.push(...await _checkWeather());
+    if (prefs.astronomy) newCards.push(..._checkAstronomy());
+    if (prefs.aurora)    newCards.push(...await _checkAurora());
+    if (prefs.dst)       newCards.push(..._checkDst());
+    if (prefs.flights)   newCards.push(..._checkFlights());
+    localStorage.setItem(ALERT_LAST_KEY, String(Date.now()));
+    if (newCards.length && prefs.pushEnabled && 'Notification' in window && Notification.permission === 'granted') {
+      newCards.slice(0, 3).forEach(c => {
+        try { new Notification('Qiwiosity — ' + c.ttl, { body: c.body.slice(0, 140) }); } catch {}
+      });
+    }
+    _updateAlertsBadge();
+  } finally {
+    _alertsCheckRunning = false;
+  }
+}
+
+async function togglePushAlerts(enabled) {
+  const a = _loadAlerts();
+  if (!enabled) { a.pushEnabled = false; _saveAlerts(a); return; }
+  if (!('Notification' in window)) { showToast('Notifications not supported'); document.getElementById('alPush').checked = false; return; }
+  let perm = Notification.permission;
+  if (perm === 'default') perm = await Notification.requestPermission();
+  if (perm !== 'granted') {
+    showToast('Notification permission denied');
+    document.getElementById('alPush').checked = false;
+    a.pushEnabled = false; _saveAlerts(a); return;
+  }
+  a.pushEnabled = true; _saveAlerts(a);
+  showToast('Push alerts enabled');
+}
+function setAlertPref(key, val) {
+  const a = _loadAlerts();
+  a[key] = val; _saveAlerts(a);
+}
+function setFlightInfo(v) {
+  const a = _loadAlerts();
+  a.flightInfo = (v || '').slice(0, 200);
+  _saveAlerts(a);
+}
+async function changeCurrency(code) {
+  await refreshFxRates(code);
+  showToast('Currency set to ' + code);
+  renderAlerts();
+  if (typeof renderAccommodationList === 'function') renderAccommodationList();
+}
+async function manualRefreshAlerts() {
+  showToast('Checking for updates…');
+  await refreshFxRates();
+  await runAlertChecks(true);
+  renderAlerts();
+}
+function clearAlertFeed() {
+  if (!confirm('Clear all alerts?')) return;
+  _saveFeed([]);
+  _updateAlertsBadge();
+  renderAlerts();
+}
+function markAllRead() {
+  const feed = _loadFeed();
+  feed.forEach(c => c.read = true);
+  _saveFeed(feed);
+  _updateAlertsBadge();
+  renderAlerts();
+}
+
+function openAlerts() {
+  document.getElementById('alertsOverlay').classList.add('open');
+  // mark feed read on open after slight delay
+  setTimeout(() => { markAllRead(); }, 800);
+  renderAlerts();
+  // kick off background refresh (non-blocking)
+  runAlertChecks(false);
+}
+function closeAlerts() { document.getElementById('alertsOverlay').classList.remove('open'); }
+
+function renderAlerts() {
+  const a = _loadAlerts();
+  const fx = _loadFx();
+  const feed = _loadFeed();
+  const fxAge = fx.fetchedAt ? Math.round((Date.now() - fx.fetchedAt) / 60000) : null;
+  const fxAgeStr = fxAge == null ? 'never' : (fxAge < 60 ? `${fxAge}m ago` : `${Math.round(fxAge/60)}h ago`);
+  const sampleNzd = 200;
+  const sampleConv = fxConvertFromNzd(sampleNzd);
+
+  const feedHtml = !feed.length
+    ? `<div class="bg-empty" style="padding:18px;font-size:12px;">No alerts yet. Tap "Check now" to scan, or add stops to your trip on the Plan tab so we can check the weather for them.</div>`
+    : feed.slice(0, 20).map(c => `
+      <div class="al-card ${_esc(c.kind || 'info')}">
+        <div class="ttl">${_esc(c.ttl || '')}</div>
+        <div>${_esc(c.body || '')}</div>
+        <div class="meta">${_esc(c.source || '')} · ${new Date(c.ts).toLocaleString()}</div>
+      </div>`).join('');
+
+  document.getElementById('alertsBody').innerHTML = `
+    <div class="al-section">
+      <h4>💱 Currency</h4>
+      <p class="desc">Show prices across the app converted from NZD into your local currency. Rates from open.er-api.com (free, ~daily).</p>
+      <div class="al-row">
+        <div class="lbl">Display currency</div>
+        <select onchange="changeCurrency(this.value)">
+          ${CURRENCIES.map(c => `<option value="${c.code}" ${fx.currency === c.code ? 'selected' : ''}>${c.label}</option>`).join('')}
+        </select>
+      </div>
+      <div class="al-row">
+        <div class="lbl">Sample: NZ$200 ${sampleConv ? '→ <strong>' + _esc(sampleConv) + '</strong>' : '(NZD selected)'}</div>
+        <span style="font-size:11px;color:var(--muted);">Rates ${_esc(fxAgeStr)}</span>
+      </div>
+    </div>
+
+    <div class="al-section">
+      <h4>🔔 Alert Categories</h4>
+      <p class="desc">Pick what you want Qiwiosity to keep an eye on. Checks run automatically every 30 minutes while the app is open.</p>
+      <div class="al-row">
+        <div class="lbl">🌧 Weather for trip days<br><span style="font-size:11px;color:var(--muted);">Rain & UV warnings for stops in your itinerary (Open-Meteo)</span></div>
+        <label class="toggle-switch"><input type="checkbox" ${a.weather ? 'checked' : ''} onchange="setAlertPref('weather', this.checked); runAlertChecks(true).then(renderAlerts)" /><span class="toggle-slider"></span></label>
+      </div>
+      <div class="al-row">
+        <div class="lbl">🌕 Full moon & dark sky<br><span style="font-size:11px;color:var(--muted);">Heads-up before a full moon for night photography at Tekapo etc.</span></div>
+        <label class="toggle-switch"><input type="checkbox" ${a.astronomy ? 'checked' : ''} onchange="setAlertPref('astronomy', this.checked); renderAlerts()" /><span class="toggle-slider"></span></label>
+      </div>
+      <div class="al-row">
+        <div class="lbl">✨ Aurora Australis<br><span style="font-size:11px;color:var(--muted);">Live geomagnetic Kp index from NOAA — alerts when Kp ≥ 5</span></div>
+        <label class="toggle-switch"><input type="checkbox" ${a.aurora ? 'checked' : ''} onchange="setAlertPref('aurora', this.checked); runAlertChecks(true).then(renderAlerts)" /><span class="toggle-slider"></span></label>
+      </div>
+      <div class="al-row">
+        <div class="lbl">🕐 NZ Daylight Saving change<br><span style="font-size:11px;color:var(--muted);">Heads-up 2 weeks before clocks change</span></div>
+        <label class="toggle-switch"><input type="checkbox" ${a.dst ? 'checked' : ''} onchange="setAlertPref('dst', this.checked); renderAlerts()" /><span class="toggle-slider"></span></label>
+      </div>
+      <div class="al-row">
+        <div class="lbl">✈ Flight reminders<br><span style="font-size:11px;color:var(--muted);">Note your flight info — we'll remind you to check status the day before. (Live tracking needs a paid API; we'll integrate when you're ready.)</span></div>
+        <label class="toggle-switch"><input type="checkbox" ${a.flights ? 'checked' : ''} onchange="setAlertPref('flights', this.checked); renderAlerts()" /><span class="toggle-slider"></span></label>
+      </div>
+      ${a.flights ? `<div class="al-row"><input type="text" placeholder="e.g. NZ123, AKL→LAX, 2026-06-15" value="${_esc(a.flightInfo)}" onchange="setFlightInfo(this.value)" style="flex:1;" /></div>` : ''}
+    </div>
+
+    <div class="al-section">
+      <h4>📲 Push notifications</h4>
+      <div class="al-row">
+        <div class="lbl">Send browser notifications<br><span style="font-size:11px;color:var(--muted);">When alerts arrive, show a browser pop-up</span></div>
+        <label class="toggle-switch"><input id="alPush" type="checkbox" ${a.pushEnabled ? 'checked' : ''} onchange="togglePushAlerts(this.checked)" /><span class="toggle-slider"></span></label>
+      </div>
+    </div>
+
+    <div class="al-section">
+      <h4>📡 Recent alerts <span style="margin-left:auto;font-size:11px;color:var(--muted);font-weight:500;">${feed.length} item${feed.length === 1 ? '' : 's'}</span></h4>
+      <div class="al-feed">${feedHtml}</div>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">
+      <button class="btn" style="flex:1;min-width:130px;" onclick="manualRefreshAlerts()">↻ Check now</button>
+      <button class="btn" style="flex:1;min-width:130px;" onclick="clearAlertFeed()">✕ Clear feed</button>
+      <button class="btn primary" style="flex:2;min-width:120px;" onclick="closeAlerts()">Done</button>
+    </div>
+  `;
+}
+
+// Boot: load currency rates on first run, kick off first alert check after data loads
+setTimeout(() => {
+  try {
+    const fx = _loadFx();
+    if (fx.currency !== 'NZD' && (!fx.fetchedAt || Date.now() - fx.fetchedAt > 24 * 3600 * 1000)) {
+      refreshFxRates(fx.currency);
+    }
+    runAlertChecks(false);
+    _updateAlertsBadge();
+    // periodic re-check
+    setInterval(() => runAlertChecks(false), 30 * 60 * 1000);
+  } catch (e) { console.warn('alerts boot failed', e); }
+}, 4000);
+
 // ============ TRIP BUDGET & SAVINGS ============
 const BUDGET_KEY = 'qw_budget_v1';
 const ENCOURAGE_MSGS = [
@@ -5714,7 +6206,8 @@ function renderAccommodationList() {
     const color = accomTypeColor(a.type);
     const label = accomTypeLabel(a.type);
     const region = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || '';
-    const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
+    const _fxN = a.price_nzd_per_night ? fxNote(a.price_nzd_per_night) : '';
+    const price = a.price_nzd_per_night ? (`NZ$${a.price_nzd_per_night}/night` + (_fxN ? `<span class="al-fx-line" style="display:block;">${_fxN}</span>` : '')) : '';
     const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
     const distBadge = (() => {
       if (state.nearMeActive && state.userLat != null) {
@@ -8162,7 +8655,8 @@ function renderSavedAccomsView() {
     const color = accomTypeColor(a.type);
     const label = accomTypeLabel(a.type);
     const region = (REGIONS.find(r => r.id === a.region) || {}).name || '';
-    const price = a.price_nzd_per_night ? `NZ$${a.price_nzd_per_night}/night` : '';
+    const _fxN = a.price_nzd_per_night ? fxNote(a.price_nzd_per_night) : '';
+    const price = a.price_nzd_per_night ? (`NZ$${a.price_nzd_per_night}/night` + (_fxN ? `<span class="al-fx-line" style="display:block;">${_fxN}</span>` : '')) : '';
     const rating = a.rating ? `★ ${Number(a.rating).toFixed(1)}` : '';
     return `<div class="accom-card" onclick="accomCardClick('${a.id}')" style="margin-bottom:6px;">
       <div class="accom-card-left">
@@ -9318,6 +9812,17 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
 
 initMap();
 </script>
+<!-- Smart Alerts & Currency modal -->
+<div class="settings-overlay" id="alertsOverlay" onclick="if(event.target===this)closeAlerts()">
+  <div class="settings-modal" style="width:580px;">
+    <div class="settings-header">
+      <h2 data-i18n="alerts.title">🔔 Smart Alerts & Currency</h2>
+      <button class="settings-close" onclick="closeAlerts()">✕</button>
+    </div>
+    <div id="alertsBody" style="padding:16px 18px 22px;"></div>
+  </div>
+</div>
+
 <!-- Trip Budget modal -->
 <div class="settings-overlay" id="budgetOverlay" onclick="if(event.target===this)closeBudget()">
   <div class="settings-modal" style="width:560px;">
