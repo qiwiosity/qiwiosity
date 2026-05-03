@@ -74,6 +74,19 @@ Real shared community feature backed by Replit's built-in PostgreSQL.
 
 **Body-size errors** return HTTP 413; bad JSON returns 400; missing/invalid auth returns 401.
 
+### Moderator Dashboard (`/admin/community`)
+
+Standalone page `qiwiosity/mobile/admin.html` served at `/admin`, `/admin/`, or `/admin/community`. Auth via `QW_ADMIN_KEY` Replit secret (constant-time compare via `x-qw-admin-key` header; key cached in admin browser sessionStorage after successful login (cleared on tab close)).
+
+**Admin endpoints**:
+- `GET  /api/admin/community/status` — `{enabled: bool}` (no auth)
+- `GET  /api/admin/community/flagged?minFlags=N` — list flagged posts with full content + flagger details + dashboard stats (total/flagged/hidden/openIssues/users)
+- `POST /api/admin/community/contribs/:id/unhide` — clears all flags + sets `hidden_by_admin=false`
+- `POST /api/admin/community/contribs/:id/hide` — manual hide (without flag threshold)
+- `DELETE /api/admin/community/contribs/:id` — hard delete (cascades to votes/flags)
+
+If `QW_ADMIN_KEY` is not set, dashboard shows a clear "admin disabled" message and admin endpoints return 503.
+
 ## Phase 3 Feature Sprint (Completed — May 2026)
 
 All applied to `qiwiosity/mobile/prototype.html`:

@@ -290,7 +290,7 @@ async function communityCreate(req, res) {
   const media = body.mediaDataUrl ? String(body.mediaDataUrl).slice(0, 1_000_000) : null;
   if (!title) return jres(res, 400, { error: 'Title required' });
   if (!text && !media) return jres(res, 400, { error: 'Body or photo required' });
-  if (media && !/^data:image\/(jpeg|png|webp);base64,/.test(media)) return jres(res, 400, { error: 'Bad image format' });
+  if (media && !/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/]+={0,2}$/.test(media)) return jres(res, 400, { error: 'Bad image format' });
   const id = 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
   const status = type === 'issue' ? 'open' : 'live';
   try {
@@ -372,6 +372,95 @@ async function communityFlag(req, res, contribId) {
     );
     jres(res, 200, { ok: true, flagCount: r.rows[0]?.flag_count || 0, hidden: r.rows[0]?.hidden_by_admin || false });
   } catch (e) { console.error('flag:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+// ============ ADMIN MODERATION ============
+function adminAuthOk(req) {
+  const key = process.env.QW_ADMIN_KEY;
+  if (!key) return false;
+  const provided = String(req.headers['x-qw-admin-key'] || '');
+  if (provided.length !== key.length) return false;
+  let diff = 0;
+  for (let i = 0; i < key.length; i++) diff |= key.charCodeAt(i) ^ provided.charCodeAt(i);
+  return diff === 0;
+}
+async function adminAuthCheck(req, res) {
+  if (!process.env.QW_ADMIN_KEY) { jres(res, 503, { error: 'Admin disabled — set QW_ADMIN_KEY' }); return false; }
+  if (!adminAuthOk(req)) { jres(res, 401, { error: 'Bad admin key' }); return false; }
+  return true;
+}
+
+async function adminFlaggedList(req, res, urlObj) {
+  if (!await adminAuthCheck(req, res)) return;
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const minFlags = Math.max(1, Math.min(parseInt(urlObj.searchParams.get('minFlags') || '1', 10) || 1, 100));
+  const includeHidden = urlObj.searchParams.get('includeHidden') !== '0';
+  try {
+    const r = await pgPool.query(`
+      SELECT c.id, c.type, c.poi_id AS "poiId", c.title, c.body,
+             c.media_data_url AS "mediaDataUrl",
+             c.author_id AS "authorId", c.author_handle AS "authorHandle",
+             c.status, c.hidden_by_admin AS "hidden", c.flag_count AS "flagCount",
+             (EXTRACT(EPOCH FROM c.created_at)*1000)::bigint AS "createdAt",
+             COALESCE(json_agg(json_build_object(
+               'userId', f.user_id,
+               'flaggedAt', (EXTRACT(EPOCH FROM f.created_at)*1000)::bigint
+             ) ORDER BY f.created_at DESC) FILTER (WHERE f.user_id IS NOT NULL), '[]'::json) AS flaggers
+      FROM qw_contribs c
+      LEFT JOIN qw_flags f ON f.contrib_id = c.id
+      WHERE c.flag_count >= $1 ${includeHidden ? '' : 'AND c.hidden_by_admin = FALSE'}
+      GROUP BY c.id
+      ORDER BY c.flag_count DESC, c.created_at DESC
+      LIMIT 200
+    `, [minFlags]);
+    const stats = await pgPool.query(`
+      SELECT
+        (SELECT COUNT(*) FROM qw_contribs)::int AS total,
+        (SELECT COUNT(*) FROM qw_contribs WHERE flag_count >= 1)::int AS flagged,
+        (SELECT COUNT(*) FROM qw_contribs WHERE hidden_by_admin = TRUE)::int AS hidden,
+        (SELECT COUNT(*) FROM qw_contribs WHERE type = 'issue' AND status = 'open' AND hidden_by_admin = FALSE)::int AS "openIssues",
+        (SELECT COUNT(*) FROM qw_users)::int AS users
+    `);
+    jres(res, 200, { contribs: r.rows, stats: stats.rows[0] });
+  } catch (e) { console.error('admin list:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function adminUnhide(req, res, contribId) {
+  if (!await adminAuthCheck(req, res)) return;
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  const client = await pgPool.connect();
+  try {
+    await client.query('BEGIN');
+    const cur = await client.query(`SELECT 1 FROM qw_contribs WHERE id = $1 FOR UPDATE`, [contribId]);
+    if (!cur.rowCount) { await client.query('ROLLBACK'); return jres(res, 404, { error: 'Not found' }); }
+    await client.query(`DELETE FROM qw_flags WHERE contrib_id = $1`, [contribId]);
+    await client.query(`UPDATE qw_contribs SET flag_count = (SELECT COUNT(*) FROM qw_flags WHERE contrib_id = $1), hidden_by_admin = FALSE WHERE id = $1`, [contribId]);
+    await client.query('COMMIT');
+    jres(res, 200, { ok: true });
+  } catch (e) {
+    try { await client.query('ROLLBACK'); } catch {}
+    console.error('admin unhide:', e.message); jres(res, 500, { error: 'DB error' });
+  } finally { client.release(); }
+}
+
+async function adminHide(req, res, contribId) {
+  if (!await adminAuthCheck(req, res)) return;
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  try {
+    const r = await pgPool.query(`UPDATE qw_contribs SET hidden_by_admin = TRUE WHERE id = $1`, [contribId]);
+    if (!r.rowCount) return jres(res, 404, { error: 'Not found' });
+    jres(res, 200, { ok: true });
+  } catch (e) { console.error('admin hide:', e.message); jres(res, 500, { error: 'DB error' }); }
+}
+
+async function adminDelete(req, res, contribId) {
+  if (!await adminAuthCheck(req, res)) return;
+  if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
+  try {
+    const r = await pgPool.query(`DELETE FROM qw_contribs WHERE id = $1`, [contribId]);
+    if (!r.rowCount) return jres(res, 404, { error: 'Not found' });
+    jres(res, 200, { ok: true });
+  } catch (e) { console.error('admin delete:', e.message); jres(res, 500, { error: 'DB error' }); }
 }
 
 async function communityTop(req, res) {
@@ -487,6 +576,23 @@ const server = http.createServer((req, res) => {
   if (resMatch && req.method === 'POST') return communityResolve(req, res, resMatch[1]);
   const flagMatch = urlPathRaw.match(/^\/api\/community\/contribs\/([\w-]+)\/flag$/);
   if (flagMatch && req.method === 'POST') return communityFlag(req, res, flagMatch[1]);
+
+  // Admin moderation
+  if (urlPathRaw === '/admin' || urlPathRaw === '/admin/' || urlPathRaw === '/admin/community') {
+    const adminFile = path.join(ROOT, 'admin.html');
+    if (fs.existsSync(adminFile)) {
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(adminFile));
+    }
+  }
+  if (urlPathRaw === '/api/admin/community/status') return jres(res, 200, { enabled: !!process.env.QW_ADMIN_KEY });
+  if (urlPathRaw === '/api/admin/community/flagged' && req.method === 'GET') return adminFlaggedList(req, res, new URL(req.url, 'http://localhost'));
+  const aUnhide = urlPathRaw.match(/^\/api\/admin\/community\/contribs\/([\w-]+)\/unhide$/);
+  if (aUnhide && req.method === 'POST') return adminUnhide(req, res, aUnhide[1]);
+  const aHide = urlPathRaw.match(/^\/api\/admin\/community\/contribs\/([\w-]+)\/hide$/);
+  if (aHide && req.method === 'POST') return adminHide(req, res, aHide[1]);
+  const aDel = urlPathRaw.match(/^\/api\/admin\/community\/contribs\/([\w-]+)$/);
+  if (aDel && req.method === 'DELETE') return adminDelete(req, res, aDel[1]);
 
   let urlPath = urlPathRaw;
   if (urlPath === '/') urlPath = '/prototype.html';

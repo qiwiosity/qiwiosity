@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Qiwiosity — Moderator</title>
+<style>
+  :root {
+    --bg: #0f1419; --surface: #1a2028; --surface2: #232b35; --border: #2d3742;
+    --text: #e6edf3; --muted: #8b95a3; --primary: #15888A; --danger: #e04f4f;
+    --warn: #d97706; --ok: #10b981;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.5; }
+  header { background: linear-gradient(135deg, #15888A, #7c3aed); padding: 18px 20px; }
+  header h1 { margin: 0 0 4px; font-size: 20px; }
+  header p { margin: 0; font-size: 12px; opacity: 0.9; }
+  main { max-width: 1100px; margin: 0 auto; padding: 18px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin-bottom: 14px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+  .stat .v { font-size: 22px; font-weight: 800; }
+  .stat .l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  input, button, select { font-family: inherit; font-size: 13px; }
+  input[type=password], input[type=text] { background: var(--surface2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 8px 10px; flex: 1; min-width: 180px; }
+  button { background: var(--surface2); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 8px 14px; cursor: pointer; font-weight: 600; }
+  button:hover { background: var(--border); }
+  button.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
+  button.danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+  button.warn { background: var(--warn); border-color: var(--warn); color: #fff; }
+  button.ok { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+  .pill.flag { background: var(--warn); color: #fff; }
+  .pill.hidden { background: var(--danger); color: #fff; }
+  .pill.live { background: var(--ok); color: #fff; }
+  .pill.type { background: var(--surface2); color: var(--text); border: 1px solid var(--border); }
+  .contrib { background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--warn); border-radius: 8px; padding: 12px; margin-bottom: 10px; }
+  .contrib.hiddenrow { border-left-color: var(--danger); opacity: 0.85; }
+  .contrib h3 { margin: 0 0 4px; font-size: 15px; }
+  .contrib .meta { font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+  .contrib .body { font-size: 13px; white-space: pre-wrap; margin: 6px 0; max-height: 200px; overflow: auto; padding: 8px; background: var(--surface2); border-radius: 6px; }
+  .contrib img { max-width: 240px; max-height: 160px; border-radius: 6px; display: block; margin: 6px 0; }
+  .contrib .actions { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .flaggers { font-size: 10px; color: var(--muted); margin-top: 6px; font-family: ui-monospace, monospace; }
+  .empty { text-align: center; padding: 30px; color: var(--muted); }
+  .err { background: var(--danger); color: #fff; padding: 8px 12px; border-radius: 6px; margin: 10px 0; font-size: 13px; }
+  .ok-msg { background: var(--ok); color: #fff; padding: 8px 12px; border-radius: 6px; margin: 10px 0; font-size: 13px; }
+  label { font-size: 11px; color: var(--muted); display: block; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🛡️ Qiwiosity Moderator Dashboard</h1>
+  <p>Review flagged contributions, unhide false-positives, delete spam.</p>
+</header>
+<main>
+
+<div id="loginCard" class="card">
+  <label>Admin password</label>
+  <div class="row">
+    <input id="adminKey" type="password" placeholder="Enter QW_ADMIN_KEY" autocomplete="current-password" />
+    <button class="primary" onclick="login()">Sign in</button>
+  </div>
+  <p style="font-size:11px;color:var(--muted);margin:10px 0 0;">The password is the value of the <code>QW_ADMIN_KEY</code> Replit secret. It's kept only in this browser tab's session memory and cleared when you close the tab or sign out.</p>
+</div>
+
+<div id="dashboard" style="display:none;">
+  <div class="row" style="margin-bottom:14px;">
+    <label style="margin:0;">Show:</label>
+    <select id="filter" onchange="load()">
+      <option value="1">Posts with 1+ flags (all)</option>
+      <option value="3">Posts with 3+ flags</option>
+      <option value="5">Auto-hidden (5+ flags)</option>
+    </select>
+    <button onclick="load()">↻ Refresh</button>
+    <button style="margin-left:auto;" onclick="logout()">Sign out</button>
+  </div>
+  <div id="msg"></div>
+  <div id="stats" class="stats"></div>
+  <div id="list"></div>
+</div>
+
+<script>
+const KEY_STORAGE = 'qw_admin_key';
+let adminKey = '';
+function isSafeDataImage(s) {
+  return typeof s === 'string' && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/]+={0,2}$/.test(s);
+}
+
+function setMsg(html, ok) {
+  const m = document.getElementById('msg');
+  m.innerHTML = html ? `<div class="${ok ? 'ok-msg' : 'err'}">${html}</div>` : '';
+  if (html) setTimeout(() => { m.innerHTML = ''; }, 4000);
+}
+
+function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+function timeAgo(ts) {
+  const s = Math.max(1, Math.floor((Date.now() - Number(ts)) / 1000));
+  if (s < 60) return s + 's ago';
+  if (s < 3600) return Math.floor(s/60) + 'm ago';
+  if (s < 86400) return Math.floor(s/3600) + 'h ago';
+  return Math.floor(s/86400) + 'd ago';
+}
+
+async function api(path, opts) {
+  const r = await fetch(path, {
+    headers: { 'Content-Type': 'application/json', 'x-qw-admin-key': adminKey },
+    ...(opts || {})
+  });
+  let data = null; try { data = await r.json(); } catch {}
+  if (!r.ok) throw new Error((data && data.error) || `Request failed (${r.status})`);
+  return data;
+}
+
+async function login() {
+  const k = document.getElementById('adminKey').value.trim();
+  if (!k) return;
+  adminKey = k;
+  try {
+    await api('/api/admin/community/flagged?minFlags=1');
+    sessionStorage.setItem(KEY_STORAGE, k);
+    document.getElementById('loginCard').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    load();
+  } catch (e) {
+    adminKey = '';
+    setMsg('Login failed: ' + e.message);
+  }
+}
+
+function logout() {
+  adminKey = '';
+  sessionStorage.removeItem(KEY_STORAGE);
+  document.getElementById('loginCard').style.display = 'block';
+  document.getElementById('dashboard').style.display = 'none';
+  document.getElementById('adminKey').value = '';
+}
+
+async function load() {
+  const minFlags = document.getElementById('filter').value || '1';
+  try {
+    const data = await api('/api/admin/community/flagged?minFlags=' + minFlags);
+    renderStats(data.stats);
+    renderList(data.contribs);
+  } catch (e) { setMsg('Load failed: ' + e.message); }
+}
+
+function renderStats(s) {
+  const cells = [
+    ['Total posts', s.total],
+    ['With flags', s.flagged],
+    ['Auto-hidden', s.hidden],
+    ['Open issues', s.openIssues],
+    ['Users', s.users],
+  ];
+  document.getElementById('stats').innerHTML = cells.map(([l,v]) =>
+    `<div class="stat"><div class="v">${v}</div><div class="l">${l}</div></div>`
+  ).join('');
+}
+
+function el(tag, props, ...kids) {
+  const n = document.createElement(tag);
+  if (props) for (const k in props) {
+    if (k === 'class') n.className = props[k];
+    else if (k === 'style') n.setAttribute('style', props[k]);
+    else if (k.startsWith('on') && typeof props[k] === 'function') n.addEventListener(k.slice(2), props[k]);
+    else n.setAttribute(k, props[k]);
+  }
+  for (const kid of kids) {
+    if (kid == null || kid === false) continue;
+    n.appendChild(typeof kid === 'string' ? document.createTextNode(kid) : kid);
+  }
+  return n;
+}
+
+function renderList(rows) {
+  const container = document.getElementById('list');
+  container.innerHTML = '';
+  if (!rows.length) {
+    container.appendChild(el('div', { class: 'empty' }, '🎉 No flagged posts at this threshold.'));
+    return;
+  }
+  for (const c of rows) {
+    const card = el('div', { class: 'contrib' + (c.hidden ? ' hiddenrow' : '') });
+    const pills = el('div', { style: 'margin-bottom:6px;' },
+      el('span', { class: 'pill type' }, String(c.type)), ' ',
+      el('span', { class: 'pill flag' }, `⚑ ${c.flagCount} flag${c.flagCount===1?'':'s'}`), ' ',
+      el('span', { class: 'pill ' + (c.hidden ? 'hidden' : 'live') }, c.hidden ? 'HIDDEN' : 'VISIBLE'),
+    );
+    const meta = el('div', { class: 'meta' });
+    meta.append('by ', el('strong', null, String(c.authorHandle || '')), ` (${String(c.authorId || '')}) · ${timeAgo(c.createdAt)} · POI: ${c.poiId || '—'}`);
+    card.append(pills, el('h3', null, String(c.title || '')), meta);
+    if (c.body) card.appendChild(el('div', { class: 'body' }, String(c.body)));
+    if (c.mediaDataUrl && isSafeDataImage(c.mediaDataUrl)) {
+      const img = document.createElement('img');
+      img.alt = '';
+      img.src = c.mediaDataUrl;
+      card.appendChild(img);
+    }
+    if (c.flaggers && c.flaggers.length) {
+      const list = c.flaggers.slice(0, 8).map(f => `${f.userId} (${timeAgo(f.flaggedAt)})`).join(', ');
+      card.appendChild(el('div', { class: 'flaggers' }, 'Flagged by: ' + list));
+    }
+    const actions = el('div', { class: 'actions' });
+    if (c.hidden) {
+      actions.appendChild(el('button', { class: 'ok', onclick: () => act(c.id, 'unhide', 'Unhide & clear all flags?') }, '↶ Unhide & clear flags'));
+    } else {
+      actions.appendChild(el('button', { class: 'warn', onclick: () => act(c.id, 'hide', 'Manually hide this post?') }, '⊘ Hide manually'));
+    }
+    actions.appendChild(el('button', { class: 'danger', onclick: () => act(c.id, 'delete', 'PERMANENTLY DELETE this post? This cannot be undone.') }, '🗑 Delete permanently'));
+    card.appendChild(actions);
+    container.appendChild(card);
+  }
+}
+
+async function act(id, action, confirmMsg) {
+  if (!confirm(confirmMsg)) return;
+  try {
+    if (action === 'delete') {
+      await api('/api/admin/community/contribs/' + encodeURIComponent(id), { method: 'DELETE' });
+      setMsg('Deleted permanently', true);
+    } else if (action === 'unhide') {
+      await api('/api/admin/community/contribs/' + encodeURIComponent(id) + '/unhide', { method: 'POST' });
+      setMsg('Unhidden and flags cleared', true);
+    } else if (action === 'hide') {
+      await api('/api/admin/community/contribs/' + encodeURIComponent(id) + '/hide', { method: 'POST' });
+      setMsg('Hidden', true);
+    }
+    load();
+  } catch (e) { setMsg(action + ' failed: ' + e.message); }
+}
+
+// Auto-login if key in storage
+(async () => {
+  try {
+    const status = await fetch('/api/admin/community/status').then(r => r.json());
+    if (!status.enabled) {
+      document.getElementById('loginCard').innerHTML = '<div class="err">Admin disabled — set the <code>QW_ADMIN_KEY</code> secret in Replit and restart the server.</div>';
+      return;
+    }
+  } catch {}
+  const saved = sessionStorage.getItem(KEY_STORAGE);
+  if (saved) {
+    document.getElementById('adminKey').value = saved;
+    adminKey = saved;
+    try {
+      await api('/api/admin/community/flagged?minFlags=1');
+      document.getElementById('loginCard').style.display = 'none';
+      document.getElementById('dashboard').style.display = 'block';
+      load();
+    } catch { logout(); }
+  }
+})();
+</script>
+</main>
+</body>
+</html>
