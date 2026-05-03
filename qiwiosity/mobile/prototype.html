@@ -1976,8 +1976,8 @@
       <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()" data-i18n="plan.aiGen">✨ Generate AI Trip</button>
 
       <div class="plan-action-row">
-        <button class="budget-btn" onclick="openBudget()" data-i18n="budget.cta">💰 Budget</button>
-        <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span data-i18n="plan.drivingMode">🚗 Driving</span> <span id="drivingModeStatus">off</span></button>
+        <button class="budget-btn" onclick="openBudget()">💰 Budget</button>
+        <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span>🚗 Driving</span> <span id="drivingModeStatus">off</span></button>
       </div>
 
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
@@ -1988,7 +1988,7 @@
 
       <div class="section-divider"></div>
 
-      <p class="section-label" style="margin-bottom:6px;" data-i18n="plan.itinerary">Your Itinerary</p>
+      <p class="section-label" style="margin-bottom:6px;">Your Itinerary</p>
       <div id="planStopList"></div>
       <div id="planStats"></div>
 
@@ -2011,7 +2011,7 @@
 
       <div class="section-divider"></div>
 
-      <p class="section-label" style="margin-bottom:6px;" data-i18n="compare.viewBy">Group by</p>
+      <p class="section-label" style="margin-bottom:6px;">Group by</p>
       <div class="compare-group-toolbar" id="compareGroupToolbar">
         <button class="chip active" data-group="category" data-i18n="compare.byCat">Category</button>
         <button class="chip" data-group="region" data-i18n="compare.byRegion">Region</button>
@@ -2394,6 +2394,14 @@
         <button class="aigen-3btn selected" id="aigenBudgetMid" onclick="selectAigenBudget('mid')">💳 Mid-range<br><span style="font-size:9px;font-weight:400;">Mix of everything</span></button>
         <button class="aigen-3btn" id="aigenBudgetLuxury" onclick="selectAigenBudget('luxury')">💎 Luxury<br><span style="font-size:9px;font-weight:400;">Premium experiences</span></button>
       </div>
+    </div>
+
+    <div class="aigen-field">
+      <div class="aigen-field-label">📌 MUST-VISIT PLACES <span style="font-weight:400;text-transform:none;">(optional)</span></div>
+      <div style="font-size:11px;color:var(--muted);margin-bottom:8px;line-height:1.45;">These will be guaranteed in your trip, placed in geographic order along your route.</div>
+      <div class="aigen-chip-grid" id="aigenMustChips" style="margin-bottom:8px;"></div>
+      <input type="text" id="aigenMustSearch" placeholder="Search to add a place…" oninput="renderAigenMustSuggestions(this.value)" autocomplete="off" style="width:100%;border:1.5px solid var(--border);border-radius:8px;padding:8px 12px;font-size:12px;background:var(--surface);color:var(--text);box-sizing:border-box;" />
+      <div id="aigenMustSuggestions" style="margin-top:6px;max-height:180px;overflow-y:auto;"></div>
     </div>
   </div>
 
@@ -9593,6 +9601,7 @@ const aigenState = {
   pace: 'relaxed',
   budget: 'mid',
   accomType: 'bnb',
+  mustVisit: new Set(),
 };
 let aigenResult = null;
 let aigenExpandedDays = new Set();
@@ -9624,8 +9633,65 @@ function openAIGen() {
   document.getElementById('aigenDaysVal').textContent = '7 days';
   document.getElementById('aigenAdultsVal').textContent = '2';
   document.getElementById('aigenChildrenVal').textContent = '0';
+
+  // Reset must-visits and pre-seed with currently saved POIs as a starting suggestion
+  aigenState.mustVisit = new Set();
+  renderAigenMustChips();
+  const ms = document.getElementById('aigenMustSearch');
+  if (ms) ms.value = '';
+  const sg = document.getElementById('aigenMustSuggestions');
+  if (sg) sg.innerHTML = (typeof savedPOIs !== 'undefined' && savedPOIs.length)
+    ? `<div style="font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;margin:6px 2px 4px;">Quick add from your saved places</div>` +
+      savedPOIs.slice(0, 8).map(id => {
+        const a = ATTRACTIONS.find(x => String(x.id) === String(id));
+        if (!a) return '';
+        return `<div onclick="toggleAigenMustVisit('${a.id}')" style="padding:6px 10px;border-radius:6px;cursor:pointer;font-size:12px;background:var(--surface2);color:var(--text);margin-bottom:3px;">♡ ${a.name} <span style="color:var(--muted);font-size:10px;">· ${regionName(a.region) || ''}</span></div>`;
+      }).join('')
+    : '';
+
   aigenSetStep(1);
   document.getElementById('aigenOverlay').classList.add('active');
+}
+
+function renderAigenMustChips() {
+  const el = document.getElementById('aigenMustChips');
+  if (!el) return;
+  if (!aigenState.mustVisit.size) {
+    el.innerHTML = '<div style="font-size:11px;color:var(--muted);font-style:italic;">No must-visits yet — search below or pick from your saved places.</div>';
+    return;
+  }
+  el.innerHTML = [...aigenState.mustVisit].map(id => {
+    const a = ATTRACTIONS.find(x => String(x.id) === String(id));
+    if (!a) return '';
+    return `<span class="aigen-chip selected" onclick="toggleAigenMustVisit('${a.id}')" title="Remove">📌 ${a.name} ×</span>`;
+  }).join('');
+}
+
+function toggleAigenMustVisit(id) {
+  id = String(id);
+  if (aigenState.mustVisit.has(id)) aigenState.mustVisit.delete(id);
+  else aigenState.mustVisit.add(id);
+  renderAigenMustChips();
+  const q = document.getElementById('aigenMustSearch')?.value || '';
+  if (q.trim().length >= 2) renderAigenMustSuggestions(q);
+}
+
+function renderAigenMustSuggestions(q) {
+  const el = document.getElementById('aigenMustSuggestions');
+  if (!el) return;
+  q = (q || '').trim().toLowerCase();
+  if (q.length < 2) { el.innerHTML = ''; return; }
+  const matches = ATTRACTIONS
+    .filter(a => a.name && a.lat && a.lng && a.name.toLowerCase().includes(q))
+    .slice(0, 8);
+  if (!matches.length) {
+    el.innerHTML = '<div style="font-size:11px;color:var(--muted);padding:6px;">No matches</div>';
+    return;
+  }
+  el.innerHTML = matches.map(a => {
+    const sel = aigenState.mustVisit.has(String(a.id));
+    return `<div onclick="toggleAigenMustVisit('${a.id}');" style="padding:6px 10px;border-radius:6px;cursor:pointer;font-size:12px;background:${sel?'rgba(21,136,138,0.1)':'var(--surface2)'};color:${sel?'var(--primary)':'var(--text)'};margin-bottom:3px;font-weight:${sel?'700':'500'};">${sel?'✓ ':'+ '}${a.name} <span style="color:var(--muted);font-size:10px;font-weight:400;">· ${regionName(a.region) || ''}</span></div>`;
+  }).join('');
 }
 
 function closeAIGen() {
@@ -9714,14 +9780,24 @@ function aigenStepNext() {
     if (aigenState.step === 2) {
       // Build summary for step 3
       const startRegionName = REGIONS.find(r => r.id === aigenState.startRegion)?.name || 'New Zealand';
+      const endRegionName = aigenState.roundTrip
+        ? `${startRegionName} (round trip)`
+        : (REGIONS.find(r => r.id === aigenState.endRegion)?.name || 'Open-ended');
       const interestLabels = [...aigenState.interests].map(id => catLabel(id)).join(', ') || 'All types';
       const paceLabel = { relaxed: 'Relaxed', balanced: 'Balanced', active: 'Active' }[aigenState.pace];
       const budgetLabel = { budget: 'Budget', mid: 'Mid-range', luxury: 'Luxury' }[aigenState.budget];
+      const mustNames = [...aigenState.mustVisit]
+        .map(id => ATTRACTIONS.find(x => String(x.id) === String(id))?.name)
+        .filter(Boolean);
+      const mustLine = mustNames.length
+        ? `📌 Must-visit: <b>${mustNames.join(', ')}</b><br>`
+        : '';
       document.getElementById('aigenSummaryText').innerHTML =
-        `📅 <b>${aigenState.numDays}-day</b> trip starting from <b>${startRegionName}</b><br>` +
+        `📅 <b>${aigenState.numDays}-day</b> trip from <b>${startRegionName}</b> → <b>${endRegionName}</b><br>` +
         `👥 <b>${aigenState.adults}</b> adults${aigenState.children ? ` + ${aigenState.children} children` : ''}<br>` +
         `🏷 Interests: <b>${interestLabels}</b><br>` +
-        `🚶 Pace: <b>${paceLabel}</b> · Budget: <b>${budgetLabel}</b>`;
+        `🚶 Pace: <b>${paceLabel}</b> · Budget: <b>${budgetLabel}</b><br>` +
+        mustLine;
     }
     aigenSetStep(aigenState.step + 1);
   } else {
@@ -9774,7 +9850,7 @@ function runAIGen() {
 }
 
 function buildAIItinerary(config) {
-  const { numDays, interests, pace, budget, startRegion: startRegionId, accomType } = config;
+  const { numDays, interests, pace, budget, startRegion: startRegionId, endRegion: endRegionId, accomType, roundTrip, mustVisit } = config;
   const stopsPerDay = { relaxed: 3, balanced: 4, active: 5 }[pace] || 3;
   const totalStops = numDays * stopsPerDay;
 
@@ -9792,30 +9868,107 @@ function buildAIItinerary(config) {
     return { ...poi, _aiScore: score };
   });
 
-  // Starting position from region
+  // Starting & ending positions from regions
   const startReg = REGIONS.find(r => r.id === startRegionId);
-  let pos = startReg?.lat ? { lat: startReg.lat, lng: startReg.lng } : { lat: -36.85, lng: 174.77 };
+  const startPos = startReg?.lat ? { lat: startReg.lat, lng: startReg.lng } : { lat: -36.85, lng: 174.77 };
+  const endReg = roundTrip ? startReg : REGIONS.find(r => r.id === endRegionId);
+  const endPos = endReg?.lat ? { lat: endReg.lat, lng: endReg.lng } : null;
 
-  // Top pool: more candidates = more diversity, fewer = tighter scoring
-  const pool = [...candidates].sort((a,b) => b._aiScore - a._aiScore).slice(0, Math.min(totalStops * 5, 400));
-  const used = new Set();
-  const route = [];
+  // Resolve must-visit POIs (cap at totalStops)
+  const mustIds = new Set([...(mustVisit || new Set())].map(String));
+  const mustPois = candidates.filter(c => mustIds.has(String(c.id))).slice(0, totalStops);
 
-  for (let i = 0; i < totalStops && used.size < pool.length; i++) {
+  // Order must-visits along the start→end axis (or by greedy nearest if no end)
+  let orderedMust = [];
+  if (mustPois.length) {
+    if (endPos && (endPos.lat !== startPos.lat || endPos.lng !== startPos.lng)) {
+      const ax = endPos.lat - startPos.lat, ay = endPos.lng - startPos.lng;
+      const len2 = ax*ax + ay*ay || 1;
+      orderedMust = [...mustPois]
+        .map(p => ({ p, t: ((p.lat - startPos.lat) * ax + (p.lng - startPos.lng) * ay) / len2 }))
+        .sort((a,b) => a.t - b.t)
+        .map(x => x.p);
+    } else {
+      let pos = startPos;
+      const remain = [...mustPois];
+      while (remain.length) {
+        let bi = 0, bd = Infinity;
+        for (let i = 0; i < remain.length; i++) {
+          const d = haversine(pos, remain[i]);
+          if (d < bd) { bd = d; bi = i; }
+        }
+        orderedMust.push(remain[bi]);
+        pos = { lat: remain[bi].lat, lng: remain[bi].lng };
+        remain.splice(bi, 1);
+      }
+    }
+  }
+
+  // Place must-visits at proportional anchor positions in the route
+  const route = new Array(totalStops).fill(null);
+  if (orderedMust.length === 1) {
+    route[Math.floor(totalStops / 2)] = orderedMust[0];
+  } else if (orderedMust.length > 1) {
+    orderedMust.forEach((p, idx) => {
+      const slot = Math.round(idx * (totalStops - 1) / (orderedMust.length - 1));
+      let target = slot;
+      while (target < totalStops && route[target]) target++;
+      if (target >= totalStops) {
+        target = slot;
+        while (target >= 0 && route[target]) target--;
+      }
+      if (target >= 0 && target < totalStops) route[target] = p;
+    });
+  }
+  const used = new Set(orderedMust.map(p => String(p.id)));
+
+  // Pool excludes must-visits (already placed)
+  const pool = [...candidates]
+    .filter(c => !used.has(String(c.id)))
+    .sort((a,b) => b._aiScore - a._aiScore)
+    .slice(0, Math.min(totalStops * 5, 400));
+
+  // Greedy fill empty slots, anchoring toward next fixed point (must-visit or endPos)
+  let pos = startPos;
+  for (let i = 0; i < totalStops; i++) {
+    if (route[i]) {
+      pos = { lat: route[i].lat, lng: route[i].lng };
+      continue;
+    }
+    // Find the next anchor: next must-visit slot, or endPos at the trip's end
+    let anchor = null;
+    for (let j = i + 1; j < totalStops; j++) {
+      if (route[j]) { anchor = route[j]; break; }
+    }
+    if (!anchor && endPos) anchor = endPos;
+    const directDist = anchor ? haversine(pos, anchor) : 0;
+    // End-pull strength ramps from 0 → 1 over the route (so later stops drift toward end)
+    const endPull = endPos ? (i / Math.max(1, totalStops - 1)) : 0;
+
     let best = null, bestS = -Infinity;
-    for (const poi of pool) {
-      if (used.has(poi.id)) continue;
-      const dist = haversine(pos, poi);
-      // Distance penalty decreases as trip progresses (allow spreading out)
-      const penalty = dist / Math.max(20, 15 + i * 4);
-      const s = poi._aiScore - penalty;
-      if (s > bestS) { bestS = s; best = poi; }
+    for (const p of pool) {
+      if (used.has(String(p.id))) continue;
+      const dPrev = haversine(pos, p);
+      const dNext = anchor ? haversine(p, anchor) : 0;
+      // Detour = how much extra distance vs going direct from pos→anchor
+      const detour = anchor ? Math.max(0, (dPrev + dNext) - directDist) : 0;
+      // Distance from prev penalty (looser as trip progresses)
+      const prevPenalty = dPrev / Math.max(20, 15 + i * 4);
+      // Detour penalty (tighter when end-pull is high)
+      const detourPenalty = anchor ? (detour / 60) * (0.4 + 0.8 * endPull) : 0;
+      const s = p._aiScore - prevPenalty - detourPenalty;
+      if (s > bestS) { bestS = s; best = p; }
     }
     if (!best) break;
-    route.push(best);
-    used.add(best.id);
+    route[i] = best;
+    used.add(String(best.id));
     pos = { lat: best.lat, lng: best.lng };
   }
+  // Drop any remaining nulls (e.g. if pool was exhausted)
+  const finalRoute = route.filter(Boolean);
+  // Use finalRoute below as the route variable name expected by the rest
+  route.length = 0;
+  finalRoute.forEach(r => route.push(r));
 
   // Accommodation keyword matching
   const accomKeywords = {
