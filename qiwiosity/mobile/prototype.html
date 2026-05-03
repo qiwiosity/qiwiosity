@@ -1720,6 +1720,7 @@
       <button class="tab active" data-view="explore" data-i18n="tab.explore">Explore</button>
       <button class="tab" data-view="stay" data-i18n="tab.stay">Stay</button>
       <button class="tab" data-view="plan" data-i18n="tab.plan">Plan</button>
+      <button class="tab" data-view="quiz" data-i18n="tab.quiz">🧠 Quiz</button>
       <button class="tab" data-view="compare"><span data-i18n="tab.compare">⚖ Compare</span><span class="compare-badge" id="compareBadge" style="display:none">0</span></button>
       <button class="tab" data-view="saved"><span data-i18n="tab.saved">❤ Saved</span><span class="compare-badge" id="savedBadge" style="display:none;background:#e04f4f;">0</span></button>
     </div>
@@ -1741,7 +1742,6 @@
         <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()" data-i18n="explore.nearMe">📍 Near Me</button>
       </div>
       <button class="identify-btn" style="width:100%;margin-bottom:4px;" onclick="openIdentify()" data-i18n="identify.cta">📸 Snap & Identify a Place</button>
-      <button class="quiz-btn" style="width:100%;margin-bottom:4px;" onclick="openQuiz()" data-i18n="quiz.cta">🧠 Aotearoa Quiz Time</button>
       <div class="recently-viewed" id="recentlyViewedSection" style="display:none;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <h4 style="margin:0;">Recently Viewed</h4>
@@ -8337,10 +8337,12 @@ function switchTab(v) { switchView(v); }
 // ============ TABS ============
 document.querySelectorAll('.tab').forEach(t => {
   t.addEventListener('click', () => {
+    const v = t.dataset.view;
+    // Quiz is a modal action, not a separate view — open overlay and keep current tab
+    if (v === 'quiz') { openQuiz(); return; }
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-    const v = t.dataset.view;
     document.getElementById('view-' + v).classList.add('active');
     state.view = v;
 
