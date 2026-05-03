@@ -252,6 +252,43 @@
     animation: identifySpin 0.8s linear infinite;
   }
   @keyframes identifySpin { to { transform: rotate(360deg); } }
+  .budget-btn {
+    background: linear-gradient(135deg, #f59e0b, #15888A);
+    color: white; border: none; padding: 11px 12px; border-radius: 10px;
+    font-size: 13px; font-weight: 700; cursor: pointer; box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(245,158,11,0.25); transition: transform 0.15s, opacity 0.15s;
+  }
+  .budget-btn:hover { opacity: 0.92; }
+  .budget-btn:active { transform: scale(0.98); }
+  .bg-section { margin-bottom: 18px; }
+  .bg-section h4 { margin: 0 0 8px; font-size: 13px; font-weight: 800;
+    color: var(--text); text-transform: uppercase; letter-spacing: 0.5px; }
+  .bg-row { display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 0; border-bottom: 1px dashed var(--border); gap: 10px; }
+  .bg-row:last-child { border-bottom: none; }
+  .bg-row .lbl { font-size: 13px; color: var(--text); flex: 1; }
+  .bg-row .lbl .sub { font-size: 11px; color: var(--muted); display:block; margin-top:2px; }
+  .bg-input { width: 110px; padding: 6px 9px; border: 1px solid var(--border);
+    border-radius: 6px; font-size: 13px; text-align: right; background: var(--surface); color: var(--text); }
+  .bg-input.full { width: 100%; text-align: left; }
+  .bg-total { font-size: 18px; font-weight: 800; color: var(--primary); }
+  .bg-progress-wrap { background: var(--surface2); border-radius: 12px;
+    height: 14px; overflow: hidden; margin: 10px 0 6px; border: 1px solid var(--border); }
+  .bg-progress-bar { height: 100%; background: linear-gradient(90deg, #16a34a, #15888A);
+    transition: width 0.4s ease; }
+  .bg-progress-bar.warn { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+  .bg-stat-grid { display:grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0; }
+  .bg-stat { background: var(--surface2); padding: 10px; border-radius: 8px; text-align: center; }
+  .bg-stat .n { font-size: 18px; font-weight: 800; color: var(--primary); }
+  .bg-stat .l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .bg-encourage { padding: 10px 12px; background: rgba(21,136,138,0.08);
+    border-left: 3px solid var(--primary); border-radius: 4px;
+    font-size: 12px; color: var(--text); line-height: 1.5; margin: 8px 0; }
+  .bg-savings-entry { display:flex; align-items:center; justify-content:space-between;
+    padding: 8px 10px; background: var(--surface2); border-radius: 6px; margin-bottom: 6px; font-size: 12px; }
+  .bg-savings-entry .amt { font-weight: 700; color: #16a34a; }
+  .bg-savings-entry button { background:none; border:none; color: var(--muted); cursor:pointer; font-size: 14px; padding: 0 4px; }
+  .bg-empty { text-align:center; padding: 30px 20px; color: var(--muted); }
   .near-me-btn:active { transform:scale(0.97); }
   .poi-dist-badge {
     display:inline-block; font-size:10px; font-weight:700;
@@ -1726,6 +1763,7 @@
         <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
       </div>
       <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()" data-i18n="plan.aiGen">✨ Generate AI Trip</button>
+      <button class="budget-btn" style="width:100%;margin-bottom:8px;" onclick="openBudget()" data-i18n="budget.cta">💰 Budget & Save for Trip</button>
       <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span data-i18n="plan.drivingMode">🚗 Driving Mode</span> <span id="drivingModeStatus">off</span></button>
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
@@ -4345,6 +4383,364 @@ function toggleSaveFromDetail() {
 
 // ============ SURPRISE ME / DISCOVER ============
 let _surpriseHistory = [];
+// ============ TRIP BUDGET & SAVINGS ============
+const BUDGET_KEY = 'qw_budget_v1';
+const ENCOURAGE_MSGS = [
+  "You're crushing it! Aotearoa is getting closer 🇳🇿",
+  "Every dollar saved is one step closer to the trip of a lifetime ✨",
+  "Look at you go — keep that momentum!",
+  "The mountains are calling and you're answering 🏔",
+  "Halfway there or just starting — you're moving forward 💪",
+  "Future you is going to be so grateful for this 🙏",
+];
+function _num(v, def) { const n = Number(v); return Number.isFinite(n) && n >= 0 ? n : def; }
+function _safeDate(v) { return (typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v)) ? v : ''; }
+function _normalizeBudget(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const d = _budgetDefaults();
+  const log = Array.isArray(raw.savingsLog) ? raw.savingsLog
+    .filter(e => e && typeof e === 'object')
+    .map(e => ({
+      id: (typeof e.id === 'string' ? e.id : '').replace(/[^a-zA-Z0-9_]/g, '').slice(0, 32) || ('sv_' + Date.now()),
+      amount: _num(e.amount, 0),
+      date: _safeDate(e.date) || new Date().toISOString().slice(0, 10),
+    })).slice(0, 500) : [];
+  return {
+    travelers: _num(raw.travelers, d.travelers),
+    days: _num(raw.days, d.days),
+    nights: _num(raw.nights, d.nights),
+    km: _num(raw.km, d.km),
+    accomPerNight: _num(raw.accomPerNight, d.accomPerNight),
+    foodPerDay: _num(raw.foodPerDay, d.foodPerDay),
+    activitiesPerDay: _num(raw.activitiesPerDay, d.activitiesPerDay),
+    fuelPerKm: _num(raw.fuelPerKm, d.fuelPerKm),
+    miscPercent: Math.min(50, _num(raw.miscPercent, d.miscPercent)),
+    targetDate: _safeDate(raw.targetDate),
+    startDate: _safeDate(raw.startDate) || d.startDate,
+    initialSavings: _num(raw.initialSavings, 0),
+    savingsLog: log,
+    notifyEnabled: raw.notifyEnabled === true,
+    notifyFrequency: raw.notifyFrequency === 'daily' ? 'daily' : 'weekly',
+  };
+}
+function _loadBudget() {
+  try {
+    const raw = localStorage.getItem(BUDGET_KEY);
+    if (raw) return _normalizeBudget(JSON.parse(raw));
+  } catch {}
+  return null;
+}
+function _saveBudget(b) {
+  try { localStorage.setItem(BUDGET_KEY, JSON.stringify(b)); } catch {}
+}
+function _budgetDefaults() {
+  const days = Math.max(1, state.itineraryDays || 1);
+  const nights = Math.max(0, days - 1);
+  const stops = state.itinerary || [];
+  let avgAccom = 180;
+  if (ACCOMMODATIONS && ACCOMMODATIONS.length) {
+    const prices = ACCOMMODATIONS.map(a => a.price_nzd_per_night).filter(p => p > 0);
+    if (prices.length) avgAccom = Math.round(prices.reduce((a, b) => a + b, 0) / prices.length);
+  }
+  let km = 0;
+  if (stops.length > 1) {
+    for (let i = 1; i < stops.length; i++) {
+      const a = stops[i - 1], b = stops[i];
+      if (a.lat && b.lat) {
+        const R = 6371;
+        const dLat = (b.lat - a.lat) * Math.PI / 180;
+        const dLng = (b.lng - a.lng) * Math.PI / 180;
+        const x = Math.sin(dLat/2)**2 + Math.cos(a.lat*Math.PI/180) * Math.cos(b.lat*Math.PI/180) * Math.sin(dLng/2)**2;
+        km += 2 * R * Math.atan2(Math.sqrt(x), Math.sqrt(1-x));
+      }
+    }
+    km = Math.round(km);
+  }
+  return {
+    travelers: 2, days, nights, km,
+    accomPerNight: avgAccom,
+    foodPerDay: 60,
+    activitiesPerDay: 40,
+    fuelPerKm: 0.18,
+    miscPercent: 10,
+    targetDate: '',
+    startDate: new Date().toISOString().slice(0, 10),
+    initialSavings: 0,
+    savingsLog: [],
+    notifyEnabled: false,
+    notifyFrequency: 'weekly',
+  };
+}
+function _calcBudgetTotals(b) {
+  const accom = (b.accomPerNight || 0) * (b.nights || 0);
+  const food = (b.foodPerDay || 0) * (b.days || 0) * (b.travelers || 1);
+  const acts = (b.activitiesPerDay || 0) * (b.days || 0) * (b.travelers || 1);
+  const fuel = (b.fuelPerKm || 0) * (b.km || 0);
+  const sub = accom + food + acts + fuel;
+  const misc = sub * ((b.miscPercent || 0) / 100);
+  const total = sub + misc;
+  const saved = (b.initialSavings || 0) + (b.savingsLog || []).reduce((s, e) => s + (e.amount || 0), 0);
+  return { accom, food, acts, fuel, misc, total, saved, remaining: Math.max(0, total - saved) };
+}
+function _weeksBetween(fromIso, toIso) {
+  if (!fromIso || !toIso) return 0;
+  const ms = new Date(toIso).getTime() - new Date(fromIso).getTime();
+  return Math.max(0, Math.ceil(ms / (7 * 24 * 60 * 60 * 1000)));
+}
+function _fmt(n) { return 'NZ$' + Math.round(n).toLocaleString(); }
+
+let _budgetState = null;
+function openBudget() {
+  _budgetState = _loadBudget() || _budgetDefaults();
+  document.getElementById('budgetOverlay').classList.add('open');
+  renderBudget();
+}
+function recalcFromItinerary() {
+  const fresh = _budgetDefaults();
+  _budgetUpdate({ days: fresh.days, nights: fresh.nights, km: fresh.km, accomPerNight: fresh.accomPerNight });
+  showToast('Refreshed from your current itinerary');
+}
+function closeBudget() {
+  document.getElementById('budgetOverlay').classList.remove('open');
+}
+function _budgetUpdate(patch) {
+  Object.assign(_budgetState, patch);
+  _saveBudget(_budgetState);
+  renderBudget();
+}
+function _budgetUpdateNum(field, val) {
+  const n = parseFloat(val);
+  _budgetUpdate({ [field]: isNaN(n) ? 0 : n });
+}
+function addSavingsEntry() {
+  const amtEl = document.getElementById('bgSavingsAmt');
+  const dateEl = document.getElementById('bgSavingsDate');
+  const amt = parseFloat(amtEl.value);
+  if (!amt || amt <= 0) { showToast('Enter a positive amount'); return; }
+  _budgetState.savingsLog = _budgetState.savingsLog || [];
+  _budgetState.savingsLog.unshift({
+    id: 'sv_' + Date.now(),
+    amount: amt,
+    date: dateEl.value || new Date().toISOString().slice(0, 10),
+  });
+  _saveBudget(_budgetState);
+  renderBudget();
+  showToast('Saved! Keep it up 💪');
+}
+function removeSavingsEntry(id) {
+  _budgetState.savingsLog = (_budgetState.savingsLog || []).filter(e => e.id !== id);
+  _saveBudget(_budgetState);
+  renderBudget();
+}
+function resetBudget() {
+  if (!confirm('Reset your trip budget and savings log?')) return;
+  localStorage.removeItem(BUDGET_KEY);
+  _budgetState = _budgetDefaults();
+  _saveBudget(_budgetState);
+  renderBudget();
+}
+async function toggleBudgetNotifications(enabled) {
+  if (!enabled) {
+    _budgetUpdate({ notifyEnabled: false });
+    _stopBudgetReminder();
+    return;
+  }
+  if (!('Notification' in window)) {
+    showToast('Notifications not supported in this browser');
+    document.getElementById('bgNotify').checked = false;
+    return;
+  }
+  let perm = Notification.permission;
+  if (perm === 'default') perm = await Notification.requestPermission();
+  if (perm !== 'granted') {
+    showToast('Notification permission denied');
+    document.getElementById('bgNotify').checked = false;
+    _budgetUpdate({ notifyEnabled: false });
+    return;
+  }
+  _budgetUpdate({ notifyEnabled: true });
+  _startBudgetReminder();
+  showToast('Reminders on — we\'ll cheer you on');
+}
+let _budgetReminderTimer = null;
+function _startBudgetReminder() {
+  _stopBudgetReminder();
+  const b = _loadBudget(); if (!b || !b.notifyEnabled) return;
+  const intervalMs = b.notifyFrequency === 'daily' ? 24 * 60 * 60 * 1000 : 7 * 24 * 60 * 60 * 1000;
+  // dev-friendly: also fire one in 30s as confirmation
+  const lastShown = parseInt(localStorage.getItem('qw_budget_last_notify') || '0', 10);
+  const due = Date.now() - lastShown > intervalMs;
+  _budgetReminderTimer = setInterval(_fireBudgetReminder, intervalMs);
+  if (due) setTimeout(_fireBudgetReminder, 30 * 1000);
+}
+function _stopBudgetReminder() {
+  if (_budgetReminderTimer) { clearInterval(_budgetReminderTimer); _budgetReminderTimer = null; }
+}
+function _fireBudgetReminder() {
+  try {
+    const b = _loadBudget(); if (!b || !b.notifyEnabled) return;
+    if (Notification.permission !== 'granted') return;
+    const totals = _calcBudgetTotals(b);
+    const weeks = _weeksBetween(new Date().toISOString().slice(0, 10), b.targetDate);
+    const weekly = weeks > 0 ? Math.ceil(totals.remaining / weeks) : 0;
+    const pct = totals.total > 0 ? Math.round((totals.saved / totals.total) * 100) : 0;
+    let body;
+    if (totals.remaining <= 0) body = 'You\'re fully funded! Time to book that trip 🎉';
+    else if (weeks <= 0) body = `You\'ve saved ${_fmt(totals.saved)} of ${_fmt(totals.total)} (${pct}%) — set a target date!`;
+    else body = `${pct}% saved — ${_fmt(weekly)}/week to hit your goal in ${weeks} weeks. ${ENCOURAGE_MSGS[Math.floor(Math.random() * ENCOURAGE_MSGS.length)]}`;
+    new Notification('Qiwiosity — Trip Savings', { body, icon: './assets/logo-mark.png' });
+    localStorage.setItem('qw_budget_last_notify', String(Date.now()));
+  } catch (e) { console.warn('budget reminder failed', e); }
+}
+
+function renderBudget() {
+  const b = _budgetState;
+  const totals = _calcBudgetTotals(b);
+  const today = new Date().toISOString().slice(0, 10);
+  const weeks = _weeksBetween(today, b.targetDate);
+  const weekly = weeks > 0 ? Math.ceil(totals.remaining / weeks) : 0;
+  const monthly = weekly * 4.33;
+  const pct = totals.total > 0 ? Math.min(100, Math.round((totals.saved / totals.total) * 100)) : 0;
+  const onTrack = totals.remaining === 0 || (weeks === 0) || ((b.savingsLog || []).length >= 1);
+  const encourage = ENCOURAGE_MSGS[Math.floor(Math.random() * ENCOURAGE_MSGS.length)];
+
+  let savingsHtml = '';
+  const log = b.savingsLog || [];
+  if (!log.length) {
+    savingsHtml = `<div class="bg-empty" style="padding:14px;font-size:12px;">No savings logged yet. Add your first deposit below!</div>`;
+  } else {
+    savingsHtml = log.slice(0, 30).map(e => `
+      <div class="bg-savings-entry">
+        <span>${_esc(e.date)}</span>
+        <span class="amt">+${_fmt(e.amount)}</span>
+        <button data-bg-remove="${_esc(e.id)}" title="Remove">✕</button>
+      </div>`).join('');
+  }
+
+  document.getElementById('budgetBody').innerHTML = `
+    <div class="bg-section">
+      <h4>📋 Trip Overview</h4>
+      <div class="bg-row">
+        <div class="lbl">Travelers</div>
+        <input type="number" min="1" class="bg-input" value="${b.travelers}" onchange="_budgetUpdateNum('travelers', this.value)" />
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Trip days</div>
+        <input type="number" min="1" class="bg-input" value="${b.days}" onchange="_budgetUpdateNum('days', this.value)" />
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Nights (paid stay)</div>
+        <input type="number" min="0" class="bg-input" value="${b.nights}" onchange="_budgetUpdateNum('nights', this.value)" />
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Driving distance (km)<span class="sub">Auto-estimated from your itinerary</span></div>
+        <input type="number" min="0" class="bg-input" value="${b.km}" onchange="_budgetUpdateNum('km', this.value)" />
+      </div>
+    </div>
+
+    <div class="bg-section">
+      <h4>💵 Cost Breakdown</h4>
+      <div class="bg-row">
+        <div class="lbl">Accommodation<span class="sub">${b.nights} nights × NZ$<input type="number" min="0" class="bg-input" style="width:70px;display:inline-block;margin:0 4px;" value="${b.accomPerNight}" onchange="_budgetUpdateNum('accomPerNight', this.value)" />/night</span></div>
+        <div class="bg-total" style="font-size:14px;">${_fmt(totals.accom)}</div>
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Food<span class="sub">${b.days} days × ${b.travelers} ppl × NZ$<input type="number" min="0" class="bg-input" style="width:60px;display:inline-block;margin:0 4px;" value="${b.foodPerDay}" onchange="_budgetUpdateNum('foodPerDay', this.value)" />/day</span></div>
+        <div class="bg-total" style="font-size:14px;">${_fmt(totals.food)}</div>
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Activities<span class="sub">${b.days} days × ${b.travelers} ppl × NZ$<input type="number" min="0" class="bg-input" style="width:60px;display:inline-block;margin:0 4px;" value="${b.activitiesPerDay}" onchange="_budgetUpdateNum('activitiesPerDay', this.value)" />/day</span></div>
+        <div class="bg-total" style="font-size:14px;">${_fmt(totals.acts)}</div>
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Fuel<span class="sub">${b.km} km × NZ$<input type="number" min="0" step="0.01" class="bg-input" style="width:70px;display:inline-block;margin:0 4px;" value="${b.fuelPerKm}" onchange="_budgetUpdateNum('fuelPerKm', this.value)" />/km</span></div>
+        <div class="bg-total" style="font-size:14px;">${_fmt(totals.fuel)}</div>
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Buffer / misc<span class="sub"><input type="number" min="0" max="50" class="bg-input" style="width:55px;display:inline-block;margin:0 4px;" value="${b.miscPercent}" onchange="_budgetUpdateNum('miscPercent', this.value)" />% on top</span></div>
+        <div class="bg-total" style="font-size:14px;">${_fmt(totals.misc)}</div>
+      </div>
+      <div class="bg-row" style="background:rgba(21,136,138,0.08);padding:12px;border-radius:8px;border-bottom:none;margin-top:6px;">
+        <div class="lbl" style="font-weight:800;font-size:14px;">Total trip cost</div>
+        <div class="bg-total">${_fmt(totals.total)}</div>
+      </div>
+    </div>
+
+    <div class="bg-section">
+      <h4>🎯 Savings Goal</h4>
+      <div class="bg-row">
+        <div class="lbl">Target trip date</div>
+        <input type="date" class="bg-input" min="${today}" value="${_esc(b.targetDate)}" onchange="_budgetUpdate({ targetDate: this.value })" />
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Already saved (starting balance)</div>
+        <input type="number" min="0" class="bg-input" value="${b.initialSavings}" onchange="_budgetUpdateNum('initialSavings', this.value)" />
+      </div>
+      ${b.targetDate && weeks > 0 && totals.remaining > 0 ? `
+        <div class="bg-stat-grid">
+          <div class="bg-stat"><div class="n">${_fmt(weekly)}</div><div class="l">per week</div></div>
+          <div class="bg-stat"><div class="n">${_fmt(monthly)}</div><div class="l">per month</div></div>
+          <div class="bg-stat"><div class="n">${weeks}</div><div class="l">weeks left</div></div>
+          <div class="bg-stat"><div class="n">${_fmt(totals.remaining)}</div><div class="l">still needed</div></div>
+        </div>
+      ` : ''}
+      ${totals.remaining === 0 && totals.total > 0 ? `<div class="bg-encourage">🎉 You\'re fully funded! Time to lock in the dates and start booking.</div>` : ''}
+      ${b.targetDate && weeks === 0 && totals.remaining > 0 ? `<div class="bg-encourage" style="border-left-color:#f59e0b;">⏰ Your target date is here but you\'re ${_fmt(totals.remaining)} short. Consider extending the date or trimming the trip.</div>` : ''}
+    </div>
+
+    <div class="bg-section">
+      <h4>📈 Progress</h4>
+      <div class="bg-progress-wrap"><div class="bg-progress-bar ${pct < 25 && weeks > 0 && weeks < 8 ? 'warn' : ''}" style="width:${pct}%;"></div></div>
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px;">
+        <span>${_fmt(totals.saved)} saved</span>
+        <span>${pct}% of ${_fmt(totals.total)}</span>
+      </div>
+      <div class="bg-encourage">${_esc(encourage)}</div>
+    </div>
+
+    <div class="bg-section">
+      <h4>💰 Log a Deposit</h4>
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+        <input type="number" id="bgSavingsAmt" class="bg-input" placeholder="Amount" style="flex:1;" min="0" step="0.01" />
+        <input type="date" id="bgSavingsDate" class="bg-input" value="${today}" max="${today}" style="flex:1;" />
+        <button class="btn primary" style="padding:8px 16px;" onclick="addSavingsEntry()">Add</button>
+      </div>
+      ${savingsHtml}
+    </div>
+
+    <div class="bg-section">
+      <h4>🔔 Reminders</h4>
+      <div class="bg-row">
+        <div class="lbl">Enable savings reminders<span class="sub">We\'ll cheer you on and remind you to save</span></div>
+        <label style="display:flex;align-items:center;gap:6px;cursor:pointer;">
+          <input type="checkbox" id="bgNotify" ${b.notifyEnabled ? 'checked' : ''} onchange="toggleBudgetNotifications(this.checked)" />
+        </label>
+      </div>
+      <div class="bg-row">
+        <div class="lbl">Frequency</div>
+        <select class="bg-input" style="text-align:left;" onchange="_budgetUpdate({ notifyFrequency: this.value }); if(_budgetState.notifyEnabled) _startBudgetReminder();">
+          <option value="weekly" ${b.notifyFrequency === 'weekly' ? 'selected' : ''}>Weekly</option>
+          <option value="daily" ${b.notifyFrequency === 'daily' ? 'selected' : ''}>Daily</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">
+      <button class="btn" style="flex:1;min-width:160px;" onclick="recalcFromItinerary()">↻ Refresh from Itinerary</button>
+      <button class="btn" style="flex:1;min-width:140px;" onclick="resetBudget()">↺ Reset Budget</button>
+      <button class="btn primary" style="flex:2;min-width:120px;" onclick="closeBudget()">Done</button>
+    </div>
+  `;
+  // attach delegated click for savings remove (avoids inline-handler JS-string injection)
+  const body = document.getElementById('budgetBody');
+  body.querySelectorAll('button[data-bg-remove]').forEach(btn => {
+    btn.addEventListener('click', () => removeSavingsEntry(btn.getAttribute('data-bg-remove')));
+  });
+}
+
+// Auto-start reminders if previously enabled
+setTimeout(() => { try { _startBudgetReminder(); } catch {} }, 2000);
+
 // ============ SNAP & IDENTIFY ============
 let _identifyAvailable = null;
 async function checkIdentifyAvailable() {
@@ -8922,6 +9318,17 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
 
 initMap();
 </script>
+<!-- Trip Budget modal -->
+<div class="settings-overlay" id="budgetOverlay" onclick="if(event.target===this)closeBudget()">
+  <div class="settings-modal" style="width:560px;">
+    <div class="settings-header">
+      <h2 data-i18n="budget.title">💰 Trip Budget Planner</h2>
+      <button class="settings-close" onclick="closeBudget()">✕</button>
+    </div>
+    <div id="budgetBody" style="padding:18px 20px 22px;"></div>
+  </div>
+</div>
+
 <!-- Snap & Identify modal -->
 <div class="settings-overlay" id="identifyOverlay" onclick="if(event.target===this)closeIdentify()">
   <div class="settings-modal" style="width:520px;">
