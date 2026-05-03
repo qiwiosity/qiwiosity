@@ -225,6 +225,13 @@
   }
   .saved-more-menu button:hover { background: var(--surface2); }
 
+  /* Plan action row (Budget + Driving) */
+  .plan-action-row { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+  .plan-action-row > button { margin: 0 !important; width: 100%; }
+
+  /* Compare intro paragraph */
+  .compare-intro { font-size: 12px; color: var(--muted); margin: 0 0 10px; line-height: 1.45; }
+
   .search {
     width: 100%; padding: 9px 12px;
     border: 1.5px solid var(--border); border-radius: 8px;
@@ -1967,20 +1974,31 @@
         <div class="journey-start-set-label" id="journeyStartSetLabel" style="display:none"></div>
       </div>
       <button class="btn primary" style="width:100%;margin-bottom:8px;font-size:13px;" onclick="openAIGen()" data-i18n="plan.aiGen">✨ Generate AI Trip</button>
-      <button class="budget-btn" style="width:100%;margin-bottom:8px;" onclick="openBudget()" data-i18n="budget.cta">💰 Budget & Save for Trip</button>
-      <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span data-i18n="plan.drivingMode">🚗 Driving Mode</span> <span id="drivingModeStatus">off</span></button>
+
+      <div class="plan-action-row">
+        <button class="budget-btn" onclick="openBudget()" data-i18n="budget.cta">💰 Budget</button>
+        <button class="driving-mode-btn" id="drivingModeBtn" onclick="toggleDrivingMode()"><span data-i18n="plan.drivingMode">🚗 Driving</span> <span id="drivingModeStatus">off</span></button>
+      </div>
+
       <div id="planShowAllToggle" class="plan-show-all-toggle" onclick="togglePlanShowAll()">
         <span class="toggle-eye">🗺</span>
         <span class="toggle-label" data-i18n="plan.showNearby">Show nearby attractions on map</span>
       </div>
       <div id="planCategoryChips" class="plan-category-chips" style="display:none;"></div>
+
+      <div class="section-divider"></div>
+
+      <p class="section-label" style="margin-bottom:6px;" data-i18n="plan.itinerary">Your Itinerary</p>
       <div id="planStopList"></div>
       <div id="planStats"></div>
+
+      <div class="section-divider"></div>
+
       <div class="plan-section-toggle" onclick="togglePlanTemplates()">
-        <span data-i18n="plan.templates">Quick templates</span>
+        <span class="section-label" data-i18n="plan.templates">Quick templates</span>
         <span class="plan-toggle-arrow" id="planTemplatesArrow">▶</span>
       </div>
-      <div id="planTemplatesBody" style="display:none;">
+      <div id="planTemplatesBody" style="display:none;margin-top:8px;">
         <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('north-classic')" data-i18n="plan.tpl1">10-day North Island Classic</button>
         <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('south-epic')" data-i18n="plan.tpl2">14-day South Island Epic</button>
         <button class="btn" style="width:100%;margin-bottom:6px;" onclick="loadTemplate('adventure')" data-i18n="plan.tpl3">7-day Adventure Capital</button>
@@ -1989,10 +2007,14 @@
 
     <div class="view" id="view-compare">
       <h2 data-i18n="compare.title">Compare Places</h2>
-      <p style="font-size:12px;color:var(--muted);margin:0 0 8px;" data-i18n="compare.intro">Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.</p>
+      <p class="compare-intro" data-i18n="compare.intro">Click <strong>⚖ Compare</strong> on any map popup to add places here. Then use Decision Mode to find your winner.</p>
+
+      <div class="section-divider"></div>
+
+      <p class="section-label" style="margin-bottom:6px;" data-i18n="compare.viewBy">Group by</p>
       <div class="compare-group-toolbar" id="compareGroupToolbar">
-        <button class="chip active" data-group="category" data-i18n="compare.byCat">By Category</button>
-        <button class="chip" data-group="region" data-i18n="compare.byRegion">By Region</button>
+        <button class="chip active" data-group="category" data-i18n="compare.byCat">Category</button>
+        <button class="chip" data-group="region" data-i18n="compare.byRegion">Region</button>
         <button class="chip" data-group="none" data-i18n="compare.all">All together</button>
       </div>
       <div id="compareContent"></div>
