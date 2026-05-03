@@ -536,6 +536,23 @@
     text-align: center; border-radius: 8px;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
+  /* Clean icon-only action row in POI popup */
+  .pop-icon-row { gap: 6px; justify-content: space-between; }
+  .pop-icon-row .btn-icon {
+    flex: 1; aspect-ratio: 1 / 1; min-width: 0; max-width: 44px;
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 0; border-radius: 10px;
+    border: 1.5px solid var(--border); background: var(--surface);
+    color: var(--text); font-size: 16px; line-height: 1; cursor: pointer;
+    transition: background 0.12s, border-color 0.12s, transform 0.08s, color 0.12s;
+  }
+  .pop-icon-row .btn-icon:hover { background: var(--surface2); border-color: var(--primary); transform: translateY(-1px); }
+  .pop-icon-row .btn-icon:active { transform: translateY(0); }
+  .pop-icon-row .btn-icon.btn-save { font-size: 18px; color: var(--muted); }
+  .pop-icon-row .btn-icon.btn-save:hover { border-color: #e04f4f; color: #e04f4f; }
+  .pop-icon-row .btn-icon.btn-save.saved { background: #fff0f0; border-color: #e04f4f; color: #e04f4f; }
+  html.dark .pop-icon-row .btn-icon.btn-save.saved { background: rgba(224,79,79,0.15); }
+  .pop-icon-row .btn-icon.is-on { background: var(--primary); border-color: var(--primary); color: #fff; }
   .vs-card-img {
     width: calc(100% + 0px); height: 130px;
     background-size: cover; background-position: center;
@@ -7950,15 +7967,16 @@ function openPoiInfoWindow(a, marker) {
             class="btn primary" style="flex:1;">${inIti ? t('poi.added') : t('poi.add')}</button>
           <button onclick="openPoiDetail('${a.id}')" class="btn" style="flex-shrink:0;">${t('poi.more')}</button>
         </div>
-        <div class="pop-btn-row">
-          <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
-            onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤' : '♡'} ${t('poi.save')}</button>
-          <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">${t('poi.drive')}</button>
-          <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">${t('poi.similar')}</button>
-          <button onclick="sharePoi('${a.id}')" class="btn">${t('poi.share')}</button>
-          <button onclick="translatePoi('${a.id}')" class="btn" title="Translate name & commentary via Google Translate">${t('poi.translate')}</button>
-          <button onclick="openCompareSheet('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}">${isInCompare(a.id) ? '✓' : t('poi.compare')}</button>
-          <button onclick="(function(){navigator.clipboard.writeText('${a.lat.toFixed(5)},${a.lng.toFixed(5)}');showToast('📋 Coords copied');})()" class="btn" title="Copy coordinates">📋 Coords</button>
+        <div class="pop-btn-row pop-icon-row">
+          <button class="btn-icon btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
+            onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')"
+            title="${isSaved(a.id) ? 'Saved — tap to remove' : 'Save'}" aria-label="Save">${isSaved(a.id) ? '❤' : '♡'}</button>
+          <button class="btn-icon" onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" title="Drive here" aria-label="Drive">🚗</button>
+          <button class="btn-icon" onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" title="Find similar nearby" aria-label="Similar">🔎</button>
+          <button class="btn-icon" onclick="sharePoi('${a.id}')" title="Share" aria-label="Share">↗</button>
+          <button class="btn-icon" onclick="translatePoi('${a.id}')" title="Translate" aria-label="Translate">🌐</button>
+          <button class="btn-icon ${isInCompare(a.id) ? 'is-on' : ''}" onclick="openCompareSheet('${a.id}')" id="popupCompareBtn_${a.id}" title="${isInCompare(a.id) ? 'In Compare' : 'Compare'}" aria-label="Compare">${isInCompare(a.id) ? '✓' : '⚖'}</button>
+          <button class="btn-icon" onclick="(function(){navigator.clipboard.writeText('${a.lat.toFixed(5)},${a.lng.toFixed(5)}');showToast('📋 Coords copied');})()" title="Copy coordinates" aria-label="Copy coordinates">📋</button>
         </div>
       </div>
     </div>
