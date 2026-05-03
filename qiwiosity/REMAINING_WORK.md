@@ -5,7 +5,21 @@
 
 ---
 
-## ✅ COMPLETED (latest batch — Phase 8: Authorisation Pass)
+## ✅ COMPLETED (Phase 9: Multi-Language)
+
+- **8 languages supported** — English, Te Reo Māori, 中文 (Simplified Chinese), 日本語, 한국어, Deutsch, Français, Español
+- **Translation dictionary + helpers** — `LANG_DICT`, `t(key, fallback)`, `applyLang()`, `setLang(code)`, `initLang()`
+- **Settings → 🌐 Language** — Dropdown switcher with flag emojis, auto-detects from `navigator.language` on first visit, persists to localStorage `qw_lang`
+- **Translated UI surfaces**:
+  - Splash screen (headline, subtitle, 4 feature cards, "Begin Exploring" button)
+  - Top tabs (Explore / Stay / Plan / Compare / Saved)
+  - Stay view title + search placeholder
+  - Settings panel (all 5 section headings + Dark Mode label/description)
+- **Per-POI Translate button** — `🌐 Translate` in every POI popup opens Google Translate in a new tab with name + short + commentary, target = current UI language (no API key required)
+- **`data-i18n` / `data-i18n-ph` attributes** — declarative system so future strings can be added by tagging the markup
+- **HTML `lang` attribute** — set automatically so screen readers and browsers know the active language
+
+## ✅ COMPLETED (Phase 8: Authorisation Pass)
 
 - **[NEW] ElevenLabs server proxy** — `/api/tts` endpoint in `server.js`; uses `ELEVENLABS_API_KEY` env var; client falls back to server when no local key set; `/api/tts/status` exposes availability
 - **[NEW] Admin Tools tab** — Combined moderation queue, GPS audit, CSV upload, image management, server status

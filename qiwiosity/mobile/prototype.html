@@ -1583,15 +1583,15 @@
       <img src="./assets/logo-mark.png" alt="Qiwiosity" class="splash-logo" />
       <span class="splash-brand">Qiwiosity</span>
     </div>
-    <h1 class="splash-headline">Explore New Zealand<br>with Curiosity</h1>
-    <p class="splash-sub">Curated places · Voice audio stories · Trip planner · Driving directions</p>
+    <h1 class="splash-headline" data-i18n="splash.headline">Explore New Zealand<br>with Curiosity</h1>
+    <p class="splash-sub" data-i18n="splash.sub">Curated places · Voice audio stories · Trip planner · Driving directions</p>
     <div class="splash-features">
-      <div class="splash-feature">🗺 Interactive map · 2,400+ attractions</div>
-      <div class="splash-feature">🎧 AI voice-narrated audio guides</div>
-      <div class="splash-feature">📋 Drag-and-drop trip planner</div>
-      <div class="splash-feature">🛏 382 places to stay across NZ</div>
+      <div class="splash-feature" data-i18n="splash.f1">🗺 Interactive map · 2,400+ attractions</div>
+      <div class="splash-feature" data-i18n="splash.f2">🎧 AI voice-narrated audio guides</div>
+      <div class="splash-feature" data-i18n="splash.f3">📋 Drag-and-drop trip planner</div>
+      <div class="splash-feature" data-i18n="splash.f4">🛏 382 places to stay across NZ</div>
     </div>
-    <button class="splash-begin" onclick="dismissSplash()">Begin Exploring</button>
+    <button class="splash-begin" onclick="dismissSplash()" data-i18n="splash.begin">Begin Exploring</button>
     <p class="splash-footer">AOTEAROA · AWAITS</p>
   </div>
 </div>
@@ -1602,11 +1602,11 @@
   <header>
     <img class="brand-mark" src="./assets/logo-mark.png" alt="Qiwiosity" />
     <div class="tabs">
-      <button class="tab active" data-view="explore">Explore</button>
-      <button class="tab" data-view="stay">Stay</button>
-      <button class="tab" data-view="plan">Plan</button>
-      <button class="tab" data-view="compare">⚖ Compare<span class="compare-badge" id="compareBadge" style="display:none">0</span></button>
-      <button class="tab" data-view="saved">❤ Saved<span class="compare-badge" id="savedBadge" style="display:none;background:#e04f4f;">0</span></button>
+      <button class="tab active" data-view="explore" data-i18n="tab.explore">Explore</button>
+      <button class="tab" data-view="stay" data-i18n="tab.stay">Stay</button>
+      <button class="tab" data-view="plan" data-i18n="tab.plan">Plan</button>
+      <button class="tab" data-view="compare"><span data-i18n="tab.compare">⚖ Compare</span><span class="compare-badge" id="compareBadge" style="display:none">0</span></button>
+      <button class="tab" data-view="saved"><span data-i18n="tab.saved">❤ Saved</span><span class="compare-badge" id="savedBadge" style="display:none;background:#e04f4f;">0</span></button>
     </div>
     <div class="header-actions">
       <button class="header-btn" onclick="openSettings()" title="Settings">⚙</button>
@@ -1666,8 +1666,8 @@
       <div class="region-list" id="regionList"></div>
     </div>
     <div class="view" id="view-stay">
-      <h2>Where to Stay</h2>
-      <input class="search" id="accomSearch" placeholder="Search accommodations..." />
+      <h2 data-i18n="stay.title">Where to Stay</h2>
+      <input class="search" id="accomSearch" placeholder="Search accommodations..." data-i18n-ph="stay.searchPh" />
       <div id="accomTypeChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;"></div>
       <div id="accomRegionChips" style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;"></div>
       <div style="display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap;">
@@ -2130,14 +2130,33 @@
 <div class="settings-overlay" id="settingsOverlay" onclick="if(event.target===this)closeSettings()">
   <div class="settings-modal">
     <div class="settings-header">
-      <h2>⚙ Settings</h2>
+      <h2><span>⚙</span> <span data-i18n="settings.title">Settings</span></h2>
       <button class="settings-close" onclick="closeSettings()">✕</button>
     </div>
     <div class="settings-body">
 
+      <!-- Language -->
+      <div class="settings-section">
+        <h3><span>🌐</span> <span data-i18n="settings.language">Language</span></h3>
+        <div class="settings-toggle-row" style="flex-direction:column;align-items:stretch;gap:6px;">
+          <p style="margin:0;font-size:12px;color:var(--muted);" data-i18n="settings.langDesc">Translate the app interface. POI names &amp; commentary stay in English; tap 🌐 on any place for instant translation.</p>
+          <select id="langSelect" onchange="setLang(this.value)"
+            style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;background:var(--surface);color:var(--text);font-weight:600;cursor:pointer;">
+            <option value="en">🇬🇧 English</option>
+            <option value="mi">🇳🇿 Te Reo Māori</option>
+            <option value="zh">🇨🇳 中文 (简体)</option>
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="ko">🇰🇷 한국어</option>
+            <option value="de">🇩🇪 Deutsch</option>
+            <option value="fr">🇫🇷 Français</option>
+            <option value="es">🇪🇸 Español</option>
+          </select>
+        </div>
+      </div>
+
       <!-- Voice Guide -->
       <div class="settings-section">
-        <h3>🎧 Audio Guide Voice</h3>
+        <h3><span>🎧</span> <span data-i18n="settings.audio">Audio Guide Voice</span></h3>
         <div class="voice-grid" id="voiceGrid"></div>
         <div class="elevenlabs-panel">
           <div class="elevenlabs-header">
@@ -2155,11 +2174,11 @@
 
       <!-- Appearance -->
       <div class="settings-section">
-        <h3>🎨 Appearance</h3>
+        <h3><span>🎨</span> <span data-i18n="settings.appearance">Appearance</span></h3>
         <div class="settings-toggle-row">
           <div>
-            <strong>Dark Mode</strong>
-            <p>Easier on the eyes at night</p>
+            <strong data-i18n="settings.darkMode">Dark Mode</strong>
+            <p data-i18n="settings.darkModeDesc">Easier on the eyes at night</p>
           </div>
           <label class="toggle-switch">
             <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode(this.checked)" />
@@ -2170,7 +2189,7 @@
 
       <!-- Playback Speed -->
       <div class="settings-section">
-        <h3>⏱ Playback Speed</h3>
+        <h3><span>⏱</span> <span data-i18n="settings.speed">Playback Speed</span></h3>
         <div class="speed-options" id="speedOptions">
           <button class="speed-btn" data-speed="0.75" onclick="setPlaybackSpeed(0.75)">0.75×</button>
           <button class="speed-btn active" data-speed="1" onclick="setPlaybackSpeed(1)">1×</button>
@@ -3152,6 +3171,236 @@ function jumpToPoi(id) {
     m._poiId = id;
     openPoiInfoWindow(a, m);
   }
+}
+
+// ============ INTERNATIONALISATION (i18n) ============
+const LANG_DICT = {
+  en: {
+    'splash.headline': 'Explore New Zealand<br>with Curiosity',
+    'splash.sub': 'Curated places · Voice audio stories · Trip planner · Driving directions',
+    'splash.f1': '🗺 Interactive map · 2,400+ attractions',
+    'splash.f2': '🎧 AI voice-narrated audio guides',
+    'splash.f3': '📋 Drag-and-drop trip planner',
+    'splash.f4': '🛏 382 places to stay across NZ',
+    'splash.begin': 'Begin Exploring',
+    'tab.explore': 'Explore', 'tab.stay': 'Stay', 'tab.plan': 'Plan',
+    'tab.compare': '⚖ Compare', 'tab.saved': '❤ Saved',
+    'stay.title': 'Where to Stay', 'stay.searchPh': 'Search accommodations...',
+    'settings.title': 'Settings', 'settings.language': 'Language',
+    'settings.langDesc': 'Translate the app interface. POI names & commentary stay in English; tap 🌐 on any place for instant translation.',
+    'settings.audio': 'Audio Guide Voice', 'settings.appearance': 'Appearance',
+    'settings.darkMode': 'Dark Mode', 'settings.darkModeDesc': 'Easier on the eyes at night',
+    'settings.speed': 'Playback Speed',
+    'poi.translate': '🌐 Translate',
+    'poi.add': '＋ Add to Itinerary', 'poi.added': '✓ In Itinerary',
+    'poi.more': '📖 More', 'poi.save': 'Save', 'poi.drive': '🧭 Drive',
+    'poi.similar': 'Similar', 'poi.share': '📤 Share', 'poi.compare': '⚖ Compare',
+  },
+  mi: {
+    'splash.headline': 'Tūhuratia Aotearoa<br>me te Pīroiroi',
+    'splash.sub': 'Wāhi kōwhiri · Kōrero reo · Kaiwhakamahere haerenga · Aratohu taraiwa',
+    'splash.f1': '🗺 Mapi tūhono · 2,400+ wāhi',
+    'splash.f2': '🎧 Aratohu reo AI',
+    'splash.f3': '📋 Kaiwhakamahere haerenga toi-and-tuku',
+    'splash.f4': '🛏 382 wāhi noho puta noa i Aotearoa',
+    'splash.begin': 'Tīmata te Tūhura',
+    'tab.explore': 'Tūhura', 'tab.stay': 'Noho', 'tab.plan': 'Mahere',
+    'tab.compare': '⚖ Whakatauritea', 'tab.saved': '❤ Tiakina',
+    'stay.title': 'Wāhi Noho', 'stay.searchPh': 'Rapua he wāhi noho...',
+    'settings.title': 'Tautuhinga', 'settings.language': 'Reo',
+    'settings.langDesc': 'Whakamāoritia te atanga taupānga. Ka noho te reo Pākehā mō ngā ingoa wāhi me ngā kōrero.',
+    'settings.audio': 'Reo Aratohu Ororongo', 'settings.appearance': 'Āhua',
+    'settings.darkMode': 'Aratau Pōuri', 'settings.darkModeDesc': 'Māmā ake ki te kanohi i te pō',
+    'settings.speed': 'Tere Whakatangi',
+    'poi.translate': '🌐 Whakamāori',
+    'poi.add': '＋ Tāpiri ki te Haerenga', 'poi.added': '✓ Kei roto',
+    'poi.more': '📖 Atu anō', 'poi.save': 'Tiaki', 'poi.drive': '🧭 Taraiwa',
+    'poi.similar': 'Ōrite', 'poi.share': '📤 Tiri', 'poi.compare': '⚖ Whakatauritea',
+  },
+  zh: {
+    'splash.headline': '用好奇心<br>探索新西兰',
+    'splash.sub': '精选地点 · 语音导览 · 行程规划 · 驾车路线',
+    'splash.f1': '🗺 互动地图 · 2,400+ 景点',
+    'splash.f2': '🎧 AI 语音导览',
+    'splash.f3': '📋 拖放式行程规划',
+    'splash.f4': '🛏 382 处住宿遍布新西兰',
+    'splash.begin': '开始探索',
+    'tab.explore': '探索', 'tab.stay': '住宿', 'tab.plan': '行程',
+    'tab.compare': '⚖ 比较', 'tab.saved': '❤ 已保存',
+    'stay.title': '住宿推荐', 'stay.searchPh': '搜索住宿...',
+    'settings.title': '设置', 'settings.language': '语言',
+    'settings.langDesc': '翻译应用界面。景点名称和讲解保持英文;点击任何地点的 🌐 可即时翻译。',
+    'settings.audio': '语音导览', 'settings.appearance': '外观',
+    'settings.darkMode': '深色模式', 'settings.darkModeDesc': '夜间使用更护眼',
+    'settings.speed': '播放速度',
+    'poi.translate': '🌐 翻译',
+    'poi.add': '＋ 添加到行程', 'poi.added': '✓ 已在行程',
+    'poi.more': '📖 更多', 'poi.save': '保存', 'poi.drive': '🧭 导航',
+    'poi.similar': '相似', 'poi.share': '📤 分享', 'poi.compare': '⚖ 比较',
+  },
+  ja: {
+    'splash.headline': '好奇心とともに<br>ニュージーランドを探索',
+    'splash.sub': '厳選スポット · 音声ガイド · 旅行プランナー · ドライブルート',
+    'splash.f1': '🗺 インタラクティブマップ · 2,400+ スポット',
+    'splash.f2': '🎧 AI音声ガイド',
+    'splash.f3': '📋 ドラッグ&ドロップ旅行プランナー',
+    'splash.f4': '🛏 NZ全土382の宿泊施設',
+    'splash.begin': '探索を始める',
+    'tab.explore': '探索', 'tab.stay': '宿泊', 'tab.plan': 'プラン',
+    'tab.compare': '⚖ 比較', 'tab.saved': '❤ 保存済み',
+    'stay.title': '宿泊先', 'stay.searchPh': '宿泊施設を検索...',
+    'settings.title': '設定', 'settings.language': '言語',
+    'settings.langDesc': 'アプリのUIを翻訳します。スポット名と解説は英語のまま;🌐をタップで即時翻訳できます。',
+    'settings.audio': '音声ガイド', 'settings.appearance': '外観',
+    'settings.darkMode': 'ダークモード', 'settings.darkModeDesc': '夜間でも目に優しい',
+    'settings.speed': '再生速度',
+    'poi.translate': '🌐 翻訳',
+    'poi.add': '＋ プランに追加', 'poi.added': '✓ プラン済み',
+    'poi.more': '📖 詳細', 'poi.save': '保存', 'poi.drive': '🧭 ナビ',
+    'poi.similar': '類似', 'poi.share': '📤 共有', 'poi.compare': '⚖ 比較',
+  },
+  ko: {
+    'splash.headline': '호기심으로<br>뉴질랜드를 탐험하세요',
+    'splash.sub': '엄선된 장소 · 음성 오디오 · 여행 계획 · 운전 길안내',
+    'splash.f1': '🗺 인터랙티브 지도 · 2,400+ 명소',
+    'splash.f2': '🎧 AI 음성 오디오 가이드',
+    'splash.f3': '📋 드래그 앤 드롭 여행 플래너',
+    'splash.f4': '🛏 뉴질랜드 전역 382개 숙소',
+    'splash.begin': '탐험 시작',
+    'tab.explore': '탐험', 'tab.stay': '숙소', 'tab.plan': '계획',
+    'tab.compare': '⚖ 비교', 'tab.saved': '❤ 저장됨',
+    'stay.title': '숙소', 'stay.searchPh': '숙소 검색...',
+    'settings.title': '설정', 'settings.language': '언어',
+    'settings.langDesc': '앱 인터페이스를 번역합니다. 장소 이름과 해설은 영어로 유지됩니다; 🌐을 탭하면 즉시 번역됩니다.',
+    'settings.audio': '오디오 가이드 음성', 'settings.appearance': '모양',
+    'settings.darkMode': '다크 모드', 'settings.darkModeDesc': '야간에 눈에 편안합니다',
+    'settings.speed': '재생 속도',
+    'poi.translate': '🌐 번역',
+    'poi.add': '＋ 일정에 추가', 'poi.added': '✓ 일정 포함',
+    'poi.more': '📖 더보기', 'poi.save': '저장', 'poi.drive': '🧭 길찾기',
+    'poi.similar': '유사', 'poi.share': '📤 공유', 'poi.compare': '⚖ 비교',
+  },
+  de: {
+    'splash.headline': 'Erkunden Sie Neuseeland<br>mit Neugier',
+    'splash.sub': 'Kuratierte Orte · Audio-Geschichten · Reiseplaner · Wegbeschreibungen',
+    'splash.f1': '🗺 Interaktive Karte · 2.400+ Sehenswürdigkeiten',
+    'splash.f2': '🎧 KI-Audio-Reiseführer',
+    'splash.f3': '📋 Drag-and-Drop Reiseplaner',
+    'splash.f4': '🛏 382 Unterkünfte in ganz NZ',
+    'splash.begin': 'Erkunden beginnen',
+    'tab.explore': 'Entdecken', 'tab.stay': 'Übernachten', 'tab.plan': 'Plan',
+    'tab.compare': '⚖ Vergleich', 'tab.saved': '❤ Gespeichert',
+    'stay.title': 'Unterkünfte', 'stay.searchPh': 'Unterkünfte suchen...',
+    'settings.title': 'Einstellungen', 'settings.language': 'Sprache',
+    'settings.langDesc': 'App-Oberfläche übersetzen. Ortsnamen & Beschreibungen bleiben Englisch; 🌐 für Sofort-Übersetzung tippen.',
+    'settings.audio': 'Audio-Guide-Stimme', 'settings.appearance': 'Erscheinungsbild',
+    'settings.darkMode': 'Dunkler Modus', 'settings.darkModeDesc': 'Augenschonend bei Nacht',
+    'settings.speed': 'Wiedergabegeschwindigkeit',
+    'poi.translate': '🌐 Übersetzen',
+    'poi.add': '＋ Zur Reise', 'poi.added': '✓ In Reise',
+    'poi.more': '📖 Mehr', 'poi.save': 'Speichern', 'poi.drive': '🧭 Route',
+    'poi.similar': 'Ähnlich', 'poi.share': '📤 Teilen', 'poi.compare': '⚖ Vergleichen',
+  },
+  fr: {
+    'splash.headline': 'Explorez la Nouvelle-Zélande<br>avec Curiosité',
+    'splash.sub': 'Lieux sélectionnés · Audio-guides · Planificateur · Itinéraires',
+    'splash.f1': '🗺 Carte interactive · 2 400+ attractions',
+    'splash.f2': '🎧 Audio-guides narrés par IA',
+    'splash.f3': '📋 Planificateur glisser-déposer',
+    'splash.f4': '🛏 382 hébergements à travers la NZ',
+    'splash.begin': 'Commencer à explorer',
+    'tab.explore': 'Explorer', 'tab.stay': 'Séjour', 'tab.plan': 'Itinéraire',
+    'tab.compare': '⚖ Comparer', 'tab.saved': '❤ Favoris',
+    'stay.title': 'Où séjourner', 'stay.searchPh': 'Rechercher un hébergement...',
+    'settings.title': 'Paramètres', 'settings.language': 'Langue',
+    'settings.langDesc': "Traduire l'interface. Les noms de lieux & commentaires restent en anglais; touchez 🌐 pour traduction instantanée.",
+    'settings.audio': "Voix de l'audio-guide", 'settings.appearance': 'Apparence',
+    'settings.darkMode': 'Mode sombre', 'settings.darkModeDesc': 'Plus reposant pour les yeux la nuit',
+    'settings.speed': 'Vitesse de lecture',
+    'poi.translate': '🌐 Traduire',
+    'poi.add': '＋ Ajouter', 'poi.added': '✓ Ajouté',
+    'poi.more': '📖 Plus', 'poi.save': 'Sauver', 'poi.drive': '🧭 Itinéraire',
+    'poi.similar': 'Similaire', 'poi.share': '📤 Partager', 'poi.compare': '⚖ Comparer',
+  },
+  es: {
+    'splash.headline': 'Explora Nueva Zelanda<br>con Curiosidad',
+    'splash.sub': 'Lugares seleccionados · Audioguías · Planificador · Rutas',
+    'splash.f1': '🗺 Mapa interactivo · 2.400+ atracciones',
+    'splash.f2': '🎧 Audioguías narradas con IA',
+    'splash.f3': '📋 Planificador arrastrar y soltar',
+    'splash.f4': '🛏 382 alojamientos por toda NZ',
+    'splash.begin': 'Comenzar a explorar',
+    'tab.explore': 'Explorar', 'tab.stay': 'Hospedaje', 'tab.plan': 'Plan',
+    'tab.compare': '⚖ Comparar', 'tab.saved': '❤ Guardados',
+    'stay.title': 'Dónde alojarse', 'stay.searchPh': 'Buscar alojamiento...',
+    'settings.title': 'Ajustes', 'settings.language': 'Idioma',
+    'settings.langDesc': 'Traduce la interfaz. Los nombres de lugares y comentarios permanecen en inglés; toca 🌐 para traducción instantánea.',
+    'settings.audio': 'Voz del audioguía', 'settings.appearance': 'Apariencia',
+    'settings.darkMode': 'Modo oscuro', 'settings.darkModeDesc': 'Más suave para los ojos de noche',
+    'settings.speed': 'Velocidad de reproducción',
+    'poi.translate': '🌐 Traducir',
+    'poi.add': '＋ Añadir', 'poi.added': '✓ Añadido',
+    'poi.more': '📖 Más', 'poi.save': 'Guardar', 'poi.drive': '🧭 Ruta',
+    'poi.similar': 'Similar', 'poi.share': '📤 Compartir', 'poi.compare': '⚖ Comparar',
+  },
+};
+
+let currentLang = 'en';
+function t(key, fallback) {
+  const dict = LANG_DICT[currentLang] || LANG_DICT.en;
+  return dict[key] || LANG_DICT.en[key] || fallback || key;
+}
+function applyLang() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const val = t(key);
+    if (val.includes('<br>') || val.includes('<')) el.innerHTML = val;
+    else el.textContent = val;
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    el.setAttribute('placeholder', t(el.getAttribute('data-i18n-ph')));
+  });
+  document.documentElement.setAttribute('lang', currentLang);
+}
+function setLang(code) {
+  if (!LANG_DICT[code]) code = 'en';
+  currentLang = code;
+  localStorage.setItem('qw_lang', code);
+  applyLang();
+  const sel = document.getElementById('langSelect');
+  if (sel) sel.value = code;
+  showToast(`🌐 ${({en:'English',mi:'Te Reo Māori',zh:'中文',ja:'日本語',ko:'한국어',de:'Deutsch',fr:'Français',es:'Español'})[code]}`);
+}
+function initLang() {
+  let saved = localStorage.getItem('qw_lang');
+  if (!saved) {
+    // Auto-detect from browser
+    const browserLang = (navigator.language || 'en').toLowerCase().split('-')[0];
+    saved = LANG_DICT[browserLang] ? browserLang : 'en';
+  }
+  currentLang = saved;
+  applyLang();
+  // Sync the select on settings open
+  document.addEventListener('DOMContentLoaded', () => {
+    const sel = document.getElementById('langSelect');
+    if (sel) sel.value = currentLang;
+  });
+}
+// Translate a POI's text via Google Translate (opens in new tab — no API key needed)
+function translatePoi(id) {
+  const a = ATTRACTIONS.find(x => x.id === id);
+  if (!a) return;
+  const text = `${a.name}\n\n${a.short || ''}\n\n${a.commentary || ''}`.trim();
+  const url = `https://translate.google.com/?sl=en&tl=${currentLang}&op=translate&text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank', 'noopener');
+}
+// Run init now (DOM may not be parsed yet for all elements — applyLang re-runs after data load anyway)
+try { initLang(); } catch(e) { /* DOM not ready */ }
+// Re-apply once DOM is fully parsed (catches any data-i18n elements not yet present)
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => applyLang());
+} else {
+  setTimeout(applyLang, 0);
 }
 
 // ============ TRAVEL DIARY (per-stop photos + journal) ============
@@ -4625,16 +4874,17 @@ function openPoiInfoWindow(a, marker) {
       <div class="pop-actions-bottom">
         <div style="display:flex;gap:6px;margin-bottom:7px;">
           <button onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${a.id}'));if(infoWindow)infoWindow.close();"
-            class="btn primary" style="flex:1;">${inIti ? '✓ In Itinerary' : '＋ Add to Itinerary'}</button>
-          <button onclick="openPoiDetail('${a.id}')" class="btn" style="flex-shrink:0;">📖 More</button>
+            class="btn primary" style="flex:1;">${inIti ? t('poi.added') : t('poi.add')}</button>
+          <button onclick="openPoiDetail('${a.id}')" class="btn" style="flex-shrink:0;">${t('poi.more')}</button>
         </div>
         <div class="pop-btn-row">
           <button class="btn-save ${isSaved(a.id) ? 'saved' : ''}" id="popupSaveBtn_${a.id}"
-            onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤' : '♡'} Save</button>
-          <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">🧭 Drive</button>
-          <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">Similar</button>
-          <button onclick="sharePoi('${a.id}')" class="btn">📤 Share</button>
-          <button onclick="openCompareSheet('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}">${isInCompare(a.id) ? '✓' : '⚖'} Compare</button>
+            onclick="toggleSave('${a.id}');updateSaveBtnState(this,'${a.id}')">${isSaved(a.id) ? '❤' : '♡'} ${t('poi.save')}</button>
+          <button onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">${t('poi.drive')}</button>
+          <button onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" class="btn">${t('poi.similar')}</button>
+          <button onclick="sharePoi('${a.id}')" class="btn">${t('poi.share')}</button>
+          <button onclick="translatePoi('${a.id}')" class="btn" title="Translate name & commentary via Google Translate">${t('poi.translate')}</button>
+          <button onclick="openCompareSheet('${a.id}')" class="btn${isInCompare(a.id) ? ' primary' : ''}" id="popupCompareBtn_${a.id}">${isInCompare(a.id) ? '✓' : t('poi.compare')}</button>
           <button onclick="(function(){navigator.clipboard.writeText('${a.lat.toFixed(5)},${a.lng.toFixed(5)}');showToast('📋 Coords copied');})()" class="btn" title="Copy coordinates">📋 Coords</button>
         </div>
       </div>
@@ -6778,6 +7028,8 @@ function confirmFindSimilar() {
 function openSettings() {
   document.getElementById('settingsOverlay').classList.add('open');
   document.getElementById('darkModeToggle').checked = document.documentElement.classList.contains('dark');
+  const langSel = document.getElementById('langSelect');
+  if (langSel) langSel.value = currentLang;
   const saved = localStorage.getItem('qw_elevenlabs_key') || '';
   if (saved) document.getElementById('elevenLabsKeyInput').value = '••••••••';
   // Populate affiliate fields
