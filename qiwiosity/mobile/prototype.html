@@ -220,6 +220,38 @@
     transition: background 0.15s, color 0.15s, transform 0.1s;
   }
   .near-me-btn.active { background:var(--primary); color:white; }
+  .identify-btn {
+    background: linear-gradient(135deg, #7B5CFF, #15888A);
+    color: white; border: none; padding: 9px 12px; border-radius: 10px;
+    font-size: 13px; font-weight: 700; cursor: pointer; box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(123,92,255,0.25); transition: transform 0.15s, opacity 0.15s;
+  }
+  .identify-btn:hover { opacity: 0.92; }
+  .identify-btn:active { transform: scale(0.98); }
+  .identify-result-img {
+    width: 100%; max-height: 240px; object-fit: cover;
+    border-radius: 10px; background: var(--surface2); display: block;
+  }
+  .identify-conf-pill {
+    display: inline-block; padding: 2px 8px; border-radius: 10px;
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+  }
+  .identify-conf-high { background: #16a34a22; color: #16a34a; }
+  .identify-conf-medium { background: #f59e0b22; color: #f59e0b; }
+  .identify-conf-low { background: #ef444422; color: #ef4444; }
+  .identify-tip { font-size: 12px; color: var(--text); padding: 6px 10px;
+    background: rgba(21,136,138,0.07); border-left: 3px solid var(--primary);
+    border-radius: 4px; margin-bottom: 4px; }
+  .identify-loading {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+    padding: 30px 20px; color: var(--muted); font-size: 13px;
+  }
+  .identify-spinner {
+    width: 38px; height: 38px; border: 3px solid var(--border);
+    border-top-color: var(--primary); border-radius: 50%;
+    animation: identifySpin 0.8s linear infinite;
+  }
+  @keyframes identifySpin { to { transform: rotate(360deg); } }
   .near-me-btn:active { transform:scale(0.97); }
   .poi-dist-badge {
     display:inline-block; font-size:10px; font-weight:700;
@@ -1621,9 +1653,10 @@
         <div class="search-suggestions" id="searchSuggestions"></div>
       </div>
       <div style="display:flex;gap:6px;margin-bottom:4px;">
-        <button class="surprise-btn" style="flex:1;margin-bottom:0;" onclick="surpriseMe()">🎲 Surprise Me</button>
-        <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()">📍 Near Me</button>
+        <button class="surprise-btn" style="flex:1;margin-bottom:0;" onclick="surpriseMe()" data-i18n="explore.surprise">🎲 Surprise Me</button>
+        <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()" data-i18n="explore.nearMe">📍 Near Me</button>
       </div>
+      <button class="identify-btn" style="width:100%;margin-bottom:4px;" onclick="openIdentify()" data-i18n="identify.cta">📸 Snap & Identify a Place</button>
       <div class="recently-viewed" id="recentlyViewedSection" style="display:none;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <h4 style="margin:0;">Recently Viewed</h4>
@@ -3228,6 +3261,18 @@ const LANG_DICT = {
     'detail.directions': 'Get Directions', 'detail.seeMap': 'See on Map', 'detail.moreRegion': 'More from Region',
     'detail.comparing': 'Comparing', 'detail.book': 'Book Activities',
     'detail.saved': 'Saved', 'detail.free': 'Free', 'detail.reviews': 'reviews',
+    'explore.surprise': '🎲 Surprise Me', 'explore.nearMe': '📍 Near Me',
+    'identify.title': '📸 Snap & Identify', 'identify.cta': '📸 Snap & Identify a Place',
+    'identify.intro': 'Take a photo of any landmark, statue, or place — or upload one — and AI will identify it.',
+    'identify.takePhoto': 'Take Photo', 'identify.upload': 'Upload Image',
+    'identify.tip': 'Works best with clear photos of distinctive landmarks or scenery.',
+    'identify.scanning': 'Identifying place…',
+    'identify.failed': 'Identification failed', 'identify.tryAgain': 'Try Again', 'identify.tryAnother': 'Try Another',
+    'identify.noMatch': 'Couldn\'t identify this',
+    'identify.unavailable': 'Snap & Identify is not configured on this server.',
+    'identify.alternatives': 'Could also be',
+    'identify.viewInApp': 'Open in Qiwiosity', 'identify.searchApp': 'Search Qiwiosity', 'identify.searchWeb': 'Search Web',
+    'identify.conf.high': 'High confidence', 'identify.conf.medium': 'Medium confidence', 'identify.conf.low': 'Low confidence',
   },
   mi: {
     'splash.headline': 'Tūhuratia Aotearoa<br>me te Pīroiroi',
@@ -3282,6 +3327,18 @@ const LANG_DICT = {
     'detail.directions': 'Aratohu Huarahi', 'detail.seeMap': 'Tirohia ki te Mapi', 'detail.moreRegion': 'Atu anō i te Rohe',
     'detail.comparing': 'E whakatauritea ana', 'detail.book': 'Tono Mahi',
     'detail.saved': 'Tiakina', 'detail.free': 'Kore utu', 'detail.reviews': 'arotake',
+    'explore.surprise': '🎲 Whakaohorere', 'explore.nearMe': '📍 Tata ki ahau',
+    'identify.title': '📸 Tango & Tautuhi', 'identify.cta': '📸 Tango & Tautuhi i te Wāhi',
+    'identify.intro': 'Tangohia he whakaahua o tētahi tohu, whakapakoko, wāhi rānei — ka tautuhia e te AI.',
+    'identify.takePhoto': 'Tango Whakaahua', 'identify.upload': 'Tukuatu Whakaahua',
+    'identify.tip': 'Pai ake ki ngā whakaahua mārama o ngā tohu.',
+    'identify.scanning': 'E tautuhi ana i te wāhi…',
+    'identify.failed': 'Kāore i taea te tautuhi', 'identify.tryAgain': 'Whakamātauria Anō', 'identify.tryAnother': 'Tētahi Atu',
+    'identify.noMatch': 'Kāore i taea te tautuhi i tēnei',
+    'identify.unavailable': 'Kāore te Snap & Identify i te whakaritea.',
+    'identify.alternatives': 'Tērā pea ko',
+    'identify.viewInApp': 'Tirohia ki Qiwiosity', 'identify.searchApp': 'Rapu Qiwiosity', 'identify.searchWeb': 'Rapu Tukutuku',
+    'identify.conf.high': 'Tino māia', 'identify.conf.medium': 'Māia waenga', 'identify.conf.low': 'Māia iti',
   },
   zh: {
     'splash.headline': '用好奇心<br>探索新西兰',
@@ -3336,6 +3393,18 @@ const LANG_DICT = {
     'detail.directions': '获取路线', 'detail.seeMap': '在地图查看', 'detail.moreRegion': '本地区更多',
     'detail.comparing': '比较中', 'detail.book': '预订活动',
     'detail.saved': '已保存', 'detail.free': '免费', 'detail.reviews': '条评论',
+    'explore.surprise': '🎲 给我惊喜', 'explore.nearMe': '📍 附近',
+    'identify.title': '📸 拍照识别', 'identify.cta': '📸 拍照识别地点',
+    'identify.intro': '拍摄或上传地标、雕像或景点的照片,AI 将自动识别。',
+    'identify.takePhoto': '拍摄照片', 'identify.upload': '上传图片',
+    'identify.tip': '清晰的地标或风景照片识别效果最佳。',
+    'identify.scanning': '正在识别地点…',
+    'identify.failed': '识别失败', 'identify.tryAgain': '重试', 'identify.tryAnother': '换一张',
+    'identify.noMatch': '无法识别',
+    'identify.unavailable': '本服务器未配置拍照识别功能。',
+    'identify.alternatives': '也可能是',
+    'identify.viewInApp': '在 Qiwiosity 中查看', 'identify.searchApp': '搜索 Qiwiosity', 'identify.searchWeb': '网络搜索',
+    'identify.conf.high': '高置信度', 'identify.conf.medium': '中等置信度', 'identify.conf.low': '低置信度',
   },
   ja: {
     'splash.headline': '好奇心とともに<br>ニュージーランドを探索',
@@ -3390,6 +3459,18 @@ const LANG_DICT = {
     'detail.directions': '道順を取得', 'detail.seeMap': '地図で見る', 'detail.moreRegion': 'この地域の他',
     'detail.comparing': '比較中', 'detail.book': 'アクティビティ予約',
     'detail.saved': '保存済み', 'detail.free': '無料', 'detail.reviews': '件のレビュー',
+    'explore.surprise': '🎲 サプライズ', 'explore.nearMe': '📍 近く',
+    'identify.title': '📸 撮影&識別', 'identify.cta': '📸 場所を撮影&識別',
+    'identify.intro': 'ランドマーク、像、場所の写真を撮影またはアップロードすると、AIが識別します。',
+    'identify.takePhoto': '写真を撮る', 'identify.upload': '画像をアップロード',
+    'identify.tip': '特徴的なランドマークの鮮明な写真が最適です。',
+    'identify.scanning': '場所を識別中…',
+    'identify.failed': '識別に失敗しました', 'identify.tryAgain': 'もう一度', 'identify.tryAnother': '別の写真',
+    'identify.noMatch': '識別できませんでした',
+    'identify.unavailable': '撮影&識別機能はこのサーバーで利用できません。',
+    'identify.alternatives': '可能性のある他の場所',
+    'identify.viewInApp': 'Qiwiosityで開く', 'identify.searchApp': 'Qiwiosityで検索', 'identify.searchWeb': 'ウェブ検索',
+    'identify.conf.high': '高い信頼度', 'identify.conf.medium': '中程度の信頼度', 'identify.conf.low': '低い信頼度',
   },
   ko: {
     'splash.headline': '호기심으로<br>뉴질랜드를 탐험하세요',
@@ -3444,6 +3525,18 @@ const LANG_DICT = {
     'detail.directions': '길찾기', 'detail.seeMap': '지도에서 보기', 'detail.moreRegion': '이 지역 더보기',
     'detail.comparing': '비교 중', 'detail.book': '액티비티 예약',
     'detail.saved': '저장됨', 'detail.free': '무료', 'detail.reviews': '개 리뷰',
+    'explore.surprise': '🎲 깜짝 추천', 'explore.nearMe': '📍 내 주변',
+    'identify.title': '📸 스냅 & 식별', 'identify.cta': '📸 장소 스냅 & 식별',
+    'identify.intro': '랜드마크, 동상, 장소의 사진을 찍거나 업로드하면 AI가 식별합니다.',
+    'identify.takePhoto': '사진 촬영', 'identify.upload': '이미지 업로드',
+    'identify.tip': '특징적인 랜드마크의 선명한 사진이 가장 좋습니다.',
+    'identify.scanning': '장소 식별 중…',
+    'identify.failed': '식별 실패', 'identify.tryAgain': '다시 시도', 'identify.tryAnother': '다른 사진',
+    'identify.noMatch': '식별할 수 없음',
+    'identify.unavailable': '이 서버에는 스냅 & 식별 기능이 구성되지 않았습니다.',
+    'identify.alternatives': '다른 가능성',
+    'identify.viewInApp': 'Qiwiosity에서 열기', 'identify.searchApp': 'Qiwiosity 검색', 'identify.searchWeb': '웹 검색',
+    'identify.conf.high': '높은 신뢰도', 'identify.conf.medium': '중간 신뢰도', 'identify.conf.low': '낮은 신뢰도',
   },
   de: {
     'splash.headline': 'Erkunden Sie Neuseeland<br>mit Neugier',
@@ -3498,6 +3591,18 @@ const LANG_DICT = {
     'detail.directions': 'Wegbeschreibung', 'detail.seeMap': 'Auf Karte zeigen', 'detail.moreRegion': 'Mehr aus der Region',
     'detail.comparing': 'Wird verglichen', 'detail.book': 'Aktivitäten buchen',
     'detail.saved': 'Gespeichert', 'detail.free': 'Kostenlos', 'detail.reviews': 'Bewertungen',
+    'explore.surprise': '🎲 Überrasch mich', 'explore.nearMe': '📍 In der Nähe',
+    'identify.title': '📸 Knipsen & Erkennen', 'identify.cta': '📸 Ort knipsen & erkennen',
+    'identify.intro': 'Fotografieren oder laden Sie ein Foto eines Wahrzeichens, einer Statue oder eines Ortes hoch — die KI erkennt es.',
+    'identify.takePhoto': 'Foto aufnehmen', 'identify.upload': 'Bild hochladen',
+    'identify.tip': 'Funktioniert am besten mit klaren Fotos markanter Wahrzeichen.',
+    'identify.scanning': 'Ort wird erkannt…',
+    'identify.failed': 'Erkennung fehlgeschlagen', 'identify.tryAgain': 'Erneut versuchen', 'identify.tryAnother': 'Anderes Foto',
+    'identify.noMatch': 'Konnte nicht identifiziert werden',
+    'identify.unavailable': 'Knipsen & Erkennen ist auf diesem Server nicht konfiguriert.',
+    'identify.alternatives': 'Könnte auch sein',
+    'identify.viewInApp': 'In Qiwiosity öffnen', 'identify.searchApp': 'Qiwiosity durchsuchen', 'identify.searchWeb': 'Web-Suche',
+    'identify.conf.high': 'Hohe Zuverlässigkeit', 'identify.conf.medium': 'Mittlere Zuverlässigkeit', 'identify.conf.low': 'Geringe Zuverlässigkeit',
   },
   fr: {
     'splash.headline': 'Explorez la Nouvelle-Zélande<br>avec Curiosité',
@@ -3552,6 +3657,18 @@ const LANG_DICT = {
     'detail.directions': 'Itinéraire', 'detail.seeMap': 'Voir sur la carte', 'detail.moreRegion': 'Plus dans la région',
     'detail.comparing': 'En comparaison', 'detail.book': 'Réserver des activités',
     'detail.saved': 'Sauvegardé', 'detail.free': 'Gratuit', 'detail.reviews': 'avis',
+    'explore.surprise': '🎲 Surprends-moi', 'explore.nearMe': '📍 Près de moi',
+    'identify.title': '📸 Photo & Identification', 'identify.cta': '📸 Photographier & identifier un lieu',
+    'identify.intro': 'Prenez ou téléchargez une photo d\'un monument, d\'une statue ou d\'un lieu — l\'IA l\'identifiera.',
+    'identify.takePhoto': 'Prendre une photo', 'identify.upload': 'Télécharger une image',
+    'identify.tip': 'Fonctionne mieux avec des photos nettes de monuments distinctifs.',
+    'identify.scanning': 'Identification du lieu…',
+    'identify.failed': 'Échec de l\'identification', 'identify.tryAgain': 'Réessayer', 'identify.tryAnother': 'Autre photo',
+    'identify.noMatch': 'Impossible à identifier',
+    'identify.unavailable': 'Photo & Identification n\'est pas configuré sur ce serveur.',
+    'identify.alternatives': 'Pourrait aussi être',
+    'identify.viewInApp': 'Ouvrir dans Qiwiosity', 'identify.searchApp': 'Rechercher dans Qiwiosity', 'identify.searchWeb': 'Recherche Web',
+    'identify.conf.high': 'Confiance élevée', 'identify.conf.medium': 'Confiance moyenne', 'identify.conf.low': 'Confiance faible',
   },
   es: {
     'splash.headline': 'Explora Nueva Zelanda<br>con Curiosidad',
@@ -3606,6 +3723,18 @@ const LANG_DICT = {
     'detail.directions': 'Cómo llegar', 'detail.seeMap': 'Ver en el mapa', 'detail.moreRegion': 'Más de la región',
     'detail.comparing': 'Comparando', 'detail.book': 'Reservar actividades',
     'detail.saved': 'Guardado', 'detail.free': 'Gratis', 'detail.reviews': 'reseñas',
+    'explore.surprise': '🎲 Sorpréndeme', 'explore.nearMe': '📍 Cerca de mí',
+    'identify.title': '📸 Fotografiar e Identificar', 'identify.cta': '📸 Fotografiar e identificar un lugar',
+    'identify.intro': 'Toma o sube una foto de un monumento, estatua o lugar — la IA lo identificará.',
+    'identify.takePhoto': 'Tomar Foto', 'identify.upload': 'Subir Imagen',
+    'identify.tip': 'Funciona mejor con fotos nítidas de monumentos distintivos.',
+    'identify.scanning': 'Identificando lugar…',
+    'identify.failed': 'Identificación fallida', 'identify.tryAgain': 'Intentar de nuevo', 'identify.tryAnother': 'Otra foto',
+    'identify.noMatch': 'No se pudo identificar',
+    'identify.unavailable': 'Fotografiar e Identificar no está configurado en este servidor.',
+    'identify.alternatives': 'También podría ser',
+    'identify.viewInApp': 'Abrir en Qiwiosity', 'identify.searchApp': 'Buscar en Qiwiosity', 'identify.searchWeb': 'Búsqueda Web',
+    'identify.conf.high': 'Confianza alta', 'identify.conf.medium': 'Confianza media', 'identify.conf.low': 'Confianza baja',
   },
 };
 
@@ -4219,6 +4348,212 @@ function toggleSaveFromDetail() {
 
 // ============ SURPRISE ME / DISCOVER ============
 let _surpriseHistory = [];
+// ============ SNAP & IDENTIFY ============
+let _identifyAvailable = null;
+async function checkIdentifyAvailable() {
+  if (_identifyAvailable !== null) return _identifyAvailable;
+  try {
+    const r = await fetch('/api/identify/status');
+    const j = await r.json();
+    _identifyAvailable = !!j.available;
+  } catch { _identifyAvailable = false; }
+  return _identifyAvailable;
+}
+
+function openIdentify() {
+  document.getElementById('identifyOverlay').classList.add('open');
+  renderIdentifyHome();
+}
+function closeIdentify() {
+  document.getElementById('identifyOverlay').classList.remove('open');
+}
+
+async function renderIdentifyHome() {
+  const available = await checkIdentifyAvailable();
+  const body = document.getElementById('identifyBody');
+  if (!available) {
+    body.innerHTML = `<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px;">${t('identify.unavailable')}</div>`;
+    return;
+  }
+  body.innerHTML = `
+    <p style="font-size:13px;color:var(--muted);margin:0 0 16px;line-height:1.5;">${t('identify.intro')}</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+      <button class="btn primary" style="padding:18px 12px;font-size:14px;" onclick="document.getElementById('identifyFileInput').click()">
+        <div style="font-size:28px;margin-bottom:4px;">📷</div>
+        <div data-i18n="identify.takePhoto">${t('identify.takePhoto')}</div>
+      </button>
+      <button class="btn" style="padding:18px 12px;font-size:14px;" onclick="document.getElementById('identifyUploadInput').click()">
+        <div style="font-size:28px;margin-bottom:4px;">🖼</div>
+        <div data-i18n="identify.upload">${t('identify.upload')}</div>
+      </button>
+    </div>
+    <p style="font-size:11px;color:var(--muted);margin:14px 0 0;text-align:center;line-height:1.5;">${t('identify.tip')}</p>
+  `;
+}
+
+function _loadImageFromFile(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = e => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function _resizeImageToDataUrl(img, maxDim = 1024, quality = 0.85) {
+  let { width, height } = img;
+  if (width > maxDim || height > maxDim) {
+    const scale = maxDim / Math.max(width, height);
+    width = Math.round(width * scale);
+    height = Math.round(height * scale);
+  }
+  const canvas = document.createElement('canvas');
+  canvas.width = width; canvas.height = height;
+  const ctx = canvas.getContext('2d');
+  ctx.drawImage(img, 0, 0, width, height);
+  return canvas.toDataURL('image/jpeg', quality);
+}
+
+let _lastIdentifyDataUrl = null;
+async function handleIdentifyFile(event) {
+  const file = event.target.files && event.target.files[0];
+  event.target.value = '';
+  if (!file) return;
+  const body = document.getElementById('identifyBody');
+  body.innerHTML = `
+    <div class="identify-loading">
+      <div class="identify-spinner"></div>
+      <div>${t('identify.scanning')}</div>
+    </div>
+  `;
+  try {
+    const img = await _loadImageFromFile(file);
+    const dataUrl = _resizeImageToDataUrl(img);
+    _lastIdentifyDataUrl = dataUrl;
+
+    // Build candidate list (closest 40 to user if available, otherwise random sample)
+    let candidates = [];
+    try {
+      let pool = ATTRACTIONS.slice();
+      if (state.userLocation) {
+        pool = pool.map(a => ({ ...a, _d: distKmFromUser(a) || 99999 }))
+                   .sort((a,b) => a._d - b._d).slice(0, 40);
+      } else {
+        pool = pool.sort(() => Math.random() - 0.5).slice(0, 40);
+      }
+      candidates = pool.map(a => ({ name: a.name, region: regionName(a.region) }));
+    } catch {}
+
+    const r = await fetch('/api/identify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ imageDataUrl: dataUrl, candidates }),
+    });
+    if (!r.ok) {
+      const errJson = await r.json().catch(() => ({}));
+      throw new Error(errJson.error || `HTTP ${r.status}`);
+    }
+    const result = await r.json();
+    renderIdentifyResult(result, dataUrl);
+  } catch (err) {
+    document.getElementById('identifyBody').innerHTML = `
+      <div style="padding:20px;text-align:center;">
+        <div style="font-size:40px;margin-bottom:10px;">⚠</div>
+        <div style="color:var(--text);font-weight:700;margin-bottom:6px;">${t('identify.failed')}</div>
+        <div style="font-size:12px;color:var(--muted);margin-bottom:16px;">${(err.message || '').slice(0, 200)}</div>
+        <button class="btn primary" onclick="renderIdentifyHome()">${t('identify.tryAgain')}</button>
+      </div>
+    `;
+  }
+}
+
+function _findMatchingPoi(result) {
+  if (!result || !ATTRACTIONS.length) return null;
+  const matchedName = (result.matchedCandidate || '').trim().toLowerCase();
+  if (matchedName) {
+    const direct = ATTRACTIONS.find(a => a.name.toLowerCase() === matchedName);
+    if (direct) return direct;
+  }
+  const name = (result.name || '').trim().toLowerCase();
+  if (!name || name === 'unidentifiable') return null;
+  const exact = ATTRACTIONS.find(a => a.name.toLowerCase() === name);
+  if (exact) return exact;
+  const tokens = name.split(/[\s,]+/).filter(t => t.length > 3);
+  if (!tokens.length) return null;
+  let best = null, bestScore = 0;
+  for (const a of ATTRACTIONS) {
+    const lc = a.name.toLowerCase();
+    let score = 0;
+    for (const tok of tokens) if (lc.includes(tok)) score++;
+    if (score > bestScore) { bestScore = score; best = a; }
+  }
+  return bestScore >= Math.min(2, tokens.length) ? best : null;
+}
+
+function _esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+function _identifySearchInApp(name) {
+  const q = String(name || '').slice(0, 100);
+  state.search = q;
+  closeIdentify();
+  switchView('explore');
+  const el = document.getElementById('search');
+  if (el) { el.value = q; el.dispatchEvent(new Event('input', { bubbles: true })); }
+}
+function renderIdentifyResult(result, dataUrl) {
+  const body = document.getElementById('identifyBody');
+  const rawConf = (result.confidence || 'low').toLowerCase();
+  const conf = ['high', 'medium', 'low'].includes(rawConf) ? rawConf : 'low';
+  const isUnknown = !result.name || String(result.name).toLowerCase() === 'unidentifiable';
+  const matchPoi = _findMatchingPoi(result);
+  const tips = (Array.isArray(result.tips) ? result.tips : []).filter(Boolean).slice(0, 6);
+  const alts = (Array.isArray(result.alternatives) ? result.alternatives : []).filter(Boolean).slice(0, 6);
+
+  const name = _esc(result.name);
+  const desc = _esc(result.description);
+  const loc = _esc(result.location);
+  const typ = _esc(result.type);
+  const webQ = encodeURIComponent(String(result.name || '') + ' ' + String(result.location || ''));
+  const matchId = matchPoi ? _esc(matchPoi.id) : '';
+  const searchPayload = _esc(JSON.stringify(String(result.name || '').slice(0, 100)));
+
+  body.innerHTML = `
+    <img src="${dataUrl}" class="identify-result-img" alt="snap" />
+    <div style="margin-top:14px;">
+      ${isUnknown ? `
+        <div style="text-align:center;padding:6px 0 4px;">
+          <div style="font-size:36px;margin-bottom:6px;">🤔</div>
+          <div style="font-size:16px;font-weight:800;color:var(--text);margin-bottom:6px;">${_esc(t('identify.noMatch'))}</div>
+          <div style="font-size:12px;color:var(--muted);line-height:1.5;">${desc}</div>
+        </div>
+      ` : `
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:6px;">
+          <h3 style="margin:0;font-size:18px;font-weight:800;color:var(--text);line-height:1.3;flex:1;">${name}</h3>
+          <span class="identify-conf-pill identify-conf-${conf}">${_esc(t('identify.conf.' + conf))}</span>
+        </div>
+        ${loc ? `<div style="font-size:12px;color:var(--muted);margin-bottom:4px;">📍 ${loc}${typ ? ` · ${typ}` : ''}</div>` : ''}
+        ${desc ? `<p style="font-size:13px;color:var(--text);line-height:1.55;margin:10px 0 12px;">${desc}</p>` : ''}
+        ${tips.length ? `<div style="margin:10px 0;">${tips.map(tp => `<div class="identify-tip">💡 ${_esc(tp)}</div>`).join('')}</div>` : ''}
+        ${alts.length ? `<div style="font-size:11px;color:var(--muted);margin:6px 0 12px;">${_esc(t('identify.alternatives'))}: ${alts.map(_esc).join(' · ')}</div>` : ''}
+      `}
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+      ${matchPoi ? `<button class="btn primary" style="flex:1;min-width:140px;" onclick="closeIdentify();openPoiDetail('${matchId}')">📖 ${_esc(t('identify.viewInApp'))}</button>` : ''}
+      ${!isUnknown && !matchPoi && result.isInNewZealand !== false ? `<button class="btn" style="flex:1;min-width:140px;" onclick="_identifySearchInApp(${searchPayload})">🔍 ${_esc(t('identify.searchApp'))}</button>` : ''}
+      ${!isUnknown ? `<a class="btn" style="flex:1;min-width:140px;text-align:center;text-decoration:none;" href="https://www.google.com/search?q=${webQ}" target="_blank" rel="noopener">🌐 ${_esc(t('identify.searchWeb'))}</a>` : ''}
+      <button class="btn" style="flex:1;min-width:120px;" onclick="renderIdentifyHome()">${_esc(t('identify.tryAnother'))}</button>
+    </div>
+  `;
+}
+
 function surpriseMe() {
   if (!ATTRACTIONS || !ATTRACTIONS.length) { showToast('Still loading…'); return; }
   // Pick from top-rated POIs (rating ≥ 4.0 or top 30%), excluding recently shown
@@ -8590,5 +8925,18 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
 
 initMap();
 </script>
+<!-- Snap & Identify modal -->
+<div class="settings-overlay" id="identifyOverlay" onclick="if(event.target===this)closeIdentify()">
+  <div class="settings-modal" style="width:520px;">
+    <div class="settings-header">
+      <h2 data-i18n="identify.title">📸 Snap & Identify</h2>
+      <button class="settings-close" onclick="closeIdentify()">✕</button>
+    </div>
+    <div id="identifyBody" style="padding:18px 20px 22px;"></div>
+  </div>
+</div>
+<input type="file" id="identifyFileInput" accept="image/*" capture="environment" style="display:none;" onchange="handleIdentifyFile(event)" />
+<input type="file" id="identifyUploadInput" accept="image/*" style="display:none;" onchange="handleIdentifyFile(event)" />
+
 </body>
 </html>
