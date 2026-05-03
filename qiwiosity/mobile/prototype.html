@@ -1725,6 +1725,7 @@
       <button class="tab" data-view="quiz" data-i18n="tab.quiz">Quiz</button>
     </div>
     <div class="header-actions">
+      <button class="header-btn" id="communityHeaderBtn" onclick="openCommunity()" title="Community — issues, tips, photos, contributors" style="position:relative;">👥<span id="communityBadgeCount" style="display:none;position:absolute;top:1px;right:1px;background:#15888A;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;">0</span></button>
       <button class="header-btn" id="passportHeaderBtn" onclick="openPassport()" title="Trip Passport — badges, streaks & stats" style="position:relative;">🏆<span id="passportBadgeCount" style="display:none;position:absolute;top:1px;right:1px;background:#7c3aed;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;align-items:center;justify-content:center;">0</span></button>
       <button class="header-btn" id="alertsHeaderBtn" onclick="openAlerts()" title="Smart Alerts & Currency" style="position:relative;">🔔<span id="alertsBadge" style="display:none;position:absolute;top:1px;right:1px;background:#e04f4f;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;">!</span></button>
       <button class="header-btn" onclick="openSettings()" title="Settings">⚙</button>
@@ -2012,6 +2013,24 @@
 </div>
 
 <!-- ============ POI DETAIL FULL-SCREEN OVERLAY ============ -->
+<div class="poi-detail-overlay" id="communityOverlay" style="z-index:9000;">
+  <div class="poi-detail-header">
+    <button class="poi-detail-back" onclick="closeCommunity()">←</button>
+    <div style="flex:1;text-align:center;font-size:15px;font-weight:700;color:var(--text);">👥 Community</div>
+    <button class="poi-detail-back" onclick="openCommunityCompose(null)" title="New contribution">＋</button>
+  </div>
+  <div class="poi-detail-body" id="communityBody"></div>
+</div>
+
+<div class="poi-detail-overlay" id="composeOverlay" style="z-index:9100;">
+  <div class="poi-detail-header">
+    <button class="poi-detail-back" onclick="closeCompose()">←</button>
+    <div style="flex:1;text-align:center;font-size:15px;font-weight:700;color:var(--text);">＋ New Contribution</div>
+    <div style="width:36px;"></div>
+  </div>
+  <div class="poi-detail-body" id="composeBody" style="padding:14px;"></div>
+</div>
+
 <div class="poi-detail-overlay" id="passportOverlay" style="z-index:9000;">
   <div class="poi-detail-header">
     <button class="poi-detail-back" onclick="closePassport()">←</button>
@@ -2651,6 +2670,7 @@ async function loadAllData() {
     renderTopPicks();
     restoreItineraryFromStorage();
     try { recomputeBadges(); updatePassportBadge(); } catch {}
+    try { seedDemoContributionsIfEmpty(); updateCommunityHeaderBadge(); } catch {}
     renderAccomSortChips();
     if (document.getElementById('adminOverlay')?.classList.contains('on')) switchAdminTab('overview');
 
@@ -4478,6 +4498,8 @@ function openPoiDetail(id) {
       ${isPoiVisited(id)
         ? `<button class="btn" style="background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;border-color:transparent;" onclick="uncheckInPoi('${id}')">✅ Visited — tap to undo</button>`
         : `<button class="btn primary" style="background:linear-gradient(135deg,#7c3aed,#4f46e5);" onclick="checkInPoi('${id}')">✓ Check in here</button>`}
+      <button class="btn" onclick="openCommunity('${id}')" style="background:linear-gradient(135deg,#15888A,#0d6e70);color:#fff;border-color:transparent;">👥 Community (${communityCountForPoi(id)})</button>
+      <button class="btn" onclick="openCommunityCompose('${id}')">＋ Contribute</button>
       <button class="btn primary" onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${id}'))">${inIti?`✓ ${t('poi.inItin')}`:`＋ ${t('poi.add')}`}</button>
       <button class="btn" onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${id}'))">🧭 ${t('detail.directions')}</button>
       <button class="btn" onclick="closePoiDetail();switchView('explore');setTimeout(()=>{if(map){map.panTo({lat:${a.lat},lng:${a.lng}});map.setZoom(14);}},300)">🗺 ${t('detail.seeMap')}</button>
@@ -6946,6 +6968,462 @@ function sharePassport() {
   } else {
     showToast('Sharing not supported on this device');
   }
+}
+
+// ============ COMMUNITY — issues, suggestions, photos, tips, reputation ============
+const COMMUNITY_KEY = 'qw_contribs_v1';
+const PROFILE_KEY = 'qw_profile_v1';
+const COMM_VOTES_KEY = 'qw_my_votes_v1';
+const MAX_MEDIA_BYTES = 600 * 1024;
+
+const REPUTATION_TIERS = [
+  { id: 'newcomer',  label: 'Newcomer',         emoji: '🌱', color: '#888',     minContrib: 0,  minScore: 0 },
+  { id: 'contrib',   label: 'Contributor',      emoji: '✏️', color: '#3b82f6',  minContrib: 3,  minScore: 5 },
+  { id: 'local',     label: 'Local Expert',     emoji: '📍', color: '#10b981',  minContrib: 10, minScore: 25 },
+  { id: 'guide',     label: 'Tour Guide',       emoji: '🧭', color: '#15888A',  minContrib: 25, minScore: 75 },
+  { id: 'guru',      label: 'Kiwi Guru',        emoji: '🥝', color: '#7c3aed',  minContrib: 50, minScore: 200 },
+  { id: 'kaitiaki',  label: 'Honorary Kaitiaki',emoji: '🏆', color: '#d97706',  minContrib: 100,minScore: 500 },
+];
+
+function _loadContribs() { try { return JSON.parse(localStorage.getItem(COMMUNITY_KEY) || '[]') || []; } catch { return []; } }
+function _saveContribs(arr) { try { localStorage.setItem(COMMUNITY_KEY, JSON.stringify(arr)); } catch (e) { showToast('Storage full — try clearing old contributions'); } }
+function _loadMyVotes() { try { return JSON.parse(localStorage.getItem(COMM_VOTES_KEY) || '{}') || {}; } catch { return {}; } }
+function _saveMyVotes(v) { try { localStorage.setItem(COMM_VOTES_KEY, JSON.stringify(v)); } catch {} }
+
+function getProfile() {
+  try { return JSON.parse(localStorage.getItem(PROFILE_KEY) || 'null'); } catch { return null; }
+}
+function _saveProfile(p) { try { localStorage.setItem(PROFILE_KEY, JSON.stringify(p)); } catch {} }
+function ensureProfile() {
+  let p = getProfile();
+  if (p?.handle) return p;
+  const handle = (prompt('Pick a display name to contribute under:\n(Letters, numbers, 2-20 chars)', 'KiwiTraveller') || '').trim();
+  if (!handle) return null;
+  const safe = handle.replace(/[^\w\- ]/g, '').slice(0, 20);
+  if (safe.length < 2) { showToast('Name too short'); return null; }
+  p = { handle: safe, joinedAt: Date.now(), id: 'u_' + Math.random().toString(36).slice(2, 10) };
+  _saveProfile(p);
+  showToast(`Welcome, ${safe} 🌿`);
+  return p;
+}
+
+function getContribsForPoi(poiId) { return _loadContribs().filter(c => c.poiId === poiId && !c.hidden); }
+function communityCountForPoi(poiId) { return getContribsForPoi(poiId).length; }
+
+function _voteScore(c) { return (c.upvotes?.length || 0) - (c.downvotes?.length || 0); }
+
+function _contribsByAuthor(handle) {
+  return _loadContribs().filter(c => c.authorHandle === handle && !c.hidden);
+}
+
+function getReputation(handle) {
+  const mine = _contribsByAuthor(handle);
+  const score = mine.reduce((s, c) => s + Math.max(0, _voteScore(c)), 0);
+  const count = mine.length;
+  let tier = REPUTATION_TIERS[0];
+  for (const t of REPUTATION_TIERS) {
+    if (count >= t.minContrib && score >= t.minScore) tier = t;
+  }
+  return { tier, count, score };
+}
+
+function _renderRepBadge(handle, small) {
+  const rep = getReputation(handle);
+  const sz = small ? '9px' : '10px';
+  const pad = small ? '1px 5px' : '2px 7px';
+  return `<span style="display:inline-flex;align-items:center;gap:3px;background:${rep.tier.color};color:#fff;font-size:${sz};font-weight:800;padding:${pad};border-radius:8px;line-height:1.2;">${rep.tier.emoji} ${_esc(rep.tier.label)}</span>`;
+}
+
+function updateCommunityHeaderBadge() {
+  const el = document.getElementById('communityBadgeCount');
+  if (!el) return;
+  const open = _loadContribs().filter(c => c.type === 'issue' && c.status === 'open' && !c.hidden).length;
+  if (open > 0) { el.textContent = open; el.style.display = 'inline-flex'; }
+  else el.style.display = 'none';
+}
+
+function _timeAgo(ts) {
+  const s = Math.max(1, Math.floor((Date.now() - ts) / 1000));
+  if (s < 60) return s + 's ago';
+  if (s < 3600) return Math.floor(s/60) + 'm ago';
+  if (s < 86400) return Math.floor(s/3600) + 'h ago';
+  if (s < 2592000) return Math.floor(s/86400) + 'd ago';
+  return new Date(ts).toLocaleDateString();
+}
+
+const CONTRIB_TYPES = {
+  issue:      { emoji: '⚠️', label: 'Issue',       color: '#e04f4f', help: 'Report wrong info, closures, hazards or accuracy problems.' },
+  suggestion: { emoji: '💡', label: 'Suggestion',  color: '#3b82f6', help: 'Suggest a new place, feature or improvement.' },
+  tip:        { emoji: '💬', label: 'Tip',         color: '#15888A', help: 'Share a useful local tip — best time, parking, hidden gems.' },
+  photo:      { emoji: '📸', label: 'Photo',       color: '#7c3aed', help: 'Add a photo — caption it so people know what they\'re seeing.' },
+};
+
+// --- Photo upload + compression to keep localStorage healthy ---
+async function _compressImage(file) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      try {
+        // Loop: shrink dimensions if quality alone can't get us under MAX_MEDIA_BYTES
+        let maxDim = 1024;
+        let dataUrl = null;
+        for (let pass = 0; pass < 5; pass++) {
+          let { width, height } = img;
+          if (width > maxDim || height > maxDim) {
+            const ratio = Math.min(maxDim / width, maxDim / height);
+            width = Math.round(width * ratio); height = Math.round(height * ratio);
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = width; canvas.height = height;
+          canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+          let quality = 0.82;
+          dataUrl = canvas.toDataURL('image/jpeg', quality);
+          while (dataUrl.length * 0.75 > MAX_MEDIA_BYTES && quality > 0.35) {
+            quality -= 0.12;
+            dataUrl = canvas.toDataURL('image/jpeg', quality);
+          }
+          if (dataUrl.length * 0.75 <= MAX_MEDIA_BYTES) break;
+          maxDim = Math.round(maxDim * 0.7); // shrink and retry
+        }
+        URL.revokeObjectURL(url);
+        if (!dataUrl || dataUrl.length * 0.75 > MAX_MEDIA_BYTES) {
+          reject(new Error('Image still too large after compression — please pick a smaller image'));
+          return;
+        }
+        resolve(dataUrl);
+      } catch (e) {
+        URL.revokeObjectURL(url);
+        reject(e);
+      }
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Could not read image')); };
+    img.src = url;
+  });
+}
+
+let _composeMediaDataUrl = null;
+async function _onComposePhotoChange(input) {
+  const file = input.files?.[0];
+  if (!file) return;
+  if (!file.type.startsWith('image/')) { showToast('Please pick an image file'); input.value = ''; return; }
+  if (file.size > 12 * 1024 * 1024) { showToast('Image too large (max 12MB)'); input.value = ''; return; }
+  const preview = document.getElementById('composePhotoPreview');
+  if (preview) preview.innerHTML = '<em style="opacity:0.7;font-size:12px;">Compressing…</em>';
+  try {
+    _composeMediaDataUrl = await _compressImage(file);
+    if (preview) preview.innerHTML = `<img src="${_composeMediaDataUrl}" style="max-width:100%;max-height:240px;border-radius:8px;display:block;margin-top:6px;" /><div style="font-size:10px;color:var(--muted);margin-top:4px;">${Math.round(_composeMediaDataUrl.length * 0.75 / 1024)}KB after compression</div>`;
+  } catch (e) {
+    showToast('Could not process image');
+    _composeMediaDataUrl = null;
+    if (preview) preview.innerHTML = '';
+  }
+}
+
+function openCommunityCompose(poiId, presetType) {
+  const profile = ensureProfile();
+  if (!profile) return;
+  _composeMediaDataUrl = null;
+  const a = poiId ? ATTRACTIONS.find(x => x.id === poiId) : null;
+  const types = Object.entries(CONTRIB_TYPES);
+  const initial = presetType && CONTRIB_TYPES[presetType] ? presetType : 'tip';
+  _selectedComposeType = initial;
+  document.getElementById('composeBody').innerHTML = `
+    <div style="background:var(--surface2);padding:10px 12px;border-radius:10px;margin-bottom:10px;">
+      <div style="font-size:11px;color:var(--muted);margin-bottom:2px;">POSTING AS</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <strong style="font-size:14px;">${_esc(profile.handle)}</strong>
+        ${_renderRepBadge(profile.handle)}
+        <button onclick="if(confirm('Change your display name?')){localStorage.removeItem('${PROFILE_KEY}');closeCompose();openCommunityCompose(${poiId?`'${_esc(poiId)}'`:'null'});}" style="margin-left:auto;background:none;border:none;color:var(--muted);cursor:pointer;font-size:11px;">change</button>
+      </div>
+    </div>
+
+    <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;">TYPE</label>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-bottom:14px;">
+      ${types.map(([k, v]) => `<button type="button" data-ctype="${k}" onclick="_selectComposeType('${k}')" style="padding:10px;border-radius:8px;border:2px solid ${initial===k?v.color:'var(--border)'};background:${initial===k?v.color+'22':'var(--surface2)'};color:var(--text);font-weight:700;font-size:12px;cursor:pointer;text-align:left;">${v.emoji} ${v.label}</button>`).join('')}
+    </div>
+    <div id="composeTypeHelp" style="font-size:11px;color:var(--muted);margin-bottom:12px;">${CONTRIB_TYPES[initial].help}</div>
+
+    <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;">PLACE${a ? '' : ' (optional)'}</label>
+    <select id="composePoi" style="width:100%;padding:10px;border-radius:8px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text);margin-bottom:12px;font-size:13px;">
+      <option value="">— General (no specific place) —</option>
+      ${ATTRACTIONS.slice(0, 400).map(p => `<option value="${_esc(p.id)}" ${a && a.id === p.id ? 'selected' : ''}>${_esc(p.name)}</option>`).join('')}
+    </select>
+
+    <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;">TITLE</label>
+    <input id="composeTitle" maxlength="120" placeholder="Short summary…" style="width:100%;padding:10px;border-radius:8px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text);margin-bottom:12px;font-size:13px;box-sizing:border-box;" />
+
+    <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;">DETAILS</label>
+    <textarea id="composeBodyText" maxlength="2000" rows="5" placeholder="What happened, your tip, suggestion, etc…" style="width:100%;padding:10px;border-radius:8px;border:1.5px solid var(--border);background:var(--surface2);color:var(--text);margin-bottom:12px;font-size:13px;box-sizing:border-box;resize:vertical;"></textarea>
+
+    <label style="display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:6px;letter-spacing:0.5px;">PHOTO (optional)</label>
+    <input type="file" accept="image/*" onchange="_onComposePhotoChange(this)" style="margin-bottom:6px;font-size:12px;" />
+    <div id="composePhotoPreview"></div>
+
+    <div style="display:flex;gap:8px;margin-top:18px;">
+      <button class="btn" onclick="closeCompose()" style="flex:1;">Cancel</button>
+      <button class="btn primary" onclick="submitContribution()" style="flex:2;background:linear-gradient(135deg,#15888A,#7c3aed);">📨 Post to Community</button>
+    </div>
+    <p style="font-size:10px;color:var(--muted);margin-top:14px;line-height:1.5;text-align:center;">By posting you agree to be respectful. In this preview build contributions are stored locally on your device. A real shared backend is coming.</p>
+  `;
+  document.getElementById('composeOverlay').classList.add('open');
+}
+function closeCompose() { document.getElementById('composeOverlay')?.classList.remove('open'); _composeMediaDataUrl = null; }
+
+let _selectedComposeType = 'tip';
+function _selectComposeType(k) {
+  _selectedComposeType = k;
+  document.querySelectorAll('[data-ctype]').forEach(b => {
+    const v = CONTRIB_TYPES[b.dataset.ctype];
+    const sel = b.dataset.ctype === k;
+    b.style.borderColor = sel ? v.color : 'var(--border)';
+    b.style.background = sel ? v.color + '22' : 'var(--surface2)';
+  });
+  const help = document.getElementById('composeTypeHelp');
+  if (help) help.textContent = CONTRIB_TYPES[k].help;
+}
+
+function submitContribution() {
+  const profile = ensureProfile();
+  if (!profile) return;
+  const type = _selectedComposeType || 'tip';
+  const poiId = (document.getElementById('composePoi')?.value || '') || null;
+  const title = (document.getElementById('composeTitle')?.value || '').trim().slice(0, 120);
+  const body = (document.getElementById('composeBodyText')?.value || '').trim().slice(0, 2000);
+  if (!title) { showToast('Please add a title'); return; }
+  if (!body && !_composeMediaDataUrl) { showToast('Add some details or a photo'); return; }
+  const arr = _loadContribs();
+  const c = {
+    id: 'c_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
+    type,
+    poiId,
+    title,
+    body,
+    mediaDataUrl: _composeMediaDataUrl || null,
+    authorHandle: profile.handle,
+    authorId: profile.id,
+    createdAt: Date.now(),
+    upvotes: [],
+    downvotes: [],
+    status: type === 'issue' ? 'open' : 'live',
+    hidden: false,
+  };
+  arr.push(c);
+  if (arr.length > 800) arr.splice(0, arr.length - 800);
+  _saveContribs(arr);
+  closeCompose();
+  showToast('✅ Posted to community — thank you!');
+  updateCommunityHeaderBadge();
+  // Refresh views if open
+  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+}
+
+function voteContrib(id, dir) {
+  const profile = ensureProfile();
+  if (!profile) return;
+  const arr = _loadContribs();
+  const c = arr.find(x => x.id === id);
+  if (!c) return;
+  if (c.authorId === profile.id) { showToast("Can't vote on your own post"); return; }
+  c.upvotes = c.upvotes || []; c.downvotes = c.downvotes || [];
+  const myVotes = _loadMyVotes();
+  const prev = myVotes[id]; // 1 | -1 | undefined
+  // Remove any prior
+  c.upvotes = c.upvotes.filter(v => v !== profile.id);
+  c.downvotes = c.downvotes.filter(v => v !== profile.id);
+  let newDir = dir;
+  if (prev === dir) newDir = 0; // toggle off
+  if (newDir === 1) c.upvotes.push(profile.id);
+  if (newDir === -1) c.downvotes.push(profile.id);
+  if (newDir === 0) delete myVotes[id]; else myVotes[id] = newDir;
+  _saveContribs(arr); _saveMyVotes(myVotes);
+  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+}
+
+function resolveIssue(id) {
+  const profile = ensureProfile();
+  if (!profile) return;
+  const arr = _loadContribs();
+  const c = arr.find(x => x.id === id);
+  if (!c || c.type !== 'issue') return;
+  c.status = c.status === 'resolved' ? 'open' : 'resolved';
+  c.resolvedBy = c.status === 'resolved' ? profile.handle : null;
+  c.resolvedAt = c.status === 'resolved' ? Date.now() : null;
+  _saveContribs(arr);
+  showToast(c.status === 'resolved' ? '✓ Marked as resolved' : 'Reopened');
+  updateCommunityHeaderBadge();
+  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+}
+
+function flagContrib(id) {
+  if (!confirm('Hide this contribution from your view? (Real moderation requires the shared backend.)')) return;
+  const arr = _loadContribs();
+  const c = arr.find(x => x.id === id);
+  if (!c) return;
+  c.hidden = true;
+  _saveContribs(arr);
+  showToast('Hidden from your view');
+  updateCommunityHeaderBadge();
+  if (document.getElementById('communityOverlay')?.classList.contains('open')) renderCommunityHub(_communityActiveTab, _communityScopePoi);
+  if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId) openPoiDetail(_detailPoiId);
+}
+
+function _renderContribCard(c) {
+  const def = CONTRIB_TYPES[c.type] || CONTRIB_TYPES.tip;
+  const score = _voteScore(c);
+  const myVotes = _loadMyVotes();
+  const myVote = myVotes[c.id] || 0;
+  const a = c.poiId ? ATTRACTIONS.find(x => x.id === c.poiId) : null;
+  const profile = getProfile();
+  const isMine = profile && c.authorId === profile.id;
+  const resolvedBadge = c.type === 'issue' && c.status === 'resolved'
+    ? `<span style="background:#10b981;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:6px;margin-left:6px;">✓ RESOLVED</span>`
+    : (c.type === 'issue' ? `<span style="background:#e04f4f;color:#fff;font-size:9px;font-weight:800;padding:2px 6px;border-radius:6px;margin-left:6px;">OPEN</span>` : '');
+  return `
+    <div style="background:var(--surface);border:1px solid var(--border);border-left:4px solid ${def.color};border-radius:10px;padding:12px;margin-bottom:10px;">
+      <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;">
+        <div style="font-size:18px;">${def.emoji}</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-weight:700;font-size:14px;line-height:1.3;">${_esc(c.title)}${resolvedBadge}</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <strong style="color:var(--text);">${_esc(c.authorHandle)}</strong>
+            ${_renderRepBadge(c.authorHandle, true)}
+            <span>· ${_timeAgo(c.createdAt)}</span>
+            ${a ? `<span>· 📍 <a href="#" onclick="event.preventDefault();closeCommunity();openPoiDetail('${_esc(a.id)}');return false;" style="color:var(--primary);font-weight:700;text-decoration:none;">${_esc(a.name)}</a></span>` : ''}
+          </div>
+        </div>
+      </div>
+      ${c.body ? `<div style="font-size:13px;line-height:1.55;margin:6px 0 8px;white-space:pre-wrap;">${_esc(c.body)}</div>` : ''}
+      ${c.mediaDataUrl ? `<img src="${c.mediaDataUrl}" style="max-width:100%;border-radius:8px;display:block;margin:6px 0;" />` : ''}
+      <div style="display:flex;align-items:center;gap:4px;margin-top:8px;">
+        <button onclick="voteContrib('${c.id}',1)" title="Upvote" style="background:${myVote===1?'#10b98133':'transparent'};border:1px solid ${myVote===1?'#10b981':'var(--border)'};color:${myVote===1?'#10b981':'var(--text)'};border-radius:6px;padding:4px 8px;font-size:12px;font-weight:700;cursor:pointer;">▲</button>
+        <span style="min-width:28px;text-align:center;font-size:12px;font-weight:800;color:${score>0?'#10b981':score<0?'#e04f4f':'var(--muted)'};">${score>0?'+':''}${score}</span>
+        <button onclick="voteContrib('${c.id}',-1)" title="Downvote" style="background:${myVote===-1?'#e04f4f33':'transparent'};border:1px solid ${myVote===-1?'#e04f4f':'var(--border)'};color:${myVote===-1?'#e04f4f':'var(--text)'};border-radius:6px;padding:4px 8px;font-size:12px;font-weight:700;cursor:pointer;">▼</button>
+        ${c.type === 'issue' ? `<button onclick="resolveIssue('${c.id}')" style="margin-left:auto;background:${c.status==='resolved'?'#10b981':'var(--surface2)'};color:${c.status==='resolved'?'#fff':'var(--text)'};border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;">${c.status==='resolved'?'✓ Resolved':'Mark resolved'}</button>` : ''}
+        ${!isMine ? `<button onclick="flagContrib('${c.id}')" title="Hide / report" style="${c.type==='issue'?'':'margin-left:auto;'}background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;padding:2px 6px;">⚑</button>` : `<span style="margin-left:auto;font-size:10px;color:var(--muted);font-weight:700;">YOU</span>`}
+      </div>
+    </div>`;
+}
+
+function _topContributors(limit) {
+  const counts = {};
+  _loadContribs().filter(c => !c.hidden).forEach(c => {
+    if (!counts[c.authorHandle]) counts[c.authorHandle] = { handle: c.authorHandle, count: 0, score: 0, lastAt: 0 };
+    counts[c.authorHandle].count++;
+    counts[c.authorHandle].score += Math.max(0, _voteScore(c));
+    counts[c.authorHandle].lastAt = Math.max(counts[c.authorHandle].lastAt, c.createdAt);
+  });
+  return Object.values(counts).sort((a, b) => (b.score - a.score) || (b.count - a.count)).slice(0, limit || 10);
+}
+
+let _communityActiveTab = 'all';
+let _communityScopePoi = null;
+
+function openCommunity(scopePoiId) {
+  _communityScopePoi = scopePoiId || null;
+  _communityActiveTab = 'all';
+  renderCommunityHub('all', _communityScopePoi);
+  document.getElementById('communityOverlay').classList.add('open');
+}
+function closeCommunity() { document.getElementById('communityOverlay')?.classList.remove('open'); }
+
+function _setCommunityTab(tab) { _communityActiveTab = tab; renderCommunityHub(tab, _communityScopePoi); }
+
+function renderCommunityHub(tab, scopePoiId) {
+  const profile = getProfile();
+  let all = _loadContribs().filter(c => !c.hidden);
+  if (scopePoiId) all = all.filter(c => c.poiId === scopePoiId);
+  const counts = {
+    all: all.length,
+    issue: all.filter(c => c.type === 'issue').length,
+    suggestion: all.filter(c => c.type === 'suggestion').length,
+    tip: all.filter(c => c.type === 'tip').length,
+    photo: all.filter(c => c.type === 'photo').length,
+  };
+  const tabs = [
+    { id: 'all',         label: `All (${counts.all})`,                  filter: () => true },
+    { id: 'issue',       label: `⚠️ Issues (${counts.issue})`,          filter: c => c.type === 'issue' },
+    { id: 'suggestion',  label: `💡 Ideas (${counts.suggestion})`,      filter: c => c.type === 'suggestion' },
+    { id: 'tip',         label: `💬 Tips (${counts.tip})`,              filter: c => c.type === 'tip' },
+    { id: 'photo',       label: `📸 Photos (${counts.photo})`,          filter: c => c.type === 'photo' },
+    { id: 'top',         label: `⭐ Top Voices`,                         filter: () => false },
+  ];
+  const scopePoi = scopePoiId ? ATTRACTIONS.find(x => x.id === scopePoiId) : null;
+  let listHtml = '';
+  if (tab === 'top') {
+    const top = _topContributors(20);
+    if (!top.length) {
+      listHtml = '<div style="padding:20px;text-align:center;color:var(--muted);font-size:13px;">No contributors yet — be the first!</div>';
+    } else {
+      listHtml = top.map((u, i) => {
+        const rep = getReputation(u.handle);
+        return `<div style="display:flex;align-items:center;gap:10px;padding:10px;border-bottom:1px solid var(--border);">
+          <div style="font-size:18px;font-weight:800;color:var(--muted);min-width:24px;">${i+1}</div>
+          <div style="flex:1;min-width:0;">
+            <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;"><strong style="font-size:14px;">${_esc(u.handle)}</strong>${_renderRepBadge(u.handle, true)}</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">${u.count} contribution${u.count!==1?'s':''} · +${u.score} upvotes · last ${_timeAgo(u.lastAt)}</div>
+          </div>
+        </div>`;
+      }).join('');
+    }
+  } else {
+    const filtered = all.filter(tabs.find(t => t.id === tab).filter)
+      .sort((a, b) => {
+        // Open issues first, then by score, then recency
+        if (a.type === 'issue' && b.type === 'issue') {
+          if ((a.status === 'open') !== (b.status === 'open')) return a.status === 'open' ? -1 : 1;
+        }
+        const sd = _voteScore(b) - _voteScore(a);
+        if (sd) return sd;
+        return b.createdAt - a.createdAt;
+      });
+    if (!filtered.length) {
+      listHtml = `<div style="padding:30px 20px;text-align:center;color:var(--muted);font-size:13px;">
+        Nothing here yet.${scopePoi ? ' Be the first to share something about ' + _esc(scopePoi.name) + '!' : ''}
+        <br><br>
+        <button class="btn primary" onclick="openCommunityCompose(${scopePoiId?`'${_esc(scopePoiId)}'`:'null'},'${tab==='all'?'tip':tab}')">＋ Add the first one</button>
+      </div>`;
+    } else {
+      listHtml = filtered.map(_renderContribCard).join('');
+    }
+  }
+
+  const myRep = profile ? getReputation(profile.handle) : null;
+  document.getElementById('communityBody').innerHTML = `
+    <div style="padding:14px;background:linear-gradient(135deg,#15888A,#7c3aed);color:#fff;">
+      ${scopePoi ? `<div style="font-size:11px;opacity:0.9;margin-bottom:4px;">📍 SCOPED TO</div><div style="font-size:16px;font-weight:800;margin-bottom:6px;">${_esc(scopePoi.name)} <button onclick="openCommunity()" style="margin-left:6px;background:rgba(255,255,255,0.2);color:#fff;border:none;border-radius:6px;padding:2px 8px;font-size:10px;font-weight:700;cursor:pointer;">show all</button></div>` : `<div style="font-size:18px;font-weight:800;margin-bottom:4px;">Community Hub</div><div style="font-size:11px;opacity:0.9;">Issues · ideas · tips · photos · top contributors</div>`}
+      ${profile ? `<div style="margin-top:10px;background:rgba(255,255,255,0.18);padding:8px 10px;border-radius:8px;display:flex;align-items:center;gap:8px;font-size:12px;">
+        <span>You:</span><strong>${_esc(profile.handle)}</strong>${_renderRepBadge(profile.handle, true)}
+        <span style="margin-left:auto;font-size:11px;opacity:0.9;">${myRep.count} posts · +${myRep.score} upvotes</span>
+      </div>` : `<div style="margin-top:10px;font-size:12px;opacity:0.92;">You haven't picked a display name yet — tap ＋ to start contributing.</div>`}
+    </div>
+    <div style="padding:10px 14px;display:flex;gap:6px;">
+      <button class="btn primary" onclick="openCommunityCompose(${scopePoiId?`'${_esc(scopePoiId)}'`:'null'})" style="flex:1;background:linear-gradient(135deg,#15888A,#7c3aed);">＋ New Contribution</button>
+    </div>
+    <div style="display:flex;gap:6px;overflow-x:auto;padding:0 14px 8px;-webkit-overflow-scrolling:touch;">
+      ${tabs.map(tt => `<button onclick="_setCommunityTab('${tt.id}')" style="flex:0 0 auto;padding:6px 12px;border-radius:16px;border:1.5px solid ${tab===tt.id?'#15888A':'var(--border)'};background:${tab===tt.id?'#15888A':'var(--surface2)'};color:${tab===tt.id?'#fff':'var(--text)'};font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;">${_esc(tt.label)}</button>`).join('')}
+    </div>
+    <div style="padding:0 14px 24px;">${listHtml}</div>
+    <div style="padding:0 14px 24px;font-size:10px;color:var(--muted);text-align:center;line-height:1.6;">
+      <strong>Reputation tiers:</strong><br>
+      ${REPUTATION_TIERS.map(t => `<span style="display:inline-block;margin:2px 4px;color:${t.color};font-weight:700;">${t.emoji} ${_esc(t.label)}</span>`).join(' · ')}
+    </div>
+  `;
+}
+
+function seedDemoContributionsIfEmpty() {
+  if (_loadContribs().length > 0) return;
+  if (!ATTRACTIONS || ATTRACTIONS.length < 3) return;
+  const sample = ATTRACTIONS.slice(0, 3);
+  const now = Date.now();
+  const demo = [
+    { id: 'demo1', type: 'tip', poiId: sample[0]?.id || null, title: 'Go at sunrise to skip the crowds', body: 'Got there for 6:30am — had the lookout almost to ourselves. Bring layers, it\'s cold even in summer.', authorHandle: 'TaraTheTramper', authorId: 'u_demo_tara', createdAt: now - 86400000 * 4, upvotes: ['u_demo_a','u_demo_b','u_demo_c','u_demo_d','u_demo_e'], downvotes: [], status: 'live', hidden: false },
+    { id: 'demo2', type: 'issue', poiId: sample[1]?.id || null, title: 'Track section closed for slip repairs', body: 'DOC has the upper loop closed until at least mid-November. Sign at the start says use the lower track.', authorHandle: 'KiwiRanger', authorId: 'u_demo_ranger', createdAt: now - 86400000 * 2, upvotes: ['u_demo_a','u_demo_b','u_demo_c'], downvotes: [], status: 'open', hidden: false },
+    { id: 'demo3', type: 'suggestion', poiId: null, title: 'Add an offline mode for the audio guides', body: 'Cell coverage is spotty in lots of these spots — being able to pre-download the commentary would be huge.', authorHandle: 'RoadTripRach', authorId: 'u_demo_rach', createdAt: now - 86400000 * 7, upvotes: ['u_demo_a','u_demo_b','u_demo_c','u_demo_d','u_demo_e','u_demo_f','u_demo_g'], downvotes: [], status: 'live', hidden: false },
+    { id: 'demo4', type: 'tip', poiId: sample[2]?.id || null, title: 'Free parking 200m up the road', body: 'The signposted carpark is $8 but there\'s a free street spot 2 mins walk away on the side road.', authorHandle: 'TaraTheTramper', authorId: 'u_demo_tara', createdAt: now - 86400000 * 1, upvotes: ['u_demo_a','u_demo_b'], downvotes: [], status: 'live', hidden: false },
+  ];
+  _saveContribs(demo);
 }
 
 function renderItinerary() {
