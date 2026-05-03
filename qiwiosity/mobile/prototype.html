@@ -9922,51 +9922,71 @@ function buildAIItinerary(config) {
   }
   const used = new Set(orderedMust.map(p => String(p.id)));
 
-  // Pool excludes must-visits (already placed)
-  const pool = [...candidates]
-    .filter(c => !used.has(String(c.id)))
-    .sort((a,b) => b._aiScore - a._aiScore)
-    .slice(0, Math.min(totalStops * 5, 400));
+  // Pool with per-region cap so big-city POIs don't crowd out other regions.
+  // Take the top N from each region by score, then merge.
+  const perRegionCap = Math.max(8, Math.ceil(totalStops * 1.5));
+  const byRegion = new Map();
+  for (const c of [...candidates].sort((a,b) => b._aiScore - a._aiScore)) {
+    if (used.has(String(c.id))) continue;
+    const arr = byRegion.get(c.region) || [];
+    if (arr.length < perRegionCap) { arr.push(c); byRegion.set(c.region, arr); }
+  }
+  const pool = [...byRegion.values()].flat();
 
-  // Greedy fill empty slots, anchoring toward next fixed point (must-visit or endPos)
+  // Track region usage to push the route to spread across NZ
+  const regionCounts = new Map();
+  orderedMust.forEach(p => regionCounts.set(p.region, (regionCounts.get(p.region) || 0) + 1));
+
+  // Greedy fill empty slots
   let pos = startPos;
+  let prevRegion = null;
   for (let i = 0; i < totalStops; i++) {
     if (route[i]) {
       pos = { lat: route[i].lat, lng: route[i].lng };
+      prevRegion = route[i].region;
       continue;
     }
-    // Find the next anchor: next must-visit slot, or endPos at the trip's end
+    // Find the next must-visit anchor (NOT endPos — endPos handled via end-pull below)
     let anchor = null;
     for (let j = i + 1; j < totalStops; j++) {
       if (route[j]) { anchor = route[j]; break; }
     }
-    if (!anchor && endPos) anchor = endPos;
+    // End-pull: only kicks in for the last ~40% of the trip, so the route can wander outward first
+    const tripPct = i / Math.max(1, totalStops - 1);
+    const endPull = endPos ? Math.max(0, (tripPct - 0.6) / 0.4) : 0;
+    // For round-trip the anchor for the final stretch IS the start (= endPos)
+    const useEndAsAnchor = !anchor && endPos && endPull > 0;
+    if (useEndAsAnchor) anchor = endPos;
     const directDist = anchor ? haversine(pos, anchor) : 0;
-    // End-pull strength ramps from 0 → 1 over the route (so later stops drift toward end)
-    const endPull = endPos ? (i / Math.max(1, totalStops - 1)) : 0;
 
     let best = null, bestS = -Infinity;
     for (const p of pool) {
       if (used.has(String(p.id))) continue;
       const dPrev = haversine(pos, p);
       const dNext = anchor ? haversine(p, anchor) : 0;
-      // Detour = how much extra distance vs going direct from pos→anchor
+      // Detour penalty — only meaningful when there's a downstream anchor
       const detour = anchor ? Math.max(0, (dPrev + dNext) - directDist) : 0;
-      // Distance from prev penalty (looser as trip progresses)
-      const prevPenalty = dPrev / Math.max(20, 15 + i * 4);
-      // Detour penalty (tighter when end-pull is high)
-      const detourPenalty = anchor ? (detour / 60) * (0.4 + 0.8 * endPull) : 0;
-      const s = p._aiScore - prevPenalty - detourPenalty;
+      // Distance-from-prev penalty: lighter (we want to encourage longer hops)
+      const prevPenalty = Math.min(dPrev / 80, 6);
+      // Detour penalty: weighted by end-pull (gets stronger as trip ends)
+      const detourPenalty = anchor ? (detour / 80) * (0.2 + 0.8 * endPull) : 0;
+      // Region novelty: STRONG bonus for visiting a fresh region; STRONG penalty for stacking same region
+      const rCount = regionCounts.get(p.region) || 0;
+      const novelty = rCount === 0 ? 12 : -rCount * 4;
+      // Stickiness penalty: avoid 4+ consecutive stops in the same region (allow short clusters)
+      const sticky = (p.region === prevRegion && rCount >= 3) ? -6 : 0;
+      const s = p._aiScore + novelty + sticky - prevPenalty - detourPenalty;
       if (s > bestS) { bestS = s; best = p; }
     }
     if (!best) break;
     route[i] = best;
     used.add(String(best.id));
+    regionCounts.set(best.region, (regionCounts.get(best.region) || 0) + 1);
+    prevRegion = best.region;
     pos = { lat: best.lat, lng: best.lng };
   }
   // Drop any remaining nulls (e.g. if pool was exhausted)
   const finalRoute = route.filter(Boolean);
-  // Use finalRoute below as the route variable name expected by the rest
   route.length = 0;
   finalRoute.forEach(r => route.push(r));
 
