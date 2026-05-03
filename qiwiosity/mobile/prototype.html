@@ -304,6 +304,40 @@
   .al-card .ttl { font-weight: 800; margin-bottom: 3px; color: var(--text); }
   .al-card .meta { font-size: 10px; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
   .al-fx-line { font-size: 10px; color: var(--muted); margin-top: 1px; font-weight: 600; }
+  .quiz-btn {
+    background: linear-gradient(135deg, #7c3aed, #15888A);
+    color: white; border: none; padding: 11px 12px; border-radius: 10px;
+    font-size: 13px; font-weight: 700; cursor: pointer; box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(124,58,237,0.25); transition: transform 0.15s, opacity 0.15s;
+  }
+  .quiz-btn:hover { opacity: 0.92; }
+  .quiz-btn:active { transform: scale(0.98); }
+  .qz-player-pill { display:inline-flex; align-items:center; gap:6px; padding:6px 10px; background: var(--surface2); border:1px solid var(--border); border-radius:20px; font-size:12px; font-weight:700; margin: 3px; }
+  .qz-player-pill .rm { background:none; border:none; color:var(--muted); cursor:pointer; padding:0 2px; font-size:13px; }
+  .qz-player-pill .voice-dot { width:6px; height:6px; border-radius:50%; background:#16a34a; }
+  .qz-buzz-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap:6px; margin: 8px 0; }
+  .qz-buzz-btn { padding: 12px 8px; background: var(--surface2); border: 2px solid var(--border); border-radius: 10px; cursor: pointer; font-size: 13px; font-weight:800; color: var(--text); transition: transform 0.1s, border-color 0.15s; }
+  .qz-buzz-btn:hover { border-color: var(--primary); }
+  .qz-buzz-btn:active { transform: scale(0.96); }
+  .qz-buzz-btn.locked { background: rgba(124,58,237,0.12); border-color:#7c3aed; color:#7c3aed; }
+  .qz-question { font-size: 16px; font-weight: 700; line-height: 1.4; padding: 14px; background: var(--surface2); border-radius: 10px; margin: 10px 0; color: var(--text); }
+  .qz-options { display:grid; gap: 6px; margin: 10px 0; }
+  .qz-option { padding: 11px 14px; background: var(--surface); border: 2px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 13px; text-align: left; color: var(--text); font-weight:600; transition: border-color 0.15s; }
+  .qz-option:hover { border-color: var(--primary); }
+  .qz-option.correct { border-color: #16a34a; background: rgba(22,163,74,0.08); }
+  .qz-option.wrong { border-color: #ef4444; background: rgba(239,68,68,0.08); }
+  .qz-option.disabled { cursor: default; opacity: 0.7; }
+  .qz-meta { display:flex; justify-content:space-between; align-items:center; font-size:11px; color:var(--muted); margin: 4px 0; }
+  .qz-cat-badge { display:inline-block; padding:2px 8px; background:rgba(124,58,237,0.12); color:#7c3aed; border-radius:10px; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:0.5px; }
+  .qz-mic-btn { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:11px; background:linear-gradient(135deg,#7c3aed,#15888A); color:#fff; border:none; border-radius:8px; font-size:13px; font-weight:700; cursor:pointer; }
+  .qz-mic-btn.recording { background:#ef4444; animation: pulse 1.2s infinite; }
+  .qz-mic-btn:disabled { opacity:0.6; cursor:not-allowed; }
+  @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.65; } }
+  .qz-leader { display:flex; justify-content:space-between; padding:8px 12px; background:var(--surface2); border-radius:6px; margin-bottom:4px; font-size:13px; }
+  .qz-leader .nm { font-weight:700; color: var(--text); }
+  .qz-leader .sc { font-weight:800; color: var(--primary); }
+  .qz-leader.first { background: linear-gradient(135deg,rgba(245,158,11,0.18),rgba(124,58,237,0.08)); border:1px solid #f59e0b; }
+  .qz-transcript { font-size:12px; color:var(--muted); padding:6px 10px; background:var(--surface2); border-radius:6px; min-height:28px; margin-top:6px; font-style: italic; }
   .near-me-btn:active { transform:scale(0.97); }
   .poi-dist-badge {
     display:inline-block; font-size:10px; font-weight:700;
@@ -1707,6 +1741,7 @@
         <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()" data-i18n="explore.nearMe">📍 Near Me</button>
       </div>
       <button class="identify-btn" style="width:100%;margin-bottom:4px;" onclick="openIdentify()" data-i18n="identify.cta">📸 Snap & Identify a Place</button>
+      <button class="quiz-btn" style="width:100%;margin-bottom:4px;" onclick="openQuiz()" data-i18n="quiz.cta">🧠 Aotearoa Quiz Time</button>
       <div class="recently-viewed" id="recentlyViewedSection" style="display:none;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <h4 style="margin:0;">Recently Viewed</h4>
@@ -4399,6 +4434,480 @@ function toggleSaveFromDetail() {
 
 // ============ SURPRISE ME / DISCOVER ============
 let _surpriseHistory = [];
+// ============ AOTEAROA QUIZ ============
+const QUIZ_PLAYERS_KEY = 'qw_quiz_players_v1';
+const QUIZ_HISTORY_KEY = 'qw_quiz_history_v1';
+
+const QUIZ_BANK = [
+  // Geography
+  { cat: 'Geography', q: "What is the highest mountain in New Zealand?", opts: ["Mt Taranaki", "Aoraki / Mt Cook", "Mt Ruapehu", "Mt Tasman"], a: 1 },
+  { cat: 'Geography', q: "Which lake is NZ's largest by surface area?", opts: ["Lake Wakatipu", "Lake Tekapo", "Lake Taupō", "Lake Te Anau"], a: 2 },
+  { cat: 'Geography', q: "What is the southernmost city of NZ's South Island?", opts: ["Dunedin", "Invercargill", "Queenstown", "Bluff"], a: 1 },
+  { cat: 'Geography', q: "Milford Sound is technically a what?", opts: ["Lake", "Strait", "Fiord", "Bay"], a: 2 },
+  { cat: 'Geography', q: "Which strait separates the North and South Islands?", opts: ["Foveaux Strait", "Bass Strait", "Cook Strait", "Tasman Strait"], a: 2 },
+  { cat: 'Geography', q: "Stewart Island is also known by what Māori name?", opts: ["Rakiura", "Aotearoa", "Te Ika-a-Māui", "Te Waipounamu"], a: 0 },
+  { cat: 'Geography', q: "Approximately how many kilometres long is NZ from north to south?", opts: ["1,000 km", "1,600 km", "2,200 km", "3,000 km"], a: 1 },
+  // Culture / Māori
+  { cat: 'Māori', q: "What does 'Aotearoa' commonly translate to?", opts: ["Land of the Long White Cloud", "Great Southern Land", "Land of Plenty", "The Far Country"], a: 0 },
+  { cat: 'Māori', q: "What is the traditional Māori greeting that involves pressing noses?", opts: ["Haka", "Hongi", "Powhiri", "Karakia"], a: 1 },
+  { cat: 'Māori', q: "What is the famous Māori ceremonial war dance?", opts: ["Poi", "Waiata", "Haka", "Hīkoi"], a: 2 },
+  { cat: 'Māori', q: "Which iwi is associated with the Waikato region?", opts: ["Ngāi Tahu", "Tainui", "Ngāpuhi", "Te Arawa"], a: 1 },
+  { cat: 'Māori', q: "What is the Treaty of Waitangi called in te reo Māori?", opts: ["Te Tiriti o Waitangi", "Te Kawenata", "Te Ture Whenua", "Te Whakaaetanga"], a: 0 },
+  { cat: 'Māori', q: "What does 'kia ora' literally mean?", opts: ["Goodbye", "Be well / hello", "Thank you", "Welcome"], a: 1 },
+  // History
+  { cat: 'History', q: "In what year was the Treaty of Waitangi signed?", opts: ["1820", "1840", "1860", "1907"], a: 1 },
+  { cat: 'History', q: "Who is generally credited as the first European to sight NZ?", opts: ["James Cook", "Abel Tasman", "Jean de Surville", "Marion du Fresne"], a: 1 },
+  { cat: 'History', q: "NZ became the first self-governing country to grant women the vote in what year?", opts: ["1893", "1902", "1918", "1928"], a: 0 },
+  { cat: 'History', q: "Which volcanic eruption destroyed the Pink and White Terraces in 1886?", opts: ["Mt Ruapehu", "Mt Tarawera", "White Island", "Mt Tongariro"], a: 1 },
+  { cat: 'History', q: "When did NZ formally become independent of British legislation?", opts: ["1907", "1947", "1986", "2003"], a: 2 },
+  // People
+  { cat: 'People', q: "Who was the first person to climb Mt Everest with Tenzing Norgay?", opts: ["Peter Hillary", "Edmund Hillary", "Bear Grylls", "George Mallory"], a: 1 },
+  { cat: 'People', q: "Which Kiwi physicist split the atom?", opts: ["Ernest Rutherford", "Maurice Wilkins", "Alan MacDiarmid", "Beatrice Tinsley"], a: 0 },
+  { cat: 'People', q: "Who directed The Lord of the Rings trilogy?", opts: ["Taika Waititi", "Jane Campion", "Peter Jackson", "Andrew Adamson"], a: 2 },
+  { cat: 'People', q: "Which Kiwi singer is famous for 'Royals'?", opts: ["Lorde", "Kimbra", "Bic Runga", "Anika Moa"], a: 0 },
+  { cat: 'People', q: "Who was NZ's first female Prime Minister (elected, 1999)?", opts: ["Jenny Shipley", "Helen Clark", "Jacinda Ardern", "Marilyn Waring"], a: 1 },
+  // Wildlife / Nature
+  { cat: 'Nature', q: "The kiwi bird is what kind of animal?", opts: ["A reptile", "A flightless bird", "A small mammal", "A marsupial"], a: 1 },
+  { cat: 'Nature', q: "Which is NZ's only native land mammal?", opts: ["Possum", "Stoat", "Short-tailed bat", "Hedgehog"], a: 2 },
+  { cat: 'Nature', q: "The pohutukawa is also nicknamed the…", opts: ["Easter Tree", "NZ Christmas Tree", "Sun Tree", "Wedding Tree"], a: 1 },
+  { cat: 'Nature', q: "Which alpine parrot is famous for being cheeky and curious?", opts: ["Tūī", "Kākāpō", "Kea", "Weka"], a: 2 },
+  { cat: 'Nature', q: "Hector's dolphin is one of the world's smallest. Where is it found?", opts: ["Only in NZ waters", "Worldwide", "Australia and NZ", "Southern Ocean only"], a: 0 },
+  // Food & Misc
+  { cat: 'Culture', q: "What is a 'hāngī'?", opts: ["A Māori greeting", "An earth-oven feast", "A traditional flute", "A war club"], a: 1 },
+  { cat: 'Culture', q: "Pavlova is famously contested with which other country?", opts: ["UK", "USA", "Australia", "South Africa"], a: 2 },
+  { cat: 'Culture', q: "What is the silver fern most associated with?", opts: ["The flag", "Sports teams (incl. All Blacks)", "Currency", "Native trees only"], a: 1 },
+  { cat: 'Culture', q: "Which iconic NZ snack is a chocolate-coated marshmallow biscuit?", opts: ["Pineapple Lump", "Mince & Cheese Pie", "Hokey Pokey", "Mallowpuff"], a: 3 },
+  { cat: 'Culture', q: "'L&P' stands for…", opts: ["Lemon & Paeroa", "Light & Pure", "Lime & Pineapple", "Lager & Porter"], a: 0 },
+];
+
+let _quizState = null;
+let _qzRecognition = null;
+let _qzMediaRec = null;
+let _qzCurrentRecorder = null;
+
+function _loadPlayers() {
+  try { const r = JSON.parse(localStorage.getItem(QUIZ_PLAYERS_KEY) || '[]'); return Array.isArray(r) ? r : []; } catch { return []; }
+}
+function _savePlayers(p) {
+  try { localStorage.setItem(QUIZ_PLAYERS_KEY, JSON.stringify(p.slice(0, 10))); } catch {}
+}
+function _loadQuizHistory() {
+  try { return JSON.parse(localStorage.getItem(QUIZ_HISTORY_KEY) || '[]'); } catch { return []; }
+}
+function _saveQuizHistory(h) {
+  try { localStorage.setItem(QUIZ_HISTORY_KEY, JSON.stringify(h.slice(0, 20))); } catch {}
+}
+
+function openQuiz() {
+  if (!_quizState) _quizState = { stage: 'setup', players: _loadPlayers(), questions: [], idx: 0, scores: {}, length: 8, lockedPlayer: null, transcript: '' };
+  document.getElementById('quizOverlay').classList.add('open');
+  renderQuiz();
+}
+function closeQuiz() {
+  document.getElementById('quizOverlay').classList.remove('open');
+  _qzStopRecognition();
+}
+
+function addQuizPlayer() {
+  const inp = document.getElementById('qzNewPlayer');
+  const name = (inp.value || '').trim().slice(0, 20);
+  if (!name) { showToast('Enter a name'); return; }
+  if (_quizState.players.length >= 8) { showToast('Max 8 players'); return; }
+  if (_quizState.players.some(p => p.name.toLowerCase() === name.toLowerCase())) { showToast('Name already added'); return; }
+  _quizState.players.push({ id: 'p_' + Date.now(), name, voice: null });
+  _savePlayers(_quizState.players);
+  inp.value = '';
+  renderQuiz();
+}
+function removeQuizPlayer(id) {
+  _quizState.players = _quizState.players.filter(p => p.id !== id);
+  _savePlayers(_quizState.players);
+  renderQuiz();
+}
+async function recordPlayerVoice(id) {
+  const player = _quizState.players.find(p => p.id === id);
+  if (!player) return;
+  if (!navigator.mediaDevices || !window.MediaRecorder) { showToast('Voice recording not supported in this browser'); return; }
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const rec = new MediaRecorder(stream);
+    const chunks = [];
+    rec.ondataavailable = e => chunks.push(e.data);
+    rec.onstop = () => {
+      stream.getTracks().forEach(t => t.stop());
+      const blob = new Blob(chunks, { type: 'audio/webm' });
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const dataUrl = reader.result;
+        // cap at ~80KB to keep localStorage healthy
+        if (dataUrl.length > 80 * 1024) { showToast('Recording too long, please try again briefly'); return; }
+        player.voice = dataUrl;
+        _savePlayers(_quizState.players);
+        renderQuiz();
+        showToast('Voice saved for ' + player.name);
+      };
+      reader.readAsDataURL(blob);
+    };
+    rec.start();
+    showToast('Recording 2 sec — say your name!');
+    setTimeout(() => { try { rec.stop(); } catch {} }, 2000);
+  } catch (e) {
+    showToast('Microphone permission denied');
+  }
+}
+function playPlayerVoice(id) {
+  const p = _quizState.players.find(x => x.id === id);
+  if (p && p.voice) { try { new Audio(p.voice).play(); } catch {} }
+}
+
+function startQuiz() {
+  if (!_quizState.players.length) { showToast('Add at least one player'); return; }
+  const length = parseInt(document.getElementById('qzLength').value, 10) || 8;
+  const cat = document.getElementById('qzCat').value;
+  let pool = QUIZ_BANK.slice();
+  if (cat !== 'all') pool = pool.filter(q => q.cat === cat);
+  // shuffle
+  for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; }
+  const questions = pool.slice(0, Math.min(length, pool.length)).map(q => {
+    // shuffle options while preserving correct index
+    const order = q.opts.map((_, i) => i);
+    for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+    return { cat: q.cat, q: q.q, opts: order.map(i => q.opts[i]), a: order.indexOf(q.a) };
+  });
+  const scores = {};
+  _quizState.players.forEach(p => scores[p.id] = 0);
+  _quizState = Object.assign(_quizState, { stage: 'play', questions, idx: 0, scores, length, lockedPlayer: null, transcript: '', answered: false });
+  // Announce first player turn (round-robin)
+  _qzAnnounceTurn();
+  renderQuiz();
+}
+function _qzAnnounceTurn() {
+  // Optional: speak "Player X, your turn!" using saved voice or TTS
+  const p = _quizState.players[_quizState.idx % _quizState.players.length];
+  if (!p) return;
+  if (p.voice) {
+    // play their saved sample as a fun cue
+    try { new Audio(p.voice).play().catch(() => {}); } catch {}
+  } else if ('speechSynthesis' in window) {
+    try {
+      const u = new SpeechSynthesisUtterance(`${p.name}, your turn!`);
+      u.rate = 1.05;
+      speechSynthesis.speak(u);
+    } catch {}
+  }
+}
+
+function buzzIn(playerId) {
+  if (_quizState.answered) return;
+  _quizState.lockedPlayer = playerId;
+  renderQuiz();
+}
+function clearBuzz() {
+  if (_quizState.answered) return;
+  _quizState.lockedPlayer = null;
+  renderQuiz();
+}
+
+function answerQuestion(optIdx, fromVoice) {
+  if (_quizState.answered) return;
+  const q = _quizState.questions[_quizState.idx];
+  const correct = optIdx === q.a;
+  let scorer = _quizState.lockedPlayer;
+  if (!scorer && _quizState.players.length === 1) scorer = _quizState.players[0].id;
+  _quizState.answered = true;
+  _quizState.lastResult = { optIdx, correct, scorer, fromVoice: !!fromVoice };
+  if (correct && scorer) _quizState.scores[scorer] = (_quizState.scores[scorer] || 0) + 1;
+  _qzStopRecognition();
+  renderQuiz();
+}
+
+function manualOverrideScorer(playerId) {
+  if (!_quizState.lastResult) return;
+  const prev = _quizState.lastResult.scorer;
+  if (prev === playerId) return;
+  if (_quizState.lastResult.correct) {
+    if (prev) _quizState.scores[prev] = Math.max(0, (_quizState.scores[prev] || 0) - 1);
+    if (playerId) _quizState.scores[playerId] = (_quizState.scores[playerId] || 0) + 1;
+  }
+  _quizState.lastResult.scorer = playerId;
+  renderQuiz();
+}
+function manualOverrideCorrect(makeCorrect) {
+  if (!_quizState.lastResult) return;
+  const wasCorrect = _quizState.lastResult.correct;
+  if (wasCorrect === makeCorrect) return;
+  const scorer = _quizState.lastResult.scorer;
+  if (makeCorrect && scorer) _quizState.scores[scorer] = (_quizState.scores[scorer] || 0) + 1;
+  if (!makeCorrect && scorer) _quizState.scores[scorer] = Math.max(0, (_quizState.scores[scorer] || 0) - 1);
+  _quizState.lastResult.correct = makeCorrect;
+  renderQuiz();
+}
+
+function nextQuestion() {
+  _quizState.idx++;
+  _quizState.lockedPlayer = null;
+  _quizState.transcript = '';
+  _quizState.answered = false;
+  _quizState.lastResult = null;
+  if (_quizState.idx >= _quizState.questions.length) {
+    _quizState.stage = 'end';
+    const summary = {
+      ts: Date.now(),
+      length: _quizState.questions.length,
+      results: _quizState.players.map(p => ({ name: p.name, score: _quizState.scores[p.id] || 0 })),
+    };
+    const hist = _loadQuizHistory(); hist.unshift(summary); _saveQuizHistory(hist);
+  } else {
+    _qzAnnounceTurn();
+  }
+  renderQuiz();
+}
+
+function backToSetup() {
+  _qzStopRecognition();
+  _quizState.stage = 'setup';
+  _quizState.questions = [];
+  _quizState.idx = 0;
+  _quizState.lockedPlayer = null;
+  _quizState.transcript = '';
+  _quizState.answered = false;
+  _quizState.lastResult = null;
+  renderQuiz();
+}
+
+// --- Voice answer transcription ---
+function _qzStartRecognition() {
+  const Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Rec) { showToast('Speech recognition not supported in this browser'); return; }
+  if (_qzRecognition) { try { _qzRecognition.stop(); } catch {} _qzRecognition = null; }
+  const rec = new Rec();
+  rec.lang = 'en-NZ';
+  rec.interimResults = true;
+  rec.maxAlternatives = 3;
+  rec.continuous = false;
+  rec.onresult = (ev) => {
+    let text = '';
+    for (let i = ev.resultIndex; i < ev.results.length; i++) text += ev.results[i][0].transcript;
+    _quizState.transcript = text;
+    const tEl = document.getElementById('qzTranscript');
+    if (tEl) tEl.textContent = '"' + text + '"';
+    if (ev.results[ev.results.length - 1].isFinal) {
+      _qzMatchAndAnswer(text);
+    }
+  };
+  rec.onerror = (e) => {
+    console.warn('speech rec error', e);
+    const err = e && e.error;
+    let msg = 'Voice recognition stopped';
+    if (err === 'not-allowed' || err === 'service-not-allowed') msg = 'Microphone permission denied — enable it in your browser settings to use voice answers';
+    else if (err === 'audio-capture') msg = 'No microphone detected';
+    else if (err === 'network') msg = 'Voice recognition needs an internet connection';
+    else if (err === 'no-speech') msg = "Didn't catch that — try again or tap an option";
+    showToast(msg);
+    _qzStopRecognition();
+  };
+  rec.onend = () => {
+    const btn = document.getElementById('qzMicBtn');
+    if (btn) btn.classList.remove('recording');
+    _qzRecognition = null;
+  };
+  try {
+    rec.start();
+    _qzRecognition = rec;
+    const btn = document.getElementById('qzMicBtn');
+    if (btn) btn.classList.add('recording');
+  } catch (e) { showToast('Could not start microphone'); }
+}
+function _qzStopRecognition() {
+  if (_qzRecognition) { try { _qzRecognition.stop(); } catch {} _qzRecognition = null; }
+  const btn = document.getElementById('qzMicBtn');
+  if (btn) btn.classList.remove('recording');
+}
+function toggleQuizMic() {
+  if (_qzRecognition) _qzStopRecognition();
+  else _qzStartRecognition();
+}
+function _qzMatchAndAnswer(text) {
+  if (!_quizState || _quizState.stage !== 'play' || _quizState.answered) return;
+  const q = _quizState.questions[_quizState.idx];
+  const lc = text.toLowerCase().trim();
+  if (!lc) return;
+  // try exact-letter (a/b/c/d) or option keyword
+  const letterMap = { 'a': 0, 'b': 1, 'c': 2, 'd': 3, 'one': 0, 'two': 1, 'three': 2, 'four': 3 };
+  const firstWord = lc.split(/\s+/)[0].replace(/[.,!?]/g, '');
+  if (letterMap[firstWord] != null && letterMap[firstWord] < q.opts.length) {
+    answerQuestion(letterMap[firstWord], true); return;
+  }
+  // best fuzzy match: count overlapping word tokens
+  let bestIdx = -1, bestScore = 0;
+  q.opts.forEach((opt, i) => {
+    const optWords = opt.toLowerCase().replace(/[^a-zāēīōū0-9 ]/gi, ' ').split(/\s+/).filter(w => w.length > 2);
+    let score = 0;
+    optWords.forEach(w => { if (lc.includes(w)) score++; });
+    // bonus for substring match
+    if (lc.includes(opt.toLowerCase())) score += 5;
+    if (score > bestScore) { bestScore = score; bestIdx = i; }
+  });
+  if (bestIdx >= 0 && bestScore >= 1) {
+    answerQuestion(bestIdx, true);
+  } else {
+    showToast('Could not match answer — try tapping it');
+  }
+}
+
+function renderQuiz() {
+  const body = document.getElementById('quizBody');
+  const s = _quizState;
+  if (!s) return;
+  if (s.stage === 'setup') {
+    const hist = _loadQuizHistory().slice(0, 3);
+    const cats = ['all', ...Array.from(new Set(QUIZ_BANK.map(q => q.cat)))];
+    body.innerHTML = `
+      <p style="margin:0 0 14px;font-size:13px;color:var(--muted);line-height:1.5;">Family-friendly trivia about Aotearoa — culture, history, geography, people and wildlife. Add players, then choose a category and start. Players can <strong>buzz in</strong> by tapping their name, or <strong>speak the answer</strong> with the mic button.</p>
+
+      <div class="al-section">
+        <h4>👥 Players (${s.players.length}/8)</h4>
+        <div style="margin-bottom:8px;">
+          ${s.players.map(p => `
+            <span class="qz-player-pill">
+              ${p.voice ? '<span class="voice-dot" title="Voice saved"></span>' : ''}
+              ${_esc(p.name)}
+              <button class="rm" title="Record voice intro" data-qz-voice="${_esc(p.id)}">🎤</button>
+              ${p.voice ? `<button class="rm" title="Play voice" data-qz-play="${_esc(p.id)}">▶</button>` : ''}
+              <button class="rm" title="Remove" data-qz-rm="${_esc(p.id)}">✕</button>
+            </span>`).join('') || '<span style="font-size:12px;color:var(--muted);">No players yet</span>'}
+        </div>
+        <div style="display:flex;gap:6px;">
+          <input id="qzNewPlayer" type="text" maxlength="20" placeholder="Player name" style="flex:1;padding:8px 11px;border:1.5px solid var(--border);border-radius:7px;font-size:13px;background:var(--surface);color:var(--text);" onkeydown="if(event.key==='Enter')addQuizPlayer()" />
+          <button class="btn primary" style="padding:8px 14px;" onclick="addQuizPlayer()">+ Add</button>
+        </div>
+        <p style="font-size:11px;color:var(--muted);margin:8px 0 0;line-height:1.4;">Tip: tap 🎤 next to a name to record a 2-second voice cue. We'll play it back when it's their turn.</p>
+      </div>
+
+      <div class="al-section">
+        <h4>⚙ Quiz Setup</h4>
+        <div class="al-row">
+          <div class="lbl">Category</div>
+          <select id="qzCat">${cats.map(c => `<option value="${_esc(c)}">${c === 'all' ? 'All categories' : _esc(c)}</option>`).join('')}</select>
+        </div>
+        <div class="al-row">
+          <div class="lbl">Number of questions</div>
+          <select id="qzLength">
+            <option value="5">5 — quick</option>
+            <option value="8" selected>8 — standard</option>
+            <option value="12">12 — long</option>
+            <option value="20">20 — marathon</option>
+          </select>
+        </div>
+      </div>
+
+      ${hist.length ? `<div class="al-section">
+        <h4>📊 Recent games</h4>
+        ${hist.map(h => `<div class="qz-leader"><span class="nm">${new Date(h.ts).toLocaleDateString()} · ${h.length}q</span><span class="sc">${h.results.map(r => _esc(r.name) + ' ' + r.score).join(' · ')}</span></div>`).join('')}
+      </div>` : ''}
+
+      <div style="display:flex;gap:8px;margin-top:14px;">
+        <button class="btn" style="flex:1;" onclick="closeQuiz()">Close</button>
+        <button class="btn primary" style="flex:2;" onclick="startQuiz()">▶ Start Quiz</button>
+      </div>
+    `;
+    // wire delegated buttons
+    body.querySelectorAll('button[data-qz-voice]').forEach(b => b.addEventListener('click', () => recordPlayerVoice(b.getAttribute('data-qz-voice'))));
+    body.querySelectorAll('button[data-qz-play]').forEach(b => b.addEventListener('click', () => playPlayerVoice(b.getAttribute('data-qz-play'))));
+    body.querySelectorAll('button[data-qz-rm]').forEach(b => b.addEventListener('click', () => removeQuizPlayer(b.getAttribute('data-qz-rm'))));
+    return;
+  }
+
+  if (s.stage === 'play') {
+    const q = s.questions[s.idx];
+    const speechAvail = !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+    const lockedPlayer = s.players.find(p => p.id === s.lockedPlayer);
+    const optsHtml = q.opts.map((opt, i) => {
+      let cls = 'qz-option';
+      if (s.answered) {
+        cls += ' disabled';
+        if (i === q.a) cls += ' correct';
+        else if (s.lastResult && s.lastResult.optIdx === i) cls += ' wrong';
+      }
+      const letter = String.fromCharCode(65 + i);
+      return `<button class="${cls}" data-qz-opt="${i}"><strong style="color:var(--primary);margin-right:8px;">${letter}.</strong> ${_esc(opt)}</button>`;
+    }).join('');
+
+    let resultPanel = '';
+    if (s.answered) {
+      const scorerName = s.players.find(p => p.id === s.lastResult.scorer)?.name || '— nobody';
+      resultPanel = `
+        <div style="padding:12px;background:${s.lastResult.correct ? 'rgba(22,163,74,0.08)' : 'rgba(239,68,68,0.08)'};border-radius:8px;margin:10px 0;border:1px solid ${s.lastResult.correct ? '#16a34a' : '#ef4444'};">
+          <div style="font-weight:800;font-size:14px;margin-bottom:6px;">${s.lastResult.correct ? '✓ Correct!' : '✗ Not quite'} ${s.lastResult.fromVoice ? '<span style="font-size:10px;font-weight:600;color:var(--muted);">(via voice)</span>' : ''}</div>
+          <div style="font-size:12px;margin-bottom:8px;">Answer: <strong>${_esc(q.opts[q.a])}</strong>${s.lastResult.correct && s.lastResult.scorer ? ` · Point to <strong>${_esc(scorerName)}</strong>` : ''}</div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:6px;">Manual override:</div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:6px;">
+            <span style="font-size:11px;align-self:center;">Who answered:</span>
+            ${s.players.map(p => `<button class="qz-player-pill" style="cursor:pointer;${s.lastResult.scorer === p.id ? 'background:#7c3aed;color:#fff;border-color:#7c3aed;' : ''}" data-qz-override-scorer="${_esc(p.id)}">${_esc(p.name)}</button>`).join('')}
+          </div>
+          <div style="display:flex;gap:6px;">
+            <button class="btn" style="flex:1;font-size:11px;padding:6px;" onclick="manualOverrideCorrect(${!s.lastResult.correct})">Mark as ${s.lastResult.correct ? 'incorrect' : 'correct'}</button>
+            <button class="btn primary" style="flex:2;font-size:12px;padding:6px;" onclick="nextQuestion()">${s.idx + 1 < s.questions.length ? 'Next question →' : 'See results →'}</button>
+          </div>
+        </div>`;
+    }
+
+    body.innerHTML = `
+      <div class="qz-meta">
+        <span><span class="qz-cat-badge">${_esc(q.cat)}</span></span>
+        <span>Question ${s.idx + 1} of ${s.questions.length}</span>
+      </div>
+      <div class="qz-question">${_esc(q.q)}</div>
+
+      ${s.players.length > 1 ? `<div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:4px;font-weight:700;">${lockedPlayer ? '🔒 ' + _esc(lockedPlayer.name) + ' is answering — tap again to clear' : 'Tap your name to buzz in:'}</div>
+        <div class="qz-buzz-grid">
+          ${s.players.map(p => `<button class="qz-buzz-btn ${s.lockedPlayer === p.id ? 'locked' : ''}" data-qz-buzz="${_esc(p.id)}">${_esc(p.name)}<br><span style="font-size:11px;color:var(--muted);font-weight:600;">${s.scores[p.id] || 0} pts</span></button>`).join('')}
+        </div>
+      </div>` : ''}
+
+      <div class="qz-options">${optsHtml}</div>
+
+      ${speechAvail && !s.answered ? `
+        <button id="qzMicBtn" class="qz-mic-btn" onclick="toggleQuizMic()">🎤 Speak your answer (say the letter or option)</button>
+        <div class="qz-transcript" id="qzTranscript">${s.transcript ? '"' + _esc(s.transcript) + '"' : '…'}</div>
+      ` : (!speechAvail ? `<div style="font-size:11px;color:var(--muted);text-align:center;margin-top:8px;">Voice answers unavailable — tap an option above.</div>` : '')}
+
+      ${resultPanel}
+
+      <div style="display:flex;gap:8px;margin-top:14px;">
+        <button class="btn" onclick="backToSetup()">↺ End game</button>
+      </div>
+    `;
+    body.querySelectorAll('button[data-qz-opt]').forEach(b => b.addEventListener('click', () => answerQuestion(parseInt(b.getAttribute('data-qz-opt'), 10), false)));
+    body.querySelectorAll('button[data-qz-buzz]').forEach(b => b.addEventListener('click', () => {
+      const id = b.getAttribute('data-qz-buzz');
+      if (s.lockedPlayer === id) clearBuzz(); else buzzIn(id);
+    }));
+    body.querySelectorAll('button[data-qz-override-scorer]').forEach(b => b.addEventListener('click', () => manualOverrideScorer(b.getAttribute('data-qz-override-scorer'))));
+    return;
+  }
+
+  if (s.stage === 'end') {
+    const standings = s.players.map(p => ({ id: p.id, name: p.name, score: s.scores[p.id] || 0 })).sort((a, b) => b.score - a.score);
+    const winner = standings[0];
+    body.innerHTML = `
+      <div style="text-align:center;padding:20px 0 10px;">
+        <div style="font-size:42px;">🏆</div>
+        <div style="font-size:18px;font-weight:800;margin:6px 0;">${winner ? _esc(winner.name) + ' wins!' : 'Game over'}</div>
+        <div style="font-size:12px;color:var(--muted);">${winner ? winner.score + ' / ' + s.questions.length + ' correct' : ''}</div>
+      </div>
+      <div style="margin:14px 0;">
+        ${standings.map((p, i) => `<div class="qz-leader ${i === 0 ? 'first' : ''}"><span class="nm">${i + 1}. ${_esc(p.name)}</span><span class="sc">${p.score} pts</span></div>`).join('')}
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button class="btn" style="flex:1;" onclick="backToSetup()">↺ Play again</button>
+        <button class="btn primary" style="flex:1;" onclick="closeQuiz()">Done</button>
+      </div>
+    `;
+  }
+}
+
 // ============ SMART ALERTS & CURRENCY ============
 const ALERTS_KEY = 'qw_alerts_v1';
 const FX_KEY = 'qw_fx_v1';
@@ -9812,6 +10321,17 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
 
 initMap();
 </script>
+<!-- Quiz modal -->
+<div class="settings-overlay" id="quizOverlay" onclick="if(event.target===this)closeQuiz()">
+  <div class="settings-modal" style="width:580px;">
+    <div class="settings-header">
+      <h2 data-i18n="quiz.title">🧠 Aotearoa Quiz</h2>
+      <button class="settings-close" onclick="closeQuiz()">✕</button>
+    </div>
+    <div id="quizBody" style="padding:18px 20px 22px;"></div>
+  </div>
+</div>
+
 <!-- Smart Alerts & Currency modal -->
 <div class="settings-overlay" id="alertsOverlay" onclick="if(event.target===this)closeAlerts()">
   <div class="settings-modal" style="width:580px;">
