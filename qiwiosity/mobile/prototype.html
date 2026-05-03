@@ -1725,6 +1725,7 @@
       <button class="tab" data-view="quiz" data-i18n="tab.quiz">Quiz</button>
     </div>
     <div class="header-actions">
+      <button class="header-btn" id="passportHeaderBtn" onclick="openPassport()" title="Trip Passport — badges, streaks & stats" style="position:relative;">🏆<span id="passportBadgeCount" style="display:none;position:absolute;top:1px;right:1px;background:#7c3aed;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;align-items:center;justify-content:center;">0</span></button>
       <button class="header-btn" id="alertsHeaderBtn" onclick="openAlerts()" title="Smart Alerts & Currency" style="position:relative;">🔔<span id="alertsBadge" style="display:none;position:absolute;top:1px;right:1px;background:#e04f4f;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;">!</span></button>
       <button class="header-btn" onclick="openSettings()" title="Settings">⚙</button>
     </div>
@@ -2011,6 +2012,15 @@
 </div>
 
 <!-- ============ POI DETAIL FULL-SCREEN OVERLAY ============ -->
+<div class="poi-detail-overlay" id="passportOverlay" style="z-index:9000;">
+  <div class="poi-detail-header">
+    <button class="poi-detail-back" onclick="closePassport()">←</button>
+    <div style="flex:1;text-align:center;font-size:15px;font-weight:700;color:var(--text);">🏆 Trip Passport</div>
+    <div style="width:36px;"></div>
+  </div>
+  <div class="poi-detail-body" id="passportBody"></div>
+</div>
+
 <div class="poi-detail-overlay" id="poiDetailOverlay">
   <div class="poi-detail-header">
     <button class="poi-detail-back" onclick="closePoiDetail()">←</button>
@@ -2640,6 +2650,7 @@ async function loadAllData() {
     renderTagFilter();
     renderTopPicks();
     restoreItineraryFromStorage();
+    try { recomputeBadges(); updatePassportBadge(); } catch {}
     renderAccomSortChips();
     if (document.getElementById('adminOverlay')?.classList.contains('on')) switchAdminTab('overview');
 
@@ -4464,6 +4475,9 @@ function openPoiDetail(id) {
       <button class="btn" style="width:100%;" onclick="openEchoVerse('${id}')">🎙 ${t('detail.community')} (${echoMemoryCount(id)} ${t('detail.stories')})</button>
     </div>
     <div class="poi-detail-actions">
+      ${isPoiVisited(id)
+        ? `<button class="btn" style="background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;border-color:transparent;" onclick="uncheckInPoi('${id}')">✅ Visited — tap to undo</button>`
+        : `<button class="btn primary" style="background:linear-gradient(135deg,#7c3aed,#4f46e5);" onclick="checkInPoi('${id}')">✓ Check in here</button>`}
       <button class="btn primary" onclick="addToItinerary(ATTRACTIONS.find(x=>x.id==='${id}'))">${inIti?`✓ ${t('poi.inItin')}`:`＋ ${t('poi.add')}`}</button>
       <button class="btn" onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${id}'))">🧭 ${t('detail.directions')}</button>
       <button class="btn" onclick="closePoiDetail();switchView('explore');setTimeout(()=>{if(map){map.panTo({lat:${a.lat},lng:${a.lng}});map.setZoom(14);}},300)">🗺 ${t('detail.seeMap')}</button>
@@ -6665,6 +6679,273 @@ function haversine(a, b) {
   const la2 = b.lat * Math.PI / 180;
   const h = Math.sin(dLat/2)**2 + Math.cos(la1) * Math.cos(la2) * Math.sin(dLng/2)**2;
   return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+// ============ TRIP PASSPORT — badges, streaks, stats, share ============
+const PASSPORT_KEY = 'qw_passport_v1';
+
+const BADGE_DEFS = [
+  // Tag-based explorer badges
+  { id: 'historian',    emoji: '📜', name: 'Historian',          desc: 'Visit 5 history places',         tier: 'tag',  match: a => (a.tags||[]).some(t => /histor|heritage|colonial/i.test(t)),                                              need: 5 },
+  { id: 'naturalist',   emoji: '🌿', name: 'Naturalist',         desc: 'Visit 5 nature places',          tier: 'tag',  match: a => (a.tags||[]).some(t => /nature|forest|wildlife|bird|park/i.test(t)) || /nature|park/i.test(a.category||''), need: 5 },
+  { id: 'mountaineer',  emoji: '⛰',  name: 'Mountaineer',        desc: 'Visit 3 mountain places',        tier: 'tag',  match: a => (a.tags||[]).some(t => /mountain|alpine|peak|summit/i.test(t)),                                          need: 3 },
+  { id: 'beachcomber',  emoji: '🏖', name: 'Beachcomber',        desc: 'Visit 5 beaches or coast spots', tier: 'tag',  match: a => (a.tags||[]).some(t => /beach|coast|shore|bay/i.test(t)),                                                 need: 5 },
+  { id: 'waterfaller',  emoji: '💧', name: 'Waterfall Chaser',   desc: 'Visit 3 waterfalls or lakes',    tier: 'tag',  match: a => (a.tags||[]).some(t => /waterfall|lake|river|fjord/i.test(t)),                                            need: 3 },
+  { id: 'maoritanga',   emoji: '🪶', name: 'Tikanga Traveller',  desc: 'Visit 3 Māori cultural sites',   tier: 'tag',  match: a => (a.tags||[]).some(t => /māori|maori|marae|iwi|cultur/i.test(t)),                                          need: 3 },
+  { id: 'geothermal',   emoji: '♨️', name: 'Geothermal Geek',    desc: 'Visit 3 geothermal spots',       tier: 'tag',  match: a => (a.tags||[]).some(t => /geothermal|hot.?spring|geyser|volcan/i.test(t)),                                  need: 3 },
+  { id: 'foodie',       emoji: '🍽', name: 'Kiwi Foodie',        desc: 'Visit 3 food / wine places',     tier: 'tag',  match: a => (a.tags||[]).some(t => /food|wine|restaurant|cafe|brewery|cuisine/i.test(t)) || /food/i.test(a.category||''), need: 3 },
+  { id: 'thrill',       emoji: '🪂', name: 'Thrill Seeker',      desc: 'Try 3 adventure activities',     tier: 'tag',  match: a => (a.tags||[]).some(t => /adventur|adrenaline|bungy|skydiv|jet|rafting|zipline/i.test(t)),                  need: 3 },
+  // Milestone badges
+  { id: 'first',        emoji: '🥇', name: 'First Steps',        desc: 'Check in to your first place',   tier: 'milestone', need: 1 },
+  { id: 'explorer10',   emoji: '🧭', name: 'Explorer',           desc: 'Visit 10 places',                tier: 'milestone', need: 10 },
+  { id: 'wayfarer25',   emoji: '🗺',  name: 'Wayfarer',           desc: 'Visit 25 places',                tier: 'milestone', need: 25 },
+  { id: 'kiwilegend',   emoji: '🏆', name: 'Kiwi Legend',        desc: 'Visit 50 places',                tier: 'milestone', need: 50 },
+  { id: 'bothislands',  emoji: '🏝', name: 'Two-Island Voyager', desc: 'Visit places in both islands',   tier: 'special' },
+  // Distance + streak
+  { id: 'k100',         emoji: '🚗', name: 'Road Tripper',       desc: 'Cover 100km between visits',     tier: 'distance', need: 100 },
+  { id: 'k500',         emoji: '🛣',  name: 'Long Hauler',        desc: 'Cover 500km between visits',     tier: 'distance', need: 500 },
+  { id: 'k1000',        emoji: '🌏', name: 'Country Crosser',    desc: 'Cover 1000km between visits',    tier: 'distance', need: 1000 },
+  { id: 'streak3',      emoji: '🔥', name: '3-Day Streak',       desc: 'Check in 3 days in a row',       tier: 'streak',  need: 3 },
+  { id: 'streak7',      emoji: '⚡', name: '7-Day Streak',       desc: 'Check in 7 days in a row',       tier: 'streak',  need: 7 },
+];
+
+function _loadPassport() {
+  try { return JSON.parse(localStorage.getItem(PASSPORT_KEY) || '{}') || {}; } catch { return {}; }
+}
+function _savePassport(p) { try { localStorage.setItem(PASSPORT_KEY, JSON.stringify(p)); } catch {} }
+function _dayKey(ts) { const d = new Date(ts); return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0'); }
+function _daysBetween(d1, d2) { return Math.round((new Date(d2) - new Date(d1)) / 86400000); }
+
+function getPassport() {
+  const p = _loadPassport();
+  p.visits = Array.isArray(p.visits) ? p.visits : [];
+  p.badges = p.badges && typeof p.badges === 'object' ? p.badges : {};
+  return p;
+}
+
+function isPoiVisited(poiId) {
+  return getPassport().visits.some(v => v.id === poiId);
+}
+
+function checkInPoi(poiId) {
+  const a = ATTRACTIONS.find(x => x.id === poiId);
+  if (!a) return;
+  const p = getPassport();
+  if (p.visits.some(v => v.id === poiId)) {
+    showToast('✓ Already checked in to ' + a.name);
+    return;
+  }
+  p.visits.push({ id: poiId, ts: Date.now(), lat: a.lat, lng: a.lng, region: a.region });
+  // Cap visits to last 500 to keep storage bounded
+  if (p.visits.length > 500) p.visits = p.visits.slice(-500);
+  _savePassport(p);
+  // Strong interest signal — feeds For You recs
+  trackInterest(a, 4);
+  const newBadges = recomputeBadges();
+  showToast('✅ Checked in: ' + a.name);
+  // Show unlock animations for every newly earned badge, staggered
+  newBadges.forEach((b, idx) => setTimeout(() => showBadgeUnlock(b), 800 + idx * 1200));
+  // Refresh UI
+  if (document.getElementById('poiDetailOverlay')?.classList.contains('open') && _detailPoiId === poiId) {
+    openPoiDetail(poiId); // re-render to show ✓ state
+  }
+  updatePassportBadge();
+  if (document.getElementById('forYouSection')) renderForYou();
+}
+
+function uncheckInPoi(poiId) {
+  if (!confirm('Remove this check-in?')) return;
+  const p = getPassport();
+  p.visits = p.visits.filter(v => v.id !== poiId);
+  _savePassport(p);
+  recomputeBadges();
+  showToast('Check-in removed');
+  if (_detailPoiId === poiId) openPoiDetail(poiId);
+  updatePassportBadge();
+}
+
+function computeStats(p) {
+  p = p || getPassport();
+  const visits = (p.visits || []).slice().sort((a,b) => a.ts - b.ts);
+  let distanceKm = 0;
+  for (let i = 1; i < visits.length; i++) {
+    if (visits[i].lat != null && visits[i-1].lat != null) {
+      distanceKm += haversine(visits[i-1], visits[i]);
+    }
+  }
+  // Current day streak: only counts if user checked in today or yesterday
+  // (yesterday-grace lets timezone/late-night users keep their streak)
+  const dayMap = {};
+  visits.forEach(v => { dayMap[_dayKey(v.ts)] = true; });
+  const todayKey = _dayKey(Date.now());
+  const yest = new Date(); yest.setDate(yest.getDate() - 1);
+  const yestKey = _dayKey(yest.getTime());
+  let streak = 0;
+  let cursor = null;
+  if (dayMap[todayKey]) cursor = new Date();
+  else if (dayMap[yestKey]) cursor = yest;
+  if (cursor) {
+    while (true) {
+      const k = _dayKey(cursor.getTime());
+      if (dayMap[k]) { streak++; cursor.setDate(cursor.getDate() - 1); }
+      else break;
+    }
+  }
+  // Islands visited
+  const islands = new Set();
+  visits.forEach(v => {
+    const r = REGIONS.find(x => x.id === v.region);
+    if (r?.island) islands.add(r.island);
+  });
+  // Unique tag categories engaged
+  const tagCounts = {};
+  visits.forEach(v => {
+    const a = ATTRACTIONS.find(x => x.id === v.id);
+    if (a) (a.tags || []).forEach(t => { tagCounts[t] = (tagCounts[t] || 0) + 1; });
+  });
+  return { visits, distanceKm: Math.round(distanceKm), streak, islands: [...islands], tagCounts };
+}
+
+function recomputeBadges() {
+  // Streak badges remember the BEST streak ever achieved (not current),
+  // so they don't disappear when a streak naturally ends. All other badges
+  // are recomputed from current state — undoing check-ins removes them.
+  const p = getPassport();
+  p.bestStreak = Math.max(p.bestStreak || 0, computeStats(p).streak);
+  const stats = computeStats(p);
+  const visited = stats.visits.map(v => ATTRACTIONS.find(x => x.id === v.id)).filter(Boolean);
+  const previouslyEarned = p.badges || {};
+  const fresh = {};
+  const newly = [];
+  BADGE_DEFS.forEach(def => {
+    let earned = false;
+    if (def.tier === 'tag') {
+      earned = visited.filter(def.match).length >= def.need;
+    } else if (def.tier === 'milestone') {
+      earned = visited.length >= def.need;
+    } else if (def.tier === 'distance') {
+      earned = stats.distanceKm >= def.need;
+    } else if (def.tier === 'streak') {
+      earned = (p.bestStreak || 0) >= def.need;
+    } else if (def.tier === 'special' && def.id === 'bothislands') {
+      earned = stats.islands.length >= 2;
+    }
+    if (earned) {
+      fresh[def.id] = previouslyEarned[def.id] || { earnedAt: Date.now() };
+      if (!previouslyEarned[def.id]) newly.push(def);
+    }
+  });
+  p.badges = fresh;
+  _savePassport(p);
+  return newly;
+}
+
+function showBadgeUnlock(def) {
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;display:flex;align-items:center;justify-content:center;animation:fadeIn 0.3s;';
+  overlay.onclick = () => overlay.remove();
+  overlay.innerHTML = `
+    <div style="background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;padding:28px 32px;border-radius:18px;text-align:center;max-width:300px;box-shadow:0 20px 60px rgba(0,0,0,0.5);animation:popIn 0.4s;">
+      <div style="font-size:14px;font-weight:700;opacity:0.9;letter-spacing:1.5px;margin-bottom:8px;">BADGE UNLOCKED</div>
+      <div style="font-size:64px;line-height:1;margin:14px 0;">${def.emoji}</div>
+      <div style="font-size:20px;font-weight:800;margin-bottom:6px;">${_esc(def.name)}</div>
+      <div style="font-size:13px;opacity:0.92;margin-bottom:18px;">${_esc(def.desc)}</div>
+      <button onclick="event.stopPropagation();this.parentElement.parentElement.remove();sharePassport();" style="background:rgba(255,255,255,0.22);color:#fff;border:1.5px solid rgba(255,255,255,0.35);padding:8px 16px;border-radius:8px;font-weight:700;cursor:pointer;margin-right:6px;">📤 Share</button>
+      <button onclick="event.stopPropagation();this.parentElement.parentElement.remove();" style="background:#fff;color:#4f46e5;border:none;padding:8px 16px;border-radius:8px;font-weight:700;cursor:pointer;">Cool!</button>
+    </div>`;
+  document.body.appendChild(overlay);
+}
+
+function updatePassportBadge() {
+  const el = document.getElementById('passportBadgeCount');
+  if (!el) return;
+  const p = getPassport();
+  const n = Object.keys(p.badges || {}).length;
+  if (n > 0) { el.textContent = n; el.style.display = 'inline-flex'; }
+  else el.style.display = 'none';
+}
+
+function openPassport() {
+  recomputeBadges();
+  const p = getPassport();
+  const stats = computeStats(p);
+  const earned = p.badges || {};
+  const earnedCount = Object.keys(earned).length;
+  const totalBadges = BADGE_DEFS.length;
+  const recent = stats.visits.slice(-6).reverse();
+
+  const badgeGrid = BADGE_DEFS.map(def => {
+    const got = !!earned[def.id];
+    return `<div style="text-align:center;padding:10px 6px;border-radius:10px;background:${got?'linear-gradient(135deg,rgba(124,58,237,0.18),rgba(79,70,229,0.18))':'var(--surface2)'};border:1.5px solid ${got?'rgba(124,58,237,0.45)':'var(--border)'};opacity:${got?'1':'0.42'};">
+      <div style="font-size:32px;line-height:1;margin-bottom:4px;filter:${got?'none':'grayscale(1)'};">${def.emoji}</div>
+      <div style="font-size:11px;font-weight:700;line-height:1.2;margin-bottom:2px;">${_esc(def.name)}</div>
+      <div style="font-size:9px;color:var(--muted);line-height:1.2;">${_esc(def.desc)}</div>
+    </div>`;
+  }).join('');
+
+  const recentList = recent.length ? recent.map(v => {
+    const a = ATTRACTIONS.find(x => x.id === v.id);
+    if (!a) return '';
+    const r = (REGIONS.find(x => x.id === a.region) || {}).name || '';
+    const when = new Date(v.ts);
+    const dateStr = when.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+    return `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;border-bottom:1px solid var(--border);font-size:12px;">
+      <div><div style="font-weight:700;">${_esc(a.name)}</div><div style="font-size:10px;color:var(--muted);">${_esc(r.split(' / ')[0])} · ${dateStr}</div></div>
+      <button onclick="uncheckInPoi('${_esc(a.id)}');closePassport();setTimeout(openPassport,150);" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:14px;" title="Remove check-in">×</button>
+    </div>`;
+  }).join('') : '<div style="padding:14px;text-align:center;color:var(--muted);font-size:12px;">No check-ins yet — open any place and tap "✓ Check in" to start your passport!</div>';
+
+  document.getElementById('passportBody').innerHTML = `
+    <div style="padding:14px;background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;">
+      <div style="display:flex;justify-content:space-between;gap:8px;text-align:center;">
+        <div style="flex:1;"><div style="font-size:24px;font-weight:800;">${stats.visits.length}</div><div style="font-size:10px;opacity:0.85;letter-spacing:0.5px;">PLACES</div></div>
+        <div style="flex:1;"><div style="font-size:24px;font-weight:800;">${stats.distanceKm}<span style="font-size:13px;">km</span></div><div style="font-size:10px;opacity:0.85;letter-spacing:0.5px;">COVERED</div></div>
+        <div style="flex:1;"><div style="font-size:24px;font-weight:800;">${stats.streak}🔥</div><div style="font-size:10px;opacity:0.85;letter-spacing:0.5px;">DAY STREAK</div></div>
+        <div style="flex:1;"><div style="font-size:24px;font-weight:800;">${earnedCount}<span style="font-size:13px;">/${totalBadges}</span></div><div style="font-size:10px;opacity:0.85;letter-spacing:0.5px;">BADGES</div></div>
+      </div>
+      ${stats.islands.length ? `<div style="margin-top:10px;font-size:11px;opacity:0.92;text-align:center;">🏝 Islands explored: ${_esc(stats.islands.join(' & '))}</div>` : ''}
+    </div>
+    <div style="padding:10px 14px;display:flex;gap:6px;">
+      <button class="btn primary" style="flex:1;" onclick="sharePassport()">📤 Share my Passport</button>
+      <button class="btn" onclick="if(confirm('Reset your entire Trip Passport? This deletes all check-ins and badges.')){localStorage.removeItem('${PASSPORT_KEY}');closePassport();updatePassportBadge();showToast('Passport reset');}" title="Reset passport">↺</button>
+    </div>
+    <div style="padding:0 14px 6px;"><h3 style="margin:6px 0 8px;font-size:13px;color:var(--primary);">🏅 Badges (${earnedCount}/${totalBadges})</h3></div>
+    <div style="padding:0 14px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">${badgeGrid}</div>
+    <div style="padding:14px;"><h3 style="margin:0 0 4px;font-size:13px;color:var(--primary);">📍 Recent check-ins</h3></div>
+    <div style="padding:0 14px 18px;border-radius:8px;">${recentList}</div>
+  `;
+  document.getElementById('passportOverlay').classList.add('open');
+}
+
+function closePassport() { document.getElementById('passportOverlay')?.classList.remove('open'); }
+
+function sharePassport() {
+  const p = getPassport();
+  const stats = computeStats(p);
+  const badges = Object.keys(p.badges || {}).map(id => BADGE_DEFS.find(b => b.id === id)).filter(Boolean);
+  const lines = [
+    `🇳🇿 My Qiwiosity NZ Trip Passport`,
+    ``,
+    `📍 ${stats.visits.length} places visited`,
+    `🛣 ${stats.distanceKm} km covered`,
+    `🔥 ${stats.streak}-day streak`,
+    `🏅 ${badges.length} badges earned`,
+  ];
+  if (badges.length) {
+    lines.push('');
+    lines.push('Badges: ' + badges.slice(0, 8).map(b => `${b.emoji} ${b.name}`).join(' · '));
+  }
+  if (stats.islands.length) lines.push(`🏝 Islands: ${stats.islands.join(' & ')}`);
+  lines.push('');
+  lines.push('Plan your own NZ adventure → https://qiwiosity.replit.app');
+  const text = lines.join('\n');
+  if (navigator.share) {
+    navigator.share({ title: 'My NZ Trip Passport', text }).catch(() => {});
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => showToast('📋 Passport copied to clipboard!')).catch(() => {});
+  } else {
+    showToast('Sharing not supported on this device');
+  }
 }
 
 function renderItinerary() {
