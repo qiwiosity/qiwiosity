@@ -1742,6 +1742,7 @@
         <button class="near-me-btn" id="nearMeBtn" style="flex:1;margin-bottom:0;" onclick="toggleNearMe()" data-i18n="explore.nearMe">📍 Near Me</button>
       </div>
       <button class="identify-btn" style="width:100%;margin-bottom:4px;" onclick="openIdentify()" data-i18n="identify.cta">📸 Snap & Identify a Place</button>
+      <div id="forYouSection" class="recently-viewed" style="display:none;margin-top:6px;"></div>
       <div class="recently-viewed" id="recentlyViewedSection" style="display:none;">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
           <h4 style="margin:0;">Recently Viewed</h4>
@@ -3174,14 +3175,124 @@ function showCommentaryPopup(id) {
 // ============ COMMENTARY LENGTH + DRIVING MODE ============
 let commLengthMode = 'full';
 let drivingModeOn = false;
+const DEEPDIVE_CACHE = {}; // poiId -> deep text
+const INTERESTS_KEY = 'qw_interests_v1';
+
+function _loadInterests() {
+  try { return JSON.parse(localStorage.getItem(INTERESTS_KEY) || '{}') || {}; } catch { return {}; }
+}
+function _saveInterests(d) { try { localStorage.setItem(INTERESTS_KEY, JSON.stringify(d)); } catch {} }
+function trackInterest(a, weight) {
+  if (!a) return;
+  const d = _loadInterests();
+  d.tags = d.tags || {}; d.cats = d.cats || {}; d.regions = d.regions || {}; d.poiIds = d.poiIds || {};
+  const w = weight || 1;
+  (a.tags || []).forEach(t => { d.tags[t] = (d.tags[t] || 0) + w; });
+  if (a.category) d.cats[a.category] = (d.cats[a.category] || 0) + w;
+  if (a.region) d.regions[a.region] = (d.regions[a.region] || 0) + w;
+  if (a.id) d.poiIds[a.id] = (d.poiIds[a.id] || 0) + w;
+  d.updated = Date.now();
+  _saveInterests(d);
+}
+function getRecommendedPois(limit) {
+  const d = _loadInterests();
+  if (!d.tags && !d.cats) return [];
+  const tagW = d.tags || {}, catW = d.cats || {}, regW = d.regions || {}, seen = d.poiIds || {};
+  if (!ATTRACTIONS || !ATTRACTIONS.length) return [];
+  const scored = ATTRACTIONS
+    .filter(a => !seen[a.id]) // exclude already-engaged
+    .map(a => {
+      let s = 0;
+      (a.tags || []).forEach(t => { s += (tagW[t] || 0) * 2; });
+      if (a.category && catW[a.category]) s += catW[a.category];
+      if (a.region && regW[a.region]) s += regW[a.region] * 0.5;
+      return { a, s };
+    })
+    .filter(x => x.s > 0)
+    .sort((x, y) => y.s - x.s);
+  return scored.slice(0, limit || 6).map(x => x.a);
+}
 
 function getCommText(a) {
+  if (commLengthMode === 'deep' && DEEPDIVE_CACHE[a.id]) return DEEPDIVE_CACHE[a.id];
   if (commLengthMode === 'short') {
     if (a.short) return a.short;
     const sentences = (a.commentary || '').split(/(?<=[.!?])\s+/);
     return sentences.slice(0, 2).join(' ') || a.commentary || 'No commentary available.';
   }
   return a.commentary || 'No commentary available for this location.';
+}
+
+async function loadDeepDive(poiId) {
+  const a = ATTRACTIONS.find(x => x.id === poiId);
+  if (!a) return;
+  const textEl = document.getElementById('commBodyText');
+  if (DEEPDIVE_CACHE[poiId]) {
+    commLengthMode = 'deep';
+    document.querySelectorAll('.comm-len-pill').forEach(p => p.classList.toggle('active', p.dataset.mode === 'deep'));
+    if (textEl) textEl.textContent = DEEPDIVE_CACHE[poiId];
+    trackInterest(a, 1); // re-engagement still counts
+    return;
+  }
+  if (textEl) textEl.innerHTML = '<em style="opacity:0.7;">🔍 Going deeper… pulling history, culture and stories…</em>';
+  commLengthMode = 'deep';
+  document.querySelectorAll('.comm-len-pill').forEach(p => p.classList.toggle('active', p.dataset.mode === 'deep'));
+  try {
+    const regionName = (REGIONS.find(r => r.id === a.region) || {}).name || '';
+    const catName = (CATEGORIES.find(c => c.id === a.category) || {}).name || a.category || '';
+    const resp = await fetch('/api/deepdive', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: a.name,
+        region: regionName,
+        category: catName,
+        tags: a.tags || [],
+        existing: a.commentary || a.short || '',
+      }),
+    });
+    if (!resp.ok) {
+      const errBody = await resp.json().catch(() => ({}));
+      throw new Error(errBody.error || ('HTTP ' + resp.status));
+    }
+    const data = await resp.json();
+    if (!data.text) throw new Error('Empty response');
+    DEEPDIVE_CACHE[a.id] = data.text;
+    if (textEl && commLengthMode === 'deep') textEl.textContent = data.text;
+    trackInterest(a, 3); // strong signal
+    showToast('🔍 Deep-dive ready — tap Play to listen');
+    // Refresh "For You" if visible
+    if (document.getElementById('forYouSection')) renderForYou();
+  } catch (e) {
+    console.warn('deepdive failed', e);
+    if (textEl) textEl.textContent = a.commentary || a.short || 'No commentary available.';
+    commLengthMode = 'full';
+    document.querySelectorAll('.comm-len-pill').forEach(p => p.classList.toggle('active', p.dataset.mode === 'full'));
+    showToast('Deep-dive unavailable — showing full guide');
+  }
+}
+
+function renderForYou() {
+  const wrap = document.getElementById('forYouSection');
+  if (!wrap) return;
+  const recs = getRecommendedPois(6);
+  if (!recs.length) { wrap.style.display = 'none'; return; }
+  wrap.style.display = 'block';
+  wrap.innerHTML = `
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+      <h4 style="margin:0;font-size:13px;color:var(--primary);">✨ For You — based on what you love</h4>
+      <button onclick="if(confirm('Reset your taste profile?')){localStorage.removeItem('${INTERESTS_KEY}');renderForYou();}" style="font-size:10px;background:none;border:none;cursor:pointer;color:var(--muted);padding:0;font-weight:700;">↺ Reset</button>
+    </div>
+    <div style="display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;-webkit-overflow-scrolling:touch;">
+      ${recs.map(a => {
+        const r = (REGIONS.find(x => x.id === a.region) || {}).name || '';
+        return `<button onclick="openPoiDetail('${_esc(a.id)}')" style="flex:0 0 auto;min-width:140px;max-width:180px;padding:8px 10px;background:var(--surface2);border:1.5px solid rgba(124,58,237,0.3);border-radius:8px;cursor:pointer;text-align:left;color:var(--text);">
+          <div style="font-weight:700;font-size:12px;line-height:1.3;margin-bottom:3px;">${_esc(a.name)}</div>
+          <div style="font-size:10px;color:var(--muted);">${_esc(r.split(' / ')[0])}</div>
+        </button>`;
+      }).join('')}
+    </div>
+  `;
 }
 
 function setCommLength(mode, poiId) {
@@ -4123,6 +4234,7 @@ function setRegionFilter(regionId) {
   renderRegionList?.();
   renderAttractions();
   switchView('explore');
+  if (typeof renderForYou === 'function') try { renderForYou(); } catch {}
   const r = REGIONS.find(x => x.id === regionId);
   if (r && map) { map.panTo({ lat: r.lat, lng: r.lng }); map.setZoom(9); }
   showToast(r ? `Filtering: ${r.name}` : 'Region filter set');
@@ -6076,6 +6188,7 @@ function _identifySearchInApp(name) {
   state.search = q;
   closeIdentify();
   switchView('explore');
+  if (typeof renderForYou === 'function') try { renderForYou(); } catch {}
   const el = document.getElementById('search');
   if (el) { el.value = q; el.dispatchEvent(new Event('input', { bubbles: true })); }
 }
@@ -6437,6 +6550,8 @@ function shareTrip() {
 function showCommentary(a, autoPlay) {
   closeCommentary();
   _currentPoiId = a.id;
+  // Auto-downgrade Deep mode if no cached deep-dive exists for this POI
+  if (commLengthMode === 'deep' && !DEEPDIVE_CACHE[a.id]) commLengthMode = 'full';
   const persona = getSelectedPersona();
 
   const pillEl = document.getElementById('commentaryPersonaPill');
@@ -6450,6 +6565,7 @@ function showCommentary(a, autoPlay) {
     + `<div class="comm-length-row">`
     + `<button class="comm-len-pill ${commLengthMode==='short'?'active':''}" data-mode="short" onclick="setCommLength('short','${a.id}')">⚡ Quick (30s)</button>`
     + `<button class="comm-len-pill ${commLengthMode==='full'?'active':''}" data-mode="full" onclick="setCommLength('full','${a.id}')">📖 Full Guide</button>`
+    + `<button class="comm-len-pill ${commLengthMode==='deep'?'active':''}" data-mode="deep" onclick="loadDeepDive('${a.id}')" title="Generate a richer, podcast-length version with history, culture and stories">🔍 Tell me more</button>`
     + `</div>`
     + `<div id="commBodyText" style="opacity:0.88;line-height:1.6;font-size:13px;">${getCommText(a)}</div>`
     + `<div class="commentary-play-row">`
@@ -7638,6 +7754,7 @@ function renderPlanSidebar() {
 function filterExploreByRegion(regionId) {
   closePoiDetail();
   switchView('explore');
+  if (typeof renderForYou === 'function') try { renderForYou(); } catch {}
   if (regionId) {
     state.activeRegion = regionId;
     const chip = document.getElementById('activeRegionChip');
