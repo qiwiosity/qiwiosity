@@ -1795,6 +1795,134 @@
     padding: 8px 11px 10px;
   }
   .affiliate-cta-row.single { grid-template-columns: 1fr; }
+
+/* ============================================================
+   MOBILE RESPONSIVE  (≤ 768 px)
+   Bottom-sheet sidebar + full-screen map + bottom tab bar
+   ============================================================ */
+.mobile-nav { display: none; }
+
+@media (max-width: 768px) {
+
+  /* ── Layout: flex column instead of CSS grid ── */
+  .app {
+    display: flex !important;
+    flex-direction: column;
+    height: 100dvh;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* ── Header: compact ── */
+  header {
+    height: 52px !important;
+    padding: 0 10px !important;
+    flex-shrink: 0;
+    z-index: 800;
+  }
+  header h1 { font-size: 14px !important; }
+  header .brand-mark { width: 26px !important; height: 26px !important; margin-right: 6px !important; }
+  header .tabs { display: none !important; }
+  .header-actions { margin-left: auto; gap: 0 !important; }
+  .header-btn { width: 38px !important; height: 38px !important; font-size: 18px !important; }
+
+  /* ── Map: fills all remaining space ── */
+  main {
+    flex: 1 !important;
+    min-height: 0 !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+  #map { height: 100% !important; width: 100% !important; }
+
+  /* ── Itinerary panel: hidden on mobile ── */
+  .itinerary-panel { display: none !important; }
+
+  /* ── Sidebar: bottom sheet ── */
+  .sidebar {
+    position: fixed !important;
+    bottom: 60px !important;
+    left: 0 !important; right: 0 !important; top: auto !important;
+    width: 100% !important;
+    height: 0 !important;
+    max-height: 76vh !important;
+    overflow: hidden !important;
+    border-right: none !important;
+    border-top: 3px solid var(--primary) !important;
+    border-radius: 16px 16px 0 0 !important;
+    z-index: 600 !important;
+    transition: height 0.32s cubic-bezier(0.32, 0.72, 0, 1) !important;
+    padding: 0 !important;
+    box-shadow: 0 -6px 32px rgba(0,0,0,0.22) !important;
+  }
+  .sidebar.mob-open {
+    height: 72vh !important;
+    overflow-y: auto !important;
+    padding: 4px 14px 100px !important;
+  }
+  .sidebar::before {
+    content: '';
+    display: block;
+    width: 40px; height: 4px;
+    border-radius: 2px;
+    background: var(--border);
+    margin: 10px auto 6px;
+  }
+
+  /* ── Mobile bottom nav ── */
+  .mobile-nav {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important; right: 0 !important;
+    height: 60px !important;
+    background: var(--surface) !important;
+    border-top: 1px solid var(--border) !important;
+    z-index: 700 !important;
+    padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+  }
+  .mobile-nav-btn {
+    flex: 1;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 2px;
+    border: none; background: none;
+    color: var(--muted);
+    font-size: 9px; font-weight: 700; letter-spacing: 0.3px;
+    cursor: pointer; padding: 6px 2px;
+    text-transform: uppercase; position: relative;
+    transition: color 0.15s;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .mobile-nav-btn.mob-active { color: var(--primary); }
+  .mobile-nav-btn .mob-icon { font-size: 21px; line-height: 1; }
+  .mobile-nav-btn .mob-badge {
+    position: absolute; top: 4px; right: calc(50% - 20px);
+    background: var(--accent); color: white;
+    font-size: 9px; font-weight: 800;
+    min-width: 14px; height: 14px; border-radius: 99px;
+    padding: 0 3px; display: none;
+    align-items: center; justify-content: center;
+  }
+  .mobile-nav-btn .mob-badge.on { display: inline-flex; }
+
+  /* ── Tap targets ── */
+  .cat { padding: 10px 9px !important; min-height: 44px; }
+  .search { font-size: 16px !important; }
+  .surprise-btn, .near-me-btn { padding: 14px 12px !important; font-size: 14px !important; }
+
+  /* ── Modals: full-screen sheet on mobile ── */
+  .settings-overlay { align-items: flex-end !important; }
+  .settings-overlay .settings-modal {
+    width: 100% !important; max-width: 100% !important;
+    max-height: 92vh; overflow-y: auto;
+    margin: 0 !important;
+    border-radius: 16px 16px 0 0 !important;
+  }
+
+  /* ── Map style buttons: smaller ── */
+  .map-style-btn { width: 30px !important; height: 30px !important; font-size: 14px !important; }
+}
 </style>
 </head>
 <body>
@@ -11915,6 +12043,96 @@ initMap();
 </div>
 <input type="file" id="identifyFileInput" accept="image/*" capture="environment" style="display:none;" onchange="handleIdentifyFile(event)" />
 <input type="file" id="identifyUploadInput" accept="image/*" style="display:none;" onchange="handleIdentifyFile(event)" />
+
+<!-- ============ MOBILE BOTTOM NAV ============ -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Main navigation">
+  <button class="mobile-nav-btn mob-active" id="mnExplore" onclick="mobileSwitchTab('explore',this)" aria-label="Explore">
+    <span class="mob-icon">🗺️</span><span>Explore</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnStay" onclick="mobileSwitchTab('stay',this)" aria-label="Stay">
+    <span class="mob-icon">🛏️</span><span>Stay</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnPlan" onclick="mobileSwitchTab('plan',this)" aria-label="Plan">
+    <span class="mob-icon">📋</span><span>Plan</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnCompare" onclick="mobileSwitchTab('compare',this)" aria-label="Compare">
+    <span class="mob-icon">⚖️</span><span>Compare</span>
+    <span class="mob-badge" id="mobCompareBadge">0</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnSaved" onclick="mobileSwitchTab('saved',this)" aria-label="Saved">
+    <span class="mob-icon">❤️</span><span>Saved</span>
+    <span class="mob-badge" id="mobSavedBadge">0</span>
+  </button>
+</nav>
+
+<script>
+(function () {
+  var sidebar = document.getElementById('mainSidebar');
+  var lastTab = 'explore';
+
+  // Switch tab and toggle sidebar open/closed
+  window.mobileSwitchTab = function (view, btn) {
+    if (window.innerWidth > 768) return;
+    var allBtns = document.querySelectorAll('.mobile-nav-btn');
+    var isActive = btn.classList.contains('mob-active');
+
+    // Always trigger the desktop tab so the sidebar content switches
+    var desktopTab = document.querySelector('.tab[data-view="' + view + '"]');
+    if (desktopTab) desktopTab.click();
+
+    if (isActive) {
+      // Tap active tab again → close sheet
+      sidebar.classList.remove('mob-open');
+      btn.classList.remove('mob-active');
+      lastTab = null;
+    } else {
+      allBtns.forEach(function (b) { b.classList.remove('mob-active'); });
+      btn.classList.add('mob-active');
+      sidebar.classList.add('mob-open');
+      lastTab = view;
+    }
+  };
+
+  // Tapping the map closes the sidebar
+  document.addEventListener('DOMContentLoaded', function () {
+    var mapEl = document.getElementById('map');
+    if (mapEl) {
+      mapEl.addEventListener('click', function () {
+        if (window.innerWidth <= 768) {
+          sidebar.classList.remove('mob-open');
+          document.querySelectorAll('.mobile-nav-btn').forEach(function (b) {
+            b.classList.remove('mob-active');
+          });
+        }
+      });
+    }
+
+    // Mirror compare badge count into mobile nav badge
+    var compareBadge = document.getElementById('compareBadge');
+    var mobCompareBadge = document.getElementById('mobCompareBadge');
+    if (compareBadge && mobCompareBadge) {
+      new MutationObserver(function () {
+        var text = compareBadge.textContent;
+        var on = compareBadge.style.display !== 'none';
+        mobCompareBadge.textContent = text;
+        mobCompareBadge.classList.toggle('on', on);
+      }).observe(compareBadge, { childList: true, attributes: true, attributeFilter: ['style'] });
+    }
+
+    // Mirror saved badge
+    var savedBadge = document.getElementById('savedBadge');
+    var mobSavedBadge = document.getElementById('mobSavedBadge');
+    if (savedBadge && mobSavedBadge) {
+      new MutationObserver(function () {
+        var text = savedBadge.textContent;
+        var on = savedBadge.style.display !== 'none';
+        mobSavedBadge.textContent = text;
+        mobSavedBadge.classList.toggle('on', on);
+      }).observe(savedBadge, { childList: true, attributes: true, attributeFilter: ['style'] });
+    }
+  });
+}());
+</script>
 
 </body>
 </html>
