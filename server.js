@@ -7,7 +7,7 @@ const { Pool, types: pgTypes } = require('pg');
 pgTypes.setTypeParser(20, v => v == null ? null : parseInt(v, 10));
 pgTypes.setTypeParser(1700, v => v == null ? null : parseFloat(v));
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const HOST = '0.0.0.0';
 
 const ROOT = path.join(__dirname, 'qiwiosity', 'mobile');
@@ -44,18 +44,17 @@ function readBody(req, maxBytes = 12 * 1024 * 1024) {
 
 let _openaiClient = null;
 function getOpenAI() {
-  if (!process.env.AI_INTEGRATIONS_OPENAI_BASE_URL || !process.env.AI_INTEGRATIONS_OPENAI_API_KEY) return null;
+  if (!process.env.OPENAI_API_KEY) return null;
   if (!_openaiClient) {
-    _openaiClient = new OpenAI({
-      apiKey: process.env.AI_INTEGRATIONS_OPENAI_API_KEY,
-      baseURL: process.env.AI_INTEGRATIONS_OPENAI_BASE_URL,
-    });
+    const opts = { apiKey: process.env.OPENAI_API_KEY };
+    if (process.env.OPENAI_BASE_URL) opts.baseURL = process.env.OPENAI_BASE_URL;
+    _openaiClient = new OpenAI(opts);
   }
   return _openaiClient;
 }
 
 function identifyConfigured(res) {
-  const ok = !!(process.env.AI_INTEGRATIONS_OPENAI_BASE_URL && process.env.AI_INTEGRATIONS_OPENAI_API_KEY);
+  const ok = !!process.env.OPENAI_API_KEY;
   res.writeHead(200, { 'Content-Type': 'application/json' });
   res.end(JSON.stringify({ available: ok }));
 }
@@ -622,5 +621,5 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, HOST, () => {
   console.log(`Qiwiosity prototype running at http://${HOST}:${PORT}`);
   console.log(`ElevenLabs server proxy: ${process.env.ELEVENLABS_API_KEY ? 'enabled' : 'disabled (set ELEVENLABS_API_KEY)'}`);
-  console.log(`OpenAI Snap & Identify: ${process.env.AI_INTEGRATIONS_OPENAI_API_KEY ? 'enabled' : 'disabled'}`);
+  console.log(`OpenAI Snap & Identify: ${process.env.OPENAI_API_KEY ? 'enabled' : 'disabled'}`);
 });

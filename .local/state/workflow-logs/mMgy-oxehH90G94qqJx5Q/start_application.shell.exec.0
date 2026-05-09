@@ -1,0 +1,3 @@
+Qiwiosity prototype running at http://0.0.0.0:5000
+ElevenLabs server proxy: disabled (set ELEVENLABS_API_KEY)
+OpenAI Snap & Identify: enabled
