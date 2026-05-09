@@ -614,7 +614,10 @@ const server = http.createServer((req, res) => {
 
     const ext = path.extname(filePath);
     const contentType = mimeTypes[ext] || 'application/octet-stream';
-    res.writeHead(200, { 'Content-Type': contentType });
+    const headers = { 'Content-Type': contentType };
+    // Never cache HTML so mobile devices always get the latest version
+    if (ext === '.html') headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+    res.writeHead(200, headers);
     res.end(data);
   });
 });
