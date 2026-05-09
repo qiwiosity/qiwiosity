@@ -1916,6 +1916,14 @@ html.dark.qw-mobile .mobile-nav { background: #1E1E1E !important; border-color: 
 html.dark.qw-mobile .mobile-nav-btn { color: #888; }
 html.dark.qw-mobile .mobile-nav-btn.mob-active { color: #1BA3A5; }
 html.dark.qw-mobile .sidebar { border-top-color: #1BA3A5 !important; }
+
+/* Lift the map legend above the bottom nav bar so it stays tappable */
+html.qw-mobile .legend {
+  bottom: 70px !important;
+  left: 10px !important;
+  font-size: 11px !important;
+  max-width: 160px !important;
+}
 </style>
 </head>
 <body>
@@ -11135,6 +11143,7 @@ async function initMap() {
     fullscreenControl: false,
     zoomControl: true,
     mapId: "qiwiosity_nz_map",
+    gestureHandling: 'greedy',
   });
 
   infoWindow = new google.maps.InfoWindow();
