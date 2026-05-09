@@ -10,6 +10,7 @@ import { openDirectionsTo } from '../utils/directions';
 import { colors, radius, spacing, type } from '../theme';
 import ReviewsSection from '../components/ReviewsSection';
 import SaveToListModal from '../components/SaveToListModal';
+import DeepDiveModal from '../components/DeepDiveModal';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
@@ -21,6 +22,7 @@ export default function AttractionDetailScreen({ route, navigation }) {
   const compare = useCompare();
   const myLists = useMyLists();
   const [showSaveModal, setShowSaveModal] = useState(false);
+  const [showDeepDive, setShowDeepDive] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const [imageLoading, setImageLoading] = useState(true);
   const [imageError, setImageError] = useState(false);
@@ -132,9 +134,15 @@ export default function AttractionDetailScreen({ route, navigation }) {
         <View style={styles.commentaryBox}>
           <Text style={styles.commentaryLabel}>🎧 TOUR GUIDE</Text>
           <Text style={styles.commentaryText}>{attraction.commentary}</Text>
-          <TouchableOpacity style={styles.listenBtn} onPress={listen}>
-            <Text style={styles.listenBtnText}>▶ Listen</Text>
-          </TouchableOpacity>
+          <View style={styles.listenRow}>
+            <TouchableOpacity style={styles.listenBtn} onPress={listen}>
+              <Text style={styles.listenBtnText}>▶ Listen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.deepDiveBtn} onPress={() => setShowDeepDive(true)}>
+              <Ionicons name="mic" size={14} color={colors.primary} />
+              <Text style={styles.deepDiveBtnText}>Deep Dive</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
         <View style={styles.tagRow}>
@@ -254,6 +262,12 @@ export default function AttractionDetailScreen({ route, navigation }) {
         onClose={() => setShowSaveModal(false)}
         poi={attraction}
       />
+
+      <DeepDiveModal
+        visible={showDeepDive}
+        onClose={() => setShowDeepDive(false)}
+        attraction={attraction}
+      />
     </ScrollView>
   );
 }
@@ -293,8 +307,20 @@ const styles = StyleSheet.create({
   },
   commentaryLabel: { fontSize: 10, color: colors.muted, fontWeight: '700', letterSpacing: 1.2 },
   commentaryText: { ...type.body, marginTop: spacing.sm, lineHeight: 21, fontStyle: 'italic', color: '#5a4530' },
-  listenBtn: { alignSelf: 'flex-start', marginTop: spacing.md, backgroundColor: colors.primary, paddingVertical: 8, paddingHorizontal: 16, borderRadius: radius.pill },
+  listenRow: { flexDirection: 'row', alignItems: 'center', gap: spacing.sm, marginTop: spacing.md },
+  listenBtn: { backgroundColor: colors.primary, paddingVertical: 8, paddingHorizontal: 16, borderRadius: radius.pill },
   listenBtnText: { color: 'white', fontWeight: '600' },
+  deepDiveBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingVertical: 8,
+    paddingHorizontal: 14,
+    borderRadius: radius.pill,
+    borderWidth: 1,
+    borderColor: colors.primary,
+  },
+  deepDiveBtnText: { color: colors.primary, fontWeight: '600', fontSize: 13 },
   tagRow: { flexDirection: 'row', flexWrap: 'wrap', marginTop: spacing.lg },
   tag: { backgroundColor: colors.surface, borderRadius: radius.pill, paddingVertical: 4, paddingHorizontal: 10, marginRight: 6, marginBottom: 6, borderWidth: 1, borderColor: colors.border },
   tagText: { ...type.caption },

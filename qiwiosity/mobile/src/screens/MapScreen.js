@@ -17,6 +17,7 @@ import { useCompare } from '../context/CompareContext';
 import { openDirectionsTo } from '../utils/directions';
 import { colors, radius, spacing, type } from '../theme';
 import SaveToListModal from '../components/SaveToListModal';
+import SnapIdentifyModal from '../components/SnapIdentifyModal';
 
 // Enable LayoutAnimation on Android
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
@@ -71,6 +72,7 @@ export default function MapScreen({ navigation }) {
   const [saveModalPoi, setSaveModalPoi] = useState(null);
   const [filterVisible, setFilterVisible] = useState(false); // collapsed by default
   const [imageError, setImageError] = useState(false);
+  const [showSnap, setShowSnap] = useState(false);
 
   // Reset image error when selection changes
   useEffect(() => {
@@ -211,6 +213,15 @@ export default function MapScreen({ navigation }) {
           </Marker>
         ))}
       </MapView>
+
+      {/* Snap & Identify FAB */}
+      <TouchableOpacity
+        style={styles.snapFab}
+        onPress={() => setShowSnap(true)}
+        activeOpacity={0.85}
+      >
+        <Ionicons name="camera" size={22} color="white" />
+      </TouchableOpacity>
 
       {/* Filter toggle button — just the icon, no count */}
       <TouchableOpacity
@@ -373,6 +384,11 @@ export default function MapScreen({ navigation }) {
         onClose={() => setSaveModalPoi(null)}
         poi={saveModalPoi}
       />
+
+      <SnapIdentifyModal
+        visible={showSnap}
+        onClose={() => setShowSnap(false)}
+      />
     </View>
   );
 }
@@ -527,5 +543,22 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   actionBtnPrimary: { backgroundColor: colors.primary, borderColor: colors.primary },
+  snapFab: {
+    position: 'absolute',
+    top: 60,
+    right: spacing.md,
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: colors.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 900,
+    shadowColor: '#000',
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 6,
+  },
   actionBtnActive: { backgroundColor: colors.primary, borderColor: colors.primary },
 });
