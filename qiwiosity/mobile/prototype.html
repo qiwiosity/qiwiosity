@@ -12362,7 +12362,7 @@ initMap();
         var result = await authSupabase.auth.signUp({
           email: email,
           password: pass,
-          options: { data: { handle: handle } }
+          options: { data: { handle: handle }, emailRedirectTo: 'https://qiwiosity-production.up.railway.app/' }
         });
         if (result.error) throw result.error;
         status.style.color = 'var(--primary)';
