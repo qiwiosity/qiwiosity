@@ -67,12 +67,20 @@ export default function MapScreen({ navigation }) {
 
   // All categories ON by default
   const [active, setActive] = useState(new Set(allCategories.map((c) => c.id)));
+  const [userToggled, setUserToggled] = useState(false);
   const [selected, setSelected] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const [saveModalPoi, setSaveModalPoi] = useState(null);
   const [filterVisible, setFilterVisible] = useState(false); // collapsed by default
   const [imageError, setImageError] = useState(false);
   const [showSnap, setShowSnap] = useState(false);
+
+  // Re-initialize active categories when data loads (categories is empty on first render)
+  useEffect(() => {
+    if (!userToggled && allCategories.length > 0) {
+      setActive(new Set(allCategories.map((c) => c.id)));
+    }
+  }, [allCategories]);
 
   // Reset image error when selection changes
   useEffect(() => {
@@ -96,6 +104,7 @@ export default function MapScreen({ navigation }) {
   }, [active, accommodations]);
 
   const toggleCategory = (id) => {
+    setUserToggled(true);
     const next = new Set(active);
     if (next.has(id)) next.delete(id);
     else next.add(id);
