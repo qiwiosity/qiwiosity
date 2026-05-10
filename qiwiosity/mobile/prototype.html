@@ -64,52 +64,54 @@
     grid-template-rows: var(--header-h) 1fr;
     height: 100vh;
   }
-  @media (max-width: 1200px) { .app { grid-template-columns: 280px 1fr; } .itinerary-panel { display:none; } }
-  @media (max-width: 760px) { .app { grid-template-columns: 1fr; grid-template-rows: var(--header-h) auto 1fr; } .sidebar { max-height: 240px; overflow-y: auto; } }
+  @media (max-width: 1200px) { .app { grid-template-columns: 1fr; } .itinerary-panel { display:none; } }
+  @media (max-width: 760px) { .app { grid-template-columns: 1fr; grid-template-rows: var(--header-h) 1fr; } .sidebar { display: none; } }
 
   /* ============ HEADER ============ */
   header {
     grid-column: 1 / -1;
-    background: var(--primary-deep);
+    background: var(--primary);
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 16px 0 18px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    padding: 0 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     z-index: 1000;
-    gap: 6px;
+    gap: 16px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
   }
   header h1 {
-    font-size: 17px; font-weight: 800; margin: 0;
-    letter-spacing: -0.2px; color: white;
+    font-size: 18px; font-weight: 800; margin: 0;
+    letter-spacing: -0.3px; color: white;
     white-space: nowrap;
+    display: flex; align-items: center; gap: 8px;
   }
   header .brand-mark {
-    width: 30px; height: 30px; margin-right: 8px;
-    border-radius: 7px; flex-shrink: 0;
+    width: 32px; height: 32px; margin-right: 0;
+    border-radius: 8px; flex-shrink: 0;
   }
   header .tabs {
     margin-left: auto; display: flex; gap: 1px; flex-shrink: 0;
   }
   header .tab {
-    background: transparent; color: rgba(255,255,255,0.65);
-    border: none; padding: 7px 11px; border-radius: 7px;
+    background: transparent; color: rgba(255,255,255,0.7);
+    border: none; padding: 8px 12px; border-radius: 6px;
     font-size: 12px; font-weight: 600; cursor: pointer;
-    white-space: nowrap; transition: all 0.15s; letter-spacing: 0.2px;
+    white-space: nowrap; transition: all 0.2s; letter-spacing: 0.3px;
   }
-  header .tab:hover { color: white; background: rgba(255,255,255,0.1); }
+  header .tab:hover { color: white; background: rgba(255,255,255,0.15); }
   header .tab.active {
-    background: rgba(255,255,255,0.16); color: white;
+    background: rgba(255,255,255,0.2); color: white;
   }
-  .header-actions { display: flex; gap: 2px; margin-left: 8px; }
+  .header-actions { display: flex; gap: 4px; margin-left: 8px; }
   .header-btn {
-    background: none; border: none;
-    color: rgba(255,255,255,0.65);
-    width: 34px; height: 34px; display: flex; align-items: center; justify-content: center;
-    cursor: pointer; font-size: 17px; transition: all 0.15s; position: relative;
+    background: rgba(255,255,255,0.1); border: none;
+    color: rgba(255,255,255,0.8);
+    width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 16px; transition: all 0.2s; position: relative;
     border-radius: 6px;
   }
-  .header-btn:hover { background: rgba(255,255,255,0.12); color: white; }
+  .header-btn:hover { background: rgba(255,255,255,0.2); color: white; }
   .header-btn .hb-badge {
     position: absolute; top: -4px; right: -4px;
     background: var(--accent); color: white;
@@ -122,43 +124,53 @@
   /* ============ SIDEBAR ============ */
   .sidebar {
     background: var(--surface); border-right: 1px solid var(--border);
-    overflow-y: auto; padding: 14px 14px 20px;
+    overflow-y: auto; padding: 18px 16px 24px;
     transition: background 0.3s, border-color 0.3s;
     position: relative;
   }
   .sidebar-back-top {
-    position: sticky; bottom: 12px; float: right; margin-right: -4px;
-    width: 32px; height: 32px; border-radius: 50%;
+    position: sticky; bottom: 16px; float: right; margin-right: 0;
+    width: 36px; height: 36px; border-radius: 50%;
     background: var(--primary); color: white; border: none;
-    font-size: 15px; cursor: pointer; display: none; align-items: center;
-    justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+    font-size: 16px; cursor: pointer; display: none; align-items: center;
+    justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: opacity 0.2s; z-index: 10; line-height: 1;
   }
   .sidebar h2 {
-    font-size: 10px; text-transform: uppercase; letter-spacing: 1.4px;
-    color: var(--muted); margin: 18px 0 7px; font-weight: 700;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--muted); margin: 20px 0 10px; font-weight: 700;
   }
   .sidebar h2:first-child { margin-top: 0; }
 
   /* ====== Cleaner sidebar primitives ====== */
   .section-label {
     font-size: 10px; font-weight: 700; color: var(--muted);
-    text-transform: uppercase; letter-spacing: 1.2px; margin: 0;
+    text-transform: uppercase; letter-spacing: 1.3px; margin: 0;
   }
   .section-divider {
-    height: 1px; background: var(--border); margin: 12px 0; opacity: 0.7;
+    height: 1px; background: var(--border); margin: 16px 0; opacity: 0.5;
   }
   .discovery-row {
-    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; margin-bottom: 10px;
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 16px;
   }
   .discovery-row > button {
-    margin: 0 !important; padding: 9px 4px;
-    font-size: 11px; font-weight: 700;
-    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
-    line-height: 1.15; min-height: 56px;
+    margin: 0 !important; padding: 12px 8px;
+    font-size: 12px; font-weight: 700;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    line-height: 1.15; min-height: 68px;
+    background: linear-gradient(135deg, var(--primary), #0f6e70);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
   }
-  .discovery-row .disco-icon { font-size: 18px; line-height: 1; }
-  .discovery-row .disco-label { font-size: 10px; letter-spacing: 0.2px; }
+  .discovery-row > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(21,136,138,0.25);
+  }
+  .discovery-row .disco-icon { font-size: 24px; line-height: 1; }
+  .discovery-row .disco-label { font-size: 11px; letter-spacing: 0.3px; font-weight: 600; }
 
   /* Filters popover */
   .filters-bar {
@@ -234,28 +246,37 @@
   .compare-intro { font-size: 12px; color: var(--muted); margin: 0 0 10px; line-height: 1.45; }
 
   .search {
-    width: 100%; padding: 9px 12px;
+    width: 100%; padding: 11px 14px;
     border: 1.5px solid var(--border); border-radius: 8px;
-    font-size: 13px; background: var(--surface); color: var(--text);
-    transition: border-color 0.15s, background 0.3s;
+    font-size: 14px; background: var(--surface); color: var(--text);
+    transition: border-color 0.2s, background 0.3s, box-shadow 0.2s;
     outline: none;
   }
-  .search:focus { border-color: var(--primary); }
+  .search:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(21,136,138,0.1); }
 
-  .category-list { display: flex; flex-direction: column; gap: 3px; }
+  .category-list { display: flex; flex-direction: column; gap: 4px; }
   .cat {
-    display: flex; align-items: center; gap: 9px;
-    padding: 7px 9px; border-radius: 8px; cursor: pointer;
-    font-size: 13px; user-select: none; transition: background 0.15s;
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 11px; border-radius: 8px; cursor: pointer;
+    font-size: 13px; user-select: none; transition: all 0.15s;
     color: var(--text);
   }
   .cat:hover { background: var(--surface2); }
-  .cat .swatch { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-  .cat.on { background: var(--surface2); font-weight: 600; }
-  html.dark .cat.on { background: rgba(21,136,138,0.15); }
-  .cat .count { margin-left: auto; color: var(--muted); font-size: 11px; }
+  .cat .swatch { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .cat.on { background: rgba(21,136,138,0.08); font-weight: 600; color: var(--primary); }
+  html.dark .cat.on { background: rgba(27,163,165,0.15); }
+  .cat .count { margin-left: auto; color: var(--muted); font-size: 11px; font-weight: 600; }
 
-  .region-list { display: flex; flex-direction: column; gap: 1px; }
+  .region-list { display: flex; flex-direction: column; gap: 4px; }
+  .region {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 11px; border-radius: 8px; cursor: pointer;
+    font-size: 13px; user-select: none; transition: all 0.15s;
+    color: var(--text);
+  }
+  .region:hover { background: var(--surface2); }
+  .region.on { background: rgba(21,136,138,0.08); font-weight: 600; color: var(--primary); }
+  html.dark .region.on { background: rgba(27,163,165,0.15); }
   .search-wrap { position:relative; margin-bottom:8px; }
   .search-suggestions {
     position:absolute; top:100%; left:0; right:0; z-index:50;
@@ -281,10 +302,11 @@
     color:white; border:none; border-radius:10px;
     font-size:13px; font-weight:700; cursor:pointer;
     display:flex; align-items:center; justify-content:center; gap:7px;
-    transition: opacity 0.15s, transform 0.1s;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(21,136,138,0.15);
   }
-  .surprise-btn:hover { opacity:0.88; }
-  .surprise-btn:active { transform:scale(0.97); }
+  .surprise-btn:hover { opacity:0.92; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(21,136,138,0.25); }
+  .surprise-btn:active { transform:scale(0.98); }
   .region .poi-count {
     font-size:10px; font-weight:700; color:var(--primary);
     background:rgba(21,136,138,0.12); border-radius:99px;
@@ -656,17 +678,17 @@
 
   /* ============ BUTTONS ============ */
   .btn {
-    padding: 8px 12px; border-radius: 7px;
+    padding: 10px 14px; border-radius: 8px;
     border: 1.5px solid var(--border); background: var(--surface);
-    color: var(--text); font-size: 12px; cursor: pointer; font-weight: 600;
-    transition: background 0.12s, border-color 0.12s, transform 0.1s;
+    color: var(--text); font-size: 13px; cursor: pointer; font-weight: 600;
+    transition: all 0.2s;
   }
-  .btn:hover { background: var(--surface2); border-color: #ccc; }
-  .btn.primary { background: var(--primary); border-color: var(--primary); color: white; }
-  .btn.primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); }
-  .btn.primary:disabled { background: var(--muted); border-color: var(--muted); cursor: default; }
-  .btn.accent { background: var(--accent); border-color: var(--accent); color: white; }
-  .btn.accent:hover { opacity: 0.88; }
+  .btn:hover { background: var(--surface2); border-color: var(--primary); color: var(--primary); }
+  .btn.primary { background: var(--primary); border-color: var(--primary); color: white; box-shadow: 0 2px 8px rgba(21,136,138,0.2); }
+  .btn.primary:hover { background: var(--primary-dark); border-color: var(--primary-dark); box-shadow: 0 4px 12px rgba(21,136,138,0.3); transform: translateY(-1px); }
+  .btn.primary:disabled { background: var(--muted); border-color: var(--muted); cursor: default; box-shadow: none; }
+  .btn.accent { background: var(--accent); border-color: var(--accent); color: white; box-shadow: 0 2px 8px rgba(224,123,60,0.2); }
+  .btn.accent:hover { opacity: 0.92; box-shadow: 0 4px 12px rgba(224,123,60,0.3); transform: translateY(-1px); }
 
   /* Save / wishlist button in popups */
   .btn-save {
