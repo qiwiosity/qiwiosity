@@ -14,6 +14,7 @@
 <meta property="og:type" content="website" />
 <link rel="manifest" href="manifest.json" />
 <title>Qiwiosity — Explore New Zealand</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <style>
   /* ============ CSS VARIABLES ============ */
   :root {
@@ -1968,6 +1969,7 @@ html.qw-mobile .legend {
       <button class="header-btn" id="passportHeaderBtn" onclick="openPassport()" title="Trip Passport — badges, streaks & stats" style="position:relative;">🏆<span id="passportBadgeCount" style="display:none;position:absolute;top:1px;right:1px;background:#7c3aed;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;align-items:center;justify-content:center;">0</span></button>
       <button class="header-btn" id="alertsHeaderBtn" onclick="openAlerts()" title="Smart Alerts & Currency" style="position:relative;">🔔<span id="alertsBadge" style="display:none;position:absolute;top:1px;right:1px;background:#e04f4f;color:#fff;font-size:9px;font-weight:800;padding:1px 4px;border-radius:8px;line-height:1;">!</span></button>
       <button class="header-btn" onclick="openSettings()" title="Settings">⚙</button>
+      <button class="header-btn" id="accountHeaderBtn" onclick="openAccountModal()" title="Account" style="position:relative;">👤<span id="accountDot" style="display:none;position:absolute;top:2px;right:2px;width:8px;height:8px;background:#10b981;border-radius:50;border:1.5px solid var(--primary-deep);"></span></button>
     </div>
   </header>
 
@@ -2721,6 +2723,13 @@ html.qw-mobile .legend {
 // ============ DATA (loaded from Supabase) ============
 const SUPABASE_URL = 'https://hauksnqehzaxuoeaezji.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhhdWtzbnFlaHpheHVvZWFlemppIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY2Njg2NjEsImV4cCI6MjA5MjI0NDY2MX0.jaxhd4xgDwfO5POCTFI9G0M66Ev9vykcs6gPAZSiZSo';
+
+// Auth project (profiles + authentication)
+const AUTH_SUPABASE_URL = 'https://osulujkdeuukilchfath.supabase.co';
+const AUTH_SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zdWx1amtkZXV1a2lsY2hmYXRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgyNDc0MTcsImV4cCI6MjA5MzgyMzQxN30.Ery8n0yWMgRINn4MTSkW1tTv7t8oRZU9LTUuGiMmXiU';
+const authSupabase = window.supabase.createClient(AUTH_SUPABASE_URL, AUTH_SUPABASE_ANON_KEY);
+let _authUser = null;
+let _authSession = null;
 
 // ============ AFFILIATE CONFIG ============
 // Fill in your IDs after registering with each program.
@@ -12065,6 +12074,9 @@ initMap();
     <span class="mob-icon">❤️</span><span>Saved</span>
     <span class="mob-badge" id="mobSavedBadge">0</span>
   </button>
+  <button class="mobile-nav-btn" id="mnAccount" onclick="openAccountModal()" aria-label="Account">
+    <span class="mob-icon">👤</span><span>Account</span>
+  </button>
 </nav>
 
 <script>
@@ -12137,6 +12149,315 @@ initMap();
       }).observe(savedBadge, { childList: true, attributes: true, attributeFilter: ['style'] });
     }
   });
+}());
+</script>
+
+<!-- ============ ACCOUNT / AUTH OVERLAY ============ -->
+<style>
+  .auth-overlay {
+    position: fixed; inset: 0; z-index: 8500;
+    background: rgba(0,0,0,0.55); backdrop-filter: blur(4px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.25s, visibility 0.25s;
+  }
+  .auth-overlay.open { opacity: 1; visibility: visible; pointer-events: all; }
+  .auth-modal {
+    background: var(--surface); border-radius: 16px;
+    width: 420px; max-width: calc(100vw - 32px);
+    max-height: calc(100vh - 60px); overflow-y: auto;
+    box-shadow: var(--shadow-lg);
+    transform: scale(0.96) translateY(12px);
+    transition: transform 0.25s;
+  }
+  .auth-overlay.open .auth-modal { transform: scale(1) translateY(0); }
+  .auth-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 20px 14px;
+    border-bottom: 1px solid var(--border); position: sticky; top: 0;
+    background: var(--surface); z-index: 1; border-radius: 16px 16px 0 0;
+  }
+  .auth-header h2 { margin: 0; font-size: 17px; font-weight: 800; color: var(--text); }
+  .auth-close {
+    background: none; border: none; font-size: 22px; cursor: pointer;
+    color: var(--muted); padding: 4px 8px; border-radius: 8px;
+  }
+  .auth-close:hover { background: var(--bg); }
+  .auth-body { padding: 24px 20px; }
+  .auth-field { margin-bottom: 16px; }
+  .auth-field label {
+    display: block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.4px; color: var(--muted); margin-bottom: 6px;
+  }
+  .auth-field input {
+    width: 100%; padding: 10px 12px; border: 1px solid var(--border);
+    border-radius: var(--radius); font-size: 15px; color: var(--text);
+    background: var(--bg); outline: none; box-sizing: border-box;
+  }
+  .auth-field input:focus { border-color: var(--primary); }
+  .auth-submit {
+    width: 100%; padding: 12px; border: none; border-radius: var(--radius);
+    background: var(--primary); color: white; font-size: 15px; font-weight: 700;
+    cursor: pointer; margin-top: 8px; transition: opacity 0.15s;
+  }
+  .auth-submit:hover { opacity: 0.9; }
+  .auth-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+  .auth-toggle {
+    text-align: center; margin-top: 16px; font-size: 13px; color: var(--muted);
+  }
+  .auth-toggle a {
+    color: var(--primary); font-weight: 600; cursor: pointer; text-decoration: none;
+  }
+  .auth-toggle a:hover { text-decoration: underline; }
+  .auth-status {
+    text-align: center; font-size: 13px; color: var(--primary);
+    font-weight: 600; margin-top: 12px; min-height: 18px;
+  }
+  .auth-profile-hero {
+    text-align: center; padding: 20px 0 12px;
+  }
+  .auth-profile-hero .avatar {
+    width: 72px; height: 72px; border-radius: 50%; background: var(--primary);
+    color: white; font-size: 32px; font-weight: 800; display: inline-flex;
+    align-items: center; justify-content: center; margin-bottom: 12px;
+  }
+  .auth-profile-hero .handle { font-size: 20px; font-weight: 700; color: var(--text); }
+  .auth-profile-hero .email { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .auth-profile-info {
+    background: var(--bg); border-radius: var(--radius); padding: 14px 16px;
+    margin-top: 16px; display: flex; flex-direction: column; gap: 10px;
+  }
+  .auth-profile-row {
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 13px;
+  }
+  .auth-profile-row .label { color: var(--muted); font-weight: 600; }
+  .auth-profile-row .value { color: var(--text); font-weight: 500; }
+  .auth-signout {
+    width: 100%; padding: 11px; border: 1.5px solid #e04f4f; border-radius: var(--radius);
+    background: transparent; color: #e04f4f; font-size: 14px; font-weight: 700;
+    cursor: pointer; margin-top: 20px; transition: background 0.15s;
+  }
+  .auth-signout:hover { background: #e04f4f15; }
+  html.qw-mobile .auth-overlay { align-items: flex-end !important; }
+  html.qw-mobile .auth-modal {
+    border-radius: 20px 20px 0 0; max-height: 85vh; width: 100%; max-width: 100%;
+  }
+</style>
+
+<div class="auth-overlay" id="authOverlay" onclick="if(event.target===this)closeAccountModal()">
+  <div class="auth-modal" id="authModal"></div>
+</div>
+
+<script>
+(function() {
+  // ── Auth state ──
+  function updateAccountDot() {
+    var dot = document.getElementById('accountDot');
+    if (dot) dot.style.display = _authUser ? 'block' : 'none';
+  }
+
+  // ── Initialize auth on load ──
+  authSupabase.auth.getSession().then(function(result) {
+    var s = result.data.session;
+    if (s) {
+      _authSession = s;
+      _authUser = s.user;
+      syncAuthProfile(s.user);
+    }
+    updateAccountDot();
+  });
+
+  authSupabase.auth.onAuthStateChange(function(_event, s) {
+    _authSession = s;
+    _authUser = s ? s.user : null;
+    if (s && s.user) syncAuthProfile(s.user);
+    updateAccountDot();
+  });
+
+  function syncAuthProfile(user) {
+    var handle = (user.user_metadata && user.user_metadata.handle) || 'user_' + user.id.replace(/-/g, '').slice(0, 8);
+    var communityId = 'u_' + user.id.replace(/-/g, '');
+    var p = { handle: handle, id: communityId, authId: user.id, email: user.email, joinedAt: Date.now() };
+    _saveProfile(p);
+
+    authSupabase.from('profiles').select('*').eq('id', user.id).maybeSingle().then(function(result) {
+      if (result.data) {
+        p.handle = result.data.handle || p.handle;
+        p.dbProfile = result.data;
+        _saveProfile(p);
+      } else {
+        authSupabase.from('profiles').insert({ id: user.id, handle: handle }).select().single().then(function(ins) {
+          if (ins.data) { p.dbProfile = ins.data; _saveProfile(p); }
+        });
+      }
+    });
+  }
+
+  // ── Render modal ──
+  window.openAccountModal = function() {
+    var overlay = document.getElementById('authOverlay');
+    var modal = document.getElementById('authModal');
+    if (_authUser) {
+      renderProfileView(modal);
+    } else {
+      renderAuthForm(modal, 'signin');
+    }
+    overlay.classList.add('open');
+  };
+
+  window.closeAccountModal = function() {
+    document.getElementById('authOverlay').classList.remove('open');
+  };
+
+  window.renderAuthForm = function(modal, mode) {
+    var isSignUp = mode === 'signup';
+    modal.innerHTML = ''
+      + '<div class="auth-header">'
+      + '  <h2>' + (isSignUp ? 'Create Account' : 'Sign In') + '</h2>'
+      + '  <button class="auth-close" onclick="closeAccountModal()">&times;</button>'
+      + '</div>'
+      + '<div class="auth-body">'
+      + (isSignUp ? '<div class="auth-field"><label>Display Name</label><input id="authHandle" type="text" placeholder="e.g. KiwiExplorer" maxlength="20" autocomplete="name" /></div>' : '')
+      + '  <div class="auth-field"><label>Email</label><input id="authEmail" type="email" placeholder="you@example.com" autocomplete="email" /></div>'
+      + '  <div class="auth-field"><label>Password</label><input id="authPass" type="password" placeholder="' + (isSignUp ? 'At least 6 characters' : 'Your password') + '" autocomplete="' + (isSignUp ? 'new-password' : 'current-password') + '" /></div>'
+      + '  <button class="auth-submit" id="authSubmitBtn" onclick="handleAuthSubmit(\'' + mode + '\')">' + (isSignUp ? 'Create Account' : 'Sign In') + '</button>'
+      + '  <div class="auth-status" id="authStatus"></div>'
+      + '  <div class="auth-toggle">'
+      + (isSignUp
+          ? 'Already have an account? <a onclick="renderAuthForm(document.getElementById(\'authModal\'),\'signin\')">Sign in</a>'
+          : 'Don\'t have an account? <a onclick="renderAuthForm(document.getElementById(\'authModal\'),\'signup\')">Sign up</a>')
+      + '  </div>'
+      + '</div>';
+
+    setTimeout(function() {
+      var firstInput = modal.querySelector(isSignUp ? '#authHandle' : '#authEmail');
+      if (firstInput) firstInput.focus();
+    }, 100);
+  }
+
+  window.handleAuthSubmit = async function(mode) {
+    var btn = document.getElementById('authSubmitBtn');
+    var status = document.getElementById('authStatus');
+    var email = (document.getElementById('authEmail').value || '').trim();
+    var pass = document.getElementById('authPass').value || '';
+    var handleEl = document.getElementById('authHandle');
+    var handle = handleEl ? (handleEl.value || '').trim() : '';
+
+    if (!email || !pass) { status.textContent = 'Email and password required.'; status.style.color = '#e04f4f'; return; }
+    if (mode === 'signup' && handle.length < 2) { status.textContent = 'Display name must be at least 2 characters.'; status.style.color = '#e04f4f'; return; }
+
+    btn.disabled = true;
+    btn.textContent = 'Please wait…';
+    status.textContent = '';
+    status.style.color = 'var(--primary)';
+
+    try {
+      if (mode === 'signin') {
+        var result = await authSupabase.auth.signInWithPassword({ email: email, password: pass });
+        if (result.error) throw result.error;
+        closeAccountModal();
+        showToast('Welcome back! 🌿');
+      } else {
+        var result = await authSupabase.auth.signUp({
+          email: email,
+          password: pass,
+          options: { data: { handle: handle } }
+        });
+        if (result.error) throw result.error;
+        status.style.color = 'var(--primary)';
+        status.textContent = 'Check your email for a confirmation link, then sign in.';
+        btn.textContent = 'Email sent!';
+        setTimeout(function() {
+          renderAuthForm(document.getElementById('authModal'), 'signin');
+        }, 3000);
+        return;
+      }
+    } catch (err) {
+      status.style.color = '#e04f4f';
+      status.textContent = err.message || 'Something went wrong.';
+      btn.disabled = false;
+      btn.textContent = mode === 'signin' ? 'Sign In' : 'Create Account';
+    }
+  };
+
+  function renderProfileView(modal) {
+    var p = getProfile() || {};
+    var email = (_authUser && _authUser.email) || p.email || '';
+    var handle = p.handle || 'Anonymous';
+    var initial = handle.charAt(0).toUpperCase();
+    var memberSince = _authUser && _authUser.created_at
+      ? new Date(_authUser.created_at).toLocaleDateString('en-NZ', { year: 'numeric', month: 'long' })
+      : '';
+    var rep = (typeof getReputation === 'function') ? getReputation(handle) : null;
+    var repLabel = rep ? rep.tier.emoji + ' ' + rep.tier.label : '';
+
+    modal.innerHTML = ''
+      + '<div class="auth-header">'
+      + '  <h2>Account</h2>'
+      + '  <button class="auth-close" onclick="closeAccountModal()">&times;</button>'
+      + '</div>'
+      + '<div class="auth-body">'
+      + '  <div class="auth-profile-hero">'
+      + '    <div class="avatar">' + initial + '</div>'
+      + '    <div class="handle">' + _esc(handle) + '</div>'
+      + '    <div class="email">' + _esc(email) + '</div>'
+      + '  </div>'
+      + '  <div class="auth-profile-info">'
+      + (memberSince ? '<div class="auth-profile-row"><span class="label">Member since</span><span class="value">' + memberSince + '</span></div>' : '')
+      + (repLabel ? '<div class="auth-profile-row"><span class="label">Reputation</span><span class="value">' + repLabel + '</span></div>' : '')
+      + '  </div>'
+      + '  <button class="auth-signout" onclick="handleSignOut()">Sign Out</button>'
+      + '</div>';
+  }
+
+  window.handleSignOut = async function() {
+    if (!confirm('Are you sure you want to sign out?')) return;
+    try {
+      await authSupabase.auth.signOut();
+      _authUser = null;
+      _authSession = null;
+      localStorage.removeItem(PROFILE_KEY);
+      updateAccountDot();
+      closeAccountModal();
+      showToast('Signed out');
+    } catch (err) {
+      showToast('Error signing out: ' + (err.message || 'Unknown error'));
+    }
+  };
+
+  // ── Override _apiHeaders to include Bearer token when authenticated ──
+  var _origApiHeaders = window._apiHeaders || _apiHeaders;
+  _apiHeaders = function() {
+    var h = { 'Content-Type': 'application/json' };
+    var p = getProfile();
+    if (_authSession && _authSession.access_token) {
+      h['Authorization'] = 'Bearer ' + _authSession.access_token;
+    }
+    if (p && p.id) h['x-qw-user-id'] = p.id;
+    if (p && p.handle) h['x-qw-handle'] = p.handle;
+    return h;
+  };
+
+  // ── Override ensureProfile to use auth ──
+  var _origEnsureProfile = window.ensureProfile;
+  window.ensureProfile = async function() {
+    if (_authUser) {
+      var p = getProfile();
+      if (p && p.handle && p.id) return p;
+      syncAuthProfile(_authUser);
+      return getProfile();
+    }
+    // Not signed in — offer to sign in or use legacy prompt
+    var choice = confirm('Sign in to your account to contribute?\n\nClick OK to sign in, or Cancel to use a temporary name.');
+    if (choice) {
+      openAccountModal();
+      return null;
+    }
+    // Legacy fallback for anonymous users
+    if (_origEnsureProfile) return _origEnsureProfile();
+    return null;
+  };
 }());
 </script>
 

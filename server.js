@@ -13,8 +13,8 @@ const HOST = '0.0.0.0';
 const ROOT = path.join(__dirname, 'qiwiosity', 'mobile');
 
 // Supabase config — used to verify user Bearer tokens server-side
-const SUPABASE_URL = process.env.SUPABASE_URL || 'https://hauksnqehzaxuoeaezji.supabase.co';
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || '';
+const SUPABASE_URL = process.env.SUPABASE_URL || 'https://osulujkdeuukilchfath.supabase.co';
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9zdWx1amtkZXV1a2lsY2hmYXRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgyNDc0MTcsImV4cCI6MjA5MzgyMzQxN30.Ery8n0yWMgRINn4MTSkW1tTv7t8oRZU9LTUuGiMmXiU';
 
 const pgPool = process.env.DATABASE_URL ? new Pool({ connectionString: process.env.DATABASE_URL, max: 5 }) : null;
 if (!pgPool) console.warn('[community] DATABASE_URL not set — community API disabled');
