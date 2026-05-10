@@ -6,6 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import AppNavigator from './src/navigation/AppNavigator';
 import SplashScreen from './src/screens/SplashScreen';
 import LoadingScreen from './src/screens/LoadingScreen';
+import { AuthProvider } from './src/context/AuthContext';
 import { ItineraryProvider } from './src/context/ItineraryContext';
 import { CompareProvider } from './src/context/CompareContext';
 import { MyListsProvider } from './src/context/MyListsContext';
@@ -79,21 +80,23 @@ function AppShell() {
 export default function App() {
   return (
     <SafeAreaProvider>
-      <DataProvider>
-        <PreferencesProvider>
-          <ItineraryProvider>
-            <CompareProvider>
-              <MyListsProvider>
-                <WishlistProvider>
-                  <NarrationProvider>
-                    <AppShell />
-                  </NarrationProvider>
-                </WishlistProvider>
-              </MyListsProvider>
-            </CompareProvider>
-          </ItineraryProvider>
-        </PreferencesProvider>
-      </DataProvider>
+      <AuthProvider>
+        <DataProvider>
+          <PreferencesProvider>
+            <ItineraryProvider>
+              <CompareProvider>
+                <MyListsProvider>
+                  <WishlistProvider>
+                    <NarrationProvider>
+                      <AppShell />
+                    </NarrationProvider>
+                  </WishlistProvider>
+                </MyListsProvider>
+              </CompareProvider>
+            </ItineraryProvider>
+          </PreferencesProvider>
+        </DataProvider>
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }

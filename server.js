@@ -12,6 +12,10 @@ const HOST = '0.0.0.0';
 
 const ROOT = path.join(__dirname, 'qiwiosity', 'mobile');
 
+// Supabase config — used to verify user Bearer tokens server-side
+const SUPABASE_URL = process.env.SUPABASE_URL || 'https://hauksnqehzaxuoeaezji.supabase.co';
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || '';
+
 const pgPool = process.env.DATABASE_URL ? new Pool({ connectionString: process.env.DATABASE_URL, max: 5 }) : null;
 if (!pgPool) console.warn('[community] DATABASE_URL not set — community API disabled');
 
@@ -215,7 +219,57 @@ async function readJsonBody(req, max) {
 function handleBodyError(res, e) {
   return jres(res, e instanceof HttpError ? e.code : 400, { error: e.message });
 }
-function getCallerUser(req) {
+// Verify a Supabase access token via the Supabase Auth REST API.
+// Returns the auth user object, or null if invalid / unavailable.
+function verifyBearerToken(token) {
+  const key = SUPABASE_ANON_KEY;
+  if (!key || !token) return Promise.resolve(null);
+
+  return new Promise((resolve) => {
+    const supabaseHost = new URL(SUPABASE_URL).hostname;
+    const reqOpts = {
+      hostname: supabaseHost,
+      path: '/auth/v1/user',
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'apikey': key,
+      },
+    };
+    const req = https.request(reqOpts, (res) => {
+      let data = '';
+      res.on('data', d => { data += d; });
+      res.on('end', () => {
+        if (res.statusCode === 200) {
+          try { resolve(JSON.parse(data)); } catch { resolve(null); }
+        } else {
+          resolve(null);
+        }
+      });
+    });
+    req.on('error', () => resolve(null));
+    req.setTimeout(5000, () => { req.destroy(); resolve(null); });
+    req.end();
+  });
+}
+
+async function getCallerUser(req) {
+  // Prefer Supabase Bearer token (authenticated users)
+  const authHeader = String(req.headers['authorization'] || '');
+  if (authHeader.startsWith('Bearer ')) {
+    const token = authHeader.slice(7);
+    const authUser = await verifyBearerToken(token);
+    if (authUser?.id) {
+      const handle = String(
+        authUser.user_metadata?.handle || `user_${authUser.id.replace(/-/g, '').slice(0, 8)}`
+      ).trim().slice(0, 24);
+      // Derive a stable community id from the auth UUID (fits u_[a-z0-9]{4,40} regex)
+      const id = 'u_' + authUser.id.replace(/-/g, '');
+      return { id, handle, authId: authUser.id };
+    }
+  }
+
+  // Legacy: trust X-Qw-User-Id / X-Qw-Handle headers (anonymous community users)
   const id = String(req.headers['x-qw-user-id'] || '').trim().slice(0, 64);
   const handle = String(req.headers['x-qw-handle'] || '').trim().slice(0, 24);
   if (!/^u_[a-z0-9]{4,40}$/.test(id)) return null;
@@ -278,7 +332,7 @@ async function communityList(req, res, urlObj) {
 
 async function communityCreate(req, res) {
   if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
-  const caller = getCallerUser(req);
+  const caller = await getCallerUser(req);
   if (!caller) return jres(res, 401, { error: 'Sign in first (set display name)' });
   let body;
   try { body = await readJsonBody(req, 1.5 * 1024 * 1024); } catch (e) { return handleBodyError(res, e); }
@@ -312,7 +366,7 @@ async function communityCreate(req, res) {
 
 async function communityVote(req, res, contribId) {
   if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
-  const caller = getCallerUser(req);
+  const caller = await getCallerUser(req);
   if (!caller) return jres(res, 401, { error: 'Sign in first' });
   let body;
   try { body = await readJsonBody(req, 4096); } catch (e) { return handleBodyError(res, e); }
@@ -339,7 +393,7 @@ async function communityVote(req, res, contribId) {
 
 async function communityResolve(req, res, contribId) {
   if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
-  const caller = getCallerUser(req);
+  const caller = await getCallerUser(req);
   if (!caller) return jres(res, 401, { error: 'Sign in first' });
   try {
     const cur = await pgPool.query(`SELECT type, status FROM qw_contribs WHERE id = $1`, [contribId]);
@@ -355,7 +409,7 @@ async function communityResolve(req, res, contribId) {
 
 async function communityFlag(req, res, contribId) {
   if (!pgPool) return jres(res, 503, { error: 'Database not configured' });
-  const caller = getCallerUser(req);
+  const caller = await getCallerUser(req);
   if (!caller) return jres(res, 401, { error: 'Sign in first' });
   try {
     const exists = await pgPool.query(`SELECT 1 FROM qw_contribs WHERE id = $1`, [contribId]);

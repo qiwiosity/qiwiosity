@@ -13,6 +13,7 @@
     "pods": "cd ios && pod install"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~6.1.2",
     "@expo/vector-icons": "^15.0.2",
     "@react-native-async-storage/async-storage": "2.2.0",
     "@react-navigation/bottom-tabs": "7",
@@ -21,18 +22,20 @@
     "@supabase/supabase-js": "^2.49.0",
     "expo": "~54.0.0",
     "expo-audio": "~1.1.1",
-    "expo-image-picker": "~16.0.6",
     "expo-file-system": "~18.0.7",
+    "expo-image-picker": "~16.0.6",
     "expo-location": "~19.0.8",
     "expo-speech": "~14.0.8",
     "expo-status-bar": "~3.0.9",
     "expo-task-manager": "~12.0.5",
     "react": "19.1.0",
+    "react-dom": "19.1.0",
     "react-native": "0.81.5",
     "react-native-gesture-handler": "~2.28.0",
     "react-native-maps": "1.20.1",
     "react-native-safe-area-context": "~5.6.2",
-    "react-native-screens": "~4.16.0"
+    "react-native-screens": "~4.16.0",
+    "react-native-web": "^0.21.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

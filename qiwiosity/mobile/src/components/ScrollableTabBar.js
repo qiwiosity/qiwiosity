@@ -33,6 +33,7 @@ export default function ScrollableTabBar({ state, descriptors, navigation }) {
             Saved: 'bookmark',
             Itinerary: 'list',
             Guide: 'headset',
+            Account: 'person-circle',
           };
           const iconName = iconMap[route.name] || 'ellipse';
 

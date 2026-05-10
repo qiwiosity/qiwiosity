@@ -16,18 +16,21 @@ import SettingsScreen from '../screens/SettingsScreen';
 import OfflineScreen from '../screens/OfflineScreen';
 import CompareScreen from '../screens/CompareScreen';
 import DecisionScreen from '../screens/DecisionScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import AuthScreen from '../screens/AuthScreen';
 import NowPlayingStrip from '../components/NowPlayingStrip';
 import ScrollableTabBar from '../components/ScrollableTabBar';
 import { useCompare } from '../context/CompareContext';
 import { useMyLists } from '../context/MyListsContext';
 import { useWishlist } from '../context/WishlistContext';
+import { useAuth } from '../context/AuthContext';
 import { colors } from '../theme';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+const Root = createNativeStackNavigator();
 
-// Shared header right button for Settings — plain icon only
-// Wrapped in a View to override any native iOS header button container styling
+// Shared header right button for Settings
 function SettingsHeaderButton({ navigation }) {
   return (
     <View style={{ backgroundColor: 'transparent', overflow: 'visible' }}>
@@ -48,111 +51,94 @@ function SettingsHeaderButton({ navigation }) {
   );
 }
 
+const sharedStackOptions = (navigation) => ({
+  headerStyle: { backgroundColor: colors.primary },
+  headerTintColor: '#fff',
+  headerTitleStyle: { color: '#fff', fontWeight: '600' },
+  headerShadowVisible: false,
+  headerRight: () => <SettingsHeaderButton navigation={navigation} />,
+});
+
+const detailScreens = (Stack) => (
+  <>
+    <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
+    <Stack.Screen name="AccommodationDetail" component={AccommodationDetailScreen} options={{ title: 'Stay' }} />
+    <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
+    <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+  </>
+);
+
 function ExploreStack() {
   return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: '#fff',
-        headerTitleStyle: { color: '#fff', fontWeight: '600' },
-        headerShadowVisible: false,
-        headerRight: () => <SettingsHeaderButton navigation={navigation} />,
-      })}
-    >
+    <Stack.Navigator screenOptions={({ navigation }) => sharedStackOptions(navigation)}>
       <Stack.Screen name="Map" component={MapScreen} options={{ title: 'Qiwiosity' }} />
-      <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
-      <Stack.Screen name="AccommodationDetail" component={AccommodationDetailScreen} options={{ title: 'Stay' }} />
-      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
-      <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+      {detailScreens(Stack)}
     </Stack.Navigator>
   );
 }
 
 function SearchStack() {
   return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: '#fff',
-        headerTitleStyle: { color: '#fff', fontWeight: '600' },
-        headerShadowVisible: false,
-        headerRight: () => <SettingsHeaderButton navigation={navigation} />,
-      })}
-    >
+    <Stack.Navigator screenOptions={({ navigation }) => sharedStackOptions(navigation)}>
       <Stack.Screen name="SearchHome" component={SearchScreen} options={{ title: 'Search & Browse' }} />
-      <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
-      <Stack.Screen name="AccommodationDetail" component={AccommodationDetailScreen} options={{ title: 'Stay' }} />
-      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
-      <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+      {detailScreens(Stack)}
     </Stack.Navigator>
   );
 }
 
 function CompareStack() {
   return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: '#fff',
-        headerTitleStyle: { color: '#fff', fontWeight: '600' },
-        headerShadowVisible: false,
-        headerRight: () => <SettingsHeaderButton navigation={navigation} />,
-      })}
-    >
+    <Stack.Navigator screenOptions={({ navigation }) => sharedStackOptions(navigation)}>
       <Stack.Screen name="CompareList" component={CompareScreen} options={{ title: 'Compare' }} />
       <Stack.Screen name="Decision" component={DecisionScreen} options={{ title: 'Decide', headerRight: () => null }} />
-      <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
-      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
-      <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+      {detailScreens(Stack)}
     </Stack.Navigator>
   );
 }
 
 function SavedStack() {
   return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: '#fff',
-        headerTitleStyle: { color: '#fff', fontWeight: '600' },
-        headerShadowVisible: false,
-        headerRight: () => <SettingsHeaderButton navigation={navigation} />,
-      })}
-    >
+    <Stack.Navigator screenOptions={({ navigation }) => sharedStackOptions(navigation)}>
       <Stack.Screen name="SavedHome" component={SavedScreen} options={{ title: 'Saved' }} />
       <Stack.Screen name="ListDetail" component={ListDetailScreen} options={{ title: 'List' }} />
-      <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
-      <Stack.Screen name="AccommodationDetail" component={AccommodationDetailScreen} options={{ title: 'Stay' }} />
-      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
-      <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+      {detailScreens(Stack)}
     </Stack.Navigator>
   );
 }
 
 function ItineraryStack() {
   return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerStyle: { backgroundColor: colors.primary },
-        headerTintColor: '#fff',
-        headerTitleStyle: { color: '#fff', fontWeight: '600' },
-        headerShadowVisible: false,
-        headerRight: () => <SettingsHeaderButton navigation={navigation} />,
-      })}
-    >
+    <Stack.Navigator screenOptions={({ navigation }) => sharedStackOptions(navigation)}>
       <Stack.Screen name="ItineraryList" component={ItineraryScreen} options={{ title: 'Your Itinerary' }} />
-      <Stack.Screen name="AttractionDetail" component={AttractionDetailScreen} options={{ title: 'Details' }} />
-      <Stack.Screen name="AccommodationDetail" component={AccommodationDetailScreen} options={{ title: 'Stay' }} />
-      <Stack.Screen name="Settings" component={SettingsScreen} options={{ title: 'Settings', headerRight: () => null }} />
-      <Stack.Screen name="Offline" component={OfflineScreen} options={{ title: 'Offline downloads', headerRight: () => null }} />
+      {detailScreens(Stack)}
     </Stack.Navigator>
   );
 }
 
-/**
- * Custom tab bar wrapper: renders the Now Playing strip directly above
- * the scrollable bottom tab bar.
- */
+function AccountStack() {
+  return (
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: colors.primary },
+        headerTintColor: '#fff',
+        headerTitleStyle: { color: '#fff', fontWeight: '600' },
+        headerShadowVisible: false,
+      }}
+    >
+      <Stack.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{ title: 'Account', headerRight: () => null }}
+      />
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{ title: 'Settings', headerRight: () => null }}
+      />
+    </Stack.Navigator>
+  );
+}
+
 function TabBarWithNowPlaying(props) {
   return (
     <View>
@@ -162,19 +148,18 @@ function TabBarWithNowPlaying(props) {
   );
 }
 
-export default function AppNavigator() {
+function MainTabs() {
   const compare = useCompare();
   const myLists = useMyLists();
   const wishlist = useWishlist();
+  const { isAuthenticated } = useAuth();
 
   const totalSaved = myLists.lists.reduce((sum, l) => sum + l.items.length, 0) + (wishlist.stats?.total || 0);
 
   return (
     <Tab.Navigator
       tabBar={(props) => <TabBarWithNowPlaying {...props} />}
-      screenOptions={{
-        headerShown: false,
-      }}
+      screenOptions={{ headerShown: false }}
     >
       <Tab.Screen name="Explore" component={ExploreStack} options={{ title: 'Explore' }} />
       <Tab.Screen name="Search" component={SearchStack} options={{ title: 'Search' }} />
@@ -198,6 +183,41 @@ export default function AppNavigator() {
       />
       <Tab.Screen name="Itinerary" component={ItineraryStack} options={{ title: 'Itinerary' }} />
       <Tab.Screen name="Guide" component={TourGuideScreen} options={{ title: 'Guide' }} />
+      <Tab.Screen
+        name="Account"
+        component={AccountStack}
+        options={{
+          title: isAuthenticated ? 'Account' : 'Sign in',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons
+              name={isAuthenticated ? 'person-circle' : 'person-circle-outline'}
+              size={size}
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tab.Navigator>
+  );
+}
+
+export default function AppNavigator() {
+  return (
+    <Root.Navigator screenOptions={{ headerShown: false }}>
+      <Root.Screen name="Main" component={MainTabs} />
+      <Root.Screen
+        name="Auth"
+        component={AuthScreen}
+        options={{
+          presentation: 'modal',
+          headerShown: true,
+          title: 'Sign in',
+          headerStyle: { backgroundColor: colors.primary },
+          headerTintColor: '#fff',
+          headerTitleStyle: { color: '#fff', fontWeight: '600' },
+          headerShadowVisible: false,
+        }}
+      />
+    </Root.Navigator>
   );
 }

@@ -29,7 +29,18 @@ config.resolver.nodeModulesPaths = [
   path.resolve(monorepoRoot, 'node_modules'),
 ];
 
-// 3. Block directories that cause EACCES / aren't needed for mobile
+// 3. On web, redirect react-native-maps to a no-op shim (it uses native-only APIs)
+config.resolver.resolveRequest = (context, moduleName, platform) => {
+  if (platform === 'web' && moduleName === 'react-native-maps') {
+    return {
+      type: 'sourceFile',
+      filePath: path.resolve(projectRoot, 'src', 'shims', 'react-native-maps.js'),
+    };
+  }
+  return context.resolveRequest(context, moduleName, platform);
+};
+
+// 4. Block directories that cause EACCES / aren't needed for mobile
 //    (other workspaces, database scripts, tools, etc.)
 config.resolver.blockList = [
   // Avoid scanning sibling workspace folders

@@ -5,34 +5,22 @@
  * WishlistContext syncs with Supabase so items saved from the Chrome
  * extension appear here, and items saved from the app appear in the extension.
  *
- * Requires the user to be authenticated via Supabase Auth.
+ * Auth state is provided by AuthContext (no duplicate listener needed here).
  */
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { AppState } from 'react-native';
 import { supabase } from '../lib/supabase';
+import { useAuth } from './AuthContext';
 
 const WishlistContext = createContext(null);
 
 export function WishlistProvider({ children }) {
+  const { session } = useAuth();
   const [items, setItems] = useState([]);
   const [stats, setStats] = useState({ total: 0, visited: 0, unvisited: 0, matched_to_poi: 0 });
   const [loading, setLoading] = useState(true);
-  const [session, setSession] = useState(null);
   const appState = useRef(AppState.currentState);
-
-  // ── Auth listener ───────────────────────────────────────
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session: s } }) => {
-      setSession(s);
-    });
-
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, s) => {
-      setSession(s);
-    });
-
-    return () => subscription?.unsubscribe();
-  }, []);
 
   // ── Fetch wishlist when session changes ─────────────────
   useEffect(() => {
