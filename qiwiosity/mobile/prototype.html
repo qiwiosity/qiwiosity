@@ -4831,10 +4831,10 @@ function openPoiDetail(id) {
     </div>
     <div class="poi-detail-section">
       <h3>${t('detail.book')}</h3>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;">
-        <a href="${affilViatorUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;">🎯 Viator</a>
-        <a href="${affilGYGUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 GetYourGuide</a>
-      </div>
+      ${(a.viatorUrl || a.gygUrl) ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;">
+        ${a.viatorUrl ? `<a href="${a.viatorUrl}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;">🎯 Viator</a>` : ''}
+        ${a.gygUrl ? `<a href="${a.gygUrl}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="flex:1;background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 GetYourGuide</a>` : ''}
+      </div>` : ''}
       <a href="${affilBookingUrl(a.name, affilRName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="margin-top:6px;display:block;width:100%;box-sizing:border-box;text-align:center;">🛏 ${t('book.nearby')}</a>
     </div>
     <div style="padding:10px 14px 14px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;">
@@ -8265,12 +8265,11 @@ function openPoiInfoWindow(a, marker) {
         <p style="margin:0;font-size:12px;line-height:1.4;color:var(--text);">${a.reviews.summary}</p>
       </div>` : ''}
       ${tagsHtml ? `<div class="tags" style="padding:0 14px 8px;">${tagsHtml}</div>` : ''}
-      <div class="affiliate-cta-row">
-        <a href="${affilViatorUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity">🎯 ${t('book.viator')}</a>
-        <a href="${affilGYGUrl(a.name, rName)}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 ${t('book.gyg')}</a>
-      </div>
+      ${(a.viatorUrl || a.gygUrl) ? `<div class="affiliate-cta-row">
+        ${a.viatorUrl ? `<a href="${a.viatorUrl}" target="_blank" rel="noopener sponsored" class="btn-book-activity">🎯 ${t('book.viator')}</a>` : ''}
+        ${a.gygUrl ? `<a href="${a.gygUrl}" target="_blank" rel="noopener sponsored" class="btn-book-activity" style="background:linear-gradient(135deg,#FF5533,#CC3311);">🎯 ${t('book.gyg')}</a>` : ''}
+      </div>` : ''}
       <div class="affiliate-strip">
-        <span>${t('book.tours')}</span>
         <a href="${affilBookingUrl(a.name, rName)}" target="_blank" rel="noopener sponsored">🛏 ${t('book.nearby')}</a>
       </div>
       <div class="echo-popup-strip" onclick="openEchoVerse('${a.id}')">
