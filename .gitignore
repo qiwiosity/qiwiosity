@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.production
+
+# Build outputs
+dist/
+build/
+.expo/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# React Native
+android/app/build/
+ios/Pods/
+ios/build/
+
+# Misc
+*.tgz
+.cache/
