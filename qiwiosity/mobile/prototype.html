@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="theme-color" content="#15888A" />
+<meta name="theme-color" content="#0F6F64" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Qiwiosity" />
-<meta name="description" content="Explore New Zealand with curated places, voice audio stories, trip planner and driving directions." />
-<meta property="og:title" content="Qiwiosity — Explore New Zealand" />
-<meta property="og:description" content="2,400+ curated NZ attractions · AI voice audio guides · Trip planner" />
+<meta name="description" content="New Zealand travel planning arranged by feeling, route timing, audio stories, stays, and local context." />
+<meta property="og:title" content="Qiwiosity — New Zealand, arranged by feeling" />
+<meta property="og:description" content="A cinematic atlas for New Zealand places, audio stories, stays, routes, and trip decisions." />
 <meta property="og:type" content="website" />
 <link rel="manifest" href="manifest.json" />
-<title>Qiwiosity — Explore New Zealand</title>
+<title>Qiwiosity — New Zealand, arranged by feeling</title>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <style>
   /* ============ CSS VARIABLES ============ */
@@ -2019,6 +2019,1505 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
   font-size: 10px; font-weight: 700; color: var(--muted);
   text-transform: uppercase; letter-spacing: 0.5px;
 }
+
+/* ============ PROFESSIONAL UI REFRESH ============ */
+:root {
+  --primary: #0F6F64;
+  --primary-dark: #0A5149;
+  --primary-deep: #073B35;
+  --accent: #C86F31;
+  --accent-soft: #F6E5D7;
+  --moss: #5C7A46;
+  --gold: #B8892F;
+  --bg: #F6F4EE;
+  --surface: #FFFDF8;
+  --surface2: #EFEEE7;
+  --text: #14231F;
+  --text2: #32413D;
+  --muted: #697771;
+  --border: #D9D6CA;
+  --shadow: 0 12px 28px rgba(31, 45, 41, 0.08);
+  --shadow-lg: 0 22px 60px rgba(24, 35, 32, 0.18);
+  --radius: 8px;
+  --header-h: 68px;
+}
+html.dark {
+  --primary: #4DB6A6;
+  --primary-dark: #2D8D81;
+  --primary-deep: #102B28;
+  --accent: #E69A5B;
+  --accent-soft: rgba(230, 154, 91, 0.14);
+  --moss: #99B77C;
+  --gold: #D7AD56;
+  --bg: #111715;
+  --surface: #18211E;
+  --surface2: #202B27;
+  --text: #F1F4EF;
+  --text2: #D5DDD6;
+  --muted: #98A49E;
+  --border: #2B3934;
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.34);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.48);
+}
+* { letter-spacing: 0 !important; }
+body {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.72), rgba(246, 244, 238, 0.98)),
+    var(--bg);
+  color: var(--text);
+}
+.app {
+  grid-template-columns: 352px minmax(0, 1fr) 360px;
+  background: var(--bg);
+}
+header {
+  background: rgba(255, 253, 248, 0.92);
+  color: var(--text);
+  border-bottom: 1px solid rgba(217, 214, 202, 0.88);
+  box-shadow: 0 10px 28px rgba(31, 45, 41, 0.08);
+  backdrop-filter: blur(18px);
+  padding: 0 18px;
+}
+html.dark header {
+  background: rgba(24, 33, 30, 0.94);
+  border-bottom-color: var(--border);
+}
+header h1 {
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 800;
+}
+header p { color: var(--muted) !important; }
+header .brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(15, 111, 100, 0.18), 0 8px 20px rgba(15, 111, 100, 0.16);
+}
+.header-search-bar {
+  height: 42px;
+  max-width: 560px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  padding: 0 14px;
+}
+.header-search-bar:focus-within {
+  border-color: rgba(15, 111, 100, 0.72);
+  box-shadow: 0 0 0 3px rgba(15, 111, 100, 0.12);
+}
+.header-search-bar input {
+  color: var(--text);
+  font-size: 14px;
+}
+header .tabs {
+  height: 42px;
+  align-items: center;
+  gap: 3px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+}
+header .tab {
+  height: 34px;
+  border-radius: 6px;
+  color: var(--muted);
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 750;
+}
+header .tab:hover {
+  background: rgba(15, 111, 100, 0.08);
+  color: var(--primary-dark);
+}
+header .tab.active {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(15, 111, 100, 0.2);
+}
+.header-actions {
+  gap: 6px;
+  margin-left: 0;
+}
+.header-btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text2);
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(31, 45, 41, 0.04);
+}
+.header-btn:hover {
+  background: rgba(15, 111, 100, 0.08);
+  border-color: rgba(15, 111, 100, 0.35);
+  color: var(--primary-dark);
+}
+.header-btn > span:nth-child(2) { display: none !important; }
+.sidebar,
+.itinerary-panel {
+  background: rgba(255, 253, 248, 0.96);
+  border-color: var(--border);
+}
+html.dark .sidebar,
+html.dark .itinerary-panel { background: rgba(24, 33, 30, 0.97); }
+.sidebar {
+  padding: 22px 18px 28px;
+  box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.55);
+}
+.section-label,
+.sidebar h2 {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.section-divider {
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  opacity: 1;
+}
+.search,
+.journey-start-input,
+.echo-name-input,
+.aigen-select,
+.elevenlabs-input-row input,
+.bg-input,
+.al-row select,
+.al-row input[type=text],
+.al-row input[type=number] {
+  background: var(--surface);
+  border-color: var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.74);
+}
+.search:focus,
+.journey-start-input:focus,
+.echo-name-input:focus,
+.aigen-select:focus,
+.elevenlabs-input-row input:focus {
+  border-color: rgba(15, 111, 100, 0.72);
+  box-shadow: 0 0 0 3px rgba(15, 111, 100, 0.12);
+}
+.discovery-heading {
+  padding: 13px 12px;
+  background: linear-gradient(135deg, rgba(15, 111, 100, 0.08), rgba(92, 122, 70, 0.08));
+  border: 1px solid rgba(15, 111, 100, 0.14);
+  border-radius: 8px;
+}
+.discovery-heading-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.discovery-heading-text h3 {
+  font-size: 15px;
+  font-weight: 800;
+}
+.discovery-row {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.discovery-row > button,
+.surprise-btn,
+.near-me-btn,
+.identify-btn,
+.budget-btn,
+.quiz-btn,
+.plan-show-all-toggle,
+.journey-start-bar,
+.filters-popover,
+.compare-hint-card,
+.al-section,
+.settings-toggle-row,
+.elevenlabs-panel,
+.quiz-stat-card {
+  border-radius: 8px;
+}
+.discovery-row > button {
+  min-height: 62px;
+  padding: 12px 13px;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  text-align: left;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 16px rgba(31, 45, 41, 0.05);
+}
+.discovery-row > button:hover {
+  border-color: rgba(15, 111, 100, 0.42);
+  box-shadow: 0 10px 24px rgba(31, 45, 41, 0.1);
+  transform: translateY(-1px);
+}
+.discovery-row .disco-icon {
+  grid-row: 1 / span 2;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface2);
+  border-radius: 8px;
+  font-size: 17px;
+}
+.discovery-row .disco-label {
+  align-self: end;
+  font-size: 13px;
+  color: var(--text);
+}
+.discovery-row .disco-sub {
+  align-self: start;
+  font-size: 11px;
+  color: var(--muted);
+  text-align: left;
+}
+.filters-toggle,
+#clearFiltersBtn,
+#clearAccomFiltersBtn,
+.saved-header-actions .pill-btn,
+.chip,
+.plan-cat-chip,
+.aigen-chip,
+.aigen-3btn,
+.echo-tag-chip,
+.speed-btn,
+#accomTypeChips .cat-chip,
+#accomRegionChips .cat-chip {
+  border-radius: 8px !important;
+  border-color: var(--border) !important;
+  background: var(--surface);
+  color: var(--text2);
+}
+.filters-toggle:hover,
+.chip:hover,
+.plan-cat-chip:hover,
+.aigen-chip:hover,
+.aigen-3btn:hover,
+.echo-tag-chip:hover,
+.speed-btn:hover,
+#accomTypeChips .cat-chip:hover,
+#accomRegionChips .cat-chip:hover {
+  border-color: rgba(15, 111, 100, 0.45) !important;
+  color: var(--primary-dark);
+  background: rgba(15, 111, 100, 0.07);
+}
+.filters-toggle.active,
+.chip.active,
+.plan-cat-chip.on,
+.aigen-chip.selected,
+.aigen-3btn.selected,
+.echo-tag-chip.selected,
+.speed-btn.active,
+#accomTypeChips .cat-chip.on,
+#accomRegionChips .cat-chip.on {
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+  color: #fff !important;
+}
+.cat,
+.region {
+  min-height: 44px;
+  padding: 10px 8px;
+  border-radius: 8px;
+  border-bottom: none;
+}
+.cat:hover,
+.region:hover {
+  background: rgba(15, 111, 100, 0.07);
+  color: var(--primary-dark);
+}
+.cat.on,
+.region.on {
+  background: rgba(15, 111, 100, 0.1);
+  color: var(--primary-dark);
+}
+.cat .swatch {
+  border-radius: 8px;
+  background: rgba(15, 111, 100, 0.1) !important;
+}
+.cat::after { color: var(--muted); }
+.region .poi-count,
+.filters-toggle .filters-badge,
+.poi-dist-badge {
+  background: rgba(15, 111, 100, 0.12);
+  color: var(--primary-dark);
+}
+#map { background: #DDE8E1; }
+.map-style-btn,
+.legend,
+.commentary-overlay,
+.toast {
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.map-style-btn {
+  width: 38px;
+  height: 38px;
+  background: var(--surface);
+  color: var(--text);
+}
+.map-style-btn.active {
+  background: var(--primary);
+  color: #fff;
+}
+.legend {
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+}
+.legend-header {
+  padding: 10px 12px 6px;
+}
+.btn,
+.btn-save,
+.popup-audio-btn,
+.btn-book-now,
+.btn-book-activity,
+.iti-nav-btn,
+.plan-stats .plan-nav-btn,
+.aigen-load-btn,
+.aigen-next-btn,
+.aigen-back-btn,
+.aigen-regen-btn,
+.echo-anon-btn,
+.voice-preview-btn {
+  border-radius: 8px;
+  font-weight: 750;
+}
+.btn.primary,
+.popup-audio-btn,
+.iti-nav-btn,
+.plan-stats .plan-nav-btn,
+.aigen-load-btn,
+.aigen-next-btn,
+.elevenlabs-input-row button {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(15, 111, 100, 0.18);
+}
+.btn.primary:hover,
+.popup-audio-btn:hover,
+.iti-nav-btn:hover,
+.plan-stats .plan-nav-btn:hover,
+.aigen-load-btn:hover,
+.aigen-next-btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+.btn.accent,
+.btn-book-activity,
+.echo-memory-play,
+.echo-record-btn {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 8px 18px rgba(200, 111, 49, 0.18);
+}
+.accom-card,
+.plan-stop-card,
+.iti-card,
+.wishlist-card,
+.vs-card,
+.aigen-result-day,
+.echo-memory-card,
+.voice-card,
+.admin-stat-card,
+.admin-panel-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(31, 45, 41, 0.05);
+}
+.accom-card:hover,
+.plan-stop-card:hover,
+.iti-card:hover,
+.wishlist-card:hover,
+.vs-card:hover,
+.aigen-result-day:hover,
+.echo-memory-card:hover {
+  border-color: rgba(15, 111, 100, 0.42);
+  box-shadow: 0 12px 28px rgba(31, 45, 41, 0.1);
+  transform: translateY(-1px);
+}
+.itinerary-list {
+  padding: 10px;
+}
+.iti-header-row {
+  min-height: 56px;
+  padding: 0 14px;
+  background: var(--surface);
+}
+.iti-header-row h2 {
+  font-size: 15px;
+  font-weight: 800;
+}
+.iti-day-tab,
+.iti-day-tab-add {
+  border-radius: 8px;
+}
+.popup-inner {
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.gm-style .gm-style-iw-c {
+  border-radius: 8px !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+.popup-hero {
+  height: 230px;
+  background: #CBD9D2;
+}
+.popup-hero-wrap::after {
+  height: 130px;
+  background: linear-gradient(to top, rgba(8, 24, 21, 0.82), rgba(8, 24, 21, 0));
+}
+.popup-hero-overlay h3 {
+  font-size: 17px;
+  font-weight: 850;
+}
+.popup-gallery-thumb,
+.wishlist-card-thumb,
+.poi-detail-gallery img {
+  border-radius: 8px;
+}
+.poi-detail-overlay {
+  background: var(--bg);
+}
+.poi-detail-header {
+  min-height: 62px;
+  background: rgba(255, 253, 248, 0.96);
+  border-bottom-color: var(--border);
+  box-shadow: 0 8px 20px rgba(31, 45, 41, 0.08);
+  backdrop-filter: blur(16px);
+}
+html.dark .poi-detail-header {
+  background: rgba(24, 33, 30, 0.96);
+}
+.poi-detail-back {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 18px;
+}
+.poi-detail-hero {
+  height: 300px;
+  background: #CBD9D2;
+}
+.poi-detail-section {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 22px 22px;
+  border-bottom-color: var(--border);
+}
+.poi-detail-section h3 {
+  color: var(--primary-dark);
+  font-size: 14px;
+}
+.poi-detail-commentary {
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--text2);
+}
+.settings-modal,
+.aigen-overlay,
+.decision-overlay,
+.echo-overlay {
+  background: var(--bg);
+}
+.settings-modal {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.settings-header {
+  border-radius: 8px 8px 0 0;
+}
+.splash {
+  background: #0B1715;
+}
+.splash-bg {
+  transform: scale(1.02);
+  filter: saturate(0.9) contrast(1.05);
+  background-position: center bottom;
+}
+.splash-overlay {
+  background:
+    linear-gradient(90deg, rgba(7, 24, 21, 0.82), rgba(7, 24, 21, 0.38) 48%, rgba(7, 24, 21, 0.62)),
+    rgba(7, 24, 21, 0.25);
+}
+.splash-content {
+  align-items: flex-start;
+  text-align: left;
+  max-width: 720px;
+  margin-right: min(34vw, 460px);
+  padding: 48px 34px;
+}
+.splash-logo-row {
+  margin-bottom: 24px;
+}
+.splash-logo {
+  border-radius: 8px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.34);
+}
+.splash-brand {
+  font-size: 30px;
+  font-weight: 850;
+}
+.splash-headline {
+  font-size: 48px;
+  line-height: 1.08;
+  font-weight: 850;
+  margin-bottom: 18px;
+}
+.splash-sub {
+  max-width: 560px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 16px;
+}
+.splash-features {
+  width: min(100%, 560px);
+  gap: 8px;
+  margin-bottom: 30px;
+}
+.splash-feature {
+  background: rgba(255, 253, 248, 0.12);
+  border-color: rgba(255, 253, 248, 0.22);
+  border-radius: 8px;
+  backdrop-filter: blur(14px);
+}
+.splash-begin {
+  border-radius: 8px;
+  background: #FFFDF8;
+  color: #0B2D28;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+.splash-begin:hover {
+  background: #F2EEE4;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+}
+.splash-footer {
+  color: rgba(255, 255, 255, 0.58);
+}
+@media (max-width: 1200px) {
+  .app {
+    grid-template-columns: 340px minmax(0, 1fr);
+    grid-template-rows: var(--header-h) 1fr;
+  }
+  .itinerary-panel { display: none; }
+  header .tabs { overflow-x: auto; max-width: 46vw; scrollbar-width: none; }
+  header .tabs::-webkit-scrollbar { display: none; }
+}
+@media (max-width: 980px) {
+  .app { grid-template-columns: 330px minmax(0, 1fr); }
+  .header-search-bar { max-width: 360px; }
+  .header-actions { gap: 4px; }
+}
+@media (max-width: 760px) {
+  :root { --header-h: 58px; }
+  header {
+    padding: 0 10px;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .header-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .splash-content {
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    padding: 34px 22px;
+  }
+  .splash-headline {
+    font-size: 34px;
+  }
+  .splash-sub {
+    font-size: 14px;
+  }
+  .splash-features {
+    grid-template-columns: 1fr;
+  }
+}
+html.qw-mobile header {
+  height: 58px !important;
+  background: rgba(255, 253, 248, 0.94) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+html.dark.qw-mobile header {
+  background: rgba(24, 33, 30, 0.96) !important;
+}
+html.qw-mobile .header-search-bar { display: none !important; }
+html.qw-mobile .brand-mark {
+  width: 34px !important;
+  height: 34px !important;
+}
+html.qw-mobile .header-actions .header-btn:nth-child(-n+3) {
+  display: none !important;
+}
+html.qw-mobile .sidebar {
+  background: var(--surface) !important;
+  border-top: 1px solid var(--border) !important;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: 0 -18px 44px rgba(24, 35, 32, 0.2) !important;
+}
+html.qw-mobile .sidebar::before {
+  background: var(--border);
+}
+.mobile-nav {
+  height: 66px;
+  background: rgba(255, 253, 248, 0.96);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -10px 28px rgba(31, 45, 41, 0.08);
+  backdrop-filter: blur(16px);
+}
+html.dark .mobile-nav {
+  background: rgba(24, 33, 30, 0.96) !important;
+}
+.mobile-nav-btn {
+  color: var(--muted);
+  font-size: 9px;
+}
+.mobile-nav-btn.mob-active {
+  color: var(--primary-dark);
+}
+.mobile-nav-btn.mob-active::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 28px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--primary);
+}
+html.dark .mobile-nav-btn.mob-active { color: var(--primary); }
+
+/* ============ AOTEAROA EXPEDITION REDESIGN ============ */
+:root {
+  --primary: #1AA381;
+  --primary-dark: #0B4B3C;
+  --primary-deep: #071B18;
+  --accent: #F4C542;
+  --bg: #071B18;
+  --surface: #FFF8E8;
+  --surface2: #EAF5EF;
+  --text: #0B1614;
+  --text2: #32433F;
+  --muted: #65756F;
+  --border: rgba(7, 27, 24, 0.14);
+  --glacier: #85D9E8;
+  --ember: #F15C3B;
+  --fern: #8DC63F;
+  --shell: #FFF8E8;
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.34);
+  --radius: 8px;
+  --header-h: 76px;
+}
+
+html,
+body {
+  background:
+    linear-gradient(90deg, rgba(255, 248, 232, 0.045) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 248, 232, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, #071B18 0%, #0A2923 54%, #071B18 100%);
+  background-size: 56px 56px, 56px 56px, auto;
+}
+
+.app {
+  grid-template-columns: 360px minmax(0, 1fr) 330px;
+  gap: 12px;
+  padding: 12px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(133, 217, 232, 0.16), transparent 30%),
+    radial-gradient(circle at 82% 6%, rgba(244, 197, 66, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(7, 27, 24, 0.98), rgba(8, 30, 26, 0.98));
+}
+
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 248, 232, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 248, 232, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(180deg, black, transparent 82%);
+}
+
+.app > header,
+.app > .sidebar,
+.app > main,
+.app > .itinerary-panel {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  height: var(--header-h);
+  min-height: var(--header-h);
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 248, 232, 0.16);
+  border-radius: 8px;
+  background: rgba(7, 27, 24, 0.82);
+  color: var(--shell);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(18px);
+}
+
+header h1 {
+  font-size: 15px;
+  color: var(--shell);
+}
+
+header .brand-mark {
+  width: 42px;
+  height: 42px;
+  padding: 4px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.header-search-bar {
+  max-width: 500px;
+  min-height: 44px;
+  border: 1px solid rgba(255, 248, 232, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 248, 232, 0.12);
+  box-shadow: none;
+}
+
+.header-search-icon {
+  color: var(--accent);
+}
+
+.header-search-bar input {
+  color: var(--shell);
+  font-weight: 750;
+}
+
+.header-search-bar input::placeholder {
+  color: rgba(255, 248, 232, 0.58);
+}
+
+header .tabs {
+  gap: 7px;
+  height: 44px;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid rgba(255, 248, 232, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 248, 232, 0.08);
+}
+
+header .tab {
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid rgba(255, 248, 232, 0.16);
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 248, 232, 0.74);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+header .tab:hover {
+  background: rgba(255, 248, 232, 0.12);
+}
+
+header .tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #071B18;
+}
+
+.header-actions {
+  gap: 6px;
+}
+
+.header-btn {
+  min-width: 52px;
+  min-height: 42px;
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 248, 232, 0.14);
+  border-radius: 8px;
+  color: rgba(255, 248, 232, 0.76);
+  background: rgba(255, 248, 232, 0.07);
+}
+
+.header-btn:hover {
+  background: rgba(255, 248, 232, 0.14);
+  color: var(--shell);
+}
+
+.sidebar,
+.itinerary-panel {
+  --surface: rgba(255, 248, 232, 0.08);
+  --surface2: rgba(255, 248, 232, 0.13);
+  --text: #FFF8E8;
+  --text2: rgba(255, 248, 232, 0.78);
+  --muted: rgba(255, 248, 232, 0.58);
+  --border: rgba(255, 248, 232, 0.15);
+  color: var(--text);
+  border: 1px solid rgba(255, 248, 232, 0.15);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 232, 0.09), rgba(255, 248, 232, 0.04)),
+    rgba(7, 27, 24, 0.86);
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+.sidebar {
+  padding: 18px 16px 22px;
+}
+
+.sidebar::-webkit-scrollbar,
+.itinerary-list::-webkit-scrollbar,
+#accomList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.itinerary-list::-webkit-scrollbar-thumb,
+#accomList::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(255, 248, 232, 0.18);
+}
+
+.section-label,
+.filters-popover .fp-label {
+  color: var(--glacier);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.13em;
+}
+
+.search,
+.journey-start-input,
+.auth-field input,
+.al-row select,
+.al-row input[type=text],
+.al-row input[type=number] {
+  border-radius: 8px;
+}
+
+.sidebar .search,
+.sidebar .journey-start-input {
+  min-height: 46px;
+  border: 1px solid rgba(255, 248, 232, 0.16);
+  background: rgba(255, 248, 232, 0.1);
+  color: var(--shell);
+  font-weight: 760;
+  box-shadow: none;
+}
+
+.sidebar .search::placeholder,
+.sidebar .journey-start-input::placeholder {
+  color: rgba(255, 248, 232, 0.46);
+}
+
+.sidebar .search:focus,
+.sidebar .journey-start-input:focus {
+  border-color: rgba(133, 217, 232, 0.72);
+  background: rgba(255, 248, 232, 0.14);
+  box-shadow: 0 0 0 3px rgba(133, 217, 232, 0.16);
+}
+
+.discovery-heading {
+  padding: 16px;
+  background:
+    linear-gradient(135deg, rgba(133, 217, 232, 0.14), rgba(244, 197, 66, 0.1)),
+    rgba(255, 248, 232, 0.06);
+  border-color: rgba(255, 248, 232, 0.16);
+}
+
+.discovery-heading-icon {
+  color: #071B18;
+  background: var(--accent);
+  box-shadow: none;
+}
+
+.discovery-row > button {
+  min-height: 78px;
+  background:
+    linear-gradient(135deg, rgba(255, 248, 232, 0.11), rgba(255, 248, 232, 0.06)),
+    rgba(255, 248, 232, 0.04);
+  border-color: rgba(255, 248, 232, 0.16);
+  color: var(--shell);
+}
+
+.discovery-row > button:hover {
+  border-color: rgba(244, 197, 66, 0.64);
+  background: rgba(255, 248, 232, 0.13);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.2);
+}
+
+.discovery-row .disco-icon {
+  background: var(--accent);
+  color: #071B18;
+}
+
+.discovery-row > button:nth-child(2) .disco-icon {
+  background: var(--glacier);
+}
+
+.discovery-row > button:nth-child(3) .disco-icon {
+  background: var(--ember);
+  color: white;
+}
+
+.discovery-row .disco-label {
+  color: var(--shell);
+}
+
+.discovery-row .disco-sub {
+  color: rgba(255, 248, 232, 0.58);
+}
+
+.filters-toggle,
+#clearFiltersBtn,
+#clearAccomFiltersBtn,
+.chip,
+.plan-cat-chip,
+.aigen-chip,
+.aigen-3btn,
+.echo-tag-chip,
+.speed-btn,
+#accomTypeChips .cat-chip,
+#accomRegionChips .cat-chip,
+.iti-day-tab,
+.iti-day-tab-add {
+  min-height: 34px;
+  border-color: rgba(255, 248, 232, 0.16) !important;
+  background: rgba(255, 248, 232, 0.08) !important;
+  color: var(--text2) !important;
+}
+
+.filters-toggle:hover,
+.chip:hover,
+.plan-cat-chip:hover,
+.aigen-chip:hover,
+.aigen-3btn:hover,
+.echo-tag-chip:hover,
+.speed-btn:hover,
+#accomTypeChips .cat-chip:hover,
+#accomRegionChips .cat-chip:hover,
+.iti-day-tab:hover,
+.iti-day-tab-add:hover {
+  border-color: rgba(244, 197, 66, 0.62) !important;
+  color: var(--shell) !important;
+  background: rgba(255, 248, 232, 0.13) !important;
+}
+
+.filters-toggle.active,
+.chip.active,
+.plan-cat-chip.on,
+.aigen-chip.selected,
+.aigen-3btn.selected,
+.echo-tag-chip.selected,
+.speed-btn.active,
+#accomTypeChips .cat-chip.on,
+#accomRegionChips .cat-chip.on,
+.iti-day-tab.active {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #071B18 !important;
+}
+
+.cat,
+.region,
+.accom-card,
+.plan-stop-card,
+.iti-card,
+.wishlist-card,
+.compare-card,
+.vs-card,
+.aigen-result-day,
+.echo-memory-card,
+.voice-card,
+.quiz-stat-card,
+.compare-hint-card,
+.journey-start-bar,
+.plan-show-all-toggle,
+.al-section {
+  border: 1px solid rgba(255, 248, 232, 0.14);
+  background: rgba(255, 248, 232, 0.075);
+  color: var(--text);
+  box-shadow: none;
+}
+
+.cat:hover,
+.region:hover,
+.accom-card:hover,
+.plan-stop-card:hover,
+.iti-card:hover,
+.wishlist-card:hover,
+.compare-card:hover,
+.vs-card:hover,
+.aigen-result-day:hover,
+.echo-memory-card:hover {
+  border-color: rgba(244, 197, 66, 0.55);
+  background: rgba(255, 248, 232, 0.12);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.18);
+}
+
+.cat.on,
+.region.on {
+  background: rgba(244, 197, 66, 0.16);
+  border-color: rgba(244, 197, 66, 0.5);
+  color: var(--shell);
+}
+
+.cat .swatch {
+  box-shadow: 0 0 0 4px rgba(255, 248, 232, 0.08);
+}
+
+.region .poi-count,
+.filters-toggle .filters-badge,
+.poi-dist-badge {
+  background: rgba(133, 217, 232, 0.18);
+  color: var(--glacier);
+}
+
+.btn,
+.btn-save,
+.popup-audio-btn,
+.btn-book-now,
+.btn-book-activity,
+.iti-nav-btn,
+.plan-stats .plan-nav-btn,
+.budget-btn,
+.quiz-btn,
+.driving-mode-btn,
+.aigen-load-btn,
+.aigen-next-btn,
+.aigen-back-btn,
+.aigen-regen-btn,
+.echo-anon-btn,
+.voice-preview-btn,
+.auth-submit {
+  border-radius: 8px;
+  font-weight: 850;
+}
+
+.btn.primary,
+.popup-audio-btn,
+.iti-nav-btn,
+.plan-stats .plan-nav-btn,
+.aigen-load-btn,
+.aigen-next-btn,
+.auth-submit {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #071B18;
+  box-shadow: 0 12px 26px rgba(244, 197, 66, 0.18);
+}
+
+.btn.primary:hover,
+.popup-audio-btn:hover,
+.iti-nav-btn:hover,
+.plan-stats .plan-nav-btn:hover,
+.aigen-load-btn:hover,
+.aigen-next-btn:hover,
+.auth-submit:hover {
+  background: #FFD95A;
+  border-color: #FFD95A;
+  color: #071B18;
+}
+
+.btn.accent,
+.btn-book-activity,
+.echo-memory-play,
+.echo-record-btn,
+.budget-btn,
+.quiz-btn {
+  background: var(--ember);
+  border-color: var(--ember);
+  color: white;
+  box-shadow: 0 12px 26px rgba(241, 92, 59, 0.18);
+}
+
+.itinerary-panel {
+  display: flex;
+  overflow: hidden;
+}
+
+.iti-header-row {
+  min-height: 62px;
+  background:
+    linear-gradient(135deg, rgba(133, 217, 232, 0.11), rgba(255, 248, 232, 0.05));
+  border-bottom: 1px solid rgba(255, 248, 232, 0.14);
+}
+
+.iti-header-row h2 {
+  color: var(--shell);
+  letter-spacing: 0;
+}
+
+.iti-clear-btn,
+.iti-card-remove,
+.saved-header-actions .more-btn {
+  color: rgba(255, 248, 232, 0.58);
+}
+
+.itinerary-list .empty {
+  color: rgba(255, 248, 232, 0.6);
+}
+
+main {
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid rgba(255, 248, 232, 0.15);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(133, 217, 232, 0.12) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(133, 217, 232, 0.1) 1px, transparent 1px),
+    #08241F;
+  background-size: 54px 54px, 54px 54px, auto;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.22);
+}
+
+main::before {
+  content: "AOTEAROA ATLAS";
+  position: absolute;
+  left: 28px;
+  top: 24px;
+  z-index: 7;
+  padding: 8px 10px;
+  border: 1px solid rgba(255, 248, 232, 0.14);
+  border-radius: 8px;
+  background: rgba(7, 27, 24, 0.74);
+  color: rgba(255, 248, 232, 0.8);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: 0.14em;
+  pointer-events: none;
+  backdrop-filter: blur(14px);
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 248, 232, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(133, 217, 232, 0.16), rgba(141, 198, 63, 0.1)),
+    #DCEFE8;
+  filter: saturate(0.95) contrast(1.02);
+  overflow: hidden;
+}
+
+.map-style-btn,
+.legend,
+.commentary-overlay,
+.toast {
+  border-color: rgba(255, 248, 232, 0.16);
+  background: rgba(7, 27, 24, 0.82);
+  color: var(--shell);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(16px);
+}
+
+.map-style-btn.active {
+  background: var(--accent);
+  color: #071B18;
+}
+
+.legend-header {
+  color: var(--shell);
+}
+
+.legend-body {
+  color: rgba(255, 248, 232, 0.72);
+}
+
+.legend-body,
+.legend-body div,
+.legend-body span,
+.legend-body label {
+  color: rgba(255, 248, 232, 0.76) !important;
+}
+
+.filters-popover,
+.search-suggestions,
+.saved-more-menu,
+.similar-sheet,
+.settings-modal,
+.auth-modal,
+.onboarding-card {
+  border: 1px solid rgba(7, 27, 24, 0.14);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.popup-inner,
+.gm-style .gm-style-iw-c {
+  border-radius: 8px !important;
+}
+
+.popup-hero,
+.poi-detail-hero {
+  background:
+    linear-gradient(180deg, rgba(7, 27, 24, 0.06), rgba(7, 27, 24, 0.58)),
+    url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+}
+
+.poi-detail-overlay {
+  background:
+    linear-gradient(180deg, #071B18, #0B2924);
+}
+
+.poi-detail-header {
+  background: rgba(7, 27, 24, 0.9);
+  border-bottom: 1px solid rgba(255, 248, 232, 0.14);
+}
+
+.poi-detail-header,
+.poi-detail-header * {
+  color: var(--shell) !important;
+}
+
+.poi-detail-back {
+  border-color: rgba(255, 248, 232, 0.16);
+  background: rgba(255, 248, 232, 0.08);
+}
+
+.poi-detail-section {
+  border-bottom-color: rgba(255, 248, 232, 0.12);
+  color: var(--shell);
+}
+
+.poi-detail-section h3 {
+  color: var(--accent);
+}
+
+.poi-detail-commentary,
+.poi-detail-section p,
+.poi-detail-section span {
+  color: rgba(255, 248, 232, 0.78);
+}
+
+.splash {
+  background: #071B18;
+}
+
+.splash-bg {
+  background:
+    linear-gradient(90deg, rgba(7, 27, 24, 0.94) 0%, rgba(7, 27, 24, 0.66) 42%, rgba(7, 27, 24, 0.08) 100%),
+    linear-gradient(180deg, rgba(7, 27, 24, 0.03), rgba(7, 27, 24, 0.74)),
+    url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+  filter: saturate(1.06) contrast(1.04);
+}
+
+.splash-overlay {
+  background:
+    linear-gradient(90deg, rgba(255, 248, 232, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 248, 232, 0.065) 1px, transparent 1px);
+  background-size: 74px 74px;
+}
+
+.splash-content {
+  align-items: flex-start;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 0 0;
+  padding: 54px 52px;
+}
+
+.splash-content::before {
+  content: "NO BOUNDARY NEW ZEALAND";
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 10px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  background: var(--ember);
+  color: white;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.13em;
+}
+
+.splash-logo-row {
+  order: -2;
+  margin-bottom: 22px;
+}
+
+.splash-logo {
+  width: 46px;
+  height: 46px;
+  padding: 4px;
+  background: white;
+  border-radius: 8px;
+}
+
+.splash-brand {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.splash-headline {
+  max-width: 860px;
+  font-size: clamp(58px, 8.8vw, 132px);
+  line-height: 0.84;
+  letter-spacing: 0;
+  margin-bottom: 22px;
+}
+
+.splash-sub {
+  max-width: 680px;
+  color: rgba(255, 248, 232, 0.78);
+  font-size: 18px;
+}
+
+.splash-features {
+  grid-template-columns: repeat(4, minmax(132px, 1fr));
+  width: min(100%, 820px);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.splash-feature {
+  min-height: 98px;
+  padding: 13px;
+  border-radius: 8px;
+  border-color: rgba(255, 248, 232, 0.18);
+  background: rgba(7, 27, 24, 0.64);
+  color: rgba(255, 248, 232, 0.8);
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.splash-begin {
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: 8px;
+  background: var(--shell);
+  color: #071B18;
+  font-weight: 950;
+}
+
+.splash-footer {
+  color: rgba(255, 248, 232, 0.54);
+}
+
+html.qw-mobile header {
+  background: rgba(7, 27, 24, 0.92) !important;
+  border-bottom: 1px solid rgba(255, 248, 232, 0.14) !important;
+}
+
+html.qw-mobile header h1,
+html.qw-mobile header p {
+  color: var(--shell) !important;
+}
+
+html.qw-mobile .sidebar {
+  background: rgba(7, 27, 24, 0.94) !important;
+  border-top: 1px solid rgba(255, 248, 232, 0.14) !important;
+}
+
+html.qw-mobile .mobile-nav {
+  background: rgba(7, 27, 24, 0.94);
+  border-top: 1px solid rgba(255, 248, 232, 0.14);
+}
+
+html.qw-mobile .mobile-nav-btn {
+  color: rgba(255, 248, 232, 0.6);
+}
+
+html.qw-mobile .mobile-nav-btn.mob-active {
+  color: var(--accent);
+}
+
+html.qw-mobile .mobile-nav-btn.mob-active::before {
+  background: var(--accent);
+}
+
+@media (max-width: 1200px) {
+  .app {
+    grid-template-columns: 350px minmax(0, 1fr);
+  }
+
+  header .tabs {
+    max-width: 43vw;
+  }
+}
+
+@media (max-width: 980px) {
+  .app {
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .header-actions .header-btn span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --header-h: 60px;
+  }
+
+  .app {
+    padding: 0;
+    gap: 0;
+  }
+
+  header {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+  }
+
+  main {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+  }
+
+  #map {
+    border: 0;
+    border-radius: 0;
+  }
+
+  main::before {
+    top: 72px;
+    left: 12px;
+  }
+
+  .splash-content {
+    align-items: flex-start;
+    text-align: left;
+    padding: 34px 22px;
+  }
+
+  .splash-headline {
+    font-size: 52px;
+  }
+
+  .splash-features {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 <body>
@@ -2032,16 +3531,16 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
       <img src="./assets/logo-mark.png" alt="Qiwiosity" class="splash-logo" />
       <span class="splash-brand">Qiwiosity</span>
     </div>
-    <h1 class="splash-headline" data-i18n="splash.headline">Explore New Zealand<br>with Curiosity</h1>
-    <p class="splash-sub" data-i18n="splash.sub">Curated places · Voice audio stories · Trip planner · Driving directions</p>
+    <h1 class="splash-headline" data-i18n="splash.headline">New Zealand,<br>arranged by feeling.</h1>
+    <p class="splash-sub" data-i18n="splash.sub">Choose the trip energy you want, then let Qiwiosity shape places, stories, stays, weather windows, and road time around it.</p>
     <div class="splash-features">
-      <div class="splash-feature" data-i18n="splash.f1">🗺 Interactive map · 2,400+ attractions</div>
-      <div class="splash-feature" data-i18n="splash.f2">🎧 AI voice-narrated audio guides</div>
-      <div class="splash-feature" data-i18n="splash.f3">📋 Drag-and-drop trip planner</div>
-      <div class="splash-feature" data-i18n="splash.f4">🛏 382 places to stay across NZ</div>
+      <div class="splash-feature" data-i18n="splash.f1">Field-guide map room · 2,400+ places</div>
+      <div class="splash-feature" data-i18n="splash.f2">Audio stories before you arrive</div>
+      <div class="splash-feature" data-i18n="splash.f3">Weather-smart route and day planner</div>
+      <div class="splash-feature" data-i18n="splash.f4">Stays matched to pace and place</div>
     </div>
-    <button class="splash-begin" onclick="dismissSplash()" data-i18n="splash.begin">Begin Exploring</button>
-    <p class="splash-footer">AOTEAROA · AWAITS</p>
+    <button class="splash-begin" onclick="dismissSplash()" data-i18n="splash.begin">Find your New Zealand</button>
+    <p class="splash-footer">AOTEAROA / FIELD NOTES FOR THE ROAD</p>
   </div>
 </div>
 
@@ -2054,19 +3553,19 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
       <img class="brand-mark" src="./assets/logo-mark.png" alt="Qiwiosity" />
       <div style="display:flex;flex-direction:column;gap:1px;">
         <h1>Qiwiosity</h1>
-        <p style="margin:0;font-size:10px;color:rgba(255,255,255,0.75);letter-spacing:0.4px;font-weight:600;">Curious by Nature</p>
+        <p style="margin:0;font-size:10px;color:rgba(255,255,255,0.75);letter-spacing:0.4px;font-weight:600;">Arrive curious</p>
       </div>
     </div>
     <!-- Search bar -->
     <div class="header-search-bar" onclick="document.getElementById('headerSearchInput').focus()">
       <span class="header-search-icon">🔍</span>
-      <input id="headerSearchInput" type="text" placeholder="Search places, categories, regions..." autocomplete="off" />
+      <input id="headerSearchInput" type="text" placeholder="Search a feeling, region, story, or road..." autocomplete="off" />
     </div>
     <!-- View tabs -->
     <div class="tabs">
-      <button class="tab active" data-view="explore" data-i18n="tab.explore">Explore</button>
-      <button class="tab" data-view="stay" data-i18n="tab.stay">Stay</button>
-      <button class="tab" data-view="plan" data-i18n="tab.plan">Plan</button>
+      <button class="tab active" data-view="explore" data-i18n="tab.explore">Atlas</button>
+      <button class="tab" data-view="stay" data-i18n="tab.stay">Stays</button>
+      <button class="tab" data-view="plan" data-i18n="tab.plan">Route</button>
       <button class="tab" data-view="compare">⚖ Compare<span class="compare-badge" id="compareBadge" style="display:none;margin-left:4px;font-size:9px;">0</span></button>
       <button class="tab" data-view="saved">❤ Saved<span class="compare-badge" id="savedBadge" style="display:none;margin-left:4px;background:#e04f4f;font-size:9px;">0</span></button>
       <button class="tab" data-view="quiz">🧠 Quiz</button>
@@ -2111,25 +3610,25 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
       <div class="discovery-heading">
         <div class="discovery-heading-icon">🧭</div>
         <div class="discovery-heading-text">
-          <h3>Discovery</h3>
-          <p>Find places in your way</p>
+          <h3>Travel Pulse</h3>
+          <p>Pick what the day should feel like</p>
         </div>
       </div>
       <div class="discovery-row">
         <button class="surprise-btn" onclick="surpriseMe()">
           <span class="disco-icon">🎁</span>
           <span class="disco-label" data-i18n="explore.surprise">Surprise Me</span>
-          <span class="disco-sub">Get random recommendations</span>
+          <span class="disco-sub">Let the atlas choose a mood-fit stop</span>
         </button>
         <button class="near-me-btn" id="nearMeBtn" onclick="toggleNearMe()">
           <span class="disco-icon">📍</span>
           <span class="disco-label" data-i18n="explore.nearMe">Near Me</span>
-          <span class="disco-sub">Explore places around you</span>
+          <span class="disco-sub">Find the strongest nearby moment</span>
         </button>
         <button class="identify-btn" onclick="openIdentify()">
           <span class="disco-icon">📸</span>
           <span class="disco-label" data-i18n="identify.cta">Snap &amp; Identify</span>
-          <span class="disco-sub">Point. Snap. Discover.</span>
+          <span class="disco-sub">Turn a photo into a place story</span>
         </button>
       </div>
 
@@ -2186,7 +3685,7 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
       <div style="display:flex;align-items:center;justify-content:space-between;margin:20px 0 0;">
         <div style="display:flex;align-items:center;gap:8px;">
           <span style="font-size:16px;">☰</span>
-          <span style="font-size:14px;font-weight:700;color:var(--text);" data-i18n="explore.categories">Categories</span>
+          <span style="font-size:14px;font-weight:700;color:var(--text);" data-i18n="explore.categories">Travel Moods</span>
         </div>
         <span style="font-size:14px;color:var(--muted);">∧</span>
       </div>
@@ -2207,7 +3706,7 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
       <div class="region-list" id="regionList"></div>
     </div>
     <div class="view" id="view-stay">
-      <h2 data-i18n="stay.title">Where to Stay</h2>
+      <h2 data-i18n="stay.title">Sleep Near the Story</h2>
       <input class="search" id="accomSearch" placeholder="Search accommodations..." data-i18n-ph="stay.searchPh" style="margin-bottom:10px;" />
 
       <div class="section-divider"></div>
@@ -2438,13 +3937,13 @@ html.dark .compare-hint-card { background: rgba(27,163,165,0.08); border-color: 
 
   <aside class="itinerary-panel">
     <div class="iti-header-row">
-      <h2>Your Trip</h2>
+      <h2>Day Shape</h2>
       <button class="iti-day-tab-add" id="itiAddDayBtn" onclick="addDay()" style="display:none;">＋ Day</button>
       <button class="iti-clear-btn" onclick="clearItinerary()" title="Clear all stops">🗑</button>
     </div>
     <div id="itiDayTabs" class="iti-day-tabs" style="display:none;"></div>
     <div class="itinerary-list" id="itineraryList">
-      <div class="empty">Nothing planned yet.<br>Tap ＋ on any map pin to add stops.</div>
+      <div class="empty">Nothing shaped yet.<br>Tap + on any map pin to build the day.</div>
     </div>
     <div class="iti-stats-row" id="itiStatsRow" style="display:none;">
       <div class="iti-stats-toggle" onclick="toggleItiStats()">
@@ -3988,16 +5487,16 @@ function jumpToPoi(id) {
 // ============ INTERNATIONALISATION (i18n) ============
 const LANG_DICT = {
   en: {
-    'splash.headline': 'Explore New Zealand<br>with Curiosity',
-    'splash.sub': 'Curated places · Voice audio stories · Trip planner · Driving directions',
-    'splash.f1': '🗺 Interactive map · 2,400+ attractions',
-    'splash.f2': '🎧 AI voice-narrated audio guides',
-    'splash.f3': '📋 Drag-and-drop trip planner',
-    'splash.f4': '🛏 382 places to stay across NZ',
-    'splash.begin': 'Begin Exploring',
-    'tab.explore': 'Explore', 'tab.stay': 'Stay', 'tab.plan': 'Plan', 'tab.quiz': 'Quiz',
+    'splash.headline': 'New Zealand,<br>arranged by feeling.',
+    'splash.sub': 'Choose the trip energy you want, then let Qiwiosity shape places, stories, stays, weather windows, and road time around it.',
+    'splash.f1': 'Field-guide map room · 2,400+ places',
+    'splash.f2': 'Audio stories before you arrive',
+    'splash.f3': 'Weather-smart route and day planner',
+    'splash.f4': 'Stays matched to pace and place',
+    'splash.begin': 'Find your New Zealand',
+    'tab.explore': 'Atlas', 'tab.stay': 'Stays', 'tab.plan': 'Route', 'tab.quiz': 'Quiz',
     'tab.compare': '⚖ Compare', 'tab.saved': '❤ Saved',
-    'stay.title': 'Where to Stay', 'stay.searchPh': 'Search accommodations...',
+    'stay.title': 'Sleep Near the Story', 'stay.searchPh': 'Search stays, towns, regions...',
     'settings.title': 'Settings', 'settings.language': 'Language',
     'settings.langDesc': 'Translate the app interface. POI names & commentary stay in English; tap 🌐 on any place for instant translation.',
     'settings.audio': 'Audio Guide Voice', 'settings.appearance': 'Appearance',
@@ -4007,7 +5506,7 @@ const LANG_DICT = {
     'poi.add': '＋ Add to Itinerary', 'poi.added': '✓ In Itinerary',
     'poi.more': '📖 More', 'poi.save': 'Save', 'poi.drive': '🧭 Drive',
     'poi.similar': 'Similar', 'poi.share': '📤 Share', 'poi.compare': '⚖ Compare',
-    'explore.categories': 'Categories', 'explore.searchPh': 'Search attractions...',
+    'explore.categories': 'Travel Moods', 'explore.searchPh': 'Search places, stories, roads...',
     'plan.startLabel': 'STARTING POINT', 'plan.startPh': 'Type a city or address in NZ…',
     'plan.aiGen': '✨ Generate AI Trip', 'plan.drivingMode': '🚗 Driving Mode',
     'plan.showNearby': 'Show nearby attractions on map', 'plan.templates': 'Quick templates',
@@ -4040,7 +5539,7 @@ const LANG_DICT = {
     'detail.directions': 'Get Directions', 'detail.seeMap': 'See on Map', 'detail.moreRegion': 'More from Region',
     'detail.comparing': 'Comparing', 'detail.book': 'Book Activities',
     'detail.saved': 'Saved', 'detail.free': 'Free', 'detail.reviews': 'reviews',
-    'explore.surprise': '🎲 Surprise Me', 'explore.nearMe': '📍 Near Me',
+    'explore.surprise': 'Surprise Me', 'explore.nearMe': 'Near Me',
     'identify.title': '📸 Snap & Identify', 'identify.cta': '📸 Snap & Identify a Place',
     'identify.intro': 'Take a photo of any landmark, statue, or place — or upload one — and AI will identify it.',
     'identify.takePhoto': 'Take Photo', 'identify.upload': 'Upload Image',
@@ -8017,7 +9516,7 @@ function renderItinerary() {
   }
 
   if (state.itinerary.length === 0) {
-    list.innerHTML = '<div class="empty">Nothing planned yet.<br>Tap ＋ on any map pin to add stops.</div>';
+    list.innerHTML = '<div class="empty">Nothing shaped yet.<br>Tap + on any map pin to build the day.</div>';
     statsRow.style.display = 'none';
     dayTabsEl.style.display = 'none';
     addDayBtn.style.display = 'none';
@@ -10814,10 +12313,10 @@ function saveEchoMemory() {
 
 // ============ ONBOARDING ============
 const ONBOARDING_SLIDES = [
-  { icon: '🗺️', title: 'Welcome to Qiwiosity', desc: 'Your pocket guide to 2,400+ handpicked places across Aotearoa New Zealand.' },
-  { icon: '🔍', title: 'Explore the Map', desc: 'Browse the interactive map or list. Filter by category — Nature, Culture, Adventure and more.' },
-  { icon: '📋', title: 'Plan Your Trip', desc: 'Add stops to a multi-day itinerary. Get drive times between stops, reorder, and route the full day in-app.' },
-  { icon: '⚖️', title: 'Compare & Decide', desc: "Can't choose? Add places to Compare, then run Decision Mode — it finds your winner in under a minute." },
+  { icon: '🗺️', title: 'Welcome to the Atlas', desc: 'Start with how you want New Zealand to feel: wild, calm, kai-led, cultural, family-paced, or full of motion.' },
+  { icon: '🔍', title: 'Find the Right Moment', desc: 'Browse places by region, story, weather fit, and travel mood instead of only scanning pins.' },
+  { icon: '📋', title: 'Shape the Day', desc: 'Add stops, stays, drive time, and audio chapters into one route that feels possible on the road.' },
+  { icon: '⚖️', title: 'Choose with Confidence', desc: "Compare places when the shortlist gets hard, then let the strongest fit rise to the top." },
 ];
 let onboardingSlide = 0;
 

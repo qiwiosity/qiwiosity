@@ -1,0 +1,1872 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#071b18" />
+<title>Qiwiosity Radical New Zealand Redesign Mockups</title>
+<style>
+  :root {
+    --night: #071b18;
+    --forest: #103f34;
+    --pounamu: #1aa381;
+    --fern: #8dc63f;
+    --glacier: #85d9e8;
+    --sun: #f4c542;
+    --ember: #f15c3b;
+    --shell: #fff8e8;
+    --mist: #dcefe8;
+    --ink: #0b1614;
+    --muted: #65756f;
+    --line: rgba(255, 248, 232, 0.22);
+    --line-dark: rgba(7, 27, 24, 0.14);
+    --shadow: 0 26px 70px rgba(0, 0, 0, 0.28);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    color: var(--shell);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background:
+      linear-gradient(90deg, rgba(255, 248, 232, 0.04) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(255, 248, 232, 0.035) 1px, transparent 1px),
+      linear-gradient(180deg, #071b18 0%, #0b2924 44%, #0f1714 100%);
+    background-size: 56px 56px, 56px 56px, auto;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+
+  .page-shell {
+    width: min(1540px, calc(100vw - 36px));
+    margin: 0 auto;
+    padding: 22px 0 70px;
+  }
+
+  .topbar {
+    position: sticky;
+    top: 14px;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 18px;
+    min-height: 62px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 248, 232, 0.16);
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.78);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(18px);
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .brand strong {
+    display: block;
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .brand span {
+    display: block;
+    margin-top: 4px;
+    color: rgba(255, 248, 232, 0.66);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav-links a,
+  .top-action {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 14px;
+    border: 1px solid rgba(255, 248, 232, 0.16);
+    border-radius: 8px;
+    color: rgba(255, 248, 232, 0.84);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 850;
+  }
+
+  .top-action {
+    background: var(--sun);
+    border-color: var(--sun);
+    color: var(--ink);
+  }
+
+  .hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.58fr);
+    gap: 18px;
+    min-height: calc(100vh - 118px);
+    margin-top: 18px;
+  }
+
+  .hero-stage {
+    position: relative;
+    min-height: 700px;
+    overflow: hidden;
+    border-radius: 8px;
+    background:
+      linear-gradient(90deg, rgba(7, 27, 24, 0.92) 0%, rgba(7, 27, 24, 0.72) 35%, rgba(7, 27, 24, 0.1) 100%),
+      linear-gradient(180deg, rgba(7, 27, 24, 0.02) 0%, rgba(7, 27, 24, 0.74) 100%),
+      url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+    box-shadow: var(--shadow);
+  }
+
+  .hero-stage::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 38%;
+    background:
+      linear-gradient(180deg, transparent, rgba(7, 27, 24, 0.88)),
+      repeating-linear-gradient(90deg, rgba(255, 248, 232, 0.12) 0 1px, transparent 1px 84px);
+    pointer-events: none;
+  }
+
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 700px;
+    padding: 34px;
+  }
+
+  .micro-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 10px;
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.13);
+    color: rgba(255, 248, 232, 0.82);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .tag.hot {
+    background: var(--ember);
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1 {
+    max-width: 860px;
+    margin-bottom: 22px;
+    font-size: clamp(62px, 8.6vw, 142px);
+    line-height: 0.84;
+    letter-spacing: 0;
+  }
+
+  .hero-copy p {
+    max-width: 620px;
+    color: rgba(255, 248, 232, 0.75);
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .hero-actions a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 46px;
+    padding: 0 16px;
+    border: 1px solid rgba(255, 248, 232, 0.22);
+    border-radius: 8px;
+    color: var(--shell);
+    text-decoration: none;
+    font-weight: 850;
+  }
+
+  .hero-actions a:first-child {
+    background: var(--shell);
+    color: var(--ink);
+    border-color: var(--shell);
+  }
+
+  .journey-strip {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 760px;
+  }
+
+  .journey-card {
+    min-height: 108px;
+    padding: 12px;
+    border: 1px solid rgba(255, 248, 232, 0.18);
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.68);
+    backdrop-filter: blur(14px);
+  }
+
+  .journey-card b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .journey-card span {
+    display: block;
+    margin-top: 7px;
+    color: rgba(255, 248, 232, 0.66);
+    font-size: 12px;
+    line-height: 1.38;
+  }
+
+  .strategy-panel {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 18px;
+    min-height: 700px;
+  }
+
+  .direction-card,
+  .system-card,
+  .mock-shell,
+  .closing-card {
+    border: 1px solid rgba(255, 248, 232, 0.15);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.08);
+    box-shadow: var(--shadow);
+  }
+
+  .direction-card {
+    padding: 24px;
+    background:
+      linear-gradient(180deg, rgba(255, 248, 232, 0.12), rgba(255, 248, 232, 0.05)),
+      #0b241f;
+  }
+
+  .direction-card h2 {
+    max-width: 520px;
+    margin-bottom: 16px;
+    font-size: clamp(34px, 4vw, 58px);
+    line-height: 0.96;
+    letter-spacing: 0;
+  }
+
+  .direction-card p {
+    color: rgba(255, 248, 232, 0.72);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .brand-notes {
+    display: grid;
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .brand-note {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    align-items: center;
+    gap: 12px;
+    min-height: 66px;
+    padding: 10px;
+    border: 1px solid rgba(255, 248, 232, 0.14);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.08);
+  }
+
+  .note-mark {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: var(--sun);
+    color: var(--ink);
+    font-weight: 950;
+  }
+
+  .brand-note:nth-child(2) .note-mark {
+    background: var(--glacier);
+  }
+
+  .brand-note:nth-child(3) .note-mark {
+    background: var(--ember);
+    color: white;
+  }
+
+  .brand-note b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .brand-note span {
+    display: block;
+    margin-top: 3px;
+    color: rgba(255, 248, 232, 0.66);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .mood-tile {
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0.06), rgba(7, 27, 24, 0.72)),
+      url("./assets/splash-bg.png") center 70% / cover no-repeat;
+  }
+
+  .mood-tile strong {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    max-width: 280px;
+    font-size: 34px;
+    line-height: 0.92;
+    letter-spacing: 0;
+  }
+
+  .section {
+    margin-top: 22px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 54px 0 16px;
+  }
+
+  .section-kicker {
+    color: var(--glacier);
+    font-size: 12px;
+    font-weight: 950;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .section-head h2 {
+    max-width: 880px;
+    margin: 8px 0 0;
+    font-size: clamp(36px, 5vw, 74px);
+    line-height: 0.92;
+    letter-spacing: 0;
+  }
+
+  .section-head p {
+    max-width: 440px;
+    margin: 0;
+    color: rgba(255, 248, 232, 0.68);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .system-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr;
+    gap: 14px;
+  }
+
+  .system-card {
+    min-height: 330px;
+    padding: 18px;
+    overflow: hidden;
+  }
+
+  .system-card.light {
+    background: var(--shell);
+    color: var(--ink);
+  }
+
+  .system-card.dark {
+    background:
+      linear-gradient(135deg, rgba(26, 163, 129, 0.16), transparent 42%),
+      #081d1a;
+  }
+
+  .system-card.color {
+    background: #10130f;
+  }
+
+  .system-card h3 {
+    margin-bottom: 14px;
+    font-size: 17px;
+  }
+
+  .type-sample {
+    margin-top: 28px;
+  }
+
+  .type-sample strong {
+    display: block;
+    max-width: 680px;
+    font-size: clamp(54px, 7vw, 98px);
+    line-height: 0.82;
+    letter-spacing: 0;
+  }
+
+  .type-sample span {
+    display: block;
+    margin-top: 14px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .palette {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .swatch {
+    min-height: 86px;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--ink);
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .swatch:nth-child(1) { background: var(--pounamu); color: white; }
+  .swatch:nth-child(2) { background: var(--sun); }
+  .swatch:nth-child(3) { background: var(--glacier); }
+  .swatch:nth-child(4) { background: var(--ember); color: white; }
+  .swatch:nth-child(5) { background: var(--fern); }
+  .swatch:nth-child(6) { background: var(--shell); }
+
+  .motion-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .motion-row {
+    display: grid;
+    grid-template-columns: 74px 1fr;
+    gap: 12px;
+    align-items: center;
+    min-height: 58px;
+    padding: 9px;
+    border: 1px solid rgba(255, 248, 232, 0.13);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.06);
+  }
+
+  .motion-row .meter {
+    position: relative;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.12);
+    overflow: hidden;
+  }
+
+  .motion-row .meter::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 64%;
+    background: var(--glacier);
+  }
+
+  .motion-row:nth-child(2) .meter::before {
+    width: 46%;
+    background: var(--sun);
+  }
+
+  .motion-row:nth-child(3) .meter::before {
+    width: 82%;
+    background: var(--ember);
+  }
+
+  .motion-row b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .motion-row span {
+    display: block;
+    color: rgba(255, 248, 232, 0.66);
+    font-size: 12px;
+  }
+
+  .mock-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.14fr) minmax(430px, 0.86fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .mock-grid.reverse {
+    grid-template-columns: minmax(430px, 0.86fr) minmax(0, 1.14fr);
+  }
+
+  .mock-shell {
+    padding: 14px;
+    background: rgba(255, 248, 232, 0.09);
+  }
+
+  .mock-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    min-height: 46px;
+    padding: 0 4px 12px;
+  }
+
+  .mock-label strong {
+    font-size: 15px;
+  }
+
+  .mock-label span {
+    color: rgba(255, 248, 232, 0.62);
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .desktop-window {
+    overflow: hidden;
+    border: 1px solid rgba(255, 248, 232, 0.18);
+    border-radius: 8px;
+    background: var(--shell);
+    color: var(--ink);
+  }
+
+  .window-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 52px;
+    padding: 0 14px;
+    border-bottom: 1px solid rgba(7, 27, 24, 0.1);
+    background: rgba(255, 248, 232, 0.92);
+  }
+
+  .dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .dots i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--ember);
+  }
+
+  .dots i:nth-child(2) {
+    background: var(--sun);
+  }
+
+  .dots i:nth-child(3) {
+    background: var(--pounamu);
+  }
+
+  .window-brand {
+    font-size: 12px;
+    font-weight: 950;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .site-home {
+    min-height: 680px;
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(90deg, rgba(7, 27, 24, 0.92) 0%, rgba(7, 27, 24, 0.55) 48%, rgba(7, 27, 24, 0.08) 100%),
+      linear-gradient(180deg, rgba(7, 27, 24, 0.12), rgba(7, 27, 24, 0.88)),
+      url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+    color: var(--shell);
+  }
+
+  .site-nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 76px;
+    padding: 0 28px;
+  }
+
+  .site-nav img {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .site-nav .links {
+    display: flex;
+    gap: 18px;
+    color: rgba(255, 248, 232, 0.72);
+    font-size: 12px;
+    font-weight: 850;
+  }
+
+  .site-hero-content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 0.96fr 0.76fr;
+    gap: 30px;
+    align-items: end;
+    min-height: 604px;
+    padding: 34px 28px 28px;
+  }
+
+  .site-title {
+    max-width: 690px;
+  }
+
+  .site-title .small {
+    color: var(--sun);
+    font-size: 12px;
+    font-weight: 950;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .site-title h3 {
+    margin: 14px 0 18px;
+    font-size: clamp(52px, 6vw, 96px);
+    line-height: 0.86;
+    letter-spacing: 0;
+  }
+
+  .site-title p {
+    max-width: 530px;
+    color: rgba(255, 248, 232, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .search-deck {
+    display: grid;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid rgba(255, 248, 232, 0.16);
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.74);
+    backdrop-filter: blur(16px);
+  }
+
+  .deck-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+  }
+
+  .deck-input,
+  .deck-button,
+  .deck-chip {
+    display: flex;
+    align-items: center;
+    min-height: 54px;
+    padding: 0 14px;
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.12);
+    color: var(--shell);
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .deck-input span {
+    display: block;
+    color: rgba(255, 248, 232, 0.55);
+    font-size: 10px;
+    font-weight: 950;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .deck-button {
+    justify-content: center;
+    min-width: 122px;
+    background: var(--sun);
+    color: var(--ink);
+  }
+
+  .deck-chips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .deck-chip {
+    min-height: 46px;
+    justify-content: center;
+  }
+
+  .deck-chip:nth-child(1) {
+    background: var(--pounamu);
+  }
+
+  .deck-chip:nth-child(2) {
+    background: var(--ember);
+  }
+
+  .deck-chip:nth-child(3) {
+    background: var(--glacier);
+    color: var(--ink);
+  }
+
+  .experience-band {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .experience {
+    min-height: 102px;
+    padding: 12px;
+    border: 1px solid rgba(255, 248, 232, 0.16);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.1);
+  }
+
+  .experience b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .experience span {
+    display: block;
+    margin-top: 6px;
+    color: rgba(255, 248, 232, 0.62);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .compass-app {
+    min-height: 720px;
+    display: grid;
+    grid-template-columns: 260px 1fr 284px;
+    background: #071b18;
+    color: var(--shell);
+  }
+
+  .compass-side,
+  .compass-detail {
+    padding: 18px;
+    border-color: rgba(255, 248, 232, 0.14);
+  }
+
+  .compass-side {
+    border-right: 1px solid rgba(255, 248, 232, 0.14);
+    background: #0a221e;
+  }
+
+  .compass-detail {
+    border-left: 1px solid rgba(255, 248, 232, 0.14);
+    background: #0b211e;
+  }
+
+  .mini-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .mini-brand img {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: white;
+  }
+
+  .mini-brand b {
+    font-size: 14px;
+  }
+
+  .side-title {
+    color: rgba(255, 248, 232, 0.55);
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .feel-stack {
+    display: grid;
+    gap: 8px;
+    margin: 12px 0 26px;
+  }
+
+  .feel {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 10px;
+    align-items: center;
+    min-height: 58px;
+    padding: 8px;
+    border: 1px solid rgba(255, 248, 232, 0.13);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.07);
+  }
+
+  .feel i {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--pounamu);
+  }
+
+  .feel:nth-child(2) i { background: var(--sun); }
+  .feel:nth-child(3) i { background: var(--ember); }
+  .feel:nth-child(4) i { background: var(--glacier); }
+
+  .feel b {
+    display: block;
+    font-size: 12px;
+  }
+
+  .feel span {
+    color: rgba(255, 248, 232, 0.58);
+    font-size: 11px;
+  }
+
+  .weather-card {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 8px;
+    background: var(--shell);
+    color: var(--ink);
+  }
+
+  .weather-card b {
+    display: block;
+    font-size: 24px;
+  }
+
+  .weather-card span {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .map-canvas {
+    position: relative;
+    overflow: hidden;
+    min-height: 720px;
+    background:
+      linear-gradient(90deg, rgba(133, 217, 232, 0.12) 1px, transparent 1px),
+      linear-gradient(180deg, rgba(133, 217, 232, 0.1) 1px, transparent 1px),
+      radial-gradient(circle at 72% 24%, rgba(133, 217, 232, 0.2), transparent 28%),
+      #08241f;
+    background-size: 54px 54px, 54px 54px, auto, auto;
+  }
+
+  .map-canvas svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .map-label {
+    position: absolute;
+    z-index: 2;
+    left: 28px;
+    top: 26px;
+    display: grid;
+    gap: 8px;
+  }
+
+  .map-label h3 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 0.95;
+  }
+
+  .map-label span {
+    color: rgba(255, 248, 232, 0.64);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .route-card {
+    position: absolute;
+    z-index: 4;
+    left: 42%;
+    top: 44%;
+    width: min(290px, 34vw);
+    padding: 14px;
+    border: 1px solid rgba(255, 248, 232, 0.18);
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.82);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(14px);
+  }
+
+  .route-card h3 {
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+
+  .route-card p {
+    color: rgba(255, 248, 232, 0.68);
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .route-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    margin-top: 14px;
+  }
+
+  .route-actions span {
+    min-height: 34px;
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.12);
+  }
+
+  .route-actions span:first-child {
+    background: var(--sun);
+  }
+
+  .pin {
+    position: absolute;
+    z-index: 3;
+    width: 18px;
+    height: 18px;
+    border: 4px solid var(--shell);
+    border-radius: 50%;
+    background: var(--ember);
+    box-shadow: 0 0 0 7px rgba(241, 92, 59, 0.2);
+  }
+
+  .pin.a { left: 22%; top: 72%; }
+  .pin.b { left: 47%; top: 51%; background: var(--sun); box-shadow: 0 0 0 7px rgba(244, 197, 66, 0.2); }
+  .pin.c { left: 66%; top: 31%; background: var(--glacier); box-shadow: 0 0 0 7px rgba(133, 217, 232, 0.2); }
+  .pin.d { left: 80%; top: 18%; background: var(--pounamu); box-shadow: 0 0 0 7px rgba(26, 163, 129, 0.2); }
+
+  .day-plan {
+    display: grid;
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .day-stop {
+    display: grid;
+    grid-template-columns: 46px 1fr;
+    gap: 10px;
+    min-height: 70px;
+    padding: 10px;
+    border: 1px solid rgba(255, 248, 232, 0.13);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.08);
+  }
+
+  .day-stop time {
+    color: var(--glacier);
+    font-size: 11px;
+    font-weight: 950;
+  }
+
+  .day-stop b {
+    display: block;
+    font-size: 12px;
+  }
+
+  .day-stop span {
+    color: rgba(255, 248, 232, 0.58);
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .booking-panel {
+    min-height: 720px;
+    padding: 18px;
+    background: var(--shell);
+    color: var(--ink);
+  }
+
+  .booking-hero {
+    display: grid;
+    grid-template-columns: 1fr 0.72fr;
+    gap: 10px;
+    min-height: 250px;
+  }
+
+  .photo-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0.08), rgba(7, 27, 24, 0.68)),
+      url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+  }
+
+  .photo-tile.small {
+    display: grid;
+    gap: 10px;
+    background: none;
+  }
+
+  .mini-photo {
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0.04), rgba(7, 27, 24, 0.36)),
+      url("./assets/splash-bg.png") center / cover no-repeat;
+  }
+
+  .mini-photo:nth-child(2) {
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0.06), rgba(7, 27, 24, 0.5)),
+      url("./assets/nz-scenic-crop.png") 58% 42% / cover no-repeat;
+  }
+
+  .photo-caption {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    color: white;
+  }
+
+  .photo-caption b {
+    display: block;
+    font-size: 28px;
+    line-height: 0.95;
+  }
+
+  .photo-caption span {
+    display: block;
+    margin-top: 7px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+  }
+
+  .book-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 18px;
+    margin: 22px 0 12px;
+  }
+
+  .book-header h3 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 0.96;
+  }
+
+  .book-header span {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 850;
+  }
+
+  .stay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stay {
+    min-height: 190px;
+    padding: 12px;
+    border: 1px solid var(--line-dark);
+    border-radius: 8px;
+    background: white;
+  }
+
+  .stay-img {
+    height: 86px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0), rgba(7, 27, 24, 0.42)),
+      url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+  }
+
+  .stay:nth-child(2) .stay-img {
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0), rgba(7, 27, 24, 0.42)),
+      url("./assets/splash-bg.png") center / cover no-repeat;
+  }
+
+  .stay:nth-child(3) .stay-img {
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0), rgba(7, 27, 24, 0.38)),
+      url("./assets/nz-scenic-crop.png") 70% 44% / cover no-repeat;
+  }
+
+  .stay b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .stay span {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .comparison-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .compare-box {
+    min-height: 86px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #0b241f;
+    color: var(--shell);
+  }
+
+  .compare-box:nth-child(2) { background: var(--pounamu); }
+  .compare-box:nth-child(3) { background: var(--ember); }
+  .compare-box:nth-child(4) { background: var(--sun); color: var(--ink); }
+
+  .compare-box b {
+    display: block;
+    font-size: 17px;
+  }
+
+  .compare-box span {
+    display: block;
+    margin-top: 4px;
+    color: currentColor;
+    opacity: 0.72;
+    font-size: 11px;
+  }
+
+  .phone-area {
+    display: grid;
+    place-items: center;
+    min-height: 720px;
+    padding: 30px;
+    background:
+      linear-gradient(180deg, rgba(133, 217, 232, 0.16), rgba(7, 27, 24, 0.1)),
+      #0b241f;
+  }
+
+  .phone {
+    width: min(390px, 100%);
+    height: 720px;
+    padding: 12px;
+    border-radius: 34px;
+    background: #050908;
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
+  }
+
+  .phone-screen {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 26px;
+    background: var(--shell);
+    color: var(--ink);
+  }
+
+  .phone-photo {
+    position: relative;
+    min-height: 330px;
+    padding: 18px;
+    background:
+      linear-gradient(180deg, rgba(7, 27, 24, 0.12), rgba(7, 27, 24, 0.84)),
+      url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+    color: white;
+  }
+
+  .phone-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icon-btn {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.42);
+    color: white;
+    font-weight: 900;
+  }
+
+  .place-title {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+  }
+
+  .place-title span {
+    color: var(--sun);
+    font-size: 11px;
+    font-weight: 950;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .place-title h3 {
+    margin: 8px 0 0;
+    font-size: 40px;
+    line-height: 0.92;
+  }
+
+  .story-player {
+    margin: -24px 14px 14px;
+    position: relative;
+    z-index: 2;
+    padding: 14px;
+    border-radius: 8px;
+    background: #071b18;
+    color: var(--shell);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+  }
+
+  .player-line {
+    display: grid;
+    grid-template-columns: 44px 1fr 48px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .play {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: var(--sun);
+    color: var(--ink);
+    font-weight: 950;
+  }
+
+  .wave {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    align-items: center;
+    gap: 3px;
+    height: 36px;
+  }
+
+  .wave i {
+    display: block;
+    min-height: 8px;
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.46);
+  }
+
+  .wave i:nth-child(3n) { height: 32px; background: var(--glacier); }
+  .wave i:nth-child(4n) { height: 22px; }
+  .wave i:nth-child(5n) { height: 28px; background: var(--pounamu); }
+
+  .phone-content {
+    display: grid;
+    gap: 10px;
+    padding: 0 14px 14px;
+  }
+
+  .insight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .insight {
+    min-height: 112px;
+    padding: 12px;
+    border: 1px solid var(--line-dark);
+    border-radius: 8px;
+    background: white;
+  }
+
+  .insight b {
+    display: block;
+    font-size: 13px;
+  }
+
+  .insight span {
+    display: block;
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .respect-note {
+    padding: 12px;
+    border-radius: 8px;
+    background: #eaf5ef;
+  }
+
+  .respect-note b {
+    display: block;
+    color: #0b4b3c;
+    font-size: 13px;
+  }
+
+  .respect-note span {
+    display: block;
+    margin-top: 6px;
+    color: #4c655d;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .tabbar {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7px;
+    min-height: 58px;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(7, 27, 24, 0.92);
+  }
+
+  .tabbar span {
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.12);
+  }
+
+  .tabbar span:first-child {
+    background: var(--sun);
+  }
+
+  .closing-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 18px;
+    margin-top: 22px;
+    padding: 18px;
+    background: #061714;
+  }
+
+  .closing-card h2 {
+    margin-bottom: 14px;
+    font-size: clamp(36px, 5vw, 72px);
+    line-height: 0.9;
+  }
+
+  .closing-card p {
+    color: rgba(255, 248, 232, 0.7);
+    line-height: 1.55;
+  }
+
+  .takeaway-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .takeaway {
+    min-height: 140px;
+    padding: 14px;
+    border: 1px solid rgba(255, 248, 232, 0.14);
+    border-radius: 8px;
+    background: rgba(255, 248, 232, 0.07);
+  }
+
+  .takeaway b {
+    display: block;
+    color: var(--sun);
+    font-size: 13px;
+  }
+
+  .takeaway span {
+    display: block;
+    margin-top: 9px;
+    color: rgba(255, 248, 232, 0.67);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  @media (max-width: 1240px) {
+    .hero,
+    .strategy-panel,
+    .system-grid,
+    .mock-grid,
+    .mock-grid.reverse,
+    .closing-card {
+      grid-template-columns: 1fr;
+    }
+
+    .strategy-panel {
+      min-height: auto;
+    }
+
+    .mood-tile {
+      min-height: 330px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .topbar {
+      position: static;
+      grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+      justify-content: start;
+      overflow-x: auto;
+      padding-bottom: 2px;
+    }
+
+    .hero-stage,
+    .hero-copy {
+      min-height: 620px;
+    }
+
+    .journey-strip,
+    .experience-band,
+    .stay-grid,
+    .comparison-strip,
+    .takeaway-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .site-hero-content,
+    .booking-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .compass-app {
+      grid-template-columns: 1fr;
+    }
+
+    .compass-side,
+    .compass-detail {
+      border: 0;
+      border-bottom: 1px solid rgba(255, 248, 232, 0.14);
+    }
+
+    .route-card {
+      left: 24px;
+      top: auto;
+      bottom: 24px;
+      width: min(340px, calc(100% - 48px));
+    }
+  }
+
+  @media (max-width: 620px) {
+    .page-shell {
+      width: min(100vw - 20px, 560px);
+      padding-top: 10px;
+    }
+
+    h1 {
+      font-size: 54px;
+    }
+
+    .hero-stage,
+    .hero-copy,
+    .map-canvas,
+    .phone-area,
+    .booking-panel {
+      min-height: auto;
+    }
+
+    .hero-copy {
+      padding: 22px;
+    }
+
+    .journey-strip,
+    .system-grid,
+    .deck-row,
+    .deck-chips,
+    .experience-band,
+    .stay-grid,
+    .comparison-strip,
+    .insight-grid,
+    .takeaway-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-head {
+      display: block;
+    }
+
+    .section-head p {
+      margin-top: 12px;
+    }
+
+    .desktop-window {
+      overflow-x: auto;
+    }
+
+    .site-home,
+    .compass-app,
+    .booking-panel {
+      min-width: 980px;
+    }
+
+    .phone {
+      height: 700px;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img src="./assets/logo-mark.png" alt="Qiwiosity" />
+        <div>
+          <strong>Qiwiosity</strong>
+          <span>Radical redesign mockups</span>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Mockup sections">
+        <a href="#system">Identity</a>
+        <a href="#home">Home</a>
+        <a href="#planner">Planner</a>
+        <a href="#mobile">Mobile</a>
+      </nav>
+      <a class="top-action" href="#direction">View Direction</a>
+    </header>
+
+    <section class="hero" id="direction">
+      <div class="hero-stage">
+        <div class="hero-copy">
+          <div>
+            <div class="micro-row">
+              <span class="tag hot">No boundary concept</span>
+              <span class="tag">Travel company</span>
+              <span class="tag">New Zealand</span>
+            </div>
+            <h1>New Zealand, arranged by feeling.</h1>
+            <p>This direction turns Qiwiosity from a tidy travel directory into a cinematic destination companion. The site leads with landscape, emotion, timing, story, culture, and road-trip momentum.</p>
+            <div class="hero-actions">
+              <a href="#home">Start with the homepage</a>
+              <a href="#system">See the visual system</a>
+            </div>
+          </div>
+          <div class="journey-strip" aria-label="Design pillars">
+            <div class="journey-card"><b>Wild First</b><span>Large scenery, sensory copy, fast emotional orientation.</span></div>
+            <div class="journey-card"><b>Human Scale</b><span>Stories, food, local context, respectful cultural notes.</span></div>
+            <div class="journey-card"><b>Trip Logic</b><span>Weather, drive time, cost, and energy are always visible.</span></div>
+            <div class="journey-card"><b>Not Generic</b><span>Bold colour, confident type, and tactile field-guide surfaces.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="strategy-panel">
+        <div class="direction-card">
+          <h2>Less app. More expedition desk.</h2>
+          <p>The new feel should be confident and transportive: a cross between a premium tourism campaign, a modern map room, and a field guide. It should make tourists feel like the trip is already becoming real.</p>
+          <div class="brand-notes">
+            <div class="brand-note"><span class="note-mark">01</span><div><b>Cinematic first viewport</b><span>Full-bleed New Zealand imagery becomes the main navigation surface.</span></div></div>
+            <div class="brand-note"><span class="note-mark">02</span><div><b>Feeling-based discovery</b><span>Visitors choose wild, calm, kai, culture, thrill, or family pace.</span></div></div>
+            <div class="brand-note"><span class="note-mark">03</span><div><b>Story as product</b><span>Audio guides and place meaning become part of the booking journey.</span></div></div>
+          </div>
+        </div>
+        <div class="mood-tile"><strong>Tourism energy without looking like a brochure.</strong></div>
+      </aside>
+    </section>
+
+    <section class="section" id="system">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Identity System</div>
+          <h2>Sharp, vivid, and built around contrast.</h2>
+        </div>
+        <p>Dark field-guide surfaces let photos glow. Bright environmental colours give each mode a recognizable pulse without trapping the whole brand in teal.</p>
+      </div>
+      <div class="system-grid">
+        <article class="system-card light">
+          <h3>Typography Mood</h3>
+          <div class="type-sample">
+            <strong>FIELD NOTES FOR THE ROAD</strong>
+            <span>Big condensed-feeling headlines for tourism drama, restrained UI text for repeat planning, and small uppercase labels for map-room precision.</span>
+          </div>
+        </article>
+        <article class="system-card color">
+          <h3>Colour Territories</h3>
+          <div class="palette">
+            <div class="swatch">Pounamu</div>
+            <div class="swatch">Sun Track</div>
+            <div class="swatch">Glacier Air</div>
+            <div class="swatch">Volcanic Ember</div>
+            <div class="swatch">Fern Signal</div>
+            <div class="swatch">Shell Light</div>
+          </div>
+        </article>
+        <article class="system-card dark">
+          <h3>Interface Rhythm</h3>
+          <div class="motion-list">
+            <div class="motion-row"><span class="meter"></span><div><b>Weather aware</b><span>Surface timing and light before generic ratings.</span></div></div>
+            <div class="motion-row"><span class="meter"></span><div><b>Energy aware</b><span>Balance drive, walk, pause, and food moments.</span></div></div>
+            <div class="motion-row"><span class="meter"></span><div><b>Story aware</b><span>Place names, audio, and context travel with the route.</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="home">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Mockup 01</div>
+          <h2>The website opens like a destination film.</h2>
+        </div>
+        <p>Instead of showing a standard dashboard, the first screen asks what kind of New Zealand the traveller wants, then immediately turns that into a trip path.</p>
+      </div>
+      <div class="mock-shell">
+        <div class="mock-label"><strong>Cinematic Homepage</strong><span>Desktop first viewport</span></div>
+        <div class="desktop-window">
+          <div class="window-bar">
+            <div class="dots"><i></i><i></i><i></i></div>
+            <div class="window-brand">qiwiosity.co.nz</div>
+            <div class="dots"><i></i><i></i><i></i></div>
+          </div>
+          <div class="site-home">
+            <nav class="site-nav">
+              <img src="./assets/logo-mark.png" alt="" />
+              <div class="links"><span>Regions</span><span>Road Trips</span><span>Stories</span><span>Stays</span><span>Saved</span></div>
+            </nav>
+            <div class="site-hero-content">
+              <div class="site-title">
+                <span class="small">Arrive curious</span>
+                <h3>Build a trip around what you want to feel.</h3>
+                <p>Pick your pace, the landscapes calling you, and the kind of local stories you want in your ears. Qiwiosity shapes the route, timing, stays, and stops.</p>
+                <div class="experience-band">
+                  <div class="experience"><b>100% Wild</b><span>Forest tracks, dark skies, coast roads.</span></div>
+                  <div class="experience"><b>100% Kai</b><span>Markets, wineries, bakeries, coffee.</span></div>
+                  <div class="experience"><b>100% Calm</b><span>Water, gardens, gentle walks, slow mornings.</span></div>
+                  <div class="experience"><b>100% Alive</b><span>Rafting, wheels, heights, weather windows.</span></div>
+                </div>
+              </div>
+              <form class="search-deck">
+                <div class="deck-row">
+                  <div class="deck-input"><div><span>Where to start</span>Auckland to Rotorua</div></div>
+                  <div class="deck-button">Find Route</div>
+                </div>
+                <div class="deck-row">
+                  <div class="deck-input"><div><span>Trip length</span>3 days, 2 nights</div></div>
+                  <div class="deck-input"><div><span>Travel style</span>Wild, kai, culture</div></div>
+                </div>
+                <div class="deck-chips">
+                  <div class="deck-chip">With kids</div>
+                  <div class="deck-chip">Under $900</div>
+                  <div class="deck-chip">Low driving</div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planner">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Mockup 02</div>
+          <h2>A map room for tourists, not just pins.</h2>
+        </div>
+        <p>The planner becomes the core product surface: scenic route, weather windows, audio stories, travel pace, and stay options all visible at once.</p>
+      </div>
+      <div class="mock-grid">
+        <article class="mock-shell">
+          <div class="mock-label"><strong>Compass Planner</strong><span>Desktop planning surface</span></div>
+          <div class="desktop-window">
+            <div class="compass-app">
+              <aside class="compass-side">
+                <div class="mini-brand"><img src="./assets/logo-mark.png" alt="" /><b>Qiwiosity</b></div>
+                <div class="side-title">Your travel pulse</div>
+                <div class="feel-stack">
+                  <div class="feel"><i></i><div><b>Deep green</b><span>Native forest, birds, shade.</span></div></div>
+                  <div class="feel"><i></i><div><b>Golden road</b><span>Lookouts, local food, sunsets.</span></div></div>
+                  <div class="feel"><i></i><div><b>Volcanic story</b><span>Geology, culture, steam, lakes.</span></div></div>
+                  <div class="feel"><i></i><div><b>Fresh water</b><span>Falls, rivers, swimming spots.</span></div></div>
+                </div>
+                <div class="side-title">Today</div>
+                <div class="weather-card"><b>18 C</b><span>Best light 5:42 pm. Rain clears after lunch.</span></div>
+              </aside>
+              <section class="map-canvas">
+                <svg viewBox="0 0 760 720" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M50 620 C150 520 180 420 282 406 C402 388 410 258 520 220 C610 188 642 104 718 68" fill="none" stroke="rgba(255,248,232,.9)" stroke-width="24" stroke-linecap="round" />
+                  <path d="M50 620 C150 520 180 420 282 406 C402 388 410 258 520 220 C610 188 642 104 718 68" fill="none" stroke="#f4c542" stroke-width="5" stroke-linecap="round" stroke-dasharray="18 16" />
+                  <path d="M-60 244 C122 166 250 220 384 126 C504 42 626 72 826 20" fill="none" stroke="rgba(133,217,232,.18)" stroke-width="100" stroke-linecap="round" />
+                  <path d="M106 720 C170 610 252 580 330 614 C428 656 498 574 614 598 C696 614 730 652 786 690" fill="none" stroke="rgba(141,198,63,.22)" stroke-width="92" stroke-linecap="round" />
+                </svg>
+                <div class="map-label"><h3>Rotorua story loop</h3><span>4 stops / 3h 10 drive / 11 audio chapters</span></div>
+                <span class="pin a"></span><span class="pin b"></span><span class="pin c"></span><span class="pin d"></span>
+                <div class="route-card">
+                  <h3>Whakarewarewa Forest</h3>
+                  <p>Fits your green and calm pulse. Add the 12 minute tree story before arrival, then pair with a lake dinner.</p>
+                  <div class="route-actions"><span></span><span></span><span></span></div>
+                </div>
+              </section>
+              <aside class="compass-detail">
+                <div class="side-title">Day shape</div>
+                <div class="day-plan">
+                  <div class="day-stop"><time>8:40</time><div><b>Kai start</b><span>Coffee, bakery, first local note.</span></div></div>
+                  <div class="day-stop"><time>10:10</time><div><b>Forest walk</b><span>Short loop, rain friendly, story ready.</span></div></div>
+                  <div class="day-stop"><time>1:20</time><div><b>Lake pause</b><span>Low effort view, picnic fit.</span></div></div>
+                  <div class="day-stop"><time>5:42</time><div><b>Golden stop</b><span>Best light, 14 minutes off route.</span></div></div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </article>
+
+        <article class="mock-shell">
+          <div class="mock-label"><strong>Trip Commerce</strong><span>Stays and experiences</span></div>
+          <div class="desktop-window">
+            <div class="booking-panel">
+              <div class="booking-hero">
+                <div class="photo-tile"><div class="photo-caption"><b>Sleep near the story.</b><span>Stays are matched to route, pace, and mood.</span></div></div>
+                <div class="photo-tile small"><div class="mini-photo"></div><div class="mini-photo"></div></div>
+              </div>
+              <div class="book-header"><h3>Tonight near Rotorua</h3><span>3 strong fits</span></div>
+              <div class="stay-grid">
+                <div class="stay"><div class="stay-img"></div><b>Forest edge lodge</b><span>Best for calm walks and morning birdsong.</span></div>
+                <div class="stay"><div class="stay-img"></div><b>Lake cabin</b><span>Closest to sunset stop and dinner route.</span></div>
+                <div class="stay"><div class="stay-img"></div><b>Town base</b><span>Good value, food nearby, easiest parking.</span></div>
+              </div>
+              <div class="comparison-strip">
+                <div class="compare-box"><b>12m</b><span>from story stop</span></div>
+                <div class="compare-box"><b>4.8</b><span>guest feel</span></div>
+                <div class="compare-box"><b>$214</b><span>from tonight</span></div>
+                <div class="compare-box"><b>Low</b><span>drive stress</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="mobile">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Mockup 03</div>
+          <h2>The mobile app feels like a field guide in your hand.</h2>
+        </div>
+        <p>On the road, the product should become quieter, faster, and more tactile: one strong image, one story, one next action.</p>
+      </div>
+      <div class="mock-grid reverse">
+        <article class="mock-shell">
+          <div class="mock-label"><strong>Story Detail</strong><span>Mobile place screen</span></div>
+          <div class="phone-area">
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="phone-photo">
+                  <div class="phone-top"><span class="icon-btn">X</span><span class="icon-btn">+</span></div>
+                  <div class="place-title"><span>Story ready / 12 min</span><h3>Forest before the rain.</h3></div>
+                </div>
+                <div class="story-player">
+                  <div class="player-line">
+                    <span class="play">></span>
+                    <span class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                    <span>08:41</span>
+                  </div>
+                </div>
+                <div class="phone-content">
+                  <div class="insight-grid">
+                    <div class="insight"><b>Why now</b><span>Light rain makes the forest colour richer. Track is still easy.</span></div>
+                    <div class="insight"><b>Pair with</b><span>Lake dinner, 18 minutes away, low detour.</span></div>
+                  </div>
+                  <div class="respect-note"><b>Place note</b><span>Surface Maori place-name context and pronunciation beside the story, with a careful source trail.</span></div>
+                </div>
+                <div class="tabbar"><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="mock-shell">
+          <div class="mock-label"><strong>Design Rationale</strong><span>How this becomes the whole site</span></div>
+          <div class="closing-card" style="margin-top:0; min-height:720px;">
+            <div>
+              <h2>The whole product gets a stronger promise.</h2>
+              <p>Qiwiosity should not just answer "what is nearby?" It should answer "what kind of New Zealand day should I have?" That shift changes the visual language, the information hierarchy, and the business model.</p>
+            </div>
+            <div class="takeaway-grid">
+              <div class="takeaway"><b>Homepage</b><span>Lead with immersive image, emotional trip modes, and one search deck instead of dense navigation.</span></div>
+              <div class="takeaway"><b>Browse</b><span>Group places by visitor intent: wild, calm, kai, culture, family, thrill, rain-safe, golden hour.</span></div>
+              <div class="takeaway"><b>Detail Pages</b><span>Make each place feel editorial: image, reason to go, story player, timing fit, route fit, stay fit.</span></div>
+              <div class="takeaway"><b>Planner</b><span>Make the map the flagship surface with logistics, weather, cost, and audio chapters layered in.</span></div>
+              <div class="takeaway"><b>Commerce</b><span>Accommodations and activities appear as matched trip choices, not disconnected listings.</span></div>
+              <div class="takeaway"><b>Brand</b><span>Keep the logo, but free the colour system from teal-only so each region and travel mood can have a pulse.</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
