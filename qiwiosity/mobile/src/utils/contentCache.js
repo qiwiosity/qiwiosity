@@ -16,17 +16,31 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import bundled from '../data/attractions.json';
 import DataService from '../lib/dataService';
+import { getContentApiBase } from '../lib/config';
 
 const KEY_POIS     = '@qiwiosity/cache/pois.json';
 const KEY_MANIFEST = '@qiwiosity/cache/manifest.json';
 const KEY_REGION_AUDIO = '@qiwiosity/cache/region-audio';
 
-const DEFAULT_API = 'https://api.qiwiosity.nz';
+const SHIP_BLOCKLIST_RE = /\b(?:PLACEHOLDER|do not ship)\b/i;
+
+function isShipBlockedPoi(poi) {
+  const text = [
+    poi.name,
+    poi.short,
+    poi.commentary,
+    poi.audio_story,
+  ].filter(Boolean).join(' ');
+
+  return SHIP_BLOCKLIST_RE.test(text);
+}
+
+function filterShippablePois(pois) {
+  return Array.isArray(pois) ? pois.filter(poi => !isShipBlockedPoi(poi)) : [];
+}
 
 export function getApiBase() {
-  // In real builds this would come from app.json extra config or an env
-  // variable baked at build time. For now, env-override friendly default.
-  return (global.QIWIOSITY_API_BASE || DEFAULT_API).replace(/\/$/, '');
+  return getContentApiBase();
 }
 
 export async function getAttractions() {
@@ -38,9 +52,9 @@ export async function getAttractions() {
   // Legacy fallback: check old cache key
   try {
     const raw = await AsyncStorage.getItem(KEY_POIS);
-    if (raw) return JSON.parse(raw);
+    if (raw) return filterShippablePois(JSON.parse(raw));
   } catch {}
-  return bundled;
+  return filterShippablePois(bundled);
 }
 
 export async function getCachedManifest() {
@@ -68,7 +82,7 @@ export async function hydrateFromNetwork({ timeoutMs = 4000 } = {}) {
 
     const pRes = await fetch(`${base}/v1/pois`, { signal: ctrl.signal });
     if (!pRes.ok) throw new Error(`pois http ${pRes.status}`);
-    const pois = await pRes.json();
+    const pois = filterShippablePois(await pRes.json());
 
     await AsyncStorage.setItem(KEY_POIS, JSON.stringify(pois));
     await AsyncStorage.setItem(KEY_MANIFEST, JSON.stringify(manifest));

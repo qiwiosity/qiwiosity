@@ -1,7 +1,7 @@
-const BASE = 'https://qiwiosity-production.up.railway.app';
+import { SERVER_API_BASE } from './config';
 
 export async function deepDive({ name, region, category, existing, tags }) {
-  const res = await fetch(`${BASE}/api/deepdive`, {
+  const res = await fetch(`${SERVER_API_BASE}/api/deepdive`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name, region, category, existing, tags }),
@@ -12,7 +12,7 @@ export async function deepDive({ name, region, category, existing, tags }) {
 }
 
 export async function snapIdentify({ imageDataUrl, hint, candidates }) {
-  const res = await fetch(`${BASE}/api/identify`, {
+  const res = await fetch(`${SERVER_API_BASE}/api/identify`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ imageDataUrl, hint, candidates }),

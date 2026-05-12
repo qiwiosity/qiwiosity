@@ -2,10 +2,9 @@
   "name": "qiwiosity",
   "private": true,
   "version": "0.1.0",
-  "description": "Qiwiosity monorepo — NZ travel app (mobile, backend, content, tools).",
+  "description": "Qiwiosity monorepo - NZ travel app (mobile, database, content, tools).",
   "workspaces": [
     "mobile",
-    "backend",
     "tools"
   ],
   "scripts": {
@@ -20,7 +19,7 @@
     "mobile:ios": "npm run sync:mobile && npm --workspace mobile run ios",
     "mobile:android": "npm run sync:mobile && npm --workspace mobile run android",
     "mobile:web": "npm run sync:mobile && npm --workspace mobile run web",
-    "lint:content": "node tools/lint-content.js"
+    "lint:content": "node tools/lint-content.cjs"
   },
   "devDependencies": {
     "@types/react": "~19.1.10",

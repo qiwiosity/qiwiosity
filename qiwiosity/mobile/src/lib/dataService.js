@@ -18,7 +18,7 @@
  */
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { supabase } from './supabase';
+import { contentSupabase } from './supabase';
 
 // Bundled fallback data (ships with the app binary)
 import bundledAttractions from '../data/attractions.json';
@@ -37,6 +37,7 @@ const CACHE = {
 
 // How often to re-fetch from Supabase (1 hour)
 const SYNC_INTERVAL_MS = 60 * 60 * 1000;
+const SHIP_BLOCKLIST_RE = /\b(?:PLACEHOLDER|do not ship)\b/i;
 
 // In-memory cache for the current session
 let memCache = {};
@@ -79,7 +80,7 @@ async function fetchFromSupabase(table, options = {}) {
   let hasMore = true;
 
   while (hasMore) {
-    let query = supabase.from(table).select(select);
+    let query = contentSupabase.from(table).select(select);
 
     if (filters) {
       for (const [col, val] of Object.entries(filters)) {
@@ -106,6 +107,21 @@ async function fetchFromSupabase(table, options = {}) {
 
 // ── Public API ───────────────────────────────────────────
 
+function isShipBlockedPoi(poi) {
+  const text = [
+    poi.name,
+    poi.short,
+    poi.commentary,
+    poi.audio_story,
+  ].filter(Boolean).join(' ');
+
+  return SHIP_BLOCKLIST_RE.test(text);
+}
+
+function filterShippablePois(pois) {
+  return Array.isArray(pois) ? pois.filter(poi => !isShipBlockedPoi(poi)) : [];
+}
+
 export const DataService = {
 
   /**
@@ -129,7 +145,7 @@ export const DataService = {
       ]);
 
       // Reshape POIs to match the existing app data format
-      const shapedAttractions = attractions.map(p => ({
+      const shapedAttractions = attractions.filter(p => !isShipBlockedPoi(p)).map(p => ({
         id: p.id,
         name: p.name,
         region: p.region_id,
@@ -213,7 +229,7 @@ export const DataService = {
    */
   async getAttractions() {
     const cached = await getCached(CACHE.ATTRACTIONS);
-    return cached || bundledAttractions;
+    return filterShippablePois(cached || bundledAttractions);
   },
 
   /**
@@ -255,7 +271,7 @@ export const DataService = {
    */
   async getPoiImages(poiId) {
     try {
-      const { data, error } = await supabase
+      const { data, error } = await contentSupabase
         .from('poi_images')
         .select('image_url, display_order')
         .eq('poi_id', poiId)
@@ -278,7 +294,7 @@ export const DataService = {
    */
   async getPoiScripts(poiId) {
     try {
-      const { data, error } = await supabase
+      const { data, error } = await contentSupabase
         .from('poi_scripts')
         .select('*')
         .eq('poi_id', poiId);

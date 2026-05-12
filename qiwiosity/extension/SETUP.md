@@ -38,7 +38,7 @@ The extension auto-detects place names, regions, thumbnails, and tags from each 
           ┌────────────────────────┐
           │  Mobile App            │
           │  WishlistContext →     │
-          │  WishlistScreen        │
+          │  SavedScreen           │
           └────────────────────────┘
 ```
 
@@ -83,9 +83,9 @@ Edit `extension/background.js` and replace the config values:
 
 ```javascript
 const CONFIG = {
-  SUPABASE_URL: 'https://hauksnqehzaxuoeaezji.supabase.co',     // ← your project URL
+  SUPABASE_URL: 'https://osulujkdeuukilchfath.supabase.co',     // ← your auth/community project URL
   SUPABASE_ANON_KEY: 'eyJ...',                                    // ← your anon key
-  WISHLIST_FUNCTION_URL: 'https://hauksnqehzaxuoeaezji.supabase.co/functions/v1/wishlist',
+  WISHLIST_FUNCTION_URL: 'https://osulujkdeuukilchfath.supabase.co/functions/v1/wishlist',
 };
 ```
 
@@ -133,7 +133,7 @@ Press **Alt + Q** on any page to open the save panel.
 
 ## Mobile App Integration
 
-The `WishlistScreen` appears as a new "Wishlist" tab (globe icon) in the app. It shows:
+Wishlist items appear in the app's `SavedScreen` alongside local lists. It shows:
 - Stats bar (saved, to visit, visited, matched to app)
 - Search and filter (all / to visit / visited / in app)
 - Cards with thumbnails, source badges, and POI match indicators
@@ -163,5 +163,5 @@ mobile/src/context/
   WishlistContext.js      — Cloud-synced wishlist state
 
 mobile/src/screens/
-  WishlistScreen.js       — Wishlist tab UI
+  SavedScreen.js          — saved places, local lists, and cloud wishlist summary
 ```

@@ -26,6 +26,7 @@ const path = require('path');
 // ── Paths ────────────────────────────────────────────────
 const SEED_PATH = path.join(__dirname, 'seed', 'pois.json');
 const OUTPUT_PATH = path.join(__dirname, '..', 'mobile', 'src', 'data', 'attractions.json');
+const SHIP_BLOCKLIST_RE = /\b(?:PLACEHOLDER|do not ship)\b/i;
 
 // ── Transform ────────────────────────────────────────────
 function transformPoi(poi) {
@@ -56,6 +57,17 @@ function transformPoi(poi) {
 }
 
 // ── Main ─────────────────────────────────────────────────
+function isShipBlockedPoi(poi) {
+  const text = [
+    poi.name,
+    poi.short,
+    poi.commentary,
+    poi.audio_story,
+  ].filter(Boolean).join(' ');
+
+  return SHIP_BLOCKLIST_RE.test(text);
+}
+
 function sync() {
   if (!fs.existsSync(SEED_PATH)) {
     console.error(`❌  Seed file not found: ${SEED_PATH}`);
@@ -63,7 +75,8 @@ function sync() {
   }
 
   const seed = JSON.parse(fs.readFileSync(SEED_PATH, 'utf-8'));
-  const bundled = seed.map(transformPoi);
+  const skipped = seed.filter(isShipBlockedPoi);
+  const bundled = seed.filter(poi => !isShipBlockedPoi(poi)).map(transformPoi);
 
   // Ensure output directory exists
   fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
@@ -78,6 +91,9 @@ function sync() {
     .join('\n');
 
   console.log(`✅  Synced ${bundled.length} POIs → ${path.relative(process.cwd(), OUTPUT_PATH)}`);
+  if (skipped.length) {
+    console.warn(`Skipped ${skipped.length} non-shippable POI(s): ${skipped.map(p => p.id).join(', ')}`);
+  }
   console.log(catSummary);
 }
 

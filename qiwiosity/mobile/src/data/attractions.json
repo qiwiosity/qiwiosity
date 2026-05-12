@@ -9164,30 +9164,6 @@
     }
   },
   {
-    "id": "heretaunga-rohe-intro",
-    "name": "Welcome to Heretaunga",
-    "region": "hawkes-bay",
-    "lat": -39.64,
-    "lng": 176.84,
-    "category": "māori",
-    "tags": [
-      "welcome",
-      "iwi",
-      "rohe",
-      "cultural-context"
-    ],
-    "duration_hours": 1,
-    "short": "A short cultural welcome to the Heretaunga plains — the rohe of Ngāti Kahungunu.",
-    "commentary": "PLACEHOLDER — do not ship until reviewed with Ngāti Kahungunu Iwi Inc. Intended as a respectful, general-level welcome: 'You are entering the rohe of Ngāti Kahungunu, one of Aotearoa's largest iwi. The plains from Takapau to the Mohaka are Heretaunga — named for the bindings of a great canoe. We'll point out sites as we pass them; we won't tell stories that aren't ours to tell.'",
-    "audio_story": null,
-    "trigger_radius_m": 2000,
-    "suggested_voice_tone": "warm",
-    "reviews": {
-      "rating": 4.6,
-      "summary": "Visitors describe Welcome to Heretaunga as a place where the history and cultural significance of Aotearoa become tangible and real. A short cultural welcome to the Heretaunga plains — the rohe of Ngāti Kahungunu. Reviewers appreciate the opportunity to connect with the stories of the land and its people in an authentic setting."
-    }
-  },
-  {
     "id": "marlborough-allan-scott",
     "name": "Allan Scott Family Winemakers",
     "region": "marlborough",

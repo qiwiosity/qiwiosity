@@ -2,14 +2,14 @@
 
 Stories Along the Way — an NZ travel companion that narrates the landscape as you drive through it.
 
-This is the monorepo. Everything that runs the product — mobile app, backend, content, internal tooling — lives here.
+This is the monorepo. Everything that runs the product — mobile app, database, content, internal tooling — lives here.
 
 ## Layout
 
 ```
 qiwiosity/
 ├── mobile/      Expo (React Native) app. iOS-first during Stage A.
-├── backend/     API + content delivery. Empty until Stage B; a placeholder for now.
+├── database/    Supabase schema, migrations, seed data, and import/sync scripts.
 ├── content/     POI data, scripts, and generated audio. The product's substance.
 │   ├── poi/        JSON: lat/lng, trigger radius, script refs
 │   ├── scripts/    Authored scripts (Markdown)
