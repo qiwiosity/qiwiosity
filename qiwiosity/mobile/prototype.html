@@ -3314,6 +3314,9 @@ main::before {
 
 .splash {
   background: #071B18;
+  align-items: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .splash-bg {
@@ -3334,9 +3337,12 @@ main::before {
 .splash-content {
   align-items: flex-start;
   text-align: left;
+  width: min(100%, 900px);
   max-width: 900px;
+  min-height: 100dvh;
+  justify-content: center;
   margin: 0 auto 0 0;
-  padding: 54px 52px;
+  padding: clamp(24px, 5vh, 54px) clamp(22px, 4vw, 52px);
 }
 
 .splash-content::before {
@@ -3373,29 +3379,32 @@ main::before {
 }
 
 .splash-headline {
-  max-width: 860px;
-  font-size: clamp(58px, 8.8vw, 132px);
-  line-height: 0.84;
+  width: 100%;
+  max-width: min(860px, 100%);
+  font-size: clamp(46px, min(7vw, 11vh), 112px);
+  line-height: 0.9;
   letter-spacing: 0;
   margin-bottom: 22px;
+  overflow-wrap: break-word;
 }
 
 .splash-sub {
+  width: 100%;
   max-width: 680px;
   color: rgba(255, 248, 232, 0.78);
   font-size: 18px;
 }
 
 .splash-features {
-  grid-template-columns: repeat(4, minmax(132px, 1fr));
-  width: min(100%, 820px);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  width: min(100%, 780px);
   gap: 8px;
   margin-top: 12px;
 }
 
 .splash-feature {
-  min-height: 98px;
-  padding: 13px;
+  min-height: 78px;
+  padding: 12px;
   border-radius: 8px;
   border-color: rgba(255, 248, 232, 0.18);
   background: rgba(7, 27, 24, 0.64);
@@ -3411,6 +3420,55 @@ main::before {
   background: var(--shell);
   color: #071B18;
   font-weight: 950;
+}
+
+@media (max-height: 800px) {
+  .splash-content {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .splash-content::before {
+    min-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .splash-logo-row {
+    margin-bottom: 14px;
+  }
+
+  .splash-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .splash-brand {
+    font-size: 18px;
+  }
+
+  .splash-headline {
+    font-size: clamp(40px, min(6.4vw, 10vh), 88px);
+    line-height: 0.92;
+    margin-bottom: 14px;
+  }
+
+  .splash-sub {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .splash-features {
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .splash-feature {
+    min-height: 66px;
+  }
+
+  .splash-begin {
+    min-height: 46px;
+  }
 }
 
 .splash-footer {
@@ -3507,11 +3565,24 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
   .splash-content {
     align-items: flex-start;
     text-align: left;
-    padding: 34px 22px;
+    padding: 28px 22px;
   }
 
   .splash-headline {
-    font-size: 52px;
+    width: calc(100vw - 44px);
+    max-width: calc(100vw - 44px);
+    font-size: clamp(34px, 10.5vw, 42px);
+    line-height: 0.92;
+  }
+
+  .splash-sub {
+    width: calc(100vw - 44px);
+    max-width: 100%;
+  }
+
+  .splash-features {
+    width: calc(100vw - 44px);
+    max-width: calc(100vw - 44px);
   }
 
   .splash-features {
