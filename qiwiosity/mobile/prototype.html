@@ -2723,6 +2723,63 @@ html.dark .mobile-nav-btn.mob-active { color: var(--primary); }
   --shadow-lg: 0 28px 70px rgba(0, 0, 0, 0.34);
   --radius: 8px;
   --header-h: 76px;
+  --qw-left-panel: 390px;
+  --qw-right-panel: 360px;
+  --qw-tablet-panel: 370px;
+  --qw-narrow-panel: 345px;
+  --qw-fs-9: 10px;
+  --qw-fs-10: 11px;
+  --qw-fs-11: 12px;
+  --qw-fs-12: 14px;
+  --qw-fs-13: 15px;
+  --qw-fs-14: 16px;
+  --qw-fs-16: 18px;
+  --qw-dot-9: 10px;
+}
+
+html.text-compact {
+  --qw-left-panel: 360px;
+  --qw-right-panel: 330px;
+  --qw-tablet-panel: 340px;
+  --qw-narrow-panel: 320px;
+  --qw-fs-9: 9px;
+  --qw-fs-10: 10px;
+  --qw-fs-11: 11px;
+  --qw-fs-12: 12px;
+  --qw-fs-13: 13px;
+  --qw-fs-14: 14px;
+  --qw-fs-16: 16px;
+  --qw-dot-9: 9px;
+}
+
+html.text-comfort {
+  --qw-left-panel: 390px;
+  --qw-right-panel: 360px;
+  --qw-tablet-panel: 370px;
+  --qw-narrow-panel: 345px;
+  --qw-fs-9: 10px;
+  --qw-fs-10: 11px;
+  --qw-fs-11: 12px;
+  --qw-fs-12: 14px;
+  --qw-fs-13: 15px;
+  --qw-fs-14: 16px;
+  --qw-fs-16: 18px;
+  --qw-dot-9: 10px;
+}
+
+html.text-large {
+  --qw-left-panel: 430px;
+  --qw-right-panel: 410px;
+  --qw-tablet-panel: 400px;
+  --qw-narrow-panel: 370px;
+  --qw-fs-9: 11px;
+  --qw-fs-10: 13px;
+  --qw-fs-11: 14px;
+  --qw-fs-12: 15px;
+  --qw-fs-13: 17px;
+  --qw-fs-14: 18px;
+  --qw-fs-16: 21px;
+  --qw-dot-9: 12px;
 }
 
 html,
@@ -2735,7 +2792,7 @@ body {
 }
 
 .app {
-  grid-template-columns: 360px minmax(0, 1fr) 330px;
+  grid-template-columns: var(--qw-left-panel) minmax(0, 1fr) var(--qw-right-panel);
   gap: 12px;
   padding: 12px;
   background:
@@ -2868,8 +2925,8 @@ header .tab.active {
   --surface: rgba(255, 248, 232, 0.08);
   --surface2: rgba(255, 248, 232, 0.13);
   --text: #FFF8E8;
-  --text2: rgba(255, 248, 232, 0.78);
-  --muted: rgba(255, 248, 232, 0.58);
+  --text2: rgba(255, 248, 232, 0.84);
+  --muted: rgba(255, 248, 232, 0.72);
   --border: rgba(255, 248, 232, 0.15);
   color: var(--text);
   border: 1px solid rgba(255, 248, 232, 0.15);
@@ -3252,6 +3309,141 @@ main::before {
   color: rgba(255, 248, 232, 0.76) !important;
 }
 
+/* Readability zoom scales dense app text without relying on browser zoom. */
+header .tab {
+  font-size: var(--qw-fs-12);
+}
+
+.header-search-bar input {
+  font-size: var(--qw-fs-13);
+}
+
+.sidebar,
+.itinerary-panel {
+  font-size: var(--qw-fs-14);
+}
+
+.section-label,
+.filters-popover .fp-label,
+main::before,
+.legend-header strong {
+  font-size: var(--qw-fs-10);
+}
+
+.discovery-heading-text h3,
+.iti-header-row h2 {
+  font-size: var(--qw-fs-16);
+}
+
+.discovery-heading-text p,
+.discovery-row .disco-sub,
+.region .small,
+.cat .count,
+.region .poi-count,
+.filters-toggle .filters-badge {
+  font-size: var(--qw-fs-11);
+  line-height: 1.45;
+}
+
+.cat,
+.region,
+.filters-toggle,
+#clearFiltersBtn,
+#clearAccomFiltersBtn,
+.saved-header-actions .pill-btn,
+.chip,
+.plan-cat-chip,
+.aigen-chip,
+.aigen-3btn,
+.echo-tag-chip,
+.speed-btn,
+#accomTypeChips .cat-chip,
+#accomRegionChips .cat-chip,
+.iti-day-tab,
+.iti-day-tab-add,
+.compare-group-title {
+  font-size: var(--qw-fs-12);
+  line-height: 1.25;
+}
+
+.discovery-row .disco-label,
+.search,
+.journey-start-input,
+.accom-card-name,
+.compare-card .cc-name,
+.wishlist-card-name,
+.iti-card-name {
+  font-size: var(--qw-fs-13);
+  line-height: 1.3;
+}
+
+.accom-desc,
+.compare-intro,
+.compare-empty-state p,
+.wishlist-empty p,
+.itinerary-list .empty,
+.iti-stats-toggle,
+.iti-stats-body,
+.iti-card-sub,
+.compare-card .cc-meta,
+.compare-card .cc-rating,
+.wishlist-card-meta {
+  font-size: var(--qw-fs-12);
+  line-height: 1.5;
+}
+
+.plan-stop-name {
+  font-size: var(--qw-fs-14);
+  line-height: 1.25;
+}
+
+.plan-stop-meta {
+  font-size: var(--qw-fs-12);
+  line-height: 1.45;
+}
+
+.legend {
+  min-width: min(270px, calc(100vw - 24px));
+  font-size: var(--qw-fs-12);
+}
+
+.legend .row {
+  gap: 8px;
+  line-height: 1.45;
+}
+
+.legend .dot {
+  width: var(--qw-dot-9);
+  height: var(--qw-dot-9);
+}
+
+.mobile-nav-btn {
+  font-size: var(--qw-fs-9);
+}
+
+.settings-toggle-row strong {
+  font-size: var(--qw-fs-13);
+}
+
+.settings-toggle-row p {
+  font-size: var(--qw-fs-11);
+  line-height: 1.45;
+}
+
+.text-size-control {
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.text-size-control .speed-options {
+  width: 100%;
+}
+
+.text-size-control .speed-btn {
+  flex: 1;
+  min-width: 96px;
+}
+
 .filters-popover,
 .search-suggestions,
 .saved-more-menu,
@@ -3509,7 +3701,7 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
 
 @media (max-width: 1200px) {
   .app {
-    grid-template-columns: 350px minmax(0, 1fr);
+    grid-template-columns: var(--qw-tablet-panel) minmax(0, 1fr);
   }
 
   header .tabs {
@@ -3519,7 +3711,7 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
 
 @media (max-width: 980px) {
   .app {
-    grid-template-columns: 330px minmax(0, 1fr);
+    grid-template-columns: var(--qw-narrow-panel) minmax(0, 1fr);
     gap: 10px;
     padding: 10px;
   }
@@ -4447,6 +4639,17 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
             <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode(this.checked)" />
             <span class="toggle-slider"></span>
           </label>
+        </div>
+        <div class="settings-toggle-row text-size-control" style="margin-top:10px;">
+          <div>
+            <strong>Text Size</strong>
+            <p>Zoom dense app text like panels, legends, lists, and itinerary cards.</p>
+          </div>
+          <div class="speed-options" id="textSizeOptions">
+            <button class="speed-btn text-size-btn" data-text-size="compact" onclick="setTextSize('compact')">Compact</button>
+            <button class="speed-btn text-size-btn active" data-text-size="comfort" onclick="setTextSize('comfort')">Comfort</button>
+            <button class="speed-btn text-size-btn" data-text-size="large" onclick="setTextSize('large')">Large</button>
+          </div>
         </div>
       </div>
 
@@ -12505,9 +12708,38 @@ function confirmFindSimilar() {
 }
 
 // ============ SETTINGS MODAL ============
+const TEXT_SIZE_KEY = 'qw_text_size';
+const TEXT_SIZE_LABELS = {
+  compact: 'Compact',
+  comfort: 'Comfort',
+  large: 'Large'
+};
+
+function normalizeTextSize(size) {
+  return ['compact', 'comfort', 'large'].includes(size) ? size : 'comfort';
+}
+
+function applyTextSize(size) {
+  const nextSize = normalizeTextSize(size);
+  document.documentElement.classList.remove('text-compact', 'text-comfort', 'text-large');
+  document.documentElement.classList.add(`text-${nextSize}`);
+  document.documentElement.dataset.textSize = nextSize;
+  document.querySelectorAll('.text-size-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.textSize === nextSize);
+  });
+}
+
+function setTextSize(size) {
+  const nextSize = normalizeTextSize(size);
+  localStorage.setItem(TEXT_SIZE_KEY, nextSize);
+  applyTextSize(nextSize);
+  showToast(`Text size: ${TEXT_SIZE_LABELS[nextSize]}`);
+}
+
 function openSettings() {
   document.getElementById('settingsOverlay').classList.add('open');
   document.getElementById('darkModeToggle').checked = document.documentElement.classList.contains('dark');
+  applyTextSize(localStorage.getItem(TEXT_SIZE_KEY) || 'comfort');
   const langSel = document.getElementById('langSelect');
   if (langSel) langSel.value = currentLang;
   const saved = localStorage.getItem('qw_elevenlabs_key') || '';
@@ -12529,7 +12761,7 @@ function toggleDarkMode(on) {
 function setPlaybackSpeed(s) {
   playbackSpeed = s;
   localStorage.setItem('qw_speed', String(s));
-  document.querySelectorAll('.speed-btn').forEach(b => {
+  document.querySelectorAll('.speed-btn[data-speed]').forEach(b => {
     b.classList.toggle('active', parseFloat(b.dataset.speed) === s);
   });
 }
@@ -12917,8 +13149,9 @@ function initVoiceSystem() {
   playbackSpeed = parseFloat(localStorage.getItem('qw_speed') || '1');
   const darkPref = localStorage.getItem('qw_dark');
   if (darkPref === '1') document.documentElement.classList.add('dark');
+  applyTextSize(localStorage.getItem(TEXT_SIZE_KEY) || 'comfort');
   // Update speed button states
-  document.querySelectorAll('.speed-btn').forEach(b => {
+  document.querySelectorAll('.speed-btn[data-speed]').forEach(b => {
     b.classList.toggle('active', parseFloat(b.dataset.speed) === playbackSpeed);
   });
   // Load web voices (async in some browsers)
@@ -13806,6 +14039,7 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
   document.addEventListener('DOMContentLoaded', () => setTimeout(openAdmin, 800));
 }
 
+applyTextSize(localStorage.getItem(TEXT_SIZE_KEY) || 'comfort');
 initMap();
 </script>
 <!-- Quiz modal -->
