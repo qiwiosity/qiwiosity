@@ -3575,6 +3575,22 @@ main::before,
   background-color: #fff !important;
 }
 
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+  max-height: none !important;
+}
+
+.popup-inner {
+  max-height: min(560px, calc(100vh - 96px));
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.popup-inner::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .popup-hero,
 .poi-detail-hero {
   background:
