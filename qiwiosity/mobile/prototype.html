@@ -3309,6 +3309,88 @@ main::before {
   color: rgba(255, 248, 232, 0.76) !important;
 }
 
+.sidebar-section-toggle {
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0 0;
+  padding: 0 2px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.sidebar-section-toggle:hover .sidebar-section-title {
+  color: var(--accent);
+}
+
+.sidebar-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--text);
+  font-size: var(--qw-fs-14);
+  font-weight: 850;
+}
+
+.sidebar-section-icon {
+  font-size: var(--qw-fs-16);
+  line-height: 1;
+}
+
+.sidebar-toggle-arrow {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 248, 232, 0.14);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: var(--qw-fs-12);
+  font-weight: 900;
+  transition: transform 0.18s ease, color 0.18s ease, background 0.18s ease;
+}
+
+.sidebar-section-toggle:hover .sidebar-toggle-arrow {
+  color: #071B18;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.sidebar-collapsible {
+  overflow: hidden;
+  max-height: 1800px;
+  opacity: 1;
+  transition: max-height 0.26s ease, opacity 0.18s ease, margin 0.18s ease;
+}
+
+.sidebar-collapsible.collapsed {
+  max-height: 0;
+  opacity: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  pointer-events: none;
+}
+
+.sidebar-collapsible-divider {
+  transition: height 0.18s ease, margin 0.18s ease, opacity 0.18s ease;
+}
+
+.sidebar-collapsible-divider.collapsed {
+  height: 0;
+  margin: 0 !important;
+  opacity: 0;
+}
+
 /* Readability zoom scales dense app text without relying on browser zoom. */
 header .tab {
   font-size: var(--qw-fs-12);
@@ -3945,28 +4027,32 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
 
       <div class="section-divider"></div>
 
-      <div style="display:flex;align-items:center;justify-content:space-between;margin:20px 0 0;">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span style="font-size:16px;">☰</span>
-          <span style="font-size:14px;font-weight:700;color:var(--text);" data-i18n="explore.categories">Travel Moods</span>
-        </div>
-        <span style="font-size:14px;color:var(--muted);">∧</span>
-      </div>
-      <div class="section-divider" style="margin-top:10px;"></div>
-      <div class="category-list" id="categoryList"></div>
+      <button type="button" class="sidebar-section-toggle" id="categorySectionToggle"
+        aria-controls="categoryList" aria-expanded="true"
+        onclick="toggleSidebarSection('categoryList','categorySectionToggle')">
+        <span class="sidebar-section-title">
+          <span class="sidebar-section-icon">☰</span>
+          <span data-i18n="explore.categories">Travel Moods</span>
+        </span>
+        <span class="sidebar-toggle-arrow" aria-hidden="true">^</span>
+      </button>
+      <div class="section-divider sidebar-collapsible-divider" data-sidebar-divider-for="categoryList" style="margin-top:10px;"></div>
+      <div class="category-list sidebar-collapsible" id="categoryList"></div>
 
-      <div style="display:flex;align-items:center;justify-content:space-between;margin:20px 0 0;">
-        <div style="display:flex;align-items:center;gap:8px;">
-          <span style="font-size:16px;">🌐</span>
-          <span style="font-size:14px;font-weight:700;color:var(--text);">Regions</span>
-        </div>
-        <div style="display:flex;align-items:center;gap:6px;">
-          <span id="activeRegionChip" style="display:none;font-size:10px;font-weight:700;padding:2px 8px;background:var(--primary);color:white;border-radius:12px;cursor:pointer;" onclick="clearRegionFilter()" title="Clear region filter"></span>
-          <span style="font-size:14px;color:var(--muted);">∧</span>
-        </div>
-      </div>
-      <div class="section-divider" style="margin-top:10px;"></div>
-      <div class="region-list" id="regionList"></div>
+      <button type="button" class="sidebar-section-toggle" id="regionSectionToggle"
+        aria-controls="regionList" aria-expanded="true"
+        onclick="toggleSidebarSection('regionList','regionSectionToggle')">
+        <span class="sidebar-section-title">
+          <span class="sidebar-section-icon">🌐</span>
+          <span>Regions</span>
+        </span>
+        <span style="display:flex;align-items:center;gap:6px;">
+          <span id="activeRegionChip" style="display:none;font-size:10px;font-weight:700;padding:2px 8px;background:var(--primary);color:white;border-radius:12px;cursor:pointer;" onclick="event.stopPropagation();clearRegionFilter()" title="Clear region filter"></span>
+          <span class="sidebar-toggle-arrow" aria-hidden="true">^</span>
+        </span>
+      </button>
+      <div class="section-divider sidebar-collapsible-divider" data-sidebar-divider-for="regionList" style="margin-top:10px;"></div>
+      <div class="region-list sidebar-collapsible" id="regionList"></div>
     </div>
     <div class="view" id="view-stay">
       <h2 data-i18n="stay.title">Sleep Near the Story</h2>
@@ -9909,6 +9995,55 @@ function renderItinerary() {
   });
 }
 
+// ============ SIDEBAR SECTION TOGGLES ============
+const SIDEBAR_SECTION_KEY = 'qw_sidebar_sections';
+const SIDEBAR_SECTIONS = {
+  categoryList: 'categorySectionToggle',
+  regionList: 'regionSectionToggle'
+};
+
+function loadSidebarSectionState() {
+  try { return JSON.parse(localStorage.getItem(SIDEBAR_SECTION_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+
+function saveSidebarSectionState(stateMap) {
+  localStorage.setItem(SIDEBAR_SECTION_KEY, JSON.stringify(stateMap));
+}
+
+function setSidebarSectionCollapsed(bodyId, collapsed, persist = false) {
+  const body = document.getElementById(bodyId);
+  const toggle = document.getElementById(SIDEBAR_SECTIONS[bodyId]);
+  const divider = document.querySelector(`[data-sidebar-divider-for="${bodyId}"]`);
+  if (!body || !toggle) return;
+
+  body.classList.toggle('collapsed', collapsed);
+  toggle.classList.toggle('collapsed', collapsed);
+  toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+  const arrow = toggle.querySelector('.sidebar-toggle-arrow');
+  if (arrow) arrow.textContent = collapsed ? '>' : '^';
+  if (divider) divider.classList.toggle('collapsed', collapsed);
+
+  if (persist) {
+    const stateMap = loadSidebarSectionState();
+    stateMap[bodyId] = collapsed;
+    saveSidebarSectionState(stateMap);
+  }
+}
+
+function toggleSidebarSection(bodyId) {
+  const body = document.getElementById(bodyId);
+  if (!body) return;
+  setSidebarSectionCollapsed(bodyId, !body.classList.contains('collapsed'), true);
+}
+
+function restoreSidebarSectionStates() {
+  const stateMap = loadSidebarSectionState();
+  Object.keys(SIDEBAR_SECTIONS).forEach(bodyId => {
+    setSidebarSectionCollapsed(bodyId, !!stateMap[bodyId], false);
+  });
+}
+
 // ============ CATEGORY + REGION FILTERS ============
 function isAllCategories() {
   return state.activeCategories.size === CATEGORIES.length;
@@ -14040,6 +14175,7 @@ if (new URLSearchParams(window.location.search).get('admin') === 'true') {
 }
 
 applyTextSize(localStorage.getItem(TEXT_SIZE_KEY) || 'comfort');
+restoreSidebarSectionStates();
 initMap();
 </script>
 <!-- Quiz modal -->
