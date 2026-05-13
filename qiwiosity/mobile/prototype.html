@@ -3909,6 +3909,117 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
   .splash-features {
     grid-template-columns: 1fr;
   }
+
+  html.qw-mobile .poi-detail-overlay {
+    z-index: 7600;
+  }
+
+  html.qw-mobile .poi-detail-header {
+    padding-top: max(12px, env(safe-area-inset-top, 0px));
+  }
+
+  html.qw-mobile .poi-detail-hero {
+    height: clamp(300px, 44vh, 380px);
+  }
+
+  html.qw-mobile .poi-detail-gallery {
+    padding: 10px 12px;
+  }
+
+  html.qw-mobile .poi-detail-gallery img {
+    width: 92px;
+    height: 68px;
+  }
+
+  html.qw-mobile .poi-detail-audio-section {
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background: var(--bg);
+    box-shadow: 0 8px 18px rgba(7, 27, 24, 0.12);
+  }
+
+  html.qw-mobile .poi-detail-audio-section .btn {
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  html.qw-mobile .commentary-overlay {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: none;
+    max-height: min(78vh, calc(100dvh - 74px));
+    overflow-y: auto;
+    transform: none;
+    border-radius: 18px 18px 0 0;
+    padding: 14px 16px calc(18px + env(safe-area-inset-bottom, 0px));
+    z-index: 9000;
+  }
+
+  html.qw-mobile .commentary-overlay.on {
+    animation: none;
+  }
+
+  html.qw-mobile .commentary-play-row {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0 0 12px;
+    padding: 4px 0 10px;
+    background: var(--primary-deep);
+  }
+
+  html.qw-mobile .commentary-play-btn {
+    min-height: 46px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+    flex: 0 0 auto;
+  }
+
+  html.qw-mobile .comm-length-row {
+    flex-wrap: wrap;
+  }
+
+  html.qw-mobile .comm-len-pill {
+    flex: 1 1 calc(50% - 6px);
+    min-height: 38px;
+    border-radius: 12px;
+  }
+
+  html.qw-mobile .gm-style .gm-style-iw-c {
+    max-width: calc(100vw - 20px) !important;
+  }
+
+  html.qw-mobile .gm-style .gm-style-iw-d {
+    max-height: calc(100dvh - 112px) !important;
+    overflow: auto !important;
+  }
+
+  html.qw-mobile .popup-inner {
+    width: min(360px, calc(100vw - 32px));
+  }
+
+  html.qw-mobile .popup-hero {
+    height: clamp(280px, 42vh, 360px);
+  }
+
+  html.qw-mobile .popup-audio-strip {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    padding: 12px;
+  }
+
+  html.qw-mobile .popup-audio-btn {
+    min-height: 46px;
+    flex: 1;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 12px;
+  }
 }
 </style>
 </head>
@@ -5579,7 +5690,11 @@ async function speakText(text) {
 }
 
 function speakWebSpeech(text, persona) {
-  if (!('speechSynthesis' in window)) return;
+  if (!('speechSynthesis' in window)) {
+    updateCommentaryPlayBtn(false);
+    showToast('Audio is not supported in this browser');
+    return;
+  }
   window.speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   const voice = getWebVoiceForPersona(persona);
@@ -5594,6 +5709,7 @@ function speakWebSpeech(text, persona) {
   u.onerror = () => {
     _speechPlaying = false;
     updateCommentaryPlayBtn(false);
+    showToast('Tap Play again if your phone blocked audio');
   };
   window.speechSynthesis.speak(u);
 }
@@ -5654,10 +5770,10 @@ function closeCommentary() {
   _speechPlaying = false;
 }
 
-function showCommentaryPopup(id) {
+function showCommentaryPopup(id, autoPlay = true) {
   const a = ATTRACTIONS.find(x => x.id === id);
   if (!a) return;
-  showCommentary(a, false);
+  showCommentary(a, autoPlay);
 }
 
 // ============ COMMENTARY LENGTH + DRIVING MODE ============
@@ -6934,6 +7050,11 @@ function openPoiDetail(id) {
   document.getElementById('poiDetailBody').innerHTML = `
     <img id="poiDetailHeroImg" class="poi-detail-hero" src="${heroUrl}" alt="${a.name}" onerror="this.style.display='none'" />
     ${galleryHtml}
+    <div class="poi-detail-section poi-detail-audio-section">
+      <h3>${t('detail.audio')}</h3>
+      <button class="btn primary" style="width:100%;margin-bottom:8px;" onclick="showCommentaryPopup('${id}')">🔊 ${t('detail.playWith')} ${voiceName}</button>
+      <button class="btn" style="width:100%;" onclick="openEchoVerse('${id}')">🎙 ${t('detail.community')} (${echoMemoryCount(id)} ${t('detail.stories')})</button>
+    </div>
     <div class="poi-detail-section">
       <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:8px;align-items:center;">
         <span class="cat-chip" style="background:${color}cc;color:#fff;">${catLabel(a.category)}</span>
@@ -6946,11 +7067,6 @@ function openPoiDetail(id) {
     </div>
     ${a.short ? `<div class="poi-detail-section"><h3>${t('detail.about')}</h3><p class="poi-detail-commentary">${a.short}</p></div>` : ''}
     ${a.commentary ? `<div class="poi-detail-section"><h3>${t('detail.fullStory')}</h3><p class="poi-detail-commentary">${a.commentary}</p></div>` : ''}
-    <div class="poi-detail-section">
-      <h3>${t('detail.audio')}</h3>
-      <button class="btn primary" style="width:100%;margin-bottom:8px;" onclick="showCommentaryPopup('${id}')">🔊 ${t('detail.playWith')} ${voiceName}</button>
-      <button class="btn" style="width:100%;" onclick="openEchoVerse('${id}')">🎙 ${t('detail.community')} (${echoMemoryCount(id)} ${t('detail.stories')})</button>
-    </div>
     <div class="poi-detail-actions">
       ${isPoiVisited(id)
         ? `<button class="btn" style="background:linear-gradient(135deg,#7c3aed,#4f46e5);color:#fff;border-color:transparent;" onclick="uncheckInPoi('${id}')">✅ Visited — tap to undo</button>`
@@ -9060,11 +9176,11 @@ function showCommentary(a, autoPlay) {
     + `<button class="comm-len-pill ${commLengthMode==='full'?'active':''}" data-mode="full" onclick="setCommLength('full','${a.id}')">📖 Full Guide</button>`
     + `<button class="comm-len-pill ${commLengthMode==='deep'?'active':''}" data-mode="deep" onclick="loadDeepDive('${a.id}')" title="Generate a richer, podcast-length version with history, culture and stories">🔍 Tell me more</button>`
     + `</div>`
-    + `<div id="commBodyText" style="opacity:0.88;line-height:1.6;font-size:13px;">${getCommText(a)}</div>`
     + `<div class="commentary-play-row">`
     + `<button id="commentaryPlayBtn" class="commentary-play-btn" onclick="toggleCommentarySpeech('${a.id}')">▶ Play</button>`
     + `<span style="font-size:11px;opacity:0.6;">${elevenLabsKey ? 'AI voice' : 'Browser voice'} · ${persona.name}</span>`
-    + `</div>`;
+    + `</div>`
+    + `<div id="commBodyText" style="opacity:0.88;line-height:1.6;font-size:13px;">${getCommText(a)}</div>`;
 
   document.getElementById('commentary').classList.add('on');
   if (autoPlay) toggleCommentarySpeech(a.id);
@@ -10397,7 +10513,21 @@ function createAccomIcon(color) {
 }
 
 // ============ INFOWINDOW HELPERS ============
+function isMobileLayout() {
+  return document.documentElement.classList.contains('qw-mobile')
+    || window.matchMedia('(max-width: 768px)').matches;
+}
+
 function openPoiInfoWindow(a, marker) {
+  if (isMobileLayout()) {
+    if (infoWindow) infoWindow.close();
+    document.getElementById('mainSidebar')?.classList.remove('mob-open');
+    document.querySelectorAll('.mobile-nav-btn').forEach(b => b.classList.remove('mob-active'));
+    openPoiDetail(a.id);
+    addToRV(a.id);
+    return;
+  }
+
   const color = catColor(a.category);
   const rName = (REGIONS.find(r => r.id === a.region) || {}).name || a.region || 'New Zealand';
   const tagsHtml = (a.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
@@ -11909,6 +12039,10 @@ searchEl.addEventListener('keydown', (e) => { if (e.key === 'Escape') { sugEl.cl
 function dismissSplash() {
   document.getElementById('splash').classList.add('hidden');
   setTimeout(showOnboarding, 600);
+}
+
+if (new URLSearchParams(window.location.search).has('poi') || new URLSearchParams(window.location.search).has('accom')) {
+  document.getElementById('splash')?.classList.add('hidden');
 }
 
 // ============ AI TRIP GENERATOR ============
