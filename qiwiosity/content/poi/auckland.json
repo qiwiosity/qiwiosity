@@ -2648,7 +2648,7 @@
         "free-entry"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's largest and most prestigious art gallery, housed in a stunning heritage and modern building.",
       "commentary": "Auckland Art Gallery Toi o Tāmaki is New Zealand's largest art institution, holding over 17,000 works spanning seven centuries. The gallery occupies a magnificent French Renaissance-style building from 1887, dramatically extended in 2011 with a canopy of kauri-inspired forms designed by Melbourne architects FJMT and Auckland's Archimedia. The permanent collection includes significant works by Colin McCahon, Frances Hodgkins, and Gottfried Lindauer's famous Māori portraits. Admission to the main collection is free. The gallery hosts major international touring exhibitions throughout the year. Allow at least two hours to explore the permanent galleries, and check the website for current temporary exhibitions. The on-site café offers excellent coffee with views over Albert Park.",
       "content_status": "draft",
@@ -2692,7 +2692,7 @@
         "performing-arts"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Auckland's home for bold independent theatre, comedy, and dance in the heart of the city.",
       "commentary": "Q Theatre is Auckland's dedicated venue for independent and contemporary performing arts, located on Queen Street near the Aotea Quarter. Opened in 2011, the purpose-built facility contains three performance spaces: the Rangatira (330 seats), the Loft (120 seats), and the Vault, an intimate studio space. The theatre champions new New Zealand works alongside international productions, presenting everything from cutting-edge drama to experimental dance and comedy. The building's striking contemporary design incorporates a dramatic glazed façade. Q Theatre has become essential to Auckland's cultural identity, nurturing emerging artists and hosting festivals including the Auckland Fringe. The on-site bar is a popular pre-show gathering spot. Book online for best seats and check for matinee discounts.",
       "content_status": "draft",
@@ -2782,7 +2782,7 @@
         "urban"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Auckland's iconic dining and shopping strip, lined with restored Victorian villas and independent boutiques.",
       "commentary": "Ponsonby Road is Auckland's most celebrated urban street, stretching from Karangahape Road to Herne Bay through one of the city's most characterful inner suburbs. Once a working-class neighbourhood of colonial villas, Ponsonby transformed from the 1980s into a vibrant precinct of restaurants, cafés, bars, boutiques, and galleries housed in beautifully restored Victorian and Edwardian buildings. The street is home to some of Auckland's finest dining, from upscale restaurants to trendy brunch spots. Independent fashion boutiques sit alongside design stores and specialty food shops. The annual Ponsonby Road street festival draws massive crowds. Side streets reward exploration with hidden cafés and galleries. Start at the Three Lamps intersection and walk northwest, allowing time to duck into side streets. Weekday mornings are quietest; Saturday brunch is a local institution.",
       "content_status": "draft",
@@ -2874,7 +2874,7 @@
         "rural"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Award-winning craft brewery and restaurant set in a rural Riverhead location northwest of Auckland.",
       "commentary": "Hallertau is one of New Zealand's pioneering craft breweries, established in 2005 on a rural property in Riverhead, northwest Auckland. Named after the famous hop-growing region in Bavaria, the brewery produces a rotating lineup of beers from crisp pilsners to bold IPAs and seasonal specials. The spacious brewbar and restaurant occupies a converted farmstead with indoor and outdoor seating overlooking green paddocks. The food menu champions local ingredients with wood-fired pizzas and seasonal dishes designed to pair with the beers. Live music events and beer releases draw loyal crowds. The drive from central Auckland takes about 30 minutes and makes for a pleasant afternoon outing through the Kumeu wine district.",
       "content_status": "draft",
@@ -2897,7 +2897,7 @@
         "taproom"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Craft brewery taproom in the Matakana wine and food region, an hour north of Auckland city.",
       "commentary": "Sawmill Brewery has been crafting beers in the Matakana region since 2004, becoming one of New Zealand's most respected independent breweries. Their taproom offers a full range of core and seasonal beers including their flagship Pilsner and popular Hazy IPA. Located in the heart of the Matakana food and wine trail, the brewery is an easy addition to a day exploring local vineyards, olive groves, and the popular Matakana Village Farmers Market held every Saturday. The taproom features a relaxed indoor-outdoor setting with food trucks or a kitchen serving dishes designed to complement the beers. Combine with visits to nearby Tawharanui Regional Park or Goat Island marine reserve for a full day out of the city.",
       "content_status": "draft",
@@ -2943,7 +2943,7 @@
         "harbour"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Guided climb to the summit of Auckland Harbour Bridge for 360-degree views of the city and harbour.",
       "commentary": "The Auckland Bridge Climb takes you along catwalks and ladders to the top of the Auckland Harbour Bridge, standing 67 metres above the Waitemata Harbour. Operated by AJ Hackett, the guided experience lasts around 1.5 hours and includes insights into the bridge's construction history, including the clip-on lanes added by Japanese engineers in 1969. From the summit, you enjoy unobstructed 360-degree views spanning the Hauraki Gulf islands, the Sky Tower, volcanic cones, and the distant Waitakere Ranges. All safety equipment is provided, and the climb suits moderate fitness levels. Sunrise and sunset climbs are available for photographers seeking golden light. Departures run from Curran Street in Westhaven.",
       "content_status": "draft",
@@ -2966,7 +2966,7 @@
         "tropical"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Tropical butterfly house and animal park near Auckland Airport featuring exotic species and farm animals.",
       "commentary": "Butterfly Creek is a family-friendly attraction located minutes from Auckland Airport, making it an ideal stop before or after a flight. The tropical butterfly house contains hundreds of free-flying butterflies from around the world in a warm, lush environment. Beyond butterflies, the park features a crocodile enclosure, red pandas, meerkats, monkeys, a saltwater aquarium, and a farmyard where children can interact with animals. The Dinosaur Kingdom exhibit appeals to younger visitors with life-size animatronic models. A train ride loops the property. The on-site cafe offers decent food and there are picnic areas throughout the grounds. Allow at least two hours to see everything. Annual passes offer good value for Auckland families.",
       "content_status": "draft",
@@ -2989,7 +2989,7 @@
         "views"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Historic 1874 lighthouse at the entrance to Manukau Harbour with views of the treacherous harbour bar.",
       "commentary": "Perched on the clifftops at Awhitu Peninsula, Manukau Heads Lighthouse has watched over one of New Zealand's most dangerous harbour entrances since 1874. The harbour bar has claimed numerous vessels, most notably the HMS Orpheus in 1863, New Zealand's worst maritime disaster with 189 lives lost. The lighthouse was relocated from its original position in 1874 to its current site for better visibility. A short walk from the car park leads to the restored lighthouse, which offers commanding views across the Manukau Harbour entrance to the Waitakere coastline. Information panels tell the story of the area's maritime history. The surrounding Awhitu Regional Park features walking tracks through native bush. The drive from Auckland takes about 90 minutes via Waiuku.",
       "content_status": "draft",
@@ -3012,7 +3012,7 @@
         "cellar-doors"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Island wine trail with over 30 vineyards producing acclaimed Bordeaux-style reds, 35 minutes by ferry from Auckland.",
       "commentary": "Waiheke Island is Auckland's wine island, home to over 30 vineyards and wineries producing some of New Zealand's finest Bordeaux-style red blends. The island's warm, dry microclimate and clay soils create ideal conditions for Cabernet Sauvignon, Merlot, and Syrah, varieties that struggle in cooler New Zealand regions. Leading estates include Stonyridge, whose Larose is one of NZ's most sought-after reds, Mudbrick, Te Motu, Cable Bay, and Man O' War. Many wineries offer cellar door tastings with stunning views across the Hauraki Gulf. The island is accessible by a 35-minute ferry from downtown Auckland, and wine tour options include guided bus tours, self-drive, or cycling between wineries. The combination of world-class wine, beautiful beaches, olive groves, and art galleries makes Waiheke a complete destination experience. Summer weekends are busy, so midweek visits offer a more relaxed pace. Several wineries have excellent restaurants for vineyard dining.",
       "content_status": "draft",
@@ -3035,7 +3035,7 @@
         "farmers-market"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Self-drive food and wine trail an hour north of Auckland with vineyards, olive groves, and a famous farmers market.",
       "commentary": "The Matakana region, an hour north of Auckland, has developed into one of the upper North Island's most vibrant food and wine destinations. The self-drive trail takes in boutique wineries specialising in warm-climate varieties, olive groves pressing single-estate oils, artisan chocolate makers, local breweries, and numerous cafes championing seasonal local produce. The Matakana Village Farmers Market, held every Saturday morning, is the trail's social heart, bringing together local growers, bakers, and producers in a convivial outdoor setting. Key wine stops include Ascension Wine Estate, Brick Bay Wines with its acclaimed sculpture trail, and Ransom Wines. Morris & James pottery at nearby Matakana is worth visiting for its distinctive glazed ceramics. The region combines rural charm with creative energy, attracting Auckland day-trippers and weekenders year-round. Combine with visits to Tawharanui or Goat Island for a full day.",
       "content_status": "draft",
@@ -3058,7 +3058,7 @@
         "urban"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Revitalised waterfront precinct with restaurants, craft bars, fish market, and harbour-edge dining.",
       "commentary": "Wynyard Quarter is Auckland's premier waterfront dining and entertainment precinct, transformed from former industrial wharves into a vibrant urban space. The area features a concentration of restaurants, craft beer bars, and cafes along the harbour edge, with North Wharf offering waterside dining with views to the Harbour Bridge. The Auckland Fish Market operates daily with fresh seafood from around New Zealand, and the adjoining Seafood School offers cooking classes. ASB Waterfront Theatre provides performing arts, while public art installations and playgrounds add family appeal. The Silo Park area hosts summer markets and outdoor cinema. The precinct connects to the Viaduct Harbour and is a short walk from Britomart and the CBD. A playground and splash pad area makes it family-friendly by day, while the restaurant and bar scene comes alive in the evenings.",
       "content_status": "draft",
@@ -3104,7 +3104,7 @@
         "bohemian"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Bohemian village on Auckland's western fringe surrounded by native rainforest, with galleries and cafes.",
       "commentary": "Titirangi is Auckland's village in the bush, a bohemian hillside community perched on the edge of the Waitakere Ranges where suburbia meets native rainforest. The compact village centre features art galleries, boutique shops, excellent cafes, and the historic Lopdell House gallery. The surrounding Waitakere Ranges Regional Park offers hundreds of kilometres of walking tracks through dense native bush, waterfalls, and kauri groves. The Te Uru Waitakere Contemporary Gallery showcases New Zealand art in a striking building with panoramic views. Titirangi has long attracted artists, writers, and creative types, giving it a distinctive character quite different from Auckland's urban core. The village markets operate on the last Sunday of each month. Several bush walks are accessible directly from the village, including tracks leading to cascading streams and swimming holes. A 20-minute drive from the city centre.",
       "content_status": "draft",
@@ -3529,7 +3529,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Locals and visitors rate Silo Park highly as a relaxed waterfront gathering place with genuine character from its industrial heritage. The summer outdoor cinema events are mentioned repeatedly as a quintessential Auckland experience."
       }
     },
@@ -3581,7 +3581,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A pleasantly low-key wildlife and coastal walking destination within two hours of Auckland. The combination of surf beach, penguin habitat, and abundant shorebirds makes it a rewarding stopover on the Northland drive."
       }
     },
@@ -3699,7 +3699,7 @@
       "commentary": "Onehunga Bay Reserve is a well-kept secret among Auckland locals — a restored foreshore on the Manukau Harbour with a safe tidal lagoon for swimming, extensive playgrounds, and views across to Mangere Mountain. The reserve was transformed from an industrial waterfront into a community recreation space and includes barbecue areas, walking paths, and a cafe. The lagoon provides sheltered swimming that's much calmer than the west coast beaches. The volcanic cones of Mangere Mountain, Maungakiekie/One Tree Hill, and Rarotonga/Mount Smart provide a dramatic backdrop. It's particularly popular with families on summer weekends.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A great family-friendly spot that most tourists miss. The lagoon is safe for kids and the playground is excellent."
       }
     },
@@ -4089,7 +4089,7 @@
         "west auckland"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Waterfall abseiling through a volcanic canyon in the Waitākere Ranges.",
       "commentary": "Piha Canyon offers Auckland's most thrilling canyoning experience, descending through a volcanic rock valley with thundering waterfalls. The highlight is abseiling the highest commercially-operated waterfall in the Auckland region — an adrenaline-pumping adventure just 45 minutes from the CBD.",
       "content_status": "draft",
@@ -4112,7 +4112,7 @@
         "views"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Vast central park surrounding Maungakiekie/One Tree Hill volcanic cone.",
       "commentary": "Cornwall Park and One Tree Hill Domain together form one of Auckland's largest green spaces, centred on the Maungakiekie volcanic cone with its obelisk memorial to Māori. The parks offer walking trails through mature trees, heritage buildings including Acacia Cottage (Auckland's oldest), and panoramic city views from the summit.",
       "content_status": "draft",
@@ -4181,7 +4181,7 @@
         "bordeaux blend"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Acclaimed Waiheke Island vineyard producing world-class Bordeaux-style blends.",
       "commentary": "Stonyridge is one of Waiheke Island's founding wineries, famous for its Larose — a Bordeaux-style blend consistently rated among New Zealand's finest reds. The Mediterranean-style courtyard and olive groves make for a sophisticated tasting experience with views over the vineyard.",
       "content_status": "draft",
@@ -4227,7 +4227,7 @@
         "WWII"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Coastal farmland park with WWII gun emplacements and Hauraki Gulf views.",
       "commentary": "Shakespeare Regional Park on the Whangaparāoa Peninsula combines coastal farmland walks with WWII military heritage. Gun emplacements from the harbour defence system remain, and the cliff-top walking tracks offer sweeping views across the Hauraki Gulf to Tiritiri Matangi Island.",
       "content_status": "draft",
@@ -4250,7 +4250,7 @@
         "land rights"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Historic Māori land rights protest site with harbour views and a memorial garden.",
       "commentary": "Bastion Point was the site of a 507-day Māori land occupation in 1977-78, one of New Zealand's most significant protests for indigenous rights. Today the Michael Joseph Savage Memorial and Ngāti Whātua memorial share the headland, which offers stunning harbour panoramas.",
       "content_status": "draft",
@@ -4259,6 +4259,627 @@
         "rating": 4.5,
         "summary": "Deeply significant site with incredible views — an important visit."
       }
+    },
+    {
+      "id": "auckland-atiu-creek-regional-park",
+      "name": "Ātiu Creek Regional Park",
+      "region": "auckland",
+      "lat": -36.330892,
+      "lng": 174.382574,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "kaipara-harbour",
+        "farm-park",
+        "walking",
+        "birdlife"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 3,
+      "short": "A wide Kaipara Harbour farm park with wetland edges, native forest remnants, big-sky trails and overnight stays.",
+      "commentary": "Ātiu Creek feels like Auckland with the volume turned down. The park spreads across the Tapora Peninsula on the Kaipara Harbour, where old farm tracks roll past pasture, wetlands and regenerating forest. Jackie and Pierre Chatelanat gifted the farm so the public could share the harbour landscape and protect its heritage values. Walk the Oruawharo River Trail for the big version of the place, or take shorter loops toward viewpoints, reservoirs and quiet picnic spots. This is open country, working-farm texture and tidal harbour air, with birdlife in the wetland margins and long views across one of New Zealand's great west-coast harbours.",
+      "audio_story": "Ātiu Creek feels like Auckland with the volume turned down. The park spreads across the Tapora Peninsula on the Kaipara Harbour, where old farm tracks roll past pasture, wetlands and regenerating forest. Jackie and Pierre Chatelanat gifted the farm so the public could share the harbour landscape and protect its heritage values. Walk the Oruawharo River Trail for the big version of the place, or take shorter loops toward viewpoints, reservoirs and quiet picnic spots. This is open country, working-farm texture and tidal harbour air, with birdlife in the wetland margins and long views across one of New Zealand's great west-coast harbours.",
+      "suggested_voice_tone": "warm, spacious, quietly delighted",
+      "sources_to_check": [
+        "Auckland Council: https://www.aucklandcouncil.govt.nz/en/parks-recreation/find-park-beach/park-detail/205.html"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Loved for wide harbour views, quiet walking tracks and a strong sense of escape from the city; visitors note the remote access and changeable farm-track conditions."
+      }
+    },
+    {
+      "id": "auckland-duder-regional-park",
+      "name": "Duder Regional Park",
+      "region": "auckland",
+      "lat": -36.9383,
+      "lng": 175.0524,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "farm-park",
+        "clevedon",
+        "coastal-walk"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2.5,
+      "short": "A working coastal farm park east of Auckland with peninsula walks and Hauraki Gulf views.",
+      "commentary": "Duder Regional Park is Auckland’s eastern edge softened into pasture, shell banks and tidal water. The main farm loop rolls along the peninsula with open Hauraki Gulf views, and the whole place feels like a reminder that the city’s best geography is often just past the last suburb.",
+      "audio_story": "Duder Regional Park is Auckland’s eastern edge softened into pasture, shell banks and tidal water. The main farm loop rolls along the peninsula with open Hauraki Gulf views, and the whole place feels like a reminder that the city’s best geography is often just past the last suburb.",
+      "suggested_voice_tone": "spacious, warm, outdoorsy",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-waitawa-regional-park",
+      "name": "Waitawa Regional Park",
+      "region": "auckland",
+      "lat": -36.9764,
+      "lng": 175.1083,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "mountain-bike",
+        "coast",
+        "fishing"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 3,
+      "short": "A former coastal farm turned regional park with mountain-bike trails, bays and picnic headlands.",
+      "commentary": "Waitawa is one of Auckland’s newer regional park stories: old farm roads, new trails and a shoreline that keeps opening into small bays. It suits mixed groups well, because walkers, riders, fishers and picnic people can all find their version of the same quiet coastline.",
+      "audio_story": "Waitawa is one of Auckland’s newer regional park stories: old farm roads, new trails and a shoreline that keeps opening into small bays. It suits mixed groups well, because walkers, riders, fishers and picnic people can all find their version of the same quiet coastline.",
+      "suggested_voice_tone": "practical, inviting, outdoorsy",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-awhitu-regional-park",
+      "name": "Āwhitu Regional Park",
+      "region": "auckland",
+      "lat": -37.0525,
+      "lng": 174.646,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "manukau-harbour",
+        "farm-park",
+        "beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2.5,
+      "short": "A Manukau Harbour farm park with sheltered beaches, heritage buildings and west-coast light.",
+      "commentary": "Āwhitu Regional Park looks across the Manukau rather than out to the open Tasman, and that changes everything. The water is gentler, the beach is sheltered, and the old Brook homestead gives the park a human scale beside the long harbour views.",
+      "audio_story": "Āwhitu Regional Park looks across the Manukau rather than out to the open Tasman, and that changes everything. The water is gentler, the beach is sheltered, and the old Brook homestead gives the park a human scale beside the long harbour views.",
+      "suggested_voice_tone": "gentle, historical, coastal",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-mercer-bay-loop-track",
+      "name": "Mercer Bay Loop Track",
+      "region": "auckland",
+      "lat": -36.9956,
+      "lng": 174.4725,
+      "category": "nature",
+      "tags": [
+        "waitakere",
+        "cliffs",
+        "loop-walk",
+        "west-coast"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.25,
+      "short": "A short Waitākere loop above sheer sea cliffs, with one of Auckland’s grandest west-coast views.",
+      "commentary": "Mercer Bay Loop Track is brief, but it does not think small. The track traces high ground above black-sand surf and steep cliffs, turning the Tasman into a wall of sound below; it is an ideal stop when Piha feels too busy but the west coast is still calling.",
+      "audio_story": "Mercer Bay Loop Track is brief, but it does not think small. The track traces high ground above black-sand surf and steep cliffs, turning the Tasman into a wall of sound below; it is an ideal stop when Piha feels too busy but the west coast is still calling.",
+      "suggested_voice_tone": "dramatic, crisp, coastal",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-otara-creek-path",
+      "name": "Ōtara Creek Path",
+      "region": "auckland",
+      "lat": -36.9627,
+      "lng": 174.876,
+      "category": "culture",
+      "tags": [
+        "south-auckland",
+        "urban-walk",
+        "creek",
+        "community"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1,
+      "short": "A South Auckland creek-side path linking neighbourhood reserves, bridges and everyday urban nature.",
+      "commentary": "Ōtara Creek Path is not postcard Auckland, and that is exactly why it matters. It follows local green space through a part of the city travellers often miss, showing the living Auckland of sports fields, bridges, waterways and neighbourhood movement.",
+      "audio_story": "Ōtara Creek Path is not postcard Auckland, and that is exactly why it matters. It follows local green space through a part of the city travellers often miss, showing the living Auckland of sports fields, bridges, waterways and neighbourhood movement.",
+      "suggested_voice_tone": "grounded, observant, local",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-browns-island-motukorea",
+      "name": "Motukorea / Browns Island",
+      "region": "auckland",
+      "lat": -36.8345,
+      "lng": 174.8944,
+      "category": "nature",
+      "tags": [
+        "hauraki-gulf",
+        "volcano",
+        "kayak",
+        "island"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 4,
+      "short": "An uninhabited Hauraki Gulf volcanic island, usually reached by kayak or private boat.",
+      "commentary": "Motukorea / Browns Island sits close to the city yet feels oddly apart from it. There are no shops or ferry crowds, just volcanic slopes, shoreline landings and a summit that puts Rangitoto, the eastern bays and downtown Auckland into one clean arc.",
+      "audio_story": "Motukorea / Browns Island sits close to the city yet feels oddly apart from it. There are no shops or ferry crowds, just volcanic slopes, shoreline landings and a summit that puts Rangitoto, the eastern bays and downtown Auckland into one clean arc.",
+      "suggested_voice_tone": "quiet, exploratory, respectful",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "auckland-puhinui-reserve",
+      "name": "Puhinui Reserve",
+      "region": "auckland",
+      "lat": -37.0121,
+      "lng": 174.846,
+      "category": "nature",
+      "tags": [
+        "manukau",
+        "wetland",
+        "walking",
+        "birdlife"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A south Auckland wetland and harbour-edge reserve near the Puhinui Stream.",
+      "commentary": "Puhinui Reserve is a breathing space in the airport-and-motorway corner of Auckland. Follow the paths and the city noise drops back into reeds, harbour mudflats and bird movement; it is a useful reminder that urban nature does not need to be remote to be real.",
+      "audio_story": "Puhinui Reserve is a breathing space in the airport-and-motorway corner of Auckland. Follow the paths and the city noise drops back into reeds, harbour mudflats and bird movement; it is a useful reminder that urban nature does not need to be remote to be real.",
+      "suggested_voice_tone": "restorative, urban, attentive",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-kawakawa-bay-coast",
+      "name": "Kawakawa Bay Coast",
+      "region": "auckland",
+      "lat": -36.9382,
+      "lng": 175.1667,
+      "category": "journey",
+      "tags": [
+        "coastal-drive",
+        "fishing",
+        "beach",
+        "east-auckland"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2,
+      "short": "A quiet eastern coastal drive and beach settlement beyond Clevedon, looking toward the Hauraki Gulf.",
+      "commentary": "The road to Kawakawa Bay slips Auckland into a different gear: orchards, bends, boat trailers and then the water. It is not a single attraction so much as a mood, a low-key coastal pause that works beautifully between Hunua, Waitawa and the wider Seabird Coast.",
+      "audio_story": "The road to Kawakawa Bay slips Auckland into a different gear: orchards, bends, boat trailers and then the water. It is not a single attraction so much as a mood, a low-key coastal pause that works beautifully between Hunua, Waitawa and the wider Seabird Coast.",
+      "suggested_voice_tone": "easygoing, local, road-trip",
+      "sources_to_check": [
+        "Auckland Council parks and beaches",
+        "DOC Auckland places",
+        "iSITE New Zealand visitor information network"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-pah-homestead-wallace-arts",
+      "name": "Pah Homestead / Wallace Arts Centre",
+      "region": "auckland",
+      "lat": -36.9072,
+      "lng": 174.7416,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "heritage-house",
+        "hillsborough"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.25,
+      "short": "Auckland’s art-filled heritage house in Monte Cecilia Park, pairing contemporary exhibitions with one of the city’s grandest old homes.",
+      "commentary": "Auckland’s art-filled heritage house in Monte Cecilia Park, pairing contemporary exhibitions with one of the city’s grandest old homes.",
+      "audio_story": "Auckland’s art-filled heritage house in Monte Cecilia Park, pairing contemporary exhibitions with one of the city’s grandest old homes.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-botanic-gardens-manurewa",
+      "name": "Auckland Botanic Gardens, Manurewa",
+      "region": "auckland",
+      "lat": -37.0116,
+      "lng": 174.9073,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "family",
+        "south-auckland"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A large South Auckland garden where native plantings, sculpture lawns and seasonal collections give travellers a calmer view of the city.",
+      "commentary": "A large South Auckland garden where native plantings, sculpture lawns and seasonal collections give travellers a calmer view of the city.",
+      "audio_story": "A large South Auckland garden where native plantings, sculpture lawns and seasonal collections give travellers a calmer view of the city.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-scandrett-regional-park",
+      "name": "Scandrett Regional Park",
+      "region": "auckland",
+      "lat": -36.4197,
+      "lng": 174.8277,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "mahurangi",
+        "farm-heritage"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A Mahurangi Peninsula farm park with heritage buildings, shell beaches and headland views across one of Auckland’s loveliest northern harbours.",
+      "commentary": "A Mahurangi Peninsula farm park with heritage buildings, shell beaches and headland views across one of Auckland’s loveliest northern harbours.",
+      "audio_story": "A Mahurangi Peninsula farm park with heritage buildings, shell beaches and headland views across one of Auckland’s loveliest northern harbours.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-waharau-regional-park",
+      "name": "Waharau Regional Park",
+      "region": "auckland",
+      "lat": -37.144,
+      "lng": 175.236,
+      "category": "nature",
+      "tags": [
+        "regional-park",
+        "hunua-ranges",
+        "firth-of-thames",
+        "forest-walk"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2.5,
+      "short": "A quiet regional park on the Firth of Thames side of the Hunua Ranges, with forest walks and camping.",
+      "commentary": "Waharau feels like Auckland after the city noise has finally run out of road. The park sits between the steep green flank of the Hunua Ranges and the open Firth of Thames, giving walkers a choice between damp forest tracks, picnic lawns and a coastline that belongs more to birds and tides than traffic.",
+      "audio_story": "Waharau feels like Auckland after the city noise has finally run out of road. The park sits between the steep green flank of the Hunua Ranges and the open Firth of Thames, giving walkers a choice between damp forest tracks, picnic lawns and a coastline that belongs more to birds and tides than traffic.",
+      "suggested_voice_tone": "calm, green, lightly adventurous",
+      "sources_to_check": [
+        "https://www.aucklandcouncil.govt.nz/en/parks-recreation/find-park-beach/park-detail/233.html"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-matuku-link",
+      "name": "Matuku Link",
+      "region": "auckland",
+      "lat": -36.892,
+      "lng": 174.457,
+      "category": "nature",
+      "tags": [
+        "wetland",
+        "conservation",
+        "te-henga",
+        "birdlife"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A community wetland restoration project near Te Henga, opening a rare West Auckland habitat to careful visitors.",
+      "commentary": "Matuku Link is a different kind of Auckland attraction: not a finished spectacle, but a landscape being patiently repaired. Boardwalks, planting days and wetland edges invite visitors to notice the small work of recovery, where bittern habitat, volunteers and West Coast weather all matter.",
+      "audio_story": "Matuku Link is a different kind of Auckland attraction: not a finished spectacle, but a landscape being patiently repaired. Boardwalks, planting days and wetland edges invite visitors to notice the small work of recovery, where bittern habitat, volunteers and West Coast weather all matter.",
+      "suggested_voice_tone": "hopeful, observant, conservation-minded",
+      "sources_to_check": [
+        "https://matukulink.org.nz/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-nathan-homestead",
+      "name": "Nathan Homestead",
+      "region": "auckland",
+      "lat": -37.015269,
+      "lng": 174.902382,
+      "category": "heritage",
+      "tags": [
+        "manor-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-manor"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Auckland.",
+      "commentary": "Nathan Homestead is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Nathan Homestead is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/339310375",
+        "https://www.aucklandcouncil.govt.nz/en/newseventsculture/arts/artscentretheatresgalleries/pages/nathanhomestead.aspx",
+        "https://en.wikipedia.org/wiki/Nathan_Homestead",
+        "https://www.wikidata.org/wiki/Q131377383",
+        "https://www.newzealand.com/nz/auckland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-kz1-yacht",
+      "name": "KZ1 Yacht",
+      "region": "auckland",
+      "lat": -36.84235,
+      "lng": 174.763508,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Auckland.",
+      "commentary": "KZ1 Yacht is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as 27th America's Cup. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "KZ1 Yacht is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as 27th America's Cup. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/464276992",
+        "https://en.wikipedia.org/wiki/KZ1_(yacht)",
+        "https://www.wikidata.org/wiki/Q1090877",
+        "https://www.newzealand.com/nz/auckland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-tuff-crater-reserve",
+      "name": "Tuff Crater Reserve",
+      "region": "auckland",
+      "lat": -36.802554,
+      "lng": 174.755158,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Auckland.",
+      "commentary": "Tuff Crater Reserve fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Tuff Crater Reserve fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/324441679",
+        "https://www.aucklandcouncil.govt.nz/parks-recreation/Pages/park-details.aspx?Location=3475",
+        "https://en.wikipedia.org/wiki/Tank_Farm",
+        "https://www.wikidata.org/wiki/Q7683476",
+        "https://www.newzealand.com/nz/auckland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-sea-life-kelly-tarltons-aquarium",
+      "name": "SEA LIFE Kelly Tarlton's Aquarium",
+      "region": "auckland",
+      "lat": -36.846349,
+      "lng": 174.817169,
+      "category": "nature",
+      "tags": [
+        "aquarium",
+        "nature",
+        "tourism-aquarium"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A mapped local attraction that helps fill in the visitor map for Auckland.",
+      "commentary": "SEA LIFE Kelly Tarlton's Aquarium fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "SEA LIFE Kelly Tarlton's Aquarium fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/28529921",
+        "https://www.visitsealife.com/auckland/",
+        "https://en.wikipedia.org/wiki/Kelly_Tarlton's_Sea_Life_Aquarium",
+        "https://www.wikidata.org/wiki/Q28897",
+        "https://www.newzealand.com/nz/auckland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-highwic",
+      "name": "Highwic",
+      "region": "auckland",
+      "lat": -36.871827,
+      "lng": 174.77492,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Auckland.",
+      "commentary": "Highwic is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Highwic is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/265013900",
+        "https://visitheritage.co.nz/visit/auckland/highwic",
+        "https://en.wikipedia.org/wiki/Highwic",
+        "https://www.wikidata.org/wiki/Q5760046",
+        "https://www.newzealand.com/nz/auckland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-keith-hay-park",
+      "name": "Keith Hay Park",
+      "region": "auckland",
+      "lat": -36.918324,
+      "lng": 174.743713,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Auckland.",
+      "commentary": "Keith Hay Park fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Keith Hay Park fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/26113845",
+        "https://www.aucklandcouncil.govt.nz/parks-recreation/Pages/park-details.aspx?Location=157",
+        "https://en.wikipedia.org/wiki/Keith_Hay_Park",
+        "https://www.wikidata.org/wiki/Q114397354",
+        "https://www.newzealand.com/nz/auckland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-toroa",
+      "name": "Toroa",
+      "region": "auckland",
+      "lat": -36.846794,
+      "lng": 174.631081,
+      "category": "heritage",
+      "tags": [
+        "ship-site",
+        "heritage",
+        "historic-ship"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Auckland.",
+      "commentary": "Toroa is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Toroa is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/680869064",
+        "https://www.steamferrytoroa.com/",
+        "https://en.wikipedia.org/wiki/Toroa_(ferry)",
+        "https://www.wikidata.org/wiki/Q16222107",
+        "https://www.newzealand.com/nz/auckland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-symonds-street-nz-wars-memorial",
+      "name": "Symonds Street NZ Wars memorial",
+      "region": "auckland",
+      "lat": -36.855782,
+      "lng": 174.765992,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Auckland.",
+      "commentary": "Symonds Street NZ Wars memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Symonds Street NZ Wars memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/2133445498",
+        "https://www.nzhistory.net.nz/media/photo/symonds-street-nz-wars-memorial",
+        "https://en.wikipedia.org/wiki/New_Zealand_Wars_Memorial%2C_Auckland",
+        "https://www.wikidata.org/wiki/Q79302921",
+        "https://www.newzealand.com/nz/auckland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "auckland-atawhai-whenua-reserve",
+      "name": "Atawhai Whenua Reserve",
+      "region": "auckland",
+      "lat": -36.783571,
+      "lng": 174.996744,
+      "category": "nature",
+      "tags": [
+        "nature-reserve",
+        "nature"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A mapped green-space stop that adds local texture to Auckland.",
+      "commentary": "Atawhai Whenua Reserve fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Atawhai Whenua Reserve fills in another real point on the Auckland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/750329944",
+        "https://www.forestandbird.org.nz/projects/atawhai-whenua-reserve-waiheke-island",
+        "https://www.wikidata.org/wiki/Q125998511",
+        "https://www.newzealand.com/nz/auckland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

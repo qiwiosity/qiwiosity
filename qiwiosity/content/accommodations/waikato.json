@@ -8,7 +8,7 @@
       "lng": 175.2793
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "waikato-novotel-tainui-hamilton",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 620,
       "rating": 4.7,
       "short": "Lakefront lodge at the Karapiro rowing venue with spa suites."
+    },
+    {
+      "id": "waikato-kamahi-cottage",
+      "name": "Kamahi Cottage",
+      "region": "waikato",
+      "lat": -38.2498178,
+      "lng": 175.319713,
+      "type": "lodge",
+      "price_nzd_per_night": 300,
+      "rating": 4.8,
+      "short": "Private rural cottage near Waitomo, with farm views and easy access to cave adventures."
+    },
+    {
+      "id": "waikato-henley-hotel",
+      "name": "Henley Hotel Cambridge",
+      "region": "waikato",
+      "lat": -37.899,
+      "lng": 175.488,
+      "type": "hotel",
+      "price_nzd_per_night": 360,
+      "rating": 4.7,
+      "short": "Country-estate boutique hotel near Cambridge with gardens, dining and horse-country atmosphere."
+    },
+    {
+      "id": "waikato-hidden-lake-hotel",
+      "name": "Hidden Lake Hotel",
+      "region": "waikato",
+      "lat": -37.891,
+      "lng": 175.47,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.5,
+      "short": "Modern Cambridge hotel overlooking Lake Te Koo Utu, close to cafés and Waikato cycle routes."
+    },
+    {
+      "id": "waikato-woodlyn-park",
+      "name": "Woodlyn Park",
+      "region": "waikato",
+      "lat": -38.258,
+      "lng": 175.107,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.2,
+      "short": "Novelty Waitomo accommodation with cave, boat, train and plane motel units near the caves area."
+    },
+    {
+      "id": "waikato-putaruru-hotel",
+      "name": "Putaruru Hotel",
+      "region": "waikato",
+      "lat": -38.053454,
+      "lng": 175.780063,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.4,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Waikato."
+    },
+    {
+      "id": "waikato-casa-mexicana-motel",
+      "name": "Casa Mexicana Motel",
+      "region": "waikato",
+      "lat": -37.36824,
+      "lng": 175.660964,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.1,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Waikato."
     }
   ]
 }

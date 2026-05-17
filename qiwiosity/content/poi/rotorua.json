@@ -1888,7 +1888,7 @@
         "bathhouse"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Iconic Tudor-style former bathhouse in Government Gardens, housing Rotorua's regional museum (check reopening status).",
       "commentary": "The Rotorua Museum Te Whare Taonga o Te Arawa is housed in one of New Zealand's most iconic buildings — the magnificent Tudor-style Government Bathhouse, built in 1908 as a thermal spa facility in the beautifully landscaped Government Gardens. The building itself is a Category I historic place and an Instagram-worthy landmark. The museum's collections tell the story of Te Arawa people, the volcanic landscape, the Pink and White Terraces (destroyed in the 1886 Tarawera eruption), and the development of tourism in Rotorua. The basement reveals the original bathhouse plumbing and acid-eaten pipes. Note: the museum has been closed for earthquake strengthening since 2016 — check the current status before visiting, as reopening has been subject to delays. Even when closed, the Government Gardens and building exterior are well worth visiting. The formal gardens, croquet lawns, and bowling greens surrounded by steaming thermal features create a unique and photogenic setting unlike anywhere else in the world.",
       "content_status": "draft",
@@ -1957,7 +1957,7 @@
         "lakeside"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "World-renowned lakeside hot spring bathing complex with multiple pools fed by natural geothermal springs.",
       "commentary": "Polynesian Spa is one of Rotorua's most popular attractions, a bathing complex on the shore of Lake Rotorua fed by two natural hot springs — the acidic Rachel Spring and the alkaline Priest Spring. The facility offers a range of bathing experiences from family-friendly public pools to the adult-only Lake Spa with private rock pools overlooking the lake. The geothermally heated water is rich in minerals, and the springs have been used for bathing since the 1880s. The complex has been consistently voted one of the world's top hot spring experiences by Condé Nast Traveler. Multiple pool temperatures allow you to find your ideal warmth, and the lake edge pools offer stunning views, especially at dusk. Private pools, massage treatments, and the Deluxe Lake Spa offer premium experiences. The location on the lakefront, with steam rising around the building, is quintessentially Rotorua. Evening sessions are atmospheric with lights reflecting on the lake. Book ahead for the Lake Spa and private pools. Towel hire available.",
       "content_status": "draft",
@@ -1980,7 +1980,7 @@
         "scenic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Dramatic waterfall bursting from a cliff face in native forest, reached by a beautiful bush walk.",
       "commentary": "Tarawera Falls is one of the most spectacular waterfalls in the North Island — a powerful torrent of water that bursts directly from a cliff face in the Tarawera River, having flowed through underground lava tubes from Lake Tarawera. The water emerges from holes and crevices in the basalt rock face, creating a dramatic and unusual waterfall unlike any other. The walk to the falls passes through beautiful native forest, predominantly podocarp species including rimu, mataī, and kahikatea. Birdlife is abundant — listen for tūī, bellbirds, and kererū. The track takes about 45 minutes each way and is well formed, making it suitable for families with older children. The falls are located in the Tarawera Forest, and access requires a forestry permit (available from the Kawerau i-SITE or online). The gravel forestry roads require care but are suitable for standard vehicles. The remote setting and native bush surroundings make this walk feel like a genuine wilderness experience, despite being relatively close to Rotorua.",
       "content_status": "draft",
@@ -2003,7 +2003,7 @@
         "local-produce"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Award-winning gourmet cafe and delicatessen in central Rotorua championing local Bay of Plenty produce.",
       "commentary": "Capers Epicurean is Rotorua's premier gourmet cafe and delicatessen, located on Eat Streat, the city's dedicated dining precinct on Tutanekai Street. The cafe has won multiple hospitality awards for its commitment to showcasing local Bay of Plenty and Waikato produce in creative dishes. The cabinet overflows with artisan breads, pastries, salads, and savoury items, while the lunch menu features seasonal dishes made with locally sourced ingredients. The retail section stocks a curated selection of New Zealand artisan products, from local honeys and preserves to specialty chocolates and condiments, making it an excellent spot for edible souvenirs. Coffee is expertly prepared and the cabinet baking is outstanding. The vibrant Eat Streat location means you are surrounded by other dining options, but Capers consistently stands out for quality. Arrive before noon to beat the lunch rush.",
       "content_status": "draft",
@@ -2026,7 +2026,7 @@
         "adrenaline"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Multi-activity adventure park in Rotorua with jet sprinting, bungy, freefalling, and the Shweeb monorail.",
       "commentary": "Velocity Valley (formerly Agroventures) is Rotorua's one-stop adventure park, packing multiple adrenaline activities into a single location on Western Road. The headline attraction is the Agrojet, a jet sprint boat that rockets through a narrow water channel at 100km/h, pulling extreme G-forces on the turns. Other activities include the Rotorua Bungy, a 43-metre jump over the Ngongotaha Stream; the Swoop, a giant sky swing reaching 130km/h; the Shweeb, the world's first human-powered monorail raceway; and freefall Xtreme, a vertical wind tunnel simulating skydiving. Multi-ride combo passes offer the best value and allow you to experience several activities in a half-day visit. Each ride includes full safety briefings and professional staff. Located five minutes from central Rotorua, it is easily combined with other Rotorua attractions. Suitable for ages 10 and up for most activities.",
       "content_status": "draft",
@@ -2049,7 +2049,7 @@
         "trails"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Gondola-accessed mountain bike park on Mt Ngongotaha with downhill trails for all skill levels.",
       "commentary": "Skyline Rotorua's MTB Gravity Park is one of New Zealand's premier mountain biking destinations, offering gondola-accessed downhill trails on the slopes of Mt Ngongotaha. The Skyline Gondola lifts riders and bikes to the top, where a network of trails descends through native bush and open terrain. Trails range from gentle Grade 2 flow trails suitable for beginners to demanding Grade 5 black diamond runs with technical rock gardens and big drops for expert riders. The park has hosted UCI Mountain Bike World Cup events, cementing its international reputation. Full bike hire and protective gear are available, and the on-site bike shop handles any mechanical issues. Uplift passes allow unlimited gondola rides for a session. The Redwoods mountain bike trails in the Whakarewarewa Forest are nearby, offering cross-country riding to complement the Skyline gravity trails. Rotorua is widely regarded as New Zealand's mountain biking capital.",
       "content_status": "draft",
@@ -2072,7 +2072,7 @@
         "hangi"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Living Maori village where Tuhourangi Ngati Wahiao people have lived among geothermal features for centuries.",
       "cultural_review_required": true,
       "commentary": "Whakarewarewa is a living Maori village where the Tuhourangi Ngati Wahiao people have resided for over 200 years, using the geothermal activity for cooking, bathing, and heating. Guided tours led by village residents provide authentic insights into daily life, traditions, and the unique relationship between the community and their geothermal environment. You will see geysers, hot pools, and silica terraces while learning about Maori customs, history, and the practical uses of geothermal energy. Cultural performances include haka, poi, and traditional songs in the carved meeting house. The village shop sells locally made arts and crafts. Hangi meals cooked in geothermal steam are available. This is a genuine community experience, not a theme park, and residents' hospitality makes it deeply memorable. Tours depart regularly throughout the day. Located in the southern part of Rotorua city.",
@@ -2120,7 +2120,7 @@
         "colourful"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Rotorua's most colourful geothermal area with the iconic Champagne Pool, Devil's Bath, and Lady Knox Geyser.",
       "commentary": "Wai-O-Tapu (Sacred Waters) is Rotorua's most visually spectacular geothermal attraction, featuring an otherworldly landscape of vibrant hot springs, steaming craters, and bubbling mud pools in colours spanning the spectrum. The Champagne Pool is the star attraction, a 65-metre-wide hot spring with vivid orange, green, and gold mineral deposits around its rim, constantly releasing carbon dioxide bubbles that give it its name. The Devil's Bath, a lurid green pool, and the Artist's Palette, with its soft pastel thermal features, are equally striking. The Lady Knox Geyser erupts daily at 10:15am when activated by surfactant. A self-guided walking track of about 3km loops through the thermal area, taking 75-90 minutes. Located 27km south of Rotorua on SH5, Wai-O-Tapu is the region's most-visited geothermal attraction. Arrive early to beat coach tour groups. Boardwalks provide safe access throughout.",
       "content_status": "draft",
@@ -2143,7 +2143,7 @@
         "museum"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Archaeological site of the village buried by the 1886 Mt Tarawera eruption, with museum and waterfall walk.",
       "commentary": "The Buried Village of Te Wairoa is an archaeological site preserving the remains of a village destroyed by the catastrophic eruption of Mt Tarawera on 10 June 1886. The eruption killed over 100 people and buried the village under metres of mud and ash, also destroying the famous Pink and White Terraces, then considered the eighth wonder of the natural world. The museum tells the story of the eruption through artefacts excavated from the ruins, photographs of the terraces, and accounts from survivors. A walking trail leads through the excavated village site, where foundations, walls, and personal belongings have been uncovered. The trail continues through native bush to Te Wairoa Falls, a beautiful waterfall cascading into a bush-lined gorge. The site offers a powerful connection to one of New Zealand's most significant natural disasters. Located about 15km southeast of Rotorua on the road to Lake Tarawera. The combination of history, archaeology, and natural beauty makes this a compelling Rotorua visit.",
       "content_status": "draft",
@@ -2757,7 +2757,7 @@
         "1930s-architecture"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A striking 1933 Spanish Mission–style bathhouse, the first in the world to allow mixed-gender bathing — now restored and operating as a thermal pool and event venue.",
       "commentary": "The Blue Baths opened in 1933 amid considerable controversy: allowing men and women to bathe together in the same pool was scandalous by the standards of the day. The building's peach-and-white Mediterranean facade contrasts with the Tudor Revival Bath House just metres away, reflecting the eclectic ambitions of Rotorua's tourism planners. It closed in 1966 and fell derelict before a meticulous restoration reopened it in 1999. Today it operates as a geothermal pool complex and event venue, retaining original architectural details throughout. Heritage New Zealand holds it as a Category I Historic Place — the highest possible ranking.",
       "scripts": {},
@@ -2837,7 +2837,7 @@
         "thermal-highway"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A short DOC walk to a turquoise crater lake beneath vivid red-and-white geothermal cliffs — a hidden gem on the Thermal Explorer Highway.",
       "commentary": "Maunga Kākaramea (Mountain of Coloured Earth) has been a geothermal reserve since 1903 and a landmark of cultural significance to local Māori. The Crater Lake Walk (1 km, 15–20 minutes) leads to an overlook above a turquoise crater lake ringed by striking red, yellow and white mineral-stained cliffs — a miniature, quieter version of the drama on offer at Wai-O-Tapu just kilometres south. The trailhead sits directly off SH5, making it effortless to visit on the Rotorua–Taupō drive. Longer tracks to the summit (3.5 km) reward with panoramic Waikato views. Entry is free; no permit needed.",
       "scripts": {},
@@ -2863,7 +2863,7 @@
         "swimming"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A free, natural geothermal stream with a warm waterfall pool, tucked off a gravel road on the Thermal Explorer Highway between Rotorua and Taupō.",
       "commentary": "Kerosene Creek takes its name from the distinctive smell of hydrogen sulphide that drifts from its warm waters — though visitors quickly stop noticing. The stream runs at about 37–40°C year-round, creating a natural hot pool beneath a small waterfall that is one of the most photographed free swimming spots in New Zealand. Access is 2 km down Old Waiotapu Road (unsealed) off SH5, about 30 km south of Rotorua. Facilities are minimal — a gravel car park and a short bush walk — which keeps the experience refreshingly simple. Best visited on weekday mornings before the tourist coaches arrive.",
       "scripts": {},
@@ -2889,7 +2889,7 @@
         "multi-stop"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "An 80-km drive through New Zealand's most geothermally active corridor, with multiple free and paid stops between Rotorua and Taupō.",
       "commentary": "State Highway 5 between Rotorua and Taupō is branded the Thermal Explorer Highway for good reason: nowhere else in the world can you drive through such a sustained concentration of geothermal activity. Key stops south from Rotorua include Rainbow Mountain (free crater lake walk), Waikite Valley Hot Pools, Kerosene Creek (free hot spring), Wai-O-Tapu Thermal Wonderland, and the detour to Orakei Korako. The road also passes Atiamuri and the upper Waikato River gorge before dropping into Taupō's lakeshore. Allow a full day to do the stops justice, or three hours for a focused highlights run. The highway is also an official Ngā Haerenga Great Ride cycling route in sections.",
       "scripts": {},
@@ -2941,7 +2941,7 @@
         "hidden-valley"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's largest geyser field — a dramatic geothermal valley reached by a short ferry crossing across the Waikato River, 25 minutes from Taupō.",
       "commentary": "Orakei Korako translates as 'the place of adorning' — traditionally Māori women prepared and adorned themselves with geothermal silica for ceremonies here. The valley contains New Zealand's most impressive sinter terrace system (pink, white and yellow silica deposits), up to 35 active geysers, the Ruatapu Cave (a sacred sacred site of Ngāti Tahu–Ngāti Whaoa iwi), and boiling mud pools. Despite being partially drowned by the 1961 Ōhakuri dam, it remains the most spectacular geothermal valley in New Zealand that visitors can walk through. Access is via a free boat crossing across the Waikato River — the unusual entry adds to the adventure.",
       "scripts": {},
@@ -2968,7 +2968,7 @@
         "free"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A free lakefront walk passing sulphur bays, public art, and sweeping views of Lake Rotorua and the caldera rim — the civic heart of the city.",
       "commentary": "The Rotorua lakefront is the social and cultural centre of the city, a broad promenade running from the Government Gardens to Sulphur Bay where thousands of birds gather and steam vents hiss in the shallows. Public art installations are interspersed with volcanic rock gardens and view platforms. The Sulphur Point wetlands are a DOC-managed wildlife refuge supporting black swans, pied stilts, and the occasional kōtuku (white heron). In the evenings, the lakefront draws the city's diverse population — a living cross-section of Māori, Pākehā and the substantial international community that has made Rotorua its home. The famous rotten-egg smell is simply part of the experience.",
       "scripts": {},
@@ -2994,7 +2994,7 @@
         "evening-experience"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "An evening cultural experience combining a traditional pōwhiri, kapa haka performance, hāngī feast, glow-worm grotto, and a waka (war canoe) river display.",
       "commentary": "Mitai offers one of Rotorua's most intimate and family-owned Māori cultural experiences, operating in a bush setting along the Waihou Stream north of the city centre. The evening begins with a ceremonial pōwhiri (welcome), followed by a guided glow-worm walk to a natural grotto, a waka taua (war canoe) river display performed by warriors, kapa haka performances, and concludes with a traditional hāngī meal cooked in geothermal earth ovens. The family-owned and operated model (four generations of the Mitai whānau) gives the experience an authenticity that larger commercial operations can lack. Guides provide genuine cultural context throughout.",
       "scripts": {},
@@ -3021,7 +3021,7 @@
         "recreation"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A 5,600-hectare working forest with towering 100-year-old California redwoods, a 12-metre elevated canopy walk, and one of the world's best mountain bike networks.",
       "commentary": "Planted from 1899 as a government experiment in exotic forestry, the California coastal redwoods (Sequoia sempervirens) of Whakarewarewa Forest have grown to extraordinary heights in the New Zealand climate — the tallest now exceed 70 metres. The Redwood Grove is the most visited section, accessible via a free walking track from the Visitor Centre or via the internationally acclaimed elevated Redwoods Treewalk (ticketed). Over 150 km of mountain bike trails wind through the broader forest, ranging from beginner-friendly circuits to world-class enduro trails. The forest also has cultural significance as a corridor connecting Rotorua's Māori communities to the lake and forested ranges.",
       "scripts": {},
@@ -3047,7 +3047,7 @@
         "therapeutic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Rotorua's most aggressive geothermal park — bubbling black mud, the largest hot waterfall in the Southern Hemisphere, and therapeutic sulphur mud baths, with strong Māori cultural associations.",
       "commentary": "Tikitere has been tapu (sacred and spiritually charged) for local Māori for centuries; the name 'Hell's Gate' was applied by George Bernard Shaw during his 1934 visit. The 10-hectare park contains Kakahi Falls — the largest hot waterfall in the Southern Hemisphere at 4 metres — alongside erupting mud pools, sulphur vents, and steaming lakes of intense activity. Ngāti Rangiteaorere, the tangata whenua (people of the land), run cultural tours through the park explaining the site's spiritual significance and traditional therapeutic use of the mud. The spa section offers sulphur mud baths and thermal pools claimed to have healing properties. The park is markedly less commercialised than Te Puia.",
       "scripts": {},
@@ -3074,7 +3074,7 @@
         "maori-legend"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A cruise across New Zealand's largest North Island lake to Mokoia Island, the setting of the famous Māori love story of Hinemoa and Tūtānekai.",
       "commentary": "Lake Rotorua sits inside a volcanic caldera formed around 240,000 years ago and is one of the largest lakes in New Zealand at 80 km². Mokoia Island at its centre is the setting of the most celebrated Māori love story: Hinemoa swam the cold lake to be with her forbidden lover Tūtānekai, guided by his flute music. The island is now a kiwi sanctuary and wildlife reserve managed with local iwi, and can be reached by scheduled cruises from the Rotorua lakefront. The cruise itself provides sweeping caldera views and excellent commentary on Māori history, geothermal geology, and the contemporary life of the lake. Several operators offer morning and sunset options.",
       "scripts": {},
@@ -3407,7 +3407,7 @@
       "commentary": "The Sulphur Point boardwalk offers free access to active geothermal features right on the edge of Rotorua's city centre. The track leads from the lakefront through a landscape of steaming vents, bubbling mud pools, and sulphur-stained ground to Motutara Point on Sulphur Bay. The bay's warm, mineral-rich waters attract a variety of waterfowl and the area is a wildlife refuge. The boardwalk is well-maintained and provides safe passage over the thermal ground. It's a great introduction to Rotorua's geothermal activity without any entry fee, and it's easily combined with a lakefront walk. The sulphurous smell is strong but part of the experience. Best visited in cooler weather when steam is most dramatic.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Visitors appreciate this free geothermal experience in the heart of the city. The steaming vents and mud pools are impressive, if smelly. Great for a quick lakefront walk."
       }
     },
@@ -3639,7 +3639,7 @@
         "lakefront"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Lakefront wetland sanctuary where birdlife thrives among steaming geothermal vents.",
       "commentary": "Sulphur Point is a unique urban wildlife area where geothermal steam vents sit alongside wetland pools attracting diverse birdlife. Black swans, stilts, and scaup share the landscape with bubbling mud and sulphur deposits — an only-in-Rotorua juxtaposition.",
       "content_status": "draft",
@@ -3685,7 +3685,7 @@
         "lights"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Elevated walkway through redwoods illuminated by artist-designed lanterns.",
       "commentary": "The Redwoods Nightlights Treewalk suspends you among the towering redwood canopy on a series of bridges lit by 30 bespoke lantern sculptures designed by David Trubridge. The after-dark experience transforms the forest into an otherworldly spectacle of light and shadow.",
       "content_status": "draft",
@@ -3731,7 +3731,7 @@
         "river swimming"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Free geothermal stream with a waterfall hot pool in the bush south of Rotorua.",
       "commentary": "Kerosene Creek is a free natural hot stream flowing through native bush, with a small waterfall creating a perfect hot pool. Popular with locals, it offers an authentic geothermal bathing experience far from the commercial hot pools — bring your own towel and enjoy.",
       "content_status": "draft",
@@ -3739,6 +3739,452 @@
         "rating": 4.4,
         "summary": "Free hot waterfall in the bush — an amazing local secret."
       }
+    },
+    {
+      "id": "rotorua-lake-tikitapu-loop",
+      "name": "Lake Tikitapu Loop Track",
+      "region": "rotorua",
+      "lat": -38.1948364,
+      "lng": 176.3320185,
+      "category": "nature",
+      "tags": [
+        "blue-lake",
+        "walking",
+        "swimming",
+        "rotorua-lakes",
+        "forest"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A 5.5km loop around Rotorua's Blue Lake, with beaches, bush, picnic areas and a lookout toward Rotokākahi.",
+      "commentary": "Lake Tikitapu is one of Rotorua's easiest lake escapes: close to town, ringed by bush-clad slopes and set up for swimming, picnics and the 5.5 kilometre Blue Lake Track. The loop passes beaches and forested edges, with a lookout between Tikitapu and neighbouring Rotokākahi. Rotorua Lakes Council notes that Rotokākahi is privately owned by local iwi and no swimming, fishing or boating is permitted there, which makes this walk a useful lesson in proximity and respect. Enjoy Tikitapu's open recreation, but read the surrounding lakes as different places with different responsibilities.",
+      "audio_story": "Lake Tikitapu is one of Rotorua's easiest lake escapes: close to town, ringed by bush-clad slopes and set up for swimming, picnics and the 5.5 kilometre Blue Lake Track. The loop passes beaches and forested edges, with a lookout between Tikitapu and neighbouring Rotokākahi. Rotorua Lakes Council notes that Rotokākahi is privately owned by local iwi and no swimming, fishing or boating is permitted there, which makes this walk a useful lesson in proximity and respect. Enjoy Tikitapu's open recreation, but read the surrounding lakes as different places with different responsibilities.",
+      "suggested_voice_tone": "bright, respectful, lake-soft",
+      "sources_to_check": [
+        "Rotorua Lakes Council: https://www.rotorualakescouncil.nz/parks-lakes-recreation/lake-reserves/blue-lake-tikitapu"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Popular for an easy loop, swimming access and Rotorua lake scenery; visitors appreciate the nearby lookout and clear reserve facilities."
+      }
+    },
+    {
+      "id": "rotorua-kaituna-rafting",
+      "name": "Kaituna River Rafting",
+      "region": "rotorua",
+      "lat": -37.996,
+      "lng": 176.345,
+      "category": "adventure",
+      "tags": [
+        "rafting",
+        "waterfall",
+        "okere-falls",
+        "guided"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2,
+      "short": "A guided whitewater rafting run through Okere Falls, famous for its steep waterfall drops.",
+      "commentary": "Kaituna rafting is Rotorua’s water-powered adrenaline story. The river moves fast through green gorge country, and the waterfall drops turn a short trip into something guests tend to remember with wide eyes and wet shoes.",
+      "audio_story": "Kaituna rafting is Rotorua’s water-powered adrenaline story. The river moves fast through green gorge country, and the waterfall drops turn a short trip into something guests tend to remember with wide eyes and wet shoes.",
+      "suggested_voice_tone": "adventurous, splashy, confident",
+      "sources_to_check": [
+        "RotoruaNZ visitor information",
+        "DOC Rotorua and Bay of Plenty places",
+        "Official activity and conservation operator pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-lake-rotomahana-cruise",
+      "name": "Lake Rotomahana Boat Cruise",
+      "region": "rotorua",
+      "lat": -38.2834,
+      "lng": 176.4368,
+      "category": "nature",
+      "tags": [
+        "geothermal",
+        "lake",
+        "boat",
+        "tarawera"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A geothermal lake cruise below Tarawera, exploring the landscape changed by the 1886 eruption.",
+      "commentary": "Lake Rotomahana is a calm surface over a violent memory. A boat cruise makes the 1886 Tarawera eruption easier to read in the shoreline, steam and coloured cliffs, while the vanished Pink and White Terraces remain the story’s ghostly centre.",
+      "audio_story": "Lake Rotomahana is a calm surface over a violent memory. A boat cruise makes the 1886 Tarawera eruption easier to read in the shoreline, steam and coloured cliffs, while the vanished Pink and White Terraces remain the story’s ghostly centre.",
+      "suggested_voice_tone": "reflective, geothermal, historical",
+      "sources_to_check": [
+        "RotoruaNZ visitor information",
+        "DOC Rotorua and Bay of Plenty places",
+        "Official activity and conservation operator pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-lake-tarawera-landing",
+      "name": "Lake Tarawera Landing",
+      "region": "rotorua",
+      "lat": -38.2172,
+      "lng": 176.3706,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "tarawera",
+        "boat",
+        "views"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A scenic lakefront stop under Mount Tarawera, linking boat trips, picnics and volcanic history.",
+      "commentary": "Lake Tarawera Landing gathers several Rotorua threads in one view: deep water, the mountain, boat traffic and the memory of eruption. It works as a launch point, a picnic stop or simply a place to understand why Tarawera still dominates the region’s imagination.",
+      "audio_story": "Lake Tarawera Landing gathers several Rotorua threads in one view: deep water, the mountain, boat traffic and the memory of eruption. It works as a launch point, a picnic stop or simply a place to understand why Tarawera still dominates the region’s imagination.",
+      "suggested_voice_tone": "scenic, reflective, lake-led",
+      "sources_to_check": [
+        "RotoruaNZ visitor information",
+        "DOC Rotorua and Bay of Plenty places",
+        "Official activity and conservation operator pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-secret-spot-hot-tubs",
+      "name": "Secret Spot Hot Tubs",
+      "region": "rotorua",
+      "lat": -38.142,
+      "lng": 176.211,
+      "category": "nature",
+      "tags": [
+        "hot-tubs",
+        "forest",
+        "wellness"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Secret Spot Hot Tubs makes the Redwoods edge feel restorative, pairing cedar tubs, forest air and post-ride recovery in a distinctly Rotorua way.",
+      "commentary": "Secret Spot Hot Tubs makes the Redwoods edge feel restorative, pairing cedar tubs, forest air and post-ride recovery in a distinctly Rotorua way.",
+      "audio_story": "Secret Spot Hot Tubs makes the Redwoods edge feel restorative, pairing cedar tubs, forest air and post-ride recovery in a distinctly Rotorua way.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-night-market",
+      "name": "Rotorua Night Market",
+      "region": "rotorua",
+      "lat": -38.136,
+      "lng": 176.251,
+      "category": "food-wine",
+      "tags": [
+        "market",
+        "street-food",
+        "evening"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Rotorua Night Market brings the city centre into evening focus, with food stalls, music and local makers giving visitors a social, low-pressure dinner stop.",
+      "commentary": "Rotorua Night Market brings the city centre into evening focus, with food stalls, music and local makers giving visitors a social, low-pressure dinner stop.",
+      "audio_story": "Rotorua Night Market brings the city centre into evening focus, with food stalls, music and local makers giving visitors a social, low-pressure dinner stop.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-3d-trick-art-gallery",
+      "name": "3D Trick Art Gallery Rotorua",
+      "region": "rotorua",
+      "lat": -38.161,
+      "lng": 176.254,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "family",
+        "interactive"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "The 3D Trick Art Gallery is pure rainy-day play, using optical illusions and photo setups to give families a light indoor break from mud, steam and trails.",
+      "commentary": "The 3D Trick Art Gallery is pure rainy-day play, using optical illusions and photo setups to give families a light indoor break from mud, steam and trails.",
+      "audio_story": "The 3D Trick Art Gallery is pure rainy-day play, using optical illusions and photo setups to give families a light indoor break from mud, steam and trails.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-lake-okareka-boardwalk",
+      "name": "Lake Okareka Boardwalk",
+      "region": "rotorua",
+      "lat": -38.166,
+      "lng": 176.365,
+      "category": "nature",
+      "tags": [
+        "boardwalk",
+        "wetland",
+        "lake-okareka",
+        "birdlife"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1,
+      "short": "An easy wetland boardwalk on Lake Okareka, with lake views and birdlife close to Rotorua.",
+      "commentary": "Lake Okareka Boardwalk is Rotorua in a quieter key. Instead of geysers or fast trails, it offers reeds, waterbirds and open lake light, letting visitors take a low-effort walk that still feels connected to the district’s deep lake landscape.",
+      "audio_story": "Lake Okareka Boardwalk is Rotorua in a quieter key. Instead of geysers or fast trails, it offers reeds, waterbirds and open lake light, letting visitors take a low-effort walk that still feels connected to the district’s deep lake landscape.",
+      "suggested_voice_tone": "gentle, lake-bright, observant",
+      "sources_to_check": [
+        "https://www.rotorualakescouncil.nz/parks-lakes-recreation/lake-reserves/lake-okareka"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-lake-okataina-western-walkway",
+      "name": "Lake Okataina Western Walkway",
+      "region": "rotorua",
+      "lat": -38.079,
+      "lng": 176.421,
+      "category": "journey",
+      "tags": [
+        "lake-okataina",
+        "long-walk",
+        "forest",
+        "views"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 5,
+      "short": "A longer forest walkway above Lake Okataina, linking beaches, bush and volcanic-lake views.",
+      "commentary": "The Lake Okataina Western Walkway asks for more time than a quick boardwalk, and gives back a more layered Rotorua. The route moves through native forest above the water, with bays and viewpoints that make the lake feel less like a backdrop and more like the centre of the story.",
+      "audio_story": "The Lake Okataina Western Walkway asks for more time than a quick boardwalk, and gives back a more layered Rotorua. The route moves through native forest above the water, with bays and viewpoints that make the lake feel less like a backdrop and more like the centre of the story.",
+      "suggested_voice_tone": "steady, immersive, outdoorsy",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/bay-of-plenty/places/lake-okataina-scenic-reserve/things-to-do/lake-okataina-western-walkway/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-centennial-park",
+      "name": "Centennial Park",
+      "region": "rotorua",
+      "lat": -38.168004,
+      "lng": 176.239847,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Rotorua.",
+      "commentary": "Centennial Park fills in another real point on the Rotorua visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Memorial Park with Trees with Headstones & Plaque Benches commemorate Rotorua's loved ones instead of Body Burials. This functions as a Garden Cemetery that has Nature Reserves, Open Farm Paddocks with Sheep roaming around, plus Horse, MB & Event catering.",
+      "audio_story": "Centennial Park fills in another real point on the Rotorua visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Memorial Park with Trees with Headstones & Plaque Benches commemorate Rotorua's loved ones instead of Body Burials. This functions as a Garden Cemetery that has Nature Reserves, Open Farm Paddocks with Sheep roaming around, plus Horse, MB & Event catering.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/369951846",
+        "https://www.rotorualakescouncil.nz/parks-lakes-recreation/park-reserves/centennial-park",
+        "https://www.wikidata.org/wiki/Q135656551",
+        "https://www.newzealand.com/nz/rotorua/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-shweeb",
+      "name": "Shweeb",
+      "region": "rotorua",
+      "lat": -38.087687,
+      "lng": 176.190548,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Rotorua.",
+      "commentary": "Shweeb gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Shweeb gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/relation/19512578",
+        "https://en.wikipedia.org/wiki/Shweeb",
+        "https://www.wikidata.org/wiki/Q3482704",
+        "https://www.newzealand.com/nz/rotorua/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-te-pa-tu",
+      "name": "Te Pā Tū",
+      "region": "rotorua",
+      "lat": -38.248205,
+      "lng": 176.314413,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Rotorua.",
+      "commentary": "Te Pā Tū gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Te Pā Tū gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/5420875521",
+        "https://te-pa-tu.com/",
+        "https://www.newzealand.com/nz/rotorua/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "rotorua-sir-howard-morrison-center",
+      "name": "Sir Howard Morrison Centre",
+      "region": "rotorua",
+      "lat": -38.135336,
+      "lng": 176.254627,
+      "category": "culture",
+      "tags": [
+        "theatre",
+        "culture"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A performing-arts venue worth surfacing for visitors exploring Rotorua.",
+      "commentary": "Sir Howard Morrison Centre gives Rotorua another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Sir Howard Morrison Centre gives Rotorua another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/137197429",
+        "https://www.eventsandvenues.co.nz/venues/sir-howard-morrison-centre/",
+        "https://www.wikidata.org/wiki/Q77975972",
+        "https://www.newzealand.com/nz/rotorua/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-maungaongaonga",
+      "name": "Maungaongaonga",
+      "region": "rotorua",
+      "lat": -38.327083,
+      "lng": 176.343917,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Rotorua.",
+      "commentary": "Maungaongaonga helps mark the high country and skyline around Rotorua. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Maungaongaonga helps mark the high country and skyline around Rotorua. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10706059268",
+        "https://en.wikipedia.org/wiki/Maungaongaonga",
+        "https://www.wikidata.org/wiki/Q31465948",
+        "https://www.newzealand.com/nz/rotorua/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-te-ahi-tupua",
+      "name": "Te Ahi Tupua",
+      "region": "rotorua",
+      "lat": -38.165025,
+      "lng": 176.2466,
+      "category": "heritage",
+      "tags": [
+        "public-artwork",
+        "heritage",
+        "tourism-artwork"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Rotorua.",
+      "commentary": "Te Ahi Tupua is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as The World's Largest 3D Printed Sculpture. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Te Ahi Tupua is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as The World's Largest 3D Printed Sculpture. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/9416670986",
+        "https://www.wikidata.org/wiki/Q138410770",
+        "https://www.newzealand.com/nz/rotorua/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-kaituna-cascades-rafting-company",
+      "name": "Kaituna Cascades Rafting Company",
+      "region": "rotorua",
+      "lat": -38.01539,
+      "lng": 176.345063,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Rotorua.",
+      "commentary": "Kaituna Cascades Rafting Company gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Kaituna Cascades Rafting Company gives Rotorua another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/5647219824",
+        "https://kaitunacascades.co.nz",
+        "https://www.newzealand.com/nz/rotorua/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "rotorua-maraeroa-springs",
+      "name": "Maraeroa Springs",
+      "region": "rotorua",
+      "lat": -38.04905,
+      "lng": 176.363522,
+      "category": "nature",
+      "tags": [
+        "hot-spring",
+        "nature",
+        "natural-hot_spring"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped spring feature adding a quieter natural stop in Rotorua.",
+      "commentary": "Maraeroa Springs adds a small natural feature to the Rotorua map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Maraeroa Springs adds a small natural feature to the Rotorua map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1123053013",
+        "https://www.wikidata.org/wiki/Q32269093",
+        "https://www.newzealand.com/nz/rotorua/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
     }
   ]
 }

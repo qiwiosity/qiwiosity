@@ -241,6 +241,27 @@ const imagesData = readJSON(path.join(ROOT, '_archive/aotearoa-app/src/data/poi_
   || readJSON(path.join(ROOT, 'qiwiosity/mobile/src/data/poi_images.json'))
   || {};
 
+const validRegionIds = new Set(regions.map(r => r.id));
+const validCategoryIds = new Set(categories.map(c => c.id));
+const categoryIdsByAscii = new Map(categories.map(c => [
+  c.id.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase(),
+  c.id,
+]));
+
+const REGION_ID_ALIASES = {
+  bop: 'bay-of-plenty',
+  'waikato-region': 'waikato',
+};
+
+function canonicalRegionId(regionId) {
+  return REGION_ID_ALIASES[regionId] || regionId;
+}
+
+function canonicalCategoryId(categoryId) {
+  const asciiId = categoryId.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  return categoryIdsByAscii.get(asciiId) || categoryId;
+}
+
 const poiImages = [];
 if (imagesData.attractions) {
   for (const [poiId, urls] of Object.entries(imagesData.attractions)) {
@@ -257,14 +278,28 @@ if (imagesData.attractions) {
 console.log(`  ✓ ${poiImages.length} POI images`);
 
 const regionImages = [];
+const regionImageCounts = new Map();
+const regionImageSeen = new Set();
 if (imagesData.regions) {
   for (const [regionId, value] of Object.entries(imagesData.regions)) {
+    const canonicalId = canonicalRegionId(regionId);
+    if (!validRegionIds.has(canonicalId)) {
+      continue;
+    }
+
     const urls = Array.isArray(value) ? value : [value];
-    urls.forEach((url, i) => {
+    urls.forEach((url) => {
+      const seenKey = `${canonicalId}\n${url}`;
+      if (regionImageSeen.has(seenKey)) return;
+      regionImageSeen.add(seenKey);
+
+      const displayOrder = (regionImageCounts.get(canonicalId) || 0) + 1;
+      regionImageCounts.set(canonicalId, displayOrder);
+
       regionImages.push({
-        region_id: regionId,
+        region_id: canonicalId,
         image_url: url,
-        display_order: i + 1,
+        display_order: displayOrder,
       });
     });
   }
@@ -272,14 +307,28 @@ if (imagesData.regions) {
 console.log(`  ✓ ${regionImages.length} region images`);
 
 const categoryImages = [];
+const categoryImageCounts = new Map();
+const categoryImageSeen = new Set();
 if (imagesData.categories) {
   for (const [catId, value] of Object.entries(imagesData.categories)) {
+    const canonicalId = canonicalCategoryId(catId);
+    if (!validCategoryIds.has(canonicalId)) {
+      continue;
+    }
+
     const urls = Array.isArray(value) ? value : [value];
-    urls.forEach((url, i) => {
+    urls.forEach((url) => {
+      const seenKey = `${canonicalId}\n${url}`;
+      if (categoryImageSeen.has(seenKey)) return;
+      categoryImageSeen.add(seenKey);
+
+      const displayOrder = (categoryImageCounts.get(canonicalId) || 0) + 1;
+      categoryImageCounts.set(canonicalId, displayOrder);
+
       categoryImages.push({
-        category_id: catId,
+        category_id: canonicalId,
         image_url: url,
-        display_order: i + 1,
+        display_order: displayOrder,
       });
     });
   }

@@ -2314,7 +2314,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Lovely bay with bonus penguin viewing. Timing is everything — arrive at dusk. Quiet and uncrowded."
       }
     },
@@ -2411,7 +2411,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Underrated birding spot. Easy access from Blenheim. Low tide is best for wader viewing."
       }
     },
@@ -2429,7 +2429,7 @@
         "peter-jackson"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "World-class aviation museum with WWI & WWII aircraft in cinematic displays designed by Peter Jackson's Weta Workshop.",
       "commentary": "The Omaka Aviation Heritage Centre near Blenheim is one of the world's finest aviation museums, showcasing rare WWI and WWII aircraft in astonishingly realistic diorama settings created by Peter Jackson's Weta Workshop. The 'Knights of the Sky' exhibition features original and replica WWI aircraft in life-sized scenes depicting dramatic dogfights and crash landings, complete with mannequins, pyrotechnics, and landscaping of extraordinary detail. The 'Dangerous Skies' WWII exhibition continues the immersive approach. Many aircraft are from Sir Peter Jackson's personal collection, including extremely rare original machines. The level of theatrical presentation sets Omaka apart from any other aviation museum globally. Even visitors with no particular interest in aviation find themselves captivated. Allow at least two hours. The biennial Classic Fighters airshow (Easter, even years) sees vintage aircraft take to the skies. Located at Omaka Aerodrome, a short drive from central Blenheim.",
       "content_status": "draft",
@@ -2451,7 +2451,7 @@
         "free-entry"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Blenheim's public art gallery showcasing Marlborough artists alongside touring national exhibitions.",
       "commentary": "The Millennium Art Gallery is Blenheim's public gallery space, housed in a purpose-built facility that presents a regular programme of exhibitions featuring Marlborough and wider New Zealand artists. The gallery rotates exhibitions every few weeks, showcasing painting, sculpture, ceramics, photography, and mixed media from both established and emerging artists. Regular touring exhibitions from national institutions add broader context. The gallery is run by the Marlborough Arts Council and serves as a community hub for the region's active arts scene. Admission is free. The gallery sits in Blenheim's Seymour Square precinct, a pleasant garden setting in the centre of town near the public library and clock tower. Allow about an hour, less if between major exhibitions. The gallery shop offers locally made art and craft. A nice complement to a Marlborough wine-touring day, providing cultural balance to the region's famous viticultural offerings.",
       "content_status": "draft",
@@ -2479,7 +2479,7 @@
       "commentary": "The Picton Foreshore Heritage Trail is a scenic walking route along the waterfront of this historic port town at the head of Queen Charlotte Sound. Interpretive panels along the route tell the story of Picton's rich maritime history, from early Māori settlement and European whaling to the development of the inter-island ferry service that makes Picton the gateway between New Zealand's North and South Islands. The trail passes the Edwin Fox Maritime Museum (housing the world's ninth oldest surviving ship), the whaling exhibits, historic boat sheds, and the busy ferry terminal. The walk takes in beautiful harbour views with the green hills of the Marlborough Sounds as backdrop. Picton's compact town centre offers excellent cafés and seafood restaurants. The trail is flat and accessible, ideal for filling time before or after a ferry crossing. Allow about 1-1.5 hours for the full trail, less if combined with a café stop.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A pleasant way to explore Picton with good historical information along the way. The harbour views are lovely and the Edwin Fox is fascinating. Perfect for killing time before a ferry."
       }
     },
@@ -2543,7 +2543,7 @@
         "pioneer"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Heritage centre at the site of Marlborough's first commercial vineyard, planted by Montana Wines in 1973.",
       "commentary": "Brancott Estate stands on historically significant ground in New Zealand wine. It was here in 1973 that Montana Wines (now Brancott Estate) planted Marlborough's first commercial vineyard, an act that would transform the region and the entire New Zealand wine industry. The Heritage Centre, perched on a hillside with sweeping views across the Wairau Valley, tells this story through interactive displays and tasting experiences. The restaurant offers a seasonal menu designed to showcase wine and food pairing, with outdoor terrace seating overlooking the original vineyard blocks. The wine range covers Marlborough's signature Sauvignon Blanc alongside Pinot Noir and aromatic varieties. The location on Brancott Road provides views on clear days to the Richmond Ranges. A cornerstone visit for understanding Marlborough's wine story.",
       "content_status": "draft",
@@ -2589,7 +2589,7 @@
         "cellar-door"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Marlborough winery renowned for exceptional aromatic wines, particularly Riesling in multiple styles.",
       "commentary": "Framingham has built an outstanding reputation for aromatic wines, particularly Riesling, which they produce in a range of styles from bone-dry to lusciously sweet. Founded in 1981 on Godfrey Road in the Wairau Valley, the winery's old vines and careful viticulture produce wines of remarkable concentration and complexity. Their Classic Riesling is considered one of New Zealand's benchmark examples of the variety, while the dessert-style Selection Riesling is liquid gold. The cellar door is a relaxed affair focused on letting the wines speak for themselves. Winemaker Andrew Hedley brings precision and passion to every vintage. Beyond Riesling, the Sauvignon Blanc, Pinot Gris, and Pinot Noir are all excellent. For wine enthusiasts who want to explore beyond Sauvignon Blanc, Framingham offers some of Marlborough's most rewarding tastings.",
       "content_status": "draft",
@@ -2612,7 +2612,7 @@
         "marine"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Scenic cruises through the sheltered waterways of Queen Charlotte Sound from Picton harbour.",
       "commentary": "Queen Charlotte Sound is a drowned river valley of extraordinary beauty, its sheltered waterways winding between bush-clad hills for over 40 kilometres from Picton to the open Cook Strait. Scenic cruises depart regularly from Picton, navigating through the sound's channels past secluded bays, island bird sanctuaries, historic homesteads, and marine farms where you can learn about mussel and salmon cultivation. Wildlife encounters include dolphins, seals, and numerous seabird species. Many cruises include stops at Ship Cove, where Captain Cook anchored five times during his Pacific explorations, and Motuara Island bird sanctuary. Mail boat cruises that deliver post to isolated communities along the sound offer a uniquely local experience. The calm, sheltered waters make cruising comfortable year-round. Kayaking and paddleboarding alternatives provide more intimate explorations of the bays. The sounds are also the gateway to the Queen Charlotte Track, a multi-day walking and cycling trail.",
       "content_status": "draft",
@@ -2635,7 +2635,7 @@
         "self-guided"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Flat cycling trail connecting over 30 Marlborough wineries on quiet rural roads through vineyard landscapes.",
       "commentary": "The Marlborough wine region is ideally suited to cycling, with flat terrain, quiet rural roads, and over 30 cellar doors within easy riding distance. Multiple bike hire companies in Blenheim and Renwick offer standard and e-bikes with maps and suggested itineraries. The most popular route follows Rapaura Road through the heart of the Wairau Valley, connecting major wineries including Cloudy Bay, Allan Scott, Forrest, and Framingham. Self-guided tours allow riders to choose their own pace and stops, while guided group tours provide structure and local knowledge. E-bikes have made the trail accessible to all fitness levels, and the flat terrain means even non-cyclists can enjoy a wine-by-bike experience. Most cellar doors welcome cyclists, and several wineries have restaurants for lunch. The grape harvest season (March-April) is particularly atmospheric. Cycling between wineries is not only practical but adds to the enjoyment, keeping the tasting experience responsible and the scenery immersive.",
       "content_status": "draft",
@@ -2757,7 +2757,7 @@
       "commentary": "The Picton Heritage and Whaling Museum occupies a charming old building near the waterfront and houses a dense collection of artefacts from the town's colourful past. Whaling was the economic engine of the Sounds for decades, and the museum displays harpoons, try-pots, photographs, and personal effects of the whalers who worked these waters. Maritime exhibits cover the history of the interisland ferry service, coastal trading vessels, and the many shipwrecks of the Sounds. Settlement-era photographs show Picton growing from a rough harbour camp to a proper town. The museum is volunteer-run and its keepers are walking encyclopedias of local history. A small entry fee supports ongoing preservation.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A charming volunteer-run museum packed with local history. The whaling displays are confronting and fascinating in equal measure. The volunteers bring the collections alive with their knowledge."
       }
     },
@@ -2925,7 +2925,7 @@
       "commentary": "Havelock Museum is a small, volunteer-run heritage museum in the centre of this quiet Sounds township that was once a booming gold town. Displays trace the town's transformation from the Wakamarina gold rush of the 1860s, through the timber-milling era, to its current identity as the green-lipped mussel capital of New Zealand. Photographs, mining equipment, and personal effects tell the stories of the people who built the town. The museum also covers the Pelorus Sound boat-building tradition and the mail boat runs that still serve remote properties in the sounds. Ernest Rutherford, the Nobel Prize-winning physicist who split the atom, attended Havelock School as a boy — the museum marks this connection with pride. Entry is by donation and the volunteers are enthusiastic storytellers.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A charming small-town museum with stories that punch above its weight. The Rutherford connection is a nice surprise. The volunteers bring the gold rush era to life."
       }
     },
@@ -3804,7 +3804,7 @@
         "9th oldest ship"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Museum housing the world's ninth-oldest surviving ship, built in 1853.",
       "commentary": "The Edwin Fox is the world's ninth-oldest surviving ship, built in Calcutta in 1853 from teak. She carried troops in the Crimean War, transported convicts to Australia, and brought immigrants to New Zealand. The museum on Picton's waterfront tells her remarkable story.",
       "content_status": "draft",
@@ -3827,7 +3827,7 @@
         "quiet"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Coastal walk connecting two sheltered bays on the Marlborough coast.",
       "commentary": "The track between Robin Hood Bay and Whites Bay follows the Marlborough coastline through regenerating bush with views across Cook Strait. Both bays offer sheltered swimming and are far quieter than the Sounds, with a pleasant bush walk connecting them.",
       "content_status": "draft",
@@ -3850,7 +3850,7 @@
         "water taxi"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Captain Cook's favourite New Zealand anchorage at the head of Queen Charlotte Sound.",
       "commentary": "Ship Cove is where Captain Cook spent the most time during his explorations of New Zealand, visiting five times between 1770 and 1777. Accessible by water taxi, the cove features a monument, interpretive panels, and the start of the Queen Charlotte Track — a place where Māori and European histories intersect.",
       "content_status": "draft",
@@ -3874,7 +3874,7 @@
         "marine life"
       ],
       "trigger_radius_m": 800,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Paddle the quieter inner waterways of the Marlborough Sounds.",
       "commentary": "Kenepuru Sound is the quieter, more intimate alternative to Queen Charlotte Sound. Its sheltered waters wind between bush-clad ridges, with opportunities to spot dolphins, blue penguins, and king shags. Kayaking here offers a genuine sense of wilderness exploration.",
       "content_status": "draft",
@@ -3897,14 +3897,604 @@
         "clock tower"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Heritage town walk through Blenheim's Victorian gardens and historic precinct.",
       "commentary": "Blenheim's heritage walk connects the Victorian-era Seymour Square gardens with the town's historic buildings, including the clock tower, former courthouse, and early settler landmarks. The gardens feature mature trees, a band rotunda, and war memorial — a pleasant stroll through Marlborough's history.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Pleasant heritage walk — the gardens are well maintained."
       }
+    },
+    {
+      "id": "marlborough-mount-stokes-track",
+      "name": "Mount Stokes Track / Pororangi",
+      "region": "marlborough",
+      "lat": -41.097,
+      "lng": 174.104,
+      "category": "adventure",
+      "tags": [
+        "hiking",
+        "marlborough-sounds",
+        "summit",
+        "kenepuru",
+        "native-forest"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 5,
+      "short": "A steep DOC tramp to the highest point in the Marlborough Sounds, with subalpine habitat and vast views.",
+      "commentary": "Mount Stokes / Pororangi is the Marlborough Sounds in its serious boots. DOC describes the summit as the highest point in the Sounds at 1,203 metres, reached by a tramping track in the Kenepuru area that follows a ridge through forest toward subalpine habitat and big views. The reward can be extraordinary, but this is not a casual lookout stroll. Roads in the Sounds are narrow and can be affected by storm damage, and the tops can bring fog, wind and alpine-style conditions. Treat it as a weather-dependent tramp with water, layers, navigation and daylight.",
+      "audio_story": "Mount Stokes / Pororangi is the Marlborough Sounds in its serious boots. DOC describes the summit as the highest point in the Sounds at 1,203 metres, reached by a tramping track in the Kenepuru area that follows a ridge through forest toward subalpine habitat and big views. The reward can be extraordinary, but this is not a casual lookout stroll. Roads in the Sounds are narrow and can be affected by storm damage, and the tops can bring fog, wind and alpine-style conditions. Treat it as a weather-dependent tramp with water, layers, navigation and daylight.",
+      "suggested_voice_tone": "respectful, bracing, mountain-aware",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/marlborough/places/pelorus-and-kenepuru-sounds-area/things-to-do/tracks/mount-stokes-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Strong walkers praise the summit views and remote Sounds feeling; access roads, weather and exposure are the repeated cautions."
+      }
+    },
+    {
+      "id": "marlborough-pollard-park",
+      "name": "Pollard Park",
+      "region": "marlborough",
+      "lat": -41.5061,
+      "lng": 173.9467,
+      "category": "nature",
+      "tags": [
+        "blenheim",
+        "garden",
+        "park",
+        "wetland"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1,
+      "short": "Blenheim’s leafy town park, with gardens, stream edges and easy walking close to the centre.",
+      "commentary": "Pollard Park is Blenheim’s soft landing: roses, mature trees, waterways and open lawns within an easy walk of town. It is especially useful between tastings or ferry connections, when the best thing is simply shade, birds and a slower hour.",
+      "audio_story": "Pollard Park is Blenheim’s soft landing: roses, mature trees, waterways and open lawns within an easy walk of town. It is especially useful between tastings or ferry connections, when the best thing is simply shade, birds and a slower hour.",
+      "suggested_voice_tone": "gentle, leafy, local",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-wairau-lagoons-walkway",
+      "name": "Wairau Lagoons Walkway",
+      "region": "marlborough",
+      "lat": -41.5407,
+      "lng": 173.9972,
+      "category": "wildlife",
+      "tags": [
+        "wetland",
+        "birdlife",
+        "shipwreck",
+        "walk"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 3,
+      "short": "A flat wetland walk near Blenheim, known for shorebirds and the rusting Waverley ship remains.",
+      "commentary": "The Wairau Lagoons Walkway turns a flat landscape into a slow reveal. Saltmarsh, channels and birdlife lead toward the remains of the Waverley, a rusting reminder that Marlborough’s river mouth has always been a working, shifting, sometimes unforgiving place.",
+      "audio_story": "The Wairau Lagoons Walkway turns a flat landscape into a slow reveal. Saltmarsh, channels and birdlife lead toward the remains of the Waverley, a rusting reminder that Marlborough’s river mouth has always been a working, shifting, sometimes unforgiving place.",
+      "suggested_voice_tone": "quiet, tidal, historical",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-kaipupu-sanctuary",
+      "name": "Kaipupu Sanctuary",
+      "region": "marlborough",
+      "lat": -41.2772,
+      "lng": 174.0007,
+      "category": "wildlife",
+      "tags": [
+        "picton",
+        "sanctuary",
+        "birdlife",
+        "water-taxi"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "A community wildlife sanctuary on Picton harbour, reached by boat and walked on a compact loop track.",
+      "commentary": "Kaipupu Sanctuary is close enough to Picton to see the ferries, yet protected enough to feel like a different harbour. A predator fence, community planting and patient restoration have made the loop track a small but vivid conservation stop.",
+      "audio_story": "Kaipupu Sanctuary is close enough to Picton to see the ferries, yet protected enough to feel like a different harbour. A predator fence, community planting and patient restoration have made the loop track a small but vivid conservation stop.",
+      "suggested_voice_tone": "hopeful, harbour, intimate",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-whites-bay",
+      "name": "Whites Bay",
+      "region": "marlborough",
+      "lat": -41.4166,
+      "lng": 174.0664,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "robin-hood-bay",
+        "walking",
+        "coast"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "A sheltered east-coast bay north of Blenheim, linked to walking tracks and old telegraph history.",
+      "commentary": "Whites Bay is a Marlborough beach with layers: family swimming, coastal tracks, and the memory of early telegraph cables that helped connect the country. It makes a good low-key contrast to the Sounds, with open Pacific light instead of enclosed waterways.",
+      "audio_story": "Whites Bay is a Marlborough beach with layers: family swimming, coastal tracks, and the memory of early telegraph cables that helped connect the country. It makes a good low-key contrast to the Sounds, with open Pacific light instead of enclosed waterways.",
+      "suggested_voice_tone": "coastal, historical, relaxed",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-blenheim-riverside-railway",
+      "name": "Blenheim Riverside Railway",
+      "region": "marlborough",
+      "lat": -41.5149,
+      "lng": 173.9536,
+      "category": "heritage",
+      "tags": [
+        "railway",
+        "family",
+        "blenheim",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "A volunteer-run miniature railway along the Taylor River, giving Blenheim a playful heritage ride.",
+      "commentary": "The Blenheim Riverside Railway is charming precisely because it is modest. Volunteers keep the small trains running beside the river, turning local engineering enthusiasm into a family-friendly ride that feels handmade in the best sense.",
+      "audio_story": "The Blenheim Riverside Railway is charming precisely because it is modest. Volunteers keep the small trains running beside the river, turning local engineering enthusiasm into a family-friendly ride that feels handmade in the best sense.",
+      "suggested_voice_tone": "playful, local, nostalgic",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-awakino-skifield-road-view",
+      "name": "Awatere Valley Wine Road",
+      "region": "marlborough",
+      "lat": -41.7257,
+      "lng": 174.0463,
+      "category": "food-wine",
+      "tags": [
+        "wine",
+        "awatere-valley",
+        "scenic-drive",
+        "cellar-door"
+      ],
+      "trigger_radius_m": 2200,
+      "duration_hours": 3,
+      "short": "A drier, windier Marlborough wine landscape where cellar doors sit under the Inland Kaikōura ranges.",
+      "commentary": "The Awatere Valley gives Marlborough wine a different edge: more open, more exposed, and visually tied to the pale Inland Kaikōura ranges. The road south of Blenheim turns tasting into landscape, with vines, river terraces and big weather sharing the same glass.",
+      "audio_story": "The Awatere Valley gives Marlborough wine a different edge: more open, more exposed, and visually tied to the pale Inland Kaikōura ranges. The road south of Blenheim turns tasting into landscape, with vines, river terraces and big weather sharing the same glass.",
+      "suggested_voice_tone": "sophisticated, scenic, grounded",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-motuara-island-sanctuary",
+      "name": "Motuara Island Sanctuary",
+      "region": "marlborough",
+      "lat": -41.0967,
+      "lng": 174.2787,
+      "category": "wildlife",
+      "tags": [
+        "island",
+        "birdlife",
+        "queen-charlotte-sound",
+        "sanctuary"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2.5,
+      "short": "A predator-free island sanctuary in Queen Charlotte Sound, known for birds and Cook Strait views.",
+      "commentary": "Motuara Island is a small sanctuary with a big outlook. The track climbs through recovering bush alive with native birds, then reaches a lookout over Queen Charlotte Sound and Cook Strait, where wildlife restoration and maritime geography meet in one view.",
+      "audio_story": "Motuara Island is a small sanctuary with a big outlook. The track climbs through recovering bush alive with native birds, then reaches a lookout over Queen Charlotte Sound and Cook Strait, where wildlife restoration and maritime geography meet in one view.",
+      "suggested_voice_tone": "bright, ecological, maritime",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-havelock-mussel-trail",
+      "name": "Havelock Mussel Trail",
+      "region": "marlborough",
+      "lat": -41.2788,
+      "lng": 173.7675,
+      "category": "food-wine",
+      "tags": [
+        "mussels",
+        "havelock",
+        "seafood",
+        "marina"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.5,
+      "short": "A seafood stop in Havelock, the self-styled green-lipped mussel capital at the head of Pelorus Sound.",
+      "commentary": "Havelock makes a strong case for stopping hungry. The marina, mussel boats and menus all point toward the same local specialty, turning the town into a compact introduction to the aquaculture economy of the Sounds.",
+      "audio_story": "Havelock makes a strong case for stopping hungry. The marina, mussel boats and menus all point toward the same local specialty, turning the town into a compact introduction to the aquaculture economy of the Sounds.",
+      "suggested_voice_tone": "fresh, local, appetising",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-rarangi-beach",
+      "name": "Rarangi Beach",
+      "region": "marlborough",
+      "lat": -41.394,
+      "lng": 174.0438,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "coastal-walk",
+        "whites-bay",
+        "camping"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A long stony beach north of Blenheim with walks over the hill to Whites Bay.",
+      "commentary": "Rarangi Beach is Marlborough’s exposed coast in a long, stony line. It is less about swimming glamour and more about horizon, weather and the option to climb over to Whites Bay, carrying the sound of the Pacific behind you.",
+      "audio_story": "Rarangi Beach is Marlborough’s exposed coast in a long, stony line. It is less about swimming glamour and more about horizon, weather and the option to climb over to Whites Bay, carrying the sound of the Pacific behind you.",
+      "suggested_voice_tone": "spare, coastal, reflective",
+      "sources_to_check": [
+        "DOC Marlborough Sounds and Wairau places",
+        "MarlboroughNZ visitor information",
+        "Local heritage and wine trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-taylor-river-reserve",
+      "name": "Taylor River Reserve",
+      "region": "marlborough",
+      "lat": -41.522,
+      "lng": 173.955,
+      "category": "nature",
+      "tags": [
+        "river",
+        "blenheim",
+        "walking"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Taylor River Reserve gives Blenheim an easy green spine, following water, willows and shared paths through the town’s everyday outdoor life.",
+      "commentary": "Taylor River Reserve gives Blenheim an easy green spine, following water, willows and shared paths through the town’s everyday outdoor life.",
+      "audio_story": "Taylor River Reserve gives Blenheim an easy green spine, following water, willows and shared paths through the town’s everyday outdoor life.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-cullen-point-tracks",
+      "name": "Cullen Point Tracks",
+      "region": "marlborough",
+      "lat": -41.265,
+      "lng": 173.779,
+      "category": "nature",
+      "tags": [
+        "havelock",
+        "marlborough-sounds",
+        "short-walk",
+        "lookout"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "Short bush and lookout tracks near Havelock, with Pelorus Sound views close to the road.",
+      "commentary": "Cullen Point is a compact Marlborough Sounds sampler. The tracks are short, the bush is close, and the lookout gives Havelock’s harbour setting a clear frame, making it an excellent leg-stretch before or after the winding road deeper into the Sounds.",
+      "audio_story": "Cullen Point is a compact Marlborough Sounds sampler. The tracks are short, the bush is close, and the lookout gives Havelock’s harbour setting a clear frame, making it an excellent leg-stretch before or after the winding road deeper into the Sounds.",
+      "suggested_voice_tone": "fresh, easygoing, scenic",
+      "sources_to_check": [
+        "https://marlboroughnz.com/guides/marlborough-sounds/cullen-point-tracks/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/marlborough/places/pelorus-and-kenepuru-sounds-area/things-to-do/tracks/cullen-point-tracks/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-museum",
+      "name": "Marlborough Museum",
+      "region": "marlborough",
+      "lat": -41.531,
+      "lng": 173.939,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "blenheim",
+        "wine-history",
+        "regional-history"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1.25,
+      "short": "A Blenheim museum covering Marlborough’s regional history, from early settlement to wine country.",
+      "commentary": "Marlborough Museum helps balance the region’s cellar-door image with older and wider stories. Its collections sit close to the heritage park at Brayshaw, giving visitors a useful bridge between Wairau history, town life and the modern wine landscape.",
+      "audio_story": "Marlborough Museum helps balance the region’s cellar-door image with older and wider stories. Its collections sit close to the heritage park at Brayshaw, giving visitors a useful bridge between Wairau history, town life and the modern wine landscape.",
+      "suggested_voice_tone": "curious, historical, grounded",
+      "sources_to_check": [
+        "https://marlboroughmuseum.org.nz/",
+        "https://marlboroughnz.com/guides/heritage/marlborough-museum/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-amokura",
+      "name": "Amokura",
+      "region": "marlborough",
+      "lat": -41.185351,
+      "lng": 173.972105,
+      "category": "heritage",
+      "tags": [
+        "wreck-site",
+        "heritage",
+        "historic-wreck"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Marlborough.",
+      "commentary": "Amokura is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Amokura is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/860591507",
+        "https://en.wikipedia.org/wiki/HMS_Sparrow_(1889)",
+        "https://www.wikidata.org/wiki/Q5634387",
+        "https://www.newzealand.com/nz/marlborough/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-tapuae-o-uenuku",
+      "name": "Tapuae-o-Uenuku",
+      "region": "marlborough",
+      "lat": -41.995817,
+      "lng": 173.662808,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Marlborough.",
+      "commentary": "Tapuae-o-Uenuku helps mark the high country and skyline around Marlborough. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Tapuae-o-Uenuku helps mark the high country and skyline around Marlborough. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4255559578",
+        "https://en.wikipedia.org/wiki/Tapuae-o-Uenuku",
+        "https://www.wikidata.org/wiki/Q6924042",
+        "https://www.newzealand.com/nz/marlborough/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "marlborough-horton-park",
+      "name": "Horton Park",
+      "region": "marlborough",
+      "lat": -41.518119,
+      "lng": 173.96235,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Marlborough.",
+      "commentary": "Horton Park fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Horton Park fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/60960777",
+        "https://en.wikipedia.org/wiki/Horton_Park%2C_Blenheim",
+        "https://www.wikidata.org/wiki/Q5906899",
+        "https://www.newzealand.com/nz/marlborough/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-brayshaw-park",
+      "name": "Brayshaw Park",
+      "region": "marlborough",
+      "lat": -41.530511,
+      "lng": 173.940639,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Marlborough.",
+      "commentary": "Brayshaw Park gives Marlborough another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Brayshaw Park gives Marlborough another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/335842564",
+        "https://brayshawpark.org.nz/",
+        "https://www.newzealand.com/nz/marlborough/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-motu-roa-beach",
+      "name": "Motu Roa Beach",
+      "region": "marlborough",
+      "lat": -41.162553,
+      "lng": 174.036106,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Marlborough.",
+      "commentary": "Motu Roa Beach fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Motu Roa Beach fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6562995151",
+        "https://www.wikidata.org/wiki/Q32283230",
+        "https://www.newzealand.com/nz/marlborough/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-webber-lookout",
+      "name": "Webber Lookout",
+      "region": "marlborough",
+      "lat": -40.942046,
+      "lng": 173.786125,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "nature",
+        "tourism-viewpoint"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A named viewpoint with coordinates for a quick scenic pause in Marlborough.",
+      "commentary": "Webber Lookout fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Webber Lookout fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/9285366725",
+        "https://www.wikidata.org/wiki/Q128999341",
+        "https://www.newzealand.com/nz/marlborough/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-waipapa",
+      "name": "Waipapa",
+      "region": "marlborough",
+      "lat": -42.1789,
+      "lng": 173.90752,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Marlborough.",
+      "commentary": "Waipapa is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Waipapa is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10588529705",
+        "https://www.wikidata.org/wiki/Q121336566",
+        "https://www.newzealand.com/nz/marlborough/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "marlborough-burneys-beach",
+      "name": "Burneys Beach",
+      "region": "marlborough",
+      "lat": -41.175744,
+      "lng": 174.290742,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Marlborough.",
+      "commentary": "Burneys Beach fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Burneys Beach fills in another real point on the Marlborough visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/783245723",
+        "https://www.wikidata.org/wiki/Q32145355",
+        "https://www.newzealand.com/nz/marlborough/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "marlborough-cooks-cairn",
+      "name": "Cook's Cairn",
+      "region": "marlborough",
+      "lat": -41.095429,
+      "lng": 174.274677,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Marlborough.",
+      "commentary": "Cook's Cairn is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Cook's Cairn is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1225171466",
+        "https://www.wikidata.org/wiki/Q126163010",
+        "https://www.newzealand.com/nz/marlborough/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

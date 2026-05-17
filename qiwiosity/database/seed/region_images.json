@@ -95,11 +95,6 @@
     "display_order": 1
   },
   {
-    "region_id": "bay-of-plenty",
-    "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mount%20Maunganui%20and%20beach.jpg?width=800",
-    "display_order": 2
-  },
-  {
     "region_id": "waikato",
     "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hobbit%20holes%20reflected%20in%20water.jpg?width=800",
     "display_order": 2

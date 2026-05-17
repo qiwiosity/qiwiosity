@@ -2235,7 +2235,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Important restoration project. Bird viewing requires patience and binoculars. Best at dawn."
       }
     },
@@ -2335,7 +2335,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "For serious birders and kiwi enthusiasts. Remote access adds to the experience. Best in breeding season."
       }
     },
@@ -2384,7 +2384,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Beautiful remote setting. Penguin viewing requires patience and timing. The peninsula itself is worth exploring."
       }
     },
@@ -2427,7 +2427,7 @@
         "earthquake-history"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Napier's museum, theatre, and gallery complex telling the dramatic story of the 1931 earthquake and Art Deco rebuild.",
       "commentary": "MTG Hawke's Bay (Museum Theatre Gallery) is Napier's principal cultural institution, located on the Marine Parade waterfront. The museum's permanent exhibition powerfully tells the story of the devastating 1931 Hawke's Bay earthquake that destroyed Napier and the remarkable Art Deco rebuild that followed, creating the unique streetscape the city is famous for today. Displays include earthquake relics, survivor testimonies, a recreated 1930s streetscape, and extensive Art Deco architectural photography. The gallery spaces host rotating exhibitions of regional and national art. The building itself is a modern, award-winning design that sits well alongside Napier's historic waterfront architecture. The century theatre hosts films, performances, and talks. Admission to permanent exhibitions is free. MTG provides essential context for understanding Napier's Art Deco heritage — visit here before taking a walking tour of the town. The café overlooks the waterfront, and the shop stocks excellent local art and design.",
       "content_status": "draft",
@@ -2495,7 +2495,7 @@
         "gannet-colony"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Wild and dramatic surf beach south of Cape Kidnappers with powerful waves and remote, untamed beauty.",
       "commentary": "Ocean Beach is a spectacular wild beach south of Cape Kidnappers on the Hawke's Bay coast, offering a dramatically different experience from the region's gentler harbour beaches. The beach stretches for several kilometres beneath imposing sandstone cliffs, exposed to powerful Pacific swells that create excellent surfing conditions for experienced riders. The drive to Ocean Beach passes through fertile farmland before descending steeply to the coast. The beach is not patrolled, and strong rips and currents mean swimming requires caution and experience. The scenic beauty is outstanding — golden sand, dramatic cliff formations, and crashing surf create a wild and invigorating atmosphere. The Cape Kidnappers gannet colony is accessible by walking along the beach at low tide (check tide times carefully). A surf lifesaving club operates during summer weekends. Ocean Beach is popular with locals but rarely crowded. Take care on the steep, winding access road.",
       "content_status": "draft",
@@ -2518,7 +2518,7 @@
         "family-friendly"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Beautiful golden sand beach south of Hastings with good surf, safe swimming, and a classic Kiwi beach feel.",
       "commentary": "Waimarama Beach is one of Hawke's Bay's most popular swimming and surfing beaches, a beautiful crescent of golden sand about 25 kilometres south of Hastings. The beach faces east into the Pacific and receives reliable swell, making the northern end popular with surfers, while the sheltered southern end is better for swimming. Surf lifeguards patrol during peak summer weekends and holidays. The small beachside settlement maintains a relaxed, uncommercialised character with a general store, camp ground, and community surf club. Bare Island (Te Karahumuhumu) sits just offshore, an impressive rock formation accessible on foot at very low tides. The beach is backed by rolling farmland and the scenic drive from Hastings through the rural hills is part of the experience. Waimarama captures the essence of the classic New Zealand beach holiday — uncrowded, beautiful, and unpretentious. Popular with families and surfers alike.",
       "content_status": "draft",
@@ -2541,7 +2541,7 @@
         "seminary"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's oldest winery founded by French missionaries in 1851, with a stunning seminary building and restaurant.",
       "commentary": "Mission Estate is New Zealand's oldest winery, founded by Marist missionaries from France in 1851. The imposing white seminary building, dating from 1880, sits on a hillside above the Taradale vineyards with sweeping views across the Heretaunga Plains to the coast. The cellar door offers tastings of the full range, from the accessible estate wines to the premium Jewelstone and Huchet single-vineyard labels. The on-site restaurant is set in an elegant dining room within the seminary, serving cuisine designed to complement the wines. The annual Mission Concert on the front lawn attracts major international artists and is one of New Zealand's premier outdoor music events. The history of French missionaries establishing viticulture in Hawke's Bay adds a fascinating layer to the tasting experience.",
       "content_status": "draft",
@@ -2587,7 +2587,7 @@
         "heritage"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "One of the world's finest collections of Art Deco architecture, rebuilt after the devastating 1931 earthquake.",
       "commentary": "Napier's Art Deco Quarter is internationally recognised as one of the world's best-preserved collections of 1930s Art Deco architecture. Following the devastating 7.8-magnitude earthquake on 3 February 1931, which killed 256 people and levelled the city, Napier was rebuilt rapidly in the prevailing architectural styles of the day: Art Deco, Spanish Mission, and Stripped Classical. The result is an extraordinarily cohesive streetscape of geometric facades, decorative motifs, and pastel colours that has been carefully preserved. The Art Deco Trust offers daily guided walking tours that bring the earthquake story and architectural details to life. Self-guided walks with maps from the Trust are also available. The annual Art Deco Weekend each February draws thousands of visitors who dress in period costume for vintage car parades, jazz performances, and themed events. The Marine Parade along the seafront adds palm-lined elegance. A UNESCO World Heritage nomination is under consideration.",
       "content_status": "draft",
@@ -3573,7 +3573,7 @@
         "walking"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Alternative route to Te Mata Peak through towering California redwood groves.",
       "commentary": "While most visitors drive to the summit, the Redwoods Track offers a walking approach through impressive California redwood groves planted in the 1920s. The trail climbs through native bush and exotic forest to emerge at the iconic ridge with panoramic views over Hawke's Bay.",
       "content_status": "draft",
@@ -3596,7 +3596,7 @@
         "self-drive"
       ],
       "trigger_radius_m": 800,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Self-drive heritage trail through the historic small towns of Central Hawke's Bay.",
       "commentary": "This self-drive trail connects Waipawa, Waipukurau, and surrounding villages through some of New Zealand's earliest European pastoral country. Historic homesteads, churches, and woolsheds tell the story of the region's farming heritage, with stops at artisan food producers along the way.",
       "content_status": "draft",
@@ -3619,7 +3619,7 @@
         "museum"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Tiny heritage village preserving colonial-era buildings in rural Hawke's Bay.",
       "commentary": "The hamlet of Onga Onga preserves a remarkable collection of colonial-era buildings including a church, post office, and general store. The small museum and heritage precinct offer an authentic glimpse of 1880s rural New Zealand life, virtually unchanged since settlement.",
       "content_status": "draft",
@@ -3642,7 +3642,7 @@
         "flat terrain"
       ],
       "trigger_radius_m": 800,
-      "duration_hours": 5.0,
+      "duration_hours": 5,
       "short": "Flat cycling trail linking a dozen cellar doors across the Heretaunga Plains.",
       "commentary": "Hawke's Bay's flat terrain makes it ideal for cycling between wineries. The trail network connects over a dozen cellar doors from Havelock North to the coast, passing through orchards and vineyards with stops at Mission Estate (NZ's oldest winery), Craggy Range, and boutique producers.",
       "content_status": "draft",
@@ -3665,7 +3665,7 @@
         "remote"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Wild and remote surf beach on Hawke's Bay's dramatic southern coastline.",
       "commentary": "Ocean Beach is Hawke's Bay's wild southern coast — a long stretch of black sand backed by dramatic papa cliffs and rolling farmland. Popular with surfers and horse riders, it feels a world away from the manicured wineries just 30 minutes inland.",
       "content_status": "draft",
@@ -3688,7 +3688,7 @@
         "handmade"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Artisan chocolatier hand-making Belgian-style chocolates in Hawke's Bay.",
       "commentary": "Silky Oak Chocolate Company crafts premium handmade chocolates using Belgian techniques. Their factory shop offers tastings and chocolate-making demonstrations, with flavours incorporating local ingredients like Hawke's Bay orchard fruits and mānuka honey.",
       "content_status": "draft",
@@ -3719,6 +3719,508 @@
         "rating": 4.7,
         "summary": "World-class wine and dining — the Te Mata Peak setting is breathtaking."
       }
+    },
+    {
+      "id": "hawkes-bay-tangoio-falls-scenic-reserve",
+      "name": "Tangoio Falls Scenic Reserve",
+      "region": "hawkes-bay",
+      "lat": -39.3098579,
+      "lng": 176.8852018,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "doc-track",
+        "tutira-area",
+        "native-forest",
+        "family-walk"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "Short DOC waterfall tracks north of Napier, with Te Ana Falls, Tangoio Falls, stream crossings and native bush.",
+      "commentary": "Tangoio Falls Scenic Reserve gives Hawke's Bay a compact waterfall-and-bush stop just north of Napier. DOC lists a 30-minute return walk to Te Ana Falls and a longer 60-minute return option to Tangoio Falls, following Kareaara Stream through native forest. For travellers heading between Napier and Wairoa, it is a useful way to break the highway with water, shade and a child-friendly objective. The longer Tangoio Walkway adds open grassland, pine plantings, redwoods and steeper sections. After rain, stream crossings and slippery ground need care, so check current DOC alerts before treating it as an easy leg-stretch.",
+      "audio_story": "Tangoio Falls Scenic Reserve gives Hawke's Bay a compact waterfall-and-bush stop just north of Napier. DOC lists a 30-minute return walk to Te Ana Falls and a longer 60-minute return option to Tangoio Falls, following Kareaara Stream through native forest. For travellers heading between Napier and Wairoa, it is a useful way to break the highway with water, shade and a child-friendly objective. The longer Tangoio Walkway adds open grassland, pine plantings, redwoods and steeper sections. After rain, stream crossings and slippery ground need care, so check current DOC alerts before treating it as an easy leg-stretch.",
+      "suggested_voice_tone": "fresh, practical, waterfall-bright",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/hawkes-bay/places/tutira-area/things-to-do/tangoio-falls-scenic-reserve-tracks/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors like the easy waterfall access, forest shade and road-trip convenience; recent rain can make stream edges and crossings less predictable."
+      }
+    },
+    {
+      "id": "hawkes-bay-puketapu-loop",
+      "name": "Puketapu Loop Cycle Ride",
+      "region": "hawkes-bay",
+      "lat": -39.4869,
+      "lng": 176.7883,
+      "category": "adventure",
+      "tags": [
+        "cycle-trail",
+        "river",
+        "napier",
+        "cafe-stop"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 3,
+      "short": "A relaxed Hawke’s Bay Trails loop along river paths and country roads, often ending with a village pub stop.",
+      "commentary": "The Puketapu Loop is Hawke’s Bay at social cycling speed. River paths, orchard country and quiet roads roll together into a ride that is more about rhythm than endurance, with the village stop giving the loop its easy local charm.",
+      "audio_story": "The Puketapu Loop is Hawke’s Bay at social cycling speed. River paths, orchard country and quiet roads roll together into a ride that is more about rhythm than endurance, with the village stop giving the loop its easy local charm.",
+      "suggested_voice_tone": "relaxed, active, social",
+      "sources_to_check": [
+        "Hawke's Bay Tourism visitor information",
+        "DOC Hawke’s Bay places",
+        "Local museum, cycle trail and reserve pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-maraetotara-falls",
+      "name": "Maraetotara Falls",
+      "region": "hawkes-bay",
+      "lat": -39.7035,
+      "lng": 176.9071,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "swimming-hole",
+        "havelock-north",
+        "short-walk"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A short walk to a pretty waterfall and popular swimming hole in the hills behind Havelock North.",
+      "commentary": "Maraetotara Falls is small, close and loved. The water drops into a deep pool framed by greenery, making it a classic hot-day Hawke’s Bay detour; come with care, because popular local swimming spots need respect as much as enthusiasm.",
+      "audio_story": "Maraetotara Falls is small, close and loved. The water drops into a deep pool framed by greenery, making it a classic hot-day Hawke’s Bay detour; come with care, because popular local swimming spots need respect as much as enthusiasm.",
+      "suggested_voice_tone": "fresh, local, careful",
+      "sources_to_check": [
+        "Hawke's Bay Tourism visitor information",
+        "DOC Hawke’s Bay places",
+        "Local museum, cycle trail and reserve pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-eskdale-mtb-park",
+      "name": "Eskdale Mountain Bike Park",
+      "region": "hawkes-bay",
+      "lat": -39.3826,
+      "lng": 176.8414,
+      "category": "adventure",
+      "tags": [
+        "mountain-bike",
+        "forest",
+        "napier",
+        "trails"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 3,
+      "short": "A major Hawke’s Bay mountain-bike network in the Eskdale forest area north of Napier.",
+      "commentary": "Eskdale is where Hawke’s Bay riders go to disappear into trees and trail names. The network has everything from flowing intermediate lines to steeper technical routes, making it a strong counterweight to the region’s gentler winery-and-river cycling.",
+      "audio_story": "Eskdale is where Hawke’s Bay riders go to disappear into trees and trail names. The network has everything from flowing intermediate lines to steeper technical routes, making it a strong counterweight to the region’s gentler winery-and-river cycling.",
+      "suggested_voice_tone": "active, focused, trail-wise",
+      "sources_to_check": [
+        "Hawke's Bay Tourism visitor information",
+        "DOC Hawke’s Bay places",
+        "Local museum, cycle trail and reserve pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-waitangi-regional-park",
+      "name": "Waitangi Regional Park and Ātea a Rangi",
+      "region": "hawkes-bay",
+      "lat": -39.5436,
+      "lng": 176.9044,
+      "category": "culture",
+      "tags": [
+        "star-compass",
+        "estuary",
+        "heritage",
+        "napier"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A coastal wetland park near the river mouths, home to Ātea a Rangi star compass.",
+      "commentary": "Waitangi Regional Park holds water, migration and navigation in one open landscape. Ātea a Rangi, the celestial star compass, points attention upward and outward, connecting the estuary edge with the voyaging knowledge that brought people across the Pacific.",
+      "audio_story": "Waitangi Regional Park holds water, migration and navigation in one open landscape. Ātea a Rangi, the celestial star compass, points attention upward and outward, connecting the estuary edge with the voyaging knowledge that brought people across the Pacific.",
+      "suggested_voice_tone": "respectful, open, reflective",
+      "sources_to_check": [
+        "Hawke's Bay Tourism visitor information",
+        "DOC Hawke’s Bay places",
+        "Local museum, cycle trail and reserve pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "hawkes-bay-waipukurau-tuki-tuki-trail",
+      "name": "Waipukurau Tuki Tuki Trail",
+      "region": "hawkes-bay",
+      "lat": -39.9963,
+      "lng": 176.5574,
+      "category": "journey",
+      "tags": [
+        "river-trail",
+        "walking",
+        "cycling",
+        "central-hawkes-bay"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A Central Hawke’s Bay riverside trail for easy walking and cycling beside the Tukituki River.",
+      "commentary": "The Waipukurau Tuki Tuki Trail broadens the map beyond Napier and Hastings. It follows the river at a human pace, making a useful local stop for travellers who want Central Hawke’s Bay to be more than a name on the road sign.",
+      "audio_story": "The Waipukurau Tuki Tuki Trail broadens the map beyond Napier and Hastings. It follows the river at a human pace, making a useful local stop for travellers who want Central Hawke’s Bay to be more than a name on the road sign.",
+      "suggested_voice_tone": "local, gentle, practical",
+      "sources_to_check": [
+        "Hawke's Bay Tourism visitor information",
+        "DOC Hawke’s Bay places",
+        "Local museum, cycle trail and reserve pages"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-arataki-honey-visitor-centre",
+      "name": "Arataki Honey Visitor Centre",
+      "region": "hawkes-bay",
+      "lat": -39.638,
+      "lng": 176.849,
+      "category": "food-wine",
+      "tags": [
+        "honey",
+        "havelock-north",
+        "family"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Arataki Honey turns Hawke’s Bay’s orchard-and-flower abundance into a tasting story, with bees, jars and family-friendly displays doing the explaining.",
+      "commentary": "Arataki Honey turns Hawke’s Bay’s orchard-and-flower abundance into a tasting story, with bees, jars and family-friendly displays doing the explaining.",
+      "audio_story": "Arataki Honey turns Hawke’s Bay’s orchard-and-flower abundance into a tasting story, with bees, jars and family-friendly displays doing the explaining.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-keirunga-gardens",
+      "name": "Keirunga Gardens",
+      "region": "hawkes-bay",
+      "lat": -39.669,
+      "lng": 176.886,
+      "category": "culture",
+      "tags": [
+        "garden",
+        "arts",
+        "havelock-north"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.25,
+      "short": "Keirunga Gardens is a leafy Havelock North arts pocket, with old trees, craft spaces, miniature rail enthusiasm and village calm above the plain.",
+      "commentary": "Keirunga Gardens is a leafy Havelock North arts pocket, with old trees, craft spaces, miniature rail enthusiasm and village calm above the plain.",
+      "audio_story": "Keirunga Gardens is a leafy Havelock North arts pocket, with old trees, craft spaces, miniature rail enthusiasm and village calm above the plain.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-wairoa-lighthouse",
+      "name": "Wairoa Lighthouse",
+      "region": "hawkes-bay",
+      "lat": -39.0332,
+      "lng": 177.4213,
+      "category": "heritage",
+      "tags": [
+        "lighthouse",
+        "wairoa",
+        "river-town"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Wairoa’s lighthouse no longer stands on a lonely headland, but in town it has become a compact symbol of maritime history and local pride.",
+      "commentary": "Wairoa’s lighthouse no longer stands on a lonely headland, but in town it has become a compact symbol of maritime history and local pride.",
+      "audio_story": "Wairoa’s lighthouse no longer stands on a lonely headland, but in town it has become a compact symbol of maritime history and local pride.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-ongaonga-historic-village",
+      "name": "Ongaonga Historic Village",
+      "region": "hawkes-bay",
+      "lat": -39.912,
+      "lng": 176.418,
+      "category": "heritage",
+      "tags": [
+        "historic-village",
+        "central-hawkes-bay",
+        "museum",
+        "architecture"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.25,
+      "short": "A small Central Hawke’s Bay heritage village with preserved buildings and rural settlement stories.",
+      "commentary": "Ongaonga Historic Village rewards travellers who like history at human scale. Timber buildings, local collections and a main-street rhythm make Central Hawke’s Bay feel less like a drive-through landscape and more like a set of lives, trades and town habits still close enough to read.",
+      "audio_story": "Ongaonga Historic Village rewards travellers who like history at human scale. Timber buildings, local collections and a main-street rhythm make Central Hawke’s Bay feel less like a drive-through landscape and more like a set of lives, trades and town habits still close enough to read.",
+      "suggested_voice_tone": "warm, historical, local",
+      "sources_to_check": [
+        "https://www.ongaongamuseum.co.nz/",
+        "https://www.visitchb.co.nz/see-and-do/heritage/ongaonga-historic-village/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-central-hawkes-bay-settlers-museum",
+      "name": "Central Hawke’s Bay Settlers Museum",
+      "region": "hawkes-bay",
+      "lat": -39.942,
+      "lng": 176.588,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "waipawa",
+        "settler-history",
+        "central-hawkes-bay"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A Waipawa museum preserving Central Hawke’s Bay family, farming and town histories.",
+      "commentary": "The Central Hawke’s Bay Settlers Museum gives the district’s big skies a room full of names, objects and practical memory. It is a modest stop, but a useful one: the kind of place that turns paddocks, bridges and old town fronts into a more legible landscape.",
+      "audio_story": "The Central Hawke’s Bay Settlers Museum gives the district’s big skies a room full of names, objects and practical memory. It is a modest stop, but a useful one: the kind of place that turns paddocks, bridges and old town fronts into a more legible landscape.",
+      "suggested_voice_tone": "grounded, historical, attentive",
+      "sources_to_check": [
+        "https://www.visitchb.co.nz/see-and-do/heritage/central-hawkes-bay-settlers-museum/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-splash-planet",
+      "name": "Splash Planet",
+      "region": "hawkes-bay",
+      "lat": -39.644777,
+      "lng": 176.862531,
+      "category": "adventure",
+      "tags": [
+        "family-attraction",
+        "adventure",
+        "tourism-theme_park"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "A mapped local attraction that helps fill in the visitor map for Hawke's Bay.",
+      "commentary": "Splash Planet adds a more active option to the Hawke's Bay layer of Qiwiosity. It is mapped as a family attraction, which makes it a good candidate for travellers looking for something more physical than a photo stop. Conditions, opening hours and operator details should be checked before it becomes a finished recommendation.",
+      "audio_story": "Splash Planet adds a more active option to the Hawke's Bay layer of Qiwiosity. It is mapped as a family attraction, which makes it a good candidate for travellers looking for something more physical than a photo stop. Conditions, opening hours and operator details should be checked before it becomes a finished recommendation.",
+      "suggested_voice_tone": "upbeat, practical, playful",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/105443528",
+        "https://www.splashplanet.co.nz/",
+        "https://www.wikidata.org/wiki/Q7578384",
+        "https://www.newzealand.com/nz/hawkes-bay/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-cenotaph",
+      "name": "Cenotaph",
+      "region": "hawkes-bay",
+      "lat": -39.491067,
+      "lng": 176.913507,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Hawke's Bay.",
+      "commentary": "Cenotaph is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Cenotaph is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/874915155",
+        "https://www.napier.govt.nz/napier/war-memorials/cenotaph/?url=/napier/parks/war-memorials/cenotaph/",
+        "https://www.wikidata.org/wiki/Q95931147",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-faraday-museum-of-technology",
+      "name": "Faraday Museum of Technology",
+      "region": "hawkes-bay",
+      "lat": -39.494037,
+      "lng": 176.905464,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Hawke's Bay.",
+      "commentary": "Faraday Museum of Technology gives Hawke's Bay another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Faraday Museum of Technology gives Hawke's Bay another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/436792493",
+        "https://www.faradaymuseum.co.nz/",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-ss-talune",
+      "name": "SS Talune",
+      "region": "hawkes-bay",
+      "lat": -39.073323,
+      "lng": 177.829214,
+      "category": "heritage",
+      "tags": [
+        "wreck-site",
+        "heritage",
+        "historic-wreck"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Hawke's Bay.",
+      "commentary": "SS Talune is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "SS Talune is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12082202512",
+        "https://en.wikipedia.org/wiki/SS_Talune",
+        "https://www.wikidata.org/wiki/Q7394439",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-hastings-city-art-gallery",
+      "name": "Hastings City Art Gallery",
+      "region": "hawkes-bay",
+      "lat": -39.644148,
+      "lng": 176.842468,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Hawke's Bay.",
+      "commentary": "Hastings City Art Gallery gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Hastings City Art Gallery gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/669485856",
+        "https://www.hastingscityartgallery.co.nz/",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-kohinerakau-kohinurakau",
+      "name": "Kōhinerākau / Kohinurākau",
+      "region": "hawkes-bay",
+      "lat": -39.739815,
+      "lng": 176.841032,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Hawke's Bay.",
+      "commentary": "Kōhinerākau / Kohinurākau helps mark the high country and skyline around Hawke's Bay. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Kōhinerākau / Kohinurākau helps mark the high country and skyline around Hawke's Bay. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6280164728",
+        "https://en.wikipedia.org/wiki/Kohinur%C4%81kau",
+        "https://www.wikidata.org/wiki/Q31478152",
+        "https://www.newzealand.com/nz/hawkes-bay/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-quay-gallery",
+      "name": "Quay Gallery",
+      "region": "hawkes-bay",
+      "lat": -39.488732,
+      "lng": 176.917963,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Hawke's Bay.",
+      "commentary": "Quay Gallery gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Quay Gallery gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4293887782",
+        "https://www.quaygallery.co.nz/",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "hawkes-bay-john-staniford-studio",
+      "name": "John Staniford Studio",
+      "region": "hawkes-bay",
+      "lat": -39.493772,
+      "lng": 176.903079,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Hawke's Bay.",
+      "commentary": "John Staniford Studio gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "John Staniford Studio gives Hawke's Bay another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4286753864",
+        "https://johnstaniford.co.nz/",
+        "https://www.newzealand.com/nz/hawkes-bay/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

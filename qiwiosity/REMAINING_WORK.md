@@ -19,11 +19,11 @@
   - **Compare view** — title, intro paragraph, group toolbar chips (By Category / By Region / All together)
   - **Saved view** — title + empty-state heading & description (rendered via `t()` for dynamic re-render)
   - **Settings panel** — all 5 section headings + Dark Mode label/description + Language section
-  - **POI popup action row** — Add to Itinerary, In Itinerary, More, Save, Drive, Similar, Share, Translate, Compare buttons (rendered via `t()` so they update on language switch)
+  - **POI popup action row** — Add to Itinerary, In Itinerary, More, Save, Drive, Similar, Share, Compare buttons (rendered via `t()` so they update on language switch)
   - **POI popup booking strip** — "Book on Viator", "GetYourGuide", "Book tours · earn us a small commission", "Find nearby stays" (Viator/GetYourGuide brand names kept; verbs translated)
   - **AI Trip Planner modal** (full 3-step flow) — Title, subtitle, all 3 step labels, all 3 panel titles & subtitles, every field label (Days / Travellers / Adults / Children / Starting From / Round Trip / Ending In / Interests / Travel Pace / Budget / Accommodation / Special notes), notes textarea placeholder, loading text, "Load into Planner" / "Regenerate" / "Back" / "Next" buttons
   - **Travel Diary editor** — Title, Visited on, Photos, "No photos yet" empty state, Journal entry label, journal placeholder, Save/Cancel buttons
-- **Per-POI Translate button** — `🌐 Translate` in every POI popup opens Google Translate in a new tab with name + short + commentary, target = current UI language (no API key required)
+- **Settings-level language control** — Translation stays centralised in Settings so users choose their preferred app language once instead of seeing translate controls on every POI
 - **`data-i18n` / `data-i18n-ph` attributes** — declarative system so future strings can be added by tagging the markup
 - **Re-application strategy** — `applyLang()` runs at script-parse time, again on `DOMContentLoaded`, and after every language switch; dynamic content (popups) uses `t()` directly inside templates so it re-renders correctly
 - **HTML `lang` attribute** — set automatically so screen readers and browsers know the active language

@@ -8,7 +8,7 @@
       "lng": 172.6362
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "canterbury-the-george",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 2100,
       "rating": 4.9,
       "short": "Private Banks Peninsula villas on a 4,000-acre working farm."
+    },
+    {
+      "id": "canterbury-flockhill-lodge",
+      "name": "Flockhill",
+      "region": "canterbury",
+      "lat": -43.1304385,
+      "lng": 171.7809886,
+      "type": "lodge",
+      "price_nzd_per_night": 3410,
+      "rating": 4.8,
+      "short": "High-country luxury lodge on a vast Craigieburn station near Castle Hill, Lake Pearson and Arthur's Pass."
+    },
+    {
+      "id": "canterbury-the-observatory-hotel",
+      "name": "The Observatory Hotel Christchurch",
+      "region": "canterbury",
+      "lat": -43.5312,
+      "lng": 172.6277,
+      "type": "hotel",
+      "price_nzd_per_night": 330,
+      "rating": 4.8,
+      "short": "Boutique hotel inside Christchurch’s Arts Centre heritage precinct."
+    },
+    {
+      "id": "canterbury-mt-cook-lakeside-retreat",
+      "name": "Mt Cook Lakeside Retreat",
+      "region": "canterbury",
+      "lat": -44.215,
+      "lng": 170.13,
+      "type": "lodge",
+      "price_nzd_per_night": 1450,
+      "rating": 4.8,
+      "short": "Luxury Lake Pūkaki retreat with alpine views toward Aoraki / Mount Cook."
+    },
+    {
+      "id": "canterbury-the-vicarage-geraldine",
+      "name": "The Vicarage Geraldine",
+      "region": "canterbury",
+      "lat": -44.09,
+      "lng": 171.244,
+      "type": "hotel",
+      "price_nzd_per_night": 230,
+      "rating": 4.7,
+      "short": "Boutique accommodation in a restored Geraldine vicarage, handy to cafes, galleries and inland routes."
+    },
+    {
+      "id": "canterbury-apollo-motel",
+      "name": "Apollo Motel",
+      "region": "canterbury",
+      "lat": -43.530914,
+      "lng": 172.58174,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Canterbury."
+    },
+    {
+      "id": "canterbury-barkers-lodge",
+      "name": "Barkers Lodge",
+      "region": "canterbury",
+      "lat": -43.631003,
+      "lng": 171.648779,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.5,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Canterbury."
     }
   ]
 }

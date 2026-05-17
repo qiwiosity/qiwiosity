@@ -8,7 +8,7 @@
       "lng": 175.7
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "coromandel-grand-mercure-puka",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 850,
       "rating": 4.7,
       "short": "Hidden Coromandel lodge at Whangapoua estuary near New Chums Beach."
+    },
+    {
+      "id": "coromandel-flaxmill-accommodation",
+      "name": "Flaxmill Accommodation",
+      "region": "coromandel",
+      "lat": -36.8335719,
+      "lng": 175.7240841,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Garden cottages and houses at Flaxmill Bay by Cooks Beach, handy to Ferry Landing and Cathedral Cove trips."
+    },
+    {
+      "id": "coromandel-the-church-hahei",
+      "name": "The Church Accommodation Hahei",
+      "region": "coromandel",
+      "lat": -36.842,
+      "lng": 175.804,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Garden cottage accommodation in Hahei, close to Cathedral Cove access and village dining."
+    },
+    {
+      "id": "coromandel-wairua-lodge",
+      "name": "Wairua Lodge",
+      "region": "coromandel",
+      "lat": -37.022,
+      "lng": 175.653,
+      "type": "lodge",
+      "price_nzd_per_night": 310,
+      "rating": 4.8,
+      "short": "Boutique bush lodge near Whitianga, known for forest setting and relaxed hosted stays."
+    },
+    {
+      "id": "coromandel-coromandel-cottages",
+      "name": "Coromandel Cottages",
+      "region": "coromandel",
+      "lat": -36.761,
+      "lng": 175.499,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.5,
+      "short": "Self-contained cottage-style accommodation in Coromandel Town, suited to families and peninsula road trips."
+    },
+    {
+      "id": "coromandel-coromandel-hotel",
+      "name": "Coromandel Hotel",
+      "region": "coromandel",
+      "lat": -36.755678,
+      "lng": 175.500466,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Coromandel Peninsula."
+    },
+    {
+      "id": "coromandel-anchor-lodge-coromandel",
+      "name": "Anchor Lodge Coromandel",
+      "region": "coromandel",
+      "lat": -36.760894,
+      "lng": 175.492174,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.2,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Coromandel Peninsula."
     }
   ]
 }

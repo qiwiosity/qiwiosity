@@ -8,7 +8,7 @@
       "lng": 174.7633
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "auckland-sofitel-viaduct",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 950,
       "rating": 4.7,
       "short": "Historic Herne Bay villa turned intimate boutique lodge with harbour outlook."
+    },
+    {
+      "id": "auckland-hotel-fitzroy",
+      "name": "Hotel Fitzroy",
+      "region": "auckland",
+      "lat": -36.8568474,
+      "lng": 174.7434307,
+      "type": "hotel",
+      "price_nzd_per_night": 360,
+      "rating": 4.7,
+      "short": "Boutique Ponsonby/Grey Lynn villa hotel on Richmond Road with heritage rooms and city-fringe dining nearby."
+    },
+    {
+      "id": "auckland-te-arai-lodge",
+      "name": "Te Arai Lodge",
+      "region": "auckland",
+      "lat": -36.153,
+      "lng": 174.598,
+      "type": "lodge",
+      "price_nzd_per_night": 650,
+      "rating": 4.8,
+      "short": "Wellness-focused boutique lodge near Te Arai, with garden-to-table dining and coastal access."
+    },
+    {
+      "id": "auckland-castaways-resort",
+      "name": "Castaways Resort",
+      "region": "auckland",
+      "lat": -37.282,
+      "lng": 174.668,
+      "type": "hotel",
+      "price_nzd_per_night": 330,
+      "rating": 4.5,
+      "short": "Clifftop west-coast resort above Karioitahi Beach, popular for sunsets and event stays."
+    },
+    {
+      "id": "auckland-whatipu-lodge",
+      "name": "Whatipu Lodge",
+      "region": "auckland",
+      "lat": -37.043,
+      "lng": 174.505,
+      "type": "lodge",
+      "price_nzd_per_night": 240,
+      "rating": 4.4,
+      "short": "Historic lodge accommodation at wild Whatipu, close to caves, dunes and Manukau Harbour walks."
+    },
+    {
+      "id": "auckland-warblers-retreat",
+      "name": "Warblers Retreat",
+      "region": "auckland",
+      "lat": -36.724,
+      "lng": 174.675,
+      "type": "lodge",
+      "price_nzd_per_night": 520,
+      "rating": 4.8,
+      "short": "Boutique lodge-style accommodation in North Auckland bush, suited to quiet luxury stays near the city."
+    },
+    {
+      "id": "auckland-park-hotel",
+      "name": "Park Hotel",
+      "region": "auckland",
+      "lat": -36.857631,
+      "lng": 174.756426,
+      "type": "hotel",
+      "price_nzd_per_night": 315,
+      "rating": 4.6,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Auckland."
+    },
+    {
+      "id": "auckland-aarangi-motel",
+      "name": "Aarangi Motel",
+      "region": "auckland",
+      "lat": -36.851337,
+      "lng": 174.84166,
+      "type": "motel",
+      "price_nzd_per_night": 235,
+      "rating": 4.6,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Auckland."
     }
   ]
 }

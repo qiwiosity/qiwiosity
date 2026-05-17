@@ -1863,7 +1863,7 @@
         "maritime"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Charming community museum telling the stories of Mercury Bay's maritime, kauri, and pioneering history.",
       "commentary": "Mercury Bay Museum in Whitianga is a lovingly curated community museum telling the rich stories of this historic coastal area. Mercury Bay is named after Captain Cook's 1769 observation of the transit of Mercury from here, and the museum covers this significant event alongside the earlier Polynesian voyaging history, the kauri logging and gum-digging era, and maritime heritage. Displays include a replica of Cook's astronomical equipment, historic photographs, Māori taonga, and maritime artefacts. The museum is housed in a heritage building and staffed by passionate local volunteers who bring the stories to life. It is a small museum but punches well above its weight in the quality of its displays and storytelling. A visit provides excellent context for exploring the wider Mercury Bay area, including Cathedral Cove and Hot Water Beach. Open daily during summer, reduced hours in winter. Gold coin donation appreciated.",
       "content_status": "draft",
@@ -1909,7 +1909,7 @@
         "new-chums"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Gateway to New Chums Beach, with a wild and beautiful main beach backed by native bush.",
       "commentary": "Whangapoua Beach on the Coromandel's eastern coast is a stunning white-sand beach renowned as the access point for New Chums Beach, regularly voted one of the world's best undeveloped beaches. The main Whangapoua Beach itself is a beautiful, wide stretch of sand framed by native bush and headlands, excellent for swimming and bodyboarding. To reach New Chums, walk around the northern headland at low tide or take the track over the hill — the 30-minute walk is rewarded with a pristine, road-free beach that feels truly wild. Whangapoua is a small holiday community with no shops, adding to its remote, unspoilt character. The beach is accessed via a winding gravel road from Kuaotunu. Swimming conditions are generally good but the beach is not patrolled, so take care with currents. Visit midweek or off-season for solitude. Bring everything you need including water and sun protection.",
       "content_status": "draft",
@@ -1978,7 +1978,7 @@
         "water-play"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Eccentric water-powered theme park in the bush with kinetic sculptures and interactive water contraptions.",
       "commentary": "The Waterworks is a delightfully eccentric interactive park hidden in native bush north of Coromandel Town. Created from recycled materials, the park features dozens of water-powered contraptions, kinetic sculptures, musical instruments, and hands-on exhibits spread along bush tracks beside a stream. Highlights include water cannons, a flying fox, pedal-powered watercraft on a small lake, and a water-powered clock. The park embodies Kiwi ingenuity and DIY spirit, appealing equally to children who love getting wet and adults who appreciate the inventive engineering. Allow at least two hours and bring a change of clothes for children. The bush setting is beautiful, with swimming holes in the stream during summer. Located 7km north of Coromandel Town along the 309 Road, a scenic gravel route across the peninsula.",
       "content_status": "draft",
@@ -2001,7 +2001,7 @@
         "water-wheel"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Restored 19th-century gold stamper battery and water wheel near Coromandel Town, a working heritage attraction.",
       "commentary": "The Coromandel Stamper Battery is a restored gold-processing plant dating from the 1890s gold-mining era, located a short drive from Coromandel Town along the 309 Road. The battery features a massive working water wheel that once powered the stamps used to crush gold-bearing quartz rock. Guided tours demonstrate the stamping process, explaining how raw ore was crushed to extract gold, and tell the stories of the miners who worked the Coromandel goldfields. The site includes the original machinery, settling tables, and processing equipment in their bush setting. The water wheel, powered by a diverted creek, is particularly impressive and still operational. The 309 Road itself is a scenic gravel route across the peninsula, connecting the eastern and western coastlines. Combine with nearby attractions including The Waterworks and Castle Rock walk for a full day on the 309 Road. A hands-on heritage experience that brings gold-rush history to life.",
       "content_status": "draft",
@@ -2047,7 +2047,7 @@
         "iconic"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Iconic natural sea arch on a pristine white sand beach, reached by a scenic coastal walk through native bush.",
       "commentary": "Cathedral Cove (Te Whanganui-A-Hei) is the Coromandel Peninsula's most iconic landmark, a dramatic natural sea arch framing a white sand beach between sculpted rock walls. The cove is reached by a scenic 45-minute walk from the car park at Hahei, descending through native bush with views across Mercury Bay to volcanic islands. The trail passes several smaller bays and lookout points before arriving at the cove, where the massive arch connects two beaches. The rock formations are sculpted from ancient volcanic ash (ignimbrite), and the clear turquoise water is excellent for swimming and snorkelling. The area is a marine reserve, rich in marine life. Water taxi and kayak access is available from Hahei for those who prefer not to walk. The cove featured in the Chronicles of Narnia: Prince Caspian. A new shuttle bus service from Hahei to the trailhead eases parking pressure during peak summer. Early morning visits offer the best light and fewer people.",
       "content_status": "draft",
@@ -2569,7 +2569,7 @@
         "eyefull-tower"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A unique 15-inch-gauge bush railway hand-built by potter Barry Brickell on his own land — climbing 165 metres through regenerating native forest to the EyeFull Tower viewpoint.",
       "commentary": "Driving Creek Railway is one of New Zealand's most eccentric and beloved attractions — a passion project that became a conservation triumph. Brickell began building in 1975 on 22 hectares of once-degraded farmland, originally to transport clay and pine fuel to his pottery kilns. Over 40 years the railway expanded, the land was replanted in native species, and what was a weed-covered hillside became a thriving kauri and podocarp forest supporting kiwi, kōkako and other native wildlife. The train crosses ten bridges, passes through three tunnels and terminates at the EyeFull Tower summit with views across the Hauraki Gulf. The potteries below produce Barry's distinctive ceramic art. Engineering New Zealand lists the railway as a Heritage Engineering Record.",
       "scripts": {},
@@ -2595,7 +2595,7 @@
         "coromandel-town"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "An 1897 heritage building housing the history of the Coromandel gold rush, with original mining equipment, gold specimens, and records of the families who shaped the Peninsula.",
       "commentary": "The Coromandel School of Mines was established in 1897 to train practical miners in geology, surveying, assaying and mechanical engineering during the height of the Coromandel gold rush. The building itself is heritage-listed and representative of the grand institutional architecture of the colonial boom period. The museum holds the records, equipment and personal artefacts of the families who worked the Coromandel goldfields from the 1850s onwards, as well as geological specimens including native gold in reef quartz. The Coromandel gold rush was one of New Zealand's most significant — at its peak the Peninsula hosted over 10,000 miners and was more densely populated than it is today. Staffed by knowledgeable volunteers.",
       "scripts": {},
@@ -2674,7 +2674,7 @@
         "historic-reserve"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A coastal headland preserving the remains of two Ngāti Hei pā — Hereheretaura and Hahei Pā — with panoramic Mercury Bay views accessed via a 15-minute track from Hahei Beach.",
       "commentary": "Te Pare Point Historic Reserve occupies a dramatic headland at the southern end of Hahei Beach, preserving the remains of Hereheretaura Pā and Hahei Pā — two fortified Ngāti Hei settlements of significant archaeological value. The headland's natural cliffs provide extraordinary defensive position on three sides; visible earthworks including ditches, banks and scarps remain from the pre-contact period. The 15-minute track from Pā Road passes through coastal scrub to the summit, where views extend across Mercury Bay to Whitianga and east to Aldermen Islands. Interpretation panels explain the pā layout, the oral traditions of Ngāti Hei, and the cultural connections between these sites and Cathedral Cove Marine Reserve directly adjacent.",
       "scripts": {},
@@ -2701,7 +2701,7 @@
         "mercury-bay"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A self-guided network of heritage walking tracks in the Hahei area connecting Ngāti Hei pā sites, scenic viewpoints, and cultural landmarks above Mercury Bay.",
       "commentary": "The Hahei Heritage Walks form part of Te Ara o Hei (The Path of Hei), a network of connected cultural walking tracks celebrating the 700-year presence of Ngāti Hei in the Mercury Bay area. The walks connect Te Pare Point, Hereheretaura Pā, Grange Road viewpoints, and the coastal cliffs above Cathedral Cove, with interpretation panels telling the stories of the people and events associated with each location. Named for the ancestor Hei who arrived on the Arawa waka from Hawaiiki, the trail framework acknowledges that every significant headland and harbour feature in the area carries Māori names and oral traditions predating European contact by 400 or more years.",
       "scripts": {},
@@ -2728,14 +2728,14 @@
         "DOC-reserve"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A DOC-managed headland pā reserve on Whangapoua Harbour featuring well-preserved earthworks and Craig's historic sawmill site, 30 minutes north of Coromandel Town on SH25.",
       "commentary": "Opera Point Historic Reserve sits on the northern head of Whangapoua Harbour, encompassing Opera Point Pā — a textbook example of a Māori headland fortification using the natural cliff face for defence. The earthwork terraces, ditches and banks on the landward approach are remarkably well-preserved and clearly legible in the landscape. The reserve also contains Craig's Sawmill, a remnant of the colonial kauri milling era that followed Māori occupation. The walk to the pā summit (approximately 30 minutes return) passes through coastal scrub with superb views over Whangapoua Harbour. DOC interpretation provides context on the site's occupants and defensive strategy. Off SH25 between Coromandel Town and Whitianga at 1738 Whangapoua Road.",
       "scripts": {},
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A quiet, rewarding heritage site that combines Māori archaeological interest with colonial timber history in a beautiful coastal setting. The pā earthworks are among the best preserved on the Coromandel Peninsula. Worth the short detour from SH25."
       },
       "cultural_review_required": true
@@ -2781,7 +2781,7 @@
         "ngati-hei"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "The iconic walk to New Zealand's most photographed natural arch — a carved white volcanic rock cathedral opening to a remote double beach within a DOC marine reserve.",
       "commentary": "Cathedral Cove Marine Reserve (Te Whanganui-o-Hei) is one of New Zealand's top-ranked natural attractions, encompassing a 893-hectare coastal marine reserve and the land walk to the famous rock arch. The arch itself — a 10-metre-high volcanic rhyolite passage connecting two beaches — is the result of differential wave erosion over thousands of years. In summer, vehicle access to the car park is restricted; visitors must use the shuttle from Hahei or walk from the village. Te Mautohe Pā — a fortified site of Ngāti Hei — stands on the headland above the cove and can be visited on the walking track. The waters of the reserve are among the clearest on the New Zealand coast.",
       "scripts": {},
@@ -2807,7 +2807,7 @@
         "great-walk"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 5.0,
+      "duration_hours": 5,
       "short": "A 10-km one-way DOC track traversing the rugged northern tip of the Coromandel Peninsula — dramatic coastal cliffs, pōhutukawa-draped headlands, and a beach accessible only on foot.",
       "commentary": "The Coromandel Coastal Walkway runs from Fletcher Bay at the Peninsula's northern tip to Stony Bay in the east — 10 km of genuine coastal wilderness accessible only by water taxi, private vehicle on unsealed roads, or the walk itself. The track traverses open farmland, dense coastal scrub and cliff-edge sections, with views extending to the Hauraki Gulf islands, the Bay of Plenty, and on clear days to the Coromandel Range. DOC maintains the track as a backcountry experience — the isolation and scale of the landscape is profound. Pōhutukawa trees dominate the coastal fringes, particularly spectacular in December when they flower crimson. Shuttle services operate between Fletcher Bay and Coromandel Town.",
       "scripts": {},
@@ -2833,7 +2833,7 @@
         "firth-of-thames"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "A flat, scenic cycling and walking trail along the Firth of Thames shoreline through Ramsar-listed shorebird habitat and past gold-rush heritage towns.",
       "commentary": "The Hauraki Rail Trail is one of 23 Ngā Haerenga Great Rides of New Zealand, following 197 km of mostly flat former rail corridors through the Hauraki Plains. The Thames–Paeroa section is the most scenically dramatic, tracing the Firth of Thames shoreline through the internationally significant Kaiaua wetlands (Ramsar-listed for migratory shorebird habitat) before turning inland to Paeroa past gold-rush heritage sites and the famous 'L&P' bottle. The trail is entirely off-road and suitable for all fitness levels on standard bikes. Gold mining history interpretation is excellent throughout. The Thames–Coromandel section passes close to the School of Mines and can be incorporated into a broader Coromandel heritage circuit.",
       "scripts": {},
@@ -2859,14 +2859,14 @@
         "colonial-history"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A community-run museum documenting Thames from its pre-European Māori history through the gold rush era to the present — with particular strength in local Hauraki iwi heritage.",
       "commentary": "The Thames Historical Museum holds collections across the full arc of Thames history: the pre-European occupation by Hauraki Māori (Ngāti Maru, Ngāti Tamaterā), the establishment of Thames as a gold-rush settlement from 1867, the rapid rise and fall of the colonial mining economy, and the post-gold transition to dairying and fishing. The museum's Māori collection includes carved taonga, personal effects, and oral history recordings that complement but do not duplicate the School of Mines' mineralogical focus. Staffed by community volunteers whose families have lived in Thames for generations. Located in the central heritage precinct near the School of Mines.",
       "scripts": {},
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "The Thames Historical Museum is genuinely good for a community-run operation — the collections are well-presented, the volunteers are knowledgeable, and the Māori heritage content is better developed than in many comparable facilities. A worthwhile companion to the School of Mines next door."
       },
       "cultural_review_required": true
@@ -3012,7 +3012,7 @@
       "commentary": "Deep in the Coromandel forest, the Square Kauri is a botanical curiosity — a mature kauri tree whose trunk has grown in an almost perfectly square cross-section rather than the usual round shape. Scientists believe the unusual growth pattern may be caused by four symmetrically placed roots creating equal pressure on the trunk. The tree stands beside a short, well-formed loop track through beautiful native bush rich with tree ferns and nikau palms. The walk takes around 20 minutes return from the carpark on the 309 Road, which connects Coromandel Town to Whitianga. Combine with nearby Waiau Falls, another 309 Road attraction just a few minutes' drive away.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A quick, easy stop that genuinely surprises people. The square shape is unmistakable and the surrounding bush is lovely."
       }
     },
@@ -3104,7 +3104,7 @@
       "commentary": "The Thames Saturday Market at Grahamstown Market occupies the historic Grahamstown site every Saturday morning, bringing together local growers, artisan food producers, artists, and craftspeople. The market is a genuine community gathering rather than a tourist production — locals come for their weekly fruit and vegetables, bread, and coffee. You'll find Coromandel-made cheeses, preserves, baked goods, handcrafted jewellery, and local art alongside seasonal produce. The atmosphere is friendly and unhurried, and chatting with the stallholders is half the experience. Thames itself is worth exploring — the Victorian gold-mining town has good heritage buildings and antique shops.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Authentic local market with genuine character. Great for picking up artisan foods and meeting locals. Worth an early start."
       }
     },
@@ -3219,7 +3219,7 @@
       "commentary": "Mercury Bay Art Escape is an annual event (usually in January) where artists across the Whitianga and Mercury Bay area open their studios to the public, but the associated galleries and studios welcome visitors year-round. The Coromandel has long attracted artists — the quality of light, dramatic coastline, and relaxed lifestyle draw painters, sculptors, photographers, and craftspeople. The event typically features over 30 artists in locations from professional galleries to garden studios. Year-round, Whitianga has several permanent galleries showcasing local work. The event provides a wonderful way to explore the Mercury Bay area through an artistic lens, visiting studios in locations you'd never otherwise discover.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Wonderful way to discover the area's creative community. The open-studio format is engaging. Good art in beautiful settings."
       }
     },
@@ -3265,7 +3265,7 @@
       "commentary": "Colville is the last settlement before the wild northern tip of the Coromandel Peninsula, and its cooperative general store is a local institution. Run as a community cooperative since 1978, the store stocks everything from organic groceries to hardware, serving the area's alternative-lifestyle community of artists, organic farmers, and bush dwellers. The cafe serves excellent food with a distinctly counter-cultural flavour. Beyond Colville, the road turns to gravel and leads to remote beaches and DOC campsites at Port Jackson and Fletcher Bay. Colville represents the Coromandel's free-spirited character at its most authentic — this is not a tourist destination but a real community at the end of the road.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Authentic alternative community with a great co-op store and cafe. The gateway to the wild northern Coromandel. Real character."
       }
     },
@@ -3612,7 +3612,7 @@
         "dotterel habitat"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Remote undeveloped beach with a pristine estuary and endangered dotterel nesting.",
       "commentary": "Ōpoutere Beach requires a forest walk to access, keeping it beautifully uncrowded. The Wharekawa Estuary and sandspit are nesting habitat for endangered New Zealand dotterels and variable oystercatchers, making it both a beach paradise and important conservation site.",
       "content_status": "draft",
@@ -3658,7 +3658,7 @@
         "native bush"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Coastal walk from Waihi Beach to a secluded golden beach backed by native bush.",
       "commentary": "A 45-minute walk along the clifftops from Waihi Beach leads to Orokawa Bay, a pristine golden beach backed by regenerating native bush. With no road access, the bay feels truly remote and is perfect for swimming, picnicking, or simply enjoying the solitude.",
       "content_status": "draft",
@@ -3705,7 +3705,7 @@
         "swimming"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Paddle through a rock tunnel into a collapsed volcanic crater island lagoon.",
       "commentary": "Whenuakura Island, known as Donut Island, is a volcanic ring with a hidden lagoon accessible only through a rock tunnel at low tide. Kayakers paddle through the narrow passage to emerge in a sheltered crater lagoon — one of the Coromandel's most extraordinary natural features.",
       "content_status": "draft",
@@ -3759,6 +3759,505 @@
         "rating": 4.4,
         "summary": "Stunning views from the top — worth the climb."
       }
+    },
+    {
+      "id": "coromandel-wentworth-valley-falls",
+      "name": "Wentworth Valley Falls",
+      "region": "coromandel",
+      "lat": -37.2269154,
+      "lng": 175.8390186,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "doc-track",
+        "whangamata",
+        "camping",
+        "forest"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2,
+      "short": "A DOC walk from Wentworth Valley campground through forest and stream crossings to a high waterfall viewpoint.",
+      "commentary": "Wentworth Valley Falls is a useful reminder that the Coromandel is not only beaches and headlands. From the campground at the end of Wentworth Valley Road, the track follows the Wentworth River through Coromandel Forest Park, crossing bridged streams before climbing to a view of the falls. The route is usually straightforward, but DOC notes storm-damaged, uneven and slippery sections, so it belongs in the sturdy-shoes category rather than the casual-sandal one. Add it to a Whangamatā stay when you want cool bush, gold-country valley atmosphere and the sound of water instead of surf.",
+      "audio_story": "Wentworth Valley Falls is a useful reminder that the Coromandel is not only beaches and headlands. From the campground at the end of Wentworth Valley Road, the track follows the Wentworth River through Coromandel Forest Park, crossing bridged streams before climbing to a view of the falls. The route is usually straightforward, but DOC notes storm-damaged, uneven and slippery sections, so it belongs in the sturdy-shoes category rather than the casual-sandal one. Add it to a Whangamatā stay when you want cool bush, gold-country valley atmosphere and the sound of water instead of surf.",
+      "suggested_voice_tone": "cool, steady, practical",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/coromandel-forest-park/things-to-do/wentworth-falls-walks/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Visitors like the easy forest approach and waterfall payoff; recent weather and slippery sections are the recurring practical notes."
+      }
+    },
+    {
+      "id": "coromandel-waiau-falls-kauri-grove",
+      "name": "Waiau Falls and Kauri Grove",
+      "region": "coromandel",
+      "lat": -36.7288,
+      "lng": 175.493,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "kauri",
+        "309-road",
+        "short-walk"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "Two easy 309 Road stops combining a swimming waterfall and a short walk among young kauri.",
+      "commentary": "Waiau Falls and the nearby kauri grove are classic Coromandel side-road rewards. One stop gives you water dropping into a rocky pool; the other leads into the quiet vertical presence of kauri, with boot-cleaning care part of the visit.",
+      "audio_story": "Waiau Falls and the nearby kauri grove are classic Coromandel side-road rewards. One stop gives you water dropping into a rocky pool; the other leads into the quiet vertical presence of kauri, with boot-cleaning care part of the visit.",
+      "suggested_voice_tone": "practical, green, road-trip",
+      "sources_to_check": [
+        "DOC Coromandel Forest Park",
+        "The Coromandel visitor information",
+        "Hauraki Rail Trail and local heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-pauanui-paku-view",
+      "name": "Pauanui and Paku View",
+      "region": "coromandel",
+      "lat": -37.0202,
+      "lng": 175.8614,
+      "category": "journey",
+      "tags": [
+        "harbour",
+        "beach-town",
+        "viewpoint",
+        "tairua"
+      ],
+      "trigger_radius_m": 1400,
+      "duration_hours": 2,
+      "short": "A beach-town pause opposite Tairua, with harbour views back to Paku and the Coromandel ranges.",
+      "commentary": "Pauanui is planned, tidy and holiday-house polished, but its geography is still the star. Stand by the harbour or beach and Paku rises across the water, turning the Tairua entrance into a natural amphitheatre of sand, tide and volcanic rock.",
+      "audio_story": "Pauanui is planned, tidy and holiday-house polished, but its geography is still the star. Stand by the harbour or beach and Paku rises across the water, turning the Tairua entrance into a natural amphitheatre of sand, tide and volcanic rock.",
+      "suggested_voice_tone": "easy, observant, coastal",
+      "sources_to_check": [
+        "DOC Coromandel Forest Park",
+        "The Coromandel visitor information",
+        "Hauraki Rail Trail and local heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-kauaeranga-model-dam",
+      "name": "Kauaeranga Model Dam Walk",
+      "region": "coromandel",
+      "lat": -37.0079,
+      "lng": 175.5745,
+      "category": "heritage",
+      "tags": [
+        "kauri-logging",
+        "walk",
+        "kauaeranga-valley",
+        "forest"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A short Kauaeranga Valley walk interpreting the timber dams once used to drive kauri logs downstream.",
+      "commentary": "The Kauaeranga model dam helps make an almost unbelievable industry legible. Kauri logs were once held back behind bush dams and released in violent floods; this walk gives that history a physical shape while the forest slowly repairs itself around the story.",
+      "audio_story": "The Kauaeranga model dam helps make an almost unbelievable industry legible. Kauri logs were once held back behind bush dams and released in violent floods; this walk gives that history a physical shape while the forest slowly repairs itself around the story.",
+      "suggested_voice_tone": "reflective, historical, forested",
+      "sources_to_check": [
+        "DOC Coromandel Forest Park",
+        "The Coromandel visitor information",
+        "Hauraki Rail Trail and local heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-whangamata-estuary",
+      "name": "Whangamatā Estuary",
+      "region": "coromandel",
+      "lat": -37.2062,
+      "lng": 175.8708,
+      "category": "wildlife",
+      "tags": [
+        "estuary",
+        "birdlife",
+        "kayak",
+        "whangamata"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A sheltered estuary behind Whangamatā’s surf beach, good for paddling, birdlife and gentle water time.",
+      "commentary": "Whangamatā is famous for surf, but the estuary tells the quieter half of the town’s water story. At the right tide it becomes a calm paddling world of sandbanks, channels and shorebirds, especially welcome when the ocean side is too rough.",
+      "audio_story": "Whangamatā is famous for surf, but the estuary tells the quieter half of the town’s water story. At the right tide it becomes a calm paddling world of sandbanks, channels and shorebirds, especially welcome when the ocean side is too rough.",
+      "suggested_voice_tone": "calm, tidal, practical",
+      "sources_to_check": [
+        "DOC Coromandel Forest Park",
+        "The Coromandel visitor information",
+        "Hauraki Rail Trail and local heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-kopu-heritage-rail-trail",
+      "name": "Kōpū Bridge and Rail Trail Gateway",
+      "region": "coromandel",
+      "lat": -37.1715,
+      "lng": 175.5473,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "heritage-bridge",
+        "hauraki-rail-trail",
+        "thames"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "The southern Thames gateway to rail-trail riding, with the old Kōpū bridge marking a shift from highway to history.",
+      "commentary": "Kōpū is easy to pass through, but it quietly frames the Coromandel’s rail-trail story. The old bridge and flat Hauraki Plains tracks mark the change from car travel to slower wheels, where rivers, wetlands and gold towns begin to connect at cycling speed.",
+      "audio_story": "Kōpū is easy to pass through, but it quietly frames the Coromandel’s rail-trail story. The old bridge and flat Hauraki Plains tracks mark the change from car travel to slower wheels, where rivers, wetlands and gold towns begin to connect at cycling speed.",
+      "suggested_voice_tone": "road-trip, active, historical",
+      "sources_to_check": [
+        "DOC Coromandel Forest Park",
+        "The Coromandel visitor information",
+        "Hauraki Rail Trail and local heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-te-kouma-harbour",
+      "name": "Te Kouma Harbour",
+      "region": "coromandel",
+      "lat": -36.785,
+      "lng": 175.47,
+      "category": "nature",
+      "tags": [
+        "harbour",
+        "coromandel-town",
+        "coastal"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Te Kouma Harbour is a sheltered western Coromandel inlet where boats, hills and calm water make a gentle counterpoint to the peninsula’s surf beaches.",
+      "commentary": "Te Kouma Harbour is a sheltered western Coromandel inlet where boats, hills and calm water make a gentle counterpoint to the peninsula’s surf beaches.",
+      "audio_story": "Te Kouma Harbour is a sheltered western Coromandel inlet where boats, hills and calm water make a gentle counterpoint to the peninsula’s surf beaches.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-whiritoa-beach",
+      "name": "Whiritoa Beach",
+      "region": "coromandel",
+      "lat": -37.2805,
+      "lng": 175.9054,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "surf",
+        "lagoon"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Whiritoa is a clean-lined Coromandel beach settlement with surf out front and a quieter lagoon edge, ideal for travellers seeking a smaller coastal rhythm.",
+      "commentary": "Whiritoa is a clean-lined Coromandel beach settlement with surf out front and a quieter lagoon edge, ideal for travellers seeking a smaller coastal rhythm.",
+      "audio_story": "Whiritoa is a clean-lined Coromandel beach settlement with surf out front and a quieter lagoon edge, ideal for travellers seeking a smaller coastal rhythm.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-matatoki-cheese-barn",
+      "name": "Matatoki Cheese Barn",
+      "region": "coromandel",
+      "lat": -37.203,
+      "lng": 175.591,
+      "category": "food-wine",
+      "tags": [
+        "cheese",
+        "family",
+        "thames"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Matatoki Cheese Barn is a farm-food stop near Thames where tasting, animals and casual meals make the Hauraki Plains feel deliciously close at hand.",
+      "commentary": "Matatoki Cheese Barn is a farm-food stop near Thames where tasting, animals and casual meals make the Hauraki Plains feel deliciously close at hand.",
+      "audio_story": "Matatoki Cheese Barn is a farm-food stop near Thames where tasting, animals and casual meals make the Hauraki Plains feel deliciously close at hand.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-square-kauri-tree",
+      "name": "Square Kauri Tree",
+      "region": "coromandel",
+      "lat": -36.961,
+      "lng": 175.59,
+      "category": "nature",
+      "tags": [
+        "kauri",
+        "short-walk",
+        "309-road",
+        "forest"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.5,
+      "short": "A short Coromandel Forest Park walk to an unusually square-trunked kauri above the 309 Road.",
+      "commentary": "The Square Kauri Tree is a small stop with a memorable shape. A short climb leads to an old kauri whose trunk seems almost deliberately carved by nature, making it a useful pause on the 309 Road and a reminder to respect kauri hygiene at every forest entrance.",
+      "audio_story": "The Square Kauri Tree is a small stop with a memorable shape. A short climb leads to an old kauri whose trunk seems almost deliberately carved by nature, making it a useful pause on the 309 Road and a reminder to respect kauri hygiene at every forest entrance.",
+      "suggested_voice_tone": "curious, careful, forest-minded",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/coromandel-forest-park/things-to-do/square-kauri-tree/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-broken-hills-battery-walk",
+      "name": "Broken Hills Battery Walk",
+      "region": "coromandel",
+      "lat": -37.133,
+      "lng": 175.743,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "coromandel-forest-park",
+        "walk",
+        "river"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A short Broken Hills walk through Coromandel gold-mining relics, forest and river-country remains.",
+      "commentary": "Broken Hills Battery Walk lets the Coromandel gold story sit inside the bush rather than behind glass. Old workings and battery remains show how much effort was dragged into this valley, while the Tairua River and regenerating forest keep softening the edges.",
+      "audio_story": "Broken Hills Battery Walk lets the Coromandel gold story sit inside the bush rather than behind glass. Old workings and battery remains show how much effort was dragged into this valley, while the Tairua River and regenerating forest keep softening the edges.",
+      "suggested_voice_tone": "earthy, historical, exploratory",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/coromandel-forest-park/things-to-do/broken-hills-battery-walk/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-opito-point-pa",
+      "name": "Opito Point Pā",
+      "region": "coromandel",
+      "lat": -36.717586,
+      "lng": 175.819016,
+      "category": "heritage",
+      "tags": [
+        "viewpoint",
+        "heritage",
+        "tourism-viewpoint",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A named viewpoint with coordinates for a quick scenic pause in Coromandel Peninsula.",
+      "commentary": "Opito Point Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Opito Point Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4595518453",
+        "http://www.doc.govt.nz/parks-and-recreation/places-to-go/coromandel/places/whitianga-area/opito-point-pa/",
+        "https://www.newzealand.com/nz/the-coromandel/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "coromandel-maumaupaki-camels-back-te-maungamaupaki",
+      "name": "Maumaupaki / Camels Back / Te Maungamaupaki",
+      "region": "coromandel",
+      "lat": -36.969452,
+      "lng": 175.577375,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Coromandel Peninsula.",
+      "commentary": "Maumaupaki / Camels Back / Te Maungamaupaki helps mark the high country and skyline around Coromandel Peninsula. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Maumaupaki / Camels Back / Te Maungamaupaki helps mark the high country and skyline around Coromandel Peninsula. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1682483608",
+        "https://en.wikipedia.org/wiki/Maumaupaki",
+        "https://www.wikidata.org/wiki/Q6792480",
+        "https://www.newzealand.com/nz/the-coromandel/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-coromandel-hospital-historic-area",
+      "name": "Coromandel Hospital Historic Area",
+      "region": "coromandel",
+      "lat": -36.748174,
+      "lng": 175.505424,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Coromandel Peninsula.",
+      "commentary": "Coromandel Hospital Historic Area is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Coromandel Hospital Historic Area is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/986627160",
+        "https://www.heritage.org.nz/the-list/details/7269",
+        "https://www.newzealand.com/nz/the-coromandel/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-ohuka-beach",
+      "name": "Ohuka Beach",
+      "region": "coromandel",
+      "lat": -36.806047,
+      "lng": 175.704813,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Coromandel Peninsula.",
+      "commentary": "Ohuka Beach fills in another real point on the Coromandel Peninsula visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Ohuka Beach fills in another real point on the Coromandel Peninsula visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/155875938",
+        "https://www.wikidata.org/wiki/Q32303816",
+        "https://www.newzealand.com/nz/the-coromandel/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-storm-beach",
+      "name": "Storm Beach",
+      "region": "coromandel",
+      "lat": -37.04812,
+      "lng": 175.885221,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Coromandel Peninsula.",
+      "commentary": "Storm Beach fills in another real point on the Coromandel Peninsula visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Storm Beach fills in another real point on the Coromandel Peninsula visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10605802426",
+        "https://www.wikidata.org/wiki/Q49324885",
+        "https://www.newzealand.com/nz/the-coromandel/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-historic-shipyard",
+      "name": "Historic shipyard",
+      "region": "coromandel",
+      "lat": -36.667634,
+      "lng": 175.564937,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Coromandel Peninsula.",
+      "commentary": "Historic shipyard is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Historic shipyard is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1225168001",
+        "https://www.newzealand.com/nz/the-coromandel/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-the-sailors-grave",
+      "name": "The Sailors Grave",
+      "region": "coromandel",
+      "lat": -36.961761,
+      "lng": 175.84233,
+      "category": "heritage",
+      "tags": [
+        "grave-site",
+        "heritage",
+        "historic-grave"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Coromandel Peninsula.",
+      "commentary": "The Sailors Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "The Sailors Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1003407020",
+        "https://www.wikidata.org/wiki/Q105674299",
+        "https://www.newzealand.com/nz/the-coromandel/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "coromandel-the-monkey-house-theatre",
+      "name": "The Monkey House Theatre",
+      "region": "coromandel",
+      "lat": -36.835119,
+      "lng": 175.702696,
+      "category": "culture",
+      "tags": [
+        "theatre",
+        "culture"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A performing-arts venue worth surfacing for visitors exploring Coromandel Peninsula.",
+      "commentary": "The Monkey House Theatre gives Coromandel Peninsula another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "The Monkey House Theatre gives Coromandel Peninsula another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/11099054063",
+        "https://www.beatfairy.com",
+        "https://www.newzealand.com/nz/the-coromandel/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

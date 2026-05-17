@@ -1966,7 +1966,7 @@
       "id": "queenstown-bob-cove-wetland",
       "name": "Bob's Cove — Wetland & Beech Forest Walk",
       "region": "queenstown",
-      "lat": -45.0,
+      "lat": -45,
       "lng": 168.5833,
       "category": "wildlife",
       "tags": [
@@ -2082,7 +2082,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Easy lakeside birding. Good variety. Combine with a picnic. Free camping area nearby."
       }
     },
@@ -2168,7 +2168,7 @@
         "mountains"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Scenic lakeside track south of Queenstown with dramatic Remarkables mountain views and peaceful bush walking.",
       "commentary": "Jack's Point Track is a rewarding walking track on the southern shore of Lake Wakatipu, offering spectacular views of The Remarkables mountain range without the crowds of more famous Queenstown walks. The track traverses a mix of open tussock, rocky outcrops, and native bush along the lake shore, with the sheer wall of The Remarkables rising dramatically across the water. The full loop track takes approximately 2-3 hours and includes some moderate climbing. Several viewpoints along the way offer perfect spots for photography and rest. The track is well maintained and suitable for reasonably fit walkers. The area is rich in birdlife, and you may spot fantails, bellbirds, and tūī in the bush sections. The trailhead is located within the Jack's Point residential development, about 15 minutes south of Queenstown. Start at the Jack's Point clubhouse car park. The track is accessible year-round, though winter conditions may be icy in places. An excellent alternative to the busier Queenstown Hill and Ben Lomond tracks.",
       "content_status": "draft",
@@ -2214,7 +2214,7 @@
         "cellar-door"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Pioneering Central Otago winery with NZ's largest wine cave, restaurant, and cheesery in the Gibbston Valley.",
       "commentary": "Gibbston Valley was the pioneer of Central Otago winemaking, planting its first vines in 1981 when the region was considered too cold and remote for viticulture. Today it anchors the Gibbston Valley wine cluster, known as the Valley of the Vines, just 25 minutes from Queenstown. The winery's most distinctive feature is New Zealand's largest wine cave, carved 76 metres into the schist rock hillside, where wines age at a constant cool temperature. Cave tours and tastings are a highlight. The cellar door offers tastings of their acclaimed Pinot Noir alongside other varieties. The on-site restaurant serves seasonal cuisine, and the adjacent cheesery produces artisan cheeses. A cycle trail connects several Gibbston wineries, and bike hire is available. The dramatic valley setting, framed by rugged mountains and the Kawarau Gorge, makes this a scenic and rewarding wine experience.",
       "content_status": "draft",
@@ -2237,7 +2237,7 @@
         "lake-hayes"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Premium Queenstown winery and bistro on Lake Hayes with award-winning Pinot Noir and Trust the Chef menu.",
       "commentary": "Amisfield is one of the Queenstown region's most celebrated wine and dining destinations, set on a striking property overlooking Lake Hayes with The Remarkables mountain range as a backdrop. The winery produces premium Central Otago wines with the Pinot Noir as its flagship, consistently earning critical acclaim. The bistro offers a unique 'Trust the Chef' dining experience where the kitchen creates a multi-course meal based on the best seasonal ingredients available, paired with Amisfield wines. This approach delivers creative, surprising dishes that showcase Central Otago produce. The tasting room offers flights and individual glass tastings in a sophisticated yet relaxed setting. The architecture blends stone and glass, complementing the dramatic landscape. Reservations for the bistro are essential, especially during ski season and summer. Located 15 minutes from Queenstown on the road to Arrowtown.",
       "content_status": "draft",
@@ -2283,7 +2283,7 @@
         "aj-hackett"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "The world's biggest canyon swing, a 160-metre arc across the Nevis River canyon near Queenstown.",
       "commentary": "The Nevis Swing holds the title of the world's biggest canyon swing, sending riders on a massive 160-metre arc across the rugged Nevis River gorge. Operated by AJ Hackett, the swing is located at the same remote canyon site as the Nevis Bungy. After a scenic 4WD journey into the backcountry, participants are strapped into a harness and released from a platform 160 metres above the river. Unlike bungy where you fall vertically, the swing creates a sweeping pendulum motion across the canyon, reaching speeds of up to 150 km/h. Solo, tandem, and various body positions are available, each offering a different thrill. The transfer from Queenstown takes about 45 minutes and passes through stunning high-country scenery. Minimum weight is 35kg and maximum is 235kg for solo riders. All equipment and safety briefings are provided.",
       "content_status": "draft",
@@ -2306,7 +2306,7 @@
         "glacier"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Jet boat safari into the pristine Dart River wilderness, a glacier-fed river in Mount Aspiring National Park.",
       "commentary": "The Dart River Safari combines a thrilling jet boat ride with a guided wilderness experience deep into the heart of Mount Aspiring National Park. The journey begins in Glenorchy, 45 minutes from Queenstown, and ventures up the glacier-fed Dart River through ancient beech forest, past towering peaks, and into landscapes used as filming locations for The Lord of the Rings. The jet boat navigates braided river channels just centimetres deep, spinning and weaving through the river's ever-changing course. A guided bush walk reveals the ecology of this pristine environment, including native birds and ancient trees. The return journey includes a scenic drive or optional funyak inflatable canoe paddle down the river. The combination of adrenaline, natural beauty, and wilderness immersion makes this one of Queenstown's most complete adventure experiences. Weather dependent, with departures year-round.",
       "content_status": "draft",
@@ -2352,7 +2352,7 @@
         "family"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Gondola ride to Bob's Peak with panoramic views and downhill luge tracks overlooking the lake and mountains.",
       "commentary": "The Skyline Gondola whisks visitors 450 metres above Queenstown to the top of Bob's Peak, providing one of the most spectacular viewpoints in New Zealand. From the viewing deck, a sweeping panorama takes in Lake Wakatipu, the Remarkables, Cecil Peak, Walter Peak, and Queenstown township far below. The Skyline Luge offers three downhill cart tracks of varying difficulty that wind down the mountain through native bush and open terrain, with riders controlling speed via handlebars. Multiple luge rides are included in combo passes, and the chairlift returns riders to the top for another run. The summit complex includes a restaurant, cafe, and gift shop, with the Stratosfare Restaurant offering fine dining with the view. Stargazing sessions operate on clear evenings. Mountain biking trails accessible from the gondola provide another downhill option. The gondola operates year-round from the base station on Brecon Street in central Queenstown.",
       "content_status": "draft",
@@ -3256,8 +3256,8 @@
       "id": "queenstown-central-otago-wine",
       "name": "Central Otago Wine Region",
       "region": "queenstown",
-      "lat": -45.0,
-      "lng": 169.0,
+      "lat": -45,
+      "lng": 169,
       "category": "food-wine",
       "tags": [
         "wine",
@@ -3303,7 +3303,7 @@
       "name": "Milford Sound Road Day Trip",
       "region": "queenstown",
       "lat": -44.72,
-      "lng": 168.0,
+      "lng": 168,
       "category": "journey",
       "tags": [
         "scenic-drive",
@@ -3537,7 +3537,7 @@
       "name": "Wildwire Via Ferrata, Wanaka",
       "region": "queenstown",
       "lat": -44.7167,
-      "lng": 169.0,
+      "lng": 169,
       "category": "adventure",
       "tags": [
         "via-ferrata",
@@ -3640,7 +3640,7 @@
         "hidden beach"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Short bush walk to limestone formations and a hidden lakeside beach.",
       "commentary": "Bob's Cove is a peaceful lakeside reserve with a short loop track through beech forest past unusual limestone formations to a secluded rocky beach on Lake Wakatipu. With the mountains reflected in still water, it's a photographer's delight far from the crowds.",
       "content_status": "draft",
@@ -3663,7 +3663,7 @@
         "backcountry"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Epic backcountry mountain bike trail following an old gold miners' pack track.",
       "commentary": "The Moonlight Track follows an 1860s gold miners' pack route through dramatic schist gorges and tussock high country. The ride descends from the Skipper's Road area through varied terrain — a genuine backcountry adventure combining gold rush history with world-class riding.",
       "content_status": "draft",
@@ -3686,7 +3686,7 @@
         "flat walk"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Flat circuit around one of New Zealand's most photographed lakes.",
       "commentary": "Lake Hayes is famous for its mirror-like reflections of the surrounding mountains. The 8-kilometre circuit track is flat and easy, passing through wetlands and farmland with stunning views. Early morning is best for the signature reflection photographs.",
       "content_status": "draft",
@@ -3740,6 +3740,452 @@
         "rating": 4.6,
         "summary": "Beautiful forest walk — a perfect Great Walk taster."
       }
+    },
+    {
+      "id": "queenstown-sam-summers-hut-track",
+      "name": "Sam Summers Hut Track",
+      "region": "queenstown",
+      "lat": -45.0475365,
+      "lng": 168.5316575,
+      "category": "adventure",
+      "tags": [
+        "gold-mining",
+        "loop-track",
+        "mt-crichton",
+        "hut",
+        "family-walk"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 2.5,
+      "short": "A Mt Crichton loop walk to a restored gold prospector's hut, sluiced canyon and creek-side forest.",
+      "commentary": "Sam Summers Hut Track gives Queenstown a quieter historical counterpoint to its big-ticket thrills. On the Mt Crichton Loop, the track reaches a small schist-and-iron hut built in the 1930s by gold prospector Sam Summers, with nearby sluiced ground and a tailrace tunnel showing how water shaped the old workings. The walk sits beside the Queenstown-Glenorchy Road, so it is easy to add to a day around Lake Wakatipu, yet it feels tucked away in forest and creek country. DOC notes the hut is for day visitors only, not overnight stays.",
+      "audio_story": "Sam Summers Hut Track gives Queenstown a quieter historical counterpoint to its big-ticket thrills. On the Mt Crichton Loop, the track reaches a small schist-and-iron hut built in the 1930s by gold prospector Sam Summers, with nearby sluiced ground and a tailrace tunnel showing how water shaped the old workings. The walk sits beside the Queenstown-Glenorchy Road, so it is easy to add to a day around Lake Wakatipu, yet it feels tucked away in forest and creek country. DOC notes the hut is for day visitors only, not overnight stays.",
+      "suggested_voice_tone": "earthy, historical, inviting",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/queenstown-area/things-to-do/sam-summers-hut/",
+        "NewZealand.com: https://www.newzealand.com/ca/feature/sam-summers-hut-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "A favourite short Queenstown walk for history, creek scenery and the restored hut; people like its easy access from the Glenorchy road."
+      }
+    },
+    {
+      "id": "queenstown-mount-crichton-loop",
+      "name": "Mount Crichton Loop Track",
+      "region": "queenstown",
+      "lat": -45.0218,
+      "lng": 168.5312,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "loop-walk",
+        "hut",
+        "forest"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2.5,
+      "short": "A forest loop through gold-mining history, creek crossings and the restored Sam Summers hut area.",
+      "commentary": "Mount Crichton Loop is Queenstown’s quieter goldfield walk. It follows creeks, forest and old workings to a humble hut story, making the region’s mining past feel less like a display and more like a hard life tucked into the gullies.",
+      "audio_story": "Mount Crichton Loop is Queenstown’s quieter goldfield walk. It follows creeks, forest and old workings to a humble hut story, making the region’s mining past feel less like a display and more like a hard life tucked into the gullies.",
+      "suggested_voice_tone": "historical, green, grounded",
+      "sources_to_check": [
+        "Queenstown Trail official Great Ride information",
+        "Destination Queenstown visitor information",
+        "DOC Queenstown area tracks"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-queenstown-gardens-disc-golf",
+      "name": "Queenstown Gardens Disc Golf",
+      "region": "queenstown",
+      "lat": -45.034,
+      "lng": 168.6635,
+      "category": "culture",
+      "tags": [
+        "disc-golf",
+        "gardens",
+        "lakefront",
+        "family"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1.5,
+      "short": "A playful lakeside course weaving through Queenstown Gardens, with views and low-stakes competition.",
+      "commentary": "Queenstown Gardens disc golf is a rare attraction that is cheap, social and genuinely scenic. The course winds through trees beside the lake, turning a central park stroll into a game without losing the mountain backdrop.",
+      "audio_story": "Queenstown Gardens disc golf is a rare attraction that is cheap, social and genuinely scenic. The course winds through trees beside the lake, turning a central park stroll into a game without losing the mountain backdrop.",
+      "suggested_voice_tone": "playful, easygoing, social",
+      "sources_to_check": [
+        "Queenstown Trail official Great Ride information",
+        "Destination Queenstown visitor information",
+        "DOC Queenstown area tracks"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-paradise-road",
+      "name": "Paradise Road, Glenorchy",
+      "region": "queenstown",
+      "lat": -44.735,
+      "lng": 168.386,
+      "category": "journey",
+      "tags": [
+        "scenic-drive",
+        "glenorchy",
+        "film-location",
+        "mountains"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 3,
+      "short": "A gravel-edge scenic drive beyond Glenorchy into beech forest, river flats and famous film-location country.",
+      "commentary": "Paradise Road has a name that sounds like marketing until the valleys open. Beyond Glenorchy the route moves through river flats, beech forest and mountain walls, showing why filmmakers keep coming here and why the road is best driven slowly.",
+      "audio_story": "Paradise Road has a name that sounds like marketing until the valleys open. Beyond Glenorchy the route moves through river flats, beech forest and mountain walls, showing why filmmakers keep coming here and why the road is best driven slowly.",
+      "suggested_voice_tone": "cinematic, practical, wonder-filled",
+      "sources_to_check": [
+        "Queenstown Trail official Great Ride information",
+        "Destination Queenstown visitor information",
+        "DOC Queenstown area tracks"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-sunshine-bay-track",
+      "name": "Sunshine Bay Track",
+      "region": "queenstown",
+      "lat": -45.038,
+      "lng": 168.625,
+      "category": "nature",
+      "tags": [
+        "lake-wakatipu",
+        "short-walk",
+        "waterfall"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.25,
+      "short": "Sunshine Bay Track is a handy lakeside escape from central Queenstown, ending in a quiet bay and small waterfall without demanding a full-day plan.",
+      "commentary": "Sunshine Bay Track is a handy lakeside escape from central Queenstown, ending in a quiet bay and small waterfall without demanding a full-day plan.",
+      "audio_story": "Sunshine Bay Track is a handy lakeside escape from central Queenstown, ending in a quiet bay and small waterfall without demanding a full-day plan.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-lake-dispute-track",
+      "name": "Lake Dispute Track",
+      "region": "queenstown",
+      "lat": -45.039,
+      "lng": 168.545,
+      "category": "nature",
+      "tags": [
+        "walking",
+        "lake",
+        "views"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Lake Dispute Track climbs into drier hill country above Whakatipu, trading town bustle for tussock, small-lake stillness and big basin views.",
+      "commentary": "Lake Dispute Track climbs into drier hill country above Whakatipu, trading town bustle for tussock, small-lake stillness and big basin views.",
+      "audio_story": "Lake Dispute Track climbs into drier hill country above Whakatipu, trading town bustle for tussock, small-lake stillness and big basin views.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-time-tripper",
+      "name": "Time Tripper Queenstown",
+      "region": "queenstown",
+      "lat": -45.0329,
+      "lng": 168.6607,
+      "category": "culture",
+      "tags": [
+        "lakefront",
+        "immersive",
+        "family"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Time Tripper turns Queenstown’s lakefront into a short immersive origin story, useful for families and anyone wanting context before chasing the views.",
+      "commentary": "Time Tripper turns Queenstown’s lakefront into a short immersive origin story, useful for families and anyone wanting context before chasing the views.",
+      "audio_story": "Time Tripper turns Queenstown’s lakefront into a short immersive origin story, useful for families and anyone wanting context before chasing the views.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-twelve-mile-delta",
+      "name": "Twelve Mile Delta",
+      "region": "queenstown",
+      "lat": -45.031,
+      "lng": 168.542,
+      "category": "nature",
+      "tags": [
+        "lake-wakatipu",
+        "camping",
+        "walking",
+        "glenorchy-road"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 1.5,
+      "short": "A Lake Wakatipu recreation reserve on the Glenorchy Road, with camping, shoreline walks and mountain views.",
+      "commentary": "Twelve Mile Delta gives Queenstown a simpler lake edge. The Remarkables and Wakatipu do the visual work, but the place itself is low-key: campsites, shoreline wandering and room to sit with the weather moving across the water.",
+      "audio_story": "Twelve Mile Delta gives Queenstown a simpler lake edge. The Remarkables and Wakatipu do the visual work, but the place itself is low-key: campsites, shoreline wandering and room to sit with the weather moving across the water.",
+      "suggested_voice_tone": "open, lake-calm, outdoorsy",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/queenstown-area/things-to-do/campsites/twelve-mile-delta-campsite/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-glenorchy-animal-experience",
+      "name": "Glenorchy Animal Experience",
+      "region": "queenstown",
+      "lat": -44.851,
+      "lng": 168.391,
+      "category": "culture",
+      "tags": [
+        "farm-experience",
+        "family",
+        "glenorchy",
+        "animals"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A hands-on Glenorchy farm experience for families, set beneath the head-of-the-lake mountains.",
+      "commentary": "Glenorchy Animal Experience brings Queenstown’s big mountain scenery down to farm height. It is a friendly, practical stop where children can meet animals and adults can enjoy the surreal contrast between everyday paddocks and the vast scenery beyond them.",
+      "audio_story": "Glenorchy Animal Experience brings Queenstown’s big mountain scenery down to farm height. It is a friendly, practical stop where children can meet animals and adults can enjoy the surreal contrast between everyday paddocks and the vast scenery beyond them.",
+      "suggested_voice_tone": "warm, family-friendly, rural",
+      "sources_to_check": [
+        "https://www.glenorchyanimalexperience.co.nz/",
+        "https://www.queenstownnz.co.nz/listing/glenorchy-animal-experience/1423/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-williams-cottage",
+      "name": "Williams Cottage",
+      "region": "queenstown",
+      "lat": -45.03345,
+      "lng": 168.661841,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Queenstown.",
+      "commentary": "Williams Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Williams Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/246150003",
+        "https://www.heritage.org.nz/the-list/details/2336",
+        "https://www.wikidata.org/wiki/Q79308801",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-nadene-milne-gallery",
+      "name": "Nadene Milne Gallery",
+      "region": "queenstown",
+      "lat": -44.938582,
+      "lng": 168.831219,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Queenstown.",
+      "commentary": "Nadene Milne Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Nadene Milne Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4173444996",
+        "https://www.nadenemilnegallery.com/",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-artbay-gallery",
+      "name": "Artbay Gallery",
+      "region": "queenstown",
+      "lat": -45.033199,
+      "lng": 168.661416,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Queenstown.",
+      "commentary": "Artbay Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Artbay Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/8995932877",
+        "https://www.artbay.co.nz/",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-aurum-gallery",
+      "name": "Aurum Gallery",
+      "region": "queenstown",
+      "lat": -44.980202,
+      "lng": 168.685885,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Queenstown.",
+      "commentary": "Aurum Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Aurum Gallery gives Queenstown another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/5615906811",
+        "https://aurumgallery.com/",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-mount-alfred-ari",
+      "name": "Mount Alfred / Ari",
+      "region": "queenstown",
+      "lat": -44.757164,
+      "lng": 168.361315,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Queenstown.",
+      "commentary": "Mount Alfred / Ari helps mark the high country and skyline around Queenstown. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Mount Alfred / Ari helps mark the high country and skyline around Queenstown. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6590936048",
+        "https://en.wikipedia.org/wiki/Mount_Alfred_(Otago)",
+        "https://www.wikidata.org/wiki/Q31481957",
+        "https://www.newzealand.com/nz/queenstown/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-escape-quest-queenstown",
+      "name": "Escape Quest Queenstown",
+      "region": "queenstown",
+      "lat": -45.031994,
+      "lng": 168.65921,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Queenstown.",
+      "commentary": "Escape Quest Queenstown gives Queenstown another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Escape Quest Queenstown gives Queenstown another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6294683397",
+        "https://www.escapequest.co.nz/",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-queenstown-ice-arena",
+      "name": "Queenstown Ice Arena",
+      "region": "queenstown",
+      "lat": -45.037524,
+      "lng": 168.661661,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Queenstown.",
+      "commentary": "Queenstown Ice Arena gives Queenstown another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Queenstown Ice Arena gives Queenstown another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4782025022",
+        "https://queenstownicearena.co.nz/",
+        "https://www.newzealand.com/nz/queenstown/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "queenstown-oxenbridge-tunnel-lookout",
+      "name": "Oxenbridge Tunnel lookout",
+      "region": "queenstown",
+      "lat": -44.981081,
+      "lng": 168.664507,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "nature",
+        "tourism-viewpoint"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A named viewpoint with coordinates for a quick scenic pause in Queenstown.",
+      "commentary": "Oxenbridge Tunnel lookout fills in another real point on the Queenstown visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Lookout over the Shotover River above the entrance to the Oxenbridge Tunnel.",
+      "audio_story": "Oxenbridge Tunnel lookout fills in another real point on the Queenstown visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Lookout over the Shotover River above the entrance to the Oxenbridge Tunnel.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/11572176436",
+        "https://www.newzealand.com/nz/queenstown/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

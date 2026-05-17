@@ -2142,7 +2142,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Great conservation effort. Keep dogs on leads during nesting season. Beautiful beach regardless."
       }
     },
@@ -2151,7 +2151,7 @@
       "name": "Whakaari Seabird Coast",
       "region": "bay-of-plenty",
       "lat": -37.75,
-      "lng": 177.0,
+      "lng": 177,
       "category": "wildlife",
       "tags": [
         "seabirds",
@@ -2265,7 +2265,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Peaceful walk with good bird variety. Boardwalk is pushchair-friendly. Best at low tide."
       }
     },
@@ -2422,7 +2422,7 @@
         "iconic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's premier ocean beach with consistent surf, golden sand, and iconic Mauao volcano backdrop.",
       "commentary": "Mount Maunganui Main Beach is consistently rated one of New Zealand's best beaches, a sweeping arc of golden sand stretching from the base of Mauao (the Mount) along the ocean side of the tombolo. The beach offers excellent surf conditions with reliable swells, making it hugely popular with surfers of all levels. The northern end near the Mount has the best breaks, while the gentler southern stretch suits swimmers and families. The beach is patrolled by surf lifeguards during summer. Behind the beach, the Mount's vibrant strip of cafés, restaurants, and surf shops creates a classic beach-town atmosphere. The beach can be combined with the 45-minute walk around the base of Mauao or the steeper summit track for panoramic views. Hot salt-water pools at the base of the Mount offer a perfect post-surf soak. Summer weekends are busy — arrive early for parking.",
       "content_status": "draft",
@@ -2445,7 +2445,7 @@
         "historic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Spectacular coastal walkway with pōhutukawa-lined cliffs, views to Whakaari, and NZ fur seal colonies.",
       "commentary": "The Kohi Point Walkway is a stunning coastal track that traverses the dramatic headland at Whakatāne Heads, on the eastern Bay of Plenty coast. The walk passes through groves of ancient pōhutukawa trees clinging to steep cliffs above the sea, with expansive views across the Bay of Plenty to Whakaari (White Island) and Moutohora (Whale Island). New Zealand fur seals frequently haul out on the rocks below — bring binoculars. The headland is of great significance to local Māori, being the traditional landing place of the Mataatua waka. The walk takes about 1.5 to 2 hours return and can be accessed from the western end near the Whakatāne Heads lookout or from Ōhope Beach on the eastern side. The track is well formed but includes some steps and moderate climbs. Best on a clear day for volcanic island views.",
       "content_status": "draft",
@@ -2468,7 +2468,7 @@
         "family-friendly"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Nine kilometres of golden sand beach, perfect for surfing, swimming, and relaxed family beach holidays.",
       "commentary": "Waihi Beach is a magnificent nine-kilometre stretch of golden sand on the western Bay of Plenty coast, regarded as one of New Zealand's finest surf beaches. The northern end near the main village is patrolled during summer and offers good swimming, while surfers head further south toward Bowentown for more consistent breaks. The beach is backed by a small, laid-back holiday village with cafés, surf shops, and a general store. At the southern end, the Orokawa Bay Track provides a rewarding bush walk to a secluded beach. The Bowentown headland offers spectacular views and historic pā sites. Waihi Beach has a strong community of surfers and retirees, giving it a relaxed, unhurried atmosphere quite different from the busier Mount Maunganui. The campground right behind the beach fills quickly over Christmas and January — book well ahead.",
       "content_status": "draft",
@@ -2491,7 +2491,7 @@
         "local-produce"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "World-leading mānuka honey experience with tastings, bee education, and premium honey products.",
       "commentary": "The Comvita Visitor Centre in Paengaroa offers an immersive experience into the world of New Zealand mānuka honey, one of the country's most prized natural products. Comvita is a global leader in mānuka honey and bee products, founded in the Bay of Plenty in 1974. The visitor centre features interactive displays explaining the unique properties of mānuka honey, the science behind its antibacterial UMF rating, and the lifecycle of honeybees. Guided tastings allow visitors to compare different grades of mānuka honey and sample honey-infused products. The on-site shop offers the full Comvita range, often at better prices than retail, including premium UMF-rated honey, propolis products, and skincare. The centre is located on State Highway 33 between Tauranga and Rotorua, making it a natural stop between the two destinations. Allow about an hour for the full experience.",
       "content_status": "draft",
@@ -2537,7 +2537,7 @@
         "water-sports"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Waterfront adventure park on Waimarino Stream with kayaking, paddleboarding, and the Blob water launcher.",
       "commentary": "Waimarino Adventure Park is a summer favourite on the banks of Waimarino Stream near Bethlehem, Tauranga. The park offers a wide range of water-based activities including kayaking, stand-up paddleboarding, and the famous Blob, an inflatable launcher that catapults riders into the water. A network of floating platforms, water trampolines, and slides creates an aquatic playground suitable for families and groups. On-land activities include mini golf and a climbing wall. The sheltered waterway provides calm conditions ideal for beginners, and life jackets are provided. Picnic areas and a cafe make it easy to spend a full day. The park operates seasonally from October to April, and booking online is recommended during school holidays when it gets very busy.",
       "content_status": "draft",
@@ -2560,7 +2560,7 @@
         "heritage"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "New Zealand's mural town with over 40 outdoor artworks depicting the community's history and culture.",
       "commentary": "Katikati bills itself as the Mural Town of New Zealand, with more than 40 large-scale outdoor murals painted on buildings throughout the main street and surrounding area. The mural project began in 1991 and each artwork tells a story of the town's history, from early Maori settlement to European immigration and the local fruit-growing industry. A self-guided walking trail map is available from the information centre, allowing visitors to discover the murals at their own pace. Notable works include scenes of the town's Ulster settler origins and the evolution of the kiwifruit industry. The nearby Katikati Bird Gardens and Haiku Pathway along the Uretara Stream add to the town's creative character. Located on SH2 between Tauranga and Waihi, it makes an interesting stop on a Bay of Plenty road trip.",
       "content_status": "draft",
@@ -2800,7 +2800,7 @@
       "commentary": "Whakaari / White Island sits 48km off the Bay of Plenty coast — New Zealand's most active cone volcano, continuously venting steam and gas. Following the tragic 2019 eruption, island landing tours are suspended, but scenic flights and boat tours offer extraordinary views of the steaming crater, acid lake, and sulphur-stained cliffs from a safe distance. The volcano's raw power is humbling. Whakaari is a private island owned by the Buttle family since 1936, with a complex history of sulphur mining and volcanic monitoring.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Scenic flights over the volcano are rated as awe-inspiring. The 2019 eruption context adds solemnity to the experience. Weather can cancel flights — book flexible dates."
       }
     },
@@ -3212,7 +3212,7 @@
       "name": "Moutohora / Whale Island",
       "region": "bay-of-plenty",
       "lat": -37.855,
-      "lng": 177.0,
+      "lng": 177,
       "category": "wildlife",
       "tags": [
         "island",
@@ -3366,7 +3366,7 @@
       "commentary": "Katikati has reinvented itself as New Zealand's Mural Town, with over 70 large-scale painted murals adorning buildings throughout the town centre, each depicting scenes from the district's history — from Maori settlement through European immigration to modern agriculture. A free self-guided mural walk map is available from the information centre and the full circuit takes about an hour. The murals are complemented by the Haiku Pathway along the Uretara Stream, where stepping stones and boulders are inscribed with haiku poems, and the Western Bay Heritage Museum. The town's location between Tauranga and Waihi makes it a natural stopping point, and several good cafes serve travellers.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "More murals than you'd expect in a small town. The heritage themes are interesting and the haiku pathway adds a creative touch."
       }
     },
@@ -3444,7 +3444,7 @@
       "name": "Whakatāne Heads & Pōhaturoa Rock",
       "region": "bay-of-plenty",
       "lat": -37.95,
-      "lng": 177.0,
+      "lng": 177,
       "category": "heritage",
       "tags": [
         "maori",
@@ -3645,7 +3645,7 @@
       "commentary": "The Whakatāne Heads lookout provides a powerful vantage point from which to observe Whakaari/White Island, New Zealand's most active marine volcano, steaming on the horizon 49km offshore. Since the tragic December 2019 eruption that claimed 22 lives, the island has been closed to visitors, and this coastal viewpoint has become a place of reflection and remembrance. On clear days, the volcano's steam plume is clearly visible. The headland itself offers a beautiful coastal walk with views along the Bay of Plenty coastline. A memorial to the 2019 eruption victims is located in Whakatāne town. The area holds deep significance for local Ngāti Awa iwi. The viewpoint is freely accessible and provides context for understanding the volcanic forces that shape the Bay of Plenty region.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A sobering and thought-provoking viewpoint. Seeing the volcano steaming offshore puts the 2019 tragedy in perspective. The coastal walk is beautiful."
       }
     },
@@ -3726,7 +3726,7 @@
       "name": "Whakatāne Heads & Pōhatu Pā Walk",
       "region": "bay-of-plenty",
       "lat": -37.95,
-      "lng": 177.0,
+      "lng": 177,
       "category": "heritage",
       "tags": [
         "pa-site",
@@ -3759,7 +3759,7 @@
         "windows walk"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Heritage walk through mining tunnels with dramatic gorge window views.",
       "commentary": "The Windows Walk follows the old rail line through the Karangahake Gorge, passing through tunnels blasted for the gold-era railway. Windows cut into the tunnel walls frame spectacular views of the gorge below — a unique heritage walk combining industrial history with dramatic scenery.",
       "content_status": "draft",
@@ -3837,6 +3837,617 @@
         "rating": 4.2,
         "summary": "The volcano is visible from shore — the memorial is deeply moving."
       }
+    },
+    {
+      "id": "bay-of-plenty-athenree-homestead",
+      "name": "Athenree Homestead",
+      "region": "bay-of-plenty",
+      "lat": -37.4571776,
+      "lng": 175.9319879,
+      "category": "heritage",
+      "tags": [
+        "homestead",
+        "1870s",
+        "settler-history",
+        "katikati",
+        "community-museum"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "A restored kauri homestead tied to Katikati's planned Irish settlement, with period rooms and gardens.",
+      "commentary": "Athenree Homestead is a compact, human-scale way to read the Bay of Plenty's settler history. The kauri house dates from the late 1870s and is linked with the planned Ulster settlement around Katikati, when families arrived to turn paper promises of land and prosperity into real farms, gardens and houses. Community restoration has returned rooms, verandahs and gardens to public view, giving the place the feel of a lived-in archive rather than a sealed display case. It is a gentle stop between Waihi Beach, Athenree and Katikati, but it carries a larger story of migration, adaptation and domestic work.",
+      "audio_story": "Athenree Homestead is a compact, human-scale way to read the Bay of Plenty's settler history. The kauri house dates from the late 1870s and is linked with the planned Ulster settlement around Katikati, when families arrived to turn paper promises of land and prosperity into real farms, gardens and houses. Community restoration has returned rooms, verandahs and gardens to public view, giving the place the feel of a lived-in archive rather than a sealed display case. It is a gentle stop between Waihi Beach, Athenree and Katikati, but it carries a larger story of migration, adaptation and domestic work.",
+      "suggested_voice_tone": "gentle, observant, historically curious",
+      "sources_to_check": [
+        "Katikati community site: https://www.katikati.org.nz/athenree-homestead",
+        "Waihi Beach: https://waihibeach.co.nz/athenree-homestead-site-one/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors appreciate the volunteer restoration, garden setting and the rare chance to step inside a small late-19th-century Bay of Plenty homestead."
+      }
+    },
+    {
+      "id": "bay-of-plenty-te-puna-quarry-park",
+      "name": "Te Puna Quarry Park",
+      "region": "bay-of-plenty",
+      "lat": -37.6729,
+      "lng": 176.0887,
+      "category": "culture",
+      "tags": [
+        "garden",
+        "community",
+        "art",
+        "tauranga"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.5,
+      "short": "A former quarry transformed by volunteers into terraced gardens, sculpture paths and harbour viewpoints.",
+      "commentary": "Te Puna Quarry Park is a landscape of second chances. What was once a scar in the hillside is now layered with palms, bromeliads, sculpture and lookout points, all built through volunteer patience; it is one of Tauranga’s most generous community-made places.",
+      "audio_story": "Te Puna Quarry Park is a landscape of second chances. What was once a scar in the hillside is now layered with palms, bromeliads, sculpture and lookout points, all built through volunteer patience; it is one of Tauranga’s most generous community-made places.",
+      "suggested_voice_tone": "warm, creative, appreciative",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-otanewainuku-forest",
+      "name": "Ōtanewainuku Forest",
+      "region": "bay-of-plenty",
+      "lat": -37.8926,
+      "lng": 176.198,
+      "category": "nature",
+      "tags": [
+        "forest",
+        "birdlife",
+        "short-walk",
+        "conservation"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "A community-protected forest south of Tauranga, known for birdlife, rimu and a lookout climb.",
+      "commentary": "Ōtanewainuku is a forest with guardians. Community conservation has helped native birds return, and the tracks move through damp green bush toward lookout points where the Bay of Plenty spreads out below; it rewards people who listen as much as look.",
+      "audio_story": "Ōtanewainuku is a forest with guardians. Community conservation has helped native birds return, and the tracks move through damp green bush toward lookout points where the Bay of Plenty spreads out below; it rewards people who listen as much as look.",
+      "suggested_voice_tone": "green, respectful, hopeful",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-onekawa-te-mawhai",
+      "name": "Onekawa Te Māwhai Regional Park",
+      "region": "bay-of-plenty",
+      "lat": -37.9802,
+      "lng": 177.0306,
+      "category": "nature",
+      "tags": [
+        "opoutama",
+        "coastal-walk",
+        "regional-park",
+        "views"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A high coastal park near Ōpōtiki with short walks and sweeping East Coast views.",
+      "commentary": "Onekawa Te Māwhai is a small park with a big horizon. Tracks climb above the coast near Ōhiwa and Ōpōtiki, looking over beaches, estuary water and headlands; it is an excellent slow-down stop on a journey that too often hurries between towns.",
+      "audio_story": "Onekawa Te Māwhai is a small park with a big horizon. Tracks climb above the coast near Ōhiwa and Ōpōtiki, looking over beaches, estuary water and headlands; it is an excellent slow-down stop on a journey that too often hurries between towns.",
+      "suggested_voice_tone": "open, coastal, unhurried",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-tect-park",
+      "name": "TECT All Terrain Park",
+      "region": "bay-of-plenty",
+      "lat": -37.8734,
+      "lng": 176.1023,
+      "category": "adventure",
+      "tags": [
+        "mountain-bike",
+        "motorsport",
+        "outdoor-park",
+        "tauranga"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 3,
+      "short": "A large outdoor recreation park between Tauranga and Rotorua with bike, horse, motor and walking zones.",
+      "commentary": "TECT All Terrain Park is built for people who like their outdoors with options. Mountain bikers, horse riders, walkers, motorsport clubs and shooting groups all use different parts of the huge site, making it one of the Bay’s most practical adventure hubs.",
+      "audio_story": "TECT All Terrain Park is built for people who like their outdoors with options. Mountain bikers, horse riders, walkers, motorsport clubs and shooting groups all use different parts of the huge site, making it one of the Bay’s most practical adventure hubs.",
+      "suggested_voice_tone": "active, practical, energetic",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-papamoa-hills-sunset",
+      "name": "Pāpāmoa Hills Sunset Walk",
+      "region": "bay-of-plenty",
+      "lat": -37.7383,
+      "lng": 176.3039,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "walking",
+        "sunset",
+        "tauranga"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A popular climb above Tauranga’s coast, especially good in late light over Mauao and the harbour.",
+      "commentary": "Pāpāmoa Hills earns its local loyalty at sunset. The climb is honest but not epic, and from the top the Bay of Plenty lays itself out in layers: beach, harbour, Mauao, farmland and ranges, all shifting colour as the day drops away.",
+      "audio_story": "Pāpāmoa Hills earns its local loyalty at sunset. The climb is honest but not epic, and from the top the Bay of Plenty lays itself out in layers: beach, harbour, Mauao, farmland and ranges, all shifting colour as the day drops away.",
+      "suggested_voice_tone": "glowing, local, rewarding",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-kohi-point-lookout",
+      "name": "Kohi Point Lookout",
+      "region": "bay-of-plenty",
+      "lat": -37.9647,
+      "lng": 177.0206,
+      "category": "nature",
+      "tags": [
+        "lookout",
+        "whakatane",
+        "coastal-track",
+        "ohope"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A Whakatāne lookout on the track between town and Ōhope, with coast and island views.",
+      "commentary": "Kohi Point is where Whakatāne lifts its eyes to the coast. Whether you tackle the full walkway or just climb to the lookout, the reward is a view that connects river mouth, town, Ōhope Beach and the open Bay of Plenty.",
+      "audio_story": "Kohi Point is where Whakatāne lifts its eyes to the coast. Whether you tackle the full walkway or just climb to the lookout, the reward is a view that connects river mouth, town, Ōhope Beach and the open Bay of Plenty.",
+      "suggested_voice_tone": "bright, coastal, concise",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-motu-dunes-trail",
+      "name": "Motu Dunes Trail",
+      "region": "bay-of-plenty",
+      "lat": -38.0176,
+      "lng": 177.2802,
+      "category": "adventure",
+      "tags": [
+        "cycle-trail",
+        "opōtiki",
+        "coastal",
+        "dunes"
+      ],
+      "trigger_radius_m": 1600,
+      "duration_hours": 2,
+      "short": "A family-friendly coastal cycle section of the Motu Trails, rolling beside dunes east of Ōpōtiki.",
+      "commentary": "The Motu Dunes Trail is the easygoing face of the bigger Motu adventure. It follows the coast from Ōpōtiki through dune country, with sea air, open views and enough small rises to keep the ride lively without turning it into a mission.",
+      "audio_story": "The Motu Dunes Trail is the easygoing face of the bigger Motu adventure. It follows the coast from Ōpōtiki through dune country, with sea air, open views and enough small rises to keep the ride lively without turning it into a mission.",
+      "suggested_voice_tone": "active, breezy, accessible",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-mclaren-falls-lake-loop",
+      "name": "McLaren Falls Park Lake Loop",
+      "region": "bay-of-plenty",
+      "lat": -37.8156,
+      "lng": 176.0406,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "park",
+        "waterfall",
+        "kayaking"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2,
+      "short": "A lakeside park outside Tauranga with easy walks, picnic lawns, kayaking and glowworm evenings nearby.",
+      "commentary": "McLaren Falls Park is Tauranga’s inland picnic escape: lake edges, old trees, grassy slopes and short walks that do not demand much except time. Come in daylight for the water and shade, or linger into evening when nearby glowworms add a small secret to the park.",
+      "audio_story": "McLaren Falls Park is Tauranga’s inland picnic escape: lake edges, old trees, grassy slopes and short walks that do not demand much except time. Come in daylight for the water and shade, or linger into evening when nearby glowworms add a small secret to the park.",
+      "suggested_voice_tone": "relaxed, family-friendly, green",
+      "sources_to_check": [
+        "Western Bay of Plenty District Council walking tracks and trails",
+        "DOC Kaimai Mamaku Conservation Park",
+        "RotoruaNZ and Bay of Plenty regional visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-katikati-haiku-pathway",
+      "name": "Katikati Haiku Pathway",
+      "region": "bay-of-plenty",
+      "lat": -37.5535,
+      "lng": 175.9187,
+      "category": "culture",
+      "tags": [
+        "poetry",
+        "walk",
+        "katikati"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Katikati’s Haiku Pathway makes a riverside walk unexpectedly literary, placing short poems into gardens and paths so the town can be read as well as crossed.",
+      "commentary": "Katikati’s Haiku Pathway makes a riverside walk unexpectedly literary, placing short poems into gardens and paths so the town can be read as well as crossed.",
+      "audio_story": "Katikati’s Haiku Pathway makes a riverside walk unexpectedly literary, placing short poems into gardens and paths so the town can be read as well as crossed.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-omokoroa-tauranga-cycleway",
+      "name": "Ōmokoroa to Tauranga Cycleway",
+      "region": "bay-of-plenty",
+      "lat": -37.648,
+      "lng": 176.04,
+      "category": "journey",
+      "tags": [
+        "cycleway",
+        "harbour",
+        "western-bay"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 3,
+      "short": "This growing harbour-edge cycleway links Western Bay communities with bridges, boardwalks and estuary views, turning a commuter corridor into a scenic ride.",
+      "commentary": "This growing harbour-edge cycleway links Western Bay communities with bridges, boardwalks and estuary views, turning a commuter corridor into a scenic ride.",
+      "audio_story": "This growing harbour-edge cycleway links Western Bay communities with bridges, boardwalks and estuary views, turning a commuter corridor into a scenic ride.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-thornton-beach",
+      "name": "Thornton Beach",
+      "region": "bay-of-plenty",
+      "lat": -37.918,
+      "lng": 176.88,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "rangitaiki",
+        "coast"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Thornton Beach is a quieter Eastern Bay coast stop where river-mouth geography, surf and open sand give the landscape a working, local feel.",
+      "commentary": "Thornton Beach is a quieter Eastern Bay coast stop where river-mouth geography, surf and open sand give the landscape a working, local feel.",
+      "audio_story": "Thornton Beach is a quieter Eastern Bay coast stop where river-mouth geography, surf and open sand give the landscape a working, local feel.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-puketoki-reserve",
+      "name": "Puketoki Reserve",
+      "region": "bay-of-plenty",
+      "lat": -37.712,
+      "lng": 175.994,
+      "category": "nature",
+      "tags": [
+        "short-walk",
+        "forest",
+        "tauranga",
+        "family"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A small native forest reserve near Tauranga with easy loop tracks and family-friendly bush time.",
+      "commentary": "Puketoki Reserve is the kind of pocket of bush that makes a travel day kinder. The loop is short, shaded and easy to fold around bigger Tauranga plans, but it still gives the pleasure of birdsong, fern edges and a feeling of stepping under a green roof.",
+      "audio_story": "Puketoki Reserve is the kind of pocket of bush that makes a travel day kinder. The loop is short, shaded and easy to fold around bigger Tauranga plans, but it still gives the pleasure of birdsong, fern edges and a feeling of stepping under a green roof.",
+      "suggested_voice_tone": "gentle, local, restorative",
+      "sources_to_check": [
+        "https://www.westernbay.govt.nz/recreation/walking-tracks-and-trails/puketoki-scenic-reserve"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-ohope-scenic-reserve",
+      "name": "Ohope Scenic Reserve",
+      "region": "bay-of-plenty",
+      "lat": -37.977,
+      "lng": 177.052,
+      "category": "nature",
+      "tags": [
+        "coastal-forest",
+        "ohope",
+        "whakatane",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "Coastal forest tracks above Ohope Beach, with birds, pohutukawa and outlooks over the eastern Bay.",
+      "commentary": "Ohope Scenic Reserve sits just above the beach, but the mood changes quickly once the track enters the forest. The coast is still close enough to smell, while nikau, pohutukawa and birds carry the walk into a cooler, older layer of the Eastern Bay.",
+      "audio_story": "Ohope Scenic Reserve sits just above the beach, but the mood changes quickly once the track enters the forest. The coast is still close enough to smell, while nikau, pohutukawa and birds carry the walk into a cooler, older layer of the Eastern Bay.",
+      "suggested_voice_tone": "fresh, coastal, quietly lively",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/bay-of-plenty/places/whakatane-area/ohope-scenic-reserve/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-newdicks-beach",
+      "name": "Newdicks Beach",
+      "region": "bay-of-plenty",
+      "lat": -37.749022,
+      "lng": 176.473766,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Bay of Plenty.",
+      "commentary": "Newdicks Beach fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Newdicks Beach fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/685779898",
+        "https://en.wikipedia.org/wiki/Newdicks_Beach",
+        "https://www.wikidata.org/wiki/Q7017660",
+        "https://www.newzealand.com/nz/bay-of-plenty/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-calypso-vents",
+      "name": "Calypso Vents",
+      "region": "bay-of-plenty",
+      "lat": -37.687398,
+      "lng": 177.123152,
+      "category": "nature",
+      "tags": [
+        "volcanic-feature",
+        "nature",
+        "natural-volcano"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Bay of Plenty.",
+      "commentary": "Calypso Vents fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Calypso Vents fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10299921552",
+        "https://mindat.org/loc-240710.html",
+        "https://www.wikidata.org/wiki/Q84741866",
+        "https://www.newzealand.com/nz/bay-of-plenty/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-new-zealand-national-airways-corporation-flight-441",
+      "name": "New Zealand National Airways Corporation Flight 441",
+      "region": "bay-of-plenty",
+      "lat": -37.662807,
+      "lng": 175.852983,
+      "category": "heritage",
+      "tags": [
+        "wreck-site",
+        "heritage",
+        "historic-wreck"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Bay of Plenty.",
+      "commentary": "New Zealand National Airways Corporation Flight 441 is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "New Zealand National Airways Corporation Flight 441 is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12134974186",
+        "https://en.wikipedia.org/wiki/New_Zealand_National_Airways_Corporation_Flight_441",
+        "https://www.wikidata.org/wiki/Q7015530",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-mv-rena",
+      "name": "MV Rena",
+      "region": "bay-of-plenty",
+      "lat": -37.540278,
+      "lng": 176.429167,
+      "category": "heritage",
+      "tags": [
+        "wreck-site",
+        "heritage",
+        "historic-wreck"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Bay of Plenty.",
+      "commentary": "MV Rena is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "MV Rena is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6618883092",
+        "https://en.wikipedia.org/wiki/MV_Rena",
+        "https://www.wikidata.org/wiki/Q1137168",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-kaimai-air-crash-memorial",
+      "name": "Kaimai Air Crash Memorial",
+      "region": "bay-of-plenty",
+      "lat": -37.696067,
+      "lng": 175.826156,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Bay of Plenty.",
+      "commentary": "Kaimai Air Crash Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Kaimai Air Crash Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/567549169",
+        "https://en.wikipedia.org/wiki/New_Zealand_National_Airways_Corporation_Flight_441",
+        "https://www.wikidata.org/wiki/Q7015530",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-matua-school",
+      "name": "Matua School",
+      "region": "bay-of-plenty",
+      "lat": -37.664679,
+      "lng": 176.129242,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Bay of Plenty.",
+      "commentary": "Matua School fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Matua School fills in another real point on the Bay of Plenty visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/77593876",
+        "https://www.matua.school.nz/",
+        "https://www.wikidata.org/wiki/Q106238530",
+        "https://www.newzealand.com/nz/bay-of-plenty/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-nukuhou-pa",
+      "name": "Nukuhou Pā",
+      "region": "bay-of-plenty",
+      "lat": -38.035568,
+      "lng": 177.101626,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Bay of Plenty.",
+      "commentary": "Nukuhou Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Nukuhou Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/9213096121",
+        "https://www.wikidata.org/wiki/Q32301214",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "bay-of-plenty-oropi-grove-mtb-park",
+      "name": "Oropi Grove MTB Park",
+      "region": "bay-of-plenty",
+      "lat": -37.766039,
+      "lng": 176.138488,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Bay of Plenty.",
+      "commentary": "Oropi Grove MTB Park gives Bay of Plenty another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Oropi Grove MTB Park gives Bay of Plenty another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/5721395859",
+        "https://www.mtbtauranga.co.nz/trails-and-parks/oropi-grove-mtb-park",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "bay-of-plenty-paparoa-pa",
+      "name": "Paparoa Pā",
+      "region": "bay-of-plenty",
+      "lat": -38.002004,
+      "lng": 177.088618,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Bay of Plenty.",
+      "commentary": "Paparoa Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Paparoa Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1036781829",
+        "https://www.wikidata.org/wiki/Q126163251",
+        "https://www.newzealand.com/nz/bay-of-plenty/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
     }
   ]
 }

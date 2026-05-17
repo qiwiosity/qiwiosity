@@ -8,7 +8,7 @@
       "lng": 176.1651
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "bay-of-plenty-trinity-wharf",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 1250,
       "rating": 4.8,
       "short": "Adults-only luxury lodge wing above Tauranga harbour with cliff-top spa."
+    },
+    {
+      "id": "bay-of-plenty-athenree-hot-springs-holiday-park",
+      "name": "Athenree Hot Springs & Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.4482705,
+      "lng": 175.9666036,
+      "type": "holiday-park",
+      "price_nzd_per_night": 130,
+      "rating": 4.5,
+      "short": "Thermal-pool holiday park near Waihī Beach with cabins, powered sites and easy harbour and beach access."
+    },
+    {
+      "id": "bay-of-plenty-awakeri-hot-springs-holiday-park",
+      "name": "Awakeri Hot Springs Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.993,
+      "lng": 176.875,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.4,
+      "short": "Thermal-pool holiday park inland from Whakatāne, with cabins, campsites and hot bathing."
+    },
+    {
+      "id": "bay-of-plenty-moutohora-island-sanctuary-stay-base",
+      "name": "One88 on Commerce",
+      "region": "bay-of-plenty",
+      "lat": -37.955,
+      "lng": 176.991,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.6,
+      "short": "Modern Whakatāne motel base for Ōhope, Moutohorā tours and Eastern Bay adventures."
+    },
+    {
+      "id": "bay-of-plenty-ohiwa-beach-holiday-park",
+      "name": "Ohiwa Beach Holiday Park",
+      "region": "bay-of-plenty",
+      "lat": -37.988,
+      "lng": 177.134,
+      "type": "holiday-park",
+      "price_nzd_per_night": 135,
+      "rating": 4.5,
+      "short": "Beachfront holiday park between Ohope and Opotiki, with cabins and campsites beside Ohiwa Harbour."
+    },
+    {
+      "id": "bay-of-plenty-clarence-hotel",
+      "name": "Clarence Hotel",
+      "region": "bay-of-plenty",
+      "lat": -37.681268,
+      "lng": 176.168408,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.1,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Bay of Plenty."
+    },
+    {
+      "id": "bay-of-plenty-awa-motel",
+      "name": "Awa Motel",
+      "region": "bay-of-plenty",
+      "lat": -37.949854,
+      "lng": 177.002101,
+      "type": "motel",
+      "price_nzd_per_night": 170,
+      "rating": 4.4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Bay of Plenty."
     }
   ]
 }

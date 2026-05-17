@@ -2,7 +2,9 @@
 /**
  * sync-to-mobile.js
  *
- * Single source of truth: database/seed/pois.json  →  mobile/src/data/attractions.json
+ * Single source of truth:
+ *   database/seed/pois.json            → mobile/src/data/attractions.json
+ *   database/seed/accommodations.json  → mobile/src/data/accommodations.json
  *
  * This script transforms the canonical seed data into the format the mobile app
  * expects and writes it to the bundled data directory. It should run:
@@ -16,16 +18,19 @@
  *   seed.review_rating  → bundled.reviews.rating
  *   seed.review_summary → bundled.reviews.summary
  *
- * Internal-only fields (content_status, cultural_review_required, sources_to_check,
- * approach_bearing_deg) are stripped — the mobile app doesn't need them.
+ * Internal-only POI fields (content_status, cultural_review_required,
+ * sources_to_check, approach_bearing_deg) are stripped. The mobile app doesn't
+ * need them.
  */
 
 const fs = require('fs');
 const path = require('path');
 
 // ── Paths ────────────────────────────────────────────────
-const SEED_PATH = path.join(__dirname, 'seed', 'pois.json');
-const OUTPUT_PATH = path.join(__dirname, '..', 'mobile', 'src', 'data', 'attractions.json');
+const POI_SEED_PATH = path.join(__dirname, 'seed', 'pois.json');
+const POI_OUTPUT_PATH = path.join(__dirname, '..', 'mobile', 'src', 'data', 'attractions.json');
+const ACCOM_SEED_PATH = path.join(__dirname, 'seed', 'accommodations.json');
+const ACCOM_OUTPUT_PATH = path.join(__dirname, '..', 'mobile', 'src', 'data', 'accommodations.json');
 const SHIP_BLOCKLIST_RE = /\b(?:PLACEHOLDER|do not ship)\b/i;
 
 // ── Transform ────────────────────────────────────────────
@@ -56,6 +61,20 @@ function transformPoi(poi) {
   return record;
 }
 
+function transformAccommodation(accommodation) {
+  return {
+    id: accommodation.id,
+    name: accommodation.name,
+    region: accommodation.region_id,
+    lat: accommodation.lat,
+    lng: accommodation.lng,
+    type: accommodation.type,
+    price_nzd_per_night: accommodation.price_nzd_per_night,
+    rating: accommodation.rating,
+    short: accommodation.short,
+  };
+}
+
 // ── Main ─────────────────────────────────────────────────
 function isShipBlockedPoi(poi) {
   const text = [
@@ -68,19 +87,19 @@ function isShipBlockedPoi(poi) {
   return SHIP_BLOCKLIST_RE.test(text);
 }
 
-function sync() {
-  if (!fs.existsSync(SEED_PATH)) {
-    console.error(`❌  Seed file not found: ${SEED_PATH}`);
+function syncPois() {
+  if (!fs.existsSync(POI_SEED_PATH)) {
+    console.error(`Seed file not found: ${POI_SEED_PATH}`);
     process.exit(1);
   }
 
-  const seed = JSON.parse(fs.readFileSync(SEED_PATH, 'utf-8'));
+  const seed = JSON.parse(fs.readFileSync(POI_SEED_PATH, 'utf-8'));
   const skipped = seed.filter(isShipBlockedPoi);
   const bundled = seed.filter(poi => !isShipBlockedPoi(poi)).map(transformPoi);
 
   // Ensure output directory exists
-  fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(bundled, null, 2) + '\n', 'utf-8');
+  fs.mkdirSync(path.dirname(POI_OUTPUT_PATH), { recursive: true });
+  fs.writeFileSync(POI_OUTPUT_PATH, JSON.stringify(bundled, null, 2) + '\n', 'utf-8');
 
   // Summary by category
   const cats = {};
@@ -90,11 +109,39 @@ function sync() {
     .map(([k, v]) => `  ${k}: ${v}`)
     .join('\n');
 
-  console.log(`✅  Synced ${bundled.length} POIs → ${path.relative(process.cwd(), OUTPUT_PATH)}`);
+  console.log(`Synced ${bundled.length} POIs -> ${path.relative(process.cwd(), POI_OUTPUT_PATH)}`);
   if (skipped.length) {
     console.warn(`Skipped ${skipped.length} non-shippable POI(s): ${skipped.map(p => p.id).join(', ')}`);
   }
   console.log(catSummary);
+}
+
+function syncAccommodations() {
+  if (!fs.existsSync(ACCOM_SEED_PATH)) {
+    console.warn(`Accommodation seed file not found, skipping: ${ACCOM_SEED_PATH}`);
+    return;
+  }
+
+  const seed = JSON.parse(fs.readFileSync(ACCOM_SEED_PATH, 'utf-8'));
+  const bundled = seed.map(transformAccommodation);
+
+  fs.mkdirSync(path.dirname(ACCOM_OUTPUT_PATH), { recursive: true });
+  fs.writeFileSync(ACCOM_OUTPUT_PATH, JSON.stringify(bundled, null, 2) + '\n', 'utf-8');
+
+  const types = {};
+  bundled.forEach(a => { types[a.type] = (types[a.type] || 0) + 1; });
+  const typeSummary = Object.entries(types)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v]) => `  ${k}: ${v}`)
+    .join('\n');
+
+  console.log(`Synced ${bundled.length} accommodations -> ${path.relative(process.cwd(), ACCOM_OUTPUT_PATH)}`);
+  console.log(typeSummary);
+}
+
+function sync() {
+  syncPois();
+  syncAccommodations();
 }
 
 sync();

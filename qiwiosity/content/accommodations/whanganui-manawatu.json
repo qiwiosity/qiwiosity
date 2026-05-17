@@ -8,7 +8,7 @@
       "lng": 175.3
     }
   },
-  "count": 21,
+  "count": 28,
   "accommodations": [
     {
       "id": "whanganui-manawatu-copthorne-palmerston-north",
@@ -240,6 +240,83 @@
       "price_nzd_per_night": 580,
       "rating": 4.7,
       "short": "Remote Whanganui River lodge reached only by jet boat."
+    },
+    {
+      "id": "whanganui-manawatu-powderhorn-chateau",
+      "name": "Powderhorn Chateau",
+      "region": "whanganui-manawatu",
+      "lat": -39.4019216,
+      "lng": 175.4124823,
+      "type": "hotel",
+      "price_nzd_per_night": 350,
+      "rating": 4.5,
+      "short": "Alpine-style Ohakune hotel in the Junction, with ski-town character and Ruapehu access."
+    },
+    {
+      "id": "whanganui-manawatu-river-valley-lodge",
+      "name": "River Valley Lodge",
+      "region": "whanganui-manawatu",
+      "lat": -39.776,
+      "lng": 175.789,
+      "type": "lodge",
+      "price_nzd_per_night": 210,
+      "rating": 4.7,
+      "short": "Remote Rangitīkei River lodge known for rafting, horse trekking and hill-country stays."
+    },
+    {
+      "id": "whanganui-manawatu-rutland-arms-inn",
+      "name": "The Rutland Arms Inn",
+      "region": "whanganui-manawatu",
+      "lat": -39.933,
+      "lng": 175.052,
+      "type": "hotel",
+      "price_nzd_per_night": 190,
+      "rating": 4.4,
+      "short": "Boutique inn on Whanganui’s main street with heritage styling and restaurant access."
+    },
+    {
+      "id": "whanganui-manawatu-the-gretna-hotel",
+      "name": "The Gretna Hotel Taihape",
+      "region": "whanganui-manawatu",
+      "lat": -39.678,
+      "lng": 175.798,
+      "type": "hotel",
+      "price_nzd_per_night": 150,
+      "rating": 4.2,
+      "short": "Historic Taihape hotel base for Rangitīkei, Ruahine and central North Island road journeys."
+    },
+    {
+      "id": "whanganui-manawatu-makoura-lodge",
+      "name": "Makoura Lodge",
+      "region": "whanganui-manawatu",
+      "lat": -39.996,
+      "lng": 175.822,
+      "type": "lodge",
+      "price_nzd_per_night": 240,
+      "rating": 4.6,
+      "short": "Rural lodge and event accommodation near Apiti, with hill-country views and outdoor activities."
+    },
+    {
+      "id": "whanganui-manawatu-cheltenham-pub-and-hotel",
+      "name": "Cheltenham Pub and Hotel",
+      "region": "whanganui-manawatu",
+      "lat": -40.13805,
+      "lng": 175.6607,
+      "type": "hotel",
+      "price_nzd_per_night": 270,
+      "rating": 4.3,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Whanganui."
+    },
+    {
+      "id": "whanganui-manawatu-ambassador-motel",
+      "name": "Ambassador Motel",
+      "region": "whanganui-manawatu",
+      "lat": -40.362698,
+      "lng": 175.61709,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.2,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Whanganui."
     }
   ]
 }

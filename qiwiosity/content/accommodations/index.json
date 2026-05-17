@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-04-19",
-  "project": "Qiwiosity — New Zealand travel companion",
+  "generated_at": "2026-05-17",
+  "project": "Qiwiosity - New Zealand travel companion",
   "schema_version": "1.0",
   "totals": {
     "regions": 19,
-    "accommodations": 382,
+    "accommodations": 506,
     "by_type": {
-      "hotel": 116,
-      "motel": 134,
-      "holiday-park": 77,
-      "lodge": 55
+      "hotel": 166,
+      "motel": 157,
+      "holiday-park": 86,
+      "lodge": 97
     },
     "by_region": {
-      "auckland": 20,
-      "bay-of-plenty": 20,
-      "canterbury": 20,
-      "coromandel": 20,
-      "hawkes-bay": 20,
-      "marlborough": 20,
-      "nelson-tasman": 20,
-      "northland": 20,
-      "otago": 20,
-      "queenstown": 21,
-      "rotorua": 20,
-      "southland": 20,
-      "tairawhiti": 20,
-      "taranaki": 20,
-      "taupo": 20,
-      "waikato": 20,
-      "wellington": 20,
-      "west-coast": 20,
-      "whanganui-manawatu": 21
+      "auckland": 27,
+      "bay-of-plenty": 26,
+      "canterbury": 26,
+      "coromandel": 26,
+      "hawkes-bay": 27,
+      "marlborough": 27,
+      "nelson-tasman": 27,
+      "northland": 27,
+      "otago": 26,
+      "queenstown": 28,
+      "rotorua": 26,
+      "southland": 27,
+      "tairawhiti": 25,
+      "taranaki": 26,
+      "taupo": 27,
+      "waikato": 26,
+      "wellington": 27,
+      "west-coast": 27,
+      "whanganui-manawatu": 28
     }
   },
   "regions": [
@@ -42,7 +42,7 @@
         "lat": -36.8485,
         "lng": 174.7633
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/auckland.json"
     },
     {
@@ -53,7 +53,7 @@
         "lat": -37.6878,
         "lng": 176.1651
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/bay-of-plenty.json"
     },
     {
@@ -64,7 +64,7 @@
         "lat": -43.532,
         "lng": 172.6362
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/canterbury.json"
     },
     {
@@ -75,7 +75,7 @@
         "lat": -36.75,
         "lng": 175.7
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/coromandel.json"
     },
     {
@@ -86,7 +86,7 @@
         "lat": -39.4928,
         "lng": 176.912
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/hawkes-bay.json"
     },
     {
@@ -97,7 +97,7 @@
         "lat": -41.5136,
         "lng": 173.9614
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/marlborough.json"
     },
     {
@@ -108,7 +108,7 @@
         "lat": -41.2706,
         "lng": 173.284
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/nelson-tasman.json"
     },
     {
@@ -119,7 +119,7 @@
         "lat": -35.5,
         "lng": 174
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/northland.json"
     },
     {
@@ -130,7 +130,7 @@
         "lat": -45.4,
         "lng": 170
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/otago.json"
     },
     {
@@ -141,7 +141,7 @@
         "lat": -45.0312,
         "lng": 168.6626
       },
-      "accommodation_count": 21,
+      "accommodation_count": 28,
       "file": "content/accommodations/queenstown.json"
     },
     {
@@ -152,7 +152,7 @@
         "lat": -38.1368,
         "lng": 176.2497
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/rotorua.json"
     },
     {
@@ -163,7 +163,7 @@
         "lat": -45.8,
         "lng": 167.8
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/southland.json"
     },
     {
@@ -174,7 +174,7 @@
         "lat": -38.05,
         "lng": 178.2
       },
-      "accommodation_count": 20,
+      "accommodation_count": 25,
       "file": "content/accommodations/tairawhiti.json"
     },
     {
@@ -185,7 +185,7 @@
         "lat": -39.2968,
         "lng": 174.0756
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/taranaki.json"
     },
     {
@@ -196,7 +196,7 @@
         "lat": -38.6857,
         "lng": 176.0702
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/taupo.json"
     },
     {
@@ -207,7 +207,7 @@
         "lat": -37.787,
         "lng": 175.2793
       },
-      "accommodation_count": 20,
+      "accommodation_count": 26,
       "file": "content/accommodations/waikato.json"
     },
     {
@@ -218,7 +218,7 @@
         "lat": -41.2866,
         "lng": 174.7756
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/wellington.json"
     },
     {
@@ -229,7 +229,7 @@
         "lat": -42.75,
         "lng": 171.1
       },
-      "accommodation_count": 20,
+      "accommodation_count": 27,
       "file": "content/accommodations/west-coast.json"
     },
     {
@@ -240,7 +240,7 @@
         "lat": -40.05,
         "lng": 175.3
       },
-      "accommodation_count": 21,
+      "accommodation_count": 28,
       "file": "content/accommodations/whanganui-manawatu.json"
     }
   ]

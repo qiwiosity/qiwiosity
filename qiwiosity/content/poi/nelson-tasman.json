@@ -1590,7 +1590,7 @@
       "name": "Hooked at Marahau",
       "region": "nelson-tasman",
       "lat": -41.0167,
-      "lng": 173.0,
+      "lng": 173,
       "category": "food-wine",
       "tags": [
         "seafood",
@@ -2008,7 +2008,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Pleasant walk with reliable bird sightings. Family-friendly. Combines well with Mapua village visit."
       }
     },
@@ -2017,7 +2017,7 @@
       "name": "Tōtaranui — Coastal Wildlife",
       "region": "nelson-tasman",
       "lat": -40.8333,
-      "lng": 173.0,
+      "lng": 173,
       "category": "wildlife",
       "tags": [
         "marine",
@@ -2096,7 +2096,7 @@
         "historic-village"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Living heritage park with historic buildings, vintage machinery, a brewery, and organic café in a park setting.",
       "commentary": "Founders Heritage Park is a unique heritage attraction on the outskirts of Nelson, set in extensive park-like grounds containing relocated and replica historic buildings that recreate aspects of the region's pioneer past. The park includes a working printing press, a vintage fire engine collection, a historic windmill, a heritage railway, an organic garden, and various workshops demonstrating traditional crafts. The on-site Founders Brewery is a popular craft beer destination, and the organic café serves excellent food using produce from the park's gardens. The collection of heritage buildings includes cottages, commercial buildings, and industrial structures that have been rescued from demolition around the region. The park hosts regular markets, community events, and festivals. It is a great family destination with plenty to explore across the spacious grounds. Allow a couple of hours to wander through the various buildings and exhibits. Admission fees apply.",
       "content_status": "draft",
@@ -2119,7 +2119,7 @@
         "classic-cars"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Dazzling museum showcasing winning garments from the famous WOW awards alongside a stunning classic car collection.",
       "commentary": "The World of WearableArt & Classic Cars Museum (WOW) is one of Nelson's most popular attractions, housing an extraordinary collection of award-winning garments from the internationally acclaimed World of WearableArt Awards Show. The wearable art is displayed in themed galleries with theatrical lighting and dramatic staging, showcasing the incredible creativity and craftsmanship of entries spanning decades. Garments range from the spectacular to the bizarre — towering sculptural pieces, bioluminescent creations, and intricately detailed wearable sculptures. Alongside, the classic car collection features over 100 beautifully restored vehicles spanning a century of motoring history. The combination of fashion-as-art and automotive heritage creates a uniquely entertaining museum experience. The WOW competition began in Nelson in 1987 before moving to Wellington, but the museum keeps the original spirit alive. Allow at least two hours. The museum is located at Nelson Airport, convenient for arrival or departure days. Excellent gift shop.",
       "content_status": "draft",
@@ -2142,7 +2142,7 @@
         "golden-sand"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Iconic golden sand beach and gateway to Abel Tasman National Park, famous for crystal-clear water.",
       "commentary": "Kaiteriteri Beach is one of New Zealand's most beautiful and iconic beaches, famous for its distinctive golden-orange granite sand and crystal-clear turquoise water. Located on the Tasman Bay coast, it is the main gateway for water taxis and kayak trips into Abel Tasman National Park. The sheltered, north-facing beach offers warm, safe swimming conditions and is surrounded by native bush-clad headlands. The beach is divided into several coves, each with its own character — the main beach is the busiest, while Split Apple Rock and other nearby coves offer more seclusion. Kayak, paddleboard, and small boat hire are available from the beach. The Kaiteriteri Mountain Bike Park in the hills behind offers excellent riding. During summer, arrive early for parking as the beach gets very popular. The campground behind the beach is one of the most sought-after in New Zealand — book months ahead for peak season. Even on busy days, the beauty of the beach is undeniable.",
       "content_status": "draft",
@@ -2211,7 +2211,7 @@
         "guided"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Guided sea kayaking along the golden beaches and granite coastline of Abel Tasman National Park.",
       "commentary": "Sea kayaking is one of the finest ways to experience the Abel Tasman coastline, paddling between golden sand beaches, through the turquoise waters of sheltered bays, and past sculpted granite headlands. Multiple operators offer guided trips ranging from half-day paddles to multi-day expeditions with beachside camping. The calm, sheltered waters of Tasman Bay make conditions ideal for kayaking, and the coastline is studded with accessible beaches for rest stops and swimming. Wildlife encounters are frequent, with little blue penguins, fur seals, and dolphins regularly spotted. Most trips depart from Marahau at the southern end of the park, with water taxi connections available for longer itineraries. No prior kayaking experience is necessary for guided trips, and tandem kayaks are available. Book well ahead during January and February.",
       "content_status": "draft",
@@ -2234,7 +2234,7 @@
         "ice-cream"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Waterfront dining and tasting precinct at Mapua Wharf with seafood, craft beer, ice cream, and estuary views.",
       "commentary": "Mapua Wharf is a delightful waterfront precinct at the edge of the Waimea Estuary, about 30 minutes from Nelson city. The former apple packing shed and surrounding buildings have been transformed into a collection of eateries, galleries, and food artisans that draw locals and visitors alike. The Smokehouse is the star attraction, serving freshly smoked fish and seafood from its waterside counter. Golden Bear Brewing offers craft beers brewed on site, and Jester House Cafe across the estuary is known for its tame eels. The precinct also houses galleries, a gelato maker, and a small aquarium. The Mapua Ferry connects the wharf to Rabbit Island, a popular swimming and cycling beach. The Great Taste Trail cycle route passes through Mapua, making the wharf a natural refreshment stop. On a sunny day, eating smoked fish and sipping local beer on the wharf edge with views across the estuary is hard to beat.",
       "content_status": "draft",
@@ -2280,7 +2280,7 @@
         "abel-tasman"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Iconic split granite boulder in Tasman Bay near the Abel Tasman coast, accessible by kayak or water taxi.",
       "commentary": "Split Apple Rock (Tokangawha) is one of New Zealand's most photographed natural features, a large granite boulder split perfectly in two as if cleaved by a giant axe. The rock sits in shallow water in the Tasman Bay between Kaiteriteri and Marahau, near the entrance to Abel Tasman National Park. In Maori legend, two gods fought over the rock and each took half, explaining the clean split. Geologically, water seeped into a crack and froze, gradually wedging the boulder apart over thousands of years. The rock is best viewed up close by kayak, water taxi, or boat, though it can be glimpsed from the coastal track above. Kayak tours from Kaiteriteri often include a paddle past the rock, allowing close-up photography. The surrounding waters are clear and excellent for swimming in summer. The rock is also visible from scenic flights over the Abel Tasman coastline.",
       "content_status": "draft",
@@ -2303,7 +2303,7 @@
         "takaka-hill"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Limestone cave with stalactites, stalagmites, and moa bones on the Takaka Hill road to Golden Bay.",
       "commentary": "Ngarua Caves are a limestone cave system located at the summit of Takaka Hill on the road between Nelson and Golden Bay. The guided tour leads through decorated chambers featuring stalactites, stalagmites, flowstone formations, and the bones of the extinct moa bird, preserved where they fell into the cave thousands of years ago. The caves were formed over millions of years as rainwater dissolved the marble and limestone of the Takaka Hill geological formation. Tours last approximately 45 minutes and are conducted by knowledgeable guides who illuminate the geological processes and natural history. The cave temperature is a constant 10 degrees Celsius year-round, so bring a warm layer. Located at the Takaka Hill lookout, the caves combine naturally with the scenic drive over the hill, which offers spectacular views of both Tasman Bay and Golden Bay. A worthwhile stop that adds geological interest to the journey to Abel Tasman and Golden Bay.",
       "content_status": "draft",
@@ -2404,7 +2404,7 @@
       "commentary": "Broadgreen House in Stoke is a substantial two-storey cob (earth and straw) house built around 1855, now preserved as a museum of early Nelson colonial life. The thick cob walls have survived over 160 years of earthquakes and weather, a testament to the building technique brought from Devon by the original settlers. Inside, rooms are furnished in period style with many original and locally-sourced pieces that evoke the domestic life of a prosperous colonial family. The surrounding gardens are planted in heritage varieties and maintained by dedicated volunteers. Broadgreen offers an intimate window into how early European settlers lived in Nelson — their aspirations, their craftsmanship, and their adaptation to a new land.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "History lovers appreciate the well-preserved cob construction and period furnishings. The gardens are a pleasant bonus. A quiet, unhurried heritage experience away from the main tourist trail."
       }
     },
@@ -3069,8 +3069,8 @@
       "id": "nelson-tasman-waka-abel-tasman",
       "name": "Waka Abel Tasman — Māori Guided Tour",
       "region": "nelson-tasman",
-      "lat": -41.0,
-      "lng": 173.0,
+      "lat": -41,
+      "lng": 173,
       "category": "māori",
       "tags": [
         "waka",
@@ -3108,7 +3108,7 @@
       "commentary": "The Nelson Classic Car Museum houses an impressive collection of over 150 vintage, classic, and exotic cars spanning automotive history from the early 1900s to modern supercars. The collection includes rare and unusual vehicles alongside well-known classics. The museum is well laid out with informative displays explaining each vehicle's significance. For car enthusiasts, highlights include rare pre-war vehicles, American muscle cars, and a growing collection of motorsport memorabilia. Even non-car-people find the beautifully restored vehicles and the stories behind them engaging.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Impressive collection even for non-car-enthusiasts. Well presented with good information. A good rainy-day option in Nelson."
       }
     },
@@ -3154,7 +3154,7 @@
       "commentary": "The Centre of New Zealand walk is a short (30-minute) climb from the Botanical Reserve to the summit marker that indicates the geographic centre of New Zealand. While the marker's accuracy is debatable (it was actually a trigonometric survey point), the walk provides excellent panoramic views over Nelson city, Tasman Bay, and the surrounding ranges. The track passes through native bush and exotic plantings in the Botanical Reserve. At the summit, 360-degree views extend from the Richmond Ranges to the coast. It's a popular local exercise walk and an easy way to orient yourself to Nelson's geography. The views are particularly good at sunset.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Quick walk with great views. The 'centre of NZ' claim is fun. Popular local exercise route. Good at sunset."
       }
     },
@@ -3621,7 +3621,7 @@
         "golden bay"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Legendary Golden Bay bush pub brewing its own beer with regular live music.",
       "commentary": "Tucked into the bush at Onekaka, The Mussel Inn is an iconic Golden Bay institution. This off-grid pub brews its own range of beers on-site, serves hearty food with local mussels, and hosts regular live music sessions attracting colourful characters from across the region.",
       "content_status": "draft",
@@ -3644,7 +3644,7 @@
         "backcountry"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Backcountry track over Tākaka Hill linking Nelson Lakes to Golden Bay.",
       "commentary": "The Rameka Track is a historic pack track crossing the marble karst landscape of Tākaka Hill. Used by gold miners in the 1800s, it now offers trampers and mountain bikers a challenging route through beech forest, limestone formations, and subalpine clearings.",
       "content_status": "draft",
@@ -3721,6 +3721,506 @@
         "rating": 4.4,
         "summary": "Beautiful bush walk — the nikau palms and waterfall are lovely."
       }
+    },
+    {
+      "id": "nelson-tasman-cobb-valley",
+      "name": "Cobb Valley / Kahurangi National Park",
+      "region": "nelson-tasman",
+      "lat": -41.1184799,
+      "lng": 172.6635123,
+      "category": "journey",
+      "tags": [
+        "kahurangi",
+        "alpine-valley",
+        "reservoir",
+        "tramping",
+        "botany"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 4,
+      "short": "A high, less-crowded Kahurangi gateway with a reservoir road, alpine plants, huts and long-valley tramping.",
+      "commentary": "Cobb Valley is one of the great inland side roads of Nelson Tasman. From Upper Tākaka the road climbs toward the Cobb Reservoir, then becomes a gateway into Kahurangi National Park: Trilobite Hut, Chaffey Hut, Lake Cobb, Fenella Hut and a web of longer tramping routes beyond. Even for day visitors, the valley gives a rare mix of hydro history, marble country, beech forest, tussock and alpine botany without the traffic of better-known coastal parks. DOC warns that the road is narrow, unsealed in places and demanding in winter, so the journey is part of the experience.",
+      "audio_story": "Cobb Valley is one of the great inland side roads of Nelson Tasman. From Upper Tākaka the road climbs toward the Cobb Reservoir, then becomes a gateway into Kahurangi National Park: Trilobite Hut, Chaffey Hut, Lake Cobb, Fenella Hut and a web of longer tramping routes beyond. Even for day visitors, the valley gives a rare mix of hydro history, marble country, beech forest, tussock and alpine botany without the traffic of better-known coastal parks. DOC warns that the road is narrow, unsealed in places and demanding in winter, so the journey is part of the experience.",
+      "suggested_voice_tone": "expansive, curious, lightly rugged",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/cobb-valley-tracks/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.8,
+        "summary": "Loved by trampers and photographers for big landscapes, botany and hut access; the access road is the main planning variable."
+      }
+    },
+    {
+      "id": "nelson-tasman-pupu-hydro-walkway",
+      "name": "Pupu Hydro Walkway",
+      "region": "nelson-tasman",
+      "lat": -40.8567,
+      "lng": 172.7821,
+      "category": "heritage",
+      "tags": [
+        "hydro",
+        "walk",
+        "golden-bay",
+        "engineering"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.75,
+      "short": "A Golden Bay loop following a historic water race to an early hydro scheme above Tākaka.",
+      "commentary": "The Pupu Hydro Walkway is part engineering lesson, part bush walk. The track follows old water-race infrastructure that once turned falling water into electricity, and the steady gradient gives time to appreciate how much patience early small-scale power demanded.",
+      "audio_story": "The Pupu Hydro Walkway is part engineering lesson, part bush walk. The track follows old water-race infrastructure that once turned falling water into electricity, and the steady gradient gives time to appreciate how much patience early small-scale power demanded.",
+      "suggested_voice_tone": "historical, green, quietly clever",
+      "sources_to_check": [
+        "DOC Nelson/Tasman places",
+        "Nelson Tasman official visitor information",
+        "Local sanctuary, cave and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-mapua-ferry-crossing",
+      "name": "Māpua Ferry Crossing",
+      "region": "nelson-tasman",
+      "lat": -41.2511,
+      "lng": 173.0974,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "ferry",
+        "great-taste-trail",
+        "estuary"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A short bike-and-passenger ferry link that makes Tasman’s Great Taste Trail feel like a proper journey.",
+      "commentary": "The Māpua ferry is small, practical and oddly delightful. Bikes roll on, the estuary opens around you, and in a few minutes the Great Taste Trail turns from path to crossing, giving the ride a tiny maritime adventure.",
+      "audio_story": "The Māpua ferry is small, practical and oddly delightful. Bikes roll on, the estuary opens around you, and in a few minutes the Great Taste Trail turns from path to crossing, giving the ride a tiny maritime adventure.",
+      "suggested_voice_tone": "light, active, local",
+      "sources_to_check": [
+        "DOC Nelson/Tasman places",
+        "Nelson Tasman official visitor information",
+        "Local sanctuary, cave and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-nelson-provincial-museum",
+      "name": "Nelson Provincial Museum",
+      "region": "nelson-tasman",
+      "lat": -41.2762,
+      "lng": 173.2834,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "nelson",
+        "history",
+        "rainy-day"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1.25,
+      "short": "A central Nelson museum connecting regional art, settlement, photography and community memory.",
+      "commentary": "Nelson Provincial Museum is the town’s memory bank. Its exhibitions move between taonga, photography, settler history and contemporary regional stories, giving context to a place visitors often experience only as a sunny gateway to national parks.",
+      "audio_story": "Nelson Provincial Museum is the town’s memory bank. Its exhibitions move between taonga, photography, settler history and contemporary regional stories, giving context to a place visitors often experience only as a sunny gateway to national parks.",
+      "suggested_voice_tone": "thoughtful, local, informative",
+      "sources_to_check": [
+        "DOC Nelson/Tasman places",
+        "Nelson Tasman official visitor information",
+        "Local sanctuary, cave and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-riwaka-resurgence",
+      "name": "Riuwaka Resurgence",
+      "region": "nelson-tasman",
+      "lat": -41.0706,
+      "lng": 172.9389,
+      "category": "nature",
+      "tags": [
+        "spring",
+        "sacred-site",
+        "takaka-hill",
+        "short-walk"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.75,
+      "short": "A short walk to cold, clear water emerging from Tākaka Hill’s marble cave systems.",
+      "commentary": "Riuwaka Resurgence is a place to arrive quietly. Water emerges intensely clear from the marble mountain, cold from its underground journey; it is beautiful, culturally significant and best visited with restraint rather than noise.",
+      "audio_story": "Riuwaka Resurgence is a place to arrive quietly. Water emerges intensely clear from the marble mountain, cold from its underground journey; it is beautiful, culturally significant and best visited with restraint rather than noise.",
+      "suggested_voice_tone": "quiet, respectful, crystalline",
+      "sources_to_check": [
+        "DOC Nelson/Tasman places",
+        "Nelson Tasman official visitor information",
+        "Local sanctuary, cave and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "nelson-tasman-abel-tasman-canyons",
+      "name": "Abel Tasman Canyons",
+      "region": "nelson-tasman",
+      "lat": -41.034,
+      "lng": 172.997,
+      "category": "adventure",
+      "tags": [
+        "canyoning",
+        "abel-tasman",
+        "waterfall",
+        "guided"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 5,
+      "short": "Guided canyoning through granite streams, pools and waterfalls near Abel Tasman National Park.",
+      "commentary": "Abel Tasman is usually sold as beaches and kayaks, but the canyoning adds a steeper, colder thrill. Guided trips turn forest streams, jumps, slides and abseils into a full-body way to meet the national park’s inland edges.",
+      "audio_story": "Abel Tasman is usually sold as beaches and kayaks, but the canyoning adds a steeper, colder thrill. Guided trips turn forest streams, jumps, slides and abseils into a full-body way to meet the national park’s inland edges.",
+      "suggested_voice_tone": "adventurous, crisp, guided",
+      "sources_to_check": [
+        "DOC Nelson/Tasman places",
+        "Nelson Tasman official visitor information",
+        "Local sanctuary, cave and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-tahunanui-beach-reserve",
+      "name": "Tāhunanui Beach Reserve",
+      "region": "nelson-tasman",
+      "lat": -41.283,
+      "lng": 173.245,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nelson",
+        "family"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Tāhunanui Beach is Nelson’s broad, social beach playground, where shallow water, cafés and sunset light make it much more than a place to swim.",
+      "commentary": "Tāhunanui Beach is Nelson’s broad, social beach playground, where shallow water, cafés and sunset light make it much more than a place to swim.",
+      "audio_story": "Tāhunanui Beach is Nelson’s broad, social beach playground, where shallow water, cafés and sunset light make it much more than a place to swim.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-mckee-memorial-reserve",
+      "name": "McKee Memorial Reserve",
+      "region": "nelson-tasman",
+      "lat": -41.191,
+      "lng": 173.378,
+      "category": "nature",
+      "tags": [
+        "camping",
+        "coast",
+        "tasman-bay"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "McKee Memorial Reserve is a gentle Tasman Bay coastal stop, loved for camping, swimming and the kind of sunset that makes dinner wait.",
+      "commentary": "McKee Memorial Reserve is a gentle Tasman Bay coastal stop, loved for camping, swimming and the kind of sunset that makes dinner wait.",
+      "audio_story": "McKee Memorial Reserve is a gentle Tasman Bay coastal stop, loved for camping, swimming and the kind of sunset that makes dinner wait.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-miyazu-japanese-garden",
+      "name": "Miyazu Japanese Garden",
+      "region": "nelson-tasman",
+      "lat": -41.265,
+      "lng": 173.287,
+      "category": "culture",
+      "tags": [
+        "garden",
+        "nelson",
+        "sister-city"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Miyazu Japanese Garden is a small Nelson gesture of friendship, using water, stone and planting to mark the city’s sister-city relationship with Miyazu.",
+      "commentary": "Miyazu Japanese Garden is a small Nelson gesture of friendship, using water, stone and planting to mark the city’s sister-city relationship with Miyazu.",
+      "audio_story": "Miyazu Japanese Garden is a small Nelson gesture of friendship, using water, stone and planting to mark the city’s sister-city relationship with Miyazu.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-labyrinth-rocks",
+      "name": "Labyrinth Rocks Park",
+      "region": "nelson-tasman",
+      "lat": -40.852,
+      "lng": 172.808,
+      "category": "nature",
+      "tags": [
+        "golden-bay",
+        "limestone",
+        "family",
+        "short-walk"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A free limestone maze near Takaka, with narrow rock corridors and playful short walks.",
+      "commentary": "Labyrinth Rocks Park turns Golden Bay limestone into a natural puzzle. It is an easy stop, but the narrow corridors, mossy walls and little surprises make it feel delightfully exploratory, especially for families who want wonder without a full-day track.",
+      "audio_story": "Labyrinth Rocks Park turns Golden Bay limestone into a natural puzzle. It is an easy stop, but the narrow corridors, mossy walls and little surprises make it feel delightfully exploratory, especially for families who want wonder without a full-day track.",
+      "suggested_voice_tone": "playful, curious, light",
+      "sources_to_check": [
+        "https://www.nelsontasman.nz/visit-nelson-tasman/plan-your-trip/activities/3367-labyrinth-rocks"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-rawhiti-cave",
+      "name": "Rawhiti Cave",
+      "region": "nelson-tasman",
+      "lat": -40.846,
+      "lng": 172.852,
+      "category": "nature",
+      "tags": [
+        "takaka",
+        "cave",
+        "limestone",
+        "walk"
+      ],
+      "trigger_radius_m": 650,
+      "duration_hours": 3,
+      "short": "A steep Golden Bay walk to a limestone cave mouth with remarkable phytokarst formations.",
+      "commentary": "Rawhiti Cave asks for a proper climb, then rewards it with one of Golden Bay’s strangest cave entrances. The formations seem to grow toward the light, making the cave feel alive at the edge between underground darkness and forest air.",
+      "audio_story": "Rawhiti Cave asks for a proper climb, then rewards it with one of Golden Bay’s strangest cave entrances. The formations seem to grow toward the light, making the cave feel alive at the edge between underground darkness and forest air.",
+      "suggested_voice_tone": "wondering, active, respectful",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/takaka-area/things-to-do/rawhiti-cave-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-flamedaisy-glass-design",
+      "name": "Flamedaisy Glass Design",
+      "region": "nelson-tasman",
+      "lat": -41.275381,
+      "lng": 173.282667,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Nelson.",
+      "commentary": "Flamedaisy Glass Design gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Flamedaisy Glass Design gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1120289598",
+        "https://flamedaisy.co.nz",
+        "https://www.wikidata.org/wiki/Q79303591",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-wharariki-ecosanctuary",
+      "name": "Wharariki Ecosanctuary",
+      "region": "nelson-tasman",
+      "lat": -40.49964,
+      "lng": 172.695875,
+      "category": "nature",
+      "tags": [
+        "nature-reserve",
+        "nature"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A mapped green-space stop that adds local texture to Nelson.",
+      "commentary": "Wharariki Ecosanctuary fills in another real point on the Nelson visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Wharariki Ecosanctuary fills in another real point on the Nelson visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1052192943",
+        "https://en.wikipedia.org/wiki/Wharariki_Ecosanctuary",
+        "https://www.wikidata.org/wiki/Q111610580",
+        "https://www.newzealand.com/nz/nelson-tasman/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-melrose-house",
+      "name": "Melrose House",
+      "region": "nelson-tasman",
+      "lat": -41.282246,
+      "lng": 173.284433,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Nelson.",
+      "commentary": "Melrose House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Melrose House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/764326706",
+        "https://www.melrosehouse.co.nz",
+        "https://www.wikidata.org/wiki/Q30337105",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-parker-gallery",
+      "name": "Parker Gallery",
+      "region": "nelson-tasman",
+      "lat": -41.271339,
+      "lng": 173.281573,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Nelson.",
+      "commentary": "Parker Gallery gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Parker Gallery gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/11737943907",
+        "https://parkergallery.nz",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-bill-burke-gallery",
+      "name": "Bill Burke Gallery",
+      "region": "nelson-tasman",
+      "lat": -41.269903,
+      "lng": 173.2867,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Nelson.",
+      "commentary": "Bill Burke Gallery gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Bill Burke Gallery gives Nelson another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/11017323163",
+        "https://billburkeartist.com",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-aftermath-c-1953",
+      "name": "Aftermath, c.1953",
+      "region": "nelson-tasman",
+      "lat": -41.27401,
+      "lng": 173.280968,
+      "category": "heritage",
+      "tags": [
+        "public-artwork",
+        "heritage",
+        "tourism-artwork"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Nelson.",
+      "commentary": "Aftermath, c.1953 is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as #19 in the Nelson City Centre ArtWalk. See the website for details about this painting. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Aftermath, c.1953 is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as #19 in the Nelson City Centre ArtWalk. See the website for details about this painting. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12505679935",
+        "https://makeshiftspaces.nz/installations/aftermath/",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-maungakura-red-hill",
+      "name": "Maungakura / Red Hill",
+      "region": "nelson-tasman",
+      "lat": -41.626928,
+      "lng": 173.057891,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Nelson.",
+      "commentary": "Maungakura / Red Hill helps mark the high country and skyline around Nelson. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Maungakura / Red Hill helps mark the high country and skyline around Nelson. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/8591218465",
+        "https://en.wikipedia.org/wiki/Maungakura_/_Red_Hill",
+        "https://www.wikidata.org/wiki/Q31468726",
+        "https://www.newzealand.com/nz/nelson-tasman/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "nelson-tasman-collingwood-museum",
+      "name": "Collingwood Museum",
+      "region": "nelson-tasman",
+      "lat": -40.676988,
+      "lng": 172.682632,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Nelson.",
+      "commentary": "Collingwood Museum gives Nelson another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Collingwood Museum gives Nelson another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/2261636318",
+        "https://www.wikidata.org/wiki/Q77979079",
+        "https://www.newzealand.com/nz/nelson-tasman/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

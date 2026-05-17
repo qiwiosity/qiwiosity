@@ -615,9 +615,9 @@
 
   .popup-hero {
     width: 100%; height: 260px;
-    object-fit: cover; display: block; background: #c8d8d8;
+    object-fit: cover; display: block; background: transparent;
   }
-  .popup-hero-wrap { position: relative; overflow: hidden; }
+  .popup-hero-wrap { position: relative; overflow: hidden; background: var(--surface); }
   .popup-hero-wrap::after {
     content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 120px;
     background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0) 100%);
@@ -984,7 +984,7 @@
     color:var(--text); padding:0 4px; line-height:1;
   }
   .poi-detail-body { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
-  .poi-detail-hero { width:100%; height:240px; object-fit:cover; }
+  .poi-detail-hero { width:100%; height:240px; object-fit:cover; background:transparent; }
   .poi-detail-gallery {
     display:flex; gap:4px; overflow-x:auto; scrollbar-width:none;
     padding:8px 12px; background:var(--surface2);
@@ -2473,7 +2473,7 @@ html.dark .itinerary-panel { background: rgba(24, 33, 30, 0.97); }
 }
 .popup-hero {
   height: 230px;
-  background: #CBD9D2;
+  background: transparent;
 }
 .popup-hero-wrap::after {
   height: 130px;
@@ -2511,7 +2511,7 @@ html.dark .poi-detail-header {
 }
 .poi-detail-hero {
   height: 300px;
-  background: #CBD9D2;
+  background: transparent;
 }
 .poi-detail-section {
   max-width: 880px;
@@ -3000,6 +3000,100 @@ header .tab.active {
     linear-gradient(135deg, rgba(133, 217, 232, 0.14), rgba(244, 197, 66, 0.1)),
     rgba(255, 248, 232, 0.06);
   border-color: rgba(255, 248, 232, 0.16);
+}
+
+.travel-pulse-trigger {
+  width: 100%;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, transform .12s;
+}
+
+.travel-pulse-trigger:hover,
+.travel-pulse-trigger.active {
+  border-color: rgba(244, 197, 66, 0.58);
+  background:
+    linear-gradient(135deg, rgba(133, 217, 232, 0.18), rgba(244, 197, 66, 0.14)),
+    rgba(255, 248, 232, 0.08);
+}
+
+.travel-pulse-trigger:focus-visible {
+  outline: 3px solid rgba(133, 217, 232, 0.45);
+  outline-offset: 2px;
+}
+
+.travel-pulse-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.travel-pulse-card {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 10px;
+  width: 100%;
+  min-height: 78px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface2);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .15s, background .15s, transform .12s;
+}
+
+.travel-pulse-card:hover,
+.travel-pulse-card.active {
+  border-color: var(--primary);
+  background: rgba(21, 136, 138, 0.12);
+  transform: translateY(-1px);
+}
+
+.travel-pulse-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 17px;
+}
+
+.travel-pulse-card-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 3px;
+}
+
+.travel-pulse-card-copy {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.travel-pulse-card-count {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.travel-pulse-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+html.qw-mobile .travel-pulse-grid {
+  grid-template-columns: 1fr;
 }
 
 .discovery-heading-icon {
@@ -3539,6 +3633,76 @@ main::before,
   box-shadow: var(--shadow-lg);
 }
 
+.sidebar .search-wrap {
+  isolation: isolate;
+}
+
+.sidebar .search-suggestions {
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  z-index: auto;
+  margin: -4px 0 14px;
+  max-height: min(260px, calc(100dvh - 260px));
+  overflow-y: auto;
+  background: #16322d;
+  border: 1px solid rgba(255, 248, 232, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
+}
+
+.sidebar .search-sug-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(84px, max-content);
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 9px 12px;
+  background: rgba(255, 248, 232, 0.045);
+}
+
+.sidebar .search-sug-item:hover {
+  background: rgba(255, 248, 232, 0.1);
+}
+
+.sidebar .search-sug-item > span:first-child,
+.sidebar .search-sug-item .sug-cat {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar .search-sug-item .sug-cat {
+  max-width: 126px;
+  margin-left: 0;
+  color: rgba(255, 248, 232, 0.68);
+  line-height: 1.25;
+  text-align: right;
+}
+
+.sidebar .search-sug-item .sug-match {
+  color: var(--glacier);
+}
+
+.discovery-row > button {
+  overflow: hidden;
+}
+
+.discovery-row .disco-label,
+.discovery-row .disco-sub {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.discovery-row .disco-sub {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .popup-inner,
 .gm-style .gm-style-iw-c {
   border-radius: 8px !important;
@@ -3581,8 +3745,10 @@ main::before,
 }
 
 .popup-inner {
-  max-height: min(560px, calc(100vh - 96px));
+  box-sizing: border-box;
+  max-height: min(560px, calc(100dvh - 96px));
   overflow-y: auto;
+  overscroll-behavior: contain;
   scrollbar-width: none;
 }
 
@@ -3593,9 +3759,7 @@ main::before,
 
 .popup-hero,
 .poi-detail-hero {
-  background:
-    linear-gradient(180deg, rgba(7, 27, 24, 0.06), rgba(7, 27, 24, 0.58)),
-    url("./assets/nz-scenic-crop.png") center / cover no-repeat;
+  background: transparent;
 }
 
 .poi-detail-overlay {
@@ -3990,35 +4154,73 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
   }
 
   html.qw-mobile .gm-style .gm-style-iw-c {
-    max-width: calc(100vw - 20px) !important;
+    max-width: calc(100vw - 16px) !important;
+    max-height: calc(100dvh - 84px) !important;
+    overflow: hidden !important;
   }
 
   html.qw-mobile .gm-style .gm-style-iw-d {
-    max-height: calc(100dvh - 112px) !important;
-    overflow: auto !important;
+    max-height: calc(100dvh - 84px) !important;
+    overflow: hidden !important;
   }
 
   html.qw-mobile .popup-inner {
-    width: min(360px, calc(100vw - 32px));
+    width: min(390px, calc(100vw - 18px));
+    max-height: calc(100dvh - 84px);
+    padding-bottom: max(6px, env(safe-area-inset-bottom, 0px));
   }
 
   html.qw-mobile .popup-hero {
-    height: clamp(280px, 42vh, 360px);
+    height: clamp(148px, 30vh, 220px);
   }
 
   html.qw-mobile .popup-audio-strip {
-    position: sticky;
-    top: 0;
-    z-index: 4;
-    padding: 12px;
+    padding: 9px 12px;
   }
 
   html.qw-mobile .popup-audio-btn {
-    min-height: 46px;
+    min-height: 36px;
     flex: 1;
     justify-content: center;
-    font-size: 14px;
-    border-radius: 12px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  html.qw-mobile .popup-audio-persona {
+    font-size: 11px;
+  }
+
+  html.qw-mobile .affiliate-strip {
+    padding: 6px 12px 5px;
+  }
+
+  html.qw-mobile .echo-popup-strip {
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  html.qw-mobile .echo-popup-open-btn {
+    flex-shrink: 0;
+    padding: 5px 10px;
+  }
+
+  html.qw-mobile .pop-actions-bottom {
+    padding: 8px 10px max(10px, env(safe-area-inset-bottom, 0px));
+    background: var(--surface);
+  }
+
+  html.qw-mobile .pop-icon-row {
+    gap: 5px;
+    align-items: center;
+  }
+
+  html.qw-mobile .pop-icon-row .btn-icon {
+    width: 38px;
+    height: 38px;
+    max-width: none;
+    aspect-ratio: auto;
+    border-radius: 9px;
+    font-size: 15px;
   }
 }
 </style>
@@ -4110,11 +4312,11 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
         <div class="search-suggestions" id="searchSuggestions"></div>
       </div>
 
-      <div class="discovery-heading">
+      <div class="discovery-heading travel-pulse-trigger" id="travelPulseTrigger" role="button" tabindex="0" aria-haspopup="dialog" aria-controls="travelPulseOverlay" onclick="openTravelPulse()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openTravelPulse();}">
         <div class="discovery-heading-icon">🧭</div>
         <div class="discovery-heading-text">
           <h3>Travel Pulse</h3>
-          <p>Pick what the day should feel like</p>
+          <p id="travelPulseSummary">Pick what the day should feel like</p>
         </div>
       </div>
       <div class="discovery-row">
@@ -4825,6 +5027,24 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
   </div>
 </div>
 
+<!-- ============ TRAVEL PULSE MODAL ============ -->
+<div class="settings-overlay" id="travelPulseOverlay" onclick="if(event.target===this)closeTravelPulse()">
+  <div class="settings-modal" style="width:560px;">
+    <div class="settings-header">
+      <div>
+        <h2>Travel Pulse</h2>
+        <p>Pick today's feel.</p>
+      </div>
+      <button class="settings-close" onclick="closeTravelPulse()">✕</button>
+    </div>
+    <div id="travelPulseChoices" class="travel-pulse-grid"></div>
+    <div class="travel-pulse-actions">
+      <button class="btn" style="flex:1;min-width:130px;" onclick="clearTravelPulse()">Clear pulse</button>
+      <button class="btn primary" style="flex:1;min-width:130px;" onclick="closeTravelPulse()">Done</button>
+    </div>
+  </div>
+</div>
+
 <!-- ============ SETTINGS MODAL ============ -->
 <div class="settings-overlay" id="settingsOverlay" onclick="if(event.target===this)closeSettings()">
   <div class="settings-modal">
@@ -4838,7 +5058,7 @@ html.qw-mobile .mobile-nav-btn.mob-active::before {
       <div class="settings-section">
         <h3><span>🌐</span> <span data-i18n="settings.language">Language</span></h3>
         <div class="settings-toggle-row" style="flex-direction:column;align-items:stretch;gap:6px;">
-          <p style="margin:0;font-size:12px;color:var(--muted);" data-i18n="settings.langDesc">Translate the app interface. POI names &amp; commentary stay in English; tap 🌐 on any place for instant translation.</p>
+          <p style="margin:0;font-size:12px;color:var(--muted);" data-i18n="settings.langDesc">Choose your preferred app language. Place content follows this setting where available, and translation will keep improving over time.</p>
           <select id="langSelect" onchange="setLang(this.value)"
             style="padding:9px 11px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;background:var(--surface);color:var(--text);font-weight:600;cursor:pointer;">
             <option value="en">🇬🇧 English</option>
@@ -5288,6 +5508,7 @@ const state = {
   itiStatsOpen: false,
   templatesOpen: false,
   journeyStart: null,
+  travelPulse: null,
   nearMeActive: false,
   userLat: null,
   userLng: null,
@@ -6021,11 +6242,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ Compare', 'tab.saved': '❤ Saved',
     'stay.title': 'Sleep Near the Story', 'stay.searchPh': 'Search stays, towns, regions...',
     'settings.title': 'Settings', 'settings.language': 'Language',
-    'settings.langDesc': 'Translate the app interface. POI names & commentary stay in English; tap 🌐 on any place for instant translation.',
+    'settings.langDesc': 'Choose your preferred app language. Place content follows this setting where available, and translation will keep improving over time.',
     'settings.audio': 'Audio Guide Voice', 'settings.appearance': 'Appearance',
     'settings.darkMode': 'Dark Mode', 'settings.darkModeDesc': 'Easier on the eyes at night',
     'settings.speed': 'Playback Speed',
-    'poi.translate': '🌐 Translate',
     'poi.add': '＋ Add to Itinerary', 'poi.added': '✓ In Itinerary',
     'poi.more': '📖 More', 'poi.save': 'Save', 'poi.drive': '🧭 Drive',
     'poi.similar': 'Similar', 'poi.share': '📤 Share', 'poi.compare': '⚖ Compare',
@@ -6087,11 +6307,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ Whakatauritea', 'tab.saved': '❤ Tiakina',
     'stay.title': 'Wāhi Noho', 'stay.searchPh': 'Rapua he wāhi noho...',
     'settings.title': 'Tautuhinga', 'settings.language': 'Reo',
-    'settings.langDesc': 'Whakamāoritia te atanga taupānga. Ka noho te reo Pākehā mō ngā ingoa wāhi me ngā kōrero.',
+    'settings.langDesc': 'Kōwhiria tō reo pai mō te taupānga. Ka whai ngā kōrero wāhi i tēnei tautuhinga ina wātea, ā, ka pai haere tonu ngā whakamāoritanga.',
     'settings.audio': 'Reo Aratohu Ororongo', 'settings.appearance': 'Āhua',
     'settings.darkMode': 'Aratau Pōuri', 'settings.darkModeDesc': 'Māmā ake ki te kanohi i te pō',
     'settings.speed': 'Tere Whakatangi',
-    'poi.translate': '🌐 Whakamāori',
     'poi.add': '＋ Tāpiri ki te Haerenga', 'poi.added': '✓ Kei roto',
     'poi.more': '📖 Atu anō', 'poi.save': 'Tiaki', 'poi.drive': '🧭 Taraiwa',
     'poi.similar': 'Ōrite', 'poi.share': '📤 Tiri', 'poi.compare': '⚖ Whakatauritea',
@@ -6153,11 +6372,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ 比较', 'tab.saved': '❤ 已保存',
     'stay.title': '住宿推荐', 'stay.searchPh': '搜索住宿...',
     'settings.title': '设置', 'settings.language': '语言',
-    'settings.langDesc': '翻译应用界面。景点名称和讲解保持英文;点击任何地点的 🌐 可即时翻译。',
+    'settings.langDesc': '选择你偏好的应用语言。景点内容会在可用时跟随此设置，翻译也会持续改进。',
     'settings.audio': '语音导览', 'settings.appearance': '外观',
     'settings.darkMode': '深色模式', 'settings.darkModeDesc': '夜间使用更护眼',
     'settings.speed': '播放速度',
-    'poi.translate': '🌐 翻译',
     'poi.add': '＋ 添加到行程', 'poi.added': '✓ 已在行程',
     'poi.more': '📖 更多', 'poi.save': '保存', 'poi.drive': '🧭 导航',
     'poi.similar': '相似', 'poi.share': '📤 分享', 'poi.compare': '⚖ 比较',
@@ -6219,11 +6437,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ 比較', 'tab.saved': '❤ 保存済み',
     'stay.title': '宿泊先', 'stay.searchPh': '宿泊施設を検索...',
     'settings.title': '設定', 'settings.language': '言語',
-    'settings.langDesc': 'アプリのUIを翻訳します。スポット名と解説は英語のまま;🌐をタップで即時翻訳できます。',
+    'settings.langDesc': 'アプリで使う言語を選んでください。スポット内容は対応している範囲でこの設定に従い、翻訳は今後さらに改善されます。',
     'settings.audio': '音声ガイド', 'settings.appearance': '外観',
     'settings.darkMode': 'ダークモード', 'settings.darkModeDesc': '夜間でも目に優しい',
     'settings.speed': '再生速度',
-    'poi.translate': '🌐 翻訳',
     'poi.add': '＋ プランに追加', 'poi.added': '✓ プラン済み',
     'poi.more': '📖 詳細', 'poi.save': '保存', 'poi.drive': '🧭 ナビ',
     'poi.similar': '類似', 'poi.share': '📤 共有', 'poi.compare': '⚖ 比較',
@@ -6285,11 +6502,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ 비교', 'tab.saved': '❤ 저장됨',
     'stay.title': '숙소', 'stay.searchPh': '숙소 검색...',
     'settings.title': '설정', 'settings.language': '언어',
-    'settings.langDesc': '앱 인터페이스를 번역합니다. 장소 이름과 해설은 영어로 유지됩니다; 🌐을 탭하면 즉시 번역됩니다.',
+    'settings.langDesc': '앱에서 사용할 언어를 선택하세요. 장소 콘텐츠는 가능한 경우 이 설정을 따르며, 번역은 계속 개선될 예정입니다.',
     'settings.audio': '오디오 가이드 음성', 'settings.appearance': '모양',
     'settings.darkMode': '다크 모드', 'settings.darkModeDesc': '야간에 눈에 편안합니다',
     'settings.speed': '재생 속도',
-    'poi.translate': '🌐 번역',
     'poi.add': '＋ 일정에 추가', 'poi.added': '✓ 일정 포함',
     'poi.more': '📖 더보기', 'poi.save': '저장', 'poi.drive': '🧭 길찾기',
     'poi.similar': '유사', 'poi.share': '📤 공유', 'poi.compare': '⚖ 비교',
@@ -6351,11 +6567,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ Vergleich', 'tab.saved': '❤ Gespeichert',
     'stay.title': 'Unterkünfte', 'stay.searchPh': 'Unterkünfte suchen...',
     'settings.title': 'Einstellungen', 'settings.language': 'Sprache',
-    'settings.langDesc': 'App-Oberfläche übersetzen. Ortsnamen & Beschreibungen bleiben Englisch; 🌐 für Sofort-Übersetzung tippen.',
+    'settings.langDesc': 'Wähle deine bevorzugte App-Sprache. Ortsinhalte folgen dieser Einstellung, soweit verfügbar, und Übersetzungen werden weiter verbessert.',
     'settings.audio': 'Audio-Guide-Stimme', 'settings.appearance': 'Erscheinungsbild',
     'settings.darkMode': 'Dunkler Modus', 'settings.darkModeDesc': 'Augenschonend bei Nacht',
     'settings.speed': 'Wiedergabegeschwindigkeit',
-    'poi.translate': '🌐 Übersetzen',
     'poi.add': '＋ Zur Reise', 'poi.added': '✓ In Reise',
     'poi.more': '📖 Mehr', 'poi.save': 'Speichern', 'poi.drive': '🧭 Route',
     'poi.similar': 'Ähnlich', 'poi.share': '📤 Teilen', 'poi.compare': '⚖ Vergleichen',
@@ -6417,11 +6632,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ Comparer', 'tab.saved': '❤ Favoris',
     'stay.title': 'Où séjourner', 'stay.searchPh': 'Rechercher un hébergement...',
     'settings.title': 'Paramètres', 'settings.language': 'Langue',
-    'settings.langDesc': "Traduire l'interface. Les noms de lieux & commentaires restent en anglais; touchez 🌐 pour traduction instantanée.",
+    'settings.langDesc': "Choisissez la langue de l'application. Le contenu des lieux suivra ce réglage lorsque disponible, et les traductions continueront de s'améliorer.",
     'settings.audio': "Voix de l'audio-guide", 'settings.appearance': 'Apparence',
     'settings.darkMode': 'Mode sombre', 'settings.darkModeDesc': 'Plus reposant pour les yeux la nuit',
     'settings.speed': 'Vitesse de lecture',
-    'poi.translate': '🌐 Traduire',
     'poi.add': '＋ Ajouter', 'poi.added': '✓ Ajouté',
     'poi.more': '📖 Plus', 'poi.save': 'Sauver', 'poi.drive': '🧭 Itinéraire',
     'poi.similar': 'Similaire', 'poi.share': '📤 Partager', 'poi.compare': '⚖ Comparer',
@@ -6483,11 +6697,10 @@ const LANG_DICT = {
     'tab.compare': '⚖ Comparar', 'tab.saved': '❤ Guardados',
     'stay.title': 'Dónde alojarse', 'stay.searchPh': 'Buscar alojamiento...',
     'settings.title': 'Ajustes', 'settings.language': 'Idioma',
-    'settings.langDesc': 'Traduce la interfaz. Los nombres de lugares y comentarios permanecen en inglés; toca 🌐 para traducción instantánea.',
+    'settings.langDesc': 'Elige el idioma de la app. El contenido de los lugares seguirá este ajuste cuando esté disponible, y la traducción seguirá mejorando.',
     'settings.audio': 'Voz del audioguía', 'settings.appearance': 'Apariencia',
     'settings.darkMode': 'Modo oscuro', 'settings.darkModeDesc': 'Más suave para los ojos de noche',
     'settings.speed': 'Velocidad de reproducción',
-    'poi.translate': '🌐 Traducir',
     'poi.add': '＋ Añadir', 'poi.added': '✓ Añadido',
     'poi.more': '📖 Más', 'poi.save': 'Guardar', 'poi.drive': '🧭 Ruta',
     'poi.similar': 'Similar', 'poi.share': '📤 Compartir', 'poi.compare': '⚖ Comparar',
@@ -6579,14 +6792,6 @@ function initLang() {
     const sel = document.getElementById('langSelect');
     if (sel) sel.value = currentLang;
   });
-}
-// Translate a POI's text via Google Translate (opens in new tab — no API key needed)
-function translatePoi(id) {
-  const a = ATTRACTIONS.find(x => x.id === id);
-  if (!a) return;
-  const text = `${a.name}\n\n${a.short || ''}\n\n${a.commentary || ''}`.trim();
-  const url = `https://translate.google.com/?sl=en&tl=${currentLang}&op=translate&text=${encodeURIComponent(text)}`;
-  window.open(url, '_blank', 'noopener');
 }
 // Run init now (DOM may not be parsed yet for all elements — applyLang re-runs after data load anyway)
 try { initLang(); } catch(e) { /* DOM not ready */ }
@@ -6849,11 +7054,13 @@ function clearAllFilters() {
   _maxDuration = 0;
   _sortMode = 'default';
   _activeTag = '';
+  state.travelPulse = null;
   state.search = '';
   const searchEl = document.getElementById('search');
   if (searchEl) searchEl.value = '';
   CATEGORIES.forEach(c => state.activeCategories.add(c.id));
   state.activeRegion = null;
+  updateTravelPulseHeader();
   renderRatingFilter();
   renderDurationFilter();
   renderSortChips();
@@ -6861,6 +7068,210 @@ function clearAllFilters() {
   renderCategoryList?.();
   renderRegionList?.();
   renderAttractions();
+}
+
+// ============ TRAVEL PULSE ============
+const TRAVEL_PULSES = [
+  {
+    id: 'scenery',
+    icon: '\u26F0\uFE0F',
+    label: 'Big scenery',
+    line: 'Viewpoints, waterfalls, fjords',
+    categoryHints: ['nature', 'scenic', 'walk', 'hike', 'adventure', 'water', 'park'],
+    tagHints: ['bucket-list', 'iconic', 'summit', 'glacier', 'fjord', 'waterfall', 'scenic-drive'],
+    minRating: 4,
+    maxDuration: 0,
+    sort: 'rating',
+  },
+  {
+    id: 'easy',
+    icon: '\u2600\uFE0F',
+    label: 'Easy day',
+    line: 'Short, gentle, low-friction stops',
+    categoryHints: ['beach', 'park', 'garden', 'hot', 'museum', 'food'],
+    tagHints: ['family', 'free', 'beach', 'hot-pools'],
+    minRating: 0,
+    maxDuration: 2,
+    sort: 'duration',
+  },
+  {
+    id: 'culture',
+    icon: '\u{1F3DB}\uFE0F',
+    label: 'Culture + history',
+    line: 'Heritage, local stories, museums',
+    categoryHints: ['culture', 'maori', 'history', 'heritage', 'museum'],
+    tagHints: ['maori', 'history'],
+    minRating: 0,
+    maxDuration: 3,
+    sort: 'rating',
+  },
+  {
+    id: 'food',
+    icon: '\u{1F377}',
+    label: 'Food + wine',
+    line: 'Cellar doors, markets, flavours',
+    categoryHints: ['food', 'wine', 'brewery', 'market'],
+    tagHints: ['wine', 'food'],
+    minRating: 0,
+    maxDuration: 3,
+    sort: 'rating',
+  },
+  {
+    id: 'active',
+    icon: '\u{1F97E}',
+    label: 'Wild + active',
+    line: 'Hikes, caves, wildlife, water',
+    categoryHints: ['adventure', 'wildlife', 'walk', 'hike', 'water', 'nature'],
+    tagHints: ['hike', 'wildlife', 'cave', 'summit'],
+    minRating: 0,
+    maxDuration: 8,
+    sort: 'rating',
+  },
+  {
+    id: 'rain',
+    icon: '\u{1F327}\uFE0F',
+    label: 'Rain-friendly',
+    line: 'Caves, hot pools, indoor stories',
+    categoryHints: ['museum', 'culture', 'history', 'cave', 'thermal', 'food'],
+    tagHints: ['cave', 'hot-pools', 'history', 'family'],
+    minRating: 0,
+    maxDuration: 3,
+    sort: 'rating',
+  },
+];
+
+function normPulseText(s) {
+  return String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function getTravelPulseById(id) {
+  return TRAVEL_PULSES.find(p => p.id === id) || null;
+}
+
+function travelPulseCategoryIds(pulse) {
+  if (!pulse || !CATEGORIES?.length) return [];
+  const hints = (pulse.categoryHints || []).map(normPulseText);
+  return CATEGORIES
+    .filter(c => {
+      const label = normPulseText(`${c.id || ''} ${c.label || ''} ${c.name || ''}`);
+      return hints.some(h => label.includes(h));
+    })
+    .map(c => c.id);
+}
+
+function matchesTravelPulse(a, pulse) {
+  if (!pulse) return true;
+  const catIds = travelPulseCategoryIds(pulse);
+  const catMatch = catIds.includes(a.category);
+  const tagText = (a.tags || []).map(normPulseText);
+  const tagMatch = (pulse.tagHints || []).some(t => tagText.includes(normPulseText(t)));
+  const haystack = normPulseText(`${a.name || ''} ${a.short || ''} ${a.category || ''} ${catLabel(a.category) || ''} ${(a.tags || []).join(' ')}`);
+  const textMatch = [...(pulse.categoryHints || []), ...(pulse.tagHints || [])].some(h => haystack.includes(normPulseText(h)));
+  const hasMoodSignals = catIds.length || (pulse.tagHints || []).length || (pulse.categoryHints || []).length;
+  if (hasMoodSignals && !(catMatch || tagMatch || textMatch)) return false;
+  if (pulse.minRating > 0 && (a.reviews?.rating || 0) < pulse.minRating) return false;
+  if (pulse.maxDuration > 0 && (a.duration_hours || 0) > pulse.maxDuration) return false;
+  return true;
+}
+
+function travelPulseMatchCount(pulse) {
+  if (!ATTRACTIONS?.length) return 0;
+  return ATTRACTIONS.filter(a => matchesTravelPulse(a, pulse)).length;
+}
+
+function renderTravelPulseChoices() {
+  const el = document.getElementById('travelPulseChoices');
+  if (!el) return;
+  el.innerHTML = TRAVEL_PULSES.map(p => {
+    const active = state.travelPulse === p.id;
+    const count = travelPulseMatchCount(p);
+    return `<button type="button" class="travel-pulse-card${active ? ' active' : ''}" onclick="applyTravelPulse('${p.id}')">
+      <span class="travel-pulse-card-icon">${p.icon}</span>
+      <span>
+        <span class="travel-pulse-card-title">${p.label}</span>
+        <span class="travel-pulse-card-copy">${p.line}</span>
+        <span class="travel-pulse-card-count">${count.toLocaleString()} places</span>
+      </span>
+    </button>`;
+  }).join('');
+}
+
+function updateTravelPulseHeader() {
+  const pulse = getTravelPulseById(state.travelPulse);
+  const summary = document.getElementById('travelPulseSummary');
+  const trigger = document.getElementById('travelPulseTrigger');
+  if (summary) summary.textContent = pulse ? `Pulse: ${pulse.label}` : 'Pick what the day should feel like';
+  if (trigger) trigger.classList.toggle('active', !!pulse);
+}
+
+function openTravelPulse() {
+  if (!ATTRACTIONS?.length) { showToast('Still loading...'); return; }
+  renderTravelPulseChoices();
+  document.getElementById('travelPulseOverlay')?.classList.add('open');
+}
+
+function closeTravelPulse() {
+  document.getElementById('travelPulseOverlay')?.classList.remove('open');
+}
+
+function focusTravelPulseResults(matches) {
+  if (!map || !matches?.length || !window.google?.maps) return;
+  if (matches.length === 1) {
+    map.panTo({ lat: matches[0].lat, lng: matches[0].lng });
+    map.setZoom(13);
+    return;
+  }
+  const bounds = new google.maps.LatLngBounds();
+  matches.slice(0, 60).forEach(a => bounds.extend({ lat: a.lat, lng: a.lng }));
+  map.fitBounds(bounds, { top: 60, bottom: 60, left: 60, right: 60 });
+}
+
+function applyTravelPulse(id) {
+  const pulse = getTravelPulseById(id);
+  if (!pulse) return;
+  state.travelPulse = id;
+  state.search = '';
+  const searchEl = document.getElementById('search');
+  if (searchEl) searchEl.value = '';
+  state.activeCategories = new Set(CATEGORIES.map(c => c.id));
+  _activeTag = '';
+  _minRating = pulse.minRating || 0;
+  _maxDuration = pulse.maxDuration || 0;
+  _sortMode = pulse.sort || 'default';
+
+  updateTravelPulseHeader();
+  renderRatingFilter();
+  renderDurationFilter();
+  renderSortChips();
+  renderTagFilter();
+  renderCategoryList?.();
+  renderRegionList?.();
+  renderAttractions();
+  renderTravelPulseChoices();
+
+  const matches = ATTRACTIONS.filter(a => {
+    if (state.activeRegion && a.region !== state.activeRegion) return false;
+    return matchesTravelPulse(a, pulse);
+  });
+  focusTravelPulseResults(matches);
+  closeTravelPulse();
+  showToast(`${pulse.label}: ${matches.length.toLocaleString()} place${matches.length === 1 ? '' : 's'}`);
+}
+
+function clearTravelPulse() {
+  state.travelPulse = null;
+  _minRating = 0;
+  _maxDuration = 0;
+  _sortMode = 'default';
+  _activeTag = '';
+  updateTravelPulseHeader();
+  renderRatingFilter();
+  renderDurationFilter();
+  renderSortChips();
+  renderTagFilter();
+  renderAttractions();
+  renderTravelPulseChoices();
+  showToast('Travel Pulse cleared');
 }
 
 // ============ SORT CONTROL ============
@@ -10604,7 +11015,6 @@ function openPoiInfoWindow(a, marker) {
           <button class="btn-icon" onclick="showInAppRoute(ATTRACTIONS.find(x=>x.id==='${a.id}'))" title="Drive here" aria-label="Drive">🚗</button>
           <button class="btn-icon" onclick="showMoreLikeThis(ATTRACTIONS.find(x=>x.id==='${a.id}'))" title="Find similar nearby" aria-label="Similar">🔎</button>
           <button class="btn-icon" onclick="sharePoi('${a.id}')" title="Share" aria-label="Share">↗</button>
-          <button class="btn-icon" onclick="translatePoi('${a.id}')" title="Translate" aria-label="Translate">🌐</button>
           <button class="btn-icon ${isInCompare(a.id) ? 'is-on' : ''}" onclick="openCompareSheet('${a.id}')" id="popupCompareBtn_${a.id}" title="${isInCompare(a.id) ? 'In Compare' : 'Compare'}" aria-label="Compare">${isInCompare(a.id) ? '✓' : '⚖'}</button>
           <button class="btn-icon" onclick="(function(){navigator.clipboard.writeText('${a.lat.toFixed(5)},${a.lng.toFixed(5)}');showToast('📋 Coords copied');})()" title="Copy coordinates" aria-label="Copy coordinates">📋</button>
         </div>
@@ -10682,8 +11092,10 @@ function renderAttractions() {
   const newMarkers = [];
 
   // Build filtered list — sort by distance from user if Near Me is active
+  const activePulse = getTravelPulseById(state.travelPulse);
   let filtered = ATTRACTIONS.filter(a => {
     if (!state.activeCategories.has(a.category)) return false;
+    if (activePulse && !matchesTravelPulse(a, activePulse)) return false;
     if (_minRating > 0 && (a.reviews?.rating || 0) < _minRating) return false;
     if (_maxDuration > 0 && (a.duration_hours || 0) > _maxDuration) return false;
     if (_activeTag && !(a.tags || []).includes(_activeTag)) return false;
@@ -10775,6 +11187,7 @@ function renderAttractions() {
     if (_maxDuration > 0) activeCount++;
     if (_sortMode !== 'default') activeCount++;
     if (_activeTag) activeCount++;
+    if (state.travelPulse) activeCount++;
     if (state.search?.trim()) activeCount++;
     if (state.activeRegion) activeCount++;
     if (CATEGORIES?.length && state.activeCategories.size < CATEGORIES.length) activeCount++;
@@ -10790,6 +11203,7 @@ function renderAttractions() {
     if (_maxDuration > 0) fc++;
     if (_sortMode !== 'default') fc++;
     if (_activeTag) fc++;
+    if (state.travelPulse) fc++;
     fBadge.style.display = fc > 0 ? 'inline-block' : 'none';
     fBadge.textContent = String(fc);
     fToggle.classList.toggle('active', fc > 0);

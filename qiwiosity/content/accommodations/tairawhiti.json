@@ -8,7 +8,7 @@
       "lng": 178.2
     }
   },
-  "count": 20,
+  "count": 25,
   "accommodations": [
     {
       "id": "tairawhiti-portside-hotel-gisborne",
@@ -229,6 +229,61 @@
       "price_nzd_per_night": 620,
       "rating": 4.5,
       "short": "East Coast lodge with reef-walking stingray tours."
+    },
+    {
+      "id": "tairawhiti-matawhero-wines-accommodation",
+      "name": "Matawhero Wines Accommodation",
+      "region": "tairawhiti",
+      "lat": -38.660123,
+      "lng": 177.9354377,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Self-contained vineyard stay among Gisborne vines, paired naturally with the Matawhero cellar door."
+    },
+    {
+      "id": "tairawhiti-mahia-beach-motel-holiday-park",
+      "name": "Mahia Beach Motel & Holiday Park",
+      "region": "tairawhiti",
+      "lat": -39.078,
+      "lng": 177.873,
+      "type": "holiday-park",
+      "price_nzd_per_night": 130,
+      "rating": 4.4,
+      "short": "Beachside Mahia accommodation with cabins and campsites near peninsula surf and coastal walks."
+    },
+    {
+      "id": "tairawhiti-ocean-beach-motor-lodge",
+      "name": "Ocean Beach Motor Lodge",
+      "region": "tairawhiti",
+      "lat": -38.681,
+      "lng": 178.082,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.4,
+      "short": "Wainui Beach motel accommodation east of Gisborne, close to surf, coastal walks and the city."
+    },
+    {
+      "id": "tairawhiti-eastland-pacific-motel",
+      "name": "Eastland Pacific Motel",
+      "region": "tairawhiti",
+      "lat": -38.011824,
+      "lng": 177.287383,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.2,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Tairāwhiti."
+    },
+    {
+      "id": "tairawhiti-karirangi-holiday-park",
+      "name": "Karirangi Holiday Park",
+      "region": "tairawhiti",
+      "lat": -37.680712,
+      "lng": 177.796468,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.2,
+      "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Tairāwhiti."
     }
   ]
 }

@@ -2038,7 +2038,7 @@
       "name": "Stewart Island — Wild Kiwi Encounter",
       "region": "southland",
       "lat": -46.8833,
-      "lng": 168.0,
+      "lng": 168,
       "category": "wildlife",
       "tags": [
         "kiwi",
@@ -2330,7 +2330,7 @@
       "name": "Doubtful Sound — Fiordland Wildlife",
       "region": "southland",
       "lat": -45.3333,
-      "lng": 167.0,
+      "lng": 167,
       "category": "wildlife",
       "tags": [
         "dolphins",
@@ -2370,7 +2370,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Wonderful community conservation. Small-scale and authentic. Contact the group for visiting advice."
       }
     },
@@ -2459,7 +2459,7 @@
         "sea-lions"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Historic lighthouse marking NZ's worst civil maritime disaster site, now home to sea lion colonies.",
       "commentary": "Waipapa Point Lighthouse stands at the southeastern tip of the South Island's Catlins coast, built in response to New Zealand's worst civil maritime disaster — the wreck of the SS Tararua in 1881, which claimed 131 lives on the treacherous reef offshore. The white wooden lighthouse, completed in 1884, was the last wooden lighthouse built in New Zealand and is now an automated navigation aid. The setting is dramatically wild and windswept, with crashing waves, rocky reefs, and sweeping views along the Catlins coastline. The area is home to a breeding colony of New Zealand sea lions — these magnificent marine mammals can often be seen hauled out on the beach or in the dunes near the lighthouse. Keep a safe distance (at least 10 metres) as sea lions can be aggressive. Interpretive panels tell the story of the Tararua disaster. The lighthouse is accessed via a short walk from the car park. Combine with the wider Catlins coastal drive for a full day exploring this remote and beautiful coastline.",
       "content_status": "draft",
@@ -2528,7 +2528,7 @@
         "remote"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Wilderness jet boat adventure through remote Fiordland river valleys, deep into untouched native bush.",
       "commentary": "Wairaurahiri Jet offers one of New Zealand's most remote and spectacular jet boat experiences, operating on the Wairaurahiri River in the wilderness heartland of western Southland, on the edge of Fiordland National Park. The jet boat journey takes passengers deep into pristine native bush along a narrow, winding river that would be inaccessible by any other means. The dense podocarp forest, crystal-clear water, and absolute absence of development create a genuine wilderness experience. The operation also provides access to the South Coast Track and the remote settlement of Port Craig, linking to historic tramping routes. The Wairaurahiri is considerably more remote and intimate than the commercial jet boat operations in Queenstown — this is about wilderness immersion rather than pure speed thrills, though there is no shortage of exciting river navigation. Based near Tuatapere, bookings are essential as trips depend on river conditions and group numbers. Allow a full half-day. This is Southland adventure at its most authentic.",
       "content_status": "draft",
@@ -2574,7 +2574,7 @@
         "coastal"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "180-million-year-old petrified forest on the Catlins coast, plus yellow-eyed penguins at dusk.",
       "commentary": "Curio Bay on the southern Catlins coast is a site of extraordinary natural significance, combining a 180-million-year-old Jurassic fossil forest with a breeding colony of hoiho (yellow-eyed penguins). At low tide, the petrified stumps and fallen logs of an ancient forest are revealed on the wave-cut platform, dating to a time when New Zealand was part of the Gondwana supercontinent. Information panels explain the geology and identify tree species. In the adjacent Porpoise Bay, yellow-eyed penguins come ashore at dusk to reach their nesting sites, and a viewing hide allows observation without disturbance. Hector's dolphins are also frequently seen in the bay. The site is free to visit and managed by DOC. The Catlins is one of New Zealand's least-visited coastal regions, with a wild, untamed character. Curio Bay has basic camping facilities and a surf-lifesaving patrol in summer.",
       "content_status": "draft",
@@ -2597,7 +2597,7 @@
         "tunnel"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "One of the world's great scenic drives through Fiordland, from Te Anau to Milford Sound via the Homer Tunnel.",
       "commentary": "The Milford Road (SH94) from Te Anau to Milford Sound is consistently rated among the world's most beautiful drives. The 119km journey takes you through a progression of dramatic landscapes: from pastoral farmland through ancient beech forest along the Eglinton Valley, past the mirror-calm surfaces of the Mirror Lakes, through the avalanche-prone Upper Hollyford valley, and finally through the remarkable Homer Tunnel, bored through solid granite at 945 metres elevation. Emerging from the tunnel, the road descends steeply into the Cleddau Valley with views of towering peaks and waterfalls. Essential stops include Mirror Lakes, The Chasm (a short walk to spectacular waterfalls), and the Pop's Viewpoint overlooking Lake Te Anau. Allow at least two hours each way without stops, more with walks. The road can close in winter due to avalanche risk, and chains may be required. Check conditions with Milford Road Alliance before departing.",
       "content_status": "draft",
@@ -2620,7 +2620,7 @@
         "iconic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Seafood trail in NZ's southernmost town, famous for Bluff oysters, paua, and the annual Bluff Oyster Festival.",
       "commentary": "Bluff, at the southern tip of the South Island, is synonymous with the Bluff oyster (Tiostrea chilensis), widely regarded as the finest oyster in the world and harvested from the wild beds of Foveaux Strait. The oyster season runs from March to August, during which time fresh Bluff oysters are available at local venues and the famous Bluff Oyster & Food Festival, held annually in May, draws thousands of visitors. Beyond oysters, Bluff is a seafood destination year-round, with paua (abalone), blue cod, and crayfish featuring at local establishments. The town's Oyster World museum at the port tells the story of the oyster industry and Bluff's maritime heritage. Stirling Point, marked by the famous signpost showing distances to world capitals, is a must-photograph. The drive from Invercargill takes about 25 minutes along SH1. Even outside oyster season, Bluff's position at the end of the highway and its raw, windswept character make it a compelling destination.",
       "content_status": "draft",
@@ -2666,7 +2666,7 @@
         "remote"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Ferry crossing to New Zealand's third island with wild kiwi, pristine bush, and the remote Oban village.",
       "commentary": "The one-hour ferry crossing from Bluff to Stewart Island (Rakiura) delivers you to one of New Zealand's last great wilderness frontiers. Oban, the island's only settlement with around 400 permanent residents, is the gateway to Rakiura National Park, which covers 85 percent of the island. Stewart Island is one of the few places in New Zealand where kiwi can be seen in the wild, foraging on beaches at dusk. The Rakiura Track, one of New Zealand's Great Walks, is a three-day circuit through coastal bush and beaches. Short walks from Oban include the Ackers Point lighthouse track and the Observation Rock viewpoint. The island's remoteness means dark skies free from light pollution, and the aurora australis (Southern Lights) is occasionally visible. The ferry, operated by Real Journeys, runs several times daily from Bluff and can be rough in Foveaux Strait swells. Day trips are possible but an overnight stay is recommended. The island's pristine environment and relaxed pace feel like stepping back in time.",
       "content_status": "draft",
@@ -2689,7 +2689,7 @@
         "cruise"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Remote wilderness fiord cruise through Doubtful Sound with bottlenose dolphins, penguins, and profound silence.",
       "commentary": "Doubtful Sound (Patea) is ten times longer and three times wider than Milford Sound, yet receives a fraction of the visitors, creating a truly wilderness fiord experience. Access requires a boat across Lake Manapouri and a bus over Wilmot Pass, adding to the sense of remoteness. The fiord is home to a resident pod of around 60 bottlenose dolphins, frequently encountered during cruises. Fiordland crested penguins nest in the outer reaches, and fur seals bask on rocky islets. The silence is a defining feature, with guides cutting engines to allow passengers to experience the profound quiet of this remote wilderness. The fiord's three arms create a complex waterway surrounded by steep, bush-clad mountains rising to over 1,000 metres. Overnight cruises aboard small vessels offer the most immersive experience, with kayaking and tender boat exploration of side arms. Day cruises from Manapouri take around 8 hours including transfers. The remoteness and quiet grandeur make Doubtful Sound a more powerful experience than its famous neighbour for many visitors.",
       "content_status": "draft",
@@ -2932,7 +2932,7 @@
       "commentary": "The tuatara is not a lizard but the sole surviving member of an order that thrived alongside the dinosaurs over 200 million years ago. Southland Museum's tuatara programme has been one of the longest-running captive breeding efforts in New Zealand, producing offspring that have been released to predator-free islands. Visitors can observe these remarkable creatures up close — their slow deliberate movements and ancient features make them utterly unlike any other living reptile. Henry, the oldest resident, is estimated to be well over 120 years old and became a father for the first time at 111. The display provides excellent interpretation of tuatara biology and the conservation challenges they face. Check current opening arrangements before visiting.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A rare chance to see one of the planet's most ancient creatures. Henry the tuatara is a celebrity. Check opening hours as availability can vary."
       }
     },
@@ -3157,7 +3157,7 @@
       "name": "Doubtful Sound / Patea",
       "region": "southland",
       "lat": -45.3167,
-      "lng": 167.0,
+      "lng": 167,
       "category": "nature",
       "tags": [
         "fiord",
@@ -3791,7 +3791,7 @@
       "name": "Doubtful Sound / Patea",
       "region": "southland",
       "lat": -45.35,
-      "lng": 167.0,
+      "lng": 167,
       "category": "nature",
       "tags": [
         "fiord",
@@ -3837,7 +3837,7 @@
       "name": "Lake Marian Track",
       "region": "southland",
       "lat": -44.89,
-      "lng": 168.0,
+      "lng": 168,
       "category": "nature",
       "tags": [
         "lake",
@@ -3883,7 +3883,7 @@
       "name": "Slope Point — Southernmost Mainland Point",
       "region": "southland",
       "lat": -46.67,
-      "lng": 169.0,
+      "lng": 169,
       "category": "nature",
       "tags": [
         "southern",
@@ -3897,7 +3897,7 @@
       "commentary": "Slope Point is the southernmost point of the South Island of New Zealand, marked by a signpost and the famous wind-sculpted trees bent almost horizontal by the relentless Antarctic winds. A 20-minute walk across farmland from the car park reaches the headland, where views extend south toward the sub-Antarctic. The wind here can be ferocious — the permanently bent macrocarpa trees are testament to its power. There's something compelling about standing at geographical extremes, and Slope Point delivers a genuine sense of remoteness and exposure to the elements. The surrounding Catlins coastline is dramatic and sparsely populated. The best light for photography is late afternoon.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A compelling geographical extreme with dramatic wind-bent trees. The sense of remoteness is powerful. Quick visit but very memorable."
       }
     },
@@ -4063,7 +4063,7 @@
       "commentary": "Switzers Museum in the small eastern Southland town of Waikaia is one of those volunteer-run gems that rewards the curious traveller. The collection spans the region's gold-mining heritage, farming history and community life, with artefacts ranging from mining equipment to household objects that tell the story of pioneer life in inland Southland. The museum is named after the Swiss settlers who were among the first to mine gold in the area. Volunteers are usually on hand to add stories that no label could capture. It's a genuine slice of provincial New Zealand heritage.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A charming small-town museum with passionate volunteers. The gold-mining exhibits are interesting. Limited opening hours — check ahead. Worth combining with the drive through rural Southland."
       }
     },
@@ -4201,7 +4201,7 @@
         "quirky"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Whimsical fishing hamlet nestled among giant granite boulders on the southern coast.",
       "commentary": "Cosy Nook is a tiny collection of colourful fishing shacks tucked between enormous granite boulders on Southland's wild coast. The surreal landscape of house-sized rocks and weathered huts feels otherworldly — one of New Zealand's most photogenic hidden gems.",
       "content_status": "draft",
@@ -4224,7 +4224,7 @@
         "rare birds"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Predator-free island sanctuary with some of New Zealand's rarest birds.",
       "commentary": "Ulva Island is a pristine predator-free bird sanctuary in Paterson Inlet, Stewart Island. The short water taxi from Golden Bay delivers you to an island where South Island saddleback, yellowhead, and Stewart Island robin forage fearlessly at your feet — world-class birdwatching.",
       "content_status": "draft",
@@ -4247,7 +4247,7 @@
         "beachcombing"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Beach renowned for semi-precious stones, fossils, and petrified wood.",
       "commentary": "Gemstone Beach near Ōrepuki is famous for its semi-precious stones washed down from the mountains over millennia. Beachcombers find jasper, garnet, quartz, and occasionally petrified wood among the pebbles — a natural treasure hunt on a wild southern coastline.",
       "content_status": "draft",
@@ -4255,6 +4255,591 @@
         "rating": 4.4,
         "summary": "Wonderful beachcombing — we found several beautiful stones."
       }
+    },
+    {
+      "id": "southland-mores-scenic-reserve",
+      "name": "Mores Scenic Reserve",
+      "region": "southland",
+      "lat": -46.36446,
+      "lng": 167.9892159,
+      "category": "nature",
+      "tags": [
+        "lookout",
+        "riverton",
+        "coastal-forest",
+        "short-walk",
+        "southland"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A Riverton/Aparima hill reserve with coastal forest loops and lookouts over estuary, coast and distant ranges.",
+      "commentary": "Mores Scenic Reserve is a Southland stop with a lot of outlook for a modest walk. Rising above Riverton / Aparima, the reserve has short tracks through coastal forest to viewpoints over the Jacobs River Estuary, Foveaux Strait and the layered inland ranges. It works well as a leg-stretch on the Southern Scenic Route because it is close to town yet gives a proper sense of the coast's shape: river mouth, beaches, harbour, headlands and weather. Take it slowly after rain, when forest steps and roots can be slick, and leave time afterward for Riverton's small-town galleries, cafes and shoreline.",
+      "audio_story": "Mores Scenic Reserve is a Southland stop with a lot of outlook for a modest walk. Rising above Riverton / Aparima, the reserve has short tracks through coastal forest to viewpoints over the Jacobs River Estuary, Foveaux Strait and the layered inland ranges. It works well as a leg-stretch on the Southern Scenic Route because it is close to town yet gives a proper sense of the coast's shape: river mouth, beaches, harbour, headlands and weather. Take it slowly after rain, when forest steps and roots can be slick, and leave time afterward for Riverton's small-town galleries, cafes and shoreline.",
+      "suggested_voice_tone": "fresh, coastal, grounded",
+      "sources_to_check": [
+        "Great South: https://southlandnz.com/riverton/mores-scenic-reserve"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "Visitors like the quick climb, coastal forest and generous views over Riverton and the estuary; muddy footing can follow wet weather."
+      }
+    },
+    {
+      "id": "southland-lake-hauroko-lookout",
+      "name": "Lake Hauroko Lookout",
+      "region": "southland",
+      "lat": -45.9495,
+      "lng": 167.3161,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "fiordland",
+        "lookout",
+        "deepest-lake"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2,
+      "short": "A remote Fiordland-edge lake stop near New Zealand’s deepest lake, with forest, mountains and big silence.",
+      "commentary": "Lake Hauroko sits beyond the usual Fiordland postcard route, and that is part of its force. The water is famously deep, the surrounding forest feels old and watchful, and even a short visit carries the sense of having reached the margin of something much larger.",
+      "audio_story": "Lake Hauroko sits beyond the usual Fiordland postcard route, and that is part of its force. The water is famously deep, the surrounding forest feels old and watchful, and even a short visit carries the sense of having reached the margin of something much larger.",
+      "suggested_voice_tone": "remote, quiet, awe-filled",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-borland-road",
+      "name": "Borland Road",
+      "region": "southland",
+      "lat": -45.7578,
+      "lng": 167.455,
+      "category": "journey",
+      "tags": [
+        "scenic-road",
+        "fiordland",
+        "high-country",
+        "remote"
+      ],
+      "trigger_radius_m": 4000,
+      "duration_hours": 4,
+      "short": "A seasonal backcountry road into Fiordland’s Lake Monowai and Grebe Valley country.",
+      "commentary": "Borland Road is Fiordland without the tour-bus script. When conditions allow, the road climbs from forest to open alpine country, giving capable travellers a rawer look at the park’s scale and weather; it is a route to research carefully, not improvise casually.",
+      "audio_story": "Borland Road is Fiordland without the tour-bus script. When conditions allow, the road climbs from forest to open alpine country, giving capable travellers a rawer look at the park’s scale and weather; it is a route to research carefully, not improvise casually.",
+      "suggested_voice_tone": "rugged, practical, remote",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-hokonui-moonshine-museum",
+      "name": "Hokonui Moonshine Museum",
+      "region": "southland",
+      "lat": -46.0994,
+      "lng": 168.9447,
+      "category": "heritage",
+      "tags": [
+        "gore",
+        "museum",
+        "whisky",
+        "local-history"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "A Gore museum telling the sly local story of illegal whisky, prohibition and Hokonui legend.",
+      "commentary": "The Hokonui Moonshine Museum gives Gore a mischievous heritage hook. It tells how illicit whisky-making became part of local identity, mixing prohibition, rural ingenuity and the kind of stubborn humour that turns rule-breaking into folklore.",
+      "audio_story": "The Hokonui Moonshine Museum gives Gore a mischievous heritage hook. It tells how illicit whisky-making became part of local identity, mixing prohibition, rural ingenuity and the kind of stubborn humour that turns rule-breaking into folklore.",
+      "suggested_voice_tone": "wry, historical, local",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-sandy-point-domain",
+      "name": "Sandy Point Domain",
+      "region": "southland",
+      "lat": -46.4555,
+      "lng": 168.296,
+      "category": "nature",
+      "tags": [
+        "invercargill",
+        "walking",
+        "cycling",
+        "estuary"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2,
+      "short": "A large recreation reserve near Invercargill with forest trails, estuary edges and cycling routes.",
+      "commentary": "Sandy Point is Invercargill’s outdoor backyard. Forest tracks, estuary views, mountain-bike routes and beach access spread across the peninsula, giving locals a practical all-weather place to move rather than a single scenic lookout.",
+      "audio_story": "Sandy Point is Invercargill’s outdoor backyard. Forest tracks, estuary views, mountain-bike routes and beach access spread across the peninsula, giving locals a practical all-weather place to move rather than a single scenic lookout.",
+      "suggested_voice_tone": "local, active, practical",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-port-craig-viaducts",
+      "name": "Port Craig Viaducts",
+      "region": "southland",
+      "lat": -46.204,
+      "lng": 167.196,
+      "category": "heritage",
+      "tags": [
+        "hump-ridge",
+        "logging",
+        "viaduct",
+        "remote"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 8,
+      "short": "Remote timber viaducts from an ambitious 1920s logging settlement on the south coast.",
+      "commentary": "The Port Craig viaducts are grand remains of a scheme that nature outlasted. Deep on the south coast, these timber structures once carried logging trains through dense forest; reaching them makes the failed ambition feel enormous, expensive and strangely moving.",
+      "audio_story": "The Port Craig viaducts are grand remains of a scheme that nature outlasted. Deep on the south coast, these timber structures once carried logging trains through dense forest; reaching them makes the failed ambition feel enormous, expensive and strangely moving.",
+      "suggested_voice_tone": "remote, historical, atmospheric",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-fortrose-estuary",
+      "name": "Fortrose Estuary",
+      "region": "southland",
+      "lat": -46.573,
+      "lng": 168.796,
+      "category": "wildlife",
+      "tags": [
+        "estuary",
+        "catlins",
+        "birdlife",
+        "coastal"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A wide Catlins-edge estuary where tidal flats, birdlife and old port history meet.",
+      "commentary": "Fortrose sits where river, sea and weather negotiate all day. The estuary’s open flats attract birds and light, while the settlement’s old port history adds a human layer to a coast that can feel wonderfully empty.",
+      "audio_story": "Fortrose sits where river, sea and weather negotiate all day. The estuary’s open flats attract birds and light, while the settlement’s old port history adds a human layer to a coast that can feel wonderfully empty.",
+      "suggested_voice_tone": "tidal, quiet, historical",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-rakatu-wetlands",
+      "name": "Rākatu Wetlands",
+      "region": "southland",
+      "lat": -45.5892,
+      "lng": 167.5617,
+      "category": "wildlife",
+      "tags": [
+        "wetland",
+        "manapouri",
+        "birdlife",
+        "restoration"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A restored wetland near Manapōuri with boardwalk sections, birdlife and big Fiordland-edge skies.",
+      "commentary": "Rākatu Wetlands makes a strong case for stopping before the famous fiords. The restored wetland spreads under wide sky near Manapōuri, with birdlife, boardwalks and water channels showing how much quieter landscapes can still carry deep ecological value.",
+      "audio_story": "Rākatu Wetlands makes a strong case for stopping before the famous fiords. The restored wetland spreads under wide sky near Manapōuri, with birdlife, boardwalks and water channels showing how much quieter landscapes can still carry deep ecological value.",
+      "suggested_voice_tone": "quiet, ecological, open",
+      "sources_to_check": [
+        "SouthlandNZ visitor information",
+        "DOC Fiordland National Park and Southland places",
+        "Local heritage and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-invercargill-water-tower",
+      "name": "Invercargill Water Tower",
+      "region": "southland",
+      "lat": -46.409,
+      "lng": 168.36,
+      "category": "heritage",
+      "tags": [
+        "invercargill",
+        "landmark",
+        "architecture"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Invercargill’s Water Tower is civic infrastructure dressed with surprising elegance, a brick landmark that gives the flat city a vertical signature.",
+      "commentary": "Invercargill’s Water Tower is civic infrastructure dressed with surprising elegance, a brick landmark that gives the flat city a vertical signature.",
+      "audio_story": "Invercargill’s Water Tower is civic infrastructure dressed with surprising elegance, a brick landmark that gives the flat city a vertical signature.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-te-hikoi-riverton",
+      "name": "Te Hikoi Southern Journey, Riverton",
+      "region": "southland",
+      "lat": -46.354,
+      "lng": 168.018,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "riverton",
+        "southern-history"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.25,
+      "short": "Te Hikoi gives Riverton and the southern coast a deep interpretive voice, connecting Māori history, settlers, fishing and the long journey south.",
+      "commentary": "Te Hikoi gives Riverton and the southern coast a deep interpretive voice, connecting Māori history, settlers, fishing and the long journey south.",
+      "audio_story": "Te Hikoi gives Riverton and the southern coast a deep interpretive voice, connecting Māori history, settlers, fishing and the long journey south.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-lake-monowai",
+      "name": "Lake Monowai",
+      "region": "southland",
+      "lat": -45.787,
+      "lng": 167.62,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "fiordland",
+        "quiet"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Lake Monowai is Fiordland’s quieter lake door, a place of forested shore, hydro history and still water beyond the region’s busiest routes.",
+      "commentary": "Lake Monowai is Fiordland’s quieter lake door, a place of forested shore, hydro history and still water beyond the region’s busiest routes.",
+      "audio_story": "Lake Monowai is Fiordland’s quieter lake door, a place of forested shore, hydro history and still water beyond the region’s busiest routes.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-templeton-flax-mill-museum",
+      "name": "Templeton Flax Mill Heritage Museum",
+      "region": "southland",
+      "lat": -46.22,
+      "lng": 168.05,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "flax-milling",
+        "riverton",
+        "industrial-heritage"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A Southland heritage museum preserving the machinery and stories of the flax-milling era.",
+      "commentary": "Templeton Flax Mill Heritage Museum gives Southland’s wetlands and river flats an industrial memory. The machinery tells of fibre, labour and local enterprise, turning what can seem like a quiet rural landscape into a place of invention and hard work.",
+      "audio_story": "Templeton Flax Mill Heritage Museum gives Southland’s wetlands and river flats an industrial memory. The machinery tells of fibre, labour and local enterprise, turning what can seem like a quiet rural landscape into a place of invention and hard work.",
+      "suggested_voice_tone": "hands-on, historical, local",
+      "sources_to_check": [
+        "https://southlandnz.com/riverton/templeton-flax-mill-heritage-museum"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-doubtful-sound-overnight-cruise",
+      "name": "Doubtful Sound Overnight Cruise",
+      "region": "southland",
+      "lat": -45.457,
+      "lng": 167.188,
+      "category": "journey",
+      "tags": [
+        "fiordland",
+        "overnight-cruise",
+        "wildlife",
+        "manapouri"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 24,
+      "short": "An overnight Fiordland journey into remote Doubtful Sound, usually starting from Manapouri.",
+      "commentary": "A Doubtful Sound overnight cruise changes the scale of a Fiordland visit. Instead of arriving, looking and leaving, travellers stay long enough for light, weather and silence to move through the fiord, with the boat becoming a small floating room inside a very large landscape.",
+      "audio_story": "A Doubtful Sound overnight cruise changes the scale of a Fiordland visit. Instead of arriving, looking and leaving, travellers stay long enough for light, weather and silence to move through the fiord, with the boat becoming a small floating room inside a very large landscape.",
+      "suggested_voice_tone": "immersive, hushed, expansive",
+      "sources_to_check": [
+        "https://www.realnz.com/en/experiences/cruises/doubtful-sound-overnight-cruises/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-lumsden-heritage-trust",
+      "name": "Lumsden Heritage Trust",
+      "region": "southland",
+      "lat": -45.739246,
+      "lng": 168.442252,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Southland & Fiordland.",
+      "commentary": "Lumsden Heritage Trust gives Southland & Fiordland another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Lumsden Heritage Trust gives Southland & Fiordland another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/383193959",
+        "https://en.wikipedia.org/wiki/Lumsden_Heritage_Trust",
+        "https://www.wikidata.org/wiki/Q18712423",
+        "https://www.newzealand.com/nz/southland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-awarua-communications-museum",
+      "name": "Awarua Communications Museum",
+      "region": "southland",
+      "lat": -46.504595,
+      "lng": 168.372391,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Southland & Fiordland.",
+      "commentary": "Awarua Communications Museum gives Southland & Fiordland another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Awarua Communications Museum gives Southland & Fiordland another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/11506662549",
+        "https://www.awaruamuseum.co.nz/",
+        "https://www.wikidata.org/wiki/Q124248617",
+        "https://www.newzealand.com/nz/southland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-omanui-mckinnon-pass",
+      "name": "Omanui / McKinnon Pass",
+      "region": "southland",
+      "lat": -44.802491,
+      "lng": 167.765782,
+      "category": "nature",
+      "tags": [
+        "viewpoint",
+        "nature",
+        "tourism-viewpoint",
+        "natural-saddle"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A named viewpoint with coordinates for a quick scenic pause in Southland & Fiordland.",
+      "commentary": "Omanui / McKinnon Pass fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Omanui / McKinnon Pass fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/321539221",
+        "https://en.wikipedia.org/wiki/Mackinnon_Pass",
+        "https://www.wikidata.org/wiki/Q6724539",
+        "https://www.newzealand.com/nz/southland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-moturau-moana-garden",
+      "name": "Moturau Moana Garden",
+      "region": "southland",
+      "lat": -46.889341,
+      "lng": 168.133738,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Southland & Fiordland.",
+      "commentary": "Moturau Moana Garden fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Moturau Moana Garden fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/479868519",
+        "https://en.wikipedia.org/wiki/Moturau_Moana",
+        "https://www.wikidata.org/wiki/Q23020119",
+        "https://www.newzealand.com/nz/southland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-he-waka-tuia-art-museum",
+      "name": "He Waka Tuia Art + Museum",
+      "region": "southland",
+      "lat": -46.41058,
+      "lng": 168.350365,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Southland & Fiordland.",
+      "commentary": "He Waka Tuia Art + Museum gives Southland & Fiordland another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "He Waka Tuia Art + Museum gives Southland & Fiordland another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12569750765",
+        "https://www.hewakatuia.nz/",
+        "https://www.newzealand.com/nz/southland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-grave-of-donald-keith",
+      "name": "Grave of Donald Keith",
+      "region": "southland",
+      "lat": -44.717823,
+      "lng": 168.126713,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Southland & Fiordland.",
+      "commentary": "Grave of Donald Keith is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as The grave of Scot Donald Keith who died here of exhaustion in 1886. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Grave of Donald Keith is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as The grave of Scot Donald Keith who died here of exhaustion in 1886. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/269663814",
+        "https://www.wikidata.org/wiki/Q105673616",
+        "https://www.newzealand.com/nz/southland/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-mount-anglem-hananui",
+      "name": "Mount Anglem / Hananui",
+      "region": "southland",
+      "lat": -46.74053,
+      "lng": 167.916493,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Southland & Fiordland.",
+      "commentary": "Mount Anglem / Hananui helps mark the high country and skyline around Southland & Fiordland. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Mount Anglem / Hananui helps mark the high country and skyline around Southland & Fiordland. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/973972739",
+        "https://en.wikipedia.org/wiki/Mount_Anglem",
+        "https://www.wikidata.org/wiki/Q3070397",
+        "https://www.newzealand.com/nz/southland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-tikore-island-environmental-reserve",
+      "name": "Tikore Island Environmental Reserve",
+      "region": "southland",
+      "lat": -46.571852,
+      "lng": 168.319653,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Southland & Fiordland.",
+      "commentary": "Tikore Island Environmental Reserve fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Tikore Island Environmental Reserve fills in another real point on the Southland & Fiordland visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1159560933",
+        "https://icc.govt.nz/parks-and-reserves/environmental-reserves/tikore-island/",
+        "https://www.newzealand.com/nz/southland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "southland-bats-cave",
+      "name": "Bats Cave",
+      "region": "southland",
+      "lat": -47.222632,
+      "lng": 167.437129,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in Southland & Fiordland.",
+      "commentary": "Bats Cave adds a small natural feature to the Southland & Fiordland map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Bats Cave adds a small natural feature to the Southland & Fiordland map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10976514166",
+        "https://www.wikidata.org/wiki/Q136405478",
+        "https://www.newzealand.com/nz/southland/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

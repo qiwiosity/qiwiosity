@@ -8,7 +8,7 @@
       "lng": 174
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "northland-copthorne-waitangi",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 2400,
       "rating": 4.9,
       "short": "Robertson Lodges flagship above Matauri Bay with cliff-top golf."
+    },
+    {
+      "id": "northland-paroa-bay-villas",
+      "name": "Paroa Bay Villas",
+      "region": "northland",
+      "lat": -35.2855592,
+      "lng": 174.1793418,
+      "type": "lodge",
+      "price_nzd_per_night": 650,
+      "rating": 4.7,
+      "short": "Bay of Islands vineyard villas above Paroa Bay, close to Russell but hidden in coastal farmland."
+    },
+    {
+      "id": "northland-te-awa-lodge",
+      "name": "Te Awa Lodge",
+      "region": "northland",
+      "lat": -35.2968,
+      "lng": 174.0478,
+      "type": "lodge",
+      "price_nzd_per_night": 390,
+      "rating": 4.8,
+      "short": "Boutique riverside lodge between Paihia and Kerikeri, overlooking the Waitangi River."
+    },
+    {
+      "id": "northland-magic-cottages-takou-river",
+      "name": "Magic Cottages at Takou River",
+      "region": "northland",
+      "lat": -35.152,
+      "lng": 173.977,
+      "type": "lodge",
+      "price_nzd_per_night": 520,
+      "rating": 4.8,
+      "short": "Eco-luxury cottages and glamping retreats on a quiet river outside Kerikeri."
+    },
+    {
+      "id": "northland-tahi-retreat",
+      "name": "Tahi Retreat",
+      "region": "northland",
+      "lat": -35.587,
+      "lng": 174.468,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.7,
+      "short": "Restoration-focused coastal retreat with secluded cottages near Pataua North."
+    },
+    {
+      "id": "northland-duke-of-marlborough-hotel",
+      "name": "The Duke of Marlborough Hotel",
+      "region": "northland",
+      "lat": -35.261,
+      "lng": 174.122,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.5,
+      "short": "Historic Russell waterfront hotel with Bay of Islands views, dining and heritage atmosphere."
+    },
+    {
+      "id": "northland-horeke-hotel",
+      "name": "Horeke Hotel",
+      "region": "northland",
+      "lat": -35.356098,
+      "lng": 173.590045,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Northland."
+    },
+    {
+      "id": "northland-aarangi-tui-motel",
+      "name": "Aarangi Tui Motel",
+      "region": "northland",
+      "lat": -35.284159,
+      "lng": 174.089119,
+      "type": "motel",
+      "price_nzd_per_night": 180,
+      "rating": 4.6,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Northland."
     }
   ]
 }

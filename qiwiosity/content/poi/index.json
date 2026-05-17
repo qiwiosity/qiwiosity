@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-04-25",
-  "project": "Qiwiosity — New Zealand travel companion",
+  "generated_at": "2026-05-17",
+  "project": "Qiwiosity - New Zealand travel companion",
   "schema_version": "1.1",
   "totals": {
     "regions": 19,
-    "pois": 2885,
+    "pois": 3279,
     "by_island": {
-      "North": 1748,
-      "South": 1137
+      "North": 1995,
+      "South": 1284
     },
     "by_category": {
-      "heritage": 332,
-      "nature": 553,
-      "culture": 295,
-      "food-wine": 416,
+      "heritage": 434,
+      "nature": 710,
+      "culture": 370,
+      "food-wine": 422,
       "māori": 356,
-      "wildlife": 363,
-      "journey": 266,
-      "adventure": 304
+      "wildlife": 374,
+      "journey": 286,
+      "adventure": 327
     },
     "by_content_status": {
-      "draft": 2696,
+      "draft": 3090,
       "pending_scripts": 158,
       "draft_pending_review": 30,
       "draft_access_check_required": 1
     },
-    "cultural_review_required": 139
+    "cultural_review_required": 168
   },
   "regions": [
     {
@@ -36,7 +36,7 @@
         "lat": -36.8485,
         "lng": 174.7633
       },
-      "poi_count": 170,
+      "poi_count": 193,
       "file": "content/poi/auckland.json"
     },
     {
@@ -47,7 +47,7 @@
         "lat": -37.6878,
         "lng": 176.1651
       },
-      "poi_count": 147,
+      "poi_count": 170,
       "file": "content/poi/bay-of-plenty.json"
     },
     {
@@ -58,7 +58,7 @@
         "lat": -43.532,
         "lng": 172.6362
       },
-      "poi_count": 199,
+      "poi_count": 221,
       "file": "content/poi/canterbury.json"
     },
     {
@@ -69,7 +69,7 @@
         "lat": -36.75,
         "lng": 175.7
       },
-      "poi_count": 144,
+      "poi_count": 163,
       "file": "content/poi/coromandel.json"
     },
     {
@@ -80,7 +80,7 @@
         "lat": -39.4928,
         "lng": 176.912
       },
-      "poi_count": 139,
+      "poi_count": 158,
       "file": "content/poi/hawkes-bay.json"
     },
     {
@@ -91,7 +91,7 @@
         "lat": -41.5136,
         "lng": 173.9614
       },
-      "poi_count": 151,
+      "poi_count": 173,
       "file": "content/poi/marlborough.json"
     },
     {
@@ -102,7 +102,7 @@
         "lat": -41.2706,
         "lng": 173.284
       },
-      "poi_count": 143,
+      "poi_count": 162,
       "file": "content/poi/nelson-tasman.json"
     },
     {
@@ -113,7 +113,7 @@
         "lat": -35.5,
         "lng": 174
       },
-      "poi_count": 159,
+      "poi_count": 183,
       "file": "content/poi/northland.json"
     },
     {
@@ -124,7 +124,7 @@
         "lat": -45.4,
         "lng": 170
       },
-      "poi_count": 182,
+      "poi_count": 204,
       "file": "content/poi/otago.json"
     },
     {
@@ -135,7 +135,7 @@
         "lat": -45.0312,
         "lng": 168.6626
       },
-      "poi_count": 146,
+      "poi_count": 163,
       "file": "content/poi/queenstown.json"
     },
     {
@@ -146,7 +146,7 @@
         "lat": -38.1368,
         "lng": 176.2497
       },
-      "poi_count": 141,
+      "poi_count": 158,
       "file": "content/poi/rotorua.json"
     },
     {
@@ -157,7 +157,7 @@
         "lat": -45.8,
         "lng": 167.8
       },
-      "poi_count": 162,
+      "poi_count": 184,
       "file": "content/poi/southland.json"
     },
     {
@@ -168,7 +168,7 @@
         "lat": -38.05,
         "lng": 178.2
       },
-      "poi_count": 137,
+      "poi_count": 157,
       "file": "content/poi/tairawhiti.json"
     },
     {
@@ -179,7 +179,7 @@
         "lat": -39.2968,
         "lng": 174.0756
       },
-      "poi_count": 136,
+      "poi_count": 155,
       "file": "content/poi/taranaki.json"
     },
     {
@@ -190,7 +190,7 @@
         "lat": -38.6857,
         "lng": 176.0702
       },
-      "poi_count": 138,
+      "poi_count": 158,
       "file": "content/poi/taupo.json"
     },
     {
@@ -201,7 +201,7 @@
         "lat": -37.787,
         "lng": 175.2793
       },
-      "poi_count": 145,
+      "poi_count": 168,
       "file": "content/poi/waikato.json"
     },
     {
@@ -212,7 +212,7 @@
         "lat": -41.2866,
         "lng": 174.7756
       },
-      "poi_count": 149,
+      "poi_count": 169,
       "file": "content/poi/wellington.json"
     },
     {
@@ -223,7 +223,7 @@
         "lat": -42.75,
         "lng": 171.1
       },
-      "poi_count": 154,
+      "poi_count": 177,
       "file": "content/poi/west-coast.json"
     },
     {
@@ -234,7 +234,7 @@
         "lat": -40.05,
         "lng": 175.3
       },
-      "poi_count": 143,
+      "poi_count": 163,
       "file": "content/poi/whanganui-manawatu.json"
     }
   ]

@@ -1949,7 +1949,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Easy birding on the Coastal Walkway. Good variety of waterbirds. Pleasant in any weather."
       }
     },
@@ -1997,7 +1997,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Great for kids. The rock pools are teeming with life at low tide. Easy access from the car park."
       }
     },
@@ -2045,7 +2045,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Good seabird viewing in the right conditions. The lighthouse is photogenic. Can be very windy."
       }
     },
@@ -2063,7 +2063,7 @@
         "architecture"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Bold contemporary art gallery featuring kinetic artist Len Lye's mesmerising sculptures in a striking mirror-steel building.",
       "commentary": "The Govett-Brewster Art Gallery / Len Lye Centre is one of New Zealand's most significant contemporary art institutions, located in New Plymouth. The gallery is home to the Len Lye Collection — the world's largest collection of works by the pioneering New Zealand-born kinetic sculptor and experimental filmmaker Len Lye, whose mesmerising moving steel sculptures are unlike anything else in the art world. The purpose-built Len Lye Centre, opened in 2015, is a stunning building clad in reflective stainless steel that mirrors the sky and street — an artwork in itself. Inside, Lye's towering kinetic sculptures are activated at regular intervals, creating dramatic performances of movement and sound. The adjacent Govett-Brewster gallery presents a bold programme of contemporary New Zealand and international art. Admission is free. The gallery has punched well above its weight since opening in 1970, establishing New Plymouth as an unlikely contemporary art destination. Allow two hours to see both spaces and catch a sculpture activation. Check the daily schedule for activation times.",
       "content_status": "draft",
@@ -2155,7 +2155,7 @@
         "tunnels"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "New Zealand's most remote heritage highway, 150km through ghost towns, tunnels, and dramatic hill country.",
       "commentary": "The Forgotten World Highway (SH43) between Stratford and Taumarunui is New Zealand's loneliest highway, winding 150 kilometres through some of the North Island's most rugged and sparsely populated hill country. The road passes through the Tangarakau Gorge, one of New Zealand's deepest road gorges, the Moki Tunnel blasted through solid rock, and the ghost town of Whangamomona, a self-declared republic since 1989 that holds biennial Republic Day celebrations. Whangamomona's historic hotel offers refreshments and the chance to get your passport stamped. The highway traverses land once heavily milled for timber and farmed, now largely returned to regenerating bush. No fuel is available between Stratford and Taumarunui, so fill up before departing. The road includes some unsealed sections and is narrow and winding throughout. Allow at least four hours for the drive with stops. The sense of remoteness and the dramatic landscape make this one of New Zealand's most memorable drives.",
       "content_status": "draft",
@@ -2178,7 +2178,7 @@
         "volcanic"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Dramatic volcanic coastline with rock pools, surf breaks, and spectacular sunsets on Taranaki's western shore.",
       "commentary": "The coastline around Cape Egmont on Taranaki's western shore offers some of the region's most dramatic coastal scenery. Dark volcanic rock platforms extend into the Tasman Sea, creating tide pools teeming with marine life and forming the base for powerful surf breaks. The area around the boat ramp is a favourite spot for sunset watching, with the sun dropping into the sea framed by the rugged coastline. On clear days, Mt Taranaki looms behind, creating an iconic combination of mountain and sea. The coastline is part of the Surf Highway 45 route between New Plymouth and Hawera. Rock-pooling at low tide reveals starfish, anemones, and small fish in the volcanic pools. The area is exposed and can be dangerous in rough seas, so stay well back from the waterline during storms. Several Taranaki surf breaks are accessible from nearby pulloffs along the highway.",
       "content_status": "draft",
@@ -2201,7 +2201,7 @@
         "tarn"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Iconic alpine track to a reflective mountain tarn providing New Zealand's most photographed volcano view.",
       "commentary": "The Pouakai Tarn track is one of New Zealand's most rewarding day walks, leading to a small alpine tarn that provides the most iconic reflection photograph of Mt Taranaki. The walk from the Mangorei Road end takes about 2.5 hours each way through goblin forest draped in moss and lichen, crossing the otherworldly Ahukawakawa Swamp on boardwalks before climbing to the tarn at 1,100 metres. On a calm day, Mt Taranaki is reflected perfectly in the tarn's still surface, creating a photograph that has become one of New Zealand's most recognisable images. The track is rated as moderate, with some steep sections and exposed terrain above the bushline. Weather conditions can change rapidly on the mountain, so carry warm and waterproof layers regardless of the forecast. The walk can also be done as part of the multi-day Pouakai Circuit. The swamp crossing is fascinating in its own right, with rare alpine plant species. Check DOC conditions before departing.",
       "content_status": "draft",
@@ -2295,7 +2295,7 @@
       "name": "Surf Highway 45 / Coastal Arts Trail",
       "region": "taranaki",
       "lat": -39.15,
-      "lng": 174.0,
+      "lng": 174,
       "category": "journey",
       "tags": [
         "art-trail",
@@ -2590,7 +2590,7 @@
       "name": "Surf Highway 45 Coastal Drive",
       "region": "taranaki",
       "lat": -39.45,
-      "lng": 174.0,
+      "lng": 174,
       "category": "journey",
       "tags": [
         "surfing",
@@ -3053,7 +3053,7 @@
       "commentary": "Tupare is a heritage property featuring an English Arts and Crafts-style house set in beautifully maintained gardens above the Waiwhakaiho River in New Plymouth. The house, built in 1927 for Sir Russell and Lady Matthews, is one of New Zealand's finest examples of the Arts and Crafts domestic style. The gardens cascade down to the river in a series of terraces, featuring herbaceous borders, specimen trees, and a productive kitchen garden. Now managed by the Taranaki Regional Council, Tupare is free to visit and offers a glimpse into the gracious lifestyle of early 20th-century New Plymouth society. The river walk extends the visit with native bush and birdlife.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Beautiful heritage property with lovely gardens. Free entry. The river walk is a bonus. Peaceful and well maintained."
       }
     },
@@ -3145,7 +3145,7 @@
       "commentary": "Kaupokonui Beach is a family-friendly black-sand beach on Taranaki's south coast, popular with locals for its relatively sheltered swimming conditions. The Kaupokonui Stream enters the sea here, creating a calmer section ideal for children. A basic DOC campsite sits right behind the dunes, offering affordable beachside camping in summer. The beach is a reliable surf break for intermediate surfers, while the stream mouth attracts whitebaiters in season. The surrounding farmland and volcanic coastline create a quintessentially rural Taranaki experience. Located just off Surf Highway 45, it's an excellent stop for a swim and picnic during a coastal road trip.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Families love the safe swimming area near the stream. The campsite is basic but the beachfront location can't be beaten. A quiet alternative to busier Taranaki beaches."
       }
     },
@@ -3263,7 +3263,7 @@
       "commentary": "Waverley Beach sits at the southern edge of the Taranaki region where the coast becomes increasingly remote and wild. The black iron-sand dunes here are some of the largest in the region, sculpted by relentless Tasman winds into dramatic formations. The beach stretches for kilometres in both directions with barely another soul in sight. Swimming is dangerous due to rips, but the walking and photography are superb. The ironsand has been mined historically and has a distinctive magnetic quality — bring a magnet and watch the sand cling to it.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Visitors love the wild, remote atmosphere. Photography opportunities are excellent. The beach is not suitable for swimming. Some find the access road bumpy."
       }
     },
@@ -3311,7 +3311,7 @@
       "commentary": "The rocky platforms near Ōaonui on Surf Highway 45 are a regular haul-out spot for New Zealand fur seals, particularly in winter and spring. Unlike more famous seal colonies, this spot sees few visitors and offers a chance to observe the animals undisturbed from a respectful distance. Keep at least 10 metres back and never get between a seal and the sea. The coast here is dramatic — black rock, white surf, and the ever-present cone of Taranaki behind. Check the rocks carefully, as the seals blend in remarkably well.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A pleasant surprise for those driving the Surf Highway. Numbers vary seasonally. Some visitors report not seeing any seals — timing matters. Free and uncrowded."
       }
     },
@@ -3424,7 +3424,7 @@
         "goblin forest"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Enchanting loop walk through moss-draped goblin forest on Mount Taranaki's lower slopes.",
       "commentary": "This family-friendly loop track winds through dense kamahi and rimu forest draped in mosses and ferns, creating an eerie 'goblin forest' atmosphere. The accessible track is one of Taranaki's best short walks, especially atmospheric on misty days.",
       "content_status": "draft",
@@ -3470,7 +3470,7 @@
         "family friendly"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Sheltered snorkelling beach with rich marine life near the Sugar Loaf Islands.",
       "commentary": "Ngāmotu Beach sits in the lee of the Sugar Loaf Islands Marine Protected Area, offering calm waters with abundant marine life. The rocky reef supports colourful fish, octopus, and crayfish — one of Taranaki's best kept aquatic secrets.",
       "content_status": "draft",
@@ -3516,7 +3516,7 @@
         "rural"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Rural art trail featuring sculptures and installations along the Ōkato coastline.",
       "commentary": "This self-drive art trail showcases works by local and national artists installed along the rugged Ōkato coastline. Pieces range from large-scale steel sculptures to subtle environmental installations, set against the dramatic backdrop of farmland and surf coast.",
       "content_status": "draft",
@@ -3539,7 +3539,7 @@
         "birdwatching"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Paddle the scenic Pātea Dam lake surrounded by farmland and native bush.",
       "commentary": "Lake Rotorangi behind the Pātea Dam stretches 46 kilometres through remote Taranaki valleys. It's one of the longest artificial lakes in New Zealand, offering multi-day kayak adventures through peaceful countryside with abundant birdlife including shag colonies and marsh birds.",
       "content_status": "draft",
@@ -3547,6 +3547,504 @@
         "rating": 4.2,
         "summary": "Peaceful paddling through beautiful remote valleys."
       }
+    },
+    {
+      "id": "taranaki-wilkies-pools",
+      "name": "Wilkies Pools",
+      "region": "taranaki",
+      "lat": -39.3163958,
+      "lng": 174.0950201,
+      "category": "nature",
+      "tags": [
+        "te-papa-kura-o-taranaki",
+        "lava-pools",
+        "dawson-falls",
+        "short-walk",
+        "maunga"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A short Dawson Falls walk to smooth lava pools carved by Kapuni Stream on the slopes of Taranaki Maunga.",
+      "commentary": "Wilkies Pools is a classic Taranaki short walk: quick enough for families, memorable enough to linger. Starting near Dawson Falls Visitor Centre, the DOC loop passes through dense kāmahi forest to the Kapuni Stream, where water has scoured smooth pools into old lava. The first section to the pools is the easiest; continuing the full loop involves stream-edge care and conditions can change quickly on the maunga. The pools are best treated as a place to look, cool your hands and listen, not a place to underestimate. Heavy rain can make the stream crossings and banks unsafe.",
+      "audio_story": "Wilkies Pools is a classic Taranaki short walk: quick enough for families, memorable enough to linger. Starting near Dawson Falls Visitor Centre, the DOC loop passes through dense kāmahi forest to the Kapuni Stream, where water has scoured smooth pools into old lava. The first section to the pools is the easiest; continuing the full loop involves stream-edge care and conditions can change quickly on the maunga. The pools are best treated as a place to look, cool your hands and listen, not a place to underestimate. Heavy rain can make the stream crossings and banks unsafe.",
+      "suggested_voice_tone": "cool, precise, mountain-aware",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/wilkies-pools-loop-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Visitors praise the short forest approach and sculpted lava pools; weather, stream levels and road-end conditions are the main cautions."
+      }
+    },
+    {
+      "id": "taranaki-te-henui-walkway",
+      "name": "Te Henui Walkway",
+      "region": "taranaki",
+      "lat": -39.0551,
+      "lng": 174.0924,
+      "category": "nature",
+      "tags": [
+        "urban-walk",
+        "new-plymouth",
+        "river",
+        "coastal-link"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A leafy New Plymouth stream walkway linking neighbourhood parks with the coastal path.",
+      "commentary": "Te Henui Walkway is everyday New Plymouth at its best: stream shade, bridges, birds and a clean link down to the coast. It is not dramatic, but it makes the city feel walkable, green and quietly well-loved.",
+      "audio_story": "Te Henui Walkway is everyday New Plymouth at its best: stream shade, bridges, birds and a clean link down to the coast. It is not dramatic, but it makes the city feel walkable, green and quietly well-loved.",
+      "suggested_voice_tone": "local, green, easygoing",
+      "sources_to_check": [
+        "Taranaki official visitor information",
+        "DOC Taranaki places",
+        "Local garden, museum and reserve operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-taranaki-pioneer-village",
+      "name": "Taranaki Pioneer Village",
+      "region": "taranaki",
+      "lat": -39.3341,
+      "lng": 174.285,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "stratford",
+        "heritage-village",
+        "family"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.5,
+      "short": "An open-air heritage village near Stratford, preserving buildings and everyday objects from earlier rural life.",
+      "commentary": "Taranaki Pioneer Village gathers small-town history at human scale. Shops, cottages, tools and vehicles create a walk-through version of the region’s settler-era life, useful for anyone who likes history with doors, handles and weatherboards.",
+      "audio_story": "Taranaki Pioneer Village gathers small-town history at human scale. Shops, cottages, tools and vehicles create a walk-through version of the region’s settler-era life, useful for anyone who likes history with doors, handles and weatherboards.",
+      "suggested_voice_tone": "nostalgic, hands-on, local",
+      "sources_to_check": [
+        "Taranaki official visitor information",
+        "DOC Taranaki places",
+        "Local garden, museum and reserve operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-opunake-loop-trail",
+      "name": "Ōpunake Loop Trail",
+      "region": "taranaki",
+      "lat": -39.4554,
+      "lng": 173.8587,
+      "category": "journey",
+      "tags": [
+        "coastal-walk",
+        "opunake",
+        "surf-highway",
+        "lake"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A compact town-and-coast loop linking Ōpunake Beach, lake edges, murals and Surf Highway scenery.",
+      "commentary": "Ōpunake Loop Trail turns a beach town into a rounded stop rather than a fuel break. The route links surf, lake, streets and coastal viewpoints, showing how much character is packed into this small western Taranaki settlement.",
+      "audio_story": "Ōpunake Loop Trail turns a beach town into a rounded stop rather than a fuel break. The route links surf, lake, streets and coastal viewpoints, showing how much character is packed into this small western Taranaki settlement.",
+      "suggested_voice_tone": "local, coastal, easygoing",
+      "sources_to_check": [
+        "Taranaki official visitor information",
+        "DOC Taranaki places",
+        "Local garden, museum and reserve operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-patea-river-historic-walk",
+      "name": "Pātea River Historic Walk",
+      "region": "taranaki",
+      "lat": -39.759,
+      "lng": 174.4812,
+      "category": "heritage",
+      "tags": [
+        "patea",
+        "river",
+        "history",
+        "walking"
+      ],
+      "trigger_radius_m": 650,
+      "duration_hours": 1,
+      "short": "A South Taranaki river-town walk connecting port history, public art and local memory.",
+      "commentary": "Pātea’s river walk is a modest but worthwhile way to see a town shaped by water, industry and change. It pairs well with the town’s music and museum stories, giving travellers a reason to slow down on the coast road.",
+      "audio_story": "Pātea’s river walk is a modest but worthwhile way to see a town shaped by water, industry and change. It pairs well with the town’s music and museum stories, giving travellers a reason to slow down on the coast road.",
+      "suggested_voice_tone": "local, reflective, historical",
+      "sources_to_check": [
+        "Taranaki official visitor information",
+        "DOC Taranaki places",
+        "Local garden, museum and reserve operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-puke-ariki-len-lye-link",
+      "name": "Puke Ariki to Len Lye Centre Walk",
+      "region": "taranaki",
+      "lat": -39.0577,
+      "lng": 174.0715,
+      "category": "culture",
+      "tags": [
+        "new-plymouth",
+        "museum",
+        "art",
+        "urban-walk"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 2,
+      "short": "A central New Plymouth culture pairing: regional museum stories and Len Lye’s kinetic-art shine.",
+      "commentary": "Puke Ariki and the Len Lye Centre make New Plymouth’s compact centre unusually rich. One grounds you in Taranaki history and collections; the other throws light, movement and stainless steel into the day, turning a short walk into a cultural double feature.",
+      "audio_story": "Puke Ariki and the Len Lye Centre make New Plymouth’s compact centre unusually rich. One grounds you in Taranaki history and collections; the other throws light, movement and stainless steel into the day, turning a short walk into a cultural double feature.",
+      "suggested_voice_tone": "urban, cultured, lively",
+      "sources_to_check": [
+        "Taranaki official visitor information",
+        "DOC Taranaki places",
+        "Local garden, museum and reserve operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-meeting-of-the-waters",
+      "name": "Meeting of the Waters Scenic Reserve",
+      "region": "taranaki",
+      "lat": -39.073,
+      "lng": 174.117,
+      "category": "nature",
+      "tags": [
+        "river",
+        "new-plymouth",
+        "short-walk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Meeting of the Waters is a leafy New Plymouth river reserve where swimming holes, bridges and bush make a quick local escape feel complete.",
+      "commentary": "Meeting of the Waters is a leafy New Plymouth river reserve where swimming holes, bridges and bush make a quick local escape feel complete.",
+      "audio_story": "Meeting of the Waters is a leafy New Plymouth river reserve where swimming holes, bridges and bush make a quick local escape feel complete.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-oakura-beach",
+      "name": "Ōakura Beach",
+      "region": "taranaki",
+      "lat": -39.116,
+      "lng": 173.953,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "surf",
+        "village"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Ōakura Beach brings Surf Highway energy into an easy village setting, with black sand, surf culture and mountain views all close together.",
+      "commentary": "Ōakura Beach brings Surf Highway energy into an easy village setting, with black sand, surf culture and mountain views all close together.",
+      "audio_story": "Ōakura Beach brings Surf Highway energy into an easy village setting, with black sand, surf culture and mountain views all close together.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-st-marys-cathedral",
+      "name": "Taranaki Cathedral Church of St Mary",
+      "region": "taranaki",
+      "lat": -39.057,
+      "lng": 174.075,
+      "category": "heritage",
+      "tags": [
+        "church",
+        "new-plymouth",
+        "heritage"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "St Mary’s is one of New Plymouth’s oldest stone landmarks, carrying colonial, community and conflict-era memory in the heart of the city.",
+      "commentary": "St Mary’s is one of New Plymouth’s oldest stone landmarks, carrying colonial, community and conflict-era memory in the heart of the city.",
+      "audio_story": "St Mary’s is one of New Plymouth’s oldest stone landmarks, carrying colonial, community and conflict-era memory in the heart of the city.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-aviation-transport-technology-museum",
+      "name": "Taranaki Aviation Technology and Transport Museum",
+      "region": "taranaki",
+      "lat": -39.107,
+      "lng": 174.119,
+      "category": "heritage",
+      "tags": [
+        "museum",
+        "technology",
+        "transport",
+        "new-plymouth"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.5,
+      "short": "A hands-on roadside museum south of New Plymouth, preserving aviation, transport and early technology.",
+      "commentary": "Taranaki Aviation Technology and Transport Museum is wonderfully mechanical. Aircraft, vehicles, radios, printing gear and working exhibits turn regional history into switches, engines and machines, making it a strong rainy-day stop for curious travellers.",
+      "audio_story": "Taranaki Aviation Technology and Transport Museum is wonderfully mechanical. Aircraft, vehicles, radios, printing gear and working exhibits turn regional history into switches, engines and machines, making it a strong rainy-day stop for curious travellers.",
+      "suggested_voice_tone": "hands-on, curious, nostalgic",
+      "sources_to_check": [
+        "https://www.tatatm.co.nz/",
+        "https://www.taranaki.co.nz/visit/everything-to-see-and-do/museums-and-heritage/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-lucys-gully",
+      "name": "Lucy's Gully",
+      "region": "taranaki",
+      "lat": -39.144,
+      "lng": 173.973,
+      "category": "nature",
+      "tags": [
+        "kaitake-range",
+        "picnic",
+        "forest",
+        "walking"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A forested picnic and track access point in the Kaitake Range, just inland from Oakura.",
+      "commentary": "Lucy's Gully is a cool green Taranaki pause after Surf Highway salt and sun. Redwoods, native bush and access to longer Kaitake Range tracks make it useful for a picnic, a short wander, or the start of a more ambitious climb toward Patuhā Trig.",
+      "audio_story": "Lucy's Gully is a cool green Taranaki pause after Surf Highway salt and sun. Redwoods, native bush and access to longer Kaitake Range tracks make it useful for a picnic, a short wander, or the start of a more ambitious climb toward Patuhā Trig.",
+      "suggested_voice_tone": "green, local, outdoorsy",
+      "sources_to_check": [
+        "https://www.taranaki.co.nz/explore/listing/lucys-gully",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/things-to-do/tracks/waimoku-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-pukekura-railway",
+      "name": "Pukekura Railway",
+      "region": "taranaki",
+      "lat": -39.061287,
+      "lng": 174.07765,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Taranaki.",
+      "commentary": "Pukekura Railway gives Taranaki another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. OpenStreetMap describes it as Miniture railway clubrooms and track. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Pukekura Railway gives Taranaki another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. OpenStreetMap describes it as Miniture railway clubrooms and track. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/550802060",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-ss-gairloch",
+      "name": "SS Gairloch",
+      "region": "taranaki",
+      "lat": -39.118151,
+      "lng": 173.918148,
+      "category": "heritage",
+      "tags": [
+        "wreck-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-wreck"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "SS Gairloch is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "SS Gairloch is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1036801980",
+        "https://www.wikidata.org/wiki/Q135012596",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-arapawanui-pa",
+      "name": "Arapawanui Pā",
+      "region": "taranaki",
+      "lat": -38.964722,
+      "lng": 174.436529,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "Arapawanui Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Arapawanui Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1036788753",
+        "https://www.wikidata.org/wiki/Q126163214",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taranaki-araukuku-pa",
+      "name": "Araukuku Pā",
+      "region": "taranaki",
+      "lat": -39.492039,
+      "lng": 174.29718,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "Araukuku Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Araukuku Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1036786986",
+        "https://www.wikidata.org/wiki/Q126163215",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taranaki-awatetake-pa",
+      "name": "Awatetake Pā",
+      "region": "taranaki",
+      "lat": -39.058417,
+      "lng": 174.283776,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "Awatetake Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Awatetake Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1036784260",
+        "https://www.wikidata.org/wiki/Q96326456",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taranaki-paritutu-beach",
+      "name": "Paritutu Beach",
+      "region": "taranaki",
+      "lat": -39.067576,
+      "lng": 174.017676,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Taranaki.",
+      "commentary": "Paritutu Beach fills in another real point on the Taranaki visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Paritutu Beach fills in another real point on the Taranaki visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/351560564",
+        "https://www.wikidata.org/wiki/Q125857906",
+        "https://www.newzealand.com/nz/taranaki/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-mahoetahi-memorial-grave",
+      "name": "Mahoetahi Memorial Grave",
+      "region": "taranaki",
+      "lat": -39.060496,
+      "lng": 174.072254,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "Mahoetahi Memorial Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Mahoetahi Memorial Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/2135631939",
+        "https://www.nzhistory.net.nz/media/photo/mahoetahi-grave",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taranaki-breakwater",
+      "name": "Breakwater",
+      "region": "taranaki",
+      "lat": -39.062956,
+      "lng": 174.04137,
+      "category": "heritage",
+      "tags": [
+        "public-artwork",
+        "heritage",
+        "tourism-artwork"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Taranaki.",
+      "commentary": "Breakwater is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Breakwater is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10960887702",
+        "https://www.chorus.co.nz/blog/chorus-in-the-community/breakwater",
+        "https://www.newzealand.com/nz/taranaki/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

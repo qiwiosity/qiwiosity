@@ -1,5 +1,16 @@
 [
   {
+    "id": "auckland-aarangi-motel",
+    "name": "Aarangi Motel",
+    "region": "auckland",
+    "lat": -36.851337,
+    "lng": 174.84166,
+    "type": "motel",
+    "price_nzd_per_night": 235,
+    "rating": 4.6,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Auckland."
+  },
+  {
     "id": "auckland-airport-gateway",
     "name": "Airport Gateway Motor Lodge",
     "region": "auckland",
@@ -20,6 +31,17 @@
     "price_nzd_per_night": 95,
     "rating": 4.2,
     "short": "Handy Mangere Bridge park with cabins, pool and airport shuttle."
+  },
+  {
+    "id": "auckland-castaways-resort",
+    "name": "Castaways Resort",
+    "region": "auckland",
+    "lat": -37.282,
+    "lng": 174.668,
+    "type": "hotel",
+    "price_nzd_per_night": 330,
+    "rating": 4.5,
+    "short": "Clifftop west-coast resort above Karioitahi Beach, popular for sunsets and event stays."
   },
   {
     "id": "auckland-cordis-auckland",
@@ -77,6 +99,17 @@
     "short": "Iconic pier-end hotel on Princes Wharf with 180-degree harbour views."
   },
   {
+    "id": "auckland-hotel-fitzroy",
+    "name": "Hotel Fitzroy",
+    "region": "auckland",
+    "lat": -36.8568474,
+    "lng": 174.7434307,
+    "type": "hotel",
+    "price_nzd_per_night": 360,
+    "rating": 4.7,
+    "short": "Boutique Ponsonby/Grey Lynn villa hotel on Richmond Road with heritage rooms and city-fringe dining nearby."
+  },
+  {
     "id": "auckland-mollies-herne-bay",
     "name": "Mollies Boutique Hotel",
     "region": "auckland",
@@ -108,6 +141,17 @@
     "price_nzd_per_night": 110,
     "rating": 4.3,
     "short": "Absolute beachfront park on Orewa's golden sands north of the city."
+  },
+  {
+    "id": "auckland-park-hotel",
+    "name": "Park Hotel",
+    "region": "auckland",
+    "lat": -36.857631,
+    "lng": 174.756426,
+    "type": "hotel",
+    "price_nzd_per_night": 315,
+    "rating": 4.6,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Auckland."
   },
   {
     "id": "auckland-park-hyatt-auckland",
@@ -209,6 +253,17 @@
     "short": "Absolute beachfront park on the North Shore with Rangitoto views."
   },
   {
+    "id": "auckland-te-arai-lodge",
+    "name": "Te Arai Lodge",
+    "region": "auckland",
+    "lat": -36.153,
+    "lng": 174.598,
+    "type": "lodge",
+    "price_nzd_per_night": 650,
+    "rating": 4.8,
+    "short": "Wellness-focused boutique lodge near Te Arai, with garden-to-table dining and coastal access."
+  },
+  {
     "id": "auckland-the-hotel-britomart",
     "name": "The Hotel Britomart",
     "region": "auckland",
@@ -218,6 +273,28 @@
     "price_nzd_per_night": 380,
     "rating": 4.7,
     "short": "NZ's first 5-Green-Star hotel in Britomart's brick warehouse precinct."
+  },
+  {
+    "id": "auckland-warblers-retreat",
+    "name": "Warblers Retreat",
+    "region": "auckland",
+    "lat": -36.724,
+    "lng": 174.675,
+    "type": "lodge",
+    "price_nzd_per_night": 520,
+    "rating": 4.8,
+    "short": "Boutique lodge-style accommodation in North Auckland bush, suited to quiet luxury stays near the city."
+  },
+  {
+    "id": "auckland-whatipu-lodge",
+    "name": "Whatipu Lodge",
+    "region": "auckland",
+    "lat": -37.043,
+    "lng": 174.505,
+    "type": "lodge",
+    "price_nzd_per_night": 240,
+    "rating": 4.4,
+    "short": "Historic lodge accommodation at wild Whatipu, close to caves, dunes and Manukau Harbour walks."
   },
   {
     "id": "bay-of-plenty-aspen-manor",
@@ -231,6 +308,39 @@
     "short": "Colonial-style Tauranga motel handy to the hospital and CBD."
   },
   {
+    "id": "bay-of-plenty-athenree-hot-springs-holiday-park",
+    "name": "Athenree Hot Springs & Holiday Park",
+    "region": "bay-of-plenty",
+    "lat": -37.4482705,
+    "lng": 175.9666036,
+    "type": "holiday-park",
+    "price_nzd_per_night": 130,
+    "rating": 4.5,
+    "short": "Thermal-pool holiday park near Waihī Beach with cabins, powered sites and easy harbour and beach access."
+  },
+  {
+    "id": "bay-of-plenty-awa-motel",
+    "name": "Awa Motel",
+    "region": "bay-of-plenty",
+    "lat": -37.949854,
+    "lng": 177.002101,
+    "type": "motel",
+    "price_nzd_per_night": 170,
+    "rating": 4.4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Bay of Plenty."
+  },
+  {
+    "id": "bay-of-plenty-awakeri-hot-springs-holiday-park",
+    "name": "Awakeri Hot Springs Holiday Park",
+    "region": "bay-of-plenty",
+    "lat": -37.993,
+    "lng": 176.875,
+    "type": "holiday-park",
+    "price_nzd_per_night": 115,
+    "rating": 4.4,
+    "short": "Thermal-pool holiday park inland from Whakatāne, with cabins, campsites and hot bathing."
+  },
+  {
     "id": "bay-of-plenty-beachside-motel-ohope",
     "name": "Beachside Ohope Motel",
     "region": "bay-of-plenty",
@@ -240,6 +350,17 @@
     "price_nzd_per_night": 165,
     "rating": 4,
     "short": "Chill Ohope motel on NZ's voted best beach."
+  },
+  {
+    "id": "bay-of-plenty-clarence-hotel",
+    "name": "Clarence Hotel",
+    "region": "bay-of-plenty",
+    "lat": -37.681268,
+    "lng": 176.168408,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.1,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Bay of Plenty."
   },
   {
     "id": "bay-of-plenty-harbourside-city-lights",
@@ -319,6 +440,17 @@
     "short": "Beachfront resort steps from Mount Main Beach and Mauao summit walk."
   },
   {
+    "id": "bay-of-plenty-ohiwa-beach-holiday-park",
+    "name": "Ohiwa Beach Holiday Park",
+    "region": "bay-of-plenty",
+    "lat": -37.988,
+    "lng": 177.134,
+    "type": "holiday-park",
+    "price_nzd_per_night": 135,
+    "rating": 4.5,
+    "short": "Beachfront holiday park between Ohope and Opotiki, with cabins and campsites beside Ohiwa Harbour."
+  },
+  {
     "id": "bay-of-plenty-ohope-beach-top10",
     "name": "Ohope Beach TOP 10 Holiday Park",
     "region": "bay-of-plenty",
@@ -328,6 +460,17 @@
     "price_nzd_per_night": 120,
     "rating": 4.5,
     "short": "Long-running Ohope beachfront park with pool and family villas."
+  },
+  {
+    "id": "bay-of-plenty-moutohora-island-sanctuary-stay-base",
+    "name": "One88 on Commerce",
+    "region": "bay-of-plenty",
+    "lat": -37.955,
+    "lng": 176.991,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.6,
+    "short": "Modern Whakatāne motel base for Ōhope, Moutohorā tours and Eastern Bay adventures."
   },
   {
     "id": "bay-of-plenty-pacific-coast-motel",
@@ -495,6 +638,17 @@
     "short": "Private Banks Peninsula villas on a 4,000-acre working farm."
   },
   {
+    "id": "canterbury-apollo-motel",
+    "name": "Apollo Motel",
+    "region": "canterbury",
+    "lat": -43.530914,
+    "lng": 172.58174,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Canterbury."
+  },
+  {
     "id": "canterbury-ashburton-motor-lodge",
     "name": "Ashburton Motor Lodge",
     "region": "canterbury",
@@ -504,6 +658,17 @@
     "price_nzd_per_night": 160,
     "rating": 4,
     "short": "Canterbury plains motel handy to Mt Hutt skifield access."
+  },
+  {
+    "id": "canterbury-barkers-lodge",
+    "name": "Barkers Lodge",
+    "region": "canterbury",
+    "lat": -43.631003,
+    "lng": 171.648779,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.5,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Canterbury."
   },
   {
     "id": "canterbury-chateau-on-the-park",
@@ -548,6 +713,17 @@
     "price_nzd_per_night": 220,
     "rating": 4.3,
     "short": "Restored Crown Plaza site with heritage facade and modern rooms."
+  },
+  {
+    "id": "canterbury-flockhill-lodge",
+    "name": "Flockhill",
+    "region": "canterbury",
+    "lat": -43.1304385,
+    "lng": 171.7809886,
+    "type": "lodge",
+    "price_nzd_per_night": 3410,
+    "rating": 4.8,
+    "short": "High-country luxury lodge on a vast Craigieburn station near Castle Hill, Lake Pearson and Arthur's Pass."
   },
   {
     "id": "canterbury-hanmer-springs-motel",
@@ -627,6 +803,17 @@
     "short": "Alpine-town motel 20 minutes from Mt Hutt's lifts."
   },
   {
+    "id": "canterbury-mt-cook-lakeside-retreat",
+    "name": "Mt Cook Lakeside Retreat",
+    "region": "canterbury",
+    "lat": -44.215,
+    "lng": 170.13,
+    "type": "lodge",
+    "price_nzd_per_night": 1450,
+    "rating": 4.8,
+    "short": "Luxury Lake Pūkaki retreat with alpine views toward Aoraki / Mount Cook."
+  },
+  {
     "id": "canterbury-otahuna-lodge",
     "name": "Otahuna Lodge",
     "region": "canterbury",
@@ -660,6 +847,28 @@
     "short": "Five-star boutique overlooking Hagley Park, famed for 50 Bistro dining."
   },
   {
+    "id": "canterbury-the-observatory-hotel",
+    "name": "The Observatory Hotel Christchurch",
+    "region": "canterbury",
+    "lat": -43.5312,
+    "lng": 172.6277,
+    "type": "hotel",
+    "price_nzd_per_night": 330,
+    "rating": 4.8,
+    "short": "Boutique hotel inside Christchurch’s Arts Centre heritage precinct."
+  },
+  {
+    "id": "canterbury-the-vicarage-geraldine",
+    "name": "The Vicarage Geraldine",
+    "region": "canterbury",
+    "lat": -44.09,
+    "lng": 171.244,
+    "type": "hotel",
+    "price_nzd_per_night": 230,
+    "rating": 4.7,
+    "short": "Boutique accommodation in a restored Geraldine vicarage, handy to cafes, galleries and inland routes."
+  },
+  {
     "id": "coromandel-admiralty-lodge",
     "name": "Admiralty Lodge Whitianga",
     "region": "coromandel",
@@ -669,6 +878,17 @@
     "price_nzd_per_night": 290,
     "rating": 4.5,
     "short": "Luxury apartment hotel on Whitianga's Buffalo Beach."
+  },
+  {
+    "id": "coromandel-anchor-lodge-coromandel",
+    "name": "Anchor Lodge Coromandel",
+    "region": "coromandel",
+    "lat": -36.760894,
+    "lng": 175.492174,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4.2,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Coromandel Peninsula."
   },
   {
     "id": "coromandel-whangamata-motel",
@@ -704,6 +924,28 @@
     "short": "Stand-alone cottages in a garden setting a stroll from Coromandel town."
   },
   {
+    "id": "coromandel-coromandel-cottages",
+    "name": "Coromandel Cottages",
+    "region": "coromandel",
+    "lat": -36.761,
+    "lng": 175.499,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.5,
+    "short": "Self-contained cottage-style accommodation in Coromandel Town, suited to families and peninsula road trips."
+  },
+  {
+    "id": "coromandel-coromandel-hotel",
+    "name": "Coromandel Hotel",
+    "region": "coromandel",
+    "lat": -36.755678,
+    "lng": 175.500466,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Coromandel Peninsula."
+  },
+  {
     "id": "coromandel-coromandel-top10",
     "name": "Coromandel TOP 10 Holiday Park",
     "region": "coromandel",
@@ -724,6 +966,17 @@
     "price_nzd_per_night": 260,
     "rating": 4.4,
     "short": "Boutique Whitianga villas with Mercury Bay views."
+  },
+  {
+    "id": "coromandel-flaxmill-accommodation",
+    "name": "Flaxmill Accommodation",
+    "region": "coromandel",
+    "lat": -36.8335719,
+    "lng": 175.7240841,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Garden cottages and houses at Flaxmill Bay by Cooks Beach, handy to Ferry Landing and Cathedral Cove trips."
   },
   {
     "id": "coromandel-grand-mercure-puka",
@@ -825,6 +1078,17 @@
     "short": "Harbourside Tairua motel with a view over Paku Hill."
   },
   {
+    "id": "coromandel-the-church-hahei",
+    "name": "The Church Accommodation Hahei",
+    "region": "coromandel",
+    "lat": -36.842,
+    "lng": 175.804,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Garden cottage accommodation in Hahei, close to Cathedral Cove access and village dining."
+  },
+  {
     "id": "coromandel-hot-water-beach-top-hotel",
     "name": "The Church Boutique Accommodation",
     "region": "coromandel",
@@ -845,6 +1109,17 @@
     "price_nzd_per_night": 780,
     "rating": 4.6,
     "short": "Thermal spa villas in lush Whitianga jungle gardens."
+  },
+  {
+    "id": "coromandel-wairua-lodge",
+    "name": "Wairua Lodge",
+    "region": "coromandel",
+    "lat": -37.022,
+    "lng": 175.653,
+    "type": "lodge",
+    "price_nzd_per_night": 310,
+    "rating": 4.8,
+    "short": "Boutique bush lodge near Whitianga, known for forest setting and relaxed hosted stays."
   },
   {
     "id": "coromandel-whangapoua-lodge",
@@ -880,6 +1155,17 @@
     "short": "Family Whitianga park with kid pool, jumping pillow and cabins."
   },
   {
+    "id": "hawkes-bay-albatross-motel",
+    "name": "Albatross Motel",
+    "region": "hawkes-bay",
+    "lat": -39.478723,
+    "lng": 176.882559,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Hawke's Bay."
+  },
+  {
     "id": "hawkes-bay-aqua-soleil-motel",
     "name": "Aqua Soleil Motor Inn",
     "region": "hawkes-bay",
@@ -889,6 +1175,17 @@
     "price_nzd_per_night": 180,
     "rating": 4.2,
     "short": "Marine Parade motel with heated outdoor pool."
+  },
+  {
+    "id": "hawkes-bay-art-deco-masonic-hotel",
+    "name": "Art Deco Masonic Hotel",
+    "region": "hawkes-bay",
+    "lat": -39.49,
+    "lng": 176.918,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.5,
+    "short": "Central Napier hotel in a landmark Art Deco building by the waterfront and city attractions."
   },
   {
     "id": "hawkes-bay-art-deco-masonic",
@@ -935,6 +1232,17 @@
     "short": "Collection of luxury vineyard villas in Havelock North hills."
   },
   {
+    "id": "hawkes-bay-bluewater-hotel",
+    "name": "Bluewater Hotel",
+    "region": "hawkes-bay",
+    "lat": -39.485485,
+    "lng": 176.891514,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.1,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Hawke's Bay."
+  },
+  {
     "id": "hawkes-bay-clifton-holiday-park",
     "name": "Clifton Bay Holiday Park Te Awanga",
     "region": "hawkes-bay",
@@ -944,6 +1252,17 @@
     "price_nzd_per_night": 90,
     "rating": 4.1,
     "short": "Te Awanga coastal park at the Cape Kidnappers gannet-walk start."
+  },
+  {
+    "id": "hawkes-bay-clive-colonial-cottages",
+    "name": "Clive Colonial Cottages",
+    "region": "hawkes-bay",
+    "lat": -39.585,
+    "lng": 176.915,
+    "type": "motel",
+    "price_nzd_per_night": 230,
+    "rating": 4.7,
+    "short": "Character cottage accommodation in Clive, handy for cycling between Napier, Hastings and wineries."
   },
   {
     "id": "hawkes-bay-colonial-lodge-motel",
@@ -1023,6 +1342,17 @@
     "short": "Napier's flagship resort park with pool, playground and villas."
   },
   {
+    "id": "hawkes-bay-mangapapa-hotel",
+    "name": "Mangapapa Hotel",
+    "region": "hawkes-bay",
+    "lat": -39.649,
+    "lng": 176.84,
+    "type": "lodge",
+    "price_nzd_per_night": 520,
+    "rating": 4.6,
+    "short": "Historic country-house hotel near Havelock North with gardens and refined dining."
+  },
+  {
     "id": "hawkes-bay-navigate-oceania",
     "name": "Navigate Oceania Napier",
     "region": "hawkes-bay",
@@ -1032,6 +1362,17 @@
     "price_nzd_per_night": 260,
     "rating": 4.4,
     "short": "Ahuriri harbour-front apartment hotel beside Napier's fishing marina."
+  },
+  {
+    "id": "hawkes-bay-porters-boutique-hotel",
+    "name": "Porters Boutique Hotel",
+    "region": "hawkes-bay",
+    "lat": -39.6703,
+    "lng": 176.8771,
+    "type": "hotel",
+    "price_nzd_per_night": 320,
+    "rating": 4.6,
+    "short": "Havelock North boutique hotel beside village restaurants and Te Mata Peak access."
   },
   {
     "id": "hawkes-bay-porters-hotel-havelock",
@@ -1089,6 +1430,17 @@
     "short": "Robertson Lodges clifftop farm with Tom Doak golf above gannet colony."
   },
   {
+    "id": "hawkes-bay-the-manse",
+    "name": "The Manse",
+    "region": "hawkes-bay",
+    "lat": -39.6530216,
+    "lng": 176.6178061,
+    "type": "lodge",
+    "price_nzd_per_night": 1200,
+    "rating": 4.8,
+    "short": "Vineyard-country luxury lodge in Maraekakaho with hosted dining and Hawke's Bay countryside views."
+  },
+  {
     "id": "hawkes-bay-westshore-holiday-park",
     "name": "Westshore Holiday Park",
     "region": "hawkes-bay",
@@ -1098,6 +1450,17 @@
     "price_nzd_per_night": 85,
     "rating": 4,
     "short": "Quiet beachside park by Westshore Beach, north of Ahuriri."
+  },
+  {
+    "id": "marlborough-14th-lane-urban-hotel",
+    "name": "14th Lane Urban Hotel",
+    "region": "marlborough",
+    "lat": -41.5117,
+    "lng": 173.955,
+    "type": "hotel",
+    "price_nzd_per_night": 360,
+    "rating": 4.8,
+    "short": "Design-led boutique hotel in central Blenheim, close to restaurants and wine touring."
   },
   {
     "id": "marlborough-admirals-motor-lodge",
@@ -1142,6 +1505,17 @@
     "price_nzd_per_night": 195,
     "rating": 4.2,
     "short": "Central Blenheim motor-inn-style hotel close to wineries."
+  },
+  {
+    "id": "marlborough-aussie-bay-campsite",
+    "name": "Aussie Bay Campsite",
+    "region": "marlborough",
+    "lat": -41.273109,
+    "lng": 173.929029,
+    "type": "holiday-park",
+    "price_nzd_per_night": 105,
+    "rating": 4.2,
+    "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Marlborough."
   },
   {
     "id": "marlborough-bay-of-many-coves",
@@ -1210,6 +1584,17 @@
     "short": "Flagship Seymour Square hotel opposite Blenheim's cathedral."
   },
   {
+    "id": "marlborough-escape-to-picton",
+    "name": "Escape to Picton",
+    "region": "marlborough",
+    "lat": -41.29,
+    "lng": 174.006,
+    "type": "hotel",
+    "price_nzd_per_night": 330,
+    "rating": 4.4,
+    "short": "Boutique Picton hotel and restaurant close to the marina, ferry terminal and Marlborough Sounds departures."
+  },
+  {
     "id": "marlborough-havelock-holiday-park",
     "name": "Havelock Motor Camp & Holiday Park",
     "region": "marlborough",
@@ -1219,6 +1604,28 @@
     "price_nzd_per_night": 75,
     "rating": 4,
     "short": "Small-town Havelock park handy to Pelorus Sound boat trips."
+  },
+  {
+    "id": "marlborough-hotel-durville",
+    "name": "Hotel d'Urville",
+    "region": "marlborough",
+    "lat": -41.513753,
+    "lng": 173.955355,
+    "type": "hotel",
+    "price_nzd_per_night": 270,
+    "rating": 4.6,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Marlborough."
+  },
+  {
+    "id": "marlborough-lochmara-lodge",
+    "name": "Lochmara Lodge",
+    "region": "marlborough",
+    "lat": -41.255,
+    "lng": 174.04,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Boat-access Queen Charlotte Sound lodge with art trails, wildlife and waterfront rooms."
   },
   {
     "id": "marlborough-marlborough-lodge",
@@ -1309,6 +1716,28 @@
     "short": "Blenheim's central wine-country hotel with heated pool."
   },
   {
+    "id": "marlborough-the-peppertree",
+    "name": "The Peppertree Luxury Accommodation",
+    "region": "marlborough",
+    "lat": -41.5281075,
+    "lng": 174.0018292,
+    "type": "lodge",
+    "price_nzd_per_night": 730,
+    "rating": 4.8,
+    "short": "Restored Edwardian villa and gardens on State Highway 1 at the edge of Blenheim wine country."
+  },
+  {
+    "id": "marlborough-vintners-retreat",
+    "name": "Vintners Retreat",
+    "region": "marlborough",
+    "lat": -41.493,
+    "lng": 173.836,
+    "type": "lodge",
+    "price_nzd_per_night": 390,
+    "rating": 4.7,
+    "short": "Self-contained vineyard villas in the Wairau Valley wine country west of Blenheim."
+  },
+  {
     "id": "marlborough-wairau-river-lodge",
     "name": "Wairau River Wines Lodge",
     "region": "marlborough",
@@ -1353,6 +1782,17 @@
     "short": "Tahunanui motel a short walk from Nelson's main swimming beach."
   },
   {
+    "id": "nelson-tasman-beachside-villas-motel",
+    "name": "Beachside Villas Motel",
+    "region": "nelson-tasman",
+    "lat": -41.286847,
+    "lng": 173.238238,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4.4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Nelson."
+  },
+  {
     "id": "nelson-tasman-bella-vista-motueka",
     "name": "Bella Vista Motel Motueka",
     "region": "nelson-tasman",
@@ -1384,6 +1824,17 @@
     "price_nzd_per_night": 205,
     "rating": 4.4,
     "short": "Boutique motel-hotel on Tudor Street near Motueka's saltwater baths."
+  },
+  {
+    "id": "nelson-tasman-fishtail-lodge-bandb",
+    "name": "Fishtail Lodge B&B",
+    "region": "nelson-tasman",
+    "lat": -41.563341,
+    "lng": 173.530217,
+    "type": "lodge",
+    "price_nzd_per_night": 270,
+    "rating": 4.5,
+    "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Nelson."
   },
   {
     "id": "nelson-tasman-takaka-golden-bay-motel",
@@ -1419,6 +1870,17 @@
     "short": "Absolute beachfront park at Abel Tasman's gateway."
   },
   {
+    "id": "nelson-tasman-kimi-ora-eco-resort",
+    "name": "Kimi Ora Eco Resort",
+    "region": "nelson-tasman",
+    "lat": -41.039,
+    "lng": 173.017,
+    "type": "lodge",
+    "price_nzd_per_night": 300,
+    "rating": 4.6,
+    "short": "Kaiteriteri eco resort with chalets, pools and vegetarian dining above Abel Tasman’s gateway beach."
+  },
+  {
     "id": "nelson-tasman-mapua-motel",
     "name": "Mapua Leisure Park Motel Units",
     "region": "nelson-tasman",
@@ -1450,6 +1912,17 @@
     "price_nzd_per_night": 115,
     "rating": 4.4,
     "short": "Golden Bay beachside park with Abel Tasman National Park on the doorstep."
+  },
+  {
+    "id": "nelson-tasman-ratanui-lodge",
+    "name": "Ratanui Lodge",
+    "region": "nelson-tasman",
+    "lat": -40.821,
+    "lng": 172.901,
+    "type": "lodge",
+    "price_nzd_per_night": 320,
+    "rating": 4.6,
+    "short": "Pōhara boutique lodge base for Golden Bay beaches, Farewell Spit and Abel Tasman’s northern edge."
   },
   {
     "id": "nelson-tasman-rutherford-hotel",
@@ -1507,6 +1980,39 @@
     "short": "Quiet Richmond motel with easy access to wineries and the bay."
   },
   {
+    "id": "nelson-tasman-te-koi-bronte",
+    "name": "Te Koi - The Lodge at Bronte",
+    "region": "nelson-tasman",
+    "lat": -41.264,
+    "lng": 173.076,
+    "type": "lodge",
+    "price_nzd_per_night": 620,
+    "rating": 4.8,
+    "short": "Luxury waterfront lodge near Māpua, overlooking the Waimea Estuary and garden grounds."
+  },
+  {
+    "id": "nelson-tasman-the-pear-orchard-lodge",
+    "name": "The Pear Orchard Lodge",
+    "region": "nelson-tasman",
+    "lat": -41.334,
+    "lng": 173.154,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.7,
+    "short": "Hosted Richmond lodge accommodation set among orchard country between Nelson city and Tasman routes."
+  },
+  {
+    "id": "nelson-tasman-resurgence-luxury-eco-lodge",
+    "name": "The Resurgence Luxury Eco Lodge",
+    "region": "nelson-tasman",
+    "lat": -41.0379738,
+    "lng": 172.9143297,
+    "type": "lodge",
+    "price_nzd_per_night": 620,
+    "rating": 4.8,
+    "short": "Adults-only eco-lodge in native bush above the Riwaka Valley near Abel Tasman and Kahurangi."
+  },
+  {
     "id": "nelson-tasman-kaiteriteri-motel",
     "name": "Torlesse Motels Kaiteriteri",
     "region": "nelson-tasman",
@@ -1538,6 +2044,17 @@
     "price_nzd_per_night": 310,
     "rating": 4.6,
     "short": "Heritage waterfront villa-hotel on Rocks Road with harbour views."
+  },
+  {
+    "id": "northland-aarangi-tui-motel",
+    "name": "Aarangi Tui Motel",
+    "region": "northland",
+    "lat": -35.284159,
+    "lng": 174.089119,
+    "type": "motel",
+    "price_nzd_per_night": 180,
+    "rating": 4.6,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Northland."
   },
   {
     "id": "northland-aloha-seaview-motel",
@@ -1606,6 +2123,17 @@
     "short": "Italian-inspired coastal lodge on 800 acres north of Whangarei."
   },
   {
+    "id": "northland-horeke-hotel",
+    "name": "Horeke Hotel",
+    "region": "northland",
+    "lat": -35.356098,
+    "lng": 173.590045,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Northland."
+  },
+  {
     "id": "northland-kerikeri-homestead-motel",
     "name": "Kerikeri Homestead Motel",
     "region": "northland",
@@ -1637,6 +2165,17 @@
     "price_nzd_per_night": 230,
     "rating": 4.2,
     "short": "Historic Russell hotel a short stroll from the Strand."
+  },
+  {
+    "id": "northland-magic-cottages-takou-river",
+    "name": "Magic Cottages at Takou River",
+    "region": "northland",
+    "lat": -35.152,
+    "lng": 173.977,
+    "type": "lodge",
+    "price_nzd_per_night": 520,
+    "rating": 4.8,
+    "short": "Eco-luxury cottages and glamping retreats on a quiet river outside Kerikeri."
   },
   {
     "id": "northland-mangonui-motel",
@@ -1694,6 +2233,17 @@
     "short": "Beachside park a short walk from Paihia wharf."
   },
   {
+    "id": "northland-paroa-bay-villas",
+    "name": "Paroa Bay Villas",
+    "region": "northland",
+    "lat": -35.2855592,
+    "lng": 174.1793418,
+    "type": "lodge",
+    "price_nzd_per_night": 650,
+    "rating": 4.7,
+    "short": "Bay of Islands vineyard villas above Paroa Bay, close to Russell but hidden in coastal farmland."
+  },
+  {
     "id": "northland-kings-view-peppers",
     "name": "Peppers Riverside Hotel (proposed)",
     "region": "northland",
@@ -1727,6 +2277,28 @@
     "short": "Garden-set Paihia hotel with pool near the ferry wharf."
   },
   {
+    "id": "northland-tahi-retreat",
+    "name": "Tahi Retreat",
+    "region": "northland",
+    "lat": -35.587,
+    "lng": 174.468,
+    "type": "lodge",
+    "price_nzd_per_night": 620,
+    "rating": 4.7,
+    "short": "Restoration-focused coastal retreat with secluded cottages near Pataua North."
+  },
+  {
+    "id": "northland-te-awa-lodge",
+    "name": "Te Awa Lodge",
+    "region": "northland",
+    "lat": -35.2968,
+    "lng": 174.0478,
+    "type": "lodge",
+    "price_nzd_per_night": 390,
+    "rating": 4.8,
+    "short": "Boutique riverside lodge between Paihia and Kerikeri, overlooking the Waitangi River."
+  },
+  {
     "id": "northland-the-duke-russell",
     "name": "The Duke of Marlborough",
     "region": "northland",
@@ -1736,6 +2308,17 @@
     "price_nzd_per_night": 320,
     "rating": 4.5,
     "short": "NZ's oldest licensed hotel on the Russell waterfront."
+  },
+  {
+    "id": "northland-duke-of-marlborough-hotel",
+    "name": "The Duke of Marlborough Hotel",
+    "region": "northland",
+    "lat": -35.261,
+    "lng": 174.122,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.5,
+    "short": "Historic Russell waterfront hotel with Bay of Islands views, dining and heritage atmosphere."
   },
   {
     "id": "northland-kauri-cliffs-lodge",
@@ -1771,6 +2354,17 @@
     "short": "Central Dunedin motor lodge a short walk from the university."
   },
   {
+    "id": "otago-ahuriri-motels",
+    "name": "Ahuriri Motels",
+    "region": "otago",
+    "lat": -44.490734,
+    "lng": 169.972796,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.6,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Otago."
+  },
+  {
     "id": "otago-alexandra-motor-lodge",
     "name": "Alexandra Motor Lodge",
     "region": "otago",
@@ -1804,6 +2398,17 @@
     "short": "Historic goldfields village motel with mountain views."
   },
   {
+    "id": "otago-beaumont-hotel",
+    "name": "Beaumont Hotel",
+    "region": "otago",
+    "lat": -45.818281,
+    "lng": 169.523714,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.5,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Otago."
+  },
+  {
     "id": "otago-oamaru-brydone-motel",
     "name": "Brydone Motor Lodge Oamaru",
     "region": "otago",
@@ -1813,6 +2418,17 @@
     "price_nzd_per_night": 170,
     "rating": 4.1,
     "short": "Heritage-town motel minutes from Oamaru's Victorian precinct."
+  },
+  {
+    "id": "otago-camp-estate-larnach-castle",
+    "name": "Camp Estate at Larnach Castle",
+    "region": "otago",
+    "lat": -45.8679714,
+    "lng": 170.6254305,
+    "type": "lodge",
+    "price_nzd_per_night": 580,
+    "rating": 4.8,
+    "short": "Country-house lodge on the Larnach Castle estate with Otago Peninsula views and castle dining access."
   },
   {
     "id": "otago-otahuna-otago-no",
@@ -1846,6 +2462,17 @@
     "price_nzd_per_night": 165,
     "rating": 4,
     "short": "Lakeside Cromwell motel in the heart of fruit country."
+  },
+  {
+    "id": "otago-danseys-pass-coach-inn",
+    "name": "Danseys Pass Coach Inn",
+    "region": "otago",
+    "lat": -44.969,
+    "lng": 170.284,
+    "type": "lodge",
+    "price_nzd_per_night": 230,
+    "rating": 4.5,
+    "short": "Historic stone inn on the Danseys Pass route, pairing high-country quiet with old goldfields atmosphere."
   },
   {
     "id": "otago-distinction-dunedin",
@@ -1945,6 +2572,28 @@
     "price_nzd_per_night": 235,
     "rating": 4.2,
     "short": "Former Southern Cross Hotel in the Octagon's heart."
+  },
+  {
+    "id": "otago-the-chamberson",
+    "name": "The Chamberson",
+    "region": "otago",
+    "lat": -45.875,
+    "lng": 170.504,
+    "type": "hotel",
+    "price_nzd_per_night": 300,
+    "rating": 4.6,
+    "short": "Boutique apartment hotel in Dunedin’s warehouse precinct, close to the Octagon and railway station."
+  },
+  {
+    "id": "otago-waipiata-country-hotel",
+    "name": "Waipiata Country Hotel",
+    "region": "otago",
+    "lat": -45.189,
+    "lng": 170.147,
+    "type": "hotel",
+    "price_nzd_per_night": 155,
+    "rating": 4.6,
+    "short": "Rail Trail country hotel in Maniototo, popular with cyclists and travellers crossing Central Otago."
   },
   {
     "id": "otago-wanaka-top10",
@@ -2112,6 +2761,17 @@
     "short": "Across-the-lake Kawarau Village Hilton with resort spa."
   },
   {
+    "id": "queenstown-hulbert-house",
+    "name": "Hulbert House",
+    "region": "queenstown",
+    "lat": -45.0299251,
+    "lng": 168.6641102,
+    "type": "hotel",
+    "price_nzd_per_night": 850,
+    "rating": 4.9,
+    "short": "Restored 1888 Victorian villa above central Queenstown with lake views and intimate boutique service."
+  },
+  {
     "id": "queenstown-kingston-holiday-park",
     "name": "Kingston Holiday Park",
     "region": "queenstown",
@@ -2123,6 +2783,28 @@
     "short": "Quiet lakeside park at the southern end of Lake Wakatipu."
   },
   {
+    "id": "queenstown-kinloch-wilderness-retreat",
+    "name": "Kinloch Wilderness Retreat",
+    "region": "queenstown",
+    "lat": -44.815,
+    "lng": 168.347,
+    "type": "lodge",
+    "price_nzd_per_night": 210,
+    "rating": 4.5,
+    "short": "Head-of-the-lake retreat near Glenorchy, with lodge rooms, cabins and access to walking and lake journeys."
+  },
+  {
+    "id": "queenstown-kinross-cottages",
+    "name": "Kinross Cottages",
+    "region": "queenstown",
+    "lat": -45.001,
+    "lng": 168.893,
+    "type": "lodge",
+    "price_nzd_per_night": 310,
+    "rating": 4.6,
+    "short": "Gibbston vineyard cottage accommodation with cellar-door access on the Queenstown Trail corridor."
+  },
+  {
     "id": "queenstown-matakauri-lodge",
     "name": "Matakauri Lodge",
     "region": "queenstown",
@@ -2132,6 +2814,17 @@
     "price_nzd_per_night": 2300,
     "rating": 4.9,
     "short": "Robertson Lodges flagship on a private Lake Wakatipu bay."
+  },
+  {
+    "id": "queenstown-ora-retreat",
+    "name": "Ora Retreat",
+    "region": "queenstown",
+    "lat": -45.044695,
+    "lng": 168.623424,
+    "type": "lodge",
+    "price_nzd_per_night": 285,
+    "rating": 4.3,
+    "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Queenstown."
   },
   {
     "id": "queenstown-qt-queenstown",
@@ -2189,6 +2882,28 @@
     "short": "Terraced lakefront resort on Lake Esplanade with heated pool."
   },
   {
+    "id": "queenstown-sherwood",
+    "name": "Sherwood Queenstown",
+    "region": "queenstown",
+    "lat": -45.019,
+    "lng": 168.698,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.5,
+    "short": "Creative, sustainability-minded Queenstown hotel with gardens, music, yoga and strong food culture."
+  },
+  {
+    "id": "queenstown-shotover-lodge",
+    "name": "Shotover Lodge",
+    "region": "queenstown",
+    "lat": -44.980092,
+    "lng": 168.684111,
+    "type": "hotel",
+    "price_nzd_per_night": 325,
+    "rating": 4.3,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Queenstown."
+  },
+  {
     "id": "queenstown-sofitel-queenstown",
     "name": "Sofitel Queenstown",
     "region": "queenstown",
@@ -2198,6 +2913,17 @@
     "price_nzd_per_night": 520,
     "rating": 4.7,
     "short": "Five-star Sofitel in central Queenstown on Duke Street."
+  },
+  {
+    "id": "queenstown-the-rees-hotel",
+    "name": "The Rees Hotel Queenstown",
+    "region": "queenstown",
+    "lat": -45.026,
+    "lng": 168.696,
+    "type": "hotel",
+    "price_nzd_per_night": 390,
+    "rating": 4.6,
+    "short": "Lakefront Queenstown hotel with apartment-style rooms and Remarkables views."
   },
   {
     "id": "queenstown-st-moritz",
@@ -2255,6 +2981,17 @@
     "short": "Fenton Street motor lodge with free spa pool."
   },
   {
+    "id": "rotorua-astelia-lodge",
+    "name": "Astelia Lodge",
+    "region": "rotorua",
+    "lat": -38.262843,
+    "lng": 176.163122,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Rotorua."
+  },
+  {
     "id": "rotorua-aura-accommodation",
     "name": "Aura Accommodation Motel Rotorua",
     "region": "rotorua",
@@ -2264,6 +3001,17 @@
     "price_nzd_per_night": 180,
     "rating": 4.3,
     "short": "Central Rotorua motel with thermal mineral-pool spa suites."
+  },
+  {
+    "id": "rotorua-awa-hotel",
+    "name": "AWA Hotel",
+    "region": "rotorua",
+    "lat": -38.112152,
+    "lng": 176.224786,
+    "type": "hotel",
+    "price_nzd_per_night": 300,
+    "rating": 4.7,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Rotorua."
   },
   {
     "id": "rotorua-baycourt-motel",
@@ -2354,6 +3102,28 @@
     "short": "Flagship Novotel on the shores of Lake Rotorua."
   },
   {
+    "id": "rotorua-on-the-point",
+    "name": "On The Point Lake Rotorua",
+    "region": "rotorua",
+    "lat": -38.1053046,
+    "lng": 176.2444757,
+    "type": "lodge",
+    "price_nzd_per_night": 700,
+    "rating": 4.7,
+    "short": "Lake-edge luxury lodge on Kawaha Point with gardens, jetty access and quiet Rotorua views."
+  },
+  {
+    "id": "rotorua-pullman-rotorua",
+    "name": "Pullman Rotorua",
+    "region": "rotorua",
+    "lat": -38.1366,
+    "lng": 176.2526,
+    "type": "hotel",
+    "price_nzd_per_night": 300,
+    "rating": 4.4,
+    "short": "Modern central Rotorua hotel near Eat Streat, Government Gardens and the lakefront."
+  },
+  {
     "id": "rotorua-regent-of-rotorua",
     "name": "Regent of Rotorua Boutique Hotel",
     "region": "rotorua",
@@ -2420,6 +3190,28 @@
     "short": "2,500-acre luxury lodge with private estate trout streams."
   },
   {
+    "id": "rotorua-vr-lake-resort",
+    "name": "VR Rotorua Lake Resort",
+    "region": "rotorua",
+    "lat": -38.077,
+    "lng": 176.354,
+    "type": "hotel",
+    "price_nzd_per_night": 210,
+    "rating": 4.1,
+    "short": "Lake Rotoiti resort accommodation at Mourea, useful for travellers exploring Rotorua’s eastern lakes."
+  },
+  {
+    "id": "rotorua-wai-ora-lakeside-spa-resort",
+    "name": "Wai Ora Lakeside Spa Resort",
+    "region": "rotorua",
+    "lat": -38.096,
+    "lng": 176.315,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.3,
+    "short": "Lake Rotorua resort at Holdens Bay with spa facilities and a quieter eastern-lake setting."
+  },
+  {
     "id": "rotorua-waiteti-trout-stream",
     "name": "Waiteti Trout Stream Holiday Park",
     "region": "rotorua",
@@ -2453,6 +3245,39 @@
     "short": "Spacious Invercargill motel with family units."
   },
   {
+    "id": "southland-bay-motel",
+    "name": "Bay Motel",
+    "region": "southland",
+    "lat": -46.898828,
+    "lng": 168.125759,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.5,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Southland & Fiordland."
+  },
+  {
+    "id": "southland-cabot-lodge",
+    "name": "Cabot Lodge",
+    "region": "southland",
+    "lat": -45.5592762,
+    "lng": 167.6499676,
+    "type": "lodge",
+    "price_nzd_per_night": 1050,
+    "rating": 4.9,
+    "short": "Fiordland farm lodge between Te Anau and Manapōuri with mountain views and hosted dinners."
+  },
+  {
+    "id": "southland-camp-taringatura",
+    "name": "Camp Taringatura",
+    "region": "southland",
+    "lat": -45.98534,
+    "lng": 168.310547,
+    "type": "holiday-park",
+    "price_nzd_per_night": 115,
+    "rating": 4.3,
+    "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Southland & Fiordland."
+  },
+  {
     "id": "southland-gore-charlton-hotel",
     "name": "Charlton Motel Gore",
     "region": "southland",
@@ -2484,6 +3309,17 @@
     "price_nzd_per_night": 230,
     "rating": 4.3,
     "short": "Former Ascot Park hotel with conference facilities in central Invercargill."
+  },
+  {
+    "id": "southland-distinction-te-anau",
+    "name": "Distinction Te Anau Hotel & Villas",
+    "region": "southland",
+    "lat": -45.416,
+    "lng": 167.718,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.3,
+    "short": "Lake Te Anau hotel and villa accommodation near the town centre and Fiordland departure points."
   },
   {
     "id": "southland-dock-bay-lodge",
@@ -2574,6 +3410,17 @@
     "short": "Boutique Dee Street hotel in restored heritage building."
   },
   {
+    "id": "southland-last-light-lodge",
+    "name": "Last Light Lodge",
+    "region": "southland",
+    "lat": -46.133,
+    "lng": 167.683,
+    "type": "lodge",
+    "price_nzd_per_night": 150,
+    "rating": 4.5,
+    "short": "Tuatapere lodge, holiday park and café base for Hump Ridge Track and south-coast journeys."
+  },
+  {
     "id": "southland-manapouri-holiday-park",
     "name": "Manapouri Motels & Holiday Park",
     "region": "southland",
@@ -2583,6 +3430,17 @@
     "price_nzd_per_night": 100,
     "rating": 4.2,
     "short": "Lake Manapouri park at Doubtful Sound's boat launch."
+  },
+  {
+    "id": "southland-radfords-on-the-lake",
+    "name": "Radfords on the Lake",
+    "region": "southland",
+    "lat": -45.418,
+    "lng": 167.718,
+    "type": "motel",
+    "price_nzd_per_night": 280,
+    "rating": 4.8,
+    "short": "Lakefront Te Anau apartment-motel accommodation with Fiordland views and town-centre access."
   },
   {
     "id": "southland-riverton-holiday-park",
@@ -2640,6 +3498,17 @@
     "short": "Lake-edge Te Anau park close to Fiordland day-tour boats."
   },
   {
+    "id": "southland-the-langlands-hotel",
+    "name": "The Langlands Hotel",
+    "region": "southland",
+    "lat": -46.412,
+    "lng": 168.354,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Contemporary Invercargill hotel with city-centre dining and a polished southern base."
+  },
+  {
     "id": "southland-victoria-railway-hotel",
     "name": "Victoria Railway Hotel Invercargill",
     "region": "southland",
@@ -2660,6 +3529,17 @@
     "price_nzd_per_night": 190,
     "rating": 4.3,
     "short": "Beachfront apartment-motel on Salisbury Road."
+  },
+  {
+    "id": "tairawhiti-eastland-pacific-motel",
+    "name": "Eastland Pacific Motel",
+    "region": "tairawhiti",
+    "lat": -38.011824,
+    "lng": 177.287383,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4.2,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Tairāwhiti."
   },
   {
     "id": "tairawhiti-emerald-hotel",
@@ -2695,6 +3575,39 @@
     "short": "Riverside Gisborne park a cycle-ride from town."
   },
   {
+    "id": "tairawhiti-karirangi-holiday-park",
+    "name": "Karirangi Holiday Park",
+    "region": "tairawhiti",
+    "lat": -37.680712,
+    "lng": 177.796468,
+    "type": "holiday-park",
+    "price_nzd_per_night": 105,
+    "rating": 4.2,
+    "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Tairāwhiti."
+  },
+  {
+    "id": "tairawhiti-mahia-beach-motel-holiday-park",
+    "name": "Mahia Beach Motel & Holiday Park",
+    "region": "tairawhiti",
+    "lat": -39.078,
+    "lng": 177.873,
+    "type": "holiday-park",
+    "price_nzd_per_night": 130,
+    "rating": 4.4,
+    "short": "Beachside Mahia accommodation with cabins and campsites near peninsula surf and coastal walks."
+  },
+  {
+    "id": "tairawhiti-matawhero-wines-accommodation",
+    "name": "Matawhero Wines Accommodation",
+    "region": "tairawhiti",
+    "lat": -38.660123,
+    "lng": 177.9354377,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.6,
+    "short": "Self-contained vineyard stay among Gisborne vines, paired naturally with the Matawhero cellar door."
+  },
+  {
     "id": "tairawhiti-millton-vineyard-lodge",
     "name": "Millton Vineyard Cottage",
     "region": "tairawhiti",
@@ -2704,6 +3617,17 @@
     "price_nzd_per_night": 550,
     "rating": 4.6,
     "short": "Biodynamic-vineyard cottage stay in Manutuke."
+  },
+  {
+    "id": "tairawhiti-ocean-beach-motor-lodge",
+    "name": "Ocean Beach Motor Lodge",
+    "region": "tairawhiti",
+    "lat": -38.681,
+    "lng": 178.082,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4.4,
+    "short": "Wainui Beach motel accommodation east of Gisborne, close to surf, coastal walks and the city."
   },
   {
     "id": "tairawhiti-pacific-harbour-motor-lodge",
@@ -2926,6 +3850,17 @@
     "short": "Clifftop park above Ngamotu Beach and the Coastal Walkway."
   },
   {
+    "id": "taranaki-carrington-motel",
+    "name": "Carrington Motel",
+    "region": "taranaki",
+    "lat": -39.064759,
+    "lng": 174.076133,
+    "type": "hotel",
+    "price_nzd_per_night": 300,
+    "rating": 4,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Taranaki."
+  },
+  {
     "id": "taranaki-coronation-court-motel",
     "name": "Coronation Court Motel",
     "region": "taranaki",
@@ -2959,6 +3894,28 @@
     "short": "Small South Taranaki park with cabins and tent sites."
   },
   {
+    "id": "taranaki-king-and-queen-hotel-suites",
+    "name": "King and Queen Hotel Suites",
+    "region": "taranaki",
+    "lat": -39.0583643,
+    "lng": 174.0704077,
+    "type": "hotel",
+    "price_nzd_per_night": 330,
+    "rating": 4.7,
+    "short": "Polished boutique suites in New Plymouth's West End Precinct, steps from galleries, cafes and the coastal walkway."
+  },
+  {
+    "id": "taranaki-konini-lodge",
+    "name": "Konini Lodge",
+    "region": "taranaki",
+    "lat": -39.325119,
+    "lng": 174.103636,
+    "type": "lodge",
+    "price_nzd_per_night": 240,
+    "rating": 4.1,
+    "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Taranaki."
+  },
+  {
     "id": "taranaki-makino-cottage-lodge",
     "name": "Makino Cottages",
     "region": "taranaki",
@@ -2979,6 +3936,17 @@
     "price_nzd_per_night": 310,
     "rating": 4.6,
     "short": "Restored 1856 heritage hotel with acclaimed bistro."
+  },
+  {
+    "id": "taranaki-nice-hotel",
+    "name": "Nice Hotel New Plymouth",
+    "region": "taranaki",
+    "lat": -39.058,
+    "lng": 174.075,
+    "type": "hotel",
+    "price_nzd_per_night": 290,
+    "rating": 4.6,
+    "short": "Boutique central New Plymouth hotel in a heritage building close to the Govett-Brewster precinct."
   },
   {
     "id": "taranaki-novotel-new-plymouth",
@@ -3012,6 +3980,17 @@
     "price_nzd_per_night": 155,
     "rating": 4,
     "short": "Coastal Opunake motel on the Surf Highway."
+  },
+  {
+    "id": "taranaki-patuha-rainforest-retreat",
+    "name": "Patuha Rainforest Retreat",
+    "region": "taranaki",
+    "lat": -39.204,
+    "lng": 174.02,
+    "type": "lodge",
+    "price_nzd_per_night": 220,
+    "rating": 4.5,
+    "short": "Rainforest retreat on the Pouakai side of the mountain, suited to walkers and quiet group stays."
   },
   {
     "id": "taranaki-plymouth-hotel",
@@ -3056,6 +4035,17 @@
     "price_nzd_per_night": 170,
     "rating": 4.1,
     "short": "Heritage grounds motel in central Hawera."
+  },
+  {
+    "id": "taranaki-the-devon-hotel",
+    "name": "The Devon Hotel",
+    "region": "taranaki",
+    "lat": -39.055,
+    "lng": 174.091,
+    "type": "hotel",
+    "price_nzd_per_night": 210,
+    "rating": 4.4,
+    "short": "Established New Plymouth hotel with easy access to the coastal walkway, city centre and Taranaki touring."
   },
   {
     "id": "taranaki-devon-hotel",
@@ -3124,6 +4114,17 @@
     "short": "Rainbow-themed Taupo park with hot mineral pools."
   },
   {
+    "id": "taupo-army-road-campsite",
+    "name": "Army Road Campsite",
+    "region": "taupo",
+    "lat": -38.967967,
+    "lng": 176.154835,
+    "type": "holiday-park",
+    "price_nzd_per_night": 115,
+    "rating": 4.5,
+    "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Taupō."
+  },
+  {
     "id": "taupo-aspen-lodge-taupo",
     "name": "Aspen Lodge Taupo",
     "region": "taupo",
@@ -3166,6 +4167,17 @@
     "price_nzd_per_night": 175,
     "rating": 4.2,
     "short": "Central Taupo motor lodge with spa studio units."
+  },
+  {
+    "id": "taupo-braxmere",
+    "name": "Braxmere",
+    "region": "taupo",
+    "lat": -38.944,
+    "lng": 175.766,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.5,
+    "short": "Lakeside studio accommodation near Tokaanu, with southern Lake Taupō and mountain views."
   },
   {
     "id": "taupo-cascades-lakefront-motel",
@@ -3212,6 +4224,17 @@
     "short": "NZ's grand dame lodge on the Waikato River above Huka Falls."
   },
   {
+    "id": "taupo-judges-pool-motel",
+    "name": "Judges Pool Motel",
+    "region": "taupo",
+    "lat": -38.990052,
+    "lng": 175.814219,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.7,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Taupō."
+  },
+  {
     "id": "taupo-kinloch-manor-villas",
     "name": "Kinloch Manor & Villas",
     "region": "taupo",
@@ -3221,6 +4244,17 @@
     "price_nzd_per_night": 1150,
     "rating": 4.8,
     "short": "Small Luxury Hotels of the World member at Kinloch golf village."
+  },
+  {
+    "id": "taupo-lake-taupo-lodge",
+    "name": "Lake Taupo Lodge",
+    "region": "taupo",
+    "lat": -38.731,
+    "lng": 176.097,
+    "type": "lodge",
+    "price_nzd_per_night": 680,
+    "rating": 4.8,
+    "short": "Luxury Acacia Bay lodge with gardens, lake views and a hosted retreat feel above Taupo."
   },
   {
     "id": "taupo-lakeland-resort-taupo",
@@ -3243,6 +4277,28 @@
     "price_nzd_per_night": 310,
     "rating": 4.5,
     "short": "Lakefront hotel with restaurants looking across to volcanoes."
+  },
+  {
+    "id": "taupo-river-birches-turangi",
+    "name": "River Birches Lodge",
+    "region": "taupo",
+    "lat": -38.994,
+    "lng": 175.812,
+    "type": "lodge",
+    "price_nzd_per_night": 650,
+    "rating": 4.8,
+    "short": "Luxury Tūrangi fishing lodge beside the Tongariro River, close to lake and national-park routes."
+  },
+  {
+    "id": "taupo-sacred-waters",
+    "name": "Sacred Waters Taupō",
+    "region": "taupo",
+    "lat": -38.706,
+    "lng": 176.092,
+    "type": "hotel",
+    "price_nzd_per_night": 360,
+    "rating": 4.5,
+    "short": "Lakefront apartment accommodation in Taupō with thermal plunge pools and direct waterfront access."
   },
   {
     "id": "taupo-suncourt-hotel",
@@ -3309,6 +4365,17 @@
     "price_nzd_per_night": 280,
     "rating": 4.4,
     "short": "Geothermal-valley resort with three pools near Huka Falls."
+  },
+  {
+    "id": "taupo-whakaipo-lodge",
+    "name": "Whakaipo Lodge",
+    "region": "taupo",
+    "lat": -38.6877449,
+    "lng": 175.9841844,
+    "type": "lodge",
+    "price_nzd_per_night": 430,
+    "rating": 4.8,
+    "short": "Hosted boutique lodge in Mapara Valley near Whakaipo Bay, mountain-bike trails and Lake Taupō coves."
   },
   {
     "id": "waikato-ambassador-motor-inn-ham",
@@ -3388,6 +4455,17 @@
     "short": "Central Cambridge park with cabins and powered sites."
   },
   {
+    "id": "waikato-casa-mexicana-motel",
+    "name": "Casa Mexicana Motel",
+    "region": "waikato",
+    "lat": -37.36824,
+    "lng": 175.660964,
+    "type": "motel",
+    "price_nzd_per_night": 210,
+    "rating": 4.1,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Waikato."
+  },
+  {
     "id": "waikato-distinction-hamilton",
     "name": "Distinction Hamilton Hotel",
     "region": "waikato",
@@ -3408,6 +4486,28 @@
     "price_nzd_per_night": 95,
     "rating": 4.2,
     "short": "West-city Hamilton park handy to the Zoo and motorway."
+  },
+  {
+    "id": "waikato-henley-hotel",
+    "name": "Henley Hotel Cambridge",
+    "region": "waikato",
+    "lat": -37.899,
+    "lng": 175.488,
+    "type": "hotel",
+    "price_nzd_per_night": 360,
+    "rating": 4.7,
+    "short": "Country-estate boutique hotel near Cambridge with gardens, dining and horse-country atmosphere."
+  },
+  {
+    "id": "waikato-hidden-lake-hotel",
+    "name": "Hidden Lake Hotel",
+    "region": "waikato",
+    "lat": -37.891,
+    "lng": 175.47,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.5,
+    "short": "Modern Cambridge hotel overlooking Lake Te Koo Utu, close to cafés and Waikato cycle routes."
   },
   {
     "id": "waikato-hobbiton-shire-inn",
@@ -3443,6 +4543,17 @@
     "short": "Riverfront Ibis opposite the Claudelands bridge."
   },
   {
+    "id": "waikato-kamahi-cottage",
+    "name": "Kamahi Cottage",
+    "region": "waikato",
+    "lat": -38.2498178,
+    "lng": 175.319713,
+    "type": "lodge",
+    "price_nzd_per_night": 300,
+    "rating": 4.8,
+    "short": "Private rural cottage near Waitomo, with farm views and easy access to cave adventures."
+  },
+  {
     "id": "waikato-lake-karapiro-lodge",
     "name": "Karapiro Lodge",
     "region": "waikato",
@@ -3463,6 +4574,17 @@
     "price_nzd_per_night": 240,
     "rating": 4.3,
     "short": "Hamilton riverside hotel steps from Victoria Street."
+  },
+  {
+    "id": "waikato-putaruru-hotel",
+    "name": "Putaruru Hotel",
+    "region": "waikato",
+    "lat": -38.053454,
+    "lng": 175.780063,
+    "type": "hotel",
+    "price_nzd_per_night": 260,
+    "rating": 4.4,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Waikato."
   },
   {
     "id": "waikato-raglan-kopua-holiday-park",
@@ -3531,6 +4653,17 @@
     "short": "Family park minutes from Waitomo's glow-worm caves."
   },
   {
+    "id": "waikato-woodlyn-park",
+    "name": "Woodlyn Park",
+    "region": "waikato",
+    "lat": -38.258,
+    "lng": 175.107,
+    "type": "motel",
+    "price_nzd_per_night": 190,
+    "rating": 4.2,
+    "short": "Novelty Waitomo accommodation with cave, boat, train and plane motel units near the caves area."
+  },
+  {
     "id": "wellington-apollo-lodge",
     "name": "Apollo Lodge Motel Wellington",
     "region": "wellington",
@@ -3562,6 +4695,17 @@
     "price_nzd_per_night": 650,
     "rating": 4.7,
     "short": "Heritage Bolton Street boutique stay with luxury penthouse suites."
+  },
+  {
+    "id": "wellington-brentwood-hotel",
+    "name": "Brentwood Hotel",
+    "region": "wellington",
+    "lat": -41.316171,
+    "lng": 174.797429,
+    "type": "hotel",
+    "price_nzd_per_night": 315,
+    "rating": 4.4,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Wellington."
   },
   {
     "id": "wellington-cable-court-motel",
@@ -3663,6 +4807,28 @@
     "short": "Wine-village park a short stroll from Martinborough Square."
   },
   {
+    "id": "wellington-midway-pacifica-lodge",
+    "name": "Midway Pacifica Lodge",
+    "region": "wellington",
+    "lat": -41.219858,
+    "lng": 174.877133,
+    "type": "motel",
+    "price_nzd_per_night": 245,
+    "rating": 4,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Wellington."
+  },
+  {
+    "id": "wellington-naumi-studio",
+    "name": "Naumi Studio Wellington",
+    "region": "wellington",
+    "lat": -41.2948,
+    "lng": 174.7759,
+    "type": "hotel",
+    "price_nzd_per_night": 250,
+    "rating": 4.4,
+    "short": "Colourful Cuba Street boutique hotel in a restored heritage building."
+  },
+  {
     "id": "wellington-novotel-wellington",
     "name": "Novotel Wellington",
     "region": "wellington",
@@ -3683,6 +4849,17 @@
     "price_nzd_per_night": 720,
     "rating": 4.7,
     "short": "Martinborough vineyard lodge with private plunge pools."
+  },
+  {
+    "id": "wellington-parehua-resort-martinborough",
+    "name": "Parehua Resort Martinborough",
+    "region": "wellington",
+    "lat": -41.223,
+    "lng": 175.469,
+    "type": "hotel",
+    "price_nzd_per_night": 310,
+    "rating": 4.5,
+    "short": "Wine-country Martinborough resort with cottage-style accommodation, gardens and vineyard access."
   },
   {
     "id": "wellington-qt-wellington",
@@ -3716,6 +4893,39 @@
     "price_nzd_per_night": 450,
     "rating": 4.7,
     "short": "Five-star Sofitel in restored Bolton Hotel on Bolton Street."
+  },
+  {
+    "id": "wellington-the-intrepid-hotel",
+    "name": "The Intrepid Hotel",
+    "region": "wellington",
+    "lat": -41.2929152,
+    "lng": 174.7752734,
+    "type": "hotel",
+    "price_nzd_per_night": 270,
+    "rating": 4.7,
+    "short": "Design-led Te Aro boutique hotel in a restored warehouse off Cuba Street."
+  },
+  {
+    "id": "wellington-martinborough-hotel",
+    "name": "The Martinborough Hotel",
+    "region": "wellington",
+    "lat": -41.218,
+    "lng": 175.459,
+    "type": "hotel",
+    "price_nzd_per_night": 310,
+    "rating": 4.5,
+    "short": "Historic village-square hotel in Martinborough, surrounded by wine-country dining and cellar doors."
+  },
+  {
+    "id": "wellington-the-white-swan-greytown",
+    "name": "The White Swan Greytown",
+    "region": "wellington",
+    "lat": -41.0807,
+    "lng": 175.4598,
+    "type": "hotel",
+    "price_nzd_per_night": 280,
+    "rating": 4.4,
+    "short": "Character Wairarapa hotel in Greytown, known for heritage style and village dining."
   },
   {
     "id": "wellington-wellington-top10",
@@ -3760,6 +4970,17 @@
     "price_nzd_per_night": 185,
     "rating": 4.2,
     "short": "Freestanding cottages in Fox Glacier village."
+  },
+  {
+    "id": "west-coast-annabelle-motel",
+    "name": "Annabelle Motel",
+    "region": "west-coast",
+    "lat": -42.723593,
+    "lng": 170.97472,
+    "type": "motel",
+    "price_nzd_per_night": 200,
+    "rating": 4.5,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in West Coast."
   },
   {
     "id": "west-coast-ashley-hotel-greymouth",
@@ -3872,6 +5093,17 @@
     "short": "West-coast beachfront park with family cabins."
   },
   {
+    "id": "west-coast-karamea-river-motels",
+    "name": "Karamea River Motels",
+    "region": "west-coast",
+    "lat": -41.247,
+    "lng": 172.112,
+    "type": "motel",
+    "price_nzd_per_night": 175,
+    "rating": 4.4,
+    "short": "Practical motel base in remote Karamea for Ōpārara Basin, Heaphy Track and northern Coast exploring."
+  },
+  {
     "id": "west-coast-lake-brunner-lodge",
     "name": "Lake Brunner Lodge",
     "region": "west-coast",
@@ -3881,6 +5113,17 @@
     "price_nzd_per_night": 620,
     "rating": 4.6,
     "short": "Historic fishing lodge on Lake Brunner (Moana)."
+  },
+  {
+    "id": "west-coast-maruia-hot-springs",
+    "name": "Maruia Hot Springs",
+    "region": "west-coast",
+    "lat": -42.331,
+    "lng": 172.188,
+    "type": "lodge",
+    "price_nzd_per_night": 260,
+    "rating": 4.4,
+    "short": "Thermal hot-springs retreat on the Lewis Pass route, with bathing, dining and lodge accommodation."
   },
   {
     "id": "west-coast-punakaiki-beach-camp",
@@ -3903,6 +5146,17 @@
     "price_nzd_per_night": 250,
     "rating": 4.3,
     "short": "Beachfront resort next to the Pancake Rocks and Dolomite Point."
+  },
+  {
+    "id": "west-coast-rainforest-retreat",
+    "name": "Rainforest Retreat Franz Josef",
+    "region": "west-coast",
+    "lat": -43.386,
+    "lng": 170.182,
+    "type": "holiday-park",
+    "price_nzd_per_night": 170,
+    "rating": 4.4,
+    "short": "Rainforest-set Franz Josef accommodation with cabins, tree huts, camper sites and village access."
   },
   {
     "id": "west-coast-rainforest-retreat-motel",
@@ -3938,6 +5192,17 @@
     "short": "Alpine village hotel closest to the Franz Josef Glacier walk."
   },
   {
+    "id": "west-coast-scenic-hotel-punakaiki",
+    "name": "Scenic Hotel Punakaiki",
+    "region": "west-coast",
+    "lat": -42.118709,
+    "lng": 171.330874,
+    "type": "hotel",
+    "price_nzd_per_night": 290,
+    "rating": 4.3,
+    "short": "Hotel option at Punakaiki added to widen overnight coverage along the Great Coast Road."
+  },
+  {
     "id": "west-coast-shining-star-hokitika",
     "name": "Shining Star Beachfront Accommodation",
     "region": "west-coast",
@@ -3947,6 +5212,28 @@
     "price_nzd_per_night": 240,
     "rating": 4.4,
     "short": "Beachfront Hokitika chalets with alpaca and kunekune farm."
+  },
+  {
+    "id": "west-coast-te-waonui-forest-retreat",
+    "name": "Te Waonui Forest Retreat",
+    "region": "west-coast",
+    "lat": -43.3851027,
+    "lng": 170.1826555,
+    "type": "hotel",
+    "price_nzd_per_night": 520,
+    "rating": 4.6,
+    "short": "Premium Franz Josef rainforest hotel with native planting and glacier-country access."
+  },
+  {
+    "id": "west-coast-theatre-royal-hotel-kumara",
+    "name": "Theatre Royal Hotel Kumara",
+    "region": "west-coast",
+    "lat": -42.63,
+    "lng": 171.184,
+    "type": "hotel",
+    "price_nzd_per_night": 230,
+    "rating": 4.6,
+    "short": "Restored gold-rush hotel in Kumara on the West Coast Wilderness Trail."
   },
   {
     "id": "west-coast-wilderness-lodge-arthurs",
@@ -3993,6 +5280,17 @@
     "short": "Whanganui motel on the London Street motel strip."
   },
   {
+    "id": "whanganui-manawatu-ambassador-motel",
+    "name": "Ambassador Motel",
+    "region": "whanganui-manawatu",
+    "lat": -40.362698,
+    "lng": 175.61709,
+    "type": "motel",
+    "price_nzd_per_night": 180,
+    "rating": 4.2,
+    "short": "Motel option added from mapped accommodation data to widen overnight coverage in Whanganui."
+  },
+  {
     "id": "whanganui-manawatu-aotea-motor-lodge",
     "name": "Aotea Motor Lodge Whanganui",
     "region": "whanganui-manawatu",
@@ -4035,6 +5333,17 @@
     "price_nzd_per_night": 175,
     "rating": 4.2,
     "short": "Palmerston North motel on Park Road near The Square."
+  },
+  {
+    "id": "whanganui-manawatu-cheltenham-pub-and-hotel",
+    "name": "Cheltenham Pub and Hotel",
+    "region": "whanganui-manawatu",
+    "lat": -40.13805,
+    "lng": 175.6607,
+    "type": "hotel",
+    "price_nzd_per_night": 270,
+    "rating": 4.3,
+    "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Whanganui."
   },
   {
     "id": "whanganui-manawatu-coachman-motel-pn",
@@ -4114,6 +5423,17 @@
     "short": "Historic Whanganui hotel on Victoria Avenue with pool."
   },
   {
+    "id": "whanganui-manawatu-makoura-lodge",
+    "name": "Makoura Lodge",
+    "region": "whanganui-manawatu",
+    "lat": -39.996,
+    "lng": 175.822,
+    "type": "lodge",
+    "price_nzd_per_night": 240,
+    "rating": 4.6,
+    "short": "Rural lodge and event accommodation near Apiti, with hill-country views and outdoor activities."
+  },
+  {
     "id": "whanganui-manawatu-rangitikei-river-lodge",
     "name": "Mangaweka Adventure Lodge",
     "region": "whanganui-manawatu",
@@ -4147,6 +5467,17 @@
     "short": "Family park on the edge of Palmerston North."
   },
   {
+    "id": "whanganui-manawatu-powderhorn-chateau",
+    "name": "Powderhorn Chateau",
+    "region": "whanganui-manawatu",
+    "lat": -39.4019216,
+    "lng": 175.4124823,
+    "type": "hotel",
+    "price_nzd_per_night": 350,
+    "rating": 4.5,
+    "short": "Alpine-style Ohakune hotel in the Junction, with ski-town character and Ruapehu access."
+  },
+  {
     "id": "whanganui-manawatu-rahui-lodge-manawatu",
     "name": "Rahui Country Estate",
     "region": "whanganui-manawatu",
@@ -4169,6 +5500,17 @@
     "short": "Levin town-centre motel on Queen Street."
   },
   {
+    "id": "whanganui-manawatu-river-valley-lodge",
+    "name": "River Valley Lodge",
+    "region": "whanganui-manawatu",
+    "lat": -39.776,
+    "lng": 175.789,
+    "type": "lodge",
+    "price_nzd_per_night": 210,
+    "rating": 4.7,
+    "short": "Remote Rangitīkei River lodge known for rafting, horse trekking and hill-country stays."
+  },
+  {
     "id": "whanganui-manawatu-rutherford-hotel-manawatu",
     "name": "Rutland Arms Hotel Palmerston North",
     "region": "whanganui-manawatu",
@@ -4189,6 +5531,28 @@
     "price_nzd_per_night": 180,
     "rating": 4.2,
     "short": "Ohakune railway-precinct motel at the Ruapehu gateway."
+  },
+  {
+    "id": "whanganui-manawatu-the-gretna-hotel",
+    "name": "The Gretna Hotel Taihape",
+    "region": "whanganui-manawatu",
+    "lat": -39.678,
+    "lng": 175.798,
+    "type": "hotel",
+    "price_nzd_per_night": 150,
+    "rating": 4.2,
+    "short": "Historic Taihape hotel base for Rangitīkei, Ruahine and central North Island road journeys."
+  },
+  {
+    "id": "whanganui-manawatu-rutland-arms-inn",
+    "name": "The Rutland Arms Inn",
+    "region": "whanganui-manawatu",
+    "lat": -39.933,
+    "lng": 175.052,
+    "type": "hotel",
+    "price_nzd_per_night": 190,
+    "rating": 4.4,
+    "short": "Boutique inn on Whanganui’s main street with heritage styling and restaurant access."
   },
   {
     "id": "whanganui-manawatu-whanganui-top10",

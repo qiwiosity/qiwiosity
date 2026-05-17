@@ -8,7 +8,7 @@
       "lng": 176.912
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "hawkes-bay-art-deco-masonic",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 880,
       "rating": 4.7,
       "short": "Collection of luxury vineyard villas in Havelock North hills."
+    },
+    {
+      "id": "hawkes-bay-the-manse",
+      "name": "The Manse",
+      "region": "hawkes-bay",
+      "lat": -39.6530216,
+      "lng": 176.6178061,
+      "type": "lodge",
+      "price_nzd_per_night": 1200,
+      "rating": 4.8,
+      "short": "Vineyard-country luxury lodge in Maraekakaho with hosted dining and Hawke's Bay countryside views."
+    },
+    {
+      "id": "hawkes-bay-porters-boutique-hotel",
+      "name": "Porters Boutique Hotel",
+      "region": "hawkes-bay",
+      "lat": -39.6703,
+      "lng": 176.8771,
+      "type": "hotel",
+      "price_nzd_per_night": 320,
+      "rating": 4.6,
+      "short": "Havelock North boutique hotel beside village restaurants and Te Mata Peak access."
+    },
+    {
+      "id": "hawkes-bay-mangapapa-hotel",
+      "name": "Mangapapa Hotel",
+      "region": "hawkes-bay",
+      "lat": -39.649,
+      "lng": 176.84,
+      "type": "lodge",
+      "price_nzd_per_night": 520,
+      "rating": 4.6,
+      "short": "Historic country-house hotel near Havelock North with gardens and refined dining."
+    },
+    {
+      "id": "hawkes-bay-clive-colonial-cottages",
+      "name": "Clive Colonial Cottages",
+      "region": "hawkes-bay",
+      "lat": -39.585,
+      "lng": 176.915,
+      "type": "motel",
+      "price_nzd_per_night": 230,
+      "rating": 4.7,
+      "short": "Character cottage accommodation in Clive, handy for cycling between Napier, Hastings and wineries."
+    },
+    {
+      "id": "hawkes-bay-art-deco-masonic-hotel",
+      "name": "Art Deco Masonic Hotel",
+      "region": "hawkes-bay",
+      "lat": -39.49,
+      "lng": 176.918,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.5,
+      "short": "Central Napier hotel in a landmark Art Deco building by the waterfront and city attractions."
+    },
+    {
+      "id": "hawkes-bay-bluewater-hotel",
+      "name": "Bluewater Hotel",
+      "region": "hawkes-bay",
+      "lat": -39.485485,
+      "lng": 176.891514,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.1,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Hawke's Bay."
+    },
+    {
+      "id": "hawkes-bay-albatross-motel",
+      "name": "Albatross Motel",
+      "region": "hawkes-bay",
+      "lat": -39.478723,
+      "lng": 176.882559,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Hawke's Bay."
     }
   ]
 }

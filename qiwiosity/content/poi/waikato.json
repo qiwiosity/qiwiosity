@@ -2329,7 +2329,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Easy urban birding. Good variety for a city lake. Pleasant walk at any time of day."
       }
     },
@@ -2426,7 +2426,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Fascinating eel viewing. The hot springs are fun for families. The eels are impressively large."
       }
     },
@@ -2499,7 +2499,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Peaceful harbour birding. Off the tourist trail. Good wader variety at low tide."
       }
     },
@@ -2568,7 +2568,7 @@
       "commentary": "Tirau is a small South Waikato town that has transformed itself into one of New Zealand's quirkiest roadside attractions through a collection of giant corrugated iron sculptures and animal-shaped buildings. The most famous is the massive corrugated iron dog that houses the information centre, alongside a corrugated iron sheep and various other metal creatures dotted through the town. Local artist and farmer Jeff Thomson pioneered the corrugated iron art movement, and Tirau embraced his vision wholeheartedly. The town on State Highway 1 between Hamilton and Rotorua/Taupō has reinvented itself as 'The Corrugated Capital,' with the sculptures drawing thousands of visitors who stop for photos and end up browsing the antique shops, cafés, and quirky retail stores that now line the main street. Tirau demonstrates how creative thinking can revitalise a small rural town. Stop for photos and a coffee — the main street shops are worth a browse, especially the antique and collectibles stores. A fun, free, and authentically Kiwi experience.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Such a fun little town — the giant corrugated iron animals are brilliantly quirky. The antique shops are worth browsing and the cafés are decent. A perfect road trip pitstop between Hamilton and Rotorua."
       }
     },
@@ -2586,7 +2586,7 @@
         "surf-culture"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "World-famous left-hand point breaks at Manu Bay and Whale Bay, the heart of NZ's surf culture.",
       "commentary": "Raglan's surf beaches are legendary — the town's west coast location produces some of the longest and most consistent left-hand point breaks in the world. Manu Bay (Indicators) is the most famous break, offering a long, perfectly shaped left-hander that was featured in the classic 1966 surf film 'The Endless Summer.' Whale Bay, accessible via a bush track, provides another excellent left in a beautiful, secluded setting. Ngarunui Beach (the main ocean beach) offers more forgiving conditions suitable for learners, with surf schools operating in summer. The town of Raglan itself is one of New Zealand's most characterful communities — a creative, environmentally conscious surf town with excellent cafés, craft breweries, and a thriving arts scene. The harbour is beautiful and the sunsets are legendary. Raglan is about 45 minutes west of Hamilton, making it accessible for day trips, though most visitors want to stay longer. The surf community is welcoming but respectful of localism at the premium breaks. Surf lessons at Ngarunui are recommended for beginners.",
       "content_status": "draft",
@@ -2609,7 +2609,7 @@
         "black-water"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Extreme caving adventure in Waitomo with a 35m abseil, flying fox, and black water rafting through glow-worm caves.",
       "commentary": "The Black Abyss is the most extreme caving experience offered at Waitomo, combining a 35-metre underground abseil into the Ruakuri Cave system, a subterranean flying fox over a chasm, and black water tubing through underground rivers illuminated by thousands of glow-worms. The five-hour adventure begins with training and a dramatic descent into the darkness, followed by a series of underground challenges including rock scrambling, swimming, and floating through cathedral-sized chambers. The glow-worm displays, viewed while floating silently on the underground river, are ethereal and unforgettable. No prior caving experience is required but reasonable fitness is needed. Wetsuits, helmets, and all equipment are provided. The experience operates year-round with departures twice daily. Minimum age is 16 years. Hot showers and soup are provided afterwards. Book well ahead during peak season as numbers are strictly limited per trip.",
       "content_status": "draft",
@@ -2678,7 +2678,7 @@
         "mokena-geyser"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Historic thermal spa town with natural mineral hot pools and the only hot soda water geyser in the Southern Hemisphere.",
       "commentary": "Te Aroha is a charming small town at the foot of Mount Te Aroha in the eastern Waikato, renowned for its natural hot soda water springs, the only ones in New Zealand. The Te Aroha Mineral Spas complex offers private and public soaking pools filled with naturally heated mineral water, set in the historic Domain that dates back to the 1880s when Te Aroha was a fashionable spa resort. The Mokena Geyser, the only known hot soda water geyser in the Southern Hemisphere, erupts periodically in the Domain. The town retains Victorian-era character with heritage buildings, a museum in the former cadets' hall, and the beautifully maintained Domain gardens. The Hauraki Rail Trail passes through town, making Te Aroha a natural stop for cyclists. A walk to the summit of Mount Te Aroha offers panoramic views across the Hauraki Plains and Coromandel Peninsula. The mineral spas are open daily and booking is recommended for private pools.",
       "content_status": "draft",
@@ -2701,7 +2701,7 @@
         "river"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Annual Maori waka racing regatta on the Waikato River at Ngaruawahia, the seat of the Maori King movement.",
       "cultural_review_required": true,
       "commentary": "The Ngaruawahia River Regatta is one of New Zealand's oldest and most significant Maori cultural events, held annually on the Waikato River at Ngaruawahia, the seat of the Kiingitanga (Maori King movement). First held in 1896, the regatta features waka (canoe) races on the river, with teams paddling traditional and modern waka in a display of skill, strength, and cultural pride. The event also includes kapahaka (performing arts) competitions, traditional games, kai stalls, and cultural displays on the riverbank. The regatta takes place at The Point, the confluence of the Waikato and Waipa Rivers, a site of deep significance in Tainui history. Turangawaewae Marae, the principal marae of the Kiingitanga, provides the cultural backdrop. The regatta is open to the public and offers a genuine opportunity to experience Maori culture in its most heartfelt expression. Check dates annually, typically held in March.",
@@ -2725,7 +2725,7 @@
         "community"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Eclectic surf town food scene with organic cafes, artisan bakeries, and a thriving farmers market.",
       "commentary": "Raglan is a small Waikato surf town with a disproportionately excellent food and coffee scene, driven by a creative community that values organic, local, and sustainable produce. The Raglan Wholefoods store is a community hub selling organic and locally sourced products. Numerous cafes along Bow Street and the main drag serve excellent coffee, vegetarian and vegan dishes, and casual dining that reflects the town's laid-back surf culture. The Raglan Farmers Market on Saturday mornings brings together local growers and artisan food producers. Notable stops include Raglan Roast for coffee, The Shack for burgers, and various food trucks in the wharf area. The town's commitment to zero waste and sustainable practices is evident throughout the food scene. Combined with the world-famous surf breaks at Manu Bay and Whale Bay, the harbour-side setting, and the creative community, Raglan offers a distinctly New Zealand coastal experience just two hours from Auckland.",
       "content_status": "draft",
@@ -3535,7 +3535,7 @@
       "commentary": "Firth Tower is a striking four-storey concrete tower built in 1882 by Auckland businessman Josiah Clifton Firth as a granary and lookout on his model farm. The tower anchors a museum complex of relocated heritage buildings including a homestead, schoolhouse, church, blacksmith shop, and jail that tell the story of Waikato rural life in the colonial era. The museum is one of the most comprehensive regional heritage collections in the North Island, with detailed displays on early farming, Maori-European relations, and the development of the dairy industry. The surrounding grounds are pleasant for a stroll. The museum is run by passionate volunteers. Matamata itself is best known as the gateway to Hobbiton, but this museum offers a real rather than fictional history.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Surprisingly comprehensive rural history museum. The heritage buildings are charming. Volunteers add warmth and knowledge."
       }
     },
@@ -3783,7 +3783,7 @@
         "left-hand break"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Learn to surf at one of the world's longest left-hand breaks.",
       "commentary": "Raglan is home to one of the world's most consistent left-hand point breaks, and the beginner-friendly Ngarunui Beach is perfect for lessons. Local surf schools offer personalised instruction in a laid-back atmosphere that captures Raglan's surf culture perfectly.",
       "content_status": "draft",
@@ -3806,7 +3806,7 @@
         "museum"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Historic 1882 concrete tower and colonial village museum in Matamata.",
       "commentary": "Firth Tower is a unique 1882 concrete tower built by Auckland industrialist Josiah Clifton Firth. The surrounding museum village includes relocated colonial buildings — a school, church, jail, and homestead — telling the story of Waikato pioneer settlement.",
       "content_status": "draft",
@@ -3829,7 +3829,7 @@
         "low tide"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Dig your own hot pool on this wild west coast beach — the locals' Hot Water Beach.",
       "commentary": "Kawhia's Ocean Beach offers the same dig-your-own-hot-pool experience as the famous Coromandel Hot Water Beach, but without the crowds. At low tide, hot water bubbles up through the black sand on this wild west coast beach — a genuine hidden gem known mainly to locals.",
       "content_status": "draft",
@@ -3852,7 +3852,7 @@
         "hydro dams"
       ],
       "trigger_radius_m": 800,
-      "duration_hours": 5.0,
+      "duration_hours": 5,
       "short": "Multi-day cycling trail along the Waikato River connecting hydro lakes.",
       "commentary": "The Waikato River Trails offer over 100 kilometres of cycling through bush, farmland, and past a series of hydro dams on the Waikato River. The Lake Karāpiro section passes the world-class rowing venue, suspension bridges, and bush-clad gorges — a multi-day cycling adventure.",
       "content_status": "draft",
@@ -3860,6 +3860,619 @@
         "rating": 4.4,
         "summary": "Excellent trail system — the suspension bridges are exciting."
       }
+    },
+    {
+      "id": "waikato-lake-ngaroto",
+      "name": "Lake Ngāroto",
+      "region": "waikato",
+      "lat": -37.9537668,
+      "lng": 175.2889256,
+      "category": "wildlife",
+      "tags": [
+        "peat-lake",
+        "wetland",
+        "birdlife",
+        "waipa",
+        "loop-walk"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.25,
+      "short": "Waipā's largest peat lake, with a loop track, restoration planting, birdlife and deep local history.",
+      "commentary": "Lake Ngāroto sits close to Te Awamutu but feels like a different Waikato rhythm: open water, wetland edges, restoration planting and a mostly flat loop track. Waipā District Council identifies it as the largest of the district's peat lakes and records significant history around the lake. The modern visit is part recreation, part ecological repair. Walk the loop, watch for birds and notice the restoration work rather than treating the lake as just another picnic stop. Because the place carries deep cultural and historical associations, this story should keep being improved with mana whenua guidance.",
+      "audio_story": "Lake Ngāroto sits close to Te Awamutu but feels like a different Waikato rhythm: open water, wetland edges, restoration planting and a mostly flat loop track. Waipā District Council identifies it as the largest of the district's peat lakes and records significant history around the lake. The modern visit is part recreation, part ecological repair. Walk the loop, watch for birds and notice the restoration work rather than treating the lake as just another picnic stop. Because the place carries deep cultural and historical associations, this story should keep being improved with mana whenua guidance.",
+      "suggested_voice_tone": "calm, ecological, respectful",
+      "sources_to_check": [
+        "Waipā District Council history: https://www.waipadc.govt.nz/your-waipa/about-waipa/waipa-history/pa-lake-ngaroto",
+        "Waipā District Council restoration: https://www.waipadc.govt.nz/your-waipa/parks-and-reserves/te-awamutu-parks-and-reserves/lake-ng-roto-te-awamutu/current-condition-of-nga-roto"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true,
+      "reviews": {
+        "rating": 4.4,
+        "summary": "A popular easy loop for locals, birdwatchers and families; visitors value the open lake views and visible restoration work."
+      }
+    },
+    {
+      "id": "waikato-taitua-arboretum",
+      "name": "Taitua Arboretum",
+      "region": "waikato",
+      "lat": -37.7881,
+      "lng": 175.2087,
+      "category": "nature",
+      "tags": [
+        "hamilton",
+        "arboretum",
+        "walking",
+        "free-entry"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A peaceful Hamilton arboretum with lakes, trees, birds and easy trails west of the city.",
+      "commentary": "Taitua Arboretum is Hamilton’s slow garden escape. Paths pass ponds, mature trees and birdlife, making it ideal when you need a green hour that is neither formal garden nor backcountry walk.",
+      "audio_story": "Taitua Arboretum is Hamilton’s slow garden escape. Paths pass ponds, mature trees and birdlife, making it ideal when you need a green hour that is neither formal garden nor backcountry walk.",
+      "suggested_voice_tone": "peaceful, leafy, local",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-nikau-cave-cafe",
+      "name": "Nikau Cave and Café",
+      "region": "waikato",
+      "lat": -37.4774,
+      "lng": 174.7646,
+      "category": "adventure",
+      "tags": [
+        "cave",
+        "glowworms",
+        "guided",
+        "cafe"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2.5,
+      "short": "A guided limestone cave and rural café experience on Waikato’s west-coast backroads.",
+      "commentary": "Nikau Cave feels like the antidote to overproduced cave tourism. The guided trip is personal and muddy enough to feel real, with glowworms, stream passages and a café stop that makes the rural detour feel complete.",
+      "audio_story": "Nikau Cave feels like the antidote to overproduced cave tourism. The guided trip is personal and muddy enough to feel real, with glowworms, stream passages and a café stop that makes the rural detour feel complete.",
+      "suggested_voice_tone": "adventurous, local, warm",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-lake-rotopiko",
+      "name": "Lake Rotopiko / National Wetland Centre",
+      "region": "waikato",
+      "lat": -37.9706,
+      "lng": 175.3156,
+      "category": "wildlife",
+      "tags": [
+        "wetland",
+        "birdlife",
+        "restoration",
+        "te-awamutu"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A restored peat-lake wetland complex south of Hamilton, focused on native fish, birds and education.",
+      "commentary": "Lake Rotopiko shows the Waikato below the pasture line: peat lakes, reeds, native fish and wetland restoration. It is a quiet but important stop for understanding what this region has lost and what patient repair can bring back.",
+      "audio_story": "Lake Rotopiko shows the Waikato below the pasture line: peat lakes, reeds, native fish and wetland restoration. It is a quiet but important stop for understanding what this region has lost and what patient repair can bring back.",
+      "suggested_voice_tone": "ecological, reflective, hopeful",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-raglan-wharf",
+      "name": "Raglan Wharf",
+      "region": "waikato",
+      "lat": -37.7988,
+      "lng": 174.8728,
+      "category": "food-wine",
+      "tags": [
+        "raglan",
+        "seafood",
+        "harbour",
+        "arts"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1.5,
+      "short": "A working-harbour wharf precinct in Raglan with fish, coffee, galleries and sunset water views.",
+      "commentary": "Raglan Wharf is where the town’s surf-town ease meets working harbour practicality. Fish shops, artists, coffee and boat activity share the same wooden-edge atmosphere, making it a good first stop before the beaches claim the day.",
+      "audio_story": "Raglan Wharf is where the town’s surf-town ease meets working harbour practicality. Fish shops, artists, coffee and boat activity share the same wooden-edge atmosphere, making it a good first stop before the beaches claim the day.",
+      "suggested_voice_tone": "easygoing, local, appetising",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-te-awa-river-ride",
+      "name": "Te Awa River Ride",
+      "region": "waikato",
+      "lat": -37.789,
+      "lng": 175.288,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "waikato-river",
+        "hamilton",
+        "cambridge"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 4,
+      "short": "A riverside cycle trail following the Waikato River through Hamilton, Cambridge and linked communities.",
+      "commentary": "Te Awa River Ride puts the Waikato River back at the centre of movement. The trail connects towns, bridges, parks and river bends, giving cyclists a way to feel the region’s spine rather than just drive parallel to it.",
+      "audio_story": "Te Awa River Ride puts the Waikato River back at the centre of movement. The trail connects towns, bridges, parks and river bends, giving cyclists a way to feel the region’s spine rather than just drive parallel to it.",
+      "suggested_voice_tone": "active, river-led, connected",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-hakarimata-summit-track",
+      "name": "Hakarimata Summit Track",
+      "region": "waikato",
+      "lat": -37.6602,
+      "lng": 175.1514,
+      "category": "adventure",
+      "tags": [
+        "stairs",
+        "ngaruawahia",
+        "forest",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "A famously stair-heavy climb above Ngāruawāhia to views over the Waikato basin.",
+      "commentary": "Hakarimata Summit Track is simple in concept and very honest in execution: stairs, sweat, forest, lookout. Locals use it for fitness, visitors use it for perspective, and everyone earns the same wide Waikato view from the top.",
+      "audio_story": "Hakarimata Summit Track is simple in concept and very honest in execution: stairs, sweat, forest, lookout. Locals use it for fitness, visitors use it for perspective, and everyone earns the same wide Waikato view from the top.",
+      "suggested_voice_tone": "energetic, direct, rewarding",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-karamu-walkway",
+      "name": "Karamu Walkway",
+      "region": "waikato",
+      "lat": -37.8676,
+      "lng": 175.0068,
+      "category": "nature",
+      "tags": [
+        "farm-walk",
+        "pirongia",
+        "views",
+        "walking"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2.5,
+      "short": "A farm walkway west of Hamilton with rolling hill views toward Pirongia and the wider Waikato.",
+      "commentary": "Karamu Walkway is Waikato hill country in walking form. The route crosses farmland and ridges, offering the kind of broad, pastoral views that explain the region just as clearly as its famous caves and gardens.",
+      "audio_story": "Karamu Walkway is Waikato hill country in walking form. The route crosses farmland and ridges, offering the kind of broad, pastoral views that explain the region just as clearly as its famous caves and gardens.",
+      "suggested_voice_tone": "open, rural, grounded",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-okoroire-hot-springs",
+      "name": "Okoroire Hot Springs",
+      "region": "waikato",
+      "lat": -37.9557,
+      "lng": 175.8071,
+      "category": "nature",
+      "tags": [
+        "hot-springs",
+        "heritage-hotel",
+        "matamata",
+        "soak"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 2,
+      "short": "Historic private hot pools in a wooded gully beside the old Okoroire hotel.",
+      "commentary": "Okoroire Hot Springs feels like a pocket of older Waikato travel. The thermal pools sit down a path in a bushy gully, paired with a heritage hotel atmosphere that makes the stop feel more like a detour from another era than a modern spa product.",
+      "audio_story": "Okoroire Hot Springs feels like a pocket of older Waikato travel. The thermal pools sit down a path in a bushy gully, paired with a heritage hotel atmosphere that makes the stop feel more like a detour from another era than a modern spa product.",
+      "suggested_voice_tone": "warm, historical, relaxed",
+      "sources_to_check": [
+        "Hamilton & Waikato Tourism visitor information",
+        "DOC Waikato and Waitomo places",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-lake-hakanoa-walkway",
+      "name": "Lake Hakanoa Walkway",
+      "region": "waikato",
+      "lat": -37.549,
+      "lng": 175.158,
+      "category": "nature",
+      "tags": [
+        "huntly",
+        "lake",
+        "walking"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Lake Hakanoa Walkway gives Huntly a gentle lakeside circuit, balancing the town’s industrial reputation with birds, boardwalks and everyday recreation.",
+      "commentary": "Lake Hakanoa Walkway gives Huntly a gentle lakeside circuit, balancing the town’s industrial reputation with birds, boardwalks and everyday recreation.",
+      "audio_story": "Lake Hakanoa Walkway gives Huntly a gentle lakeside circuit, balancing the town’s industrial reputation with birds, boardwalks and everyday recreation.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-waitakaruru-arboretum",
+      "name": "Waitakaruru Arboretum and Sculpture Park",
+      "region": "waikato",
+      "lat": -37.733,
+      "lng": 175.426,
+      "category": "culture",
+      "tags": [
+        "sculpture",
+        "arboretum",
+        "hamilton"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Waitakaruru Arboretum turns a former quarry into a planted art landscape, where sculpture and regenerating trees share the same hillside.",
+      "commentary": "Waitakaruru Arboretum turns a former quarry into a planted art landscape, where sculpture and regenerating trees share the same hillside.",
+      "audio_story": "Waitakaruru Arboretum turns a former quarry into a planted art landscape, where sculpture and regenerating trees share the same hillside.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-pirongia-heritage-centre",
+      "name": "Pirongia Heritage and Information Centre",
+      "region": "waikato",
+      "lat": -37.994,
+      "lng": 175.202,
+      "category": "heritage",
+      "tags": [
+        "pirongia",
+        "museum",
+        "frontier-history"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Pirongia’s heritage centre helps explain a small town with outsized frontier history, from military redoubt stories to mountain-edge settlement.",
+      "commentary": "Pirongia’s heritage centre helps explain a small town with outsized frontier history, from military redoubt stories to mountain-edge settlement.",
+      "audio_story": "Pirongia’s heritage centre helps explain a small town with outsized frontier history, from military redoubt stories to mountain-edge settlement.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-te-toto-gorge-lookout",
+      "name": "Te Toto Gorge Lookout",
+      "region": "waikato",
+      "lat": -37.88,
+      "lng": 174.768,
+      "category": "nature",
+      "tags": [
+        "raglan",
+        "lookout",
+        "coastal",
+        "geology"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 0.75,
+      "short": "A dramatic roadside lookout near Raglan, facing layered cliffs, surf coast and old garden terraces.",
+      "commentary": "Te Toto Gorge is one of Raglan’s sharpest pauses: a short stop with a long view. From the lookout the coast drops away in cliffs and folds, the Tasman works below, and the shape of the land makes it clear why this western edge has always pulled people toward it.",
+      "audio_story": "Te Toto Gorge is one of Raglan’s sharpest pauses: a short stop with a long view. From the lookout the coast drops away in cliffs and folds, the Tasman works below, and the shape of the land makes it clear why this western edge has always pulled people toward it.",
+      "suggested_voice_tone": "wide, respectful, windswept",
+      "sources_to_check": [
+        "https://www.waikatonz.com/walking-and-hiking-trails/te-toto-gorge/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "waikato-kaniwhaniwha-caves",
+      "name": "Kaniwhaniwha Caves",
+      "region": "waikato",
+      "lat": -37.97,
+      "lng": 175.035,
+      "category": "adventure",
+      "tags": [
+        "caves",
+        "pirongia",
+        "forest",
+        "walking"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 2.5,
+      "short": "A Pirongia Forest Park walk to small limestone caves and cool stream-side bush.",
+      "commentary": "The Kaniwhaniwha Caves make Pirongia feel playful as well as grand. The track follows forest and stream country before narrowing into limestone pockets, where the reward is less about scale than the fun of discovering a hidden shape in the mountain’s lower folds.",
+      "audio_story": "The Kaniwhaniwha Caves make Pirongia feel playful as well as grand. The track follows forest and stream country before narrowing into limestone pockets, where the reward is less about scale than the fun of discovering a hidden shape in the mountain’s lower folds.",
+      "suggested_voice_tone": "curious, active, grounded",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/waikato/places/pirongia-forest-park/things-to-do/kaniwhaniwha-caves/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-beale-cottage",
+      "name": "Beale Cottage",
+      "region": "waikato",
+      "lat": -37.789173,
+      "lng": 175.292237,
+      "category": "heritage",
+      "tags": [
+        "heritage-building-site",
+        "heritage",
+        "historic-heritage_building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Beale Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Beale Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/258240167",
+        "http://www.heritage.org.nz/the-register/details/769",
+        "https://www.wikidata.org/wiki/Q4876124",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-greenslade-house",
+      "name": "Greenslade House",
+      "region": "waikato",
+      "lat": -37.795832,
+      "lng": 175.291541,
+      "category": "heritage",
+      "tags": [
+        "heritage-building-site",
+        "heritage",
+        "historic-heritage_building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Greenslade House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Greenslade House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/173908808",
+        "http://www.heritage.org.nz/the-register/details/4163",
+        "https://www.wikidata.org/wiki/Q79301426",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-herbert-morton",
+      "name": "Herbert Morton",
+      "region": "waikato",
+      "lat": -37.897509,
+      "lng": 175.47186,
+      "category": "heritage",
+      "tags": [
+        "heritage-building-site",
+        "heritage",
+        "historic-heritage_building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Herbert Morton is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Herbert Morton is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/257208792",
+        "https://www.herbertmorton.co.nz/",
+        "https://www.wikidata.org/wiki/Q79303977",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-kerepehi",
+      "name": "Kerepēhi",
+      "region": "waikato",
+      "lat": -37.297196,
+      "lng": 175.544154,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Kerepēhi is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Kerepēhi is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1446104719",
+        "https://en.wikipedia.org/wiki/Kerepehi",
+        "https://www.wikidata.org/wiki/Q25660523",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-rotowaro-carbonisation-plant",
+      "name": "Rotowaro Carbonisation Plant",
+      "region": "waikato",
+      "lat": -37.603167,
+      "lng": 175.07063,
+      "category": "heritage",
+      "tags": [
+        "ruins-site",
+        "heritage",
+        "natural-scrub",
+        "historic-ruins"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Rotowaro Carbonisation Plant is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Rotowaro Carbonisation Plant is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/950000643",
+        "https://en.wikipedia.org/wiki/Rotowaro_Carbonisation_Plant",
+        "https://www.wikidata.org/wiki/Q7370620",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-tokanui-psychiatric-hospital",
+      "name": "Tokanui Psychiatric Hospital",
+      "region": "waikato",
+      "lat": -38.065473,
+      "lng": 175.324581,
+      "category": "heritage",
+      "tags": [
+        "ruins-site",
+        "heritage",
+        "natural-heath",
+        "historic-ruins"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Tokanui Psychiatric Hospital is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Tokanui Psychiatric Hospital is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/171972499",
+        "https://en.wikipedia.org/wiki/Tokanui_Psychiatric_Hospital",
+        "https://www.wikidata.org/wiki/Q7813485",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-toothbrush-fence",
+      "name": "Toothbrush fence",
+      "region": "waikato",
+      "lat": -37.926215,
+      "lng": 175.11043,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Waikato.",
+      "commentary": "Toothbrush fence gives Waikato another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Toothbrush fence gives Waikato another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/968010163",
+        "https://en.wikipedia.org/wiki/Toothbrush_fence",
+        "https://www.wikidata.org/wiki/Q60747113",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-otorohanga-museum",
+      "name": "Ōtorohanga Museum",
+      "region": "waikato",
+      "lat": -38.180814,
+      "lng": 175.210356,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Waikato.",
+      "commentary": "Ōtorohanga Museum gives Waikato another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Ōtorohanga Museum gives Waikato another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1577770550",
+        "https://www.otorohangamuseum.co.nz",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "waikato-alexandra-redoubt",
+      "name": "Alexandra Redoubt",
+      "region": "waikato",
+      "lat": -37.994157,
+      "lng": 175.197931,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Waikato.",
+      "commentary": "Alexandra Redoubt is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Alexandra Redoubt is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/426699728",
+        "https://en.wikipedia.org/wiki/Alexandra_Redoubt",
+        "https://www.wikidata.org/wiki/Q94067461",
+        "https://www.newzealand.com/nz/waikato/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
     }
   ]
 }

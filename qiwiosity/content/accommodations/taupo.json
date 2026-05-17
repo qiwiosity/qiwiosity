@@ -8,7 +8,7 @@
       "lng": 176.0702
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "taupo-hilton-lake-taupo",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 1150,
       "rating": 4.8,
       "short": "Small Luxury Hotels of the World member at Kinloch golf village."
+    },
+    {
+      "id": "taupo-whakaipo-lodge",
+      "name": "Whakaipo Lodge",
+      "region": "taupo",
+      "lat": -38.6877449,
+      "lng": 175.9841844,
+      "type": "lodge",
+      "price_nzd_per_night": 430,
+      "rating": 4.8,
+      "short": "Hosted boutique lodge in Mapara Valley near Whakaipo Bay, mountain-bike trails and Lake Taupō coves."
+    },
+    {
+      "id": "taupo-sacred-waters",
+      "name": "Sacred Waters Taupō",
+      "region": "taupo",
+      "lat": -38.706,
+      "lng": 176.092,
+      "type": "hotel",
+      "price_nzd_per_night": 360,
+      "rating": 4.5,
+      "short": "Lakefront apartment accommodation in Taupō with thermal plunge pools and direct waterfront access."
+    },
+    {
+      "id": "taupo-braxmere",
+      "name": "Braxmere",
+      "region": "taupo",
+      "lat": -38.944,
+      "lng": 175.766,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.5,
+      "short": "Lakeside studio accommodation near Tokaanu, with southern Lake Taupō and mountain views."
+    },
+    {
+      "id": "taupo-river-birches-turangi",
+      "name": "River Birches Lodge",
+      "region": "taupo",
+      "lat": -38.994,
+      "lng": 175.812,
+      "type": "lodge",
+      "price_nzd_per_night": 650,
+      "rating": 4.8,
+      "short": "Luxury Tūrangi fishing lodge beside the Tongariro River, close to lake and national-park routes."
+    },
+    {
+      "id": "taupo-lake-taupo-lodge",
+      "name": "Lake Taupo Lodge",
+      "region": "taupo",
+      "lat": -38.731,
+      "lng": 176.097,
+      "type": "lodge",
+      "price_nzd_per_night": 680,
+      "rating": 4.8,
+      "short": "Luxury Acacia Bay lodge with gardens, lake views and a hosted retreat feel above Taupo."
+    },
+    {
+      "id": "taupo-judges-pool-motel",
+      "name": "Judges Pool Motel",
+      "region": "taupo",
+      "lat": -38.990052,
+      "lng": 175.814219,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.7,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Taupō."
+    },
+    {
+      "id": "taupo-army-road-campsite",
+      "name": "Army Road Campsite",
+      "region": "taupo",
+      "lat": -38.967967,
+      "lng": 176.154835,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.5,
+      "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Taupō."
     }
   ]
 }

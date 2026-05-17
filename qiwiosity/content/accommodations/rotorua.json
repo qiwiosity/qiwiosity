@@ -8,7 +8,7 @@
       "lng": 176.2497
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "rotorua-novotel-rotorua-lakeside",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 1450,
       "rating": 4.8,
       "short": "Nine-suite lodge on Lake Tarawera with volcano views."
+    },
+    {
+      "id": "rotorua-on-the-point",
+      "name": "On The Point Lake Rotorua",
+      "region": "rotorua",
+      "lat": -38.1053046,
+      "lng": 176.2444757,
+      "type": "lodge",
+      "price_nzd_per_night": 700,
+      "rating": 4.7,
+      "short": "Lake-edge luxury lodge on Kawaha Point with gardens, jetty access and quiet Rotorua views."
+    },
+    {
+      "id": "rotorua-pullman-rotorua",
+      "name": "Pullman Rotorua",
+      "region": "rotorua",
+      "lat": -38.1366,
+      "lng": 176.2526,
+      "type": "hotel",
+      "price_nzd_per_night": 300,
+      "rating": 4.4,
+      "short": "Modern central Rotorua hotel near Eat Streat, Government Gardens and the lakefront."
+    },
+    {
+      "id": "rotorua-wai-ora-lakeside-spa-resort",
+      "name": "Wai Ora Lakeside Spa Resort",
+      "region": "rotorua",
+      "lat": -38.096,
+      "lng": 176.315,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.3,
+      "short": "Lake Rotorua resort at Holdens Bay with spa facilities and a quieter eastern-lake setting."
+    },
+    {
+      "id": "rotorua-vr-lake-resort",
+      "name": "VR Rotorua Lake Resort",
+      "region": "rotorua",
+      "lat": -38.077,
+      "lng": 176.354,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.1,
+      "short": "Lake Rotoiti resort accommodation at Mourea, useful for travellers exploring Rotorua’s eastern lakes."
+    },
+    {
+      "id": "rotorua-awa-hotel",
+      "name": "AWA Hotel",
+      "region": "rotorua",
+      "lat": -38.112152,
+      "lng": 176.224786,
+      "type": "hotel",
+      "price_nzd_per_night": 300,
+      "rating": 4.7,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Rotorua."
+    },
+    {
+      "id": "rotorua-astelia-lodge",
+      "name": "Astelia Lodge",
+      "region": "rotorua",
+      "lat": -38.262843,
+      "lng": 176.163122,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Rotorua."
     }
   ]
 }

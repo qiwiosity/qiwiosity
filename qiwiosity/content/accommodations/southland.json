@@ -8,7 +8,7 @@
       "lng": 167.8
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "southland-kelvin-hotel",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 850,
       "rating": 4.7,
       "short": "Boutique lakeside lodge on Te Anau's Dock Bay."
+    },
+    {
+      "id": "southland-cabot-lodge",
+      "name": "Cabot Lodge",
+      "region": "southland",
+      "lat": -45.5592762,
+      "lng": 167.6499676,
+      "type": "lodge",
+      "price_nzd_per_night": 1050,
+      "rating": 4.9,
+      "short": "Fiordland farm lodge between Te Anau and Manapōuri with mountain views and hosted dinners."
+    },
+    {
+      "id": "southland-the-langlands-hotel",
+      "name": "The Langlands Hotel",
+      "region": "southland",
+      "lat": -46.412,
+      "lng": 168.354,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Contemporary Invercargill hotel with city-centre dining and a polished southern base."
+    },
+    {
+      "id": "southland-distinction-te-anau",
+      "name": "Distinction Te Anau Hotel & Villas",
+      "region": "southland",
+      "lat": -45.416,
+      "lng": 167.718,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.3,
+      "short": "Lake Te Anau hotel and villa accommodation near the town centre and Fiordland departure points."
+    },
+    {
+      "id": "southland-last-light-lodge",
+      "name": "Last Light Lodge",
+      "region": "southland",
+      "lat": -46.133,
+      "lng": 167.683,
+      "type": "lodge",
+      "price_nzd_per_night": 150,
+      "rating": 4.5,
+      "short": "Tuatapere lodge, holiday park and café base for Hump Ridge Track and south-coast journeys."
+    },
+    {
+      "id": "southland-radfords-on-the-lake",
+      "name": "Radfords on the Lake",
+      "region": "southland",
+      "lat": -45.418,
+      "lng": 167.718,
+      "type": "motel",
+      "price_nzd_per_night": 280,
+      "rating": 4.8,
+      "short": "Lakefront Te Anau apartment-motel accommodation with Fiordland views and town-centre access."
+    },
+    {
+      "id": "southland-bay-motel",
+      "name": "Bay Motel",
+      "region": "southland",
+      "lat": -46.898828,
+      "lng": 168.125759,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.5,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Southland & Fiordland."
+    },
+    {
+      "id": "southland-camp-taringatura",
+      "name": "Camp Taringatura",
+      "region": "southland",
+      "lat": -45.98534,
+      "lng": 168.310547,
+      "type": "holiday-park",
+      "price_nzd_per_night": 115,
+      "rating": 4.3,
+      "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Southland & Fiordland."
     }
   ]
 }

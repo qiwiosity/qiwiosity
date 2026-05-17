@@ -8,7 +8,7 @@
       "lng": 174.0756
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "taranaki-novotel-new-plymouth",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 540,
       "rating": 4.6,
       "short": "Hilltop spa cottages near Inglewood with Mt Taranaki views."
+    },
+    {
+      "id": "taranaki-king-and-queen-hotel-suites",
+      "name": "King and Queen Hotel Suites",
+      "region": "taranaki",
+      "lat": -39.0583643,
+      "lng": 174.0704077,
+      "type": "hotel",
+      "price_nzd_per_night": 330,
+      "rating": 4.7,
+      "short": "Polished boutique suites in New Plymouth's West End Precinct, steps from galleries, cafes and the coastal walkway."
+    },
+    {
+      "id": "taranaki-nice-hotel",
+      "name": "Nice Hotel New Plymouth",
+      "region": "taranaki",
+      "lat": -39.058,
+      "lng": 174.075,
+      "type": "hotel",
+      "price_nzd_per_night": 290,
+      "rating": 4.6,
+      "short": "Boutique central New Plymouth hotel in a heritage building close to the Govett-Brewster precinct."
+    },
+    {
+      "id": "taranaki-patuha-rainforest-retreat",
+      "name": "Patuha Rainforest Retreat",
+      "region": "taranaki",
+      "lat": -39.204,
+      "lng": 174.02,
+      "type": "lodge",
+      "price_nzd_per_night": 220,
+      "rating": 4.5,
+      "short": "Rainforest retreat on the Pouakai side of the mountain, suited to walkers and quiet group stays."
+    },
+    {
+      "id": "taranaki-the-devon-hotel",
+      "name": "The Devon Hotel",
+      "region": "taranaki",
+      "lat": -39.055,
+      "lng": 174.091,
+      "type": "hotel",
+      "price_nzd_per_night": 210,
+      "rating": 4.4,
+      "short": "Established New Plymouth hotel with easy access to the coastal walkway, city centre and Taranaki touring."
+    },
+    {
+      "id": "taranaki-carrington-motel",
+      "name": "Carrington Motel",
+      "region": "taranaki",
+      "lat": -39.064759,
+      "lng": 174.076133,
+      "type": "hotel",
+      "price_nzd_per_night": 300,
+      "rating": 4,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Taranaki."
+    },
+    {
+      "id": "taranaki-konini-lodge",
+      "name": "Konini Lodge",
+      "region": "taranaki",
+      "lat": -39.325119,
+      "lng": 174.103636,
+      "type": "lodge",
+      "price_nzd_per_night": 240,
+      "rating": 4.1,
+      "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Taranaki."
     }
   ]
 }

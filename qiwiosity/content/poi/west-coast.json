@@ -1912,7 +1912,7 @@
       "commentary": "Speight's Ale House in Greymouth is a reliable choice for a proper pub dinner on the West Coast. The beer selection covers the Speight's range alongside guest taps, and the food is hearty — think steak, fish and chips, and good old-fashioned pub fare. The atmosphere is friendly and welcoming, and it's where locals gather after work. Nothing fancy, just solid West Coast hospitality.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Reliable pub food in a friendly atmosphere. The beer selection is decent. Good for a casual, hearty dinner on the Coast."
       }
     },
@@ -2039,7 +2039,7 @@
       "name": "Hokitika Gorge — Freshwater Ecology",
       "region": "west-coast",
       "lat": -42.95,
-      "lng": 171.0,
+      "lng": 171,
       "category": "wildlife",
       "tags": [
         "freshwater",
@@ -2317,7 +2317,7 @@
         "west-coast-art"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Greymouth gallery showcasing West Coast artists, pounamu carving, and the creative spirit of the Coast.",
       "commentary": "The Left Bank Art Gallery in Greymouth is one of the West Coast's principal gallery spaces, showcasing the work of local and regional artists in a heritage building in the centre of town. The gallery reflects the distinctive creative spirit of the West Coast — a region whose dramatic landscapes, isolation, and independent character produce art with a raw, powerful quality. Exhibitions rotate regularly and feature painting, sculpture, photography, pounamu (greenstone) carving, and mixed media. The West Coast has a strong tradition of pounamu carving, and the gallery often features work by local carvers alongside contemporary art. The gallery serves as a community cultural hub in a region where arts infrastructure is limited. Admission is free or by donation. The Left Bank precinct also houses other creative businesses and eateries. Greymouth is the largest town on the West Coast and serves as a base for exploring the region's natural attractions. The gallery provides a welcome cultural counterpoint to the outdoor adventures that dominate most West Coast itineraries.",
       "content_status": "draft",
@@ -2409,12 +2409,12 @@
         "short-walk"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Short rainforest walk to a limestone cavern with glowworms, complementing the famous Pancake Rocks nearby.",
       "commentary": "The Punakaiki Cavern Walk is a short but rewarding native bush track near the famous Pancake Rocks, leading to a large limestone cavern featuring glowworms. The walk takes about 20 minutes return through lush coastal rainforest with impressive nikau palms, tree ferns, and broadleaf canopy. The cavern itself is a collapsed limestone cave — a large, open grotto that shelters a colony of glowworms visible on overcast days or in the evening. The walk is much less crowded than the neighbouring Pancake Rocks track, offering a peaceful forest experience. The track is well formed and suitable for most fitness levels. The cavern provides a taste of the extensive limestone cave systems that underlie the Paparoa landscape. Combine with the Pancake Rocks and Blowholes walk for a varied experience of this unique geological area. The Paparoa National Park visitor centre provides good context on the region's distinctive limestone geology. Free access, no time restrictions. The forest is beautiful even without the cavern destination.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A lovely short walk through gorgeous rainforest to an interesting cave with glowworms. Much quieter than the nearby Pancake Rocks. A nice complement to the main attraction and the bush is beautiful."
       }
     },
@@ -2432,7 +2432,7 @@
         "eco-tour"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Scenic rafting through the Hokitika Gorge and river system on the West Coast's turquoise glacial waters.",
       "commentary": "Eco Rafting offers a scenic rafting experience on the Hokitika River, famous for its extraordinary milky turquoise colour created by glacial flour, finely ground rock particles suspended in the water. The trip takes you through native bush-lined gorges where the water colour is at its most intense, past rocky outcrops and through gentle rapids suitable for families and first-time rafters. Unlike adrenaline-focused whitewater rafting, this experience emphasises the natural beauty of the West Coast river environment, with guides sharing knowledge of the ecology, geology, and gold-mining history of the area. The river's colour photographs spectacularly and the bush backdrop adds to the visual drama. No prior rafting experience is required and all equipment including wetsuits is provided. The trip is weather and river-level dependent, with calm conditions offering the most vivid water colour. Departures from Hokitika with transport provided.",
       "content_status": "draft",
@@ -2460,7 +2460,7 @@
       "commentary": "Monteiths has been part of the West Coast brewing story since 1868, making it one of New Zealand's oldest beer brands. The Greymouth brewery offers guided tasting experiences that tell the history of brewing on the Coast, from goldfields beginnings to modern craft production. The tasting session includes samples of the Monteiths range, from the flagship Original Ale to seasonal and limited-release beers, paired with local West Coast food including whitebait if in season. The brewery building has heritage character and the tour provides insights into the brewing process. While Monteiths is now owned by a major brewer, the Greymouth operation maintains a connection to its independent origins. The brewery is centrally located in Greymouth, easily visited between the TranzAlpine train arrival and other West Coast activities. A good rainy-day option, which on the West Coast is a practical consideration.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "An enjoyable brewery tour with a genuine heritage story. The tasting session is generous and the food pairings add value. A good option for a wet West Coast afternoon in Greymouth."
       }
     },
@@ -2501,7 +2501,7 @@
         "rainforest"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Walk through temperate rainforest to the terminal face viewing area of Franz Josef Glacier.",
       "commentary": "The Franz Josef Glacier valley walk provides one of the world's most accessible glacier experiences, leading from lush temperate rainforest to within view of the terminal face of Ka Roimata o Hine Hukatere (Franz Josef Glacier). The glacier descends from the Southern Alps to just 240 metres above sea level, making it one of the most accessible glaciers in the world. The free DOC walking track follows the Waiho River valley through a landscape shaped by glacial advance and retreat, with interpretive panels explaining the geology. While the glacier has retreated significantly in recent decades, its immense scale remains impressive. Guided heli-hike tours land on the glacier by helicopter for an ice walking experience, accessing features like ice tunnels and seracs. The glacier township provides accommodation, dining, and other activities. The combination of temperate rainforest and glacier ice within the same landscape is found nowhere else on Earth outside New Zealand.",
       "content_status": "draft",
@@ -2524,7 +2524,7 @@
         "geological"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Layered limestone rock formations and dramatic ocean blowholes at Punakaiki on the West Coast.",
       "commentary": "The Pancake Rocks at Dolomite Point, Punakaiki, are one of the West Coast's most iconic natural attractions. These heavily eroded limestone formations resemble stacks of pancakes, created over 30 million years through a process of alternating hard and soft limestone layers being differentially eroded by wind and rain. At high tide, ocean swells force through cavities beneath the rocks, erupting dramatically through blowholes in spectacular displays of spray and sound. The viewing loop walk takes about 20 minutes along well-maintained paths and boardwalks with interpretation panels. The blowholes are most impressive during high tide combined with a west or southwest swell, check conditions for the best display. Located at Punakaiki on SH6 between Greymouth and Westport, the rocks are a natural stopping point on any West Coast road trip. The adjacent Punakaiki Cavern offers a guided underground experience. A cafe and information centre provide facilities. Free to visit.",
       "content_status": "draft",
@@ -2547,7 +2547,7 @@
         "wetland"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Kayak through NZ's largest unmodified wetland, home to the rare white heron and royal spoonbill colonies.",
       "commentary": "Okarito Lagoon is New Zealand's largest unmodified wetland, a 3,240-hectare coastal lagoon backed by rainforest-clad mountains and the distant Southern Alps. The lagoon is home to over 76 bird species, including the rare kotuku (white heron), which breeds exclusively at the nearby Waitangiroto colony, and royal spoonbills, oystercatchers, and numerous wading birds. Guided and self-guided kayak tours explore the lagoon's tidal channels and mirror-calm backwaters, with the mountain reflections creating spectacular photography opportunities. The tiny settlement of Okarito (population around 30) retains a frontier character and was the setting for Keri Hulme's Booker Prize-winning novel The Bone People. The Okarito Trig walk provides panoramic views of the lagoon, coastline, and Southern Alps. Located between Hokitika and Franz Josef on SH6, Okarito is a peaceful detour from the glacier highway. Early morning paddles offer the best birdlife and calmest water conditions.",
       "content_status": "draft",
@@ -2694,7 +2694,7 @@
       "commentary": "Left Bank Art Gallery occupies the impressive former Bank of New South Wales building in central Greymouth, its grand banking chamber now filled with art instead of ledgers. The gallery showcases West Coast artists working in painting, sculpture, photography, and pounamu (greenstone) carving. Pounamu features prominently given the West Coast's deep connection to the stone — Te Tai Poutini, the region's Maori name, references the taniwha guardian of pounamu. Entry is free, and the rotating exhibitions ensure there is always something new. The building alone is worth stepping into — high ceilings, original fittings, and the quiet grandeur of a colonial-era bank.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Visitors appreciate the free entry and the quality of pounamu art on display. The heritage bank building is impressive. A pleasant stop in Greymouth that most travellers would otherwise drive through."
       }
     },
@@ -3670,7 +3670,7 @@
       "commentary": "Reefton holds a remarkable distinction — in 1888, it became one of the first places in the Southern Hemisphere (and one of the first in the world) to have public electric street lighting, powered by a hydro-electric scheme on the Inangahua River. The Powerhouse Heritage site tells this story. The town's gold-mining heritage is visible in its Victorian architecture and the surrounding stamper batteries and mine sites. The Blacks Point Museum covers both the gold and electrical heritage. Reefton has recently attracted attention as a base for boutique outdoor experiences, with mountain biking trails and access to the remote Victoria Conservation Park. The town retains an authentic, unpolished West Coast character.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Fascinating electrical heritage in a quirky gold-mining town. The Powerhouse site is interesting. Authentic West Coast character."
       }
     },
@@ -3986,7 +3986,7 @@
       "name": "West Coast Wilderness Trail — Great Ride",
       "region": "west-coast",
       "lat": -42.75,
-      "lng": 171.0,
+      "lng": 171,
       "category": "journey",
       "tags": [
         "cycling",
@@ -4042,7 +4042,7 @@
         "scenic reserve"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Pristine bush-fringed lake with swimming, walks, and mountain reflections.",
       "commentary": "Lake Kaniere is a large glacial lake surrounded by dense podocarp forest with mountain backdrops. The scenic reserve offers walking tracks through ancient rimu and kahikatea forest, and the lake's clean water is excellent for swimming — a peaceful alternative to the Hokitika Gorge crowds.",
       "content_status": "draft",
@@ -4096,6 +4096,619 @@
         "rating": 4.2,
         "summary": "Interesting gold heritage walk — the nugget story is amazing."
       }
+    },
+    {
+      "id": "west-coast-kawatiri-coastal-trail",
+      "name": "Kawatiri Coastal Trail",
+      "region": "west-coast",
+      "lat": -41.7653362,
+      "lng": 171.5980675,
+      "category": "journey",
+      "tags": [
+        "cycle-trail",
+        "westport",
+        "heritage",
+        "lagoon",
+        "family-ride"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 3,
+      "short": "A staged Grade 2 coastal walking and cycling trail linking Westport, Cape Foulwind, Tauranga Bay and Charleston.",
+      "commentary": "The Kawatiri Coastal Trail is a strong West Coast layer because it turns a drive-through coastline into a slower sequence. The staged walking and cycling route links Westport, Carters Beach, Cape Foulwind, Tauranga Bay and Charleston, with wetlands, coastal views, heritage fragments and easy Grade 2 riding forming the appeal. Travellers should check the latest open sections before planning a full route, because trail development and access can change. Even as a partial ride or walk, it helps the map show the northern West Coast as lagoon edges, working towns, seal-coast headlands and old transport stories stitched together by bike speed.",
+      "audio_story": "The Kawatiri Coastal Trail is a strong West Coast layer because it turns a drive-through coastline into a slower sequence. The staged walking and cycling route links Westport, Carters Beach, Cape Foulwind, Tauranga Bay and Charleston, with wetlands, coastal views, heritage fragments and easy Grade 2 riding forming the appeal. Travellers should check the latest open sections before planning a full route, because trail development and access can change. Even as a partial ride or walk, it helps the map show the northern West Coast as lagoon edges, working towns, seal-coast headlands and old transport stories stitched together by bike speed.",
+      "suggested_voice_tone": "rolling, coastal, practical",
+      "sources_to_check": [
+        "Kawatiri Coastal Trail: https://www.kawatiricoastaltrail.co.nz/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.6,
+        "summary": "Cyclists and walkers like the gentle grade, coastal variety and family-friendly sections; route planning depends on current open stages."
+      }
+    },
+    {
+      "id": "west-coast-coal-creek-falls",
+      "name": "Coal Creek Falls",
+      "region": "west-coast",
+      "lat": -42.3739,
+      "lng": 171.3219,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "runanga",
+        "short-walk",
+        "forest"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.25,
+      "short": "A short forest walk near Rūnanga to a wide, graceful waterfall on the Grey district’s doorstep.",
+      "commentary": "Coal Creek Falls is an easy West Coast reward: damp forest, a steady track and then water dropping in a broad curtain into a dark pool. It is close to Greymouth, but the bush makes town feel much further away.",
+      "audio_story": "Coal Creek Falls is an easy West Coast reward: damp forest, a steady track and then water dropping in a broad curtain into a dark pool. It is close to Greymouth, but the bush makes town feel much further away.",
+      "suggested_voice_tone": "fresh, green, accessible",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-okarito-trig-walk",
+      "name": "Ōkārito Trig Walk",
+      "region": "west-coast",
+      "lat": -43.2195,
+      "lng": 170.2016,
+      "category": "nature",
+      "tags": [
+        "okarito",
+        "lookout",
+        "wetland",
+        "glacier-views"
+      ],
+      "trigger_radius_m": 650,
+      "duration_hours": 1.5,
+      "short": "A short climb above Ōkārito Lagoon to one of the Coast’s finest forest, wetland and mountain views.",
+      "commentary": "Ōkārito Trig is short enough to tempt almost anyone and good enough to surprise almost everyone. From the top, lagoon, rainforest, sea and the Southern Alps line up in one of the clearest explanations of why the West Coast feels so compressed and dramatic.",
+      "audio_story": "Ōkārito Trig is short enough to tempt almost anyone and good enough to surprise almost everyone. From the top, lagoon, rainforest, sea and the Southern Alps line up in one of the clearest explanations of why the West Coast feels so compressed and dramatic.",
+      "suggested_voice_tone": "rewarding, scenic, compact",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-west-coast-treetop-walk",
+      "name": "West Coast Treetop Walk",
+      "region": "west-coast",
+      "lat": -42.7894,
+      "lng": 170.9593,
+      "category": "nature",
+      "tags": [
+        "tree-walk",
+        "hokitika",
+        "forest",
+        "family"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "An elevated walkway through rimu and kamahi forest near Lake Mahināpua, south of Hokitika.",
+      "commentary": "The West Coast Treetop Walk shifts the forest from something you look into to something you stand within. Elevated platforms put visitors among trunks, crowns and birds, making the rainforest’s vertical scale easy to feel without a muddy tramp.",
+      "audio_story": "The West Coast Treetop Walk shifts the forest from something you look into to something you stand within. Elevated platforms put visitors among trunks, crowns and birds, making the rainforest’s vertical scale easy to feel without a muddy tramp.",
+      "suggested_voice_tone": "family-friendly, green, elevated",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-ship-creek-tauparikaka",
+      "name": "Ship Creek / Tauparikākā",
+      "region": "west-coast",
+      "lat": -43.7711,
+      "lng": 169.1516,
+      "category": "nature",
+      "tags": [
+        "haast",
+        "dune-lake",
+        "short-walk",
+        "coast"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A Haast coast stop with short dune and swamp-forest walks between highway, rainforest and Tasman surf.",
+      "commentary": "Ship Creek / Tauparikākā is a perfect Haast Highway pause because it shows three West Coast worlds at once: sea, dune and swamp forest. The boardwalks are short, but the landscape feels ancient and wonderfully damp.",
+      "audio_story": "Ship Creek / Tauparikākā is a perfect Haast Highway pause because it shows three West Coast worlds at once: sea, dune and swamp forest. The boardwalks are short, but the landscape feels ancient and wonderfully damp.",
+      "suggested_voice_tone": "green, wild, concise",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "west-coast-gillespies-beach",
+      "name": "Gillespies Beach",
+      "region": "west-coast",
+      "lat": -43.4144,
+      "lng": 169.8286,
+      "category": "heritage",
+      "tags": [
+        "beach",
+        "gold-mining",
+        "fox-glacier",
+        "coast"
+      ],
+      "trigger_radius_m": 1200,
+      "duration_hours": 2,
+      "short": "A remote stony beach near Fox Glacier with gold-mining remnants and huge Southern Alps contrast.",
+      "commentary": "Gillespies Beach gives the West Coast one of its great contrasts: surf and stones in front, snowy mountains behind. Old gold-mining remains sit in the scrub, reminding you that people once chased fortune even in places that still feel half-wild.",
+      "audio_story": "Gillespies Beach gives the West Coast one of its great contrasts: surf and stones in front, snowy mountains behind. Old gold-mining remains sit in the scrub, reminding you that people once chased fortune even in places that still feel half-wild.",
+      "suggested_voice_tone": "remote, historical, scenic",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-kaniere-water-race-walkway",
+      "name": "Kaniere Water Race Walkway",
+      "region": "west-coast",
+      "lat": -42.807,
+      "lng": 171.139,
+      "category": "heritage",
+      "tags": [
+        "water-race",
+        "hokitika",
+        "gold-mining",
+        "walk"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "A bush walkway following a historic water race built for gold mining and later power generation.",
+      "commentary": "The Kaniere Water Race Walkway follows the kind of infrastructure that usually hides in the bush. Dug for gold and later adapted for power, the channel shows how water was directed, borrowed and engineered into the Coast’s working history.",
+      "audio_story": "The Kaniere Water Race Walkway follows the kind of infrastructure that usually hides in the bush. Dug for gold and later adapted for power, the channel shows how water was directed, borrowed and engineered into the Coast’s working history.",
+      "suggested_voice_tone": "historical, green, thoughtful",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-haast-river-safari",
+      "name": "Haast River Safari",
+      "region": "west-coast",
+      "lat": -43.881,
+      "lng": 169.042,
+      "category": "adventure",
+      "tags": [
+        "jet-boat",
+        "haast",
+        "river",
+        "world-heritage"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "A guided jet-boat journey into the Haast River valley, where rainforest and mountains close in fast.",
+      "commentary": "The Haast River is too large to understand from a bridge alone. A river safari puts you down at water level, where glacial colour, rainforest walls and mountain weather make the World Heritage landscape feel immediate and mobile.",
+      "audio_story": "The Haast River is too large to understand from a bridge alone. A river safari puts you down at water level, where glacial colour, rainforest walls and mountain weather make the World Heritage landscape feel immediate and mobile.",
+      "suggested_voice_tone": "active, scenic, river-led",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-karamea-limestone-country",
+      "name": "Karamea Limestone Country",
+      "region": "west-coast",
+      "lat": -41.25,
+      "lng": 172.12,
+      "category": "journey",
+      "tags": [
+        "karamea",
+        "limestone",
+        "caves",
+        "remote"
+      ],
+      "trigger_radius_m": 3000,
+      "duration_hours": 4,
+      "short": "A northern West Coast journey into rainforest, limestone arches, caves and the edge of Kahurangi.",
+      "commentary": "Karamea’s limestone country feels like the Coast turning secretive. Rainforest hides arches, caves and rivers at the end of a long road, rewarding travellers who are willing to go beyond Punakaiki and let the map thin out.",
+      "audio_story": "Karamea’s limestone country feels like the Coast turning secretive. Rainforest hides arches, caves and rivers at the end of a long road, rewarding travellers who are willing to go beyond Punakaiki and let the map thin out.",
+      "suggested_voice_tone": "remote, curious, green",
+      "sources_to_check": [
+        "DOC West Coast places",
+        "West Coast official visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-waiuta-ghost-town",
+      "name": "Waiuta Ghost Town",
+      "region": "west-coast",
+      "lat": -42.254,
+      "lng": 171.856,
+      "category": "heritage",
+      "tags": [
+        "ghost-town",
+        "gold-mining",
+        "reefton"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Waiuta is one of the Coast’s most evocative mining ghosts, where hut sites, machinery and forest regrowth outline a town built on quartz and risk.",
+      "commentary": "Waiuta is one of the Coast’s most evocative mining ghosts, where hut sites, machinery and forest regrowth outline a town built on quartz and risk.",
+      "audio_story": "Waiuta is one of the Coast’s most evocative mining ghosts, where hut sites, machinery and forest regrowth outline a town built on quartz and risk.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-mitchells-gully-gold-mine",
+      "name": "Mitchells Gully Gold Mine",
+      "region": "west-coast",
+      "lat": -41.289,
+      "lng": 172.107,
+      "category": "heritage",
+      "tags": [
+        "gold-mine",
+        "charleston",
+        "walk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Mitchells Gully keeps gold-mining history close to the surface, with tunnels, races and relics tucked into damp bush near Charleston.",
+      "commentary": "Mitchells Gully keeps gold-mining history close to the surface, with tunnels, races and relics tucked into damp bush near Charleston.",
+      "audio_story": "Mitchells Gully keeps gold-mining history close to the surface, with tunnels, races and relics tucked into damp bush near Charleston.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-minnehaha-walk",
+      "name": "Minnehaha Walk, Fox Glacier",
+      "region": "west-coast",
+      "lat": -43.466,
+      "lng": 170.016,
+      "category": "nature",
+      "tags": [
+        "glowworms",
+        "forest",
+        "short-walk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Minnehaha Walk is a short Fox Glacier forest loop that becomes quietly magical after dark, when glowworms mark the banks like low stars.",
+      "commentary": "Minnehaha Walk is a short Fox Glacier forest loop that becomes quietly magical after dark, when glowworms mark the banks like low stars.",
+      "audio_story": "Minnehaha Walk is a short Fox Glacier forest loop that becomes quietly magical after dark, when glowworms mark the banks like low stars.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-woods-creek-track",
+      "name": "Woods Creek Track",
+      "region": "west-coast",
+      "lat": -42.38,
+      "lng": 171.42,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "walk",
+        "greymouth",
+        "forest"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.25,
+      "short": "A short West Coast walk through old gold-mining water races, tunnels and regenerating forest.",
+      "commentary": "Woods Creek Track is the West Coast in miniature: bush, water, rock and the remains of people chasing gold through difficult country. The tunnels and races make the walk tactile, while the forest quietly shows what happens after the digging stops.",
+      "audio_story": "Woods Creek Track is the West Coast in miniature: bush, water, rock and the remains of people chasing gold through difficult country. The tunnels and races make the walk tactile, while the forest quietly shows what happens after the digging stops.",
+      "suggested_voice_tone": "earthy, historical, curious",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/greymouth-area/things-to-do/tracks/woods-creek-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-lake-mahinapua",
+      "name": "Lake Mahinapua",
+      "region": "west-coast",
+      "lat": -42.792,
+      "lng": 170.89,
+      "category": "nature",
+      "tags": [
+        "lake",
+        "hokitika",
+        "camping",
+        "birdlife"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A shallow forest-edged lake south of Hokitika, with camping, short walks and wetland birdlife.",
+      "commentary": "Lake Mahinapua is a soft interruption on the Coast road. The water lies low among forest and wetland, inviting picnics, short walks and camping rather than spectacle; on a still day it feels like the landscape has taken a long breath.",
+      "audio_story": "Lake Mahinapua is a soft interruption on the Coast road. The water lies low among forest and wetland, inviting picnics, short walks and camping rather than spectacle; on a still day it feels like the landscape has taken a long breath.",
+      "suggested_voice_tone": "calm, reflective, west-coast",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/lake-mahinapua-scenic-reserve/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-doctor-sinclairs-grave",
+      "name": "Doctor Sinclairs Grave",
+      "region": "west-coast",
+      "lat": -43.630662,
+      "lng": 170.910756,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in West Coast.",
+      "commentary": "Doctor Sinclairs Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Doctor Sinclairs Grave is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1225168497",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/canterbury/places/te-kahui-kaupeka-conservation-park/dr-sinclairs-grave-mesopotamia-station-cemetery/",
+        "https://www.wikidata.org/wiki/Q126045694",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-westland-explorers-monument",
+      "name": "Westland Explorers' Monument",
+      "region": "west-coast",
+      "lat": -42.708986,
+      "lng": 170.974837,
+      "category": "heritage",
+      "tags": [
+        "monument-site",
+        "heritage",
+        "historic-monument"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in West Coast.",
+      "commentary": "Westland Explorers' Monument is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Westland Explorers' Monument is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10115595048",
+        "https://en.wikipedia.org/wiki/Westland_Explorers'_Monument",
+        "https://www.wikidata.org/wiki/Q104982621",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-seaview-asylum",
+      "name": "Seaview Asylum",
+      "region": "west-coast",
+      "lat": -42.707676,
+      "lng": 170.978834,
+      "category": "heritage",
+      "tags": [
+        "ruins-site",
+        "heritage",
+        "historic-ruins"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in West Coast.",
+      "commentary": "Seaview Asylum is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Seaview Asylum is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1098392953",
+        "https://en.wikipedia.org/wiki/Seaview_Asylum",
+        "https://www.wikidata.org/wiki/Q7442248",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-malte-brun",
+      "name": "Malte-Brun",
+      "region": "west-coast",
+      "lat": -43.562384,
+      "lng": 170.304814,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of West Coast.",
+      "commentary": "Malte-Brun helps mark the high country and skyline around West Coast. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Malte-Brun helps mark the high country and skyline around West Coast. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/470243913",
+        "https://en.wikipedia.org/wiki/Malte_Brun_(mountain)",
+        "https://www.wikidata.org/wiki/Q3408316",
+        "https://www.newzealand.com/nz/west-coast/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-wilderness-gallery",
+      "name": "Wilderness Gallery",
+      "region": "west-coast",
+      "lat": -42.718004,
+      "lng": 170.961935,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through West Coast.",
+      "commentary": "Wilderness Gallery gives West Coast another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Wilderness Gallery gives West Coast another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/2847431042",
+        "https://www.wildernessgallery.co.nz/",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-cave-creek-resurgence",
+      "name": "Cave Creek Resurgence",
+      "region": "west-coast",
+      "lat": -42.108018,
+      "lng": 171.406481,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in West Coast.",
+      "commentary": "Cave Creek Resurgence adds a small natural feature to the West Coast map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Cave Creek Resurgence adds a small natural feature to the West Coast map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1123061447",
+        "https://www.wikidata.org/wiki/Q32156033",
+        "https://www.newzealand.com/nz/west-coast/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-dobson-memorial",
+      "name": "Dobson Memorial",
+      "region": "west-coast",
+      "lat": -42.90789,
+      "lng": 171.559113,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in West Coast.",
+      "commentary": "Dobson Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Dobson Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/3921690353",
+        "https://en.wikipedia.org/wiki/Arthur_Dudley_Dobson_Memorial",
+        "https://www.wikidata.org/wiki/Q106776144",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-hapuka-estuary-walk",
+      "name": "Hapuka Estuary Walk",
+      "region": "west-coast",
+      "lat": -43.91123,
+      "lng": 168.900386,
+      "category": "nature",
+      "tags": [
+        "estuary",
+        "boardwalk",
+        "haast",
+        "birdlife",
+        "doc-track"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A DOC short walk near Haast, crossing estuary boardwalk and podocarp forest toward Open Bay Islands views.",
+      "commentary": "Hapuka Estuary Walk adds a softer southern West Coast pause: boardwalk, intertidal edges, forest and birdlife instead of highway miles. DOC describes panels along the walk explaining the estuary ecology, whitebait story, birds and seals, with a platform looking toward the Open Bay Islands.",
+      "audio_story": "Hapuka Estuary Walk adds a softer southern West Coast pause: boardwalk, intertidal edges, forest and birdlife instead of highway miles. DOC describes panels along the walk explaining the estuary ecology, whitebait story, birds and seals, with a platform looking toward the Open Bay Islands.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/west-coast/places/haast-paringa-and-moeraki-rivers-area/things-to-do/tracks/hapuka-estuary-walk/",
+        "https://www.openstreetmap.org/way/908996474",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "west-coast-moria-gate-mirror-tarn-loop",
+      "name": "Moria Gate and Mirror Tarn Loop",
+      "region": "west-coast",
+      "lat": -41.164,
+      "lng": 172.18,
+      "category": "nature",
+      "tags": [
+        "oparara",
+        "limestone-arch",
+        "short-walk",
+        "kahurangi",
+        "rainforest"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A short Oparara Basin walk to rainforest, tannin water, mirror tarns and a limestone arch near Karamea.",
+      "commentary": "Moria Gate and Mirror Tarn Loop belongs to the West Coast at its most mossy and strange. The track threads through the Oparara Basin to a limestone arch and still water that reflects the forest canopy, giving Karamea travellers a compact taste of a much older underground landscape.",
+      "audio_story": "Moria Gate and Mirror Tarn Loop belongs to the West Coast at its most mossy and strange. The track threads through the Oparara Basin to a limestone arch and still water that reflects the forest canopy, giving Karamea travellers a compact taste of a much older underground landscape.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/nelson-tasman/places/kahurangi-national-park/things-to-do/tracks/moira-gate-and-mirror-tarn-loop/",
+        "https://westcoast.co.nz/visit/discover/highlights/oparara-arches/",
+        "https://www.newzealand.com/nz/west-coast/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

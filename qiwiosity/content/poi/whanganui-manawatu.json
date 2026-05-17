@@ -1906,7 +1906,7 @@
       "commentary": "The Whanganui River Road (a scenic drive from Whanganui to Pipiriki) passes through remote farming country where honesty-box farm stalls appear at gateways. Seasonal produce — feijoas, apples, kūmara, free-range eggs, honey — is left out with a price and a money box. It's a distinctly New Zealand food experience that relies on trust and the honour system. Bring cash and enjoy one of the country's most scenic drives.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A charming, only-in-NZ food experience. The produce is fresh and cheap. The honour system works because it's that kind of community."
       }
     },
@@ -1981,7 +1981,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Nice urban bush walk. Good bird variety for a city reserve. Easy tracks suitable for families."
       }
     },
@@ -2168,7 +2168,7 @@
         "organ"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Magnificent 1899 opera house with a rare Wurlitzer organ, one of NZ's finest surviving Victorian theatres.",
       "commentary": "The Royal Wanganui Opera House is one of New Zealand's most treasured heritage performing arts venues, opened in 1899 and magnificently preserved as an outstanding example of Victorian theatre architecture. The intimate 830-seat auditorium features ornate plasterwork, gilded details, and excellent acoustics. The building's greatest treasure is its 1932 Mighty Wurlitzer organ — one of the few remaining theatre pipe organs in the world still in its original location and in full working order. Regular organ recitals are held, and hearing the Wurlitzer fill the auditorium is a remarkable experience. The opera house hosts a year-round programme of touring shows, concerts, comedy, community performances, and events. The building has been listed as a Category I historic place by Heritage New Zealand and has received careful maintenance over its long life. Guided tours are available by arrangement. Located on St Hill Street in central Whanganui, the opera house is the centrepiece of a town that punches well above its weight culturally. Check the programme for Wurlitzer recitals during your visit.",
       "content_status": "draft",
@@ -2242,7 +2242,7 @@
       "commentary": "Castlecliff Beach is Whanganui's principal ocean beach, a wild and dramatic stretch of black iron sand at the mouth of the Whanganui River on the Tasman Sea coast. The beach receives powerful westerly swells and offers challenging surf conditions popular with experienced surfers. The black sand, pounding waves, and often moody Tasman Sea skies create a distinctly raw and atmospheric coastal experience quite different from the golden sand beaches of the east coast. The beach extends for kilometres in both directions from the river mouth, offering plenty of space for walking, running, and beachcombing. Driftwood accumulates in dramatic piles along the shore. The area has strong historical connections — the river mouth was a significant point for Māori navigation and early European settlement. Swimming requires caution due to strong currents and the river mouth dynamics. The nearby Castlecliff suburb has a community surf club. The beach is easily accessed from Whanganui city, about 10 minutes' drive. Stunning in all weather conditions, particularly during dramatic westerly storms.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A wild and beautiful beach with real drama — the black sand and pounding surf are impressive. Not for casual swimming but great for walking and surfing. Best in stormy weather for sheer atmosphere."
       }
     },
@@ -2260,7 +2260,7 @@
         "whanganui-river"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Remote mountain bike ride through the Whanganui backcountry to the iconic Bridge to Nowhere.",
       "commentary": "The Bridge to Nowhere mountain bike track offers an extraordinary backcountry adventure deep in the Whanganui National Park. The ride combines jet boat access up the Whanganui River with a trail through regenerating bush to the Mangapurua Valley's iconic concrete bridge, built in 1936 to serve farming settlers who later abandoned the remote valley. The bridge now stands alone in the bush, a poignant monument to failed settlement. The mountain bike track follows the old road formation through the valley, passing abandoned farmsteads being reclaimed by native forest. The ride is moderately challenging with some technical sections. Several operators offer packages combining jet boat transport, bike hire, and guided or self-guided options, typically running as a day trip from Pipiriki or Whakahoro. The remote wilderness setting and historic story make this much more than a bike ride. Fitness and basic mountain biking skills are required.",
       "content_status": "draft",
@@ -2329,12 +2329,12 @@
         "family"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Combined museum, art gallery, and science centre in Palmerston North with interactive exhibits and regional collections.",
       "commentary": "Te Manawa is Palmerston North's combined museum, art gallery, and science centre, housed in a modern building on Main Street East. The museum section presents the natural and social history of the Manawatu region, with collections spanning Maori taonga, colonial settlement, and the area's rich agricultural heritage. The art gallery features a permanent collection of New Zealand art alongside rotating exhibitions. The science centre offers interactive exhibits that engage younger visitors with hands-on learning. The facility hosts regular temporary exhibitions of national significance. Te Manawa is free to visit, making it an accessible cultural experience for families and visitors. The museum is centrally located near the Square, Palmerston North's main public space, with cafes and shopping nearby. The city's New Zealand Rugby Museum is within walking distance for sports enthusiasts. Palmerston North serves as a base for exploring the wider Manawatu region.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A well-presented combined cultural facility with good variety. The interactive science exhibits engage children effectively. Free entry makes it an easy stop when in Palmerston North."
       }
     },
@@ -2352,7 +2352,7 @@
         "backcountry"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Rugged forest park spanning the Tararua Range with tramping tracks, alpine crossings, and backcountry huts.",
       "commentary": "The Tararua Forest Park covers over 116,000 hectares of the rugged Tararua Range between the Manawatu and Wairarapa, offering some of the North Island's most challenging and rewarding tramping experiences. The range rises from lowland podocarp forest through dense beech forest to exposed alpine tops, with weather conditions that can change rapidly and dramatically. Popular day walks include the Kapakapanui Track and the nature loop at Holdsworth, while multi-day routes like the Southern Crossing traverse the alpine tops between huts. The park's 50-plus DOC backcountry huts range from basic bivvies to well-equipped lodges. The Tararuas are famous among New Zealand trampers for their character-building weather, with the exposed tops experiencing some of the windiest conditions in the country. Experienced trampers value the range for its wilderness feel within easy reach of Wellington and Palmerston North. Access points include Holdsworth, Otaki Forks, and Kapakapanui from the western side.",
       "content_status": "draft",
@@ -2379,7 +2379,7 @@
       "commentary": "The ruins of the Pātea Freezing Works are a poignant reminder of the devastating impact of industrial closures on small New Zealand communities. When the works closed in 1982, it was the town's largest employer, and the resulting unemployment and social disruption inspired the Pātea Māori Club to record 'Poi E', which became New Zealand's biggest-selling single and an enduring cultural anthem. The ruins of the works can be viewed from the road, a stark industrial skeleton against the Tasman coastline. The broader Pātea story encompasses resilience and cultural revival, with the town maintaining its community spirit through sport and arts. Information about the town's history is available at the local museum. Pātea sits on State Highway 3 between Hāwera and Whanganui.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A moving piece of social and industrial history. The connection to Poi E adds cultural significance. The ruins are stark but powerful."
       }
     },
@@ -3473,7 +3473,7 @@
       "commentary": "Virginia Lake is Whanganui's premier public park — a picturesque lake surrounded by mature trees, with an illuminated fountain, winter gardens, bird aviaries, and the adjacent Kowhai Park children's playground. The lake loop walk (1.5km) is a favourite local exercise route. The Winter Gardens house subtropical and native plants in a heritage greenhouse setting. The bird aviaries hold a collection of native and exotic species. The Higginbottom Fountain in the lake centre is illuminated at night with coloured lights. The park has a timeless, well-loved quality that reflects Whanganui's pride in its public spaces. The café overlooking the lake is popular.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A lovely heritage park with genuine charm. The illuminated fountain is beautiful at night. Good café. Popular with locals."
       }
     },
@@ -3496,7 +3496,7 @@
       "commentary": "Te Manawa is a combined museum, art gallery, and interactive science centre in Palmerston North — three institutions under one roof. The museum section covers Manawatū regional history and Māori heritage. The art gallery holds a significant collection of New Zealand and international art. The science centre, designed for families, features interactive exhibits exploring physics, technology, and natural science. The integration of art, history, and science creates a diverse experience that appeals to different interests. Rotating exhibitions keep return visits fresh. It's one of the North Island's better combined cultural facilities and a good reason to pause in Palmerston North.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Good combined museum with something for everyone. The interactive science section is great for kids. Free entry."
       }
     },
@@ -3708,7 +3708,7 @@
       "commentary": "Ōhakune sits at the southern foot of Mount Ruapehu and serves as the main gateway to the Tongariro National Park from the south. The town is famous for two things: the 7.5-metre giant carrot on its main street (celebrating the surrounding vegetable-growing industry) and its transformation from sleepy railway town to ski-season party town. Outside winter, Ōhakune is an excellent base for walking, mountain biking and exploring the national park. The restaurant scene has improved dramatically in recent years, with several excellent options punching well above the town's weight. The giant carrot photograph is obligatory.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A fun mountain town with real character. The giant carrot is a classic photo stop. Good restaurants for a small town. Excellent base for Tongariro. Quiet outside ski season but pleasant year-round."
       }
     },
@@ -3749,7 +3749,7 @@
         "tararua ranges"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Dramatic gorge lookout with views of wind turbines against the Tararua Ranges.",
       "commentary": "Te Āpiti offers panoramic views of the Manawatū Gorge where the river cuts through the Tararua and Ruahine ranges. The viewing platform overlooks the wind farm turbines spinning against the mountain backdrop — a striking blend of natural landscape and renewable energy.",
       "content_status": "draft",
@@ -3772,7 +3772,7 @@
         "heritage"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Pest-free forest sanctuary with an Edwardian homestead and rare native birdlife.",
       "commentary": "Bushy Park Tarapuruhi is a 99-hectare predator-fenced forest sanctuary surrounding an elegant 1906 Edwardian homestead. The pest-free bush is home to hihi, North Island robin, and kākā, while the homestead offers B&B accommodation — conservation and heritage combined.",
       "content_status": "draft",
@@ -3826,6 +3826,534 @@
         "rating": 4.3,
         "summary": "Stunning gorge — the cliff jumping is not for the faint-hearted."
       }
+    },
+    {
+      "id": "whanganui-manawatu-rangiwahia-hut-track",
+      "name": "Rangiwahia Hut Track",
+      "region": "whanganui-manawatu",
+      "lat": -39.8908016,
+      "lng": 176.0183694,
+      "category": "adventure",
+      "tags": [
+        "ruahine",
+        "tramping",
+        "hut",
+        "tussock",
+        "mountain-views"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 5,
+      "short": "A well-graded Ruahine Forest Park tramp to a bushline hut and open tops on the Whanahuia Range.",
+      "commentary": "Rangiwahia Hut Track gives Manawatū-Whanganui a strong, approachable Ruahine story. DOC describes a well-graded track climbing from the road end through red beech forest, across an arched bridge over the Mangahuia Stream and up toward Rangiwahia Hut near the bushline. It is often used as an overnight tramp for newer trampers and families with capable children, but that does not make the tops tame. Weather, slips, hut facilities and daylight still need checking. On a clear day, the reward is that classic lower North Island mountain feeling: forest below, tussock above and long views toward bigger volcanoes and ranges.",
+      "audio_story": "Rangiwahia Hut Track gives Manawatū-Whanganui a strong, approachable Ruahine story. DOC describes a well-graded track climbing from the road end through red beech forest, across an arched bridge over the Mangahuia Stream and up toward Rangiwahia Hut near the bushline. It is often used as an overnight tramp for newer trampers and families with capable children, but that does not make the tops tame. Weather, slips, hut facilities and daylight still need checking. On a clear day, the reward is that classic lower North Island mountain feeling: forest below, tussock above and long views toward bigger volcanoes and ranges.",
+      "suggested_voice_tone": "encouraging, practical, mountain-respectful",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/ruahine-forest-park/things-to-do/tracks/rangiwahia-hut-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.8,
+        "summary": "A highly regarded accessible Ruahine tramp with hut, forest and tops; visitors stress weather checks and normal backcountry preparation."
+      }
+    },
+    {
+      "id": "whanganui-manawatu-foxton-windmill",
+      "name": "De Molen Foxton Windmill",
+      "region": "whanganui-manawatu",
+      "lat": -40.4712,
+      "lng": 175.2859,
+      "category": "heritage",
+      "tags": [
+        "foxton",
+        "windmill",
+        "dutch-heritage",
+        "museum"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.75,
+      "short": "A working Dutch-style windmill in Foxton, celebrating local Dutch heritage and milling craft.",
+      "commentary": "De Molen gives Foxton an unmistakable silhouette. The working windmill is both landmark and cultural memory, linking Dutch migration, milling craft and small-town pride in a way that is immediately visible from the street.",
+      "audio_story": "De Molen gives Foxton an unmistakable silhouette. The working windmill is both landmark and cultural memory, linking Dutch migration, milling craft and small-town pride in a way that is immediately visible from the street.",
+      "suggested_voice_tone": "warm, local, historical",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-nz-rugby-museum",
+      "name": "New Zealand Rugby Museum",
+      "region": "whanganui-manawatu",
+      "lat": -40.3596,
+      "lng": 175.6082,
+      "category": "culture",
+      "tags": [
+        "palmerston-north",
+        "rugby",
+        "museum",
+        "sport"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1.25,
+      "short": "A Palmerston North museum telling the national rugby story through objects, archives and interactive challenges.",
+      "commentary": "The New Zealand Rugby Museum treats the game as culture, not just sport. Jerseys, boots, photos and hands-on tests show how rugby shaped communities, myths and weekends across the country, whether you know the rules or not.",
+      "audio_story": "The New Zealand Rugby Museum treats the game as culture, not just sport. Jerseys, boots, photos and hands-on tests show how rugby shaped communities, myths and weekends across the country, whether you know the rules or not.",
+      "suggested_voice_tone": "lively, cultural, accessible",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-te-manawa-museum",
+      "name": "Te Manawa Museum of Art, Science and Heritage",
+      "region": "whanganui-manawatu",
+      "lat": -40.3599,
+      "lng": 175.6086,
+      "category": "culture",
+      "tags": [
+        "palmerston-north",
+        "museum",
+        "art",
+        "science"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1.5,
+      "short": "Palmerston North’s multi-disciplinary museum, blending art, science, local history and family-friendly discovery.",
+      "commentary": "Te Manawa is Palmerston North’s broadest indoor story space. Art, science and heritage share the building, which makes it especially useful for travellers who want a rainy-day stop that still says something specific about the region.",
+      "audio_story": "Te Manawa is Palmerston North’s broadest indoor story space. Art, science and heritage share the building, which makes it especially useful for travellers who want a rainy-day stop that still says something specific about the region.",
+      "suggested_voice_tone": "curious, family-friendly, cultural",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-kai-iwi-beach",
+      "name": "Kai Iwi Beach",
+      "region": "whanganui-manawatu",
+      "lat": -39.8611,
+      "lng": 174.7728,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "whanganui",
+        "black-sand",
+        "holiday-park"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 2,
+      "short": "A west-coast beach settlement north of Whanganui, known for broad sand, surf and holiday-park energy.",
+      "commentary": "Kai Iwi Beach is Whanganui’s easy west-coast escape. The sand runs wide, the surf carries real power, and the settlement has that classic holiday-park feel where simple routines - walk, swim carefully, eat, repeat - are the whole point.",
+      "audio_story": "Kai Iwi Beach is Whanganui’s easy west-coast escape. The sand runs wide, the surf carries real power, and the settlement has that classic holiday-park feel where simple routines - walk, swim carefully, eat, repeat - are the whole point.",
+      "suggested_voice_tone": "coastal, local, practical",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-totara-reserve",
+      "name": "Tōtara Reserve Regional Park",
+      "region": "whanganui-manawatu",
+      "lat": -40.105,
+      "lng": 175.816,
+      "category": "nature",
+      "tags": [
+        "pohangina-valley",
+        "forest",
+        "camping",
+        "river"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "A Pohangina Valley forest park with river swimming, camping and lowland bush walks.",
+      "commentary": "Tōtara Reserve is Manawatū’s forest picnic classic. River pools, campsites and bush tracks sit together in the Pohangina Valley, making the park feel like a shared summer memory for the region rather than a formal attraction.",
+      "audio_story": "Tōtara Reserve is Manawatū’s forest picnic classic. River pools, campsites and bush tracks sit together in the Pohangina Valley, making the park feel like a shared summer memory for the region rather than a formal attraction.",
+      "suggested_voice_tone": "green, local, summery",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-santoft-forest-trails",
+      "name": "Santoft Forest Trails",
+      "region": "whanganui-manawatu",
+      "lat": -40.235,
+      "lng": 175.17,
+      "category": "adventure",
+      "tags": [
+        "forest",
+        "mountain-bike",
+        "walking",
+        "coastal-plain"
+      ],
+      "trigger_radius_m": 1800,
+      "duration_hours": 2,
+      "short": "Lowland forest tracks near the Rangitīkei coast, used for riding, walking and local recreation.",
+      "commentary": "Santoft Forest adds a different texture to the Manawatū-Whanganui map: flat coastal-plain forest rather than river city or mountain park. The trails suit riders and walkers looking for a local, low-key outing with room to move.",
+      "audio_story": "Santoft Forest adds a different texture to the Manawatū-Whanganui map: flat coastal-plain forest rather than river city or mountain park. The trails suit riders and walkers looking for a local, low-key outing with room to move.",
+      "suggested_voice_tone": "local, active, understated",
+      "sources_to_check": [
+        "Visit Whanganui and Manawatū visitor information",
+        "DOC Ruahine, Whanganui and Manawatū places",
+        "Local museum, river and heritage operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-paloma-gardens",
+      "name": "Paloma Gardens",
+      "region": "whanganui-manawatu",
+      "lat": -39.831,
+      "lng": 175.176,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "whanganui",
+        "plants"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Paloma Gardens is a plant-lover’s detour near Whanganui, mixing rare species, bold textures and a strong sense of private passion made public.",
+      "commentary": "Paloma Gardens is a plant-lover’s detour near Whanganui, mixing rare species, bold textures and a strong sense of private passion made public.",
+      "audio_story": "Paloma Gardens is a plant-lover’s detour near Whanganui, mixing rare species, bold textures and a strong sense of private passion made public.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-durie-hill-war-memorial-tower",
+      "name": "Durie Hill War Memorial Tower",
+      "region": "whanganui-manawatu",
+      "lat": -39.932,
+      "lng": 175.061,
+      "category": "heritage",
+      "tags": [
+        "whanganui",
+        "tower",
+        "viewpoint"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Durie Hill’s tower adds a climb above the elevator story, giving Whanganui a river-and-coast panorama wrapped in memorial purpose.",
+      "commentary": "Durie Hill’s tower adds a climb above the elevator story, giving Whanganui a river-and-coast panorama wrapped in memorial purpose.",
+      "audio_story": "Durie Hill’s tower adds a climb above the elevator story, giving Whanganui a river-and-coast panorama wrapped in memorial purpose.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-whanganui-tramways",
+      "name": "Whanganui Tramways Museum and Tram Ride",
+      "region": "whanganui-manawatu",
+      "lat": -39.935,
+      "lng": 175.053,
+      "category": "heritage",
+      "tags": [
+        "tram",
+        "museum",
+        "whanganui"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Whanganui Tramways keeps a piece of the city moving, turning restored tram heritage into a short ride through riverfront memory.",
+      "commentary": "Whanganui Tramways keeps a piece of the city moving, turning restored tram heritage into a short ride through riverfront memory.",
+      "audio_story": "Whanganui Tramways keeps a piece of the city moving, turning restored tram heritage into a short ride through riverfront memory.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-mt-lees-reserve",
+      "name": "Mt Lees Reserve",
+      "region": "whanganui-manawatu",
+      "lat": -40.066,
+      "lng": 175.694,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "reserve",
+        "feilding",
+        "short-walk"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1,
+      "short": "A landscaped country reserve near Feilding, with easy walks, old trees and picnic lawns.",
+      "commentary": "Mt Lees Reserve is one of those gentle Manawatu stops that proves a place does not need to shout. Old trees, open lawns and short paths make it a useful breathing space on rural drives, especially when the day needs a green pause rather than another town centre.",
+      "audio_story": "Mt Lees Reserve is one of those gentle Manawatu stops that proves a place does not need to shout. Old trees, open lawns and short paths make it a useful breathing space on rural drives, especially when the day needs a green pause rather than another town centre.",
+      "suggested_voice_tone": "gentle, local, restorative",
+      "sources_to_check": [
+        "https://www.mdc.govt.nz/Services/Parks-Reserves-and-Playgrounds/Mt-Lees-Reserve"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-kimbolton-sculpture-festival",
+      "name": "Kimbolton Sculpture Festival",
+      "region": "whanganui-manawatu",
+      "lat": -40.054,
+      "lng": 175.778,
+      "category": "culture",
+      "tags": [
+        "festival",
+        "sculpture",
+        "rural-community",
+        "kimbolton"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 2,
+      "short": "A rural sculpture festival that turns Kimbolton into an art, garden and community day out.",
+      "commentary": "Kimbolton Sculpture Festival brings a creative charge to the Manawatu countryside. For a day, the village becomes a meeting point for sculpture, gardens, food and rural sociability, showing that small communities can make cultural events with real reach.",
+      "audio_story": "Kimbolton Sculpture Festival brings a creative charge to the Manawatu countryside. For a day, the village becomes a meeting point for sculpture, gardens, food and rural sociability, showing that small communities can make cultural events with real reach.",
+      "suggested_voice_tone": "bright, community-minded, creative",
+      "sources_to_check": [
+        "https://ruralart.nz/",
+        "https://www.manawatunz.co.nz/listing/kimbolton-sculpture-festival"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-quartz-museum-of-studio-ceramics",
+      "name": "Quartz Museum of Studio Ceramics",
+      "region": "whanganui-manawatu",
+      "lat": -39.931256,
+      "lng": 175.056026,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Whanganui.",
+      "commentary": "Quartz Museum of Studio Ceramics gives Whanganui another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Quartz Museum of Studio Ceramics gives Whanganui another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/370668774",
+        "https://www.quartzmuseum.org.nz/",
+        "https://www.newzealand.com/nz/manawatu/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-waipuna-caves",
+      "name": "Waipuna Caves",
+      "region": "whanganui-manawatu",
+      "lat": -39.517905,
+      "lng": 175.830192,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in Whanganui.",
+      "commentary": "Waipuna Caves adds a small natural feature to the Whanganui map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. OpenStreetMap describes it as Moa bone cave. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Waipuna Caves adds a small natural feature to the Whanganui map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. OpenStreetMap describes it as Moa bone cave. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1123061527",
+        "https://www.wikidata.org/wiki/Q49319874",
+        "https://www.newzealand.com/nz/manawatu/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-bulls-museum",
+      "name": "Bulls Museum",
+      "region": "whanganui-manawatu",
+      "lat": -40.174386,
+      "lng": 175.385493,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Whanganui.",
+      "commentary": "Bulls Museum gives Whanganui another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Bulls Museum gives Whanganui another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12965730357",
+        "http://bullsmuseum.co.nz/",
+        "https://www.newzealand.com/nz/manawatu/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-strachans-cave",
+      "name": "Strachan's Cave",
+      "region": "whanganui-manawatu",
+      "lat": -39.908467,
+      "lng": 175.156817,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in Whanganui.",
+      "commentary": "Strachan's Cave adds a small natural feature to the Whanganui map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Strachan's Cave adds a small natural feature to the Whanganui map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/5833446602",
+        "http://www.heritage.org.nz/the-list/details/7308",
+        "https://www.newzealand.com/nz/manawatu/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-maharahara",
+      "name": "Maharahara",
+      "region": "whanganui-manawatu",
+      "lat": -40.173475,
+      "lng": 175.918611,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "tourism-Marked_track_to_viewpoint_on_summit._Strenuous,_steep_and_often_muddy._5_km_each_way_from_car_park.",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Whanganui.",
+      "commentary": "Maharahara helps mark the high country and skyline around Whanganui. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Maharahara helps mark the high country and skyline around Whanganui. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4948671766",
+        "http://www.doc.govt.nz/parks-and-recreation/places-to-go/manawatu-whanganui/places/ruahine-forest-park/things-to-do/tracks/maharahara-peak-track/",
+        "https://www.wikidata.org/wiki/Q31453659",
+        "https://www.newzealand.com/nz/manawatu/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-anzac-bridge",
+      "name": "Anzac Bridge",
+      "region": "whanganui-manawatu",
+      "lat": -40.703723,
+      "lng": 175.658528,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Whanganui.",
+      "commentary": "Anzac Bridge is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Anzac Bridge is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1006614060",
+        "https://wairarapa100.co.nz/anzac-bridge-kaiparoro",
+        "https://www.newzealand.com/nz/manawatu/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-pncc-civic-admin-building",
+      "name": "PNCC Civic Admin Building",
+      "region": "whanganui-manawatu",
+      "lat": -40.357,
+      "lng": 175.610303,
+      "category": "nature",
+      "tags": [
+        "nature-reserve",
+        "nature"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1.5,
+      "short": "A mapped green-space stop that adds local texture to Whanganui.",
+      "commentary": "PNCC Civic Admin Building fills in another real point on the Whanganui visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "PNCC Civic Admin Building fills in another real point on the Whanganui visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/216520570",
+        "https://www.pncc.govt.nz/",
+        "https://www.newzealand.com/nz/manawatu/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "whanganui-manawatu-atene-pa-te-kaponga",
+      "name": "Ātene Pā / Te Kaponga",
+      "region": "whanganui-manawatu",
+      "lat": -39.723508,
+      "lng": 175.145353,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Whanganui.",
+      "commentary": "Ātene Pā / Te Kaponga is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Ātene Pā / Te Kaponga is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/9213178789",
+        "https://www.wikidata.org/wiki/Q136007836",
+        "https://www.newzealand.com/nz/manawatu/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
     }
   ]
 }

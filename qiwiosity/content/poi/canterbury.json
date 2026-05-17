@@ -2841,7 +2841,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A pilgrimage for birders. Kakī sightings not guaranteed but the braided river landscape is stunning regardless."
       }
     },
@@ -2915,7 +2915,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Nice combined walk and penguin viewing. The harbour views are spectacular. Dusk visits essential for penguins."
       }
     },
@@ -2963,7 +2963,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Requires patience and the right conditions. A scope is essential. Best in strong onshore winds."
       }
     },
@@ -3005,7 +3005,7 @@
         "architecture"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Christchurch's stunning public art gallery with a curved glass façade and outstanding NZ art collection.",
       "commentary": "Christchurch Art Gallery Te Puna o Waiwhetū is one of New Zealand's leading public galleries, housed in a striking building with a dramatic curved glass and metal façade on Worcester Boulevard. The gallery holds over 7,000 works with particular strengths in Canterbury and New Zealand art, including significant holdings of Bill Hammond, Shane Cotton, and Rita Angus. After serving as the Civil Defence headquarters during the 2010-2011 earthquakes, the gallery reopened in 2015 and has become a symbol of Christchurch's cultural recovery. Admission to the permanent collection is free. The gallery presents an ambitious programme of temporary exhibitions and events. The rooftop sculpture terrace offers great city views. The ground-floor café is popular, and the gallery shop is excellent for design-focused gifts. Located in the heart of the cultural precinct near the Canterbury Museum and Botanic Gardens.",
       "content_status": "draft",
@@ -3166,12 +3166,12 @@
         "water-powered"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Rare surviving water-powered flour mill from 1866, one of New Zealand's oldest industrial heritage buildings.",
       "commentary": "Clark's Mill is a remarkably intact water-powered flour mill built in 1866 near Maheno in North Otago, on the boundary of the Canterbury region. It is one of the very few stone-built, water-powered mills surviving in New Zealand and is classified as a Category I historic place by Heritage New Zealand. The three-storey limestone building was constructed by Scottish immigrant Thomas Clark and operated as a flour mill until 1901, when cheaper roller-milled flour made small stone mills uneconomic. The building features original milling machinery including French burr millstones. The mill race and water wheel system are still visible. The site sits in a peaceful rural setting on the banks of the Kakanui River. While the interior is not always accessible, the exterior and surrounding site can be freely viewed. The mill represents an important chapter in New Zealand's early agricultural and industrial heritage. Check with Heritage New Zealand for any organised open days.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A fascinating piece of early industrial heritage in a lovely river setting. The stone building is beautifully constructed and amazingly well preserved. Worth a detour for history enthusiasts."
       }
     },
@@ -3235,7 +3235,7 @@
         "akaroa"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Conservation-focused penguin viewing at the largest white-flippered penguin colony on Banks Peninsula.",
       "commentary": "Pohatu is home to the largest mainland colony of korora (white-flippered little blue penguins), a subspecies found only on Banks Peninsula and Motunau Island. The conservation project, run by a dedicated local couple since 1990, has helped the colony grow to over 5,000 penguins through predator control and habitat restoration. Evening tours during breeding season (August to February) offer the chance to see penguins returning to their nests at dusk. Day tours include a scenic 4WD journey along dramatic coastal cliffs, sea kayaking in Flea Bay, and visits to nesting boxes. The remote location at the far end of Banks Peninsula, about 90 minutes from Akaroa, adds to the sense of adventure. All proceeds support ongoing conservation work. Booking is essential.",
       "content_status": "draft",
@@ -3258,7 +3258,7 @@
         "skiing"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Heli-skiing in the Southern Alps backcountry near Mt Hutt with access to pristine untracked powder.",
       "commentary": "Mt Hutt and the surrounding Rakaia Range offer some of the South Island's most accessible heli-skiing terrain, with operators running from Methven during the June to September ski season. Helicopters whisk skiers and snowboarders to untouched alpine bowls and faces ranging from 1,500 to 2,500 metres, well above the tree line across wide-open terrain. Runs vary from gentle glacier descents to steep couloirs, catering to intermediate through expert levels. Full safety briefings, avalanche equipment, and mountain guides are included. The terrain benefits from Canterbury's easterly weather patterns that deliver reliable snowfall. Multi-run packages offer the best value, and conditions are assessed daily. Methven township provides accommodation, dining, and après-ski options just 90 minutes from Christchurch.",
       "content_status": "draft",
@@ -3304,7 +3304,7 @@
         "banks-peninsula"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Historic lighthouse at the entrance to Akaroa Harbour with a scenic coastal walk and dramatic views.",
       "commentary": "Akaroa Head Lighthouse stands at the eastern headland guarding the entrance to Akaroa Harbour on Banks Peninsula. The current concrete lighthouse was built in 1980, replacing earlier structures dating back to 1880. The walk to the lighthouse from the road end takes about 45 minutes each way along an exposed coastal track with spectacular views of the harbour entrance, the Pacific Ocean, and on clear days, the Kaikoura Ranges to the north. Hector's dolphins are frequently spotted in the waters below, and seabirds including albatross soar along the cliffs. The track passes through farmland, so respect gate closures and livestock. The road to the trailhead from Akaroa passes through picturesque bays. Best visited on a calm, clear day for the views and to avoid exposed wind.",
       "content_status": "draft",
@@ -3327,7 +3327,7 @@
         "beech-forest"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Alpine highway crossing between Canterbury and the West Coast through beech forest with hot springs nearby.",
       "commentary": "State Highway 7 over Lewis Pass is the northernmost of the three main South Island alpine crossings, connecting Canterbury to the West Coast via Springs Junction. At 864 metres, it is lower than Arthur's Pass, making it a reliable year-round route, though chains may be required in winter. The drive passes through magnificent beech forest in the Lewis Pass National Reserve, with several short walks accessible from roadside car parks. The Maruia Springs hot pools, a natural thermal area now developed as a resort, sit just west of the pass. Further east, Hanmer Springs offers more extensive thermal bathing. The route is less travelled than Arthur's Pass, providing a quieter, more contemplative journey. Allow around three hours for the drive between Christchurch and Reefton, with stops.",
       "content_status": "draft",
@@ -3373,7 +3373,7 @@
         "night-sky"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "World-renowned dark sky reserve with guided stargazing tours at Mt John Observatory, Lake Tekapo.",
       "commentary": "The Aoraki Mackenzie International Dark Sky Reserve, centred on Lake Tekapo, is one of only a handful of Gold-rated dark sky reserves in the world. The exceptionally clear, dark skies of the Mackenzie Basin provide some of the best astronomical viewing conditions on Earth. Guided stargazing tours at the Mt John University Observatory use research-grade telescopes to view planets, star clusters, nebulae, and galaxies, with expert astronomers providing commentary. On clear nights, the Milky Way arches across the sky with breathtaking clarity, and the Southern Cross, Magellanic Clouds, and other Southern Hemisphere features are spectacular. Tours operate year-round but winter offers the longest dark hours. Daytime visits to Mt John summit provide panoramic views across the turquoise lake and surrounding mountains. The Church of the Good Shepherd on the lake shore is one of New Zealand's most photographed landmarks. Book stargazing tours in advance as they sell out regularly.",
       "content_status": "draft",
@@ -3396,7 +3396,7 @@
         "dolphins"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Charming historic harbour village with French colonial heritage, Hector's dolphins, and Banks Peninsula walks.",
       "commentary": "Akaroa is New Zealand's only French-settled town, founded in 1840 when French colonists arrived just days after the British had claimed sovereignty. The charming harbour village retains its French character in street names (Rue Lavaud, Rue Jolie), colonial cottages, and a Francophile spirit that infuses local dining and culture. The Akaroa Museum tells the settlement's bicultural French-British story. The harbour is home to a resident population of Hector's dolphins, the world's smallest and rarest marine dolphin, viewable from harbour cruises and kayak tours. The Giant's House, a spectacular mosaic garden and sculpture park, is a highlight. Banks Peninsula's volcanic landscape offers walking tracks with dramatic coastal views, including the Banks Track multi-day hike. The drive from Christchurch takes 75 minutes over the volcanic hills, with summit views of the harbour's drowned volcanic crater. A beloved Canterbury day trip or weekend escape.",
       "content_status": "draft",
@@ -3419,7 +3419,7 @@
         "kea"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Alpine village at the heart of Arthur's Pass National Park with walks, waterfalls, and cheeky kea parrots.",
       "commentary": "Arthur's Pass village sits at 737 metres altitude in the heart of Arthur's Pass National Park, the gateway to some of the South Island's most dramatic alpine landscapes. The village serves as a base for walks ranging from the 30-minute Devil's Punchbowl waterfall track to multi-day alpine crossings. The national park spans the main divide of the Southern Alps, with beech forest, alpine herb fields, scree slopes, and glacial valleys. The cheeky kea (mountain parrot) is frequently encountered around the village, investigating cars and backpacks with intelligent curiosity. Short walks include Bridal Veil Falls, Dobson Nature Walk, and the Temple Basin access road for mountain views. The TranzAlpine train stops at the village, making it accessible without a car. The DOC visitor centre provides track information and weather updates. The village has basic accommodation, a cafe, and a general store. Arthur's Pass is on SH73 between Christchurch and Greymouth, about two hours from either city.",
       "content_status": "draft",
@@ -3465,7 +3465,7 @@
         "shops"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A stunning Gothic Revival complex that served as the University of Canterbury for over a century, now home to galleries, studios, cinemas, and markets.",
       "commentary": "The Arts Centre occupies a magnificent cluster of neo-Gothic stone buildings dating from 1877, originally built for Canterbury University College. After the university relocated in the 1970s, the precinct transformed into a vibrant cultural hub. Severely damaged in the 2011 earthquakes, it has been painstakingly restored over more than a decade. Today its courtyards host weekend markets, boutique cinemas, artist studios, and the beloved Great Hall — one of Christchurch's most photographed interiors. Ernest Rutherford, who split the atom, studied physics in the very room that now bears his name.",
       "scripts": {
@@ -3494,7 +3494,7 @@
         "walking"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "An open-air gallery of large-scale murals that emerged from the blank canvases left by Christchurch's earthquake demolitions.",
       "commentary": "After the devastating 2010-2011 earthquakes levelled much of central Christchurch, the newly exposed walls and empty lots became canvases for local and international street artists. What began as guerrilla art evolved into a celebrated urban art scene, with over 60 major murals scattered across the central city. Highlights include works by Wongi Wilson, Rone, and Owen Dippie. The trail is free, self-guided, and constantly evolving — new pieces appear regularly while older ones are sometimes lost to reconstruction. It's one of Christchurch's most compelling stories of creative resilience.",
       "scripts": {
@@ -3523,7 +3523,7 @@
         "arthur-pass"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "A surreal landscape of massive limestone boulders scattered across alpine grassland — world-class bouldering and a place of spiritual significance to Ngāi Tahu.",
       "commentary": "Castle Hill is an extraordinary natural amphitheatre of house-sized limestone outcrops that have been eroded into fantastical shapes over millennia. The Dalai Lama reportedly called it 'one of the true spiritual centres of the universe' during a 2002 visit. For climbers, it's one of the Southern Hemisphere's premier bouldering destinations, with hundreds of named problems across all grades. For everyone else, it's a captivating place to wander among the grey monoliths with the snow-capped Craigieburn Range as a backdrop. The site is a registered archaeological area — Ngāi Tahu Māori used it as a seasonal shelter for centuries.",
       "scripts": {
@@ -3551,7 +3551,7 @@
         "Banks-Peninsula"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "The only French colonial settlement in New Zealand, where street names, cottage architecture, and the tricolour still hint at an 1840 attempt to claim the peninsula for France.",
       "commentary": "In 1840, a shipload of 63 French settlers arrived at Akaroa to establish a colony, only to find the British had raised the Union Jack just days earlier. The settlers stayed anyway, and their legacy threads through the town's character to this day — Rue Lavaud, Rue Jolie, the old French cemetery on L'Aube Hill, and the charming Langlois-Eteveneaux Cottage, now a small museum. A self-guided heritage walk passes more than 30 historic sites. The combination of French flavour, volcanic harbour scenery, and boutique food scene makes Akaroa one of Canterbury's most charming day trips.",
       "scripts": {
@@ -3580,7 +3580,7 @@
         "history"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "A predator-free island sanctuary in Lyttelton Harbour with walking tracks, native revegetation, and fascinating layers of history from leper colony to Antarctic staging post.",
       "commentary": "Quail Island sits quietly in Lyttelton Harbour, reached by a short boat trip from the wharf. Its history is remarkably layered — it served as a Māori seasonal camp, a quarantine station, a leper colony in the 1900s, and a staging post where Robert Falcon Scott and Ernest Shackleton exercised their dogs and ponies before heading to Antarctica. Today it's a DOC reserve undergoing native bush restoration, with several well-marked walking tracks looping through regenerating bush and past historic ruins. Picnic spots offer superb harbour views. It's a wonderfully peaceful escape just minutes from Christchurch.",
       "scripts": {
@@ -3637,7 +3637,7 @@
         "alpine"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "One of New Zealand's most spectacular short walks — three swing bridges lead to a glacier-terminal lake directly beneath the face of Aoraki/Mount Cook.",
       "commentary": "The Hooker Valley Track is arguably the most rewarding half-day walk in the country relative to its modest difficulty. The well-formed track crosses three dramatic swing bridges over milky-blue glacier-fed rivers, passes the Alpine Memorial commemorating climbers lost on the mountain, and ends at Hooker Lake, where icebergs from the Mueller and Hooker Glaciers float beneath the towering south face of Aoraki/Mount Cook. On a clear day, the views are utterly breathtaking. The track is largely flat and suitable for reasonably fit visitors of all ages, though it can be very exposed to weather — conditions change rapidly in the Mackenzie high country.",
       "scripts": {
@@ -3724,7 +3724,7 @@
         "adventure"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Wade through a 594-metre limestone cave with a subterranean stream running through it — a genuine adventure that requires a torch, steady nerves, and warm clothing.",
       "commentary": "Cave Stream is one of the most accessible wild caving experiences in New Zealand. The 594-metre-long cave was carved by a stream through Castle Hill limestone over thousands of years. You enter at the downstream end and wade, scramble, and squeeze your way upstream through the darkness, with the icy stream running between knee and waist deep for much of the journey. A small waterfall inside the cave requires climbing a short ladder. It's not for the claustrophobic, and DOC strongly recommends going with experienced companions, carrying multiple light sources, and wearing warm clothing and sturdy footwear. The reward is an unforgettable underground adventure.",
       "scripts": {
@@ -3840,7 +3840,7 @@
         "salmon"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A stunning river gorge where the turquoise Rakaia River squeezes through a narrow canyon — a hub for jet-boating, salmon fishing, and scenic walks.",
       "commentary": "The Rakaia is one of Canterbury's great braided rivers, and where it carves through the foothills of the Southern Alps, it creates a dramatic gorge of blue-grey rock and impossibly turquoise water. The historic bridge over the gorge offers vertiginous views, and jet boat operators run exhilarating trips through the narrowest sections. The Rakaia is also one of the best salmon rivers in New Zealand — the annual salmon run draws anglers from around the country. A network of walking and mountain bike tracks explores the surrounding farmland and bush. The gorge is about an hour's drive from Christchurch.",
       "scripts": {
@@ -3869,7 +3869,7 @@
         "kaikoura"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "A spectacular coastal walkway around the Kaikoura Peninsula, where seal colonies bask on the rocks, mountains plunge toward the sea, and seabirds wheel overhead.",
       "commentary": "The Kaikoura Peninsula Walkway is one of the most rewarding short walks in the South Island. The full loop takes about three hours and traces the rocky coastline around the peninsula, passing tidal rock pools, limestone formations, and large colonies of New Zealand fur seals — you'll walk within metres of them. The backdrop is extraordinary: the snow-capped Seaward Kaikoura Range rises directly behind the town to over 2,600 metres, creating one of the most dramatic mountain-meets-sea landscapes anywhere. Interpretive panels share the area's rich Maori and European history. Go at low tide for the best rock pool exploring.",
       "scripts": {
@@ -3898,7 +3898,7 @@
         "WWII"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A world-class aviation museum at the former RNZAF base in Wigram, telling the story of New Zealand military aviation from biplanes to jet age with full-size aircraft displays.",
       "commentary": "The Air Force Museum occupies several hangars at the historic Wigram air base, where New Zealand military pilots trained from 1917. The collection includes over 30 aircraft spanning a century of flight — from WWI-era biplanes and WWII Spitfires to Cold War-era Canberras and Skyhawks. The exhibits go well beyond the machines, telling human stories of courage, sacrifice, and innovation. The interactive flight simulator is popular with visitors of all ages. Admission is free, making it one of Christchurch's best-value attractions. The restoration workshop, visible through glass panels, shows aircraft being painstakingly brought back to airworthy condition.",
       "scripts": {
@@ -3927,7 +3927,7 @@
         "edoras"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "The isolated hilltop in the Rangitata Valley that became Edoras, capital of Rohan, in Peter Jackson's Lord of the Rings trilogy — a pilgrimage for fans and a stunning walk for everyone.",
       "commentary": "Mt Sunday is a small, flat-topped hill rising from the floor of the remote Rangitata Valley, surrounded by the Ashburton Lakes and the peaks of the Arrowsmith Range. Peter Jackson chose it as the location for Edoras in The Lord of the Rings — the set was removed after filming, but the setting remains as dramatic as it was on screen. The walk from the car park takes about 45 minutes across open tussock country and over a small river crossing (bridged). From the summit, the 360-degree panorama of braided rivers, mountains, and golden grassland is magnificent. The access road is unsealed and requires a high-clearance vehicle in places.",
       "scripts": {
@@ -4802,7 +4802,7 @@
       "commentary": "Port Levy (Koukourarata) is the closest harbour to Christchurch on Banks Peninsula yet one of the least visited, accessible via a dramatic hill road that crests the crater rim with stunning views over the harbour and across to the snow-capped Southern Alps. The small settlement at the head of the harbour has a historic church and a few scattered farmhouses. The harbour is significant as a centre for Ngai Tahu, with Koukourarata Marae located at the head of the bay. The drive from Christchurch takes about an hour via the Summit Road, which offers multiple panoramic viewpoints. The road down to the harbour is steep and winding but sealed. The harbour is quiet and uncrowded — a contemplative contrast to tourist-busy Akaroa.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Stunning views from the rim road. The harbour is beautifully peaceful. An authentic, uncommercialised Banks Peninsula experience."
       }
     },
@@ -4856,7 +4856,7 @@
       "id": "canterbury-lake-tekapo-dark-sky",
       "name": "Lake Tekapo Dark Sky Reserve",
       "region": "canterbury",
-      "lat": -44.0,
+      "lat": -44,
       "lng": 170.48,
       "category": "nature",
       "tags": [
@@ -5173,7 +5173,7 @@
         "colonial"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Heritage town walk plus New Zealand's only wild wallaby viewing area.",
       "commentary": "Waimate's heritage walk passes colonial buildings including the country's oldest church rectory. Nearby, the Waimate wallaby reserve is the only place in mainland New Zealand where you can see wild Bennett's wallabies — introduced from Australia in 1874 and now a unique local feature.",
       "content_status": "draft",
@@ -5219,7 +5219,7 @@
         "weekend"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Award-winning Saturday farmers' market in Christchurch's historic port town.",
       "commentary": "Lyttelton Farmers' Market is consistently rated one of New Zealand's best, held every Saturday in the charming harbour town. Local growers, bakers, and artisan producers sell directly to the public in a convivial atmosphere beneath the Port Hills.",
       "content_status": "draft",
@@ -5265,7 +5265,7 @@
         "mountains"
       ],
       "trigger_radius_m": 800,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Scenic drive to a remote high country station that inspired Samuel Butler's Erewhon.",
       "commentary": "The drive up the Rangitata Valley to Mesopotamia Station is a journey into the heart of Canterbury's high country. This remote station inspired Samuel Butler's novel Erewhon, and the landscape of braided rivers, tussock, and mountain ranges explains why — it feels like another world.",
       "content_status": "draft",
@@ -5273,6 +5273,595 @@
         "rating": 4.5,
         "summary": "Stunning high country landscape — the remoteness is part of the appeal."
       }
+    },
+    {
+      "id": "canterbury-washpen-falls",
+      "name": "Washpen Falls",
+      "region": "canterbury",
+      "lat": -43.5116794,
+      "lng": 171.7456234,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "private-walk",
+        "volcanic-canyon",
+        "windwhistle",
+        "canterbury-foothills"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 2.5,
+      "short": "A private loop walk near Windwhistle through volcanic canyon, native regeneration, caves and waterfalls.",
+      "commentary": "Washpen Falls is the kind of Canterbury stop that feels bigger than its distance on the map. Near Windwhistle, the loop walk enters a volcanic canyon cut into the Malvern Hills, moving through regenerating native bush, boardwalks, stairs, caves, spring-fed creeks and the falls themselves. It is private farmland, so entry is paid and visitor numbers feel naturally limited. The result is a compact two-hour walk that gives travellers a taste of foothill geology, farm history and waterfall drama without committing to a full alpine day. Wear proper shoes after rain; shaded sections can stay slick.",
+      "audio_story": "Washpen Falls is the kind of Canterbury stop that feels bigger than its distance on the map. Near Windwhistle, the loop walk enters a volcanic canyon cut into the Malvern Hills, moving through regenerating native bush, boardwalks, stairs, caves, spring-fed creeks and the falls themselves. It is private farmland, so entry is paid and visitor numbers feel naturally limited. The result is a compact two-hour walk that gives travellers a taste of foothill geology, farm history and waterfall drama without committing to a full alpine day. Wear proper shoes after rain; shaded sections can stay slick.",
+      "suggested_voice_tone": "adventurous, intimate, textured",
+      "sources_to_check": [
+        "Washpen Falls: https://www.washpenfalls.co.nz/walk",
+        "Selwyn NZ: https://selwyn.nz/thingstodo/walkingtracks/listing/washpen-falls/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Praised for variety over a short loop: canyon walls, waterfalls, views and a well-kept private track; wet-weather footing is the main caution."
+      }
+    },
+    {
+      "id": "canterbury-orton-bradley-park",
+      "name": "Orton Bradley Park",
+      "region": "canterbury",
+      "lat": -43.6762,
+      "lng": 172.7694,
+      "category": "nature",
+      "tags": [
+        "banks-peninsula",
+        "farm-park",
+        "walking",
+        "heritage"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 3,
+      "short": "A Banks Peninsula farm park with valley walks, heritage buildings, gardens and harbour views.",
+      "commentary": "Orton Bradley Park is Banks Peninsula in a quieter key: old farm buildings, exotic trees, stream valleys and tracks climbing toward Lyttelton Harbour views. It is a generous place for mixed groups, because a picnic, a short walk and a longer hill route all start from the same calm valley floor.",
+      "audio_story": "Orton Bradley Park is Banks Peninsula in a quieter key: old farm buildings, exotic trees, stream valleys and tracks climbing toward Lyttelton Harbour views. It is a generous place for mixed groups, because a picnic, a short walk and a longer hill route all start from the same calm valley floor.",
+      "suggested_voice_tone": "gentle, pastoral, scenic",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-te-ana-rock-art-centre",
+      "name": "Te Ana Māori Rock Art Centre",
+      "region": "canterbury",
+      "lat": -44.3962,
+      "lng": 171.2551,
+      "category": "culture",
+      "tags": [
+        "timaru",
+        "rock-art",
+        "ngai-tahu",
+        "heritage"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1.5,
+      "short": "A Timaru centre interpreting Ngāi Tahu rock art and the stories of South Canterbury’s limestone landscapes.",
+      "commentary": "Te Ana brings South Canterbury’s rock art out of abstraction and into relationship. The centre explains how drawings, travel routes, food gathering and limestone shelters fit together, and why visiting the original sites requires care, permission and cultural respect.",
+      "audio_story": "Te Ana brings South Canterbury’s rock art out of abstraction and into relationship. The centre explains how drawings, travel routes, food gathering and limestone shelters fit together, and why visiting the original sites requires care, permission and cultural respect.",
+      "suggested_voice_tone": "respectful, clear, educational",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "canterbury-talbot-forest",
+      "name": "Talbot Forest Scenic Reserve",
+      "region": "canterbury",
+      "lat": -44.0887,
+      "lng": 171.2397,
+      "category": "nature",
+      "tags": [
+        "geraldine",
+        "forest",
+        "short-walk",
+        "native-bush"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A remnant native forest reserve on Geraldine’s edge, with short loops through mataī, tōtara and kahikatea.",
+      "commentary": "Talbot Forest is small enough to fit between coffee and the road, but old enough to shift the day’s mood. The tracks move through a rare lowland forest remnant, showing what much of inland South Canterbury once felt like before farms and town streets filled the plain.",
+      "audio_story": "Talbot Forest is small enough to fit between coffee and the road, but old enough to shift the day’s mood. The tracks move through a rare lowland forest remnant, showing what much of inland South Canterbury once felt like before farms and town streets filled the plain.",
+      "suggested_voice_tone": "quiet, ecological, close-up",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-peel-forest-big-tree-walk",
+      "name": "Peel Forest Big Tree Walk",
+      "region": "canterbury",
+      "lat": -43.8948,
+      "lng": 171.2558,
+      "category": "nature",
+      "tags": [
+        "forest",
+        "short-walk",
+        "podocarp",
+        "geraldine"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 1,
+      "short": "A short Peel Forest walk among large podocarps and one of Canterbury’s loveliest native bush remnants.",
+      "commentary": "Peel Forest is where Canterbury’s dry plains suddenly remember deep green. The Big Tree Walk is an easy way in, passing large tōtara, mataī and kahikatea that survived while much of the region changed around them.",
+      "audio_story": "Peel Forest is where Canterbury’s dry plains suddenly remember deep green. The Big Tree Walk is an easy way in, passing large tōtara, mataī and kahikatea that survived while much of the region changed around them.",
+      "suggested_voice_tone": "green, grounded, appreciative",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-lake-heron-hakatere",
+      "name": "Lake Heron / Hakatere",
+      "region": "canterbury",
+      "lat": -43.4752,
+      "lng": 171.1751,
+      "category": "nature",
+      "tags": [
+        "ashburton-lakes",
+        "high-country",
+        "birdlife",
+        "scenic-drive"
+      ],
+      "trigger_radius_m": 1800,
+      "duration_hours": 3,
+      "short": "A high-country lake in the Ashburton basin, surrounded by tussock, mountains and braided-river light.",
+      "commentary": "Lake Heron is Canterbury high country without the souvenir-shop noise. The drive into Hakatere opens into tawny basins, river flats and mountain walls, then the lake appears broad and still, a place for birdwatching, photography and letting the scale of the island settle around you.",
+      "audio_story": "Lake Heron is Canterbury high country without the souvenir-shop noise. The drive into Hakatere opens into tawny basins, river flats and mountain walls, then the lake appears broad and still, a place for birdwatching, photography and letting the scale of the island settle around you.",
+      "suggested_voice_tone": "spacious, quiet, cinematic",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-aigantighe-art-gallery",
+      "name": "Aigantighe Art Gallery",
+      "region": "canterbury",
+      "lat": -44.3886,
+      "lng": 171.2414,
+      "category": "culture",
+      "tags": [
+        "timaru",
+        "gallery",
+        "historic-house",
+        "art"
+      ],
+      "trigger_radius_m": 200,
+      "duration_hours": 1,
+      "short": "A public art gallery in a historic Timaru house, with gardens, sculpture and changing exhibitions.",
+      "commentary": "Aigantighe is one of those regional galleries that rewards stepping inside. The historic house setting gives the collection warmth, while the gardens and sculpture make it feel less like a stop on a checklist and more like a pause in the city’s cultural memory.",
+      "audio_story": "Aigantighe is one of those regional galleries that rewards stepping inside. The historic house setting gives the collection warmth, while the gardens and sculpture make it feel less like a stop on a checklist and more like a pause in the city’s cultural memory.",
+      "suggested_voice_tone": "cultured, calm, appreciative",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-kaitorete-spit",
+      "name": "Kaitorete Spit",
+      "region": "canterbury",
+      "lat": -43.815,
+      "lng": 172.516,
+      "category": "wildlife",
+      "tags": [
+        "coast",
+        "te-waihora",
+        "birdlife",
+        "wildlife"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 2,
+      "short": "A long gravel barrier between Te Waihora / Lake Ellesmere and the Pacific, important for shorebirds and wild coast views.",
+      "commentary": "Kaitorete Spit is not gentle, and that is its power. The long barrier divides lake from ocean, holding wind, stones, shorebirds and huge sky in a landscape that feels elemental rather than scenic in the usual way.",
+      "audio_story": "Kaitorete Spit is not gentle, and that is its power. The long barrier divides lake from ocean, holding wind, stones, shorebirds and huge sky in a landscape that feels elemental rather than scenic in the usual way.",
+      "suggested_voice_tone": "spare, wild, observant",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-kowhai-bush-kaikoura",
+      "name": "Kōwhai Bush Walk, Kaikōura",
+      "region": "canterbury",
+      "lat": -42.4057,
+      "lng": 173.5903,
+      "category": "nature",
+      "tags": [
+        "kaikoura",
+        "forest",
+        "short-walk",
+        "birdlife"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A quiet native bush walk near Kaikōura, good for birdsong and a break from the coast road.",
+      "commentary": "Kōwhai Bush offers a softer Kaikōura moment away from seals, surf and highway pull-offs. The loop moves through native forest beside the Kōwhai River, giving travellers a green pause before the mountains and sea take over again.",
+      "audio_story": "Kōwhai Bush offers a softer Kaikōura moment away from seals, surf and highway pull-offs. The loop moves through native forest beside the Kōwhai River, giving travellers a green pause before the mountains and sea take over again.",
+      "suggested_voice_tone": "quiet, green, restorative",
+      "sources_to_check": [
+        "DOC Canterbury places",
+        "ChristchurchNZ visitor information",
+        "South Canterbury visitor information"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-ashburton-aviation-museum",
+      "name": "Ashburton Aviation Museum",
+      "region": "canterbury",
+      "lat": -43.904,
+      "lng": 171.794,
+      "category": "heritage",
+      "tags": [
+        "aviation",
+        "museum",
+        "ashburton"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Ashburton Aviation Museum gives mid-Canterbury an airborne chapter, with aircraft, restoration work and volunteer knowledge gathered beside the airfield.",
+      "commentary": "Ashburton Aviation Museum gives mid-Canterbury an airborne chapter, with aircraft, restoration work and volunteer knowledge gathered beside the airfield.",
+      "audio_story": "Ashburton Aviation Museum gives mid-Canterbury an airborne chapter, with aircraft, restoration work and volunteer knowledge gathered beside the airfield.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-riccarton-house-bush",
+      "name": "Riccarton House and Bush",
+      "region": "canterbury",
+      "lat": -43.5307,
+      "lng": 172.5981,
+      "category": "heritage",
+      "tags": [
+        "christchurch",
+        "historic-house",
+        "native-forest"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Riccarton House and Bush pairs early Christchurch settlement history with a rare remnant of kahikatea forest, making the city’s past feel both built and living.",
+      "commentary": "Riccarton House and Bush pairs early Christchurch settlement history with a rare remnant of kahikatea forest, making the city’s past feel both built and living.",
+      "audio_story": "Riccarton House and Bush pairs early Christchurch settlement history with a rare remnant of kahikatea forest, making the city’s past feel both built and living.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-waimate-white-horse",
+      "name": "Waimate White Horse",
+      "region": "canterbury",
+      "lat": -44.742,
+      "lng": 171.067,
+      "category": "heritage",
+      "tags": [
+        "waimate",
+        "lookout",
+        "landmark",
+        "hill-walk"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A hill landmark above Waimate, with town and plains views from the White Horse walkway.",
+      "commentary": "The Waimate White Horse gives South Canterbury a cheerful hillside signature. Climb or drive up for wide views over the town, farms and coastward plains, then look back at the horse itself: part landmark, part local emblem, part excuse to stretch your legs.",
+      "audio_story": "The Waimate White Horse gives South Canterbury a cheerful hillside signature. Climb or drive up for wide views over the town, farms and coastward plains, then look back at the horse itself: part landmark, part local emblem, part excuse to stretch your legs.",
+      "suggested_voice_tone": "bright, local, panoramic",
+      "sources_to_check": [
+        "https://www.waimatedc.govt.nz/recreation/parks-and-reserves/white-horse-walkway"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-kate-sheppard-house",
+      "name": "Te Whare Waiutuutu Kate Sheppard House",
+      "region": "canterbury",
+      "lat": -43.522,
+      "lng": 172.582,
+      "category": "heritage",
+      "tags": [
+        "christchurch",
+        "suffrage",
+        "heritage-house",
+        "museum"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1.25,
+      "short": "The Christchurch heritage house connected to Kate Sheppard and New Zealand’s women’s suffrage campaign.",
+      "commentary": "Te Whare Waiutuutu Kate Sheppard House gives a national political story a domestic address. Rooms, garden and interpretation bring the women’s suffrage movement out of abstraction, showing how world-changing civic work can begin around tables, letters and determined organising.",
+      "audio_story": "Te Whare Waiutuutu Kate Sheppard House gives a national political story a domestic address. Rooms, garden and interpretation bring the women’s suffrage movement out of abstraction, showing how world-changing civic work can begin around tables, letters and determined organising.",
+      "suggested_voice_tone": "clear, historical, quietly powerful",
+      "sources_to_check": [
+        "https://www.christchurchnz.com/visit/things-to-do/listing/te-whare-waiutuutu-kate-sheppard-house-10004341",
+        "https://katesheppardhouse.co.nz/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-rapanui-shag-rock",
+      "name": "Rapanui / Shag Rock",
+      "region": "canterbury",
+      "lat": -43.563072,
+      "lng": 172.750358,
+      "category": "nature",
+      "tags": [
+        "local-attraction",
+        "nature",
+        "tourism-attraction",
+        "natural-bare_rock"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Canterbury.",
+      "commentary": "Rapanui / Shag Rock fills in another real point on the Canterbury visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as This rock formation collapsed into a cluster of rocks in the February 22, 2011 earthquake.",
+      "audio_story": "Rapanui / Shag Rock fills in another real point on the Canterbury visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as This rock formation collapsed into a cluster of rocks in the February 22, 2011 earthquake.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/relation/13632006",
+        "https://en.wikipedia.org/wiki/Rapanui_Rock",
+        "https://www.wikidata.org/wiki/Q7293859",
+        "https://www.newzealand.com/nz/christchurch-canterbury/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-takapuneke-reserve",
+      "name": "Takapūneke Reserve",
+      "region": "canterbury",
+      "lat": -43.818125,
+      "lng": 172.949214,
+      "category": "heritage",
+      "tags": [
+        "park",
+        "heritage",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Canterbury.",
+      "commentary": "Takapūneke Reserve is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as A sacred area to Ngāi Tahu and a site of national significance. In recognition of its tapu status, food and drink, bicycles, horses and recreational activities are not allowed in this area. It contains the site of the former Takapūneke village. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Takapūneke Reserve is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as A sacred area to Ngāi Tahu and a site of national significance. In recognition of its tapu status, food and drink, bicycles, horses and recreational activities are not allowed in this area. It contains the site of the former Takapūneke village. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1487031578",
+        "https://ngaitahu.iwi.nz/opportunities-and-resources/publications/te-karaka/takapuneke/",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-yaldhurst-museum",
+      "name": "Yaldhurst Museum",
+      "region": "canterbury",
+      "lat": -43.510579,
+      "lng": 172.505096,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Canterbury.",
+      "commentary": "Yaldhurst Museum gives Canterbury another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Yaldhurst Museum gives Canterbury another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/205425812",
+        "http://www.yaldhurstmuseum.co.nz/",
+        "https://www.wikidata.org/wiki/Q8047320",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-homebush-station",
+      "name": "Homebush Station",
+      "region": "canterbury",
+      "lat": -43.488248,
+      "lng": 172.106372,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Canterbury.",
+      "commentary": "Homebush Station is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as Memorial site for Whitecliffs Branch (1875 - 1962). Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Homebush Station is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as Memorial site for Whitecliffs Branch (1875 - 1962). Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/981910397",
+        "https://en.wikipedia.org/wiki/Whitecliffs_Branch_historical_site",
+        "https://www.wikidata.org/wiki/Q108907310",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-ngaio-marsh-house",
+      "name": "Ngaio Marsh House",
+      "region": "canterbury",
+      "lat": -43.571976,
+      "lng": 172.626812,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Canterbury.",
+      "commentary": "Ngaio Marsh House gives Canterbury another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Ngaio Marsh House gives Canterbury another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/753599783",
+        "https://www.ngaiomarsh.org/",
+        "https://www.wikidata.org/wiki/Q109297635",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-bridge-of-remembrance",
+      "name": "Bridge of Remembrance",
+      "region": "canterbury",
+      "lat": -43.533162,
+      "lng": 172.63329,
+      "category": "heritage",
+      "tags": [
+        "monument-site",
+        "heritage",
+        "historic-monument"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Canterbury.",
+      "commentary": "Bridge of Remembrance is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Bridge of Remembrance is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/498805774",
+        "https://en.wikipedia.org/wiki/Bridge_of_Remembrance",
+        "https://www.wikidata.org/wiki/Q913658",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-cotons-cottage",
+      "name": "Cotons Cottage",
+      "region": "canterbury",
+      "lat": -43.542789,
+      "lng": 171.960034,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Canterbury.",
+      "commentary": "Cotons Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as built 1864. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Cotons Cottage is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. OpenStreetMap describes it as built 1864. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/408753177",
+        "https://www.wikidata.org/wiki/Q77362327",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-cracroft-caverns",
+      "name": "Cracroft Caverns",
+      "region": "canterbury",
+      "lat": -43.575019,
+      "lng": 172.62241,
+      "category": "heritage",
+      "tags": [
+        "ruins-site",
+        "heritage",
+        "historic-ruins"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Canterbury.",
+      "commentary": "Cracroft Caverns is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Cracroft Caverns is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/relation/14024693",
+        "https://en.wikipedia.org/wiki/Cracroft_Caverns",
+        "https://www.wikidata.org/wiki/Q5180436",
+        "https://www.newzealand.com/nz/christchurch-canterbury/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "canterbury-edmonds-factory-gardens",
+      "name": "Edmonds Factory Gardens",
+      "region": "canterbury",
+      "lat": -43.541643,
+      "lng": 172.664928,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Canterbury.",
+      "commentary": "Edmonds Factory Gardens fills in another real point on the Canterbury visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Friends of the Edmonds Factory Garden\nhttps://www.cinch.org.nz/categories/a-z/f/311/entries/4379\n\nGood photos\nhttps://christchurchwalks.wordpress.com/other-fun-stuff/edmonds-factory-garden/.",
+      "audio_story": "Edmonds Factory Gardens fills in another real point on the Canterbury visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Friends of the Edmonds Factory Garden\nhttps://www.cinch.org.nz/categories/a-z/f/311/entries/4379\n\nGood photos\nhttps://christchurchwalks.wordpress.com/other-fun-stuff/edmonds-factory-garden/.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/146431445",
+        "https://ccc.govt.nz/parks-and-gardens/gardens-and-heritage-parks/edmonds-factory-gardens",
+        "https://www.newzealand.com/nz/christchurch-canterbury/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

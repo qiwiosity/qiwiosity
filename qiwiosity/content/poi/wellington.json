@@ -2452,7 +2452,7 @@
       "name": "Ngā Manu Nature Reserve",
       "region": "wellington",
       "lat": -40.9333,
-      "lng": 175.0,
+      "lng": 175,
       "category": "wildlife",
       "tags": [
         "birds",
@@ -2630,7 +2630,7 @@
         "performing-arts"
       ],
       "trigger_radius_m": 150,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Wellington's beloved independent theatre — the beating heart of NZ's fringe and experimental performance scene.",
       "commentary": "BATS Theatre on Kent Terrace is the beating heart of Wellington's vibrant independent performing arts scene and one of the most important incubators for new theatre in New Zealand. Operating since 1989, BATS provides affordable rehearsal and performance spaces for emerging and experimental artists, presenting a packed programme of new works across its two intimate venues. Many of New Zealand's most celebrated theatre practitioners, comedians, and performers started at BATS. The theatre is central to the annual New Zealand Fringe Festival and presents a wildly diverse programme year-round — expect everything from groundbreaking drama to absurdist comedy, physical theatre, improv, poetry slams, and everything in between. The quality varies (that's part of the charm), but the best shows rival anything in the country. Tickets are deliberately kept affordable, making it accessible for all. The bar is a great pre and post-show gathering spot. Check the programme online — shows change frequently and popular seasons sell out. A Wellington institution.",
       "content_status": "draft",
@@ -2768,7 +2768,7 @@
         "martinborough"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Legendary Martinborough Pinot Noir producer, consistently ranked among New Zealand's finest wineries.",
       "commentary": "Ata Rangi is widely regarded as one of New Zealand's greatest Pinot Noir producers, with a reputation built over four decades of meticulous winemaking in Martinborough. Founded by Clive Paton in 1980 using original Burgundian vine cuttings known as the Abel clone, the winery has produced benchmark Pinot Noir vintages that rival the best of Burgundy. The flagship Ata Rangi Pinot Noir is a wine of remarkable depth, silky texture, and aging potential. The cellar door, located on Puruatanga Road in the village, offers tastings by appointment, providing an intimate experience with the wines. Beyond Pinot Noir, the Craighall Chardonnay and Celebre red blend are outstanding. Ata Rangi has been a leader in sustainable viticulture, achieving Certified Sustainable status. Visiting by appointment ensures personal attention and the opportunity to taste wines that sell out quickly.",
       "content_status": "draft",
@@ -2791,7 +2791,7 @@
         "martinborough"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Cult Martinborough winery revered for age-worthy Pinot Noir, Riesling, and Gewurztraminer.",
       "commentary": "Dry River is one of Martinborough's most revered boutique wineries, founded in 1979 by Dr Neil McCallum with a focus on producing age-worthy wines of exceptional character. The tiny production and intense following mean Dry River wines are allocated and rarely seen on retail shelves, making a cellar door visit one of the few ways to access them. The Pinot Noir is celebrated for its structure and aging potential, while the aromatic whites, particularly the Riesling and Gewurztraminer, are among New Zealand's finest examples. The cellar door operates by appointment and the experience is intimate and educational, often hosted by winemakers who share their philosophical approach to minimal-intervention viticulture. The winery's small scale means personal attention and the chance to taste wines in the environment where they are made. A bucket-list winery for New Zealand wine connoisseurs.",
       "content_status": "draft",
@@ -2814,7 +2814,7 @@
         "guided"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Guided quad bike and ATV adventures along the Kapiti Coast's rugged beaches and bush tracks.",
       "commentary": "Wild Kiwi Adventures offers guided quad bike and ATV tours along the rugged Kapiti Coast north of Wellington. Tours explore a mix of terrain including wild black sand beaches, river crossings, native bush tracks, and open farmland with views to Kapiti Island. Multiple tour options range from one-hour introductory rides suitable for beginners to half-day expeditions covering more challenging terrain. No prior quad biking experience is necessary, as comprehensive safety training is provided before departure. The coastal environment offers a raw, windswept landscape distinctly different from the sheltered Wellington harbour. Guides share knowledge of local ecology and history along the way. The Kapiti Coast is about 45 minutes north of Wellington city, making it accessible for a half-day adventure. Weather-appropriate clothing is recommended as conditions can be changeable. Minimum age varies by tour type.",
       "content_status": "draft",
@@ -2860,7 +2860,7 @@
         "boutique"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Charming wine village with over 20 cellar doors within cycling distance, famous for world-class Pinot Noir.",
       "commentary": "Martinborough is New Zealand's most compact and walkable wine village, with over 20 cellar doors located within easy cycling distance of the charming village square. The region's fame rests on its exceptional Pinot Noir, produced on free-draining alluvial terraces with a warm, dry microclimate that mirrors aspects of Burgundy. Beyond the flagship Pinot, excellent Sauvignon Blanc, Chardonnay, Riesling, and Syrah are produced. Bike hire is available from the village centre, making a self-guided cycling wine tour the classic Martinborough experience. The village square is lined with boutique shops, cafes, and restaurants showcasing local produce. Toast Martinborough, held each November, is New Zealand's most prestigious wine festival. The village is a 75-minute drive east of Wellington over the Rimutaka Range, or accessible via the scenic Rimutaka Rail Trail by bicycle. Many Wellington visitors make Martinborough a day trip or weekend escape.",
       "content_status": "draft",
@@ -2883,7 +2883,7 @@
         "free"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "New Zealand's national museum on the Wellington waterfront, with world-class exhibitions and free general admission.",
       "commentary": "Te Papa Tongarewa (Our Container of Treasured Things) is New Zealand's national museum, housed in a striking waterfront building in central Wellington. The museum is renowned for its innovative, interactive approach to presenting New Zealand's natural environment, Maori culture, Pacific heritage, and art collections. Permanent exhibitions include the immersive earthquake simulator, the spectacular Gallipoli exhibition created with Weta Workshop, the magnificent marae (meeting house), and extensive natural history displays featuring a colossal squid. Temporary exhibitions bring international content to Wellington. General admission is free, with charges for some special exhibitions and experiences. The museum spans six floors and easily absorbs a full day. The cafe and gift shop are excellent. Located on Cable Street on the waterfront, Te Papa is within walking distance of Cuba Street, Courtenay Place, and the Wellington cable car. New Zealand's most-visited museum with over 1.5 million visitors annually.",
       "content_status": "draft",
@@ -3307,7 +3307,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Visitors appreciate the combination of Wellington Botanic Garden surroundings with engaging astronomical programming. The historical Thomas Cooke telescope is a highlight for those interested in the history of science in New Zealand."
       }
     },
@@ -3567,7 +3567,7 @@
       "commentary": "Mount Kaukau is the highest point in Wellington city at 445 metres, accessible via several walking tracks from Khandallah and Ngaio. The summit views are expansive — the harbour, city centre, Hutt Valley, and on clear days the South Island mountains. To the west, the Makara wind farm's turbines create a dramatic skyline of giant white structures against the green hills. The walk up takes about 45 minutes via the main track and is a popular local exercise route. The Skyline Track continues along the ridge to other summits. Wellington's famously strong winds make the summit experience bracing — hold onto your hat. The views make every gust worthwhile.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Wellington's best high-level views. The wind turbine views are dramatic. Bring a warm layer — it's windy up there."
       }
     },
@@ -3701,7 +3701,7 @@
         "lord of the rings"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Immersive experience inside the world-famous special effects workshop.",
       "commentary": "Wētā Workshop Unleashed offers an immersive 90-minute experience through the creative world of Sir Richard Taylor's legendary special effects studio. Walk through film sets, handle props and prosthetics, and discover the artistry behind Lord of the Rings, Avatar, and other blockbusters.",
       "content_status": "draft",
@@ -3724,7 +3724,7 @@
         "swimming"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Lush river park and Lord of the Rings filming location for Rivendell.",
       "commentary": "Kaitoke Regional Park's dense rainforest and crystal-clear Hutt River provided the setting for Rivendell in the Lord of the Rings films. Beyond the film connection, the park offers excellent swimming holes, bush walks, and some of the Wellington region's best camping.",
       "content_status": "draft",
@@ -3770,7 +3770,7 @@
         "harbour views"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Coastal walk from the Days Bay ferry wharf to the Eastbourne village waterfront.",
       "commentary": "Take the ferry from Wellington's waterfront to Days Bay, then walk the coastal path south to Eastbourne. The easy track hugs the harbour shore with views back to the city, passing through several bays and the charming seaside village — a delightful half-day escape from the capital.",
       "content_status": "draft",
@@ -3778,6 +3778,540 @@
         "rating": 4.4,
         "summary": "Lovely ferry-and-walk combination — great harbour views."
       }
+    },
+    {
+      "id": "wellington-patuna-chasm",
+      "name": "Patuna Chasm",
+      "region": "wellington",
+      "lat": -41.3627465,
+      "lng": 175.3834006,
+      "category": "adventure",
+      "tags": [
+        "limestone",
+        "private-walk",
+        "chasm",
+        "wairarapa",
+        "booking-required"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 3,
+      "short": "A private Wairarapa limestone chasm walk near Martinborough, with stream travel, ladders and seasonal access.",
+      "commentary": "Patuna Chasm is one of the Wairarapa's most physical half-day experiences. On private farm land near Martinborough, the route moves through limestone country into a narrow chasm, with stream walking, ladders and wet feet often part of the deal. It is not an always-open public reserve; booking, season and safety information matter, and the walk can close when conditions are unsuitable. That controlled access is part of what keeps it special. Add it when the website needs more Wellington-region depth beyond the capital: rural Wairarapa, limestone geology and a genuinely adventurous walk within reach of wine country.",
+      "audio_story": "Patuna Chasm is one of the Wairarapa's most physical half-day experiences. On private farm land near Martinborough, the route moves through limestone country into a narrow chasm, with stream walking, ladders and wet feet often part of the deal. It is not an always-open public reserve; booking, season and safety information matter, and the walk can close when conditions are unsuitable. That controlled access is part of what keeps it special. Add it when the website needs more Wellington-region depth beyond the capital: rural Wairarapa, limestone geology and a genuinely adventurous walk within reach of wine country.",
+      "suggested_voice_tone": "energetic, careful, adventurous",
+      "sources_to_check": [
+        "Patuna Farm Adventures: https://www.patunafarm.co.nz/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.7,
+        "summary": "Known as a memorable Wairarapa adventure for people comfortable with wet feet, ladders and booking-dependent private access."
+      }
+    },
+    {
+      "id": "wellington-stonehenge-aotearoa",
+      "name": "Stonehenge Aotearoa",
+      "region": "wellington",
+      "lat": -41.0732,
+      "lng": 175.5885,
+      "category": "culture",
+      "tags": [
+        "astronomy",
+        "wairarapa",
+        "dark-sky",
+        "guided"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.5,
+      "short": "A working open-air astronomical calendar in rural Wairarapa, designed for southern skies.",
+      "commentary": "Stonehenge Aotearoa is not a replica so much as an invitation to look up properly. Built for the southern hemisphere, it turns solstices, stars and navigation into something you can stand inside, especially powerful in Wairarapa’s dark-sky country.",
+      "audio_story": "Stonehenge Aotearoa is not a replica so much as an invitation to look up properly. Built for the southern hemisphere, it turns solstices, stars and navigation into something you can stand inside, especially powerful in Wairarapa’s dark-sky country.",
+      "suggested_voice_tone": "curious, celestial, clear",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-wairarapa-dark-sky-reserve",
+      "name": "Wairarapa Dark Sky Reserve",
+      "region": "wellington",
+      "lat": -41.218,
+      "lng": 175.456,
+      "category": "nature",
+      "tags": [
+        "dark-sky",
+        "stargazing",
+        "wairarapa",
+        "night"
+      ],
+      "trigger_radius_m": 5000,
+      "duration_hours": 2,
+      "short": "A region-scale dark-sky experience where rural Wairarapa nights reveal dense southern stars.",
+      "commentary": "The Wairarapa Dark Sky Reserve changes the best travel hour to after dinner. Away from city light, the southern sky becomes a destination in itself, connecting small towns, vineyards and coast roads with a much older map overhead.",
+      "audio_story": "The Wairarapa Dark Sky Reserve changes the best travel hour to after dinner. Away from city light, the southern sky becomes a destination in itself, connecting small towns, vineyards and coast roads with a much older map overhead.",
+      "suggested_voice_tone": "quiet, celestial, expansive",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-greytown-rail-trail",
+      "name": "Greytown Rail Trail",
+      "region": "wellington",
+      "lat": -41.0738,
+      "lng": 175.4596,
+      "category": "journey",
+      "tags": [
+        "walking",
+        "cycling",
+        "greytown",
+        "railway"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A flat walking and cycling link following old railway formation between Greytown and Woodside Station.",
+      "commentary": "The Greytown Rail Trail is a small piece of practical travel history made pleasant. What once moved passengers now moves walkers and cyclists between village and station, with hedges, paddocks and Wairarapa quiet doing most of the work.",
+      "audio_story": "The Greytown Rail Trail is a small piece of practical travel history made pleasant. What once moved passengers now moves walkers and cyclists between village and station, with hedges, paddocks and Wairarapa quiet doing most of the work.",
+      "suggested_voice_tone": "gentle, historical, local",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-brooklyn-wind-turbine",
+      "name": "Brooklyn Wind Turbine",
+      "region": "wellington",
+      "lat": -41.3007,
+      "lng": 174.7408,
+      "category": "journey",
+      "tags": [
+        "viewpoint",
+        "wind",
+        "wellington",
+        "skyline"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 0.75,
+      "short": "A hilltop Wellington viewpoint beside the city’s landmark wind turbine and wild-weather skyline.",
+      "commentary": "The Brooklyn Wind Turbine is a very Wellington kind of lookout: practical infrastructure turned landmark, with wind as both subject and soundtrack. From the hill you can read harbour, city, Cook Strait weather and the ridgelines that keep the capital compact.",
+      "audio_story": "The Brooklyn Wind Turbine is a very Wellington kind of lookout: practical infrastructure turned landmark, with wind as both subject and soundtrack. From the hill you can read harbour, city, Cook Strait weather and the ridgelines that keep the capital compact.",
+      "suggested_voice_tone": "windy, urban, panoramic",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-otari-wiltons-bush",
+      "name": "Ōtari-Wilton’s Bush",
+      "region": "wellington",
+      "lat": -41.2676,
+      "lng": 174.7554,
+      "category": "nature",
+      "tags": [
+        "native-botanic-garden",
+        "forest",
+        "wellington",
+        "walking"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "New Zealand’s only public botanic garden devoted solely to native plants, wrapped around remnant forest.",
+      "commentary": "Ōtari-Wilton’s Bush is Wellington’s native-plant library, but alive and walkable. Collections, forest tracks and old trees sit together in a valley that makes botany feel less like labels and more like kinship with place.",
+      "audio_story": "Ōtari-Wilton’s Bush is Wellington’s native-plant library, but alive and walkable. Collections, forest tracks and old trees sit together in a valley that makes botany feel less like labels and more like kinship with place.",
+      "suggested_voice_tone": "green, thoughtful, local",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-remutaka-rail-trail-summit",
+      "name": "Remutaka Rail Trail Summit",
+      "region": "wellington",
+      "lat": -41.1233,
+      "lng": 175.1772,
+      "category": "heritage",
+      "tags": [
+        "rail-trail",
+        "tunnel",
+        "cycling",
+        "wairarapa"
+      ],
+      "trigger_radius_m": 1800,
+      "duration_hours": 4,
+      "short": "A historic rail trail over the Remutaka Range, with tunnels, railway relics and forested gullies.",
+      "commentary": "The Remutaka Rail Trail turns a difficult old railway crossing into a generous cycling and walking route. Tunnels, cuttings and interpretive signs reveal the engineering effort it once took to move people and goods between Wellington and Wairarapa.",
+      "audio_story": "The Remutaka Rail Trail turns a difficult old railway crossing into a generous cycling and walking route. Tunnels, cuttings and interpretive signs reveal the engineering effort it once took to move people and goods between Wellington and Wairarapa.",
+      "suggested_voice_tone": "historical, active, practical",
+      "sources_to_check": [
+        "WellingtonNZ and Wairarapa visitor information",
+        "DOC Wellington, Kāpiti and Wairarapa places",
+        "Local heritage, dark sky and wildlife operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-nairn-street-cottage",
+      "name": "Nairn Street Cottage",
+      "region": "wellington",
+      "lat": -41.292,
+      "lng": 174.767,
+      "category": "heritage",
+      "tags": [
+        "historic-house",
+        "wellington",
+        "museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Nairn Street Cottage gives Wellington history a domestic scale, preserving a family home where immigration, work and everyday city life become tangible.",
+      "commentary": "Nairn Street Cottage gives Wellington history a domestic scale, preserving a family home where immigration, work and everyday city life become tangible.",
+      "audio_story": "Nairn Street Cottage gives Wellington history a domestic scale, preserving a family home where immigration, work and everyday city life become tangible.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-wrights-hill-fortress",
+      "name": "Wrights Hill Fortress",
+      "region": "wellington",
+      "lat": -41.286,
+      "lng": 174.733,
+      "category": "heritage",
+      "tags": [
+        "wwii",
+        "fortress",
+        "karori"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Wrights Hill Fortress hides wartime Wellington inside the hill, with tunnels and gun emplacements that reveal how seriously the harbour once prepared for attack.",
+      "commentary": "Wrights Hill Fortress hides wartime Wellington inside the hill, with tunnels and gun emplacements that reveal how seriously the harbour once prepared for attack.",
+      "audio_story": "Wrights Hill Fortress hides wartime Wellington inside the hill, with tunnels and gun emplacements that reveal how seriously the harbour once prepared for attack.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-carterton-clock-tower",
+      "name": "Carterton Clock Tower",
+      "region": "wellington",
+      "lat": -41.025,
+      "lng": 175.528,
+      "category": "heritage",
+      "tags": [
+        "carterton",
+        "town-centre",
+        "landmark"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.5,
+      "short": "Carterton’s clock tower is a small-town landmark with practical charm, anchoring the main street between Wairarapa villages, farms and dark-sky country.",
+      "commentary": "Carterton’s clock tower is a small-town landmark with practical charm, anchoring the main street between Wairarapa villages, farms and dark-sky country.",
+      "audio_story": "Carterton’s clock tower is a small-town landmark with practical charm, anchoring the main street between Wairarapa villages, farms and dark-sky country.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-fensham-reserve",
+      "name": "Fensham Reserve",
+      "region": "wellington",
+      "lat": -41.015,
+      "lng": 175.482,
+      "category": "nature",
+      "tags": [
+        "wairarapa",
+        "forest",
+        "birdlife",
+        "short-walk"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1,
+      "short": "A small Forest & Bird reserve near Carterton, protecting lowland forest and wetland habitat.",
+      "commentary": "Fensham Reserve is small enough to miss and good enough not to. Its tracks pass through lowland forest and wetland edges, offering a quieter Wairarapa nature stop between vineyards, villages and the bigger ranges on the horizon.",
+      "audio_story": "Fensham Reserve is small enough to miss and good enough not to. Its tracks pass through lowland forest and wetland edges, offering a quieter Wairarapa nature stop between vineyards, villages and the bigger ranges on the horizon.",
+      "suggested_voice_tone": "quiet, attentive, conservation-minded",
+      "sources_to_check": [
+        "https://www.forestandbird.org.nz/projects/fensham-reserve"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-baring-head-lighthouse",
+      "name": "Baring Head / Orua-pouanui Lighthouse",
+      "region": "wellington",
+      "lat": -41.407,
+      "lng": 174.872,
+      "category": "heritage",
+      "tags": [
+        "lighthouse",
+        "east-harbour",
+        "wairarapa-coast",
+        "walking"
+      ],
+      "trigger_radius_m": 1500,
+      "duration_hours": 3,
+      "short": "A rugged lighthouse precinct in East Harbour Regional Park, reached by walking and biking tracks.",
+      "commentary": "Baring Head / Orua-pouanui feels like Wellington pushed to its weather edge. Tracks cross open coastal ground to a lighthouse precinct where harbour navigation, keeper life and restoration work all meet the wind head-on.",
+      "audio_story": "Baring Head / Orua-pouanui feels like Wellington pushed to its weather edge. Tracks cross open coastal ground to a lighthouse precinct where harbour navigation, keeper life and restoration work all meet the wind head-on.",
+      "suggested_voice_tone": "windswept, historical, open",
+      "sources_to_check": [
+        "https://www.gw.govt.nz/parks/east-harbour-regional-park/",
+        "https://www.baringhead.org.nz/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "wellington-turnbull-house",
+      "name": "Turnbull House",
+      "region": "wellington",
+      "lat": -41.279089,
+      "lng": 174.776418,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Wellington.",
+      "commentary": "Turnbull House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Turnbull House is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/62197397",
+        "http://www.doc.govt.nz/parks-and-recreation/places-to-visit/wellington-kapiti/wellington/turnbull-house/",
+        "https://en.wikipedia.org/wiki/Turnbull_House",
+        "https://www.wikidata.org/wiki/Q24190023",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-wellington-museum",
+      "name": "Wellington Museum",
+      "region": "wellington",
+      "lat": -41.285311,
+      "lng": 174.778131,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Wellington.",
+      "commentary": "Wellington Museum gives Wellington another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Wellington Museum gives Wellington another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/250856271",
+        "http://wellingtoncityheritage.org.nz/buildings/151-300/160-wellington-harbour-board-head-office-and-bond-store;https://www.museumswellington.org.nz/wellington-museum/",
+        "https://www.wikidata.org/wiki/Q9292226",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-new-zealand-portrait-gallery",
+      "name": "New Zealand Portrait Gallery",
+      "region": "wellington",
+      "lat": -41.283582,
+      "lng": 174.778202,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Wellington.",
+      "commentary": "New Zealand Portrait Gallery gives Wellington another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "New Zealand Portrait Gallery gives Wellington another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/153924615",
+        "https://nzportraitgallery.org.nz/",
+        "https://www.wikidata.org/wiki/Q28180748",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-ss-hikitia",
+      "name": "SS Hikitia",
+      "region": "wellington",
+      "lat": -41.289317,
+      "lng": 174.78046,
+      "category": "heritage",
+      "tags": [
+        "ship-site",
+        "heritage",
+        "tourism-attraction",
+        "historic-ship"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Wellington.",
+      "commentary": "SS Hikitia is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "SS Hikitia is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/264055222",
+        "https://en.wikipedia.org/wiki/Hikitia",
+        "https://www.wikidata.org/wiki/Q5760586",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-st-james-theatre",
+      "name": "St James Theatre",
+      "region": "wellington",
+      "lat": -41.293366,
+      "lng": 174.779721,
+      "category": "culture",
+      "tags": [
+        "theatre",
+        "culture"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A performing-arts venue worth surfacing for visitors exploring Wellington.",
+      "commentary": "St James Theatre gives Wellington another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "St James Theatre gives Wellington another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/288450695",
+        "http://www.stjamestjames.co.nz/",
+        "https://en.wikipedia.org/wiki/St._James_Theatre%2C_Wellington",
+        "https://www.wikidata.org/wiki/Q565497",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-adam-art-gallery",
+      "name": "Adam Art Gallery",
+      "region": "wellington",
+      "lat": -41.28859,
+      "lng": 174.769133,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Wellington.",
+      "commentary": "Adam Art Gallery gives Wellington another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Adam Art Gallery gives Wellington another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/251420391",
+        "http://www.adamartgallery.org.nz/",
+        "https://www.wikidata.org/wiki/Q4678651",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-massey-memorial",
+      "name": "Massey Memorial",
+      "region": "wellington",
+      "lat": -41.285041,
+      "lng": 174.825992,
+      "category": "heritage",
+      "tags": [
+        "memorial-site",
+        "heritage",
+        "historic-memorial"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 0.5,
+      "short": "A heritage-marked place adding another layer of local history in Wellington.",
+      "commentary": "Massey Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Massey Memorial is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/103733974",
+        "https://www.nzhistory.net.nz/media/photo/massey-memorial",
+        "https://en.wikipedia.org/wiki/Massey_Memorial",
+        "https://www.wikidata.org/wiki/Q6784616",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "wellington-old-pencarrow-lighthouse",
+      "name": "Old Pencarrow Lighthouse",
+      "region": "wellington",
+      "lat": -41.358903,
+      "lng": 174.850037,
+      "category": "heritage",
+      "tags": [
+        "yes-site",
+        "heritage",
+        "historic-yes"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Wellington.",
+      "commentary": "Old Pencarrow Lighthouse is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Old Pencarrow Lighthouse is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1907945529",
+        "https://en.wikipedia.org/wiki/Pencarrow_Head_Lighthouse",
+        "https://www.wikidata.org/wiki/Q2068609",
+        "https://www.newzealand.com/nz/wellington/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

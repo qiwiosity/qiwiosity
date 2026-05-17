@@ -8,7 +8,7 @@
       "lng": 173.9614
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "marlborough-scenic-marlborough",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 950,
       "rating": 4.7,
       "short": "1901 heritage convent turned luxury vineyard lodge on Rapaura Road."
+    },
+    {
+      "id": "marlborough-the-peppertree",
+      "name": "The Peppertree Luxury Accommodation",
+      "region": "marlborough",
+      "lat": -41.5281075,
+      "lng": 174.0018292,
+      "type": "lodge",
+      "price_nzd_per_night": 730,
+      "rating": 4.8,
+      "short": "Restored Edwardian villa and gardens on State Highway 1 at the edge of Blenheim wine country."
+    },
+    {
+      "id": "marlborough-14th-lane-urban-hotel",
+      "name": "14th Lane Urban Hotel",
+      "region": "marlborough",
+      "lat": -41.5117,
+      "lng": 173.955,
+      "type": "hotel",
+      "price_nzd_per_night": 360,
+      "rating": 4.8,
+      "short": "Design-led boutique hotel in central Blenheim, close to restaurants and wine touring."
+    },
+    {
+      "id": "marlborough-lochmara-lodge",
+      "name": "Lochmara Lodge",
+      "region": "marlborough",
+      "lat": -41.255,
+      "lng": 174.04,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.6,
+      "short": "Boat-access Queen Charlotte Sound lodge with art trails, wildlife and waterfront rooms."
+    },
+    {
+      "id": "marlborough-vintners-retreat",
+      "name": "Vintners Retreat",
+      "region": "marlborough",
+      "lat": -41.493,
+      "lng": 173.836,
+      "type": "lodge",
+      "price_nzd_per_night": 390,
+      "rating": 4.7,
+      "short": "Self-contained vineyard villas in the Wairau Valley wine country west of Blenheim."
+    },
+    {
+      "id": "marlborough-escape-to-picton",
+      "name": "Escape to Picton",
+      "region": "marlborough",
+      "lat": -41.29,
+      "lng": 174.006,
+      "type": "hotel",
+      "price_nzd_per_night": 330,
+      "rating": 4.4,
+      "short": "Boutique Picton hotel and restaurant close to the marina, ferry terminal and Marlborough Sounds departures."
+    },
+    {
+      "id": "marlborough-hotel-durville",
+      "name": "Hotel d'Urville",
+      "region": "marlborough",
+      "lat": -41.513753,
+      "lng": 173.955355,
+      "type": "hotel",
+      "price_nzd_per_night": 270,
+      "rating": 4.6,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Marlborough."
+    },
+    {
+      "id": "marlborough-aussie-bay-campsite",
+      "name": "Aussie Bay Campsite",
+      "region": "marlborough",
+      "lat": -41.273109,
+      "lng": 173.929029,
+      "type": "holiday-park",
+      "price_nzd_per_night": 105,
+      "rating": 4.2,
+      "short": "Holiday park or campground option added from mapped accommodation data to widen overnight coverage in Marlborough."
     }
   ]
 }

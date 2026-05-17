@@ -8,7 +8,7 @@
       "lng": 168.6626
     }
   },
-  "count": 21,
+  "count": 28,
   "accommodations": [
     {
       "id": "queenstown-sofitel-queenstown",
@@ -240,6 +240,83 @@
       "price_nzd_per_night": 1750,
       "rating": 4.8,
       "short": "Nine architect villas on a Queenstown hillside above the lake."
+    },
+    {
+      "id": "queenstown-hulbert-house",
+      "name": "Hulbert House",
+      "region": "queenstown",
+      "lat": -45.0299251,
+      "lng": 168.6641102,
+      "type": "hotel",
+      "price_nzd_per_night": 850,
+      "rating": 4.9,
+      "short": "Restored 1888 Victorian villa above central Queenstown with lake views and intimate boutique service."
+    },
+    {
+      "id": "queenstown-the-rees-hotel",
+      "name": "The Rees Hotel Queenstown",
+      "region": "queenstown",
+      "lat": -45.026,
+      "lng": 168.696,
+      "type": "hotel",
+      "price_nzd_per_night": 390,
+      "rating": 4.6,
+      "short": "Lakefront Queenstown hotel with apartment-style rooms and Remarkables views."
+    },
+    {
+      "id": "queenstown-sherwood",
+      "name": "Sherwood Queenstown",
+      "region": "queenstown",
+      "lat": -45.019,
+      "lng": 168.698,
+      "type": "hotel",
+      "price_nzd_per_night": 260,
+      "rating": 4.5,
+      "short": "Creative, sustainability-minded Queenstown hotel with gardens, music, yoga and strong food culture."
+    },
+    {
+      "id": "queenstown-kinross-cottages",
+      "name": "Kinross Cottages",
+      "region": "queenstown",
+      "lat": -45.001,
+      "lng": 168.893,
+      "type": "lodge",
+      "price_nzd_per_night": 310,
+      "rating": 4.6,
+      "short": "Gibbston vineyard cottage accommodation with cellar-door access on the Queenstown Trail corridor."
+    },
+    {
+      "id": "queenstown-kinloch-wilderness-retreat",
+      "name": "Kinloch Wilderness Retreat",
+      "region": "queenstown",
+      "lat": -44.815,
+      "lng": 168.347,
+      "type": "lodge",
+      "price_nzd_per_night": 210,
+      "rating": 4.5,
+      "short": "Head-of-the-lake retreat near Glenorchy, with lodge rooms, cabins and access to walking and lake journeys."
+    },
+    {
+      "id": "queenstown-shotover-lodge",
+      "name": "Shotover Lodge",
+      "region": "queenstown",
+      "lat": -44.980092,
+      "lng": 168.684111,
+      "type": "hotel",
+      "price_nzd_per_night": 325,
+      "rating": 4.3,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Queenstown."
+    },
+    {
+      "id": "queenstown-ora-retreat",
+      "name": "Ora Retreat",
+      "region": "queenstown",
+      "lat": -45.044695,
+      "lng": 168.623424,
+      "type": "lodge",
+      "price_nzd_per_night": 285,
+      "rating": 4.3,
+      "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Queenstown."
     }
   ]
 }

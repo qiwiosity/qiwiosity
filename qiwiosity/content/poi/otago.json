@@ -2797,7 +2797,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Quiet and uncrowded. Good birding at low tide. Easy walk suitable for families."
       }
     },
@@ -2821,7 +2821,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Unique geological feature. The surrounding tussock landscape is beautiful. Best combined with Taieri Gorge trip."
       }
     },
@@ -2888,7 +2888,7 @@
         "national-collection"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's oldest public art gallery with a superb collection including rare Japanese prints and NZ masterworks.",
       "commentary": "The Dunedin Public Art Gallery is New Zealand's oldest public gallery, established in 1884, and holds one of the country's most significant art collections. The gallery is particularly renowned for its outstanding collection of Japanese prints and its comprehensive holdings of New Zealand art from the colonial period to the present. Major works by Frances Hodgkins (a Dunedin native), Colin McCahon, Ralph Hotere, and other important New Zealand artists feature prominently. The gallery occupies a modern building in the Octagon, Dunedin's central plaza, and presents an ambitious programme of temporary exhibitions alongside permanent collection displays. Admission is free. The gallery has a strong international collection for its size, reflecting Dunedin's historic wealth from the gold rush era. The ground-floor café is a popular meeting spot. Allow at least 1.5 hours for the permanent collection and current exhibitions. The gallery shop is excellent for art books and prints.",
       "content_status": "draft",
@@ -2958,7 +2958,7 @@
         "steampunk"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Extraordinarily preserved Victorian streetscape with limestone buildings, artisan studios, and steampunk culture.",
       "commentary": "The Oamaru Victorian Precinct is one of New Zealand's most remarkable heritage streetscapes — a complete district of ornate Victorian commercial buildings in cream-coloured local limestone (Oamaru stone), preserved in a virtually intact state. The precinct along Harbour and Tyne Streets was the commercial heart of 1880s Oamaru, when the town was one of New Zealand's wealthiest thanks to the frozen meat trade. After decades of decline, the district was saved from demolition and revitalised as a creative quarter. Today the historic buildings house artisan studios, vintage shops, bookstores, galleries, and the Steampunk HQ museum, giving the precinct an eccentric, creative energy. Events include the Victorian Heritage Celebrations (November), Steampunk NZ Festival, and Saturday farmers market. Many buildings are accessible and free to wander. The Oamaru stone is uniquely carvable when fresh, allowing the extraordinary classical detailing that makes these buildings so special. Allow two hours to explore properly.",
       "content_status": "draft",
@@ -2981,7 +2981,7 @@
         "esplanade"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Dunedin's iconic surf beach with a heated saltwater pool, seaside esplanade, and excellent cafés.",
       "commentary": "St Clair Beach is Dunedin's most popular and characterful beach, a wide sweep of sand facing the open Pacific on the city's southern coast. The beach is renowned for its surf — consistent swells attract boardriders year-round, and the brave surf in winter when the Southern Ocean delivers powerful waves. The heated St Clair Salt Water Pool on the esplanade is a Dunedin institution, allowing outdoor swimming even when air temperatures are bracing. The rebuilt esplanade features excellent cafés and restaurants with ocean views. St Clair adjoins St Kilda Beach, together forming a long continuous stretch of sand. The beach is patrolled by surf lifeguards during summer. The area has a distinct bohemian character with independent shops and a strong local community feel. On a sunny day, the café-lined esplanade rivals any beach promenade in the country. The beach can be wild and dramatic in southerly weather — equally beautiful in its own way. Located just 10 minutes from central Dunedin.",
       "content_status": "draft",
@@ -3004,7 +3004,7 @@
         "photography"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Iconic Wānaka day hike with one of NZ's most photographed summit viewpoints over lake and mountains.",
       "commentary": "Roys Peak Track is one of New Zealand's most popular and rewarding day hikes, climbing from the shores of Lake Wānaka to a 1,578-metre summit with arguably the most photographed viewpoint in the country. The track ascends steadily through open tussock farmland, gaining approximately 1,200 metres of elevation over about 6 kilometres each way. While physically demanding, the track is well-formed and requires no technical ability. The famous viewpoint at the ridgeline spur (about 80% of the way up) provides the iconic Instagram vista of Lake Wānaka far below, with Mount Aspiring and the Southern Alps beyond. The true summit adds even grander panoramic views. Allow 5-6 hours return. Start early to avoid the heat and crowds — the track is fully exposed with no shade. Carry plenty of water and sun protection. The track is closed during lambing season (October-November). Winter snow may require appropriate gear. The car park on the Wānaka-Glendhu Bay road fills quickly on summer mornings.",
       "content_status": "draft",
@@ -3050,7 +3050,7 @@
         "rainforest"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Dramatic alpine highway crossing the Southern Alps between the West Coast rainforest and the Wanaka lakes district.",
       "commentary": "The Haast Pass highway (SH6) is one of New Zealand's most dramatic road journeys, connecting the lush West Coast rainforest with the dry, golden landscapes of Central Otago. The 145km route between Haast and Wanaka climbs through the Haast River valley, ancient podocarp rainforest, and across the pass at 563 metres before descending alongside the brilliant blue waters of Lakes Wanaka and Hawea. Essential stops include Thunder Creek Falls, a 28-metre waterfall accessed by a short bush walk; the Blue Pools, where transparent glacial water reveals every stone on the riverbed; and the Gates of Haast, where the river forces through a narrow rock gorge. The road is well-sealed but narrow and winding in places. Allow at least three hours with stops. Winter driving may require chains. The transition between west and east landscapes is remarkably abrupt and visually stunning.",
       "content_status": "draft",
@@ -3073,7 +3073,7 @@
         "cromwell"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Self-drive wine trail through the world's southernmost wine region, renowned for exceptional Pinot Noir.",
       "commentary": "Central Otago is the world's southernmost major wine region and has earned an international reputation for producing Pinot Noir of exceptional quality. The wine trail stretches across several sub-regions including Bannockburn, Cromwell Basin, Bendigo, and Pisa Range, each contributing distinct character to their wines. Notable cellar doors open for tasting include Felton Road, Mt Difficulty, Burn Cottage, and Quartz Reef, among many others. The dramatic landscape of schist rock, golden tussock, and turquoise river gorges provides a stunning backdrop for wine touring. The continental climate with hot summers and cold winters creates ideal conditions for Pinot Noir, producing wines with intensity, complexity, and silky texture. Many cellar doors offer tastings by appointment only, so plan ahead. The Cromwell Heritage Precinct makes a good central base with cafes and the historic old town centre by Lake Dunstan.",
       "content_status": "draft",
@@ -3119,7 +3119,7 @@
         "coastal"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Mysterious spherical boulders on Koekohe Beach, formed over millions of years and steeped in Maori legend.",
       "commentary": "The Moeraki Boulders are large spherical concretions scattered along Koekohe Beach on the Otago coast, some reaching over two metres in diameter and weighing several tonnes. Geologically, they formed on the ancient seabed around 65 million years ago through a process of concretion, where minerals accumulated around a core over millions of years. In Maori legend, they are eel baskets and calabashes washed ashore from the wreck of the great voyaging canoe Araiteuru. The boulders are most photogenic at low tide when fully exposed, and the interplay of light at dawn and dusk creates dramatic photography opportunities. Some boulders have cracked open to reveal fascinating internal crystal structures. Free access is available from the beach car park, and the adjacent Moeraki Boulders cafe serves excellent food with ocean views. Located on SH1 between Oamaru and Dunedin, they are an easy and worthwhile roadside stop.",
       "content_status": "draft",
@@ -3142,7 +3142,7 @@
         "photography"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Picturesque lavender farm near Wanaka with mountain views, artisan products, and cafe.",
       "commentary": "Wanaka Lavender Farm is a photogenic 4.5-hectare property on the outskirts of Wanaka, where rows of purple lavender stretch towards the surrounding mountains. The farm grows several lavender varieties and produces a range of artisan lavender products including essential oils, soaps, bath products, culinary lavender, honey, and ice cream. Peak flowering occurs from mid-December to late January when the farm is at its most visually stunning, though the shop and cafe operate year-round. The on-site cafe serves lavender-infused dishes and drinks including lavender scones and lavender lemonade. The farm makes for excellent photography with the lavender rows creating leading lines toward the mountain backdrop. A small entry fee provides access to the fields and garden areas. Located on SH6 just north of Wanaka, it is a pleasant stop en route to or from the Haast Pass or Cardrona Valley.",
       "content_status": "draft",
@@ -3188,7 +3188,7 @@
         "university"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Self-guided craft beer trail through Dunedin's historic brewery district and vibrant taprooms.",
       "commentary": "Dunedin has a deep brewing heritage dating back to the gold rush era, and today the city boasts a thriving craft beer scene centred on several excellent breweries and taprooms. Emerson's Brewery, one of New Zealand's pioneering craft breweries, operates a large taproom and restaurant near the harbour. New New New is an innovative small-batch brewery producing experimental styles. Noisy Brewing and Arc Brewery add to the variety. The university city's youthful energy fuels a lively pub and bar scene, with many establishments showcasing local craft beers. A self-guided trail connecting the main breweries makes for an excellent afternoon or evening in the city. Dunedin's Scottish heritage extends to its brewing culture, with some producers drawing on traditional Scottish and British ale styles. The Speight's Brewery, operating since 1876, offers heritage tours. Combine with Dunedin's excellent restaurant scene and live music venues for a memorable evening out.",
       "content_status": "draft",
@@ -3234,7 +3234,7 @@
         "dunedin"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A world-class collection of large-scale murals painted by international and local artists across Dunedin's heritage buildings and laneways.",
       "commentary": "Dunedin has quietly become one of Australasia's premier street art cities. Since 2014, the Dunedin Street Art project has invited acclaimed artists from around the world to paint massive murals on the city's Victorian and Edwardian buildings. The result is a free outdoor gallery of over 30 major works, ranging from photorealistic portraits to abstract compositions. Artists including Phlegm (UK), ROA (Belgium), and local talent like Elliot Francis Stewart have contributed pieces that transform bland walls into conversation starters. A self-guided trail map is available from the i-SITE, and the works are concentrated enough to see most on a 90-minute walk through the central city.",
       "scripts": {
@@ -3263,7 +3263,7 @@
         "George-Troup"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "One of the most photographed buildings in New Zealand — a flamboyant Flemish Renaissance-style railway station from 1906, nicknamed 'Gingerbread George's' masterpiece.",
       "commentary": "Dunedin Railway Station is an architectural confection of dark basalt, white Oamaru limestone, and Aberdeen granite that earned architect George Troup the affectionate nickname 'Gingerbread George.' Completed in 1906 during Dunedin's prosperous gold-era heyday, the station features a mosaic floor of nearly 750,000 Royal Doulton porcelain tiles, elaborate stained glass windows, and ornate plasterwork throughout. Once the busiest station in the country, it now serves primarily as the departure point for the Taieri Gorge Railway scenic train. The upper floors house the New Zealand Sports Hall of Fame and an art gallery. Even if you're not catching a train, the building itself is a destination.",
       "scripts": {
@@ -3292,7 +3292,7 @@
         "multi-day"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 48.0,
+      "duration_hours": 48,
       "short": "New Zealand's original Great Ride — 152 kilometres of flat, car-free cycling through the golden landscapes of Central Otago, following the route of the old Otago Central Railway.",
       "commentary": "The Rail Trail follows the former Otago Central Railway line from Middlemarch to Clyde, passing through tunnels, over historic bridges, and across the vast, dry tussock landscapes that make Central Otago feel like nowhere else in New Zealand. The trail is flat and well-surfaced, making it accessible to riders of moderate fitness, and the small towns along the route — Hyde, Ranfurly, Naseby, Lauder — offer character accommodation and genuine rural hospitality. Most cyclists take 3-4 days. The landscape shifts from gorge country to wide-open pastoral plains backed by the Hawkdun and Kakanui Ranges. Bike hire and luggage transfers are well-established.",
       "scripts": {
@@ -3379,7 +3379,7 @@
         "dunedin"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's oldest museum, telling the story of the people who shaped Otago — from early Maori arrivals to Scottish settlers, Chinese gold miners, and modern immigrants.",
       "commentary": "Toitu (meaning 'to hold fast, to stand firm') is a beautifully presented museum that explores the human history of the Otago region. The Maori gallery traces the earliest Polynesian journeys to the southern coast, the Smith Gallery follows European settlement, and the compelling Chinese Miners gallery documents the often-harsh experiences of the thousands of Chinese men who came to the Otago goldfields. A stunning hall of historic vehicles includes vintage cars, horse-drawn carriages, and a Dunedin cable car. The museum is free, housed in a striking modern building connected to the historic 1898 bus station, and sits alongside the railway station precinct.",
       "scripts": {
@@ -3408,7 +3408,7 @@
         "family"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's home of curling and the Southern Hemisphere's only dedicated ice luge track, in the charming goldfields town of Naseby.",
       "commentary": "Naseby is the coldest town in New Zealand, regularly dropping below minus-10 degrees in winter, which makes it the natural home for ice sports. The indoor curling rink operates year-round and welcomes complete beginners for fun sessions — it's surprisingly addictive once you get the hang of sliding the stones. Outside, the ice luge track sends riders on small sleds down a purpose-built course at speeds up to 70 km/h. Naseby itself is a tiny, historic gold-mining town with an altitude feel, surrounded by the Naseby Forest (great for mountain biking and orienteering) and the Maniototo Plain. It's a quirky, memorable stop on any Central Otago itinerary.",
       "scripts": {
@@ -3437,7 +3437,7 @@
         "mackenzie"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Dramatic pinnacles and ravines of eroded silt and gravel rising from the Mackenzie Basin — a geological oddity that looks more like Utah than New Zealand.",
       "commentary": "The Clay Cliffs are a striking natural formation where ancient layers of gravel, silt, and clay have been uplifted by the Ostler Fault and then carved by wind and rain into sharp pinnacles, deep gullies, and narrow canyons. The result looks utterly alien in the context of the surrounding pastoral Mackenzie Basin — visitors frequently compare it to a mini-Bryce Canyon. The cliffs are on private farmland (a small honesty-box fee applies) and a short walk from the car park leads into the formations, where you can wander through narrow ravines with towering walls on either side. Best photographed in late afternoon light when the warm tones glow.",
       "scripts": {
@@ -3466,7 +3466,7 @@
         "architecture"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "An authentic Chinese scholar's garden in the heart of Dunedin, commemorating the thousands of Chinese miners who came to the Otago goldfields in the 1860s.",
       "commentary": "Lan Yuan — the Garden of Enlightenment — was a gift from Dunedin's sister city Shanghai, designed and largely built by Chinese artisans using traditional methods and materials. It commemorates the significant Chinese contribution to Otago's history: from the 1860s, thousands of Chinese men came to work the gold tailings of Central Otago, often facing discrimination and hardship. The garden is a tranquil enclave of pavilions, covered walkways, moon gates, a lotus pond, and carefully placed rocks, designed according to classical Chinese garden principles. It's a place for quiet contemplation and a powerful reminder of a community whose contribution was long overlooked.",
       "scripts": {
@@ -3582,7 +3582,7 @@
         "wanaka"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A delightfully bizarre world of optical illusions, brain teasers, and a massive outdoor maze that has been bamboozling visitors in Wanaka since 1973.",
       "commentary": "Puzzling World is one of those uniquely New Zealand attractions — slightly eccentric, enormously fun, and impossible to explain to someone who hasn't been. Created by Stuart Landsborough, the complex features the famous tilting house where water appears to flow uphill, a hall of following faces, rooms of impossible geometry, and the Great Maze — 1.5 kilometres of passages with four corner towers to find. The illusion rooms are genuinely disorienting and produce hilarious photos. It's been operating since 1973 and has a wonderful retro charm alongside newer additions. Adults enjoy it just as much as children, especially the puzzle cafe where every table has brain teasers.",
       "scripts": {
@@ -3611,7 +3611,7 @@
         "central-otago"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "The atmospheric remains of an 1860s gold-mining settlement in the dry hills above Cromwell — stone cottages, mine shafts, and water races preserved in a landscape of golden tussock.",
       "commentary": "Bendigo was once a thriving gold-mining settlement, but when the easily won alluvial gold ran out, the population drifted away, leaving behind an extraordinary collection of stone ruins in the dry Central Otago hills. Today the DOC-managed reserve preserves the remains of miners' cottages, a schoolhouse, the Welshman's Gully quartz workings, and an extensive network of water races that carried water to the diggings. The landscape is pure Central Otago — golden tussock, schist rock, blue sky, and silence. A well-formed loop walk of about two hours passes the main sites, with interpretive panels bringing the stories of the Chinese and European miners to life.",
       "scripts": {
@@ -3849,7 +3849,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Visitors who discover Waitati consistently describe it as an authentic counter to Dunedin's tourism circuit — genuinely inhabited, uncommercial, and with a warmth of community that is hard to manufacture. The monthly market is praised by locals and visitors alike. Best on a fine Saturday morning."
       }
     },
@@ -4653,7 +4653,7 @@
       "name": "Otago Central Rail Trail — Gold Towns to Vineyards",
       "region": "otago",
       "lat": -45.1333,
-      "lng": 170.0,
+      "lng": 170,
       "category": "journey",
       "tags": [
         "cycling",
@@ -4710,7 +4710,7 @@
         "Speights"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Self-guided trail through Dunedin's 10 breweries and distilleries.",
       "commentary": "Dunedin has over 150 years of brewing history with 10 breweries and distilleries producing 80+ beers and spirits. The trail spans from historic Speight's (NZ's oldest brewery, built on a natural spring) to boutique craft operators like Saddle Hill and Emerson's.",
       "content_status": "draft",
@@ -4733,7 +4733,7 @@
         "curling"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Gold rush heritage village with New Zealand's only outdoor curling rink.",
       "commentary": "Naseby is a tiny gold rush village that time forgot, sitting at 600 metres in the Maniototo. Its historic buildings, ancient forest, and claim to fame as New Zealand's curling capital make it a unique diversion. The natural ice rink operates in winter, and the heritage trail tells the gold story.",
       "content_status": "draft",
@@ -4756,7 +4756,7 @@
         "gold rush"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Preserved Victorian engineering workshop of a self-taught rural inventor.",
       "commentary": "Ernest Hayes was a self-taught engineer who built an ingenious workshop in remote Oturehua, powered by a water wheel. His inventions — including a famous wire strainer used across NZ farms — are preserved in situ with original belt-driven machinery. A time capsule of Kiwi ingenuity.",
       "content_status": "draft",
@@ -4802,7 +4802,7 @@
         "photography"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Coastal walk past mysterious spherical boulders on Koekohe Beach.",
       "commentary": "The Moeraki Boulders are large spherical concretions formed over millions of years on the ocean floor, now exposed on the beach by erosion. The coastal walk connects the boulders with Moeraki village and its excellent seafood restaurant — geology meets gastronomy.",
       "content_status": "draft",
@@ -4825,7 +4825,7 @@
         "rail trail"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Tiny gold-rush village preserved in stone on the Otago Central Rail Trail.",
       "commentary": "Ophir is a perfectly preserved gold-rush village where stone buildings, including the 1886 post office and Daniel O'Connell Bridge, remain virtually unchanged. The village sits on the Otago Central Rail Trail and holds New Zealand's record for the coldest temperature ever recorded (-21.6°C).",
       "content_status": "draft",
@@ -4848,7 +4848,7 @@
         "coastal"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Free viewing of endangered yellow-eyed penguins near Moeraki.",
       "commentary": "Katiki Point lighthouse area provides free viewing of hoiho (yellow-eyed penguins), one of the world's rarest penguin species. A short walk from the lighthouse leads to hides where penguins can be observed returning from the sea in the late afternoon — no booking required.",
       "content_status": "draft",
@@ -4856,6 +4856,598 @@
         "rating": 4.5,
         "summary": "Amazing to see these rare penguins for free — be patient and respectful."
       }
+    },
+    {
+      "id": "otago-blue-lake-st-bathans",
+      "name": "Blue Lake, St Bathans",
+      "region": "otago",
+      "lat": -44.8666843,
+      "lng": 169.8104594,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "lake",
+        "ghost-town",
+        "geology",
+        "central-otago"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A strange blue mining lake below pale clay cliffs beside one of Central Otago's most atmospheric old towns.",
+      "commentary": "Blue Lake at St Bathans looks natural only until you learn how violently it was made. Hydraulic gold sluicing carved away Kildare Hill, leaving pale clay cliffs and a deep pit that filled with mineral-tinted water. The lake now sits beside the tiny historic settlement of St Bathans, where the Vulcan Hotel and old streets give the place its half-remembered goldfield atmosphere. It is photogenic, but the best visit is slower than a snapshot: walk the lake edge, look at the carved ground, then read the town as a survival of boom, collapse and reinvention.",
+      "audio_story": "Blue Lake at St Bathans looks natural only until you learn how violently it was made. Hydraulic gold sluicing carved away Kildare Hill, leaving pale clay cliffs and a deep pit that filled with mineral-tinted water. The lake now sits beside the tiny historic settlement of St Bathans, where the Vulcan Hotel and old streets give the place its half-remembered goldfield atmosphere. It is photogenic, but the best visit is slower than a snapshot: walk the lake edge, look at the carved ground, then read the town as a survival of boom, collapse and reinvention.",
+      "suggested_voice_tone": "evocative, dry-country, historically alert",
+      "sources_to_check": [
+        "DOC: https://www.doc.govt.nz/parks-and-recreation/places-to-go/otago/places/st-bathans-area/",
+        "NewZealand.com: https://www.newzealand.com/us/feature/st-bathans/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Popular for photography, mining history and the old-town atmosphere; visitors caution against getting too close to unstable edges."
+      }
+    },
+    {
+      "id": "otago-sutton-salt-lake",
+      "name": "Sutton Salt Lake",
+      "region": "otago",
+      "lat": -45.578,
+      "lng": 170.1353,
+      "category": "nature",
+      "tags": [
+        "salt-lake",
+        "strath-taieri",
+        "walk",
+        "geology"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "New Zealand’s only inland salt lake, reached by a dryland loop walk in the Strath Taieri.",
+      "commentary": "Sutton Salt Lake feels almost misplaced in inland Otago: a pale saline basin held in dry tussock country. The loop walk is easy, but the landscape is unusual enough to make you slow down and notice salt, wind and geology doing quiet work.",
+      "audio_story": "Sutton Salt Lake feels almost misplaced in inland Otago: a pale saline basin held in dry tussock country. The loop walk is easy, but the landscape is unusual enough to make you slow down and notice salt, wind and geology doing quiet work.",
+      "suggested_voice_tone": "spare, curious, dryland",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-bannockburn-sluicings",
+      "name": "Bannockburn Sluicings",
+      "region": "otago",
+      "lat": -45.0975,
+      "lng": 169.1667,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "walk",
+        "central-otago",
+        "landscape"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A loop through eroded gold-sluicing remains that turned Central Otago hillsides into sculpted history.",
+      "commentary": "The Bannockburn Sluicings show gold mining as landscape surgery. Water cannons tore these gullies open in the 1800s, leaving cliffs, tailings and caves that now read like a strange outdoor museum under Central Otago’s hard light.",
+      "audio_story": "The Bannockburn Sluicings show gold mining as landscape surgery. Water cannons tore these gullies open in the 1800s, leaving cliffs, tailings and caves that now read like a strange outdoor museum under Central Otago’s hard light.",
+      "suggested_voice_tone": "historical, stark, visual",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-poolburn-dam",
+      "name": "Poolburn Dam",
+      "region": "otago",
+      "lat": -45.2956,
+      "lng": 169.6234,
+      "category": "nature",
+      "tags": [
+        "high-country",
+        "reservoir",
+        "scenic-drive",
+        "big-sky"
+      ],
+      "trigger_radius_m": 1800,
+      "duration_hours": 3,
+      "short": "A remote high-country reservoir among tors, tussock and big Central Otago sky.",
+      "commentary": "Poolburn Dam is not polished, and that is its appeal. Rough roads lead to a wind-bent reservoir set among schist tors and open tussock, where the landscape feels both cinematic and stubbornly practical, shaped by water storage, fishing, weather and space.",
+      "audio_story": "Poolburn Dam is not polished, and that is its appeal. Rough roads lead to a wind-bent reservoir set among schist tors and open tussock, where the landscape feels both cinematic and stubbornly practical, shaped by water storage, fishing, weather and space.",
+      "suggested_voice_tone": "remote, rugged, cinematic",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-macraes-heritage-art-park",
+      "name": "Macraes Heritage and Art Park",
+      "region": "otago",
+      "lat": -45.3734,
+      "lng": 170.4283,
+      "category": "heritage",
+      "tags": [
+        "gold-mining",
+        "art",
+        "heritage-walk",
+        "macraes"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 1.5,
+      "short": "A goldfield village heritage walk and outdoor art stop beside one of New Zealand’s largest modern mines.",
+      "commentary": "Macraes is a rare place where old goldfield remnants and a modern open-cast mine sit in the same conversation. The heritage and art park gives travellers a way to walk that tension: stone ruins, big machinery nearby, and sculpture holding the middle ground.",
+      "audio_story": "Macraes is a rare place where old goldfield remnants and a modern open-cast mine sit in the same conversation. The heritage and art park gives travellers a way to walk that tension: stone ruins, big machinery nearby, and sculpture holding the middle ground.",
+      "suggested_voice_tone": "curious, historical, contemporary",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-doctors-point-reserve",
+      "name": "Doctors Point Reserve",
+      "region": "otago",
+      "lat": -45.7207,
+      "lng": 170.6095,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "dunedin",
+        "sea-caves",
+        "low-tide"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A Dunedin coastal reserve with tidal sea caves, surf beach and Blueskin Bay views.",
+      "commentary": "Doctors Point is a low-tide invitation. When the sea allows, you can walk the beach to basalt sea caves and look back across Blueskin Bay, getting a northern Dunedin coastline that feels wilder than its closeness to town suggests.",
+      "audio_story": "Doctors Point is a low-tide invitation. When the sea allows, you can walk the beach to basalt sea caves and look back across Blueskin Bay, getting a northern Dunedin coastline that feels wilder than its closeness to town suggests.",
+      "suggested_voice_tone": "tidal, atmospheric, practical",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-clutha-gold-trail-roxburgh",
+      "name": "Clutha Gold Trail - Roxburgh Gorge Gateway",
+      "region": "otago",
+      "lat": -45.5379,
+      "lng": 169.3147,
+      "category": "adventure",
+      "tags": [
+        "cycle-trail",
+        "clutha-river",
+        "roxburgh",
+        "heritage"
+      ],
+      "trigger_radius_m": 2000,
+      "duration_hours": 4,
+      "short": "A Central Otago cycle-trail gateway following the Clutha Mata-au through orchards, gold towns and river country.",
+      "commentary": "The Clutha Gold Trail turns Central Otago history into a rideable line. Around Roxburgh, the river does the storytelling: orchards, old gold workings, hydro country and small towns all strung along the powerful blue-green Clutha Mata-au.",
+      "audio_story": "The Clutha Gold Trail turns Central Otago history into a rideable line. Around Roxburgh, the river does the storytelling: orchards, old gold workings, hydro country and small towns all strung along the powerful blue-green Clutha Mata-au.",
+      "suggested_voice_tone": "active, river-led, historical",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-oamaru-blue-penguin-evening",
+      "name": "Oamaru Blue Penguin Evening",
+      "region": "otago",
+      "lat": -45.1017,
+      "lng": 170.9691,
+      "category": "wildlife",
+      "tags": [
+        "penguins",
+        "oamaru",
+        "evening",
+        "guided-viewing"
+      ],
+      "trigger_radius_m": 350,
+      "duration_hours": 1.5,
+      "short": "An evening wildlife experience watching little blue penguins return from the sea at Oamaru Harbour.",
+      "commentary": "Oamaru’s little blue penguins turn dusk into theatre. The birds come ashore small, determined and slightly comic after a day at sea, while managed viewing keeps people back and gives the colony a better chance to keep doing this every night.",
+      "audio_story": "Oamaru’s little blue penguins turn dusk into theatre. The birds come ashore small, determined and slightly comic after a day at sea, while managed viewing keeps people back and gives the colony a better chance to keep doing this every night.",
+      "suggested_voice_tone": "gentle, wildlife-aware, delighted",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-ophir-suspension-bridge",
+      "name": "Ophir Suspension Bridge",
+      "region": "otago",
+      "lat": -45.1137,
+      "lng": 169.6049,
+      "category": "heritage",
+      "tags": [
+        "bridge",
+        "ophir",
+        "central-otago",
+        "engineering"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 0.5,
+      "short": "A graceful historic bridge across the Manuherikia River beside one of Central Otago’s best-preserved settlements.",
+      "commentary": "Ophir’s suspension bridge is a small engineering flourish in a landscape of stone, river and dry hills. Pair it with the village’s historic buildings and the place becomes a compact lesson in how Central Otago moved people, mail and goods before modern highways flattened the story.",
+      "audio_story": "Ophir’s suspension bridge is a small engineering flourish in a landscape of stone, river and dry hills. Pair it with the village’s historic buildings and the place becomes a compact lesson in how Central Otago moved people, mail and goods before modern highways flattened the story.",
+      "suggested_voice_tone": "historical, precise, scenic",
+      "sources_to_check": [
+        "DOC Otago places",
+        "Central Otago and Dunedin visitor information",
+        "Ngā Haerenga New Zealand Cycle Trails"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-lawrence-chinese-camp",
+      "name": "Lawrence Chinese Camp",
+      "region": "otago",
+      "lat": -45.914,
+      "lng": 169.685,
+      "category": "heritage",
+      "tags": [
+        "goldfields",
+        "chinese-heritage",
+        "lawrence"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1,
+      "short": "Lawrence Chinese Camp preserves an essential goldfields story, foregrounding the Chinese miners and families whose labour and resilience shaped Otago.",
+      "commentary": "Lawrence Chinese Camp preserves an essential goldfields story, foregrounding the Chinese miners and families whose labour and resilience shaped Otago.",
+      "audio_story": "Lawrence Chinese Camp preserves an essential goldfields story, foregrounding the Chinese miners and families whose labour and resilience shaped Otago.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-naseby-forest-trails",
+      "name": "Naseby Forest Trails",
+      "region": "otago",
+      "lat": -45.024,
+      "lng": 170.147,
+      "category": "adventure",
+      "tags": [
+        "mountain-bike",
+        "forest",
+        "central-otago"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2.5,
+      "short": "Naseby Forest gives Central Otago riders and walkers a cool, pine-scented trail network beside one of the region’s most atmospheric old towns.",
+      "commentary": "Naseby Forest gives Central Otago riders and walkers a cool, pine-scented trail network beside one of the region’s most atmospheric old towns.",
+      "audio_story": "Naseby Forest gives Central Otago riders and walkers a cool, pine-scented trail network beside one of the region’s most atmospheric old towns.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-gabriels-gully",
+      "name": "Gabriel’s Gully",
+      "region": "otago",
+      "lat": -45.91,
+      "lng": 169.674,
+      "category": "heritage",
+      "tags": [
+        "goldfields",
+        "lawrence",
+        "heritage",
+        "walk"
+      ],
+      "trigger_radius_m": 650,
+      "duration_hours": 1.25,
+      "short": "The Lawrence gully where Otago’s 1861 gold rush began, now read through tracks and interpretation.",
+      "commentary": "Gabriel’s Gully looks quiet now, which makes the gold-rush story more striking. In 1861 this little valley changed Otago’s pace almost overnight; today the paths and signs let visitors imagine the noise, hope and hard labour that once crowded the ground.",
+      "audio_story": "Gabriel’s Gully looks quiet now, which makes the gold-rush story more striking. In 1861 this little valley changed Otago’s pace almost overnight; today the paths and signs let visitors imagine the noise, hope and hard labour that once crowded the ground.",
+      "suggested_voice_tone": "historical, reflective, grounded",
+      "sources_to_check": [
+        "https://www.heritage.org.nz/list-details/5156/Gabriels-Gully",
+        "https://www.cluthanz.com/visit/lawrence/gabriels-gully/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-matanaka-farm-buildings",
+      "name": "Matanaka Farm Buildings",
+      "region": "otago",
+      "lat": -45.547,
+      "lng": 170.733,
+      "category": "heritage",
+      "tags": [
+        "heritage-new-zealand",
+        "waikouaiti",
+        "farm-buildings",
+        "colonial-history"
+      ],
+      "trigger_radius_m": 400,
+      "duration_hours": 0.75,
+      "short": "A group of early farm buildings near Waikouaiti, recognised as some of New Zealand’s oldest surviving examples.",
+      "commentary": "Matanaka’s farm buildings are quiet, spare and powerful because of it. They hold an early farming story in timber and stone rather than drama, giving the Otago coast a physical link to the first decades of European settlement in the south.",
+      "audio_story": "Matanaka’s farm buildings are quiet, spare and powerful because of it. They hold an early farming story in timber and stone rather than drama, giving the Otago coast a physical link to the first decades of European settlement in the south.",
+      "suggested_voice_tone": "spare, historical, attentive",
+      "sources_to_check": [
+        "https://www.heritage.org.nz/places/places-to-visit/otago-region/matanaka-farm-buildings"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-totara-estate",
+      "name": "Totara Estate",
+      "region": "otago",
+      "lat": -45.129443,
+      "lng": 170.884142,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Otago.",
+      "commentary": "Totara Estate fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Historic farm buildings with museum and cafe. Discover the history behind the first frozen meat shipment.",
+      "audio_story": "Totara Estate fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names. OpenStreetMap describes it as Historic farm buildings with museum and cafe. Discover the history behind the first frozen meat shipment.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/754618420",
+        "https://www.visitheritage.co.nz/visit/otago/totara-estate/",
+        "https://www.wikidata.org/wiki/Q49571334",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-waimate-museum-and-archives",
+      "name": "Waimate Museum & Archives",
+      "region": "otago",
+      "lat": -44.732298,
+      "lng": 171.045974,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Otago.",
+      "commentary": "Waimate Museum & Archives gives Otago another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Waimate Museum & Archives gives Otago another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/7477556600",
+        "https://www.waimatemuseumandarchives.org.nz/",
+        "https://www.wikidata.org/wiki/Q93167167",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-globe-theatre",
+      "name": "Globe Theatre",
+      "region": "otago",
+      "lat": -45.87051,
+      "lng": 170.49958,
+      "category": "culture",
+      "tags": [
+        "theatre",
+        "culture"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A performing-arts venue worth surfacing for visitors exploring Otago.",
+      "commentary": "Globe Theatre gives Otago another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Globe Theatre gives Otago another indoor, human-scale stop: a theatre where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/984838660",
+        "https://globetheatre.org.nz/",
+        "https://en.wikipedia.org/wiki/Globe_Theatre%2C_Dunedin",
+        "https://www.wikidata.org/wiki/Q5571007",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-warbirds-and-wheels",
+      "name": "Warbirds & Wheels",
+      "region": "otago",
+      "lat": -44.724355,
+      "lng": 169.243911,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Otago.",
+      "commentary": "Warbirds & Wheels gives Otago another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Warbirds & Wheels gives Otago another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/444747943",
+        "https://warbirdsandwheels.com/",
+        "https://www.wikidata.org/wiki/Q19876942",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-glenfalloch-gardens",
+      "name": "Glenfalloch Gardens",
+      "region": "otago",
+      "lat": -45.87417,
+      "lng": 170.586347,
+      "category": "nature",
+      "tags": [
+        "garden",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A garden stop for a slower green break in Otago.",
+      "commentary": "Glenfalloch Gardens fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Glenfalloch Gardens fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/266758082",
+        "https://en.wikipedia.org/wiki/Glenfalloch_Gardens",
+        "https://www.wikidata.org/wiki/Q28181154",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-smaills-beach",
+      "name": "Smaills Beach",
+      "region": "otago",
+      "lat": -45.907234,
+      "lng": 170.560631,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Otago.",
+      "commentary": "Smaills Beach fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Smaills Beach fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/550291502",
+        "https://en.wikipedia.org/wiki/Smaills_Beach",
+        "https://www.wikidata.org/wiki/Q49324797",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-tomahawk-beach",
+      "name": "Tomahawk Beach",
+      "region": "otago",
+      "lat": -45.906628,
+      "lng": 170.543824,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Otago.",
+      "commentary": "Tomahawk Beach fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Tomahawk Beach fills in another real point on the Otago visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/974190479",
+        "https://en.wikipedia.org/wiki/Tomahawk_Beach",
+        "https://www.wikidata.org/wiki/Q49325034",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-landing-service-building",
+      "name": "Landing Service Building",
+      "region": "otago",
+      "lat": -44.39722,
+      "lng": 171.256138,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Otago.",
+      "commentary": "Landing Service Building is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Landing Service Building is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/412581315",
+        "https://nzhistory.govt.nz/media/photo/timaru-landing-service-building",
+        "https://www.wikidata.org/wiki/Q79311391",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "otago-platypus-submarine",
+      "name": "Platypus (submarine)",
+      "region": "otago",
+      "lat": -45.507791,
+      "lng": 170.119883,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Otago.",
+      "commentary": "Platypus (submarine) gives Otago another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Platypus (submarine) gives Otago another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/12843215583",
+        "https://en.wikipedia.org/wiki/Platypus_(submarine)",
+        "https://www.wikidata.org/wiki/Q131919615",
+        "https://www.newzealand.com/nz/dunedin-coastal-otago/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

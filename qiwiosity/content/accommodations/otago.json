@@ -8,7 +8,7 @@
       "lng": 170
     }
   },
-  "count": 20,
+  "count": 26,
   "accommodations": [
     {
       "id": "otago-distinction-dunedin",
@@ -229,6 +229,72 @@
       "price_nzd_per_night": 620,
       "rating": 4.7,
       "short": "Wine-valley cottages at Kinross Cellars in the Gibbston wine region."
+    },
+    {
+      "id": "otago-camp-estate-larnach-castle",
+      "name": "Camp Estate at Larnach Castle",
+      "region": "otago",
+      "lat": -45.8679714,
+      "lng": 170.6254305,
+      "type": "lodge",
+      "price_nzd_per_night": 580,
+      "rating": 4.8,
+      "short": "Country-house lodge on the Larnach Castle estate with Otago Peninsula views and castle dining access."
+    },
+    {
+      "id": "otago-the-chamberson",
+      "name": "The Chamberson",
+      "region": "otago",
+      "lat": -45.875,
+      "lng": 170.504,
+      "type": "hotel",
+      "price_nzd_per_night": 300,
+      "rating": 4.6,
+      "short": "Boutique apartment hotel in Dunedin’s warehouse precinct, close to the Octagon and railway station."
+    },
+    {
+      "id": "otago-danseys-pass-coach-inn",
+      "name": "Danseys Pass Coach Inn",
+      "region": "otago",
+      "lat": -44.969,
+      "lng": 170.284,
+      "type": "lodge",
+      "price_nzd_per_night": 230,
+      "rating": 4.5,
+      "short": "Historic stone inn on the Danseys Pass route, pairing high-country quiet with old goldfields atmosphere."
+    },
+    {
+      "id": "otago-waipiata-country-hotel",
+      "name": "Waipiata Country Hotel",
+      "region": "otago",
+      "lat": -45.189,
+      "lng": 170.147,
+      "type": "hotel",
+      "price_nzd_per_night": 155,
+      "rating": 4.6,
+      "short": "Rail Trail country hotel in Maniototo, popular with cyclists and travellers crossing Central Otago."
+    },
+    {
+      "id": "otago-beaumont-hotel",
+      "name": "Beaumont Hotel",
+      "region": "otago",
+      "lat": -45.818281,
+      "lng": 169.523714,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.5,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Otago."
+    },
+    {
+      "id": "otago-ahuriri-motels",
+      "name": "Ahuriri Motels",
+      "region": "otago",
+      "lat": -44.490734,
+      "lng": 169.972796,
+      "type": "motel",
+      "price_nzd_per_night": 210,
+      "rating": 4.6,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Otago."
     }
   ]
 }

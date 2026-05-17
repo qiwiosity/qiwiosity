@@ -8,7 +8,7 @@
       "lng": 173.284
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "nelson-tasman-rutherford-hotel",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 780,
       "rating": 4.6,
       "short": "Eco-suite hideaway only reached by boat, plane or foot."
+    },
+    {
+      "id": "nelson-tasman-resurgence-luxury-eco-lodge",
+      "name": "The Resurgence Luxury Eco Lodge",
+      "region": "nelson-tasman",
+      "lat": -41.0379738,
+      "lng": 172.9143297,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.8,
+      "short": "Adults-only eco-lodge in native bush above the Riwaka Valley near Abel Tasman and Kahurangi."
+    },
+    {
+      "id": "nelson-tasman-te-koi-bronte",
+      "name": "Te Koi - The Lodge at Bronte",
+      "region": "nelson-tasman",
+      "lat": -41.264,
+      "lng": 173.076,
+      "type": "lodge",
+      "price_nzd_per_night": 620,
+      "rating": 4.8,
+      "short": "Luxury waterfront lodge near Māpua, overlooking the Waimea Estuary and garden grounds."
+    },
+    {
+      "id": "nelson-tasman-kimi-ora-eco-resort",
+      "name": "Kimi Ora Eco Resort",
+      "region": "nelson-tasman",
+      "lat": -41.039,
+      "lng": 173.017,
+      "type": "lodge",
+      "price_nzd_per_night": 300,
+      "rating": 4.6,
+      "short": "Kaiteriteri eco resort with chalets, pools and vegetarian dining above Abel Tasman’s gateway beach."
+    },
+    {
+      "id": "nelson-tasman-ratanui-lodge",
+      "name": "Ratanui Lodge",
+      "region": "nelson-tasman",
+      "lat": -40.821,
+      "lng": 172.901,
+      "type": "lodge",
+      "price_nzd_per_night": 320,
+      "rating": 4.6,
+      "short": "Pōhara boutique lodge base for Golden Bay beaches, Farewell Spit and Abel Tasman’s northern edge."
+    },
+    {
+      "id": "nelson-tasman-the-pear-orchard-lodge",
+      "name": "The Pear Orchard Lodge",
+      "region": "nelson-tasman",
+      "lat": -41.334,
+      "lng": 173.154,
+      "type": "lodge",
+      "price_nzd_per_night": 260,
+      "rating": 4.7,
+      "short": "Hosted Richmond lodge accommodation set among orchard country between Nelson city and Tasman routes."
+    },
+    {
+      "id": "nelson-tasman-beachside-villas-motel",
+      "name": "Beachside Villas Motel",
+      "region": "nelson-tasman",
+      "lat": -41.286847,
+      "lng": 173.238238,
+      "type": "motel",
+      "price_nzd_per_night": 190,
+      "rating": 4.4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Nelson."
+    },
+    {
+      "id": "nelson-tasman-fishtail-lodge-bandb",
+      "name": "Fishtail Lodge B&B",
+      "region": "nelson-tasman",
+      "lat": -41.563341,
+      "lng": 173.530217,
+      "type": "lodge",
+      "price_nzd_per_night": 270,
+      "rating": 4.5,
+      "short": "Lodge or guest stay option added from mapped accommodation data to widen overnight coverage in Nelson."
     }
   ]
 }

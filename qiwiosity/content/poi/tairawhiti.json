@@ -1627,7 +1627,7 @@
       "name": "Young Nicks Head — Coastal Birdlife",
       "region": "tairawhiti",
       "lat": -38.75,
-      "lng": 178.0,
+      "lng": 178,
       "category": "wildlife",
       "tags": [
         "birds",
@@ -1642,7 +1642,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Historical and ecological interest combined. Easy coastal walk. Good for dotterel and tern viewing."
       }
     },
@@ -1715,7 +1715,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Easy, accessible wetland walk in town. Good bird variety. Pleasant at any time of day."
       }
     },
@@ -1853,7 +1853,7 @@
         "sacred"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Extraordinary Māori-decorated church with stunning carvings and tukutuku panels, a taonga of Ngāti Porou.",
       "commentary": "St Mary's Church in the small East Coast settlement of Tikitiki is one of the most extraordinary buildings in New Zealand — an Anglican church whose interior is entirely decorated with exquisite Māori carvings, tukutuku (woven panels), and kōwhaiwhai (painted scroll patterns) of the highest quality. The church was built in 1924 as a memorial to Ngāti Porou soldiers who served in World War I, and the interior decoration represents some of the finest examples of traditional Māori carving and weaving in the country. Each panel tells stories of Ngāti Porou genealogy and history. The fusion of Christian church architecture with traditional Māori art creates a profoundly moving cultural experience. The church is a Category I historic place and an active place of worship. Visitors are welcome but should treat the building with respect — it is a sacred space and a living taonga of the Ngāti Porou people. Remove shoes before entering and follow any signage. Located on State Highway 35 (Pacific Coast Highway), north of Gisborne.",
       "content_status": "draft",
@@ -1877,7 +1877,7 @@
         "sunrise"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Gisborne's premier surf beach with consistent breaks, golden sand, and spectacular East Coast sunrises.",
       "commentary": "Wainui Beach is Gisborne's most popular surf beach, a long crescent of golden sand just south of the city, renowned for its consistent and varied surf breaks. The beach is a mecca for East Coast surfers, with breaks suitable for beginners through to experts depending on conditions and the section of beach. The northern end offers more sheltered conditions, while the middle and southern sections catch more swell. Being on the East Coast, Wainui faces directly into the sunrise, making dawn surf sessions here a spectacular experience. The beach is backed by a mix of residential properties and bush-clad hills. Surf lifeguards patrol during summer months. The surfing community here is strong and welcoming — local surf schools offer lessons for beginners. Wainui is also excellent for bodyboarding, swimming (between the flags), and beach walking. The Gisborne region's warm climate and eastern exposure mean the beach catches the most sun hours of almost any spot in New Zealand. A quintessential East Coast beach experience.",
       "content_status": "draft",
@@ -1900,7 +1900,7 @@
         "coastal"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Historic wharf and freezing works ruins at a picturesque East Coast bay, a poignant reminder of past prosperity.",
       "commentary": "Tokomaru Bay's historic wharf and adjacent freezing works ruins stand as evocative reminders of the East Coast's once-thriving agricultural export industry. The concrete wharf, built in 1910, stretches into the bay where ships once loaded frozen meat and wool for overseas markets. The freezing works, which operated from 1910 until closure in 1952, employed hundreds of workers and was the economic lifeblood of the community. Today the ruins are a photogenic landmark, their concrete walls and loading bays slowly being reclaimed by vegetation and salt air. The bay itself is beautiful, with a curved beach and clear water popular for swimming in summer. The small settlement retains a community spirit with a pub, general store, and backpacker accommodation. Tokomaru Bay is on the Pacific Coast Highway (SH35) around the East Cape, about two hours north of Gisborne.",
       "content_status": "draft",
@@ -1923,7 +1923,7 @@
         "remote"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "Scenic coastal highway around the East Cape, one of NZ's most remote and culturally rich road journeys.",
       "commentary": "State Highway 35 around the East Cape is one of New Zealand's most rewarding road trips, tracing 334 kilometres of rugged Pacific coastline between Opotiki and Gisborne. This is one of the least-travelled main highways in the country, passing through predominantly Maori communities with beautifully carved meeting houses, small coastal settlements, and pristine beaches. Highlights include Te Araroa, home to New Zealand's oldest pohutukawa tree; the East Cape Lighthouse, the first place in mainland New Zealand to see the sunrise; the ornate Tikitiki Church with its stunning Maori carvings; and the surf breaks of Hicks Bay and Tokomaru Bay. Allow at least two days to do the journey justice, with overnight stops available at small motels, campgrounds, and backpackers along the route. Fuel up whenever you can, as petrol stations are infrequent. The road is sealed throughout but narrow and winding in places.",
       "content_status": "draft",
@@ -1946,7 +1946,7 @@
         "autumn-colour"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's national arboretum with the Southern Hemisphere's largest collection of Northern Hemisphere trees.",
       "commentary": "Eastwoodhill Arboretum near Ngatapa, 35 kilometres from Gisborne, is New Zealand's national arboretum and home to the largest collection of Northern Hemisphere trees in the Southern Hemisphere. Founded by Douglas Cook who began planting in 1910, the 131-hectare property contains over 25,000 trees from 4,000 species, including oaks, maples, beeches, and conifers from around the world. The arboretum is spectacular in autumn (April-May) when the deciduous trees create a blaze of colour rarely seen in New Zealand. Walking tracks of varying length wind through different collection areas, from formal avenues to wild garden areas. The Homestead provides accommodation for overnight stays. Spring flowering and summer shade offer year-round appeal, but the autumn display is the primary draw. The arboretum operates on a modest entry fee and is open daily. A remarkable living legacy of one man's vision for conservation and beauty.",
       "content_status": "draft",
@@ -1969,7 +1969,7 @@
         "longest"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "The longest concrete wharf in the Southern Hemisphere, stretching 660 metres into Tolaga Bay.",
       "commentary": "Tolaga Bay Wharf is the longest concrete wharf in the Southern Hemisphere, stretching an impressive 660 metres into the Pacific Ocean. Built in 1929 to serve the coastal shipping trade, the wharf was used for loading wool, frozen meat, and dairy products until closure in 1969. Today it stands as a heritage landmark and popular walking destination, with the journey to the end rewarded by ocean views and occasional dolphin sightings. The wharf has been strengthened and is safe to walk, though some sections show the weathering of decades of salt and storm exposure. Tolaga Bay itself is a beautiful curved beach with clear water, popular for swimming and surfing. The nearby Cook's Cove walkway leads to the cove where Captain Cook anchored in 1769, passing through a spectacular natural rock arch. Located on SH35 about an hour north of Gisborne, Tolaga Bay is a key stop on the East Cape road trip.",
       "content_status": "draft",
@@ -2148,7 +2148,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A small but interesting heritage building, best visited as part of a Tairāwhiti Museum visit."
       }
     },
@@ -2416,7 +2416,7 @@
       ],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A lovely green oasis in the centre of Gisborne. The river setting is beautiful and the native plant section is well curated. Perfect for a gentle stroll or a family picnic."
       }
     },
@@ -2720,7 +2720,7 @@
         "wyllie-cottage"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "The region's major museum and art gallery, with Māori taonga from Ngāti Porou and Rongowhakaata, maritime history, C Company memorials, and the heritage Wyllie Cottage on site.",
       "commentary": "Tairāwhiti Museum at 10 Stout Street is the cultural anchor of the Gisborne region, housing collections that span 1,000 years of Polynesian and European habitation on the East Coast. The Māori collection includes extraordinary taonga from Ngāti Porou, Rongowhakaata, Te Aitanga-a-Māhaki and other East Coast iwi, many of which are not displayed elsewhere. The maritime gallery tells 1,000 years of stories at sea, from the navigational traditions of the ancestor Māia to the colonial shipping era. The 'C Company' memorial wing honours the Māori Battalion soldiers from the region who served in World War II. Wyllie Cottage (1872) — the oldest European house in Gisborne — sits on the museum grounds. Entry by koha.",
       "scripts": {},
@@ -2747,7 +2747,7 @@
         "1769"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "The site where Captain Cook first stepped ashore in New Zealand on 8 October 1769 — commemorating both the European arrival and the earlier Polynesian navigators who landed here 400 years before.",
       "commentary": "Puhi Kai Iti marks the eastern bank of the Tūranganui River, Gisborne, where Cook landed on 8 October 1769 — the first confirmed European contact with New Zealand. The reserve was redesigned in 2019 to give equal prominence to the Māori story: the waka Horouta and Te Ikaroa-a-Rauru brought the ancestors of local iwi to this exact coast around 1350 AD, 400 years before Cook. The Ikaroa sculpture (2019), created under the guidance of local iwi, honours the navigator Māia and the house of learning Puhi-Kai-Iti that stood here. The reserve includes the original 1906 granite obelisk to Cook — the first monument to a European explorer erected in New Zealand — now presented as one part of a dual narrative, not the only one.",
       "scripts": {},
@@ -2801,7 +2801,7 @@
         "carved-whare"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "One of New Zealand's largest carved meeting houses — the wharenui of Ngāti Oneone hapū, opened in 1930, housing extraordinary Māori carvings and functioning as an active ceremonial marae.",
       "commentary": "Te Poho-o-Rāwiri Marae in the Kaiti suburb of Gisborne is the home marae of Ngāti Oneone hapū (of Ngāti Porou iwi) and contains one of the largest and most elaborately carved wharenui (meeting houses) in New Zealand. The meeting house, opened on 11 March 1930, was constructed under the guidance of master carver Hēnare Ōrupe and features a full interior programme of tukutuku panels, painted kowhaiwhai, and carved pou that constitute a visual history of Ngāti Oneone ancestry. Visits to the marae are by prior arrangement with the marae committee; the exterior can be viewed at any time with respect. The site sits in the shadow of Titirangi Reserve, directly associating the marae with the ancestral hill above.",
       "scripts": {},
@@ -2855,7 +2855,7 @@
         "national-collection"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "New Zealand's National Arboretum — 131 hectares of the largest collection of Northern Hemisphere temperate trees in the Southern Hemisphere, 35 km northwest of Gisborne, spectacular in autumn.",
       "commentary": "Eastwoodhill was established by William Douglas Cook from 1910 on the challenging hill country of Ngatapa, driven by a personal obsession with bringing the great deciduous trees of the Northern Hemisphere to New Zealand. The collection now holds more than 4,000 species and cultivars of trees and shrubs from across Europe, Asia and North America — the largest such collection in the Southern Hemisphere. In autumn (April–May), the arboretum is among the most spectacular colour displays in New Zealand, drawing visitors who make the 35-km drive from Gisborne specifically for the experience. The estate now covers 131 hectares and is managed by a trust. A café and accommodation are available on site.",
       "scripts": {},
@@ -2881,7 +2881,7 @@
         "adventure"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A 60-metre natural rock waterslide and an adjacent waterfall on the Wharekopae River — a beloved free outdoor experience 50 km northwest of Gisborne.",
       "commentary": "The Rere Rockslide is a 60-metre-long smooth rock face polished by the Wharekopae River over millennia, forming a natural water slide at a gradient steep enough to provide genuine speed. Locals bring rubber mats and bodyboards; the slide is fast, cold, and genuinely thrilling. The adjacent Rere Falls (also called Wairere Falls) drop 5 metres across a wide curtain into a pool — beautiful and swimmable. Both sites are free, managed by the Gisborne District Council, and accessed via a short walk from a gravel car park on Rere Falls Road. The surrounding Wharekopae Valley is scenic hill country with regenerating native bush. The drive from Gisborne passes through the Eastwoodhill Arboretum catchment area.",
       "scripts": {},
@@ -2907,7 +2907,7 @@
         "maori-landscape"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 4.0,
+      "duration_hours": 4,
       "short": "A remote, sparsely populated peninsula south of Gisborne with dramatic coastal scenery, significant Māori history, some of New Zealand's best surf breaks, and a rocket launch site.",
       "commentary": "Te Māhia (the Māhia Peninsula) juts into Hawke's Bay from the Tairāwhiti coastline, forming a distinct landscape of volcanic bluffs, sandy beaches, and farmland remote enough to retain genuine isolation even in summer. The peninsula is ancestral territory of Ngāti Rongoū and Ngāti Kahungunu, with numerous pā sites on its headlands and deep oral traditions associated with the surrounding sea. The Māhia Beach and Opoutama Beach areas on the eastern coast offer superb surf conditions, while the western side is characterised by fishing and diving. Rocket Lab — the New Zealand private space company — operates its orbital launch facility from the northern tip of the peninsula, making it the world's most active commercial launch site outside the USA.",
       "scripts": {},
@@ -2934,7 +2934,7 @@
         "cultural-tour"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 8.0,
+      "duration_hours": 8,
       "short": "The highest non-volcanic peak in the North Island and the sacred ancestral mountain of Ngāti Porou — the first place on Earth to see the sunrise each day — visited by guided cultural experience.",
       "commentary": "Hikurangi (1,752 m) is New Zealand's most significant ancestral mountain for Ngāti Porou iwi, associated with the demigod Māui who dragged the North Island (Te Ika-a-Māui) from the ocean — tradition holds that the mountain emerged first, before the rest of the island. As the most easterly high point of New Zealand's mainland, Hikurangi receives the world's first sunrise each day, a fact that gave the mountain global significance at the millennium on 1 January 2000 when the sun rose here before anywhere else on Earth. Cultural tours to the summit are operated exclusively by Ngāti Porou guides and must be pre-booked; they include a pōwhiri at the base marae and guided commentary on the mountain's cultural and geological history. Road access to the carpark is possible but the summit requires a 3-4 hour guided walk.",
       "scripts": {},
@@ -2961,7 +2961,7 @@
         "coastal-drive"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "New Zealand's longest wharf (660 m) at Tolaga Bay, a harbour of significance to both Cook's 1769 voyage and to Māori, and the starting point of a scenic heritage drive up the East Coast.",
       "commentary": "Tolaga Bay holds the longest wharf in New Zealand — 660 metres of kauri timber extending across the shallow bay, built in 1929 and now restored as a heritage landmark. Cook's Cove, a 30-minute walk south of the wharf, marks where HMS Endeavour reprovisioned with wood and water in October 1769 — one of only two places Cook landed on the East Coast. The Cook's Cove Walkway passes through an extraordinary landscape of limestone formations, coastal scrub and bluffs carved by the Waipāoa River system. The wharf itself was once a lifeline for East Coast farming communities before roads improved; its scale in such a small settlement is dramatic. The surrounding Tolaga Bay community is predominantly Māori (Uawa Ngāti Porou) with rich cultural associations.",
       "scripts": {},
@@ -2988,7 +2988,7 @@
         "first-light-wines"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "New Zealand's 'Chardonnay Capital' — a concentrated wine region in the Poverty Bay flats producing award-winning Chardonnay, Gewürztraminer and Pinot Gris at multiple cellar doors.",
       "commentary": "Gisborne is New Zealand's most easterly wine region and claims the title of Chardonnay Capital with justification — the Poverty Bay climate and alluvial soils produce richly flavoured Chardonnay that has won international recognition. The region's key wineries cluster within a 30-km radius of the city, including Matawhero (pioneering producer since 1969), First Light (Māori-owned, nationally awarded), Millton Vineyard (biodynamic, internationally celebrated), and several smaller family operations. The region also excels in Gewürztraminer and Pinot Gris — varieties that perform well in the warm, early-harvest conditions. A self-drive wine trail connects the major cellar doors and can be completed in half a day.",
       "scripts": {},
@@ -3014,7 +3014,7 @@
         "cultural-landscape"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A lookout above the southern entrance to Poverty Bay, overlooking the estuary and the ancestral landscape of Cook's first landing coast — a place of profound dual-cultural significance.",
       "commentary": "Tūranganui-a-Kiwa / Poverty Bay is one of the most culturally layered coastal landscapes in New Zealand — a meeting point of Polynesian navigation traditions going back 700 years and the European age of exploration beginning with Cook in 1769. The southern foreshore below Te Kurī-a-Pāoa offers excellent estuary birdwatching (royal spoonbill, variable oystercatcher, pied stilt) in a landscape little changed since Cook sketched it from his ship. The surrounding farmland was the scene of New Zealand's most violent early contact episode: the deaths of 9 Māori and 1 European over three days in October 1769. Cultural interpretation at the DOC access point contextualises the landscape within both Māori traditions and the Cook voyage.",
       "scripts": {},
@@ -3307,7 +3307,7 @@
       "commentary": "Sunshine Brewery is Gisborne's craft brewery, producing a range of beers that reflect the East Coast's laid-back character. The brewery tap room offers tastings of their full range, from classic pale ales to seasonal specialties. The Gisborne Gold lager and Lighthouse IPA are local favourites. The brewery has been operating since 1989, making it one of New Zealand's older craft breweries. The tap room has a relaxed, social atmosphere and often hosts live music. It's a good place to meet locals and absorb Gisborne's friendly, unpretentious vibe. Tours of the brewing operation are available by arrangement.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Good local craft beer in a friendly setting. Gisborne Gold is a crowd-pleaser. Great way to meet locals."
       }
     },
@@ -3634,7 +3634,7 @@
         "historic"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Coastal walkway to a dramatic natural rock arch overlooking a secluded cove.",
       "commentary": "The Cooks Cove Walkway crosses private farmland and native bush to reach a secluded cove where Captain Cook once anchored. The highlight is the Hole in the Wall — a dramatic natural arch in the cliff face offering framed views of Cooks Cove below.",
       "content_status": "draft",
@@ -3657,7 +3657,7 @@
         "700 steps"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "700-step climb to mainland New Zealand's easternmost lighthouse.",
       "commentary": "A climb of approximately 700 steps leads to the East Cape Lighthouse, the easternmost point on mainland New Zealand. The panoramic views from the top span the Pacific Ocean in every direction, and it's a popular spot for catching the first sunrise of the new year.",
       "content_status": "draft",
@@ -3703,7 +3703,7 @@
         "coastal"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Heritage walk through the remote East Cape village at the end of SH35.",
       "commentary": "Te Araroa is one of New Zealand's most remote settlements, the final village before the East Cape. A heritage walk passes the historic school, church, and general store, plus the ancient pōhutukawa tree — a glimpse into life at the far eastern edge of the country.",
       "content_status": "draft",
@@ -3734,6 +3734,532 @@
         "rating": 4.2,
         "summary": "Precious forest remnant — the ancient trees are impressive."
       }
+    },
+    {
+      "id": "tairawhiti-hackfalls-arboretum",
+      "name": "Hackfalls Arboretum",
+      "region": "tairawhiti",
+      "lat": -38.7692584,
+      "lng": 177.540007,
+      "category": "culture",
+      "tags": [
+        "arboretum",
+        "dendrology",
+        "tiniroto",
+        "gardens",
+        "private-collection"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A remote Tiniroto farm arboretum with rare trees, lakeside planting and a remarkable botanical collection.",
+      "commentary": "Hackfalls Arboretum is one of those Tairāwhiti places that rewards people who enjoy the road as much as the destination. Near Tiniroto, between Gisborne and Wairoa, the Berry family farm became a major arboretum, known especially for its tree collections spread through pasture and around lakes. The visit is seasonal and opening details should be checked before travelling, but the idea is simple and lovely: a working rural landscape used as a living tree library. Autumn colour, unusual oaks, maples and specimen trees make it a very different East Coast experience from beaches and headlands.",
+      "audio_story": "Hackfalls Arboretum is one of those Tairāwhiti places that rewards people who enjoy the road as much as the destination. Near Tiniroto, between Gisborne and Wairoa, the Berry family farm became a major arboretum, known especially for its tree collections spread through pasture and around lakes. The visit is seasonal and opening details should be checked before travelling, but the idea is simple and lovely: a working rural landscape used as a living tree library. Autumn colour, unusual oaks, maples and specimen trees make it a very different East Coast experience from beaches and headlands.",
+      "suggested_voice_tone": "reflective, botanical, gently surprised",
+      "sources_to_check": [
+        "Hackfalls Arboretum: https://www.hackfalls.org.nz/contact-us/",
+        "International Dendrology Society: https://www.dendrology.org/publications/gardens-and-arboreta/hackfalls-arboretum-2016/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Garden and tree enthusiasts value the rare collection, remote setting and autumn colour; planning ahead for access is essential."
+      }
+    },
+    {
+      "id": "tairawhiti-dive-tatapouri-reef-ecology",
+      "name": "Dive Tatapouri Reef Ecology Tour",
+      "region": "tairawhiti",
+      "lat": -38.575,
+      "lng": 178.2476,
+      "category": "wildlife",
+      "tags": [
+        "reef",
+        "stingray",
+        "guided",
+        "marine-life"
+      ],
+      "trigger_radius_m": 450,
+      "duration_hours": 1.5,
+      "short": "A guided reef ecology experience north of Gisborne, focused on rays, tides and marine respect.",
+      "commentary": "Tatapouri’s reef tour turns a shallow coastal platform into a living classroom. Guides read the tide, introduce rays and other marine life, and keep the emphasis on respect rather than spectacle, which is exactly what close wildlife encounters need.",
+      "audio_story": "Tatapouri’s reef tour turns a shallow coastal platform into a living classroom. Guides read the tide, introduce rays and other marine life, and keep the emphasis on respect rather than spectacle, which is exactly what close wildlife encounters need.",
+      "suggested_voice_tone": "careful, marine, wonder-filled",
+      "sources_to_check": [
+        "Tairāwhiti Gisborne official visitor information",
+        "DOC East Coast places",
+        "Local museum, reef ecology and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-waihirere-domain",
+      "name": "Waihirere Domain",
+      "region": "tairawhiti",
+      "lat": -38.5936,
+      "lng": 178.0215,
+      "category": "nature",
+      "tags": [
+        "gisborne",
+        "bush-walk",
+        "waterfall",
+        "local-park"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A local bush reserve north of Gisborne with shaded tracks and a small waterfall walk.",
+      "commentary": "Waihirere Domain is the sort of local green place visitors can easily miss. The tracks offer shade, birdsong and a waterfall without requiring a long drive, making it a useful reset between coast, town and wine-country stops.",
+      "audio_story": "Waihirere Domain is the sort of local green place visitors can easily miss. The tracks offer shade, birdsong and a waterfall without requiring a long drive, making it a useful reset between coast, town and wine-country stops.",
+      "suggested_voice_tone": "quiet, local, green",
+      "sources_to_check": [
+        "Tairāwhiti Gisborne official visitor information",
+        "DOC East Coast places",
+        "Local museum, reef ecology and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-motu-trails-dunes-section",
+      "name": "Motu Trails Dunes Section",
+      "region": "tairawhiti",
+      "lat": -38.012,
+      "lng": 177.291,
+      "category": "adventure",
+      "tags": [
+        "cycle-trail",
+        "coastal",
+        "dunes",
+        "opōtiki"
+      ],
+      "trigger_radius_m": 1600,
+      "duration_hours": 2,
+      "short": "The coastal, beginner-friendly face of the Motu Trails network, following dunes and sea views.",
+      "commentary": "The Motu Trails can be rugged and remote, but the dunes section keeps things open and friendly. It follows the coast with enough curve and breeze to feel like an outing, while hinting at the wilder backcountry riding further inland.",
+      "audio_story": "The Motu Trails can be rugged and remote, but the dunes section keeps things open and friendly. It follows the coast with enough curve and breeze to feel like an outing, while hinting at the wilder backcountry riding further inland.",
+      "suggested_voice_tone": "breezy, active, accessible",
+      "sources_to_check": [
+        "Tairāwhiti Gisborne official visitor information",
+        "DOC East Coast places",
+        "Local museum, reef ecology and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-ruatoria-mount-hikurangi-view",
+      "name": "Ruatoria and Mount Hikurangi View",
+      "region": "tairawhiti",
+      "lat": -37.8833,
+      "lng": 178.3167,
+      "category": "journey",
+      "tags": [
+        "east-coast",
+        "mount-hikurangi",
+        "scenic-drive",
+        "ruatoria"
+      ],
+      "trigger_radius_m": 2500,
+      "duration_hours": 1,
+      "short": "A remote East Coast road stop where Ruatoria sits under the presence of sacred Mount Hikurangi.",
+      "commentary": "Ruatoria is not a conventional attraction, but the landscape around it is essential Tairāwhiti. Mount Hikurangi holds the horizon with cultural significance and physical force, reminding travellers that the East Coast is lived-in country, not just a scenic route.",
+      "audio_story": "Ruatoria is not a conventional attraction, but the landscape around it is essential Tairāwhiti. Mount Hikurangi holds the horizon with cultural significance and physical force, reminding travellers that the East Coast is lived-in country, not just a scenic route.",
+      "suggested_voice_tone": "respectful, spacious, observant",
+      "sources_to_check": [
+        "Tairāwhiti Gisborne official visitor information",
+        "DOC East Coast places",
+        "Local museum, reef ecology and trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "tairawhiti-gisborne-railbike-adventure",
+      "name": "Gisborne Railbike Adventure",
+      "region": "tairawhiti",
+      "lat": -38.662,
+      "lng": 178.018,
+      "category": "adventure",
+      "tags": [
+        "railbike",
+        "gisborne",
+        "guided"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "Gisborne Railbike Adventure turns unused railway lines into a gentle pedal journey, giving the landscape a new pace and a little mechanical charm.",
+      "commentary": "Gisborne Railbike Adventure turns unused railway lines into a gentle pedal journey, giving the landscape a new pace and a little mechanical charm.",
+      "audio_story": "Gisborne Railbike Adventure turns unused railway lines into a gentle pedal journey, giving the landscape a new pace and a little mechanical charm.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-whinray-scenic-reserve",
+      "name": "Whinray Scenic Reserve",
+      "region": "tairawhiti",
+      "lat": -38.342,
+      "lng": 177.554,
+      "category": "nature",
+      "tags": [
+        "forest",
+        "motu",
+        "walk"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Whinray Scenic Reserve is an inland Tairāwhiti forest pause, where the Motu road country shifts from coast-and-river travel into cool native bush.",
+      "commentary": "Whinray Scenic Reserve is an inland Tairāwhiti forest pause, where the Motu road country shifts from coast-and-river travel into cool native bush.",
+      "audio_story": "Whinray Scenic Reserve is an inland Tairāwhiti forest pause, where the Motu road country shifts from coast-and-river travel into cool native bush.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-motu-falls",
+      "name": "Motu Falls",
+      "region": "tairawhiti",
+      "lat": -38.245,
+      "lng": 177.543,
+      "category": "nature",
+      "tags": [
+        "waterfall",
+        "motu",
+        "river"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Motu Falls is a compact East Coast hinterland reward, with a short walk to river water dropping through rock in the quiet behind the coast.",
+      "commentary": "Motu Falls is a compact East Coast hinterland reward, with a short walk to river water dropping through rock in the quiet behind the coast.",
+      "audio_story": "Motu Falls is a compact East Coast hinterland reward, with a short walk to river water dropping through rock in the quiet behind the coast.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-tiniroto-lakes",
+      "name": "Tiniroto Lakes",
+      "region": "tairawhiti",
+      "lat": -38.812,
+      "lng": 177.59,
+      "category": "nature",
+      "tags": [
+        "lakes",
+        "scenic-drive",
+        "inland"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "The Tiniroto Lakes add a softer inland chapter between Gisborne and Wairoa, with small lakes, farmland and hill-country bends replacing the open coast.",
+      "commentary": "The Tiniroto Lakes add a softer inland chapter between Gisborne and Wairoa, with small lakes, farmland and hill-country bends replacing the open coast.",
+      "audio_story": "The Tiniroto Lakes add a softer inland chapter between Gisborne and Wairoa, with small lakes, farmland and hill-country bends replacing the open coast.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-mahia-peninsula-scenic-reserve",
+      "name": "Mahia Peninsula Scenic Reserve",
+      "region": "tairawhiti",
+      "lat": -39.068,
+      "lng": 177.91,
+      "category": "nature",
+      "tags": [
+        "mahia",
+        "forest",
+        "coastal",
+        "walk"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A remnant forest reserve on Mahia Peninsula, adding a green inland pause to a beach-and-surf coast.",
+      "commentary": "Mahia Peninsula is often imagined through beaches, headlands and launch-day horizons, but the scenic reserve offers a quieter inland layer. The bush gives shade and texture to a peninsula better known for sea light, making the place feel more whole.",
+      "audio_story": "Mahia Peninsula is often imagined through beaches, headlands and launch-day horizons, but the scenic reserve offers a quieter inland layer. The bush gives shade and texture to a peninsula better known for sea light, making the place feel more whole.",
+      "suggested_voice_tone": "quiet, coastal, restorative",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/east-coast/places/mahia-peninsula-scenic-reserve/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-pouawa-beach",
+      "name": "Pouawa Beach",
+      "region": "tairawhiti",
+      "lat": -38.536,
+      "lng": 178.232,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "camping",
+        "gisborne",
+        "coast"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A seasonal camping and swimming beach north of Gisborne, with fishing, diving and open-coast light.",
+      "commentary": "Pouawa Beach is a practical coastal pause north of Gisborne: simple, open and best approached with respect for seasonal camping rules. It suits travellers who want a Tairawhiti beach that still feels local, with surf, fishing and wide Pacific light doing the talking.",
+      "audio_story": "Pouawa Beach is a practical coastal pause north of Gisborne: simple, open and best approached with respect for seasonal camping rules. It suits travellers who want a Tairawhiti beach that still feels local, with surf, fishing and wide Pacific light doing the talking.",
+      "suggested_voice_tone": "open, local, coastal",
+      "sources_to_check": [
+        "https://www.gdc.govt.nz/recreation/camping/summer-camping/pouawa-beach"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-childers-road-reserve",
+      "name": "Childers Road Reserve",
+      "region": "tairawhiti",
+      "lat": -38.66055,
+      "lng": 178.014738,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Tairāwhiti.",
+      "commentary": "Childers Road Reserve fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Childers Road Reserve fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/96297903",
+        "https://en.wikipedia.org/wiki/Childers_Road_Reserve",
+        "https://www.wikidata.org/wiki/Q19875565",
+        "https://www.newzealand.com/nz/gisborne/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-harry-barker-reserve",
+      "name": "Harry Barker Reserve",
+      "region": "tairawhiti",
+      "lat": -38.649776,
+      "lng": 177.996272,
+      "category": "nature",
+      "tags": [
+        "park",
+        "nature"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1,
+      "short": "A mapped green-space stop that adds local texture to Tairāwhiti.",
+      "commentary": "Harry Barker Reserve fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Harry Barker Reserve fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/96293087",
+        "https://en.wikipedia.org/wiki/Harry_Barker_Reserve",
+        "https://www.wikidata.org/wiki/Q5667130",
+        "https://www.newzealand.com/nz/gisborne/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-akuaku",
+      "name": "Akuaku",
+      "region": "tairawhiti",
+      "lat": -37.987049,
+      "lng": 178.358632,
+      "category": "heritage",
+      "tags": [
+        "ruins-site",
+        "heritage",
+        "historic-ruins"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Tairāwhiti.",
+      "commentary": "Akuaku is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Akuaku is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/13517942926",
+        "https://en.wikipedia.org/wiki/Akuaku",
+        "https://www.wikidata.org/wiki/Q4701915",
+        "https://www.newzealand.com/nz/gisborne/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-maungahaumi-maungahaumia",
+      "name": "Maungahaumi / Maungahaumia",
+      "region": "tairawhiti",
+      "lat": -38.299605,
+      "lng": 177.664105,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Tairāwhiti.",
+      "commentary": "Maungahaumi / Maungahaumia helps mark the high country and skyline around Tairāwhiti. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Maungahaumi / Maungahaumia helps mark the high country and skyline around Tairāwhiti. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/10706332422",
+        "https://en.wikipedia.org/wiki/Maungahaumi",
+        "https://www.wikidata.org/wiki/Q6792552",
+        "https://www.newzealand.com/nz/gisborne/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-marau-beach",
+      "name": "Mārau Beach",
+      "region": "tairawhiti",
+      "lat": -38.280628,
+      "lng": 178.334828,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Tairāwhiti.",
+      "commentary": "Mārau Beach fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Mārau Beach fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/351390847",
+        "https://www.wikidata.org/wiki/Q32269621",
+        "https://www.newzealand.com/nz/gisborne/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-te-uritukituki-beach",
+      "name": "Te Uritukituki Beach",
+      "region": "tairawhiti",
+      "lat": -37.891093,
+      "lng": 177.54989,
+      "category": "nature",
+      "tags": [
+        "beach",
+        "nature",
+        "natural-beach"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 1,
+      "short": "A named beach point extending the coastal coverage in Tairāwhiti.",
+      "commentary": "Te Uritukituki Beach fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Te Uritukituki Beach fills in another real point on the Tairāwhiti visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "open, spacious, quietly scenic",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1060963430",
+        "https://www.wikidata.org/wiki/Q49324976",
+        "https://www.newzealand.com/nz/gisborne/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-sled-house",
+      "name": "Sled House",
+      "region": "tairawhiti",
+      "lat": -38.663436,
+      "lng": 178.028709,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Tairāwhiti.",
+      "commentary": "Sled House gives Tairāwhiti another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Sled House gives Tairāwhiti another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1158682197",
+        "https://www.wikidata.org/wiki/Q79303948",
+        "https://www.newzealand.com/nz/gisborne/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-wylie-cottage",
+      "name": "Wylie Cottage",
+      "region": "tairawhiti",
+      "lat": -38.663508,
+      "lng": 178.028876,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "culture",
+        "tourism-museum"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A mapped local museum adding another culture-and-history stop in Tairāwhiti.",
+      "commentary": "Wylie Cottage gives Tairāwhiti another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Wylie Cottage gives Tairāwhiti another indoor, human-scale stop: a museum where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1158682198",
+        "https://www.wikidata.org/wiki/Q76938716",
+        "https://www.newzealand.com/nz/gisborne/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "tairawhiti-gisborne-gaol-former",
+      "name": "Gisborne Gaol (Former)",
+      "region": "tairawhiti",
+      "lat": -38.669639,
+      "lng": 178.008215,
+      "category": "heritage",
+      "tags": [
+        "building-site",
+        "heritage",
+        "historic-building"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Tairāwhiti.",
+      "commentary": "Gisborne Gaol (Former) is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Gisborne Gaol (Former) is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1322050127",
+        "https://www.wikidata.org/wiki/Q79301334",
+        "https://www.newzealand.com/nz/gisborne/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

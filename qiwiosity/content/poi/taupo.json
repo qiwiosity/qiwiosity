@@ -1618,8 +1618,8 @@
       "id": "taupo-kaimanawa-wild-horses",
       "name": "Kaimanawa Ranges — Wild Horse & Bird Country",
       "region": "taupo",
-      "lat": -39.0,
-      "lng": 176.0,
+      "lat": -39,
+      "lng": 176,
       "category": "wildlife",
       "tags": [
         "conservation-project",
@@ -1682,7 +1682,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Pleasant walk combining geothermal and bird viewing. Easy access. Good for families."
       }
     },
@@ -1706,7 +1706,7 @@
       "sources_to_check": null,
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Challenging to see but rewarding when detected. The forest at dusk is atmospheric. Combine with kiwi listening."
       }
     },
@@ -1749,7 +1749,7 @@
         "swimming"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Free natural hot stream flowing into the Waikato River, a local favourite for a relaxing thermal soak.",
       "commentary": "Spa Thermal Park is a beloved local gem in Taupō — a natural geothermal stream that flows through a park before joining the Waikato River, creating free, accessible hot water bathing. The stream maintains a comfortable temperature perfect for soaking, and where it meets the cooler river water, bathers can find their ideal temperature by moving between the two. The park is well maintained with changing facilities and easy access from a short walk from the car park. This is the real deal — no admission fee, no artificial pools, just naturally heated water in a bush setting. The walk from town along the Waikato River trail takes about 20 minutes and is scenic in itself. The area can get busy on weekends and holidays but never feels overcrowded thanks to the length of the stream. Visit at dusk for a magical atmosphere with steam rising in the evening light. Bring a towel and water shoes for the rocky river bed. One of Taupō's best free experiences.",
       "content_status": "draft",
@@ -1795,7 +1795,7 @@
         "cultural-significance"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Sacred volcanic peak above Taupō with panoramic views of the lake and central North Island mountains.",
       "commentary": "Mount Tauhara (1,088m) is the prominent volcanic dome rising above the eastern shore of Lake Taupō, offering one of the region's most rewarding day walks with spectacular summit views. The track climbs steadily through native bush before emerging onto the open summit ridge, where panoramic views encompass Lake Taupō, the Tongariro volcanic peaks, the Kaimanawa Ranges, and vast tracts of central North Island farmland and forest. The walk takes approximately 2-3 hours return and is moderately challenging with a steady uphill gradient. Mount Tauhara holds deep cultural and spiritual significance for the local Ngāti Tūwharetoa iwi, who consider it a sacred ancestor. Visitors are asked to respect the mana of the mountain — stay on the track, do not take rocks or plant material, and carry out all rubbish. The trailhead is located off Mountain Road, east of Taupō town. Clear days are best for views — check the weather before committing. The summit can be cold and windy even when Taupō town is warm.",
       "content_status": "draft",
@@ -1819,7 +1819,7 @@
         "steam-vents"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Otherworldly geothermal landscape of steaming craters, mud pools, and fumaroles on Taupō's outskirts.",
       "commentary": "Craters of the Moon is a dramatic geothermal walkway on the outskirts of Taupō, traversing an otherworldly landscape of steaming vents, hissing fumaroles, bubbling mud, and barren craters that truly evoke a lunar surface. The geothermal activity here increased dramatically in the 1950s when the nearby Wairakei Power Station lowered underground water levels, causing surface features to intensify. The well-maintained loop walk takes about 45 minutes and follows boardwalks through the steaming, sulphur-scented landscape with excellent interpretive signage explaining the geology. The geothermal features are constantly changing — new vents open and old ones close. The contrast between the steaming barren ground and the surrounding green bush is striking. A small admission fee supports the site's maintenance. Located on Karapiti Road, just north of Taupō near the Wairakei Tourist Park. Best visited on cool or overcast days when the steam is most dramatic. Safe for families with supervised children — stay on the boardwalks at all times.",
       "content_status": "draft",
@@ -1842,7 +1842,7 @@
         "challenge"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Outdoor climbing and high ropes adventure park in Taupo with challenges for all ages and abilities.",
       "commentary": "Rock n Ropes is Taupo's outdoor climbing and high-ropes adventure park, offering a range of aerial challenges in a bush setting on Spa Road. The park features a high ropes course with swinging logs, cargo nets, and balance beams at height, plus climbing walls of varying difficulty, a giant swing, and the Leap of Faith, where you jump from a platform to catch a trapeze bar. Activities are graded for different ages and abilities, making it suitable for families with children as young as five through to adults seeking a physical challenge. All equipment and safety briefings are provided, with experienced instructors guiding participants through each element. The bush setting provides shade on hot Taupo summer days. Allow two hours for a full session. The park is open year-round, though booking is recommended during school holidays. Located within walking distance of central Taupo.",
       "content_status": "draft",
@@ -1865,7 +1865,7 @@
         "dining"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Lakeside dining and tasting precinct in Kinloch village near Taupo with craft beverages and local cuisine.",
       "commentary": "The lakeside village of Kinloch, on the western shore of Lake Taupo, has developed a reputation as a food and beverage destination with several quality establishments within walking distance. The Kinloch area offers a quieter alternative to bustling Taupo town, with lake views and a relaxed village atmosphere. Local venues serve craft beers sourced from Central North Island breweries alongside wines from the broader region. The dining scene champions local produce with casual and refined options available. The village is set against native bush with walking tracks connecting to lake beaches. During summer, the waterfront is a popular swimming and kayaking spot. Kinloch is about 20 minutes from Taupo via a scenic drive through farmland and native bush. The combination of good food and drink, lake access, and a peaceful setting makes it a rewarding half-day outing from Taupo.",
       "content_status": "draft",
@@ -1888,7 +1888,7 @@
         "cultural"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Monumental Maori rock carvings on Lake Taupo's western cliffs, accessible only by boat or kayak.",
       "cultural_review_required": true,
       "commentary": "The Mine Bay Maori Rock Carvings are a monumental piece of modern Maori art carved into the cliff face on the western shore of Lake Taupo. The main carving depicts Ngatoroirangi, the Maori navigator who guided the Tuwharetoa and Te Arawa tribes to the Taupo region over a thousand years ago. Standing over 14 metres high, the carving was created in the late 1970s by master carver Matahi Whakataka-Brightwell and a team of artists, taking four summers to complete. The carvings are accessible only by water, adding to their sense of remote grandeur. Multiple operators offer boat cruises, kayak tours, and paddleboard trips to the site from the Taupo waterfront. The surrounding cliff face features additional smaller carvings depicting Celtic and South African themes, reflecting the artists' diverse heritage. The morning light illuminates the carvings best. Kayak tours offer the most intimate experience, allowing you to paddle close and appreciate the scale. A distinctly Taupo cultural experience.",
@@ -1912,7 +1912,7 @@
         "short-walk"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "New Zealand's most visited natural attraction, where the Waikato River thunders through a narrow chasm.",
       "commentary": "Huka Falls is New Zealand's most visited natural attraction, where the full volume of the Waikato River, New Zealand's longest river, is forced through a narrow rock chasm just 15 metres wide before plunging over an 11-metre fall. The result is an extraordinary display of power, with up to 220,000 litres of water per second surging through the chasm in a brilliant turquoise-blue torrent. A footbridge over the falls provides heart-stopping views directly down into the churning water. Short walking tracks along both banks of the river above the falls offer multiple viewing angles and access to the crystal-clear blue pools upstream. The falls are a 5-minute drive north of Taupo on Huka Falls Road, with a large free car park. The site is free to visit and accessible year-round. Jet boat tours from downstream bring visitors to the base of the falls for a dramatic spray-soaked perspective. The river walk extends upstream to the Spa Park thermal area.",
       "content_status": "draft",
@@ -2114,7 +2114,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A quality small gallery with well-curated NZ art. The heritage building is charming."
       }
     },
@@ -2427,7 +2427,7 @@
       ],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A sweet little stop, especially if you're heading to Huka Falls anyway. The honey tasting is generous and educational. Kids love watching the bees through the glass."
       }
     },
@@ -2672,7 +2672,7 @@
         "heritage"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A landmark three-storey building celebrating Ngāti Tūwharetoa cultural identity, featuring significant commissioned artworks by renowned tribal artists in the centre of Taupō township.",
       "commentary": "He Whare Hono ō Tūwharetoa (The House that Connects) opened in 2022, bringing together Ngāti Tūwharetoa tribal entities and Taupō District Council under one roof for the first time. The building is a deliberate expression of Tūwharetoa identity in the built environment — a bold architectural statement in the commercial centre of Taupō that asserts iwi mana in the town that occupies their ancestral rohe. The exterior and interior feature major commissions by Tūwharetoa master carvers, weavers, and visual artists. The ground floor is publicly accessible during business hours, with artworks visible from the street.",
       "scripts": {},
@@ -2699,7 +2699,7 @@
         "kapa-haka"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "Silica terraces, thermal pools, and an immersive Māori cultural experience — including pōwhiri, hāngī, and traditional arts demonstrations — 8 km north of Taupō.",
       "commentary": "Wairakei Terraces sits on 671 Wairakei Drive, north of Taupō on the Thermal Explorer Highway, where geothermal heat has built up spectacular silica terraces over millennia. The Māori cultural experience is guided by Ngāti Tūwharetoa hosts and includes a traditional pōwhiri welcome, a walkway through the terraces with demonstrations of traditional arts (carving, weaving, tā moko), a kapa haka performance, and a hāngī meal. The thermal spa section offers mineral pools for independent soaking. The experience is designed to be educational and participatory, suitable for all ages. It represents one of the most authentic multi-faceted Māori experiences available in the Taupō region.",
       "scripts": {},
@@ -2726,7 +2726,7 @@
         "lunar-landscape"
       ],
       "trigger_radius_m": 300,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A self-guided walk through a dramatic moonscape of steaming craters, mud pools and fumaroles created by a 1950s hydrothermal shift — free and 5 minutes north of Taupō.",
       "commentary": "Craters of the Moon formed in the 1950s when nearby geothermal power generation altered groundwater pressure, causing violent steam blowouts that left a cratered landscape across 30 hectares. The self-guided loop track passes steaming fumaroles, boiling mud pools and a series of large collapse craters, each surrounded by sulphur-yellow mineral deposits. The walk is managed by a local trust and charges a modest entry fee that funds ongoing maintenance. The landscape is viscerally alien — the steam, the craters, the absence of vegetation except on the margins creates a genuine sense of another world. Informative interpretation panels explain the geothermal processes. 10 minutes north of Taupō on SH1.",
       "scripts": {},
@@ -2805,7 +2805,7 @@
         "sustainable"
       ],
       "trigger_radius_m": 200,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "The world's first net-carbon-zero glass studio — master glassblower Lynden Over creates intricate art glass here, with a gallery and sculpture garden open to visitors.",
       "commentary": "Lava Glass is the studio and gallery of Lynden Over, internationally regarded as one of the world's foremost studio glass artists. Located on a rural property near Taupō, the facility includes a working hot glass studio (viewable by visitors), a gallery of Over's finished works and those of invited artists, and an outdoor sculpture garden of large-scale glass pieces set against the Central Plateau landscape. The studio achieved net-carbon-zero status through geothermal and renewable energy use — a significant achievement in a field that requires high-temperature kilns. Over's work draws on New Zealand's natural environment and Māori visual culture, producing pieces that are formally sophisticated and commercially significant.",
       "scripts": {},
@@ -2857,7 +2857,7 @@
         "free"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "A self-guided walk past major public sculptures commissioned by the Taupō Sculpture Trust, dispersed through the lakefront and CBD by some of New Zealand's leading artists.",
       "commentary": "The Taupō Sculpture Trust has over two decades built a remarkable collection of permanent public artworks installed throughout the town and lakefront, with pieces by notable New Zealand sculptors including Ann Robinson (glass), Terry Stringer (bronze), and Karl Maughan. The walkable route passes 15–20 significant pieces, ranging from monumental lakeside installations (Swell, Flora Totem) to intimate courtyard works. A free printed guide and an app map the route. The sculptures are chosen to engage with the volcanic landscape, the lake, and Māori cultural themes, giving the walk intellectual substance beyond mere aesthetic pleasure. The lakefront section is particularly strong, with works reflecting light off the water.",
       "scripts": {},
@@ -2883,7 +2883,7 @@
         "mineral-water"
       ],
       "trigger_radius_m": 250,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A geothermal spa resort sitting atop the natural Onekeneke hot spring, with indoor and outdoor mineral pools, a waterslide park, and private pools.",
       "commentary": "DeBretts sits on Onekeneke, a geothermal hot spot that has drawn visitors since the 1870s when the first hotel here catered to the colonial Grand Tour. The current resort maintains working thermal pools fed by natural springs at various temperatures, from lounging warm to therapeutic hot. The water chemistry — naturally alkaline and mineral-rich — is distinct from commercially heated pools and carries the soft, silky texture characteristic of genuine geothermal sources. The outdoor pool complex includes a large family area, a waterslide park, and private mineral pools. Heritage interpretation boards around the resort explain the 150-year history of geothermal recreation at the site.",
       "scripts": {},
@@ -2909,7 +2909,7 @@
         "heritage"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 3.0,
+      "duration_hours": 3,
       "short": "A 17-km walkway following the Waikato River from Taupō town through the Spa Thermal Park, past Huka Falls, to the Ārātiatia Rapids — one of the great day walks of the Central North Island.",
       "commentary": "The Huka Falls Walkway runs along the eastern bank of the Waikato River from the Spa Thermal Park in Taupō north to the spectacular Ārātiatia Rapids, passing through a corridor of remarkable natural and cultural sites. The thermal park section includes a free natural hot pool and thermal steam features. The falls themselves are at the midpoint, and the Ārātiatia Dam — which releases daily to recreate the river's original spectacular rapids — provides a dramatic finale. The walk passes Māori cultural landmarks including the site of traditional eel traps and the boundaries of ancestral fishing grounds of Ngāti Tūwharetoa.",
       "scripts": {},
@@ -2968,7 +2968,7 @@
       "sources_to_check": [],
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A pleasant and historically informative precinct to explore on foot, especially for those interested in New Zealand's colonial transportation history. The volcanic panorama on a clear day is superb. Short, easy and free — makes a good complement to the lakefront sculpture walk."
       }
     },
@@ -2987,7 +2987,7 @@
         "cultural-landscape"
       ],
       "trigger_radius_m": 1000,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "A 46-km drive south along the western shore of Lake Taupō through the ancestral rohe of Ngāti Tūwharetoa, with lake and volcanic views and DOC reserve access points.",
       "commentary": "State Highway 1 from Taupō south to Turangi passes through the entire western shore of Lake Taupō, running through the heart of Ngāti Tūwharetoa ancestral territory. The shoreline reserves along this route provide free access to some of the most beautiful lakeside scenery in New Zealand. Key stops include Waitahanui (excellent beach and river mouth fishing), the Huka Falls–Taupō end described separately, and access to Tokaanu at the southern end. The Tongariro volcanic massif — the spiritual home of Ngāti Tūwharetoa — dominates the southern horizon for much of the drive. Cultural interpretation signs at several DOC access points explain the tribal associations of specific locations.",
       "scripts": {},
@@ -3088,7 +3088,7 @@
       "commentary": "The Taupo Volcanic Activity Centre at Wairakei is a compact but excellent science museum dedicated to explaining the volcanic and geothermal forces that shape the central North Island. Interactive exhibits include earthquake simulators, volcanic eruption models, and real-time seismograph displays showing current seismic activity beneath your feet. The museum puts Lake Taupo itself in dramatic perspective — the lake fills a caldera created by one of the most powerful volcanic eruptions in human history, the 232 CE Hatepe eruption. The centre also covers geothermal energy. Short films bring the region's geological drama to vivid life.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "Compact but fascinating. The earthquake simulator is a hit with kids. Puts Taupo's volcanic setting in dramatic context."
       }
     },
@@ -3157,7 +3157,7 @@
       "commentary": "The Tokaanu Thermal Walk is a short, free loop track through an active geothermal area at the southern end of Lake Taupō. The boardwalk weaves past bubbling mud pools, steaming vents, hot streams, and mineral-encrusted pools in a native bush setting. Unlike the major commercial geothermal attractions, Tokaanu is free, uncrowded, and retains a natural, uncommercialised feel. The nearby Tokaanu Thermal Pools offer public bathing in hot mineral water. The walk takes only 20 minutes but provides an intimate geothermal experience. The village of Tokaanu is significant for Ngāti Tūwharetoa, with a historic marae and church nearby.",
       "content_status": "draft",
       "reviews": {
-        "rating": 4.0,
+        "rating": 4,
         "summary": "A lovely free geothermal experience away from the crowds. Bubbling mud and hot streams in natural bush. Don't miss the public pools nearby."
       }
     },
@@ -3597,7 +3597,7 @@
         "cemetery"
       ],
       "trigger_radius_m": 500,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Haunting historic reserve marking an 1869 New Zealand Wars battle site.",
       "commentary": "Ōpepe Reserve preserves the site where nine men of the Bay of Plenty Cavalry were killed in an 1869 ambush during the New Zealand Wars. A short bush walk through mature tōtara forest leads to the soldiers' graves and interpretive panels telling the sombre story.",
       "content_status": "draft",
@@ -3620,7 +3620,7 @@
         "tree top walk"
       ],
       "trigger_radius_m": 600,
-      "duration_hours": 2.0,
+      "duration_hours": 2,
       "short": "Walk among 1,000-year-old tōtara giants in one of New Zealand's most significant forests.",
       "commentary": "Pureora Forest Park contains some of New Zealand's oldest and largest tōtara trees, saved from logging by a famous 1978 protest. The Tōtara Walk passes cathedral-like groves of ancient trees, and a tree-top platform offers a bird's-eye view of the canopy.",
       "content_status": "draft",
@@ -3689,7 +3689,7 @@
         "lake"
       ],
       "trigger_radius_m": 400,
-      "duration_hours": 1.0,
+      "duration_hours": 1,
       "short": "Boardwalk through a lakeside wetland rich in native birdlife.",
       "commentary": "Five Mile Bay wetland is a peaceful lakeside reserve with boardwalks through raupo and flax wetlands. Pied stilts, dabchicks, and shags are regularly spotted, and the walk connects to the lakefront — a tranquil alternative to Taupō's busier attractions.",
       "content_status": "draft",
@@ -3697,6 +3697,534 @@
         "rating": 4.1,
         "summary": "Peaceful wetland walk — good birdwatching close to town."
       }
+    },
+    {
+      "id": "taupo-waihaha-hut-track",
+      "name": "Waihaha Hut Track",
+      "region": "taupo",
+      "lat": -38.6919371,
+      "lng": 175.7045444,
+      "category": "adventure",
+      "tags": [
+        "western-bays",
+        "tramping",
+        "pureora",
+        "hut",
+        "native-forest"
+      ],
+      "trigger_radius_m": 800,
+      "duration_hours": 6,
+      "short": "A quieter western Lake Taupō tramp through Pureora forest toward Waihaha Hut and river country.",
+      "commentary": "Waihaha Hut Track pushes Taupō coverage beyond lakefront lookouts and geothermal icons. Accessed from the western side near SH32, it leads into the Waihaha Ecological Area and Pureora forest country, with podocarp forest, river terraces and a DOC backcountry hut as the anchor. This is a more committed outing than a roadside stop: check DOC conditions, hut details, daylight and weather before you go. For travellers who want to understand the western bays of Lake Taupō as forest, rivers and backcountry rather than just water views, Waihaha is a strong next layer.",
+      "audio_story": "Waihaha Hut Track pushes Taupō coverage beyond lakefront lookouts and geothermal icons. Accessed from the western side near SH32, it leads into the Waihaha Ecological Area and Pureora forest country, with podocarp forest, river terraces and a DOC backcountry hut as the anchor. This is a more committed outing than a roadside stop: check DOC conditions, hut details, daylight and weather before you go. For travellers who want to understand the western bays of Lake Taupō as forest, rivers and backcountry rather than just water views, Waihaha is a strong next layer.",
+      "suggested_voice_tone": "steady, backcountry, practical",
+      "sources_to_check": [
+        "DOC Waihaha area: https://www.doc.govt.nz/parks-and-recreation/things-to-do/hunting/where-to-hunt/central-north-island/turangi-taupo-hunting/where-to-hunt/waihaha/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false,
+      "reviews": {
+        "rating": 4.5,
+        "summary": "Trampers appreciate the quieter forest and hut destination; it requires backcountry preparation rather than casual sightseeing."
+      }
+    },
+    {
+      "id": "taupo-rangatira-point-track",
+      "name": "Rangatira Point Track",
+      "region": "taupo",
+      "lat": -38.6958,
+      "lng": 176.0075,
+      "category": "nature",
+      "tags": [
+        "lake-taupo",
+        "walking",
+        "acacia-bay",
+        "swimming"
+      ],
+      "trigger_radius_m": 600,
+      "duration_hours": 1.5,
+      "short": "A lake-edge walk near Acacia Bay with bush, swimming rocks and quiet Taupō views.",
+      "commentary": "Rangatira Point Track is a reminder that Lake Taupō is best understood at the edge, not only from lookouts. The path slips through bush to rocky swimming spots and clear water, giving the lake a quieter, more tactile scale.",
+      "audio_story": "Rangatira Point Track is a reminder that Lake Taupō is best understood at the edge, not only from lookouts. The path slips through bush to rocky swimming spots and clear water, giving the lake a quieter, more tactile scale.",
+      "suggested_voice_tone": "calm, lake-led, local",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-lava-glass-sculpture-garden",
+      "name": "Lava Glass Sculpture Garden",
+      "region": "taupo",
+      "lat": -38.6426,
+      "lng": 176.1065,
+      "category": "culture",
+      "tags": [
+        "glass-art",
+        "garden",
+        "studio",
+        "wairakei"
+      ],
+      "trigger_radius_m": 250,
+      "duration_hours": 1,
+      "short": "A glassblowing studio and sculpture garden using colour, heat and volcanic-region drama.",
+      "commentary": "Lava Glass turns Taupō’s volcanic identity into art rather than steam. The studio and garden show what happens when heat, colour and craft are made visible, giving the Wairakei corridor a bright creative stop between geothermal sights.",
+      "audio_story": "Lava Glass turns Taupō’s volcanic identity into art rather than steam. The studio and garden show what happens when heat, colour and craft are made visible, giving the Wairakei corridor a bright creative stop between geothermal sights.",
+      "suggested_voice_tone": "colourful, creative, polished",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-kinloch-k2k-trail",
+      "name": "Kinloch K2K Trail",
+      "region": "taupo",
+      "lat": -38.6621,
+      "lng": 175.9235,
+      "category": "adventure",
+      "tags": [
+        "mountain-bike",
+        "great-lake-trails",
+        "kinloch",
+        "lake-views"
+      ],
+      "trigger_radius_m": 1600,
+      "duration_hours": 3,
+      "short": "A Great Lake Trails section from Kinloch, mixing native bush, bluffs and huge Lake Taupō views.",
+      "commentary": "The K2K Trail gives riders Taupō at cliff-edge scale. From Kinloch the track moves through bush and above blue water, turning the lake from a broad backdrop into a sequence of viewpoints earned by pedal strokes.",
+      "audio_story": "The K2K Trail gives riders Taupō at cliff-edge scale. From Kinloch the track moves through bush and above blue water, turning the lake from a broad backdrop into a sequence of viewpoints earned by pedal strokes.",
+      "suggested_voice_tone": "active, scenic, focused",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-waiotaka-scenic-reserve",
+      "name": "Waiotaka Scenic Reserve",
+      "region": "taupo",
+      "lat": -38.9337,
+      "lng": 175.824,
+      "category": "nature",
+      "tags": [
+        "wetland",
+        "walk",
+        "turangi",
+        "birdlife"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A low-key wetland and river-mouth reserve south of Lake Taupō, useful for birdlife and gentle walking.",
+      "commentary": "Waiotaka Scenic Reserve is not loud about itself. It sits near the southern lake edge with wetland, river and bird habitat, giving travellers a quiet ecological pause between Tūrangi, Tokaanu and the big volcanic routes.",
+      "audio_story": "Waiotaka Scenic Reserve is not loud about itself. It sits near the southern lake edge with wetland, river and bird habitat, giving travellers a quiet ecological pause between Tūrangi, Tokaanu and the big volcanic routes.",
+      "suggested_voice_tone": "quiet, ecological, local",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-whakapapa-river-trail",
+      "name": "Whakapapa River Trail",
+      "region": "taupo",
+      "lat": -39.0014,
+      "lng": 175.3491,
+      "category": "nature",
+      "tags": [
+        "river",
+        "walking",
+        "national-park",
+        "forest"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 1.5,
+      "short": "A forest-and-river walk near National Park village, following clear water below the volcanic plateau.",
+      "commentary": "The Whakapapa River Trail is a useful in-between walk: lower, greener and quieter than the alpine crossings nearby. It follows clear river water through forest, giving legs a gentler option when the mountain weather is not playing nicely.",
+      "audio_story": "The Whakapapa River Trail is a useful in-between walk: lower, greener and quieter than the alpine crossings nearby. It follows clear river water through forest, giving legs a gentler option when the mountain weather is not playing nicely.",
+      "suggested_voice_tone": "green, practical, river-led",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-turangi-river-trail",
+      "name": "Tūrangi Tongariro River Trail",
+      "region": "taupo",
+      "lat": -38.9903,
+      "lng": 175.8104,
+      "category": "journey",
+      "tags": [
+        "river",
+        "cycling",
+        "walking",
+        "trout"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "An easy walking and cycling trail beside the Tongariro River, with trout pools, bridges and town access.",
+      "commentary": "The Tūrangi river trail gives the Tongariro River a friendly, everyday face. Anglers, walkers and riders share the banks, crossing swing bridges and passing famous trout water without needing a wilderness expedition.",
+      "audio_story": "The Tūrangi river trail gives the Tongariro River a friendly, everyday face. Anglers, walkers and riders share the banks, crossing swing bridges and passing famous trout water without needing a wilderness expedition.",
+      "suggested_voice_tone": "easy, river-led, local",
+      "sources_to_check": [
+        "Love Taupō official visitor information",
+        "DOC Taupō and Pureora places",
+        "Official geothermal, lake and cycle trail operators"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-taupo-museum-ora-garden",
+      "name": "Taupō Museum and Ora Garden",
+      "region": "taupo",
+      "lat": -38.688,
+      "lng": 176.071,
+      "category": "culture",
+      "tags": [
+        "museum",
+        "garden",
+        "taupo"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.25,
+      "short": "Taupō Museum adds local depth to the lakefront, while the Ora Garden gives geothermal-region planting and design a compact, contemplative space.",
+      "commentary": "Taupō Museum adds local depth to the lakefront, while the Ora Garden gives geothermal-region planting and design a compact, contemplative space.",
+      "audio_story": "Taupō Museum adds local depth to the lakefront, while the Ora Garden gives geothermal-region planting and design a compact, contemplative space.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-motuoapa-marina",
+      "name": "Motuoapa Marina",
+      "region": "taupo",
+      "lat": -38.929,
+      "lng": 175.789,
+      "category": "journey",
+      "tags": [
+        "marina",
+        "lake-taupo",
+        "southern-lake"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 0.75,
+      "short": "Motuoapa Marina is a quiet southern-lake pause where boats, mountain weather and deep water show a different face of Taupō.",
+      "commentary": "Motuoapa Marina is a quiet southern-lake pause where boats, mountain weather and deep water show a different face of Taupō.",
+      "audio_story": "Motuoapa Marina is a quiet southern-lake pause where boats, mountain weather and deep water show a different face of Taupō.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-mangakino-lakefront",
+      "name": "Mangakino Lakefront",
+      "region": "taupo",
+      "lat": -38.363,
+      "lng": 175.775,
+      "category": "nature",
+      "tags": [
+        "lake-maraetai",
+        "swimming",
+        "hydro-town"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 1.5,
+      "short": "Mangakino Lakefront turns a hydro town into a summer stop, with calm Lake Maraetai water, picnic space and Waikato River history nearby.",
+      "commentary": "Mangakino Lakefront turns a hydro town into a summer stop, with calm Lake Maraetai water, picnic space and Waikato River history nearby.",
+      "audio_story": "Mangakino Lakefront turns a hydro town into a summer stop, with calm Lake Maraetai water, picnic space and Waikato River history nearby.",
+      "suggested_voice_tone": "warm, curious, grounded",
+      "sources_to_check": [
+        "Official regional visitor, DOC, council, attraction or operator pages checked during the national expansion pass"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-whakaipo-bay-reserve",
+      "name": "Whakaipo Bay Recreation Reserve",
+      "region": "taupo",
+      "lat": -38.65,
+      "lng": 176.002,
+      "category": "nature",
+      "tags": [
+        "lake-taupo",
+        "beach",
+        "mountain-bike",
+        "picnic"
+      ],
+      "trigger_radius_m": 1000,
+      "duration_hours": 2,
+      "short": "A northern Lake Taupo reserve with quiet swimming water, picnic space and access to the W2K trail.",
+      "commentary": "Whakaipo Bay is close to Taupo but feels deliberately set apart. The road drops toward a broad lake edge where families swim, riders roll onto the W2K trail, and the western bays of Taupo remind you that the lake has quieter personalities beyond the townfront.",
+      "audio_story": "Whakaipo Bay is close to Taupo but feels deliberately set apart. The road drops toward a broad lake edge where families swim, riders roll onto the W2K trail, and the western bays of Taupo remind you that the lake has quieter personalities beyond the townfront.",
+      "suggested_voice_tone": "spacious, calm, lake-warm",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/taupo-area/things-to-do/whakaipo-bay-tracks/",
+        "https://www.doc.govt.nz/about-us/our-policies-and-plans/non-statutory-management-plans/whakaipo-bay-recreation-reserve-plan/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taupo-lake-rotopounamu-track",
+      "name": "Lake Rotopounamu Track",
+      "region": "taupo",
+      "lat": -39.015,
+      "lng": 175.732,
+      "category": "nature",
+      "tags": [
+        "tongariro",
+        "lake",
+        "forest-loop",
+        "birdlife"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "A forest loop around a quiet volcanic lake near Tongariro National Park.",
+      "commentary": "Lake Rotopounamu is a small, self-contained world: green forest, sheltered beaches and clear water tucked beside the volcanic country. The loop track slows people down naturally, offering a gentler counterpoint to the big alpine drama nearby.",
+      "audio_story": "Lake Rotopounamu is a small, self-contained world: green forest, sheltered beaches and clear water tucked beside the volcanic country. The loop track slows people down naturally, offering a gentler counterpoint to the big alpine drama nearby.",
+      "suggested_voice_tone": "quiet, green, contemplative",
+      "sources_to_check": [
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/lake-rotopounamu-track/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taupo-mind-junction",
+      "name": "Mind Junction",
+      "region": "taupo",
+      "lat": -38.595084,
+      "lng": 176.131157,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Taupō.",
+      "commentary": "Mind Junction gives Taupō another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. OpenStreetMap describes it as Activity park. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Mind Junction gives Taupō another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. OpenStreetMap describes it as Activity park. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/6715265865",
+        "https://www.mindjunction.co.nz/",
+        "https://www.newzealand.com/nz/lake-taupo/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-larte-gallery",
+      "name": "L'Arté Gallery",
+      "region": "taupo",
+      "lat": -38.702458,
+      "lng": 176.005163,
+      "category": "culture",
+      "tags": [
+        "gallery",
+        "culture",
+        "tourism-gallery"
+      ],
+      "trigger_radius_m": 300,
+      "duration_hours": 2,
+      "short": "A gallery stop that broadens the arts trail through Taupō.",
+      "commentary": "L'Arté Gallery gives Taupō another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "L'Arté Gallery gives Taupō another indoor, human-scale stop: a gallery where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/13456877840",
+        "https://www.larte.co.nz/",
+        "https://www.newzealand.com/nz/lake-taupo/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-karapiti",
+      "name": "Karapiti",
+      "region": "taupo",
+      "lat": -38.639071,
+      "lng": 176.063242,
+      "category": "nature",
+      "tags": [
+        "peak",
+        "nature",
+        "natural-peak"
+      ],
+      "trigger_radius_m": 900,
+      "duration_hours": 3,
+      "short": "A named peak that helps fill the inland skyline of Taupō.",
+      "commentary": "Karapiti helps mark the high country and skyline around Taupō. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "audio_story": "Karapiti helps mark the high country and skyline around Taupō. Peaks are not all visitor-ready tracks, so the value here is orientation first: a named point that explains what you are seeing from roads, lookouts and nearby walks.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/4945152809",
+        "https://en.wikipedia.org/wiki/Craters_of_the_Moon_(geothermal_site)",
+        "https://www.wikidata.org/wiki/Q2079297",
+        "https://www.newzealand.com/nz/lake-taupo/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-escape-cave",
+      "name": "Escape Cave",
+      "region": "taupo",
+      "lat": -38.761076,
+      "lng": 175.739781,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in Taupō.",
+      "commentary": "Escape Cave adds a small natural feature to the Taupō map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Escape Cave adds a small natural feature to the Taupō map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1123061536",
+        "https://www.wikidata.org/wiki/Q32194012",
+        "https://www.newzealand.com/nz/lake-taupo/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-matarae-pa",
+      "name": "Matarae Pā",
+      "region": "taupo",
+      "lat": -38.431266,
+      "lng": 176.320045,
+      "category": "heritage",
+      "tags": [
+        "archaeological-site-site",
+        "heritage",
+        "historic-archaeological_site"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1,
+      "short": "A heritage-marked place adding another layer of local history in Taupō.",
+      "commentary": "Matarae Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "audio_story": "Matarae Pā is one of those mapped heritage points that can turn a drive-through place into somewhere with a past. Treat it as a prompt to slow down, read the setting, and notice how local memory sits in the landscape. Some heritage records need cultural or access checking before final narration, so this entry stays in draft until reviewed.",
+      "suggested_voice_tone": "curious, respectful, historically alert",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/9213064570",
+        "https://www.wikidata.org/wiki/Q32272351",
+        "https://www.newzealand.com/nz/lake-taupo/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": true
+    },
+    {
+      "id": "taupo-okupata-caves",
+      "name": "Okupata Caves",
+      "region": "taupo",
+      "lat": -39.041638,
+      "lng": 175.521639,
+      "category": "nature",
+      "tags": [
+        "cave",
+        "nature",
+        "natural-cave_entrance"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A cave feature for careful, conditions-aware exploring in Taupō.",
+      "commentary": "Okupata Caves adds a small natural feature to the Taupō map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "audio_story": "Okupata Caves adds a small natural feature to the Taupō map: the kind of place that can become a short detour, a conditions-dependent stop, or a marker for deeper local research. Before this turns into polished audio, access, safety notes and land status should be checked.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1123061618",
+        "https://www.wikidata.org/wiki/Q121455355",
+        "https://www.newzealand.com/nz/lake-taupo/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-rafting-new-zealand",
+      "name": "Rafting New Zealand",
+      "region": "taupo",
+      "lat": -38.988579,
+      "lng": 175.811747,
+      "category": "culture",
+      "tags": [
+        "local-attraction",
+        "culture",
+        "tourism-attraction"
+      ],
+      "trigger_radius_m": 500,
+      "duration_hours": 1.5,
+      "short": "A mapped local attraction that helps fill in the visitor map for Taupō.",
+      "commentary": "Rafting New Zealand gives Taupō another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "audio_story": "Rafting New Zealand gives Taupō another indoor, human-scale stop: a local attraction where the trip shifts from scenery to the people, collections and performances that shape the district. It is useful on wet-weather days, slower town walks, or any itinerary that needs more than lookouts and beaches.",
+      "suggested_voice_tone": "bright, observant, locally grounded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/node/1578823070",
+        "https://raftingnewzealand.com/product/tongariro-whitewater/",
+        "https://www.newzealand.com/nz/lake-taupo/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
+    },
+    {
+      "id": "taupo-lilliputt-farm",
+      "name": "Lilliputt Farm",
+      "region": "taupo",
+      "lat": -38.602322,
+      "lng": 176.055002,
+      "category": "nature",
+      "tags": [
+        "wildlife-park",
+        "nature",
+        "tourism-zoo"
+      ],
+      "trigger_radius_m": 700,
+      "duration_hours": 2,
+      "short": "A mapped local attraction that helps fill in the visitor map for Taupō.",
+      "commentary": "Lilliputt Farm fills in another real point on the Taupō visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "audio_story": "Lilliputt Farm fills in another real point on the Taupō visitor map. It may not be the headline attraction, but these local stops are what make a region feel travelled rather than skimmed: parks, beaches, reserves and viewpoints that give a journey texture between the famous names.",
+      "suggested_voice_tone": "calm, attentive, nature-minded",
+      "sources_to_check": [
+        "https://www.openstreetmap.org/way/1082822207",
+        "https://lilliputtaupo.co.nz/",
+        "https://www.newzealand.com/nz/lake-taupo/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/"
+      ],
+      "content_status": "draft",
+      "cultural_review_required": false
     }
   ]
 }

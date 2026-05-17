@@ -8,7 +8,7 @@
       "lng": 174.7756
     }
   },
-  "count": 20,
+  "count": 27,
   "accommodations": [
     {
       "id": "wellington-intercontinental-wellington",
@@ -229,6 +229,83 @@
       "price_nzd_per_night": 720,
       "rating": 4.7,
       "short": "Martinborough vineyard lodge with private plunge pools."
+    },
+    {
+      "id": "wellington-the-intrepid-hotel",
+      "name": "The Intrepid Hotel",
+      "region": "wellington",
+      "lat": -41.2929152,
+      "lng": 174.7752734,
+      "type": "hotel",
+      "price_nzd_per_night": 270,
+      "rating": 4.7,
+      "short": "Design-led Te Aro boutique hotel in a restored warehouse off Cuba Street."
+    },
+    {
+      "id": "wellington-the-white-swan-greytown",
+      "name": "The White Swan Greytown",
+      "region": "wellington",
+      "lat": -41.0807,
+      "lng": 175.4598,
+      "type": "hotel",
+      "price_nzd_per_night": 280,
+      "rating": 4.4,
+      "short": "Character Wairarapa hotel in Greytown, known for heritage style and village dining."
+    },
+    {
+      "id": "wellington-naumi-studio",
+      "name": "Naumi Studio Wellington",
+      "region": "wellington",
+      "lat": -41.2948,
+      "lng": 174.7759,
+      "type": "hotel",
+      "price_nzd_per_night": 250,
+      "rating": 4.4,
+      "short": "Colourful Cuba Street boutique hotel in a restored heritage building."
+    },
+    {
+      "id": "wellington-martinborough-hotel",
+      "name": "The Martinborough Hotel",
+      "region": "wellington",
+      "lat": -41.218,
+      "lng": 175.459,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Historic village-square hotel in Martinborough, surrounded by wine-country dining and cellar doors."
+    },
+    {
+      "id": "wellington-parehua-resort-martinborough",
+      "name": "Parehua Resort Martinborough",
+      "region": "wellington",
+      "lat": -41.223,
+      "lng": 175.469,
+      "type": "hotel",
+      "price_nzd_per_night": 310,
+      "rating": 4.5,
+      "short": "Wine-country Martinborough resort with cottage-style accommodation, gardens and vineyard access."
+    },
+    {
+      "id": "wellington-brentwood-hotel",
+      "name": "Brentwood Hotel",
+      "region": "wellington",
+      "lat": -41.316171,
+      "lng": 174.797429,
+      "type": "hotel",
+      "price_nzd_per_night": 315,
+      "rating": 4.4,
+      "short": "Hotel option added from mapped accommodation data to widen overnight coverage in Wellington."
+    },
+    {
+      "id": "wellington-midway-pacifica-lodge",
+      "name": "Midway Pacifica Lodge",
+      "region": "wellington",
+      "lat": -41.219858,
+      "lng": 174.877133,
+      "type": "motel",
+      "price_nzd_per_night": 245,
+      "rating": 4,
+      "short": "Motel option added from mapped accommodation data to widen overnight coverage in Wellington."
     }
   ]
 }
